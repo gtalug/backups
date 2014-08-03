@@ -25,13 +25,12 @@ pull_all_years () {
 for list in announce operations talk; do
     listname=${list}
     listdir=${ARCHIVEHOME}/${listname}
-    currenturl=`date +"http://gtalug.org/pipermail/${listname}/%Y-%B.txt.gz"`
+    currenturl=`date +"http://gtalug.org/pipermail/${listname}/%Y-%B.txt"`
     currentfile=`date +"%Y-%B.txt"`
-    rm -f ${listdir}/latest.gz
-    wget -O ${listdir}/latest.gz $currenturl
-    zcat ${listdir}/latest.gz > ${listdir}/${currentfile}
+    rm -f ${listdir}/latest
+    wget -O ${listdir}/latest $currenturl
+    cp ${listdir}/latest  ${listdir}/${currentfile}
     git add ${listdir}/${currentfile}
-
     #pull_all_years ${list}
 done
 
