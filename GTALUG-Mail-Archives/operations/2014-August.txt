@@ -221,3 +221,13 @@ On Fri, Aug 8, 2014 at 1:28 PM, Mike <mike.kallies at gmail.com> wrote:
 Added these an a GitHub issue to better track the results:
 <https://github.com/gtalug/infrastructure/issues/24>
 
+From me at mylesbraithwaite.com  Mon Aug 11 22:10:30 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 11 Aug 2014 18:10:30 -0400
+Subject: [GTALUG-Ops] Anyone have an idea what's happening at the meeting on
+	Tuesday?
+Message-ID: <CA+hskZMZD_VMvdP30pRgaKBSsGz2XE4vh24oqE3xJ5gZfv-nXQ@mail.gmail.com>
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+
