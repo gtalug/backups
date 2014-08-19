@@ -1,0 +1,78 @@
+# /etc/aliases
+mailer-daemon: postmaster
+postmaster: root
+nobody: root
+hostmaster: root
+usenet: root
+news: root
+webmaster: root
+www: root
+ftp: root
+abuse: root
+noc: root
+security: root
+root: myles
+
+## email forwards
+hi: me+gtalug@mylesbraithwaite.com
+
+## mailman mailing list
+mailman:              "|/var/lib/mailman/mail/mailman post mailman"
+mailman-admin:        "|/var/lib/mailman/mail/mailman admin mailman"
+mailman-bounces:      "|/var/lib/mailman/mail/mailman bounces mailman"
+mailman-confirm:      "|/var/lib/mailman/mail/mailman confirm mailman"
+mailman-join:         "|/var/lib/mailman/mail/mailman join mailman"
+mailman-leave:        "|/var/lib/mailman/mail/mailman leave mailman"
+mailman-owner:        "|/var/lib/mailman/mail/mailman owner mailman"
+mailman-request:      "|/var/lib/mailman/mail/mailman request mailman"
+mailman-subscribe:    "|/var/lib/mailman/mail/mailman subscribe mailman"
+mailman-unsubscribe:  "|/var/lib/mailman/mail/mailman unsubscribe mailman"
+
+## talk mailing list
+talk:              "|/var/lib/mailman/mail/mailman post talk"
+talk-admin:        "|/var/lib/mailman/mail/mailman admin talk"
+talk-bounces:      "|/var/lib/mailman/mail/mailman bounces talk"
+talk-confirm:      "|/var/lib/mailman/mail/mailman confirm talk"
+talk-join:         "|/var/lib/mailman/mail/mailman join talk"
+talk-leave:        "|/var/lib/mailman/mail/mailman leave talk"
+talk-owner:        "|/var/lib/mailman/mail/mailman owner talk"
+talk-request:      "|/var/lib/mailman/mail/mailman request talk"
+talk-subscribe:    "|/var/lib/mailman/mail/mailman subscribe talk"
+talk-unsubscribe:  "|/var/lib/mailman/mail/mailman unsubscribe talk"
+
+## announce mailing list
+announce:              "|/var/lib/mailman/mail/mailman post announce"
+announce-admin:        "|/var/lib/mailman/mail/mailman admin announce"
+announce-bounces:      "|/var/lib/mailman/mail/mailman bounces announce"
+announce-confirm:      "|/var/lib/mailman/mail/mailman confirm announce"
+announce-join:         "|/var/lib/mailman/mail/mailman join announce"
+announce-leave:        "|/var/lib/mailman/mail/mailman leave announce"
+announce-owner:        "|/var/lib/mailman/mail/mailman owner announce"
+announce-request:      "|/var/lib/mailman/mail/mailman request announce"
+announce-subscribe:    "|/var/lib/mailman/mail/mailman subscribe announce"
+announce-unsubscribe:  "|/var/lib/mailman/mail/mailman unsubscribe announce"
+
+## operations mailing list
+operations:              "|/var/lib/mailman/mail/mailman post operations"
+operations-admin:        "|/var/lib/mailman/mail/mailman admin operations"
+operations-bounces:      "|/var/lib/mailman/mail/mailman bounces operations"
+operations-confirm:      "|/var/lib/mailman/mail/mailman confirm operations"
+operations-join:         "|/var/lib/mailman/mail/mailman join operations"
+operations-leave:        "|/var/lib/mailman/mail/mailman leave operations"
+operations-owner:        "|/var/lib/mailman/mail/mailman owner operations"
+operations-request:      "|/var/lib/mailman/mail/mailman request operations"
+operations-subscribe:    "|/var/lib/mailman/mail/mailman subscribe operations"
+operations-unsubscribe:  "|/var/lib/mailman/mail/mailman unsubscribe operations"
+
+## board mailing list
+board:              "|/var/lib/mailman/mail/mailman post board"
+board-admin:        "|/var/lib/mailman/mail/mailman admin board"
+board-bounces:      "|/var/lib/mailman/mail/mailman bounces board"
+board-confirm:      "|/var/lib/mailman/mail/mailman confirm board"
+board-join:         "|/var/lib/mailman/mail/mailman join board"
+board-leave:        "|/var/lib/mailman/mail/mailman leave board"
+board-owner:        "|/var/lib/mailman/mail/mailman owner board"
+board-request:      "|/var/lib/mailman/mail/mailman request board"
+board-subscribe:    "|/var/lib/mailman/mail/mailman subscribe board"
+board-unsubscribe:  "|/var/lib/mailman/mail/mailman unsubscribe board"
+
