@@ -306,3 +306,163 @@ Myles Braithwaite | http://mylesb.ca/e
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/operations/attachments/20140825/a088fedc/attachment.html>
 
+From cbbrowne at gmail.com  Tue Aug 26 12:59:05 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 26 Aug 2014 08:59:05 -0400
+Subject: [GTALUG-Ops] Todo items from latest GTALUG meeting
+Message-ID: <CAFNqd5U-B+Xk-GuBgduEjwL-3YOgZfQU-q=Syo0Zw6jqK3QtEQ@mail.gmail.com>
+
+I have a possibly-over-intense cc list here; those that have items ought to
+be on the operations at gtalug.org list.
+
+- TODO Myles :: Document the Operations mailing list
+  - Operations should be open for interested people to request subscription
+  - Intended for people participating in operating GTALUG
+- TODO Myles :: Document the Board mailing list even though the subscriber
+list is miniscule
+  - Invitation only list for active board members
+- All Board :: Email Scott with your preferred address for Board email
+- TODO Scott :: Check it into the Board Git site in YAML file, please
+provide (here!) the URL where we can access it.
+- TODO Chris :: Cheque for Myles at next meeting
+- Myles :: Set up email addresses
+  - Scott wants one - scott at gtalug.org
+  - Chris :: already there as chris at gtalug.org
+  - Should we install IMAPD?
+  - Set up shell account for Scott
+- Any? :: Should someone be monitoring root email
+- TODO Mike :: Ping DCB about whazzup for CAG/ICANN
+- TODO Gord :: Ping Evan to talk at AGM about ICANN
+- TODO Mike :: Talk on Code of Conduct for AGM
+- TODO Chris :: Ask Bill if he's interested in being returning officer
+- TODO Myles :: Announce election
+  - 3 positions, 1 that's just 1 year
+- TODO Mike :: Make a wee map of the floor plan
+- TODO Chris :: Backup the mailman templates
+- TODO Bill :: Pester Drew on SystemD, we'll start looking for alternative
+for this next month
+- TODO Mike :: GPG key
+- TODO Scott :: Mail series for sunsetting TLUG list
+  - One message indicating the plan
+  - A weekly message until Sept 30 indicating "7 less days"
+  - A final message entitled "GTALUG Mailing List Has Moved"
+- TODO Scott :: Subscribe GMANE to new list
+- TODO Alex :: Set up Mailman archive of the old list
+  - Need mailing list (Myles)
+  - May need Alex to help get more data
+
+There are a few items where I'll be pestering a few of you more
+specifically.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20140826/91e59700/attachment.html>
+
+From mike.kallies at gmail.com  Tue Aug 26 13:47:30 2014
+From: mike.kallies at gmail.com (Mike)
+Date: Tue, 26 Aug 2014 09:47:30 -0400
+Subject: [GTALUG-Ops] Fwd: Meetup.com API
+References: <26A49CA51DC2114BA26616BCB2964E8394610B@11102MILP.corp.hydroone.com>
+Message-ID: <F1FB6402-7495-41CB-8EE8-2FDDBB4FF896@gmail.com>
+
+this is pretty cool,
+
+could address Myles' concerns
+
+... after we finish the mail migration.
+
+Mike
+
+
+
+Begin forwarded message:
+
+> From: <Mike.Kallies at HydroOne.com>
+> Date: 26 Aug 2014 09:37:18 EDT
+> To: <mike.kallies at gmail.com>
+> Subject: Meetup.com API
+> 
+>  
+> http://www.meetup.com/meetup_api/docs/2/event/#create
+>  
+>  
+>  
+>  
+> Mike Kallies
+> Hydro One Telecom - SEM
+> 416-246-7449 (Office)
+>  
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20140826/e504e79b/attachment.html>
+
+From mike.kallies at gmail.com  Wed Aug 27 02:42:53 2014
+From: mike.kallies at gmail.com (Mike Kallies)
+Date: Tue, 26 Aug 2014 22:42:53 -0400
+Subject: [GTALUG-Ops] Review of Code of Conduct
+Message-ID: <CAPYt=DG71r+tnWS3Hzog4ghbLcNM3HbnABsVq87FXhbryAiLnA@mail.gmail.com>
+
+These are the items which came up.  They're in a branch of the code.
+
+https://github.com/gtalug/code-of-conduct/tree/review-2014/Code-of-Conduct
+
+I don't think it's anything controversial.  Mostly an FYI for those
+who are interested.
+
+Mike
+
+From me at mylesbraithwaite.com  Wed Aug 27 02:45:30 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 26 Aug 2014 22:45:30 -0400
+Subject: [GTALUG-Ops] Meeting Notes from 25th August, 2014
+Message-ID: <CA+hskZPcVe8MGYLTAij_pHJxm10oJET-34Dbf6+Z5cCajuACvg@mail.gmail.com>
+
+<http://board.gtalug.org/2014-08-25/notes.html>
+
+Source: <
+https://github.com/gtalug/board-meetings/blob/master/_posts/2014-08-25-notes.org
+>
+
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20140826/d7f6ad2c/attachment.html>
+
+From me at mylesbraithwaite.com  Wed Aug 27 02:46:25 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 26 Aug 2014 22:46:25 -0400
+Subject: [GTALUG-Ops] Review of Code of Conduct
+In-Reply-To: <CAPYt=DG71r+tnWS3Hzog4ghbLcNM3HbnABsVq87FXhbryAiLnA@mail.gmail.com>
+References: <CAPYt=DG71r+tnWS3Hzog4ghbLcNM3HbnABsVq87FXhbryAiLnA@mail.gmail.com>
+Message-ID: <CA+hskZP5WtYup9UeGN_rmA7z6Op6t0XgwSOr+1uZ2+peaX+=JQ@mail.gmail.com>
+
+Here is a comparison between the branches: <
+https://github.com/gtalug/code-of-conduct/compare/master...review-2014>.
+
+On Tuesday, August 26, 2014, Mike Kallies <mike.kallies at gmail.com> wrote:
+
+> These are the items which came up.  They're in a branch of the code.
+>
+> https://github.com/gtalug/code-of-conduct/tree/review-2014/Code-of-Conduct
+>
+> I don't think it's anything controversial.  Mostly an FYI for those
+> who are interested.
+>
+> Mike
+>
+> ---
+> GTALUG Operations Mailing List - operations at gtalug.org <javascript:;>
+> http://gtalug.org/mailman/listinfo/operations
+>
+
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20140826/b0b11e82/attachment.html>
+
