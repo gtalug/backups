@@ -869,3 +869,23 @@ On 18 August 2014 14:05, Jamon Camisso <jamon.camisso at utoronto.ca> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20140818/542bfc78/attachment.html>
 
+From cbbrowne at gmail.com  Tue Aug 26 15:42:48 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 26 Aug 2014 11:42:48 -0400
+Subject: [GTALUG] An essay griping about PGP
+Message-ID: <CAFNqd5WtBuSJtMD3XJqd6_NCWf3Ga=kCguvTy5e5TbpKqq5XWw@mail.gmail.com>
+
+I rather liked the line about "Cryptography that post-dates the Fresh
+Prince."  :-)
+http://blog.cryptographyengineering.com/2014/08/whats-matter-with-pgp.html
+
+It's also definitely onto something with the line:
+"The TL;DR is that 'trust' means different things to you than it does to
+me."
+--
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20140826/6ee0e2e0/attachment.html>
+
