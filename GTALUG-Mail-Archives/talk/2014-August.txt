@@ -889,3 +889,51 @@ question, "How would the Lone Ranger handle this?"
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20140826/6ee0e2e0/attachment.html>
 
+From scruss at gmail.com  Wed Aug 27 14:07:43 2014
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Wed, 27 Aug 2014 10:07:43 -0400
+Subject: [GTALUG] An essay griping about PGP
+In-Reply-To: <CAFNqd5WtBuSJtMD3XJqd6_NCWf3Ga=kCguvTy5e5TbpKqq5XWw@mail.gmail.com>
+References: <CAFNqd5WtBuSJtMD3XJqd6_NCWf3Ga=kCguvTy5e5TbpKqq5XWw@mail.gmail.com>
+Message-ID: <53FDE62F.1080005@gmail.com>
+
+On 14-08-26 11:42 AM, Christopher Browne wrote:
+> I rather liked the line about "Cryptography that post-dates the Fresh
+> Prince."  :-)
+> http://blog.cryptographyengineering.com/2014/08/whats-matter-with-pgp.html
+
+Though there are many rebuttals to that article, I agree with this one most:
+?What's The Matter With PGP??
+<https://pthree.org/2014/08/18/whats-the-matter-with-pgp/>
+
+(via the rather thoughtful discussion on MetaFilter:
+<https://www.metafilter.com/142215/Whats-the-matter-with-PGP>)
+
+And I'm really not sure why anyone at Keybase would think that this was
+the way to do crypto at all:
+
+    /Keybase.io is also a Keybase client, however certain crypto actions
+    (signing and decrypting) are limited to users who _store
+    client-encrypted copies of their private keys on the server_, an
+    optional feature we didn't mention above.  On the website, all
+    crypto is performed in JavaScript, in your browser. Some people have
+    strong feelings about this, for good reason./ <https://keybase.io/>
+
+If someone else has your private key, it's not very private.
+
+So in summary:
+
+ 1. PKI is hard, and even harder to get people to care about
+ 2. UX for PGP front-ends is generally abysmal (Enigmail gets all 0_o if
+    you have the audacity to use MIME, f'rinstance) ? perhaps something
+    to do with lack of motivated developers due to [1]
+ 3. E-mail leaks meta-data, which can be used to glean useful
+    intelligence without knowing the message.
+
+cheers,
+ Stewart
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20140827/36cbe442/attachment.html>
+
