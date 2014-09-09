@@ -1,0 +1,84 @@
+From me at mylesbraithwaite.com  Mon Sep  8 15:30:17 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 08 Sep 2014 11:30:17 -0400
+Subject: [GTALUG] [GTALUG-Announce] GTALUG Meeting Tomorrow at 7:30PM
+Message-ID: <540DCB89.4080103@mylesbraithwaite.com>
+
+<http://gtalug.org/meeting/2014-09/>
+
+TOC:
+
+1. Meeting Info
+2. New Mailing List
+3. AGM and Board Elections
+4. Code of Conduct
+
+Short Talks - 9th September, 2014 at 7:30PM
+===========================================
+
+We have three short talks planned:
+
+* Alex Volkov: ZopeDB
+* Myles Braithwaite: CouchDB
+* Scott Sullivan: bonic
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+## Schedule
+
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting (at 9:00 pm) a group of GTALUGers move
+to the The Imperial Pub 54 Dundas St East for refreshments and more
+socializing.
+
+2. Mailing List
+===============
+
+GTALUG is in the process of moving to new server for our Mailing List.
+Go here <http://gtalug.org/mailing-list/> for more information.
+
+3. AGM and Board Elections
+==========================
+
+October's GTALUG meeting is our Annual General Meeting and Board
+Elections. If you are interested in running for one of the three open
+board seats, come see me (Myles Braithwaite (I'm doing the talk on
+CouchDB)) after the meeting or at beer.
+
+Code of Conduct
+===============
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members.
+_______________________________________________
+announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
