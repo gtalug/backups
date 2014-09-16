@@ -397,3 +397,72 @@ VNIAoMGXExwC6e0nGFdpS4QkktET7jP1
 =xqpg
 -----END PGP SIGNATURE-----
 
+From scruss at gmail.com  Tue Sep 16 03:25:20 2014
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Mon, 15 Sep 2014 23:25:20 -0400
+Subject: [GTALUG] Serial logging: best practice, pitfalls, advice?
+Message-ID: <5417ADA0.2030401@gmail.com>
+
+Hi,
+
+Since there are some really experienced system people here, I'd like to
+ask some advice on designing logging parameters for a serial device. I'd
+like to design the output log so it's most obvious to users what's
+coming out the thing, and so it's easy to stuff readings into a database
+for later analysis. I have complete freedom to redesign the log coming
+out of this embedded device.
+
+Here's what I get from the device:
+
+ 1. Approximately twice a minute, I get a cumulative energy reading and
+    the average power for the last 30s or so
+ 2. About once every five minutes, I get a packet which contains an
+    approximate (?1?C or so) ambient temperature
+
+I can also report:
+
+  * a fairly accurate (at least over the short term) elapsed time stamp
+    in milliseconds - but not real time, as there is no RTC. The time
+    stamp rolls over slightly more than once a month.
+  * the received signal strength in dBm
+
+This device is decoding the RF packets from the BlueLine Power Cost
+Meter that the OPA and local utilities give out to hydro consumers in
+Ontario. It's also the same as the Black & Decker Power Meter. The
+device would allow you to track real-time energy consumption without
+fiddling around with Toronto Hydro's time-of-use website (or, gulp,
+having to mess with Green Button energy files - eek!). As it counts the
+hydro meter's watt-hour pulses, it's pretty accurate.
+
+So - I'm currently logging something like this
+
+    [105874810] Energy: 63856 Wh, Power: 613 W, Temp: 14 C (Rssi -81 dBm)
+
+where the first number's the timestamp.
+
+  * Would this format cause hiccups in typical logging applications?
+  * Is 9600 baud still the gold standard serial speed? I can use pretty
+    much any speed, and there's never much data to transmit.
+
+Any suggestions/questions greatly appreciated.
+
+If anyone has one of these OPA Power Cost Meters, and wants to have a
+play with it, you'll need:
+
+  * a 3.3 V Arduino (or a standard 5V one and some level converters that
+    can do SPI)
+  * an RFM69 433.92 MHz transceiver board (caution: it uses 2 mm pin
+    spacing, so won't fit a standard breadboard)
+  * this code: https://github.com/CapnBry/Powermon433
+
+The output is rough, but I've successfully tracked several days' power
+use so far with far higher resolution than is available from smart meter
+website.
+
+cheers,
+ Stewart
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20140915/af9608c6/attachment.html>
+
