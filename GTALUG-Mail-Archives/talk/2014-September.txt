@@ -466,3 +466,207 @@ cheers,
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20140915/af9608c6/attachment.html>
 
+From davec-b at rogers.com  Tue Sep 16 18:45:17 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Tue, 16 Sep 2014 14:45:17 -0400
+Subject: [GTALUG] Serial logging: best practice, pitfalls, advice?
+In-Reply-To: <5417ADA0.2030401@gmail.com>
+References: <5417ADA0.2030401@gmail.com>
+Message-ID: <5418853D.909@rogers.com>
+
+On 09/15/2014 11:25 PM, Stewart C. Russell wrote:
+> Hi,
+>
+> Since there are some really experienced system people here, I'd like 
+> to ask some advice on designing logging parameters for a serial 
+> device. I'd like to design the output log so it's most obvious to 
+> users what's coming out the thing, and so it's easy to stuff readings 
+> into a database for later analysis. I have complete freedom to 
+> redesign the log coming out of this embedded device.
+>
+> Here's what I get from the device:
+>
+>  1. Approximately twice a minute, I get a cumulative energy reading
+>     and the average power for the last 30s or so
+>  2. About once every five minutes, I get a packet which contains an
+>     approximate (?1?C or so) ambient temperature
+>
+> I can also report:
+>
+>   * a fairly accurate (at least over the short term) elapsed time
+>     stamp in milliseconds - but not real time, as there is no RTC. The
+>     time stamp rolls over slightly more than once a month.
+>   * the received signal strength in dBm
+>
+> This device is decoding the RF packets from the BlueLine Power Cost 
+> Meter that the OPA and local utilities give out to hydro consumers in 
+> Ontario. It's also the same as the Black & Decker Power Meter. The 
+> device would allow you to track real-time energy consumption without 
+> fiddling around with Toronto Hydro's time-of-use website (or, gulp, 
+> having to mess with Green Button energy files - eek!). As it counts 
+> the hydro meter's watt-hour pulses, it's pretty accurate.
+>
+> So - I'm currently logging something like this
+>
+>     [105874810] Energy: 63856 Wh, Power: 613 W, Temp: 14 C (Rssi -81 dBm)
+>
+> where the first number's the timestamp.
+>
+>   * Would this format cause hiccups in typical logging applications?
+>   * Is 9600 baud still the gold standard serial speed? I can use
+>     pretty much any speed, and there's never much data to transmit.
+>
+> Any suggestions/questions greatly appreciated.
+>
+> If anyone has one of these OPA Power Cost Meters, and wants to have a 
+> play with it, you'll need:
+>
+>   * a 3.3 V Arduino (or a standard 5V one and some level converters
+>     that can do SPI)
+>   * an RFM69 433.92 MHz transceiver board (caution: it uses 2 mm pin
+>     spacing, so won't fit a standard breadboard)
+>   * this code: https://github.com/CapnBry/Powermon433
+>
+> The output is rough, but I've successfully tracked several days' power 
+> use so far with far higher resolution than is available from smart 
+> meter website.
+>
+> cheers,
+>  Stewart
+>
+It's just a little redundant: the names end in : the values in , the 
+time is in square brackets, the  rssi in round ones.
+
+To analyze, I need to first convert the closing bracket to a , and the 
+opening to a blank, and the reverse with the round brackets. Then I 
+prune off the keywords, : and units.  At that point I can start the 
+analysis.
+
+I'd be more inclined toward
+Timestamp: 105874810, Energy (Wh): 63856, Power (W): 613, Temp (C): 14,  
+Rssi (dBm):  -81
+or a linear format like
+Timestamp,  Energy (Wh), Power (W), Temp (C),  Rssi (dBm)
+105874810, 63856, 613,  14,  -81
+
+If the arduino has a clock, you might also start with
+*# Date and time, **Tue Sep 16 14:43:01 EDT 2014*
+
+or if the clock was fairly good at start time, compute a date and time 
+for each line from the millisecond counter and the start time.
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20140916/b2aebf0c/attachment.html>
+
+From hugh at mimosa.com  Tue Sep 16 19:04:37 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 16 Sep 2014 15:04:37 -0400 (EDT)
+Subject: [GTALUG] Serial logging: best practice, pitfalls, advice?
+In-Reply-To: <5417ADA0.2030401@gmail.com>
+References: <5417ADA0.2030401@gmail.com>
+Message-ID: <alpine.LRH.2.02.1409161459330.7555@redclaw.mimosa.com>
+
+| From: Stewart C. Russell <scruss at gmail.com>
+
+| Any suggestions/questions greatly appreciated.
+
+I'd be tempted to put some kind of checksum on each record.
+Communications has many ways of screwing up.
+
+I'd encode it in ASCII graphics somehow (or even decimal) so that your
+format remains readable.
+
+From qwerty172 at gmail.com  Tue Sep 16 19:41:34 2014
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Tue, 16 Sep 2014 15:41:34 -0400
+Subject: [GTALUG] Serial logging: best practice, pitfalls, advice?
+In-Reply-To: <5417ADA0.2030401@gmail.com>
+References: <5417ADA0.2030401@gmail.com>
+Message-ID: <CAA3RLT7u5bH0d=VGXiHK+J1tZA=_tv+EShAauyCC32mAmot0nQ@mail.gmail.com>
+
+I would make the logging as easy for a computer program to parse while
+still making it readable.
+
+Bill
+
+
+On Mon, Sep 15, 2014 at 11:25 PM, Stewart C. Russell <scruss at gmail.com>
+wrote:
+
+>  Hi,
+>
+> Since there are some really experienced system people here, I'd like to
+> ask some advice on designing logging parameters for a serial device. I'd
+> like to design the output log so it's most obvious to users what's coming
+> out the thing, and so it's easy to stuff readings into a database for later
+> analysis. I have complete freedom to redesign the log coming out of this
+> embedded device.
+>
+> Here's what I get from the device:
+>
+>    1. Approximately twice a minute, I get a cumulative energy reading and
+>    the average power for the last 30s or so
+>    2. About once every five minutes, I get a packet which contains an
+>    approximate (?1?C or so) ambient temperature
+>
+> I can also report:
+>
+>    - a fairly accurate (at least over the short term) elapsed time stamp
+>    in milliseconds - but not real time, as there is no RTC. The time stamp
+>    rolls over slightly more than once a month.
+>     - the received signal strength in dBm
+>
+> This device is decoding the RF packets from the BlueLine Power Cost Meter
+> that the OPA and local utilities give out to hydro consumers in Ontario.
+> It's also the same as the Black & Decker Power Meter. The device would
+> allow you to track real-time energy consumption without fiddling around
+> with Toronto Hydro's time-of-use website (or, gulp, having to mess with
+> Green Button energy files - eek!). As it counts the hydro meter's watt-hour
+> pulses, it's pretty accurate.
+>
+> So - I'm currently logging something like this
+>
+>     [105874810] Energy: 63856 Wh, Power: 613 W, Temp: 14 C (Rssi -81 dBm)
+>
+> where the first number's the timestamp.
+>
+>    - Would this format cause hiccups in typical logging applications?
+>    - Is 9600 baud still the gold standard serial speed? I can use pretty
+>    much any speed, and there's never much data to transmit.
+>
+> Any suggestions/questions greatly appreciated.
+>  If anyone has one of these OPA Power Cost Meters, and wants to have a
+> play with it, you'll need:
+>
+>    - a 3.3 V Arduino (or a standard 5V one and some level converters that
+>    can do SPI)
+>    - an RFM69 433.92 MHz transceiver board (caution: it uses 2 mm pin
+>    spacing, so won't fit a standard breadboard)
+>    - this code: https://github.com/CapnBry/Powermon433
+>
+> The output is rough, but I've successfully tracked several days' power use
+> so far with far higher resolution than is available from smart meter
+> website.
+>
+> cheers,
+>  Stewart
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20140916/3b0fd253/attachment.html>
+
