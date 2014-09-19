@@ -899,3 +899,68 @@ https://github.com/TooTallNate/ansi.js
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20140917/32f4955b/attachment.html>
 
+From davecramer at gmail.com  Wed Sep 17 12:09:14 2014
+From: davecramer at gmail.com (Dave Cramer)
+Date: Wed, 17 Sep 2014 08:09:14 -0400
+Subject: [GTALUG] Salary levels for DBA's in Toronto area
+Message-ID: <CADK3HHLfhH3NW3hTQPgAV=TN0nMdkzHaJD8i4-1f0BEP6JUtKw@mail.gmail.com>
+
+I have a client looking for an information architect.
+
+Basically a DBA, plus dealing with where and how to store data. Could be
+Hadoop, Mongo, whatever
+
+What would someone in Toronto expect for a Salary ?
+
+
+Dave Cramer
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20140917/16b9341b/attachment.html>
+
+From qwerty172 at gmail.com  Thu Sep 18 13:54:16 2014
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Thu, 18 Sep 2014 09:54:16 -0400
+Subject: [GTALUG] Salary levels for DBA's in Toronto area
+In-Reply-To: <CADK3HHLfhH3NW3hTQPgAV=TN0nMdkzHaJD8i4-1f0BEP6JUtKw@mail.gmail.com>
+References: <CADK3HHLfhH3NW3hTQPgAV=TN0nMdkzHaJD8i4-1f0BEP6JUtKw@mail.gmail.com>
+Message-ID: <CAA3RLT7dqDsWB1uryaO64dMGj2hQYpMvCYXDb4Ot41VS-n7kgQ@mail.gmail.com>
+
+Firstly An information architect is not a DBA.
+
+A good DBA is normally technology specific, ie Oracle DBA, DB2 DBA, etc ...
+and normally goes for $75/hr to $150/hr on contract.
+
+An information architect not only deals with databases, data structures,
+etc ... but information flow as well, ie, networking via secure or unsecure
+lines, ETL rules, Application requirements, data schemas, hardware sizing
+etc...
+
+A good information architect will be going for about $150/hr.
+
+Bill
+
+
+On Wed, Sep 17, 2014 at 8:09 AM, Dave Cramer <davecramer at gmail.com> wrote:
+
+> I have a client looking for an information architect.
+>
+> Basically a DBA, plus dealing with where and how to store data. Could be
+> Hadoop, Mongo, whatever
+>
+> What would someone in Toronto expect for a Salary ?
+>
+>
+> Dave Cramer
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20140918/c966d0c0/attachment.html>
+
