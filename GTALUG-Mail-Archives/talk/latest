@@ -964,3 +964,81 @@ On Wed, Sep 17, 2014 at 8:09 AM, Dave Cramer <davecramer at gmail.com> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20140918/c966d0c0/attachment.html>
 
+From cbbrowne at gmail.com  Sun Sep 21 16:06:22 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Sun, 21 Sep 2014 12:06:22 -0400
+Subject: [GTALUG] Intel's sorta RPi entry
+In-Reply-To: <CAFNqd5X=wOx-Od+bPJ9OAtZahFRaQJao4LLr52YB+oF4+3xtkg@mail.gmail.com>
+References: <CAFNqd5VTB9PZR9zf+0s1nRQbyL_mFvyrpNsEoxSmKWjn8m+FQQ@mail.gmail.com>
+ <CAFNqd5X=wOx-Od+bPJ9OAtZahFRaQJao4LLr52YB+oF4+3xtkg@mail.gmail.com>
+Message-ID: <CAFNqd5XBcNf-pHuRTm5+tvW1A61crMvQ-Lgoxp7W2=Lp=1fW-Q@mail.gmail.com>
+
+https://www.sparkfun.com/products/13024
+
+Bits of both more and less than the Raspberry Pi.
+
+Smaller, adds wifi and Bluetooth; more RAM and storage, chews less power.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20140921/8576e379/attachment.html>
+
+From hugh at mimosa.com  Sun Sep 21 17:00:39 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 21 Sep 2014 13:00:39 -0400 (EDT)
+Subject: [GTALUG] Intel's sorta RPi entry
+In-Reply-To: <CAFNqd5XBcNf-pHuRTm5+tvW1A61crMvQ-Lgoxp7W2=Lp=1fW-Q@mail.gmail.com>
+References: <CAFNqd5VTB9PZR9zf+0s1nRQbyL_mFvyrpNsEoxSmKWjn8m+FQQ@mail.gmail.com>
+ <CAFNqd5X=wOx-Od+bPJ9OAtZahFRaQJao4LLr52YB+oF4+3xtkg@mail.gmail.com>
+ <CAFNqd5XBcNf-pHuRTm5+tvW1A61crMvQ-Lgoxp7W2=Lp=1fW-Q@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1409211256140.22132@redclaw.mimosa.com>
+
+| From: Christopher Browne <cbbrowne at gmail.com>
+
+| https://www.sparkfun.com/products/13024
+| 
+| Bits of both more and less than the Raspberry Pi.
+| 
+| Smaller, adds wifi and Bluetooth; more RAM and storage, chews less power.
+
+No display output makes it seriously different.
+
+BTW your message had HTML.
+
+I note with dismay that the new list no longer automatically tags each
+posting with
+
+	TLUG requests: Linux topics, No HTML, wrap text below 80 columns
+
+From scruss at gmail.com  Sun Sep 21 21:15:27 2014
+From: scruss at gmail.com (Stewart Russell)
+Date: Sun, 21 Sep 2014 17:15:27 -0400
+Subject: [GTALUG] Intel's sorta RPi entry
+In-Reply-To: <alpine.LRH.2.02.1409211256140.22132@redclaw.mimosa.com>
+References: <CAFNqd5VTB9PZR9zf+0s1nRQbyL_mFvyrpNsEoxSmKWjn8m+FQQ@mail.gmail.com>
+ <CAFNqd5X=wOx-Od+bPJ9OAtZahFRaQJao4LLr52YB+oF4+3xtkg@mail.gmail.com>
+ <CAFNqd5XBcNf-pHuRTm5+tvW1A61crMvQ-Lgoxp7W2=Lp=1fW-Q@mail.gmail.com>
+ <alpine.LRH.2.02.1409211256140.22132@redclaw.mimosa.com>
+Message-ID: <CAAsTreAQT=j6bmoADXf2Bq+E0fQoUM1abF7JqLWJ-wa_6VhH7A@mail.gmail.com>
+
+On 21 Sep 2014 12:00, "D. Hugh Redelmeier" <hugh at mimosa.com> wrote:
+>
+> | From: Christopher Browne <cbbrowne at gmail.com>
+>
+> | https://www.sparkfun.com/products/13024
+> No display output makes it seriously different.
+
+Plus it seems to need add-on blocks to make it usable. The discovery kit is
+over $100 and is back-ordered for weeks.
+
+> BTW your message had HTML.
+
+It's almost impossible to write a non-HTML e-mail on mobile these days. I'm
+kind of glad the note has gone. Loathe it or endure it, rich text MIME
+e-mail won years ago.
+
+Cheers
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20140921/7c5c35a1/attachment.html>
+
