@@ -1,0 +1,29 @@
+<VirtualHost *:80>
+	ServerName gtalug.org
+	
+	ServerAlias www.gtalug.org tlug.ss.org gtalug.info www.gtalug.info
+	
+	DocumentRoot /srv/www/org_gtalug_www/html
+	
+	<Directory /srv/www/org_gtalug_www/html/>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride None
+		Order allow,deny
+		allow from all
+	</Directory>
+	
+	#Alias /awstats/ /var/cache/awstats/gtalug.org/
+	#Alias /awstats-icon/ /usr/share/awstats/icon/
+	#
+	#<Directory /var/cache/awstats/>
+	#	Options -Indexes
+	#	AllowOverride None
+	#	DirectoryIndex index.en.html
+	#	Order allow,deny
+	#	Allow from all
+	#</Directory>
+	
+	
+	ErrorLog /srv/www/org_gtalug_www/logs/error.log
+	CustomLog /srv/www/org_gtalug_www/logs/access.log combined
+</VirtualHost>

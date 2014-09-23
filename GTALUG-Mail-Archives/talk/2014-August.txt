@@ -616,3 +616,324 @@ Message-ID: <41ac01cfb41a$11d20680$35761380$@home.kallies.ca>
 
 
 
+From myles at monkeyinyoursoul.com  Mon Aug 18 17:21:12 2014
+From: myles at monkeyinyoursoul.com (Myles Braithwaite)
+Date: Mon, 18 Aug 2014 13:21:12 -0400
+Subject: [GTALUG] Testing from a "+" email address.
+Message-ID: <CAB1Jgx6ovtJU14KLw=XFdo0_6oHSPAzkHDCXYoQre2oUnCWcqA@mail.gmail.com>
+
+I want to see if <john+gtalug-talk at example.org> would work with
+mailman. Or would the person on the other end have to register with
+both email addresses.
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e/miys
+
+From gilesorr at gmail.com  Mon Aug 18 17:33:19 2014
+From: gilesorr at gmail.com (Giles Orr)
+Date: Mon, 18 Aug 2014 13:33:19 -0400
+Subject: [GTALUG] Testing from a "+" email address.
+In-Reply-To: <CAB1Jgx6ovtJU14KLw=XFdo0_6oHSPAzkHDCXYoQre2oUnCWcqA@mail.gmail.com>
+References: <CAB1Jgx6ovtJU14KLw=XFdo0_6oHSPAzkHDCXYoQre2oUnCWcqA@mail.gmail.com>
+Message-ID: <CAEnxSC40h0xGFRQ4yS5g4Ux2WP-X1qzEX90SmMzUrBr2cSuvqQ@mail.gmail.com>
+
+On 18 August 2014 13:21, Myles Braithwaite <myles at monkeyinyoursoul.com>
+wrote:
+
+> I want to see if <john+gtalug-talk at example.org> would work with
+> mailman. Or would the person on the other end have to register with
+> both email addresses.
+>
+> --
+> Myles Braithwaite | http://mylesb.ca/e/miys
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+I registered with a "+" in my gmail address earlier today.  It appears to
+be working fine as I clearly received your message ...
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20140818/68b77a86/attachment.html>
+
+From gilesorr at gmail.com  Mon Aug 18 17:40:18 2014
+From: gilesorr at gmail.com (Giles Orr)
+Date: Mon, 18 Aug 2014 13:40:18 -0400
+Subject: [GTALUG] Fwd: Your message to talk awaits moderator approval
+In-Reply-To: <mailman.30.1408383202.26321.talk@gtalug.org>
+References: <mailman.30.1408383202.26321.talk@gtalug.org>
+Message-ID: <CAEnxSC4M9j65F4ufRL+nVv0OtAceNcTvPshu=Zt4wr-6etzYqA@mail.gmail.com>
+
+Apparently a distinction should be made between receiving and sending: I
+got Myles' message fine, but when I sent my reply I received the following
+message because I responded without the "+etc" in my email name.  I'm not
+aware of a way (although it may exist) to tell gmail "always change my
+sending email address for this mailing list."  A better solution might be
+for the list to automatically parse addresses and say "if
+name+blah at example.com is subscribed, name at example.com can send to the
+list.  But that is probably tricky too ...
+
+---------- Forwarded message ----------
+From: <talk-owner at gtalug.org>
+Date: 18 August 2014 13:33
+Subject: Your message to talk awaits moderator approval
+To: gilesorr at gmail.com
+
+
+Your mail to 'talk' with the subject
+
+    Re: [GTALUG] Testing from a "+" email address.
+
+Is being held until the list moderator can review it for approval.
+
+The reason it is being held:
+
+    Post by non-member to a members-only list
+
+Either the message will get posted to the list, or you will receive
+notification of the moderator's decision.  If you would like to cancel
+this posting, please visit the following URL:
+
+    [SNIP]
+<http://gtalug.org/mailman/confirm/talk/25774a80e3843c27929141ba66627081d04fd043>
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20140818/938f4d98/attachment.html>
+
+From me at mylesbraithwaite.com  Mon Aug 18 17:47:01 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 18 Aug 2014 13:47:01 -0400
+Subject: [GTALUG] Testing from a "+" email address.
+In-Reply-To: <CAEnxSC40h0xGFRQ4yS5g4Ux2WP-X1qzEX90SmMzUrBr2cSuvqQ@mail.gmail.com>
+References: <CAB1Jgx6ovtJU14KLw=XFdo0_6oHSPAzkHDCXYoQre2oUnCWcqA@mail.gmail.com>
+ <CAEnxSC40h0xGFRQ4yS5g4Ux2WP-X1qzEX90SmMzUrBr2cSuvqQ@mail.gmail.com>
+Message-ID: <CA+hskZOrNNrhocaGiP16nCyBq=84fjXW=R=FAAYimT0Vae79xQ@mail.gmail.com>
+
+On Mon, Aug 18, 2014 at 1:33 PM, Giles Orr <gilesorr at gmail.com> wrote:
+> I registered with a "+" in my gmail address earlier today.  It appears to be
+> working fine as I clearly received your message ...
+
+The problem is with sending the email. If you setup with
+<alex+gtalug at example.org> you have to send using that as while or get
+caught in the moderation and a moderator has to approve your second
+email for sending only (not receiving) and will not show up in the
+membership area of mailman.
+
+The issue I'm trying to figure out is in the scenario where an email
+address get hijacked and starts sending mail to the list. How can we
+modorate that email if it's not in the membership area of mailman.
+
+Working on it over here: <https://github.com/gtalug/infrastructure/issues/30>.
+
+From jamon.camisso at utoronto.ca  Mon Aug 18 18:05:12 2014
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Mon, 18 Aug 2014 14:05:12 -0400
+Subject: [GTALUG] Testing from a "+" email address.
+In-Reply-To: <CA+hskZOrNNrhocaGiP16nCyBq=84fjXW=R=FAAYimT0Vae79xQ@mail.gmail.com>
+References: <CAB1Jgx6ovtJU14KLw=XFdo0_6oHSPAzkHDCXYoQre2oUnCWcqA@mail.gmail.com>
+ <CAEnxSC40h0xGFRQ4yS5g4Ux2WP-X1qzEX90SmMzUrBr2cSuvqQ@mail.gmail.com>
+ <CA+hskZOrNNrhocaGiP16nCyBq=84fjXW=R=FAAYimT0Vae79xQ@mail.gmail.com>
+Message-ID: <53F24058.1090204@utoronto.ca>
+
+On 2014-08-18 1:47 PM, Myles Braithwaite wrote:
+> On Mon, Aug 18, 2014 at 1:33 PM, Giles Orr <gilesorr at gmail.com> wrote:
+>> I registered with a "+" in my gmail address earlier today.  It appears to be
+>> working fine as I clearly received your message ...
+> 
+> The problem is with sending the email. If you setup with
+> <alex+gtalug at example.org> you have to send using that as while or get
+> caught in the moderation and a moderator has to approve your second
+> email for sending only (not receiving) and will not show up in the
+> membership area of mailman.
+> 
+> The issue I'm trying to figure out is in the scenario where an email
+> address get hijacked and starts sending mail to the list. How can we
+> modorate that email if it's not in the membership area of mailman.
+> 
+> Working on it over here: <https://github.com/gtalug/infrastructure/issues/30>.
+
+For a use case like this where there are a few thousand subscribers, is
+it worth supporting sub-address sending, where it has not been supported
+since the inception of the list (at least I think this is the case).
+
+Perhaps limit subscriber addresses using ban_list and then it is a
+non-issue.
+
+Admittedly, I like sub-addressing and use it everywhere. An option to
+make that work would be to use an umbrella list with
+accept_these_nonmembers. The process would be something like:
+
+user+subaddress at domain.com signs up to subaddress specific list, with
+their subaddress.
+
+user at domain.com signs up to top level list with normal address.
+
+Now, with accept_these_nonmembers including the subaddress list of
+subscribers, the top level list will accept a message from
+user+subaddress at domain.com.
+
+I'm not sure how to control duplicate messages, or what the gain is here
+since the user could just subscribe to the top level list with their
+subaddress, but perhaps there's some moderation bits that could be set
+to limit delivery?
+
+Just a thought, Jamon
+
+
+From gilesorr+tlugmailman at gmail.com  Mon Aug 18 18:56:34 2014
+From: gilesorr+tlugmailman at gmail.com (Giles Orr)
+Date: Mon, 18 Aug 2014 14:56:34 -0400
+Subject: [GTALUG] Testing from a "+" email address.
+In-Reply-To: <53F24058.1090204@utoronto.ca>
+References: <CAB1Jgx6ovtJU14KLw=XFdo0_6oHSPAzkHDCXYoQre2oUnCWcqA@mail.gmail.com>
+ <CAEnxSC40h0xGFRQ4yS5g4Ux2WP-X1qzEX90SmMzUrBr2cSuvqQ@mail.gmail.com>
+ <CA+hskZOrNNrhocaGiP16nCyBq=84fjXW=R=FAAYimT0Vae79xQ@mail.gmail.com>
+ <53F24058.1090204@utoronto.ca>
+Message-ID: <CAEnxSC56HxWkpcgLjB6v4ttVfzmPUY4oVimgYDzc3UbR=Y359A@mail.gmail.com>
+
+This can be handled in gmail:
+
+https://productforums.google.com/forum/#!topic/gmail/Jifa7JPNH_I
+
+(Follow the first answer link).  Essentially you have to set up the
+name+subaddress at gmail.com as another email address (even though, strictly
+speaking, it's not), and then every time you email the list you have to
+look for "From" (next to CC and BCC) and change to the appropriate
+subaddress.  Kind of a PITA, but I guess it'll have to do as gmail only has
+incoming email filters, not outgoing ones (that I can see).
+
+
+On 18 August 2014 14:05, Jamon Camisso <jamon.camisso at utoronto.ca> wrote:
+
+> On 2014-08-18 1:47 PM, Myles Braithwaite wrote:
+> > On Mon, Aug 18, 2014 at 1:33 PM, Giles Orr <gilesorr at gmail.com> wrote:
+> >> I registered with a "+" in my gmail address earlier today.  It appears
+> to be
+> >> working fine as I clearly received your message ...
+> >
+> > The problem is with sending the email. If you setup with
+> > <alex+gtalug at example.org> you have to send using that as while or get
+> > caught in the moderation and a moderator has to approve your second
+> > email for sending only (not receiving) and will not show up in the
+> > membership area of mailman.
+> >
+> > The issue I'm trying to figure out is in the scenario where an email
+> > address get hijacked and starts sending mail to the list. How can we
+> > modorate that email if it's not in the membership area of mailman.
+> >
+> > Working on it over here: <
+> https://github.com/gtalug/infrastructure/issues/30>.
+>
+> For a use case like this where there are a few thousand subscribers, is
+> it worth supporting sub-address sending, where it has not been supported
+> since the inception of the list (at least I think this is the case).
+>
+> Perhaps limit subscriber addresses using ban_list and then it is a
+> non-issue.
+>
+> Admittedly, I like sub-addressing and use it everywhere. An option to
+> make that work would be to use an umbrella list with
+> accept_these_nonmembers. The process would be something like:
+>
+> user+subaddress at domain.com signs up to subaddress specific list, with
+> their subaddress.
+>
+> user at domain.com signs up to top level list with normal address.
+>
+> Now, with accept_these_nonmembers including the subaddress list of
+> subscribers, the top level list will accept a message from
+> user+subaddress at domain.com.
+>
+> I'm not sure how to control duplicate messages, or what the gain is here
+> since the user could just subscribe to the top level list with their
+> subaddress, but perhaps there's some moderation bits that could be set
+> to limit delivery?
+>
+> Just a thought, Jamon
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20140818/542bfc78/attachment.html>
+
+From cbbrowne at gmail.com  Tue Aug 26 15:42:48 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 26 Aug 2014 11:42:48 -0400
+Subject: [GTALUG] An essay griping about PGP
+Message-ID: <CAFNqd5WtBuSJtMD3XJqd6_NCWf3Ga=kCguvTy5e5TbpKqq5XWw@mail.gmail.com>
+
+I rather liked the line about "Cryptography that post-dates the Fresh
+Prince."  :-)
+http://blog.cryptographyengineering.com/2014/08/whats-matter-with-pgp.html
+
+It's also definitely onto something with the line:
+"The TL;DR is that 'trust' means different things to you than it does to
+me."
+--
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20140826/6ee0e2e0/attachment.html>
+
+From scruss at gmail.com  Wed Aug 27 14:07:43 2014
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Wed, 27 Aug 2014 10:07:43 -0400
+Subject: [GTALUG] An essay griping about PGP
+In-Reply-To: <CAFNqd5WtBuSJtMD3XJqd6_NCWf3Ga=kCguvTy5e5TbpKqq5XWw@mail.gmail.com>
+References: <CAFNqd5WtBuSJtMD3XJqd6_NCWf3Ga=kCguvTy5e5TbpKqq5XWw@mail.gmail.com>
+Message-ID: <53FDE62F.1080005@gmail.com>
+
+On 14-08-26 11:42 AM, Christopher Browne wrote:
+> I rather liked the line about "Cryptography that post-dates the Fresh
+> Prince."  :-)
+> http://blog.cryptographyengineering.com/2014/08/whats-matter-with-pgp.html
+
+Though there are many rebuttals to that article, I agree with this one most:
+?What's The Matter With PGP??
+<https://pthree.org/2014/08/18/whats-the-matter-with-pgp/>
+
+(via the rather thoughtful discussion on MetaFilter:
+<https://www.metafilter.com/142215/Whats-the-matter-with-PGP>)
+
+And I'm really not sure why anyone at Keybase would think that this was
+the way to do crypto at all:
+
+    /Keybase.io is also a Keybase client, however certain crypto actions
+    (signing and decrypting) are limited to users who _store
+    client-encrypted copies of their private keys on the server_, an
+    optional feature we didn't mention above.  On the website, all
+    crypto is performed in JavaScript, in your browser. Some people have
+    strong feelings about this, for good reason./ <https://keybase.io/>
+
+If someone else has your private key, it's not very private.
+
+So in summary:
+
+ 1. PKI is hard, and even harder to get people to care about
+ 2. UX for PGP front-ends is generally abysmal (Enigmail gets all 0_o if
+    you have the audacity to use MIME, f'rinstance) ? perhaps something
+    to do with lack of motivated developers due to [1]
+ 3. E-mail leaks meta-data, which can be used to glean useful
+    intelligence without knowing the message.
+
+cheers,
+ Stewart
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20140827/36cbe442/attachment.html>
+
