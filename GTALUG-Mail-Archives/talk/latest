@@ -1,0 +1,39 @@
+From peter.king at utoronto.ca  Wed Oct  1 00:36:22 2014
+From: peter.king at utoronto.ca (Peter King)
+Date: Tue, 30 Sep 2014 20:36:22 -0400
+Subject: [GTALUG] Xrandr problem
+Message-ID: <20141001003622.GA17368@amber>
+
+I have an annoying problem.  I run a two-monitor setup with
+xrandr, one monitor in portrait and the other in landscape
+mode.  I set xrandr in the .xinitrc file, and it works well.
+The only problem is that when I quit the window manager (in
+this case goomwwm), the screen goes to black and I'm pretty
+sure I never return to the console (blind typing produces no
+results).  The computer itself keeps running; I can ssh in.
+Any advice or suggestions?  I can't quite figure how to turn
+xrandr *off* once it's been set in .xinitrc.  Oh, and if I
+boot without xrandr, I go straight back to the console when
+I quit X (as it should).
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		    (416)-978-4951 ofc
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 181 bytes
+Desc: Digital signature
+URL: <http://gtalug.org/pipermail/talk/attachments/20140930/f8bc31bb/attachment.sig>
+
