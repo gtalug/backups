@@ -431,3 +431,438 @@ Thanks,
 
 
 
+From tisdall at gmail.com  Thu Oct  2 13:49:58 2014
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Thu, 2 Oct 2014 09:49:58 -0400
+Subject: [GTALUG] Linux hosting
+Message-ID: <CAGxYWpZrZNd2CyETq1XihMYZsdcOv-fejTOOPR=qdyJC2Ux+ag@mail.gmail.com>
+
+I just wondering what people's current experiences are with cheap Linux web
+hosting.  Right now I'm using vps.net and while they're cheap it's not
+uncommon to have a 10hr downtime (which I'm in the middle of this
+morning).  They don't seem to have any sort of basic monitoring of their
+nodes to automatically be notified when a system is down (at least not on
+an individual node level), they rely on me contacting them.
+
+Has anyone had experience with digitalocean or linode for fairly long term
+hosting?  I've only used digitalocean for occasional VPN use but have had
+no issues.
+
+-Tim
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141002/faf2370e/attachment.html>
+
+From stephen-d at rogers.com  Thu Oct  2 14:06:02 2014
+From: stephen-d at rogers.com (Stephen)
+Date: Thu, 02 Oct 2014 10:06:02 -0400
+Subject: [GTALUG] Linux hosting
+In-Reply-To: <CAGxYWpZrZNd2CyETq1XihMYZsdcOv-fejTOOPR=qdyJC2Ux+ag@mail.gmail.com>
+References: <CAGxYWpZrZNd2CyETq1XihMYZsdcOv-fejTOOPR=qdyJC2Ux+ag@mail.gmail.com>
+Message-ID: <542D5BCA.1050408@rogers.com>
+
+On 14-10-02 09:49 AM, Tim Tisdall wrote:
+> I just wondering what people's current experiences are with cheap Linux
+> web hosting.  Right now I'm using vps.net <http://vps.net> and while
+> they're cheap it's not uncommon to have a 10hr downtime (which I'm in
+> the middle of this morning).  They don't seem to have any sort of basic
+> monitoring of their nodes to automatically be notified when a system is
+> down (at least not on an individual node level), they rely on me
+> contacting them.
+>
+> Has anyone had experience with digitalocean or linode for fairly long
+> term hosting?  I've only used digitalocean for occasional VPN use but
+> have had no issues.
+
+I have used HostPapa for a number of years and I am quite happy with them.
+
+Never any down time that I noticed. And they added a PHP add-on that I 
+requested. That impressed me on a shared host.
+
+
+-- 
+Stephen
+
+From me at mylesbraithwaite.com  Thu Oct  2 14:10:07 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 2 Oct 2014 10:10:07 -0400
+Subject: [GTALUG] Linux hosting
+In-Reply-To: <CAGxYWpZrZNd2CyETq1XihMYZsdcOv-fejTOOPR=qdyJC2Ux+ag@mail.gmail.com>
+References: <CAGxYWpZrZNd2CyETq1XihMYZsdcOv-fejTOOPR=qdyJC2Ux+ag@mail.gmail.com>
+Message-ID: <CA+hskZPf8CX8nC8QJ3sOA=8zLnmmB9mo=oH_xgRmmDZ9_qB18Q@mail.gmail.com>
+
+On Thu, Oct 2, 2014 at 9:49 AM, Tim Tisdall <tisdall at gmail.com> wrote:
+> Has anyone had experience with digitalocean or linode for fairly long term
+> hosting?  I've only used digitalocean for occasional VPN use but have had no
+> issues.
+
+I have been using Linode for ~15 years and can't say anything bad
+about them. They are great. But there have been a few rough patches
+the in the past three years (the source code for their VPS management
+console got leaked on the internet).
+
+I'm a little scared of DigitalOcean after reading about them on Hacker
+News. Apparently when the server has a hardware failure it's protocol
+for them to delete all VPS on the server and make everyone start from
+scratch (they do provided a backup services but it cost extra money).
+I run a small dokku instance on DO and it has never happened to me.
+
+From thoriumbr at gmail.com  Thu Oct  2 14:36:54 2014
+From: thoriumbr at gmail.com (Mauro Souza)
+Date: Thu, 2 Oct 2014 11:36:54 -0300
+Subject: [GTALUG] Linux hosting
+In-Reply-To: <CA+hskZPf8CX8nC8QJ3sOA=8zLnmmB9mo=oH_xgRmmDZ9_qB18Q@mail.gmail.com>
+References: <CAGxYWpZrZNd2CyETq1XihMYZsdcOv-fejTOOPR=qdyJC2Ux+ag@mail.gmail.com>
+ <CA+hskZPf8CX8nC8QJ3sOA=8zLnmmB9mo=oH_xgRmmDZ9_qB18Q@mail.gmail.com>
+Message-ID: <CAEZ_B6MCwVerk-ZX-PRTvLTwzc2ogkVdcxsqQie=EOTvdtV_6g@mail.gmail.com>
+
+I am using frantech.ca for more than a year, and only got a couple hours of
+downtime. One day a RAID disk died, my server went offline for 4 hours, but
+I haven't lost any data.
+
+And they are cheap. I managed to get a 256MB KVM VPS 250GB Dedicated Space
+2500GB Transfer for under USD 6/mo.
+
+If anyone is interested, signing in using
+https://my.frantech.ca/aff.php?aff=626 will give me one free month of
+hosting.
+
+Mauro
+http://mauro.limeiratem.com - registered Linux User: 294521
+Scripture is both history, and a love letter from God.
+
+2014-10-02 11:10 GMT-03:00 Myles Braithwaite <me at mylesbraithwaite.com>:
+
+> On Thu, Oct 2, 2014 at 9:49 AM, Tim Tisdall <tisdall at gmail.com> wrote:
+> > Has anyone had experience with digitalocean or linode for fairly long
+> term
+> > hosting?  I've only used digitalocean for occasional VPN use but have
+> had no
+> > issues.
+>
+> I have been using Linode for ~15 years and can't say anything bad
+> about them. They are great. But there have been a few rough patches
+> the in the past three years (the source code for their VPS management
+> console got leaked on the internet).
+>
+> I'm a little scared of DigitalOcean after reading about them on Hacker
+> News. Apparently when the server has a hardware failure it's protocol
+> for them to delete all VPS on the server and make everyone start from
+> scratch (they do provided a backup services but it cost extra money).
+> I run a small dokku instance on DO and it has never happened to me.
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141002/f8143b21/attachment.html>
+
+From tisdall at gmail.com  Thu Oct  2 14:50:30 2014
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Thu, 2 Oct 2014 10:50:30 -0400
+Subject: [GTALUG] Linux hosting
+In-Reply-To: <CAEZ_B6MCwVerk-ZX-PRTvLTwzc2ogkVdcxsqQie=EOTvdtV_6g@mail.gmail.com>
+References: <CAGxYWpZrZNd2CyETq1XihMYZsdcOv-fejTOOPR=qdyJC2Ux+ag@mail.gmail.com>
+ <CA+hskZPf8CX8nC8QJ3sOA=8zLnmmB9mo=oH_xgRmmDZ9_qB18Q@mail.gmail.com>
+ <CAEZ_B6MCwVerk-ZX-PRTvLTwzc2ogkVdcxsqQie=EOTvdtV_6g@mail.gmail.com>
+Message-ID: <CAGxYWpaQ=Y7Bg7vNoMjQ3hZcdCMZe-8=fzmGTuN=-nSCcRTt1g@mail.gmail.com>
+
+Wow, that's some pretty good deals!  I have a couple projects that need
+lots of storage space but memory and cpu are secondary.  It seems their
+250GB unit is $7/mo now, but that's still amazing.
+
+On Thu, Oct 2, 2014 at 10:36 AM, Mauro Souza <thoriumbr at gmail.com> wrote:
+
+> I am using frantech.ca for more than a year, and only got a couple hours
+> of downtime. One day a RAID disk died, my server went offline for 4 hours,
+> but I haven't lost any data.
+>
+> And they are cheap. I managed to get a 256MB KVM VPS 250GB Dedicated Space
+> 2500GB Transfer for under USD 6/mo.
+>
+> If anyone is interested, signing in using
+> https://my.frantech.ca/aff.php?aff=626 will give me one free month of
+> hosting.
+>
+> Mauro
+> http://mauro.limeiratem.com - registered Linux User: 294521
+> Scripture is both history, and a love letter from God.
+>
+> 2014-10-02 11:10 GMT-03:00 Myles Braithwaite <me at mylesbraithwaite.com>:
+>
+> On Thu, Oct 2, 2014 at 9:49 AM, Tim Tisdall <tisdall at gmail.com> wrote:
+>> > Has anyone had experience with digitalocean or linode for fairly long
+>> term
+>> > hosting?  I've only used digitalocean for occasional VPN use but have
+>> had no
+>> > issues.
+>>
+>> I have been using Linode for ~15 years and can't say anything bad
+>> about them. They are great. But there have been a few rough patches
+>> the in the past three years (the source code for their VPS management
+>> console got leaked on the internet).
+>>
+>> I'm a little scared of DigitalOcean after reading about them on Hacker
+>> News. Apparently when the server has a hardware failure it's protocol
+>> for them to delete all VPS on the server and make everyone start from
+>> scratch (they do provided a backup services but it cost extra money).
+>> I run a small dokku instance on DO and it has never happened to me.
+>>
+>>
+>> ---
+>> GTALUG Talk Mailing List - talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141002/33e77f48/attachment.html>
+
+From tisdall at gmail.com  Thu Oct  2 14:54:43 2014
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Thu, 2 Oct 2014 10:54:43 -0400
+Subject: [GTALUG] Linux hosting
+In-Reply-To: <542D5BCA.1050408@rogers.com>
+References: <CAGxYWpZrZNd2CyETq1XihMYZsdcOv-fejTOOPR=qdyJC2Ux+ag@mail.gmail.com>
+ <542D5BCA.1050408@rogers.com>
+Message-ID: <CAGxYWpZz9KW-OC9brq9qj0arbMQY=xyZbUTjapVOK2sn_u3p2g@mail.gmail.com>
+
+On Thu, Oct 2, 2014 at 10:06 AM, Stephen <stephen-d at rogers.com> wrote:
+>
+> I have used HostPapa for a number of years and I am quite happy with them.
+>
+> Never any down time that I noticed. And they added a PHP add-on that I
+> requested. That impressed me on a shared host.
+
+
+I guess I should have specified that I was looking for non-shared hosting.
+I usually need to install my own things that aren't available in shared
+hosting environments.  I also like the freedom of being able to install and
+run whatever I like, especially services that run in the background.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141002/6b0de57a/attachment.html>
+
+From thoriumbr at gmail.com  Thu Oct  2 14:54:34 2014
+From: thoriumbr at gmail.com (Mauro Souza)
+Date: Thu, 2 Oct 2014 11:54:34 -0300
+Subject: [GTALUG] Linux hosting
+In-Reply-To: <CAGxYWpaQ=Y7Bg7vNoMjQ3hZcdCMZe-8=fzmGTuN=-nSCcRTt1g@mail.gmail.com>
+References: <CAGxYWpZrZNd2CyETq1XihMYZsdcOv-fejTOOPR=qdyJC2Ux+ag@mail.gmail.com>
+ <CA+hskZPf8CX8nC8QJ3sOA=8zLnmmB9mo=oH_xgRmmDZ9_qB18Q@mail.gmail.com>
+ <CAEZ_B6MCwVerk-ZX-PRTvLTwzc2ogkVdcxsqQie=EOTvdtV_6g@mail.gmail.com>
+ <CAGxYWpaQ=Y7Bg7vNoMjQ3hZcdCMZe-8=fzmGTuN=-nSCcRTt1g@mail.gmail.com>
+Message-ID: <CAEZ_B6NSh7mLaZrPD=jnkHhEqB_5nkwLde1FnkWzJw+g=BYgZA@mail.gmail.com>
+
+If you pay one year in advance you will pay $5.36/mo. That's what I did...
+
+Now I have my own private 250GB Dropbox (owncloud) paying a few dollars...
+And my own VPN provider, seedbox, testing webserver, DNS server... it's fun!
+
+Mauro
+http://mauro.limeiratem.com - registered Linux User: 294521
+Scripture is both history, and a love letter from God.
+
+2014-10-02 11:50 GMT-03:00 Tim Tisdall <tisdall at gmail.com>:
+
+> Wow, that's some pretty good deals!  I have a couple projects that need
+> lots of storage space but memory and cpu are secondary.  It seems their
+> 250GB unit is $7/mo now, but that's still amazing.
+>
+> On Thu, Oct 2, 2014 at 10:36 AM, Mauro Souza <thoriumbr at gmail.com> wrote:
+>
+>> I am using frantech.ca for more than a year, and only got a couple hours
+>> of downtime. One day a RAID disk died, my server went offline for 4 hours,
+>> but I haven't lost any data.
+>>
+>> And they are cheap. I managed to get a 256MB KVM VPS 250GB Dedicated
+>> Space 2500GB Transfer for under USD 6/mo.
+>>
+>> If anyone is interested, signing in using
+>> https://my.frantech.ca/aff.php?aff=626 will give me one free month of
+>> hosting.
+>>
+>> Mauro
+>> http://mauro.limeiratem.com - registered Linux User: 294521
+>> Scripture is both history, and a love letter from God.
+>>
+>> 2014-10-02 11:10 GMT-03:00 Myles Braithwaite <me at mylesbraithwaite.com>:
+>>
+>> On Thu, Oct 2, 2014 at 9:49 AM, Tim Tisdall <tisdall at gmail.com> wrote:
+>>> > Has anyone had experience with digitalocean or linode for fairly long
+>>> term
+>>> > hosting?  I've only used digitalocean for occasional VPN use but have
+>>> had no
+>>> > issues.
+>>>
+>>> I have been using Linode for ~15 years and can't say anything bad
+>>> about them. They are great. But there have been a few rough patches
+>>> the in the past three years (the source code for their VPS management
+>>> console got leaked on the internet).
+>>>
+>>> I'm a little scared of DigitalOcean after reading about them on Hacker
+>>> News. Apparently when the server has a hardware failure it's protocol
+>>> for them to delete all VPS on the server and make everyone start from
+>>> scratch (they do provided a backup services but it cost extra money).
+>>> I run a small dokku instance on DO and it has never happened to me.
+>>>
+>>>
+>>> ---
+>>> GTALUG Talk Mailing List - talk at gtalug.org
+>>> http://gtalug.org/mailman/listinfo/talk
+>>>
+>>
+>>
+>>
+>>
+>> ---
+>> GTALUG Talk Mailing List - talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141002/f4b5f2e7/attachment.html>
+
+From thoriumbr at gmail.com  Thu Oct  2 14:58:28 2014
+From: thoriumbr at gmail.com (Mauro Souza)
+Date: Thu, 2 Oct 2014 11:58:28 -0300
+Subject: [GTALUG] Linux hosting
+In-Reply-To: <CAGxYWpZz9KW-OC9brq9qj0arbMQY=xyZbUTjapVOK2sn_u3p2g@mail.gmail.com>
+References: <CAGxYWpZrZNd2CyETq1XihMYZsdcOv-fejTOOPR=qdyJC2Ux+ag@mail.gmail.com>
+ <542D5BCA.1050408@rogers.com>
+ <CAGxYWpZz9KW-OC9brq9qj0arbMQY=xyZbUTjapVOK2sn_u3p2g@mail.gmail.com>
+Message-ID: <CAEZ_B6NxDHNhO-N9M+FtVayf+KUjpNZ3vw6Qq3rx9u62j3e8jQ@mail.gmail.com>
+
+This is a VPS. You own the box. You can install whatever OS you want
+(Linux, a couple BSDs, even WIndows), wherever you want. The machine is
+yours. Even if you kill it (rm -rf / or dd if/dev/zero of=/dev/sda), you
+can go to the console and reinstall from scratch.
+
+Mauro
+http://mauro.limeiratem.com - registered Linux User: 294521
+Scripture is both history, and a love letter from God.
+
+2014-10-02 11:54 GMT-03:00 Tim Tisdall <tisdall at gmail.com>:
+
+> On Thu, Oct 2, 2014 at 10:06 AM, Stephen <stephen-d at rogers.com> wrote:
+>>
+>> I have used HostPapa for a number of years and I am quite happy with them.
+>>
+>> Never any down time that I noticed. And they added a PHP add-on that I
+>> requested. That impressed me on a shared host.
+>
+>
+> I guess I should have specified that I was looking for non-shared
+> hosting.  I usually need to install my own things that aren't available in
+> shared hosting environments.  I also like the freedom of being able to
+> install and run whatever I like, especially services that run in the
+> background.
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141002/cd1528eb/attachment.html>
+
+From talexb at gmail.com  Thu Oct  2 14:50:08 2014
+From: talexb at gmail.com (Alex Beamish)
+Date: Thu, 2 Oct 2014 10:50:08 -0400
+Subject: [GTALUG] Linux hosting
+In-Reply-To: <CAEZ_B6MCwVerk-ZX-PRTvLTwzc2ogkVdcxsqQie=EOTvdtV_6g@mail.gmail.com>
+References: <CAGxYWpZrZNd2CyETq1XihMYZsdcOv-fejTOOPR=qdyJC2Ux+ag@mail.gmail.com>
+ <CA+hskZPf8CX8nC8QJ3sOA=8zLnmmB9mo=oH_xgRmmDZ9_qB18Q@mail.gmail.com>
+ <CAEZ_B6MCwVerk-ZX-PRTvLTwzc2ogkVdcxsqQie=EOTvdtV_6g@mail.gmail.com>
+Message-ID: <CANgc-azpToy8XJ2Rnn77fFGrUCQ2pf8C=BOGG2e+n+M4-h8+FQ@mail.gmail.com>
+
+I've been using pair.com for over ten years, and I started using
+inmotionhosting.com recently for another project. No downtime or lost data
+on either provider.
+
+Alex
+
+
+On Thu, Oct 2, 2014 at 10:36 AM, Mauro Souza <thoriumbr at gmail.com> wrote:
+
+> I am using frantech.ca for more than a year, and only got a couple hours
+> of downtime. One day a RAID disk died, my server went offline for 4 hours,
+> but I haven't lost any data.
+>
+> And they are cheap. I managed to get a 256MB KVM VPS 250GB Dedicated Space
+> 2500GB Transfer for under USD 6/mo.
+>
+> If anyone is interested, signing in using
+> https://my.frantech.ca/aff.php?aff=626 will give me one free month of
+> hosting.
+>
+> Mauro
+> http://mauro.limeiratem.com - registered Linux User: 294521
+> Scripture is both history, and a love letter from God.
+>
+> 2014-10-02 11:10 GMT-03:00 Myles Braithwaite <me at mylesbraithwaite.com>:
+>
+> On Thu, Oct 2, 2014 at 9:49 AM, Tim Tisdall <tisdall at gmail.com> wrote:
+>> > Has anyone had experience with digitalocean or linode for fairly long
+>> term
+>> > hosting?  I've only used digitalocean for occasional VPN use but have
+>> had no
+>> > issues.
+>>
+>> I have been using Linode for ~15 years and can't say anything bad
+>> about them. They are great. But there have been a few rough patches
+>> the in the past three years (the source code for their VPS management
+>> console got leaked on the internet).
+>>
+>> I'm a little scared of DigitalOcean after reading about them on Hacker
+>> News. Apparently when the server has a hardware failure it's protocol
+>> for them to delete all VPS on the server and make everyone start from
+>> scratch (they do provided a backup services but it cost extra money).
+>> I run a small dokku instance on DO and it has never happened to me.
+>>
+>>
+>> ---
+>> GTALUG Talk Mailing List - talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+
+
+-- 
+Alex Beamish
+Toronto, Ontario
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141002/7ac92ea6/attachment.html>
+
