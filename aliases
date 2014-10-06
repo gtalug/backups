@@ -16,6 +16,10 @@ root: myles
 ## email forwards
 hi: me+gtalug@mylesbraithwaite.com
 
+### commities
+outreach: info@outreach.gtalug.org
+community-affairs: info@outreach.gtalug.org
+
 ## mailman mailing list
 mailman:              "|/var/lib/mailman/mail/mailman post mailman"
 mailman-admin:        "|/var/lib/mailman/mail/mailman admin mailman"
