@@ -945,3 +945,557 @@ On Oct 4, 2014 8:22 AM, "James Knott" <james.knott at rogers.com> wrote:
 
 --Message-Boundary-4378--
 
+From tisdall at gmail.com  Mon Oct  6 15:41:32 2014
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Mon, 6 Oct 2014 11:41:32 -0400
+Subject: [GTALUG] FSOSS early bird price extended until Oct 10th
+Message-ID: <CAGxYWpaw3yqamNV+K0wCvLqJGyxkrq77MbVgL7ahJkpAVpyukQ@mail.gmail.com>
+
+http://fsoss.senecac.on.ca/2014/reginfo
+
+Is anyone from GTALUG going to this?
+
+-Tim
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141006/1508b405/attachment.html>
+
+From peter.king at utoronto.ca  Mon Oct  6 16:07:02 2014
+From: peter.king at utoronto.ca (Peter King)
+Date: Mon, 6 Oct 2014 12:07:02 -0400
+Subject: [GTALUG] Xrandr problem
+In-Reply-To: <20141001190218.GA5585@amber>
+References: <20141001003622.GA17368@amber>
+ <91F2D304-637C-4844-B9C1-76A993DF7F02@ss.org>
+ <20141001190218.GA5585@amber>
+Message-ID: <20141006160702.GA8516@amber>
+
+I have made a bit of progress on the problem -- but only a bit.
+
+(1) The keymap seems to be part of the problem: all the modifier keys are,
+    as far as I can tell, dead.  That's why keyboard-oriented tiling WMs
+    are more or less stuck (goomwwm, cwm, dwm, etc.)
+
+(2) However, twm works as well as it ever did.
+
+(3) I followed the gentoo guide to setting up kernel modesetting using the
+    intel graphics driver, and it made things appreciably worse: when the
+    kernel boots and the graphical framebuffer is supposed to take over,
+    the screen simply goes black.  I can ssh in, though, and see that
+    according to dmesg the inteldrmfb has successfully loaded, so what
+    gives?
+
+(4) I also got no joy whatsoever at blind-typing into the console to start
+    X, which, again, I could see by ssh was supposedly running but only
+    gave a blank screen.
+
+
+All this on the internal 1680x1050 laptop screen.  So while it was blank,
+I thought, why not, and plugged in an external VGA monitor.  Voila!  The
+console came up on the external and the internal screens.  Better yet, so
+did X with twm.  It seems to respond to xrandr, too.
+
+For one last oddity, I dropped to the console, unplugged the external
+monitor, and the internal screen still runs console/X just fine.  Go
+figure.
+
+This is all on a Lenovo 3000 n100 0768 model, which I recall was finicky
+the last time I set it up (back in 2006 or so).  But I don't recall dead
+keymaps, and, while I had to use the i915resolution hack back then, that
+should all have been superseded by kernel modesetting...
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		    (416)-978-4951 ofc
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 181 bytes
+Desc: Digital signature
+URL: <http://gtalug.org/pipermail/talk/attachments/20141006/b8026c6a/attachment.sig>
+
+From gilesorr at gmail.com  Mon Oct  6 16:21:49 2014
+From: gilesorr at gmail.com (Giles Orr)
+Date: Mon, 6 Oct 2014 12:21:49 -0400
+Subject: [GTALUG] FSOSS early bird price extended until Oct 10th
+In-Reply-To: <CAGxYWpaw3yqamNV+K0wCvLqJGyxkrq77MbVgL7ahJkpAVpyukQ@mail.gmail.com>
+References: <CAGxYWpaw3yqamNV+K0wCvLqJGyxkrq77MbVgL7ahJkpAVpyukQ@mail.gmail.com>
+Message-ID: <CAEnxSC67F-Uva08m_3H0Zih4FLBH1wBwZ-vVWdQQJDCNpQSSjw@mail.gmail.com>
+
+On 6 October 2014 11:41, Tim Tisdall <tisdall at gmail.com> wrote:
+> http://fsoss.senecac.on.ca/2014/reginfo
+>
+> Is anyone from GTALUG going to this?
+>
+> -Tim
+
+Me too!
+
+Oh, wait, sorry ...  What I meant to say is ...
+
+I'm going.  I've gone several years in a row, and always enjoyed it.
+You'll hit a couple bad talks (but that happens at every conference),
+but you're pretty much guaranteed to learn a lot at several others
+(and that DOESN'T happen at every conference).  Topics are
+wide-ranging and can be unusual.
+
+Besides being good, it's $40 and they feed you lunch both days and
+give you a t-shirt.  Hard to complain if you can get the time off
+work.  I highly recommend it.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From mlijour at cisco.com  Mon Oct  6 16:24:41 2014
+From: mlijour at cisco.com (Marc Lijour (mlijour))
+Date: Mon, 6 Oct 2014 16:24:41 +0000
+Subject: [GTALUG] FSOSS early bird price extended until Oct 10th
+In-Reply-To: <CAEnxSC67F-Uva08m_3H0Zih4FLBH1wBwZ-vVWdQQJDCNpQSSjw@mail.gmail.com>
+References: <CAGxYWpaw3yqamNV+K0wCvLqJGyxkrq77MbVgL7ahJkpAVpyukQ@mail.gmail.com>
+ <CAEnxSC67F-Uva08m_3H0Zih4FLBH1wBwZ-vVWdQQJDCNpQSSjw@mail.gmail.com>
+Message-ID: <FA952E4AD9046540A9D075133D16974C125DEFBC@xmb-rcd-x12.cisco.com>
+
+I am going to give a talk
+
+Marc Lijour
+
+-----Original Message-----
+From: talk [mailto:talk-bounces at gtalug.org] On Behalf Of Giles Orr
+Sent: Monday, October 06, 2014 12:22 PM
+To: GTALUG Talk
+Subject: Re: [GTALUG] FSOSS early bird price extended until Oct 10th
+
+On 6 October 2014 11:41, Tim Tisdall <tisdall at gmail.com> wrote:
+> http://fsoss.senecac.on.ca/2014/reginfo
+>
+> Is anyone from GTALUG going to this?
+>
+> -Tim
+
+Me too!
+
+Oh, wait, sorry ...  What I meant to say is ...
+
+I'm going.  I've gone several years in a row, and always enjoyed it.
+You'll hit a couple bad talks (but that happens at every conference), but you're pretty much guaranteed to learn a lot at several others (and that DOESN'T happen at every conference).  Topics are wide-ranging and can be unusual.
+
+Besides being good, it's $40 and they feed you lunch both days and give you a t-shirt.  Hard to complain if you can get the time off work.  I highly recommend it.
+
+--
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+
+---
+GTALUG Talk Mailing List - talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+From hugh at mimosa.com  Mon Oct  6 17:33:26 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 6 Oct 2014 13:33:26 -0400 (EDT)
+Subject: [GTALUG] Xrandr problem
+In-Reply-To: <20141006160702.GA8516@amber>
+References: <20141001003622.GA17368@amber>
+ <91F2D304-637C-4844-B9C1-76A993DF7F02@ss.org> <20141001190218.GA5585@amber>
+ <20141006160702.GA8516@amber>
+Message-ID: <alpine.LRH.2.02.1410061226210.13994@redclaw.mimosa.com>
+
+| From: Peter King <peter.king at utoronto.ca>
+
+| I have made a bit of progress on the problem -- but only a bit.
+| 
+| (1) The keymap seems to be part of the problem: all the modifier keys are,
+|     as far as I can tell, dead.  That's why keyboard-oriented tiling WMs
+|     are more or less stuck (goomwwm, cwm, dwm, etc.)
+
+Modifier keys dead?  I assume you mean shift, alt, ctrl.
+
+That's pretty odd.  It doesn't sound like something to do with lack of
+hardware support -- those are pretty standardized.
+
+| (2) However, twm works as well as it ever did.
+| 
+| (3) I followed the gentoo guide to setting up kernel modesetting using the
+|     intel graphics driver, and it made things appreciably worse: when the
+|     kernel boots and the graphical framebuffer is supposed to take over,
+|     the screen simply goes black.  I can ssh in, though, and see that
+|     according to dmesg the inteldrmfb has successfully loaded, so what
+|     gives?
+
+Sometimes there is a proprietary thingee that gates the display.  For
+example, I've had notebooks that had no backlight until something was,
+for lack of a more accurate word, turned on.  Can you see a faint
+image?
+
+| (4) I also got no joy whatsoever at blind-typing into the console to start
+|     X, which, again, I could see by ssh was supposedly running but only
+|     gave a blank screen.
+
+SSH from another machine should let you do a lot.
+
+You can look at /var/log/Xorg.0.log
+
+You can actually run xrandr, for example, by setting DISPLAY:
+	DISPLAY=:0 xrandr
+That probably assumes that you are logged in on X or the ownership
+will be wrong.
+
+Perhaps you can log in via blind typing.
+
+| All this on the internal 1680x1050 laptop screen.  So while it was blank,
+| I thought, why not, and plugged in an external VGA monitor.  Voila!  The
+| console came up on the external and the internal screens.  Better yet, so
+| did X with twm.  It seems to respond to xrandr, too.
+
+Did the modifier keys work?
+
+See if /var/log/Xorg.0.log or dmesg or something are different in the
+two cases.
+
+| This is all on a Lenovo 3000 n100 0768 model, which I recall was finicky
+| the last time I set it up (back in 2006 or so).
+
+Google?  I'm sure you've done that a lot.
+
+Try some live distros for variety?
+
+|  But I don't recall dead
+| keymaps, and, while I had to use the i915resolution hack back then, that
+| should all have been superseded by kernel modesetting...
+
+Ask it to use VGA instead of intel?
+
+From me at mylesbraithwaite.com  Mon Oct  6 17:44:42 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 6 Oct 2014 13:44:42 -0400
+Subject: [GTALUG] Moint just sent a DMCA to a competing OSS
+Message-ID: <CA+hskZM5O5+o=F15bRGiE-sHH4TqO+z8Q2AfsxcKPPhjav9vfQ@mail.gmail.com>
+
+Moint (an open source utility for monitoring running processes) issued
+a DMCA to GitHub against a competing package, Inspeqtor, written in Go
+because they use "the same configuration language that is used in
+Monit".
+
+Moint says that Inspeqtor implementation in Go is far from a
+"clean-room" and is asking that Mike Perham (the author of Inspeqtor)
+"adhere to the GNU Affero General Public License which Monit is
+licensed under".
+
+<https://github.com/github/dmca/commit/e8e7a27dd17ad6fe8d53fbb8f6084b560b2d3a29>
+
+From moptop99 at gmail.com  Mon Oct  6 23:29:59 2014
+From: moptop99 at gmail.com (Matt Price)
+Date: Mon, 6 Oct 2014 19:29:59 -0400
+Subject: [GTALUG] simple straightforward tool for mainaining small networked
+ of imaged linux boxes
+Message-ID: <CAN_Dec_6JXVpUkoDjQuxwTpx3iaMA6K+gv1NnOgDVGoenFtrmw@mail.gmail.com>
+
+Hi,
+
+Over at Free Geek Toronto <http://www.freegeektoronto.org/>, we have a
+small computer classroom of desktop boxes that run Linux Mint.  Every
+couple of weeks we re-install clean images by hand.  The process is pretty
+labourious and time-consuming, and we would much rather automate it
+somehow.  However, none of us is a real sysadmin, and the tools I know a
+tiny bit about (landscape, puppet) are non-free and relatively complex.  We
+have very limited financial resources and our volunteer capacity is also a
+bit strained right now.  Does anyone have suggestions for a simple, easy
+way to automate the flashing of images in a small network?
+
+Thanks as always -- this is my first post on the new list!
+
+Matt
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141006/d1af35d0/attachment.html>
+
+From scott at ss.org  Tue Oct  7 01:09:49 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Mon, 06 Oct 2014 21:09:49 -0400
+Subject: [GTALUG] Xrandr problem
+In-Reply-To: <CAPpdf59GNAnfLBKz-aRvo3_y+2rOUz0vtKh9BWEZnZDkKm0pFA@mail.gmail.com>
+References: <20141001003622.GA17368@amber>
+ <CAPpdf58aj+jDNCPcgCGqzcML9iZOBJSXi6AysTN00FZ3+NXXVw@mail.gmail.com>
+ <20141001154159.GC20120@amber>
+ <CAPpdf59GNAnfLBKz-aRvo3_y+2rOUz0vtKh9BWEZnZDkKm0pFA@mail.gmail.com>
+Message-ID: <54333D5D.4020308@ss.org>
+
+On 10/01/2014 01:14 PM, o1bigtenor wrote:
+> I'm running nvidia graphics cards (2 connected to monitors) so its a
+> royal pain
+> but I'm running the nvidia drivers. Its not that easy to set up the
+> first time (I spent
+> a lot of time the first time) but now its a painful process but its
+> quite doable.
+
+Sounds like your doing multi-card, not specifically multi-monitor, am I 
+mistaken?
+
+Xrandr works great for multi-monitor, but does indeed assume single 
+card. The assumption is not Xrandr's fault, support for multi-card been 
+a target feature of Xorg to for the last decade. Multi-monitor single 
+cards have been "good enough" for just as long.
+
+> You need to remove the nouveau driver. Means that first you need to get
+> your system
+> running on something else and then you black list nouveau and then you
+> install the
+> nvidia drivers and then you need to setup all the goodies and then you
+> can turf the nouveau
+> drivers and then you have OK performance.
+
+Fought with this today actually.
+Add to your kernel boot line:
+
+modprobe.blacklist=nouveau
+
+This gets it gone before it's used to by the console.
+
+-- 
+Scott Sullivan
+
+From scott at ss.org  Tue Oct  7 01:11:00 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Mon, 06 Oct 2014 21:11:00 -0400
+Subject: [GTALUG] Xrandr problem
+In-Reply-To: <54333D5D.4020308@ss.org>
+References: <20141001003622.GA17368@amber>
+ <CAPpdf58aj+jDNCPcgCGqzcML9iZOBJSXi6AysTN00FZ3+NXXVw@mail.gmail.com>
+ <20141001154159.GC20120@amber>
+ <CAPpdf59GNAnfLBKz-aRvo3_y+2rOUz0vtKh9BWEZnZDkKm0pFA@mail.gmail.com>
+ <54333D5D.4020308@ss.org>
+Message-ID: <54333DA4.9060600@ss.org>
+
+On 10/06/2014 09:09 PM, Scott Sullivan wrote:
+> On 10/01/2014 01:14 PM, o1bigtenor wrote:
+>> I'm running nvidia graphics cards (2 connected to monitors) so its a
+>> royal pain
+>> but I'm running the nvidia drivers. Its not that easy to set up the
+>> first time (I spent
+>> a lot of time the first time) but now its a painful process but its
+>> quite doable.
+>
+> Sounds like your doing multi-card, not specifically multi-monitor, am I
+> mistaken?
+>
+> Xrandr works great for multi-monitor, but does indeed assume single
+> card. The assumption is not Xrandr's fault,
+
+
+support for multi-card been _has not been_ a target feature
+
+
+> of Xorg to for the last decade. Multi-monitor single
+> cards have been "good enough" for just as long.
+
+
+From lsorense at csclub.uwaterloo.ca  Tue Oct  7 02:23:41 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 6 Oct 2014 22:23:41 -0400
+Subject: [GTALUG] simple straightforward tool for mainaining small
+ networked of imaged linux boxes
+In-Reply-To: <CAN_Dec_6JXVpUkoDjQuxwTpx3iaMA6K+gv1NnOgDVGoenFtrmw@mail.gmail.com>
+References: <CAN_Dec_6JXVpUkoDjQuxwTpx3iaMA6K+gv1NnOgDVGoenFtrmw@mail.gmail.com>
+Message-ID: <20141007022341.GA4436@csclub.uwaterloo.ca>
+
+On Mon, Oct 06, 2014 at 07:29:59PM -0400, Matt Price wrote:
+> Over at Free Geek Toronto <http://www.freegeektoronto.org/>, we have a
+> small computer classroom of desktop boxes that run Linux Mint.  Every
+> couple of weeks we re-install clean images by hand.  The process is pretty
+> labourious and time-consuming, and we would much rather automate it
+> somehow.  However, none of us is a real sysadmin, and the tools I know a
+> tiny bit about (landscape, puppet) are non-free and relatively complex.  We
+> have very limited financial resources and our volunteer capacity is also a
+> bit strained right now.  Does anyone have suggestions for a simple, easy
+> way to automate the flashing of images in a small network?
+> 
+> Thanks as always -- this is my first post on the new list!
+
+Can the machines PXE boot?  If so, you could perhaps have normal boot
+enabled all the time, except when you want to reflash when you change
+the PXE boot server to instead boot an automatic imaging tool instead.
+
+-- 
+Len Sorensen
+
+From o1bigtenor at gmail.com  Tue Oct  7 02:24:48 2014
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Mon, 6 Oct 2014 21:24:48 -0500
+Subject: [GTALUG] Xrandr problem
+In-Reply-To: <54333D5D.4020308@ss.org>
+References: <20141001003622.GA17368@amber>
+ <CAPpdf58aj+jDNCPcgCGqzcML9iZOBJSXi6AysTN00FZ3+NXXVw@mail.gmail.com>
+ <20141001154159.GC20120@amber>
+ <CAPpdf59GNAnfLBKz-aRvo3_y+2rOUz0vtKh9BWEZnZDkKm0pFA@mail.gmail.com>
+ <54333D5D.4020308@ss.org>
+Message-ID: <CAPpdf58fYCBsmep55K=L77tvi1xrEM8k0AyP=YV86ujEX+Tigw@mail.gmail.com>
+
+On Mon, Oct 6, 2014 at 8:09 PM, Scott Sullivan <scott at ss.org> wrote:
+
+> On 10/01/2014 01:14 PM, o1bigtenor wrote:
+>
+>> I'm running nvidia graphics cards (2 connected to monitors) so its a
+>> royal pain
+>> but I'm running the nvidia drivers. Its not that easy to set up the
+>> first time (I spent
+>> a lot of time the first time) but now its a painful process but its
+>> quite doable.
+>>
+>
+> Sounds like your doing multi-card, not specifically multi-monitor, am I
+> mistaken?
+>
+
+2 cards and 4 monitors
+1 monitor in portrait and 3 in landscape mode (wouldn't mind a 4th in
+landscape!)
+
+>
+> Xrandr works great for multi-monitor, but does indeed assume single card.
+> The assumption is not Xrandr's fault, support for multi-card been a target
+> feature of Xorg to for the last decade. Multi-monitor single cards have
+> been "good enough" for just as long.
+>
+
+My research showed that multi-card has been a 'hope' for a very long time.
+It must be because few people actually run more than 1 graphics card.
+I wish there were an easy way to slave cards together (I actually have 3
+graphics
+cards - - - wanted them for serious numeric processing).
+
+>
+>  You need to remove the nouveau driver. Means that first you need to get
+>> your system
+>> running on something else and then you black list nouveau and then you
+>> install the
+>> nvidia drivers and then you need to setup all the goodies and then you
+>> can turf the nouveau
+>> drivers and then you have OK performance.
+>>
+>
+> Fought with this today actually.
+> Add to your kernel boot line:
+>
+> modprobe.blacklist=nouveau
+>
+> This gets it gone before it's used to by the console.
+>
+
+One needs to NOT be running any x window stuff at that time too!
+
+The whole process isn't very straightforward. Its a pity that nouveau
+weren't just either seriously upgraded or perhaps deprecated.
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141006/bb6915bd/attachment.html>
+
+From hugh at mimosa.com  Tue Oct  7 03:35:48 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 6 Oct 2014 23:35:48 -0400 (EDT)
+Subject: [GTALUG] Xrandr problem
+In-Reply-To: <CAPpdf58fYCBsmep55K=L77tvi1xrEM8k0AyP=YV86ujEX+Tigw@mail.gmail.com>
+References: <20141001003622.GA17368@amber>
+ <CAPpdf58aj+jDNCPcgCGqzcML9iZOBJSXi6AysTN00FZ3+NXXVw@mail.gmail.com>
+ <20141001154159.GC20120@amber>
+ <CAPpdf59GNAnfLBKz-aRvo3_y+2rOUz0vtKh9BWEZnZDkKm0pFA@mail.gmail.com>
+ <54333D5D.4020308@ss.org>
+ <CAPpdf58fYCBsmep55K=L77tvi1xrEM8k0AyP=YV86ujEX+Tigw@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1410062334160.13994@redclaw.mimosa.com>
+
+| From: o1bigtenor <o1bigtenor at gmail.com>
+
+|  Its a pity that nouveau
+| weren't just either seriously upgraded or perhaps deprecated.
+
+Nouveau impresses me given that it is a product of reverse
+engineering.
+
+If you were to deprecate it, I would hope that you have an open source
+replacement.
+
+From scott at ss.org  Tue Oct  7 03:51:33 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Mon, 06 Oct 2014 23:51:33 -0400
+Subject: [GTALUG] Xrandr problem
+In-Reply-To: <alpine.LRH.2.02.1410062334160.13994@redclaw.mimosa.com>
+References: <20141001003622.GA17368@amber>
+ <CAPpdf58aj+jDNCPcgCGqzcML9iZOBJSXi6AysTN00FZ3+NXXVw@mail.gmail.com>
+ <20141001154159.GC20120@amber>
+ <CAPpdf59GNAnfLBKz-aRvo3_y+2rOUz0vtKh9BWEZnZDkKm0pFA@mail.gmail.com>
+ <54333D5D.4020308@ss.org>
+ <CAPpdf58fYCBsmep55K=L77tvi1xrEM8k0AyP=YV86ujEX+Tigw@mail.gmail.com>
+ <alpine.LRH.2.02.1410062334160.13994@redclaw.mimosa.com>
+Message-ID: <6310670E-1A1B-47AC-B839-593CF73F62E7@ss.org>
+
+On October 6, 2014 11:35:48 PM EDT, "D. Hugh Redelmeier" <hugh at mimosa.com> wrote:
+>| From: o1bigtenor <o1bigtenor at gmail.com>
+>
+>|  Its a pity that nouveau
+>| weren't just either seriously upgraded or perhaps deprecated.
+>
+>Nouveau impresses me given that it is a product of reverse
+>engineering.
+>
+>If you were to deprecate it, I would hope that you have an open source
+>replacement.
+>
+>
+>---
+>GTALUG Talk Mailing List - talk at gtalug.org
+>http://gtalug.org/mailman/listinfo/talk
+
+o1bigtenor,
+
+Are you possibly confusing the old nv driver with the nouveau driver that replaced?
+
+http://www.x.org/wiki/nv/
+http://nouveau.freedesktop.org/wiki/
+-- 
+Scott Sullivan
+
+From waltdnes at waltdnes.org  Tue Oct  7 04:31:26 2014
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Tue, 7 Oct 2014 00:31:26 -0400
+Subject: [GTALUG] simple straightforward tool for mainaining small
+ networked of imaged linux boxes
+In-Reply-To: <CAN_Dec_6JXVpUkoDjQuxwTpx3iaMA6K+gv1NnOgDVGoenFtrmw@mail.gmail.com>
+References: <CAN_Dec_6JXVpUkoDjQuxwTpx3iaMA6K+gv1NnOgDVGoenFtrmw@mail.gmail.com>
+Message-ID: <20141007043126.GA13227@waltdnes.org>
+
+  Can you do a basic install with / ( including /root, and /usr ) on
+/dev/sda1 (approx 6 to 8 gigabytes)?  *IMPORTANT*... include sshd as
+part of the basic install, and have it start automatically at boot.
+- "dd" the / partition to a USB key. Assuming the key is mounted as
+   /media/key
+  dd -bs=1M -if=/dev/sda1 -of=/media/key/imagefile
+
+  To copy the partition back
+- boot the machine to be installed, using any linux install ISO or USB
+  key, then insert the USB key and "dd" the other way...
+  dd -bs=1M -if=/media/key/imagefile -of=/dev/sda1
+
+  Final customization
+- remove the linux boot ISO/key and the data key and reboot the machine
+- assuming sshd works, you can now do scripted final customization over
+  the net, including running apt-get for updates, and copying user home
+  dirs, etc, etc.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
