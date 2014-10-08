@@ -1499,3 +1499,609 @@ part of the basic install, and have it start automatically at boot.
 -- 
 Walter Dnes <waltdnes at waltdnes.org>
 
+From moptop99 at gmail.com  Tue Oct  7 11:01:42 2014
+From: moptop99 at gmail.com (Matt Price)
+Date: Tue, 7 Oct 2014 07:01:42 -0400
+Subject: [GTALUG] simple straightforward tool for mainaining small
+ networked of imaged linux boxes
+In-Reply-To: <20141007043126.GA13227@waltdnes.org>
+References: <CAN_Dec_6JXVpUkoDjQuxwTpx3iaMA6K+gv1NnOgDVGoenFtrmw@mail.gmail.com>
+ <20141007043126.GA13227@waltdnes.org>
+Message-ID: <CAN_Dec9FCgnDf-bAJ4gkOyx7w1bG_WBO863qo2G1Qsd3RUO=rQ@mail.gmail.com>
+
+Lennart, can you explain that process in more detail?  I mean, what tool
+would one PXE boot from?
+
+Walter, that is helpful but still sounds pretty time-consuming -- I would
+like to find a way to have an unattended re-imaging that can run
+more-or-less simultaneously on all the machines.
+
+
+
+On Tue, Oct 7, 2014 at 12:31 AM, Walter Dnes <waltdnes at waltdnes.org> wrote:
+
+>   Can you do a basic install with / ( including /root, and /usr ) on
+> /dev/sda1 (approx 6 to 8 gigabytes)?  *IMPORTANT*... include sshd as
+> part of the basic install, and have it start automatically at boot.
+> - "dd" the / partition to a USB key. Assuming the key is mounted as
+>    /media/key
+>   dd -bs=1M -if=/dev/sda1 -of=/media/key/imagefile
+>
+>   To copy the partition back
+> - boot the machine to be installed, using any linux install ISO or USB
+>   key, then insert the USB key and "dd" the other way...
+>   dd -bs=1M -if=/media/key/imagefile -of=/dev/sda1
+>
+>   Final customization
+> - remove the linux boot ISO/key and the data key and reboot the machine
+> - assuming sshd works, you can now do scripted final customization over
+>   the net, including running apt-get for updates, and copying user home
+>   dirs, etc, etc.
+>
+> --
+> Walter Dnes <waltdnes at waltdnes.org>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141007/b7bdfb45/attachment.html>
+
+From moptop99 at gmail.com  Tue Oct  7 11:08:04 2014
+From: moptop99 at gmail.com (Matt Price)
+Date: Tue, 7 Oct 2014 07:08:04 -0400
+Subject: [GTALUG] flash instead of beep in zsh?
+Message-ID: <CAN_Dec8Q+qQq3cu_ny_-SevpK-epYATUBVRXsZbGmD6K05LHQA@mail.gmail.com>
+
+Hi folks,
+
+I am trying to switch to zsh from bash.  Haven't really gotten many of the
+benefits yet as I need to learn the advanced globbing syntax, but it seems
+nice so far.  However, the beep is driving my crazy.  for ages I've had my
+bash beep set to a flash, which is far less annoying.  in zsh this is
+apparently accomplished with the ZBEEP shell parameter, but I can't make it
+work.  does anyone have ZBEEP set to a value that actually works for them?
+
+I should say, I am using GNOME and gnome-terminal, which, unlike konsole,
+does not have an option for changing the bell to a flash, so I think this
+would have to be accomplished in the shell itself.
+
+Thanks, Matt
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141007/34f4642c/attachment.html>
+
+From o1bigtenor at gmail.com  Tue Oct  7 11:11:42 2014
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Tue, 7 Oct 2014 06:11:42 -0500
+Subject: [GTALUG] Xrandr problem
+In-Reply-To: <alpine.LRH.2.02.1410062334160.13994@redclaw.mimosa.com>
+References: <20141001003622.GA17368@amber>
+ <CAPpdf58aj+jDNCPcgCGqzcML9iZOBJSXi6AysTN00FZ3+NXXVw@mail.gmail.com>
+ <20141001154159.GC20120@amber>
+ <CAPpdf59GNAnfLBKz-aRvo3_y+2rOUz0vtKh9BWEZnZDkKm0pFA@mail.gmail.com>
+ <54333D5D.4020308@ss.org>
+ <CAPpdf58fYCBsmep55K=L77tvi1xrEM8k0AyP=YV86ujEX+Tigw@mail.gmail.com>
+ <alpine.LRH.2.02.1410062334160.13994@redclaw.mimosa.com>
+Message-ID: <CAPpdf586LoO414JxnjOU2UkdsBKp31RsWMX8_Di2aEiQDBb_5g@mail.gmail.com>
+
+On Mon, Oct 6, 2014 at 10:35 PM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+> | From: o1bigtenor <o1bigtenor at gmail.com>
+>
+> |  Its a pity that nouveau
+> | weren't just either seriously upgraded or perhaps deprecated.
+>
+> Nouveau impresses me given that it is a product of reverse
+> engineering.
+>
+> If you were to deprecate it, I would hope that you have an open source
+> replacement.
+>
+
+As a user nouveau feels like it was created to be 'good enough' rather than
+to lead.
+It is because of the lack of support for multi-card and multi-monitor
+systems that
+I say this.
+In fairness I see a lot of businesses using a 17 or a 19 inch LCD monitor -
+- -
+someone is really missing the productivity increase that you can get from
+more
+screen real estate.
+
+My system is set up with 20 desktops where I have 16 defined for different
+tasks
+and/or needs. This available space makes it easy to switch from one task to
+another
+without taking a lot of time to find the various bits needed to do the work.
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141007/21b4a03b/attachment.html>
+
+From o1bigtenor at gmail.com  Tue Oct  7 11:13:26 2014
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Tue, 7 Oct 2014 06:13:26 -0500
+Subject: [GTALUG] Xrandr problem
+In-Reply-To: <6310670E-1A1B-47AC-B839-593CF73F62E7@ss.org>
+References: <20141001003622.GA17368@amber>
+ <CAPpdf58aj+jDNCPcgCGqzcML9iZOBJSXi6AysTN00FZ3+NXXVw@mail.gmail.com>
+ <20141001154159.GC20120@amber>
+ <CAPpdf59GNAnfLBKz-aRvo3_y+2rOUz0vtKh9BWEZnZDkKm0pFA@mail.gmail.com>
+ <54333D5D.4020308@ss.org>
+ <CAPpdf58fYCBsmep55K=L77tvi1xrEM8k0AyP=YV86ujEX+Tigw@mail.gmail.com>
+ <alpine.LRH.2.02.1410062334160.13994@redclaw.mimosa.com>
+ <6310670E-1A1B-47AC-B839-593CF73F62E7@ss.org>
+Message-ID: <CAPpdf58OFR7dzasGPidF2b2AvCGWO9LFccn_GKcc4oW0+3f+_Q@mail.gmail.com>
+
+On Mon, Oct 6, 2014 at 10:51 PM, Scott Sullivan <scott at ss.org> wrote:
+
+> On October 6, 2014 11:35:48 PM EDT, "D. Hugh Redelmeier" <hugh at mimosa.com>
+> wrote:
+> >| From: o1bigtenor <o1bigtenor at gmail.com>
+> >
+> >|  Its a pity that nouveau
+> >| weren't just either seriously upgraded or perhaps deprecated.
+> >
+> >Nouveau impresses me given that it is a product of reverse
+> >engineering.
+> >
+> >If you were to deprecate it, I would hope that you have an open source
+> >replacement.
+> >
+> >
+> >---
+> >GTALUG Talk Mailing List - talk at gtalug.org
+> >http://gtalug.org/mailman/listinfo/talk
+>
+> o1bigtenor,
+>
+> Are you possibly confusing the old nv driver with the nouveau driver that
+> replaced?
+>
+
+No - - - nouveau goes absolutely sick when you try to run more than one
+graphics card
+(unless that has changed in the last 4 to 6 months!).
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141007/9a240e31/attachment.html>
+
+From peter.king at utoronto.ca  Tue Oct  7 15:08:33 2014
+From: peter.king at utoronto.ca (Peter King)
+Date: Tue, 7 Oct 2014 11:08:33 -0400
+Subject: [GTALUG] Xrandr problem
+In-Reply-To: <20141006160702.GA8516@amber>
+References: <20141001003622.GA17368@amber>
+ <91F2D304-637C-4844-B9C1-76A993DF7F02@ss.org>
+ <20141001190218.GA5585@amber> <20141006160702.GA8516@amber>
+Message-ID: <20141007150833.GA1898@amber>
+
+It was a combination of four separate problems, which is why it took some
+while to run it down.
+
+First, it turned out that my kernel configuration was not building in the
+backlighting module for laptops (thanks for the suggestion Hugh!).  Once I
+recompiled the kernel with backlighting, the console reappeared.
+
+Second, the Lenovo 3000 n100 0768, for reasons unknown to me, must have a
+strange hardware keymap, because the (left) Windows key, the (right) menu
+key, and the PrtScr and Pause keys are all completely dead, according to
+showkey.  This, despite enabling "windows keys" in the keymap.  Since the
+tiling window managers I was using used the left Windows key and the main
+modifier, and exited X using the Pause key, no wonder it all seemed dead.
+
+Third, I had somehow forgotten basic X facts, and in my .xinitrc had set
+an xterm to run but without putting it in the background -- which meant
+that startx never got to the line running the window manager, and so I 
+had X up with no wm, no surprise this didn't work out too well.
+
+Fourth, I needed to run mkfontdir on several files in /usr/share/fonts,
+so X would have something with which to draw into an xterm.
+
+
+No cure for the dead keys, as far as I know, but I can set the wm to use
+different modifier keys and work around them.  Now, if I can only figure 
+out how to turn off the LCD screen and leave the external monitor on...
+
+
+Thanks to one and all for the suggestions!
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		    (416)-978-4951 ofc
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 181 bytes
+Desc: Digital signature
+URL: <http://gtalug.org/pipermail/talk/attachments/20141007/7951c011/attachment.sig>
+
+From lsorense at csclub.uwaterloo.ca  Tue Oct  7 17:10:06 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 7 Oct 2014 13:10:06 -0400
+Subject: [GTALUG] flash instead of beep in zsh?
+In-Reply-To: <CAN_Dec8Q+qQq3cu_ny_-SevpK-epYATUBVRXsZbGmD6K05LHQA@mail.gmail.com>
+References: <CAN_Dec8Q+qQq3cu_ny_-SevpK-epYATUBVRXsZbGmD6K05LHQA@mail.gmail.com>
+Message-ID: <20141007171006.GB4436@csclub.uwaterloo.ca>
+
+On Tue, Oct 07, 2014 at 07:08:04AM -0400, Matt Price wrote:
+> Hi folks,
+> 
+> I am trying to switch to zsh from bash.  Haven't really gotten many of the
+> benefits yet as I need to learn the advanced globbing syntax, but it seems
+> nice so far.  However, the beep is driving my crazy.  for ages I've had my
+> bash beep set to a flash, which is far less annoying.  in zsh this is
+> apparently accomplished with the ZBEEP shell parameter, but I can't make it
+> work.  does anyone have ZBEEP set to a value that actually works for them?
+> 
+> I should say, I am using GNOME and gnome-terminal, which, unlike konsole,
+> does not have an option for changing the bell to a flash, so I think this
+> would have to be accomplished in the shell itself.
+
+I don't care what desktop environment you use, gnome-terminal is a pile
+of buggy shit.  Just use konsole (or even xterm is an improvement).
+
+As for zsh, it seems doing this works:
+
+export ZBEEP='\e[?5h\e[?5l'
+
+At least it did for me.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Oct  7 17:18:09 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 7 Oct 2014 13:18:09 -0400
+Subject: [GTALUG] simple straightforward tool for mainaining small
+ networked of imaged linux boxes
+In-Reply-To: <CAN_Dec9FCgnDf-bAJ4gkOyx7w1bG_WBO863qo2G1Qsd3RUO=rQ@mail.gmail.com>
+References: <CAN_Dec_6JXVpUkoDjQuxwTpx3iaMA6K+gv1NnOgDVGoenFtrmw@mail.gmail.com>
+ <20141007043126.GA13227@waltdnes.org>
+ <CAN_Dec9FCgnDf-bAJ4gkOyx7w1bG_WBO863qo2G1Qsd3RUO=rQ@mail.gmail.com>
+Message-ID: <20141007171809.GC4436@csclub.uwaterloo.ca>
+
+On Tue, Oct 07, 2014 at 07:01:42AM -0400, Matt Price wrote:
+> Lennart, can you explain that process in more detail?  I mean, what tool
+> would one PXE boot from?
+> 
+> Walter, that is helpful but still sounds pretty time-consuming -- I would
+> like to find a way to have an unattended re-imaging that can run
+> more-or-less simultaneously on all the machines.
+
+If the BIOS has an option for network boot, then you could enable that.
+Then the server would have to have 'pxe' (pxe boot daemon) running to
+send the boot files to the client when it powers on.  This would then
+provide the boot menu and such for the client, which could normally be
+to load the kernel and ramdisk from the local disk, or to network boot
+a kernel and ramdisk that reflash the local disk, perhaps using partimage
+to transfer the image from the server to the client.
+
+You might even set up wake on lan if supported so you could remotely
+turn the machines on when you want them to do the reimaging of the disk.
+In fact a lot of machines can have a different boot order for normal
+boot versus wake on lan boot making some parts even simpler.
+
+-- 
+Len Sorensen
+
+From jamon.camisso at utoronto.ca  Tue Oct  7 17:18:42 2014
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Tue, 07 Oct 2014 13:18:42 -0400
+Subject: [GTALUG] flash instead of beep in zsh?
+In-Reply-To: <20141007171006.GB4436@csclub.uwaterloo.ca>
+References: <CAN_Dec8Q+qQq3cu_ny_-SevpK-epYATUBVRXsZbGmD6K05LHQA@mail.gmail.com>
+ <20141007171006.GB4436@csclub.uwaterloo.ca>
+Message-ID: <54342072.7030607@utoronto.ca>
+
+On 2014-10-07 1:10 PM, Lennart Sorensen wrote:
+> On Tue, Oct 07, 2014 at 07:08:04AM -0400, Matt Price wrote:
+>> Hi folks,
+>>
+>> I am trying to switch to zsh from bash.  Haven't really gotten many of the
+>> benefits yet as I need to learn the advanced globbing syntax, but it seems
+>> nice so far.  However, the beep is driving my crazy.  for ages I've had my
+>> bash beep set to a flash, which is far less annoying.  in zsh this is
+>> apparently accomplished with the ZBEEP shell parameter, but I can't make it
+>> work.  does anyone have ZBEEP set to a value that actually works for them?
+>>
+>> I should say, I am using GNOME and gnome-terminal, which, unlike konsole,
+>> does not have an option for changing the bell to a flash, so I think this
+>> would have to be accomplished in the shell itself.
+> 
+> I don't care what desktop environment you use, gnome-terminal is a pile
+> of buggy shit.  Just use konsole (or even xterm is an improvement).
+
+Sakura is my go to terminal now. It along with oh-my-zsh is a lovely
+setup if you're new to zsh. It's gigantic, but once you get an idea of
+what you want you can then pare it down.
+
+I have a customized zshrc with years worth of additions so I don't use
+oh-my-zsh, but I can see the appeal with the colorize and git plugins
+amongst others.
+
+Cheers, Jamon
+
+From gilesorr at gmail.com  Tue Oct  7 17:27:44 2014
+From: gilesorr at gmail.com (Giles Orr)
+Date: Tue, 7 Oct 2014 13:27:44 -0400
+Subject: [GTALUG] simple straightforward tool for mainaining small
+ networked of imaged linux boxes
+In-Reply-To: <20141007171809.GC4436@csclub.uwaterloo.ca>
+References: <CAN_Dec_6JXVpUkoDjQuxwTpx3iaMA6K+gv1NnOgDVGoenFtrmw@mail.gmail.com>
+ <20141007043126.GA13227@waltdnes.org>
+ <CAN_Dec9FCgnDf-bAJ4gkOyx7w1bG_WBO863qo2G1Qsd3RUO=rQ@mail.gmail.com>
+ <20141007171809.GC4436@csclub.uwaterloo.ca>
+Message-ID: <CAEnxSC7HFD4b2YBVCxFXAWxsDztUy6Fpo9i3jw5-UQLVrYdn_Q@mail.gmail.com>
+
+I haven't used it, but I'm told it's good and it's meant to address
+exactly the problem you've explained:
+
+http://sourceforge.net/projects/g4l/  (Ghost for Linux)
+
+That said, using PXE booting may be a better solution.
+
+On 7 October 2014 13:18, Lennart Sorensen <lsorense at csclub.uwaterloo.ca> wrote:
+> On Tue, Oct 07, 2014 at 07:01:42AM -0400, Matt Price wrote:
+>> Lennart, can you explain that process in more detail?  I mean, what tool
+>> would one PXE boot from?
+>>
+>> Walter, that is helpful but still sounds pretty time-consuming -- I would
+>> like to find a way to have an unattended re-imaging that can run
+>> more-or-less simultaneously on all the machines.
+>
+> If the BIOS has an option for network boot, then you could enable that.
+> Then the server would have to have 'pxe' (pxe boot daemon) running to
+> send the boot files to the client when it powers on.  This would then
+> provide the boot menu and such for the client, which could normally be
+> to load the kernel and ramdisk from the local disk, or to network boot
+> a kernel and ramdisk that reflash the local disk, perhaps using partimage
+> to transfer the image from the server to the client.
+>
+> You might even set up wake on lan if supported so you could remotely
+> turn the machines on when you want them to do the reimaging of the disk.
+> In fact a lot of machines can have a different boot order for normal
+> boot versus wake on lan boot making some parts even simpler.
+>
+> --
+> Len Sorensen
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From waltdnes at waltdnes.org  Tue Oct  7 18:14:40 2014
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Tue, 7 Oct 2014 14:14:40 -0400
+Subject: [GTALUG] simple straightforward tool for mainaining small
+ networked of imaged linux boxes
+In-Reply-To: <CAN_Dec9FCgnDf-bAJ4gkOyx7w1bG_WBO863qo2G1Qsd3RUO=rQ@mail.gmail.com>
+References: <CAN_Dec_6JXVpUkoDjQuxwTpx3iaMA6K+gv1NnOgDVGoenFtrmw@mail.gmail.com>
+ <20141007043126.GA13227@waltdnes.org>
+ <CAN_Dec9FCgnDf-bAJ4gkOyx7w1bG_WBO863qo2G1Qsd3RUO=rQ@mail.gmail.com>
+Message-ID: <20141007181440.GA16532@waltdnes.org>
+
+On Tue, Oct 07, 2014 at 07:01:42AM -0400, Matt Price wrote
+> Lennart, can you explain that process in more detail?  I mean, what tool
+> would one PXE boot from?
+> 
+> Walter, that is helpful but still sounds pretty time-consuming -- I would
+> like to find a way to have an unattended re-imaging that can run
+> more-or-less simultaneously on all the machines.
+
+  The idea is to make one "reference install" and then copy it to several
+USB keys.  Then boot-and-dd from 1 key to 1 machine.  Question... can your
+LAN handle several machines installing several gigabytes of OS
+simultaneously?
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From cbbrowne at gmail.com  Tue Oct  7 18:57:37 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 7 Oct 2014 14:57:37 -0400
+Subject: [GTALUG] simple straightforward tool for mainaining small
+ networked of imaged linux boxes
+In-Reply-To: <20141007171809.GC4436@csclub.uwaterloo.ca>
+References: <CAN_Dec_6JXVpUkoDjQuxwTpx3iaMA6K+gv1NnOgDVGoenFtrmw@mail.gmail.com>
+ <20141007043126.GA13227@waltdnes.org>
+ <CAN_Dec9FCgnDf-bAJ4gkOyx7w1bG_WBO863qo2G1Qsd3RUO=rQ@mail.gmail.com>
+ <20141007171809.GC4436@csclub.uwaterloo.ca>
+Message-ID: <CAFNqd5XFOW2ONBZKvXetwrrQ72iFsHC82Ya3xz=2HgS55KsU_g@mail.gmail.com>
+
+On 7 October 2014 13:18, Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+wrote:
+
+> On Tue, Oct 07, 2014 at 07:01:42AM -0400, Matt Price wrote:
+> > Lennart, can you explain that process in more detail?  I mean, what tool
+> > would one PXE boot from?
+> >
+> > Walter, that is helpful but still sounds pretty time-consuming -- I would
+> > like to find a way to have an unattended re-imaging that can run
+> > more-or-less simultaneously on all the machines.
+>
+> If the BIOS has an option for network boot, then you could enable that.
+> Then the server would have to have 'pxe' (pxe boot daemon) running to
+> send the boot files to the client when it powers on.  This would then
+> provide the boot menu and such for the client, which could normally be
+> to load the kernel and ramdisk from the local disk, or to network boot
+> a kernel and ramdisk that reflash the local disk, perhaps using partimage
+> to transfer the image from the server to the client.
+>
+> You might even set up wake on lan if supported so you could remotely
+> turn the machines on when you want them to do the reimaging of the disk.
+> In fact a lot of machines can have a different boot order for normal
+> boot versus wake on lan boot making some parts even simpler.
+
+
+Scott Sullivan did a talk on setting up PXE boot a couple of years ago.  I
+recently pointed back to the memories when I put in a new media
+machine (Zotac ID-88), and found it wasn't recognizing bootable CDs,
+only to realize that some of the messages in the failing boot indicated
+a "looking for PXE" step.
+
+I was keen on putting Debian in place, so the following instructions were
+relevant to that:
+   https://wiki.debian.org/PXEBootInstall
+
+The somewhat oversimplifcation is that you need to set up several things
+on a central server:
+a) Modify DHCP to indicate the offering of PXE boot
+b) Install tftp on the server, and put install files in a suitable place
+    so clients may pull them
+
+The "most magical" part, which is open-ended as to how sophisticated
+it can get, is the part of controlling what gets installed.
+
+In my "wanna install Debian" case, it was simple enough; I grabbed a
+stock Debian netboot install and threw that into place.  I didn't much
+care how time-consuming later steps were.  Presumably this means I'll
+not likely be pulling many Debian CD images anymore; using PXE is
+about as easy, and simpler as it consumes no CDs/DVDs.
+
+If you want to have a bunch of MINT machines with extensive common
+configuration, then it's worth jumping through some hoops to customize
+the net install so it needs little work later.
+
+There are some instructions on this for MINT:
+   http://forums.linuxmint.com/viewtopic.php?f=197&t=96322
+
+It's worth your while to look into some automation tools for installing
+common things that need to be on each machine.  My answer is
+cfengine2 (I haven't migrated to v3); others like Chef/Puppet/Ansible.
+My sense is that it's likely preferable to have a fairly simple
+installation, and use tools to do system management afterwards.
+
+I know Scott has gone through the notion of having scripting designed
+to customize Fedora/CentOS installations; that's a different
+approach, but certainly valid.  If you wanted MINT, then his scripts
+are likely useless to you, alas.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141007/aa5e1012/attachment.html>
+
+From hugh at mimosa.com  Tue Oct  7 21:26:28 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 7 Oct 2014 17:26:28 -0400 (EDT)
+Subject: [GTALUG] flash instead of beep in zsh?
+In-Reply-To: <20141007171006.GB4436@csclub.uwaterloo.ca>
+References: <CAN_Dec8Q+qQq3cu_ny_-SevpK-epYATUBVRXsZbGmD6K05LHQA@mail.gmail.com>
+ <20141007171006.GB4436@csclub.uwaterloo.ca>
+Message-ID: <alpine.LRH.2.02.1410071710060.20811@redclaw.mimosa.com>
+
+| From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+
+| I don't care what desktop environment you use, gnome-terminal is a pile
+| of buggy shit.
+
+That's a strong bug vague accusation.
+
+What kinds of bugs are you thinking of?
+
+I've recently switched to gnome-terminal from xterm because its use of
+scalable fonts worked better than the standard xterm bitmap fonts on
+HiDPI screens.
+
+The only bug that I've noticed is that my JOVE editor sometimes is
+missing a few characters.  I've been to lazy to track it down but I'm
+sure that it is a termcap or G-T discrepency.  (The editor has only
+needed a couple of bug fixes this century -- pretty solid.)
+
+From hugh at mimosa.com  Tue Oct  7 21:30:10 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 7 Oct 2014 17:30:10 -0400 (EDT)
+Subject: [GTALUG] Xrandr problem
+In-Reply-To: <20141007150833.GA1898@amber>
+References: <20141001003622.GA17368@amber>
+ <91F2D304-637C-4844-B9C1-76A993DF7F02@ss.org> <20141001190218.GA5585@amber>
+ <20141006160702.GA8516@amber> <20141007150833.GA1898@amber>
+Message-ID: <alpine.LRH.2.02.1410071728130.20811@redclaw.mimosa.com>
+
+| From: Peter King <peter.king at utoronto.ca>
+
+| Second, the Lenovo 3000 n100 0768, for reasons unknown to me, must have a
+| strange hardware keymap, because the (left) Windows key, the (right) menu
+| key, and the PrtScr and Pause keys are all completely dead, according to
+| showkey.
+
+Under X, have you tried the xev command?  Are any events created for
+those keys?
+
+From lsorense at csclub.uwaterloo.ca  Tue Oct  7 22:25:33 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 7 Oct 2014 18:25:33 -0400
+Subject: [GTALUG] flash instead of beep in zsh?
+In-Reply-To: <alpine.LRH.2.02.1410071710060.20811@redclaw.mimosa.com>
+References: <CAN_Dec8Q+qQq3cu_ny_-SevpK-epYATUBVRXsZbGmD6K05LHQA@mail.gmail.com>
+ <20141007171006.GB4436@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1410071710060.20811@redclaw.mimosa.com>
+Message-ID: <20141007222533.GD4436@csclub.uwaterloo.ca>
+
+On Tue, Oct 07, 2014 at 05:26:28PM -0400, D. Hugh Redelmeier wrote:
+> That's a strong bug vague accusation.
+> 
+> What kinds of bugs are you thinking of?
+> 
+> I've recently switched to gnome-terminal from xterm because its use of
+> scalable fonts worked better than the standard xterm bitmap fonts on
+> HiDPI screens.
+
+Misrendering of VT100 codes.  Really annoying at times.  That being the
+primary purpose of a terminal, such bugs are unforgivable.
+
+> The only bug that I've noticed is that my JOVE editor sometimes is
+> missing a few characters.  I've been to lazy to track it down but I'm
+> sure that it is a termcap or G-T discrepency.  (The editor has only
+> needed a couple of bug fixes this century -- pretty solid.)
+
+It is very much the terminal doing it wrong, given every other terminal
+using the same termcap is working fine.  And I highly doubt jove has
+any such bugs given I have seen issues with vim, less and other programs.
+It is almost as bad as hyperterm on windows was (but not quite).
+
+I personally find konsole's tab interface and settings much more
+useful too.  But it was the missing characters and other terminal
+emulation issues that made me never want to use G-T again.  I haven't seen
+any indication that they care to try and fix it (it is part of gnome after
+all, where throwing away features every new major version and starting
+over is normal, and making things users want to use is not actually
+a priority).
+
+Of course konsole went for years with a cut and paste bug where all
+lines had whitespace appended to the full terminal width when you cut
+and paste, which was really really annoying too, but at least all the
+characters are displayed correctly, and they did fix the bug by now.
+
+-- 
+Len Sorensen
+
