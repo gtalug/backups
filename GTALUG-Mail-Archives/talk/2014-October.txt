@@ -2105,3 +2105,275 @@ characters are displayed correctly, and they did fix the bug by now.
 -- 
 Len Sorensen
 
+From kalibslack at gmail.com  Wed Oct  8 17:42:22 2014
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Wed, 8 Oct 2014 14:42:22 -0300
+Subject: [GTALUG] Xrandr problem
+In-Reply-To: <alpine.LRH.2.02.1410071728130.20811@redclaw.mimosa.com>
+References: <20141001003622.GA17368@amber>
+ <91F2D304-637C-4844-B9C1-76A993DF7F02@ss.org>
+ <20141001190218.GA5585@amber> <20141006160702.GA8516@amber>
+ <20141007150833.GA1898@amber>
+ <alpine.LRH.2.02.1410071728130.20811@redclaw.mimosa.com>
+Message-ID: <CAH5qdeyDWDy2OcoSOs+A6fvgkUFd00cuoii2fTg_AyNk70Wy9w@mail.gmail.com>
+
+Well, about Nouveau, the last stable kernel has a few improvments,
+including nouveau...
+
+Linus Torvalds has announced the latest stable release of the Linux kernel,
+version 3.17.
+Below is a short list compiling some notable highlights of this release.
+It?s by no means exhaustive.
+
+1. Microsoft Xbox One controller support (without vibration)
+2. Additional improvements to Sony SIXAXIS support
+3. Toshiba ?Active Protection Sensor? support
+4. New ARM support includes Rockchip RK3288 and AllWinner A23 SoCs
+5. ?Cross-thread filter setting? for secure computing facility
+6. Broadcom BCM7XXX-based board support (used in various set-top boxes)
+7. Enhanced AMD Radeon R9 290 support
+8. Misc. Nouveau driver improvements, including Kepler GPU fixes
+9. Audio support includes Wildcatpoint Audio DSP on Intel Broadwell
+Ultrabooks.
+
+===================================================
+
+Marcelo Cavalcante Rocha - Kalib
+
+
+P?s-Graduando em Governan?a de Tecnologia da Informa??o - EST?CIO/FIC
+Graduado em Sistemas de Informa??es - EST?CIO/FIC
+Usu?rio Linux #407564 | Usu?rio Asterisk #1148
+Fortaleza - Cear? - Brazil
+Celular: +55 085 87620983
+Certifica??es: ITIL V3
+<http://www.itil-officialsite.com/Qualifications/ITILV3QualificationLevels/ITILV3FoundationQualificationinITServiceManagement.aspx>
+ | CSM <http://www.scrumalliance.org/> | LPI-C1 <http://www.lpi.org/> |
+LPI-C2 <http://www.lpi.org/> | LPI-C3 <http://www.lpi.org/> | Novell CLA
+<http://www.novell.com/training/certinfo/cla/>
+Minha Pessoa: Blog <http://www.marcelocavalcante.net>
+Projetos: Tux-CE <http://www.tux-ce.org> | Archlinux-br
+<http://www.archlinux-br.org> | Chakra <http://www.chakra-project.org/> | KDE
+Brasil <http://br.kde.org> | TLUG <http://gtalug.org/wiki/Main_Page> |
+PUG-CE <http://pug-ce.python.org.br/blog/>
+
+===================================================
+
+
+Proteja meu endere?o como estou protegendo o seu.
+N?o revele e-mail dos correspondentes: use Cco (Copia Carbonada Oculta).
+Retire os endere?os antes de reenviar. Dificulte assim a
+dissemina??o de v?rus e spam.
+
+2014-10-07 18:30 GMT-03:00 D. Hugh Redelmeier <hugh at mimosa.com>:
+
+> | From: Peter King <peter.king at utoronto.ca>
+>
+> | Second, the Lenovo 3000 n100 0768, for reasons unknown to me, must have a
+> | strange hardware keymap, because the (left) Windows key, the (right) menu
+> | key, and the PrtScr and Pause keys are all completely dead, according to
+> | showkey.
+>
+> Under X, have you tried the xev command?  Are any events created for
+> those keys?
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141008/e195f31d/attachment.html>
+
+From o1bigtenor at gmail.com  Wed Oct  8 18:52:33 2014
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Wed, 8 Oct 2014 13:52:33 -0500
+Subject: [GTALUG] Xrandr problem
+In-Reply-To: <CAH5qdeyDWDy2OcoSOs+A6fvgkUFd00cuoii2fTg_AyNk70Wy9w@mail.gmail.com>
+References: <20141001003622.GA17368@amber>
+ <91F2D304-637C-4844-B9C1-76A993DF7F02@ss.org>
+ <20141001190218.GA5585@amber> <20141006160702.GA8516@amber>
+ <20141007150833.GA1898@amber>
+ <alpine.LRH.2.02.1410071728130.20811@redclaw.mimosa.com>
+ <CAH5qdeyDWDy2OcoSOs+A6fvgkUFd00cuoii2fTg_AyNk70Wy9w@mail.gmail.com>
+Message-ID: <CAPpdf59t2a8mHZYAzmdWC5Y+Np+PDBrVi0dx8WhRXmSaDo5xEw@mail.gmail.com>
+
+These 'improvements' suggest that game boxen, smart phones and game playing
+are major thrust areas.
+
+I use my computer for work related tasks and and am looking toward process
+control systems. So how do I model
+a multi-card multi-monitor system that includes real time support  so that
+it looks like a game which could also
+be accessed from a smart phone - - - then lots of developers will want to
+work on the idea?
+
+Dee
+
+On Wed, Oct 8, 2014 at 12:42 PM, Marcelo Cavalcante <kalibslack at gmail.com>
+wrote:
+
+> Well, about Nouveau, the last stable kernel has a few improvments,
+> including nouveau...
+>
+> Linus Torvalds has announced the latest stable release of the Linux
+> kernel, version 3.17.
+> Below is a short list compiling some notable highlights of this release.
+> It?s by no means exhaustive.
+>
+> 1. Microsoft Xbox One controller support (without vibration)
+> 2. Additional improvements to Sony SIXAXIS support
+> 3. Toshiba ?Active Protection Sensor? support
+> 4. New ARM support includes Rockchip RK3288 and AllWinner A23 SoCs
+> 5. ?Cross-thread filter setting? for secure computing facility
+> 6. Broadcom BCM7XXX-based board support (used in various set-top boxes)
+> 7. Enhanced AMD Radeon R9 290 support
+> 8. Misc. Nouveau driver improvements, including Kepler GPU fixes
+> 9. Audio support includes Wildcatpoint Audio DSP on Intel Broadwell
+> Ultrabooks.
+>
+> ===================================================
+>
+> Marcelo Cavalcante Rocha - Kalib
+>
+>
+> P?s-Graduando em Governan?a de Tecnologia da Informa??o - EST?CIO/FIC
+> Graduado em Sistemas de Informa??es - EST?CIO/FIC
+> Usu?rio Linux #407564 | Usu?rio Asterisk #1148
+> Fortaleza - Cear? - Brazil
+> Celular: +55 085 87620983
+> Certifica??es: ITIL V3
+> <http://www.itil-officialsite.com/Qualifications/ITILV3QualificationLevels/ITILV3FoundationQualificationinITServiceManagement.aspx>
+>  | CSM <http://www.scrumalliance.org/> | LPI-C1 <http://www.lpi.org/> |
+> LPI-C2 <http://www.lpi.org/> | LPI-C3 <http://www.lpi.org/> | Novell CLA
+> <http://www.novell.com/training/certinfo/cla/>
+> Minha Pessoa: Blog <http://www.marcelocavalcante.net>
+> Projetos: Tux-CE <http://www.tux-ce.org> | Archlinux-br
+> <http://www.archlinux-br.org> | Chakra <http://www.chakra-project.org/> | KDE
+> Brasil <http://br.kde.org> | TLUG <http://gtalug.org/wiki/Main_Page> |
+> PUG-CE <http://pug-ce.python.org.br/blog/>
+>
+> ===================================================
+>
+>
+> Proteja meu endere?o como estou protegendo o seu.
+> N?o revele e-mail dos correspondentes: use Cco (Copia Carbonada Oculta).
+> Retire os endere?os antes de reenviar. Dificulte assim a
+> dissemina??o de v?rus e spam.
+>
+> 2014-10-07 18:30 GMT-03:00 D. Hugh Redelmeier <hugh at mimosa.com>:
+>
+> | From: Peter King <peter.king at utoronto.ca>
+>>
+>> | Second, the Lenovo 3000 n100 0768, for reasons unknown to me, must have
+>> a
+>> | strange hardware keymap, because the (left) Windows key, the (right)
+>> menu
+>> | key, and the PrtScr and Pause keys are all completely dead, according to
+>> | showkey.
+>>
+>> Under X, have you tried the xev command?  Are any events created for
+>> those keys?
+>>
+>>
+>> ---
+>> GTALUG Talk Mailing List - talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141008/06d8562a/attachment.html>
+
+From hugh at mimosa.com  Thu Oct  9 07:33:45 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 9 Oct 2014 03:33:45 -0400 (EDT)
+Subject: [GTALUG] war story: the end of an old computer.
+In-Reply-To: <alpine.LRH.2.02.1107260122020.23477@redclaw.mimosa.com>
+References: <20101006220130.GO12911@caffeine.csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1107260122020.23477@redclaw.mimosa.com>
+Message-ID: <alpine.LRH.2.02.1410090317430.20811@redclaw.mimosa.com>
+
+| From: D. Hugh Redelmeier <hugh at mimosa.com>
+| Date: Tue, 26 Jul 2011 01:54:39 -0400 (EDT)
+| Subject: war story (spoiler: dying power supply takes disk drive with it)
+
+Another war story.
+
+| I replaced the power supply with a CoolerMaster RP-650-PCAR that I
+| happened to have in inventory.
+| 
+| Still no joy.  When I turned power on, the CPU fan would jiggle once but 
+| there was no other sign of life.
+| 
+| When I unplugged all the peripherals, power seemed to work.
+
+I have a similar symptom in another computer.  I narrowed it down to
+the motherboard: when everything was removed from the MB (all
+connections) and it was placed on a non-conductive table, with a new
+power supply, I got the same behaviour.
+
+Since the computer is about 8 years old, it isn't worth putting a lot
+of time into fixing the motherboard.  So I stopped diagnosing at this
+point.
+
+The reason I mention it is to hightlight that the symptom (when power
+supply plugged in, the fans start up but shut down after a second or
+less; case fan spins slowly) seems to be non-specific.
+
+When I first encountered the symptom today, I went back in my TLUG
+archives because I vaguely remembered having posted something with
+this symptom.  Too bad that the old posting turned out not to be
+useful.
+
+For the curious, here is more of the old posting:
+
+| A process of elimination showed that the problem came up only when I
+| connected one of my Seagate 7200.11 drives.
+| 
+| It seems that the power supply death agony caused the 12V TVS
+| (<http://en.wikipedia.org/wiki/Transient_voltage_suppression_diode>) to
+| blow.
+| 
+| I was able to get the disk working again (and the data recovered) by
+| removing the dead TVS.  See
+| <http://forum.hddguru.com/help-with-disconnecting-tvs-from-seagate-barracuda-7200-t15313.html>
+| 
+| To get at the TVS, I needed to remove the drive's PC board.  That
+| required a TORX T6 tool which is moderately hard to find.  I got one
+| at Lowes.
+| 
+| I measured the resistance (DVM on 200 ohm scale) across each TVS and
+| found it to be close to 0 on the 12V TVS.
+| 
+| I poked at the 12V TVS with a fingernail and it came off.  I guess that that
+| means that the circuit board was slightly fried there.  But the drive
+| now works.
+| 
+| I don't know if the TVS ever protects without sacrificing itself.  I
+| imagine that it does.  So I should probably rescue the data and treat
+| the drive as junk / unreliable.
+| 
+| Since the power supply warranty is only 3 years, I probably cannot get
+| anything from Antec.  Since the power supply killed the disk drive
+| (and I did an operation on the drive), I don't see the drive being
+| covered by the Seagate warranty (the drive was purchased on the last
+| week that Seagate offered 5 year warranties on OEM drives).
+| 
+| But I'm mad.  I think that Antec should have recalled the power supply
+| when they knew of the bad capacitor problem.  (I haven't broken the
+| PS's seal so I'm not sure that this is a bad cap problem.)  Time for a
+| class action suit.  But I'm lazy.
+| 
+| Anybody had experience with hidden warranties from Antec?
+
+
