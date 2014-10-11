@@ -2469,3 +2469,133 @@ announce mailing list
 announce at gtalug.org
 http://gtalug.org/mailman/listinfo/announce
 
+From hugh at mimosa.com  Fri Oct 10 19:04:29 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Fri, 10 Oct 2014 15:04:29 -0400 (EDT)
+Subject: [GTALUG] Seiki 4k monitor
+Message-ID: <alpine.LRH.2.02.1410101423490.9702@redclaw.mimosa.com>
+
+A month or so ago I could not resist a 4k monitor for $300. So I bought a 
+Seiki SE39UY04 39-Inch TV from Tiger Direct.
+
+Bad:
+
+This is not a great monitor: not IPS, refresh rate of only 30Hz at
+3840x2160 resolution, no exciting "smart" features, not a name brand.
+
+And the $300 is not 100% accurate: there was a considerable ewaste
+fee, and the price was really $350 + taxes - $50 rebate.
+
+Soon HDMI 2.0 will be here, allowing 60Hz refresh in future 4k
+monitors (not this one).
+
+This thing thinks it is a TV.  Too bad.  No Display Port; that would
+have allowed 60Hz at full resolution.
+
+A lot of computer video outputs do not support 4k even at 30Hz.  I
+tried Zotac Zbox ID-81 Intel HD, AMD E350, AMD C50, ThinkPad W520.
+Luckily my MSI GFX650 seems to work (with nVidia proprietary driver).
+
+Nobody but Tiger Direct has them: I think that this model has been
+replaced or will soon be.
+
+Good:
+
+It seems quite neat to have all these pixels on my desk.  For now, it
+has replaced my long-serving 30" 2560x1600 monitor.
+
+This is less expensive than almost any 2460x1440 monitor and it has
+more pixels.  It seemed like a no-brainer.
+
+39 inches seems reasonable for a desktop.  The larger Seiki 4k models
+seem less so.
+
+30 Hz is fine for static displays.  Mouse tracking seems more, uh, 
+etherial, for lack of a better term.  Scrolling is a little less smooth.  
+Quite liveable for a programmer like me.
+
+TD has it on various sales at various times.  Now it is $380 before
+$30 rebate.  Oh, it is the last day of that rebate.
+<http://www.tigerdirect.ca/applications/SearchTools/item-details.asp?EdpNo=8430969&CatId=7395>
+
+There seems to be an enthusiastic user base.  Even custom firmware!
+
+Hint:
+
+For monitor use, turn noise reduction off and sharpening to 0.
+Otherwise there are unpleasant effects on text displayed in a browser
+or terminal
+
+From gordontc at look.ca  Fri Oct 10 19:39:06 2014
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Fri, 10 Oct 2014 15:39:06 -0400
+Subject: [GTALUG] Seiki 4k monitor
+In-Reply-To: <alpine.LRH.2.02.1410101423490.9702@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1410101423490.9702@redclaw.mimosa.com>
+Message-ID: <1412969946.23439.5.camel@localhost>
+
+They seem to have been trying hard to open a market for this brand.
+They dropped at least one name brand in favour of it.
+
+Gordon
+
+
+On Fri, 2014-10-10 at 15:04 -0400, D. Hugh Redelmeier wrote:
+> A month or so ago I could not resist a 4k monitor for $300. So I bought a 
+> Seiki SE39UY04 39-Inch TV from Tiger Direct.
+> 
+> Bad:
+> 
+> This is not a great monitor: not IPS, refresh rate of only 30Hz at
+> 3840x2160 resolution, no exciting "smart" features, not a name brand.
+> 
+> And the $300 is not 100% accurate: there was a considerable ewaste
+> fee, and the price was really $350 + taxes - $50 rebate.
+> 
+> Soon HDMI 2.0 will be here, allowing 60Hz refresh in future 4k
+> monitors (not this one).
+> 
+> This thing thinks it is a TV.  Too bad.  No Display Port; that would
+> have allowed 60Hz at full resolution.
+> 
+> A lot of computer video outputs do not support 4k even at 30Hz.  I
+> tried Zotac Zbox ID-81 Intel HD, AMD E350, AMD C50, ThinkPad W520.
+> Luckily my MSI GFX650 seems to work (with nVidia proprietary driver).
+> 
+> Nobody but Tiger Direct has them: I think that this model has been
+> replaced or will soon be.
+> 
+> Good:
+> 
+> It seems quite neat to have all these pixels on my desk.  For now, it
+> has replaced my long-serving 30" 2560x1600 monitor.
+> 
+> This is less expensive than almost any 2460x1440 monitor and it has
+> more pixels.  It seemed like a no-brainer.
+> 
+> 39 inches seems reasonable for a desktop.  The larger Seiki 4k models
+> seem less so.
+> 
+> 30 Hz is fine for static displays.  Mouse tracking seems more, uh, 
+> etherial, for lack of a better term.  Scrolling is a little less smooth.  
+> Quite liveable for a programmer like me.
+> 
+> TD has it on various sales at various times.  Now it is $380 before
+> $30 rebate.  Oh, it is the last day of that rebate.
+> <http://www.tigerdirect.ca/applications/SearchTools/item-details.asp?EdpNo=8430969&CatId=7395>
+> 
+> There seems to be an enthusiastic user base.  Even custom firmware!
+> 
+> Hint:
+> 
+> For monitor use, turn noise reduction off and sharpening to 0.
+> Otherwise there are unpleasant effects on text displayed in a browser
+> or terminal
+> 
+> 
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+
