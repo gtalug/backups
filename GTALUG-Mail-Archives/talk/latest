@@ -2599,3 +2599,186 @@ On Fri, 2014-10-10 at 15:04 -0400, D. Hugh Redelmeier wrote:
 
 
 
+From bjonkman at sobac.com  Sat Oct 11 17:54:30 2014
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Sat, 11 Oct 2014 13:54:30 -0400
+Subject: [GTALUG] simple straightforward tool for mainaining small
+ networked of imaged linux boxes
+In-Reply-To: <CAEnxSC7HFD4b2YBVCxFXAWxsDztUy6Fpo9i3jw5-UQLVrYdn_Q@mail.gmail.com>
+References: <CAN_Dec_6JXVpUkoDjQuxwTpx3iaMA6K+gv1NnOgDVGoenFtrmw@mail.gmail.com>
+ <20141007043126.GA13227@waltdnes.org>
+ <CAN_Dec9FCgnDf-bAJ4gkOyx7w1bG_WBO863qo2G1Qsd3RUO=rQ@mail.gmail.com>
+ <20141007171809.GC4436@csclub.uwaterloo.ca>
+ <CAEnxSC7HFD4b2YBVCxFXAWxsDztUy6Fpo9i3jw5-UQLVrYdn_Q@mail.gmail.com>
+Message-ID: <54396ED6.9030901@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Similarly, I've used Clonezilla to create a reference image, and then
+distribute that image to 32 computers in two separate classrooms. It
+involved starting each computer from a bootable Clonezilla USB, then
+pulling the image from a network-connected computer.
+
+http://clonezilla.org/
+
+When a DRBL server was added, it made things even easier. Normally the
+PCs were set to PXE boot, but it would fail and they'd boot from the
+hard drive. When the DRBL server was turned on it would respond to the
+PXE boot, and re-image the PCs. No bootable USBs required.
+
+http://clonezilla.org/clonezilla-SE/
+
+- --Bob.
+
+
+On 07/10/14 01:27 PM, Giles Orr wrote:
+> I haven't used it, but I'm told it's good and it's meant to
+> address exactly the problem you've explained:
+> 
+> http://sourceforge.net/projects/g4l/  (Ghost for Linux)
+> 
+> That said, using PXE booting may be a better solution.
+> 
+> On 7 October 2014 13:18, Lennart Sorensen
+> <lsorense at csclub.uwaterloo.ca> wrote:
+>> On Tue, Oct 07, 2014 at 07:01:42AM -0400, Matt Price wrote:
+>>> Lennart, can you explain that process in more detail?  I mean,
+>>> what tool would one PXE boot from?
+>>> 
+>>> Walter, that is helpful but still sounds pretty time-consuming
+>>> -- I would like to find a way to have an unattended re-imaging
+>>> that can run more-or-less simultaneously on all the machines.
+>> 
+>> If the BIOS has an option for network boot, then you could enable
+>> that. Then the server would have to have 'pxe' (pxe boot daemon)
+>> running to send the boot files to the client when it powers on.
+>> This would then provide the boot menu and such for the client,
+>> which could normally be to load the kernel and ramdisk from the
+>> local disk, or to network boot a kernel and ramdisk that reflash
+>> the local disk, perhaps using partimage to transfer the image
+>> from the server to the client.
+>> 
+>> You might even set up wake on lan if supported so you could
+>> remotely turn the machines on when you want them to do the
+>> reimaging of the disk. In fact a lot of machines can have a
+>> different boot order for normal boot versus wake on lan boot
+>> making some parts even simpler.
+>> 
+>> -- Len Sorensen
+>> 
+>> 
+>> --- GTALUG Talk Mailing List - talk at gtalug.org 
+>> http://gtalug.org/mailman/listinfo/talk
+> 
+> 
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.15 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlQ5btQACgkQuRKJsNLM5erXzQCbB8XCo5AP3+EEu/lyQecXUNsZ
+140AoOwwb7+e9EnHUEtIIndl6N1dg4pP
+=x7v4
+-----END PGP SIGNATURE-----
+
+From self_same_self at yahoo.com  Sat Oct 11 18:49:56 2014
+From: self_same_self at yahoo.com (self_same_self at yahoo.com)
+Date: Sat, 11 Oct 2014 14:49:56 -0400
+Subject: [GTALUG] simple straightforward tool for mainaining small
+	networked of imaged linux boxes
+In-Reply-To: <54396ED6.9030901@sobac.com>
+References: <CAN_Dec_6JXVpUkoDjQuxwTpx3iaMA6K+gv1NnOgDVGoenFtrmw@mail.gmail.com>
+ <20141007043126.GA13227@waltdnes.org>
+ <CAN_Dec9FCgnDf-bAJ4gkOyx7w1bG_WBO863qo2G1Qsd3RUO=rQ@mail.gmail.com>
+ <20141007171809.GC4436@csclub.uwaterloo.ca>
+ <CAEnxSC7HFD4b2YBVCxFXAWxsDztUy6Fpo9i3jw5-UQLVrYdn_Q@mail.gmail.com>
+ <54396ED6.9030901@sobac.com>
+Message-ID: <20141011184956.6004885.44007.1021@yahoo.com>
+
+This is a pretty good hint.?
+?Thanks, Bob
+
+Sent from my mobile
+? Original Message ?
+From: Bob Jonkman
+Sent: Saturday, October 11, 2014 1:54 PM
+To: GTALUG Talk
+Reply To: GTALUG Talk
+Subject: Re: [GTALUG] simple straightforward tool for mainaining small networked of imaged linux boxes
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Similarly, I've used Clonezilla to create a reference image, and then
+distribute that image to 32 computers in two separate classrooms. It
+involved starting each computer from a bootable Clonezilla USB, then
+pulling the image from a network-connected computer.
+
+http://clonezilla.org/
+
+When a DRBL server was added, it made things even easier. Normally the
+PCs were set to PXE boot, but it would fail and they'd boot from the
+hard drive. When the DRBL server was turned on it would respond to the
+PXE boot, and re-image the PCs. No bootable USBs required.
+
+http://clonezilla.org/clonezilla-SE/
+
+- --Bob.
+
+
+On 07/10/14 01:27 PM, Giles Orr wrote:
+> I haven't used it, but I'm told it's good and it's meant to
+> address exactly the problem you've explained:
+> 
+> http://sourceforge.net/projects/g4l/ (Ghost for Linux)
+> 
+> That said, using PXE booting may be a better solution.
+> 
+> On 7 October 2014 13:18, Lennart Sorensen
+> <lsorense at csclub.uwaterloo.ca> wrote:
+>> On Tue, Oct 07, 2014 at 07:01:42AM -0400, Matt Price wrote:
+>>> Lennart, can you explain that process in more detail? I mean,
+>>> what tool would one PXE boot from?
+>>> 
+>>> Walter, that is helpful but still sounds pretty time-consuming
+>>> -- I would like to find a way to have an unattended re-imaging
+>>> that can run more-or-less simultaneously on all the machines.
+>> 
+>> If the BIOS has an option for network boot, then you could enable
+>> that. Then the server would have to have 'pxe' (pxe boot daemon)
+>> running to send the boot files to the client when it powers on.
+>> This would then provide the boot menu and such for the client,
+>> which could normally be to load the kernel and ramdisk from the
+>> local disk, or to network boot a kernel and ramdisk that reflash
+>> the local disk, perhaps using partimage to transfer the image
+>> from the server to the client.
+>> 
+>> You might even set up wake on lan if supported so you could
+>> remotely turn the machines on when you want them to do the
+>> reimaging of the disk. In fact a lot of machines can have a
+>> different boot order for normal boot versus wake on lan boot
+>> making some parts even simpler.
+>> 
+>> -- Len Sorensen
+>> 
+>> 
+>> --- GTALUG Talk Mailing List - talk at gtalug.org 
+>> http://gtalug.org/mailman/listinfo/talk
+> 
+> 
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.15 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlQ5btQACgkQuRKJsNLM5erXzQCbB8XCo5AP3+EEu/lyQecXUNsZ
+140AoOwwb7+e9EnHUEtIIndl6N1dg4pP
+=x7v4
+-----END PGP SIGNATURE-----
+
+
+---
+GTALUG Talk Mailing List - talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
