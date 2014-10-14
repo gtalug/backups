@@ -2782,3 +2782,320 @@ iEYEARECAAYFAlQ5btQACgkQuRKJsNLM5erXzQCbB8XCo5AP3+EEu/lyQecXUNsZ
 GTALUG Talk Mailing List - talk at gtalug.org
 http://gtalug.org/mailman/listinfo/talk
 
+From hugh at mimosa.com  Mon Oct 13 14:34:51 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 13 Oct 2014 10:34:51 -0400 (EDT)
+Subject: [GTALUG] Meeting tomorrow; announce list?
+Message-ID: <alpine.LRH.2.02.1410131030110.9702@redclaw.mimosa.com>
+
+[I did not see this (or anything else) on the newish gtalug announce list.  
+I've been subscribed for over a month.  What's up?]
+
+Scraped from <http://gtalug.org/meeting/2014-10/>:
+
+AGM and ICANN
+
+14 October, 2014 at 07:30 PM
+Annual General Meeting
+
+    GTALUG Update -- 5 minutes
+    Treasury Update -- 5 minutes
+    ICANN & CAG -- 5 minutes
+    Board Elections -- 20 minutes
+
+ICANN Update with Evan Leibovitch
+
+ICANN (or the Internet Corporation for Assigned Names and Numbers) is a 
+non-profit organization that is responsible for the coordination of 
+maintenance and methodology of the Internet's DNS system.
+
+Evan Leibovitch (Vice-Chair of the At-Large Advisory Committee at ICANN) 
+will be talking about the latest developments at ICANN.
+Location
+
+George Vari Engineering and Computing Centre at Ryerson University
+
+245 Church Street, Room 211 (second floor).
+
+
+From davec-b at rogers.com  Mon Oct 13 16:40:39 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Mon, 13 Oct 2014 12:40:39 -0400
+Subject: [GTALUG] Resume Driven Development
+In-Reply-To: <http://radar.oreilly.com/?p=71224@localhost.localdomain>
+References: <http://radar.oreilly.com/?p=71224@localhost.localdomain>
+Message-ID: <543C0087.1010108@rogers.com>
+
+This is an interesting side discussion to the problem of HR departments 
+filtering out the good people and passing on people with the highest 
+number of keyword matches to the hiring managers.
+
+[This one keeps coming up in both GTALUG and UU discussions: crossposted.]
+
+--dave
+-------- Original Message --------
+Subject: 	Resume Driven Development
+Date: 	Sat, 11 Oct 2014 13:38:37 GMT
+From: 	<Mike Loukides>
+
+
+http://feedproxy.google.com/~r/oreilly/radar/atom/~3/vgBYi2NC_FY/resume-driven-development.html
+
+Resume Driven Development
+
+Crossed_Wires_Howard_Lake_Flickr 
+<https://www.flickr.com/photos/howardlake/4834299551>
+
+I had a conversation recently with Martin Thompson 
+<http://mechanical-sympathy.blogspot.com/> (@mjpt777 
+<https://twitter.com/mjpt777>), a London-based developer who specializes 
+in performance and low-latency systems. I learned about Martin through 
+Kevlin Henney?s Tweets <https://twitter.com/KevlinHenney> about his 
+recent talk at Goto Aarhus 
+<http://gotocon.com/aarhus-2014/speaker/Martin+Thompson>.
+
+We talked about a disturbing trend in software development: Resume 
+Driven Development, or RDD. Resume Driven Development happens when your 
+group needs to hire a developer. It?s very hard to tell a non-technical 
+HR person that you need someone who can make good decisions about 
+software architecture, someone who knows the difference between clean 
+code and messy code, and someone who?s able to look at a code base and 
+see what?s unnecessary and what can be simplified. We frequently can?t 
+do that ourselves. So management says, ?oh, we just added Redis to the 
+application, so we?ll need a Redis developer.? That?s great ? it?s easy 
+to throw out resumes that don?t say Redis; it?s easy to look for 
+certifications; and sooner or later, you have a Redis developer at a 
+desk. Maybe even a good one.
+
+And what does your Redis developer do? He does Redis, of course. So, 
+you?re bound to have an application with a lot of Redis in it. Whenever 
+he sees a problem that can be solved with Redis, that?s what he?ll do. 
+It?s what you hired him for. You?re happy; he?s happy. Except your 
+application is now being optimized to fit the resumes of the people you 
+hired, not the requirements of your users.
+
+I have nothing against Redis. Substitute any other great tool (Node, 
+Django, jQuery, AngularJS ? the list is very long) in any tier of the 
+application, and you?ll end up with the same story. If this scenario 
+bears any resemblance to the truth (and it certainly does), you probably 
+will rinse, substitute some other tool, and repeat. Now you have a 
+developer whose job is to make sure there?s a lot of Angular in the 
+system. Sooner or later, you have a nice ?full stack? that?s using just 
+about everything in the modern bestiary of programming languages and 
+frameworks.
+
+This isn?t a good situation. The problem isn?t the tools, each of which 
+serves a need and is good at doing what it does. The problem isn?t the 
+developers; you hired good Redis, Angular, and Node guys, and they?re 
+all doing what they were hired to do. The problem is that your team is 
+optimized around the inability to communicate at a critical stage: the 
+inability of a technical team to specify what they really want (a 
+developer with good programming taste and instincts), and instead hiring 
+someone who has a particular skill or credential. Martin and I suspect 
+that Resume Driven Development is quite pervasive: an overly complex 
+application stack that?s defined by the people you hired, and by the 
+current toys that the ?cool kids? on the programming block get to play 
+with, not by the requirements of the application.
+
+If it all works, what?s the problem? Well, the problem is that it 
+probably doesn?t work. Martin has gotten latencies from tens of seconds 
+down to sub-second levels just by stripping layers out of the stack. The 
+resulting code is simpler, easier to work with, and much more 
+productive: customers buy stuff; customers actually explore the site and 
+shop because they?re no longer frustrated while waiting around for their 
+request to percolate through an overly complex site.
+
+This isn?t an easy problem to solve. The complete system (software, 
+engineers, HR staff) tends to optimize around the wrong problem: 
+simplifying the process of evaluating candidates by listing a set of 
+skills. In the process, it pessimizes what should be most important: the 
+ability to serve customers effectively. The result is a large, complex 
+technology stack, a Yak with a lot of multi-colored hair to shave, 
+that?s defined by the institutional setting, not the job?s real 
+technical requirements.
+
+How do we fix this? It?s easy to say ?hire good people?; but hiring good 
+people is hard. When you?re looking for good programming instincts and a 
+solid understanding of the fundamentals, certifications don?t help; 
+degrees don?t help. But certainly understanding the problem, 
+understanding why your ?full stack? has grown so full, is a start. And 
+before you ask HR to find a developer who is familiar with AcuteJS and 
+Lymph, think about who you really want in that seat.
+
+/Cropped image on article and category pages by Howard Lake on Flickr 
+<https://www.flickr.com/photos/howardlake/4834299551>, used under a 
+Creative Commons license <https://creativecommons.org/licenses/by-sa/2.0/>./
+
+<http://feeds.feedburner.com/%7Eff/oreilly/radar/atom?a=vgBYi2NC_FY:8OLvyutoYS8:V_sGLiPBpWU> 
+<http://feeds.feedburner.com/%7Eff/oreilly/radar/atom?a=vgBYi2NC_FY:8OLvyutoYS8:yIl2AUoC8zA> 
+<http://feeds.feedburner.com/%7Eff/oreilly/radar/atom?a=vgBYi2NC_FY:8OLvyutoYS8:JEwB19i1-c4> 
+<http://feeds.feedburner.com/%7Eff/oreilly/radar/atom?a=vgBYi2NC_FY:8OLvyutoYS8:7Q72WNTAKBA> 
+<http://feeds.feedburner.com/%7Eff/oreilly/radar/atom?a=vgBYi2NC_FY:8OLvyutoYS8:qj6IDK7rITs> 
+
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141013/100f40f7/attachment.html>
+
+From gordontc at look.ca  Mon Oct 13 21:05:01 2014
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Mon, 13 Oct 2014 17:05:01 -0400
+Subject: [GTALUG] Resume Driven Development
+In-Reply-To: <543C0087.1010108@rogers.com>
+References: <http://radar.oreilly.com/?p=71224@localhost.localdomain>
+ <543C0087.1010108@rogers.com>
+Message-ID: <1413234301.9375.1.camel@localhost>
+
+This is a problem that has been around for some time - many, many years,
+in fact.  It surprises me to see this article now.
+
+I've been guilty of this sort of thing myself from time to time - on a
+first pass selection, but I was lucky that the client we were usually
+sourcing for used a rather brutal questionnaire that demanded to know
+when, for how long and for what purpose the experience in some skill was
+gained.   That was singularly useful - it filtered out a LOT of people.
+
+The other warning to give, by the way, is to watch what you tell the HR
+people.   I once was quizzed for a full 15 minutes on my ability to use
+"word pictures" to explain things.  There was not a question that really
+covered my technical skills (it was a technical position).  That kind of
+thing has happened on a number of such interviews.
+
+Gordon
+
+
+
+On Mon, 2014-10-13 at 12:40 -0400, David Collier-Brown wrote:
+> This is an interesting side discussion to the problem of HR
+> departments filtering out the good people and passing on people with
+> the highest number of keyword matches to the hiring managers.
+> 
+> [This one keeps coming up in both GTALUG and UU discussions:
+> crossposted.]
+> 
+> --dave
+> -------- Original Message -------- 
+>                           Subject: 
+> Resume Driven Development
+>                              Date: 
+> Sat, 11 Oct 2014 13:38:37 GMT
+>                              From: 
+> <Mike Loukides>
+> 
+> http://feedproxy.google.com/~r/oreilly/radar/atom/~3/vgBYi2NC_FY/resume-driven-development.html
+> 
+> 
+> 
+> Crossed_Wires_Howard_Lake_Flickr
+> 
+> I had a conversation recently with Martin Thompson (@mjpt777), a
+> London-based developer who specializes in performance and low-latency
+> systems. I learned about Martin through Kevlin Henney?s Tweets about
+> his recent talk at Goto Aarhus.
+> 
+> We talked about a disturbing trend in software development: Resume
+> Driven Development, or RDD. Resume Driven Development happens when
+> your group needs to hire a developer. It?s very hard to tell a
+> non-technical HR person that you need someone who can make good
+> decisions about software architecture, someone who knows the
+> difference between clean code and messy code, and someone who?s able
+> to look at a code base and see what?s unnecessary and what can be
+> simplified. We frequently can?t do that ourselves. So management says,
+> ?oh, we just added Redis to the application, so we?ll need a Redis
+> developer.? That?s great ? it?s easy to throw out resumes that don?t
+> say Redis; it?s easy to look for certifications; and sooner or later,
+> you have a Redis developer at a desk. Maybe even a good one.
+> 
+> And what does your Redis developer do? He does Redis, of course. So,
+> you?re bound to have an application with a lot of Redis in it.
+> Whenever he sees a problem that can be solved with Redis, that?s what
+> he?ll do. It?s what you hired him for. You?re happy; he?s happy.
+> Except your application is now being optimized to fit the resumes of
+> the people you hired, not the requirements of your users.
+> 
+> I have nothing against Redis. Substitute any other great tool (Node,
+> Django, jQuery, AngularJS ? the list is very long) in any tier of the
+> application, and you?ll end up with the same story. If this scenario
+> bears any resemblance to the truth (and it certainly does), you
+> probably will rinse, substitute some other tool, and repeat. Now you
+> have a developer whose job is to make sure there?s a lot of Angular in
+> the system. Sooner or later, you have a nice ?full stack? that?s using
+> just about everything in the modern bestiary of programming languages
+> and frameworks.
+> 
+> This isn?t a good situation. The problem isn?t the tools, each of
+> which serves a need and is good at doing what it does. The problem
+> isn?t the developers; you hired good Redis, Angular, and Node guys,
+> and they?re all doing what they were hired to do. The problem is that
+> your team is optimized around the inability to communicate at a
+> critical stage: the inability of a technical team to specify what they
+> really want (a developer with good programming taste and instincts),
+> and instead hiring someone who has a particular skill or credential.
+> Martin and I suspect that Resume Driven Development is quite
+> pervasive: an overly complex application stack that?s defined by the
+> people you hired, and by the current toys that the ?cool kids? on the
+> programming block get to play with, not by the requirements of the
+> application.
+> 
+> If it all works, what?s the problem? Well, the problem is that it
+> probably doesn?t work. Martin has gotten latencies from tens of
+> seconds down to sub-second levels just by stripping layers out of the
+> stack. The resulting code is simpler, easier to work with, and much
+> more productive: customers buy stuff; customers actually explore the
+> site and shop because they?re no longer frustrated while waiting
+> around for their request to percolate through an overly complex site.
+> 
+> This isn?t an easy problem to solve. The complete system (software,
+> engineers, HR staff) tends to optimize around the wrong problem:
+> simplifying the process of evaluating candidates by listing a set of
+> skills. In the process, it pessimizes what should be most important:
+> the ability to serve customers effectively. The result is a large,
+> complex technology stack, a Yak with a lot of multi-colored hair to
+> shave, that?s defined by the institutional setting, not the job?s real
+> technical requirements.
+> 
+> How do we fix this? It?s easy to say ?hire good people?; but hiring
+> good people is hard. When you?re looking for good programming
+> instincts and a solid understanding of the fundamentals,
+> certifications don?t help; degrees don?t help. But certainly
+> understanding the problem, understanding why your ?full stack? has
+> grown so full, is a start. And before you ask HR to find a developer
+> who is familiar with AcuteJS and Lymph, think about who you really
+> want in that seat.
+> 
+> Cropped image on article and category pages by Howard Lake on Flickr,
+> used under a Creative Commons license.
+> 
+>     
+> 
+> 
+> 
+> 
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+
+From james.knott at rogers.com  Mon Oct 13 21:24:32 2014
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 13 Oct 2014 17:24:32 -0400
+Subject: [GTALUG] Resume Driven Development
+In-Reply-To: <543C0087.1010108@rogers.com>
+References: <http://radar.oreilly.com/?p=71224@localhost.localdomain>
+ <543C0087.1010108@rogers.com>
+Message-ID: <543C4310.2050400@rogers.com>
+
+On 10/13/2014 12:40 PM, David Collier-Brown wrote:
+> This is an interesting side discussion to the problem of HR
+> departments filtering out the good people and passing on people with
+> the highest number of keyword matches to the hiring managers.
+
+Getting past the non-techincal HR staff has long been a problem in the
+tech industry.  One thing I've noticed is they don't know their are
+equivalents to the name brand they're using.  If you've used one brand
+of a tool, you're likely able to use a similar tool under a different
+name.  I guess this is the same thinking that causes them to hire people
+that know Word, rather than those who know how to use word processors.
+
