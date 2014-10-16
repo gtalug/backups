@@ -3099,3 +3099,239 @@ of a tool, you're likely able to use a similar tool under a different
 name.  I guess this is the same thinking that causes them to hire people
 that know Word, rather than those who know how to use word processors.
 
+From avolkov at gmail.com  Wed Oct 15 14:56:02 2014
+From: avolkov at gmail.com (Alex Volkov)
+Date: Wed, 15 Oct 2014 10:56:02 -0400
+Subject: [GTALUG] Raspberry Pi gadgets
+Message-ID: <CAO1j=qcH9b8nCTX7Fp0_vKwhmV2zS7=6EC3_jqrGxu7CBjD70w@mail.gmail.com>
+
+Hello everyone,
+
+As I mentioned there are several Raspberry Pi gadgets coming out on
+crowdfunding campaigns that I find interesting.
+
+PiTop -- A raspberry pi based laptop that greatly simplifies learning to
+work with hardware, robotics and sensors.
+Product page -- http://pi-top.com/
+Indiegogo campaign --
+https://www.indiegogo.com/projects/pi-top-a-raspberry-pi-laptop-you-build-yourself
+
+SmartiPi -- a very versatile Raspberry Pi case that incorporates Lego
+blocks, VGA backplate mounting holes, stacking, GoPro mounts etc.. for
+about $21 - 25 USD.
+
+The project is funded at $11,614, needs $14K and has 4 days to go, so it
+could really use some help.
+
+kickstarted page --
+https://www.kickstarter.com/projects/799765240/smartipi-raspberry-pi-b-and-camera-case
+
+
+I found out about some of this stuff by listening to Raspberry Pi today
+podcast, which is a weekly, 30 minute long podcast, very British.
+http://www.raspi.today/
+
+
+Alex.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141015/30334c44/attachment.html>
+
+From gordontc at look.ca  Wed Oct 15 18:03:35 2014
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Wed, 15 Oct 2014 14:03:35 -0400
+Subject: [GTALUG] [Fwd: Fwd: remote hub info]
+Message-ID: <1413396215.23844.1.camel@localhost>
+
+Hi, all:
+
+This is about the remote hub to the ICANN meeting in Los Angeles
+tomorrow.
+
+I just got this from Glenn McKnight.  The registration link on this
+document does work.
+
+Gordon Chillcott
+-------------- next part --------------
+An embedded message was scrubbed...
+From: Glenn McKnight <mcknight.glenn at gmail.com>
+Subject: Fwd: remote hub info
+Date: Wed, 15 Oct 2014 10:33:18 -0400
+Size: 24080
+URL: <http://gtalug.org/pipermail/talk/attachments/20141015/7ab82cff/attachment.mht>
+
+From davecramer at gmail.com  Wed Oct 15 18:33:11 2014
+From: davecramer at gmail.com (Dave Cramer)
+Date: Wed, 15 Oct 2014 14:33:11 -0400
+Subject: [GTALUG] open source routers
+Message-ID: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+
+My old linksys wrtg54 with dd-wrt locks up. I am looking for suggestions
+for a new router that will accept open source router firmware?
+
+Dave Cramer
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141015/195911ab/attachment.html>
+
+From cbbrowne at gmail.com  Wed Oct 15 19:35:55 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Wed, 15 Oct 2014 15:35:55 -0400
+Subject: [GTALUG] open source routers
+In-Reply-To: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+References: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+Message-ID: <CAFNqd5VM_yc6Syk0=VmNjk3_Eg1SwXGrG2Y_8MGYoeD5zeiB_w@mail.gmail.com>
+
+On 15 October 2014 14:33, Dave Cramer <davecramer at gmail.com> wrote:
+> My old linksys wrtg54 with dd-wrt locks up. I am looking for suggestions
+for a new router
+> that will accept open source router firmware?
+
+
+I wish there was a better answer than poring over the docs for
+OpenWRT/DD-WRT
+http://wiki.openwrt.org/toh/start
+http://www.dd-wrt.com/wiki/index.php/Supported_Devices
+
+--
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141015/2b9d6cf2/attachment.html>
+
+From gilesorr at gmail.com  Wed Oct 15 19:41:09 2014
+From: gilesorr at gmail.com (Giles Orr)
+Date: Wed, 15 Oct 2014 15:41:09 -0400
+Subject: [GTALUG] open source routers
+In-Reply-To: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+References: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+Message-ID: <CAEnxSC63UPyYp6Y1SHKEESatsM1GgrDKycN127xbKD0L7GmgGg@mail.gmail.com>
+
+On 15 October 2014 14:33, Dave Cramer <davecramer at gmail.com> wrote:
+> My old linksys wrtg54 with dd-wrt locks up. I am looking for suggestions for
+> a new router that will accept open source router firmware?
+
+http://wiki.openwrt.org/toh/start
+
+Don't know if you're dedicated to dd-wrt: this is of course OpenWRT.
+(Ah, Chris has sent this as I'm writing).
+
+My understanding is that, as a brand, TP-Link has been the least
+obstructive and makes pretty good products at a reasonable price:
+Canada Computers carries a number of them.  I own (among other old
+WAPs) a TP-Link MR-3020, which has worked fine - but it's not a home
+router, it's a lightweight thing for Pirate Boxes or single user
+connections.
+
+I've also been given to understand that Linksys's replacement for the
+WRT-54g that they recently put out there with much fanfare, the
+1900AC, is A) expensive, and B) not as open as they claim it is, and
+therefore not working terribly well as a replacement for the WRT-54G.
+
+If you were okay with the throughput of the WRT-54G, they can be had
+used from the usual suspects (I got mine at garage sales, but that's
+hit-and-miss - mostly "miss") for $10 or $15.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From tisdall at gmail.com  Wed Oct 15 19:55:16 2014
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Wed, 15 Oct 2014 15:55:16 -0400
+Subject: [GTALUG] open source routers
+In-Reply-To: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+References: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+Message-ID: <CAGxYWpbhXiiwTpTfztr0LdG-7dPdpN33XuF=0Y5th11UAPAN5g@mail.gmail.com>
+
+I recently had my DD-WRT router reset (for no apparent reason... it had
+been working un-touched for well over a year).  I then tried to re-set up
+my printer server to find that DD-WRT was using OpenWRT packages over 8
+years old that no one hosted any more.  I tried to see if there was a newer
+version of DD-WRT that worked with my router and it was still the same
+version number.
+
+So, if DD-WRT is just using OpenWRT packages I'd say go with OpenWRT.  The
+benefit of OpenWRT, too, is that you can package just what you need in your
+flash image and save a lot of room for anything else.
+
+Here's a blog entry I used when building my own image:
+http://blog.rot13.org/2014/03/building-custom-openwrt-image-for-home-router.html
+
+BTW, I'd recommend getting a router with a USB port.  You can turn it into
+a media server, a printer server, and even set it up to use a 3G dongle...
+ so many options with OpenWRT!
+
+-Tim
+
+On Wed, Oct 15, 2014 at 2:33 PM, Dave Cramer <davecramer at gmail.com> wrote:
+
+> My old linksys wrtg54 with dd-wrt locks up. I am looking for suggestions
+> for a new router that will accept open source router firmware?
+>
+> Dave Cramer
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141015/28d2e636/attachment.html>
+
+From hugh at mimosa.com  Thu Oct 16 00:07:28 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 15 Oct 2014 20:07:28 -0400 (EDT)
+Subject: [GTALUG] open source routers
+In-Reply-To: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+References: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1410152000030.18989@redclaw.mimosa.com>
+
+| From: Dave Cramer <davecramer at gmail.com>
+
+| My old linksys wrtg54 with dd-wrt locks up. I am looking for suggestions
+| for a new router that will accept open source router firmware?
+
+I'm much more happy with the idea of OpenWRT.  But the penalty is that
+fewer devices work.
+
+I just bought this today and hope that OpenWRT will work.  Certainly
+no guarantee.  But it is a bargain!
+<http://www.newegg.ca/Product/Product.aspx?Item=N82E16833122615&cm_re=ac1450-_-33-122-615-_-Product&AID=10657534&PID=749547&SID=rfdcb-d725&nm_mc=AFC-C8JunctionCA&cm_mmc=AFC-C8JunctionCA-_-na-_-na-_-na>
+
+$79.99 + shipping.  Refurb.
+
+<https://forum.openwrt.org/viewtopic.php?id=46758&p=2> has some
+hopeful noise.
+
+<http://advancedhomeserver.com/upgrade-a-netgear-ac1450-router-to-ac1750-r6300v2/>
+
+All this started from near the end of this thread about a different
+interesting deal that seems to be sold out.
+<http://forums.redflagdeals.com/tp-link-ac1750-router-fs-bb-ca-67-98-a-1572803/4/>
+
+From james.knott at rogers.com  Thu Oct 16 02:01:03 2014
+From: james.knott at rogers.com (James Knott)
+Date: Wed, 15 Oct 2014 22:01:03 -0400
+Subject: [GTALUG] open source routers
+In-Reply-To: <alpine.LRH.2.02.1410152000030.18989@redclaw.mimosa.com>
+References: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1410152000030.18989@redclaw.mimosa.com>
+Message-ID: <543F26DF.8060606@rogers.com>
+
+On 10/15/2014 08:07 PM, D. Hugh Redelmeier wrote:
+> I just bought this today and hope that OpenWRT will work.  Certainly
+> no guarantee.  But it is a bargain!
+> <http://www.newegg.ca/Product/Product.aspx?Item=N82E16833122615&cm_re=ac1450-_-33-122-615-_-Product&AID=10657534&PID=749547&SID=rfdcb-d725&nm_mc=AFC-C8JunctionCA&cm_mmc=AFC-C8JunctionCA-_-na-_-na-_-na>
+>
+> $79.99 + shipping.  Refurb.
+
+For the same money, I bought a used Cisco 2600 router last week and with
+no shipping other than the gas to go a short distance (Steeles to Hwy 7
+& back) out of my way.  No WiFi, but then I have a separate access point.
+
