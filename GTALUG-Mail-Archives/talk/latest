@@ -3335,3 +3335,373 @@ For the same money, I bought a used Cisco 2600 router last week and with
 no shipping other than the gas to go a short distance (Steeles to Hwy 7
 & back) out of my way.  No WiFi, but then I have a separate access point.
 
+From daniel at circuidipity.com  Wed Oct 15 20:24:23 2014
+From: daniel at circuidipity.com (Daniel Wayne Armstrong)
+Date: Wed, 15 Oct 2014 16:24:23 -0400
+Subject: [GTALUG] open source routers
+In-Reply-To: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+References: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+Message-ID: <CACa31mA9KSU=7Lhw_RcWwnv+V8oDPTdWdgWZW7Neo15_SMkMVA@mail.gmail.com>
+
+On Wed, Oct 15, 2014 at 2:33 PM, Dave Cramer <davecramer at gmail.com> wrote:
+
+> My old linksys wrtg54 with dd-wrt locks up. I am looking for suggestions
+> for a new router that will accept open source router firmware?
+>
+
+My current router is a TP-Link TL-WR841N running the latest OpenWRT...
+limited memory for expansion, but its a cheap and cheerful device that runs
+$20-$25. I wrote a post about flashing OpenWRT here:
+
+ http://www.circuidipity.com/pingparade4.html
+
+-- 
+(o<  .: Per curiositas ad astra .: http://www.circuidipity.com
+(/)_
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141015/2b312d03/attachment.html>
+
+From adb at adb.ca  Wed Oct 15 23:52:40 2014
+From: adb at adb.ca (Anthony de Boer)
+Date: Wed, 15 Oct 2014 19:52:40 -0400
+Subject: [GTALUG] open source routers
+In-Reply-To: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+References: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+Message-ID: <20141015235240.GC1562@adb.ca>
+
+Dave Cramer wrote:
+> My old linksys wrtg54 with dd-wrt locks up. I am looking for suggestions
+> for a new router that will accept open source router firmware?
+
+I had one fail on me under OpenWRT (periodically it'd go dark, staying
+up less long each restart) and found a new wallwart worked wonders.
+
+-- 
+Anthony de Boer
+
+From mlxxxp at gmail.com  Thu Oct 16 00:24:59 2014
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Wed, 15 Oct 2014 20:24:59 -0400
+Subject: [GTALUG] open source routers
+In-Reply-To: <CAEnxSC63UPyYp6Y1SHKEESatsM1GgrDKycN127xbKD0L7GmgGg@mail.gmail.com>
+References: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+ <CAEnxSC63UPyYp6Y1SHKEESatsM1GgrDKycN127xbKD0L7GmgGg@mail.gmail.com>
+Message-ID: <CAArSzsWJLEDkUb4XT29700G7mGMvLZHiDyo+pBkEPwHZq1H2Yw@mail.gmail.com>
+
+On 15 October 2014 15:41, Giles Orr <gilesorr at gmail.com> wrote:
+> If you were okay with the throughput of the WRT-54G, they can be had
+> used from the usual suspects (I got mine at garage sales, but that's
+> hit-and-miss - mostly "miss") for $10 or $15.
+
+I just bought a used WRT-54G V8.0 today from Value Village for $4.99 +
+tax.  I've just finished resetting and testing it and it seems to be
+fully functional.
+
+I don't really have a use for it but couldn't resist the price. The
+power adapter alone is worth the cost to me. They had a second one
+there but it was missing the power adapter.
+
+-- 
+Scott A.
+
+From mlxxxp at gmail.com  Thu Oct 16 11:11:07 2014
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Thu, 16 Oct 2014 07:11:07 -0400
+Subject: [GTALUG] open source routers
+In-Reply-To: <543F26DF.8060606@rogers.com>
+References: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1410152000030.18989@redclaw.mimosa.com>
+ <543F26DF.8060606@rogers.com>
+Message-ID: <CAArSzsVaPx2vDp1WZ+mMb7OMT0Z9T4pafobfRcM32+0QXdvfXQ@mail.gmail.com>
+
+On 15 October 2014 22:01, James Knott <james.knott at rogers.com> wrote:
+> For the same money, I bought a used Cisco 2600 router last week [...]
+
+The subject of this tread is "open source routers". Can you load open
+source firmware into it?
+
+-- 
+Scott
+
+From me at bobcopeland.com  Wed Oct 15 20:06:39 2014
+From: me at bobcopeland.com (Bob Copeland)
+Date: Wed, 15 Oct 2014 16:06:39 -0400
+Subject: [GTALUG] open source routers
+In-Reply-To: <CAEnxSC63UPyYp6Y1SHKEESatsM1GgrDKycN127xbKD0L7GmgGg@mail.gmail.com>
+References: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+ <CAEnxSC63UPyYp6Y1SHKEESatsM1GgrDKycN127xbKD0L7GmgGg@mail.gmail.com>
+Message-ID: <CAEKwDSDmiK90rCD=OQXk5vQQ8MKEmf66+8LiJXviaar7h0+wTA@mail.gmail.com>
+
+On Wed, Oct 15, 2014 at 3:41 PM, Giles Orr <gilesorr at gmail.com> wrote:
+> On 15 October 2014 14:33, Dave Cramer <davecramer at gmail.com> wrote:
+>> My old linksys wrtg54 with dd-wrt locks up. I am looking for suggestions for
+>> a new router that will accept open source router firmware?
+>
+> My understanding is that, as a brand, TP-Link has been the least
+> obstructive and makes pretty good products at a reasonable price:
+> Canada Computers carries a number of them.  I own (among other old
+> WAPs) a TP-Link MR-3020, which has worked fine - but it's not a home
+> router, it's a lightweight thing for Pirate Boxes or single user
+> connections.
+
+TP-Link seconded: I just picked up a TP-Link AC-1750 (be sure to get
+v2 -- v1 will not work with ath10k).  I'm planning to use it as a dev
+platform for some wireless stuff.
+
+So far everything is working fine with OpenWRT out of the box, and I
+had no trouble compiling and installing my own OpenWRT build for it as
+well.  Of course I say this with approximately 3 hours of uptime at
+this point, so time will tell.
+
+-- 
+Bob Copeland %% www.bobcopeland.com
+
+From cbbrowne at gmail.com  Thu Oct 16 13:59:47 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Thu, 16 Oct 2014 09:59:47 -0400
+Subject: [GTALUG] SystemD vs Bind9 vs IPv6
+Message-ID: <CAFNqd5VyCjTT573TtYTF70R3XuH-0cKhhk2qYBSWy43uQBTHCg@mail.gmail.com>
+
+I think I got bit yesterday by the above...
+
+I was noticing terrible resolution speed, so checked messages (btw,
+"service bind9 status" provides brief, but decent-ish characterization of
+things), and noticed many messages indicating failing resolutions against
+IPv6 addresses.
+
+There is a common pair of bits of Bind configuration:
+a) One might set options to prefer not to use IPv6 addresses, so in
+/etc/bind/named.conf.options, change
+   listen-on-v6 { all;};
+to
+   listen-on-v6 { none; };
+
+b) This was where SystemD got into the mix...
+
+Pass the "-4" option when running named to use only IPv4.  This seems to be
+the highly significant bit.
+
+On Debian-derived systems, the usual recipe is to add "-4" to
+/etc/defaults/bind
+  --> OPTIONS="-4"
+
+However, the SystemD config for Bind9 lives in
+/lib/systemd/system/bind9.service, and apparently there is recent change
+there that that configuration no longer reads from /etc/defaults/bind, so
+that to have named get the "-4" option requires altering
+/lib/systemd/system/bind9.service.  Seems like it needs to be altered
+directly.
+
+This isn't necessarily a "SystemD bug", rather a packaging bug in Debian.
+It still was fairly annoying.
+
+I have yet to report it properly, probably deserves a bit more research, in
+case my diagnosis is off a bit.
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141016/310c0c58/attachment.html>
+
+From james.knott at rogers.com  Thu Oct 16 14:27:24 2014
+From: james.knott at rogers.com (James Knott)
+Date: Thu, 16 Oct 2014 10:27:24 -0400
+Subject: [GTALUG] open source routers
+In-Reply-To: <CAArSzsWJLEDkUb4XT29700G7mGMvLZHiDyo+pBkEPwHZq1H2Yw@mail.gmail.com>
+References: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+ <CAEnxSC63UPyYp6Y1SHKEESatsM1GgrDKycN127xbKD0L7GmgGg@mail.gmail.com>
+ <CAArSzsWJLEDkUb4XT29700G7mGMvLZHiDyo+pBkEPwHZq1H2Yw@mail.gmail.com>
+Message-ID: <543FD5CC.8070006@rogers.com>
+
+On 10/15/2014 08:24 PM, Scott Allen wrote:
+> I just bought a used WRT-54G V8.0 today from Value Village for $4.99 +
+> tax.  I've just finished resetting and testing it and it seems to be
+> fully functional.
+>
+> I don't really have a use for it but couldn't resist the price. The
+> power adapter alone is worth the cost to me. They had a second one
+> there but it was missing the power adapter.
+
+I have an old v1.1 collecting dust.  I stopped using it because it only
+does 802.11g.  My TP-Link TL-WA901ND access point does 802.11n.
+
+
+
+From james.knott at rogers.com  Thu Oct 16 14:29:37 2014
+From: james.knott at rogers.com (James Knott)
+Date: Thu, 16 Oct 2014 10:29:37 -0400
+Subject: [GTALUG] open source routers
+In-Reply-To: <CAArSzsVaPx2vDp1WZ+mMb7OMT0Z9T4pafobfRcM32+0QXdvfXQ@mail.gmail.com>
+References: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1410152000030.18989@redclaw.mimosa.com>
+ <543F26DF.8060606@rogers.com>
+ <CAArSzsVaPx2vDp1WZ+mMb7OMT0Z9T4pafobfRcM32+0QXdvfXQ@mail.gmail.com>
+Message-ID: <543FD651.3040506@rogers.com>
+
+On 10/16/2014 07:11 AM, Scott Allen wrote:
+>> For the same money, I bought a used Cisco 2600 router last week [...]
+> The subject of this tread is "open source routers". Can you load open
+> source firmware into it?
+
+Well, if someone were to write it, yes.  The OS comes as a compressed
+bin file that's uncompressed at boot up.  So, it would just be a matter
+of copying the file to the memory and it will automagically run.
+
+
+
+From hugh at mimosa.com  Thu Oct 16 15:11:03 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 16 Oct 2014 11:11:03 -0400 (EDT)
+Subject: [GTALUG] open source routers
+In-Reply-To: <alpine.LRH.2.02.1410152000030.18989@redclaw.mimosa.com>
+References: <CADK3HHLuuDOHGQMoa3jEVX-9JGDhSW-gaBh--ZSAcZm8F8MVBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1410152000030.18989@redclaw.mimosa.com>
+Message-ID: <alpine.LRH.2.02.1410161106370.3327@redclaw.mimosa.com>
+
+| From: D. Hugh Redelmeier <hugh at mimosa.com>
+
+| <https://forum.openwrt.org/viewtopic.php?id=46758&p=2> has some
+| hopeful noise.
+
+Oops.  The NETGEAR AC1450 (which turns into a AC1750 with slight
+hacking) is not well supported by OpenWRT.  Broadcom has not disclosed
+enough to support 802.11n or ac in open source drivers.
+
+It does run DDWRT.
+
+I infer from some comments on the internet that the factory firmware
+is a variant of OpenWRT.  How annoying.
+
+From peterplatek at gmail.com  Thu Oct 16 16:33:10 2014
+From: peterplatek at gmail.com (Peter Platek)
+Date: Thu, 16 Oct 2014 12:33:10 -0400
+Subject: [GTALUG] SystemD vs Bind9 vs IPv6
+In-Reply-To: <CAFNqd5VyCjTT573TtYTF70R3XuH-0cKhhk2qYBSWy43uQBTHCg@mail.gmail.com>
+References: <CAFNqd5VyCjTT573TtYTF70R3XuH-0cKhhk2qYBSWy43uQBTHCg@mail.gmail.com>
+Message-ID: <CANewTZ9JGJ8LnCAiK1G9OraopAp68YSV8r6FNoSqpdWWmmAOxA@mail.gmail.com>
+
+I think you might want to follow the advice below so your changes don't get
+overwritten after next update (Adjust for debian of course):
+*Q: I want to change a service file, but rpm keeps overwriting it in
+/usr/lib/systemd/system all the time, how should I handle this?*
+
+A: The recommended way is to copy the service file from
+/usr/lib/systemd/system to /etc/systemd/system and edit it there. The
+latter directory takes precedence over the former, and rpm will never
+overwrite it. If you want to use the distributed service file again you can
+simply delete (or rename) the service file in /etc/systemd/system again.
+
+On 16 October 2014 09:59, Christopher Browne <cbbrowne at gmail.com> wrote:
+
+> I think I got bit yesterday by the above...
+>
+> I was noticing terrible resolution speed, so checked messages (btw,
+> "service bind9 status" provides brief, but decent-ish characterization of
+> things), and noticed many messages indicating failing resolutions against
+> IPv6 addresses.
+>
+> There is a common pair of bits of Bind configuration:
+> a) One might set options to prefer not to use IPv6 addresses, so in
+> /etc/bind/named.conf.options, change
+>    listen-on-v6 { all;};
+> to
+>    listen-on-v6 { none; };
+>
+> b) This was where SystemD got into the mix...
+>
+> Pass the "-4" option when running named to use only IPv4.  This seems to
+> be the highly significant bit.
+>
+> On Debian-derived systems, the usual recipe is to add "-4" to
+> /etc/defaults/bind
+>   --> OPTIONS="-4"
+>
+> However, the SystemD config for Bind9 lives in
+> /lib/systemd/system/bind9.service, and apparently there is recent change
+> there that that configuration no longer reads from /etc/defaults/bind, so
+> that to have named get the "-4" option requires altering
+> /lib/systemd/system/bind9.service.  Seems like it needs to be altered
+> directly.
+>
+> This isn't necessarily a "SystemD bug", rather a packaging bug in Debian.
+> It still was fairly annoying.
+>
+> I have yet to report it properly, probably deserves a bit more research,
+> in case my diagnosis is off a bit.
+>
+> --
+> When confronted by a difficult problem, solve it by reducing it to the
+> question, "How would the Lone Ranger handle this?"
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141016/378cac70/attachment.html>
+
+From cbbrowne at gmail.com  Thu Oct 16 17:32:24 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Thu, 16 Oct 2014 13:32:24 -0400
+Subject: [GTALUG] SystemD vs Bind9 vs IPv6
+In-Reply-To: <CANewTZ9JGJ8LnCAiK1G9OraopAp68YSV8r6FNoSqpdWWmmAOxA@mail.gmail.com>
+References: <CAFNqd5VyCjTT573TtYTF70R3XuH-0cKhhk2qYBSWy43uQBTHCg@mail.gmail.com>
+ <CANewTZ9JGJ8LnCAiK1G9OraopAp68YSV8r6FNoSqpdWWmmAOxA@mail.gmail.com>
+Message-ID: <CAFNqd5WuRp7_H7QrN-STSv5Ez5+hm31JsRN1JbPpzc3xKDY-zw@mail.gmail.com>
+
+On 16 October 2014 12:33, Peter Platek <peterplatek at gmail.com> wrote:
+
+> I think you might want to follow the advice below so your changes don't
+> get overwritten after next update (Adjust for debian of course):
+> *Q: I want to change a service file, but rpm keeps overwriting it in
+> /usr/lib/systemd/system all the time, how should I handle this?*
+>
+> A: The recommended way is to copy the service file from
+> /usr/lib/systemd/system to /etc/systemd/system and edit it there. The
+> latter directory takes precedence over the former, and rpm will never
+> overwrite it. If you want to use the distributed service file again you can
+> simply delete (or rename) the service file in /etc/systemd/system again.
+>
+
+Debian won't silently overwrite the file in
+/lib/systemd/system/bind9.service (barring doing some particular
+configuration to do otherwise!!!); an upgrade would notice the difference,
+and ask if you want to overwrite the changes.  Which points at the notion
+that there's still a problem; if the options are *supposed* to be
+configurable, they should go some place where they will be referenced, as
+opposed to there being some question of overwriting things.
+
+Hmm.  Looks like the customization location *might* be
+/etc/systemd/system/multi-user.target.wants/bind9.service
+
+Yep, that looks mighty promising.  If I edit that, and check systemd status
+($ service bind9 status), I get the warning that...
+
+Warning: Unit file changed on disk, 'systemctl daemon-reload' recommended.
+
+[wait a minute...   Seems like a closer relationship...]
+root at cbbrowne:~# ls -l
+/etc/systemd/system/multi-user.target.wants/bind9.service
+lrwxrwxrwx 1 root root 33 Oct 16 13:24
+/etc/systemd/system/multi-user.target.wants/bind9.service ->
+/lib/systemd/system/bind9.service
+
+Same file...
+
+There's a further curiosity; I run etckeeper, to keep the stuff in /etc
+under SCM control.  If systemd config isn't in /etc, it's not "under
+control" (in more senses than one!).  More research warranted!  :-)
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141016/eb33bfd5/attachment.html>
+
