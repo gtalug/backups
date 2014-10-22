@@ -3705,3 +3705,824 @@ question, "How would the Lone Ranger handle this?"
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141016/eb33bfd5/attachment.html>
 
+From peter.king at utoronto.ca  Tue Oct 21 14:49:24 2014
+From: peter.king at utoronto.ca (Peter King)
+Date: Tue, 21 Oct 2014 10:49:24 -0400
+Subject: [GTALUG] Unbootability
+Message-ID: <20141021144924.GA11419@amber>
+
+I'm trying to revive an old computer.
+
+The CPU is an Athlon XP 2500, on an Asus A7X87 motherboard, with 3GB
+of RAM.  The internal connections are all PATA.  It has both USB ports
+and a DVDRW drive installed.  Up until a month or so ago, it ran as
+well as an old computer could, with Gentoo installed.  Then a hard disc
+went bad, and that's when the fun began.
+
+The BIOS, which dates from 2004, wouldn't let me boot from a USB stick
+(the only options are USB-FDD and USB-ZIP).  So I started burning boot
+CDs, all of which fail: Gentoo current install disc; SysRescue CD; the
+Debian 7.0 live install disc; Archliinx; and OpenBSD.  As I said, they
+all fail, quite early on in the process: the BIOS tells me "ATAPI CDROM:
+No Emulation" and then starts loading each disc, but fails one way or
+another, never getting through a kernel load as far as I can tell (which
+isn't very far).  I have swapped the DVDRW drive out for another one,
+with no change in results; I have changed the PATA cable connected to
+the DVDRW twice, also with no change in results.  MemTest seems quite
+happy with the installed RAM.
+
+The boot failures are inconsistent, but, for what it's worth, here is
+how they each fail:
+
+(1) Gentoo install disc: Gets as far as starting to load the kernel when
+    the screen goes black.  Sometimes that triggers a BIOS reboot, but at
+    other times it just sits there.  Tried several combinations of kernel
+    modules: nofb, noacpi, no-hardware-detection, and so on, without any
+    making a difference.
+
+(2) Sysrecue CD: Latest version simply segfaults after the "ISOLinux"
+    declaration.
+
+(3) Debian 7.0 live install disc: Gets to the menu of choices, and will
+    usually allow me to make a choice; picking "Install" in any form 
+    causes a black screen followed by a reboot.  Under the "Advanced"
+    menu I can run MemTest, though.
+
+(4) Archlinux install disc: Once I got to the menu, with the motherboard
+    wildly beeping in the background, but wasn't able to select any of
+    the choices.  Every other time it just triggers a reboot.
+
+(5) OpenBSD 5.6 install disc: Starts loading the kernel but freezes after
+    printing the UC copyright notice.
+
+Google turns up lots of suggestions for the "no emulation" message,
+most of which are either "switch the cable" or "change the drive", both
+of which I've tried, as noted.
+
+The next thing I'll try is to remove one hard disc, install it in some
+other functional computer, and install a bootable Gentoo (or whatever)
+on it there, then reinstalling the disc on the old computer to see if
+it will boot from it.  I'm happy (enough) to do that, but I'm bothered
+by the brick wall I've hit in trying to do something ordinary, namely
+to boot from a CDR.  Any ideas?
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		    (416)-978-4951 ofc
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 181 bytes
+Desc: Digital signature
+URL: <http://gtalug.org/pipermail/talk/attachments/20141021/edc4a72d/attachment.sig>
+
+From cbbrowne at gmail.com  Tue Oct 21 15:09:52 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 21 Oct 2014 11:09:52 -0400
+Subject: [GTALUG] Unbootability
+In-Reply-To: <20141021144924.GA11419@amber>
+References: <20141021144924.GA11419@amber>
+Message-ID: <CAFNqd5XAZrdHOUjm=qefS7TXAHFY7cXyvtQq_KTgANTZjQxEew@mail.gmail.com>
+
+Does it have PXE Boot?
+
+I ran into a wall with my Zotec (brand new generation, so pretty
+disanalogous in various ways), but when I noticed it spitting out PXE
+messages, I thought, "Why not try that?", and had good success.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141021/fed65d94/attachment.html>
+
+From tisdall at gmail.com  Tue Oct 21 15:15:06 2014
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Tue, 21 Oct 2014 11:15:06 -0400
+Subject: [GTALUG] Unbootability
+In-Reply-To: <20141021144924.GA11419@amber>
+References: <20141021144924.GA11419@amber>
+Message-ID: <CAGxYWpaOq2cJkH0OqhTr-2+7nzRVXkor7X6-eqj=TCbynHRTfA@mail.gmail.com>
+
+Unfortunately all I can offer to this conversation is that I'm having a
+similar problem!  I've removed the hard drive and tried booting from a USB
+drive, I've also tried the different RAM cards individually in case there
+was an issue with it.  I even tried removing the video card and tried to
+get it to boot from a USB drive with an SSH connection but it never gets
+that far.
+
+The machine was working fine before so the last thing left is that there's
+a hardware issue with the motherboard.  Unfortunately I don't have a second
+motherboard to test that assumption.
+
+-Tim
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141021/ccc816c1/attachment.html>
+
+From peter.king at utoronto.ca  Tue Oct 21 15:19:02 2014
+From: peter.king at utoronto.ca (Peter King)
+Date: Tue, 21 Oct 2014 11:19:02 -0400
+Subject: [GTALUG] Unbootability
+In-Reply-To: <20141021144924.GA11419@amber>
+References: <20141021144924.GA11419@amber>
+Message-ID: <20141021151902.GA15332@amber>
+
+On Tue, Oct 21, 2014 at 10:49:24AM -0400, Peter King wrote:
+ 
+> The CPU is an Athlon XP 2500, on an Asus A7X87 motherboard, with 3GB
+                                      ^^^^^^^^^^
+				      Asus A7V8X-X
+
+Sorry; I mangled the name of the motherboard.
+
+I also forgot to mention that I tried all the boot discs out on another
+computer, and they all work perfectly well there.
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		    (416)-978-4951 ofc
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 181 bytes
+Desc: Digital signature
+URL: <http://gtalug.org/pipermail/talk/attachments/20141021/6d0dd802/attachment.sig>
+
+From gilesorr at gmail.com  Tue Oct 21 16:40:54 2014
+From: gilesorr at gmail.com (Giles Orr)
+Date: Tue, 21 Oct 2014 12:40:54 -0400
+Subject: [GTALUG] Unbootability
+In-Reply-To: <20141021144924.GA11419@amber>
+References: <20141021144924.GA11419@amber>
+Message-ID: <CAEnxSC5PHFJ9KPawjQBBpi6Nc3EzwCKTEr99hF5egWKs8tVKeg@mail.gmail.com>
+
+On 21 October 2014 10:49, Peter King <peter.king at utoronto.ca> wrote:
+> I'm trying to revive an old computer.
+>
+> The CPU is an Athlon XP 2500, on an Asus A7X87 motherboard, with 3GB
+> of RAM.  The internal connections are all PATA.  It has both USB ports
+> and a DVDRW drive installed.  Up until a month or so ago, it ran as
+> well as an old computer could, with Gentoo installed.  Then a hard disc
+> went bad, and that's when the fun began.
+>
+> The BIOS, which dates from 2004, wouldn't let me boot from a USB stick
+> (the only options are USB-FDD and USB-ZIP).  So I started burning boot
+> CDs, all of which fail: Gentoo current install disc; SysRescue CD; the
+> Debian 7.0 live install disc; Archliinx; and OpenBSD.  As I said, they
+> all fail, quite early on in the process: the BIOS tells me "ATAPI CDROM:
+> No Emulation" and then starts loading each disc, but fails one way or
+> another, never getting through a kernel load as far as I can tell (which
+> isn't very far).  I have swapped the DVDRW drive out for another one,
+> with no change in results; I have changed the PATA cable connected to
+> the DVDRW twice, also with no change in results.  MemTest seems quite
+> happy with the installed RAM.
+>
+> The boot failures are inconsistent, but, for what it's worth, here is
+> how they each fail:
+>
+> (1) Gentoo install disc: Gets as far as starting to load the kernel when
+>     the screen goes black.  Sometimes that triggers a BIOS reboot, but at
+>     other times it just sits there.  Tried several combinations of kernel
+>     modules: nofb, noacpi, no-hardware-detection, and so on, without any
+>     making a difference.
+>
+> (2) Sysrecue CD: Latest version simply segfaults after the "ISOLinux"
+>     declaration.
+>
+> (3) Debian 7.0 live install disc: Gets to the menu of choices, and will
+>     usually allow me to make a choice; picking "Install" in any form
+>     causes a black screen followed by a reboot.  Under the "Advanced"
+>     menu I can run MemTest, though.
+>
+> (4) Archlinux install disc: Once I got to the menu, with the motherboard
+>     wildly beeping in the background, but wasn't able to select any of
+>     the choices.  Every other time it just triggers a reboot.
+>
+> (5) OpenBSD 5.6 install disc: Starts loading the kernel but freezes after
+>     printing the UC copyright notice.
+>
+> Google turns up lots of suggestions for the "no emulation" message,
+> most of which are either "switch the cable" or "change the drive", both
+> of which I've tried, as noted.
+>
+> The next thing I'll try is to remove one hard disc, install it in some
+> other functional computer, and install a bootable Gentoo (or whatever)
+> on it there, then reinstalling the disc on the old computer to see if
+> it will boot from it.  I'm happy (enough) to do that, but I'm bothered
+> by the brick wall I've hit in trying to do something ordinary, namely
+> to boot from a CDR.  Any ideas?
+
+With apologies, this is just another "this might help slightly" email.
+I'd suggest following Tim's thought on removing components and trying
+again.  Specifically, the hard drive.  I realize you're trying to
+install to it, but see if something like Knoppix or Sysrescue can boot
+with the HD disconnected.  I admit it's more a feeling than any actual
+facts I can extract from your email, but my guess is that the HD or
+the motherboard communication with the HD is messed up, and the boot
+process on these various discs is dying when it goes out to probe for
+media.  Maybe.  If the CD boots successfully with the HD out, try the
+HD in another computer - should tell you a bit.  Hope this helps.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From qwerty172 at gmail.com  Tue Oct 21 16:48:25 2014
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Tue, 21 Oct 2014 12:48:25 -0400
+Subject: [GTALUG] Unbootability
+In-Reply-To: <20141021144924.GA11419@amber>
+References: <20141021144924.GA11419@amber>
+Message-ID: <CAA3RLT6JEss9PrRr7FdVxiouxgg_MC9tYB-TVTLzW+iv4KimMw@mail.gmail.com>
+
+Try a boot disk circa 2005.
+
+This sounds like you have some hardware that is deprecated and no longer
+has modern kernel support.
+
+Bill
+
+
+On Tue, Oct 21, 2014 at 10:49 AM, Peter King <peter.king at utoronto.ca> wrote:
+
+> I'm trying to revive an old computer.
+>
+> The CPU is an Athlon XP 2500, on an Asus A7X87 motherboard, with 3GB
+> of RAM.  The internal connections are all PATA.  It has both USB ports
+> and a DVDRW drive installed.  Up until a month or so ago, it ran as
+> well as an old computer could, with Gentoo installed.  Then a hard disc
+> went bad, and that's when the fun began.
+>
+> The BIOS, which dates from 2004, wouldn't let me boot from a USB stick
+> (the only options are USB-FDD and USB-ZIP).  So I started burning boot
+> CDs, all of which fail: Gentoo current install disc; SysRescue CD; the
+> Debian 7.0 live install disc; Archliinx; and OpenBSD.  As I said, they
+> all fail, quite early on in the process: the BIOS tells me "ATAPI CDROM:
+> No Emulation" and then starts loading each disc, but fails one way or
+> another, never getting through a kernel load as far as I can tell (which
+> isn't very far).  I have swapped the DVDRW drive out for another one,
+> with no change in results; I have changed the PATA cable connected to
+> the DVDRW twice, also with no change in results.  MemTest seems quite
+> happy with the installed RAM.
+>
+> The boot failures are inconsistent, but, for what it's worth, here is
+> how they each fail:
+>
+> (1) Gentoo install disc: Gets as far as starting to load the kernel when
+>     the screen goes black.  Sometimes that triggers a BIOS reboot, but at
+>     other times it just sits there.  Tried several combinations of kernel
+>     modules: nofb, noacpi, no-hardware-detection, and so on, without any
+>     making a difference.
+>
+> (2) Sysrecue CD: Latest version simply segfaults after the "ISOLinux"
+>     declaration.
+>
+> (3) Debian 7.0 live install disc: Gets to the menu of choices, and will
+>     usually allow me to make a choice; picking "Install" in any form
+>     causes a black screen followed by a reboot.  Under the "Advanced"
+>     menu I can run MemTest, though.
+>
+> (4) Archlinux install disc: Once I got to the menu, with the motherboard
+>     wildly beeping in the background, but wasn't able to select any of
+>     the choices.  Every other time it just triggers a reboot.
+>
+> (5) OpenBSD 5.6 install disc: Starts loading the kernel but freezes after
+>     printing the UC copyright notice.
+>
+> Google turns up lots of suggestions for the "no emulation" message,
+> most of which are either "switch the cable" or "change the drive", both
+> of which I've tried, as noted.
+>
+> The next thing I'll try is to remove one hard disc, install it in some
+> other functional computer, and install a bootable Gentoo (or whatever)
+> on it there, then reinstalling the disc on the old computer to see if
+> it will boot from it.  I'm happy (enough) to do that, but I'm bothered
+> by the brick wall I've hit in trying to do something ordinary, namely
+> to boot from a CDR.  Any ideas?
+>
+> --
+> Peter King                              peter.king at utoronto.ca
+> Department of Philosophy
+> 170 St. George Street #521
+> The University of Toronto                   (416)-978-4951 ofc
+> Toronto, ON  M5R 2M8
+>        CANADA
+>
+> http://individual.utoronto.ca/pking/
+>
+> =========================================================================
+> GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+> gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141021/65ccd07f/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Tue Oct 21 18:14:16 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 21 Oct 2014 14:14:16 -0400
+Subject: [GTALUG] Unbootability
+In-Reply-To: <20141021144924.GA11419@amber>
+References: <20141021144924.GA11419@amber>
+Message-ID: <20141021181416.GA24111@csclub.uwaterloo.ca>
+
+On Tue, Oct 21, 2014 at 10:49:24AM -0400, Peter King wrote:
+> I'm trying to revive an old computer.
+> 
+> The CPU is an Athlon XP 2500, on an Asus A7X87 motherboard, with 3GB
+> of RAM.  The internal connections are all PATA.  It has both USB ports
+> and a DVDRW drive installed.  Up until a month or so ago, it ran as
+> well as an old computer could, with Gentoo installed.  Then a hard disc
+> went bad, and that's when the fun began.
+
+There appears to be no such thing as an A7X87.  Would help to get that
+part right at least.
+
+> The BIOS, which dates from 2004, wouldn't let me boot from a USB stick
+> (the only options are USB-FDD and USB-ZIP).  So I started burning boot
+> CDs, all of which fail: Gentoo current install disc; SysRescue CD; the
+> Debian 7.0 live install disc; Archliinx; and OpenBSD.  As I said, they
+> all fail, quite early on in the process: the BIOS tells me "ATAPI CDROM:
+> No Emulation" and then starts loading each disc, but fails one way or
+> another, never getting through a kernel load as far as I can tell (which
+> isn't very far).  I have swapped the DVDRW drive out for another one,
+> with no change in results; I have changed the PATA cable connected to
+> the DVDRW twice, also with no change in results.  MemTest seems quite
+> happy with the installed RAM.
+
+I find it odd if a bios from 2004 can't CD boot.  I was able to CD boot
+a machine in 1997.  I don't think you could even install XP by any method
+other than CD boot.  Now there is more than one type of CD boot, and
+some motherboards might only implement the one windows uses and that
+might not be what linux uses.  Also I have seen cases where you could
+boot from a CD but not a DVD even with the same exact iso file burned
+to the disc.
+
+> The boot failures are inconsistent, but, for what it's worth, here is
+> how they each fail:
+> 
+> (1) Gentoo install disc: Gets as far as starting to load the kernel when
+>     the screen goes black.  Sometimes that triggers a BIOS reboot, but at
+>     other times it just sits there.  Tried several combinations of kernel
+>     modules: nofb, noacpi, no-hardware-detection, and so on, without any
+>     making a difference.
+> 
+> (2) Sysrecue CD: Latest version simply segfaults after the "ISOLinux"
+>     declaration.
+> 
+> (3) Debian 7.0 live install disc: Gets to the menu of choices, and will
+>     usually allow me to make a choice; picking "Install" in any form 
+>     causes a black screen followed by a reboot.  Under the "Advanced"
+>     menu I can run MemTest, though.
+> 
+> (4) Archlinux install disc: Once I got to the menu, with the motherboard
+>     wildly beeping in the background, but wasn't able to select any of
+>     the choices.  Every other time it just triggers a reboot.
+> 
+> (5) OpenBSD 5.6 install disc: Starts loading the kernel but freezes after
+>     printing the UC copyright notice.
+> 
+> Google turns up lots of suggestions for the "no emulation" message,
+> most of which are either "switch the cable" or "change the drive", both
+> of which I've tried, as noted.
+> 
+> The next thing I'll try is to remove one hard disc, install it in some
+> other functional computer, and install a bootable Gentoo (or whatever)
+> on it there, then reinstalling the disc on the old computer to see if
+> it will boot from it.  I'm happy (enough) to do that, but I'm bothered
+> by the brick wall I've hit in trying to do something ordinary, namely
+> to boot from a CDR.  Any ideas?
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Oct 21 18:33:34 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 21 Oct 2014 14:33:34 -0400
+Subject: [GTALUG] Unbootability
+In-Reply-To: <20141021151902.GA15332@amber>
+References: <20141021144924.GA11419@amber>
+ <20141021151902.GA15332@amber>
+Message-ID: <20141021183334.GB24111@csclub.uwaterloo.ca>
+
+On Tue, Oct 21, 2014 at 11:19:02AM -0400, Peter King wrote:
+> On Tue, Oct 21, 2014 at 10:49:24AM -0400, Peter King wrote:
+>  
+> > The CPU is an Athlon XP 2500, on an Asus A7X87 motherboard, with 3GB
+>                                       ^^^^^^^^^^
+> 				      Asus A7V8X-X
+> 
+> Sorry; I mangled the name of the motherboard.
+> 
+> I also forgot to mention that I tried all the boot discs out on another
+> computer, and they all work perfectly well there.
+
+Is the cd drive set to master, slave or cable select?  If cable select,
+are you using a cable select compatible cable and if so is there a device
+in the master position on the cable?
+
+-- 
+Len Sorensen
+
+From Amos.Weatherill at zoho.com  Tue Oct 21 15:59:21 2014
+From: Amos.Weatherill at zoho.com (Amos H. Weatherill)
+Date: Tue, 21 Oct 2014 11:59:21 -0400
+Subject: [GTALUG] Unbootability
+In-Reply-To: <20141021151902.GA15332@amber>
+References: <20141021144924.GA11419@amber> <20141021151902.GA15332@amber>
+Message-ID: <12b78cd0-e227-4189-a220-daca91415d84.maildroid@localhost>
+
+Have you tried swapping out the power supply?
+
+I've found that marginal power supplies cause all manner of weird failures.
+
+Sent from my android device.
+
+-----Original Message-----
+From: Peter King <peter.king at utoronto.ca>
+To: TLUS <talk at gtalug.org>
+Sent: Tue, 21 Oct 2014 11:19
+Subject: Re: [GTALUG] Unbootability
+
+On Tue, Oct 21, 2014 at 10:49:24AM -0400, Peter King wrote:
+ 
+> The CPU is an Athlon XP 2500, on an Asus A7X87 motherboard, with 3GB
+                                      ^^^^^^^^^^
+				      Asus A7V8X-X
+
+Sorry; I mangled the name of the motherboard.
+
+I also forgot to mention that I tried all the boot discs out on another
+computer, and they all work perfectly well there.
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		    (416)-978-4951 ofc
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141021/6b6d7364/attachment.html>
+
+From wheagy at bell.net  Tue Oct 21 16:57:42 2014
+From: wheagy at bell.net (Bill Heagy)
+Date: Tue, 21 Oct 2014 12:57:42 -0400
+Subject: [GTALUG] Unbootability
+In-Reply-To: <CAA3RLT6JEss9PrRr7FdVxiouxgg_MC9tYB-TVTLzW+iv4KimMw@mail.gmail.com>
+References: <20141021144924.GA11419@amber>
+ <CAA3RLT6JEss9PrRr7FdVxiouxgg_MC9tYB-TVTLzW+iv4KimMw@mail.gmail.com>
+Message-ID: <BLU437-SMTP13A2050A7AAFB629009BC5A9940@phx.gbl>
+
+My standard suggestion: when things go strange, especially on an old 
+system, replace the bios battery.
+
+Bill
+
+On 21/10/14 12:48 PM, Bill Thanis wrote:
+> Try a boot disk circa 2005.
+>
+> This sounds like you have some hardware that is deprecated and no longer
+> has modern kernel support.
+>
+> Bill
+>
+>
+> On Tue, Oct 21, 2014 at 10:49 AM, Peter King <peter.king at utoronto.ca> wrote:
+>
+>> I'm trying to revive an old computer.
+>>
+>> The CPU is an Athlon XP 2500, on an Asus A7X87 motherboard, with 3GB
+>> of RAM.  The internal connections are all PATA.  It has both USB ports
+>> and a DVDRW drive installed.  Up until a month or so ago, it ran as
+>> well as an old computer could, with Gentoo installed.  Then a hard disc
+>> went bad, and that's when the fun began.
+>>
+>> The BIOS, which dates from 2004, wouldn't let me boot from a USB stick
+>> (the only options are USB-FDD and USB-ZIP).  So I started burning boot
+>> CDs, all of which fail: Gentoo current install disc; SysRescue CD; the
+>> Debian 7.0 live install disc; Archliinx; and OpenBSD.  As I said, they
+>> all fail, quite early on in the process: the BIOS tells me "ATAPI CDROM:
+>> No Emulation" and then starts loading each disc, but fails one way or
+>> another, never getting through a kernel load as far as I can tell (which
+>> isn't very far).  I have swapped the DVDRW drive out for another one,
+>> with no change in results; I have changed the PATA cable connected to
+>> the DVDRW twice, also with no change in results.  MemTest seems quite
+>> happy with the installed RAM.
+>>
+>> The boot failures are inconsistent, but, for what it's worth, here is
+>> how they each fail:
+>>
+>> (1) Gentoo install disc: Gets as far as starting to load the kernel when
+>>      the screen goes black.  Sometimes that triggers a BIOS reboot, but at
+>>      other times it just sits there.  Tried several combinations of kernel
+>>      modules: nofb, noacpi, no-hardware-detection, and so on, without any
+>>      making a difference.
+>>
+>> (2) Sysrecue CD: Latest version simply segfaults after the "ISOLinux"
+>>      declaration.
+>>
+>> (3) Debian 7.0 live install disc: Gets to the menu of choices, and will
+>>      usually allow me to make a choice; picking "Install" in any form
+>>      causes a black screen followed by a reboot.  Under the "Advanced"
+>>      menu I can run MemTest, though.
+>>
+>> (4) Archlinux install disc: Once I got to the menu, with the motherboard
+>>      wildly beeping in the background, but wasn't able to select any of
+>>      the choices.  Every other time it just triggers a reboot.
+>>
+>> (5) OpenBSD 5.6 install disc: Starts loading the kernel but freezes after
+>>      printing the UC copyright notice.
+>>
+>> Google turns up lots of suggestions for the "no emulation" message,
+>> most of which are either "switch the cable" or "change the drive", both
+>> of which I've tried, as noted.
+>>
+>> The next thing I'll try is to remove one hard disc, install it in some
+>> other functional computer, and install a bootable Gentoo (or whatever)
+>> on it there, then reinstalling the disc on the old computer to see if
+>> it will boot from it.  I'm happy (enough) to do that, but I'm bothered
+>> by the brick wall I've hit in trying to do something ordinary, namely
+>> to boot from a CDR.  Any ideas?
+>>
+>> --
+>> Peter King                              peter.king at utoronto.ca
+>> Department of Philosophy
+>> 170 St. George Street #521
+>> The University of Toronto                   (416)-978-4951 ofc
+>> Toronto, ON  M5R 2M8
+>>         CANADA
+>>
+>> http://individual.utoronto.ca/pking/
+>>
+>> =========================================================================
+>> GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+>> gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+>>
+>>
+>>
+>> ---
+>> GTALUG Talk Mailing List - talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+-- 
+Bill Heagy
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141021/6f85f91c/attachment.html>
+
+From john.moniz at sympatico.ca  Tue Oct 21 22:17:48 2014
+From: john.moniz at sympatico.ca (John Moniz)
+Date: Tue, 21 Oct 2014 18:17:48 -0400
+Subject: [GTALUG] Unbootability
+In-Reply-To: <20141021144924.GA11419@amber>
+References: <20141021144924.GA11419@amber>
+Message-ID: <BLU437-SMTP226F80024939A2216EE311E3940@phx.gbl>
+
+On 10/21/2014 10:49 AM, Peter King wrote:
+> I'm trying to revive an old computer.
+>
+> The CPU is an Athlon XP 2500, on an Asus A7X87 motherboard, with 3GB
+> of RAM.  The internal connections are all PATA.  It has both USB ports
+> and a DVDRW drive installed.  Up until a month or so ago, it ran as
+> well as an old computer could, with Gentoo installed.  Then a hard disc
+> went bad, and that's when the fun began.
+>
+> The BIOS, which dates from 2004, wouldn't let me boot from a USB stick
+> (the only options are USB-FDD and USB-ZIP).  So I started burning boot
+> CDs, all of which fail: Gentoo current install disc; SysRescue CD; the
+> Debian 7.0 live install disc; Archliinx; and OpenBSD.  As I said, they
+> all fail, quite early on in the process: the BIOS tells me "ATAPI CDROM:
+> No Emulation" and then starts loading each disc, but fails one way or
+> another, never getting through a kernel load as far as I can tell (which
+> isn't very far).  I have swapped the DVDRW drive out for another one,
+> with no change in results; I have changed the PATA cable connected to
+> the DVDRW twice, also with no change in results.  MemTest seems quite
+> happy with the installed RAM.
+>
+> The boot failures are inconsistent, but, for what it's worth, here is
+> how they each fail:
+>
+> (1) Gentoo install disc: Gets as far as starting to load the kernel when
+>      the screen goes black.  Sometimes that triggers a BIOS reboot, but at
+>      other times it just sits there.  Tried several combinations of kernel
+>      modules: nofb, noacpi, no-hardware-detection, and so on, without any
+>      making a difference.
+>
+> (2) Sysrecue CD: Latest version simply segfaults after the "ISOLinux"
+>      declaration.
+>
+> (3) Debian 7.0 live install disc: Gets to the menu of choices, and will
+>      usually allow me to make a choice; picking "Install" in any form
+>      causes a black screen followed by a reboot.  Under the "Advanced"
+>      menu I can run MemTest, though.
+>
+> (4) Archlinux install disc: Once I got to the menu, with the motherboard
+>      wildly beeping in the background, but wasn't able to select any of
+>      the choices.  Every other time it just triggers a reboot.
+>
+> (5) OpenBSD 5.6 install disc: Starts loading the kernel but freezes after
+>      printing the UC copyright notice.
+>
+> Google turns up lots of suggestions for the "no emulation" message,
+> most of which are either "switch the cable" or "change the drive", both
+> of which I've tried, as noted.
+>
+> The next thing I'll try is to remove one hard disc, install it in some
+> other functional computer, and install a bootable Gentoo (or whatever)
+> on it there, then reinstalling the disc on the old computer to see if
+> it will boot from it.  I'm happy (enough) to do that, but I'm bothered
+> by the brick wall I've hit in trying to do something ordinary, namely
+> to boot from a CDR.  Any ideas?
+>
+If you think the MB might be the problem, one thing I would try is to 
+remove the MB from the case, place it on a non-conductive material, 
+reconnect all cables and try again.
+
+From thoriumbr at gmail.com  Tue Oct 21 22:31:46 2014
+From: thoriumbr at gmail.com (Mauro Souza)
+Date: Tue, 21 Oct 2014 20:31:46 -0200
+Subject: [GTALUG] Unbootability
+In-Reply-To: <BLU437-SMTP226F80024939A2216EE311E3940@phx.gbl>
+References: <20141021144924.GA11419@amber>
+ <BLU437-SMTP226F80024939A2216EE311E3940@phx.gbl>
+Message-ID: <CAEZ_B6NGz2FRdDROthsMzqgphJ=b03Pdph3+GktbsEun7mHUZA@mail.gmail.com>
+
+I always have this problem on my 10 years old Athlon XP... when it refused
+to boot, I had this ritual: open the case, remove some cards, put back,
+loosen and tighten some screws, and  put all back. It usually worked.
+
+When it didn't, I opened the case, grabbed it by one side, dragged it (not
+gently, it's the key) around, and put it back. And it works.
+
+Mauro
+http://mauro.limeiratem.com - registered Linux User: 294521
+Scripture is both history, and a love letter from God.
+
+2014-10-21 20:17 GMT-02:00 John Moniz <john.moniz at sympatico.ca>:
+
+> On 10/21/2014 10:49 AM, Peter King wrote:
+>
+>> I'm trying to revive an old computer.
+>>
+>> The CPU is an Athlon XP 2500, on an Asus A7X87 motherboard, with 3GB
+>> of RAM.  The internal connections are all PATA.  It has both USB ports
+>> and a DVDRW drive installed.  Up until a month or so ago, it ran as
+>> well as an old computer could, with Gentoo installed.  Then a hard disc
+>> went bad, and that's when the fun began.
+>>
+>> The BIOS, which dates from 2004, wouldn't let me boot from a USB stick
+>> (the only options are USB-FDD and USB-ZIP).  So I started burning boot
+>> CDs, all of which fail: Gentoo current install disc; SysRescue CD; the
+>> Debian 7.0 live install disc; Archliinx; and OpenBSD.  As I said, they
+>> all fail, quite early on in the process: the BIOS tells me "ATAPI CDROM:
+>> No Emulation" and then starts loading each disc, but fails one way or
+>> another, never getting through a kernel load as far as I can tell (which
+>> isn't very far).  I have swapped the DVDRW drive out for another one,
+>> with no change in results; I have changed the PATA cable connected to
+>> the DVDRW twice, also with no change in results.  MemTest seems quite
+>> happy with the installed RAM.
+>>
+>> The boot failures are inconsistent, but, for what it's worth, here is
+>> how they each fail:
+>>
+>> (1) Gentoo install disc: Gets as far as starting to load the kernel when
+>>      the screen goes black.  Sometimes that triggers a BIOS reboot, but at
+>>      other times it just sits there.  Tried several combinations of kernel
+>>      modules: nofb, noacpi, no-hardware-detection, and so on, without any
+>>      making a difference.
+>>
+>> (2) Sysrecue CD: Latest version simply segfaults after the "ISOLinux"
+>>      declaration.
+>>
+>> (3) Debian 7.0 live install disc: Gets to the menu of choices, and will
+>>      usually allow me to make a choice; picking "Install" in any form
+>>      causes a black screen followed by a reboot.  Under the "Advanced"
+>>      menu I can run MemTest, though.
+>>
+>> (4) Archlinux install disc: Once I got to the menu, with the motherboard
+>>      wildly beeping in the background, but wasn't able to select any of
+>>      the choices.  Every other time it just triggers a reboot.
+>>
+>> (5) OpenBSD 5.6 install disc: Starts loading the kernel but freezes after
+>>      printing the UC copyright notice.
+>>
+>> Google turns up lots of suggestions for the "no emulation" message,
+>> most of which are either "switch the cable" or "change the drive", both
+>> of which I've tried, as noted.
+>>
+>> The next thing I'll try is to remove one hard disc, install it in some
+>> other functional computer, and install a bootable Gentoo (or whatever)
+>> on it there, then reinstalling the disc on the old computer to see if
+>> it will boot from it.  I'm happy (enough) to do that, but I'm bothered
+>> by the brick wall I've hit in trying to do something ordinary, namely
+>> to boot from a CDR.  Any ideas?
+>>
+>>  If you think the MB might be the problem, one thing I would try is to
+> remove the MB from the case, place it on a non-conductive material,
+> reconnect all cables and try again.
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141021/9a2e133f/attachment.html>
+
+From bjonkman at sobac.com  Wed Oct 22 04:45:26 2014
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Wed, 22 Oct 2014 00:45:26 -0400
+Subject: [GTALUG] TUURP - Toronto Utopic Unicorn Release Party,
+ Thursday 23 October 7pm, Alio Lounge
+Message-ID: <54473666.9040000@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Hi Everybodeee! Last week I happened to run into Mike Kaulbach while
+walking down the street in Toronto -- a 1 in 2.5 million chance!
+Shoulda bought a lottery ticket...
+
+Mike's hosting another Ubuntu Release Party with Free Cupcakes and
+Bottomless Cofffee:
+
+*What*: Ubuntu 14.10 Toronto Release Party
+*When*: Thursday, 23 October 2014, 7:00pm to 1:00am
+*Where*: Alio Restaurant  http://aliotoronto.ca/
+*Location*: 108 Dundas Street West, Toronto, Ontario, Canada
+*Map*: http://osm.org/go/ZX6BtMGY?m=&node=1113718580
+*LoCo Event:*
+http://loco.ubuntu.com/events/ubuntu-ca/2920-ubuntu-1410/detail/
+
+There are rumours of a Release Party in Kitchener-Waterloo as well,
+but I haven't run into anyone on the street yet...
+
+- --Bob.
+
+
+
+
+- -- 
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-669-0388
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+http://bob.jonkman.ca/blogs/    http://sn.jonkman.ca/bobjonkman/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.15 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlRHNmIACgkQuRKJsNLM5er+fgCgplqy/NtMNW67vo8e9HhBWNnO
+C6AAoNCnC2h6gClqrPt1dYxz72NxeJYI
+=Cs8z
+-----END PGP SIGNATURE-----
+
