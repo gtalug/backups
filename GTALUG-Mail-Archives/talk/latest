@@ -4551,3 +4551,435 @@ Message-ID: <7a9a80f3933d153aa8ff874a3033db@ip-10-0-3-30>
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141022/893a8af0/attachment.html>
 
+From john.moniz at sympatico.ca  Wed Oct 22 11:30:32 2014
+From: john.moniz at sympatico.ca (John Moniz)
+Date: Wed, 22 Oct 2014 07:30:32 -0400
+Subject: [GTALUG] TUURP - Toronto Utopic Unicorn Release Party,
+ Thursday 23 October 7pm, Alio Lounge
+In-Reply-To: <7a9a80f3933d153aa8ff874a3033db@ip-10-0-3-30>
+References: <54473666.9040000@sobac.com>
+ <f1697cde32e2075e7c777682ad9cbd@ip-10-0-3-29>
+ <7a9a80f3933d153aa8ff874a3033db@ip-10-0-3-30>
+Message-ID: <BLU436-SMTP45DAECEC51CC96E9B408AE3950@phx.gbl>
+
+On 10/22/2014 05:26 AM, Marcelo Kalib wrote:
+> Shame on me...
+>
+> I'm so sorry about my las email guys... It should be a forward of 
+> Bob's email to someone else, but i just replied. My bad. My mistake 
+> with the new mail app I'm trying.
+>
+> Please, ignore my last email.
+>
+> And hope you guys enjoy the release party. I would love to go.
+>
+> Best,
+
+No problem, enjoyed reading it :-)
+
+>
+> Sent using CloudMagic 
+> <https://cloudmagic.com/k/d/mailapp?ct=ti&cv=5.2.12&pv=8.1>
+>
+> On qua, out 22, 2014 at 6:23 AM, Marcelo Kalib <kalibslack at gmail.com> 
+> wrote:
+>
+>     Apenas contextualizando... Release parties s?o pequenos eventos,
+>     pequenas fedtas, pequenos encontros... Para comemorar uma release
+>     ou vers?o de algum projeto de software livre.. O do email em
+>     quest?o ? sobre a vers?o do ubuntu a ser lan?ada neste m?s...
+>
+>     Essas coisas n?o rolam por aqui... :/
+>
+>     Comunidade por l? ? mais ativa... :p
+>
+>     Sent using CloudMagic
+>     <https://cloudmagic.com/k/d/mailapp?ct=ti&cv=5.2.12&pv=8.1>
+>
+>     On qua, out 22, 2014 at 1:45 AM, GTALUG Talk <talk at gtalug.org> wrote:
+>
+>         -----BEGIN PGP SIGNED MESSAGE-----
+>         Hash: SHA1
+>
+>         Hi Everybodeee! Last week I happened to run into Mike Kaulbach
+>         while
+>         walking down the street in Toronto -- a 1 in 2.5 million chance!
+>         Shoulda bought a lottery ticket...
+>
+>         Mike's hosting another Ubuntu Release Party with Free Cupcakes and
+>         Bottomless Cofffee:
+>
+>         *What*: Ubuntu 14.10 Toronto Release Party
+>         *When*: Thursday, 23 October 2014, 7:00pm to 1:00am
+>         *Where*: Alio Restaurant http://aliotoronto.ca/
+>         *Location*: 108 Dundas Street West, Toronto, Ontario, Canada
+>         *Map*: http://osm.org/go/ZX6BtMGY?m=&node=1113718580
+>         *LoCo Event:*
+>         http://loco.ubuntu.com/events/ubuntu-ca/2920-ubuntu-1410/detail/
+>
+>         There are rumours of a Release Party in Kitchener-Waterloo as
+>         well,
+>         but I haven't run into anyone on the street yet...
+>
+>         - --Bob.
+>
+>
+>
+>
+>         - -- 
+>
+>         Bob Jonkman <bjonkman at sobac.com> Phone: +1-519-669-0388
+>         SOBAC Microcomputer Services http://sobac.com/sobac/
+>         http://bob.jonkman.ca/blogs/ http://sn.jonkman.ca/bobjonkman/
+>         Software --- Office & Business Automation --- Consulting
+>         GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+>
+>         -----BEGIN PGP SIGNATURE-----
+>         Version: GnuPG v1.4.15 (GNU/Linux)
+>         Comment: Ensure confidentiality, authenticity, non-repudiability
+>
+>         iEYEARECAAYFAlRHNmIACgkQuRKJsNLM5er+fgCgplqy/NtMNW67vo8e9HhBWNnO
+>         C6AAoNCnC2h6gClqrPt1dYxz72NxeJYI
+>         =Cs8z
+>         -----END PGP SIGNATURE-----
+>
+>
+>         ---
+>         GTALUG Talk Mailing List - talk at gtalug.org
+>         http://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141022/a429930c/attachment.html>
+
+From davec-b at rogers.com  Wed Oct 22 11:58:39 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Wed, 22 Oct 2014 07:58:39 -0400
+Subject: [GTALUG] MythTV: Major Service Changes at Schedules Direct
+In-Reply-To: <201410220801.s9M81g6Q005757@www.schedulesdirect.org>
+References: <201410220801.s9M81g6Q005757@www.schedulesdirect.org>
+Message-ID: <54479BEF.9050108@rogers.com>
+
+The tv-listings supplier I use with MythTV is changing to delivering the 
+data from their own servers, and in addition is prototyping a json version.
+
+At the moment, it's not obvious if I need to change anything: anyone 
+following this and have experience to share?
+
+--dave
+
+
+-------- Original Message --------
+Subject: 	Major Service Changes at Schedules Direct
+Date: 	Wed, 22 Oct 2014 01:01:42 -0700
+From: 	Schedules Direct <noreply at schedulesdirect.org>
+To: 	David Collier-Brown <davecb at spamcop.net>
+
+
+
+Greetings David Collier-Brown!
+
+Schedules Direct has been operating since 2007 to provide a stable
+environment for non-commercial media applications to receive TV listings
+data, but that does not mean things never change! :)  This may be our
+first email-blast since 2007!
+
+We have been informed that Gracenote (formerly Tribune Media Services)
+will be ending the guide data service currently used by most members of
+Schedules Direct. Their plan is to end support for this service on
+November 1, 2014.   Schedules Direct was already hard at work
+implementing replacement services.
+
+Please check with your application's support page for your best
+solution.   Some applications have chosen to use a new SD-JSON service
+that offers a richer data set, while others have chosen to use the
+SD-DD service, which is meant to be a drop-in replacement for
+Gracenote/Tribune's service.
+
+If your application is no longer supported, there's no reason to worry.
+Most apps can continue to function with a change to your system's hosts
+file. (details in the SD forum).
+
+Last week I asked Tribune to update their DNS to force half of the
+traffic to the SD-DD servers.  The concept was for people with problems
+to fail half the time now, rather than 100% come Nov 1.   If you're one
+of the folks having problems, check with your application team or us to
+help resolve it.
+
+For the most up-to-date news, look for links on the SD website
+http://schedulesdirect.org
+
+Robert Eden
+President, Schedules Direct
+
+
+
+
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141022/9d6092fd/attachment.html>
+
+From thomas.bruce.milne at gmail.com  Wed Oct 22 11:00:24 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 22 Oct 2014 07:00:24 -0400
+Subject: [GTALUG] Java coding education/tutorials
+Message-ID: <CAGc8pF49YoTD7655hH5d7hsRm=4zGyJ3Jm+6poYEqdTM_5=0LQ@mail.gmail.com>
+
+My son is all motivated to learn Java so that he can hack around in
+Minecraft, so I'm looking for ways for him to get started. I have no coding
+background either, so I am equally lost.
+
+We are working with Alice right now, and I think it's giving him the basic
+idea, but I'm not sure how far Alice can take him. On the one hand I'm
+tempted to just start mangling some Minecraft code and learn that way, but
+I don't want to ruin the momentum here.
+
+Can anyone recommend something to get him to the next stage?
+
+I've been desperate to get him to start to learn coding so I don't want to
+waste this opportunity now that he's actually motivated! :-)
+
+-- 
+Thomas Milne
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141022/c2e68a82/attachment.html>
+
+From davec-b at rogers.com  Wed Oct 22 13:57:07 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Wed, 22 Oct 2014 09:57:07 -0400
+Subject: [GTALUG] Java coding education/tutorials
+In-Reply-To: <CAGc8pF49YoTD7655hH5d7hsRm=4zGyJ3Jm+6poYEqdTM_5=0LQ@mail.gmail.com>
+References: <CAGc8pF49YoTD7655hH5d7hsRm=4zGyJ3Jm+6poYEqdTM_5=0LQ@mail.gmail.com>
+Message-ID: <5447B7B3.8060907@rogers.com>
+
+On 10/22/2014 07:00 AM, Thomas Milne wrote:
+> My son is all motivated to learn Java so that he can hack around in 
+> Minecraft, so I'm looking for ways for him to get started. I have no 
+> coding background either, so I am equally lost.
+>
+> We are working with Alice right now, and I think it's giving him the 
+> basic idea, but I'm not sure how far Alice can take him. On the one 
+> hand I'm tempted to just start mangling some Minecraft code and learn 
+> that way, but I don't want to ruin the momentum here.
+>
+> Can anyone recommend something to get him to the next stage?
+>
+> I've been desperate to get him to start to learn coding so I don't 
+> want to waste this opportunity now that he's actually motivated! :-)
+>
+> -- 
+> Thomas Milne
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+Join a minecraft modding discussion and start trying things, perhaps 
+initially by applying someone else's mod to "see how to do the worked 
+example".
+
+That's what I do whenever I start in an unfamiliar area (like Halflife 2 
+DM, which is not the usual kind of program I work with).
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141022/1ab9592a/attachment.html>
+
+From ross.macduff at gmail.com  Wed Oct 22 13:56:17 2014
+From: ross.macduff at gmail.com (Ross Macduff)
+Date: Wed, 22 Oct 2014 09:56:17 -0400
+Subject: [GTALUG] Java coding education/tutorials
+In-Reply-To: <CAGc8pF49YoTD7655hH5d7hsRm=4zGyJ3Jm+6poYEqdTM_5=0LQ@mail.gmail.com>
+References: <CAGc8pF49YoTD7655hH5d7hsRm=4zGyJ3Jm+6poYEqdTM_5=0LQ@mail.gmail.com>
+Message-ID: <CAAQaudcpmseN8ezqhEre52kcmB_0xmTPGeo3kVNqr80O68uWmA@mail.gmail.com>
+
+Hey Thomas,
+
+On Wed, Oct 22, 2014 at 7:00 AM, Thomas Milne
+<thomas.bruce.milne at gmail.com> wrote:
+> Can anyone recommend something to get him to the next stage?
+
+Though I haven't looked at it myself, this book might be somewhat helpful:
+
+https://pragprog.com/book/ahmine/learn-to-program-with-minecraft-plugins
+
+-Ross
+
+From aruna.hewapathirane at gmail.com  Wed Oct 22 14:43:13 2014
+From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
+Date: Wed, 22 Oct 2014 10:43:13 -0400
+Subject: [GTALUG] Java coding education/tutorials
+In-Reply-To: <CAGc8pF49YoTD7655hH5d7hsRm=4zGyJ3Jm+6poYEqdTM_5=0LQ@mail.gmail.com>
+References: <CAGc8pF49YoTD7655hH5d7hsRm=4zGyJ3Jm+6poYEqdTM_5=0LQ@mail.gmail.com>
+Message-ID: <CAFSeFg9gGo0HgY_QYAxzCqtndN_3cC7L2A_8ze_-UPc34ZRvKQ@mail.gmail.com>
+
+>> My son is all motivated to learn Java so that he can hack around in
+Minecraft, so I'm looking for ways for him to get
+>> started. I have no coding background either, so I am equally lost.
+
+>> Can anyone recommend something to get him to the next stage?
+
+This will help you and your son through a simple and practical approach
+while learning the Java Programming language.
+http://www.tutorialspoint.com/java/index.htm
+
+Online Java Compiler
+http://www.compileonline.com/compile_java_online.php
+
+Useful Tool: http://www.compileonline.com/
+
+Another very useful online tool: http://ideone.com/
+
+Good luck with the journey and welcome to the coders world :)
+
+Aruna
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141022/f9258a23/attachment.html>
+
+From tisdall at gmail.com  Wed Oct 22 15:57:58 2014
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Wed, 22 Oct 2014 11:57:58 -0400
+Subject: [GTALUG] Unbootability
+In-Reply-To: <CAEZ_B6NGz2FRdDROthsMzqgphJ=b03Pdph3+GktbsEun7mHUZA@mail.gmail.com>
+References: <20141021144924.GA11419@amber>
+ <BLU437-SMTP226F80024939A2216EE311E3940@phx.gbl>
+ <CAEZ_B6NGz2FRdDROthsMzqgphJ=b03Pdph3+GktbsEun7mHUZA@mail.gmail.com>
+Message-ID: <CAGxYWpa+CbPtNyHRAzB6L_5cRQh6FsWSCmh6purEsSz8vXQUrw@mail.gmail.com>
+
+On Tue, Oct 21, 2014 at 6:31 PM, Mauro Souza <thoriumbr at gmail.com> wrote:
+
+> I always have this problem on my 10 years old Athlon XP... when it refused
+> to boot, I had this ritual: open the case, remove some cards, put back,
+> loosen and tighten some screws, and  put all back. It usually worked.
+>
+> When it didn't, I opened the case, grabbed it by one side, dragged it (not
+> gently, it's the key) around, and put it back. And it works.
+>
+
+^_^  I think you're confusing your computer for an old tv.  "Just kick the
+side hard... works every time"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141022/f6a39779/attachment.html>
+
+From kevin at ve3syb.ca  Wed Oct 22 15:51:50 2014
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Wed, 22 Oct 2014 11:51:50 -0400
+Subject: [GTALUG] Java coding education/tutorials
+In-Reply-To: <CAGc8pF49YoTD7655hH5d7hsRm=4zGyJ3Jm+6poYEqdTM_5=0LQ@mail.gmail.com>
+References: <CAGc8pF49YoTD7655hH5d7hsRm=4zGyJ3Jm+6poYEqdTM_5=0LQ@mail.gmail.com>
+Message-ID: <5447D296.4080609@ve3syb.ca>
+
+On 22/10/2014 7:00 AM, Thomas Milne wrote:
+> My son is all motivated to learn Java so that he can hack around in
+> Minecraft, so I'm looking for ways for him to get started. I have no coding
+> background either, so I am equally lost.
+[snip]
+> Can anyone recommend something to get him to the next stage??
+
+You can also check some of the online courses available from various 
+universities and places such as edX or Udacity (to name a couple). MIT has 
+something called OpenCourseware that is self-guided versions of some of 
+their courses and are free to use. They have course 6.092 with the title of 
+"Java Preparation for 6.170". There will be plenty of other courses and 
+tutorials on Java out there you can find if the MIT OCW course is not 
+suitable for your son.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From thomas.bruce.milne at gmail.com  Wed Oct 22 17:00:29 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 22 Oct 2014 13:00:29 -0400
+Subject: [GTALUG] Java coding education/tutorials
+In-Reply-To: <CAAQaudcpmseN8ezqhEre52kcmB_0xmTPGeo3kVNqr80O68uWmA@mail.gmail.com>
+References: <CAGc8pF49YoTD7655hH5d7hsRm=4zGyJ3Jm+6poYEqdTM_5=0LQ@mail.gmail.com>
+ <CAAQaudcpmseN8ezqhEre52kcmB_0xmTPGeo3kVNqr80O68uWmA@mail.gmail.com>
+Message-ID: <CAGc8pF4CpkzgFvuRviHygfLyYdwPOjT5aPSwGw5dqYTo=G2Aww@mail.gmail.com>
+
+On Oct 22, 2014 11:26 AM, "Ross Macduff" <ross.macduff at gmail.com> wrote:
+>
+> Hey Thomas,
+>
+> On Wed, Oct 22, 2014 at 7:00 AM, Thomas Milne
+> <thomas.bruce.milne at gmail.com> wrote:
+> > Can anyone recommend something to get him to the next stage?
+>
+> Though I haven't looked at it myself, this book might be somewhat helpful:
+>
+> https://pragprog.com/book/ahmine/learn-to-program-with-minecraft-plugins
+>
+> -Ross
+>
+
+That looks like it might be perfect, thanks!
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141022/ef83ef87/attachment.html>
+
+From thomas.bruce.milne at gmail.com  Wed Oct 22 17:02:25 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 22 Oct 2014 13:02:25 -0400
+Subject: [GTALUG] Java coding education/tutorials
+In-Reply-To: <CAFSeFg9gGo0HgY_QYAxzCqtndN_3cC7L2A_8ze_-UPc34ZRvKQ@mail.gmail.com>
+References: <CAGc8pF49YoTD7655hH5d7hsRm=4zGyJ3Jm+6poYEqdTM_5=0LQ@mail.gmail.com>
+ <CAFSeFg9gGo0HgY_QYAxzCqtndN_3cC7L2A_8ze_-UPc34ZRvKQ@mail.gmail.com>
+Message-ID: <CAGc8pF5DDRuo5Ke62asZC+wh3Th9K7uQmM247Yw05-TrFfWe5A@mail.gmail.com>
+
+On Oct 22, 2014 11:26 AM, "Aruna Hewapathirane" <
+aruna.hewapathirane at gmail.com> wrote:
+>
+> >> My son is all motivated to learn Java so that he can hack around in
+Minecraft, so I'm looking for ways for him to get
+> >> started. I have no coding background either, so I am equally lost.
+>
+> >> Can anyone recommend something to get him to the next stage?
+>
+> This will help you and your son through a simple and practical approach
+while learning the Java Programming language.
+> http://www.tutorialspoint.com/java/index.htm
+>
+> Online Java Compiler
+> http://www.compileonline.com/compile_java_online.php
+>
+> Useful Tool: http://www.compileonline.com/
+>
+> Another very useful online tool: http://ideone.com/
+>
+> Good luck with the journey and welcome to the coders world :)
+>
+> Aruna
+>
+
+That helped a lot, thanks very much :-)
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141022/7d0a606c/attachment.html>
+
