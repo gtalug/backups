@@ -4983,3 +4983,417 @@ That helped a lot, thanks very much :-)
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141022/7d0a606c/attachment.html>
 
+From stan at stanwitkowski.com  Thu Oct 23 07:04:50 2014
+From: stan at stanwitkowski.com (Stan Witkowski)
+Date: Thu, 23 Oct 2014 03:04:50 -0400
+Subject: [GTALUG] Java coding education/tutorials
+In-Reply-To: <CAGc8pF49YoTD7655hH5d7hsRm=4zGyJ3Jm+6poYEqdTM_5=0LQ@mail.g
+ mail.com>
+References: <CAGc8pF49YoTD7655hH5d7hsRm=4zGyJ3Jm+6poYEqdTM_5=0LQ@mail.gmail.com>
+Message-ID: <mailman.0.1414073478.3497.talk@gtalug.org>
+
+At 07:00 AM 2014-10-22, Thomas Milne wrote:
+>My son is all motivated to learn Java so that he can hack around in 
+>Minecraft, so I'm looking for ways for him to get started. I have no 
+>coding background either, so I am equally lost.
+>Can anyone recommend something to get him to the next stage?
+
+
+
+www.youtube.com    and enter   java   in the search box
+
+I especially like Derek Banas (many videos), but beginners may find 
+him too fast
+(he doesn't pause a lot, although I prefer his fast clip).
+
+Java Programming  by Derek Banas        175,184 views
+Cheat Sheet is Here : http://goo.gl/OPMjte
+Slower Java Tutorial : http://goo.gl/UHdlyP
+
+
+My preference is to download the videos at the highest resolution available
+(usually 720p) to watch them on an HDTV via a media player.
+     (ASUS O!play mini - $65 at Canada Computers, often $55 when on sale)
+The media player's remote control allows me to freeze the picture and zoom in
+over 8 times to see some things really up close.
+
+This is especially useful when the presenter is writing on a
+whiteboard or blackboard and the lettering is tiny.
+
+As well, once downloaded, the videos can be copied to a tablet and
+watched at any time, anywhere.
+
+I've gotten quite a collection of Javascript, HTML, web stuff, stock market,
+etc. etc. educational videos.  There is a TON of them on youtube.
+
+
+I use:  Firefox browser with the add-on   DownloadHelper 4.9.24
+
+Stan.
+
+
+From rreiter91 at gmail.com  Thu Oct 23 11:06:17 2014
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Thu, 23 Oct 2014 06:06:17 -0500
+Subject: [GTALUG] Unbootability
+In-Reply-To: <CAEZ_B6NGz2FRdDROthsMzqgphJ=b03Pdph3+GktbsEun7mHUZA@mail.gmail.com>
+References: <20141021144924.GA11419@amber>
+ <BLU437-SMTP226F80024939A2216EE311E3940@phx.gbl>
+ <CAEZ_B6NGz2FRdDROthsMzqgphJ=b03Pdph3+GktbsEun7mHUZA@mail.gmail.com>
+Message-ID: <CAPik5My0R5VaO7gU-pivY5wpkP0L3TnXnxMGch49MM6LpZD9Tw@mail.gmail.com>
+
+Percussive maintenance that's the ticket. Works for me. Really, I've
+done things to computers that would make an electronics engineer shake
+his head and wonder what it was I thought I was doing. Yet somehow I
+revived the dead/dormant device.
+
+One other thing to check in order to avoid going down a blind alley
+is, look for End Of Life characteristics on the MB components.
+Yellowing on the surface of the backplane and carbonization around
+components can be fairly good EOL indicators and depending on your
+need to revive the device, you can decide how much time to spend on it
+and whether any MB part replacement will solve the problem.
+
+Often you replace a faulty part and this causes a cascade failure of
+other worn parts. Thermodynamics and electronic entropy are considered
+irreversible in isolated systems but a little knowledge of the MB
+layout, you can make a best guess as to which parts are worn and
+increasing the thermal load.
+
+How does percussive maintenance fit in. When I worked in the field, in
+construction, every engineer had a little hammer to tap stuff with.
+Sometimes to loosen a bolt, sometimes just to hear the thing ring.
+
+It's a time honoured tradition to bash the stuff that gives us problems.
+
+
+Cheers
+Russell
+
+On 10/21/14, Mauro Souza <thoriumbr at gmail.com> wrote:
+> I always have this problem on my 10 years old Athlon XP... when it refused
+> to boot, I had this ritual: open the case, remove some cards, put back,
+> loosen and tighten some screws, and  put all back. It usually worked.
+>
+> When it didn't, I opened the case, grabbed it by one side, dragged it (not
+> gently, it's the key) around, and put it back. And it works.
+>
+> Mauro
+> http://mauro.limeiratem.com - registered Linux User: 294521
+> Scripture is both history, and a love letter from God.
+>
+> 2014-10-21 20:17 GMT-02:00 John Moniz <john.moniz at sympatico.ca>:
+>
+>> On 10/21/2014 10:49 AM, Peter King wrote:
+>>
+>>> I'm trying to revive an old computer.
+>>>
+>>> The CPU is an Athlon XP 2500, on an Asus A7X87 motherboard, with 3GB
+>>> of RAM.  The internal connections are all PATA.  It has both USB ports
+>>> and a DVDRW drive installed.  Up until a month or so ago, it ran as
+>>> well as an old computer could, with Gentoo installed.  Then a hard disc
+>>> went bad, and that's when the fun began.
+>>>
+>>> The BIOS, which dates from 2004, wouldn't let me boot from a USB stick
+>>> (the only options are USB-FDD and USB-ZIP).  So I started burning boot
+>>> CDs, all of which fail: Gentoo current install disc; SysRescue CD; the
+>>> Debian 7.0 live install disc; Archliinx; and OpenBSD.  As I said, they
+>>> all fail, quite early on in the process: the BIOS tells me "ATAPI CDROM:
+>>> No Emulation" and then starts loading each disc, but fails one way or
+>>> another, never getting through a kernel load as far as I can tell (which
+>>> isn't very far).  I have swapped the DVDRW drive out for another one,
+>>> with no change in results; I have changed the PATA cable connected to
+>>> the DVDRW twice, also with no change in results.  MemTest seems quite
+>>> happy with the installed RAM.
+>>>
+>>> The boot failures are inconsistent, but, for what it's worth, here is
+>>> how they each fail:
+>>>
+>>> (1) Gentoo install disc: Gets as far as starting to load the kernel when
+>>>      the screen goes black.  Sometimes that triggers a BIOS reboot, but
+>>> at
+>>>      other times it just sits there.  Tried several combinations of
+>>> kernel
+>>>      modules: nofb, noacpi, no-hardware-detection, and so on, without
+>>> any
+>>>      making a difference.
+>>>
+>>> (2) Sysrecue CD: Latest version simply segfaults after the "ISOLinux"
+>>>      declaration.
+>>>
+>>> (3) Debian 7.0 live install disc: Gets to the menu of choices, and will
+>>>      usually allow me to make a choice; picking "Install" in any form
+>>>      causes a black screen followed by a reboot.  Under the "Advanced"
+>>>      menu I can run MemTest, though.
+>>>
+>>> (4) Archlinux install disc: Once I got to the menu, with the motherboard
+>>>      wildly beeping in the background, but wasn't able to select any of
+>>>      the choices.  Every other time it just triggers a reboot.
+>>>
+>>> (5) OpenBSD 5.6 install disc: Starts loading the kernel but freezes
+>>> after
+>>>      printing the UC copyright notice.
+>>>
+>>> Google turns up lots of suggestions for the "no emulation" message,
+>>> most of which are either "switch the cable" or "change the drive", both
+>>> of which I've tried, as noted.
+>>>
+>>> The next thing I'll try is to remove one hard disc, install it in some
+>>> other functional computer, and install a bootable Gentoo (or whatever)
+>>> on it there, then reinstalling the disc on the old computer to see if
+>>> it will boot from it.  I'm happy (enough) to do that, but I'm bothered
+>>> by the brick wall I've hit in trying to do something ordinary, namely
+>>> to boot from a CDR.  Any ideas?
+>>>
+>>>  If you think the MB might be the problem, one thing I would try is to
+>> remove the MB from the case, place it on a non-conductive material,
+>> reconnect all cables and try again.
+>>
+>>
+>>
+>> ---
+>> GTALUG Talk Mailing List - talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>
+
+From peter.king at utoronto.ca  Thu Oct 23 14:20:17 2014
+From: peter.king at utoronto.ca (Peter King)
+Date: Thu, 23 Oct 2014 10:20:17 -0400
+Subject: [GTALUG] Unbootability
+In-Reply-To: <20141021144924.GA11419@amber>
+References: <20141021144924.GA11419@amber>
+Message-ID: <20141023142017.GA24714@amber>
+
+Thanks for all the suggestions.  Here's what I've found out so far.
+
+First, the computer simply won't boot with only RAM/videocard/CDR drive;
+it keeps saying there is a bootdisk error (presumably because there are
+no discs attached).
+
+Second, I finally located some jumpers, and have checked all the settings
+on the two hard drives and the CDRW drive; they all show up correctly in
+the BIOS POST screen, so that seems fine.
+
+Third, I tried to swap out the video card -- you never know -- only to
+find that I don't have a spare PCIe video card to put in its place, and
+the video cards I do have aren't PCI.  But one good thing came of that.
+When I put the video card back in and reseated everything, then, for one
+brief shining moment, the Gentoo install disc booted all the way up into
+the framebuffer (hi Tux!) until freezing at the "loading drivers etc. into
+memory" message.  An immediate cold reboot, however, did not get as far as
+the framebuffer, That makes it likely that some piece of hardware is just
+flaky.  Probably not the CDR drive, since I've had the same behaviour out
+of two drives and three cables.  So now I'm guessing either the video card
+itself, the motherboard, or the power supply.
+
+Fourth, tried Knoppix, and, like SysRescueCD, it fails to load with the
+message that the data is corrupt.  Odd, since, like SysRescue, it boots
+just fine on other equipment.
+
+
+From here I could try to run down a Really Old install disc, to see what
+happens.  Or haunt a few electronics stores to find an old video card to
+swap out the current one.  As for a longer shot, see if there is a BIOS
+upgrade in case there is some deep problem there.  But most likely what
+I'll do is stick one of the hard drives in another computer, install a
+distro there, and see if the $@#!% computer will boot from a regular if
+lightweight linux on its master hard drive.
+
+(At some point this will no longer be fun. But not yet.)
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		    (416)-978-4951 ofc
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+
+From lsorense at csclub.uwaterloo.ca  Thu Oct 23 16:34:30 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 23 Oct 2014 12:34:30 -0400
+Subject: [GTALUG] Unbootability
+In-Reply-To: <20141023142017.GA24714@amber>
+References: <20141021144924.GA11419@amber>
+ <20141023142017.GA24714@amber>
+Message-ID: <20141023163430.GC24111@csclub.uwaterloo.ca>
+
+On Thu, Oct 23, 2014 at 10:20:17AM -0400, Peter King wrote:
+> Thanks for all the suggestions.  Here's what I've found out so far.
+> 
+> First, the computer simply won't boot with only RAM/videocard/CDR drive;
+> it keeps saying there is a bootdisk error (presumably because there are
+> no discs attached).
+> 
+> Second, I finally located some jumpers, and have checked all the settings
+> on the two hard drives and the CDRW drive; they all show up correctly in
+> the BIOS POST screen, so that seems fine.
+> 
+> Third, I tried to swap out the video card -- you never know -- only to
+> find that I don't have a spare PCIe video card to put in its place, and
+> the video cards I do have aren't PCI.  But one good thing came of that.
+> When I put the video card back in and reseated everything, then, for one
+> brief shining moment, the Gentoo install disc booted all the way up into
+> the framebuffer (hi Tux!) until freezing at the "loading drivers etc. into
+> memory" message.  An immediate cold reboot, however, did not get as far as
+> the framebuffer, That makes it likely that some piece of hardware is just
+> flaky.  Probably not the CDR drive, since I've had the same behaviour out
+> of two drives and three cables.  So now I'm guessing either the video card
+> itself, the motherboard, or the power supply.
+> 
+> Fourth, tried Knoppix, and, like SysRescueCD, it fails to load with the
+> message that the data is corrupt.  Odd, since, like SysRescue, it boots
+> just fine on other equipment.
+> 
+> 
+> From here I could try to run down a Really Old install disc, to see what
+> happens.  Or haunt a few electronics stores to find an old video card to
+> swap out the current one.  As for a longer shot, see if there is a BIOS
+> upgrade in case there is some deep problem there.  But most likely what
+> I'll do is stick one of the hard drives in another computer, install a
+> distro there, and see if the $@#!% computer will boot from a regular if
+> lightweight linux on its master hard drive.
+> 
+> (At some point this will no longer be fun. But not yet.)
+
+Sounds like either your power supply or mainboard has some voltage
+issues then.  Or you could have a bad IDE cable top the CD drive.
+Or a bad CD drive.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Thu Oct 23 16:35:42 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 23 Oct 2014 12:35:42 -0400
+Subject: [GTALUG] Unbootability
+In-Reply-To: <20141023163430.GC24111@csclub.uwaterloo.ca>
+References: <20141021144924.GA11419@amber> <20141023142017.GA24714@amber>
+ <20141023163430.GC24111@csclub.uwaterloo.ca>
+Message-ID: <20141023163536.GD24111@csclub.uwaterloo.ca>
+
+On Thu, Oct 23, 2014 at 12:34:30PM -0400, Lennart Sorensen wrote:
+> Sounds like either your power supply or mainboard has some voltage
+> issues then.  Or you could have a bad IDE cable top the CD drive.
+> Or a bad CD drive.
+
+At least you have confirmed the motherboard can boot from CD and will
+boot from the CD you are trying to use, if only it could get to read
+the CD reliable.
+
+-- 
+Len Sorensen
+
+From moptop99 at gmail.com  Fri Oct 24 00:30:18 2014
+From: moptop99 at gmail.com (Matt Price)
+Date: Thu, 23 Oct 2014 20:30:18 -0400
+Subject: [GTALUG] wierd usb problem: refuses to mount rw
+Message-ID: <CAN_Dec9qfkeryXD8A4e93JF5m=6iPx6VsLoNebaa6eka+xvF5w@mail.gmail.com>
+
+In what appears to be a recent and spontaneous change, teh Ubuntu box I use
+to run our PVR has stopped mounting USB keys rw.  THis is on Ubuntu -- when
+Ifirst noticed the problem I was still running 13.10, but am now updated to
+14.10.
+
+WHen I plug in a key, it will sometimes (but not always!) appear to mount
+as usul to /media/matt/something , opening up a nautilus window.  but any
+attempt to write to the disk will fail due to lack of write permission.
+
+Attempts to remount also fail:
+
+~$ sudo mount -o rw,remount /media/matt/Linux\ Mint\ 17\ Xfce\ 32-bit/
+mount: cannot remount /dev/sdb1 read-write, is write-protected
+
+
+Meanwhile, dmesg says this, which I don't entirely understnad:
+
+  794.736021] usb 1-6: new high-speed USB device number 4 using ehci-pci
+[  794.869458] usb 1-6: New USB device found, idVendor=1221, idProduct=3234
+[  794.869463] usb 1-6: New USB device strings: Mfr=1, Product=2,
+SerialNumber=3
+[  794.869466] usb 1-6: Product: Flash Disk
+[  794.869469] usb 1-6: Manufacturer: USB2.0
+[  794.869471] usb 1-6: SerialNumber: 100000000000068B
+[  794.869731] usb-storage 1-6:1.0: USB Mass Storage device detected
+[  794.872208] scsi7 : usb-storage 1-6:1.0
+[  795.874368] scsi 7:0:0:0: Direct-Access     USB2.0   Flash Disk
+2.50 PQ: 0 ANSI: 2
+[  795.874586] sd 7:0:0:0: Attached scsi generic sg2 type 0
+[  795.875227] sd 7:0:0:0: [sdb] 2068480 512-byte logical blocks: (1.05
+GB/1010 MiB)
+[  795.876225] sd 7:0:0:0: [sdb] Write Protect is off
+[  795.876228] sd 7:0:0:0: [sdb] Mode Sense: 0b 00 00 08
+[  795.877226] sd 7:0:0:0: [sdb] No Caching mode page found
+[  795.877229] sd 7:0:0:0: [sdb] Assuming drive cache: write through
+[  795.882222] sd 7:0:0:0: [sdb] No Caching mode page found
+[  795.882226] sd 7:0:0:0: [sdb] Assuming drive cache: write through
+[  795.882860]  sdb: sdb1
+[  795.882863] sdb: p1 size 2445312 extends beyond EOD, enabling native
+capacity
+[  795.885227] sd 7:0:0:0: [sdb] No Caching mode page found
+[  795.885229] sd 7:0:0:0: [sdb] Assuming drive cache: write through
+[  795.885858]  sdb: sdb1
+[  795.885861] sdb: p1 size 2445312 extends beyond EOD, truncated
+[  795.891228] sd 7:0:0:0: [sdb] No Caching mode page found
+[  795.891233] sd 7:0:0:0: [sdb] Assuming drive cache: write through
+[  795.891235] sd 7:0:0:0: [sdb] Attached SCSI removable disk
+[  796.069733] ISO 9660 Extensions: Microsoft Joliet Level 3
+[  796.070732] ISO 9660 Extensions: RRIP_1991A
+
+-----
+
+this happens with all usb keys, all of which I am able to mount on my
+laptop, which runs arch linux.
+
+Any htoughts on how to proceed?
+
+Thanks as always,
+Matt
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141023/16cfdfe1/attachment.html>
+
+From waltdnes at waltdnes.org  Fri Oct 24 04:05:45 2014
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Fri, 24 Oct 2014 00:05:45 -0400
+Subject: [GTALUG] wierd usb problem: refuses to mount rw
+In-Reply-To: <CAN_Dec9qfkeryXD8A4e93JF5m=6iPx6VsLoNebaa6eka+xvF5w@mail.gmail.com>
+References: <CAN_Dec9qfkeryXD8A4e93JF5m=6iPx6VsLoNebaa6eka+xvF5w@mail.gmail.com>
+Message-ID: <20141024040545.GA14680@waltdnes.org>
+
+On Thu, Oct 23, 2014 at 08:30:18PM -0400, Matt Price wrote
+> In what appears to be a recent and spontaneous change, teh Ubuntu box I use
+> to run our PVR has stopped mounting USB keys rw.  THis is on Ubuntu -- when
+> Ifirst noticed the problem I was still running 13.10, but am now updated to
+> 14.10.
+> 
+> WHen I plug in a key, it will sometimes (but not always!) appear to mount
+> as usul to /media/matt/something , opening up a nautilus window.  but any
+> attempt to write to the disk will fail due to lack of write permission.
+> 
+> Attempts to remount also fail:
+> 
+> ~$ sudo mount -o rw,remount /media/matt/Linux\ Mint\ 17\ Xfce\ 32-bit/
+> mount: cannot remount /dev/sdb1 read-write, is write-protected
+
+[...deletia...]
+
+> this happens with all usb keys, all of which I am able to mount on my
+> laptop, which runs arch linux.
+> 
+> Any htoughts on how to proceed?
+
+  See if the instructions at...
+http://askubuntu.com/questions/247475/automounted-usb-devices-are-read-only
+fix your problem.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
