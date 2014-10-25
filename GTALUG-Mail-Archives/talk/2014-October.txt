@@ -5397,3 +5397,82 @@ fix your problem.
 -- 
 Walter Dnes <waltdnes at waltdnes.org>
 
+From lsorense at csclub.uwaterloo.ca  Fri Oct 24 17:53:27 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 24 Oct 2014 13:53:27 -0400
+Subject: [GTALUG] wierd usb problem: refuses to mount rw
+In-Reply-To: <CAN_Dec9qfkeryXD8A4e93JF5m=6iPx6VsLoNebaa6eka+xvF5w@mail.gmail.com>
+References: <CAN_Dec9qfkeryXD8A4e93JF5m=6iPx6VsLoNebaa6eka+xvF5w@mail.gmail.com>
+Message-ID: <20141024175327.GE24111@csclub.uwaterloo.ca>
+
+On Thu, Oct 23, 2014 at 08:30:18PM -0400, Matt Price wrote:
+> In what appears to be a recent and spontaneous change, teh Ubuntu box I use
+> to run our PVR has stopped mounting USB keys rw.  THis is on Ubuntu -- when
+> Ifirst noticed the problem I was still running 13.10, but am now updated to
+> 14.10.
+> 
+> WHen I plug in a key, it will sometimes (but not always!) appear to mount
+> as usul to /media/matt/something , opening up a nautilus window.  but any
+> attempt to write to the disk will fail due to lack of write permission.
+> 
+> Attempts to remount also fail:
+> 
+> ~$ sudo mount -o rw,remount /media/matt/Linux\ Mint\ 17\ Xfce\ 32-bit/
+> mount: cannot remount /dev/sdb1 read-write, is write-protected
+> 
+> 
+> Meanwhile, dmesg says this, which I don't entirely understnad:
+> 
+>   794.736021] usb 1-6: new high-speed USB device number 4 using ehci-pci
+> [  794.869458] usb 1-6: New USB device found, idVendor=1221, idProduct=3234
+> [  794.869463] usb 1-6: New USB device strings: Mfr=1, Product=2,
+> SerialNumber=3
+> [  794.869466] usb 1-6: Product: Flash Disk
+> [  794.869469] usb 1-6: Manufacturer: USB2.0
+> [  794.869471] usb 1-6: SerialNumber: 100000000000068B
+> [  794.869731] usb-storage 1-6:1.0: USB Mass Storage device detected
+> [  794.872208] scsi7 : usb-storage 1-6:1.0
+> [  795.874368] scsi 7:0:0:0: Direct-Access     USB2.0   Flash Disk
+> 2.50 PQ: 0 ANSI: 2
+> [  795.874586] sd 7:0:0:0: Attached scsi generic sg2 type 0
+> [  795.875227] sd 7:0:0:0: [sdb] 2068480 512-byte logical blocks: (1.05
+> GB/1010 MiB)
+> [  795.876225] sd 7:0:0:0: [sdb] Write Protect is off
+> [  795.876228] sd 7:0:0:0: [sdb] Mode Sense: 0b 00 00 08
+> [  795.877226] sd 7:0:0:0: [sdb] No Caching mode page found
+> [  795.877229] sd 7:0:0:0: [sdb] Assuming drive cache: write through
+> [  795.882222] sd 7:0:0:0: [sdb] No Caching mode page found
+> [  795.882226] sd 7:0:0:0: [sdb] Assuming drive cache: write through
+> [  795.882860]  sdb: sdb1
+> [  795.882863] sdb: p1 size 2445312 extends beyond EOD, enabling native
+> capacity
+
+If your partition table is bigger than your device, then you have a
+very screwed up partition table, and I would not trust the device at
+all until it has been repartitioned and reformated.
+
+> [  795.885227] sd 7:0:0:0: [sdb] No Caching mode page found
+> [  795.885229] sd 7:0:0:0: [sdb] Assuming drive cache: write through
+> [  795.885858]  sdb: sdb1
+> [  795.885861] sdb: p1 size 2445312 extends beyond EOD, truncated
+> [  795.891228] sd 7:0:0:0: [sdb] No Caching mode page found
+> [  795.891233] sd 7:0:0:0: [sdb] Assuming drive cache: write through
+> [  795.891235] sd 7:0:0:0: [sdb] Attached SCSI removable disk
+> [  796.069733] ISO 9660 Extensions: Microsoft Joliet Level 3
+> [  796.070732] ISO 9660 Extensions: RRIP_1991A
+
+Hmm, I wonder if mount loaded the iso filesystem, or if it actually
+mounted the USB key with an iso filesystem.  I suppose if someone dd'd
+one of those hybrid install images to a usb key it would in fact have
+both a valid iso and some other filesystem, and if iso got tried first
+by automount, it would be read only and possibly show a wacky capacity
+as well.
+
+> this happens with all usb keys, all of which I am able to mount on my
+> laptop, which runs arch linux.
+
+Makes you wonder if all your usb keys have the same crazy content on them.
+
+-- 
+Len Sorensen
+
