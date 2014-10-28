@@ -5476,3 +5476,26 @@ Makes you wonder if all your usb keys have the same crazy content on them.
 -- 
 Len Sorensen
 
+From gilesorr at gmail.com  Mon Oct 27 19:45:23 2014
+From: gilesorr at gmail.com (Giles Orr)
+Date: Mon, 27 Oct 2014 15:45:23 -0400
+Subject: [GTALUG] riseup.net
+Message-ID: <CAEnxSC7msgv_vjHmwmRmA-9LJdRcaS5bqwMPAOB_8Vu+cV03Pw@mail.gmail.com>
+
+After FSOSS on Thursday and Friday, I spent some time looking at
+prism-break.org.  One of the sites they recommend for email is
+riseup.net: is anyone familiar with them and/or have an account?  How
+is their user interface?  Are there two of you out there who would be
+willing to (privately) send me an invite so I can bypass what is
+apparently a very long wait for a regular request?  Their site says
+"To create codes, existing users can login to user.riseup.net and
+click 'Invites'."
+
+I'm interested in experiences, not just invites.  Getting away from
+gmail would be a plus, and riseup does claim to support IMAP.  Thanks.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
