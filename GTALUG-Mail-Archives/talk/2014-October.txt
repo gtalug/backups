@@ -5499,3 +5499,104 @@ Giles
 http://www.gilesorr.com/
 gilesorr at gmail.com
 
+From me at mylesbraithwaite.com  Tue Oct 28 16:39:35 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 28 Oct 2014 12:39:35 -0400
+Subject: [GTALUG] Storing Securities in a Git Repo
+Message-ID: <CA+hskZOV3BnDzN9JfkQ_FBm2qnRqZg0Rk30rLMdf3OB2wEwhBw@mail.gmail.com>
+
+Does anyone have any experience storing securities (i.e. AWS access
+and security keys) in a Git repository?
+
+I did some Googling and found a two solutions, git-crypt[1] and
+blackbox[2]. Anyone tried them before?
+
+[1]: https://github.com/AGWA/git-crypt
+[2]: https://github.com/StackExchange/blackbox
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+
+From self_same_self at yahoo.com  Tue Oct 28 18:51:38 2014
+From: self_same_self at yahoo.com (Sammy Lao)
+Date: Tue, 28 Oct 2014 14:51:38 -0400
+Subject: [GTALUG] Storing Securities in a Git Repo
+In-Reply-To: <CA+hskZOV3BnDzN9JfkQ_FBm2qnRqZg0Rk30rLMdf3OB2wEwhBw@mail.gmail.com>
+References: <CA+hskZOV3BnDzN9JfkQ_FBm2qnRqZg0Rk30rLMdf3OB2wEwhBw@mail.gmail.com>
+Message-ID: <AF0F39C5-1C1E-4BC0-ABF4-374227B4FC02@yahoo.com>
+
+That sounds like a bad practice. Why do this?
+
+
+> On Oct 28, 2014, at 12:39, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+> 
+> Does anyone have any experience storing securities (i.e. AWS access
+> and security keys) in a Git repository?
+> 
+> I did some Googling and found a two solutions, git-crypt[1] and
+> blackbox[2]. Anyone tried them before?
+> 
+> [1]: https://github.com/AGWA/git-crypt
+> [2]: https://github.com/StackExchange/blackbox
+> 
+> -- 
+> Myles Braithwaite | http://mylesb.ca/e
+> 
+> 
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From greg.martyn at gmail.com  Tue Oct 28 18:51:57 2014
+From: greg.martyn at gmail.com (Greg Martyn)
+Date: Tue, 28 Oct 2014 14:51:57 -0400
+Subject: [GTALUG] Storing Securities in a Git Repo
+In-Reply-To: <CA+hskZOV3BnDzN9JfkQ_FBm2qnRqZg0Rk30rLMdf3OB2wEwhBw@mail.gmail.com>
+References: <CA+hskZOV3BnDzN9JfkQ_FBm2qnRqZg0Rk30rLMdf3OB2wEwhBw@mail.gmail.com>
+Message-ID: <CAJt6_8sbq62q7yGUKX2_gL+uBirOxqqyxkNBT+U9Lu=Qp2osig@mail.gmail.com>
+
+If you're deploying to EC2, I'd recommend assigning an IAM role to your
+servers. That way their credentials will be automatically rotated and
+assigned during server provisioning. That completely obviates the burden of
+storing the credentials.
+
+It's pretty easy to set up. Create a role in IAM, assign it permissions,
+then when launching a server, give it that same role. The docs[1] have an
+example of how to use curl to query for the credentials.
+
+By doing it this way, you can make sure that each server only have access
+to what it needs. An example configuration might have one role for test
+servers and one for live. That would make it impossible for the test
+servers to accidentally make changes to the live s3 bucket for example.
+
+[1]:
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html
+
+Hope that helps.
+
+-Greg
+
+On Tue, Oct 28, 2014 at 12:39 PM, Myles Braithwaite <me at mylesbraithwaite.com
+> wrote:
+
+> Does anyone have any experience storing securities (i.e. AWS access
+> and security keys) in a Git repository?
+>
+> I did some Googling and found a two solutions, git-crypt[1] and
+> blackbox[2]. Anyone tried them before?
+>
+> [1]: https://github.com/AGWA/git-crypt
+> [2]: https://github.com/StackExchange/blackbox
+>
+> --
+> Myles Braithwaite | http://mylesb.ca/e
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141028/f7e17a20/attachment.html>
+
