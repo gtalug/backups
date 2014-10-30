@@ -5600,3 +5600,479 @@ On Tue, Oct 28, 2014 at 12:39 PM, Myles Braithwaite <me at mylesbraithwaite.com
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141028/f7e17a20/attachment.html>
 
+From davecramer at gmail.com  Wed Oct 29 12:40:15 2014
+From: davecramer at gmail.com (Dave Cramer)
+Date: Wed, 29 Oct 2014 08:40:15 -0400
+Subject: [GTALUG] capturing the output of any program and inserting in db
+Message-ID: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+
+Is there anything out there that is written simply ? By this I mean I don't
+want to have to install a framework or a jvm or any large dependencies.
+Ideally this would be written in bash or the like.
+
+The goal is to monitor cron jobs using something other than mail.
+
+Dave Cramer
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141029/ffd1f3d1/attachment.html>
+
+From thoriumbr at gmail.com  Wed Oct 29 13:39:17 2014
+From: thoriumbr at gmail.com (Mauro Souza)
+Date: Wed, 29 Oct 2014 11:39:17 -0200
+Subject: [GTALUG] capturing the output of any program and inserting in db
+In-Reply-To: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+References: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+Message-ID: <CAEZ_B6OV2hgpB6zNB74rVMs6b0mcbe1EbeVrSeoZ+gr0vWv4jA@mail.gmail.com>
+
+Something like this?
+
+0 5 * * 1 tar -zcf /var/backups/home.tgz /home/ >> /tmp/backup.log
+
+Mauro
+http://mauro.limeiratem.com - registered Linux User: 294521
+Scripture is both history, and a love letter from God.
+
+2014-10-29 10:40 GMT-02:00 Dave Cramer <davecramer at gmail.com>:
+
+> Is there anything out there that is written simply ? By this I mean I
+> don't want to have to install a framework or a jvm or any large
+> dependencies. Ideally this would be written in bash or the like.
+>
+> The goal is to monitor cron jobs using something other than mail.
+>
+> Dave Cramer
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141029/05c0328c/attachment.html>
+
+From tisdall at gmail.com  Wed Oct 29 14:34:39 2014
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Wed, 29 Oct 2014 10:34:39 -0400
+Subject: [GTALUG] capturing the output of any program and inserting in db
+In-Reply-To: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+References: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+Message-ID: <CAGxYWpaU0VqLsUL4bd-iuKZPQWKHC155FxSntL=DEhuuUM1G1A@mail.gmail.com>
+
+On Wed, Oct 29, 2014 at 8:40 AM, Dave Cramer <davecramer at gmail.com> wrote:
+
+> Is there anything out there that is written simply ? By this I mean I
+> don't want to have to install a framework or a jvm or any large
+> dependencies. Ideally this would be written in bash or the like.
+>
+> The goal is to monitor cron jobs using something other than mail.
+>
+
+Is the DB requirement necessary?  I think Mauro's suggestion is fine if you
+don't need to put it into a DB as you can just have all the output
+redirected into a logging file.
+
+Just to improve on his suggestion though:
+
+0 5 * * 1 tar -zcf /var/backups/home.tgz /home/ >> /tmp/backup.log 2>&1
+
+That last little bit says to redirect the STDERR to STDOUT so you'll also
+get error messages logged.  Otherwise you'll also get an email if there's
+anything on the STDERR.
+
+-Tim
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141029/0451b17b/attachment.html>
+
+From me at mylesbraithwaite.com  Wed Oct 29 16:13:17 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Wed, 29 Oct 2014 12:13:17 -0400
+Subject: [GTALUG] capturing the output of any program and inserting in db
+In-Reply-To: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+References: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+Message-ID: <5451121D.7090308@mylesbraithwaite.com>
+
+Dave Cramer wrote:
+> Is there anything out there that is written simply ? By this I mean I
+> don't want to have to install a framework or a jvm or any large
+> dependencies. Ideally this would be written in bash or the like.
+
+You could use the sqlite. Running something like:
+
+#!/bin/sh
+sqlite3 log.db 'INSERT INFO log (message) VALUES ($MESSAGE);'
+
+in a table setup like this:
+
+CREATE TABLE log (
+	id INTEGER PRIMARY KEY,
+	timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+	message TEXT
+);
+
+From davecramer at gmail.com  Wed Oct 29 16:22:14 2014
+From: davecramer at gmail.com (Dave Cramer)
+Date: Wed, 29 Oct 2014 12:22:14 -0400
+Subject: [GTALUG] capturing the output of any program and inserting in db
+In-Reply-To: <5451121D.7090308@mylesbraithwaite.com>
+References: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+ <5451121D.7090308@mylesbraithwaite.com>
+Message-ID: <CADK3HHL5MdG67qKLZwBoSJT37wvY6mL-Az45uJijtfxWObCCzA@mail.gmail.com>
+
+Myles, that is pretty much all I need, thx.
+
+Others, syslog is fine, but I want an easy way to view the results other
+than grep
+
+Dave
+
+Dave Cramer
+
+On 29 October 2014 12:13, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+
+> Dave Cramer wrote:
+> > Is there anything out there that is written simply ? By this I mean I
+> > don't want to have to install a framework or a jvm or any large
+> > dependencies. Ideally this would be written in bash or the like.
+>
+> You could use the sqlite. Running something like:
+>
+> #!/bin/sh
+> sqlite3 log.db 'INSERT INFO log (message) VALUES ($MESSAGE);'
+>
+> in a table setup like this:
+>
+> CREATE TABLE log (
+>         id INTEGER PRIMARY KEY,
+>         timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+>         message TEXT
+> );
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141029/ef36d955/attachment.html>
+
+From jamon.camisso at utoronto.ca  Wed Oct 29 17:18:55 2014
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Wed, 29 Oct 2014 13:18:55 -0400
+Subject: [GTALUG] capturing the output of any program and inserting in db
+In-Reply-To: <5451121D.7090308@mylesbraithwaite.com>
+References: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+ <5451121D.7090308@mylesbraithwaite.com>
+Message-ID: <5451217F.9010607@utoronto.ca>
+
+On 2014-10-29 12:13 PM, Myles Braithwaite wrote:
+> Dave Cramer wrote:
+>> Is there anything out there that is written simply ? By this I mean I
+>> don't want to have to install a framework or a jvm or any large
+>> dependencies. Ideally this would be written in bash or the like.
+> 
+> You could use the sqlite. Running something like:
+> 
+> #!/bin/sh
+> sqlite3 log.db 'INSERT INFO log (message) VALUES ($MESSAGE);'
+> 
+> in a table setup like this:
+> 
+> CREATE TABLE log (
+> 	id INTEGER PRIMARY KEY,
+> 	timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+> 	message TEXT
+> );
+
+What if $MESSAGE == 'foo); DELETE FROM log;'
+
+Just saying.. :p
+
+From cbbrowne at gmail.com  Wed Oct 29 17:27:30 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Wed, 29 Oct 2014 13:27:30 -0400
+Subject: [GTALUG] capturing the output of any program and inserting in db
+In-Reply-To: <5451121D.7090308@mylesbraithwaite.com>
+References: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+ <5451121D.7090308@mylesbraithwaite.com>
+Message-ID: <CAFNqd5UMdnnunmRFJU_j1rrbCWnXZU366sNFC=DbS8DzZUWR5w@mail.gmail.com>
+
+On 29 October 2014 12:13, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+
+> Dave Cramer wrote:
+> > Is there anything out there that is written simply ? By this I mean I
+> > don't want to have to install a framework or a jvm or any large
+> > dependencies. Ideally this would be written in bash or the like.
+>
+> You could use the sqlite. Running something like:
+>
+> #!/bin/sh
+> sqlite3 log.db 'INSERT INFO log (message) VALUES ($MESSAGE);'
+>
+> in a table setup like this:
+>
+> CREATE TABLE log (
+>         id INTEGER PRIMARY KEY,
+>         timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+>         message TEXT
+> );
+>
+
+I'm finding I really like using command line tooling to write to syslog...
+
+The command "logger" <http://linux.die.net/man/1/logger> writes entries to
+syslog
+
+I populate shell scripts with wee "glog" functions to wrap this...
+
+glog () {
+    local level=$1
+    local notice=$2
+    logger -i -p "${level}" -t "name-of-my-script.sh" "${notice}"
+    echo "${level} ${notice}"
+}
+
+I then inject
+   glog user.notice "Ooh, I did something!"
+and
+   glog user.error "oops, something went wrong - rc=$?"
+and such.
+
+If I *really* wanted to, I could configure syslog to write some messages to
+a SQL database.
+<http://www.rsyslog.com/doc/rsyslog_pgsql.html>
+
+I did that for a while; found it to be more a pain than a help.  (IPv6
+issues blew up the
+logs on me, and I couldn't query the DB as fast as disk space ballooned
+away...)
+
+I'm finding that I [Heart] logger as a way of getting scripty apps to log
+activity.
+
+The OTHER thing I'd like is to have something materially better than cron,
+unfortunately, that's a surprisingly expensive problem.  Improving on cron
+looks,
+historically, like it leads to the sort of all-encompassing framework
+expansion that
+is where (eek!) we're seeing controversies about SystemD.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141029/0b3edcec/attachment.html>
+
+From davecramer at gmail.com  Wed Oct 29 17:27:28 2014
+From: davecramer at gmail.com (Dave Cramer)
+Date: Wed, 29 Oct 2014 13:27:28 -0400
+Subject: [GTALUG] capturing the output of any program and inserting in db
+In-Reply-To: <5451217F.9010607@utoronto.ca>
+References: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+ <5451121D.7090308@mylesbraithwaite.com> <5451217F.9010607@utoronto.ca>
+Message-ID: <CADK3HH+Y_in+iVaOT3Wu4M0r-hCGFuo1X8_WAfO-kX75ud0Ejw@mail.gmail.com>
+
+Dave Cramer
+
+On 29 October 2014 13:18, Jamon Camisso <jamon.camisso at utoronto.ca> wrote:
+
+> On 2014-10-29 12:13 PM, Myles Braithwaite wrote:
+> > Dave Cramer wrote:
+> >> Is there anything out there that is written simply ? By this I mean I
+> >> don't want to have to install a framework or a jvm or any large
+> >> dependencies. Ideally this would be written in bash or the like.
+> >
+> > You could use the sqlite. Running something like:
+> >
+> > #!/bin/sh
+> > sqlite3 log.db 'INSERT INFO log (message) VALUES ($MESSAGE);'
+> >
+> > in a table setup like this:
+> >
+> > CREATE TABLE log (
+> >       id INTEGER PRIMARY KEY,
+> >       timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+> >       message TEXT
+> > );
+>
+> What if $MESSAGE == 'foo); DELETE FROM log;'
+>
+> Just saying.. :p
+>
+
+good point, this is an internal tool, so probably not a real issue.
+
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141029/49426e29/attachment.html>
+
+From me at mylesbraithwaite.com  Wed Oct 29 17:37:45 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Wed, 29 Oct 2014 13:37:45 -0400
+Subject: [GTALUG] capturing the output of any program and inserting in db
+In-Reply-To: <5451217F.9010607@utoronto.ca>
+References: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+ <5451121D.7090308@mylesbraithwaite.com> <5451217F.9010607@utoronto.ca>
+Message-ID: <545125E9.8020306@mylesbraithwaite.com>
+
+Jamon Camisso wrote:
+> What if $MESSAGE == 'foo); DELETE FROM log;'
+
+Fixed:
+
+#!/bin/bash
+CLEAN_MESSAGE="${MESSAGE//\;/}"
+sqlite3 log.db "INSERT INTO log (message) VALUES ('$CLEAN_MESSAGE');"
+
+From jamon.camisso at utoronto.ca  Wed Oct 29 17:43:55 2014
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Wed, 29 Oct 2014 13:43:55 -0400
+Subject: [GTALUG] capturing the output of any program and inserting in db
+In-Reply-To: <545125E9.8020306@mylesbraithwaite.com>
+References: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+ <5451121D.7090308@mylesbraithwaite.com> <5451217F.9010607@utoronto.ca>
+ <545125E9.8020306@mylesbraithwaite.com>
+Message-ID: <5451275B.9080906@utoronto.ca>
+
+On 2014-10-29 1:37 PM, Myles Braithwaite wrote:
+> Jamon Camisso wrote:
+>> What if $MESSAGE == 'foo); DELETE FROM log;'
+> 
+> Fixed:
+> 
+> #!/bin/bash
+> CLEAN_MESSAGE="${MESSAGE//\;/}"
+> sqlite3 log.db "INSERT INTO log (message) VALUES ('$CLEAN_MESSAGE');"
+
+Better, but what about:
+
+MESSAGE="foo\u003B DELETE FROM log\u003B"
+
+From me at mylesbraithwaite.com  Wed Oct 29 17:50:53 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Wed, 29 Oct 2014 13:50:53 -0400
+Subject: [GTALUG] capturing the output of any program and inserting in db
+In-Reply-To: <5451275B.9080906@utoronto.ca>
+References: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+ <5451121D.7090308@mylesbraithwaite.com> <5451217F.9010607@utoronto.ca>
+ <545125E9.8020306@mylesbraithwaite.com> <5451275B.9080906@utoronto.ca>
+Message-ID: <545128FD.9000109@mylesbraithwaite.com>
+
+Jamon Camisso wrote:
+> Better, but what about:
+> 
+> MESSAGE="foo\u003B DELETE FROM log\u003B"
+
+Does bash support unicode characters now? Cause it seems to be working fine:
+
+3|2014-10-29 17:44:41|foo\u003B DELETE FROM log\u003B
+
+Is there a Python like `u` for bash?
+
+From jamon.camisso at utoronto.ca  Wed Oct 29 18:07:04 2014
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Wed, 29 Oct 2014 14:07:04 -0400
+Subject: [GTALUG] capturing the output of any program and inserting in db
+In-Reply-To: <545128FD.9000109@mylesbraithwaite.com>
+References: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+ <5451121D.7090308@mylesbraithwaite.com> <5451217F.9010607@utoronto.ca>
+ <545125E9.8020306@mylesbraithwaite.com> <5451275B.9080906@utoronto.ca>
+ <545128FD.9000109@mylesbraithwaite.com>
+Message-ID: <54512CC8.4080407@utoronto.ca>
+
+On 2014-10-29 1:50 PM, Myles Braithwaite wrote:
+> Jamon Camisso wrote:
+>> Better, but what about:
+>>
+>> MESSAGE="foo\u003B DELETE FROM log\u003B"
+> 
+> Does bash support unicode characters now? Cause it seems to be working fine:
+> 
+> 3|2014-10-29 17:44:41|foo\u003B DELETE FROM log\u003B
+> 
+> Is there a Python like `u` for bash?
+
+Not sure: if I echo $CLEAN_MESSAGE though I see the ; with \u003B or
+\x3B characters. When you run the insert in sqlite does it interpret the
+characters as literal strings again?
+
+From scruss at gmail.com  Wed Oct 29 19:07:52 2014
+From: scruss at gmail.com (Stewart Russell)
+Date: Wed, 29 Oct 2014 15:07:52 -0400
+Subject: [GTALUG] capturing the output of any program and inserting in db
+In-Reply-To: <5451121D.7090308@mylesbraithwaite.com>
+References: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+ <5451121D.7090308@mylesbraithwaite.com>
+Message-ID: <CAAsTreDS5j=vEA=eDTy-n0oFydvDBjFD9K=AB_wJi-5DSNCZhQ@mail.gmail.com>
+
+On Oct 29, 2014 12:13 PM, "Myles Braithwaite" <me at mylesbraithwaite.com>
+wrote:
+>
+> #!/bin/sh
+> sqlite3 log.db 'INSERT INFO log (message) VALUES ($MESSAGE);'
+
+Very nice. Thank you. This would have saved me much mucking about with 'ts'
+on my power monitor.
+
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141029/144e7a79/attachment.html>
+
+From davec-b at rogers.com  Thu Oct 30 00:00:18 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Wed, 29 Oct 2014 20:00:18 -0400
+Subject: [GTALUG] capturing the output of any program and inserting in db
+In-Reply-To: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+References: <CADK3HHKyYOWok=qywaU3QdmhwgT37w2W7CA6SjGFV=mQxCZf_A@mail.gmail.com>
+Message-ID: <54517F92.6020706@rogers.com>
+
+If you're putting event data in databases, reduce your usual logs first 
+with antilog, so the borring regular stuff doesn't appear.
+Conversely, if certain things should appear, check for them and log an 
+"expected event missing" entry.
+
+Think of the DB as a history of exceptions in a"management by 
+exceptions" scheme.
+
+--dave
+[See also antilog, http://datacenterworks.com/stories/antilog.html and 
+http://sourceforge.net/projects/antilog/]
+
+
+On 10/29/2014 08:40 AM, Dave Cramer wrote:
+> Is there anything out there that is written simply ? By this I mean I 
+> don't want to have to install a framework or a jvm or any large 
+> dependencies. Ideally this would be written in bash or the like.
+>
+> The goal is to monitor cron jobs using something other than mail.
+>
+> Dave Cramer
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141029/cf1011dc/attachment.html>
+
