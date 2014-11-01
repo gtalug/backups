@@ -1,0 +1,148 @@
+From scott at ss.org  Sat Nov  1 00:08:08 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Fri, 31 Oct 2014 20:08:08 -0400
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+Message-ID: <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+
+On October 31, 2014 3:48:34 PM EDT, Alex Volkov <avolkov at gmail.com> wrote:
+>Hello everyone,
+>
+>I need to get a DSL2 modem
+
+Knowing you, you mean a VDSL2 Modem.
+
+>, and I like running OpenWRT when it comes to
+>embedded devices -- I'm planning to run OpenVPN, ssh  server and a few
+>Python scripts.
+>I'm assuming there could be a router out the with DSL2 modem
+>capability.
+
+When I last looked at it a year ago there were a few being worked on on the openwrt forums. They should be searchable in the Table of Hardware.
+
+Unfortunately it very very unlikely that any will support the non-standard VDSL2 implementation that Bell deployed in Ontario.
+
+
+-- 
+Scott Sullivan
+
+From davec-b at rogers.com  Sat Nov  1 00:25:40 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Fri, 31 Oct 2014 20:25:40 -0400
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+Message-ID: <54542884.3060205@rogers.com>
+
+Hmmn, perhaps add Tek what they use: it may well be an linux variant --dave
+
+
+On 10/31/2014 08:08 PM, Scott Sullivan wrote:
+> On October 31, 2014 3:48:34 PM EDT, Alex Volkov <avolkov at gmail.com> wrote:
+>> Hello everyone,
+>>
+>> I need to get a DSL2 modem
+> Knowing you, you mean a VDSL2 Modem.
+>
+>> , and I like running OpenWRT when it comes to
+>> embedded devices -- I'm planning to run OpenVPN, ssh  server and a few
+>> Python scripts.
+>> I'm assuming there could be a router out the with DSL2 modem
+>> capability.
+> When I last looked at it a year ago there were a few being worked on on the openwrt forums. They should be searchable in the Table of Hardware.
+>
+> Unfortunately it very very unlikely that any will support the non-standard VDSL2 implementation that Bell deployed in Ontario.
+>
+>
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From james.knott at rogers.com  Sat Nov  1 00:48:40 2014
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 31 Oct 2014 20:48:40 -0400
+Subject: [GTALUG] Why Everyone Wants to Kill the Mouse and Keyboard
+In-Reply-To: <CAAsTreBo=Qu-NS-Fignp_Qjm9tyTG6bDVQ4ambXFBCYE=cok6A@mail.gmail.com>
+References: <CAGc8pF66kD1SfT_G5itTwJvuJmQ-bW8SA4HijejPgJknn+Vmkw@mail.gmail.com>
+ <CAA3RLT7oQvdGY0kSmYdaXCcwBYHoScE8psgnL00wf1AkhPUPHw@mail.gmail.com>
+ <20141031195928.GF24111@csclub.uwaterloo.ca>
+ <CAAsTreBo=Qu-NS-Fignp_Qjm9tyTG6bDVQ4ambXFBCYE=cok6A@mail.gmail.com>
+Message-ID: <54542DE8.8050100@rogers.com>
+
+On 10/31/2014 05:51 PM, Stewart Russell wrote:
+> I dunno about that. Give me some good paper and a decent fountain pen
+> and I'd probably be quicker. It would also have the advantage of being
+> completely illegible to anyone but me. Sometimes illegible to me, even. 
+
+Well, at least you don't have to worry about encryption.  ;-)
+
+BTW, many years ago, I used to overhaul Teletype machines.  Back then, I
+could type at 100 WPM, provided what you wanted typed was "NOW IS THE
+TIME FOR ALL...".
+(back then, they were upper case only)
+
+From waltdnes at waltdnes.org  Sat Nov  1 02:30:49 2014
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Fri, 31 Oct 2014 22:30:49 -0400
+Subject: [GTALUG] How can I read html email stored in Maildir format?
+Message-ID: <20141101023049.GA19776@waltdnes.org>
+
+  My 7-year-old modem/router is starting to occasionally get flakey, so
+I ordered a new one from Teksavvy.  Canada Post sent a tracking update,
+and it was unreadable in mutt, not to mention that 90% of the email was
+graphics...
+
+-- Mutt: Attachments
+  I     1 EM ALERT Form         [text/html, quoted, utf-8, 24K]
+  I     2 filename.BMP                [image/bmp, base64, 109K]
+  I     3 filename.BMP                 [image/bmp, base64, 16K]
+  I     4 filename.BMP                 [image/bmp, base64, 16K]
+  I     5 filename.BMP                 [image/bmp, base64, 16K]
+  I     6 filename.BMP                 [image/bmp, base64, 16K]
+  I     7 filename.BMP                 [image/bmp, base64, 36K]
+
+  I copied the email to a text file, consulted with "Mr. Google", and
+found the sed invocation to turn it into something that Firefox could
+read.  According to the tracking link, the modem/router has been
+accepted at Chatham and is now on route to Richmond Hill.  Since I live
+in Vaughan, that means I'll probably have to pick it up at a depot
+somewhere.
+
+  Anyhow, back to topic... what apps/programs are capable of *DIRECTLY*
+reading HTML mails that are stored in Maildir format?
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From waltdnes at waltdnes.org  Sat Nov  1 02:47:58 2014
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Fri, 31 Oct 2014 22:47:58 -0400
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+Message-ID: <20141101024758.GA21484@waltdnes.org>
+
+On Fri, Oct 31, 2014 at 03:48:34PM -0400, Alex Volkov wrote
+> Hello everyone,
+> 
+> I need to get a DSL2 modem, and I like running OpenWRT when it comes to
+> embedded devices -- I'm planning to run OpenVPN, ssh  server and a few
+> Python scripts.
+> 
+> I'm assuming there could be a router out the with DSL2 modem capability.
+> Could anyone recommend the most linux-friendly model that would have enough
+> resources to run all the things I've mentioned?
+
+  A possible compromise... ask if they have any router/modems that allow
+you to access a CLI.  Once you have that level of access, you can
+probably tweak firewall rules, etc, at will.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
