@@ -146,3 +146,423 @@ probably tweak firewall rules, etc, at will.
 -- 
 Walter Dnes <waltdnes at waltdnes.org>
 
+From hugh at mimosa.com  Sat Nov  1 16:02:00 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 1 Nov 2014 12:02:00 -0400 (EDT)
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1411011150360.31147@redclaw.mimosa.com>
+
+| From: Alex Volkov <avolkov at gmail.com>
+
+| I need to get a DSL2 modem, and I like running OpenWRT when it comes to
+| embedded devices -- I'm planning to run OpenVPN, ssh  server and a few
+| Python scripts.
+
+[Scott suggests you mean VDSL2.]
+
+I have a VDSL2 modem of a brand and firmware mandated by Bell.  Even 
+though they are not my ISP.  The mandate is brutal: neither end of the 
+wire actually conforms to the VDSL2 standard, as far as I know.
+
+I don't want to use their router or wireless for a whole host of reasons.  
+So I don't.  I use the thing only as a modem and have my own router (and 
+separate wireless access point).  My router is actually a discarded 
+notebook running CentOS 6.
+
+I've heard a rumour that the Modem/Router/Access-point box makes traffic 
+slower if it is only used as a modem.  I've not investigated because 
+there's nothing I'm willing do do about it.
+
+And another thing.  I bought a wireless router that apparently runs a 
+manufacturer's hacked version of OpenWRT.  But stock OpenWRT won't run 
+because there are no open source drivers for the broadcom wireless part.  
+How annoying / frustrating / disgusting.
+
+From william.muriithi at gmail.com  Sat Nov  1 17:49:11 2014
+From: william.muriithi at gmail.com (William Muriithi)
+Date: Sat, 01 Nov 2014 13:49:11 -0400
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <alpine.LRH.2.02.1411011150360.31147@redclaw.mimosa.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <alpine.LRH.2.02.1411011150360.31147@redclaw.mimosa.com>
+Message-ID: <20141101174911.6037648.50337.7292@gmail.com>
+
+
+
+
+And another thing. I bought a wireless router that apparently runs a 
+manufacturer's hacked version of OpenWRT. But stock OpenWRT won't run 
+because there are no open source drivers for the broadcom wireless part. 
+How annoying / frustrating / disgusting.
+
+Hmm,
+
+That's a bit annoying, especially as you would feel you supported a bunch of scams.?
+
+What brand is it so that the rest of the group can avoid the mistake?
+
+William
+
+
+---
+GTALUG Talk Mailing List - talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+From avolkov at gmail.com  Sat Nov  1 20:17:11 2014
+From: avolkov at gmail.com (Alex Volkov)
+Date: Sat, 1 Nov 2014 16:17:11 -0400
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+Message-ID: <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+
+Hey Scott,
+
+It's actually ADSL2+
+The modem is gonna be used for an older 7mbit down/1mbit up line, so I hope
+my options aren't as limited.
+On Oct 31, 2014 8:08 PM, "Scott Sullivan" <scott at ss.org> wrote:
+
+> On October 31, 2014 3:48:34 PM EDT, Alex Volkov <avolkov at gmail.com> wrote:
+> >Hello everyone,
+> >
+> >I need to get a DSL2 modem
+>
+> Knowing you, you mean a VDSL2 Modem.
+>
+> >, and I like running OpenWRT when it comes to
+> >embedded devices -- I'm planning to run OpenVPN, ssh  server and a few
+> >Python scripts.
+> >I'm assuming there could be a router out the with DSL2 modem
+> >capability.
+>
+> When I last looked at it a year ago there were a few being worked on on
+> the openwrt forums. They should be searchable in the Table of Hardware.
+>
+> Unfortunately it very very unlikely that any will support the non-standard
+> VDSL2 implementation that Bell deployed in Ontario.
+>
+>
+> --
+> Scott Sullivan
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141101/f4e11ae8/attachment.html>
+
+From mlxxxp at gmail.com  Sat Nov  1 21:17:56 2014
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Sat, 1 Nov 2014 17:17:56 -0400
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+Message-ID: <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+
+On 1 November 2014 16:17, Alex Volkov <avolkov at gmail.com> wrote:
+> It's actually ADSL2+
+
+Then I'd just get an ADSL2+ modem without a built in router and then
+use your own preferred router running OpenWRT.
+
+-- 
+Scott
+
+From scott at ss.org  Sat Nov  1 21:34:29 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Sat, 01 Nov 2014 17:34:29 -0400
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+ <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+Message-ID: <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+
+On November 1, 2014 5:17:56 PM EDT, Scott Allen <mlxxxp at gmail.com> wrote:
+>On 1 November 2014 16:17, Alex Volkov <avolkov at gmail.com> wrote:
+>> It's actually ADSL2+
+>
+>Then I'd just get an ADSL2+ modem without a built in router and then
+>use your own preferred router running OpenWRT.
+
++1
+
+New ADSL2+ Modem/Routers can be had for $20 or less. Just drop them in bridge mode if and enjoy.
+
+-- 
+Scott Sullivan
+
+From hugh at mimosa.com  Sat Nov  1 22:14:31 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 1 Nov 2014 18:14:31 -0400 (EDT)
+Subject: [GTALUG] OpenWRT and Netgear wireless router [was Re: teksavvy dsl
+ 2 modem that runs OpenWRT]
+In-Reply-To: <20141101174911.6037648.50337.7292@gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <alpine.LRH.2.02.1411011150360.31147@redclaw.mimosa.com>
+ <20141101174911.6037648.50337.7292@gmail.com>
+Message-ID: <alpine.LRH.2.02.1411011746180.31147@redclaw.mimosa.com>
+
+| From: William Muriithi <william.muriithi at gmail.com>
+
+Quoting me (not too clear from the text):
+
+| I bought a wireless router that apparently runs a 
+| manufacturer's hacked version of OpenWRT. But stock OpenWRT won't run 
+| because there are no open source drivers for the broadcom wireless part. 
+| How annoying / frustrating / disgusting.
+
+William wrote:
+
+| That's a bit annoying, especially as you would feel you supported a bunch of scams.
+
+In spite of the GPL, it must be legal.  Just not what we'd want.
+
+| What brand is it so that the rest of the group can avoid the mistake?
+
+I bought this:
+A Netgear AC1450 (refurb).
+<http://www.newegg.ca/Product/Product.aspx?Item=N82E16833122615&cm_re=ac1450-_-33-122-615-_-Product&AID=10657534&PID=749547&SID=rfdcb-d725&nm_mc=AFC-C8JunctionCA&cm_mmc=AFC-C8JunctionCA-_-na-_-na-_-na>
+Quite inexpensive for the resources.  It was even cheaper a couple of
+days ago: an astonishing $59.99 (but I had already made the purchase).
+
+Resources: GigaHz LAN and WAN, dual-core ARM SOC; 256M RAM, 128M NAND Flash, one USB3 and
+one USB2 port, wifi: an+ac, 3x3:3.
+<https://wikidevi.com/wiki/Netgear_R6300_v2>
+
+The firmware can be flashed to become another model, the R6300v2:
+<http://advancedhomeserver.com/upgrade-a-netgear-ac1450-router-to-ac1750-r6300v2/>
+I've done that.
+
+Here's the OpenWRT forum thread on this device
+<https://forum.openwrt.org/viewtopic.php?id=46758>
+Message 24 is where I heard that the stock firmware is a version of
+OpenWRT.  25 explains why that isn't good enough.  Currently it is
+partially supported by OpenWRT.
+
+I'm using it as an access point.  It is not one of my my internet
+gateways.
+
+From scott at ss.org  Sat Nov  1 22:22:52 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Sat, 01 Nov 2014 18:22:52 -0400
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+ <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+ <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+Message-ID: <54555D3C.9000401@ss.org>
+
+On 11/01/2014 05:34 PM, Scott Sullivan wrote:
+> On November 1, 2014 5:17:56 PM EDT, Scott Allen <mlxxxp at gmail.com> wrote:
+>> On 1 November 2014 16:17, Alex Volkov <avolkov at gmail.com> wrote:
+>>> It's actually ADSL2+
+>>
+>> Then I'd just get an ADSL2+ modem without a built in router and then
+>> use your own preferred router running OpenWRT.
+>
+> +1
+>
+> New ADSL2+ Modem/Routers can be had for $20 or less. Just drop them in bridge mode if and enjoy.
+>
+
+If you search the Table of Hardware, there are plenty of device that 
+list ADSL2+ hardware, but spot checks showed hit or miss for Working or 
+Not Working.
+
+wiki.openwrt.org/toh/start
+
+I really would recommend to just pursue a good OpenWRT router and then 
+hang a DSL modem off the WAN port.
+
+Examples of Inexpensive single Ethernet DSL modem/routers.
+
+TP-link TD-8616
+http://www.tplink.ca/en/products/details/?model=TD-8616
+http://www.canadacomputers.com/product_info.php?cPath=27_1059_1060&item_id=4887159
+
+I've used a few of these, the tend to do alright. I've had some 
+intermittent issues with these on know to be dodgy phone lines, that a 
+more expensive modem wouldn't run into.
+
+
+D-Link DL-520B
+http://ca.dlink.com/products/connect/adsl2-ethernet-modem-2/
+http://www.canadacomputers.com/product_info.php?cPath=27_1059_1060&item_id=036727
+
+No personal experience with these, but know a handful of folks that find 
+them to work well enough.
+
+-- 
+Scott Sullivan
+
+
+From mlxxxp at gmail.com  Sat Nov  1 23:12:48 2014
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Sat, 1 Nov 2014 19:12:48 -0400
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+ <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+ <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+Message-ID: <CAArSzsV3MoTySD4uqOshfiVoY05J8ZatzW-MJCWAYmL5f2qoRA@mail.gmail.com>
+
+On 1 November 2014 17:34, Scott Sullivan <scott at ss.org> wrote:
+> New ADSL2+ Modem/Routers can be had for $20 or less. Just drop them in bridge mode if and enjoy.
+
+Or, like I said, keep it simple and use just an ADSL2+ modem without a
+built in router so you don't have to fiddle with setting bridge mode.
+
+I've found TP-Link products to be inexpensive and reliable, such as:
+<http://www.tplink.ca/en/products/details/?categoryid=221&model=TD-8616>
+<http://www.canadacomputers.com/product_info.php?cPath=27_1059_358&item_id=024298>
+
+-- 
+Scott A.
+
+From hugh at mimosa.com  Sun Nov  2 00:45:31 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 1 Nov 2014 20:45:31 -0400 (EDT)
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <CAArSzsV3MoTySD4uqOshfiVoY05J8ZatzW-MJCWAYmL5f2qoRA@mail.gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+ <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+ <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+ <CAArSzsV3MoTySD4uqOshfiVoY05J8ZatzW-MJCWAYmL5f2qoRA@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1411012040590.31147@redclaw.mimosa.com>
+
+| From: Scott Allen <mlxxxp at gmail.com>
+
+| I've found TP-Link products to be inexpensive and reliable, such as:
+| <http://www.tplink.ca/en/products/details/?categoryid=221&model=TD-8616>
+
+If that is just a modem, as it claims, why does it list this feature:
+ Built-in firewall protects against Internet attacks
+
+Does it do slightly-deep packet inspection, peering inside the PPPoE
+packets?
+
+There is a local web server to manage the thing.  Perhaps that's why
+it has a firewall.
+
+From cbbrowne at gmail.com  Sun Nov  2 03:20:56 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Sat, 1 Nov 2014 23:20:56 -0400
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+Message-ID: <CAFNqd5UkQmH=b85T+Y+vfch9MZs4tW9LfmETjhPE-_oXK93RqQ@mail.gmail.com>
+
+On 31 October 2014 15:48, Alex Volkov <avolkov at gmail.com> wrote:
+>
+> I need to get a DSL2 modem, and I like running OpenWRT when it comes to
+embedded devices -- I'm planning to run OpenVPN, ssh  server and a few
+Python scripts.
+
+More of a meta comment...
+
+I daresay I haven't had much luck finding devices that run OpenWRT well.
+
+I have run through the hardware support list in parallel with reading stock
+lists at
+local computer shops, and found, erm, "inadequate overlap."   The last time
+I
+bought a router, it looked like it *might* support OpenWRT, however that has
+remained nascent, so I'm still running DD-WRT.
+
+I'm a bit suspicious that OpenWRT isn't sufficiently supported by "staffing"
+(of whatever sort) to keep up with the normal flow of new router hardware
+(there's naturally going to be new stuff, as all the vendors need to sell
+something new next year).
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141101/4ca26019/attachment.html>
+
+From hugh at mimosa.com  Sun Nov  2 04:55:35 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 2 Nov 2014 00:55:35 -0400 (EDT)
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <CAFNqd5UkQmH=b85T+Y+vfch9MZs4tW9LfmETjhPE-_oXK93RqQ@mail.gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <CAFNqd5UkQmH=b85T+Y+vfch9MZs4tW9LfmETjhPE-_oXK93RqQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1411020007330.31147@redclaw.mimosa.com>
+
+| From: Christopher Browne <cbbrowne at gmail.com>
+
+| I'm a bit suspicious that OpenWRT isn't sufficiently supported by "staffing"
+| (of whatever sort) to keep up with the normal flow of new router hardware
+| (there's naturally going to be new stuff, as all the vendors need to sell
+| something new next year).
+
+My impression is that:
+
+- reverse engineering is slower than new gadgets get adopted.
+  Broadcom is very bad for open source.  Atheros has been much better
+  (at least until it was bought by Qualcomm).
+
+- it appears that support for NAND flash is not mainstreamed in OpenWRT.  
+  Yet that seems to be the future direction of hardware.
+
+  (technical sketch: ordinary old flash can be written a word at a
+  time, kind of like RAM (but more slowly).  NAND can only be zeroed a
+  large block at a time.  And NAND flash is much shorter-lived.  (But
+  it is cheaper and more dense.) So you need layer of software to do
+  wear-leveling and to create an abstraction that kind of looks like a
+  disk.  There are several competing systems to do that.  UBI is one
+  that is being adopted for some OpenWRT projects.)
+
+- lots of OpenWRT work is itch-scratching.  It often involves git
+  commits but not wiki updates.  So if you care about a device, google
+  for it + openwrt.  There are often postings about work in progress,
+  sometimes even completed.
+
+- turn it around: buy hardware that is known to be good for OpenWRT.
+  Unfortunately, buying stuff that does not support the latest
+  standards is a bit discouraging.  The CeroWRT folks (downstream from
+  OpenWRT, and very interesting) only support the NetGear WNDR3700v2
+  and equivallent -- no support for 802.11ac.
+
+  The TP-Link Archer C7 v2 looks good, cheap, and might be supported.
+  Beware: the v1's wireless will never be supported; the C8 is not as
+  good, more expensive, and isn't supported (it has the same Broadcom
+  chip as is in my Netgear R6300v2).
+
+	<http://wiki.openwrt.org/toh/tp-link/tl-wdr7500>
+	<http://www.smallnetbuilder.com/wireless/wireless-reviews/32498-tp-link-archer-c7-v2-reviewed>
+
+So why did I buy the Broadcom-based Netgear R6300v2?
+
+I was bargain hunting and in a hurry.  I read the OpenWRT thread on
+the Netgear R6300v2 and didn't read to the end; it looked as if
+support had just appeared.  And the raw hardware of the Netgear looked
+much better than the TP-Link: 8 times as much flash, lots more ram,
+much faster processor, USB3.  I failed to notice that the actual
+wireless performance wasn't quite as good.
+
+The final hook was that I was buying a somewhat cheaper model than an
+R6300v2 and upgrading it by flashing.  I thought I was getting away
+with something.
+
+I had actually started with a Future Shop / Best Buy bargain on the
+TP-Link C7 (for a v2, but that wasn't in the specs.) but they ran out
+of stock.
+
+The FS/BB blow-out might be a sign that the c7 is being replaced by
+the inferior c8.  Get'em while you can.
+
