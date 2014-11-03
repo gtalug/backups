@@ -566,3 +566,232 @@ of stock.
 The FS/BB blow-out might be a sign that the c7 is being replaced by
 the inferior c8.  Get'em while you can.
 
+From mlxxxp at gmail.com  Sun Nov  2 12:28:11 2014
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Sun, 2 Nov 2014 07:28:11 -0500
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <alpine.LRH.2.02.1411012040590.31147@redclaw.mimosa.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+ <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+ <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+ <CAArSzsV3MoTySD4uqOshfiVoY05J8ZatzW-MJCWAYmL5f2qoRA@mail.gmail.com>
+ <alpine.LRH.2.02.1411012040590.31147@redclaw.mimosa.com>
+Message-ID: <CAArSzsU1O+LmF+tG6mkPn42ocGNQ+Herr9boBcW-1MYGEdTXHQ@mail.gmail.com>
+
+On 1 November 2014 20:45, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+> | From: Scott Allen <mlxxxp at gmail.com>
+>
+> | I've found TP-Link products to be inexpensive and reliable, such as:
+> | <http://www.tplink.ca/en/products/details/?categoryid=221&model=TD-8616>
+>
+> If that is just a modem, as it claims, why does it list this feature:
+>  Built-in firewall protects against Internet attacks
+
+I was puzzled by that as well. (I don't own this device.) Could be it
+was incorrectly copied from the spec's for a combination modem/router.
+There's no mention of a firewall feature in the user guide, so it's
+either incorrect or something that's not user configurable. Protection
+from buffer overflow/DOS attacks perhaps?
+
+-- 
+Scott A.
+
+From scruss at gmail.com  Sun Nov  2 15:41:00 2014
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sun, 02 Nov 2014 10:41:00 -0500
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <CAArSzsV3MoTySD4uqOshfiVoY05J8ZatzW-MJCWAYmL5f2qoRA@mail.gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+ <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+ <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+ <CAArSzsV3MoTySD4uqOshfiVoY05J8ZatzW-MJCWAYmL5f2qoRA@mail.gmail.com>
+Message-ID: <5456508C.4090203@gmail.com>
+
+On 14-11-01 07:12 PM, Scott Allen wrote:
+> I've found TP-Link products to be inexpensive and reliable
+I'd /generally/ agree, but like all consumer networking manufacturing,
+they'll change the hardware inside to suit their costs and not
+necessarily update the name or model number. If you're running ARM or a
+non-Intel Linux, that change in chipset ? no matter how small (oh hai
+Realtek) ? means the difference between a working network adaptor or a
+USB-attached ambient air-warmer.
+
+So saying, I had a computer that worked solidly for many years using the
+cheapest TP-Link network card and (ack bleaah) NDISwrapper.
+
+cheers,
+ Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141102/fa253a2a/attachment.html>
+
+From jsellens at syonex.com  Sun Nov  2 04:23:44 2014
+From: jsellens at syonex.com (John Sellens)
+Date: Sun, 2 Nov 2014 00:23:44 -0400
+Subject: [GTALUG] How can I read html email stored in Maildir format?
+In-Reply-To: <20141101023049.GA19776@waltdnes.org>
+References: <20141101023049.GA19776@waltdnes.org>
+Message-ID: <20141102042344.GA7691@syonex.com>
+
+On Fri,?2014/10/31?10:30:49PM?-0400, Walter Dnes <waltdnes at waltdnes.org> wrote:
+|   Anyhow, back to topic... what apps/programs are capable of *DIRECTLY*
+| reading HTML mails that are stored in Maildir format?
+
+I often want the same thing (or mbox files, or ...) and the best I could
+come up with was running an IMAP server on localhost (dovecot in my case)
+and using thunderbird.
+
+I think I found a few clients that claimed to deal with maildir and/or
+mbox (most often the latter if I recall correctly) but was dissatisfied
+with them for one reason or another.
+
+Day to day use, I use mutt with a .mailcap file that invokes elinks
+on html when necessary, and can toss it to firefox if needed (which
+is more complicated when firefox is local and mutt is on a remote
+machine), but that often doesn't include the images in the message
+display.
+
+Mail used to be so much simpler ...
+
+Hope that helps!
+
+John
+
+From bjonkman at sobac.com  Sun Nov  2 18:18:35 2014
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Sun, 02 Nov 2014 13:18:35 -0500
+Subject: [GTALUG] Why Everyone Wants to Kill the Mouse and Keyboard
+In-Reply-To: <CAAsTreBo=Qu-NS-Fignp_Qjm9tyTG6bDVQ4ambXFBCYE=cok6A@mail.gmail.com>
+References: <CAGc8pF66kD1SfT_G5itTwJvuJmQ-bW8SA4HijejPgJknn+Vmkw@mail.gmail.com>
+ <CAA3RLT7oQvdGY0kSmYdaXCcwBYHoScE8psgnL00wf1AkhPUPHw@mail.gmail.com>
+ <20141031195928.GF24111@csclub.uwaterloo.ca>
+ <CAAsTreBo=Qu-NS-Fignp_Qjm9tyTG6bDVQ4ambXFBCYE=cok6A@mail.gmail.com>
+Message-ID: <5456757B.5030007@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+On 31/10/14 05:51 PM, Stewart Russell wrote:
+> Touch screens and me just don't work. Either they think I'm dead 
+> and they don't register for me (must be a problem for the modern 
+> undead-about-town)
+
+I appear to be invisible to modern electronics as well. The faucets at
+work are all motion-activated. Or not, in my case. I have to hold my
+hands and wiggle them *just so* in order to get water, but as soon as
+I start making washing motions with my hands the water stops. The
+paper towel dispensers have also been electronicated, so it's equally
+difficult to dry my hands as it is to wash them.
+
+- --Bob.
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.15 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlRWdXoACgkQuRKJsNLM5epnEwCg2ROml2qdruCEHNghtvOnxdtW
+XTcAoLZNTcbP4YV+US6FoA3aL4QMPJqF
+=BAd5
+-----END PGP SIGNATURE-----
+
+From scott at ss.org  Mon Nov  3 03:29:18 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Sun, 02 Nov 2014 22:29:18 -0500
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <CAArSzsU1O+LmF+tG6mkPn42ocGNQ+Herr9boBcW-1MYGEdTXHQ@mail.gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+ <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+ <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+ <CAArSzsV3MoTySD4uqOshfiVoY05J8ZatzW-MJCWAYmL5f2qoRA@mail.gmail.com>
+ <alpine.LRH.2.02.1411012040590.31147@redclaw.mimosa.com>
+ <CAArSzsU1O+LmF+tG6mkPn42ocGNQ+Herr9boBcW-1MYGEdTXHQ@mail.gmail.com>
+Message-ID: <5456F68E.7090501@ss.org>
+
+On 11/02/2014 07:28 AM, Scott Allen wrote:
+> On 1 November 2014 20:45, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+>> | From: Scott Allen <mlxxxp at gmail.com>
+>>
+>> | I've found TP-Link products to be inexpensive and reliable, such as:
+>> | <http://www.tplink.ca/en/products/details/?categoryid=221&model=TD-8616>
+>>
+>> If that is just a modem, as it claims, why does it list this feature:
+>>   Built-in firewall protects against Internet attacks
+>
+> I was puzzled by that as well. (I don't own this device.) Could be it
+> was incorrectly copied from the spec's for a combination modem/router.
+> There's no mention of a firewall feature in the user guide, so it's
+> either incorrect or something that's not user configurable. Protection
+> from buffer overflow/DOS attacks perhaps?
+>
+
+As I mentioned in another post, I've worked with these. The are a full 
+router. You never find 'modem only' devices any more. The functionality 
+for a router is so damn cheap. But they are also so cheap that you can 
+wilfully waste that router functionality.
+
+ From a design perspective you grab System on a Chip, many which come 
+with two or more Ethernet devices built in, connect one of them to the 
+ADSL chip-set, the other to an external jack and slap it on a board with 
+some LEDs. A little software and your done.
+
+-- 
+Scott Sullivan
+
+From scott at ss.org  Mon Nov  3 04:31:28 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Sun, 02 Nov 2014 23:31:28 -0500
+Subject: [GTALUG] TP-Link Archer C7 v2 and OpenWRT
+In-Reply-To: <alpine.LRH.2.02.1411020007330.31147@redclaw.mimosa.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <CAFNqd5UkQmH=b85T+Y+vfch9MZs4tW9LfmETjhPE-_oXK93RqQ@mail.gmail.com>
+ <alpine.LRH.2.02.1411020007330.31147@redclaw.mimosa.com>
+Message-ID: <54570520.2010701@ss.org>
+
+On 11/02/2014 12:55 AM, D. Hugh Redelmeier wrote:
+>    The TP-Link Archer C7 v2 looks good, cheap, and might be supported.
+> 	<http://wiki.openwrt.org/toh/tp-link/tl-wdr7500>
+
+I bought one of these this past week. I'd been periodically checking the 
+stock at Canada Computers and they finally had a v2 in stock.
+
+I gave it a once over with the stock fireware just to make sure the 
+hardware wasn't DOA and then installed OpenWRT.
+
+Here are some of my very first impressions. I only just started 
+configuring it. I have only gotten this far.
+
+1) Does it turn on, and flash easily?
+2) Can I use the web UI?
+3) Do my devices see the wifi and connect?
+
+The answer to all of the above is yes.
+
+
+OpenWrt Barrier Breaker 14.07 / LuCI Trunk (0.12+svn-r10530)
+
+Notes:
+The web ui is a startling jump from Attitude Adjustment 12.09. The older 
+UI had this sort of 'tab-like' layout. Where now the tabs are menus from 
+a single top bar, everything piece of functionality under the same 
+headings though. It feels like it's more friendly towards mobile 
+devices, and also is shinier.
+
+The front Wireless LEDs do not light up.
+
+
+OpenWrt Chaos Calmer (Trunk/Dev)
+
+Notes:
+The nightly firmware image is minimal! The web UI (luci) is not 
+included, use only if you ready telnet/ssh in and use opkg to install 
+what you need. Reverted back to Barrier Breaker for the time being.
+
+
+I'll have more to say on it after I switch to using this as my primary 
+wifi solution.
+
