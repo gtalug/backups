@@ -795,3 +795,178 @@ what you need. Reverted back to Barrier Breaker for the time being.
 I'll have more to say on it after I switch to using this as my primary 
 wifi solution.
 
+From mlxxxp at gmail.com  Mon Nov  3 11:47:30 2014
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Mon, 3 Nov 2014 06:47:30 -0500
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <5456F68E.7090501@ss.org>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+ <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+ <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+ <CAArSzsV3MoTySD4uqOshfiVoY05J8ZatzW-MJCWAYmL5f2qoRA@mail.gmail.com>
+ <alpine.LRH.2.02.1411012040590.31147@redclaw.mimosa.com>
+ <CAArSzsU1O+LmF+tG6mkPn42ocGNQ+Herr9boBcW-1MYGEdTXHQ@mail.gmail.com>
+ <5456F68E.7090501@ss.org>
+Message-ID: <CAArSzsUV-55SJKOwHhTdkTosNhT+pLamioTZz9dOjfkpfMvh2A@mail.gmail.com>
+
+On 2 November 2014 22:29, Scott Sullivan <scott at ss.org> wrote:
+> As I mentioned in another post, I've worked with these. The are a full router. You never find 'modem only' devices any more.
+
+>From the user guide, there doesn't appear to be any router
+functionality. No IP addresses (other than for the internal web based
+configuration utility). No DCHP, NAT, QOS, port forwarding settings,
+etc.
+
+<http://www.tplink.ca/resources/document/TD-8616_V8_User_Guide_1910010865.pdf>
+
+-- 
+Scott
+
+From gilesorr at gmail.com  Mon Nov  3 13:53:56 2014
+From: gilesorr at gmail.com (Giles Orr)
+Date: Mon, 3 Nov 2014 08:53:56 -0500
+Subject: [GTALUG] Collecting (g)mail
+Message-ID: <CAEnxSC72xuoN-SV-iqswDz32qbABFGzoR3iZ9qkG+cKPZLmKzQ@mail.gmail.com>
+
+I've finally got around to copying my mail from gmail to my home
+machine.  I'm using getmail ( http://pyropus.ca/software/getmail/ ,
+also in the Ubuntu repos), but it barfs after collecting my 80,000
+messages across six hours - and then considers the next run to be
+"new" so it doesn't do collect only new mail, it collects it all
+again.  And having not spotted that these are the same messages, it
+duplicates them and the backup directory is now twice the size it
+should be ...  I'm using IMAP, and yes, it's set to only collect new
+mail.
+
+So has anyone got getmail fully working with gmail, or does someone
+have another recommended way of fetching gmail onto a local machine?
+Thanks.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From me at mylesbraithwaite.com  Mon Nov  3 14:11:21 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 3 Nov 2014 09:11:21 -0500
+Subject: [GTALUG] Collecting (g)mail
+In-Reply-To: <CAEnxSC72xuoN-SV-iqswDz32qbABFGzoR3iZ9qkG+cKPZLmKzQ@mail.gmail.com>
+References: <CAEnxSC72xuoN-SV-iqswDz32qbABFGzoR3iZ9qkG+cKPZLmKzQ@mail.gmail.com>
+Message-ID: <CA+hskZOprirF00akVNFHNUksxELPzGx5MOYJVvqrktRXafP3aQ@mail.gmail.com>
+
+On Mon, Nov 3, 2014 at 8:53 AM, Giles Orr <gilesorr at gmail.com> wrote:
+> So has anyone got getmail fully working with gmail, or does someone
+> have another recommended way of fetching gmail onto a local machine?
+
+I'm using offlineimap with the 'realdelete no' option so I doesn't
+delete the message on the remote server.
+
+offlineimap is really cool because you can call a Python function in
+it's config file. So if you didn't wanted to store your password you
+could write a Python lookup function to check your Password
+Manager[1]. It also allows for name translations so you can work with
+Gmail annoying '[Gmail]/...' folders.
+
+[1]: This is an example of one written for the Gnome Keyring:
+<https://wiki.archlinux.org/index.php/OfflineIMAP#Option_1:_using_gnomekeyring_Python_module>
+
+From mike.kallies at gmail.com  Mon Nov  3 14:40:56 2014
+From: mike.kallies at gmail.com (Mike)
+Date: Mon, 3 Nov 2014 09:40:56 -0500
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <CAArSzsUV-55SJKOwHhTdkTosNhT+pLamioTZz9dOjfkpfMvh2A@mail.gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+ <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+ <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+ <CAArSzsV3MoTySD4uqOshfiVoY05J8ZatzW-MJCWAYmL5f2qoRA@mail.gmail.com>
+ <alpine.LRH.2.02.1411012040590.31147@redclaw.mimosa.com>
+ <CAArSzsU1O+LmF+tG6mkPn42ocGNQ+Herr9boBcW-1MYGEdTXHQ@mail.gmail.com>
+ <5456F68E.7090501@ss.org>
+ <CAArSzsUV-55SJKOwHhTdkTosNhT+pLamioTZz9dOjfkpfMvh2A@mail.gmail.com>
+Message-ID: <7AA0C470-8313-457B-A788-9D29BAC54287@gmail.com>
+
+I considered one of these recently.   It really has no router.
+
+That said, for about $1 more, you can get the 8617 which looks identical, but has a router :-)
+
+I cant recall which I bought.  Works fine so far.
+
+Mike
+
+
+
+> On Nov 3, 2014, at 6:47 AM, Scott Allen <mlxxxp at gmail.com> wrote:
+> 
+>> On 2 November 2014 22:29, Scott Sullivan <scott at ss.org> wrote:
+>> As I mentioned in another post, I've worked with these. The are a full router. You never find 'modem only' devices any more.
+> 
+> From the user guide, there doesn't appear to be any router
+> functionality. No IP addresses (other than for the internal web based
+> configuration utility). No DCHP, NAT, QOS, port forwarding settings,
+> etc.
+> 
+> <http://www.tplink.ca/resources/document/TD-8616_V8_User_Guide_1910010865.pdf>
+> 
+> -- 
+> Scott
+> 
+> 
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From scott at ss.org  Mon Nov  3 23:40:05 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Mon, 03 Nov 2014 18:40:05 -0500
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <CAArSzsUV-55SJKOwHhTdkTosNhT+pLamioTZz9dOjfkpfMvh2A@mail.gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+ <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+ <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+ <CAArSzsV3MoTySD4uqOshfiVoY05J8ZatzW-MJCWAYmL5f2qoRA@mail.gmail.com>
+ <alpine.LRH.2.02.1411012040590.31147@redclaw.mimosa.com>
+ <CAArSzsU1O+LmF+tG6mkPn42ocGNQ+Herr9boBcW-1MYGEdTXHQ@mail.gmail.com>
+ <5456F68E.7090501@ss.org>
+ <CAArSzsUV-55SJKOwHhTdkTosNhT+pLamioTZz9dOjfkpfMvh2A@mail.gmail.com>
+Message-ID: <D529A94F-6DEB-4BD8-96F5-4499250A1609@ss.org>
+
+On November 3, 2014 6:47:30 AM EST, Scott Allen <mlxxxp at gmail.com> wrote:
+>On 2 November 2014 22:29, Scott Sullivan <scott at ss.org> wrote:
+>> As I mentioned in another post, I've worked with these. The are a
+>full router. You never find 'modem only' devices any more.
+>
+>From the user guide, there doesn't appear to be any router
+>functionality. No IP addresses (other than for the internal web based
+>configuration utility). No DCHP, NAT, QOS, port forwarding settings,
+>etc.
+>
+><http://www.tplink.ca/resources/document/TD-8616_V8_User_Guide_1910010865.pdf>
+>
+>-- 
+>Scott
+>
+>
+>---
+>GTALUG Talk Mailing List - talk at gtalug.org
+>http://gtalug.org/mailman/listinfo/talk
+
+Ah sorry.
+
+I confused the TD-8816 with the TD-8616 you linked.
+
+I've not seen the 8616 in stores.
+
+I would bet a nice dinner that the only significant difference is software.
+-- 
+Scott Sullivan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141103/e2813bc7/attachment.html>
+
