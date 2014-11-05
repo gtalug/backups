@@ -1,0 +1,66 @@
+From avolkov at gmail.com  Wed Nov  5 05:42:50 2014
+From: avolkov at gmail.com (Alex Volkov)
+Date: Wed, 5 Nov 2014 00:42:50 -0500
+Subject: [GTALUG-Ops] GTALUG Mailing List Need's Moderators
+In-Reply-To: <CAO1j=qe0sxzWjyO=BX7gY6bsC2XEJ0wqLRYX2_tOTBaX2WaBnQ@mail.gmail.com>
+References: <CA+hskZOJ3WHuV8wYeq_NU6_yMy9t2Uhj4cHqGZOpt59QyCAxSg@mail.gmail.com>
+ <C9DE8752-6129-4DE8-89C4-AC1C1686A749@ss.org>
+ <CA+hskZPtVVFR-+-2t=SzMqrjzgsb-UTJ3=XTwOagC=toGt3+8w@mail.gmail.com>
+ <CAO1j=qe0sxzWjyO=BX7gY6bsC2XEJ0wqLRYX2_tOTBaX2WaBnQ@mail.gmail.com>
+Message-ID: <CAO1j=qffA8fV=+sQUfGxSw-U5_ecZgq=BKvOToFpG-WxgzxLNQ@mail.gmail.com>
+
+Hey Myles,
+
+I'm getting moderator messages, but I don't think you sent me moderator
+password.
+
+Alex.
+
+On Thu, Oct 16, 2014 at 3:39 PM, Alex Volkov <avolkov at gmail.com> wrote:
+
+> Hey Myles,
+>
+> If it's just first message -- is there so much spam?
+>
+> In any case, I can check my mailbox a lot of time during the day, I can
+> give it a try.
+>
+> Alex.
+>
+> On Thu, Oct 16, 2014 at 3:32 PM, Myles Braithwaite <
+> me at mylesbraithwaite.com> wrote:
+>
+>> On Thu, Oct 16, 2014 at 1:48 PM, Scott Sullivan <scott at ss.org> wrote:
+>> > How has the list been configured?
+>>
+>> Everyone first message is moderated.
+>>
+>> I'm having trouble approving them on a timely schedule and need some help.
+>>
+>> ---
+>> GTALUG Operations Mailing List - operations at gtalug.org
+>> http://gtalug.org/mailman/listinfo/operations
+>>
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141105/d8e7a34e/attachment.html>
+
+From avolkov at gmail.com  Wed Nov  5 05:44:43 2014
+From: avolkov at gmail.com (Alex Volkov)
+Date: Wed, 5 Nov 2014 00:44:43 -0500
+Subject: [GTALUG-Ops] GMANE archive
+Message-ID: <CAO1j=qdHtrNYT4yVzNjsxp_fnZhPs9DKRU9pZKyc=NfZjLFowg@mail.gmail.com>
+
+Hello everyone,
+
+I pulled old mailing list archive from gmain into a single mbox file.
+
+The file can be found here -- http://data.flamy.ca/tlug_archive.mbox.xz
+
+Alex.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141105/6b549508/attachment.html>
+
