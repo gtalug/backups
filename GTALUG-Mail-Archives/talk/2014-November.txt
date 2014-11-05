@@ -970,3 +970,92 @@ Scott Sullivan
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141103/e2813bc7/attachment.html>
 
+From mlxxxp at gmail.com  Tue Nov  4 11:17:01 2014
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Tue, 4 Nov 2014 06:17:01 -0500
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <D529A94F-6DEB-4BD8-96F5-4499250A1609@ss.org>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+ <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+ <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+ <CAArSzsV3MoTySD4uqOshfiVoY05J8ZatzW-MJCWAYmL5f2qoRA@mail.gmail.com>
+ <alpine.LRH.2.02.1411012040590.31147@redclaw.mimosa.com>
+ <CAArSzsU1O+LmF+tG6mkPn42ocGNQ+Herr9boBcW-1MYGEdTXHQ@mail.gmail.com>
+ <5456F68E.7090501@ss.org>
+ <CAArSzsUV-55SJKOwHhTdkTosNhT+pLamioTZz9dOjfkpfMvh2A@mail.gmail.com>
+ <D529A94F-6DEB-4BD8-96F5-4499250A1609@ss.org>
+Message-ID: <CAArSzsUGzMhCYVk57cuyCq2rin_fRzi_3VdcV5F5aia+efD10g@mail.gmail.com>
+
+On 3 November 2014 18:40, Scott Sullivan <scott at ss.org> wrote:
+> I've not seen the 8616 in stores.
+
+I posted a link earlier. Canada Computers indicates that they have
+some in stock in almost every one of their locations:
+<http://www.canadacomputers.com/product_info.php?cPath=27_1059_358&item_id=024298>
+
+-- 
+Scott
+
+From avolkov at gmail.com  Wed Nov  5 04:15:28 2014
+From: avolkov at gmail.com (Alex Volkov)
+Date: Tue, 4 Nov 2014 23:15:28 -0500
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <CAArSzsUGzMhCYVk57cuyCq2rin_fRzi_3VdcV5F5aia+efD10g@mail.gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+ <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+ <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+ <CAArSzsV3MoTySD4uqOshfiVoY05J8ZatzW-MJCWAYmL5f2qoRA@mail.gmail.com>
+ <alpine.LRH.2.02.1411012040590.31147@redclaw.mimosa.com>
+ <CAArSzsU1O+LmF+tG6mkPn42ocGNQ+Herr9boBcW-1MYGEdTXHQ@mail.gmail.com>
+ <5456F68E.7090501@ss.org>
+ <CAArSzsUV-55SJKOwHhTdkTosNhT+pLamioTZz9dOjfkpfMvh2A@mail.gmail.com>
+ <D529A94F-6DEB-4BD8-96F5-4499250A1609@ss.org>
+ <CAArSzsUGzMhCYVk57cuyCq2rin_fRzi_3VdcV5F5aia+efD10g@mail.gmail.com>
+Message-ID: <CAO1j=qdDKXdDoE6Lrz1NJ6WBY37dPTb1ew0Np7kZ_5NEhv9_bw@mail.gmail.com>
+
+The closest thing to what I was looking for is TD-W8961ND, but it specs
+aren't so great, (only 4MB of flash) and when I initially read installation
+instructions for OpenWRT, they seemed somewhat dodgy --
+http://wiki.openwrt.org/toh/tp-link/tl-wr841nd
+
+I ended up buying TD-8616 ADSL2+ standalone modem, it's $23.99 plus tax.
+
+
+It is possible to install OpenWRT on Raspberry Pi there's pretty good
+support of RPI -- http://wiki.openwrt.org/toh/raspberry_pi
+
+I know it's a massive overkill, but in this case I don't really need
+network ports, I already own several linux-friendly USB wireless cards that
+can be run in Host AP mod, and of course I wanna see if it's gonna work.
+I just need dig up a ethernet crossover cable, which I prematurely
+relegated to be a thing of the past.
+
+Alex.
+
+On Tue, Nov 4, 2014 at 6:17 AM, Scott Allen <mlxxxp at gmail.com> wrote:
+
+> On 3 November 2014 18:40, Scott Sullivan <scott at ss.org> wrote:
+> > I've not seen the 8616 in stores.
+>
+> I posted a link earlier. Canada Computers indicates that they have
+> some in stock in almost every one of their locations:
+> <
+> http://www.canadacomputers.com/product_info.php?cPath=27_1059_358&item_id=024298
+> >
+>
+> --
+> Scott
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141104/f7af8322/attachment.html>
+
