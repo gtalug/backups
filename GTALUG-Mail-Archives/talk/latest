@@ -1090,3 +1090,284 @@ are.
 -- 
 Scott
 
+From psema4 at gmail.com  Fri Nov  7 18:14:44 2014
+From: psema4 at gmail.com (Scott Elcomb)
+Date: Fri, 7 Nov 2014 13:14:44 -0500
+Subject: [GTALUG] [OT] Git Conundrum
+Message-ID: <CAEx-jsOJuPfXSpnRj2j9050Q_GbxTSvGa0E_yzPco9tgUPAPQg@mail.gmail.com>
+
+In a wee bit of a spot :(
+
+Have a git repo with squashed bugs coming back from the dead - and a
+conference tomorrow where early adopters are supposed to be trained on
+using the software.
+
+The strange thing is that there doesn't seem to be any indication of
+corruption or bad merges.  There are a few dangling commits, blobs
+and trees but they don't look to be related.
+
+Not having run into this scenario before I'm not quite sure where to
+start.  Any pointers or suggestions?
+
+Thanks,
+-- 
+  Scott Elcomb         @psema4
+  http://psema4.com/pubkey.txt
+     http://www.pirateparty.ca/
+
+From talexb at gmail.com  Fri Nov  7 18:26:58 2014
+From: talexb at gmail.com (Alex Beamish)
+Date: Fri, 7 Nov 2014 13:26:58 -0500
+Subject: [GTALUG] [OT] Git Conundrum
+In-Reply-To: <CAEx-jsOJuPfXSpnRj2j9050Q_GbxTSvGa0E_yzPco9tgUPAPQg@mail.gmail.com>
+References: <CAEx-jsOJuPfXSpnRj2j9050Q_GbxTSvGa0E_yzPco9tgUPAPQg@mail.gmail.com>
+Message-ID: <CANgc-azEJft_f06iOdWMM0FFEDnkCE3WeJAA9t0Gt2oi0VxUcA@mail.gmail.com>
+
+I don't know if git-bisect would help, but I've found it useful to isolate
+where a particular change took place. You might find that there's a merge
+that was done in the wrong direction (it happens).
+
+Cheers,
+
+Alex
+
+
+On Fri, Nov 7, 2014 at 1:14 PM, Scott Elcomb <psema4 at gmail.com> wrote:
+
+> In a wee bit of a spot :(
+>
+> Have a git repo with squashed bugs coming back from the dead - and a
+> conference tomorrow where early adopters are supposed to be trained on
+> using the software.
+>
+> The strange thing is that there doesn't seem to be any indication of
+> corruption or bad merges.  There are a few dangling commits, blobs
+> and trees but they don't look to be related.
+>
+> Not having run into this scenario before I'm not quite sure where to
+> start.  Any pointers or suggestions?
+>
+> Thanks,
+> --
+>   Scott Elcomb         @psema4
+>   http://psema4.com/pubkey.txt
+>      http://www.pirateparty.ca/
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+
+-- 
+Alex Beamish
+Toronto, Ontario
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141107/569ff182/attachment.html>
+
+From psema4 at gmail.com  Fri Nov  7 19:54:24 2014
+From: psema4 at gmail.com (Scott Elcomb)
+Date: Fri, 7 Nov 2014 14:54:24 -0500
+Subject: [GTALUG] [OT] Git Conundrum
+In-Reply-To: <CANgc-azEJft_f06iOdWMM0FFEDnkCE3WeJAA9t0Gt2oi0VxUcA@mail.gmail.com>
+References: <CAEx-jsOJuPfXSpnRj2j9050Q_GbxTSvGa0E_yzPco9tgUPAPQg@mail.gmail.com>
+ <CANgc-azEJft_f06iOdWMM0FFEDnkCE3WeJAA9t0Gt2oi0VxUcA@mail.gmail.com>
+Message-ID: <CAEx-jsMiZ9Jvedo2ZX8=7O+jy9U6+2-WWw05vcSxqEtfygUVDQ@mail.gmail.com>
+
+On Fri, Nov 7, 2014 at 1:26 PM, Alex Beamish <talexb at gmail.com> wrote:
+> I don't know if git-bisect would help, but I've found it useful to isolate
+> where a particular change took place. You might find that there's a merge
+> that was done in the wrong direction (it happens).
+
+Thanks Alex. So far no luck - everything looks about right (but
+obviously isn't) :(
+
+Alas things get even stranger... using one of about a half-dozen
+similar issues, running a recursive diff on files from both my dev and
+staging environments show they are the same (same with the dataset the
+code is working on - they appear to be identical), however the two
+environments are not acting (sorting, specifically) the same.
+
+Code, datasets, db servers, OS's & packages are - for all intents and
+purposes - the same (dev work takes place inside Vagrant images)
+
+In this particular case, on staging we're seeing a bug that was (and
+according to the file system, *is*) fixed and QA'd to death months
+ago. On dev it is acting as expected (ie. is fixed).
+
+-- 
+  Scott Elcomb         @psema4
+  http://psema4.com/pubkey.txt
+     http://www.pirateparty.ca/
+
+From lsorense at csclub.uwaterloo.ca  Fri Nov  7 20:19:56 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 7 Nov 2014 15:19:56 -0500
+Subject: [GTALUG] [OT] Git Conundrum
+In-Reply-To: <CAEx-jsOJuPfXSpnRj2j9050Q_GbxTSvGa0E_yzPco9tgUPAPQg@mail.gmail.com>
+References: <CAEx-jsOJuPfXSpnRj2j9050Q_GbxTSvGa0E_yzPco9tgUPAPQg@mail.gmail.com>
+Message-ID: <20141107201956.GG24111@csclub.uwaterloo.ca>
+
+On Fri, Nov 07, 2014 at 01:14:44PM -0500, Scott Elcomb wrote:
+> In a wee bit of a spot :(
+> 
+> Have a git repo with squashed bugs coming back from the dead - and a
+> conference tomorrow where early adopters are supposed to be trained on
+> using the software.
+> 
+> The strange thing is that there doesn't seem to be any indication of
+> corruption or bad merges.  There are a few dangling commits, blobs
+> and trees but they don't look to be related.
+> 
+> Not having run into this scenario before I'm not quite sure where to
+> start.  Any pointers or suggestions?
+
+Some people think the way to check in file changes is to make their
+changes, copy their file somewhere, then checkout the current version,
+replace it with their version (without merging any other changes of
+course), and check it in.  It's a great way to loose changes.
+
+Of course people simply not understanding the merge resolution in git
+can also cause things to get lost.
+
+-- 
+Len Sorensen
+
+From talexb at gmail.com  Fri Nov  7 21:32:55 2014
+From: talexb at gmail.com (Alex Beamish)
+Date: Fri, 7 Nov 2014 16:32:55 -0500
+Subject: [GTALUG] [OT] Git Conundrum
+In-Reply-To: <20141107201956.GG24111@csclub.uwaterloo.ca>
+References: <CAEx-jsOJuPfXSpnRj2j9050Q_GbxTSvGa0E_yzPco9tgUPAPQg@mail.gmail.com>
+ <20141107201956.GG24111@csclub.uwaterloo.ca>
+Message-ID: <CANgc-awO-FUOAjWXwutLtjYg-Fcs7_eWVMYrwTxreu9Geg9nGQ@mail.gmail.com>
+
+To verify you've got the identical files on dev and staging, you can do
+some variation on
+
+  find . -name *.pl | xargs md5sum | sort
+
+and compare the output of that command from the two platforms. Assuming
+there's no configuration information in those files that differ between the
+environments, that should confirm or deny you have identical installations.
+
+Restarting the web server meant something ten years ago, these days, not so
+much.
+
+Apart from that, try to nail down why the bug that's been solved is
+reappearing -- what fix was made to solve that (it's documented in your git
+commit comments, right?). Maybe go back to basics and add a few logging
+lines to confirm that things are working as they should.
+
+Good luck -- debugging is indeed a black art. :)
+
+Alex
+
+
+On Fri, Nov 7, 2014 at 3:19 PM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Fri, Nov 07, 2014 at 01:14:44PM -0500, Scott Elcomb wrote:
+> > In a wee bit of a spot :(
+> >
+> > Have a git repo with squashed bugs coming back from the dead - and a
+> > conference tomorrow where early adopters are supposed to be trained on
+> > using the software.
+> >
+> > The strange thing is that there doesn't seem to be any indication of
+> > corruption or bad merges.  There are a few dangling commits, blobs
+> > and trees but they don't look to be related.
+> >
+> > Not having run into this scenario before I'm not quite sure where to
+> > start.  Any pointers or suggestions?
+>
+> Some people think the way to check in file changes is to make their
+> changes, copy their file somewhere, then checkout the current version,
+> replace it with their version (without merging any other changes of
+> course), and check it in.  It's a great way to loose changes.
+>
+> Of course people simply not understanding the merge resolution in git
+> can also cause things to get lost.
+>
+> --
+> Len Sorensen
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+
+-- 
+Alex Beamish
+Toronto, Ontario
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141107/68c84f4b/attachment.html>
+
+From davec-b at rogers.com  Fri Nov  7 21:42:45 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Fri, 07 Nov 2014 16:42:45 -0500
+Subject: [GTALUG] [OT] Git Conundrum
+In-Reply-To: <CAEx-jsMiZ9Jvedo2ZX8=7O+jy9U6+2-WWw05vcSxqEtfygUVDQ@mail.gmail.com>
+References: <CAEx-jsOJuPfXSpnRj2j9050Q_GbxTSvGa0E_yzPco9tgUPAPQg@mail.gmail.com>
+ <CANgc-azEJft_f06iOdWMM0FFEDnkCE3WeJAA9t0Gt2oi0VxUcA@mail.gmail.com>
+ <CAEx-jsMiZ9Jvedo2ZX8=7O+jy9U6+2-WWw05vcSxqEtfygUVDQ@mail.gmail.com>
+Message-ID: <545D3CD5.8030000@rogers.com>
+
+On 11/07/2014 02:54 PM, Scott Elcomb wrote:
+> , however the two environments are not acting (sorting, specifically) 
+> the same.
+Check the character set: sort(1) guarantees it sorts bytes. Gnu sort 
+sorts characters,
+which are not the same thing, and carries the warning:
+
+***  WARNING  ***  The locale specified by the environment affects sort
+        order.  Set LC_ALL=C to get the traditional sort order that uses 
+native
+        byte values.
+
+The Eunuchs wanted to sort lines of bytes separated by ASCII newline 
+characters, 0x0A, and did.  Gnu extended this to other character sets, 
+but silently changed the default.
+
+Linus would not have been impressed (;-))
+
+--dave
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From adb at adb.ca  Sat Nov  8 00:38:24 2014
+From: adb at adb.ca (Anthony de Boer)
+Date: Fri, 7 Nov 2014 19:38:24 -0500
+Subject: [GTALUG] [OT] Git Conundrum
+In-Reply-To: <CAEx-jsOJuPfXSpnRj2j9050Q_GbxTSvGa0E_yzPco9tgUPAPQg@mail.gmail.com>
+References: <CAEx-jsOJuPfXSpnRj2j9050Q_GbxTSvGa0E_yzPco9tgUPAPQg@mail.gmail.com>
+Message-ID: <20141108003824.GL1562@adb.ca>
+
+Scott Elcomb wrote:
+> Have a git repo with squashed bugs coming back from the dead ...
+
+Any chance it's a C project with missing dependencies in the makefiles?
+That's a classic way of checking out the right source code but having
+lingering bad binaries.
+
+Clock skew can do it too: if the machine hasn't always had stable time
+then "before" and "after" become wonky.
+
+If in doubt, make clean (and verify that doesn't leave anything that
+isn't source) and rebuild all.
+
+-- 
+Anthony de Boer
+
