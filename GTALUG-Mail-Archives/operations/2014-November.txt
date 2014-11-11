@@ -130,3 +130,242 @@ Scott Sullivan
 -- 
 Scott Sullivan
 
+From scott at ss.org  Mon Nov 10 15:13:57 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Mon, 10 Nov 2014 10:13:57 -0500
+Subject: [GTALUG-Ops] Recommendations for Improvement.
+Message-ID: <81B97024-BF08-4CEC-A3E6-8263C9C5A4CF@ss.org>
+
+1) Folks should read ops emails and voice a +1, 0, -1 if an opinion is asked for.
+
+I asked about doing a round table Q and A as the back half of Tomorrow's meeting. 
+
+
+2) When I make a follow up. Please reply.
+
+Myles, will we have signage tomorrow?
+
+
+3) When I make a claim to get something done by a certain time. Please hold me to account. Right now the mailing list is doing a better job at it.
+
+Myles,
+
+Please post the following to announce and the website.
+
+Bob Jonkman (40min)
+
+"A brief overview of Tor, The Onion Router -- Hows, Whys, and Why Nots"
+
+Round Table QandA (30min)
+
+Questions from the attendees answered by attendees.
+
+
+-+-
+
+Please reply with the word 'Studebaker' to acknowledge you are reading the list.
+-- 
+Scott Sullivan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141110/de04d963/attachment.html>
+
+From gordontc at look.ca  Mon Nov 10 16:25:49 2014
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Mon, 10 Nov 2014 11:25:49 -0500
+Subject: [GTALUG-Ops] Recommendations for Improvement.
+In-Reply-To: <81B97024-BF08-4CEC-A3E6-8263C9C5A4CF@ss.org>
+References: <81B97024-BF08-4CEC-A3E6-8263C9C5A4CF@ss.org>
+Message-ID: <1415636749.17666.0.camel@localhost>
+
+Studebaker ? ? ?
+
+
+
+On Mon, 2014-11-10 at 10:13 -0500, Scott Sullivan wrote:
+> Studebaker
+
+
+
+From mike.kallies at gmail.com  Mon Nov 10 16:32:34 2014
+From: mike.kallies at gmail.com (Mike)
+Date: Mon, 10 Nov 2014 11:32:34 -0500
+Subject: [GTALUG-Ops] Recommendations for Improvement.
+In-Reply-To: <81B97024-BF08-4CEC-A3E6-8263C9C5A4CF@ss.org>
+References: <81B97024-BF08-4CEC-A3E6-8263C9C5A4CF@ss.org>
+Message-ID: <22D92553-9046-4831-884E-83187D608D46@gmail.com>
+
+
+-1 on the opinions.   Sometimes silence can mean that you need to confirm stuff in your personal life.  If the delay takes the decision away, that's ok, but expressing a hard neutral (0), means that you've accepted either outcome.   Maybe if we add a 'U' for read, acknowledged and undecided.  I totally get why you want a response though.  
+
+0 for me for the Q and A
+
+My Studebaker is in the garage with the Pinto and Edsel.
+
+Mike
+
+> On Nov 10, 2014, at 10:13 AM, Scott Sullivan <scott at ss.org> wrote:
+> 
+> 1) Folks should read ops emails and voice a +1, 0, -1 if an opinion is asked for.
+> 
+> I asked about doing a round table Q and A as the back half of Tomorrow's meeting. 
+> 
+> 
+> 2) When I make a follow up. Please reply.
+> 
+> Myles, will we have signage tomorrow?
+> 
+> 
+> 3) When I make a claim to get something done by a certain time. Please hold me to account. Right now the mailing list is doing a better job at it.
+> 
+> Myles,
+> 
+> Please post the following to announce and the website.
+> 
+> Bob Jonkman (40min)
+> 
+> "A brief overview of Tor, The Onion Router -- Hows, Whys, and Why Nots"
+> 
+> Round Table QandA (30min)
+> 
+> Questions from the attendees answered by attendees.
+> 
+> 
+> -+-
+> 
+> Please reply with the word 'Studebaker' to acknowledge you are reading the list.
+> -- 
+> Scott Sullivan
+> 
+> ---
+> GTALUG Operations Mailing List - operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+From cbbrowne at gmail.com  Mon Nov 10 16:45:15 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Mon, 10 Nov 2014 11:45:15 -0500
+Subject: [GTALUG-Ops] Recommendations for Improvement.
+In-Reply-To: <81B97024-BF08-4CEC-A3E6-8263C9C5A4CF@ss.org>
+References: <81B97024-BF08-4CEC-A3E6-8263C9C5A4CF@ss.org>
+Message-ID: <CAFNqd5VZ-OCuPATj-fysjFuOD7zrdgdUXQbKp8Ymzd4j5jNykg@mail.gmail.com>
+
+On 10 November 2014 10:13, Scott Sullivan <scott at ss.org> wrote:
+
+> 1) Folks should read ops emails and voice a +1, 0, -1 if an opinion is
+> asked for.
+>
+> I asked about doing a round table Q and A as the back half of Tomorrow's
+> meeting.
+>
+
++1 by me...
+
+And I'm not sure about wanting to bake studs...
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141110/5f2dd0c8/attachment.html>
+
+From qwerty172 at gmail.com  Mon Nov 10 17:23:01 2014
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Mon, 10 Nov 2014 12:23:01 -0500
+Subject: [GTALUG-Ops] Recommendations for Improvement.
+In-Reply-To: <CAFNqd5VZ-OCuPATj-fysjFuOD7zrdgdUXQbKp8Ymzd4j5jNykg@mail.gmail.com>
+References: <81B97024-BF08-4CEC-A3E6-8263C9C5A4CF@ss.org>
+ <CAFNqd5VZ-OCuPATj-fysjFuOD7zrdgdUXQbKp8Ymzd4j5jNykg@mail.gmail.com>
+Message-ID: <CAA3RLT78GJuMCHgOPHPXNfJr9fUT1pShW0JRaXKRjNKWF+keDA@mail.gmail.com>
+
++1 for me.
+
+On Mon, Nov 10, 2014 at 11:45 AM, Christopher Browne <cbbrowne at gmail.com>
+wrote:
+
+> On 10 November 2014 10:13, Scott Sullivan <scott at ss.org> wrote:
+>
+>> 1) Folks should read ops emails and voice a +1, 0, -1 if an opinion is
+>> asked for.
+>>
+>> I asked about doing a round table Q and A as the back half of Tomorrow's
+>> meeting.
+>>
+>
+> +1 by me...
+>
+> And I'm not sure about wanting to bake studs...
+> --
+> When confronted by a difficult problem, solve it by reducing it to the
+> question, "How would the Lone Ranger handle this?"
+>
+>
+> ---
+> GTALUG Operations Mailing List - operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141110/4ceb9998/attachment.html>
+
+From avolkov at gmail.com  Mon Nov 10 18:58:27 2014
+From: avolkov at gmail.com (Alex Volkov)
+Date: Mon, 10 Nov 2014 13:58:27 -0500
+Subject: [GTALUG-Ops] Recommendations for Improvement.
+In-Reply-To: <81B97024-BF08-4CEC-A3E6-8263C9C5A4CF@ss.org>
+References: <81B97024-BF08-4CEC-A3E6-8263C9C5A4CF@ss.org>
+Message-ID: <CAO1j=qc8D-Q-oRsUPWn0wqMnp9h+ZRhwqogKLVcp5R0Q68ANaA@mail.gmail.com>
+
+1) +1
+2) +1
+3) 0
+We should have more distributed system, so if Myles is busy someone else
+can post Meeting announcements, and since everything is public chance of
+getting duplicates is pretty low.
+
+On Mon, Nov 10, 2014 at 10:13 AM, Scott Sullivan <scott at ss.org> wrote:
+
+> 1) Folks should read ops emails and voice a +1, 0, -1 if an opinion is
+> asked for.
+>
+> I asked about doing a round table Q and A as the back half of Tomorrow's
+> meeting.
+>
+>
+> 2) When I make a follow up. Please reply.
+>
+> Myles, will we have signage tomorrow?
+>
+>
+> 3) When I make a claim to get something done by a certain time. Please
+> hold me to account. Right now the mailing list is doing a better job at it.
+>
+> Myles,
+>
+> Please post the following to announce and the website.
+>
+> Bob Jonkman (40min)
+>
+> "A brief overview of Tor, The Onion Router -- Hows, Whys, and Why Nots"
+>
+> Round Table QandA (30min)
+>
+> Questions from the attendees answered by attendees.
+>
+>
+> -+-
+>
+> Please reply with the word 'Studebaker' to acknowledge you are reading the
+> list.
+> --
+> Scott Sullivan
+>
+> ---
+> GTALUG Operations Mailing List - operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141110/da9341bf/attachment.html>
+
