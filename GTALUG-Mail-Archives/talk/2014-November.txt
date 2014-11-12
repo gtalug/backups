@@ -1810,3 +1810,256 @@ On Mon, Nov 10, 2014 at 9:29 AM, Dave Cramer <davecramer at gmail.com> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141110/32f747e4/attachment.html>
 
+From do.ming.lum at gmail.com  Tue Nov 11 15:53:17 2014
+From: do.ming.lum at gmail.com (Do-Ming Lum)
+Date: Tue, 11 Nov 2014 10:53:17 -0500
+Subject: [GTALUG] Possible job opportunity
+Message-ID: <CAEmORor1EoBrUtiz+ZOxhL0YUCGg-h1yb+DcYZ89LOkUV=US+g@mail.gmail.com>
+
+Good morning,
+
+Sorry for the somewhat off topic nature of this note.
+
+My wife's employer, a computer services company in Aurora, ON is looking
+for a technician to help support their clients. They need someone with PC
+break/fix experience. Their OS needs are primarily Windows -- in particular
+Active Directory knowledge and MS Exchange. They would probably look on
+Linux experience as a bonus, but Linux is not the main job focus.
+
+If there is any interest in this opportunity, drop me a note directly (not
+through the list) and I will provide the contact information where you can
+send your resume. Don't send me any resumes or personal information, as I
+have no direct connection to the company or the recruitment effort, but am
+just facilitating my wife's wish to make this opportunity known to the
+widest possible technical audience.
+
+Thanks,
+
+Do-Ming Lum
+President/Principal Consultant
+Tiger Mountain Systems Consulting Inc.
+do.ming.lum at gmail.com
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141111/07389eb8/attachment.html>
+
+From me at mylesbraithwaite.com  Tue Nov 11 16:22:33 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 11 Nov 2014 11:22:33 -0500
+Subject: [GTALUG] [GTALUG-Announce] Meeting Tonight at 7:30pm
+Message-ID: <CA+hskZPz2bZZiH5E5YZCZmM6DwaS-vBDbOWnQ95zChr2S5v31w@mail.gmail.com>
+
+<http://gtalug.org/meeting/2014-11/>
+
+Tor and Q&A - 11th November, 2014 at 7:30pm
+===========================================
+
+**Bob Jonkman** (40mins): The hows, whys and why nots of Tor (The Onion Router).
+
+**Round the Room Q&A** (30mins): Questions from the attendess answered
+by attendees.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+## Schedule
+
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting (at 9:00 pm) a group of GTALUGers move
+to the The Imperial Pub 54 Dundas St East for refreshments and more
+socializing.
+
+Code of Conduct
+===============
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members.
+_______________________________________________
+announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From me at mylesbraithwaite.com  Tue Nov 11 17:23:04 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 11 Nov 2014 12:23:04 -0500
+Subject: [GTALUG] Tuesday's Meeting
+In-Reply-To: <a11bf640-ffb9-4e29-b938-285d17a4a553@email.android.com>
+References: <1415592845.2669.19.camel@crystal.ss.org>
+ <CAA3RLT6rYbDCKnsCOWnORKcW9Y4tuCFSpELhTfcXLvQbz3ZtXw@mail.gmail.com>
+ <a11bf640-ffb9-4e29-b938-285d17a4a553@email.android.com>
+Message-ID: <CA+hskZOzgvT7PD+UfUrTjcNkt0a8AGL=o2GSppj1uAXaGBwXMA@mail.gmail.com>
+
+On Mon, Nov 10, 2014 at 6:42 PM, Bob Jonkman <bjonkman at sobac.com> wrote:
+> I hope that's what it is, 'cos that's what I prepared to speak on:
+> http://sobac.com/gtalug
+
+Hey Bob, when you get a chance could you tar (or put in a Git repo)
+your slides so we can archive them on the GTALUG server.
+
+From northdot9 at gmail.com  Tue Nov 11 23:04:48 2014
+From: northdot9 at gmail.com (David Thornton)
+Date: Tue, 11 Nov 2014 18:04:48 -0500
+Subject: [GTALUG] [GTALUG-Announce] Meeting Tonight at 7:30pm
+In-Reply-To: <CA+hskZPz2bZZiH5E5YZCZmM6DwaS-vBDbOWnQ95zChr2S5v31w@mail.gmail.com>
+References: <CA+hskZPz2bZZiH5E5YZCZmM6DwaS-vBDbOWnQ95zChr2S5v31w@mail.gmail.com>
+Message-ID: <CAHcykVqxGgK-AU8R5ZVykGr1kckOOXB+XtguQeWCt033Qh2MgA@mail.gmail.com>
+
+is anyone going for dinner? I could use some grub.. some grubs.
+
+David
+
+On Tue, Nov 11, 2014 at 11:22 AM, Myles Braithwaite <me at mylesbraithwaite.com
+> wrote:
+
+> <http://gtalug.org/meeting/2014-11/>
+>
+> Tor and Q&A - 11th November, 2014 at 7:30pm
+> ===========================================
+>
+> **Bob Jonkman** (40mins): The hows, whys and why nots of Tor (The Onion
+> Router).
+>
+> **Round the Room Q&A** (30mins): Questions from the attendess answered
+> by attendees.
+>
+> ## Location
+>
+> George Vari Engineering and Computing Centre
+> 245 Church Street, Room 203
+> Ryerson University
+>
+> <http://goo.gl/maps/16oJ2>
+>
+> ## Schedule
+>
+> * 7:30 pm - Meeting and presentation.
+> * 9:00 pm - After each meeting (at 9:00 pm) a group of GTALUGers move
+> to the The Imperial Pub 54 Dundas St East for refreshments and more
+> socializing.
+>
+> Code of Conduct
+> ===============
+>
+> We want a productive happy community that can welcome new ideas,
+> improve every process every year, and foster collaboration between
+> individuals with differing needs, interests and skills.
+>
+> We gain strength from diversity, and actively seek participation from
+> those who enhance it. This code of conduct exists to ensure that
+> diverse groups collaborate to mutual advantage and enjoyment. We will
+> challenge prejudice that could jeopardize the participation of any
+> person in the community.
+>
+> The Code of Conduct governs how we behave in public or in private
+> whenever the Linux community will be judged by our actions. We expect
+> it to be honored by everyone who represents the community officially
+> or informally, claims affiliation, or participates directly. It
+> applies to activities online or offline.
+>
+> We invite anybody to participate. Our community is open.
+>
+> Please read more about the GTALUG Code of Conduct here:
+> <http://gtalug.org/about/code-of-conduct/>.
+>
+> If you have any questions, comments, or concerns about the GTALUG Code
+> of Conduct please contact one of the GTALUG Board Members.
+> _______________________________________________
+> announce mailing list
+> announce at gtalug.org
+> http://gtalug.org/mailman/listinfo/announce
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141111/bb390e31/attachment.html>
+
+From hugh at mimosa.com  Wed Nov 12 06:22:47 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 12 Nov 2014 01:22:47 -0500 (EST)
+Subject: [GTALUG] Crypto Question: Where do you get your entropy
+Message-ID: <alpine.LRH.2.02.1411120055080.6002@redclaw.mimosa.com>
+
+[Scott asked that we post our questions from tonight's meeting]
+
+Where do you get your entropy?
+
+Entropy (real bytes of random numbers, not pseudo-random numbers) is key 
+for cryptography.
+
+- when generating keys for public-key cryptosystems (RSA, ECC, ...)
+
+- when generating session keys via a Diffie-Hellman exchange
+
+- challenging the other side in various ways (eg. proving liveness
+  or proving possession of a private key)
+
+- probably other cases that I'm not remembering at the moment
+
+In many cases a Cryptographic Pseudo-Random Number Generator (PRNG) is
+good enough, but not these.  Sometimes a Cryptographic PRNG can be
+used to "stretch" entropy: kind of like stretching soup by adding
+water or milk.
+
+Adversaries can easily break your cryptosystem if you don't have
+sufficient entropy.  It's that bad.
+
+What sources do you use?  /dev/random and /dev/urandom are the Linux
+channel for entropy.  There are various sources that can be pooled by
+the kernel:
+
+- timing of unpredictable event (e.g. user keystokes, disk seek
+  timing, ethernet packet timing, ...).
+
+  The only one I kind of trust is the keystrokes thing, and that
+  doesn't work for servers.  Others might be controlled by or
+  predictable to foes.
+
+  Keystrokes are not as good as one would like.  For example, USB
+  keyboards have keystroke timing quantized by the USB scanning rate.
+
+- Recent Intel CPUs have true RNGs.  (Assuming that they were not
+  subverted by the US Government or something else.  Or just plain
+  buggy, something that might not be detectable)
+
+- external entropy source.
+
+  - Scott mentioned several.  One DIY example: harvest the americium
+    pellet from a smoke detector and place it directly on a camera
+    sensor.  This makes a kind of Geiger Counter and Geiger Generator
+    (I made that second term up).  Physicists think that radioactive
+    emissions are unpredictable (except for chain reactions) and thus
+    should be good entropy generators.
+
+  - Chris mentioned a Kickstarter(?) project that has produced what
+    they claim is an entropy generator on a USB stick.
+
