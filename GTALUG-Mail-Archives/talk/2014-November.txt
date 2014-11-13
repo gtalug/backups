@@ -2063,3 +2063,236 @@ the kernel:
   - Chris mentioned a Kickstarter(?) project that has produced what
     they claim is an entropy generator on a USB stick.
 
+From me at staticsafe.ca  Wed Nov 12 14:40:27 2014
+From: me at staticsafe.ca (staticsafe)
+Date: Wed, 12 Nov 2014 09:40:27 -0500
+Subject: [GTALUG] Crypto Question: Where do you get your entropy
+In-Reply-To: <alpine.LRH.2.02.1411120055080.6002@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1411120055080.6002@redclaw.mimosa.com>
+Message-ID: <5463715B.608@staticsafe.ca>
+
+On 11/12/2014 01:22, D. Hugh Redelmeier wrote:
+> [Scott asked that we post our questions from tonight's meeting]
+> 
+> Where do you get your entropy?
+
+On remove VMs (regardless of the the fact that you control the host node
+or not), I like to use haveged to generate entropy. This is especially
+helpful on Xen PV VMs where I've had issues with openssl blocking on
+entropy.
+
+http://www.issihosts.com/haveged/
+http://www.irisa.fr/caps/projects/hipsor/
+
+-- 
+staticsafe
+https://staticsafe.ca
+
+From northdot9 at gmail.com  Wed Nov 12 15:23:42 2014
+From: northdot9 at gmail.com (David Thornton)
+Date: Wed, 12 Nov 2014 10:23:42 -0500
+Subject: [GTALUG] Crypto Question: Where do you get your entropy
+In-Reply-To: <5463715B.608@staticsafe.ca>
+References: <alpine.LRH.2.02.1411120055080.6002@redclaw.mimosa.com>
+ <5463715B.608@staticsafe.ca>
+Message-ID: <CAHcykVpVn85AON01Mfqkoy+NgEFOJ3VLFizS+Hf8zJuQs_CfUA@mail.gmail.com>
+
+I do believe that I might be doing it wrong , but I emailed photos of the
+whiteboard to this address ... and I don't see them.
+
+Anyone know why that might be?
+
+david
+
+On Wed, Nov 12, 2014 at 9:40 AM, staticsafe <me at staticsafe.ca> wrote:
+
+> On 11/12/2014 01:22, D. Hugh Redelmeier wrote:
+> > [Scott asked that we post our questions from tonight's meeting]
+> >
+> > Where do you get your entropy?
+>
+> On remove VMs (regardless of the the fact that you control the host node
+> or not), I like to use haveged to generate entropy. This is especially
+> helpful on Xen PV VMs where I've had issues with openssl blocking on
+> entropy.
+>
+> http://www.issihosts.com/haveged/
+> http://www.irisa.fr/caps/projects/hipsor/
+>
+> --
+> staticsafe
+> https://staticsafe.ca
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141112/f243b81a/attachment.html>
+
+From cbbrowne at gmail.com  Wed Nov 12 15:52:18 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Wed, 12 Nov 2014 10:52:18 -0500
+Subject: [GTALUG] Crypto Question: Where do you get your entropy
+In-Reply-To: <alpine.LRH.2.02.1411120055080.6002@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1411120055080.6002@redclaw.mimosa.com>
+Message-ID: <CAFNqd5U_L=tWdgd7hWrszEsb5zjTK67wwO-wTnF+F5QARw8Wew@mail.gmail.com>
+
+On 12 November 2014 01:22, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+>
+>   - Chris mentioned a Kickstarter(?) project that has produced what
+>     they claim is an entropy generator on a USB stick.
+>
+
+Not Kickstartered, from a UK-based company...
+
+http://www.entropykey.co.uk/tech/
+
+"The Entropy Key uses P-N semiconductor junctions reverse biassed with a
+high enough voltage to bring them near to, but not beyond, breakdown in
+order to generate noise. In other words, it has a pair of devices that are
+wired up in such a way that as a high potential is applied across them,
+where electrons do not normally flow in this direction and would be
+blocked, the high voltage compresses the semiconduction gap sufficiently
+that the occasional stray electron will quantum tunnel through the P-N
+junction. (This is sometimes referred to as avalanche noise.) When this
+happens is unpredictable, and this is what the Entropy Key measures."
+
+Priced at 36 euros in small quantities.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141112/0c409cdb/attachment.html>
+
+From psema4 at gmail.com  Wed Nov 12 16:07:02 2014
+From: psema4 at gmail.com (Scott Elcomb)
+Date: Wed, 12 Nov 2014 11:07:02 -0500
+Subject: [GTALUG] Thanks! [Was: Git Conundrum]
+Message-ID: <CAEx-jsPusm3W_Rdg+4gbJMO63YsBP=AmoDE=7BSC5S+6oHVozg@mail.gmail.com>
+
+Although we haven't identified the root cause yet (investigation is
+ongoing) we were able to sort things out for the client and learn a
+bunch of arcana in the meantime :)
+
+Just wanted to drop a quick Thank You to everyone's suggestions last
+week - they were much appreciated.
+
+Best Regards,
+- Scott
+
+-- 
+  Scott Elcomb         @psema4
+  http://psema4.com/pubkey.txt
+     http://www.pirateparty.ca/
+
+From scruss at gmail.com  Wed Nov 12 16:27:20 2014
+From: scruss at gmail.com (Stewart Russell)
+Date: Wed, 12 Nov 2014 11:27:20 -0500
+Subject: [GTALUG] Crypto Question: Where do you get your entropy
+In-Reply-To: <CAFNqd5U_L=tWdgd7hWrszEsb5zjTK67wwO-wTnF+F5QARw8Wew@mail.gmail.com>
+References: <alpine.LRH.2.02.1411120055080.6002@redclaw.mimosa.com>
+ <CAFNqd5U_L=tWdgd7hWrszEsb5zjTK67wwO-wTnF+F5QARw8Wew@mail.gmail.com>
+Message-ID: <CAAsTreDL5=H=S0SSedyHJR_9mwFNzmJTyTed_zscwsUmV9sS9Q@mail.gmail.com>
+
+On Nov 12, 2014 10:52 AM, "Christopher Browne" <cbbrowne at gmail.com> wrote:
+>
+> http://www.entropykey.co.uk/tech/
+
+Unfortunately, these are no longer available. If you check their shop, they
+say that the wait time is effectively indefinite.
+
+It looks well designed, but it all depends how paranoid you need to be.
+Certain ARM Cortex microcontrollers have thermal hardware RNGs built in.
+They can pump out a stream of noise at a huge rate.
+
+The Raspberry Pi's SoC has one too. It's not super-fast and closed, so you
+decide if it works for you. Most other artisanal solutions (Geiger counter
+timing, clock skew on microcontrollers, detuned radios, avalanche noise,
+intentionally mis-wired comparators) don't produce the volume of entropy
+you need. They're also open to tampering, and most folks don't have the
+knowledge to know what to look for in designing such a thing. I certainly
+know I don't ...
+
+I haven't checked if you still have to build a custom kernel to get RdRand
+support on x86. Given past messes over ssh entropy holes, the lack of
+support for RdRand because it might be tainted by the NSA was a pot/kettle
+situation.
+
+Cheers
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141112/c77f42b7/attachment.html>
+
+From northdot9 at gmail.com  Wed Nov 12 02:38:54 2014
+From: northdot9 at gmail.com (David Thornton)
+Date: Tue, 11 Nov 2014 21:38:54 -0500
+Subject: [GTALUG] Nov 11th
+In-Reply-To: <CAHcykVoUYXD4sNHTdpSDHEO+N-gLPOz39LJKWGpKob+akkMK5A@mail.gmail.com>
+References: <CAHcykVoUYXD4sNHTdpSDHEO+N-gLPOz39LJKWGpKob+akkMK5A@mail.gmail.com>
+Message-ID: <CAHcykVquRP1gt0eXh_uehPt8xFWrWk=dzf2zF_3OnK+Pajd9Yg@mail.gmail.com>
+
+Here are the whiteboards from the after talk discussion.
+
+David
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141111/0d8f09a5/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: 20141111_213428.jpg
+Type: image/jpeg
+Size: 3793204 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/talk/attachments/20141111/0d8f09a5/attachment.jpg>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: 20141111_213419.jpg
+Type: image/jpeg
+Size: 3572565 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/talk/attachments/20141111/0d8f09a5/attachment-0001.jpg>
+
+From northdot9 at gmail.com  Thu Nov 13 01:08:10 2014
+From: northdot9 at gmail.com (David Thornton)
+Date: Wed, 12 Nov 2014 20:08:10 -0500
+Subject: [GTALUG] Thanks! [Was: Git Conundrum]
+In-Reply-To: <CAEx-jsPusm3W_Rdg+4gbJMO63YsBP=AmoDE=7BSC5S+6oHVozg@mail.gmail.com>
+References: <CAEx-jsPusm3W_Rdg+4gbJMO63YsBP=AmoDE=7BSC5S+6oHVozg@mail.gmail.com>
+Message-ID: <CAHcykVqSLGmXeQ2mA0HV6-qzzZ-rn_5F0UuavAj9h91tnN4xWg@mail.gmail.com>
+
+Can you summarize what you learned and how to solved it? This group , I
+think, loves details.
+
+David
+On Nov 12, 2014 11:07 AM, "Scott Elcomb" <psema4 at gmail.com> wrote:
+
+> Although we haven't identified the root cause yet (investigation is
+> ongoing) we were able to sort things out for the client and learn a
+> bunch of arcana in the meantime :)
+>
+> Just wanted to drop a quick Thank You to everyone's suggestions last
+> week - they were much appreciated.
+>
+> Best Regards,
+> - Scott
+>
+> --
+>   Scott Elcomb         @psema4
+>   http://psema4.com/pubkey.txt
+>      http://www.pirateparty.ca/
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141112/48424e26/attachment.html>
+
