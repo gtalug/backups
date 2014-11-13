@@ -380,3 +380,40 @@ Message-ID: <CAFNqd5Wgg8GOFdgXz-AELVoeaOYbhPBoRH8ooqrDz9xcn9Jtcw@mail.gmail.com>
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/operations/attachments/20141111/074e1005/attachment.html>
 
+From gordontc at look.ca  Wed Nov 12 15:03:02 2014
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Wed, 12 Nov 2014 10:03:02 -0500
+Subject: [GTALUG-Ops] Attendance
+In-Reply-To: <CAFNqd5Wgg8GOFdgXz-AELVoeaOYbhPBoRH8ooqrDz9xcn9Jtcw@mail.gmail.com>
+References: <CAFNqd5Wgg8GOFdgXz-AELVoeaOYbhPBoRH8ooqrDz9xcn9Jtcw@mail.gmail.com>
+Message-ID: <1415804582.3111.0.camel@localhost>
+
+Agreed.   
+
+I thought "+1" might be confusing here.
+
+Gordon
+
+
+On Tue, 2014-11-11 at 20:56 -0500, Christopher Browne wrote:
+> 18 @ 20:55
+> 
+> ---
+> GTALUG Operations Mailing List - operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+
+
+From me at mylesbraithwaite.com  Wed Nov 12 20:19:56 2014
+From: me at mylesbraithwaite.com (me at mylesbraithwaite.com)
+Date: Wed, 12 Nov 2014 12:19:56 -0800 (PST)
+Subject: [GTALUG-Ops] December's Meeting and Talks Coordinators Email Address
+Message-ID: <1415823595667.2e548281@Nodemailer>
+
+Is this the correct meeting info for December's meeting: "Mike Hoy - Mozilla community manager, on FSOSS material on social engineering, building community on purpose, bugzilla, getting contributors".?
+
+The past talks coordinators email address was something like scott-tlug-talk at ss.org is it still running? Can we move it to speaker-coordinator at gtalug.org?
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141112/291bd772/attachment.html>
+
