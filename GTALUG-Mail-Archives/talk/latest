@@ -2296,3 +2296,929 @@ On Nov 12, 2014 11:07 AM, "Scott Elcomb" <psema4 at gmail.com> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141112/48424e26/attachment.html>
 
+From scott at ss.org  Thu Nov 13 13:43:58 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Thu, 13 Nov 2014 08:43:58 -0500
+Subject: [GTALUG] Thinkpad choices today?
+Message-ID: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+
+After 4 years my Lenovo x120e has final succumbed to the rough and tumble I put it through. The screen cracked and is unusable. This leaves me looking for a replacement.
+
+I'm going to constrain this question to Lenovo options. I don't think I can overcome my track-point addiction. 
+
+Anyone purchased Thinkpad hardware in the last while? I know with some of the recent models Lenovo has started messing around with the keyboard design.  What are peoples opinions?
+-- 
+Scott Sullivan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141113/ebb164df/attachment.html>
+
+From grazer at gmail.com  Thu Nov 13 14:18:18 2014
+From: grazer at gmail.com (Jason Shaw)
+Date: Thu, 13 Nov 2014 09:18:18 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+Message-ID: <CAC4o_JJv-Vch9Fg_sa3i1axQAhLMDAk=oG2gcbpu-or805DRsA@mail.gmail.com>
+
+I have a first gen X1 Carbon and love it.  It does have the usual downsides
+of most ultrabooks; soldered on ram and non-standard drive, but has been
+rock solid.  It has a chiclet style keyboard, trackpoint, 3 physical mouse
+buttons, 1400x900 resolution on a 14" screen, on a machine that's basically
+the size of a MacBook Air 13".  Linux just works out of the box.
+
+The major issue is that the current generation has the worst keyboard
+layout I've ever seen.  The Function keys are now a "smart screen" that
+dynamically change to "useful" keys based on what tasks you are doing.
+Even worse though is the physical keyboard layout. I'll let the picture
+speak for itself:
+http://cdn.arstechnica.net/wp-content/uploads/2014/01/thinkpad-x1-carbon-keyboard.jpg
+
+I know that the X240 series are still "proper" ThinkPads in that they are
+easily serviceable and use standard RAM and drives, but have no personal
+experience with them.
+
+Good luck!
+-jason
+
+On Thu, Nov 13, 2014 at 8:43 AM, Scott Sullivan <scott at ss.org> wrote:
+
+> After 4 years my Lenovo x120e has final succumbed to the rough and tumble
+> I put it through. The screen cracked and is unusable. This leaves me
+> looking for a replacement.
+>
+> I'm going to constrain this question to Lenovo options. I don't think I
+> can overcome my track-point addiction.
+>
+> Anyone purchased Thinkpad hardware in the last while? I know with some of
+> the recent models Lenovo has started messing around with the keyboard
+> design. What are peoples opinions?
+> --
+> Scott Sullivan
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141113/20d308ae/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Thu Nov 13 15:45:34 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 13 Nov 2014 10:45:34 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+Message-ID: <20141113154534.GI24111@csclub.uwaterloo.ca>
+
+On Thu, Nov 13, 2014 at 08:43:58AM -0500, Scott Sullivan wrote:
+> After 4 years my Lenovo x120e has final succumbed to the rough and tumble I put it through. The screen cracked and is unusable. This leaves me looking for a replacement.
+> 
+> I'm going to constrain this question to Lenovo options. I don't think I can overcome my track-point addiction. 
+> 
+> Anyone purchased Thinkpad hardware in the last while? I know with some of the recent models Lenovo has started messing around with the keyboard design.  What are peoples opinions?
+
+I have a W530 and my wife has a T430 and they are both great.
+
+On the [WT][45]40 models however they have apparently ruined the keyboard
+and trackpoint completely.  There are no buttons for the trackpoint
+anymore, it instead uses the touchpad to emulate buttons which, from
+what I have read, people hate.
+
+I do see that the Helix2 has gone back to real buttons again, so hopefully
+that means Lenovo listened and will be going back to what people want
+on the *50 models again.
+
+I see some posts here:
+https://forums.lenovo.com/t5/T400-T500-and-newer-T-series/Please-Bring-Back-Physical-Mouse-Buttons/td-p/1471840/page/2
+that say service reps at lenovo already said the *50 models will get
+the proper buttons returned and the case will be improved again.  I guess
+they do listen.  Given the Helix2 already got them back, it seems quite
+likely to be true.  But the current models I would not buy.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Thu Nov 13 15:53:35 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 13 Nov 2014 10:53:35 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <CAC4o_JJv-Vch9Fg_sa3i1axQAhLMDAk=oG2gcbpu-or805DRsA@mail.gmail.com>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <CAC4o_JJv-Vch9Fg_sa3i1axQAhLMDAk=oG2gcbpu-or805DRsA@mail.gmail.com>
+Message-ID: <20141113155335.GJ24111@csclub.uwaterloo.ca>
+
+On Thu, Nov 13, 2014 at 09:18:18AM -0500, Jason Shaw wrote:
+> I have a first gen X1 Carbon and love it.  It does have the usual downsides
+> of most ultrabooks; soldered on ram and non-standard drive, but has been
+> rock solid.  It has a chiclet style keyboard, trackpoint, 3 physical mouse
+> buttons, 1400x900 resolution on a 14" screen, on a machine that's basically
+> the size of a MacBook Air 13".  Linux just works out of the box.
+> 
+> The major issue is that the current generation has the worst keyboard
+> layout I've ever seen.  The Function keys are now a "smart screen" that
+> dynamically change to "useful" keys based on what tasks you are doing.
+> Even worse though is the physical keyboard layout. I'll let the picture
+> speak for itself:
+> http://cdn.arstechnica.net/wp-content/uploads/2014/01/thinkpad-x1-carbon-keyboard.jpg
+
+Home and end where caps lock was?  Delete next to backspace?  What were
+they thinking?  ~ and ` between alt and control?
+
+-- 
+Len Sorensen
+
+From grazer at gmail.com  Thu Nov 13 16:48:25 2014
+From: grazer at gmail.com (Jason Shaw)
+Date: Thu, 13 Nov 2014 11:48:25 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <20141113155335.GJ24111@csclub.uwaterloo.ca>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <CAC4o_JJv-Vch9Fg_sa3i1axQAhLMDAk=oG2gcbpu-or805DRsA@mail.gmail.com>
+ <20141113155335.GJ24111@csclub.uwaterloo.ca>
+Message-ID: <CAC4o_J+93VEGc7yois179pAcc8MX+h9vipSeuq4jrWBUHj4Mpg@mail.gmail.com>
+
+Look at the tilde location and you'll see that this was clearly not
+designed with *nix users in mind.
+
+On Thu, Nov 13, 2014 at 10:53 AM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Thu, Nov 13, 2014 at 09:18:18AM -0500, Jason Shaw wrote:
+> > I have a first gen X1 Carbon and love it.  It does have the usual
+> downsides
+> > of most ultrabooks; soldered on ram and non-standard drive, but has been
+> > rock solid.  It has a chiclet style keyboard, trackpoint, 3 physical
+> mouse
+> > buttons, 1400x900 resolution on a 14" screen, on a machine that's
+> basically
+> > the size of a MacBook Air 13".  Linux just works out of the box.
+> >
+> > The major issue is that the current generation has the worst keyboard
+> > layout I've ever seen.  The Function keys are now a "smart screen" that
+> > dynamically change to "useful" keys based on what tasks you are doing.
+> > Even worse though is the physical keyboard layout. I'll let the picture
+> > speak for itself:
+> >
+> http://cdn.arstechnica.net/wp-content/uploads/2014/01/thinkpad-x1-carbon-keyboard.jpg
+>
+> Home and end where caps lock was?  Delete next to backspace?  What were
+> they thinking?  ~ and ` between alt and control?
+>
+> --
+> Len Sorensen
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141113/4977ec93/attachment.html>
+
+From grazer at gmail.com  Thu Nov 13 16:48:52 2014
+From: grazer at gmail.com (Jason Shaw)
+Date: Thu, 13 Nov 2014 11:48:52 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <CAC4o_J+93VEGc7yois179pAcc8MX+h9vipSeuq4jrWBUHj4Mpg@mail.gmail.com>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <CAC4o_JJv-Vch9Fg_sa3i1axQAhLMDAk=oG2gcbpu-or805DRsA@mail.gmail.com>
+ <20141113155335.GJ24111@csclub.uwaterloo.ca>
+ <CAC4o_J+93VEGc7yois179pAcc8MX+h9vipSeuq4jrWBUHj4Mpg@mail.gmail.com>
+Message-ID: <CAC4o_JLZu2v6apUu=hFiTiHEAu8OTQsv=FVERwF86R2FAn0cyQ@mail.gmail.com>
+
+Oops, sorry, you did mention that.  My bad.
+
+On Thu, Nov 13, 2014 at 11:48 AM, Jason Shaw <grazer at gmail.com> wrote:
+
+> Look at the tilde location and you'll see that this was clearly not
+> designed with *nix users in mind.
+>
+> On Thu, Nov 13, 2014 at 10:53 AM, Lennart Sorensen <
+> lsorense at csclub.uwaterloo.ca> wrote:
+>
+>> On Thu, Nov 13, 2014 at 09:18:18AM -0500, Jason Shaw wrote:
+>> > I have a first gen X1 Carbon and love it.  It does have the usual
+>> downsides
+>> > of most ultrabooks; soldered on ram and non-standard drive, but has been
+>> > rock solid.  It has a chiclet style keyboard, trackpoint, 3 physical
+>> mouse
+>> > buttons, 1400x900 resolution on a 14" screen, on a machine that's
+>> basically
+>> > the size of a MacBook Air 13".  Linux just works out of the box.
+>> >
+>> > The major issue is that the current generation has the worst keyboard
+>> > layout I've ever seen.  The Function keys are now a "smart screen" that
+>> > dynamically change to "useful" keys based on what tasks you are doing.
+>> > Even worse though is the physical keyboard layout. I'll let the picture
+>> > speak for itself:
+>> >
+>> http://cdn.arstechnica.net/wp-content/uploads/2014/01/thinkpad-x1-carbon-keyboard.jpg
+>>
+>> Home and end where caps lock was?  Delete next to backspace?  What were
+>> they thinking?  ~ and ` between alt and control?
+>>
+>> --
+>> Len Sorensen
+>>
+>>
+>> ---
+>> GTALUG Talk Mailing List - talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141113/7c3261d7/attachment.html>
+
+From northdot9 at gmail.com  Thu Nov 13 17:05:50 2014
+From: northdot9 at gmail.com (David Thornton)
+Date: Thu, 13 Nov 2014 12:05:50 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+Message-ID: <CAHcykVrpL617iMqTR63eDcca_1JV7U1WSR4h4A_Eqn1iNyAkyA@mail.gmail.com>
+
+I had a T510 which was great ( heavy but great) , I liked the keyboard ,
+and the graphics card was good enough to play games. Optical drive , good
+wireless, limited by power ( only got like 2 hours at best) . Linux support
+was also good. Performance was good. I had a dual scren dock , and the
+device could drive both via DVI.
+
+Then I lost the 5 key and IT issued me a X240.. Lighter, newer, small
+screen, nice and snappy, no optical drive, much better battery life. I feel
+cramped on the screen. There are screen options. 1366 X 768 , 1366 X 768
+touchscreen, and a larger one 1920 x 1080 all 12.5 inches. I have the
+1366X768 non touchscreen and I feel cramped.
+
+I have a dock for this x240.. but the laptop can't drive both screens with
+DVI.. One has to be VGA. I dunno if that's a limitation of the particular
+dock that I got, or if that's a limitation of the video card, but after
+going Digital I can't stand VGA. Too fuzzy.
+
+So the keyboard. I have had some trouble getting my head/hands around this
+new keyboard. For one f1 f2 f3 function keys don't "work" out of the box .
+They all do their "special purpose" like volume , display changing , mute
+etc. I had to tell it : by default when I press the F1 key .. it send an
+F1!
+Also I can't get "end" to work without also pressing "Fn" . ... Which I now
+call the "effin" key if you know what I mean.
+
+David
+
+
+
+
+On Thu, Nov 13, 2014 at 8:43 AM, Scott Sullivan <scott at ss.org> wrote:
+
+> After 4 years my Lenovo x120e has final succumbed to the rough and tumble
+> I put it through. The screen cracked and is unusable. This leaves me
+> looking for a replacement.
+>
+> I'm going to constrain this question to Lenovo options. I don't think I
+> can overcome my track-point addiction.
+>
+> Anyone purchased Thinkpad hardware in the last while? I know with some of
+> the recent models Lenovo has started messing around with the keyboard
+> design. What are peoples opinions?
+> --
+> Scott Sullivan
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141113/af45f07a/attachment.html>
+
+From hugh at mimosa.com  Thu Nov 13 18:59:56 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 13 Nov 2014 13:59:56 -0500 (EST)
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+Message-ID: <alpine.LRH.2.02.1411131300070.6002@redclaw.mimosa.com>
+
+| From: Scott Sullivan <scott at ss.org>
+
+| After 4 years my Lenovo x120e has final succumbed to the rough and 
+| tumble I put it through. The screen cracked and is unusable. This leaves 
+| me looking for a replacement.
+
+Screens can be replaced.  There's a chance that it is worth the
+bother.  But a E-350 always seemed weak to me.
+
+I still like my ancient ThinkPad x61t with the high resolution screen
+and ancient aspect ratio.  This x60 on Kijiji is $100.  Unlike most
+x60's it has a Core 2 Duo CPU.  It won't do videos well since it has a
+weak video controller.  Its screen resolution is not high-res: 1024x768:
+<http://www.kijiji.ca/v-laptops/city-of-toronto/ibm-lenovo-thinkpad-x60-core-2-duo-laptop-notebook/1032397097?enableSearchNavigationFlag=true>
+Here's one with the high-res (1400x1050) screen but only a Core Duo
+CPU for $150):
+<http://www.kijiji.ca/v-laptops/city-of-toronto/fs:-lenovo-thinkpad-x60t-1400x1050-150/1031698460?enableSearchNavigationFlag=true>
+
+(At the previous IETF, I talked with Linus Nordberg (of TOR, among other 
+things).  He uses modified x60s because they are the last model that he 
+knows how to replace the BIOS with coreboot -- he wants to have 
+confidence in the firmware not being bugged.)
+
+| I'm going to constrain this question to Lenovo options. I don't think I 
+| can overcome my track-point addiction.
+
+I have an HP Elitebook with a "pointstick".  But it is an old model.  I
+don't know if they still have them.  Here's a table of things with
+trackpoints but I suspect that it is out of date:
+<http://en.wikipedia.org/wiki/Pointing_stick#Naming_and_brands>
+
+| Anyone purchased Thinkpad hardware in the last while? I know with some 
+| of the recent models Lenovo has started messing around with the keyboard 
+| design.  What are peoples opinions? -- Scott Sullivan
+
+If you are willing to carry around a tank, there's a chance you can
+find T[45]30 unused models around.  Other than that, consider buying
+used.
+
+<http://www.ncix.com/detail/lenovo-thinkpad-t530-23595ju-intel-0c-85521-1671.htm>
+<http://www.hookbag.ca/product/H3C0E40ZU/?p=0545>
+(Doesn't seem like a great price to me.)
+
+We all value different things.  Current notebooks have gotten way
+better in some areas that I care about: battery life, weight, screen
+resolution.  I don't like touchpads, touchscreens, or trackpoints but
+some versions are way better than others.
+
+From avolkov at gmail.com  Thu Nov 13 19:26:10 2014
+From: avolkov at gmail.com (Alex Volkov)
+Date: Thu, 13 Nov 2014 14:26:10 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <alpine.LRH.2.02.1411131300070.6002@redclaw.mimosa.com>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <alpine.LRH.2.02.1411131300070.6002@redclaw.mimosa.com>
+Message-ID: <546505D2.3010709@gmail.com>
+
+I don't think buying an used laptop is a good idea, because unlike
+desktops, specifications is not the only thing you can get in a laptop,
+but also how they were used -- after several trips in my bicycle
+pannier, my T420 has a couple of cracks on plastic frame near screen,
+utterly broken cd-rom and several non-essential plastic parts missing.
+
+I second T430, they can still be found brand new, and even though they
+bulky and Lenovo already started messing with the keyboard at the time,
+it still was usable for *nix crowd.
+
+Also get a model with t-suffix, as in T430s(lenovo really likes letter
+'t'), they used to be a few hundred dollars more expensive but they
+supposed to be marginally more lightweight and rugged, and more
+importantly, on those models instead of useless cd-rom drive you can
+install additional 6-cell battery. Sourcing that battery, however is a
+bit of a challenge.
+
+Alex.
+
+
+On 13/11/14 01:59 PM, D. Hugh Redelmeier wrote:
+> | From: Scott Sullivan <scott at ss.org>
+>
+> | After 4 years my Lenovo x120e has final succumbed to the rough and 
+> | tumble I put it through. The screen cracked and is unusable. This leaves 
+> | me looking for a replacement.
+>
+> Screens can be replaced.  There's a chance that it is worth the
+> bother.  But a E-350 always seemed weak to me.
+>
+> I still like my ancient ThinkPad x61t with the high resolution screen
+> and ancient aspect ratio.  This x60 on Kijiji is $100.  Unlike most
+> x60's it has a Core 2 Duo CPU.  It won't do videos well since it has a
+> weak video controller.  Its screen resolution is not high-res: 1024x768:
+> <http://www.kijiji.ca/v-laptops/city-of-toronto/ibm-lenovo-thinkpad-x60-core-2-duo-laptop-notebook/1032397097?enableSearchNavigationFlag=true>
+> Here's one with the high-res (1400x1050) screen but only a Core Duo
+> CPU for $150):
+> <http://www.kijiji.ca/v-laptops/city-of-toronto/fs:-lenovo-thinkpad-x60t-1400x1050-150/1031698460?enableSearchNavigationFlag=true>
+>
+> (At the previous IETF, I talked with Linus Nordberg (of TOR, among other 
+> things).  He uses modified x60s because they are the last model that he 
+> knows how to replace the BIOS with coreboot -- he wants to have 
+> confidence in the firmware not being bugged.)
+>
+> | I'm going to constrain this question to Lenovo options. I don't think I 
+> | can overcome my track-point addiction.
+>
+> I have an HP Elitebook with a "pointstick".  But it is an old model.  I
+> don't know if they still have them.  Here's a table of things with
+> trackpoints but I suspect that it is out of date:
+> <http://en.wikipedia.org/wiki/Pointing_stick#Naming_and_brands>
+>
+> | Anyone purchased Thinkpad hardware in the last while? I know with some 
+> | of the recent models Lenovo has started messing around with the keyboard 
+> | design.  What are peoples opinions? -- Scott Sullivan
+>
+> If you are willing to carry around a tank, there's a chance you can
+> find T[45]30 unused models around.  Other than that, consider buying
+> used.
+>
+> <http://www.ncix.com/detail/lenovo-thinkpad-t530-23595ju-intel-0c-85521-1671.htm>
+> <http://www.hookbag.ca/product/H3C0E40ZU/?p=0545>
+> (Doesn't seem like a great price to me.)
+>
+> We all value different things.  Current notebooks have gotten way
+> better in some areas that I care about: battery life, weight, screen
+> resolution.  I don't like touchpads, touchscreens, or trackpoints but
+> some versions are way better than others.
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+
+From avolkov at gmail.com  Thu Nov 13 21:14:50 2014
+From: avolkov at gmail.com (Alex Volkov)
+Date: Thu, 13 Nov 2014 16:14:50 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <alpine.LRH.2.02.1411131300070.6002@redclaw.mimosa.com>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <alpine.LRH.2.02.1411131300070.6002@redclaw.mimosa.com>
+Message-ID: <54651F4A.4060207@gmail.com>
+
+Sorry for encrypted email, apparently I can't use Enigmail.
+
+I don't think buying an used laptop is a good idea, because unlike
+desktops, specifications is not the only thing you can get in a laptop,
+but also how they were used -- after several trips in my bicycle
+pannier, my T420 has a couple of cracks on plastic frame near screen,
+utterly broken cd-rom and several non-essential plastic parts missing.
+
+I second T430, they can still be found brand new, and even though they
+bulky and Lenovo already started messing with the keyboard at the time,
+it still was usable for *nix crowd.
+
+Also get a model with t-suffix, as in T430s(lenovo really likes letter
+'t'), they used to be a few hundred dollars more expensive but they
+supposed to be marginally more lightweight and rugged, and more
+importantly, on those models instead of useless cd-rom drive you can
+install additional 6-cell battery. Sourcing that battery, however is a
+bit of a challenge.
+
+Alex.
+
+
+On 13/11/14 01:59 PM, D. Hugh Redelmeier wrote:
+> | From: Scott Sullivan <scott at ss.org>
+>
+> | After 4 years my Lenovo x120e has final succumbed to the rough and 
+> | tumble I put it through. The screen cracked and is unusable. This leaves 
+> | me looking for a replacement.
+>
+> Screens can be replaced.  There's a chance that it is worth the
+> bother.  But a E-350 always seemed weak to me.
+>
+> I still like my ancient ThinkPad x61t with the high resolution screen
+> and ancient aspect ratio.  This x60 on Kijiji is $100.  Unlike most
+> x60's it has a Core 2 Duo CPU.  It won't do videos well since it has a
+> weak video controller.  Its screen resolution is not high-res: 1024x768:
+> <http://www.kijiji.ca/v-laptops/city-of-toronto/ibm-lenovo-thinkpad-x60-core-2-duo-laptop-notebook/1032397097?enableSearchNavigationFlag=true>
+> Here's one with the high-res (1400x1050) screen but only a Core Duo
+> CPU for $150):
+> <http://www.kijiji.ca/v-laptops/city-of-toronto/fs:-lenovo-thinkpad-x60t-1400x1050-150/1031698460?enableSearchNavigationFlag=true>
+>
+> (At the previous IETF, I talked with Linus Nordberg (of TOR, among other 
+> things).  He uses modified x60s because they are the last model that he 
+> knows how to replace the BIOS with coreboot -- he wants to have 
+> confidence in the firmware not being bugged.)
+>
+> | I'm going to constrain this question to Lenovo options. I don't think I 
+> | can overcome my track-point addiction.
+>
+> I have an HP Elitebook with a "pointstick".  But it is an old model.  I
+> don't know if they still have them.  Here's a table of things with
+> trackpoints but I suspect that it is out of date:
+> <http://en.wikipedia.org/wiki/Pointing_stick#Naming_and_brands>
+>
+> | Anyone purchased Thinkpad hardware in the last while? I know with some 
+> | of the recent models Lenovo has started messing around with the keyboard 
+> | design.  What are peoples opinions? -- Scott Sullivan
+>
+> If you are willing to carry around a tank, there's a chance you can
+> find T[45]30 unused models around.  Other than that, consider buying
+> used.
+>
+> <http://www.ncix.com/detail/lenovo-thinkpad-t530-23595ju-intel-0c-85521-1671.htm>
+> <http://www.hookbag.ca/product/H3C0E40ZU/?p=0545>
+> (Doesn't seem like a great price to me.)
+>
+> We all value different things.  Current notebooks have gotten way
+> better in some areas that I care about: battery life, weight, screen
+> resolution.  I don't like touchpads, touchscreens, or trackpoints but
+> some versions are way better than others.
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+
+From thoriumbr at gmail.com  Fri Nov 14 00:55:34 2014
+From: thoriumbr at gmail.com (Mauro Souza)
+Date: Thu, 13 Nov 2014 22:55:34 -0200
+Subject: [GTALUG] Crypto Question: Where do you get your entropy
+In-Reply-To: <CAAsTreDL5=H=S0SSedyHJR_9mwFNzmJTyTed_zscwsUmV9sS9Q@mail.gmail.com>
+References: <alpine.LRH.2.02.1411120055080.6002@redclaw.mimosa.com>
+ <CAFNqd5U_L=tWdgd7hWrszEsb5zjTK67wwO-wTnF+F5QARw8Wew@mail.gmail.com>
+ <CAAsTreDL5=H=S0SSedyHJR_9mwFNzmJTyTed_zscwsUmV9sS9Q@mail.gmail.com>
+Message-ID: <CAEZ_B6PgP--9pN3mtbBtDHnCFL3pG9OZf0yN27WxTqQ6NuP1yg@mail.gmail.com>
+
+If you guys don't mind soldering a lot, there's a hardware RNG here:
+http://hackaday.com/2014/10/31/dual-mode-avalanche-and-rf-random-number-generator/
+
+It says it can generate ~350kbits per second of entropy... I don't know if
+it's enough for you.
+
+Mauro
+http://mauro.limeiratem.com - registered Linux User: 294521
+Scripture is both history, and a love letter from God.
+
+2014-11-12 14:27 GMT-02:00 Stewart Russell <scruss at gmail.com>:
+
+>
+> On Nov 12, 2014 10:52 AM, "Christopher Browne" <cbbrowne at gmail.com> wrote:
+> >
+> > http://www.entropykey.co.uk/tech/
+>
+> Unfortunately, these are no longer available. If you check their shop,
+> they say that the wait time is effectively indefinite.
+>
+> It looks well designed, but it all depends how paranoid you need to be.
+> Certain ARM Cortex microcontrollers have thermal hardware RNGs built in.
+> They can pump out a stream of noise at a huge rate.
+>
+> The Raspberry Pi's SoC has one too. It's not super-fast and closed, so you
+> decide if it works for you. Most other artisanal solutions (Geiger counter
+> timing, clock skew on microcontrollers, detuned radios, avalanche noise,
+> intentionally mis-wired comparators) don't produce the volume of entropy
+> you need. They're also open to tampering, and most folks don't have the
+> knowledge to know what to look for in designing such a thing. I certainly
+> know I don't ...
+>
+> I haven't checked if you still have to build a custom kernel to get RdRand
+> support on x86. Given past messes over ssh entropy holes, the lack of
+> support for RdRand because it might be tainted by the NSA was a pot/kettle
+> situation.
+>
+> Cheers
+> Stewart
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141113/e9eb4790/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Fri Nov 14 01:08:48 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 13 Nov 2014 20:08:48 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <CAHcykVrpL617iMqTR63eDcca_1JV7U1WSR4h4A_Eqn1iNyAkyA@mail.gmail.com>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <CAHcykVrpL617iMqTR63eDcca_1JV7U1WSR4h4A_Eqn1iNyAkyA@mail.gmail.com>
+Message-ID: <20141114010848.GK24111@csclub.uwaterloo.ca>
+
+On Thu, Nov 13, 2014 at 12:05:50PM -0500, David Thornton wrote:
+> I had a T510 which was great ( heavy but great) , I liked the keyboard ,
+> and the graphics card was good enough to play games. Optical drive , good
+> wireless, limited by power ( only got like 2 hours at best) . Linux support
+> was also good. Performance was good. I had a dual scren dock , and the
+> device could drive both via DVI.
+> 
+> Then I lost the 5 key and IT issued me a X240.. Lighter, newer, small
+> screen, nice and snappy, no optical drive, much better battery life. I feel
+> cramped on the screen. There are screen options. 1366 X 768 , 1366 X 768
+> touchscreen, and a larger one 1920 x 1080 all 12.5 inches. I have the
+> 1366X768 non touchscreen and I feel cramped.
+> 
+> I have a dock for this x240.. but the laptop can't drive both screens with
+> DVI.. One has to be VGA. I dunno if that's a limitation of the particular
+> dock that I got, or if that's a limitation of the video card, but after
+> going Digital I can't stand VGA. Too fuzzy.
+
+If you have a Pro dock (Which has DVI, DP and VGA), you can only use DVI
+_or_ DP on the dock.  The Ultra dock has a second pair of ports which
+allow DP _or_ HDMI (but not at the same time), so with that dock you can
+do any combo of two DP, DP + HDMI, or DP + DVI.  If you want two DVI you
+need a DP to DVI adapter for the second DP port.  With the Pro dock, you
+can still do that using a DP to DVI adapter connected to the DP on the
+x240 itself, and the second display connected to DP or DVI on the dock.
+Essentially the pro dock only has one digital connection from the laptop
+to the dock, so only one of the digital ports can be used at a time.
+The VGA on the dock is a copy of the one on the laptop and the one on
+the laptop does not work when docked.  The DP port is seperate though.
+
+> So the keyboard. I have had some trouble getting my head/hands around this
+> new keyboard. For one f1 f2 f3 function keys don't "work" out of the box .
+> They all do their "special purpose" like volume , display changing , mute
+> etc. I had to tell it : by default when I press the F1 key .. it send an
+> F1!
+> Also I can't get "end" to work without also pressing "Fn" . ... Which I now
+> call the "effin" key if you know what I mean.
+
+Don't then have an Fn lock option to make it always do that instead?
+Often there are bios options on thinkpads to pick the settings you like
+(such as swapping control and fn if you prefer the other order).
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Fri Nov 14 01:59:15 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 13 Nov 2014 20:59:15 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <alpine.LRH.2.02.1411131300070.6002@redclaw.mimosa.com>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <alpine.LRH.2.02.1411131300070.6002@redclaw.mimosa.com>
+Message-ID: <20141114015914.GL24111@csclub.uwaterloo.ca>
+
+On Thu, Nov 13, 2014 at 01:59:56PM -0500, D. Hugh Redelmeier wrote:
+> We all value different things.  Current notebooks have gotten way
+> better in some areas that I care about: battery life, weight, screen
+> resolution.  I don't like touchpads, touchscreens, or trackpoints but
+> some versions are way better than others.
+
+OK, what option do you like if you don't like those 3?  Please don't
+say trackballs, because no one is allowed to like those evil things. :)
+
+-- 
+Len Sorensen
+
+From davec-b at rogers.com  Fri Nov 14 02:43:24 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Thu, 13 Nov 2014 21:43:24 -0500
+Subject: [GTALUG] My company is looking for some Java folks
+Message-ID: <54656C4C.50401@rogers.com>
+
+We're looking for a senior back-end person and a web designer and developer.
+
+See stack overflow,
+https://careers.stackoverflow.com/jobs/73611/senior-platform-engineer-worldgaming?a=oGAeIRLsoxO&searchTerm=world
+https://careers.stackoverflow.com/jobs/73612/web-designer-developer-worldgaming?a=oGBwEoiPz7W&searchTerm=world
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141113/d1e38da6/attachment.html>
+
+From william.muriithi at gmail.com  Fri Nov 14 03:50:28 2014
+From: william.muriithi at gmail.com (William Muriithi)
+Date: Thu, 13 Nov 2014 22:50:28 -0500
+Subject: [GTALUG] Crypto Question: Where do you get your entropy
+In-Reply-To: <alpine.LRH.2.02.1411120055080.6002@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1411120055080.6002@redclaw.mimosa.com>
+Message-ID: <20141114035028.6041746.80502.8273@gmail.com>
+
+?
+
+>Adversaries can easily break your cryptosystem if >you don't have?sufficient entropy. It's that bad.
+
+>What sources do you use? /dev/random and >/dev/urandom are the Linux
+>channel for entropy. There are various sources >that can be pooled by?the kernel:
+
+
+/dev/urandom does not generate entropy I think. It depends on /dev/random. The firmer just stretch the later entropy.
+
+The problem is more acute with servers though unfortunately as most run on virtualized environment these day and since there is no console, they gave little entropy during start up. ?
+
+William
+
+
+From scott at ss.org  Fri Nov 14 05:18:36 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Fri, 14 Nov 2014 00:18:36 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+Message-ID: <EE4F6944-2BD6-479F-B69D-21CF48BE534F@ss.org>
+
+On November 13, 2014 8:43:58 AM EST, Scott Sullivan <scott at ss.org> wrote:
+>After 4 years my Lenovo x120e has final succumbed to the rough and
+>tumble I put it through. The screen cracked and is unusable. This
+>leaves me looking for a replacement.
+>
+>I'm going to constrain this question to Lenovo options. I don't think I
+>can overcome my track-point addiction. 
+>
+>Anyone purchased Thinkpad hardware in the last while? I know with some
+>of the recent models Lenovo has started messing around with the
+>keyboard design.  What are peoples opinions?
+>-- 
+>Scott Sullivan
+>
+>------------------------------------------------------------------------
+>
+>
+>
+>---
+>GTALUG Talk Mailing List - talk at gtalug.org
+>http://gtalug.org/mailman/listinfo/talk
+
+Thanks all that answered.
+
+Looks like most of the current generation is a wash with that horrid clickpad. Shame too since the x240 was looking rather like what I wanted.
+
+The x140e, still has the mouse buttons I want. But I'm tired of 1366x768.
+
+The helix gen 2, although not on the Canadian market yet, does show a return to the trackpad and buttons. Great feature set, but the Core M processor leaves more to be desired in raw performance.
+
+
+It's almost enough to consider a Surface Pro 3 paired with a compact thinkpad usb or Bluetooth track-point  keyboard.
+
+http://shop.lenovo.com/ca/en/itemdetails/0B47189/460/60AC6A0372B14F5BA7B12F1FF88E33C7L
+
+I have the usb version for my desktop at work.
+
+It's a tough time. Thanks again for you feed back.
+  
+-- 
+Scott Sullivan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141114/1eb776be/attachment.html>
+
+From hugh at mimosa.com  Fri Nov 14 07:01:46 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Fri, 14 Nov 2014 02:01:46 -0500 (EST)
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <20141114015914.GL24111@csclub.uwaterloo.ca>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <alpine.LRH.2.02.1411131300070.6002@redclaw.mimosa.com>
+ <20141114015914.GL24111@csclub.uwaterloo.ca>
+Message-ID: <alpine.LRH.2.02.1411140101240.6002@redclaw.mimosa.com>
+
+| From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+
+| On Thu, Nov 13, 2014 at 01:59:56PM -0500, D. Hugh Redelmeier wrote:
+| >  I don't like touchpads, touchscreens, or trackpoints but
+| > some versions are way better than others.
+| 
+| OK, what option do you like if you don't like those 3?  Please don't
+| say trackballs, because no one is allowed to like those evil things. :)
+
+Mostly touchpads, but there are a lot of differences that matter
+between touchpads.
+
+[The following long discussion might only interest me.]
+
+The answer depends on the way I'm using the device.
+
+Oh, and what I think I will do (when selecting a device) doesn't
+always match what I actually do.  That's why I've experimented with so
+many things.
+
+All trackpointers are the same to me (usable but not great).
+Touchscreens are of no use to me with a normal Linux desktop.
+Trackpads very wildly in usability.
+
+I like mice best, but the logistics are annoying with laptops.  Still,
+if my session is longer than, say, a minute, it is probably worth
+deploying.
+
+For web surfing on an Adroid or iOS tablet, I quite like touchscreens.
+Except while entering text.  But I've never found that touchscreens on
+notebooks useful:
+
+- partly due to the crappy support in Linux desktops
+
+- partly because what I'm doing often involves typing
+
+- partly because horizontally reaching for a touchscreen is very
+  tiring ("gorilla arm")
+
+- perhaps because Linux tasks require precision that is beyond
+  capacitive digitizers.
+
+I rarely remember that I'm even on a touchscreen when I'm using one
+with Linux.  (My main notebook, a Yoga 2 Pro, has a touchscreen.  So
+does our kitchen computer.)
+
+Trackpointers are simple in concept but I've not really gotten used to
+them because I don't have one on my desktop where I do most of my
+typing.  (Or on the typewriter or keypunch where my muscles learned to
+type.)  My main notebook for five years (x61t) has one and no
+trackpad, but I carried a mouse.  The trackpad should be good for
+touch-typists (it's in the home row).  But on my high-resolutions
+screens, it takes a long time to move a significant portion of the
+screen.  I've always found it a bit, well, creepy that the cursor
+often drifts when I let go.
+
+Touchpads on notebooks have a variety of designs with a variety of
+good and bad points.
+
+- I hate it when touchpads decide that I'm talking to them when I
+  don't think I am.  The cursor will zing off somewhere while I'm
+  typing or thinking about typing.  It may be my fault, but it happens
+  much more frequently on some systems than others.  There's a simple
+  fix some systems have:  ignore touchpad events while the user is
+  typing.  I suspect that isn't enough.
+
+- I am annoyed at the way touchpad use seems to require two hands
+  sometimes: moving a finger on the surface while clicking or holding
+  a button (or two!), perhaps even while holding a modifier key.
+
+- having the left button being the whole pad seems like a step forward
+  but on my samples, it is designed as a lever with the fulcrum at the
+  top so (a) the pressure varies, and (b) is theoretically infinite at
+  the top.
+
+- I like the new gestures that have come in.  But haven't seen a
+  manual.  So I'm not really confident that I know them.  The most
+  useful seems to be two-finger sliding for scrolling (but there seem
+  to be two opposite conventions about the direction).
+
+- the middle mouse button is useful in X and Firefox.  It is rare in
+  trackpads (except thinkpads).  Simulating by using left+right click
+  isn't as reliable.
+
+- new trackpads seem to have soft buttons.  My fingers cannot "feel"
+  where they are.  So I have to look down from the screen.  On the
+  other hand, if I put some effort in I could configure a middle
+  button, I think.
+
+I don't seem to use a stylus.  My x61t tablet/notebook has a stylus
+but cannot sense my fingers.  I thought that would be worth trying,
+but it hasn't been useful.  If I were drawing things, it would be
+wonderful: precise (unlike capacitive sensing of fingers) and pressure
+sensitive.  I am envious of Microsoft OneNote users, but in reality
+handwriting is probably too slow.
+
+I accepted a stylus in the Nokia tablets and the Sharp Zaurus.  But
+the iPad was a real revelation: a fluid interface and not cramped (10"
+vs 4").  But I perform some tasks better on the earlier tablets (ssh).
+
+(I actually do some things in busybox on my Nexus 4, but only because
+I haven't bothered figured out how to create a GUI for these tasks.
+These same tasks are probably better on my Zaurus but it is usually on
+the shelf, uncharged.)
+
+From hugh at mimosa.com  Fri Nov 14 07:19:15 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Fri, 14 Nov 2014 02:19:15 -0500 (EST)
+Subject: [GTALUG] Crypto Question: Where do you get your entropy
+In-Reply-To: <20141114035028.6041746.80502.8273@gmail.com>
+References: <alpine.LRH.2.02.1411120055080.6002@redclaw.mimosa.com>
+ <20141114035028.6041746.80502.8273@gmail.com>
+Message-ID: <alpine.LRH.2.02.1411140202170.6002@redclaw.mimosa.com>
+
+| From: William Muriithi <william.muriithi at gmail.com>
+
+[Your MUA seems to muck up linebreaks in quoting.  It also converted
+some of what I typed to non-ASCII.  I've tried to fix that.]
+
+| >Adversaries can easily break your cryptosystem if
+| >you don't have sufficient entropy. It's that bad.
+| 
+| >What sources do you use? /dev/random and
+| >/dev/urandom are the Linux
+| >channel for entropy. There are various sources
+| >that can be pooled by the kernel:
+| 
+| 
+| /dev/urandom does not generate entropy I think. It depends on 
+| /dev/random. The firmer just stretch the later entropy.
+
+Neither generates entropy.  That's why I described them as channels.  I 
+tried to be fairly careful in what I said.
+
+You are right that /dev/random only yields as many bytes as the
+kernel estimates there are bytes of entropy in the pool and that
+/dev/urandom will give as many bytes as you ask for, even if the
+entropy estimate says that there is none remaining.
+
+Entropy is a tricky topic.  Maybe this talk next Monday will be
+enlightening:
+<http://www.fields.utoronto.ca/programs/scientific/fieldsmedalsym/14-15/Images/fms_po_final.pdf>
+I'm thinking of going.
+
+| The problem is more acute with servers though unfortunately as most run 
+| on virtualized environment these day and since there is no console, they 
+| gave little entropy during start up.
+
+Good point: virtual servers are even worse off than real servers.
+
