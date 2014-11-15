@@ -3222,3 +3222,782 @@ I'm thinking of going.
 
 Good point: virtual servers are even worse off than real servers.
 
+From waltdnes at waltdnes.org  Fri Nov 14 12:02:29 2014
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Fri, 14 Nov 2014 07:02:29 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <alpine.LRH.2.02.1411140101240.6002@redclaw.mimosa.com>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <alpine.LRH.2.02.1411131300070.6002@redclaw.mimosa.com>
+ <20141114015914.GL24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1411140101240.6002@redclaw.mimosa.com>
+Message-ID: <20141114120229.GA20154@waltdnes.org>
+
+> Touchscreens are of no use to me with a normal Linux desktop.
+> Trackpads very wildly in usability.
+> 
+> I like mice best, but the logistics are annoying with laptops.  Still,
+> if my session is longer than, say, a minute, it is probably worth
+> deploying.
+
+  Try something like...
+http://www.thesource.ca/estore/product.aspx?product=8004308&language=en-CA&utm_source=pla&utm_medium=pla&utm_campaign=adchemix-pla&axclid=1_1_99955_5595760453137305823&gclid=CNaU_p2D-sECFQFgMgoduksAZw
+
+> - I hate it when touchpads decide that I'm talking to them when I
+>   don't think I am.  The cursor will zing off somewhere while I'm
+>   typing or thinking about typing.  It may be my fault, but it happens
+>   much more frequently on some systems than others.  There's a simple
+>   fix some systems have:  ignore touchpad events while the user is
+>   typing.  I suspect that isn't enough.
+
+  To disable the touchpad on a Thinkpad, try {Fn}{ScrlLk} i.e. hold down
+the {Fn} key and tap the {ScrlLk} key once.  This is a "toggle" setting.
+Doing it again re-enables the mousepad.  There are more hardware key
+settings that are OS-independant.  My Google-searching has found...
+
+{Fn}{PgUp} Turn the ThinkLight? on or off.
+{Fn}{Home} The computer display becomes brighter.
+{Fn}{End} The computer display becomes dimmer.
+{Fn}{Spacebar} Enable the FullScreen Magnifier function.
+{Fn}{PrtSc} Has the same function as the SysRq key.
+{Fn}{ScrLk} Enable or disable the numeric keypad.
+{Fn}{Pause} Has the same function as the Break key.
+
+  They may not work on all Thinkpad models.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From james.knott at rogers.com  Fri Nov 14 12:53:53 2014
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 14 Nov 2014 07:53:53 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <alpine.LRH.2.02.1411140101240.6002@redclaw.mimosa.com>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <alpine.LRH.2.02.1411131300070.6002@redclaw.mimosa.com>
+ <20141114015914.GL24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1411140101240.6002@redclaw.mimosa.com>
+Message-ID: <5465FB61.6000304@rogers.com>
+
+On 11/14/2014 02:01 AM, D. Hugh Redelmeier wrote:
+> All trackpointers are the same to me (usable but not great).
+> Touchscreens are of no use to me with a normal Linux desktop.
+> Trackpads very wildly in usability.
+
+While a mouse is best, I much prefer a TrackPoint to a TouchPad.  In
+fact I wish I could disable the TouchPad in the BIOS.  I first endured
+one of those years ago on a Toshiba computer running Windows 95 and have
+hated them ever since.
+
+So, when I'm looking for a notebook, if there's no trackpoint, no sale.
+
+
+From james.knott at rogers.com  Fri Nov 14 13:01:08 2014
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 14 Nov 2014 08:01:08 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <20141114120229.GA20154@waltdnes.org>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <alpine.LRH.2.02.1411131300070.6002@redclaw.mimosa.com>
+ <20141114015914.GL24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1411140101240.6002@redclaw.mimosa.com>
+ <20141114120229.GA20154@waltdnes.org>
+Message-ID: <5465FD14.1030402@rogers.com>
+
+On 11/14/2014 07:02 AM, Walter Dnes wrote:
+>> Touchscreens are of no use to me with a normal Linux desktop.
+>> Trackpads very wildly in usability.
+>>
+>> I like mice best, but the logistics are annoying with laptops.  Still,
+>> if my session is longer than, say, a minute, it is probably worth
+>> deploying.
+>   Try something like...
+> http://www.thesource.ca/estore/product.aspx?product=8004308&language=en-CA&utm_source=pla&utm_medium=pla&utm_campaign=adchemix-pla&axclid=1_1_99955_5595760453137305823&gclid=CNaU_p2D-sECFQFgMgoduksAZw
+>
+>> - I hate it when touchpads decide that I'm talking to them when I
+>>   don't think I am.  The cursor will zing off somewhere while I'm
+>>   typing or thinking about typing.  It may be my fault, but it happens
+>>   much more frequently on some systems than others.  There's a simple
+>>   fix some systems have:  ignore touchpad events while the user is
+>>   typing.  I suspect that isn't enough.
+>   To disable the touchpad on a Thinkpad, try {Fn}{ScrlLk} i.e. hold down
+> the {Fn} key and tap the {ScrlLk} key once.  This is a "toggle" setting.
+> Doing it again re-enables the mousepad.  There are more hardware key
+> settings that are OS-independant.  My Google-searching has found...
+>
+> {Fn}{PgUp} Turn the ThinkLight? on or off.
+> {Fn}{Home} The computer display becomes brighter.
+> {Fn}{End} The computer display becomes dimmer.
+> {Fn}{Spacebar} Enable the FullScreen Magnifier function.
+> {Fn}{PrtSc} Has the same function as the SysRq key.
+> {Fn}{ScrLk} Enable or disable the numeric keypad.
+> {Fn}{Pause} Has the same function as the Break key.
+>
+>   They may not work on all Thinkpad models.
+>
+You've listed {Fn}{ScrlLk} for both the touch pad and numeric keypad. 
+Which is it?
+
+
+From sgh at vex.net  Thu Nov 13 21:14:06 2014
+From: sgh at vex.net (Steve Harvey)
+Date: Thu, 13 Nov 2014 16:14:06 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+Message-ID: <20141113211406.GE12804@vex.net>
+
+On Thu, Nov 13, 2014 at 08:43:58AM -0500, Scott Sullivan wrote:
+> After 4 years my Lenovo x120e has final succumbed to the rough and tumble
+> I put it through. The screen cracked and is unusable. This leaves me 
+> looking for a replacement.
+> 
+> I'm going to constrain this question to Lenovo options. I don't think I 
+> can overcome my track-point addiction. 
+> 
+> Anyone purchased Thinkpad hardware in the last while? I know with some of
+> the recent models Lenovo has started messing around with the keyboard 
+> design.  What are peoples opinions?
+> 
+> -- 
+> Scott Sullivan
+
+  Back in 2007, I bought a new T60 for ~$1800.  Four years later, I
+decided to buy another T60 ($400 used) as a spare instead of any of 
+their latest offerings, all of which sported the trendy wide-screen 
+aspect ratio which I dislike.  It appears to me that laptop manufacturers
+seem to think that everyone prioritizes the watching of videos.  Since
+then, I've needed to replace the screen on one of them and a motherboard
+on the other.  There are a few repair shops around town that focus
+on this market.  How long parts will remain available is yet to be seen.
+
+  Both of my T60s are at 1400x1050.  There are 1600x1200 screens out
+there, but they are rare.  
+
+  Considering today's ratio of high-end laptop prices to the average IT
+salary, I wonder if there might be enough latent world-wide demand for 
+an upgraded Lenovo "Classic" to make it feasible.  Maybe it could happen
+if enough people were to band together to have some "reverse marketing"
+clout.
+
+  I'd love it if I could have 16GB of RAM, an onboard SSD as well as a
+HDD, keep the DVD drive, get rid of the PCMCIA slot and modem and give
+me an HDMI port along with the VGA.  Give me a 2048x1536 (or even 
+2800x2100) matte screen in a rugged 15" form factor with the traditional
+hardware UI and indicator lights.  Add bluetooth and IR ports and hide a
+9 pin parallel port on the back for people who want to do really low 
+latency stuff.  Keep it as thick and heavy as required to provide this
+functionality.  I don't care about touch screen or trendy ultra-
+slimness or having to be cloud-dependent.  Make sure that it runs well
+(addressing ACPI, UEFI/BIOS, and video issues especially) with Linux as 
+well as Microsoft Windows. 
+
+  One feature that I would like to be possible with this laptop is to
+be able to use it with active shutter 3D glasses for stereoscopic
+viewing of images such as landforms, simulated molecules, ...  The
+hardware needs only to be capable of producing a correctly timed
+strobe signal over a suitable interface.
+
+-- 
+Steve Harvey
+
+From lsorense at csclub.uwaterloo.ca  Fri Nov 14 16:58:52 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 14 Nov 2014 11:58:52 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <alpine.LRH.2.02.1411140101240.6002@redclaw.mimosa.com>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <alpine.LRH.2.02.1411131300070.6002@redclaw.mimosa.com>
+ <20141114015914.GL24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1411140101240.6002@redclaw.mimosa.com>
+Message-ID: <20141114165852.GM24111@csclub.uwaterloo.ca>
+
+On Fri, Nov 14, 2014 at 02:01:46AM -0500, D. Hugh Redelmeier wrote:
+> Mostly touchpads, but there are a lot of differences that matter
+> between touchpads.
+> 
+> [The following long discussion might only interest me.]
+> 
+> The answer depends on the way I'm using the device.
+> 
+> Oh, and what I think I will do (when selecting a device) doesn't
+> always match what I actually do.  That's why I've experimented with so
+> many things.
+> 
+> All trackpointers are the same to me (usable but not great).
+> Touchscreens are of no use to me with a normal Linux desktop.
+> Trackpads very wildly in usability.
+
+I have used a few and they are not at all the same.  The Dell I
+have a work is terribly inaccurate, and the touchpad constantly is
+triggered while typing (so I turn it off entirely).  My thinkpad at
+home the trackpoint is very nice to work with, and the touchpad never
+has accidental triggering (probably due to both better drivers, and I
+suspect being places slightly further away from the keyboard.  I find
+the Dell has a terrible keyboard, trackpoint and touchpad.
+
+> I like mice best, but the logistics are annoying with laptops.  Still,
+> if my session is longer than, say, a minute, it is probably worth
+> deploying.
+
+That makes sense.  If I am playing games, I do tend to connect an
+external mouse.
+
+> For web surfing on an Adroid or iOS tablet, I quite like touchscreens.
+> Except while entering text.  But I've never found that touchscreens on
+> notebooks useful:
+
+Typing on touch screens just seems awful.
+
+> - partly due to the crappy support in Linux desktops
+> 
+> - partly because what I'm doing often involves typing
+> 
+> - partly because horizontally reaching for a touchscreen is very
+>   tiring ("gorilla arm")
+
+How about the constant finger prints on the screen?
+
+> - perhaps because Linux tasks require precision that is beyond
+>   capacitive digitizers.
+> 
+> I rarely remember that I'm even on a touchscreen when I'm using one
+> with Linux.  (My main notebook, a Yoga 2 Pro, has a touchscreen.  So
+> does our kitchen computer.)
+> 
+> Trackpointers are simple in concept but I've not really gotten used to
+> them because I don't have one on my desktop where I do most of my
+> typing.  (Or on the typewriter or keypunch where my muscles learned to
+> type.)  My main notebook for five years (x61t) has one and no
+> trackpad, but I carried a mouse.  The trackpad should be good for
+> touch-typists (it's in the home row).  But on my high-resolutions
+> screens, it takes a long time to move a significant portion of the
+> screen.  I've always found it a bit, well, creepy that the cursor
+> often drifts when I let go.
+
+I used to think they were useless, but at least on my W530 it works very
+well.  It takes less than 1/4 second to go across a 1920x1080 display.
+
+> Touchpads on notebooks have a variety of designs with a variety of
+> good and bad points.
+> 
+> - I hate it when touchpads decide that I'm talking to them when I
+>   don't think I am.  The cursor will zing off somewhere while I'm
+>   typing or thinking about typing.  It may be my fault, but it happens
+>   much more frequently on some systems than others.  There's a simple
+>   fix some systems have:  ignore touchpad events while the user is
+>   typing.  I suspect that isn't enough.
+
+Yeah some like to do that.  See above. :)
+
+No it is probably NOT your fault.  Some of them are crap.
+
+> - I am annoyed at the way touchpad use seems to require two hands
+>   sometimes: moving a finger on the surface while clicking or holding
+>   a button (or two!), perhaps even while holding a modifier key.
+> 
+> - having the left button being the whole pad seems like a step forward
+>   but on my samples, it is designed as a lever with the fulcrum at the
+>   top so (a) the pressure varies, and (b) is theoretically infinite at
+>   the top.
+
+Sounds awful.
+
+> - I like the new gestures that have come in.  But haven't seen a
+>   manual.  So I'm not really confident that I know them.  The most
+>   useful seems to be two-finger sliding for scrolling (but there seem
+>   to be two opposite conventions about the direction).
+
+I love that feature.
+
+> - the middle mouse button is useful in X and Firefox.  It is rare in
+>   trackpads (except thinkpads).  Simulating by using left+right click
+>   isn't as reliable.
+
+I certainly like having all 3 buttons.
+
+> - new trackpads seem to have soft buttons.  My fingers cannot "feel"
+>   where they are.  So I have to look down from the screen.  On the
+>   other hand, if I put some effort in I could configure a middle
+>   button, I think.
+
+At least thinkpads will be going back to real buttons next generation
+again.
+
+> I don't seem to use a stylus.  My x61t tablet/notebook has a stylus
+> but cannot sense my fingers.  I thought that would be worth trying,
+> but it hasn't been useful.  If I were drawing things, it would be
+> wonderful: precise (unlike capacitive sensing of fingers) and pressure
+> sensitive.  I am envious of Microsoft OneNote users, but in reality
+> handwriting is probably too slow.
+
+If you are drawing diagrams and such at the same time, then it does seem
+useful, but they seem to have mostly died out again.
+
+> I accepted a stylus in the Nokia tablets and the Sharp Zaurus.  But
+> the iPad was a real revelation: a fluid interface and not cramped (10"
+> vs 4").  But I perform some tasks better on the earlier tablets (ssh).
+> 
+> (I actually do some things in busybox on my Nexus 4, but only because
+> I haven't bothered figured out how to create a GUI for these tasks.
+> These same tasks are probably better on my Zaurus but it is usually on
+> the shelf, uncharged.)
+
+I find putty on my nokia with a real keyboard ssh'd to a real system is
+a handy way to do things.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Fri Nov 14 17:14:02 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 14 Nov 2014 12:14:02 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <20141114120229.GA20154@waltdnes.org>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <alpine.LRH.2.02.1411131300070.6002@redclaw.mimosa.com>
+ <20141114015914.GL24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1411140101240.6002@redclaw.mimosa.com>
+ <20141114120229.GA20154@waltdnes.org>
+Message-ID: <20141114171402.GN24111@csclub.uwaterloo.ca>
+
+On Fri, Nov 14, 2014 at 07:02:29AM -0500, Walter Dnes wrote:
+>   To disable the touchpad on a Thinkpad, try {Fn}{ScrlLk} i.e. hold down
+> the {Fn} key and tap the {ScrlLk} key once.  This is a "toggle" setting.
+> Doing it again re-enables the mousepad.  There are more hardware key
+> settings that are OS-independant.  My Google-searching has found...
+> 
+> {Fn}{PgUp} Turn the ThinkLight? on or off.
+That's Fn + Space on mine.
+
+> {Fn}{Home} The computer display becomes brighter.
+That would be Fn + F9 on mine.
+
+> {Fn}{End} The computer display becomes dimmer.
+That would be Fn + F8 on mine.
+
+> {Fn}{Spacebar} Enable the FullScreen Magnifier function.
+That toggles the keyboard backlight and thinkpad light on my W530 (and my wife's T430).
+
+> {Fn}{PrtSc} Has the same function as the SysRq key.
+I thought PrtSc was the SysRq key.  At least linux agrees with me.
+Fn appears to have nothing to do with it.
+
+> {Fn}{ScrLk} Enable or disable the numeric keypad.
+I don't have a scroll lock key anywhere.
+
+> {Fn}{Pause} Has the same function as the Break key.
+I don't have a pause key
+
+>   They may not work on all Thinkpad models.
+
+That's for sure.
+
+I also have Fn + F7 is toggle external display on/off, Fn + F6 is
+comminucation settings (sebcam and microphone and such all in a pop up
+window if running windows)m Fn + F10, F11 and F12 are multimedia keys
+(prev track, play/pause, next track respectively).  Fn + F5 toggles
+radios on/off, Fn + F4 is sleep/suspend, and Fn + F3 is lock.
+
+Checking the manual I see I have these too:
+Fn + B = Break
+Fn + P = Pause
+Fn + S = SysRq
+Fn + K = Scroll Lock
+
+-- 
+Len Sorensen
+
+From hugh at mimosa.com  Fri Nov 14 19:15:49 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Fri, 14 Nov 2014 14:15:49 -0500 (EST)
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <EE4F6944-2BD6-479F-B69D-21CF48BE534F@ss.org>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <EE4F6944-2BD6-479F-B69D-21CF48BE534F@ss.org>
+Message-ID: <alpine.LRH.2.02.1411141317490.6002@redclaw.mimosa.com>
+
+| From: Scott Sullivan <scott at ss.org>
+
+| Looks like most of the current generation is a wash with that horrid 
+| clickpad. Shame too since the x240 was looking rather like what I 
+| wanted.
+
+Do actually try the clickpad.  I've got one on my Lenovo Yoga 2 Pro
+and it isn't clearly terrible.  For your use, it would depend on
+whether you could turn off the touchpad functions while keeping the
+button functionality (I don't know whether you can).
+
+There's a fair bit of Synaptic touchpad hacking going on.  I have been
+meaning to read up on it since there's a lot of room for improvement.
+This might be a place to start:
+<https://wiki.archlinux.org/index.php/Touchpad_Synaptics>
+
+| The x140e, still has the mouse buttons I want. But I'm tired of 1366x768.
+
+Agreed.  I really like my 3200x1800 resolution in 1 13.3" screen.
+That's overkill for cramming text on the screen, but the text is nicer
+for that.  1920x1080 is probably enough from the text-cramming
+standpoint.
+
+For working, I like a physically bigger notebook.  For carrying, I
+like a smaller one.  1366x768 seems nice on a 10", for example.  Only
+you can make that trade-off.
+
+| The helix gen 2, although not on the Canadian market yet, does show a 
+| return to the trackpad and buttons. Great feature set, but the Core M 
+| processor leaves more to be desired in raw performance.
+
+It depends on what you do.  I always feel better knowing I have a lot
+of power, but I don't think that I've actually needed much.  Old Atoms
+were noticeably weak, but usable.  The Brazos chips like you
+currently have are actually OK, not great -- they fixed the horrible
+video performance of the Intel chips.  But all current Intel chips
+based on Haswell seem good enough, even the Celerons.
+
+Haswell beats earlier processors due to power management and
+efficiency.  It has taken a great discount to coerce me to buy older
+chips (my T530 has an earlier chip).
+
+Core M is *probably* better still.  I don't yet know enough.  I really
+like battery life and I think that it wins there without giving up
+performance.
+
+Datapoint: I can leave my Haswell-based Yoga 2 Pro sleeping for a week
+without totally draining the battery (probably longer).  My
+Ivy-bridge-based T530 lasts about a day.  That really changes how I
+think about and use these machines.
+
+One thought is a cheap throw-away notebook as a placeholder until
+something good comes along.
+
+The Atom Bay Trail based notebooks might be OK.  But that collection
+of notebooks is rather odd.  Some are minimal and will only run
+Windows well (firmware only supports 32-bit UEFI and no main stream
+Linux distro supports UEFI32).  I find this deal intriguing:
+<http://forums.redflagdeals.com/microsoft-store-asus-x205-11-bay-trail-12-hr-battery-laptop-179-a-1594669/>
+The battery life is great.  I've not tried Fedlet (a Fedora port to
+the Asus Transformer T100 which is also 32-bit UEFI) but it might
+work.
+
+In the US, the Acer Aspire E11 is like the Asus x205 but better: 1G
+ethernet, USB 3, $200.  Not available in Canada.
+
+This generation of dirt-cheap Windows notebooks use eMMC SSDs: small,
+slow, and soldered in.  The M.2 SSDs used in the Acer C720 Chromebook
+we have is much better: faster and replaceable (but smaller still).
+And the C720 has a Haswell-based Celeron.  I discovered yesterday that
+it can even drive my UHD TV set (3840 x 2160 @ 30Hz).
+
+| It's almost enough to consider a Surface Pro 3 paired with a compact 
+| thinkpad usb or Bluetooth track-point keyboard.
+
+There are great tablets.  For example, my aging Nexus 10 has an awesome
+screen (10" 2560x1200).  I just haven't found something that adds a
+keyboard as well as the conventional laptop clamshell.  The Surface's
+Kickstand seems quite inferior.
+
+The Surface Pro 3 looks good for what it does (Windows tablet +
+secondary keyboard).  It's not what I want and its tabletty strengths
+are lost when running Linux.
+
+The Yoga 2 Pro seems pretty good to me.  Better than the Surface 3.
+Sometimes there are really good deals on the Yoga 2 Pro since it is
+being replaced by the Yoga 3 Pro (Core M).
+
+There are a lot of other choices that seem better than the Surface 3
+Pro.
+
+| It's a tough time. Thanks again for you feed back.
+
+Good luck and have fun!
+
+From daniel at circuidipity.com  Fri Nov 14 19:54:16 2014
+From: daniel at circuidipity.com (Daniel Wayne Armstrong)
+Date: Fri, 14 Nov 2014 14:54:16 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <alpine.LRH.2.02.1411141317490.6002@redclaw.mimosa.com>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <EE4F6944-2BD6-479F-B69D-21CF48BE534F@ss.org>
+ <alpine.LRH.2.02.1411141317490.6002@redclaw.mimosa.com>
+Message-ID: <CACa31mAFLAo22-g+2=nUnOrTHzAA1u+v3juK=+ZURTXwoFFf5Q@mail.gmail.com>
+
+On Fri, Nov 14, 2014 at 2:15 PM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+> One thought is a cheap throw-away notebook as a placeholder until
+> something good comes along.
+>
+> [...]
+
+> This generation of dirt-cheap Windows notebooks use eMMC SSDs: small,
+> slow, and soldered in.  The M.2 SSDs used in the Acer C720 Chromebook
+> we have is much better: faster and replaceable (but smaller still).
+> And the C720 has a Haswell-based Celeron.  I discovered yesterday that
+> it can even drive my UHD TV set (3840 x 2160 @ 30Hz).
+>
+
+Second the C720 Chromebook as a cheap and cheerful Linux laptop. I replaced
+Chrome OS with Lubuntu 14.04. My install notes (with Synaptic config):
+
+http://www.circuidipity.com/c720-lubuntubook.html
+
+Bit hard to find on sale (at a reasonable price) in Canada... though Newegg
+and Tigerdirect had some refurbished units on sale a few weeks back for
+$170CDN.
+
+-- 
+(o<  .: Per curiositas ad astra .: http://www.circuidipity.com
+(/)_
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141114/13866281/attachment.html>
+
+From gilesorr at gmail.com  Fri Nov 14 21:09:38 2014
+From: gilesorr at gmail.com (Giles Orr)
+Date: Fri, 14 Nov 2014 16:09:38 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <CACa31mAFLAo22-g+2=nUnOrTHzAA1u+v3juK=+ZURTXwoFFf5Q@mail.gmail.com>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <EE4F6944-2BD6-479F-B69D-21CF48BE534F@ss.org>
+ <alpine.LRH.2.02.1411141317490.6002@redclaw.mimosa.com>
+ <CACa31mAFLAo22-g+2=nUnOrTHzAA1u+v3juK=+ZURTXwoFFf5Q@mail.gmail.com>
+Message-ID: <CAEnxSC5e1BaJ__xotqnfPsYkonzc_o7EphKpAUEcjWo=OLXd9Q@mail.gmail.com>
+
+On 14 November 2014 14:54, Daniel Wayne Armstrong
+<daniel at circuidipity.com> wrote:
+> On Fri, Nov 14, 2014 at 2:15 PM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+>>
+>> One thought is a cheap throw-away notebook as a placeholder until
+>> something good comes along.
+>>
+> [...]
+>>
+>> This generation of dirt-cheap Windows notebooks use eMMC SSDs: small,
+>> slow, and soldered in.  The M.2 SSDs used in the Acer C720 Chromebook
+>> we have is much better: faster and replaceable (but smaller still).
+>> And the C720 has a Haswell-based Celeron.  I discovered yesterday that
+>> it can even drive my UHD TV set (3840 x 2160 @ 30Hz).
+>
+>
+> Second the C720 Chromebook as a cheap and cheerful Linux laptop. I replaced
+> Chrome OS with Lubuntu 14.04. My install notes (with Synaptic config):
+>
+> http://www.circuidipity.com/c720-lubuntubook.html
+>
+> Bit hard to find on sale (at a reasonable price) in Canada... though Newegg
+> and Tigerdirect had some refurbished units on sale a few weeks back for
+> $170CDN.
+
+I was going to second the C720 comment, but I'm reduced to third
+because Daniel beat me to it.  I have the same Chromebook he does (I
+think mine has a bigger SSD than his, but they're otherwise
+identical), and its been lovely.
+
+My experience with the Atoms has been that my 2010 Atom-based netbook
+makes my 2005 Pentium-M laptop look like an absolute speed demon.  I
+really, really don't like the Atom.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From hugh at mimosa.com  Fri Nov 14 22:41:25 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Fri, 14 Nov 2014 17:41:25 -0500 (EST)
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <CAEnxSC5e1BaJ__xotqnfPsYkonzc_o7EphKpAUEcjWo=OLXd9Q@mail.gmail.com>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <EE4F6944-2BD6-479F-B69D-21CF48BE534F@ss.org>
+ <alpine.LRH.2.02.1411141317490.6002@redclaw.mimosa.com>
+ <CACa31mAFLAo22-g+2=nUnOrTHzAA1u+v3juK=+ZURTXwoFFf5Q@mail.gmail.com>
+ <CAEnxSC5e1BaJ__xotqnfPsYkonzc_o7EphKpAUEcjWo=OLXd9Q@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1411141621250.6002@redclaw.mimosa.com>
+
+| From: Giles Orr <gilesorr at gmail.com>
+
+| On 14 November 2014 14:54, Daniel Wayne Armstrong
+| <daniel at circuidipity.com> wrote:
+
+| > Second the C720 Chromebook as a cheap and cheerful Linux laptop. I replaced
+| > Chrome OS with Lubuntu 14.04. My install notes (with Synaptic config):
+| >
+| > http://www.circuidipity.com/c720-lubuntubook.html
+
+Thanks!  I'm about to embark on this.
+
+Can I install with developer mode and then, when I'm happy, THEN do the 
+write protect screw thing?  Or would that require installing a second 
+time?
+
+| > Bit hard to find on sale (at a reasonable price) in Canada... though 
+| > Newegg and Tigerdirect had some refurbished units on sale a few weeks 
+| > back for $170CDN.
+
+Right.  I bought ours from this sale at TD, with a $20 off coupon to
+boot.  Driven by the bargain!
+
+Otherwise, the C720 is getting a little long in the tooth.  There is
+probably a better choice at regular prices.
+
+| I was going to second the C720 comment, but I'm reduced to third
+| because Daniel beat me to it.  I have the same Chromebook he does (I
+| think mine has a bigger SSD than his, but they're otherwise
+| identical), and its been lovely.
+
+The bigger SSD sounds good.  I imagine 16G is a bit tight.  A 64G m.2
+SSD seems to be $75 so I'm intending to try to do without.
+
+| My experience with the Atoms has been that my 2010 Atom-based netbook
+| makes my 2005 Pentium-M laptop look like an absolute speed demon.  I
+| really, really don't like the Atom.
+
+I don't know if I believe these benchmarks, but here goes.
+Notice how the original Atoms were way slower than current ones.
+Also, the video controllers are now OK and supported by Linux.
+
+Passmark CPU Mark from cpubenchmark.net:
+
+Atom N270 @ 1.6GHz 306	[in early netbooks]
+AMD C50 @ 1.0GHz 461	[in my netbook]
+Athlon 64 Processor 3200+ @ 2.2GHz 496	[in my old old desktop]
+AMD E350 @ 1.6GHz 682	[in Scott's notebook]
+Atom D525 @ 1.8GHz 697	[in some later netbooks]
+C2d L7300 @ 1.4GHz 822	[in my ThinkPad x61t]
+Celeron N2815 @ 1.86GHz 891	[in Asus X200MA-US01T-BL netbook]
+Atom Z3745D @ 1.33GHz 984	[in Asus x205]
+Celeron 2995u @ 1.4Ghz 1519<-different source	[in chromebook c720]
+C2q Q6600 @ 2.4GHz 2989	[in my old desktop]
+i3-3110m @ 2.4GHx 3062	[in my T530]
+i5-4200u @ 1.6GHz 3294	[in Yoga 2 Pro]
+i7-4770 @ 3.4GHz 9909	[in my current desktop]
+
+From daniel at circuidipity.com  Fri Nov 14 23:56:22 2014
+From: daniel at circuidipity.com (Daniel Wayne Armstrong)
+Date: Fri, 14 Nov 2014 18:56:22 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <alpine.LRH.2.02.1411141621250.6002@redclaw.mimosa.com>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <EE4F6944-2BD6-479F-B69D-21CF48BE534F@ss.org>
+ <alpine.LRH.2.02.1411141317490.6002@redclaw.mimosa.com>
+ <CACa31mAFLAo22-g+2=nUnOrTHzAA1u+v3juK=+ZURTXwoFFf5Q@mail.gmail.com>
+ <CAEnxSC5e1BaJ__xotqnfPsYkonzc_o7EphKpAUEcjWo=OLXd9Q@mail.gmail.com>
+ <alpine.LRH.2.02.1411141621250.6002@redclaw.mimosa.com>
+Message-ID: <CACa31mC0GE=J-6TW_+vJZavtHLEnyrCsHzqA5kH_pQGJ6TUxFw@mail.gmail.com>
+
+On Fri, Nov 14, 2014 at 5:41 PM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+> | From: Giles Orr <gilesorr at gmail.com>
+>
+> | On 14 November 2014 14:54, Daniel Wayne Armstrong
+> | <daniel at circuidipity.com> wrote:
+>
+> | > Second the C720 Chromebook as a cheap and cheerful Linux laptop. I
+> replaced
+> | > Chrome OS with Lubuntu 14.04. My install notes (with Synaptic config):
+> | >
+> | > http://www.circuidipity.com/c720-lubuntubook.html
+>
+> Thanks!  I'm about to embark on this.
+>
+> Can I install with developer mode and then, when I'm happy, THEN do the
+> write protect screw thing?  Or would that require installing a second
+> time?
+>
+
+Removing the write protect screw erases the SSD... so a second install
+would be required. That is the way I did it myself: experimented with
+developer mode the first time, then when I was satisfied I removed the
+screw and installed a second time.
+
+-- 
+(o<  .: Per curiositas ad astra .: http://www.circuidipity.com
+(/)_
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141114/eaddc34e/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Sat Nov 15 01:23:07 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 14 Nov 2014 20:23:07 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <20141113211406.GE12804@vex.net>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <20141113211406.GE12804@vex.net>
+Message-ID: <20141115012307.GO24111@csclub.uwaterloo.ca>
+
+On Thu, Nov 13, 2014 at 04:14:06PM -0500, Steve Harvey wrote:
+>   Back in 2007, I bought a new T60 for ~$1800.  Four years later, I
+> decided to buy another T60 ($400 used) as a spare instead of any of 
+> their latest offerings, all of which sported the trendy wide-screen 
+> aspect ratio which I dislike.  It appears to me that laptop manufacturers
+> seem to think that everyone prioritizes the watching of videos.  Since
+> then, I've needed to replace the screen on one of them and a motherboard
+> on the other.  There are a few repair shops around town that focus
+> on this market.  How long parts will remain available is yet to be seen.
+> 
+>   Both of my T60s are at 1400x1050.  There are 1600x1200 screens out
+> there, but they are rare.  
+> 
+>   Considering today's ratio of high-end laptop prices to the average IT
+> salary, I wonder if there might be enough latent world-wide demand for 
+> an upgraded Lenovo "Classic" to make it feasible.  Maybe it could happen
+> if enough people were to band together to have some "reverse marketing"
+> clout.
+> 
+>   I'd love it if I could have 16GB of RAM, an onboard SSD as well as a
+> HDD, keep the DVD drive, get rid of the PCMCIA slot and modem and give
+> me an HDMI port along with the VGA.  Give me a 2048x1536 (or even 
+> 2800x2100) matte screen in a rugged 15" form factor with the traditional
+> hardware UI and indicator lights.  Add bluetooth and IR ports and hide a
+> 9 pin parallel port on the back for people who want to do really low 
+> latency stuff.  Keep it as thick and heavy as required to provide this
+> functionality.  I don't care about touch screen or trendy ultra-
+> slimness or having to be cloud-dependent.  Make sure that it runs well
+> (addressing ACPI, UEFI/BIOS, and video issues especially) with Linux as 
+> well as Microsoft Windows. 
+> 
+>   One feature that I would like to be possible with this laptop is to
+> be able to use it with active shutter 3D glasses for stereoscopic
+> viewing of images such as landforms, simulated molecules, ...  The
+> hardware needs only to be capable of producing a correctly timed
+> strobe signal over a suitable interface.
+
+Well my laptop covers _most_ of those things.
+
+I have 1920x1080 screen (yes it is wide screen, but at least the vertical
+resolution is good) and it is matte.  You are not going to ever get
+4x3 aspect ever again as far as I can tell.
+
+I have 24GB ram (max is 32GB).  I have a DVD drive.  I have a 16GB SSD
+as well as the harddisk.  Also fingerprint scanner and display color
+calibration.
+
+Bluetooth of course, but no IR (who ever would want that crap anymore?
+So unreliable, and besides I imagine a USB IR gismo exists for cheap).
+
+I have VGA and displayport outputs (for which cheap adapters to DVI and
+HDMI exist).  I have proper LEDs for disk and network and such.
+
+You don't get parallel ports in 9 pin.  They are 25 pin, and besides USB
+to parallel adapters are cheap if you really need that.
+
+The built in screen can't do 3D, but an external displayport connected
+screen can use nvidia's 3D stuff (or a dual link DVI if you use an active
+adapter which is not that cheap).
+
+Linux runs quite well, although there are a few features that I haven't
+bothered to figure out how to get working with linux yet.
+
+ACPI and UEFI seem to be done right.  Linux is able to use the optimus
+intel to nvidia and back switching of graphics.
+
+PCMCIA and modem?  No, but you do get expresscard and SD.
+
+So in this case, that's a thinkpad W530.  Unfortunately the W540 is not
+the same at all.  Hopefully the W550 will restore sanity, and perhaps
+even offer screens better than Full HD.
+
+-- 
+Len Sorensen
+
