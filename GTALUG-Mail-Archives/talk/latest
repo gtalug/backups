@@ -4001,3 +4001,246 @@ even offer screens better than Full HD.
 -- 
 Len Sorensen
 
+From email+libre at blaise.ca  Fri Nov 14 20:13:27 2014
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Fri, 14 Nov 2014 15:13:27 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <20141113211406.GE12804@vex.net>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <20141113211406.GE12804@vex.net>
+Message-ID: <54666267.5090208@blaise.ca>
+
+On 13/11/14 04:14 PM, Steve Harvey wrote:
+> On Thu, Nov 13, 2014 at 08:43:58AM -0500, Scott Sullivan wrote:
+>> After 4 years my Lenovo x120e has final succumbed to the rough and tumble
+>> I put it through. The screen cracked and is unusable. This leaves me 
+>> looking for a replacement.
+>>
+>> I'm going to constrain this question to Lenovo options. I don't think I 
+>> can overcome my track-point addiction. 
+>>
+>> Anyone purchased Thinkpad hardware in the last while? I know with some of
+>> the recent models Lenovo has started messing around with the keyboard 
+>> design.  What are peoples opinions?
+>>
+> 
+>   Back in 2007, I bought a new T60 for ~$1800.  Four years later, I
+> decided to buy another T60 ($400 used) as a spare instead of any of 
+> their latest offerings, all of which sported the trendy wide-screen 
+> aspect ratio which I dislike.  [...]
+
+Not sure how interested you are in older hardware, but I too got a couple
+ThinkPads in 2007 -- a T61, and my mom got an X60 which I took over a few years
+back (and am typing on now).
+
+These are my primary laptops still, though I replaced the X60 with a SSD and can
+barely tolerate my T61 HDD anymore (I'm trying to figure out whether I can
+figure a few broken keys on the T61, and if so, I'll get a SSD for it too).
+
+
+I mention the X60 though because (a) it's an awesome little machine, and (b)
+there are refurbished X60 machines for sale that come pre-flashed with LibreBoot
+and pre-installed with Trisquel from this store that ships to Canada:
+http://shop.gluglug.org.uk/product/ibm-lenovo-thinkpad-x60-coreboot/
+
+Though, it looks like they're out of stock right now... not sure if they're
+doing it anymore?
+
+
+I started to look into the ThinkPad T430 a year and a half ago, but decided to
+upgrade my old ThinkPads instead.
+
+
+From hugh at mimosa.com  Sat Nov 15 18:13:52 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 15 Nov 2014 13:13:52 -0500 (EST)
+Subject: [GTALUG] interesting article about how ChromeOS started
+Message-ID: <alpine.LRH.2.02.1411151312320.6002@redclaw.mimosa.com>
+
+<http://blog.jeff-nelson.com/2012/11/on-inventing-chromebook.html>
+(I'm not sure "invented" is the word I'd use.)
+
+From dmason at ryerson.ca  Sat Nov 15 20:07:04 2014
+From: dmason at ryerson.ca (David Mason)
+Date: Sat, 15 Nov 2014 15:07:04 -0500
+Subject: [GTALUG] interesting article about how ChromeOS started
+In-Reply-To: <alpine.LRH.2.02.1411151312320.6002@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1411151312320.6002@redclaw.mimosa.com>
+Message-ID: <CALFgxqD6gQ0zP0ak4YCv+wm9efufnyUgBpqeBmmLKuK_QZmzPg@mail.gmail.com>
+
+WTF: " I wrote a patent for it, #8,239,662, titled "Network-based
+Operating System Across Devices" "
+
+The comments on this "awesome" article and the "genius behind
+ChromeOS" remind me what a technical wasteland the internet is.
+
+../Dave
+
+On 15 November 2014 13:13, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+> <http://blog.jeff-nelson.com/2012/11/on-inventing-chromebook.html>
+> (I'm not sure "invented" is the word I'd use.)
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From northdot9 at gmail.com  Sun Nov 16 01:02:03 2014
+From: northdot9 at gmail.com (David Thornton)
+Date: Sat, 15 Nov 2014 20:02:03 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <20141114010848.GK24111@csclub.uwaterloo.ca>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <CAHcykVrpL617iMqTR63eDcca_1JV7U1WSR4h4A_Eqn1iNyAkyA@mail.gmail.com>
+ <20141114010848.GK24111@csclub.uwaterloo.ca>
+Message-ID: <CAHcykVoddnFNTTsMK+YNJTxQL_1b2KugQecF3udQ_6tRLbBz6A@mail.gmail.com>
+
+Ill poke around in my bios ; thanks.
+On Nov 13, 2014 8:09 PM, "Lennart Sorensen" <lsorense at csclub.uwaterloo.ca>
+wrote:
+
+> On Thu, Nov 13, 2014 at 12:05:50PM -0500, David Thornton wrote:
+> > I had a T510 which was great ( heavy but great) , I liked the keyboard ,
+> > and the graphics card was good enough to play games. Optical drive , good
+> > wireless, limited by power ( only got like 2 hours at best) . Linux
+> support
+> > was also good. Performance was good. I had a dual scren dock , and the
+> > device could drive both via DVI.
+> >
+> > Then I lost the 5 key and IT issued me a X240.. Lighter, newer, small
+> > screen, nice and snappy, no optical drive, much better battery life. I
+> feel
+> > cramped on the screen. There are screen options. 1366 X 768 , 1366 X 768
+> > touchscreen, and a larger one 1920 x 1080 all 12.5 inches. I have the
+> > 1366X768 non touchscreen and I feel cramped.
+> >
+> > I have a dock for this x240.. but the laptop can't drive both screens
+> with
+> > DVI.. One has to be VGA. I dunno if that's a limitation of the particular
+> > dock that I got, or if that's a limitation of the video card, but after
+> > going Digital I can't stand VGA. Too fuzzy.
+>
+> If you have a Pro dock (Which has DVI, DP and VGA), you can only use DVI
+> _or_ DP on the dock.  The Ultra dock has a second pair of ports which
+> allow DP _or_ HDMI (but not at the same time), so with that dock you can
+> do any combo of two DP, DP + HDMI, or DP + DVI.  If you want two DVI you
+> need a DP to DVI adapter for the second DP port.  With the Pro dock, you
+> can still do that using a DP to DVI adapter connected to the DP on the
+> x240 itself, and the second display connected to DP or DVI on the dock.
+> Essentially the pro dock only has one digital connection from the laptop
+> to the dock, so only one of the digital ports can be used at a time.
+> The VGA on the dock is a copy of the one on the laptop and the one on
+> the laptop does not work when docked.  The DP port is seperate though.
+>
+> > So the keyboard. I have had some trouble getting my head/hands around
+> this
+> > new keyboard. For one f1 f2 f3 function keys don't "work" out of the box
+> .
+> > They all do their "special purpose" like volume , display changing , mute
+> > etc. I had to tell it : by default when I press the F1 key .. it send an
+> > F1!
+> > Also I can't get "end" to work without also pressing "Fn" . ... Which I
+> now
+> > call the "effin" key if you know what I mean.
+>
+> Don't then have an Fn lock option to make it always do that instead?
+> Often there are bios options on thinkpads to pick the settings you like
+> (such as swapping control and fn if you prefer the other order).
+>
+> --
+> Len Sorensen
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141115/a556f113/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Sun Nov 16 02:09:53 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sat, 15 Nov 2014 21:09:53 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <CAHcykVoddnFNTTsMK+YNJTxQL_1b2KugQecF3udQ_6tRLbBz6A@mail.gmail.com>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <CAHcykVrpL617iMqTR63eDcca_1JV7U1WSR4h4A_Eqn1iNyAkyA@mail.gmail.com>
+ <20141114010848.GK24111@csclub.uwaterloo.ca>
+ <CAHcykVoddnFNTTsMK+YNJTxQL_1b2KugQecF3udQ_6tRLbBz6A@mail.gmail.com>
+Message-ID: <20141116020953.GP24111@csclub.uwaterloo.ca>
+
+On Sat, Nov 15, 2014 at 08:02:03PM -0500, David Thornton wrote:
+> Ill poke around in my bios ; thanks.
+
+Apparently there is no option in the bios for it, but on the other hand
+lenovo claims that with the latest bios it remembers the Fn lock (Fn+ESC)
+across reboots and suspend, so you should almost never need to toggle
+it if you simply set it once.
+
+-- 
+Len Sorensen
+
+From northdot9 at gmail.com  Sun Nov 16 04:03:17 2014
+From: northdot9 at gmail.com (David Thornton)
+Date: Sat, 15 Nov 2014 23:03:17 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <20141116020953.GP24111@csclub.uwaterloo.ca>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <CAHcykVrpL617iMqTR63eDcca_1JV7U1WSR4h4A_Eqn1iNyAkyA@mail.gmail.com>
+ <20141114010848.GK24111@csclub.uwaterloo.ca>
+ <CAHcykVoddnFNTTsMK+YNJTxQL_1b2KugQecF3udQ_6tRLbBz6A@mail.gmail.com>
+ <20141116020953.GP24111@csclub.uwaterloo.ca>
+Message-ID: <CAHcykVqcfpf10PC+=OVhsQBbk9U8PL8xFhGL=zGit-+TYwP7vQ@mail.gmail.com>
+
+So I have it toggled, but I STILL dont' get the "end" key to be the end
+key, I HAVE to effin press it (if you know what I mean).
+
+David
+
+On Sat, Nov 15, 2014 at 9:09 PM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Sat, Nov 15, 2014 at 08:02:03PM -0500, David Thornton wrote:
+> > Ill poke around in my bios ; thanks.
+>
+> Apparently there is no option in the bios for it, but on the other hand
+> lenovo claims that with the latest bios it remembers the Fn lock (Fn+ESC)
+> across reboots and suspend, so you should almost never need to toggle
+> it if you simply set it once.
+>
+> --
+> Len Sorensen
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141115/d63ff96e/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Sun Nov 16 05:01:01 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sun, 16 Nov 2014 00:01:01 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <CAHcykVqcfpf10PC+=OVhsQBbk9U8PL8xFhGL=zGit-+TYwP7vQ@mail.gmail.com>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <CAHcykVrpL617iMqTR63eDcca_1JV7U1WSR4h4A_Eqn1iNyAkyA@mail.gmail.com>
+ <20141114010848.GK24111@csclub.uwaterloo.ca>
+ <CAHcykVoddnFNTTsMK+YNJTxQL_1b2KugQecF3udQ_6tRLbBz6A@mail.gmail.com>
+ <20141116020953.GP24111@csclub.uwaterloo.ca>
+ <CAHcykVqcfpf10PC+=OVhsQBbk9U8PL8xFhGL=zGit-+TYwP7vQ@mail.gmail.com>
+Message-ID: <20141116050101.GQ24111@csclub.uwaterloo.ca>
+
+On Sat, Nov 15, 2014 at 11:03:17PM -0500, David Thornton wrote:
+> So I have it toggled, but I STILL dont' get the "end" key to be the end
+> key, I HAVE to effin press it (if you know what I mean).
+
+Yes I read complaints about that.  Apparently the Fn lock does NOT
+cover that.  Very stupid keyboard design.
+
+-- 
+Len Sorensen
+
