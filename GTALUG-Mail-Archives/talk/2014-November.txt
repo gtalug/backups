@@ -4244,3 +4244,887 @@ cover that.  Very stupid keyboard design.
 -- 
 Len Sorensen
 
+From mdhillca at gmail.com  Sun Nov 16 13:53:15 2014
+From: mdhillca at gmail.com (Michael Hill)
+Date: Sun, 16 Nov 2014 08:53:15 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <20141116050101.GQ24111@csclub.uwaterloo.ca>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <CAHcykVrpL617iMqTR63eDcca_1JV7U1WSR4h4A_Eqn1iNyAkyA@mail.gmail.com>
+ <20141114010848.GK24111@csclub.uwaterloo.ca>
+ <CAHcykVoddnFNTTsMK+YNJTxQL_1b2KugQecF3udQ_6tRLbBz6A@mail.gmail.com>
+ <20141116020953.GP24111@csclub.uwaterloo.ca>
+ <CAHcykVqcfpf10PC+=OVhsQBbk9U8PL8xFhGL=zGit-+TYwP7vQ@mail.gmail.com>
+ <20141116050101.GQ24111@csclub.uwaterloo.ca>
+Message-ID: <CAGvW9Wc-N72BC_YTdi4uboAKweQp3Bi=0hRqmp2ddNxP4Rtq_A@mail.gmail.com>
+
+Scott, my x120e started to overheat about a year ago (3.5 years old).
+I went to Canada Computers to try the keyboard on something new in the
+$500 range (E series?) and walked out with a floor model 2010 SL410
+for $200. I replaced the 2G RAM with the maximum 8 and the only thing
+it lacks is the newer keyboard. It doesn't see much strenuous activity
+other than running virtual machines in Boxes (my 2005 G41 doesn't have
+hardware virtualization, and also overheats) and occasionally building
+the GNOME stack, and it's been terrific.
+
+Mike
+
+From scott at ss.org  Sun Nov 16 17:06:18 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Sun, 16 Nov 2014 12:06:18 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <CAGvW9Wc-N72BC_YTdi4uboAKweQp3Bi=0hRqmp2ddNxP4Rtq_A@mail.gmail.com>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <CAHcykVrpL617iMqTR63eDcca_1JV7U1WSR4h4A_Eqn1iNyAkyA@mail.gmail.com>
+ <20141114010848.GK24111@csclub.uwaterloo.ca>
+ <CAHcykVoddnFNTTsMK+YNJTxQL_1b2KugQecF3udQ_6tRLbBz6A@mail.gmail.com>
+ <20141116020953.GP24111@csclub.uwaterloo.ca>
+ <CAHcykVqcfpf10PC+=OVhsQBbk9U8PL8xFhGL=zGit-+TYwP7vQ@mail.gmail.com>
+ <20141116050101.GQ24111@csclub.uwaterloo.ca>
+ <CAGvW9Wc-N72BC_YTdi4uboAKweQp3Bi=0hRqmp2ddNxP4Rtq_A@mail.gmail.com>
+Message-ID: <5468D98A.7060402@ss.org>
+
+On 11/16/2014 08:53 AM, Michael Hill wrote:
+> Scott, my x120e started to overheat about a year ago (3.5 years old).
+
+Yes, a friend of mine (on this list) and myself both ran into that. It's 
+apparently a known issue where the thermal compound they used dried out 
+over time. We both ended up redoing the paste.
+
+Thread on the issue
+http://forum.notebookreview.com/thinkpad-edge-x1-x100e-x120e-sl-l/631365-x120e-thermal-compound-replacement-great-justice.html
+
+Hardware Service Manual:
+http://download.lenovo.com/ibmdl/pub/pc/pccbbs/mobiles_pdf/63y0640_02.pdf
+
+> I went to Canada Computers to try the keyboard on something new in the
+> $500 range (E series?) and walked out with a floor model 2010 SL410
+> for $200. I replaced the 2G RAM with the maximum 8 and the only thing
+> it lacks is the newer keyboard. It doesn't see much strenuous activity
+> other than running virtual machines in Boxes (my 2005 G41 doesn't have
+> hardware virtualization, and also overheats) and occasionally building
+> the GNOME stack, and it's been terrific.
+
+The thing that is eating me about this, the 5th gen of core processors 
+are looking to bring major improvements for laptops. I was hoping to put 
+off a new laptop 6-12 months for those to roll out. Buy then, and ride 
+that hardware for another 4 years.
+
+Ultimately I've decided to order an x140e. It's not expensive, it uses 
+the same chargers, fits in the same bag I own, I'm getting mildly 
+upgraded specs across the board with the exception of screen res. It's 
+not a step backwards. And it will have re-sale value in 6-12 months if 
+what I do want comes to market.
+
+-- 
+Scott Sullivan
+
+From scott at ss.org  Sun Nov 16 17:27:17 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Sun, 16 Nov 2014 12:27:17 -0500
+Subject: [GTALUG] Virtual Machines Under Android?
+Message-ID: <5468DE75.5090801@ss.org>
+
+First some background, then a question.
+
+Recently, due to my laptop becoming non-usable for mobile work, I've 
+been taking much more advantage of my Android phone. Paired with a usb 
+Lenovo compact thinkpad keyboard w/ track-point, and it's surprisingly 
+very usable, the track point giving me a mouse courser and keyboard on a 
+single USB-OTG connection.
+
+What I have found is that while you can almost use it as a desktop, it's 
+clearly not, and you won't get the same efficiency of use. But it's led 
+me thinking that this device is in many respects more powerful then my 
+sub-notebook laptop (less the RAM).
+
+So the question. What have people done to run virtual machines on their 
+Android phones?
+
+A few years ago I had tried out Limbo PC, which was a QEMU port to run 
+x86 machines on your phone. You loose a lot of performance in the 
+instruction set translation. I know the major Distro's have very robust 
+ARM package sets at this point, so I'd look at running a native Linux in 
+visualization.
+
+http://linuxonandroid.org/
+
+This comes up in searches, but on the surface looks like their using a 
+chroot method. Hmm... which I hadn't considered.
+
+-- 
+Scott Sullivan
+
+From mdhillca at gmail.com  Sun Nov 16 17:44:22 2014
+From: mdhillca at gmail.com (Michael Hill)
+Date: Sun, 16 Nov 2014 12:44:22 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <5468D98A.7060402@ss.org>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <CAHcykVrpL617iMqTR63eDcca_1JV7U1WSR4h4A_Eqn1iNyAkyA@mail.gmail.com>
+ <20141114010848.GK24111@csclub.uwaterloo.ca>
+ <CAHcykVoddnFNTTsMK+YNJTxQL_1b2KugQecF3udQ_6tRLbBz6A@mail.gmail.com>
+ <20141116020953.GP24111@csclub.uwaterloo.ca>
+ <CAHcykVqcfpf10PC+=OVhsQBbk9U8PL8xFhGL=zGit-+TYwP7vQ@mail.gmail.com>
+ <20141116050101.GQ24111@csclub.uwaterloo.ca>
+ <CAGvW9Wc-N72BC_YTdi4uboAKweQp3Bi=0hRqmp2ddNxP4Rtq_A@mail.gmail.com>
+ <5468D98A.7060402@ss.org>
+Message-ID: <CAGvW9WdPGZnS0aTE_ZoHNazDEbjYp1x8qwiWeHWwbQM54eV8pQ@mail.gmail.com>
+
+On Sun, Nov 16, 2014 at 12:06 PM, Scott Sullivan <scott at ss.org> wrote:
+
+> Yes, a friend of mine (on this list) and myself both ran into that. It's
+> apparently a known issue where the thermal compound they used dried out over
+> time. We both ended up redoing the paste.
+
+Thanks, Scott. Good to know.
+
+> The thing that is eating me about this, the 5th gen of core processors are
+> looking to bring major improvements for laptops.
+
+Last fall I was excitedly awaiting the Haswell laptop improvements,
+but as it turned out $200 was just as good as $800.
+
+> Ultimately I've decided to order an x140e.
+
+Nice, I'll take a look.
+
+Mike
+
+From hugh at mimosa.com  Sun Nov 16 19:43:34 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 16 Nov 2014 14:43:34 -0500 (EST)
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+
+| From: ted leslie <ted.leslie at gmail.com>
+| To: "tlug at ss.org" <tlug at ss.org>
+| Date: Sun, 16 Nov 2014 11:48:04 -0500
+| Subject: [TLUG]: monitor, dell
+| Reply-To: tlug at ss.org
+| 
+| People have posted good price stuff on here before:
+| 
+| http://www.walmart.ca/en/ip/dell-27-2560-x-1440-led-ips-monitor/6000189477880
+| 
+| 750$ monitor for 250$ ! pricing error? you tell me!
+| Like the lenovo portable  someone posted here a while back,
+| if it is a pricing error, I assume they will not fulfil,
+| but I have ordered a couple any way, see what happens.
+| 
+| -tl
+
+This was sent to the old list but got to me!  I thought that the old 
+infrastructure had been burned down.
+
+Ted has now subscribed to the new list and posted this but it awaits 
+moderation.
+
+This is an astounding deal for a good 27" 2560x1440 monitor.  I've ordered 
+one.  $307.61 including taxes, EHF, shipping.
+
+It might be a pricing error.
+
+Thanks Ted!
+
+From hugh at mimosa.com  Sun Nov 16 20:20:52 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 16 Nov 2014 15:20:52 -0500 (EST)
+Subject: [GTALUG] Firefox is a pig
+Message-ID: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+
+My desktop has been up for a week.
+I have a lot of firefox windows and many more tabs open.
+FF was getting sluggish.
+
+It has taken 4k minutes of CPU.  Not seconds.  So that is about 10 hours 
+of CPU per day.
+
+Even quiting is taking a long time.  About 10 minutes so far.  At 99% of 
+the CPU.  Yuck.  Maybe I'll kill it.
+
+It is taking 8G of virtual memory and 4.5 G resident (according to top).
+
+From self_same_self at yahoo.com  Sun Nov 16 20:32:17 2014
+From: self_same_self at yahoo.com (self_same_self at yahoo.com)
+Date: Sun, 16 Nov 2014 20:32:17 +0000
+Subject: [GTALUG] =?utf-8?q?Firefox_is_a_pig?=
+In-Reply-To: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+Message-ID: <463943.86549.bm@smtp222.mail.ne1.yahoo.com>
+
+What kind of plugins do you have?
+
+How many tabs and windows?
+
+
+
+
+
+
+From: D. Hugh Redelmeier
+Sent: ?Sunday?, ?November? ?16?, ?2014 ?3?:?20? ?PM
+To: GTALUG Talk
+
+
+
+
+
+My desktop has been up for a week.
+I have a lot of firefox windows and many more tabs open.
+FF was getting sluggish.
+
+It has taken 4k minutes of CPU.  Not seconds.  So that is about 10 hours 
+of CPU per day.
+
+Even quiting is taking a long time.  About 10 minutes so far.  At 99% of 
+the CPU.  Yuck.  Maybe I'll kill it.
+
+It is taking 8G of virtual memory and 4.5 G resident (according to top).
+
+
+---
+GTALUG Talk Mailing List - talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141116/69c4e21f/attachment.html>
+
+From thoriumbr at gmail.com  Sun Nov 16 21:07:14 2014
+From: thoriumbr at gmail.com (Mauro Souza)
+Date: Sun, 16 Nov 2014 19:07:14 -0200
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <463943.86549.bm@smtp222.mail.ne1.yahoo.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <463943.86549.bm@smtp222.mail.ne1.yahoo.com>
+Message-ID: <CAEZ_B6PhLi5KbjBuWc5ASNtvAv33En+TXaNu0heSNx-fQ9ShAg@mail.gmail.com>
+
+Once or twice a week I shut down Firefox, and reopen it. As it saves all
+the open tabs, it drives down both CPU and memory usage, without losing my
+tabs.
+On Nov 16, 2014 6:34 PM, <self_same_self at yahoo.com> wrote:
+
+>  What kind of plugins do you have?
+> How many tabs and windows?
+>
+> *From:* D. Hugh Redelmeier
+> *Sent:* ?Sunday?, ?November? ?16?, ?2014 ?3?:?20? ?PM
+> *To:* GTALUG Talk
+>
+> My desktop has been up for a week.
+> I have a lot of firefox windows and many more tabs open.
+> FF was getting sluggish.
+>
+> It has taken 4k minutes of CPU.  Not seconds.  So that is about 10 hours
+> of CPU per day.
+>
+> Even quiting is taking a long time.  About 10 minutes so far.  At 99% of
+> the CPU.  Yuck.  Maybe I'll kill it.
+>
+> It is taking 8G of virtual memory and 4.5 G resident (according to top).
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141116/254ca260/attachment.html>
+
+From lists at alteeve.ca  Sun Nov 16 17:48:54 2014
+From: lists at alteeve.ca (Digimer)
+Date: Sun, 16 Nov 2014 12:48:54 -0500
+Subject: [GTALUG] Thinkpad choices today?
+In-Reply-To: <5468D98A.7060402@ss.org>
+References: <301BD39D-8FC1-4AEA-A002-8AF0339BF910@ss.org>
+ <CAHcykVrpL617iMqTR63eDcca_1JV7U1WSR4h4A_Eqn1iNyAkyA@mail.gmail.com>
+ <20141114010848.GK24111@csclub.uwaterloo.ca>
+ <CAHcykVoddnFNTTsMK+YNJTxQL_1b2KugQecF3udQ_6tRLbBz6A@mail.gmail.com>
+ <20141116020953.GP24111@csclub.uwaterloo.ca>
+ <CAHcykVqcfpf10PC+=OVhsQBbk9U8PL8xFhGL=zGit-+TYwP7vQ@mail.gmail.com>
+ <20141116050101.GQ24111@csclub.uwaterloo.ca>
+ <CAGvW9Wc-N72BC_YTdi4uboAKweQp3Bi=0hRqmp2ddNxP4Rtq_A@mail.gmail.com>
+ <5468D98A.7060402@ss.org>
+Message-ID: <5468E386.9000702@alteeve.ca>
+
+On 16/11/14 12:06 PM, Scott Sullivan wrote:
+> The thing that is eating me about this, the 5th gen of core processors
+> are looking to bring major improvements for laptops. I was hoping to put
+> off a new laptop 6-12 months for those to roll out. Buy then, and ride
+> that hardware for another 4 years.
+>
+> Ultimately I've decided to order an x140e. It's not expensive, it uses
+> the same chargers, fits in the same bag I own, I'm getting mildly
+> upgraded specs across the board with the exception of screen res. It's
+> not a step backwards. And it will have re-sale value in 6-12 months if
+> what I do want comes to market.
+
+I've taken to having both a "full" laptop and a netbook (W530 and x120e, 
+currently). I find having the small laptop to be super convenient. It's 
+what I take of vacations, road trips and so on when I don't need the 
+power of the main laptop.
+
+-- 
+Digimer
+Papers and Projects: https://alteeve.ca/w/
+What if the cure for cancer is trapped in the mind of a person without 
+access to education?
+
+From ted.leslie at gmail.com  Sun Nov 16 17:54:10 2014
+From: ted.leslie at gmail.com (ted leslie)
+Date: Sun, 16 Nov 2014 12:54:10 -0500
+Subject: [GTALUG] Fwd: [PRIVATE] [TLUG]: monitor, dell (fwd)
+In-Reply-To: <alpine.LRH.2.02.1411161226540.6002@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1411161226540.6002@redclaw.mimosa.com>
+Message-ID: <CAMua2SHDU3P1ByNFj0K1sSh9yxu-X4sP+bTGUOOwJvAVBo3oAw@mail.gmail.com>
+
+People have posted good price stuff on here before:
+
+http://www.walmart.ca/en/ip/dell-27-2560-x-1440-led-ips-monitor/6000189477880
+
+750$ monitor for 250$ ! pricing error? you tell me!
+Like the lenovo portable  someone posted here a while back,
+if it is a pricing error, I assume they will not fulfil,
+but I have ordered a couple any way, see what happens.
+
+-tl
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141116/6fc28078/attachment.html>
+
+From chris at cfajohnson.com  Sun Nov 16 20:30:53 2014
+From: chris at cfajohnson.com (Chris F.A. Johnson)
+Date: Sun, 16 Nov 2014 15:30:53 -0500 (EST)
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+Message-ID: <alpine.DEB.2.10.1411161527530.3785@chris.tor>
+
+On Sun, 16 Nov 2014, D. Hugh Redelmeier wrote:
+
+> My desktop has been up for a week.
+> I have a lot of firefox windows and many more tabs open.
+> FF was getting sluggish.
+>
+> It has taken 4k minutes of CPU.  Not seconds.  So that is about 10 hours
+> of CPU per day.
+
+    Mine has been up for 3 weeks. I have one window with typically 10
+    to 20 tabs open. It has used 1102 minutes.
+
+    It's not sluggish.
+
+-- 
+Chris F.A. Johnson, <http://cfajohnson.com>
+
+From lists at alteeve.ca  Sun Nov 16 21:49:50 2014
+From: lists at alteeve.ca (Digimer)
+Date: Sun, 16 Nov 2014 16:49:50 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+Message-ID: <54691BFE.5000509@alteeve.ca>
+
+On 16/11/14 02:43 PM, D. Hugh Redelmeier wrote:
+> | From: ted leslie <ted.leslie at gmail.com>
+> | To: "tlug at ss.org" <tlug at ss.org>
+> | Date: Sun, 16 Nov 2014 11:48:04 -0500
+> | Subject: [TLUG]: monitor, dell
+> | Reply-To: tlug at ss.org
+> |
+> | People have posted good price stuff on here before:
+> |
+> | http://www.walmart.ca/en/ip/dell-27-2560-x-1440-led-ips-monitor/6000189477880
+> |
+> | 750$ monitor for 250$ ! pricing error? you tell me!
+> | Like the lenovo portable  someone posted here a while back,
+> | if it is a pricing error, I assume they will not fulfil,
+> | but I have ordered a couple any way, see what happens.
+> |
+> | -tl
+>
+> This was sent to the old list but got to me!  I thought that the old
+> infrastructure had been burned down.
+>
+> Ted has now subscribed to the new list and posted this but it awaits
+> moderation.
+>
+> This is an astounding deal for a good 27" 2560x1440 monitor.  I've ordered
+> one.  $307.61 including taxes, EHF, shipping.
+>
+> It might be a pricing error.
+>
+> Thanks Ted!
+
+3 year warranty, great reviews, display port... I can't help but think 
+that something is wrong, but I can't see it.
+
+I ordered 3.
+
+Thanks for the lead!
+
+-- 
+Digimer
+Papers and Projects: https://alteeve.ca/w/
+What if the cure for cancer is trapped in the mind of a person without 
+access to education?
+
+From james.knott at rogers.com  Sun Nov 16 22:12:50 2014
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 16 Nov 2014 17:12:50 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <54691BFE.5000509@alteeve.ca>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <54691BFE.5000509@alteeve.ca>
+Message-ID: <54692162.7040202@rogers.com>
+
+On 11/16/2014 04:49 PM, Digimer wrote:
+> I can't help but think that something is wrong, but I can't see it. 
+
+It's a Dell.  ;-)
+
+From lsorense at csclub.uwaterloo.ca  Sun Nov 16 22:20:13 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sun, 16 Nov 2014 17:20:13 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <54692162.7040202@rogers.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <54691BFE.5000509@alteeve.ca> <54692162.7040202@rogers.com>
+Message-ID: <20141116222013.GS24111@csclub.uwaterloo.ca>
+
+On Sun, Nov 16, 2014 at 05:12:50PM -0500, James Knott wrote:
+> On 11/16/2014 04:49 PM, Digimer wrote:
+> > I can't help but think that something is wrong, but I can't see it. 
+> 
+> It's a Dell.  ;-)
+
+True, but it is not a Dell computer.
+
+-- 
+Len Sorensen
+
+From hugh at mimosa.com  Sun Nov 16 22:29:07 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 16 Nov 2014 17:29:07 -0500 (EST)
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <463943.86549.bm@smtp222.mail.ne1.yahoo.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <463943.86549.bm@smtp222.mail.ne1.yahoo.com>
+Message-ID: <alpine.LRH.2.02.1411161639190.6002@redclaw.mimosa.com>
+
+After an hour of waiting for "quit" to finish, I gave up and killed
+it.
+
+| From: self_same_self at yahoo.com
+
+
+| What kind of plugins do you have?
+
+Nothing much.  No flash, for example.
+
+The scariest is IcedTea (Java).  I don't know how to tell if Java is 
+actually being run.
+
+The real culprit is likely javascript -- not a plugin.
+
+| How many tabs and windows?
+
+Lots.  28 windows.  It isn't convenient to count the tabs (I'd have to 
+visit each of the windows and count the tabs).
+-------------- next part --------------
+
+
+---
+GTALUG Talk Mailing List - talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+From hugh at mimosa.com  Mon Nov 17 01:10:44 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 16 Nov 2014 20:10:44 -0500 (EST)
+Subject: [GTALUG] I stumbled on a DD-WRT drama
+Message-ID: <alpine.LRH.2.02.1411161945420.19789@redclaw.mimosa.com>
+
+Kong quits development:
+<http://www.dd-wrt.com/phpBB2/viewtopic.php?t=269247&postdays=0&postorder=asc&start=0>
+subject: Ceasing Development
+As best I can make out, he did some/most/all of the ARM side of things 
+(eg. for the recent Netgear wireless router).
+
+Much wailing and gnashing of teeth ensued, as well it might.
+
+Then it turned into a pile-on-colinsnj.  Apparently he seems to want
+the GPL to be respected, and that others think that that is what drove
+Kong away.  I kind of feel that colinsnj is right, but then that's why
+I'm not a dd-wrt user.
+
+Then Kong posts that it was all a joke and that he smoked out the evil 
+Colinsnj
+<http://www.dd-wrt.com/phpBB2/viewtopic.php?t=269359>
+subject:  !!! ~~~ YOU HAVE BEEN PRANKED ~~~ !!!
+
+One amusing part of the last bit: Kong wants others to do more of the
+work building "optware packages".  To enable that:
+
+    I instructed basmaf to prepare an openwrt build environment in
+    order to build packages that are fully compatible with dd-wrt. The
+    same is needed for arm and musl now. It is a bit more difficult in
+    this case as a lot of packages need some work in order to compile
+    with musl, so you should have some coding experience:-)
+
+This certainly reinforces the belief that DD-WRT folks don't want any
+but insiders to be able to build dd-ware.
+
+Some of the users seem to be suffering Stockholm Syndrome.  They don't
+realize that they would not be so beholden to Brainslayer and Kong if
+this was really open source.  Of course they would not have a good
+Broadcom driver either.
+
+From lists at alteeve.ca  Mon Nov 17 01:15:38 2014
+From: lists at alteeve.ca (Digimer)
+Date: Sun, 16 Nov 2014 20:15:38 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <54692162.7040202@rogers.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <54691BFE.5000509@alteeve.ca> <54692162.7040202@rogers.com>
+Message-ID: <54694C3A.7060908@alteeve.ca>
+
+On 16/11/14 05:12 PM, James Knott wrote:
+> On 11/16/2014 04:49 PM, Digimer wrote:
+>> I can't help but think that something is wrong, but I can't see it.
+>
+> It's a Dell.  ;-)
+
+Dell monitors, going well back into the CRT days, are basically 
+rebranded models from someone else. HP uses the same panels as these 
+ones, and seem to be well reviewed.
+
+Besides, I plan to cover the logo. ;)
+
+-- 
+Digimer
+Papers and Projects: https://alteeve.ca/w/
+What if the cure for cancer is trapped in the mind of a person without 
+access to education?
+
+From ted.leslie at gmail.com  Mon Nov 17 01:40:09 2014
+From: ted.leslie at gmail.com (ted leslie)
+Date: Sun, 16 Nov 2014 20:40:09 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <54694C3A.7060908@alteeve.ca>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <54691BFE.5000509@alteeve.ca>
+ <54692162.7040202@rogers.com> <54694C3A.7060908@alteeve.ca>
+Message-ID: <CAMua2SHqR1+i44t_C+sbFUEMvQ=e_6dYBb4HK1qN--X702gLKA@mail.gmail.com>
+
+I'd wait until we see them actually ship before you do to much planning for
+them :)
+My money is still on them sending me a "pricing error, cancel" notice. Only
+way that price is going to be
+right is if they have tonnes of them and Dell is about to release new stuff
+and new prices, and WalMart has to move them
+super fast.
+
+-tl
+
+On Sun, Nov 16, 2014 at 8:15 PM, Digimer <lists at alteeve.ca> wrote:
+
+> On 16/11/14 05:12 PM, James Knott wrote:
+>
+>> On 11/16/2014 04:49 PM, Digimer wrote:
+>>
+>>> I can't help but think that something is wrong, but I can't see it.
+>>>
+>>
+>> It's a Dell.  ;-)
+>>
+>
+> Dell monitors, going well back into the CRT days, are basically rebranded
+> models from someone else. HP uses the same panels as these ones, and seem
+> to be well reviewed.
+>
+> Besides, I plan to cover the logo. ;)
+>
+> --
+> Digimer
+> Papers and Projects: https://alteeve.ca/w/
+> What if the cure for cancer is trapped in the mind of a person without
+> access to education?
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141116/37a2fbea/attachment.html>
+
+From scruss at gmail.com  Mon Nov 17 01:44:40 2014
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sun, 16 Nov 2014 20:44:40 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <CAMua2SHqR1+i44t_C+sbFUEMvQ=e_6dYBb4HK1qN--X702gLKA@mail.gmail.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <54691BFE.5000509@alteeve.ca> <54692162.7040202@rogers.com>
+ <54694C3A.7060908@alteeve.ca>
+ <CAMua2SHqR1+i44t_C+sbFUEMvQ=e_6dYBb4HK1qN--X702gLKA@mail.gmail.com>
+Message-ID: <54695308.9040301@gmail.com>
+
+On 14-11-16 08:40 PM, ted leslie wrote:
+> I'd wait until we see them actually ship before you do to much planning
+> for them :)
+
+I just loaded the site, and though the $249 price is available on the
+monitor listing, the actual product detail page has no order button for me.
+
+cheers,
+ Stewart
+
+From hugh at mimosa.com  Mon Nov 17 02:01:21 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 16 Nov 2014 21:01:21 -0500 (EST)
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <54695308.9040301@gmail.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <54691BFE.5000509@alteeve.ca> <54692162.7040202@rogers.com>
+ <54694C3A.7060908@alteeve.ca>
+ <CAMua2SHqR1+i44t_C+sbFUEMvQ=e_6dYBb4HK1qN--X702gLKA@mail.gmail.com>
+ <54695308.9040301@gmail.com>
+Message-ID: <alpine.LRH.2.02.1411162052470.19789@redclaw.mimosa.com>
+
+| From: Stewart C. Russell <scruss at gmail.com>
+
+| I just loaded the site, and though the $249 price is available on the
+| monitor listing, the actual product detail page has no order button for me.
+
+Try it again.  There should be a green rectangle with "Add to cart"
+below the price.  It works for me -- I just checked.
+
+One reason I restarted Firefox (see other mail) was because that page
+didn't render identically every time.  I currently suspect the server.
+
+Walmart sometimes has very good clearance prices online. But I don't
+think that the monitor is on clearance.  This HDMI cable is:
+<http://www.walmart.ca/en/ip/sony-dlchj30-hdmi-cable/6000074943812>
+Quite the bargain at $55.  No wait, that's a terrible price.
+
+From gilesorr at gmail.com  Mon Nov 17 02:37:38 2014
+From: gilesorr at gmail.com (Giles Orr)
+Date: Sun, 16 Nov 2014 21:37:38 -0500
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <alpine.LRH.2.02.1411161639190.6002@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <463943.86549.bm@smtp222.mail.ne1.yahoo.com>
+ <alpine.LRH.2.02.1411161639190.6002@redclaw.mimosa.com>
+Message-ID: <CAEnxSC5e=CD7bD-ZXXqd4Rdzh1jinSDwqfwO1B17yHp1B=PoTg@mail.gmail.com>
+
+On 16 November 2014 17:29, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+> After an hour of waiting for "quit" to finish, I gave up and killed
+> it.
+>
+> | From: self_same_self at yahoo.com
+>
+>
+> | What kind of plugins do you have?
+>
+> Nothing much.  No flash, for example.
+>
+> The scariest is IcedTea (Java).  I don't know how to tell if Java is
+> actually being run.
+>
+> The real culprit is likely javascript -- not a plugin.
+>
+> | How many tabs and windows?
+>
+> Lots.  28 windows.  It isn't convenient to count the tabs (I'd have to
+> visit each of the windows and count the tabs).
+
+28 windows, each with multiple tabs?  That might be a problem ...  I
+find Chrom{e|ium} is better at handling the tabs and Javascript, but I
+still prefer Firefox for the plugins.
+
+As for Java - I'd suggest removing the plugin.  Java in the browser is
+a memory hog and a security risk, and if a page "needs" it you'll see
+a broken plugin sign - so you'll notice the lack.  But I suspect if
+it's used anywhere, you'll find it's ads (on older sites).
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From cbbrowne at gmail.com  Mon Nov 17 05:29:18 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Mon, 17 Nov 2014 00:29:18 -0500
+Subject: [GTALUG] Virtual Machines Under Android?
+In-Reply-To: <5468DE75.5090801@ss.org>
+References: <5468DE75.5090801@ss.org>
+Message-ID: <CAFNqd5Wu0X8Fp1NVO6uAJzdA7ey-XEw3T41Yv5qjHuRCb=nkyQ@mail.gmail.com>
+
+I'd imagine that it should be conceivable to run Docker, and that THAT
+would be a preferable approach, involving running ARM code as opposed to
+x86 code (because emulation would be hyperexpensive).
+
+There certainly is a port of Docker to RPi  <
+https://resin.io/blog/release-docker-0-7-2-for-arm/>, which points towards
+it being plausible to use Docker on various Linux distributions that run on
+RPi.  It's an interesting question whether or not that's much use for more
+mobile devices, e.g. - whether or not they're running similar enough
+instruction sets.
+
+I wouldn't expect the other virtualization approaches to work out terribly
+well; they tend to be hungry for memory and storage space, which are
+exactly the things you don't have plenty of on phones/tablets.  (Leave
+aside the thought that some of the virtualization systems require hardware
+support that's unlikely to be present on ARM.)
+
+Here's a bit of description on what's good/bad about Docker on Raspberry
+Pi...  http://blog.xebia.com/2014/08/25/docker-on-a-raspberry-pi/
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141117/e9c33053/attachment.html>
+
+From waltdnes at waltdnes.org  Mon Nov 17 07:17:17 2014
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Mon, 17 Nov 2014 02:17:17 -0500
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <alpine.LRH.2.02.1411161639190.6002@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <463943.86549.bm@smtp222.mail.ne1.yahoo.com>
+ <alpine.LRH.2.02.1411161639190.6002@redclaw.mimosa.com>
+Message-ID: <20141117071717.GC1529@waltdnes.org>
+
+On Sun, Nov 16, 2014 at 05:29:07PM -0500, D. Hugh Redelmeier wrote
+> After an hour of waiting for "quit" to finish, I gave up and killed
+> it.
+> 
+> | From: self_same_self at yahoo.com
+> 
+> 
+> | What kind of plugins do you have?
+> 
+> Nothing much.  No flash, for example.
+> 
+> The scariest is IcedTea (Java).  I don't know how to tell if Java is 
+> actually being run.
+> 
+> The real culprit is likely javascript -- not a plugin.
+> 
+> | How many tabs and windows?
+> 
+> Lots.  28 windows.  It isn't convenient to count the tabs (I'd have to 
+> visit each of the windows and count the tabs).
+
+  A few items...
+
+* As others have pointed out, the Java plugin is a major security hole,
+  a cross-platform equivalant of Active-X.  Remove, or disable the
+  plugin.
+
+* As I pointed out on June 22nd, I've gone hog wild with creating
+  separate profiles for websites I often visit.  Here's a snippet from
+  my ~/.icewm/menu file that sets up part of the launchbar...
+
+menu WEBsets firefox {
+  prog DSLR firefox /usr/bin/firefox -new-instance -P dslreports
+  prog GLICE firefox /usr/bin/firefox -new-instance -P glice
+  prog GCL firefox /usr/bin/firefox -new-instance -P gcl
+  prog GRAPHS firefox /usr/bin/firefox -new-instance -P graphs
+  prog HFBOARDS firefox /usr/bin/firefox -new-instance -P hfboards
+  prog SLASHSOY firefox /usr/bin/firefox -new-instance -P slashsoy
+  prog SNOW firefox /usr/bin/firefox -new-instance -P snow
+  prog STREAMS firefox /usr/bin/firefox -new-instance -P streams
+  prog WXFORUM firefox /usr/bin/firefox -new-instance -P wxforum
+  prog WXSHORT firefox /usr/bin/firefox -new-instance -P wxshort
+  prog WXLONG firefox /usr/bin/firefox -new-instance -P wxlong
+  prog WUWT firefox /usr/bin/firefox -new-instance -P wuwt
+  prog YOUTUBE firefox /usr/bin/firefox -new-instance -P youtube
+}
+
+  If you run "top" in a really wide term (e.g. 120 or 130 columns), you
+can see breakdowns for which instance is using how much resources.  This
+can help you determine which websites are the problem.  *IMPORTANT* This
+will only work if the command lines differ from each other.  Specifying
+a profile name is sufficient.  Here's the drill...
+
+1) Set up a wide term, at least 120, if not 130 columns wide
+
+2) Run "top -c" in the term.  Alternately, you can run "top" and then
+tap the "c" key to toggle *FULL* commandline display on/off.
+
+3) Tap the "o" key (lowercase "owe") for case-insensitive filtering.
+Uppercase "O" selects case-sensitive filtering.
+
+4) You'll be prompted like so
+add filter #1 (ignoring case) as: [!]FLD?VAL
+
+5) Type in the following line exactly and press {ENTER}
+COMMAND=firefox
+
+This will match any line containing the substring "firefox" as part of
+the commandline.  Note that if you prefix it with "!", the filter will
+show every line *NOT* containg "firefox" in the commandline. i.e.
+!COMMAND=firefox
+
+  You'll get something resembling the output in my attachment, which is
+rather wide.  Then you can see which instance is using how much
+resources.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+-------------- next part --------------
+top - 02:04:57 up 6 days,  2:29, 15 users,  load average: 0.05, 0.12, 0.13
+Tasks: 125 total,   1 running, 124 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.6 us,  1.8 sy,  0.0 ni, 93.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:   3101308 total,  1993268 used,  1108040 free,    48512 buffers
+KiB Swap:  4194300 total,   801920 used,  3392380 free.   528020 cached Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                                             
+30091 waltdnes  20   0  559416 152744  35112 S   5.7  4.9  15:54.35 /usr/bin/firefox -new-instance -P wuwt              
+31279 waltdnes  20   0  667604 280620  40540 S   2.3  9.0  20:46.05 /usr/bin/firefox -new-instance -P hfboards          
+29803 waltdnes  20   0  691748 273752  55128 S   2.0  8.8  30:04.19 /usr/bin/firefox -new-instance -P streams           
+ 1324 waltdnes  20   0  437948 126268  62084 S   1.0  4.1   1:12.66 /usr/bin/firefox -width 950 -height 1050 -new-insta+
+31922 waltdnes  20   0  487888 133468  37808 S   0.3  4.3   0:22.41 /usr/bin/firefox -new-instance -P wxshort           
+30488 waltdnes  20   0  518880 149864  37388 S   0.0  4.8   4:50.33 /usr/bin/firefox -new-instance -P wxforum           
+30543 waltdnes  20   0  450368 103056  34572 S   0.0  3.3   0:07.23 /usr/bin/firefox -new-instance -P graphs            
+
+
+From waltdnes at waltdnes.org  Mon Nov 17 07:33:27 2014
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Mon, 17 Nov 2014 02:33:27 -0500
+Subject: [GTALUG] Playing *.pls files in firefox?
+Message-ID: <20141117073327.GD1529@waltdnes.org>
+
+  Showing my age here, I like oldies music.  An interesting site is
+http://www.fun45s.com/ but firefox won't play it for me.  Fortunately
+they give the direct stream URL on their homepage.  If I try
+http://s7.voscast.com:8376 or http://www.fun45s.com/listen.pls in
+firefox, firefox asks for a .pls handler, and I point it to mpg123.  It
+doesn't work.  No music.  But if I run mpg123 direcly from the
+commandline like so...
+
+mpg123 http://s7.voscast.com:8376
+
+...it works.  Can I set up firefox to handle pls files direcly, or is
+there a player that firefox can invoke?
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
