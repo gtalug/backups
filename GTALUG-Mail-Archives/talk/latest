@@ -5128,3 +5128,1202 @@ there a player that firefox can invoke?
 -- 
 Walter Dnes <waltdnes at waltdnes.org>
 
+From kalibslack at gmail.com  Mon Nov 17 12:22:31 2014
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Mon, 17 Nov 2014 09:22:31 -0300
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <463943.86549.bm@smtp222.mail.ne1.yahoo.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <463943.86549.bm@smtp222.mail.ne1.yahoo.com>
+Message-ID: <CAH5qdewXMerp2JW_xooR6QsZZF_G98bKr=USS0pvTRRxuCPD9w@mail.gmail.com>
+
+Most of the times, I just have high cpu usage when visiting pages running
+flash. That?s when I can start listening my fan and cpu working. :p
+
+Also, which version of firefox are you running?
+
+===================================================
+
+Marcelo Cavalcante Rocha - Kalib
+
+
+P?s-Graduando em Governan?a de Tecnologia da Informa??o - EST?CIO/FIC
+Graduado em Sistemas de Informa??es - EST?CIO/FIC
+Usu?rio Linux #407564 | Usu?rio Asterisk #1148
+Fortaleza - Cear? - Brazil
+Celular: +55 085 87620983
+Certifica??es: ITIL V3
+<http://www.itil-officialsite.com/Qualifications/ITILV3QualificationLevels/ITILV3FoundationQualificationinITServiceManagement.aspx>
+ | CSM <http://www.scrumalliance.org/> | LPI-C1 <http://www.lpi.org/> |
+LPI-C2 <http://www.lpi.org/> | LPI-C3 <http://www.lpi.org/> | Novell CLA
+<http://www.novell.com/training/certinfo/cla/>
+Minha Pessoa: Blog <http://www.marcelocavalcante.net>
+Projetos: Tux-CE <http://www.tux-ce.org> | Archlinux-br
+<http://www.archlinux-br.org> | Chakra <http://www.chakra-project.org/> | KDE
+Brasil <http://br.kde.org> | TLUG <http://gtalug.org/wiki/Main_Page> |
+PUG-CE <http://pug-ce.python.org.br/blog/>
+
+===================================================
+
+
+Proteja meu endere?o como estou protegendo o seu.
+N?o revele e-mail dos correspondentes: use Cco (Copia Carbonada Oculta).
+Retire os endere?os antes de reenviar. Dificulte assim a
+dissemina??o de v?rus e spam.
+
+2014-11-16 17:32 GMT-03:00 <self_same_self at yahoo.com>:
+
+>  What kind of plugins do you have?
+> How many tabs and windows?
+>
+> *From:* D. Hugh Redelmeier <hugh at mimosa.com>
+> *Sent:* ?Sunday?, ?November? ?16?, ?2014 ?3?:?20? ?PM
+> *To:* GTALUG Talk <talk at gtalug.org>
+>
+> My desktop has been up for a week.
+> I have a lot of firefox windows and many more tabs open.
+> FF was getting sluggish.
+>
+> It has taken 4k minutes of CPU.  Not seconds.  So that is about 10 hours
+> of CPU per day.
+>
+> Even quiting is taking a long time.  About 10 minutes so far.  At 99% of
+> the CPU.  Yuck.  Maybe I'll kill it.
+>
+> It is taking 8G of virtual memory and 4.5 G resident (according to top).
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141117/d724287c/attachment.html>
+
+From james.knott at rogers.com  Mon Nov 17 12:38:11 2014
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 17 Nov 2014 07:38:11 -0500
+Subject: [GTALUG] Playing *.pls files in firefox?
+In-Reply-To: <20141117073327.GD1529@waltdnes.org>
+References: <20141117073327.GD1529@waltdnes.org>
+Message-ID: <5469EC33.4060405@rogers.com>
+
+On 11/17/2014 02:33 AM, Walter Dnes wrote:
+>   Showing my age here, I like oldies music.  An interesting site is
+> http://www.fun45s.com/ but firefox won't play it for me.  Fortunately
+> they give the direct stream URL on their homepage.  If I try
+> http://s7.voscast.com:8376 or http://www.fun45s.com/listen.pls in
+> firefox, firefox asks for a .pls handler, and I point it to mpg123.  It
+> doesn't work.  No music.  But if I run mpg123 direcly from the
+> commandline like so...
+>
+> mpg123 http://s7.voscast.com:8376
+>
+> ...it works.  Can I set up firefox to handle pls files direcly, or is
+> there a player that firefox can invoke?
+>
+
+It works for me in Firefox.  It's currently playing The Four Seasons
+"Let's Hang On".  I didn't do anything to get it to work.
+
+From northdot9 at gmail.com  Mon Nov 17 16:03:25 2014
+From: northdot9 at gmail.com (David Thornton)
+Date: Mon, 17 Nov 2014 11:03:25 -0500
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+Message-ID: <CAHcykVppAXFi9CR8RHiHX8X2ujvr4r9Ya-kTVCW8d1JHFodiBQ@mail.gmail.com>
+
+Browser != OS.
+
+_even_ Chrome gets confused from time to time.
+
+I don't think it's too much to ask to just "reboot" your browser.
+
+david
+
+
+On Sun, Nov 16, 2014 at 3:20 PM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+> My desktop has been up for a week.
+> I have a lot of firefox windows and many more tabs open.
+> FF was getting sluggish.
+>
+> It has taken 4k minutes of CPU.  Not seconds.  So that is about 10 hours
+> of CPU per day.
+>
+> Even quiting is taking a long time.  About 10 minutes so far.  At 99% of
+> the CPU.  Yuck.  Maybe I'll kill it.
+>
+> It is taking 8G of virtual memory and 4.5 G resident (according to top).
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141117/a9a55d65/attachment.html>
+
+From cbbrowne at gmail.com  Mon Nov 17 16:14:45 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Mon, 17 Nov 2014 11:14:45 -0500
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <CAHcykVppAXFi9CR8RHiHX8X2ujvr4r9Ya-kTVCW8d1JHFodiBQ@mail.gmail.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <CAHcykVppAXFi9CR8RHiHX8X2ujvr4r9Ya-kTVCW8d1JHFodiBQ@mail.gmail.com>
+Message-ID: <CAFNqd5UV_aRAcMJiPqLdVYYGuJM_QBsNDUFdLL2vO=ouhQgJ6w@mail.gmail.com>
+
+On 17 November 2014 11:03, David Thornton <northdot9 at gmail.com> wrote:
+
+>
+> Browser != OS.
+>
+> _even_ Chrome gets confused from time to time.
+>
+> I don't think it's too much to ask to just "reboot" your browser.
+>
+
+But it's also not too much to ask to hope for the browser to not be
+*too* dramatically memory leaky.
+
+And It sure seems like the browsers have gotten memory leaky, even
+without resorting to Flash and Java.  It looks to me like Javascript, which
+is pretty well mandatory these days what with all the "web applications"
+using AJAX and such, can chew great gobs of memory without hardly
+trying.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141117/e734f7d9/attachment.html>
+
+From email+libre at blaise.ca  Mon Nov 17 16:48:20 2014
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Mon, 17 Nov 2014 11:48:20 -0500
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <alpine.LRH.2.02.1411161639190.6002@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <463943.86549.bm@smtp222.mail.ne1.yahoo.com>
+ <alpine.LRH.2.02.1411161639190.6002@redclaw.mimosa.com>
+Message-ID: <546A26D4.50505@blaise.ca>
+
+On 16/11/14 05:29 PM, D. Hugh Redelmeier wrote:
+> | How many tabs and windows?
+> 
+> Lots.  28 windows.  It isn't convenient to count the tabs (I'd have to 
+> visit each of the windows and count the tabs).
+> 
+
+Firefox has tab groups btw, so you can organize lots of tabs without having to
+open multiple windows:
+https://support.mozilla.org/en-US/kb/tab-groups-organize-tabs
+
+I have no idea if a single window with tab groups versus multiple windows has
+any effect on memory/performance though... my guess would be probably not...
+
+But, I figure it's worth a mention since I've found tab groups to be more
+convenient than dealing with multiple windows (e.g. you can name them, search
+for a tab, easily move tabs between groups, etc.).
+
+
+I restart Firefox/IceWeasel periodically when I noticed the memory usage is
+getting high. At the very least, it reduces the memory footprint because it
+doesn't reload tabs on reboot until you first focus on them (at least, that's
+the way I have my settings configured), so a reboot still saves your tabs but
+won't consume any resources for the tabs you're not actually using.
+
+
+From northdot9 at gmail.com  Mon Nov 17 17:02:46 2014
+From: northdot9 at gmail.com (David Thornton)
+Date: Mon, 17 Nov 2014 12:02:46 -0500
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <CAFNqd5UV_aRAcMJiPqLdVYYGuJM_QBsNDUFdLL2vO=ouhQgJ6w@mail.gmail.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <CAHcykVppAXFi9CR8RHiHX8X2ujvr4r9Ya-kTVCW8d1JHFodiBQ@mail.gmail.com>
+ <CAFNqd5UV_aRAcMJiPqLdVYYGuJM_QBsNDUFdLL2vO=ouhQgJ6w@mail.gmail.com>
+Message-ID: <CAHcykVojzgBUWWiEcK_nxqMJykx8q79bYYBcGqJL2MUUZSZA0A@mail.gmail.com>
+
+I dunno, I am not too quick to jump on blaming the browser as "memory
+leaky". I am willing to bet some sites are not built with your memory in
+mind. Consider sites that just load and load javascript objects ad
+nauseum.  Should the browser say : "ok that's enough web site, no more java
+script objects for you" ? and if it's a reasonable X for a single site ...
+and you have 300 sites open .. is 300X ok for your computer?
+
+This is not a simple problem, so I think it's ok to ask a user to "be
+considerate" of their own memory/ system resources (heaven forbid the user
+knowa a smidge about how her/his computer works )
+
+David
+
+On Mon, Nov 17, 2014 at 11:14 AM, Christopher Browne <cbbrowne at gmail.com>
+wrote:
+
+> On 17 November 2014 11:03, David Thornton <northdot9 at gmail.com> wrote:
+>
+>>
+>> Browser != OS.
+>>
+>> _even_ Chrome gets confused from time to time.
+>>
+>> I don't think it's too much to ask to just "reboot" your browser.
+>>
+>
+> But it's also not too much to ask to hope for the browser to not be
+> *too* dramatically memory leaky.
+>
+> And It sure seems like the browsers have gotten memory leaky, even
+> without resorting to Flash and Java.  It looks to me like Javascript, which
+> is pretty well mandatory these days what with all the "web applications"
+> using AJAX and such, can chew great gobs of memory without hardly
+> trying.
+> --
+> When confronted by a difficult problem, solve it by reducing it to the
+> question, "How would the Lone Ranger handle this?"
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141117/e431ecd3/attachment.html>
+
+From james.knott at rogers.com  Mon Nov 17 17:14:38 2014
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 17 Nov 2014 12:14:38 -0500
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <CAFNqd5UV_aRAcMJiPqLdVYYGuJM_QBsNDUFdLL2vO=ouhQgJ6w@mail.gmail.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <CAHcykVppAXFi9CR8RHiHX8X2ujvr4r9Ya-kTVCW8d1JHFodiBQ@mail.gmail.com>
+ <CAFNqd5UV_aRAcMJiPqLdVYYGuJM_QBsNDUFdLL2vO=ouhQgJ6w@mail.gmail.com>
+Message-ID: <546A2CFE.6030500@rogers.com>
+
+On 11/17/2014 11:14 AM, Christopher Browne wrote:
+> And It sure seems like the browsers have gotten memory leaky
+
+Better put a bit bucket under your computer.  ;-)
+
+
+From greg.martyn at gmail.com  Mon Nov 17 17:02:53 2014
+From: greg.martyn at gmail.com (Greg Martyn)
+Date: Mon, 17 Nov 2014 12:02:53 -0500
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <546A26D4.50505@blaise.ca>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <463943.86549.bm@smtp222.mail.ne1.yahoo.com>
+ <alpine.LRH.2.02.1411161639190.6002@redclaw.mimosa.com>
+ <546A26D4.50505@blaise.ca>
+Message-ID: <CAJt6_8vuMz5+seA--WrGcsJBEF_nabzmcdO9q+-+ZgvtakCpRw@mail.gmail.com>
+
+I see plugins being mentioned, but Add-ons / Extensions (Firefox can't seem
+to agree on what they're called) are also a big source of memory leaks.
+
+More info:
+http://kb.mozillazine.org/Problematic_extensions
+
+Greg
+
+On Mon, Nov 17, 2014 at 11:48 AM, Blaise Alleyne <email+libre at blaise.ca>
+wrote:
+
+> On 16/11/14 05:29 PM, D. Hugh Redelmeier wrote:
+> > | How many tabs and windows?
+> >
+> > Lots.  28 windows.  It isn't convenient to count the tabs (I'd have to
+> > visit each of the windows and count the tabs).
+> >
+>
+> Firefox has tab groups btw, so you can organize lots of tabs without
+> having to
+> open multiple windows:
+> https://support.mozilla.org/en-US/kb/tab-groups-organize-tabs
+>
+> I have no idea if a single window with tab groups versus multiple windows
+> has
+> any effect on memory/performance though... my guess would be probably
+> not...
+>
+> But, I figure it's worth a mention since I've found tab groups to be more
+> convenient than dealing with multiple windows (e.g. you can name them,
+> search
+> for a tab, easily move tabs between groups, etc.).
+>
+>
+> I restart Firefox/IceWeasel periodically when I noticed the memory usage is
+> getting high. At the very least, it reduces the memory footprint because it
+> doesn't reload tabs on reboot until you first focus on them (at least,
+> that's
+> the way I have my settings configured), so a reboot still saves your tabs
+> but
+> won't consume any resources for the tabs you're not actually using.
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141117/9d61dd23/attachment.html>
+
+From mwilson at vex.net  Mon Nov 17 18:02:22 2014
+From: mwilson at vex.net (Mel Wilson)
+Date: Mon, 17 Nov 2014 13:02:22 -0500
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <CAHcykVojzgBUWWiEcK_nxqMJykx8q79bYYBcGqJL2MUUZSZA0A@mail.gmail.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <CAHcykVppAXFi9CR8RHiHX8X2ujvr4r9Ya-kTVCW8d1JHFodiBQ@mail.gmail.com>
+ <CAFNqd5UV_aRAcMJiPqLdVYYGuJM_QBsNDUFdLL2vO=ouhQgJ6w@mail.gmail.com>
+ <CAHcykVojzgBUWWiEcK_nxqMJykx8q79bYYBcGqJL2MUUZSZA0A@mail.gmail.com>
+Message-ID: <1416247342.3725.2.camel@tecumseth5.mounteagle.lan>
+
+On Mon, 2014-11-17 at 12:02 -0500, David Thornton wrote:
+> I dunno, I am not too quick to jump on blaming the browser as "memory
+> leaky". I am willing to bet some sites are not built with your memory
+> in mind. Consider sites that just load and load javascript objects ad
+> nauseum.  Should the browser say : "ok that's enough web site, no more
+> java script objects for you" ? and if it's a reasonable X for a single
+> site ... and you have 300 sites open .. is 300X ok for your computer?
+
+I start to doubt that it even has to do with the "headline" site.
+Ad-supported sites will be obliged to serve up whatever their
+advertisers decide to serve.  I can imagine a lot of room for
+badly-designed javascript, videos and Ajax there.
+
+	Mel.
+
+
+
+
+From hugh at mimosa.com  Mon Nov 17 18:27:56 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 17 Nov 2014 13:27:56 -0500 (EST)
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <CAFNqd5UV_aRAcMJiPqLdVYYGuJM_QBsNDUFdLL2vO=ouhQgJ6w@mail.gmail.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <CAHcykVppAXFi9CR8RHiHX8X2ujvr4r9Ya-kTVCW8d1JHFodiBQ@mail.gmail.com>
+ <CAFNqd5UV_aRAcMJiPqLdVYYGuJM_QBsNDUFdLL2vO=ouhQgJ6w@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1411171318030.19789@redclaw.mimosa.com>
+
+| From: Christopher Browne <cbbrowne at gmail.com>
+
+| But it's also not too much to ask to hope for the browser to not be
+| *too* dramatically memory leaky.
+| 
+| And It sure seems like the browsers have gotten memory leaky, even
+| without resorting to Flash and Java.  It looks to me like Javascript, which
+| is pretty well mandatory these days what with all the "web applications"
+| using AJAX and such, can chew great gobs of memory without hardly
+| trying.
+
+Right.
+
+I would like each "compartment" to be isolated and instrumented.  This
+would give me the tools I need to kill the piggy tab, not the whole
+browser.  It would give me the tool to decide whether to visit a site
+in future or not.
+
+What's a compartment?  Naively, I'd say a tab.  But maybe there is
+some kind of session concept for a site or set of federated sites that
+needs to be accounted for.
+
+Being a dumb user, I immediately jump to solutions before getting to
+the problem stage.
+
+The problem:
+
+	The browser is piggy.
+
+	More focused: some sites make heavy demands.  I need tools
+	to limit their dammage, or at least limit the dammage I have
+	to inflict on myself to recover from that site's dammage.
+
+I've whined about this before.  Perhaps I'm being thick-headed not
+accept earlier suggestions but they haven't appealed to me.
+
+Walter just suggested running a whole bunch of different browsers, 
+creating the compartmentalization that I'm asking for.  The the technique 
+he uses is sane but surely Firefox can do better.
+-------------- next part --------------
+
+
+---
+GTALUG Talk Mailing List - talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+From hugh at mimosa.com  Mon Nov 17 18:33:30 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 17 Nov 2014 13:33:30 -0500 (EST)
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <20141117071717.GC1529@waltdnes.org>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <463943.86549.bm@smtp222.mail.ne1.yahoo.com>
+ <alpine.LRH.2.02.1411161639190.6002@redclaw.mimosa.com>
+ <20141117071717.GC1529@waltdnes.org>
+Message-ID: <alpine.LRH.2.02.1411171328290.19789@redclaw.mimosa.com>
+
+| From: Walter Dnes <waltdnes at waltdnes.org>
+
+(Nice hack to run multiple browser instances.)
+
+| * As others have pointed out, the Java plugin is a major security hole,
+|   a cross-platform equivalant of Active-X.  Remove, or disable the
+|   plugin.
+
+No, it isn't like Active-X.  Totally different security model.
+
+Active-X: total trust in signed plug-ins
+
+Java: sandbox the application so that it isn't able to do unauthorized
+things.  Unfortunately, the attack surface is large enough that there
+were likely and have been implementation failures.
+
+From mike at kallies.ca  Mon Nov 17 18:48:06 2014
+From: mike at kallies.ca (mike)
+Date: Mon, 17 Nov 2014 18:48:06 +0000
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>,
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+Message-ID: <73F081F5-9303-4B36-A2B4-4983528CCAE0@kallies.ca>
+
+True test of Walmart's supply chain. 
+
+I ordered two, we'll see if they arrive :-)
+
+It's a great tip.  Thanks,
+
+Mike
+
+
+
+> On Nov 16, 2014, at 2:43 PM, "D. Hugh Redelmeier" <hugh at mimosa.com> wrote:
+> 
+> | From: ted leslie <ted.leslie at gmail.com>
+> | To: "tlug at ss.org" <tlug at ss.org>
+> | Date: Sun, 16 Nov 2014 11:48:04 -0500
+> | Subject: [TLUG]: monitor, dell
+> | Reply-To: tlug at ss.org
+> | 
+> | People have posted good price stuff on here before:
+> | 
+> | http://www.walmart.ca/en/ip/dell-27-2560-x-1440-led-ips-monitor/6000189477880
+> | 
+> | 750$ monitor for 250$ ! pricing error? you tell me!
+> | Like the lenovo portable  someone posted here a while back,
+> | if it is a pricing error, I assume they will not fulfil,
+> | but I have ordered a couple any way, see what happens.
+> | 
+> | -tl
+> 
+> This was sent to the old list but got to me!  I thought that the old 
+> infrastructure had been burned down.
+> 
+> Ted has now subscribed to the new list and posted this but it awaits 
+> moderation.
+> 
+> This is an astounding deal for a good 27" 2560x1440 monitor.  I've ordered 
+> one.  $307.61 including taxes, EHF, shipping.
+> 
+> It might be a pricing error.
+> 
+> Thanks Ted!
+> 
+> 
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From clifford_ilkay at dinamis.com  Mon Nov 17 18:30:49 2014
+From: clifford_ilkay at dinamis.com (Clifford Ilkay)
+Date: Mon, 17 Nov 2014 13:30:49 -0500
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <alpine.LRH.2.02.1411171318030.19789@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <CAHcykVppAXFi9CR8RHiHX8X2ujvr4r9Ya-kTVCW8d1JHFodiBQ@mail.gmail.com>
+ <CAFNqd5UV_aRAcMJiPqLdVYYGuJM_QBsNDUFdLL2vO=ouhQgJ6w@mail.gmail.com>
+ <alpine.LRH.2.02.1411171318030.19789@redclaw.mimosa.com>
+Message-ID: <546A3ED9.8010007@dinamis.com>
+
+On 11/17/2014 01:27 PM, D. Hugh Redelmeier wrote:
+> | From: Christopher Browne <cbbrowne at gmail.com>
+>
+> | But it's also not too much to ask to hope for the browser to not be
+> | *too* dramatically memory leaky.
+> | 
+> | And It sure seems like the browsers have gotten memory leaky, even
+> | without resorting to Flash and Java.  It looks to me like Javascript, which
+> | is pretty well mandatory these days what with all the "web applications"
+> | using AJAX and such, can chew great gobs of memory without hardly
+> | trying.
+>
+> Right.
+>
+> I would like each "compartment" to be isolated and instrumented.
+
+You just described Google Chrome.
+
+-- 
+Regards,
+
+Clifford Ilkay
+Dinamis
+
++1 647-778-8696
+
+
+From psema4 at gmail.com  Mon Nov 17 19:27:01 2014
+From: psema4 at gmail.com (Scott Elcomb)
+Date: Mon, 17 Nov 2014 14:27:01 -0500
+Subject: [GTALUG] Virtual Machines Under Android?
+In-Reply-To: <CAFNqd5Wu0X8Fp1NVO6uAJzdA7ey-XEw3T41Yv5qjHuRCb=nkyQ@mail.gmail.com>
+References: <5468DE75.5090801@ss.org>
+ <CAFNqd5Wu0X8Fp1NVO6uAJzdA7ey-XEw3T41Yv5qjHuRCb=nkyQ@mail.gmail.com>
+Message-ID: <CAEx-jsOPXxGRJgp9hga=G1DBCGgRZ-+ygEzevHSdCZsGJZOv3w@mail.gmail.com>
+
+Docker would certainly be nice. Alas, the best I've come up with so
+far to get Linux running on Android is with GNURoot. This gets me a
+mostly-working Debian environment with X, twm, apt-get etc.
+
+I whipped up some preliminary notes yesterday
+<https://gist.github.com/psema4/c1545694272b1939b429> (includes links)
+but there are some notable issues:
+
+- This isn't really a tutorial yet; it's more a collection of notes
+- There are some significant issues, like not being able to run xterm
+
+That said, some simple X apps like xeyes & xclock run fine when run
+from the terminal.
+
+GNURoot is similar in some ways to linuxonandroid but it doesn't
+require root (likely the source of a number of errors noted in my
+gist).  LOA is fairly decent if all you need is a shell but my
+experiences with X were quite awful (it was unusably slow)
+
+There are plenty of VM's on the market for older, smaller machines.
+Haven't seen much for x86 though :(
+
+
+On Mon, Nov 17, 2014 at 12:29 AM, Christopher Browne <cbbrowne at gmail.com> wrote:
+> I'd imagine that it should be concei:vable to run Docker, and that THAT would
+> be a preferable approach, involving running ARM code as opposed to x86 code
+> (because emulation would be hyperexpensive).
+<snip>
+
+-- 
+  Scott Elcomb         @psema4
+  http://psema4.com/pubkey.txt
+     http://www.pirateparty.ca/
+
+From hugh at mimosa.com  Mon Nov 17 20:27:00 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 17 Nov 2014 15:27:00 -0500 (EST)
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <546A3ED9.8010007@dinamis.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <CAHcykVppAXFi9CR8RHiHX8X2ujvr4r9Ya-kTVCW8d1JHFodiBQ@mail.gmail.com>
+ <CAFNqd5UV_aRAcMJiPqLdVYYGuJM_QBsNDUFdLL2vO=ouhQgJ6w@mail.gmail.com>
+ <alpine.LRH.2.02.1411171318030.19789@redclaw.mimosa.com>
+ <546A3ED9.8010007@dinamis.com>
+Message-ID: <alpine.LRH.2.02.1411171523080.19789@redclaw.mimosa.com>
+
+| From: Clifford Ilkay <clifford_ilkay at dinamis.com>
+
+| On 11/17/2014 01:27 PM, D. Hugh Redelmeier wrote:
+
+| > I would like each "compartment" to be isolated and instrumented.
+
+| You just described Google Chrome.
+
+That's interesting.  I originally thought so too, but others said that
+it didn't work out that way.  (This was years ago.)
+
+Can you really use this to figure out which tab is eating CPU?  Bonus: 
+eating memory?
+
+From hugh at mimosa.com  Mon Nov 17 20:29:51 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 17 Nov 2014 15:29:51 -0500 (EST)
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+Message-ID: <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+
+| From: D. Hugh Redelmeier <hugh at mimosa.com>
+
+| This is an astounding deal for a good 27" 2560x1440 monitor.  I've ordered 
+| one.  $307.61 including taxes, EHF, shipping.
+
+I got notice from Walmart of a Canada Post shipping label.  Seems like
+a good sign.
+
+From cbbrowne at gmail.com  Mon Nov 17 20:47:28 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Mon, 17 Nov 2014 15:47:28 -0500
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <alpine.LRH.2.02.1411171523080.19789@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <CAHcykVppAXFi9CR8RHiHX8X2ujvr4r9Ya-kTVCW8d1JHFodiBQ@mail.gmail.com>
+ <CAFNqd5UV_aRAcMJiPqLdVYYGuJM_QBsNDUFdLL2vO=ouhQgJ6w@mail.gmail.com>
+ <alpine.LRH.2.02.1411171318030.19789@redclaw.mimosa.com>
+ <546A3ED9.8010007@dinamis.com>
+ <alpine.LRH.2.02.1411171523080.19789@redclaw.mimosa.com>
+Message-ID: <CAFNqd5ULgsvV+AK1+dcCrd+GybZRHd0-A88rqYKgQLzyQp-i2g@mail.gmail.com>
+
+On 17 November 2014 15:27, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+> | From: Clifford Ilkay <clifford_ilkay at dinamis.com>
+>
+> | On 11/17/2014 01:27 PM, D. Hugh Redelmeier wrote:
+>
+> | > I would like each "compartment" to be isolated and instrumented.
+>
+> | You just described Google Chrome.
+>
+> That's interesting.  I originally thought so too, but others said that
+> it didn't work out that way.  (This was years ago.)
+>
+> Can you really use this to figure out which tab is eating CPU?  Bonus:
+> eating memory?
+>
+
+It seems like it'll provide memory consumption, but not CPU consumption.
+
+See URL
+    chrome://memory-redirect
+
+I think memory consumption is more interesting than CPU consumption,
+myself...
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141117/fc77be4e/attachment.html>
+
+From email+libre at blaise.ca  Mon Nov 17 20:51:49 2014
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Mon, 17 Nov 2014 15:51:49 -0500
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <alpine.LRH.2.02.1411171523080.19789@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <CAHcykVppAXFi9CR8RHiHX8X2ujvr4r9Ya-kTVCW8d1JHFodiBQ@mail.gmail.com>
+ <CAFNqd5UV_aRAcMJiPqLdVYYGuJM_QBsNDUFdLL2vO=ouhQgJ6w@mail.gmail.com>
+ <alpine.LRH.2.02.1411171318030.19789@redclaw.mimosa.com>
+ <546A3ED9.8010007@dinamis.com>
+ <alpine.LRH.2.02.1411171523080.19789@redclaw.mimosa.com>
+Message-ID: <546A5FE5.3090806@blaise.ca>
+
+On 17/11/14 03:27 PM, D. Hugh Redelmeier wrote:
+> | From: Clifford Ilkay <clifford_ilkay at dinamis.com>
+> 
+> | On 11/17/2014 01:27 PM, D. Hugh Redelmeier wrote:
+> 
+> | > I would like each "compartment" to be isolated and instrumented.
+> 
+> | You just described Google Chrome.
+> 
+> That's interesting.  I originally thought so too, but others said that
+> it didn't work out that way.  (This was years ago.)
+> 
+> Can you really use this to figure out which tab is eating CPU?  Bonus: 
+> eating memory?
+> 
+
+Yes, take a look at the Task Manager in Chromium, e.g.
+http://www.geniosity.co.za/genwp/wp-content/uploads/2008/09/google-chrome-task-manager.png
+
+
+Though, there are a ton of other reasons not to use Chromium -- Mozilla's
+support for open standards, open internet, Chrome/Chromium phone home stuff, etc.
+
+
+From waltdnes at waltdnes.org  Mon Nov 17 21:15:19 2014
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Mon, 17 Nov 2014 16:15:19 -0500
+Subject: [GTALUG] [SOLVED] Playing *.pls files in firefox?
+In-Reply-To: <5469EC33.4060405@rogers.com>
+References: <20141117073327.GD1529@waltdnes.org> <5469EC33.4060405@rogers.com>
+Message-ID: <20141117211519.GA5118@waltdnes.org>
+
+On Mon, Nov 17, 2014 at 07:38:11AM -0500, James Knott wrote
+> On 11/17/2014 02:33 AM, Walter Dnes wrote:
+> >   Showing my age here, I like oldies music.  An interesting site is
+> > http://www.fun45s.com/ but firefox won't play it for me.  Fortunately
+> > they give the direct stream URL on their homepage.  If I try
+> > http://s7.voscast.com:8376 or http://www.fun45s.com/listen.pls in
+> > firefox, firefox asks for a .pls handler, and I point it to mpg123.  It
+> > doesn't work.  No music.  But if I run mpg123 direcly from the
+> > commandline like so...
+> >
+> > mpg123 http://s7.voscast.com:8376
+> >
+> > ...it works.  Can I set up firefox to handle pls files direcly, or is
+> > there a player that firefox can invoke?
+> >
+> 
+> It works for me in Firefox.  It's currently playing The Four Seasons
+> "Let's Hang On".  I didn't do anything to get it to work.
+
+  Thanks for that.  It encouraged me to dig deeper.  I set up a "streams"
+profile for internet radio and TV streams.  My "youtube" profile plays
+it without any problems but "streams" didn't.  I opened up the "Edit
+Preferences" menu on both profiles and stepped through a bunch of items
+side-by-each.  I discovered that...
+
+* there were entries for "MP3 audio (streamed)" and "PLS file" in the
+  "streams" profile, but no entries in the "youtube" profile
+
+* the "streams" profile somehow had AbiWord associated as the handler
+  for "MP3 audio (streamed)".  I *KNOW* that I had been pointing to
+  mpg123, so I don't really understand how that happened.
+
+* I changed "Action" to "Always ask", and it now works automatically,
+  without even asking.  Go figure.
+
+  I wanted to get rid of the entry entirely, to duplicate the setup in
+my "youtube" profile, but I couldn't figure out how to do it from the
+menu.  A bit of Google searching turned up...
+https://support.mozilla.org/en-US/kb/set-how-firefox-handles-different-file-types
+which says...
+
+> The Applications panel has limited functionality for editing. You
+> can change the action for an existing file type but you cannot add or
+> remove file types. Entries are added automatically when you download
+> files and select actions for them.
+
+  I wasn't going to accept that.  I closed both browsers ("youtube" and
+"streams"), opened up 2 xterms, and dove into the profile directories
+for my "streams" and "youtube" profiles.  A bit of grepping showed that
+the file "mimeTypes.rdf" in the "streams" profile had a block like so...
+
+  <RDF:Description RDF:about="urn:mimetype:audio/x-mpegurl"
+                   NC:value="audio/x-mpegurl"
+                   NC:editable="true"
+                   NC:fileExtensions="m3u"
+                   NC:description="MP3 audio (streamed)">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:audio/x-mpegurl"/>
+  </RDF:Description>
+
+  There was no such entry in the "youtube" mimeTypes.rdf.  I did not
+feel comfortable editing the xml file, but I did the next best thing.  I
+backed up the "streams" mimeType.rdf, and copied over the version from
+my "youtube" profile.  Now everything works.
+
+  This brings up something else I remember about mimeTypes.rdf.  On my
+system /usr/bin/gimp is a symlink to /usr/bin/gimp-2-8 and
+/usr/bin/gnumeric is a symlink to /usr/bin/gnumeric-1.12.17.  I don't
+know if Firefox still does it, but a few years ago I ran into some
+"helpful" behaviour, equivalant to "Clippy helpfulness".  If Firefox
+asked for a handler, and you pointed it to a file that was a symlink, it
+"helpfully" de-referenced the filename.  So if I told it to use
+"/usr/bin/gnumeric" for "*.xls", it selected "/usr/bin/gnumeric-1-12-17"
+as the handler.  Of course, the next minor version bump update to
+gnumeric broke that association.  Just as bad is what happens with sox.
+"play" and "rec" are symlinks to sox which does different things and
+expects different parameters.  Pointing to "play" or "rec" results in
+pointing to "sox".  I ended up manually editing mimeTypes.rdf to point
+to the file I actually wanted.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From ted.leslie at gmail.com  Mon Nov 17 21:16:07 2014
+From: ted.leslie at gmail.com (ted leslie)
+Date: Mon, 17 Nov 2014 16:16:07 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+Message-ID: <CAMua2SFsLb1BXmq4Y9JGt6NPSKZwsn81wmFFuaKJX4f2VE93kQ@mail.gmail.com>
+
+GRRRrrr, not me, and I was in first, what does it say on the status of your
+order when you log in?
+Mine says "Order in Progress"
+
+On Mon, Nov 17, 2014 at 3:29 PM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+> | From: D. Hugh Redelmeier <hugh at mimosa.com>
+>
+> | This is an astounding deal for a good 27" 2560x1440 monitor.  I've
+> ordered
+> | one.  $307.61 including taxes, EHF, shipping.
+>
+> I got notice from Walmart of a Canada Post shipping label.  Seems like
+> a good sign.
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141117/30b814ca/attachment.html>
+
+From hugh at mimosa.com  Mon Nov 17 21:27:27 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 17 Nov 2014 16:27:27 -0500 (EST)
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <CAMua2SFsLb1BXmq4Y9JGt6NPSKZwsn81wmFFuaKJX4f2VE93kQ@mail.gmail.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAMua2SFsLb1BXmq4Y9JGt6NPSKZwsn81wmFFuaKJX4f2VE93kQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1411171622320.19789@redclaw.mimosa.com>
+
+| From: ted leslie <ted.leslie at gmail.com>
+
+| GRRRrrr, not me, and I was in first, what does it say on the status of your
+| order when you log in?
+| Mine says "Order in Progress"
+
+Mine says "Order shipped".
+
+Canada Post says: 
+
+    (i) A shipping label has been created by the shipper. Once the
+    shipment arrives in our facility, tracking status and the expected
+    delivery date will be updated. Check back for updates or sign up
+    for email notifications.
+
+and that the information was submitted by the shipper about 18 minutes
+ago in Mississauga.
+
+From waltdnes at waltdnes.org  Mon Nov 17 21:46:48 2014
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Mon, 17 Nov 2014 16:46:48 -0500
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <alpine.LRH.2.02.1411171328290.19789@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <463943.86549.bm@smtp222.mail.ne1.yahoo.com>
+ <alpine.LRH.2.02.1411161639190.6002@redclaw.mimosa.com>
+ <20141117071717.GC1529@waltdnes.org>
+ <alpine.LRH.2.02.1411171328290.19789@redclaw.mimosa.com>
+Message-ID: <20141117214648.GB8784@waltdnes.org>
+
+On Mon, Nov 17, 2014 at 01:33:30PM -0500, D. Hugh Redelmeier wrote
+> | From: Walter Dnes <waltdnes at waltdnes.org>
+> 
+> (Nice hack to run multiple browser instances.)
+> 
+> | * As others have pointed out, the Java plugin is a major security hole,
+> |   a cross-platform equivalant of Active-X.  Remove, or disable the
+> |   plugin.
+> 
+> No, it isn't like Active-X.  Totally different security model.
+> 
+> Active-X: total trust in signed plug-ins
+> 
+> Java: sandbox the application so that it isn't able to do unauthorized
+> things.  Unfortunately, the attack surface is large enough that there
+> were likely and have been implementation failures.
+
+  I understand the differences "under the hood", but conceptually, at an
+abstract level, it's the same.  A diesel-engined car has a different
+powersource than a gasoline-engined car or an electric car.  But in the
+end, they accomplish the same task, i.e. moving a few people and some
+groceries around.  And they're all capable of getting into accidents.
+
+  Same thing with Java and Active-X, they involve downloading code from
+a webpage and executing it on your machine.  And they're all capable of
+security breaches.  Yes, they're different "under the hood", but the
+results are often the same.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From mlxxxp at gmail.com  Mon Nov 17 21:48:48 2014
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Mon, 17 Nov 2014 16:48:48 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+Message-ID: <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+
+I ordered one last night and got an e-mail receipt about an hour ago
+today (Nov. 17) saying that it's been shipped. Using the included
+tracking number tells me that it was picked up by Canada Post at
+4:14PM today.
+
+-- 
+Scott A.
+
+From lsorense at csclub.uwaterloo.ca  Mon Nov 17 21:51:28 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 17 Nov 2014 16:51:28 -0500
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <20141117214648.GB8784@waltdnes.org>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <463943.86549.bm@smtp222.mail.ne1.yahoo.com>
+ <alpine.LRH.2.02.1411161639190.6002@redclaw.mimosa.com>
+ <20141117071717.GC1529@waltdnes.org>
+ <alpine.LRH.2.02.1411171328290.19789@redclaw.mimosa.com>
+ <20141117214648.GB8784@waltdnes.org>
+Message-ID: <20141117215128.GT24111@csclub.uwaterloo.ca>
+
+On Mon, Nov 17, 2014 at 04:46:48PM -0500, Walter Dnes wrote:
+>   I understand the differences "under the hood", but conceptually, at an
+> abstract level, it's the same.  A diesel-engined car has a different
+> powersource than a gasoline-engined car or an electric car.  But in the
+> end, they accomplish the same task, i.e. moving a few people and some
+> groceries around.  And they're all capable of getting into accidents.
+> 
+>   Same thing with Java and Active-X, they involve downloading code from
+> a webpage and executing it on your machine.  And they're all capable of
+> security breaches.  Yes, they're different "under the hood", but the
+> results are often the same.
+
+Not quite.  Active-X downloads and executes native code on your machine.
+Java downloads byte code and executes it in a virtual machine (which is
+not the same as running directly on your machine).  Unfrotuantely the java
+virtual machine has to provide methods to make things actually happen
+and those have often had problems too, although generally nowhere near
+as bad as what active-x allows by design.
+
+-- 
+Len Sorensen
+
+From chris at cfajohnson.com  Mon Nov 17 21:54:45 2014
+From: chris at cfajohnson.com (Chris F.A. Johnson)
+Date: Mon, 17 Nov 2014 16:54:45 -0500 (EST)
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <546A3ED9.8010007@dinamis.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <CAHcykVppAXFi9CR8RHiHX8X2ujvr4r9Ya-kTVCW8d1JHFodiBQ@mail.gmail.com>
+ <CAFNqd5UV_aRAcMJiPqLdVYYGuJM_QBsNDUFdLL2vO=ouhQgJ6w@mail.gmail.com>
+ <alpine.LRH.2.02.1411171318030.19789@redclaw.mimosa.com>
+ <546A3ED9.8010007@dinamis.com>
+Message-ID: <alpine.DEB.2.10.1411171653440.3785@chris.tor>
+
+On Mon, 17 Nov 2014, Clifford Ilkay wrote:
+
+> On 11/17/2014 01:27 PM, D. Hugh Redelmeier wrote:
+>> | From: Christopher Browne <cbbrowne at gmail.com>
+>>
+>> | But it's also not too much to ask to hope for the browser to not be
+>> | *too* dramatically memory leaky.
+>> |
+>> | And It sure seems like the browsers have gotten memory leaky, even
+>> | without resorting to Flash and Java.  It looks to me like Javascript, which
+>> | is pretty well mandatory these days what with all the "web applications"
+>> | using AJAX and such, can chew great gobs of memory without hardly
+>> | trying.
+>>
+>> Right.
+>>
+>> I would like each "compartment" to be isolated and instrumented.
+>
+> You just described Google Chrome.
+
+    Google Chrome slows down my machine *much* more than Firefox.
+
+-- 
+Chris F.A. Johnson, <http://cfajohnson.com>
+
+From kevin at ve3syb.ca  Mon Nov 17 22:46:43 2014
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Mon, 17 Nov 2014 17:46:43 -0500
+Subject: [GTALUG] Playing *.pls files in firefox?
+In-Reply-To: <20141117073327.GD1529@waltdnes.org>
+References: <20141117073327.GD1529@waltdnes.org>
+Message-ID: <546A7AD3.8070606@ve3syb.ca>
+
+On 17/11/2014 2:33 AM, Walter Dnes wrote:
+>    Showing my age here, I like oldies music.  An interesting site is
+> http://www.fun45s.com/ but firefox won't play it for me.  Fortunately
+> they give the direct stream URL on their homepage.  If I try
+> http://s7.voscast.com:8376 or http://www.fun45s.com/listen.pls in
+> firefox, firefox asks for a .pls handler, and I point it to mpg123.
+
+I see from another message you already solved your problem with playing the 
+audio stream. My machine played the sound using the original URL with no 
+problem. Just as an FYI for those "playing along at home" (no pun intended), 
+you can put the URL ending in ".pls" in to VLC and it plays the stream.
+
+Another trick with .pls files if you want to play the stream in something 
+that doesn't handle the .pls files directly is to use wget to retrieve the 
+.pls file then look inside it. It is just a text file and contains the URL 
+with port number that you can put into another player program. I've used 
+that trick so I could use RealPlayer to play audio streams.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From james.knott at rogers.com  Tue Nov 18 02:11:50 2014
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 17 Nov 2014 21:11:50 -0500
+Subject: [GTALUG] Playing *.pls files in firefox?
+In-Reply-To: <546A7AD3.8070606@ve3syb.ca>
+References: <20141117073327.GD1529@waltdnes.org> <546A7AD3.8070606@ve3syb.ca>
+Message-ID: <546AAAE6.5060701@rogers.com>
+
+On 11/17/2014 05:46 PM, Kevin Cozens wrote:
+> On 17/11/2014 2:33 AM, Walter Dnes wrote:
+>>    Showing my age here, I like oldies music.  An interesting site is
+>> http://www.fun45s.com/ but firefox won't play it for me.  Fortunately
+>> they give the direct stream URL on their homepage.  If I try
+>> http://s7.voscast.com:8376 or http://www.fun45s.com/listen.pls in
+>> firefox, firefox asks for a .pls handler, and I point it to mpg123.
+>
+> I see from another message you already solved your problem with
+> playing the audio stream. My machine played the sound using the
+> original URL with no problem. Just as an FYI for those "playing along
+> at home" (no pun intended), you can put the URL ending in ".pls" in to
+> VLC and it plays the stream.
+>
+> Another trick with .pls files if you want to play the stream in
+> something that doesn't handle the .pls files directly is to use wget
+> to retrieve the .pls file then look inside it. It is just a text file
+> and contains the URL with port number that you can put into another
+> player program. I've used that trick so I could use RealPlayer to play
+> audio streams.
+>
+
+Another solution is to use the Tunein app on a tablet or smart phone. 
+You can select from several "radio stations" that way, including some
+that won't play on Linux, at least not without additional help.
+
+
+From lists at alteeve.ca  Tue Nov 18 02:21:07 2014
+From: lists at alteeve.ca (Digimer)
+Date: Mon, 17 Nov 2014 21:21:07 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+Message-ID: <546AAD13.30506@alteeve.ca>
+
+On 17/11/14 04:48 PM, Scott Allen wrote:
+> I ordered one last night and got an e-mail receipt about an hour ago
+> today (Nov. 17) saying that it's been shipped. Using the included
+> tracking number tells me that it was picked up by Canada Post at
+> 4:14PM today.
+
+Not a peep on my order yet. =/
+
+-- 
+Digimer
+Papers and Projects: https://alteeve.ca/w/
+What if the cure for cancer is trapped in the mind of a person without 
+access to education?
+
+From davec-b at rogers.com  Tue Nov 18 03:09:42 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Mon, 17 Nov 2014 22:09:42 -0500
+Subject: [GTALUG] What's a good scrum tracking tool?
+Message-ID: <546AB876.70709@rogers.com>
+
+I'm using jira, and now see why we previously dropped it in favour of 
+yellow stickies and whiteboards (;-))
+
+What's a good product, preferably one that is programmable, has a 
+command-line or an api?
+I'm suffering from click-and-have-coffee syndrome, and the only thing 
+programmable are csv uploads and pseudo-sql queries, via the gui.
+
+I want to manage stories and bugs filed against them.
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From me at staticsafe.ca  Mon Nov 17 23:46:49 2014
+From: me at staticsafe.ca (staticsafe)
+Date: Mon, 17 Nov 2014 18:46:49 -0500
+Subject: [GTALUG] Firefox is a pig
+In-Reply-To: <CAFNqd5ULgsvV+AK1+dcCrd+GybZRHd0-A88rqYKgQLzyQp-i2g@mail.gmail.com>
+References: <alpine.LRH.2.02.1411161512040.6002@redclaw.mimosa.com>
+ <CAHcykVppAXFi9CR8RHiHX8X2ujvr4r9Ya-kTVCW8d1JHFodiBQ@mail.gmail.com>
+ <CAFNqd5UV_aRAcMJiPqLdVYYGuJM_QBsNDUFdLL2vO=ouhQgJ6w@mail.gmail.com>
+ <alpine.LRH.2.02.1411171318030.19789@redclaw.mimosa.com>
+ <546A3ED9.8010007@dinamis.com>
+ <alpine.LRH.2.02.1411171523080.19789@redclaw.mimosa.com>
+ <CAFNqd5ULgsvV+AK1+dcCrd+GybZRHd0-A88rqYKgQLzyQp-i2g@mail.gmail.com>
+Message-ID: <546A88E9.6060800@staticsafe.ca>
+
+On 11/17/2014 15:47, Christopher Browne wrote:
+> 
+> See URL
+>     chrome://memory-redirect
+> 
+> I think memory consumption is more interesting than CPU consumption,
+> myself...
+
+The Firefox equivalent for this is about:memory. You can also tell
+Firefox to run the garbage collector from that page.
+
+-- 
+staticsafe
+https://staticsafe.ca
+
+From hugh at mimosa.com  Tue Nov 18 04:55:35 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 17 Nov 2014 23:55:35 -0500 (EST)
+Subject: [GTALUG] debian problems
+Message-ID: <alpine.LRH.2.02.1411172354110.19789@redclaw.mimosa.com>
+
+>From the outside, it looks as if the init system decision has taken a 
+horrible toll on debian:
+	<http://www.phoronix.com/scan.php?page=news_item&px=MTg0MjM>
+Very sad.
+
+From lists at alteeve.ca  Tue Nov 18 05:48:58 2014
+From: lists at alteeve.ca (Digimer)
+Date: Tue, 18 Nov 2014 00:48:58 -0500
+Subject: [GTALUG] debian problems
+In-Reply-To: <alpine.LRH.2.02.1411172354110.19789@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1411172354110.19789@redclaw.mimosa.com>
+Message-ID: <546ADDCA.5050007@alteeve.ca>
+
+On 17/11/14 11:55 PM, D. Hugh Redelmeier wrote:
+>  From the outside, it looks as if the init system decision has taken a
+> horrible toll on debian:
+> 	<http://www.phoronix.com/scan.php?page=news_item&px=MTg0MjM>
+> Very sad.
+
+I would place more of the blame on the (childish) reaction from Ian and 
+others. From what I've seen, the resignations all are based on constant 
+abuse and stress.
+
+How easily people forget that it's a group of volunteers.
+
+-- 
+Digimer
+Papers and Projects: https://alteeve.ca/w/
+What if the cure for cancer is trapped in the mind of a person without 
+access to education?
+
