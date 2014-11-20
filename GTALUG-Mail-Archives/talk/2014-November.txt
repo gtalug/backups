@@ -9089,3 +9089,587 @@ Papers and Projects: https://alteeve.ca/w/
 What if the cure for cancer is trapped in the mind of a person without 
 access to education?
 
+From softquake at gmail.com  Wed Nov 19 16:37:36 2014
+From: softquake at gmail.com (Zbigniew Koziol)
+Date: Wed, 19 Nov 2014 17:37:36 +0100
+Subject: [GTALUG] ffmpeg question
+Message-ID: <546CC750.4070302@gmail.com>
+
+Hello,
+
+For some here the answer will probably be know right away. That is why I 
+am writing, after long googling.
+
+I would like to create a sort of video presentation from images. 
+However, I would like that every slide (image) is displayed for a 
+different time duration. This is just the first step; next i would like 
+to combine voice with that, but it is probably another problem, for later.
+
+Hence, I have a sequence of images y-%2d.png
+
+The following works for me:
+
+ffmpeg -framerate 1/10 -i y-%2d.png -c:v mpeg4 -vf 
+"fps=2,format=yuv420p" out.mp4
+
+And the following works, too:
+
+ffmpeg -r 1/2 -start_number 7 -i y-%2d.png -c:v mpeg4 -vf 
+"fps=2,format=yuv420p" out.mp4
+
+However, how to control the time of displaying individual images? Is 
+that possible at all?
+
+I thought that something like this may work:
+
+ffmpeg -r 1/5 -i y-01.png -r 1 -i y-02.png -c:v mpeg4 -vf 
+"fps=2,format=yuv420p" out.mp4
+
+It does not. The first image is displayed, only.
+
+Kind regards from Poland,
+zb.
+
+-- 
+Zbigniew Kozio?
+http://nanophysics.pl
+mobile: 500 685 477
+stationary at home: 17 229 8940
+
+
+From lsorense at csclub.uwaterloo.ca  Wed Nov 19 17:18:06 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 19 Nov 2014 12:18:06 -0500
+Subject: [GTALUG] ffmpeg question
+In-Reply-To: <546CC750.4070302@gmail.com>
+References: <546CC750.4070302@gmail.com>
+Message-ID: <20141119171806.GV24111@csclub.uwaterloo.ca>
+
+On Wed, Nov 19, 2014 at 05:37:36PM +0100, Zbigniew Koziol wrote:
+> Hello,
+> 
+> For some here the answer will probably be know right away. That is
+> why I am writing, after long googling.
+> 
+> I would like to create a sort of video presentation from images.
+> However, I would like that every slide (image) is displayed for a
+> different time duration. This is just the first step; next i would
+> like to combine voice with that, but it is probably another problem,
+> for later.
+> 
+> Hence, I have a sequence of images y-%2d.png
+> 
+> The following works for me:
+> 
+> ffmpeg -framerate 1/10 -i y-%2d.png -c:v mpeg4 -vf
+> "fps=2,format=yuv420p" out.mp4
+> 
+> And the following works, too:
+> 
+> ffmpeg -r 1/2 -start_number 7 -i y-%2d.png -c:v mpeg4 -vf
+> "fps=2,format=yuv420p" out.mp4
+> 
+> However, how to control the time of displaying individual images? Is
+> that possible at all?
+> 
+> I thought that something like this may work:
+> 
+> ffmpeg -r 1/5 -i y-01.png -r 1 -i y-02.png -c:v mpeg4 -vf
+> "fps=2,format=yuv420p" out.mp4
+> 
+> It does not. The first image is displayed, only.
+> 
+> Kind regards from Poland,
+
+Would this help (never used it)?
+
+Package: photofilmstrip
+Priority: optional
+Section: video
+Installed-Size: 1053
+Maintainer: Christian Marillat <marillat at deb-multimedia.org>
+Architecture: all
+Source: photofilmstrip-dmo
+Version: 1:2.1.0-dmo1
+Depends: mencoder, python-wxgtk3.0, python-imaging, python (>= 2.7), python (<< 2.8)
+Filename: pool/main/p/photofilmstrip-dmo/photofilmstrip_2.1.0-dmo1_all.deb
+Size: 213974
+MD5sum: b427904ff4813078dd91fc60b459f0a6
+SHA1: a4bf7caea86ac7c6fc34493b5eb75abb89a939c2
+SHA256: 7b5187db2541040f43f419cd48fe59940b6d80a70b1559750e76bd1030353ce3
+SHA512: 8cc44b6a85a12b5586cf00fde9c90de5186b1c57b3bf925988d30a122de1a58a4b7c5284078970371f79dcf956cee7a2ad2bae7cf85c0726420aaa403684ba21
+Description: Slideshow creator with Ken Burns effect
+ This creates movies out of your pictures in just three steps. First select
+ your photos, customize the motion path and render the video. There are
+ several output possibilities for VCD, SVCD, DVD up to FULL-HD.
+ .
+ The effect of the slideshow is known as "Ken Burns". Comments of the
+ pictures are generated into a subtitle file. Furthermore an audio file can
+ be specified to setup the background music for the slide show.
+Description-md5: 076b3664ea936d420a04dc9b354700e2
+Bugs: mailto:marillat at deb-multimedia.org
+Homepage: http://www.photofilmstrip.org/
+
+-- 
+Len Sorensen
+
+From john.moniz at sympatico.ca  Wed Nov 19 18:25:42 2014
+From: john.moniz at sympatico.ca (John Moniz)
+Date: Wed, 19 Nov 2014 13:25:42 -0500
+Subject: [GTALUG] ffmpeg question
+In-Reply-To: <546CC750.4070302@gmail.com>
+References: <546CC750.4070302@gmail.com>
+Message-ID: <BLU436-SMTP1950B776F4602AAFAC53085E3890@phx.gbl>
+
+On 11/19/2014 11:37 AM, Zbigniew Koziol wrote:
+> Hello,
+>
+> For some here the answer will probably be know right away. That is why 
+> I am writing, after long googling.
+>
+> I would like to create a sort of video presentation from images. 
+> However, I would like that every slide (image) is displayed for a 
+> different time duration. This is just the first step; next i would 
+> like to combine voice with that, but it is probably another problem, 
+> for later.
+>
+> Hence, I have a sequence of images y-%2d.png
+>
+> The following works for me:
+>
+> ffmpeg -framerate 1/10 -i y-%2d.png -c:v mpeg4 -vf 
+> "fps=2,format=yuv420p" out.mp4
+>
+> And the following works, too:
+>
+> ffmpeg -r 1/2 -start_number 7 -i y-%2d.png -c:v mpeg4 -vf 
+> "fps=2,format=yuv420p" out.mp4
+>
+> However, how to control the time of displaying individual images? Is 
+> that possible at all?
+>
+> I thought that something like this may work:
+>
+> ffmpeg -r 1/5 -i y-01.png -r 1 -i y-02.png -c:v mpeg4 -vf 
+> "fps=2,format=yuv420p" out.mp4
+>
+> It does not. The first image is displayed, only.
+>
+> Kind regards from Poland,
+> zb.
+>
+I have used PhotoFilmStrip and also Imagination. One of them does the 
+individual time duration, can't remember which.
+
+John.
+
+From softquake at gmail.com  Wed Nov 19 18:50:25 2014
+From: softquake at gmail.com (Zbigniew Koziol)
+Date: Wed, 19 Nov 2014 19:50:25 +0100
+Subject: [GTALUG] ffmpeg question
+In-Reply-To: <BLU436-SMTP1950B776F4602AAFAC53085E3890@phx.gbl>
+References: <546CC750.4070302@gmail.com>
+ <BLU436-SMTP1950B776F4602AAFAC53085E3890@phx.gbl>
+Message-ID: <546CE671.2070202@gmail.com>
+
+Thanks, Lennart and John for suggestions.
+
+I suspect that it was the right idea that ffmpeg can not do this. I 
+would prefer rather to have a command from terminal where everything is 
+there, not an external program (though I did them already installed and 
+will try one day).
+
+However, just after posting to this list (that is an advantage of 
+writing here; that stimulates own thinking) an idea, a simple one, come:
+
+Well... instead of changing the time of displaying an individual image, 
+I could instead create a number of copies of every image, according to 
+the need (the time of display), enumerate them accordingly, and.. thats 
+it! In other world, instead of controlling the time of display, I would 
+rather adjust the number of copies of identical images. For a 
+presentation with a few tens of images this is a prefectly convenient 
+solution around the problem.
+
+zb.
+
+
+On 11/19/2014 07:25 PM, John Moniz wrote:
+> On 11/19/2014 11:37 AM, Zbigniew Koziol wrote:
+>> Hello,
+>>
+>> For some here the answer will probably be know right away. That is 
+>> why I am writing, after long googling.
+>>
+>> I would like to create a sort of video presentation from images. 
+>> However, I would like that every slide (image) is displayed for a 
+>> different time duration. This is just the first step; next i would 
+>> like to combine voice with that, but it is probably another problem, 
+>> for later.
+>>
+>> Hence, I have a sequence of images y-%2d.png
+>>
+>> The following works for me:
+>>
+>> ffmpeg -framerate 1/10 -i y-%2d.png -c:v mpeg4 -vf 
+>> "fps=2,format=yuv420p" out.mp4
+>>
+>> And the following works, too:
+>>
+>> ffmpeg -r 1/2 -start_number 7 -i y-%2d.png -c:v mpeg4 -vf 
+>> "fps=2,format=yuv420p" out.mp4
+>>
+>> However, how to control the time of displaying individual images? Is 
+>> that possible at all?
+>>
+>> I thought that something like this may work:
+>>
+>> ffmpeg -r 1/5 -i y-01.png -r 1 -i y-02.png -c:v mpeg4 -vf 
+>> "fps=2,format=yuv420p" out.mp4
+>>
+>> It does not. The first image is displayed, only.
+>>
+>> Kind regards from Poland,
+>> zb.
+>>
+> I have used PhotoFilmStrip and also Imagination. One of them does the 
+> individual time duration, can't remember which.
+>
+> John.
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+Zbigniew Kozio?
+http://nanophysics.pl
+mobile: 500 685 477
+stationary at home: 17 229 8940
+
+
+From lsorense at csclub.uwaterloo.ca  Wed Nov 19 18:55:45 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 19 Nov 2014 13:55:45 -0500
+Subject: [GTALUG] ffmpeg question
+In-Reply-To: <546CE671.2070202@gmail.com>
+References: <546CC750.4070302@gmail.com>
+ <BLU436-SMTP1950B776F4602AAFAC53085E3890@phx.gbl>
+ <546CE671.2070202@gmail.com>
+Message-ID: <20141119185545.GW24111@csclub.uwaterloo.ca>
+
+On Wed, Nov 19, 2014 at 07:50:25PM +0100, Zbigniew Koziol wrote:
+> Thanks, Lennart and John for suggestions.
+> 
+> I suspect that it was the right idea that ffmpeg can not do this. I
+> would prefer rather to have a command from terminal where everything
+> is there, not an external program (though I did them already
+> installed and will try one day).
+> 
+> However, just after posting to this list (that is an advantage of
+> writing here; that stimulates own thinking) an idea, a simple one,
+> come:
+> 
+> Well... instead of changing the time of displaying an individual
+> image, I could instead create a number of copies of every image,
+> according to the need (the time of display), enumerate them
+> accordingly, and.. thats it! In other world, instead of controlling
+> the time of display, I would rather adjust the number of copies of
+> identical images. For a presentation with a few tens of images this
+> is a prefectly convenient solution around the problem.
+
+At least photofilmstrip says it can be driven from the command line for
+batch processing.
+
+-- 
+Len Sorensen
+
+From kevin at ve3syb.ca  Wed Nov 19 20:51:26 2014
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Wed, 19 Nov 2014 15:51:26 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+Message-ID: <546D02CE.30107@ve3syb.ca>
+
+On 18/11/2014 12:20 PM, ted leslie wrote:
+> the monitors themselves, 24" :(
+> anyone else receive theirs yet? and if, get 24" or 27"?
+
+The description on the website does indicate it is 24". If it said 27" 
+before they have corrected the listing.
+
+If you ordered one, kept it, and have put it in to use, what are your 
+impressions of it?
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From lsorense at csclub.uwaterloo.ca  Wed Nov 19 21:22:11 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 19 Nov 2014 16:22:11 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <546D02CE.30107@ve3syb.ca>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca>
+Message-ID: <20141119212211.GX24111@csclub.uwaterloo.ca>
+
+On Wed, Nov 19, 2014 at 03:51:26PM -0500, Kevin Cozens wrote:
+> The description on the website does indicate it is 24". If it said
+> 27" before they have corrected the listing.
+
+It clearly said 2560x1440 Dell U2713HM.
+
+And looking at the URL:
+http://www.walmart.ca/en/ip/dell-27-2560-x-1440-led-ips-monitor/6000189477880
+
+Seems pretty clear that it is a Dell, 27", 2560x1440, LED backlight,
+IPS panel, monitor.  Not sure how else one could read that.
+
+And the current description says:
+
+  2560x1440 WQHD resolution: Over 3.6 million pixels provide amazing
+  clarity on a spacious 27" LED-backlit display.
+  Accurate color right out of the box: Carefully color calibrated at
+  the factory, the U2713HM monitor features more than 99-percent sRGB
+  color space for impressive color from the moment you set it up.
+
+And then the right side says 24", which contradicts the main description.
+
+So the resolution does not exist in a 24" that is listed, the model
+listed is a 27", they just changed 27 to 24 in a few places, but it is
+still all wrong.
+
+> If you ordered one, kept it, and have put it in to use, what are
+> your impressions of it?
+
+-- 
+Len Sorensen
+
+From lists at alteeve.ca  Wed Nov 19 21:40:59 2014
+From: lists at alteeve.ca (Digimer)
+Date: Wed, 19 Nov 2014 16:40:59 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <20141119212211.GX24111@csclub.uwaterloo.ca>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca> <20141119212211.GX24111@csclub.uwaterloo.ca>
+Message-ID: <546D0E6B.3040602@alteeve.ca>
+
+On 19/11/14 04:22 PM, Lennart Sorensen wrote:
+> On Wed, Nov 19, 2014 at 03:51:26PM -0500, Kevin Cozens wrote:
+>> The description on the website does indicate it is 24". If it said
+>> 27" before they have corrected the listing.
+>
+> It clearly said 2560x1440 Dell U2713HM.
+>
+> And looking at the URL:
+> http://www.walmart.ca/en/ip/dell-27-2560-x-1440-led-ips-monitor/6000189477880
+>
+> Seems pretty clear that it is a Dell, 27", 2560x1440, LED backlight,
+> IPS panel, monitor.  Not sure how else one could read that.
+>
+> And the current description says:
+>
+>    2560x1440 WQHD resolution: Over 3.6 million pixels provide amazing
+>    clarity on a spacious 27" LED-backlit display.
+>    Accurate color right out of the box: Carefully color calibrated at
+>    the factory, the U2713HM monitor features more than 99-percent sRGB
+>    color space for impressive color from the moment you set it up.
+>
+> And then the right side says 24", which contradicts the main description.
+>
+> So the resolution does not exist in a 24" that is listed, the model
+> listed is a 27", they just changed 27 to 24 in a few places, but it is
+> still all wrong.
+>
+>> If you ordered one, kept it, and have put it in to use, what are
+>> your impressions of it?
+>
+
+It is now listing 24", but it wasn't earlier. In any case, it's _still_ 
+listing 1560 x 1440, but the one they're shipping is 1920 x 1080. It's 
+not even close to the one originally advertised.
+
+-- 
+Digimer
+Papers and Projects: https://alteeve.ca/w/
+What if the cure for cancer is trapped in the mind of a person without 
+access to education?
+
+From lsorense at csclub.uwaterloo.ca  Wed Nov 19 22:00:50 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 19 Nov 2014 17:00:50 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <546D0E6B.3040602@alteeve.ca>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca>
+ <20141119212211.GX24111@csclub.uwaterloo.ca>
+ <546D0E6B.3040602@alteeve.ca>
+Message-ID: <20141119220049.GY24111@csclub.uwaterloo.ca>
+
+On Wed, Nov 19, 2014 at 04:40:59PM -0500, Digimer wrote:
+> On 19/11/14 04:22 PM, Lennart Sorensen wrote:
+> >On Wed, Nov 19, 2014 at 03:51:26PM -0500, Kevin Cozens wrote:
+> >>The description on the website does indicate it is 24". If it said
+> >>27" before they have corrected the listing.
+> >
+> >It clearly said 2560x1440 Dell U2713HM.
+> >
+> >And looking at the URL:
+> >http://www.walmart.ca/en/ip/dell-27-2560-x-1440-led-ips-monitor/6000189477880
+> >
+> >Seems pretty clear that it is a Dell, 27", 2560x1440, LED backlight,
+> >IPS panel, monitor.  Not sure how else one could read that.
+> >
+> >And the current description says:
+> >
+> >   2560x1440 WQHD resolution: Over 3.6 million pixels provide amazing
+> >   clarity on a spacious 27" LED-backlit display.
+> >   Accurate color right out of the box: Carefully color calibrated at
+> >   the factory, the U2713HM monitor features more than 99-percent sRGB
+> >   color space for impressive color from the moment you set it up.
+> >
+> >And then the right side says 24", which contradicts the main description.
+> >
+> >So the resolution does not exist in a 24" that is listed, the model
+> >listed is a 27", they just changed 27 to 24 in a few places, but it is
+> >still all wrong.
+> >
+> >>If you ordered one, kept it, and have put it in to use, what are
+> >>your impressions of it?
+> >
+> 
+> It is now listing 24", but it wasn't earlier. In any case, it's
+> _still_ listing 1560 x 1440, but the one they're shipping is 1920 x
+> 1080. It's not even close to the one originally advertised.
+
+The title says 24, but notice the description still calls it 27" and
+still uses the Dell model number of the 27".
+
+I see they also have the 10bit panel version for $350:
+
+http://www.walmart.ca/en/ip/dell27-2560-x-1440-ips-led-monitor/6000189477877
+
+Are they going to claim that is wrong too?
+
+As far as I can tell, Dell lists the U2713H at $1000 right now, and I
+think 'CA' just means canadian packaging (french instructions included?)
+
+-- 
+Len Sorensen
+
+From thomas.bruce.milne at gmail.com  Thu Nov 20 03:40:13 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Thu, 20 Nov 2014 03:40:13 +0000
+Subject: [GTALUG] NCIX.com - Samsung Dual LCD Bundle 2x S27D390HS 27in
+ Widescreen PLS LED Monitor FHD 5ms 1000:1 HDMI VGA
+Message-ID: <CAGc8pF5AASFo+anf=T9CuxJtDREuz2G9Wmb_q8tcvEbOrhB_2A@mail.gmail.com>
+
+Pursuant to the exciting saga of the weirdly cheap Dell monitor from
+Walmart:
+
+http://m.ncix.com/products/sku/102841/1242
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141120/2f0167d0/attachment.html>
+
+From aruna.hewapathirane at gmail.com  Thu Nov 20 03:01:23 2014
+From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
+Date: Wed, 19 Nov 2014 22:01:23 -0500
+Subject: [GTALUG] ffmpeg question
+In-Reply-To: <546CC750.4070302@gmail.com>
+References: <546CC750.4070302@gmail.com>
+Message-ID: <CAFSeFg8FT4EOMv34E-rSnenUn1DQhOg8eJCta8rBpAvKVgHL0w@mail.gmail.com>
+
+<snip>
+
+> >> I thought that something like this may work:
+> >> ffmpeg -r 1/5 -i y-01.png -r 1 -i y-02.png -c:v mpeg4 -vf
+> "fps=2,format=yuv420p" out.mp4
+> >> It does not. The first image is displayed, only.
+> >> Kind regards from Poland,
+> >> zb.
+>
+>
+zb,
+
+You could create a short, temporary intermediate video for each frame:
+
+ffmpeg -r 1/5 -i y-01.png -c:v mpeg4 -vf "fps=2,format=yuv420p" out.mp4
+ffmpeg -r 1/10-i y-02.png -c:v mpeg4 -vf "fps=2,format=yuv420p" out.mp4
+
+5seconds for the first and 10seconds for the second ( and so on and so
+forth... )
+
+Then concatenate each video:
+FFmpeg FAQ: How can I join video files?
+<http://ffmpeg.org/faq.html#How-can-I-join-video-files_003f>
+FFmpeg Wiki: How to concatenate (join, merge) media files
+<https://trac.ffmpeg.org/wiki/How%20to%20concatenate%20%28join%2C%20merge%29%20media%20files>
+
+This will allow you to do what you need to from the command line but this
+is a very awkward and cumbersome way. Probably be much easier to use a
+video editor.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141119/0927edc1/attachment.html>
+
+From ted.leslie at gmail.com  Thu Nov 20 04:52:16 2014
+From: ted.leslie at gmail.com (ted leslie)
+Date: Wed, 19 Nov 2014 23:52:16 -0500
+Subject: [GTALUG] NCIX.com - Samsung Dual LCD Bundle 2x S27D390HS 27in
+ Widescreen PLS LED Monitor FHD 5ms 1000:1 HDMI VGA
+In-Reply-To: <CAGc8pF5AASFo+anf=T9CuxJtDREuz2G9Wmb_q8tcvEbOrhB_2A@mail.gmail.com>
+References: <CAGc8pF5AASFo+anf=T9CuxJtDREuz2G9Wmb_q8tcvEbOrhB_2A@mail.gmail.com>
+Message-ID: <CAMua2SGYHewwmJh2RDcYD=OS5Hx2TZ4bBz26tWq2ft_7MtpBog@mail.gmail.com>
+
+only 1920 unfortunately.
+-tl
+
+On Wed, Nov 19, 2014 at 10:40 PM, Thomas Milne <thomas.bruce.milne at gmail.com
+> wrote:
+
+> Pursuant to the exciting saga of the weirdly cheap Dell monitor from
+> Walmart:
+>
+> http://m.ncix.com/products/sku/102841/1242
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141119/92442dd2/attachment.html>
+
