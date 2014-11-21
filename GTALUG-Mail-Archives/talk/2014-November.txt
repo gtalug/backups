@@ -9673,3 +9673,663 @@ On Wed, Nov 19, 2014 at 10:40 PM, Thomas Milne <thomas.bruce.milne at gmail.com
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141119/92442dd2/attachment.html>
 
+From mlxxxp at gmail.com  Thu Nov 20 12:02:42 2014
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Thu, 20 Nov 2014 07:02:42 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <546D02CE.30107@ve3syb.ca>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca>
+Message-ID: <CAArSzsUNDUHWyzQ5uzMmfpM=hNy2HANk2QYVoH1PL6gz3thdNA@mail.gmail.com>
+
+On 19 November 2014 15:51, Kevin Cozens <kevin at ve3syb.ca> wrote:
+> The description on the website does indicate it is 24". If it said 27"
+> before they have corrected the listing.
+
+They also corrected the model number in the Specifications section
+from U2713HM to S2440LCA. Everything else appears to be unchanged.
+
+Note that the UPC code specified has always been the correct one for
+the 24" S2440L. I bet this is what counts since that's probably what
+they scan to assure that they're shipping the correct item.
+
+-- 
+Scott
+
+From mlxxxp at gmail.com  Thu Nov 20 12:18:44 2014
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Thu, 20 Nov 2014 07:18:44 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <20141119220049.GY24111@csclub.uwaterloo.ca>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca>
+ <20141119212211.GX24111@csclub.uwaterloo.ca>
+ <546D0E6B.3040602@alteeve.ca>
+ <20141119220049.GY24111@csclub.uwaterloo.ca>
+Message-ID: <CAArSzsUvKp8nBtVzKcP6NWe3qUV1YKcVKCbK-xEVC9gQ5CRmtw@mail.gmail.com>
+
+On 19 November 2014 17:00, Lennart Sorensen
+<lsorense at csclub.uwaterloo.ca> wrote:
+> I see they also have the 10bit panel version for $350:
+>
+> http://www.walmart.ca/en/ip/dell27-2560-x-1440-ips-led-monitor/6000189477877
+>
+> Are they going to claim that is wrong too?
+
+The picture shown for this one is of one of Dell's touch screen
+monitors. I'm guessing what you would receive is the S2240T 22" model,
+since Dell's regular price for it is $369.99, which is $20 more than
+the Walmart price.
+<http://accessories.us.dell.com/sna/productdetail.aspx?c=ca&cs=cadhs1&l=en&sku=320-9738>
+
+-- 
+Scott
+
+From scruss at gmail.com  Thu Nov 20 12:58:39 2014
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Thu, 20 Nov 2014 07:58:39 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <20141119220049.GY24111@csclub.uwaterloo.ca>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca> <20141119212211.GX24111@csclub.uwaterloo.ca>
+ <546D0E6B.3040602@alteeve.ca> <20141119220049.GY24111@csclub.uwaterloo.ca>
+Message-ID: <546DE57F.7030205@gmail.com>
+
+So was it a case of ?If it looks too good to be true ?? all along?
+
+cheers,
+ Stewart
+
+From john.moniz at sympatico.ca  Thu Nov 20 15:17:09 2014
+From: john.moniz at sympatico.ca (John Moniz)
+Date: Thu, 20 Nov 2014 10:17:09 -0500
+Subject: [GTALUG] SUSE Videos
+Message-ID: <BLU436-SMTP137B393034925069B506C5FE3760@phx.gbl>
+
+http://www.linux.com/news/software/applications/796082-susecon-2014-suses-open-approach-wins-new-enterprise-customers/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+linux-news%2Ffeeds+%28Linux-News%29
+
+Ran into a series of videos that some might find amusing. See bottom of 
+article. There are various videos to scroll through.
+
+John.
+
+From tisdall at gmail.com  Thu Nov 20 15:49:13 2014
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Thu, 20 Nov 2014 10:49:13 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <546DE57F.7030205@gmail.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca>
+ <20141119212211.GX24111@csclub.uwaterloo.ca>
+ <546D0E6B.3040602@alteeve.ca>
+ <20141119220049.GY24111@csclub.uwaterloo.ca>
+ <546DE57F.7030205@gmail.com>
+Message-ID: <CAGxYWpar8fC53_LcT3dMX4nHH119n_GnCRtaaEfDC+4o+jD==Q@mail.gmail.com>
+
+It looks like all their listings are messed up:
+http://www.walmart.ca/en/electronics/computers/monitors/dell/N-1856+1020854
+
+They have a 24" monitor for $3,499.97
+A 32" for $799.97
+another 24" for $1,499.97
+
+They're all over the map.  Someone obviously put all the Dell monitor
+listings in wrong.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141120/4ee11311/attachment.html>
+
+From joe.murray at jmaconsulting.biz  Thu Nov 20 16:41:09 2014
+From: joe.murray at jmaconsulting.biz (Joe Murray)
+Date: Thu, 20 Nov 2014 11:41:09 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <CAGxYWpar8fC53_LcT3dMX4nHH119n_GnCRtaaEfDC+4o+jD==Q@mail.gmail.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca>
+ <20141119212211.GX24111@csclub.uwaterloo.ca>
+ <546D0E6B.3040602@alteeve.ca>
+ <20141119220049.GY24111@csclub.uwaterloo.ca>
+ <546DE57F.7030205@gmail.com>
+ <CAGxYWpar8fC53_LcT3dMX4nHH119n_GnCRtaaEfDC+4o+jD==Q@mail.gmail.com>
+Message-ID: <CAKWRq5hZRrcNSFnzaCNVgSoxfOP3TuvL9LiFtaqSzC6xiKVa4w@mail.gmail.com>
+
+My receipt shows I purchased the 27", and when a 24" arrived just now I
+took pictures of it, refused delivery, and emailed Walmart showing
+incorrect item and asking when the correct item would arrive.
+On Nov 20, 2014 10:49 AM, "Tim Tisdall" <tisdall at gmail.com> wrote:
+
+> It looks like all their listings are messed up:
+> http://www.walmart.ca/en/electronics/computers/monitors/dell/N-1856+1020854
+>
+> They have a 24" monitor for $3,499.97
+> A 32" for $799.97
+> another 24" for $1,499.97
+>
+> They're all over the map.  Someone obviously put all the Dell monitor
+> listings in wrong.
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141120/d94c94bb/attachment.html>
+
+From joe.murray at jmaconsulting.biz  Thu Nov 20 17:21:51 2014
+From: joe.murray at jmaconsulting.biz (Joe Murray)
+Date: Thu, 20 Nov 2014 12:21:51 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <CAKWRq5hZRrcNSFnzaCNVgSoxfOP3TuvL9LiFtaqSzC6xiKVa4w@mail.gmail.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca> <20141119212211.GX24111@csclub.uwaterloo.ca>
+ <546D0E6B.3040602@alteeve.ca> <20141119220049.GY24111@csclub.uwaterloo.ca>
+ <546DE57F.7030205@gmail.com>
+ <CAGxYWpar8fC53_LcT3dMX4nHH119n_GnCRtaaEfDC+4o+jD==Q@mail.gmail.com>
+ <CAKWRq5hZRrcNSFnzaCNVgSoxfOP3TuvL9LiFtaqSzC6xiKVa4w@mail.gmail.com>
+Message-ID: <CAKWRq5hVWnX0kDwfvmSLKtxdrozg5dS9ijNOFDqOwufjPAtU_g@mail.gmail.com>
+
+The price of the 27" U2713 is now $349 (vs $834 regular $729 sale price on
+dell.ca (was $259 when I purchased), and the 30" U3014 at Walmart.ca is
+$349 vs Dell's normal price of $1599 discounted now to $1199. The Walmart
+page lists a Dell model number that varies slightly in the letters at the
+end compared to the Dell site. Buying now, I'd go for the 30".
+
+Joe Murray, PhD
+President, JMA Consulting
+joe.murray at jmaconsulting.biz
+skype JosephPMurray twitter JoeMurray
+416.466.1281
+
+On Thu, Nov 20, 2014 at 11:41 AM, Joe Murray <joe.murray at jmaconsulting.biz>
+wrote:
+
+> My receipt shows I purchased the 27", and when a 24" arrived just now I
+> took pictures of it, refused delivery, and emailed Walmart showing
+> incorrect item and asking when the correct item would arrive.
+> On Nov 20, 2014 10:49 AM, "Tim Tisdall" <tisdall at gmail.com> wrote:
+>
+>> It looks like all their listings are messed up:
+>> http://www.walmart.ca/en/electronics/computers/monitors/dell/N-1856+1020854
+>>
+>> They have a 24" monitor for $3,499.97
+>> A 32" for $799.97
+>> another 24" for $1,499.97
+>>
+>> They're all over the map.  Someone obviously put all the Dell monitor
+>> listings in wrong.
+>>
+>>
+>>
+>> ---
+>> GTALUG Talk Mailing List - talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141120/26e9ccdc/attachment.html>
+
+From lists at alteeve.ca  Thu Nov 20 17:43:44 2014
+From: lists at alteeve.ca (Digimer)
+Date: Thu, 20 Nov 2014 12:43:44 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <CAKWRq5hVWnX0kDwfvmSLKtxdrozg5dS9ijNOFDqOwufjPAtU_g@mail.gmail.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca> <20141119212211.GX24111@csclub.uwaterloo.ca>
+ <546D0E6B.3040602@alteeve.ca> <20141119220049.GY24111@csclub.uwaterloo.ca>
+ <546DE57F.7030205@gmail.com>
+ <CAGxYWpar8fC53_LcT3dMX4nHH119n_GnCRtaaEfDC+4o+jD==Q@mail.gmail.com>
+ <CAKWRq5hZRrcNSFnzaCNVgSoxfOP3TuvL9LiFtaqSzC6xiKVa4w@mail.gmail.com>
+ <CAKWRq5hVWnX0kDwfvmSLKtxdrozg5dS9ijNOFDqOwufjPAtU_g@mail.gmail.com>
+Message-ID: <546E2850.1040102@alteeve.ca>
+
+On 20/11/14 12:21 PM, Joe Murray wrote:
+> the 30" U3014 at Walmart.ca is $349 vs Dell's normal price of $1599
+> discounted now to $1199.
+
+I expect this to be a mistake, too. All their Dell monitors are screwed 
+up combos of prices, descriptions and PNs.
+
+I'd just stay the heck away from walmart at this point.
+
+-- 
+Digimer
+Papers and Projects: https://alteeve.ca/w/
+What if the cure for cancer is trapped in the mind of a person without 
+access to education?
+
+From ted.leslie at gmail.com  Thu Nov 20 18:07:25 2014
+From: ted.leslie at gmail.com (ted leslie)
+Date: Thu, 20 Nov 2014 13:07:25 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <546E2850.1040102@alteeve.ca>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca> <20141119212211.GX24111@csclub.uwaterloo.ca>
+ <546D0E6B.3040602@alteeve.ca> <20141119220049.GY24111@csclub.uwaterloo.ca>
+ <546DE57F.7030205@gmail.com>
+ <CAGxYWpar8fC53_LcT3dMX4nHH119n_GnCRtaaEfDC+4o+jD==Q@mail.gmail.com>
+ <CAKWRq5hZRrcNSFnzaCNVgSoxfOP3TuvL9LiFtaqSzC6xiKVa4w@mail.gmail.com>
+ <CAKWRq5hVWnX0kDwfvmSLKtxdrozg5dS9ijNOFDqOwufjPAtU_g@mail.gmail.com>
+ <546E2850.1040102@alteeve.ca>
+Message-ID: <CAMua2SFgRgjbCXTdgnkDV-T83yKU60y6QfXnnAkh0oNJXE2kdA@mail.gmail.com>
+
+I called them just now for update, they are still looking into it, i
+mentioned price had gone up 90$ on what I had ordered (not received) and if
+they would honour first price, but they couldn't comment. If they do sell
+it for 350$ now,
+I will at least get one, but now price is getting closer to their 4k dells,
+so have to think about it, now of course
+their 4k price may be out of sync, but it is closer to the best price i
+have seen else where. 350$ is still less then
+1/2 the typical low price, but given as you say how screwy their prices
+are, I have little confidence the 350$ is going
+to stick. Worst part is, if 350$ isn't going to stick, they will still be
+shipping all these out to customers incorrectly.
+Maybe with a little luck Dell screwed up its bulk custom pricing to WalMart
+and walmart will be able to honour and Dell will eat it. (ok i can dream).
+
+-tl
+
+On Thu, Nov 20, 2014 at 12:43 PM, Digimer <lists at alteeve.ca> wrote:
+
+> On 20/11/14 12:21 PM, Joe Murray wrote:
+>
+>> the 30" U3014 at Walmart.ca is $349 vs Dell's normal price of $1599
+>> discounted now to $1199.
+>>
+>
+> I expect this to be a mistake, too. All their Dell monitors are screwed up
+> combos of prices, descriptions and PNs.
+>
+> I'd just stay the heck away from walmart at this point.
+>
+> --
+> Digimer
+> Papers and Projects: https://alteeve.ca/w/
+> What if the cure for cancer is trapped in the mind of a person without
+> access to education?
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141120/9b2faffc/attachment.html>
+
+From lists at alteeve.ca  Thu Nov 20 18:35:14 2014
+From: lists at alteeve.ca (Digimer)
+Date: Thu, 20 Nov 2014 13:35:14 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <CAMua2SFgRgjbCXTdgnkDV-T83yKU60y6QfXnnAkh0oNJXE2kdA@mail.gmail.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca> <20141119212211.GX24111@csclub.uwaterloo.ca>
+ <546D0E6B.3040602@alteeve.ca> <20141119220049.GY24111@csclub.uwaterloo.ca>
+ <546DE57F.7030205@gmail.com>
+ <CAGxYWpar8fC53_LcT3dMX4nHH119n_GnCRtaaEfDC+4o+jD==Q@mail.gmail.com>
+ <CAKWRq5hZRrcNSFnzaCNVgSoxfOP3TuvL9LiFtaqSzC6xiKVa4w@mail.gmail.com>
+ <CAKWRq5hVWnX0kDwfvmSLKtxdrozg5dS9ijNOFDqOwufjPAtU_g@mail.gmail.com>
+ <546E2850.1040102@alteeve.ca>
+ <CAMua2SFgRgjbCXTdgnkDV-T83yKU60y6QfXnnAkh0oNJXE2kdA@mail.gmail.com>
+Message-ID: <546E3462.1020208@alteeve.ca>
+
+Thanks for the update. I've not heard a peep back yet.
+
+On 20/11/14 01:07 PM, ted leslie wrote:
+> I called them just now for update, they are still looking into it, i
+> mentioned price had gone up 90$ on what I had ordered (not received) and
+> if they would honour first price, but they couldn't comment. If they do
+> sell it for 350$ now,
+> I will at least get one, but now price is getting closer to their 4k
+> dells, so have to think about it, now of course
+> their 4k price may be out of sync, but it is closer to the best price i
+> have seen else where. 350$ is still less then
+> 1/2 the typical low price, but given as you say how screwy their prices
+> are, I have little confidence the 350$ is going
+> to stick. Worst part is, if 350$ isn't going to stick, they will still
+> be shipping all these out to customers incorrectly.
+> Maybe with a little luck Dell screwed up its bulk custom pricing to
+> WalMart and walmart will be able to honour and Dell will eat it. (ok i
+> can dream).
+>
+> -tl
+>
+> On Thu, Nov 20, 2014 at 12:43 PM, Digimer <lists at alteeve.ca
+> <mailto:lists at alteeve.ca>> wrote:
+>
+>     On 20/11/14 12:21 PM, Joe Murray wrote:
+>
+>         the 30" U3014 at Walmart.ca is $349 vs Dell's normal price of $1599
+>         discounted now to $1199.
+>
+>
+>     I expect this to be a mistake, too. All their Dell monitors are
+>     screwed up combos of prices, descriptions and PNs.
+>
+>     I'd just stay the heck away from walmart at this point.
+>
+>     --
+>     Digimer
+>     Papers and Projects: https://alteeve.ca/w/
+>     What if the cure for cancer is trapped in the mind of a person
+>     without access to education?
+>
+>
+>     ---
+>     GTALUG Talk Mailing List - talk at gtalug.org <mailto:talk at gtalug.org>
+>     http://gtalug.org/mailman/__listinfo/talk
+>     <http://gtalug.org/mailman/listinfo/talk>
+>
+>
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+Digimer
+Papers and Projects: https://alteeve.ca/w/
+What if the cure for cancer is trapped in the mind of a person without 
+access to education?
+
+From joe.murray at jmaconsulting.biz  Thu Nov 20 19:48:50 2014
+From: joe.murray at jmaconsulting.biz (Joe Murray)
+Date: Thu, 20 Nov 2014 14:48:50 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <546E3462.1020208@alteeve.ca>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca> <20141119212211.GX24111@csclub.uwaterloo.ca>
+ <546D0E6B.3040602@alteeve.ca> <20141119220049.GY24111@csclub.uwaterloo.ca>
+ <546DE57F.7030205@gmail.com>
+ <CAGxYWpar8fC53_LcT3dMX4nHH119n_GnCRtaaEfDC+4o+jD==Q@mail.gmail.com>
+ <CAKWRq5hZRrcNSFnzaCNVgSoxfOP3TuvL9LiFtaqSzC6xiKVa4w@mail.gmail.com>
+ <CAKWRq5hVWnX0kDwfvmSLKtxdrozg5dS9ijNOFDqOwufjPAtU_g@mail.gmail.com>
+ <546E2850.1040102@alteeve.ca>
+ <CAMua2SFgRgjbCXTdgnkDV-T83yKU60y6QfXnnAkh0oNJXE2kdA@mail.gmail.com>
+ <546E3462.1020208@alteeve.ca>
+Message-ID: <CAKWRq5h2u03n52eQsDOFs1ovMPbjSvS8eNNmtsYwDHmQ9fsTTw@mail.gmail.com>
+
+Retailers are obligated to honour advertised prices. There was a Dell ad in
+a newspaper with an error in the price for a laptop that I was able to make
+them honour about 10 years ago. Keep your invoice once you get it. Here's a
+snippet from mine:
+Delivery Information for #: 863151101 | Order Date: November 18, 2014Shipped
+ItemsEst. ArrivalQtyItem PriceTotal PriceTax Code
+Dell 27 2560 x 1440 LED IPS Monitor
+<http://www.walmart.ca/canada-estore/catalog/productdetailpagecontainer.jsp?lang=en&skuId=6000189477881>
+UPC: 0088411609164
+Thu 11/20/20141$259.97$259.97JRegulatory Fees
+Tv's 19-30" env fee for Dell 27 2560 x 1440 LED IPS Monitor1$12.25$12.25J
+Shipment SummaryItems Subtotal:$259.97Tv's 19-30" env fee J:$12.25HST 137466199
+RT0001 @ 13.0%:$35.39Shipment Total:CA $307.61
+
+
+Joe Murray, PhD
+President, JMA Consulting
+joe.murray at jmaconsulting.biz
+skype JosephPMurray twitter JoeMurray
+416.466.1281
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141120/241061f9/attachment.html>
+
+From jsellens at syonex.com  Thu Nov 20 19:59:46 2014
+From: jsellens at syonex.com (John Sellens)
+Date: Thu, 20 Nov 2014 14:59:46 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <CAKWRq5h2u03n52eQsDOFs1ovMPbjSvS8eNNmtsYwDHmQ9fsTTw@mail.gmail.com>
+References: <546D0E6B.3040602@alteeve.ca>
+ <20141119220049.GY24111@csclub.uwaterloo.ca> <546DE57F.7030205@gmail.com>
+ <CAGxYWpar8fC53_LcT3dMX4nHH119n_GnCRtaaEfDC+4o+jD==Q@mail.gmail.com>
+ <CAKWRq5hZRrcNSFnzaCNVgSoxfOP3TuvL9LiFtaqSzC6xiKVa4w@mail.gmail.com>
+ <CAKWRq5hVWnX0kDwfvmSLKtxdrozg5dS9ijNOFDqOwufjPAtU_g@mail.gmail.com>
+ <546E2850.1040102@alteeve.ca>
+ <CAMua2SFgRgjbCXTdgnkDV-T83yKU60y6QfXnnAkh0oNJXE2kdA@mail.gmail.com>
+ <546E3462.1020208@alteeve.ca>
+ <CAKWRq5h2u03n52eQsDOFs1ovMPbjSvS8eNNmtsYwDHmQ9fsTTw@mail.gmail.com>
+Message-ID: <20141120195946.GA26587@syonex.com>
+
+Walmart likely has effective lawyers and
+
+    http://www.walmart.ca/en/help/legal/terms-of-sale
+
+    2. Rejection or Cancellation of Orders
+    - Inaccuracies or errors in product or pricing information
+
+likely covers this situation I might guess (I am not a lawyer).
+
+
+On Thu,?2014/11/20?02:48:50PM?-0500, Joe Murray <joe.murray at jmaconsulting.biz> wrote:
+| Retailers are obligated to honour advertised prices.
+
+From lsorense at csclub.uwaterloo.ca  Thu Nov 20 20:06:07 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 20 Nov 2014 15:06:07 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <CAArSzsUNDUHWyzQ5uzMmfpM=hNy2HANk2QYVoH1PL6gz3thdNA@mail.gmail.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca>
+ <CAArSzsUNDUHWyzQ5uzMmfpM=hNy2HANk2QYVoH1PL6gz3thdNA@mail.gmail.com>
+Message-ID: <20141120200607.GZ24111@csclub.uwaterloo.ca>
+
+On Thu, Nov 20, 2014 at 07:02:42AM -0500, Scott Allen wrote:
+> They also corrected the model number in the Specifications section
+> from U2713HM to S2440LCA. Everything else appears to be unchanged.
+> 
+> Note that the UPC code specified has always been the correct one for
+> the 24" S2440L. I bet this is what counts since that's probably what
+> they scan to assure that they're shipping the correct item.
+
+Well listing a description and model number from Dell is what a customer
+can make sense of.  UPC means nothing.
+
+-- 
+Len Sorensen
+
+From lists at alteeve.ca  Thu Nov 20 20:32:43 2014
+From: lists at alteeve.ca (Digimer)
+Date: Thu, 20 Nov 2014 15:32:43 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <CAKWRq5h2u03n52eQsDOFs1ovMPbjSvS8eNNmtsYwDHmQ9fsTTw@mail.gmail.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca> <20141119212211.GX24111@csclub.uwaterloo.ca>
+ <546D0E6B.3040602@alteeve.ca> <20141119220049.GY24111@csclub.uwaterloo.ca>
+ <546DE57F.7030205@gmail.com>
+ <CAGxYWpar8fC53_LcT3dMX4nHH119n_GnCRtaaEfDC+4o+jD==Q@mail.gmail.com>
+ <CAKWRq5hZRrcNSFnzaCNVgSoxfOP3TuvL9LiFtaqSzC6xiKVa4w@mail.gmail.com>
+ <CAKWRq5hVWnX0kDwfvmSLKtxdrozg5dS9ijNOFDqOwufjPAtU_g@mail.gmail.com>
+ <546E2850.1040102@alteeve.ca>
+ <CAMua2SFgRgjbCXTdgnkDV-T83yKU60y6QfXnnAkh0oNJXE2kdA@mail.gmail.com>
+ <546E3462.1020208@alteeve.ca>
+ <CAKWRq5h2u03n52eQsDOFs1ovMPbjSvS8eNNmtsYwDHmQ9fsTTw@mail.gmail.com>
+Message-ID: <546E4FEB.8060303@alteeve.ca>
+
+On 20/11/14 02:48 PM, Joe Murray wrote:
+> Retailers are obligated to honour advertised prices. There was a Dell ad
+> in a newspaper with an error in the price for a laptop that I was able
+> to make them honour about 10 years ago. Keep your invoice once you get
+> it. Here's a snippet from mine:
+
+Since when? I suspect Dell honoured it out of PR concern, not because 
+they felt obligated.
+
+"E&OE" is all they need.
+
+-- 
+Digimer
+Papers and Projects: https://alteeve.ca/w/
+What if the cure for cancer is trapped in the mind of a person without 
+access to education?
+
+From lsorense at csclub.uwaterloo.ca  Thu Nov 20 22:36:11 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 20 Nov 2014 17:36:11 -0500
+Subject: [GTALUG] NCIX.com - Samsung Dual LCD Bundle 2x S27D390HS 27in
+ Widescreen PLS LED Monitor FHD 5ms 1000:1 HDMI VGA
+In-Reply-To: <CAMua2SGYHewwmJh2RDcYD=OS5Hx2TZ4bBz26tWq2ft_7MtpBog@mail.gmail.com>
+References: <CAGc8pF5AASFo+anf=T9CuxJtDREuz2G9Wmb_q8tcvEbOrhB_2A@mail.gmail.com>
+ <CAMua2SGYHewwmJh2RDcYD=OS5Hx2TZ4bBz26tWq2ft_7MtpBog@mail.gmail.com>
+Message-ID: <20141120223611.GA24111@csclub.uwaterloo.ca>
+
+On Wed, Nov 19, 2014 at 11:52:16PM -0500, ted leslie wrote:
+> only 1920 unfortunately.
+
+And only hdmi and vga it seems.
+
+-- 
+Len Sorensen
+
+From kevin at ve3syb.ca  Thu Nov 20 23:41:38 2014
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Thu, 20 Nov 2014 18:41:38 -0500
+Subject: [GTALUG] [OT] Dead motherboard or dead CPU?
+Message-ID: <546E7C32.1030208@ve3syb.ca>
+
+Greetings, all.
+
+Someone recently reported a problem booting their computer. I've had my 
+first ever major failure of a system where I can't boot my machine. My 
+situation is a little different than in the previous thread about a boot 
+problem. FYI, my machine is an HP m7680n with an Intel Core 2 Duo CPU that I 
+have had for several years and gets a lot of use every day.
+
+When the machine powers up all the fans start spinning and the drives do 
+their initial power on reset activities. The CPU doesn't seem to warm up 
+AFAICT (unless I haven't let the system run long enough for it to warm up).
+
+The first time I had a problem starting up the system I power cycled the 
+machine a few times and got it to boot. I did that on three consecutive days 
+but starting with the fourth day power cycling the machine is no longer able 
+to kick the machine in to showing signs of life.
+
+A POST card shows ---- instead of any actual code. All the LEDs on the POST 
+card light that are related to power supply voltages. CLK is also lit up and 
+the RESET LED comes on briefly at power up and power down. The IRDY and 
+FRAME lights are always off.
+
+I have tried to boot after pulling all plug-in cards and even after also 
+pulling the RAM and disconnecting the SATA drives. The power supply is a 
+Corsair TX650M that is only a few months old. The separate four pin 12V 
+connector to the MB is reading within tolerance.
+
+There are no signs of bad capacitors on the MB (ie. none that have bulges on 
+the top). I don't have an ESR meter to propery test the individual capacitors.
+
+Am I looking at a motherboard failure or is it possible the CPU has died? I 
+read the C2D is quite reliable so CPU failure seems less likely than an MB 
+failure but anything is possible when dealing with electronics.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From stephen-d at rogers.com  Fri Nov 21 01:03:25 2014
+From: stephen-d at rogers.com (Stephen)
+Date: Thu, 20 Nov 2014 20:03:25 -0500
+Subject: [GTALUG] =?utf-8?q?Detekt=3A_New_tool_against_government_surveill?=
+ =?utf-8?q?ance_=E2=80=93_Questions_and_Answers?=
+Message-ID: <546E8F5D.3080308@rogers.com>
+
+Great idea. But only for Windows users it seems.
+
+http://www.amnesty.org/en/news/detekt-new-tool-against-government-surveillance-questions-and-answers-2014-11-20
+
+https://github.com/botherder/detekt/releases/tag/v1.1
+-- 
+Stephen
+
+From thomas.bruce.milne at gmail.com  Fri Nov 21 02:47:16 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Fri, 21 Nov 2014 02:47:16 +0000
+Subject: [GTALUG] Cubox Dev Platform OS images?
+Message-ID: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+
+Hey there,
+
+I still have my old, original Cubox Dev Platform from a few years ago. When
+I power it on now though I don't get any indication it is booting up at all.
+
+I tried looking for newer boot/OS images to load on the SD card but
+everything now seems to be for the Cubox-i.
+
+Anyone have laying around or know where I could find something like this?
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141121/b0d6feb3/attachment.html>
+
