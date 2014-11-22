@@ -10333,3 +10333,705 @@ Anyone have laying around or know where I could find something like this?
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141121/b0d6feb3/attachment.html>
 
+From avolkov at gmail.com  Fri Nov 21 18:09:17 2014
+From: avolkov at gmail.com (Alex Volkov)
+Date: Fri, 21 Nov 2014 13:09:17 -0500
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <CAArSzsUcSwzgxMe2mismFYHMWrXzhYcj7NH8LSPg+9SfkgoRow@mail.gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+ <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+ <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+ <CAArSzsV3MoTySD4uqOshfiVoY05J8ZatzW-MJCWAYmL5f2qoRA@mail.gmail.com>
+ <alpine.LRH.2.02.1411012040590.31147@redclaw.mimosa.com>
+ <CAArSzsU1O+LmF+tG6mkPn42ocGNQ+Herr9boBcW-1MYGEdTXHQ@mail.gmail.com>
+ <5456F68E.7090501@ss.org>
+ <CAArSzsUV-55SJKOwHhTdkTosNhT+pLamioTZz9dOjfkpfMvh2A@mail.gmail.com>
+ <D529A94F-6DEB-4BD8-96F5-4499250A1609@ss.org>
+ <CAArSzsUGzMhCYVk57cuyCq2rin_fRzi_3VdcV5F5aia+efD10g@mail.gmail.com>
+ <CAO1j=qdDKXdDoE6Lrz1NJ6WBY37dPTb1ew0Np7kZ_5NEhv9_bw@mail.gmail.com>
+ <CAArSzsUcSwzgxMe2mismFYHMWrXzhYcj7NH8LSPg+9SfkgoRow@mail.gmail.com>
+Message-ID: <CAO1j=qfyLqNQpFsgZC6pm5Xz6e2VYRMkDgSOrxfNWkN7mGDCOw@mail.gmail.com>
+
+I thought I'd add a follow up to my to how I ended up to the whole story.
+(I'll try not to rant)
+
+In short, Raspberry Pi works as a router (hardware-wise is a massive
+overkill) but not worth setting up as a residential access point, because
+of the following issues that cropped up:
+
+0 Raspberry Pi Ethernet port is auto-sensing, no need for crossover cables.
+That bit helped me to retain my sanity.
+
+1. Raspberry Pi doesn't come with built-in wireless card, so there are no
+wireless drivers shipped with OS image (which is only 76MB in size) --
+http://wiki.openwrt.org/toh/raspberry_pi . You will have to figure out
+yourself where to find drivers and then manually resolve dependencies. opkg
+(OpenWrt package manager) helps, but there's still a lot of work that has
+to be done manually.
+
+2. Serial port works, in the usual raspberry pi configuration --
+http://www.adafruit.com/product/954, however login console is not
+configured, so all yo can see there are the boot messages. You can't access
+the Internet using ethernet as WAN interface and configure everything
+through serial console.
+
+2. Having only one ethernet port means that you can't connect to the
+Internet through Raspberry Pi in order to configure wireless; you have to
+configure wireless before you can use the only ethernet port as a WAN
+interface.
+
+I found this protocol helps having internet connection through host
+wireless interface and ssh access to a raspberry pi through ethernet:
+    * Connect to wireless
+    * /sbin/route -a | grep default (write down IP address from the second
+column -- Gateway)
+    * Connect to Raspberry Pi ethernet port
+    * /sbin/route del default gw
+    * /sbin/route add default gw <value from step 2>
+At this point you should be able to access the Internet and Raspberry Pi at
+the same time.
+
+
+4. Once you get wireless working now you can assign WAN to ethernet
+interface, you have to be careful, if something goes wrong at that stage,
+there's no undoing it, and  you have to start from the beginning.
+At this point command 'dd if=/dev/mmcblk0 of=owrt_bak.img bs=1M count=80'
+becomes really useful. Also if you need to customize your subnet address do
+it before configuring wireless.
+
+5. There's no assignment of network devices for wireless cards in Barrier
+Breaker, so most of the knowledge you have from configuring low-level
+wireless  on Linux is no longer applicable to OpenWRT, however dmesg and iw
+are still around.
+OpenWrt uses radio0...radionN wlan.config settings, that could later be
+assigned a particular interface if needed; however the card I was
+using(tl-wn722n) had 3 radioN interfaces, of which only one (radio2) was
+actual hardware that was doing something, which could be very confusing.
+
+6. Host AP/Encryption packaging has become a mess, there are three
+alternative systems (hostapd, wpa_supplicant and wpad). I ended up using
+wpad, however package hostapd-common was still required.
+
+As I mentioned I used TL-WN722N(ath9k_htc), usb dongle. It's not fast or
+compact, but is very linux-friendly. Works flawlessly in AP mode. Here are
+the packages required to get the wireless and this card going.
+
+hostapd-common
+iw
+kmod-ath
+kmod-ath9k-common
+kmod-ath9k-htc
+kmod-cfg80211
+kmod-crypto-aes
+kmod-crypto-arc4
+kmod-crypto-core
+kmod-mac80211
+kmod-mac80211-hwsim
+wpad
+
+This is the package directory for Barrier Breaker / BRCM 2708 --
+http://downloads.openwrt.org/barrier_breaker/14.07/brcm2708/generic/packages/base/
+
+7. You end up with a rat nest of wires: 2x Power(rpi & dsl modem), 1x
+Network (dsl modem to rpi), 1x Wireless extension cable(optional), and no
+straightforward way of diagnosing/rebooting the system for non-technical
+people.
+
+All in all, it wasn't worth it to use Raspberry Pi for this project, I
+should have gotten TD-W8961ND and saved myself a whole lot of time, however
+the combination of Raspberry PI + OpenWRT offers a lot of potential:
+ * Once everything was running further setup was a breeze, the same
+hardware can be used for NAS, although SAMBA and NTFS have severe
+limitation on Raspberry PI
+  * For VPN, SSH, CUPS and  other tasks that require more
+CPU/Memory/Storage than consumer router can offer (free memory or cpu never
+went below 94% as  I was testing out the set up), I was using 48MB out of
+3.6GB of storage on main partition. (on a $5 SD card)
+  *  The combination Network port/USB/WIFI   is a relatively inexpensive
+way to either put hardware that only supported Ethernet on wireless
+network, or to add network capabilities to older plotters/scanners/printers.
+
+So if any of these sounds good, the steps to put a Raspberry Pi-powered
+OpenWrt are the following:
+
+1. Install SD image on SD Card
+2. Connect to ethernet port and set up subnet
+3. Configure wireless, while using your laptop's wifi/eth1 connection to
+get all the drivers/troubleshoot wireless hardware
+4. Unplug ethernet and connect to RPI box through wifi, make sure that both
+web interface and SSH is accessible
+5  Backup.
+6. Move eth0 interface from Lan to Wan group.
+6. Configure Wan Interface
+7. (Optional), Unplug Raspberry Pi, resize root partition on SD card from
+the host machine using (fdisk/resize2fs) or Parted
+8. Backup
+9. Done
+
+Alex.
+
+
+On Wed, Nov 5, 2014 at 6:47 AM, Scott Allen <mlxxxp at gmail.com> wrote:
+
+> On 4 November 2014 23:15, Alex Volkov <avolkov at gmail.com> wrote:
+> > I just need dig up a ethernet crossover cable, which I prematurely
+> relegated
+> > to be a thing of the past.
+>
+> Are you sure you need a crossover? Almost all ethernet ports are
+> auto-sensing these days. The TD-8616's and the Raspberry Pi's both
+> are.
+>
+> --
+> Scott
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141121/8c3e9545/attachment.html>
+
+From ted.leslie at gmail.com  Fri Nov 21 18:46:49 2014
+From: ted.leslie at gmail.com (ted leslie)
+Date: Fri, 21 Nov 2014 13:46:49 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <546E4FEB.8060303@alteeve.ca>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca> <20141119212211.GX24111@csclub.uwaterloo.ca>
+ <546D0E6B.3040602@alteeve.ca> <20141119220049.GY24111@csclub.uwaterloo.ca>
+ <546DE57F.7030205@gmail.com>
+ <CAGxYWpar8fC53_LcT3dMX4nHH119n_GnCRtaaEfDC+4o+jD==Q@mail.gmail.com>
+ <CAKWRq5hZRrcNSFnzaCNVgSoxfOP3TuvL9LiFtaqSzC6xiKVa4w@mail.gmail.com>
+ <CAKWRq5hVWnX0kDwfvmSLKtxdrozg5dS9ijNOFDqOwufjPAtU_g@mail.gmail.com>
+ <546E2850.1040102@alteeve.ca>
+ <CAMua2SFgRgjbCXTdgnkDV-T83yKU60y6QfXnnAkh0oNJXE2kdA@mail.gmail.com>
+ <546E3462.1020208@alteeve.ca>
+ <CAKWRq5h2u03n52eQsDOFs1ovMPbjSvS8eNNmtsYwDHmQ9fsTTw@mail.gmail.com>
+ <546E4FEB.8060303@alteeve.ca>
+Message-ID: <CAMua2SEGU6xH48uM9QVspfq06sLCieahs5miSN=Wh+xYyLoiGg@mail.gmail.com>
+
+got return labels, pre-paid just call courier.
+
+So now do i order the
+http://www.walmart.ca/en/ip/dell27-2560-x-1440-ips-led-monitor/6000189477877
+?
+
+which is 350$ at wally, double everywhere else?
+i could call them and say, "are you sure of price", but hmmmmm.
+I think i will , its their nickel for return shipping. Maybe the points
+will even stay on my credit card (but doubt it).
+
+
+-tl
+
+
+On Thu, Nov 20, 2014 at 3:32 PM, Digimer <lists at alteeve.ca> wrote:
+
+> On 20/11/14 02:48 PM, Joe Murray wrote:
+>
+>> Retailers are obligated to honour advertised prices. There was a Dell ad
+>> in a newspaper with an error in the price for a laptop that I was able
+>> to make them honour about 10 years ago. Keep your invoice once you get
+>> it. Here's a snippet from mine:
+>>
+>
+> Since when? I suspect Dell honoured it out of PR concern, not because they
+> felt obligated.
+>
+> "E&OE" is all they need.
+>
+>
+> --
+> Digimer
+> Papers and Projects: https://alteeve.ca/w/
+> What if the cure for cancer is trapped in the mind of a person without
+> access to education?
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141121/1862d33a/attachment.html>
+
+From lists at alteeve.ca  Fri Nov 21 18:49:10 2014
+From: lists at alteeve.ca (Digimer)
+Date: Fri, 21 Nov 2014 13:49:10 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <CAMua2SEGU6xH48uM9QVspfq06sLCieahs5miSN=Wh+xYyLoiGg@mail.gmail.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca> <20141119212211.GX24111@csclub.uwaterloo.ca>
+ <546D0E6B.3040602@alteeve.ca> <20141119220049.GY24111@csclub.uwaterloo.ca>
+ <546DE57F.7030205@gmail.com>
+ <CAGxYWpar8fC53_LcT3dMX4nHH119n_GnCRtaaEfDC+4o+jD==Q@mail.gmail.com>
+ <CAKWRq5hZRrcNSFnzaCNVgSoxfOP3TuvL9LiFtaqSzC6xiKVa4w@mail.gmail.com>
+ <CAKWRq5hVWnX0kDwfvmSLKtxdrozg5dS9ijNOFDqOwufjPAtU_g@mail.gmail.com>
+ <546E2850.1040102@alteeve.ca>
+ <CAMua2SFgRgjbCXTdgnkDV-T83yKU60y6QfXnnAkh0oNJXE2kdA@mail.gmail.com>
+ <546E3462.1020208@alteeve.ca>
+ <CAKWRq5h2u03n52eQsDOFs1ovMPbjSvS8eNNmtsYwDHmQ9fsTTw@mail.gmail.com>
+ <546E4FEB.8060303@alteeve.ca>
+ <CAMua2SEGU6xH48uM9QVspfq06sLCieahs5miSN=Wh+xYyLoiGg@mail.gmail.com>
+Message-ID: <546F8926.8080901@alteeve.ca>
+
+You're more patient than I...
+
+If they don't ship me the original monitors on the receipt, then I'll 
+just want my money back and be done with it. I don't trust them to get 
+another order right.
+
+On 21/11/14 01:46 PM, ted leslie wrote:
+>
+>
+> got return labels, pre-paid just call courier.
+>
+> So now do i order the
+> http://www.walmart.ca/en/ip/dell27-2560-x-1440-ips-led-monitor/6000189477877
+> ?
+>
+> which is 350$ at wally, double everywhere else?
+> i could call them and say, "are you sure of price", but hmmmmm.
+> I think i will , its their nickel for return shipping. Maybe the points
+> will even stay on my credit card (but doubt it).
+>
+>
+> -tl
+>
+>
+> On Thu, Nov 20, 2014 at 3:32 PM, Digimer <lists at alteeve.ca
+> <mailto:lists at alteeve.ca>> wrote:
+>
+>     On 20/11/14 02:48 PM, Joe Murray wrote:
+>
+>         Retailers are obligated to honour advertised prices. There was a
+>         Dell ad
+>         in a newspaper with an error in the price for a laptop that I
+>         was able
+>         to make them honour about 10 years ago. Keep your invoice once
+>         you get
+>         it. Here's a snippet from mine:
+>
+>
+>     Since when? I suspect Dell honoured it out of PR concern, not
+>     because they felt obligated.
+>
+>     "E&OE" is all they need.
+>
+>
+>     --
+>     Digimer
+>     Papers and Projects: https://alteeve.ca/w/
+>     What if the cure for cancer is trapped in the mind of a person
+>     without access to education?
+>
+>
+>     ---
+>     GTALUG Talk Mailing List - talk at gtalug.org <mailto:talk at gtalug.org>
+>     http://gtalug.org/mailman/__listinfo/talk
+>     <http://gtalug.org/mailman/listinfo/talk>
+>
+>
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+Digimer
+Papers and Projects: https://alteeve.ca/w/
+What if the cure for cancer is trapped in the mind of a person without 
+access to education?
+
+From ted.leslie at gmail.com  Fri Nov 21 18:52:00 2014
+From: ted.leslie at gmail.com (ted leslie)
+Date: Fri, 21 Nov 2014 13:52:00 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <546F8926.8080901@alteeve.ca>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca> <20141119212211.GX24111@csclub.uwaterloo.ca>
+ <546D0E6B.3040602@alteeve.ca> <20141119220049.GY24111@csclub.uwaterloo.ca>
+ <546DE57F.7030205@gmail.com>
+ <CAGxYWpar8fC53_LcT3dMX4nHH119n_GnCRtaaEfDC+4o+jD==Q@mail.gmail.com>
+ <CAKWRq5hZRrcNSFnzaCNVgSoxfOP3TuvL9LiFtaqSzC6xiKVa4w@mail.gmail.com>
+ <CAKWRq5hVWnX0kDwfvmSLKtxdrozg5dS9ijNOFDqOwufjPAtU_g@mail.gmail.com>
+ <546E2850.1040102@alteeve.ca>
+ <CAMua2SFgRgjbCXTdgnkDV-T83yKU60y6QfXnnAkh0oNJXE2kdA@mail.gmail.com>
+ <546E3462.1020208@alteeve.ca>
+ <CAKWRq5h2u03n52eQsDOFs1ovMPbjSvS8eNNmtsYwDHmQ9fsTTw@mail.gmail.com>
+ <546E4FEB.8060303@alteeve.ca>
+ <CAMua2SEGU6xH48uM9QVspfq06sLCieahs5miSN=Wh+xYyLoiGg@mail.gmail.com>
+ <546F8926.8080901@alteeve.ca>
+Message-ID: <CAMua2SFvxC1F2vxnWKy7Kx8yvoPpN4==LZb9kzATVSixy61T_g@mail.gmail.com>
+
+No they will revert CC charge they said, so not worried about that, i think
+i will just tell them straight
+out the price is 50% less then others, and if they are sure of it, send it,
+they will probably
+their whole internal dell monitor pricing group is on crack, and that will
+be that :)
+
+-tl
+
+On Fri, Nov 21, 2014 at 1:49 PM, Digimer <lists at alteeve.ca> wrote:
+
+> You're more patient than I...
+>
+> If they don't ship me the original monitors on the receipt, then I'll just
+> want my money back and be done with it. I don't trust them to get another
+> order right.
+>
+> On 21/11/14 01:46 PM, ted leslie wrote:
+>
+>>
+>>
+>> got return labels, pre-paid just call courier.
+>>
+>> So now do i order the
+>> http://www.walmart.ca/en/ip/dell27-2560-x-1440-ips-led-
+>> monitor/6000189477877
+>> ?
+>>
+>> which is 350$ at wally, double everywhere else?
+>> i could call them and say, "are you sure of price", but hmmmmm.
+>> I think i will , its their nickel for return shipping. Maybe the points
+>> will even stay on my credit card (but doubt it).
+>>
+>>
+>> -tl
+>>
+>>
+>> On Thu, Nov 20, 2014 at 3:32 PM, Digimer <lists at alteeve.ca
+>> <mailto:lists at alteeve.ca>> wrote:
+>>
+>>     On 20/11/14 02:48 PM, Joe Murray wrote:
+>>
+>>         Retailers are obligated to honour advertised prices. There was a
+>>         Dell ad
+>>         in a newspaper with an error in the price for a laptop that I
+>>         was able
+>>         to make them honour about 10 years ago. Keep your invoice once
+>>         you get
+>>         it. Here's a snippet from mine:
+>>
+>>
+>>     Since when? I suspect Dell honoured it out of PR concern, not
+>>     because they felt obligated.
+>>
+>>     "E&OE" is all they need.
+>>
+>>
+>>     --
+>>     Digimer
+>>     Papers and Projects: https://alteeve.ca/w/
+>>     What if the cure for cancer is trapped in the mind of a person
+>>     without access to education?
+>>
+>>
+>>     ---
+>>     GTALUG Talk Mailing List - talk at gtalug.org <mailto:talk at gtalug.org>
+>>     http://gtalug.org/mailman/__listinfo/talk
+>>     <http://gtalug.org/mailman/listinfo/talk>
+>>
+>>
+>>
+>>
+>>
+>>
+>> ---
+>> GTALUG Talk Mailing List - talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>>
+>
+> --
+> Digimer
+> Papers and Projects: https://alteeve.ca/w/
+> What if the cure for cancer is trapped in the mind of a person without
+> access to education?
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141121/d50e8c48/attachment.html>
+
+From lists at alteeve.ca  Fri Nov 21 19:20:48 2014
+From: lists at alteeve.ca (Digimer)
+Date: Fri, 21 Nov 2014 14:20:48 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <CAMua2SFvxC1F2vxnWKy7Kx8yvoPpN4==LZb9kzATVSixy61T_g@mail.gmail.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca> <20141119212211.GX24111@csclub.uwaterloo.ca>
+ <546D0E6B.3040602@alteeve.ca> <20141119220049.GY24111@csclub.uwaterloo.ca>
+ <546DE57F.7030205@gmail.com>
+ <CAGxYWpar8fC53_LcT3dMX4nHH119n_GnCRtaaEfDC+4o+jD==Q@mail.gmail.com>
+ <CAKWRq5hZRrcNSFnzaCNVgSoxfOP3TuvL9LiFtaqSzC6xiKVa4w@mail.gmail.com>
+ <CAKWRq5hVWnX0kDwfvmSLKtxdrozg5dS9ijNOFDqOwufjPAtU_g@mail.gmail.com>
+ <546E2850.1040102@alteeve.ca>
+ <CAMua2SFgRgjbCXTdgnkDV-T83yKU60y6QfXnnAkh0oNJXE2kdA@mail.gmail.com>
+ <546E3462.1020208@alteeve.ca>
+ <CAKWRq5h2u03n52eQsDOFs1ovMPbjSvS8eNNmtsYwDHmQ9fsTTw@mail.gmail.com>
+ <546E4FEB.8060303@alteeve.ca>
+ <CAMua2SEGU6xH48uM9QVspfq06sLCieahs5miSN=Wh+xYyLoiGg@mail.gmail.com>
+ <546F8926.8080901@alteeve.ca>
+ <CAMua2SFvxC1F2vxnWKy7Kx8yvoPpN4==LZb9kzATVSixy61T_g@mail.gmail.com>
+Message-ID: <546F9090.7050601@alteeve.ca>
+
+Boo, I had hoped for reship but expected the refund. Oh well.
+
+Thanks for the update! I guess I'll see if any real deals pop up next week.
+
+On 21/11/14 01:52 PM, ted leslie wrote:
+> No they will revert CC charge they said, so not worried about that, i
+> think i will just tell them straight
+> out the price is 50% less then others, and if they are sure of it, send
+> it, they will probably
+> their whole internal dell monitor pricing group is on crack, and that
+> will be that :)
+>
+> -tl
+>
+> On Fri, Nov 21, 2014 at 1:49 PM, Digimer <lists at alteeve.ca
+> <mailto:lists at alteeve.ca>> wrote:
+>
+>     You're more patient than I...
+>
+>     If they don't ship me the original monitors on the receipt, then
+>     I'll just want my money back and be done with it. I don't trust them
+>     to get another order right.
+>
+>     On 21/11/14 01:46 PM, ted leslie wrote:
+>
+>
+>
+>         got return labels, pre-paid just call courier.
+>
+>         So now do i order the
+>         http://www.walmart.ca/en/ip/__dell27-2560-x-1440-ips-led-__monitor/6000189477877
+>         <http://www.walmart.ca/en/ip/dell27-2560-x-1440-ips-led-monitor/6000189477877>
+>         ?
+>
+>         which is 350$ at wally, double everywhere else?
+>         i could call them and say, "are you sure of price", but hmmmmm.
+>         I think i will , its their nickel for return shipping. Maybe the
+>         points
+>         will even stay on my credit card (but doubt it).
+>
+>
+>         -tl
+>
+>
+>         On Thu, Nov 20, 2014 at 3:32 PM, Digimer <lists at alteeve.ca
+>         <mailto:lists at alteeve.ca>
+>         <mailto:lists at alteeve.ca <mailto:lists at alteeve.ca>>> wrote:
+>
+>              On 20/11/14 02:48 PM, Joe Murray wrote:
+>
+>                  Retailers are obligated to honour advertised prices.
+>         There was a
+>                  Dell ad
+>                  in a newspaper with an error in the price for a laptop
+>         that I
+>                  was able
+>                  to make them honour about 10 years ago. Keep your
+>         invoice once
+>                  you get
+>                  it. Here's a snippet from mine:
+>
+>
+>              Since when? I suspect Dell honoured it out of PR concern, not
+>              because they felt obligated.
+>
+>              "E&OE" is all they need.
+>
+>
+>              --
+>              Digimer
+>              Papers and Projects: https://alteeve.ca/w/
+>              What if the cure for cancer is trapped in the mind of a person
+>              without access to education?
+>
+>
+>              ---
+>              GTALUG Talk Mailing List - talk at gtalug.org
+>         <mailto:talk at gtalug.org> <mailto:talk at gtalug.org
+>         <mailto:talk at gtalug.org>>
+>         http://gtalug.org/mailman/____listinfo/talk
+>         <http://gtalug.org/mailman/__listinfo/talk>
+>              <http://gtalug.org/mailman/__listinfo/talk
+>         <http://gtalug.org/mailman/listinfo/talk>>
+>
+>
+>
+>
+>
+>
+>         ---
+>         GTALUG Talk Mailing List - talk at gtalug.org <mailto:talk at gtalug.org>
+>         http://gtalug.org/mailman/__listinfo/talk
+>         <http://gtalug.org/mailman/listinfo/talk>
+>
+>
+>
+>     --
+>     Digimer
+>     Papers and Projects: https://alteeve.ca/w/
+>     What if the cure for cancer is trapped in the mind of a person
+>     without access to education?
+>
+>
+>     ---
+>     GTALUG Talk Mailing List - talk at gtalug.org <mailto:talk at gtalug.org>
+>     http://gtalug.org/mailman/__listinfo/talk
+>     <http://gtalug.org/mailman/listinfo/talk>
+>
+>
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+Digimer
+Papers and Projects: https://alteeve.ca/w/
+What if the cure for cancer is trapped in the mind of a person without 
+access to education?
+
+From psema4 at gmail.com  Fri Nov 21 19:28:14 2014
+From: psema4 at gmail.com (Scott Elcomb)
+Date: Fri, 21 Nov 2014 14:28:14 -0500
+Subject: [GTALUG] [OT] Full Stack Toronto
+Message-ID: <CAEx-jsOR8B9niLZ2z0x9rKCP_-HvrvO6AgQo2Lhp=7wk4cDWbA@mail.gmail.com>
+
+Anyone else headed to Full Stack Toronto this weekend?
+
+http://fsto.co/
+
+-- 
+  Scott Elcomb         @psema4
+  http://psema4.com/pubkey.txt
+     http://www.pirateparty.ca/
+
+From peace.creek111 at gmail.com  Fri Nov 21 20:08:08 2014
+From: peace.creek111 at gmail.com (Peace River)
+Date: Fri, 21 Nov 2014 15:08:08 -0500
+Subject: [GTALUG] how to open .asec file
+Message-ID: <CAMOmKH+L0m8xvbBizW7EW_FzRDvyuogJJj0XmrqvJxWAPeMsCQ@mail.gmail.com>
+
+Could anyone tell me a software I can open the .asec file? I saved some
+passwords in the keeper application with my old android phone. I then
+backup the file to my laptop. However, I am not able to open the file. the
+file name is com.callpod.android_apps.keeper-2.asec. I need to open it so
+that if by accident, I cannot get access to my old cellphone, I still have
+access to those passwords.
+
+Many thanks in advance!
+
+have a good weekend,
+
+Frank Yu
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141121/e160bc66/attachment.html>
+
+From bjonkman at sobac.com  Sat Nov 22 00:01:46 2014
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Fri, 21 Nov 2014 19:01:46 -0500
+Subject: [GTALUG] [OT] Full Stack Toronto
+In-Reply-To: <CAEx-jsOR8B9niLZ2z0x9rKCP_-HvrvO6AgQo2Lhp=7wk4cDWbA@mail.gmail.com>
+References: <CAEx-jsOR8B9niLZ2z0x9rKCP_-HvrvO6AgQo2Lhp=7wk4cDWbA@mail.gmail.com>
+Message-ID: <be2252a7-1a36-4861-998a-daace50a730b@email.android.com>
+
+Nope, but I'm going to try to go to the Cryptoparty at HackLab...
+
+Http://hacklab.to/
+
+Https://torontocrypto.org/
+
+--Bob.
+
+On November 21, 2014 2:28:14 PM EST, Scott Elcomb <psema4 at gmail.com> wrote:
+>Anyone else headed to Full Stack Toronto this weekend?
+>
+>http://fsto.co/
+>
+>-- 
+>  Scott Elcomb         @psema4
+>  http://psema4.com/pubkey.txt
+>     http://www.pirateparty.ca/
+>
+>
+>---
+>GTALUG Talk Mailing List - talk at gtalug.org
+>http://gtalug.org/mailman/listinfo/talk
+
+
+--
+Bob Jonkman bjonkman at sobac.com
+http://bob.jonkman.ca/blogs/bobjonkman
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141121/8e56db38/attachment.html>
+
+From waltdnes at waltdnes.org  Sat Nov 22 00:09:30 2014
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Fri, 21 Nov 2014 19:09:30 -0500
+Subject: [GTALUG] how to open .asec file
+In-Reply-To: <CAMOmKH+L0m8xvbBizW7EW_FzRDvyuogJJj0XmrqvJxWAPeMsCQ@mail.gmail.com>
+References: <CAMOmKH+L0m8xvbBizW7EW_FzRDvyuogJJj0XmrqvJxWAPeMsCQ@mail.gmail.com>
+Message-ID: <20141122000930.GA26678@waltdnes.org>
+
+On Fri, Nov 21, 2014 at 03:08:08PM -0500, Peace River wrote
+> Could anyone tell me a software I can open the .asec file? I saved
+> some passwords in the keeper application with my old android phone. I
+> then backup the file to my laptop. However, I am not able to open
+> the file. the file name is com.callpod.android_apps.keeper-2.asec. I
+> need to open it so that if by accident, I cannot get access to my
+> old cellphone, I still have access to those passwords.
+
+  What do you mean by "open"?  vim should be be able to open any file
+that you have read privileges on.  Are you trying, as regular user, to
+open a file that is owned by root with permissions 600?
+
+  The passwords may be hashed/encrypted/whatever in the file.  In that
+case, you would need to have the master key that was used to to encrypt
+them, and possibly the linux equivalent of your keeper application.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
