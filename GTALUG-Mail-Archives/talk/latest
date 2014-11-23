@@ -11035,3 +11035,267 @@ them, and possibly the linux equivalent of your keeper application.
 -- 
 Walter Dnes <waltdnes at waltdnes.org>
 
+From scruss at gmail.com  Sat Nov 22 15:55:32 2014
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sat, 22 Nov 2014 10:55:32 -0500
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <CAO1j=qfyLqNQpFsgZC6pm5Xz6e2VYRMkDgSOrxfNWkN7mGDCOw@mail.gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+ <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+ <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+ <CAArSzsV3MoTySD4uqOshfiVoY05J8ZatzW-MJCWAYmL5f2qoRA@mail.gmail.com>
+ <alpine.LRH.2.02.1411012040590.31147@redclaw.mimosa.com>
+ <CAArSzsU1O+LmF+tG6mkPn42ocGNQ+Herr9boBcW-1MYGEdTXHQ@mail.gmail.com>
+ <5456F68E.7090501@ss.org>
+ <CAArSzsUV-55SJKOwHhTdkTosNhT+pLamioTZz9dOjfkpfMvh2A@mail.gmail.com>
+ <D529A94F-6DEB-4BD8-96F5-4499250A1609@ss.org>
+ <CAArSzsUGzMhCYVk57cuyCq2rin_fRzi_3VdcV5F5aia+efD10g@mail.gmail.com>
+ <CAO1j=qdDKXdDoE6Lrz1NJ6WBY37dPTb1ew0Np7kZ_5NEhv9_bw@mail.gmail.com>
+ <CAArSzsUcSwzgxMe2mismFYHMWrXzhYcj7NH8LSPg+9SfkgoRow@mail.gmail.com>
+ <CAO1j=qfyLqNQpFsgZC6pm5Xz6e2VYRMkDgSOrxfNWkN7mGDCOw@mail.gmail.com>
+Message-ID: <5470B1F4.4090402@gmail.com>
+
+On 14-11-21 01:09 PM, Alex Volkov wrote:
+> In short, Raspberry Pi works as a router (hardware-wise is a massive
+> overkill)
+
+Weren't you hampered by the incredibly slow USB ports on the Raspberry Pi?
+
+I do agree that (amongst many other things) Raspberry Pis make great
+wireless print servers. I now have a networked Epson LQ dot-matrix
+printer, and a networked Roland DXY pen plotter. And consequently, a
+bloody noisy basement ?
+
+ Stewart
+
+
+From avolkov at gmail.com  Sat Nov 22 20:53:55 2014
+From: avolkov at gmail.com (Alex Volkov)
+Date: Sat, 22 Nov 2014 15:53:55 -0500
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <5470B1F4.4090402@gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <160EF1C4-A979-4187-9EEF-7252FA49E7C2@ss.org>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+ <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+ <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+ <CAArSzsV3MoTySD4uqOshfiVoY05J8ZatzW-MJCWAYmL5f2qoRA@mail.gmail.com>
+ <alpine.LRH.2.02.1411012040590.31147@redclaw.mimosa.com>
+ <CAArSzsU1O+LmF+tG6mkPn42ocGNQ+Herr9boBcW-1MYGEdTXHQ@mail.gmail.com>
+ <5456F68E.7090501@ss.org>
+ <CAArSzsUV-55SJKOwHhTdkTosNhT+pLamioTZz9dOjfkpfMvh2A@mail.gmail.com>
+ <D529A94F-6DEB-4BD8-96F5-4499250A1609@ss.org>
+ <CAArSzsUGzMhCYVk57cuyCq2rin_fRzi_3VdcV5F5aia+efD10g@mail.gmail.com>
+ <CAO1j=qdDKXdDoE6Lrz1NJ6WBY37dPTb1ew0Np7kZ_5NEhv9_bw@mail.gmail.com>
+ <CAArSzsUcSwzgxMe2mismFYHMWrXzhYcj7NH8LSPg+9SfkgoRow@mail.gmail.com>
+ <CAO1j=qfyLqNQpFsgZC6pm5Xz6e2VYRMkDgSOrxfNWkN7mGDCOw@mail.gmail.com>
+ <5470B1F4.4090402@gmail.com>
+Message-ID: <CAO1j=qft29RWkGMwn-43jw5_==6Fdpm5w581Z9BxLiOxx1OK=g@mail.gmail.com>
+
+I didn't run any tests but the Internet connection but the performance of
+Raspberry Pi  didn't seem to be any different than of any other router. The
+USB controller is slow compared to modern x86 hardware, but as far as
+embedded devices go, it's pretty fast.
+
+I think the general slowness of RPI comes from SD card controller, which is
+limited to Class 4, i.e. 4MB/sec, and can it get a lot slower on sparse
+writes, that combined with a single CPU that gets blocked on IO wait makes
+everything feel pretty sluggish (remember how fast Pentium II systems
+were?), but as long as local storage doesn't get touched -- USB controller
+is more than adequate.
+
+On Sat, Nov 22, 2014 at 10:55 AM, Stewart C. Russell <scruss at gmail.com>
+wrote:
+
+> On 14-11-21 01:09 PM, Alex Volkov wrote:
+> > In short, Raspberry Pi works as a router (hardware-wise is a massive
+> > overkill)
+>
+> Weren't you hampered by the incredibly slow USB ports on the Raspberry Pi?
+>
+> I do agree that (amongst many other things) Raspberry Pis make great
+> wireless print servers. I now have a networked Epson LQ dot-matrix
+> printer, and a networked Roland DXY pen plotter. And consequently, a
+> bloody noisy basement ?
+>
+>  Stewart
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141122/9cff03ae/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Sun Nov 23 00:22:15 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sat, 22 Nov 2014 19:22:15 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+References: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+Message-ID: <20141123002215.GB24111@csclub.uwaterloo.ca>
+
+On Fri, Nov 21, 2014 at 02:47:16AM +0000, Thomas Milne wrote:
+> I still have my old, original Cubox Dev Platform from a few years ago. When
+> I power it on now though I don't get any indication it is booting up at all.
+> 
+> I tried looking for newer boot/OS images to load on the SD card but
+> everything now seems to be for the Cubox-i.
+> 
+> Anyone have laying around or know where I could find something like this?
+
+I think I have Debian loaded on mine at the moment.  Let me check on
+Monday at work (which is where the cubox currently is sitting).
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Sun Nov 23 00:23:46 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sat, 22 Nov 2014 19:23:46 -0500
+Subject: [GTALUG] [OT] Dead motherboard or dead CPU?
+In-Reply-To: <546E7C32.1030208@ve3syb.ca>
+References: <546E7C32.1030208@ve3syb.ca>
+Message-ID: <20141123002346.GC24111@csclub.uwaterloo.ca>
+
+On Thu, Nov 20, 2014 at 06:41:38PM -0500, Kevin Cozens wrote:
+> Greetings, all.
+> 
+> Someone recently reported a problem booting their computer. I've had
+> my first ever major failure of a system where I can't boot my
+> machine. My situation is a little different than in the previous
+> thread about a boot problem. FYI, my machine is an HP m7680n with an
+> Intel Core 2 Duo CPU that I have had for several years and gets a
+> lot of use every day.
+> 
+> When the machine powers up all the fans start spinning and the
+> drives do their initial power on reset activities. The CPU doesn't
+> seem to warm up AFAICT (unless I haven't let the system run long
+> enough for it to warm up).
+> 
+> The first time I had a problem starting up the system I power cycled
+> the machine a few times and got it to boot. I did that on three
+> consecutive days but starting with the fourth day power cycling the
+> machine is no longer able to kick the machine in to showing signs of
+> life.
+> 
+> A POST card shows ---- instead of any actual code. All the LEDs on
+> the POST card light that are related to power supply voltages. CLK
+> is also lit up and the RESET LED comes on briefly at power up and
+> power down. The IRDY and FRAME lights are always off.
+> 
+> I have tried to boot after pulling all plug-in cards and even after
+> also pulling the RAM and disconnecting the SATA drives. The power
+> supply is a Corsair TX650M that is only a few months old. The
+> separate four pin 12V connector to the MB is reading within
+> tolerance.
+> 
+> There are no signs of bad capacitors on the MB (ie. none that have
+> bulges on the top). I don't have an ESR meter to propery test the
+> individual capacitors.
+> 
+> Am I looking at a motherboard failure or is it possible the CPU has
+> died? I read the C2D is quite reliable so CPU failure seems less
+> likely than an MB failure but anything is possible when dealing with
+> electronics.
+
+Well short of swapping parts it can be hard to determine the problem.
+Could be motherboard, power supply, CPU, ram, video card (if not onboard).
+
+-- 
+Len Sorensen
+
+From hugh at mimosa.com  Sun Nov 23 01:54:23 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 22 Nov 2014 20:54:23 -0500 (EST)
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <CAO1j=qft29RWkGMwn-43jw5_==6Fdpm5w581Z9BxLiOxx1OK=g@mail.gmail.com>
+References: <CAO1j=qf+gvG6ap8RiZLNOu78-BZ0mEo8Nhyy8yS=jSmymx7tXA@mail.gmail.com>
+ <CAO1j=qcsM7c-uSkycK9uKhFy+gWDGZABtzUTeBhweqXv438CZg@mail.gmail.com>
+ <CAArSzsVaB=LY=eZvKiJbb0+ggzU+Sts5czjjgQ5fiZbaZsyX7A@mail.gmail.com>
+ <19DF67D5-6E28-4738-8571-B599672F52D6@ss.org>
+ <CAArSzsV3MoTySD4uqOshfiVoY05J8ZatzW-MJCWAYmL5f2qoRA@mail.gmail.com>
+ <alpine.LRH.2.02.1411012040590.31147@redclaw.mimosa.com>
+ <CAArSzsU1O+LmF+tG6mkPn42ocGNQ+Herr9boBcW-1MYGEdTXHQ@mail.gmail.com>
+ <5456F68E.7090501@ss.org>
+ <CAArSzsUV-55SJKOwHhTdkTosNhT+pLamioTZz9dOjfkpfMvh2A@mail.gmail.com>
+ <D529A94F-6DEB-4BD8-96F5-4499250A1609@ss.org>
+ <CAArSzsUGzMhCYVk57cuyCq2rin_fRzi_3VdcV5F5aia+efD10g@mail.gmail.com>
+ <CAO1j=qdDKXdDoE6Lrz1NJ6WBY37dPTb1ew0Np7kZ_5NEhv9_bw@mail.gmail.com>
+ <CAArSzsUcSwzgxMe2mismFYHMWrXzhYcj7NH8LSPg+9SfkgoRow@mail.gmail.com>
+ <CAO1j=qfyLqNQpFsgZC6pm5Xz6e2VYRMkDgSOrxfNWkN7mGDCOw@mail.gmail.com>
+ <5470B1F4.4090402@gmail.com>
+ <CAO1j=qft29RWkGMwn-43jw5_==6Fdpm5w581Z9BxLiOxx1OK=g@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1411222015350.4175@redclaw.mimosa.com>
+
+| From: Alex Volkov <avolkov at gmail.com>
+
+| I didn't run any tests but the Internet connection but the performance of
+| Raspberry Pi  didn't seem to be any different than of any other router. The
+| USB controller is slow compared to modern x86 hardware, but as far as
+| embedded devices go, it's pretty fast.
+
+In theory, one reason that the RP is slow because so much goes through
+a single USB interface: all networking as well as all USB.
+
+| that combined with a single CPU that gets blocked on IO wait
+
+Generally under Linux a CPU does not get blocked due to I/O waiting.
+All processes might get blocked due to I/O waits, at which point the
+CPU cannot make progress because there is no work to do.  But that's
+a slow I/O problem, not a slow processor problem.
+
+The RP does have a slow processor.  I would guess that it would be
+somewhere in the middle of the pack compared with wireless routers'
+processors.  But they have specialized hardware for networking (like a
+pair of ethernet ports and an ethernet switch).
+
+As always, performance guesses are unreliable (even mine!).
+Measurement is called for if it matters.
+-------------- next part --------------
+
+
+---
+GTALUG Talk Mailing List - talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+From thomas.bruce.milne at gmail.com  Sun Nov 23 02:39:43 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Sat, 22 Nov 2014 21:39:43 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <20141123002215.GB24111@csclub.uwaterloo.ca>
+References: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+ <20141123002215.GB24111@csclub.uwaterloo.ca>
+Message-ID: <CAGc8pF6XG9qGfE6Ti0avdC4s6Bhaqh__Hni3gdL8ThEpOvg8pg@mail.gmail.com>
+
+On Nov 22, 2014 7:22 PM, "Lennart Sorensen" <lsorense at csclub.uwaterloo.ca>
+wrote:
+>
+> On Fri, Nov 21, 2014 at 02:47:16AM +0000, Thomas Milne wrote:
+> > I still have my old, original Cubox Dev Platform from a few years ago.
+When
+> > I power it on now though I don't get any indication it is booting up at
+all.
+> >
+> > I tried looking for newer boot/OS images to load on the SD card but
+> > everything now seems to be for the Cubox-i.
+> >
+> > Anyone have laying around or know where I could find something like
+this?
+>
+> I think I have Debian loaded on mine at the moment.  Let me check on
+> Monday at work (which is where the cubox currently is sitting).
+>
+> --
+> Len Sorensen
+>
+Awesome thanks :-)
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141122/5038fb40/attachment.html>
+
