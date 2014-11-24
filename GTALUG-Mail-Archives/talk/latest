@@ -11299,3 +11299,145 @@ Awesome thanks :-)
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141122/5038fb40/attachment.html>
 
+From lsorense at csclub.uwaterloo.ca  Sun Nov 23 16:32:17 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sun, 23 Nov 2014 11:32:17 -0500
+Subject: [GTALUG] teksavvy dsl 2 modem that runs OpenWRT
+In-Reply-To: <alpine.LRH.2.02.1411222015350.4175@redclaw.mimosa.com>
+References: <5456F68E.7090501@ss.org>
+ <CAArSzsUV-55SJKOwHhTdkTosNhT+pLamioTZz9dOjfkpfMvh2A@mail.gmail.com>
+ <D529A94F-6DEB-4BD8-96F5-4499250A1609@ss.org>
+ <CAArSzsUGzMhCYVk57cuyCq2rin_fRzi_3VdcV5F5aia+efD10g@mail.gmail.com>
+ <CAO1j=qdDKXdDoE6Lrz1NJ6WBY37dPTb1ew0Np7kZ_5NEhv9_bw@mail.gmail.com>
+ <CAArSzsUcSwzgxMe2mismFYHMWrXzhYcj7NH8LSPg+9SfkgoRow@mail.gmail.com>
+ <CAO1j=qfyLqNQpFsgZC6pm5Xz6e2VYRMkDgSOrxfNWkN7mGDCOw@mail.gmail.com>
+ <5470B1F4.4090402@gmail.com>
+ <CAO1j=qft29RWkGMwn-43jw5_==6Fdpm5w581Z9BxLiOxx1OK=g@mail.gmail.com>
+ <alpine.LRH.2.02.1411222015350.4175@redclaw.mimosa.com>
+Message-ID: <20141123163217.GD24111@csclub.uwaterloo.ca>
+
+On Sat, Nov 22, 2014 at 08:54:23PM -0500, D. Hugh Redelmeier wrote:
+> In theory, one reason that the RP is slow because so much goes through
+> a single USB interface: all networking as well as all USB.
+> 
+> Generally under Linux a CPU does not get blocked due to I/O waiting.
+> All processes might get blocked due to I/O waits, at which point the
+> CPU cannot make progress because there is no work to do.  But that's
+> a slow I/O problem, not a slow processor problem.
+> 
+> The RP does have a slow processor.  I would guess that it would be
+> somewhere in the middle of the pack compared with wireless routers'
+> processors.  But they have specialized hardware for networking (like a
+> pair of ethernet ports and an ethernet switch).
+
+Actually surprisingly many have only one port and use vlans on the switch
+to create the WAN versus LAN ports.  Some even attach the wifi to
+the switch.
+
+> As always, performance guesses are unreliable (even mine!).
+> Measurement is called for if it matters.
+
+-- 
+Len Sorensen
+
+From kevin at ve3syb.ca  Sun Nov 23 19:23:50 2014
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Sun, 23 Nov 2014 14:23:50 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <CAArSzsUNDUHWyzQ5uzMmfpM=hNy2HANk2QYVoH1PL6gz3thdNA@mail.gmail.com>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca>
+ <CAArSzsUNDUHWyzQ5uzMmfpM=hNy2HANk2QYVoH1PL6gz3thdNA@mail.gmail.com>
+Message-ID: <54723446.10306@ve3syb.ca>
+
+On 20/11/2014 7:02 AM, Scott Allen wrote:
+> They also corrected the model number in the Specifications section
+> from U2713HM to S2440LCA. Everything else appears to be unchanged.
+>
+> Note that the UPC code specified has always been the correct one for
+> the 24" S2440L. I bet this is what counts since that's probably what
+> they scan to assure that they're shipping the correct item.
+
+As soon as I notice discrepancies in web pages about items I wonder what 
+information is correct and what is incorret. It prompts me to contact the 
+seller for clarification if it is an item I would consider buying. It helps 
+the seller by pointing out typos they may not have caught when poasting a 
+listing. It helps me as I verify what is actually being sold and at what price.
+
+All these apparent errors in listings of Dell monitors would generate a lot 
+of inquiries to verify what is actualy being sold and at what price before 
+placing any orders.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From mlxxxp at gmail.com  Sun Nov 23 23:54:57 2014
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Sun, 23 Nov 2014 18:54:57 -0500
+Subject: [GTALUG] [TLUG]: monitor, dell
+In-Reply-To: <54723446.10306@ve3syb.ca>
+References: <CAMua2SGL+y=GdDAoi+eunSL9H98JnhWXYyzLCJWxZft=4piA6g@mail.gmail.com>
+ <alpine.LRH.2.02.1411161436370.6002@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1411171527240.19789@redclaw.mimosa.com>
+ <CAArSzsWau-Lv0Un_kLjOZqhP8aaB5VTmFwJcfQwxY_sW-vpahQ@mail.gmail.com>
+ <546AAD13.30506@alteeve.ca>
+ <CAMua2SHrVX0=6_2X7969ZS-EBJm6w_7DXzgspOQJojDmxujhJQ@mail.gmail.com>
+ <546D02CE.30107@ve3syb.ca>
+ <CAArSzsUNDUHWyzQ5uzMmfpM=hNy2HANk2QYVoH1PL6gz3thdNA@mail.gmail.com>
+ <54723446.10306@ve3syb.ca>
+Message-ID: <CAArSzsW1nbt19Y0b2ypfDr=AgbYHVhOayUpEk3Hr9q4VpCcnsQ@mail.gmail.com>
+
+On 23 November 2014 at 14:23, Kevin Cozens <kevin at ve3syb.ca> wrote:
+> As soon as I notice discrepancies in web pages about items I wonder what
+> information is correct and what is incorret. It prompts me to contact the
+> seller for clarification if it is an item I would consider buying. It helps
+> the seller by pointing out typos they may not have caught when poasting a
+> listing. It helps me as I verify what is actually being sold and at what
+> price.
+
+I contacted Walmart, via their web contact form, about another "too
+good to be true" listing, previously mentioned in this thread:
+<http://www.walmart.ca/en/ip/dell27-2560-x-1440-ips-led-monitor/6000189477877>
+
+I asked if they could verify that the description was correct, and if
+I ordered, would I actually receive a model U2713HCA, as given in the
+Specifications section. I also pointed out that the picture provided
+did not match what Dell shows for that model.
+
+Here's the response I received:
+"We apologize, as the description and picture for the item are
+supplied by the vendor for the product, and we cannot clarify on our
+end. Typically the description will be accurate to the item, rather
+than the picture. If you wanted to order, and the item is not as you
+would need it, You may return your online purchase either to your
+local store or by mail within 90 days of receiving it, unless
+otherwise noted in our returns policy. Please refer to our return
+policy by following the link below. ..."
+
+I also had previously contacted them by phone with similar questions
+and got essentially the same answer.
+
+For anyone contemplating ordering this one, note that in a previous
+post I guessed that you would probably get a model S2240T 22" touch
+screen monitor. This was based on the provided picture and price. I
+have since found a web page that confirms that the UPC code that
+Walmart gives, 88411611413, is for the S2240T (look in the Manifest
+section):
+<http://techliquidators.com/index.cfm/p/34/i/1553892>
+(The last digit of a UPC is just a check digit)
+
+-- 
+Scott
+
