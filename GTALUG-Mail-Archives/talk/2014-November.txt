@@ -11441,3 +11441,114 @@ section):
 -- 
 Scott
 
+From davec-b at rogers.com  Mon Nov 24 18:44:08 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Mon, 24 Nov 2014 13:44:08 -0500
+Subject: [GTALUG] Who gave us a talk on shell scripting?
+Message-ID: <54737C78.6080701@rogers.com>
+
+My brain leaks: I have his book at home, but I can't remember his name!
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net            |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141124/a5f6853a/attachment.html>
+
+From mike at kallies.ca  Mon Nov 24 18:58:14 2014
+From: mike at kallies.ca (mike)
+Date: Mon, 24 Nov 2014 18:58:14 +0000
+Subject: [GTALUG] Who gave us a talk on shell scripting?
+In-Reply-To: <54737C78.6080701@rogers.com>
+References: <54737C78.6080701@rogers.com>
+Message-ID: <10EA0437AA58A6428D3A28D5D75F77750FB4A668@EXMBX2010-A.Hosting.ca>
+
+Chris F.A. Johnson
+
+http://cfaj.freeshell.org/
+
+Awesome talk, although it was more than a few years back I think.  
+
+He's usually active on the list, especially when a superfluous cat is around.
+
+Mike
+
+
+
+From: talk [talk-bounces at gtalug.org] on behalf of David Collier-Brown [davec-b at rogers.com]
+Sent: November 24, 2014 1:44 PM
+To: talk at gtalug.org
+Subject: [GTALUG] Who gave us a talk on shell scripting?
+
+
+My brain leaks: I have his book at home, but I can't remember his name!
+
+--dave
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+From lsorense at csclub.uwaterloo.ca  Mon Nov 24 19:55:15 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 24 Nov 2014 14:55:15 -0500
+Subject: [GTALUG] Who gave us a talk on shell scripting?
+In-Reply-To: <10EA0437AA58A6428D3A28D5D75F77750FB4A668@EXMBX2010-A.Hosting.ca>
+References: <54737C78.6080701@rogers.com>
+ <10EA0437AA58A6428D3A28D5D75F77750FB4A668@EXMBX2010-A.Hosting.ca>
+Message-ID: <20141124195515.GE24111@csclub.uwaterloo.ca>
+
+On Mon, Nov 24, 2014 at 06:58:14PM +0000, mike wrote:
+> Chris F.A. Johnson
+> 
+> http://cfaj.freeshell.org/
+> 
+> Awesome talk, although it was more than a few years back I think.  
+> 
+> He's usually active on the list, especially when a superfluous cat is around.
+
+cat /we/would/not/do/that | grep "would" | cat > /would/we
+
+:)
+
+-- 
+Len Sorensen
+
+From chris at cfajohnson.com  Mon Nov 24 20:46:15 2014
+From: chris at cfajohnson.com (Chris F.A. Johnson)
+Date: Mon, 24 Nov 2014 15:46:15 -0500 (EST)
+Subject: [GTALUG] Who gave us a talk on shell scripting?
+In-Reply-To: <20141124195515.GE24111@csclub.uwaterloo.ca>
+References: <54737C78.6080701@rogers.com>
+ <10EA0437AA58A6428D3A28D5D75F77750FB4A668@EXMBX2010-A.Hosting.ca>
+ <20141124195515.GE24111@csclub.uwaterloo.ca>
+Message-ID: <alpine.DEB.2.10.1411241545120.3785@chris.tor>
+
+On Mon, 24 Nov 2014, Lennart Sorensen wrote:
+
+> On Mon, Nov 24, 2014 at 06:58:14PM +0000, mike wrote:
+>> Chris F.A. Johnson
+>>
+>> http://cfaj.freeshell.org/
+
+    http://cfajohnson.com/
+
+>> Awesome talk, although it was more than a few years back I think.
+>>
+>> He's usually active on the list, especially when a superfluous cat is around.
+>
+> cat /we/would/not/do/that | grep "would" | cat > /would/we
+
+    UUOC ;)
+
+
+-- 
+Chris F.A. Johnson, <http://cfajohnson.com>
+
