@@ -11552,3 +11552,474 @@ On Mon, 24 Nov 2014, Lennart Sorensen wrote:
 -- 
 Chris F.A. Johnson, <http://cfajohnson.com>
 
+From moptop99 at gmail.com  Tue Nov 25 11:51:34 2014
+From: moptop99 at gmail.com (Matt Price)
+Date: Tue, 25 Nov 2014 06:51:34 -0500
+Subject: [GTALUG] 27" monitor $300
+Message-ID: <CAN_Dec8wrEfsbWqH+s+yBSCP5CNJeigBaPKWb_Dt3qWyYxwZCw@mail.gmail.com>
+
+this came in my email today -- reminded me of that long Dell thread, which
+I have not read in its entirety; but anyway thought I would share:
+
+http://slickdeals.net/f/7402732-27-monoprice-2560x1440-ips-panel-pro-led-monitor-300-free-shipping
+
+I have no idea if this is a good monitor or not, I'm not in the market so
+not making the necessary effort to find out...
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141125/e64f94de/attachment.html>
+
+From hugh at mimosa.com  Tue Nov 25 15:27:35 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 25 Nov 2014 10:27:35 -0500 (EST)
+Subject: [GTALUG] 27" monitor $300
+In-Reply-To: <CAN_Dec8wrEfsbWqH+s+yBSCP5CNJeigBaPKWb_Dt3qWyYxwZCw@mail.gmail.com>
+References: <CAN_Dec8wrEfsbWqH+s+yBSCP5CNJeigBaPKWb_Dt3qWyYxwZCw@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1411251016580.3337@redclaw.mimosa.com>
+
+| From: Matt Price <moptop99 at gmail.com>
+
+| http://slickdeals.net/f/7402732-27-monoprice-2560x1440-ips-panel-pro-led-monitor-300-free-shipping
+| 
+| I have no idea if this is a good monitor or not, I'm not in the market so
+| not making the necessary effort to find out...
+
+Monoprice has a good reputation as a no-nonsense source for cables and
+the like.  It is a US company.  They will ship to Canada but that has
+friction: shipping costs (not free), customs brokerage costs, HST,
+currency exchange costs.  And, of course, no local warranty.
+
+I seem to remember that they've been selling inexpensive 27" monitors
+for a year or two.  The other source of this kind of thing is direct
+from Korea.
+
+Here's a very very long thread about these monitors from Korea:
+<http://forums.redflagdeals.com/rfds-official-korean-27-2-5k-2560x1440-resolution-monitor-deals-118323>
+Summary: very good price, pretty good chance of success, pretty good 
+display panel, very basic electronics (only supports dual-link DVI and 
+only at native resolution).
+
+(slickdeals.net is a US deals site.  Like the Canadian
+redflagdeals.com site.  The fora appear to be driven by consumers, not
+vendors.)
+
+From lsorense at csclub.uwaterloo.ca  Tue Nov 25 15:31:40 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 25 Nov 2014 10:31:40 -0500
+Subject: [GTALUG] 27" monitor $300
+In-Reply-To: <CAN_Dec8wrEfsbWqH+s+yBSCP5CNJeigBaPKWb_Dt3qWyYxwZCw@mail.gmail.com>
+References: <CAN_Dec8wrEfsbWqH+s+yBSCP5CNJeigBaPKWb_Dt3qWyYxwZCw@mail.gmail.com>
+Message-ID: <20141125153140.GF24111@csclub.uwaterloo.ca>
+
+On Tue, Nov 25, 2014 at 06:51:34AM -0500, Matt Price wrote:
+> this came in my email today -- reminded me of that long Dell thread, which
+> I have not read in its entirety; but anyway thought I would share:
+> 
+> http://slickdeals.net/f/7402732-27-monoprice-2560x1440-ips-panel-pro-led-monitor-300-free-shipping
+> 
+> I have no idea if this is a good monitor or not, I'm not in the market so
+> not making the necessary effort to find out...
+
+Well the $33.29 US and $45.66 duty puts a dent in that deal.
+
+-- 
+Len Sorensen
+
+From william.muriithi at gmail.com  Tue Nov 25 16:08:03 2014
+From: william.muriithi at gmail.com (William Muriithi)
+Date: Tue, 25 Nov 2014 11:08:03 -0500
+Subject: [GTALUG] Cache DNS issues.
+Message-ID: <20141125160803.6041749.11972.9296@gmail.com>
+
+?Morning,?
+
+I have cache dns running on a postfix based mail server. The bin?d server do come up before postfix, but dns queries fail till the dns master come up.
+
+Doesn't slave servers keep data persistent? I mean, is it normal for slave to fail resolving queries on start up if the master us down?
+
+Thanks in advance ?
+
+William
+
+From james.knott at rogers.com  Tue Nov 25 16:19:38 2014
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 25 Nov 2014 11:19:38 -0500
+Subject: [GTALUG] Cache DNS issues.
+In-Reply-To: <20141125160803.6041749.11972.9296@gmail.com>
+References: <20141125160803.6041749.11972.9296@gmail.com>
+Message-ID: <5474AC1A.2050409@rogers.com>
+
+On 11/25/2014 11:08 AM, William Muriithi wrote:
+> ?Morning, 
+>
+> I have cache dns running on a postfix based mail server. The bin?d server do come up before postfix, but dns queries fail till the dns master come up.
+>
+> Doesn't slave servers keep data persistent? I mean, is it normal for slave to fail resolving queries on start up if the master us down?
+>
+>
+
+What's your cache time?  A cache will typically hold the data for a
+short time, to keep stale data from propogating.  It might be as short
+as a few minutes.  A cache certainly won't survive a reboot.
+
+
+From hugh at mimosa.com  Tue Nov 25 17:08:49 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 25 Nov 2014 12:08:49 -0500 (EST)
+Subject: [GTALUG] Cache DNS issues.
+In-Reply-To: <5474AC1A.2050409@rogers.com>
+References: <20141125160803.6041749.11972.9296@gmail.com>
+ <5474AC1A.2050409@rogers.com>
+Message-ID: <alpine.LRH.2.02.1411251204270.3337@redclaw.mimosa.com>
+
+| From: James Knott <james.knott at rogers.com>
+
+| What's your cache time?  A cache will typically hold the data for a
+| short time, to keep stale data from propogating.  It might be as short
+| as a few minutes.  A cache certainly won't survive a reboot.
+
+I don't know about local policy, but each DNS record has a TTL which
+is supposed to limit the time it is cached.  I imagine that these
+are generally honoured by a caching server to avoid overloading the other 
+servers.
+
+From james.knott at rogers.com  Tue Nov 25 17:21:16 2014
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 25 Nov 2014 12:21:16 -0500
+Subject: [GTALUG] Cache DNS issues.
+In-Reply-To: <alpine.LRH.2.02.1411251204270.3337@redclaw.mimosa.com>
+References: <20141125160803.6041749.11972.9296@gmail.com>
+ <5474AC1A.2050409@rogers.com>
+ <alpine.LRH.2.02.1411251204270.3337@redclaw.mimosa.com>
+Message-ID: <5474BA8C.1070103@rogers.com>
+
+On 11/25/2014 12:08 PM, D. Hugh Redelmeier wrote:
+> | From: James Knott <james.knott at rogers.com>
+>
+> | What's your cache time?  A cache will typically hold the data for a
+> | short time, to keep stale data from propogating.  It might be as short
+> | as a few minutes.  A cache certainly won't survive a reboot.
+>
+> I don't know about local policy, but each DNS record has a TTL which
+> is supposed to limit the time it is cached.  I imagine that these
+> are generally honoured by a caching server to avoid overloading the other 
+> servers.
+>
+>
+
+The original TTL was 24 hours.  But that's a bit long these days.  It's
+a balance between "overloading" and stale addresses.  Upper level
+servers tend to have long times, local ones shorter.  Regardless, I'd
+expect the cache to be empty on a system that's just been started.
+
+Cache as cache can.  ;-)
+
+
+From hugh at mimosa.com  Tue Nov 25 22:35:42 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 25 Nov 2014 17:35:42 -0500 (EST)
+Subject: [GTALUG] Cache DNS issues.
+In-Reply-To: <5474BA8C.1070103@rogers.com>
+References: <20141125160803.6041749.11972.9296@gmail.com>
+ <5474AC1A.2050409@rogers.com>
+ <alpine.LRH.2.02.1411251204270.3337@redclaw.mimosa.com>
+ <5474BA8C.1070103@rogers.com>
+Message-ID: <alpine.LRH.2.02.1411251714350.3337@redclaw.mimosa.com>
+
+| From: James Knott <james.knott at rogers.com>
+
+| The original TTL was 24 hours.
+
+How do you know that?  Do you know the queries William Muriithi's machine 
+is making?  Do you know what DNS servers it is querying?
+
+In a response to a DNS query, each record has its own TTL.  That TTL
+depends on what the authoritative server set it to be initially and
+how intermediate servers (if any) modified it (usually because it has
+been aging in a cache).
+
+You can see this with dig(1).
+
+From william.muriithi at gmail.com  Wed Nov 26 00:09:52 2014
+From: william.muriithi at gmail.com (William Muriithi)
+Date: Tue, 25 Nov 2014 19:09:52 -0500
+Subject: [GTALUG] Cache DNS issues.
+In-Reply-To: <alpine.LRH.2.02.1411251714350.3337@redclaw.mimosa.com>
+References: <20141125160803.6041749.11972.9296@gmail.com>
+ <5474AC1A.2050409@rogers.com>
+ <alpine.LRH.2.02.1411251204270.3337@redclaw.mimosa.com>
+ <5474BA8C.1070103@rogers.com>
+ <alpine.LRH.2.02.1411251714350.3337@redclaw.mimosa.com>
+Message-ID: <20141126000952.6041749.3277.9343@gmail.com>
+
+Hugh,
+
+Thank you. My problem seem to be ttl issue. The ttl for my records is one hour and this system was down longer than that due to power outage.
+
+Axfr dump from the Slave look as below.
+
+
+?; <<>> DiG 9.8.2rc1-RedHat-9.8.2-0.23.rc1.el6_5.1 <<>> example.com axfr
+;; global options: +cmd
+example.com.		3600	IN	SOA	srvyyzdc01.example.local. hostmaster.example.com. 2014111803 900 600 86400 3600
+example.com.		3600	IN	TXT	"v=spf1 mx -all"
+example.com.		3600	IN	MX	10 smtp1.example.com.
+example.com.		3600	IN	NS	srvyyzdc01.example.local.
+example.com.		3600	IN	NS	srvyyzdc02.example.local.
+example.com.		3600	IN	A	192.168.230.241
+aeo.example.com.	3600	IN	A	192.168.230.131?
+
+? Original Message ?
+From: D. Hugh Redelmeier
+Sent: Tuesday, November 25, 2014 5:35 PM
+To: GTALUG Talk
+Reply To: D. Hugh Redelmeier
+Subject: Re: [GTALUG] Cache DNS issues.
+
+| From: James Knott <james.knott at rogers.com>
+
+| The original TTL was 24 hours.
+
+How do you know that? Do you know the queries William Muriithi's machine 
+is making? Do you know what DNS servers it is querying?
+
+In a response to a DNS query, each record has its own TTL. That TTL
+depends on what the authoritative server set it to be initially and
+how intermediate servers (if any) modified it (usually because it has
+been aging in a cache).
+
+You can see this with dig(1).
+
+
+---
+GTALUG Talk Mailing List - talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+From james.knott at rogers.com  Wed Nov 26 01:35:40 2014
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 25 Nov 2014 20:35:40 -0500
+Subject: [GTALUG] Cache DNS issues.
+In-Reply-To: <alpine.LRH.2.02.1411251714350.3337@redclaw.mimosa.com>
+References: <20141125160803.6041749.11972.9296@gmail.com>
+ <5474AC1A.2050409@rogers.com>
+ <alpine.LRH.2.02.1411251204270.3337@redclaw.mimosa.com>
+ <5474BA8C.1070103@rogers.com>
+ <alpine.LRH.2.02.1411251714350.3337@redclaw.mimosa.com>
+Message-ID: <54752E6C.5040102@rogers.com>
+
+On 11/25/2014 05:35 PM, D. Hugh Redelmeier wrote:
+> | The original TTL was 24 hours.
+>
+> How do you know that?  Do you know the queries William Muriithi's machine 
+> is making?  Do you know what DNS servers it is querying?
+
+I was referring to earlier days of the Internet, not his system.
+
+"The units used are seconds. An older common TTL value for DNS was 86400
+seconds, which is 24 hours. A TTL value of 86400 would mean that, if a
+DNS record was changed on the authoritative nameserver, DNS servers
+around the world could still be showing the old value from their cache
+for up to 24 hours after the change."
+
+https://en.wikipedia.org/wiki/Time_to_live
+
+As that article mentions, with that TTL, it would take a full 24 hours
+for a change to be reflected.
+
+
+From hugh at mimosa.com  Wed Nov 26 03:39:20 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 25 Nov 2014 22:39:20 -0500 (EST)
+Subject: [GTALUG] Cache DNS issues.
+In-Reply-To: <20141126000952.6041749.3277.9343@gmail.com>
+References: <20141125160803.6041749.11972.9296@gmail.com>
+ <5474AC1A.2050409@rogers.com>
+ <alpine.LRH.2.02.1411251204270.3337@redclaw.mimosa.com>
+ <5474BA8C.1070103@rogers.com>
+ <alpine.LRH.2.02.1411251714350.3337@redclaw.mimosa.com>
+ <20141126000952.6041749.3277.9343@gmail.com>
+Message-ID: <alpine.LRH.2.02.1411252201390.3337@redclaw.mimosa.com>
+
+| From: William Muriithi <william.muriithi at gmail.com>
+
+| Thank you. My problem seem to be ttl issue. The ttl for my records is 
+| one hour and this system was down longer than that due to power outage.
+
+Sorry if my message was confusing.  I don't think that setting a
+longer TTL is the solution to your problem.  In fact, I don't know the
+right solution.  Not really my area of expertise.
+
+Setting a longer TTL will paper over the problem.  If the outage is
+short enough, and the remaining TTLs are long enough, you will not
+have a problem.  But all TTLs count down, so it is probably only luck
+if you never crash with a short remaining TTL.  Adjusting TTL way high
+will adjust the probabilities, but still leaves a vulnerability.
+
+You didn't really tell us everything relevant about your problem so
+I'm guessing at a few things.
+
+Is your DNS master server on the same machine or a different one?  If
+it is on the same machine, perhaps you can delay the startup of
+postfix until after the master server is up.
+
+If the server is on another machine, I don't know of an off-the-shelf
+solution for all cases.  That doesn't mean that there isn't one.
+
+If you control the master server, you could run a local slave DNS
+server on the postfix machine.  That is probably the best and cleanest
+solution.  Zone transfers don't have to happen in real time.  This
+assumes that you only really care about queries for names in that zone.
+
+If you don't control the master server:
+
+A normal (not DNSSEC) way of deciding that there is no domain with
+the given name is to give up after a query receives no answer after a
+timeout.  Just telling postfix to have more patience might work but
+has other problems.
+
+[UNTESTED] Perhaps before starting postfix, you could do a query of a
+better-be-a-sure-thing domain name with a really long timeout.
+	dig @master.server known-name.ca +time=300
+might do the trick (a 5 minute patience).  This might fit in the init
+script.
+
+Of course this is all a little improper.  If the server goes down
+without the machine running postfix going down, you have the same old
+problem.
+
+From william.muriithi at gmail.com  Wed Nov 26 04:16:17 2014
+From: william.muriithi at gmail.com (William Muriithi)
+Date: Tue, 25 Nov 2014 23:16:17 -0500
+Subject: [GTALUG] Cache DNS issues.
+In-Reply-To: <alpine.LRH.2.02.1411252201390.3337@redclaw.mimosa.com>
+References: <20141125160803.6041749.11972.9296@gmail.com>
+ <5474AC1A.2050409@rogers.com>
+ <alpine.LRH.2.02.1411251204270.3337@redclaw.mimosa.com>
+ <5474BA8C.1070103@rogers.com>
+ <alpine.LRH.2.02.1411251714350.3337@redclaw.mimosa.com>
+ <20141126000952.6041749.3277.9343@gmail.com>
+ <alpine.LRH.2.02.1411252201390.3337@redclaw.mimosa.com>
+Message-ID: <CAE9rU+5Hees-kLBx_EBJgogA8K09OPMVdSAGjR3pxvcOJrHf1A@mail.gmail.com>
+
+Hugh,
+
+
+> Sorry if my message was confusing.  I don't think that setting a
+> longer TTL is the solution to your problem.  In fact, I don't know the
+> right solution.  Not really my area of expertise.
+>
+> Setting a longer TTL will paper over the problem.  If the outage is
+> short enough, and the remaining TTLs are long enough, you will not
+> have a problem.  But all TTLs count down, so it is probably only luck
+> if you never crash with a short remaining TTL.  Adjusting TTL way high
+> will adjust the probabilities, but still leaves a vulnerability.
+>
+
+You have a point, unless I make it full day, at some point it will
+happen again.  This is in Markham and power outage is like a weekly
+affair.  Petty disappointed by power supply up there.
+
+> You didn't really tell us everything relevant about your problem so
+> I'm guessing at a few things.
+>
+> Is your DNS master server on the same machine or a different one?  If
+> it is on the same machine, perhaps you can delay the startup of
+> postfix until after the master server is up.
+>
+Nope.  The master and the slave leave of different hardware.
+Actually, master is an active directory while the slave is a bind
+server.  The purpose of the bind server is to ensure DNS resolve fast
+enough as I do a lot of DNS related checks to avoid spam coming
+through.
+> If the server is on another machine, I don't know of an off-the-shelf
+> solution for all cases.  That doesn't mean that there isn't one.
+>
+
+Me too. I am wondering if removing the MX server from the VM that
+should start automatically should solve the problem.
+
+> If you control the master server, you could run a local slave DNS
+> server on the postfix machine.  That is probably the best and cleanest
+> solution.  Zone transfers don't have to happen in real time.  This
+> assumes that you only really care about queries for names in that zone.
+>
+
+Actually bind running on MX server is actually slave.  Sorry for
+mixing up cache and slave. Shouldn't both stop serving the zone in
+question is the TTL has expired?   If thats not the case, I guess I am
+on the wood on why its happening then as you implicitly seem to imply
+it shouldn't happen with slaves.
+
+> If you don't control the master server:
+>
+> A normal (not DNSSEC) way of deciding that there is no domain with
+> the given name is to give up after a query receives no answer after a
+> timeout.  Just telling postfix to have more patience might work but
+> has other problems.
+>
+> [UNTESTED] Perhaps before starting postfix, you could do a query of a
+> better-be-a-sure-thing domain name with a really long timeout.
+>         dig @master.server known-name.ca +time=300
+> might do the trick (a 5 minute patience).  This might fit in the init
+> script.
+
+Hmm, good idea, I could chkconfig off postfix and set it a small
+script to check DNS and then bring up postifx when it resolve
+successfully.  Possibly call it every 15 minutes..  Will investigate
+that idea tomorrow
+
+
+>
+> Of course this is all a little improper.  If the server goes down
+> without the machine running postfix going down, you have the same old
+> problem.
+William
+
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From hugh at mimosa.com  Wed Nov 26 05:35:21 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 26 Nov 2014 00:35:21 -0500 (EST)
+Subject: [GTALUG] Cache DNS issues.
+In-Reply-To: <CAE9rU+5Hees-kLBx_EBJgogA8K09OPMVdSAGjR3pxvcOJrHf1A@mail.gmail.com>
+References: <20141125160803.6041749.11972.9296@gmail.com>
+ <5474AC1A.2050409@rogers.com>
+ <alpine.LRH.2.02.1411251204270.3337@redclaw.mimosa.com>
+ <5474BA8C.1070103@rogers.com>
+ <alpine.LRH.2.02.1411251714350.3337@redclaw.mimosa.com>
+ <20141126000952.6041749.3277.9343@gmail.com>
+ <alpine.LRH.2.02.1411252201390.3337@redclaw.mimosa.com>
+ <CAE9rU+5Hees-kLBx_EBJgogA8K09OPMVdSAGjR3pxvcOJrHf1A@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1411260025350.3337@redclaw.mimosa.com>
+
+| From: William Muriithi <william.muriithi at gmail.com>
+
+| Actually bind running on MX server is actually slave.  Sorry for
+| mixing up cache and slave. Shouldn't both stop serving the zone in
+| question is the TTL has expired?   If thats not the case, I guess I am
+| on the wood on why its happening then as you implicitly seem to imply
+| it shouldn't happen with slaves.
+
+[checking with my 2001 edition of "DNS and BIND"]
+
+The slave can, but need not, have a file that saves the zone across
+reboots.  Clearly you want this.
+
+Zone transfers are initiated by the slave if it reboots without such a
+file.
+
+They are also initiated if the lifetimes specified in the SOA record
+have expired (refresh time, retry time, expire time, negative caching
+time). NOT the same as ordinary record TTL.
+
+(Irrelevant: zone transfers are initiated by the master when the zone data 
+changes.)
+
+Of course this is about BIND 9 in 2001.
+
+So it looks as if a few tweeks should get you something reasonable.
+
