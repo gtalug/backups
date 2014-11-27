@@ -12023,3 +12023,33 @@ Of course this is about BIND 9 in 2001.
 
 So it looks as if a few tweeks should get you something reasonable.
 
+From hugh at mimosa.com  Thu Nov 27 07:23:18 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 27 Nov 2014 02:23:18 -0500 (EST)
+Subject: [GTALUG] refurb Acer C720 Chromebook cheap
+Message-ID: <alpine.LRH.2.02.1411270214580.3337@redclaw.mimosa.com>
+
+This can run linux with a bit of work.  Pretty good netbook.  As described 
+by several folks on this list.  (Not yet me -- haven't got the conversion 
+working yet.)
+
+$144.99 plus $4.99 shipping plus taxes.
+
+<http://www.newegg.ca/Product/Product.aspx?Item=N82E16834314635&cm_re=c720-_-34-314-635-_-Product>
+
+Other tricks:
+
+You can join the newegg "premier" program for a 30-day free trial and get 
+free shipping ($60 per year afterwords).
+
+If you pay with VISA, you can get $25 off your first purchase of $150 or 
+more.  Read about that here
+<http://forums.redflagdeals.com/newegg-25-off-purchases-over-150-using-visa-1605939/>
+Expires December 5.
+
+You would have to add something to your order to qualify for this since 
+the c720 is less than $150.
+
+Sadly, newegg shipping is not reduced when you combine items within an 
+order.
+
