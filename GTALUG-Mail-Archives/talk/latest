@@ -12053,3 +12053,68 @@ the c720 is less than $150.
 Sadly, newegg shipping is not reduced when you combine items within an 
 order.
 
+From kevin at ve3syb.ca  Sat Nov 29 20:14:15 2014
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Sat, 29 Nov 2014 15:14:15 -0500
+Subject: [GTALUG] [OT] Dead motherboard or dead CPU?
+In-Reply-To: <20141123002346.GC24111@csclub.uwaterloo.ca>
+References: <546E7C32.1030208@ve3syb.ca>
+ <20141123002346.GC24111@csclub.uwaterloo.ca>
+Message-ID: <547A2917.6090206@ve3syb.ca>
+
+On 22/11/2014 7:23 PM, Lennart Sorensen wrote:
+> Well short of swapping parts it can be hard to determine the problem.
+> Could be motherboard, power supply, CPU, ram, video card (if not onboard).
+
+I realized that. I was hoping somone who builds/repairs computers on a 
+regular basis would comment on the chances that a Core 2 Duo chip failed vs. 
+the motherboard failing. I've ordered a replacement CPU that isn't costing 
+me much $. If that doesn't get the machine booting it is a MB failure. 
+Possibly the common issue with bad caps (although none are obviously bad)? 
+Caps can be replaced more easily than the replacing the MB. I'll see what 
+happens after I can swap the CPU.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From phiscock at ee.ryerson.ca  Sat Nov 29 21:44:23 2014
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Sat, 29 Nov 2014 16:44:23 -0500
+Subject: [GTALUG] [OT] Dead motherboard or dead CPU?
+In-Reply-To: <547A2917.6090206@ve3syb.ca>
+References: <546E7C32.1030208@ve3syb.ca>
+ <20141123002346.GC24111@csclub.uwaterloo.ca>
+ <547A2917.6090206@ve3syb.ca>
+Message-ID: <d90c9f43e084c8be9c79809cf54db49e.squirrel@webmail.ee.ryerson.ca>
+
+
+> I realized that. I was hoping somone who builds/repairs computers on a
+> regular basis would comment on the chances that a Core 2 Duo chip failed
+> vs.
+> the motherboard failing. I've ordered a replacement CPU that isn't costing
+> me much $. If that doesn't get the machine booting it is a MB failure.
+> Possibly the common issue with bad caps (although none are obviously bad)?
+> Caps can be replaced more easily than the replacing the MB. I'll see what
+> happens after I can swap the CPU.
+
+Have you checked the power supply voltages? If the supply has failed with
+an overvoltage, that could cook the mobo. And other periferals. This
+happened to one of my systems...
+
+P.
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
