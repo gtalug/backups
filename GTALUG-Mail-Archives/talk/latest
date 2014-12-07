@@ -212,3 +212,22 @@ Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
                                  | powerful!"
 #include <disclaimer/favourite> |             --Chris Hardwick
 
+From thomas.bruce.milne at gmail.com  Sat Dec  6 20:17:55 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Sat, 06 Dec 2014 20:17:55 +0000
+Subject: [GTALUG] Why can't I do a Debian netinstall of unstable or testing?
+Message-ID: <CAGc8pF4sx8P4214sGmRZV78qO7+9qkkvisKxv7SfWkM2X-GoYA@mail.gmail.com>
+
+I'm using Unetbootin to do a netinstall of Debian.
+
+It says there are no compatible kernel modules on any of the mirrors when I
+try anything but Stable.
+
+Obviously I know I can just install Stable and then do an upgrade, but
+still.
+
+What's up with this?
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141206/dda41a0b/attachment.html>
+
