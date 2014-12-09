@@ -49,3 +49,144 @@ Myles Braithwaite | http://mylesb.ca/i
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/operations/attachments/20141201/801627db/attachment.html>
 
+From scott at ss.org  Mon Dec  8 19:56:08 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Mon, 08 Dec 2014 14:56:08 -0500
+Subject: [GTALUG-Ops] Can someone with the knowledge,
+	please update the website.
+Message-ID: <54860258.6020306@ss.org>
+
+We're going to fall back to our "Round Table Q & A".
+
+Use this description:
+
+A Round Table Q & A is where we take questions from the audience, and 
+the audience discusses and attempts to answer those questions from their 
+own knowledge. It's a great way to meet fellow members of our community 
+and discover the skill sets we each bring to the table.
+
+
+--
+Scott Sullivan
+
+From davec-b at rogers.com  Mon Dec  8 20:05:27 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Mon, 08 Dec 2014 15:05:27 -0500
+Subject: [GTALUG-Ops] Can someone with the knowledge,
+ please update the website.
+In-Reply-To: <54860258.6020306@ss.org>
+References: <54860258.6020306@ss.org>
+Message-ID: <54860487.4090800@rogers.com>
+
+What?  I had a 15-minute talk on Mave and Maven, for a
+broader discusson of build sysyems.
+
+
+--dave
+
+On 12/08/2014 02:56 PM, Scott Sullivan wrote:
+> We're going to fall back to our "Round Table Q & A".
+>
+> Use this description:
+>
+> A Round Table Q & A is where we take questions from the audience, and 
+> the audience discusses and attempts to answer those questions from 
+> their own knowledge. It's a great way to meet fellow members of our 
+> community and discover the skill sets we each bring to the table.
+>
+>
+> -- 
+> Scott Sullivan
+>
+> ---
+> GTALUG Operations Mailing List - operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From scott at ss.org  Mon Dec  8 20:12:34 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Mon, 08 Dec 2014 15:12:34 -0500
+Subject: [GTALUG-Ops] Can someone with the knowledge,
+ please update the website.
+In-Reply-To: <54860487.4090800@rogers.com>
+References: <54860258.6020306@ss.org> <54860487.4090800@rogers.com>
+Message-ID: <54860632.70507@ss.org>
+
+On 12/08/2014 03:05 PM, David Collier-Brown wrote:
+> What?  I had a 15-minute talk on Mave and Maven, for a
+> broader discusson of build sysyems.
+
+My bad, I saw Myles pull out, but forgot about your part.
+
+Can you please post your description here, and whom ever updates the 
+site will include both.
+
+I'd like to have an announce push out before the end of the day.
+
+-- 
+Scott Sullivan
+
+From scott at ss.org  Mon Dec  8 22:30:17 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Mon, 08 Dec 2014 17:30:17 -0500
+Subject: [GTALUG-Ops] Can someone with the knowledge,
+ please update the website.
+In-Reply-To: <54862570.40002@rogers.com>
+References: <54860258.6020306@ss.org> <54860487.4090800@rogers.com>
+ <54860632.70507@ss.org> <54862570.40002@rogers.com>
+Message-ID: <54862679.2040903@ss.org>
+
+On 12/08/2014 05:25 PM, David Collier-Brown wrote:
+> Ok, talk attached in pdf, which the old web site liked.
+>
+> The title is "Maven, or Make for Non-Cooks", and is a brief look at the
+> problems of Make, and what successor build systems did to address them.
+
+Can you give me a small, 2-3 sentence description of the talk. Think 
+something you'd find in a Convention program listing. That will go on 
+the website and email.
+
+
+From davec-b at rogers.com  Mon Dec  8 22:38:55 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Mon, 08 Dec 2014 17:38:55 -0500
+Subject: [GTALUG-Ops] Can someone with the knowledge,
+ please update the website.
+In-Reply-To: <54862679.2040903@ss.org>
+References: <54860258.6020306@ss.org> <54860487.4090800@rogers.com>
+ <54860632.70507@ss.org> <54862570.40002@rogers.com> <54862679.2040903@ss.org>
+Message-ID: <5486287F.6010505@rogers.com>
+
+On 12/08/2014 05:30 PM, Scott Sullivan wrote:
+> On 12/08/2014 05:25 PM, David Collier-Brown wrote:
+>> Ok, talk attached in pdf, which the old web site liked.
+>>
+>> The title is "Maven, or Make for Non-Cooks", and is a brief look at the
+>> problems of Make, and what successor build systems did to address them.
+>
+> Can you give me a small, 2-3 sentence description of the talk. Think 
+> something you'd find in a Convention program listing. That will go on 
+> the website and email.
+>
+
+Make was written to avoid the problem of recompiling files that hadn't 
+changed. It of course introduced a new set of problems , such as 
+verbosity, and the solutions for them.  Those solutions in turn 
+introduced another set of problems such as redundancy, and so on. Maven 
+is one of the moderately successful attempts to solve most of them.
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
