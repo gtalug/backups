@@ -231,3 +231,501 @@ What's up with this?
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141206/dda41a0b/attachment.html>
 
+From lsorense at csclub.uwaterloo.ca  Mon Dec  8 15:35:23 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 8 Dec 2014 10:35:23 -0500
+Subject: [GTALUG] Why can't I do a Debian netinstall of unstable or
+ testing?
+In-Reply-To: <CAGc8pF4sx8P4214sGmRZV78qO7+9qkkvisKxv7SfWkM2X-GoYA@mail.gmail.com>
+References: <CAGc8pF4sx8P4214sGmRZV78qO7+9qkkvisKxv7SfWkM2X-GoYA@mail.gmail.com>
+Message-ID: <20141208153523.GG24111@csclub.uwaterloo.ca>
+
+On Sat, Dec 06, 2014 at 08:17:55PM +0000, Thomas Milne wrote:
+> I'm using Unetbootin to do a netinstall of Debian.
+> 
+> It says there are no compatible kernel modules on any of the mirrors when I
+> try anything but Stable.
+
+To install testing or unstable you have to use the development version
+of the net installer.
+
+> Obviously I know I can just install Stable and then do an upgrade, but
+> still.
+> 
+> What's up with this?
+
+Go here:
+
+https://www.debian.org/devel/debian-installer/
+
+You could try the Beta2 jessie installer, or the weekly snapshot build
+or the daily snapshot build.
+
+-- 
+Len Sorensen
+
+From hugh at mimosa.com  Mon Dec  8 17:47:51 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 8 Dec 2014 12:47:51 -0500 (EST)
+Subject: [GTALUG] meeting tomorrow: topic?
+Message-ID: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+
+According to <http://gtalug.org/> :
+
+"GTALUG is currently looking for speakers for the 9th December, 2014 
+meeting. If you are interested in speaking please contact our talks 
+coordinator."
+
+Let's brainstorm on this.  Here's a poorly organized dump of some of my 
+thoughts.
+
+- I'd love to hear Lennart talk about what he's learned working on
+  routers.
+
+- I'd like to learn what each of you has learned using Linux (or
+  perhaps, not able to do using Linux) and what your current
+  Linux-related interests are.
+
+- I'd like to hear how people have set up their internet gatways.
+  What's worth doing, what's easy, what's hard.
+  (It's time for me to revisit this after having a pretty static
+  setup for a decade.  I'd be willing to talk about what I've done
+  but it is pretty stale.)
+
+- I'm interested in setting up my in-house services like a cloud.
+  Perhaps <http://owncloud.org/>.  Motivation: I want to keep control
+  of my own data as much as possible.  Can anyone speak to this?
+
+- Subproblem of above: I run MediaWiki already.  Tips and tricks (eg.
+  from Drew) about care, feeding, and use would be welcome.
+
+- I'd be willing to share 10 minutes worth of what I've learned about 
+  little Windows gadgets as Linux platforms.
+
+- I'd love to discuss whether this is interesting and useful
+  <http://www.banana-pi.com/eacp_view.asp?id=64>
+
+  This is a version of the Banana Pi with an added ethernet switch:
+  5 x 1G eithernet ports.
+
+  The Banana Pi is intended to mimic the Raspberry Pi in some ways but
+  with a stronger processor; my impression has been that this is goofy
+  and that the Cubieboard2 and Cubietruck <http://cubieboard.org/>
+  were more transparent uses of the Allwinner chips.
+
+  But gluing on a switch seems very attractive.
+
+- chatting about peoples' workflow always seems useful: it's not just
+  the tools, its how we use them, how we find them useful, and where
+  they don't quite meet expectations.
+
+  Examples: backup methodology, distro update methodology, favourite
+  editor (leave out tribalism), programming language, etc.
+
+- why Go is interesting <https://golang.org/>.
+  Why Rust is interesting <http://www.rust-lang.org/>.
+  Why Python 2.x still has a loyal following.
+
+- what are you doing with your _____?  Example: Raspberry Pi.
+
+- How you make your mobile device work with your desktop?
+
+Summary: we've had Question and Answer sessions, how about an Answer
+and Question session?  By that I meen: people give a mini-chat about
+something they think is interesting and have the rest of us ask
+questions in response.
+
+From thomas.bruce.milne at gmail.com  Mon Dec  8 18:35:14 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Mon, 08 Dec 2014 18:35:14 +0000
+Subject: [GTALUG] Why can't I do a Debian netinstall of unstable or
+	testing?
+References: <CAGc8pF4sx8P4214sGmRZV78qO7+9qkkvisKxv7SfWkM2X-GoYA@mail.gmail.com>
+ <20141208153523.GG24111@csclub.uwaterloo.ca>
+Message-ID: <CAGc8pF6B5WLX8nC4T_V69BTToHpjX_2HUA2QX3vCYorgcUSb0A@mail.gmail.com>
+
+On Mon, Dec 8, 2014, 10:35 AM Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+wrote:
+
+> On Sat, Dec 06, 2014 at 08:17:55PM +0000, Thomas Milne wrote:
+> > I'm using Unetbootin to do a netinstall of Debian.
+> >
+> > It says there are no compatible kernel modules on any of the mirrors
+> when I
+> > try anything but Stable.
+>
+> To install testing or unstable you have to use the development version
+> of the net installer.
+>
+> > Obviously I know I can just install Stable and then do an upgrade, but
+> > still.
+> >
+> > What's up with this?
+>
+> Go here:
+>
+> https://www.debian.org/devel/debian-installer/
+>
+> You could try the Beta2 jessie installer, or the weekly snapshot build
+> or the daily snapshot build.
+>
+> --
+> Len Sorensen
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+Okay that's cool. There don't appear to be any USB images but if I recall
+Unetbootin can write an ISO to USB.
+
+Many thanks!
+
+Hmmm, wait, could I use that to install the armhf version of Debian on my
+Cubox?
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141208/8ffe2415/attachment.html>
+
+From clifford_ilkay at dinamis.com  Mon Dec  8 18:37:31 2014
+From: clifford_ilkay at dinamis.com (Clifford Ilkay)
+Date: Mon, 08 Dec 2014 13:37:31 -0500
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+Message-ID: <5485EFEB.3060503@dinamis.com>
+
+On 12/08/2014 12:47 PM, D. Hugh Redelmeier wrote:
+> According to <http://gtalug.org/> :
+>
+> "GTALUG is currently looking for speakers for the 9th December, 2014 
+> meeting. If you are interested in speaking please contact our talks 
+> coordinator."
+>
+> Let's brainstorm on this.  Here's a poorly organized dump of some of my 
+> thoughts.
+>
+> - I'd love to hear Lennart talk about what he's learned working on
+>   routers.
+>
+> - I'd like to learn what each of you has learned using Linux (or
+>   perhaps, not able to do using Linux) and what your current
+>   Linux-related interests are.
+
+DevOps - Vagrant, Docker, and Ansible in particular.
+
+> - I'd like to hear how people have set up their internet gatways.
+>   What's worth doing, what's easy, what's hard.
+>   (It's time for me to revisit this after having a pretty static
+>   setup for a decade.  I'd be willing to talk about what I've done
+>   but it is pretty stale.)
+>
+> - I'm interested in setting up my in-house services like a cloud.
+>   Perhaps <http://owncloud.org/>.  Motivation: I want to keep control
+>   of my own data as much as possible.  Can anyone speak to this?
+>
+> - Subproblem of above: I run MediaWiki already.  Tips and tricks (eg.
+>   from Drew) about care, feeding, and use would be welcome
+> - I'd be willing to share 10 minutes worth of what I've learned about 
+>   little Windows gadgets as Linux platforms.
+>
+> - I'd love to discuss whether this is interesting and useful
+>   <http://www.banana-pi.com/eacp_view.asp?id=64>
+>
+>   This is a version of the Banana Pi with an added ethernet switch:
+>   5 x 1G eithernet ports.
+>
+>   The Banana Pi is intended to mimic the Raspberry Pi in some ways but
+>   with a stronger processor; my impression has been that this is goofy
+>   and that the Cubieboard2 and Cubietruck <http://cubieboard.org/>
+>   were more transparent uses of the Allwinner chips.
+>
+>   But gluing on a switch seems very attractive.
+
+
+The only use I'd have for something like the Raspberry Pi is as a router
+and with only one Ethernet port, that disqualifies it. The two devices
+you mention above are interesting because they have multiple Ethernet
+ports and would be viable replacements for my ancient and I presume
+power-hungry P2/350 Compaq that has been running for the last 10 years
+as my Internet gateway/firewall.
+
+
+> - chatting about peoples' workflow always seems useful: it's not just
+>   the tools, its how we use them, how we find them useful, and where
+>   they don't quite meet expectations.
+>   Examples: backup methodology, distro update methodology, favourite
+>   editor (leave out tribalism), programming language, etc.
+>
+> - why Go is interesting <https://golang.org/>.
+>   Why Rust is interesting <http://www.rust-lang.org/>.
+>   Why Python 2.x still has a loyal following.
+
+Python 2.x is still popular because many Python modules/projects haven't
+been ported to Python 3.x. That's changing. Go and Rust aren't even on
+my radar. Dart, maybe. Typescript seems like a safer bet. ECMAScript 6
+looks very interesting. Within very few years, it will no longer be
+feasible to do anything useful with a browser without Javascript
+enabled. Javascript is what is enabling rich-client applications,
+particularly for mobile devices.
+
+> - what are you doing with your _____?  Example: Raspberry Pi.
+>
+> - How you make your mobile device work with your desktop?
+
+I don't and that is something I'd like to rectify.
+
+-- 
+Regards,
+
+Clifford Ilkay
+
++1 647-778-8696
+
+
+From scruss at gmail.com  Mon Dec  8 20:09:24 2014
+From: scruss at gmail.com (Stewart Russell)
+Date: Mon, 8 Dec 2014 15:09:24 -0500
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+Message-ID: <CAAsTreD6ZARphy6maAxycDshqEteGZLpoqU2Aa2P7n9GHMA1Tg@mail.gmail.com>
+
+On Dec 8, 2014 12:47 PM, "D. Hugh Redelmeier" <hugh at mimosa.com> wrote:
+>
+> - Subproblem of above: I run MediaWiki already.  Tips and tricks (eg.
+>   from Drew) about care, feeding, and use would be welcome.
+
+Finding enough time to admin a MediaWiki site to get a balance between
+swatting away spammers and locking it down to unusability would get my
+vote.
+
+> Summary: we've had Question and Answer sessions, how about an Answer
+> and Question session?
+
+So, a "You're doing it wrong!" session? Nice idea.
+
+Cheers
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141208/18735f80/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Mon Dec  8 22:01:49 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 8 Dec 2014 17:01:49 -0500
+Subject: [GTALUG] Why can't I do a Debian netinstall of unstable or
+ testing?
+In-Reply-To: <CAGc8pF6B5WLX8nC4T_V69BTToHpjX_2HUA2QX3vCYorgcUSb0A@mail.gmail.com>
+References: <CAGc8pF4sx8P4214sGmRZV78qO7+9qkkvisKxv7SfWkM2X-GoYA@mail.gmail.com>
+ <20141208153523.GG24111@csclub.uwaterloo.ca>
+ <CAGc8pF6B5WLX8nC4T_V69BTToHpjX_2HUA2QX3vCYorgcUSb0A@mail.gmail.com>
+Message-ID: <20141208220149.GH24111@csclub.uwaterloo.ca>
+
+On Mon, Dec 08, 2014 at 06:35:14PM +0000, Thomas Milne wrote:
+> Okay that's cool. There don't appear to be any USB images but if I recall
+> Unetbootin can write an ISO to USB.
+
+Debian images are generally hybrid and can be dd'd to a USB stick directly
+and booted.
+
+> Many thanks!
+> 
+> Hmmm, wait, could I use that to install the armhf version of Debian on my
+> Cubox?
+
+cubox or cubox-i?
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Mon Dec  8 22:05:11 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 8 Dec 2014 17:05:11 -0500
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+Message-ID: <20141208220511.GI24111@csclub.uwaterloo.ca>
+
+On Mon, Dec 08, 2014 at 12:47:51PM -0500, D. Hugh Redelmeier wrote:
+> According to <http://gtalug.org/> :
+> 
+> "GTALUG is currently looking for speakers for the 9th December, 2014 
+> meeting. If you are interested in speaking please contact our talks 
+> coordinator."
+> 
+> Let's brainstorm on this.  Here's a poorly organized dump of some of my 
+> thoughts.
+> 
+> - I'd love to hear Lennart talk about what he's learned working on
+>   routers.
+
+How many hours do you have?
+
+Or Anthony could talk about all the legacy sysadmin disasters of mine
+he has had to clean up so far.
+
+> - I'd like to learn what each of you has learned using Linux (or
+>   perhaps, not able to do using Linux) and what your current
+>   Linux-related interests are.
+> 
+> - I'd like to hear how people have set up their internet gatways.
+>   What's worth doing, what's easy, what's hard.
+>   (It's time for me to revisit this after having a pretty static
+>   setup for a decade.  I'd be willing to talk about what I've done
+>   but it is pretty stale.)
+> 
+> - I'm interested in setting up my in-house services like a cloud.
+>   Perhaps <http://owncloud.org/>.  Motivation: I want to keep control
+>   of my own data as much as possible.  Can anyone speak to this?
+> 
+> - Subproblem of above: I run MediaWiki already.  Tips and tricks (eg.
+>   from Drew) about care, feeding, and use would be welcome.
+> 
+> - I'd be willing to share 10 minutes worth of what I've learned about 
+>   little Windows gadgets as Linux platforms.
+> 
+> - I'd love to discuss whether this is interesting and useful
+>   <http://www.banana-pi.com/eacp_view.asp?id=64>
+> 
+>   This is a version of the Banana Pi with an added ethernet switch:
+>   5 x 1G eithernet ports.
+> 
+>   The Banana Pi is intended to mimic the Raspberry Pi in some ways but
+>   with a stronger processor; my impression has been that this is goofy
+>   and that the Cubieboard2 and Cubietruck <http://cubieboard.org/>
+>   were more transparent uses of the Allwinner chips.
+> 
+>   But gluing on a switch seems very attractive.
+> 
+> - chatting about peoples' workflow always seems useful: it's not just
+>   the tools, its how we use them, how we find them useful, and where
+>   they don't quite meet expectations.
+> 
+>   Examples: backup methodology, distro update methodology, favourite
+>   editor (leave out tribalism), programming language, etc.
+> 
+> - why Go is interesting <https://golang.org/>.
+>   Why Rust is interesting <http://www.rust-lang.org/>.
+>   Why Python 2.x still has a loyal following.
+> 
+> - what are you doing with your _____?  Example: Raspberry Pi.
+> 
+> - How you make your mobile device work with your desktop?
+> 
+> Summary: we've had Question and Answer sessions, how about an Answer
+> and Question session?  By that I meen: people give a mini-chat about
+> something they think is interesting and have the rest of us ask
+> questions in response.
+
+Could be interesting too.
+
+Pretty sure I am not making the meeting this month.
+
+-- 
+Len Sorensen
+
+From thomas.bruce.milne at gmail.com  Mon Dec  8 23:31:01 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Mon, 08 Dec 2014 23:31:01 +0000
+Subject: [GTALUG] Why can't I do a Debian netinstall of unstable or
+	testing?
+References: <CAGc8pF4sx8P4214sGmRZV78qO7+9qkkvisKxv7SfWkM2X-GoYA@mail.gmail.com>
+ <20141208153523.GG24111@csclub.uwaterloo.ca>
+ <CAGc8pF6B5WLX8nC4T_V69BTToHpjX_2HUA2QX3vCYorgcUSb0A@mail.gmail.com>
+ <20141208220149.GH24111@csclub.uwaterloo.ca>
+Message-ID: <CAGc8pF722ZgP2kvU1Gv7xGrgTQfA__zkKdhoNdTH9zNbLHn7bQ@mail.gmail.com>
+
+On Mon, Dec 8, 2014, 5:01 PM Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+wrote:
+
+> On Mon, Dec 08, 2014 at 06:35:14PM +0000, Thomas Milne wrote:
+> > Okay that's cool. There don't appear to be any USB images but if I recall
+> > Unetbootin can write an ISO to USB.
+>
+> Debian images are generally hybrid and can be dd'd to a USB stick directly
+> and booted.
+>
+> > Many thanks!
+> >
+> > Hmmm, wait, could I use that to install the armhf version of Debian on my
+> > Cubox?
+>
+> cubox or cubox-i?
+>
+> --
+> Len Sorensen
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+Cubox
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141208/4fec6a9d/attachment.html>
+
+From adb at adb.ca  Tue Dec  9 04:32:01 2014
+From: adb at adb.ca (Anthony de Boer)
+Date: Mon, 8 Dec 2014 23:32:01 -0500
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <20141208220511.GI24111@csclub.uwaterloo.ca>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <20141208220511.GI24111@csclub.uwaterloo.ca>
+Message-ID: <20141209043201.GM23240@adb.ca>
+
+Lennart Sorensen wrote:
+> On Mon, Dec 08, 2014 at 12:47:51PM -0500, D. Hugh Redelmeier wrote:
+> > According to <http://gtalug.org/> :
+> > 
+> > "GTALUG is currently looking for speakers for the 9th December, 2014 
+> > meeting. If you are interested in speaking please contact our talks 
+> > coordinator."
+> > 
+> > Let's brainstorm on this.  Here's a poorly organized dump of some of my 
+> > thoughts.
+> > 
+> > - I'd love to hear Lennart talk about what he's learned working on
+> >   routers.
+> 
+> How many hours do you have?
+
+Be careful what you ask for, Hugh!
+
+> Or Anthony could talk about all the legacy sysadmin disasters of mine
+> he has had to clean up so far.
+
+First rule of work club is what happens at work stays at work.
+
+> > - I'd like to hear how people have set up their internet gatways.
+> >   What's worth doing, what's easy, what's hard.
+> >   (It's time for me to revisit this after having a pretty static
+> >   setup for a decade.  I'd be willing to talk about what I've done
+> >   but it is pretty stale.)
+
+OpenWRT seems to Just Work, though my setup isn't very current by now.
+
+> > - I'm interested in setting up my in-house services like a cloud.
+> >   Perhaps <http://owncloud.org/>.  Motivation: I want to keep control
+> >   of my own data as much as possible.  Can anyone speak to this?
+> > 
+> > - Subproblem of above: I run MediaWiki already.  Tips and tricks (eg.
+> >   from Drew) about care, feeding, and use would be welcome.
+
+Take a good look at ikiwiki; it's a lot simpler, keeps history in git,
+and you can edit pages in your favourite editor, commit them, and see
+them show up formatted.
+
+> Pretty sure I am not making the meeting this month.
+
+Nor I.
+
+I had been parking at Yorkdale for the trip downtown, but then the TTC
+parking there got closed for renovation shortly after our meetings moved
+away from the Spadina line.  Will have to come up with a revised plan.
+
+-- 
+Anthony de Boer
+
