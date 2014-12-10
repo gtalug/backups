@@ -190,3 +190,155 @@ System Programmer and Author | some people and astonish the rest
 davecb at spamcop.net           |                      -- Mark Twain
 
 
+From davec-b at rogers.com  Mon Dec  8 22:25:52 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Mon, 08 Dec 2014 17:25:52 -0500
+Subject: [GTALUG-Ops] Can someone with the knowledge,
+ please update the website.
+In-Reply-To: <54860632.70507@ss.org>
+References: <54860258.6020306@ss.org> <54860487.4090800@rogers.com>
+ <54860632.70507@ss.org>
+Message-ID: <54862570.40002@rogers.com>
+
+Ok, talk attached in pdf, which the old web site liked.
+
+The title is "Maven, or Make for Non-Cooks", and is a brief look at the 
+problems of Make, and what successor build systems did to address them.
+
+--dave
+
+
+On 12/08/2014 03:12 PM, Scott Sullivan wrote:
+> On 12/08/2014 03:05 PM, David Collier-Brown wrote:
+>> What?  I had a 15-minute talk on Make and Maven, for a
+>> broader discusson of build sysyems.
+>
+> My bad, I saw Myles pull out, but forgot about your part.
+>
+> Can you please post your description here, and whom ever updates the 
+> site will include both.
+>
+> I'd like to have an announce push out before the end of the day.
+>
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: Maven.pdf
+Type: application/pdf
+Size: 304160 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20141208/8b4efd20/attachment.pdf>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: Maven.odp
+Type: application/vnd.oasis.opendocument.presentation
+Size: 260932 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20141208/8b4efd20/attachment.odp>
+
+From davec-b at rogers.com  Mon Dec  8 22:34:30 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Mon, 08 Dec 2014 17:34:30 -0500
+Subject: [GTALUG-Ops] Can someone with the knowledge,
+ please update the website.
+In-Reply-To: <54860632.70507@ss.org>
+References: <54860258.6020306@ss.org> <54860487.4090800@rogers.com>
+ <54860632.70507@ss.org>
+Message-ID: <54862776.1070407@rogers.com>
+
+Ok, talk attached in pdf, which the old web site liked.
+
+The title is "Maven, or Make for Non-Cooks", and is a brief look at the 
+problems of Make, and what successor build systems did to address them.
+
+--dave
+
+
+On 12/08/2014 03:12 PM, Scott Sullivan wrote:
+> On 12/08/2014 03:05 PM, David Collier-Brown wrote:
+>> What?  I had a 15-minute talk on Make and Maven, for a
+>> broader discusson of build sysyems.
+>
+> My bad, I saw Myles pull out, but forgot about your part.
+>
+> Can you please post your description here, and whom ever updates the
+> site will include both.
+>
+> I'd like to have an announce push out before the end of the day.
+>
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: Maven.pdf
+Type: application/pdf
+Size: 304160 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20141208/9e65a7bd/attachment.pdf>
+
+From me at mylesbraithwaite.com  Tue Dec  9 19:46:49 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 9 Dec 2014 14:46:49 -0500
+Subject: [GTALUG-Ops] Fwd: [GTALUG] meeting tomorrow: topic?
+References: <54874F94.1090102@blaise.ca>
+Message-ID: <5948538D-B869-49F9-9352-9C3D180E00E9@mylesbraithwaite.com>
+
+Someone should follow up with Blaise about doing a talk.
+
+Myles Braithwaite | http://mylesb.ca/i
+
+Begin forwarded message:
+
+> From: Blaise Alleyne <email+libre at blaise.ca>
+> Date: December 9, 2014 at 2:37:56 PM EST
+> To: "D. Hugh Redelmeier" <hugh at mimosa.com>, GTALUG Talk <talk at gtalug.org>
+> Subject: Re: [GTALUG] meeting tomorrow: topic?
+> Reply-To: GTALUG Talk <talk at gtalug.org>
+> 
+>> On 08/12/14 12:47 PM, D. Hugh Redelmeier wrote:
+>> - I'm interested in setting up my in-house services like a cloud.
+>>  Perhaps <http://owncloud.org/>.  Motivation: I want to keep control
+>>  of my own data as much as possible.  Can anyone speak to this?
+> 
+> I could happily speak to this in the future.
+> 
+> I'm self-hosting a bunch of stuff at home, as part of my own degooglification
+> process: ownCloud, SOGo, Snowy, Mediagoblin, Tiny Tiny RSS, Dokuwiki... in the
+> past, MythTV (including Mythweb), Mediawiki, Ampache... and services I'm
+> hosting, but not at home, include FreeSWITCH and ejabberd (and email...).
+> 
+> I also gave a talk at FSOSS this year on software freedom in a networked work,
+> which covered some of this as well, though not as a technical talk.
+> 
+> 
+> 
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141209/7cb1b315/attachment.html>
+
+From cbbrowne at gmail.com  Wed Dec 10 01:11:36 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 9 Dec 2014 20:11:36 -0500
+Subject: [GTALUG-Ops] Attendance 2014-12-09
+Message-ID: <CAFNqd5X2qY46-YPSs5XCQtOz=Pkx9Wk+oUeQt0tRE1XTK44qmQ@mail.gmail.com>
+
+Gord and I both came to 27...
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141209/491bd192/attachment.html>
+
