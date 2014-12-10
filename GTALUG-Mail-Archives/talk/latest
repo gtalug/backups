@@ -729,3 +729,322 @@ away from the Spadina line.  Will have to come up with a revised plan.
 -- 
 Anthony de Boer
 
+From me at mylesbraithwaite.com  Tue Dec  9 14:33:58 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 9 Dec 2014 09:33:58 -0500
+Subject: [GTALUG] [GTALUG-Announce] GTALUG Meeting Tonight at 7:30pm
+Message-ID: <CA+hskZNxufNEvAmgY0CLc6nJnPhC42ba3RPN-dDFHGiKD2Ci5g@mail.gmail.com>
+
+<http://gtalug.org/meeting/2014-12/>
+
+Maven and a Round Table Q&A Session
+===================================
+
+Maven
+-----
+
+Make was written to avoid the problem of recompiling files
+that hadn't changed. It of course introduced a new set of
+problems , such as verbosity, and the solutions for them.
+Those solutions in turn introduced another set of problems
+such as redundancy, and so on. Maven is one of the
+moderately successful attempts to solve most of them.
+
+Round Table Q&A Session
+-----------------------
+
+A Round Table Q&A Session is where we take questions from
+the audience, and the audience discusses and attempts to
+answer those questions from their own knowledge. It's a
+great way to meet fellow members of our community and
+discover the skill sets we each bring to the table.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+## Schedule
+
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting (at 9:00 pm) a group of
+GTALUGers move to the The Imperial Pub 54 Dundas St East
+for refreshments and more socializing.
+
+Code of Conduct
+===============
+
+We want a productive happy community that can welcome new
+ideas, improve every process every year, and foster
+collaboration between individuals with differing needs,
+interests and skills.
+
+We gain strength from diversity, and actively seek
+participation from those who enhance it. This code of
+conduct exists to ensure that diverse groups collaborate to
+mutual advantage and enjoyment. We will challenge prejudice
+that could jeopardize the participation of any person in
+the community.
+
+The Code of Conduct governs how we behave in public or in
+private whenever the Linux community will be judged by our
+actions. We expect it to be honored by everyone who
+represents the community officially or informally, claims
+affiliation, or participates directly. It applies to
+activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the
+GTALUG Code of Conduct please contact one of the GTALUG
+Board Members.
+_______________________________________________
+announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From lsorense at csclub.uwaterloo.ca  Tue Dec  9 15:23:39 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 9 Dec 2014 10:23:39 -0500
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <20141209043201.GM23240@adb.ca>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <20141208220511.GI24111@csclub.uwaterloo.ca>
+ <20141209043201.GM23240@adb.ca>
+Message-ID: <20141209152339.GJ24111@csclub.uwaterloo.ca>
+
+On Mon, Dec 08, 2014 at 11:32:01PM -0500, Anthony de Boer wrote:
+> Lennart Sorensen wrote:
+> > On Mon, Dec 08, 2014 at 12:47:51PM -0500, D. Hugh Redelmeier wrote:
+> > > According to <http://gtalug.org/> :
+> > > 
+> > > "GTALUG is currently looking for speakers for the 9th December, 2014 
+> > > meeting. If you are interested in speaking please contact our talks 
+> > > coordinator."
+> > > 
+> > > Let's brainstorm on this.  Here's a poorly organized dump of some of my 
+> > > thoughts.
+> > > 
+> > > - I'd love to hear Lennart talk about what he's learned working on
+> > >   routers.
+> > 
+> > How many hours do you have?
+> 
+> Be careful what you ask for, Hugh!
+> 
+> > Or Anthony could talk about all the legacy sysadmin disasters of mine
+> > he has had to clean up so far.
+> 
+> First rule of work club is what happens at work stays at work.
+
+Yeah probably better that way.  Although I am sure some of it could be
+very educational and entertaining.
+
+> > > - I'd like to hear how people have set up their internet gatways.
+> > >   What's worth doing, what's easy, what's hard.
+> > >   (It's time for me to revisit this after having a pretty static
+> > >   setup for a decade.  I'd be willing to talk about what I've done
+> > >   but it is pretty stale.)
+> 
+> OpenWRT seems to Just Work, though my setup isn't very current by now.
+
+For some reason I am still running stock firmware on my DIR-825.
+Of course by forwarding ssh and http to somewhere else inside I haven't
+really needed it to do anything complicated.
+
+> > > - I'm interested in setting up my in-house services like a cloud.
+> > >   Perhaps <http://owncloud.org/>.  Motivation: I want to keep control
+> > >   of my own data as much as possible.  Can anyone speak to this?
+> > > 
+> > > - Subproblem of above: I run MediaWiki already.  Tips and tricks (eg.
+> > >   from Drew) about care, feeding, and use would be welcome.
+> 
+> Take a good look at ikiwiki; it's a lot simpler, keeps history in git,
+> and you can edit pages in your favourite editor, commit them, and see
+> them show up formatted.
+> 
+> > Pretty sure I am not making the meeting this month.
+> 
+> Nor I.
+> 
+> I had been parking at Yorkdale for the trip downtown, but then the TTC
+> parking there got closed for renovation shortly after our meetings moved
+> away from the Spadina line.  Will have to come up with a revised plan.
+
+Wilson has lots of parking and is just on the other side of the 401
+from yorkdale.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Dec  9 15:29:05 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 9 Dec 2014 10:29:05 -0500
+Subject: [GTALUG] Why can't I do a Debian netinstall of unstable or
+ testing?
+In-Reply-To: <CAGc8pF722ZgP2kvU1Gv7xGrgTQfA__zkKdhoNdTH9zNbLHn7bQ@mail.gmail.com>
+References: <CAGc8pF4sx8P4214sGmRZV78qO7+9qkkvisKxv7SfWkM2X-GoYA@mail.gmail.com>
+ <20141208153523.GG24111@csclub.uwaterloo.ca>
+ <CAGc8pF6B5WLX8nC4T_V69BTToHpjX_2HUA2QX3vCYorgcUSb0A@mail.gmail.com>
+ <20141208220149.GH24111@csclub.uwaterloo.ca>
+ <CAGc8pF722ZgP2kvU1Gv7xGrgTQfA__zkKdhoNdTH9zNbLHn7bQ@mail.gmail.com>
+Message-ID: <20141209152905.GK24111@csclub.uwaterloo.ca>
+
+On Mon, Dec 08, 2014 at 11:31:01PM +0000, Thomas Milne wrote:
+> Cubox
+
+Well Debian's kernels are not built to run on the Cubox, so it would
+require a custom built kernel.
+
+-- 
+Len Sorensen
+
+From me at mylesbraithwaite.com  Tue Dec  9 15:36:08 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 9 Dec 2014 10:36:08 -0500
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <20141209043201.GM23240@adb.ca>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <20141208220511.GI24111@csclub.uwaterloo.ca>
+ <20141209043201.GM23240@adb.ca>
+Message-ID: <CA+hskZP9wuxXuKzjPaBV978HtuXeFmBXeckHx7MqJCbj6UxbOA@mail.gmail.com>
+
+On Mon, Dec 8, 2014 at 11:32 PM, Anthony de Boer <adb at adb.ca> wrote:
+> I had been parking at Yorkdale for the trip downtown, but then the TTC
+> parking there got closed for renovation shortly after our meetings moved
+> away from the Spadina line.  Will have to come up with a revised plan.
+
+TTC has a good guide to commuter parking here:
+<https://www.ttc.ca/Riding_the_TTC/Parking/index.jsp>. I have heard
+good things about York Mills station (but as a pedestrian I don't have
+that much information about cars).
+
+From hugh at mimosa.com  Tue Dec  9 18:40:27 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 9 Dec 2014 13:40:27 -0500 (EST)
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+Message-ID: <alpine.LRH.2.02.1412091337270.4080@redclaw.mimosa.com>
+
+| From: D. Hugh Redelmeier <hugh at mimosa.com>
+
+| According to <http://gtalug.org/> :
+| 
+| "GTALUG is currently looking for speakers for the 9th December, 2014 
+| meeting. If you are interested in speaking please contact our talks 
+| coordinator."
+| 
+| Let's brainstorm on this.
+
+OK, sorry, false alarm.
+
+It now announce DCB speaking on Maven and a Round Table Q&A session.
+
+Thanks for your participation.
+
+From email+libre at blaise.ca  Tue Dec  9 19:37:56 2014
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Tue, 09 Dec 2014 14:37:56 -0500
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+Message-ID: <54874F94.1090102@blaise.ca>
+
+On 08/12/14 12:47 PM, D. Hugh Redelmeier wrote:
+> - I'm interested in setting up my in-house services like a cloud.
+>   Perhaps <http://owncloud.org/>.  Motivation: I want to keep control
+>   of my own data as much as possible.  Can anyone speak to this?
+> 
+
+I could happily speak to this in the future.
+
+I'm self-hosting a bunch of stuff at home, as part of my own degooglification
+process: ownCloud, SOGo, Snowy, Mediagoblin, Tiny Tiny RSS, Dokuwiki... in the
+past, MythTV (including Mythweb), Mediawiki, Ampache... and services I'm
+hosting, but not at home, include FreeSWITCH and ejabberd (and email...).
+
+I also gave a talk at FSOSS this year on software freedom in a networked work,
+which covered some of this as well, though not as a technical talk.
+
+
+From cbbrowne at gmail.com  Tue Dec  9 20:35:45 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 9 Dec 2014 15:35:45 -0500
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <54874F94.1090102@blaise.ca>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <54874F94.1090102@blaise.ca>
+Message-ID: <CAFNqd5U7ZGVpHLixjjL-xhboG7E2ghLJdLh+Vnc4EaRusSMyTg@mail.gmail.com>
+
+On 9 December 2014 at 14:37, Blaise Alleyne <email+libre at blaise.ca> wrote:
+>
+> On 08/12/14 12:47 PM, D. Hugh Redelmeier wrote:
+> > - I'm interested in setting up my in-house services like a cloud.
+> >   Perhaps <http://owncloud.org/>.  Motivation: I want to keep control
+> >   of my own data as much as possible.  Can anyone speak to this?
+> >
+>
+> I could happily speak to this in the future.
+>
+> I'm self-hosting a bunch of stuff at home, as part of my own
+degooglification
+> process: ownCloud, SOGo, Snowy, Mediagoblin, Tiny Tiny RSS, Dokuwiki...
+in the
+> past, MythTV (including Mythweb), Mediawiki, Ampache... and services I'm
+> hosting, but not at home, include FreeSWITCH and ejabberd (and email...).
+>
+> I also gave a talk at FSOSS this year on software freedom in a networked
+work,
+> which covered some of this as well, though not as a technical talk.
+
+That's certainly interesting.
+
+We had a series of talks over the years on virtualization which kind of got
+boring in that it amounted to "so, how do we go through the mechanics of
+setting a VM to install X"?
+
+We had a talk on Bosh recently, which represents a newer way of going
+through those mechanics.  Interesting in that it has gotten easier.
+(I gather that Docker tries hard at another take on "making it easier")
+
+The OTHER side of this is managing the infrastructure for a set of VMs.
+I'm not keen on something where that's a big job; it sure would be nice if
+most of the time spent managing a dozen services is spent on those
+dozen services.
+
+I know VMWare sells a product, vSphere, targeted at this, and that
+OpenStack does somewhat similar (in OSS arena).  Would like to hear
+more...
+--
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141209/df8617ff/attachment.html>
+
+From bjonkman at sobac.com  Tue Dec  9 22:43:42 2014
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Tue, 09 Dec 2014 17:43:42 -0500
+Subject: [GTALUG] Love At First Bite is closed; Z-Teca as alternate?
+Message-ID: <5fb8793b-0c92-4709-8acb-37a5d0061598@email.android.com>
+
+Seems that the pre-meeting meeting will have find a new locale, this month anyway. Love At First Bite is closed, so I've gone to the Z-Teca Gourmet Burrito Restaurant on the NW corner of Church and Gerard. 
+
+
+Location: http://osm.org/go/ZX6B4oEY?m
+
+
+--
+Bob Jonkman bjonkman at sobac.com
+http://bob.jonkman.ca/blogs/bobjonkman
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141209/55666aa8/attachment.html>
+
