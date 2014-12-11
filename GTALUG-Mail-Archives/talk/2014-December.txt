@@ -1048,3 +1048,85 @@ http://bob.jonkman.ca/blogs/bobjonkman
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141209/55666aa8/attachment.html>
 
+From phiscock at ee.ryerson.ca  Wed Dec 10 15:47:03 2014
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Wed, 10 Dec 2014 10:47:03 -0500
+Subject: [GTALUG] Monitor for Internet Hosting Speed?
+Message-ID: <96fd36d84cd28b83f96c3b26d38147fa.squirrel@webmail.ee.ryerson.ca>
+
+Most of the time this Teksaavy connection is fine, but on occasion it
+slows to the point of being unusable. Can anyone suggest a program that
+will log connection speed? A scrolling graph and ascii record would be
+perfect.
+
+There are lots of programs listed in response to a Google search, such as
+this one:
+http://dynacont.net/documentation/linux/network_monitoring/
+
+But it would greatly help to hear what others in this group recommend.
+I'm running Linux Mint.
+
+Thanks -
+Peter
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From northdot9 at gmail.com  Thu Dec 11 04:48:22 2014
+From: northdot9 at gmail.com (David Thornton)
+Date: Wed, 10 Dec 2014 23:48:22 -0500
+Subject: [GTALUG] Monitor for Internet Hosting Speed?
+In-Reply-To: <96fd36d84cd28b83f96c3b26d38147fa.squirrel@webmail.ee.ryerson.ca>
+References: <96fd36d84cd28b83f96c3b26d38147fa.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <CAHcykVoQ+hJi9FYfFuT_O4LOMau6xCCJvLmbY6=NYtwEn8nddw@mail.gmail.com>
+
+I like pathchar.
+
+http://www.caida.org/tools/utilities/others/pathchar/
+
+for lots of "standard" thing to examine cacti is good.
+
+
+
+
+On Wed, Dec 10, 2014 at 10:47 AM, <phiscock at ee.ryerson.ca> wrote:
+
+> Most of the time this Teksaavy connection is fine, but on occasion it
+> slows to the point of being unusable. Can anyone suggest a program that
+> will log connection speed? A scrolling graph and ascii record would be
+> perfect.
+>
+> There are lots of programs listed in response to a Google search, such as
+> this one:
+> http://dynacont.net/documentation/linux/network_monitoring/
+>
+> But it would greatly help to hear what others in this group recommend.
+> I'm running Linux Mint.
+>
+> Thanks -
+> Peter
+>
+>
+> --
+> Peter Hiscocks
+> Syscomp Electronic Design Limited, Toronto
+> http://www.syscompdesign.com
+> USB Oscilloscope and Waveform Generator
+> 647-839-0325
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141210/0552da6a/attachment.html>
+
