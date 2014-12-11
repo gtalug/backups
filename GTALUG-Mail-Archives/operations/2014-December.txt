@@ -342,3 +342,22 @@ Gord and I both came to 27...
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/operations/attachments/20141209/491bd192/attachment.html>
 
+From me at mylesbraithwaite.com  Wed Dec 10 13:51:52 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Wed, 10 Dec 2014 08:51:52 -0500
+Subject: [GTALUG-Ops] January's Meeting
+Message-ID: <CA+hskZPFvNqYiPMTv3Nws7H=ZjDmCV8+n-EmJ5Tad-RBaX2cUQ@mail.gmail.com>
+
+Is this right: "Mike Hoy - Mozilla community manager, on FSOSS material on
+social engineering, building community on purpose, bugzilla, getting
+contributors".
+
+Also is there a simpler title?
+
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141210/d989b659/attachment.html>
+
