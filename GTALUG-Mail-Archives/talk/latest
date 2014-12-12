@@ -1130,3 +1130,137 @@ On Wed, Dec 10, 2014 at 10:47 AM, <phiscock at ee.ryerson.ca> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141210/0552da6a/attachment.html>
 
+From lsorense at csclub.uwaterloo.ca  Thu Dec 11 18:46:13 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 11 Dec 2014 13:46:13 -0500
+Subject: [GTALUG] Monitor for Internet Hosting Speed?
+In-Reply-To: <96fd36d84cd28b83f96c3b26d38147fa.squirrel@webmail.ee.ryerson.ca>
+References: <96fd36d84cd28b83f96c3b26d38147fa.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <20141211184613.GL24111@csclub.uwaterloo.ca>
+
+On Wed, Dec 10, 2014 at 10:47:03AM -0500, phiscock at ee.ryerson.ca wrote:
+> Most of the time this Teksaavy connection is fine, but on occasion it
+> slows to the point of being unusable. Can anyone suggest a program that
+> will log connection speed? A scrolling graph and ascii record would be
+> perfect.
+
+Connection speed to where though?
+
+You would have to do something that talks to a system somewhere else and
+measures the current speed between those two places.  Hopefully you can
+pick something where your connection locally is the slowest link and
+hence the one measured.
+
+> There are lots of programs listed in response to a Google search, such as
+> this one:
+> http://dynacont.net/documentation/linux/network_monitoring/
+> 
+> But it would greatly help to hear what others in this group recommend.
+> I'm running Linux Mint.
+
+-- 
+Len Sorensen
+
+From davec-b at rogers.com  Fri Dec 12 01:56:17 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Thu, 11 Dec 2014 20:56:17 -0500
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <54874F94.1090102@blaise.ca>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <54874F94.1090102@blaise.ca>
+Message-ID: <548A4B41.60109@rogers.com>
+
+Very much +1 !
+
+On 12/09/2014 02:37 PM, Blaise Alleyne wrote:
+> On 08/12/14 12:47 PM, D. Hugh Redelmeier wrote:
+>> - I'm interested in setting up my in-house services like a cloud.
+>>    Perhaps <http://owncloud.org/>.  Motivation: I want to keep control
+>>    of my own data as much as possible.  Can anyone speak to this?
+>>
+> I could happily speak to this in the future.
+>
+> I'm self-hosting a bunch of stuff at home, as part of my own degooglification
+> process: ownCloud, SOGo, Snowy, Mediagoblin, Tiny Tiny RSS, Dokuwiki... in the
+> past, MythTV (including Mythweb), Mediawiki, Ampache... and services I'm
+> hosting, but not at home, include FreeSWITCH and ejabberd (and email...).
+>
+> I also gave a talk at FSOSS this year on software freedom in a networked work,
+> which covered some of this as well, though not as a technical talk.
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From davec-b at rogers.com  Fri Dec 12 02:10:14 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Thu, 11 Dec 2014 21:10:14 -0500
+Subject: [GTALUG] Monitor for Internet Hosting Speed?
+In-Reply-To: <20141211184613.GL24111@csclub.uwaterloo.ca>
+References: <96fd36d84cd28b83f96c3b26d38147fa.squirrel@webmail.ee.ryerson.ca>
+ <20141211184613.GL24111@csclub.uwaterloo.ca>
+Message-ID: <548A4E86.8070309@rogers.com>
+
+Well, I did a "delayroute" awk script that used traceroute: a similar 
+approach that turned its frequency of probing up when things fell below 
+some normal value would do nicely, and tell tek where the problem was as 
+seen from your site.
+
+--dave
+
+On 12/11/2014 01:46 PM, Lennart Sorensen wrote:
+> On Wed, Dec 10, 2014 at 10:47:03AM -0500, phiscock at ee.ryerson.ca wrote:
+>> Most of the time this Teksaavy connection is fine, but on occasion it
+>> slows to the point of being unusable. Can anyone suggest a program that
+>> will log connection speed? A scrolling graph and ascii record would be
+>> perfect.
+> Connection speed to where though?
+>
+> You would have to do something that talks to a system somewhere else and
+> measures the current speed between those two places.  Hopefully you can
+> pick something where your connection locally is the slowest link and
+> hence the one measured.
+>
+>> There are lots of programs listed in response to a Google search, such as
+>> this one:
+>> http://dynacont.net/documentation/linux/network_monitoring/
+>>
+>> But it would greatly help to hear what others in this group recommend.
+>> I'm running Linux Mint.
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From hugh at mimosa.com  Fri Dec 12 07:53:24 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Fri, 12 Dec 2014 02:53:24 -0500 (EST)
+Subject: [GTALUG] 28" UHD monitor for $299+taxes, delivered
+Message-ID: <alpine.LRH.2.02.1412120248390.16584@redclaw.mimosa.com>
+
+This is quite a bargain.  3840 x 2160 pixels!  Not a great monitor (TN, 
+not IPS; 30Hz), but still perhaps useful.
+
+<http://forums.redflagdeals.com/microsoft-store-dell-2815q-28-4k-30hz-tn-monitor-299-a-1623249/>
+
+Linus bought one: 
+<https://plus.google.com/+LinusTorvalds/posts/4MwQKZhGkEr>
+
+Some think that the headline is that Linus bought it from the Microsoft 
+Store.
+
+We can buy it cheaper: US price was US$299 but ours is C$299.
+
