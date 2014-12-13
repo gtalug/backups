@@ -1264,3 +1264,78 @@ Store.
 
 We can buy it cheaper: US price was US$299 but ours is C$299.
 
+From adb at adb.ca  Fri Dec 12 12:37:19 2014
+From: adb at adb.ca (Anthony de Boer)
+Date: Fri, 12 Dec 2014 07:37:19 -0500
+Subject: [GTALUG] 28" UHD monitor for $299+taxes, delivered
+In-Reply-To: <alpine.LRH.2.02.1412120248390.16584@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1412120248390.16584@redclaw.mimosa.com>
+Message-ID: <20141212123719.GP23240@adb.ca>
+
+D. Hugh Redelmeier wrote:
+> Some think that the headline is that Linus bought it from the Microsoft 
+> Store.
+
+They've always been more successful at hardware: things like the Z80
+card (CP/M on the Apple ][+, yay!) or the early serial mice, and now
+this.  Shame about their attempts to diversify into software, really.
+
+-- 
+Anthony de Boer
+
+From lsorense at csclub.uwaterloo.ca  Fri Dec 12 15:34:10 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 12 Dec 2014 10:34:10 -0500
+Subject: [GTALUG] 28" UHD monitor for $299+taxes, delivered
+In-Reply-To: <alpine.LRH.2.02.1412120248390.16584@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1412120248390.16584@redclaw.mimosa.com>
+Message-ID: <20141212153410.GM24111@csclub.uwaterloo.ca>
+
+On Fri, Dec 12, 2014 at 02:53:24AM -0500, D. Hugh Redelmeier wrote:
+> This is quite a bargain.  3840 x 2160 pixels!  Not a great monitor (TN, 
+> not IPS; 30Hz), but still perhaps useful.
+> 
+> <http://forums.redflagdeals.com/microsoft-store-dell-2815q-28-4k-30hz-tn-monitor-299-a-1623249/>
+> 
+> Linus bought one: 
+> <https://plus.google.com/+LinusTorvalds/posts/4MwQKZhGkEr>
+> 
+> Some think that the headline is that Linus bought it from the Microsoft 
+> Store.
+> 
+> We can buy it cheaper: US price was US$299 but ours is C$299.
+
+Too bad the video handling hardware in it is so awful (100ms to process
+the data before displaying it?  Ouch).  It is effectively at best 10Hz. I
+think trying to use a mouse with that screen would drive you crazy.
+If you are just displaying a lot of text then it is probably fine.
+
+-- 
+Len Sorensen
+
+From hugh at mimosa.com  Fri Dec 12 16:12:24 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Fri, 12 Dec 2014 11:12:24 -0500 (EST)
+Subject: [GTALUG] 28" UHD monitor for $299+taxes, delivered
+In-Reply-To: <20141212123719.GP23240@adb.ca>
+References: <alpine.LRH.2.02.1412120248390.16584@redclaw.mimosa.com>
+ <20141212123719.GP23240@adb.ca>
+Message-ID: <alpine.LRH.2.02.1412121108340.16584@redclaw.mimosa.com>
+
+| From: Anthony de Boer <adb at adb.ca>
+
+| They've always been more successful at hardware: things like the Z80
+| card (CP/M on the Apple ][+, yay!) or the early serial mice, and now
+| this.  Shame about their attempts to diversify into software, really.
+
+This is actually a Dell monitor that the Microsoft Store is selling.
+
+Microsoft's Surface seems nice enough after the 3rd attempt.  But I
+still think that a clamshell is a better format than a tablet +
+keyboard.
+
+Remember that Xenix was originally from them.  I wonder what the
+landscape would be like if Microsoft had gone with it instead of
+NT (there was internal discussion of that).  It might not have been
+good for us given their controlling nature.
+
