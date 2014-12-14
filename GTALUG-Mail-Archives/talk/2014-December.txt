@@ -1339,3 +1339,69 @@ landscape would be like if Microsoft had gone with it instead of
 NT (there was internal discussion of that).  It might not have been
 good for us given their controlling nature.
 
+From northdot9 at gmail.com  Sat Dec 13 15:02:21 2014
+From: northdot9 at gmail.com (David Thornton)
+Date: Sat, 13 Dec 2014 10:02:21 -0500
+Subject: [GTALUG] Monitor for Internet Hosting Speed?
+In-Reply-To: <548A4E86.8070309@rogers.com>
+References: <96fd36d84cd28b83f96c3b26d38147fa.squirrel@webmail.ee.ryerson.ca>
+ <20141211184613.GL24111@csclub.uwaterloo.ca>
+ <548A4E86.8070309@rogers.com>
+Message-ID: <CAHcykVqATz_qWFvMO0NE68qh90bVmBs_Y_JiB=RogkCuvOrTuA@mail.gmail.com>
+
+another one I like is smokeping it gives a much "richer" view of ping
+performance. ( not just yet or no, or delay, but also packet loss.
+
+David
+
+On Thu, Dec 11, 2014 at 9:10 PM, David Collier-Brown <davec-b at rogers.com>
+wrote:
+>
+> Well, I did a "delayroute" awk script that used traceroute: a similar
+> approach that turned its frequency of probing up when things fell below
+> some normal value would do nicely, and tell tek where the problem was as
+> seen from your site.
+>
+> --dave
+>
+> On 12/11/2014 01:46 PM, Lennart Sorensen wrote:
+>
+>> On Wed, Dec 10, 2014 at 10:47:03AM -0500, phiscock at ee.ryerson.ca wrote:
+>>
+>>> Most of the time this Teksaavy connection is fine, but on occasion it
+>>> slows to the point of being unusable. Can anyone suggest a program that
+>>> will log connection speed? A scrolling graph and ascii record would be
+>>> perfect.
+>>>
+>> Connection speed to where though?
+>>
+>> You would have to do something that talks to a system somewhere else and
+>> measures the current speed between those two places.  Hopefully you can
+>> pick something where your connection locally is the slowest link and
+>> hence the one measured.
+>>
+>>  There are lots of programs listed in response to a Google search, such as
+>>> this one:
+>>> http://dynacont.net/documentation/linux/network_monitoring/
+>>>
+>>> But it would greatly help to hear what others in this group recommend.
+>>> I'm running Linux Mint.
+>>>
+>>
+>
+> --
+> David Collier-Brown,         | Always do right. This will gratify
+> System Programmer and Author | some people and astonish the rest
+> davecb at spamcop.net           |                      -- Mark Twain
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141213/eec33b4c/attachment.html>
+
