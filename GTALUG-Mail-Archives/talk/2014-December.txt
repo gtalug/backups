@@ -1405,3 +1405,72 @@ wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141213/eec33b4c/attachment.html>
 
+From northdot9 at gmail.com  Tue Dec 16 03:58:36 2014
+From: northdot9 at gmail.com (David Thornton)
+Date: Mon, 15 Dec 2014 22:58:36 -0500
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <CAFNqd5U7ZGVpHLixjjL-xhboG7E2ghLJdLh+Vnc4EaRusSMyTg@mail.gmail.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <54874F94.1090102@blaise.ca>
+ <CAFNqd5U7ZGVpHLixjjL-xhboG7E2ghLJdLh+Vnc4EaRusSMyTg@mail.gmail.com>
+Message-ID: <CAHcykVrYcbF1ai5PVnWgKY4ifZ2sdnPi+NphAErR2bdzyA4sEA@mail.gmail.com>
+
++1 to this idea.
+
+On Tue, Dec 9, 2014 at 3:35 PM, Christopher Browne <cbbrowne at gmail.com>
+wrote:
+>
+> On 9 December 2014 at 14:37, Blaise Alleyne <email+libre at blaise.ca> wrote:
+> >
+> > On 08/12/14 12:47 PM, D. Hugh Redelmeier wrote:
+> > > - I'm interested in setting up my in-house services like a cloud.
+> > >   Perhaps <http://owncloud.org/>.  Motivation: I want to keep control
+> > >   of my own data as much as possible.  Can anyone speak to this?
+> > >
+> >
+> > I could happily speak to this in the future.
+> >
+> > I'm self-hosting a bunch of stuff at home, as part of my own
+> degooglification
+> > process: ownCloud, SOGo, Snowy, Mediagoblin, Tiny Tiny RSS, Dokuwiki...
+> in the
+> > past, MythTV (including Mythweb), Mediawiki, Ampache... and services I'm
+> > hosting, but not at home, include FreeSWITCH and ejabberd (and email...).
+> >
+> > I also gave a talk at FSOSS this year on software freedom in a networked
+> work,
+> > which covered some of this as well, though not as a technical talk.
+>
+> That's certainly interesting.
+>
+> We had a series of talks over the years on virtualization which kind of got
+> boring in that it amounted to "so, how do we go through the mechanics of
+> setting a VM to install X"?
+>
+> We had a talk on Bosh recently, which represents a newer way of going
+> through those mechanics.  Interesting in that it has gotten easier.
+> (I gather that Docker tries hard at another take on "making it easier")
+>
+> The OTHER side of this is managing the infrastructure for a set of VMs.
+> I'm not keen on something where that's a big job; it sure would be nice if
+> most of the time spent managing a dozen services is spent on those
+> dozen services.
+>
+> I know VMWare sells a product, vSphere, targeted at this, and that
+> OpenStack does somewhat similar (in OSS arena).  Would like to hear
+> more...
+> --
+> When confronted by a difficult problem, solve it by reducing it to the
+> question, "How would the Lone Ranger handle this?"
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141215/6eb4920d/attachment.html>
+
