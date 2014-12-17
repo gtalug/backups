@@ -1474,3 +1474,1192 @@ wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141215/6eb4920d/attachment.html>
 
+From william.muriithi at gmail.com  Tue Dec 16 15:31:04 2014
+From: william.muriithi at gmail.com (William Muriithi)
+Date: Tue, 16 Dec 2014 10:31:04 -0500
+Subject: [GTALUG] Python 2 vs python 3 debate
+Message-ID: <20141216153104.6037651.90559.10974@gmail.com>
+
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141216/0f936818/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Tue Dec 16 16:57:41 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 16 Dec 2014 11:57:41 -0500
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <20141216153104.6037651.90559.10974@gmail.com>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+Message-ID: <20141216165741.GN24111@csclub.uwaterloo.ca>
+
+On Tue, Dec 16, 2014 at 10:31:04AM -0500, William Muriithi wrote:
+> <html><head><meta http-equiv="Content-Type" content="text/plain;"><style> body {  font-family: "Calibri","Slate Pro","sans-serif"; color:#262626 }</style> </head> <body data-blackberry-caret-color="#00a8df"><div>?Morning,&nbsp;</div><div><br></div><div>Last week on Monday, Hugh listed a list of talks that were to take place following Tuesday though that didn't happen. There was a scheduled talk.</div><div><br></div><div>I did note though he raised the issue of how entrenched python 2 is. I am on python list and boy, that debate has been in the second week now.</div><div><br></div><div>?http://www.mail-archive.com/python-dev at python.org/msg85353.html</div><div><br></div><div>?http://www.mail-archive.com/python-dev at python.org/index.html#85319</div><div><br></div><div>What I find odd is how some of the devs there misjudge the ?need of distribution support. In most companies, installing two versions of python is none starter, so don't see python 3 being widespread until after two release of Redhat with python 3 native support. Two releases as most people are still on RHEL5 and RHEL6 for example.</div><div><span style="font-family: Calibri, 'Slate Pro', sans-serif;"><br></span></div><div><span style="font-family: Calibri, 'Slate Pro', sans-serif;">That may be around 2020 and hence a little early to invest in python 3 scripts.</span></div><div><span style="font-family: Calibri, 'Slate Pro', sans-serif;"><br></span></div><div><span style="font-family: Calibri, 'Slate Pro', sans-serif;">William </span></div><div><br></div><div></div></body></html>
+
+Please no HTML crap.  Major demangling done by hand below:
+
+> Morning,
+>
+> Last week on Monday, Hugh listed a list of talks that were to take place
+> following Tuesday though that didn't happen. There was a scheduled talk.
+> I did note though he raised the issue of how entrenched python 2 is. I
+> am on python list and boy, that debate has been in the second week now.
+> http://www.mail-archive.com/python-dev at python.org/msg85353.html
+> http://www.mail-archive.com/python-dev at python.org/index.html#85319
+>
+> What I find odd is how some of the devs there misjudge the need of
+> distribution support. In most companies, installing two versions of
+> python is none starter, so don't see python 3 being widespread until
+> after two release of Redhat with python 3 native support. Two releases
+> as most people are still on RHEL5 and RHEL6 for example.
+> That may be around 2020 and hence a little early to invest in python
+> 3 scripts.
+
+Well certainly Debian has no issue installing both python 2 and 3 at
+the same time and has done so for quite a while.  Next release appears
+to have 2.7 and 3.4 installed.
+
+It is rather annoying when languages stop supporting existing working
+code.  To me that pretty much means the language is immature and perhaps
+even badly managed.  Not that that has ever stopped a language from
+becoming popular.
+
+-- 
+Len Sorensen
+
+From james.knott at rogers.com  Tue Dec 16 17:01:07 2014
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 16 Dec 2014 12:01:07 -0500
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <20141216165741.GN24111@csclub.uwaterloo.ca>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+ <20141216165741.GN24111@csclub.uwaterloo.ca>
+Message-ID: <54906553.2080807@rogers.com>
+
+On 12/16/2014 11:57 AM, Lennart Sorensen wrote:
+> Please no HTML crap.  Major demangling done by hand below:
+
+Some mail lists automagically block HTML messages.  Could that not be
+done on this one?
+
+From me at mylesbraithwaite.com  Tue Dec 16 17:45:17 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 16 Dec 2014 12:45:17 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was Python 2
+ vs python 3 debate)
+Message-ID: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+
+On Tue, Dec 16, 2014 at 12:01 PM, James Knott <james.knott at rogers.com> wrote:
+> On 12/16/2014 11:57 AM, Lennart Sorensen wrote:
+>> Please no HTML crap.  Major demangling done by hand below:
+>
+> Some mail lists automagically block HTML messages.  Could that not be
+> done on this one?
+
+Mailman does have a way of moderate all HTML messages.
+
+But there are a couple of reasons this might be a bad idea:
+
+1) Some smartphone email applications don't allow to send messages as
+plain text.
+
+2) We would have to help people configure their email clients to send
+plain text emails.
+
+If your solution to #2 is they can just Google it, you could also
+Google how to read HTML email in your email client.
+
+From james.knott at rogers.com  Tue Dec 16 17:49:08 2014
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 16 Dec 2014 12:49:08 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+Message-ID: <54907094.4090205@rogers.com>
+
+On 12/16/2014 12:45 PM, Myles Braithwaite wrote:
+> If your solution to #2 is they can just Google it, you could also
+> Google how to read HTML email in your email client.
+
+I don't have a problem reading HTML email and often send it.  However,
+for this and other lists, I have my address list configured to allow
+plain text only.
+
+My understanding of the reasons for not using HTML are bandwidth &
+storage, though this might not be so critical these days and security. 
+It's hard to put hazards in plain text.
+
+
+From william.muriithi at gmail.com  Tue Dec 16 18:03:17 2014
+From: william.muriithi at gmail.com (William Muriithi)
+Date: Tue, 16 Dec 2014 13:03:17 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+	Python 2 vs python 3 debate)
+In-Reply-To: <54907094.4090205@rogers.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <54907094.4090205@rogers.com>
+Message-ID: <20141216180317.6037651.17645.10998@gmail.com>
+
+?
+
+On 12/16/2014 12:45 PM, Myles Braithwaite wrote:
+> If your solution to #2 is they can just Google it, you could also
+> Google how to read HTML email in your email client.
+
+Apologies, I forgot to force it to plain text. I am on a blackberry Z10 that I despise and it don't allow me to default to plain text which is my wish. I have to flip it every time I am writing a mail.
+
+I will make certain not to overlook it again
+
+William?
+
+From hugh at mimosa.com  Tue Dec 16 18:06:19 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 16 Dec 2014 13:06:19 -0500 (EST)
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <20141216165741.GN24111@csclub.uwaterloo.ca>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+ <20141216165741.GN24111@csclub.uwaterloo.ca>
+Message-ID: <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+
+| From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+| 
+| On Tue, Dec 16, 2014 at 10:31:04AM -0500, William Muriithi wrote:
+| 
+| Please no HTML crap.  Major demangling done by hand below:
+
+Thanks.
+
+| > Last week on Monday, Hugh listed a list of talks that were to take place
+| > following Tuesday though that didn't happen.
+
+"were to take place" is too strong.  I put forward some ideas to try
+to make an empty spot more interesting (in no official capacity!).  It
+turned out that the spot wasn't empty.  That's a good thing.
+
+What was empty was the meeting announcement on the web page.  Not so
+good.
+
+| > I did note though he raised the issue of how entrenched python 2 is. I
+| > am on python list and boy, that debate has been in the second week now.
+
+I'm not much of a Python user.  I'm certainly not too aware of things
+in its ecosystem.
+
+I think that it is good that language powers-that-be consider
+incompatible updates.  Otherwise mistakes are with us forever.  They
+should be infrequent and probably batched.
+
+It helps a lot if the incompatibility can be mechanically cleansed.
+Second best: mechanically detected statically.  Third best:
+mechanically detected dynamically.  Horrible: just behaving different
+at runtime.
+
+At some point, the community has to go cold turkey.  No new work on
+libraries etc. for the old thing.  It's like taking off a bandaid: net
+pain is less if the transition is quick.  Of course some kind of
+synchronization would be useful.  What better use of a BDFL.
+
+
+| > What I find odd is how some of the devs there misjudge the need of
+| > distribution support. In most companies, installing two versions of
+| > python is none starter, so don't see python 3 being widespread until
+| > after two release of Redhat with python 3 native support. Two releases
+| > as most people are still on RHEL5 and RHEL6 for example.
+| > That may be around 2020 and hence a little early to invest in python
+| > 3 scripts.
+
+RHEL5 and RHEL6 have very long support cycles.  It is unreasonable to
+claim those as requirements.  In fact, they are designed to be stable.
+Doing new development on and for them is kind of a contradiction.
+OK, I admit that until 7.1 is out, maybe 6 can be defended.
+
+Fedora 20 seems to have Python 2.7.5 and 3.3.2.
+Centos 6.6 only has python 2.6.6
+Centos 5.11 only has Python 2.4.3
+
+This speaks to how much RHEL values stability.
+
+Perhaps Python routinely and frequently breaks compatibility and
+that's why these old versions hang around.
+
+BTW I consider the stability of RHEL (or Windows) a bit of a problem.
+Perhaps our way out is virtual machines or containerization.  They
+change coupling.  I don't really like that.
+
+| It is rather annoying when languages stop supporting existing working
+| code.  To me that pretty much means the language is immature and perhaps
+| even badly managed.  Not that that has ever stopped a language from
+| becoming popular.
+
+There are so many language mistakes frozen in amber.
+
+How long did C keep "int" is the default type if you neglect to
+mention a type in a declaration?  This should have been a compile-time
+diagnosed error decades ago.
+
+How long did FORTRAN allow undeclared variables?
+
+I don't understand what's so hard about the Python 2 => 3 transition.
+Is it too big a step?  Are there not enough attractions?  Is the first 
+step a lulu[1]?
+
+[1] phrase is perhaps out of date but you can see it at the end of
+<http://www.dailymotion.com/video/x48aud_merrie-melodies-jack-wabbit-and-the_shortfilms>
+
+From lsorense at csclub.uwaterloo.ca  Tue Dec 16 19:29:26 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 16 Dec 2014 14:29:26 -0500
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <54906553.2080807@rogers.com>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+ <20141216165741.GN24111@csclub.uwaterloo.ca>
+ <54906553.2080807@rogers.com>
+Message-ID: <20141216192926.GO24111@csclub.uwaterloo.ca>
+
+On Tue, Dec 16, 2014 at 12:01:07PM -0500, James Knott wrote:
+> On 12/16/2014 11:57 AM, Lennart Sorensen wrote:
+> > Please no HTML crap.  Major demangling done by hand below:
+> 
+> Some mail lists automagically block HTML messages.  Could that not be
+> done on this one?
+
+Good question.  I imagine someone knows the answer.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Dec 16 19:36:44 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 16 Dec 2014 14:36:44 -0500
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+ <20141216165741.GN24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+Message-ID: <20141216193644.GP24111@csclub.uwaterloo.ca>
+
+On Tue, Dec 16, 2014 at 01:06:19PM -0500, D. Hugh Redelmeier wrote:
+> | From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+> | 
+> | On Tue, Dec 16, 2014 at 10:31:04AM -0500, William Muriithi wrote:
+> | 
+> | Please no HTML crap.  Major demangling done by hand below:
+> 
+> Thanks.
+
+I do not intend to make a habit of it, but the question actually seemed
+interesting enough to bother.
+
+> | > Last week on Monday, Hugh listed a list of talks that were to take place
+> | > following Tuesday though that didn't happen.
+> 
+> "were to take place" is too strong.  I put forward some ideas to try
+> to make an empty spot more interesting (in no official capacity!).  It
+> turned out that the spot wasn't empty.  That's a good thing.
+> 
+> What was empty was the meeting announcement on the web page.  Not so
+> good.
+
+It was a bit confusing.
+
+> | > I did note though he raised the issue of how entrenched python 2 is. I
+> | > am on python list and boy, that debate has been in the second week now.
+> 
+> I'm not much of a Python user.  I'm certainly not too aware of things
+> in its ecosystem.
+> 
+> I think that it is good that language powers-that-be consider
+> incompatible updates.  Otherwise mistakes are with us forever.  They
+> should be infrequent and probably batched.
+
+Well that does seem to be mostly the case with python 3.
+
+I am still very very very disappointed that they did NOT remove the
+broken and essentially useless lambda support so that they could some
+day replace it with a working one.
+
+Python likes to make it seem like you can do functional (rather than
+procedural) code in it, and then when you try it goes "ha ha, fooled you".
+
+> It helps a lot if the incompatibility can be mechanically cleansed.
+> Second best: mechanically detected statically.  Third best:
+> mechanically detected dynamically.  Horrible: just behaving different
+> at runtime.
+> 
+> At some point, the community has to go cold turkey.  No new work on
+> libraries etc. for the old thing.  It's like taking off a bandaid: net
+> pain is less if the transition is quick.  Of course some kind of
+> synchronization would be useful.  What better use of a BDFL.
+
+Well as long as they make it easy to keep around an older version for
+handling old code.
+
+> | > What I find odd is how some of the devs there misjudge the need of
+> | > distribution support. In most companies, installing two versions of
+> | > python is none starter, so don't see python 3 being widespread until
+> | > after two release of Redhat with python 3 native support. Two releases
+> | > as most people are still on RHEL5 and RHEL6 for example.
+> | > That may be around 2020 and hence a little early to invest in python
+> | > 3 scripts.
+> 
+> RHEL5 and RHEL6 have very long support cycles.  It is unreasonable to
+> claim those as requirements.  In fact, they are designed to be stable.
+> Doing new development on and for them is kind of a contradiction.
+> OK, I admit that until 7.1 is out, maybe 6 can be defended.
+
+It is rather unreasonable how some people insist on stability above all
+else, which means not changing things, and then at the same time complain
+that new features are missing.
+
+> Fedora 20 seems to have Python 2.7.5 and 3.3.2.
+> Centos 6.6 only has python 2.6.6
+> Centos 5.11 only has Python 2.4.3
+> 
+> This speaks to how much RHEL values stability.
+> 
+> Perhaps Python routinely and frequently breaks compatibility and
+> that's why these old versions hang around.
+> 
+> BTW I consider the stability of RHEL (or Windows) a bit of a problem.
+> Perhaps our way out is virtual machines or containerization.  They
+> change coupling.  I don't really like that.
+> 
+> | It is rather annoying when languages stop supporting existing working
+> | code.  To me that pretty much means the language is immature and perhaps
+> | even badly managed.  Not that that has ever stopped a language from
+> | becoming popular.
+> 
+> There are so many language mistakes frozen in amber.
+> 
+> How long did C keep "int" is the default type if you neglect to
+> mention a type in a declaration?  This should have been a compile-time
+> diagnosed error decades ago.
+
+But you saved 4 bytes of code each time you didn't specify.  Think of
+the bytes saved.
+
+> How long did FORTRAN allow undeclared variables?
+> 
+> I don't understand what's so hard about the Python 2 => 3 transition.
+> Is it too big a step?  Are there not enough attractions?  Is the first 
+> step a lulu[1]?
+
+I think a lot of people rely on libraries for python, and until those
+are converted to work with the new version, people can't move their own
+code to the new version.
+
+> [1] phrase is perhaps out of date but you can see it at the end of
+> <http://www.dailymotion.com/video/x48aud_merrie-melodies-jack-wabbit-and-the_shortfilms>
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Dec 16 19:39:12 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 16 Dec 2014 14:39:12 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+Message-ID: <20141216193912.GQ24111@csclub.uwaterloo.ca>
+
+On Tue, Dec 16, 2014 at 12:45:17PM -0500, Myles Braithwaite wrote:
+> Mailman does have a way of moderate all HTML messages.
+> 
+> But there are a couple of reasons this might be a bad idea:
+> 
+> 1) Some smartphone email applications don't allow to send messages as
+> plain text.
+
+Then don't use those to send messages to a mailing list.
+
+> 2) We would have to help people configure their email clients to send
+> plain text emails.
+
+Rather that, than unusable emails.
+
+> If your solution to #2 is they can just Google it, you could also
+> Google how to read HTML email in your email client.
+
+It can't.  At least not in a way that I can reply to cleanly in plain
+text.
+
+So unless people don't expect replies to their email, they better not
+send them in html in the first place.  So you may as well just block
+them and let the user know why it was blocked.
+
+-- 
+Len Sorensen
+
+From jamon.camisso at utoronto.ca  Tue Dec 16 20:15:51 2014
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Tue, 16 Dec 2014 20:15:51 +0000
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <54907094.4090205@rogers.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <54907094.4090205@rogers.com>
+Message-ID: <549092F7.2040706@utoronto.ca>
+
+On 2014-12-16 5:49 PM, James Knott wrote:
+> On 12/16/2014 12:45 PM, Myles Braithwaite wrote:
+>> If your solution to #2 is they can just Google it, you could also
+>> Google how to read HTML email in your email client.
+> 
+> I don't have a problem reading HTML email and often send it.  However,
+> for this and other lists, I have my address list configured to allow
+> plain text only.
+> 
+> My understanding of the reasons for not using HTML are it looks like garbage.
+
+FTFY!
+
+Cheers, Jamon
+
+
+
+From scruss at gmail.com  Tue Dec 16 20:49:09 2014
+From: scruss at gmail.com (Stewart Russell)
+Date: Tue, 16 Dec 2014 15:49:09 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <20141216193912.GQ24111@csclub.uwaterloo.ca>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+Message-ID: <CAAsTreA4GME=9XU_K0L=svT=xoTEy9pVk_EPdpnbKswNwA5ZYw@mail.gmail.com>
+
+On 16 December 2014 at 14:39, Lennart Sorensen
+<lsorense at csclub.uwaterloo.ca> wrote:
+>
+> Then don't use those to send messages to a mailing list.
+
+There may be no other option. Also, many clients hide or fudge the
+status. For instance, Gmail is currently claiming that it's going to
+send this as plain text with no extraneous quoting. Will it do this? I
+won't know until I send it.
+
+> It can't.  At least not in a way that I can reply to cleanly in plain
+> text.
+
+For all its faults, Mozilla Thunderbird can quote HTML to plain text
+quite well. But I'm sure there are many ways to mess up a reply to a
+plain text message by quoting in the standard way. That which passes
+for plain text is a minefield of assumptions (Your English Must Only
+Have 26 Characters, and Criminally Limited Punctuation) leading to
+na?ve "markup free" limited solutions like Markdown.
+
+> So unless people don't expect replies to their email, they better not
+> send them in html in the first place.
+
+Unfortunately, if you're going to block replies based on e-mail
+format, you'll get a dwindling number of participants in the mailing
+list. And nothing kills off user groups like lack of participation.
+
+cheers,
+ Stewart
+
+From lsorense at csclub.uwaterloo.ca  Tue Dec 16 20:55:42 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 16 Dec 2014 15:55:42 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <CAAsTreA4GME=9XU_K0L=svT=xoTEy9pVk_EPdpnbKswNwA5ZYw@mail.gmail.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <CAAsTreA4GME=9XU_K0L=svT=xoTEy9pVk_EPdpnbKswNwA5ZYw@mail.gmail.com>
+Message-ID: <20141216205542.GR24111@csclub.uwaterloo.ca>
+
+On Tue, Dec 16, 2014 at 03:49:09PM -0500, Stewart Russell wrote:
+> There may be no other option. Also, many clients hide or fudge the
+> status. For instance, Gmail is currently claiming that it's going to
+> send this as plain text with no extraneous quoting. Will it do this? I
+> won't know until I send it.
+> 
+> For all its faults, Mozilla Thunderbird can quote HTML to plain text
+> quite well. But I'm sure there are many ways to mess up a reply to a
+> plain text message by quoting in the standard way. That which passes
+> for plain text is a minefield of assumptions (Your English Must Only
+> Have 26 Characters, and Criminally Limited Punctuation) leading to
+> na?ve "markup free" limited solutions like Markdown.
+
+It also for the longest time would not actually put '>' on the lines of
+the plain text if you asked it to send both html and plain text versions.
+Not sure that bug has ever been fixed.
+
+And it is hardly a useful email client when you do email over ssh.
+I use mutt and edit with vim.
+
+> Unfortunately, if you're going to block replies based on e-mail
+> format, you'll get a dwindling number of participants in the mailing
+> list. And nothing kills off user groups like lack of participation.
+
+I will happily ignore html messages and not reply to them.
+
+-- 
+Len Sorensen
+
+From james.knott at rogers.com  Tue Dec 16 20:58:19 2014
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 16 Dec 2014 15:58:19 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <549092F7.2040706@utoronto.ca>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <54907094.4090205@rogers.com> <549092F7.2040706@utoronto.ca>
+Message-ID: <54909CEB.90302@rogers.com>
+
+On 12/16/2014 03:15 PM, Jamon Camisso wrote:
+> On 2014-12-16 5:49 PM, James Knott wrote:
+>> On 12/16/2014 12:45 PM, Myles Braithwaite wrote:
+>>> If your solution to #2 is they can just Google it, you could also
+>>> Google how to read HTML email in your email client.
+>> I don't have a problem reading HTML email and often send it.  However,
+>> for this and other lists, I have my address list configured to allow
+>> plain text only.
+>>
+>> My understanding of the reasons for not using HTML are it looks like garbage.
+> FTFY!
+>
+>
+
+Hmmm...  Looks like someone has been tampering with my email to make it
+look as though I said something I didn't.
+
+
+From louipc.ist at gmail.com  Tue Dec 16 20:57:34 2014
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Tue, 16 Dec 2014 15:57:34 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <20141216193912.GQ24111@csclub.uwaterloo.ca>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+Message-ID: <20141216205734.GA559@celine.lan>
+
+On Tue 16 Dec 2014 14:39 -0500, Lennart Sorensen wrote:
+> > 2) We would have to help people configure their email clients to send
+> > plain text emails.
+> 
+> Rather that, than unusable emails.
+> 
+> > If your solution to #2 is they can just Google it, you could also
+> > Google how to read HTML email in your email client.
+> 
+> It can't.  At least not in a way that I can reply to cleanly in plain
+> text.
+> 
+> So unless people don't expect replies to their email, they better not
+> send them in html in the first place.  So you may as well just block
+> them and let the user know why it was blocked.
+ 
+Get a better mail client or configure it properly. I only check my email
+in a terminal and don't really have problems reading or replying to HTML
+mail.
+
+Yes, I do prefer text, but realize there are a lot of mailing lists that
+only send HTML and clients/devices that make it difficult for the user
+to write plain text mail. 
+
+It's much easier to configure your client properly than to get everyone
+to stop using HTML email (which will never happen).
+
+
+From thomas.bruce.milne at gmail.com  Tue Dec 16 21:10:36 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Tue, 16 Dec 2014 21:10:36 +0000
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <CAAsTreA4GME=9XU_K0L=svT=xoTEy9pVk_EPdpnbKswNwA5ZYw@mail.gmail.com>
+ <20141216205542.GR24111@csclub.uwaterloo.ca>
+Message-ID: <CAGc8pF4OdRgSgwD_docEc9hbczV=t=NWOedq96zxe9NYi9Bqqw@mail.gmail.com>
+
+On Tue, Dec 16, 2014, 3:55 PM Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+wrote:
+
+> On Tue, Dec 16, 2014 at 03:49:09PM -0500, Stewart Russell wrote:
+> > There may be no other option. Also, many clients hide or fudge the
+> > status. For instance, Gmail is currently claiming that it's going to
+> > send this as plain text with no extraneous quoting. Will it do this? I
+> > won't know until I send it.
+> >
+> > For all its faults, Mozilla Thunderbird can quote HTML to plain text
+> > quite well. But I'm sure there are many ways to mess up a reply to a
+> > plain text message by quoting in the standard way. That which passes
+> > for plain text is a minefield of assumptions (Your English Must Only
+> > Have 26 Characters, and Criminally Limited Punctuation) leading to
+> > na?ve "markup free" limited solutions like Markdown.
+>
+> It also for the longest time would not actually put '>' on the lines of
+> the plain text if you asked it to send both html and plain text versions.
+> Not sure that bug has ever been fixed.
+>
+> And it is hardly a useful email client when you do email over ssh.
+> I use mutt and edit with vim.
+>
+> > Unfortunately, if you're going to block replies based on e-mail
+> > format, you'll get a dwindling number of participants in the mailing
+> > list. And nothing kills off user groups like lack of participation.
+>
+> I will happily ignore html messages and not reply to them.
+>
+> --
+> Len Sorensen
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+For me it has always been a very simple logical request. There is no
+benefit at all to using HTML in this list, and there are tons and tons of
+drawbacks to using it.
+
+GMail and now even Inbox seem to always default to plain text for me
+anyway, at least AFAICT.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141216/765e1051/attachment.html>
+
+From thomas.bruce.milne at gmail.com  Tue Dec 16 21:21:41 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Tue, 16 Dec 2014 21:21:41 +0000
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca> <20141216205734.GA559@celine.lan>
+Message-ID: <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+
+ On Tue, Dec 16, 2014, 3:58 PM Loui Chang <louipc.ist at gmail.com> wrote:
+
+On Tue 16 Dec 2014 14:39 -0500, Lennart Sorensen wrote:
+> > 2) We would have to help people configure their email clients to send
+> > plain text emails.
+>
+> Rather that, than unusable emails.
+>
+> > If your solution to #2 is they can just Google it, you could also
+> > Google how to read HTML email in your email client.
+>
+> It can't.  At least not in a way that I can reply to cleanly in plain
+> text.
+>
+> So unless people don't expect replies to their email, they better not
+> send them in html in the first place.  So you may as well just block
+> them and let the user know why it was blocked.
+
+Get a better mail client or configure it properly. I only check my email
+in a terminal and don't really have problems reading or replying to HTML
+mail.
+
+Yes, I do prefer text, but realize there are a lot of mailing lists that
+only send HTML and clients/devices that make it difficult for the user
+to write plain text mail.
+
+It's much easier to configure your client properly than to get everyone
+to stop using HTML email (which will never happen).
+
+---
+GTALUG Talk Mailing List - talk@ <talk at gtalug.org>gtalug.org
+<talk at gtalug.org>
+http:// <http://gtalug.org/mailman/listinfo/talk>gtalug.org
+<http://gtalug.org/mailman/listinfo/talk>/mailman/
+<http://gtalug.org/mailman/listinfo/talk>listinfo
+<http://gtalug.org/mailman/listinfo/talk>/talk
+<http://gtalug.org/mailman/listinfo/talk>
+
+
+Well if you apply such all or nothing thinking, you can dismiss almost any
+standard or rule. Why bother if not everyone will obey? Of course not
+everyone will obey every rule but they are still useful and this one is
+very reasonable to ask.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141216/c3d727f4/attachment.html>
+
+From clifford_ilkay at dinamis.com  Tue Dec 16 21:22:41 2014
+From: clifford_ilkay at dinamis.com (Clifford Ilkay)
+Date: Tue, 16 Dec 2014 16:22:41 -0500
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+ <20141216165741.GN24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+Message-ID: <5490A2A1.4050707@dinamis.com>
+
+On 12/16/2014 01:06 PM, D. Hugh Redelmeier wrote:
+> RHEL5 and RHEL6 have very long support cycles.  It is unreasonable to
+> claim those as requirements.  In fact, they are designed to be stable.
+> Doing new development on and for them is kind of a contradiction.
+> OK, I admit that until 7.1 is out, maybe 6 can be defended.
+>
+> Fedora 20 seems to have Python 2.7.5 and 3.3.2.
+> Centos 6.6 only has python 2.6.6
+> Centos 5.11 only has Python 2.4.3
+
+That makes Centos 6.6 and 5.11 pretty much useless for deploying modern
+Django web applications if we're to rely solely on the distro-supplied
+Python. Fortunately, there is a relatively easy way to work around that
+also addresses the Python 2 vs Python 3 issue. We only deploy Python
+applications using virtualenv
+<https://virtualenv.readthedocs.org/en/latest/virtualenv.html>, which
+"is a tool to create isolated Python environments". We can deploy any
+version of Python we want in that virtualenv and it will be completely
+isolated from the system-wide Python. This is useful not just for
+dealing with Python version issues but also library version issues. For
+instance, we have multiple versions of Django deployed for projects of
+various vintage. If we relied on the distro-supplied Django package,
+we'd have to upgrade every Django project at the same time or dedicate a
+machine, real or virtual, for each Django version, neither of which are
+viable options.
+
+The claim that deploying Python 2 and Python 3 on the same machine is a
+"non-starter" points to a fundamental lack of understanding of how
+Python applications are actually deployed. This is really much ado about
+nothing.
+
+-- 
+Regards,
+
+Clifford Ilkay
+Dinamis
+
++1 647-778-8696
+
+
+From thomas.bruce.milne at gmail.com  Tue Dec 16 21:55:29 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Tue, 16 Dec 2014 21:55:29 +0000
+Subject: [GTALUG] Cubox Dev Platform OS images?
+References: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+ <20141123002215.GB24111@csclub.uwaterloo.ca>
+Message-ID: <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+
+Hey sorry to bug you, I am unemployed again and in dire need of a project
+:-)
+
+If you have that image or if you know a way I could generate my own, I
+tried searching but everything now is about the Cubox-i.
+
+Solidrun might have an original image but I would really like to have
+Debian armhf which is I assume what you have installed?
+
+Thanks!
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141216/75ef8051/attachment.html>
+
+From scruss at gmail.com  Tue Dec 16 21:56:05 2014
+From: scruss at gmail.com (Stewart Russell)
+Date: Tue, 16 Dec 2014 16:56:05 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <20141216205542.GR24111@csclub.uwaterloo.ca>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <CAAsTreA4GME=9XU_K0L=svT=xoTEy9pVk_EPdpnbKswNwA5ZYw@mail.gmail.com>
+ <20141216205542.GR24111@csclub.uwaterloo.ca>
+Message-ID: <CAAsTreAUC2kdGSOhxojRKLtn+6pRKv=qguuQhM5pTD1C95DD3Q@mail.gmail.com>
+
+On Dec 16, 2014 3:55 PM, "Lennart Sorensen" <lsorense at csclub.uwaterloo.ca>
+wrote:
+>
+> It also for the longest time would not
+> actually put '>' on the lines of
+> the plain text
+
+That one's fixed, though there's a lot not to like still in Thunderbird.
+Like its weird text-size bump in some rich text modes. Or it not
+understanding that CSS from embedded replies doesn't need spell-checked.
+Thunderbird development is stalled, so the best I can hope for is that they
+don't add any new bugs.
+
+> I use mutt and edit with vim.
+
+My sincerest condolences ;-)
+
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141216/1a019e9f/attachment.html>
+
+From adb at adb.ca  Tue Dec 16 22:28:39 2014
+From: adb at adb.ca (Anthony de Boer)
+Date: Tue, 16 Dec 2014 17:28:39 -0500
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+ <20141216165741.GN24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+Message-ID: <20141216222839.GR23240@adb.ca>
+
+D. Hugh Redelmeier wrote:
+> I'm not much of a Python user.  I'm certainly not too aware of things
+> in its ecosystem.
+> 
+> I think that it is good that language powers-that-be consider
+> incompatible updates.  Otherwise mistakes are with us forever.  They
+> should be infrequent and probably batched.
+> 
+> It helps a lot if the incompatibility can be mechanically cleansed.
+> Second best: mechanically detected statically.  Third best:
+> mechanically detected dynamically.  Horrible: just behaving different
+> at runtime.
+> 
+> At some point, the community has to go cold turkey.  No new work on
+> libraries etc. for the old thing.  It's like taking off a bandaid: net
+> pain is less if the transition is quick.  Of course some kind of
+> synchronization would be useful.  What better use of a BDFL.
+
+If you've got reams of mission-critical legacy code written in the
+previous version of a language, whether FORTRAN IV or original K&R C or
+Perl 4 or whatever other deprecated tongue was spoken by the coders of
+yore, a new system that's going to not run that code or misreinterpret it
+in interestingly broken ways is _NOT_ going to be your friend (or be of
+any immediate practical use in production).
+
+You do need room to introduce new languages, or improved dialects of
+existing ones, but there does need to be a way for the versions to
+coexist, so your Perl 4, 5, and 6 code each go to their own interpreter,
+or GCC can be flagged to parse according to a particular C standard,
+and all your old code keeps on happily working.  You cannot go and
+rewrite or mechanically-recode or even recompile everything on some
+flag day and have perfectly-refactored new code running bug-free by
+sunset.
+
+And if some language's BFDL and TPTB decide that the new version is going
+to break old code and not support compatibility, the wise coder having to
+refactor that codebase goes to a different language entirely because that
+bunch are likely to break everything again next time they have a better
+idea, and the time after that too.
+
+There is room for code-refactoring projects, if new features make the
+code more maintainable (as if! See also: "technical debt" and having to
+QA everything again), but they have to run on the downstream timeline and
+not be dictated by upstream releasing their whizzy new compiler.
+
+Ideally there's some legacy maintenance on libraries and such, but
+there are advantages to a *stable* language where someone isn't
+going to tweak the meaning or precedence of something or add a new
+reserved keyword or whatever else might change the meaning of some
+million-line system that someone doesn't want to refactor.
+
+> How long did C keep "int" is the default type if you neglect to
+> mention a type in a declaration?  This should have been a compile-time
+> diagnosed error decades ago.
+> 
+> How long did FORTRAN allow undeclared variables?
+
+A compiler running in default mode can't ever reject something that was
+once a valid program, but undefined variables IMHO were always something
+that dismerited a warning; maybe declaring the code to be pre-good-taste
+could silence the warnings, while a later language revision requiring
+proper declarations could make that an error if that mode is declared.
+
+> I don't understand what's so hard about the Python 2 => 3 transition.
+> Is it too big a step?  Are there not enough attractions?  Is the first 
+> step a lulu[1]?
+
+I've done a wee bit of Python, but not tracking it too closely.  There
+are too many languages!
+
+I miss the days when knowing C, shell, and awk would cover all you needed
+for Unix utilities.  It seems that nowadays, diving into the source of
+some random Linux package that needs something checked or tweaked, every
+other time one finds that yet another different language was used; it's
+the Tower Of Babel story all over, or if not that then the coding style
+is something, ahhh, *unique*.
+
+It's good that language-design research is still happening, and new
+languages are getting road-tested, but there's just not the mindspace
+for any of us to simultanously master them all, and by the time you
+try there will be another three or so to learn.  I'm almost cheering for
+evolutionary pressure to cross a few of them off the list!
+
+[1] legacy footnote not supported in this message.
+
+-- 
+Anthony de Boer
+
+From louipc.ist at gmail.com  Tue Dec 16 22:39:28 2014
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Tue, 16 Dec 2014 17:39:28 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <20141216205734.GA559@celine.lan>
+ <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+Message-ID: <20141216223928.GA4904@celine.lan>
+
+On Tue 16 Dec 2014 21:21 +0000, Thomas Milne wrote:
+>  On Tue, Dec 16, 2014, 3:58 PM Loui Chang <louipc.ist at gmail.com> wrote:
+> 
+> On Tue 16 Dec 2014 14:39 -0500, Lennart Sorensen wrote:
+> > > 2) We would have to help people configure their email clients to send
+> > > plain text emails.
+> >
+> > Rather that, than unusable emails.
+> >
+> > > If your solution to #2 is they can just Google it, you could also
+> > > Google how to read HTML email in your email client.
+> >
+> > It can't.  At least not in a way that I can reply to cleanly in plain
+> > text.
+> >
+> > So unless people don't expect replies to their email, they better not
+> > send them in html in the first place.  So you may as well just block
+> > them and let the user know why it was blocked.
+> 
+> Get a better mail client or configure it properly. I only check my email
+> in a terminal and don't really have problems reading or replying to HTML
+> mail.
+> 
+> Yes, I do prefer text, but realize there are a lot of mailing lists that
+> only send HTML and clients/devices that make it difficult for the user
+> to write plain text mail.
+> 
+> It's much easier to configure your client properly than to get everyone
+> to stop using HTML email (which will never happen).
+> 
+> ---
+> GTALUG Talk Mailing List - talk@ <talk at gtalug.org>gtalug.org
+> <talk at gtalug.org>
+> http:// <http://gtalug.org/mailman/listinfo/talk>gtalug.org
+> <http://gtalug.org/mailman/listinfo/talk>/mailman/
+> <http://gtalug.org/mailman/listinfo/talk>listinfo
+> <http://gtalug.org/mailman/listinfo/talk>/talk
+> <http://gtalug.org/mailman/listinfo/talk>
+> 
+> 
+> Well if you apply such all or nothing thinking, you can dismiss almost any
+> standard or rule. Why bother if not everyone will obey? Of course not
+> everyone will obey every rule but they are still useful and this one is
+> very reasonable to ask.
+
+Well, because there will always be people doing stupid things like
+sending html mails, not quoting replies properly, not stripping
+footers/signatures, and such. You do you best to help educate people but
+don't cut them off lock-stock-and-barrel unless they show a real sign of
+stubborn ignorance. Then there's the fact that I have better things to
+do than to educate the world. Fighting the grave injustices of html
+email is just not that important to me. I have other priorities in life.
+
+
+From louipc.ist at gmail.com  Tue Dec 16 22:41:27 2014
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Tue, 16 Dec 2014 17:41:27 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <54909CEB.90302@rogers.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <54907094.4090205@rogers.com> <549092F7.2040706@utoronto.ca>
+ <54909CEB.90302@rogers.com>
+Message-ID: <20141216224126.GB4904@celine.lan>
+
+On Tue 16 Dec 2014 15:58 -0500, James Knott wrote:
+> On 12/16/2014 03:15 PM, Jamon Camisso wrote:
+> > On 2014-12-16 5:49 PM, James Knott wrote:
+> >> On 12/16/2014 12:45 PM, Myles Braithwaite wrote:
+> >>> If your solution to #2 is they can just Google it, you could also
+> >>> Google how to read HTML email in your email client.
+> >> I don't have a problem reading HTML email and often send it.  However,
+> >> for this and other lists, I have my address list configured to allow
+> >> plain text only.
+> >>
+> >> My understanding of the reasons for not using HTML are it looks like garbage.
+> > FTFY!
+> 
+> Hmmm...  Looks like someone has been trolling with my email to make it
+> look as though I sang something I didn't. lolol
+
+It's hackers.
+
+
+From opengeometry at yahoo.ca  Tue Dec 16 22:52:55 2014
+From: opengeometry at yahoo.ca (William Park)
+Date: Tue, 16 Dec 2014 17:52:55 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+References: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+ <20141123002215.GB24111@csclub.uwaterloo.ca>
+ <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+Message-ID: <20141216225255.GA28340@node1.localdomain>
+
+Thomas,
+
+I think you sent to wrong address.  In any case, keep us informed of
+your progress.  CuBox is a little pricy compared to the rest, especially
+with the latest board
+    ODROID-C1
+    http://www.hardkernel.com/main/products/prdt_info.php?g_code=G141578608433
+selling at $35.
+-- 
+William
+
+On Tue, Dec 16, 2014 at 09:55:29PM +0000, Thomas Milne wrote:
+> Hey sorry to bug you, I am unemployed again and in dire need of a project
+> :-)
+> 
+> If you have that image or if you know a way I could generate my own, I
+> tried searching but everything now is about the Cubox-i.
+> 
+> Solidrun might have an original image but I would really like to have
+> Debian armhf which is I assume what you have installed?
+> 
+> Thanks!
+
+> 
+> 
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+From thomas.bruce.milne at gmail.com  Tue Dec 16 22:55:23 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Tue, 16 Dec 2014 22:55:23 +0000
+Subject: [GTALUG] Cubox Dev Platform OS images?
+References: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+ <20141123002215.GB24111@csclub.uwaterloo.ca>
+ <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+ <20141216225255.GA28340@node1.localdomain>
+Message-ID: <CAGc8pF7hX9zkDNCJQHmrfsbTSQv4BiD5YG=_ir-7ZVNMzwgNFw@mail.gmail.com>
+
+I have no idea what you are talking about. Can you not see the thread I'm
+replying too?
+
+On Tue, Dec 16, 2014, 5:53 PM William Park <opengeometry at yahoo.ca> wrote:
+
+> Thomas,
+>
+> I think you sent to wrong address.  In any case, keep us informed of
+> your progress.  CuBox is a little pricy compared to the rest, especially
+> with the latest board
+>     ODROID-C1
+>     http://www.hardkernel.com/main/products/prdt_info.php?g_
+> code=G141578608433
+> selling at $35.
+> --
+> William
+>
+> On Tue, Dec 16, 2014 at 09:55:29PM +0000, Thomas Milne wrote:
+> > Hey sorry to bug you, I am unemployed again and in dire need of a project
+> > :-)
+> >
+> > If you have that image or if you know a way I could generate my own, I
+> > tried searching but everything now is about the Cubox-i.
+> >
+> > Solidrun might have an original image but I would really like to have
+> > Debian armhf which is I assume what you have installed?
+> >
+> > Thanks!
+>
+> >
+> >
+> > ---
+> > GTALUG Talk Mailing List - talk at gtalug.org
+> > http://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141216/9f0e91b3/attachment.html>
+
+From clifford_ilkay at dinamis.com  Tue Dec 16 22:36:00 2014
+From: clifford_ilkay at dinamis.com (Clifford Ilkay)
+Date: Tue, 16 Dec 2014 17:36:00 -0500
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <20141216222839.GR23240@adb.ca>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+ <20141216165741.GN24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+ <20141216222839.GR23240@adb.ca>
+Message-ID: <5490B3D0.9090903@dinamis.com>
+
+On 12/16/2014 05:28 PM, Anthony de Boer wrote:
+> I've done a wee bit of Python, but not tracking it too closely. There
+> are too many languages! 
+
+I hear you! I'm learning Javascript and wondering, "How did this
+language become so ubiquitous? Why doesn't Python run in browsers? It's
+a great language for embeddable scripting."
+
+-- 
+Regards,
+
+Clifford Ilkay
+
++1 647-778-8696
+
+
+From email+libre at blaise.ca  Wed Dec 17 04:47:31 2014
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Tue, 16 Dec 2014 23:47:31 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <20141216205734.GA559@celine.lan>
+ <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+Message-ID: <54910AE3.4010405@blaise.ca>
+
+On 14-12-16 04:21 PM, Thomas Milne wrote:
+> 
+> On Tue, Dec 16, 2014, 3:58 PM Loui Chang <louipc.ist at gmail.com <mailto:louipc.ist at gmail.com>> wrote:
+> 
+>     On Tue 16 Dec 2014 14:39 -0500, Lennart Sorensen wrote:
+>     > > 2) We would have to help people configure their email clients to send
+>     > > plain text emails.
+>     >
+>     > Rather that, than unusable emails.
+>     >
+>     > > If your solution to #2 is they can just Google it, you could also
+>     > > Google how to read HTML email in your email client.
+>     >
+>     > It can't.  At least not in a way that I can reply to cleanly in plain
+>     > text.
+>     >
+>     > So unless people don't expect replies to their email, they better not
+>     > send them in html in the first place.  So you may as well just block
+>     > them and let the user know why it was blocked.
+> 
+>     Get a better mail client or configure it properly. I only check my email
+>     in a terminal and don't really have problems reading or replying to HTML
+>     mail.
+> 
+>     Yes, I do prefer text, but realize there are a lot of mailing lists that
+>     only send HTML and clients/devices that make it difficult for the user
+>     to write plain text mail.
+> 
+>     It's much easier to configure your client properly than to get everyone
+>     to stop using HTML email (which will never happen).
+> 
+>     ---
+>     GTALUG Talk Mailing List - talk@ <mailto:talk at gtalug.org>gtalug.org <mailto:talk at gtalug.org>
+>     http:// <http://gtalug.org/mailman/listinfo/talk>gtalug.org
+>     <http://gtalug.org/mailman/listinfo/talk>/mailman/
+>     <http://gtalug.org/mailman/listinfo/talk>listinfo <http://gtalug.org/mailman/listinfo/talk>/talk
+>     <http://gtalug.org/mailman/listinfo/talk>
+> 
+> 
+> Well if you apply such all or nothing thinking, you can dismiss almost any standard or rule. Why
+> bother if not everyone will obey? Of course not everyone will obey every rule but they are still
+> useful and this one is very reasonable to ask.
+> 
+
+Thomas... you realize that both the emails you sent to the list on the subject of not using HTML
+email... were HTML emails... right?
+
+I'm not sure if that was intentional satire... :)
+
+(No, Gmail is not sending plain text email.)
+
+
