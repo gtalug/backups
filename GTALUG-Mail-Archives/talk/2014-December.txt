@@ -2663,3 +2663,824 @@ I'm not sure if that was intentional satire... :)
 (No, Gmail is not sending plain text email.)
 
 
+From scruss at gmail.com  Wed Dec 17 13:25:26 2014
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Wed, 17 Dec 2014 08:25:26 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <54910AE3.4010405@blaise.ca>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <20141216205734.GA559@celine.lan>
+ <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+ <54910AE3.4010405@blaise.ca>
+Message-ID: <54918446.5080609@gmail.com>
+
+On 2014-12-16 11:47 PM, Blaise Alleyne wrote:
+> 
+> (No, Gmail is not sending plain text email.)
+
+I think that's more the problem. Gmail sometimes shows an indicator that
+it's using plain text, but then sends it with an HTML version anyway. It
+being Google, there are no reliable user settings we can control.
+
+I still occasionally use a system that transmits and receives using
+5-bit Baudot, but I don't recommend it. The slightest bit of noise can
+shift you out of alphabetical characters into others. Plus, it has no case.
+
+cheers,
+ Stewart
+
+
+From mwilson at vex.net  Wed Dec 17 14:55:10 2014
+From: mwilson at vex.net (Mel Wilson)
+Date: Wed, 17 Dec 2014 09:55:10 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <54918446.5080609@gmail.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <20141216205734.GA559@celine.lan>
+ <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+ <54910AE3.4010405@blaise.ca> <54918446.5080609@gmail.com>
+Message-ID: <1418828110.3539.8.camel@tecumseth5.mounteagle.lan>
+
+On Wed, 2014-12-17 at 08:25 -0500, Stewart C. Russell wrote:
+> On 2014-12-16 11:47 PM, Blaise Alleyne wrote:
+> > 
+> > (No, Gmail is not sending plain text email.)
+> 
+> I think that's more the problem. Gmail sometimes shows an indicator that
+> it's using plain text, but then sends it with an HTML version anyway. It
+> being Google, there are no reliable user settings we can control.
+> 
+> I still occasionally use a system that transmits and receives using
+> 5-bit Baudot, but I don't recommend it. The slightest bit of noise can
+> shift you out of alphabetical characters into others. Plus, it has no case.
+
+Same with ASCII though, really.  It has upper and lower, but there is no
+Business Case for it.
+
+	Mel.
+
+
+
+From james.knott at rogers.com  Wed Dec 17 14:58:04 2014
+From: james.knott at rogers.com (James Knott)
+Date: Wed, 17 Dec 2014 09:58:04 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <54918446.5080609@gmail.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <20141216205734.GA559@celine.lan>
+ <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+ <54910AE3.4010405@blaise.ca> <54918446.5080609@gmail.com>
+Message-ID: <549199FC.8040003@rogers.com>
+
+On 12/17/2014 08:25 AM, Stewart C. Russell wrote:
+> On 2014-12-16 11:47 PM, Blaise Alleyne wrote:
+>> (No, Gmail is not sending plain text email.)
+> I think that's more the problem. Gmail sometimes shows an indicator that
+> it's using plain text, but then sends it with an HTML version anyway. It
+> being Google, there are no reliable user settings we can control.
+>
+> I still occasionally use a system that transmits and receives using
+> 5-bit Baudot, but I don't recommend it. The slightest bit of noise can
+> shift you out of alphabetical characters into others. Plus, it has no case.
+>
+> cheers,
+>  Stewart
+>
+
+Baudot???  I haven't seen that in decades!
+
+From thomas.bruce.milne at gmail.com  Wed Dec 17 15:18:19 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 17 Dec 2014 10:18:19 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <54910AE3.4010405@blaise.ca>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <20141216205734.GA559@celine.lan>
+ <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+ <54910AE3.4010405@blaise.ca>
+Message-ID: <CAGc8pF6Hbg8z+Ek-dN173MgKxLaLPg3Os5J1cnNoQS6hthqrnw@mail.gmail.com>
+
+On Tue, Dec 16, 2014 at 11:47 PM, Blaise Alleyne <email+libre at blaise.ca> wrote:
+> On 14-12-16 04:21 PM, Thomas Milne wrote:
+>>
+>> On Tue, Dec 16, 2014, 3:58 PM Loui Chang <louipc.ist at gmail.com <mailto:louipc.ist at gmail.com>> wrote:
+>>
+>>     On Tue 16 Dec 2014 14:39 -0500, Lennart Sorensen wrote:
+>>     > > 2) We would have to help people configure their email clients to send
+>>     > > plain text emails.
+>>     >
+>>     > Rather that, than unusable emails.
+>>     >
+>>     > > If your solution to #2 is they can just Google it, you could also
+>>     > > Google how to read HTML email in your email client.
+>>     >
+>>     > It can't.  At least not in a way that I can reply to cleanly in plain
+>>     > text.
+>>     >
+>>     > So unless people don't expect replies to their email, they better not
+>>     > send them in html in the first place.  So you may as well just block
+>>     > them and let the user know why it was blocked.
+>>
+>>     Get a better mail client or configure it properly. I only check my email
+>>     in a terminal and don't really have problems reading or replying to HTML
+>>     mail.
+>>
+>>     Yes, I do prefer text, but realize there are a lot of mailing lists that
+>>     only send HTML and clients/devices that make it difficult for the user
+>>     to write plain text mail.
+>>
+>>     It's much easier to configure your client properly than to get everyone
+>>     to stop using HTML email (which will never happen).
+>>
+>>     ---
+>>     GTALUG Talk Mailing List - talk@ <mailto:talk at gtalug.org>gtalug.org <mailto:talk at gtalug.org>
+>>     http:// <http://gtalug.org/mailman/listinfo/talk>gtalug.org
+>>     <http://gtalug.org/mailman/listinfo/talk>/mailman/
+>>     <http://gtalug.org/mailman/listinfo/talk>listinfo <http://gtalug.org/mailman/listinfo/talk>/talk
+>>     <http://gtalug.org/mailman/listinfo/talk>
+>>
+>>
+>> Well if you apply such all or nothing thinking, you can dismiss almost any standard or rule. Why
+>> bother if not everyone will obey? Of course not everyone will obey every rule but they are still
+>> useful and this one is very reasonable to ask.
+>>
+>
+> Thomas... you realize that both the emails you sent to the list on the subject of not using HTML
+> email... were HTML emails... right?
+>
+> I'm not sure if that was intentional satire... :)
+>
+> (No, Gmail is not sending plain text email.)
+>
+>
+
+OH HOW EMBARRASSING
+
+Anyway it's not GMail's fault it's mine.
+
+I've been using Inbox, the hip new thing from Google. I assumed since
+Lennart was not scolding me I was okay :-)
+
+-- 
+Thomas Milne
+
+From jamon.camisso at utoronto.ca  Wed Dec 17 15:21:15 2014
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Wed, 17 Dec 2014 15:21:15 +0000
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <5490B3D0.9090903@dinamis.com>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+ <20141216165741.GN24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+ <20141216222839.GR23240@adb.ca> <5490B3D0.9090903@dinamis.com>
+Message-ID: <54919F6B.6010702@utoronto.ca>
+
+On 2014-12-16 10:36 PM, Clifford Ilkay wrote:
+> On 12/16/2014 05:28 PM, Anthony de Boer wrote:
+>> I've done a wee bit of Python, but not tracking it too closely. There
+>> are too many languages! 
+> 
+> I hear you! I'm learning Javascript and wondering, "How did this
+> language become so ubiquitous? Why doesn't Python run in browsers? It's
+> a great language for embeddable scripting."
+
+See http://www.brython.info for an implementation of Python in JS in the
+browser. Might do what you're after ;)
+
+Cheers, Jamon
+
+From me at mylesbraithwaite.com  Wed Dec 17 15:35:03 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Wed, 17 Dec 2014 10:35:03 -0500
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <5490B3D0.9090903@dinamis.com>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+ <20141216165741.GN24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+ <20141216222839.GR23240@adb.ca> <5490B3D0.9090903@dinamis.com>
+Message-ID: <CA+hskZMDhHJERhet-W6Dite3Hbgquw1bcEHCo71K7+zvqij74w@mail.gmail.com>
+
+On Tue, Dec 16, 2014 at 5:36 PM, Clifford Ilkay
+<clifford_ilkay at dinamis.com> wrote:
+> I hear you! I'm learning Javascript and wondering, "How did this
+> language become so ubiquitous? Why doesn't Python run in browsers? It's
+> a great language for embeddable scripting."
+
+The industry seems to like converters (i.e. GWT, Pygamas, etc.) and
+not replacing JavaScript with projects like IronMonkey. Which is kind
+of interesting considering there is a huge user base of Python
+programmers who are coding on top of Microsoft's Excel (instead of
+having to use VB.NET and C#).
+
+CoffeeScript has a Python like syntax (I'm loosely using the word
+'like') if you are interested in not having to write JavaScript. But
+it compiles CoffeeScript into JavaScript so it's not the best thing in
+the world.
+
+From scruss at gmail.com  Wed Dec 17 16:38:55 2014
+From: scruss at gmail.com (Stewart Russell)
+Date: Wed, 17 Dec 2014 11:38:55 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <549199FC.8040003@rogers.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <20141216205734.GA559@celine.lan>
+ <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+ <54910AE3.4010405@blaise.ca> <54918446.5080609@gmail.com>
+ <549199FC.8040003@rogers.com>
+Message-ID: <CAAsTreBLcxcQeoyGRf9PUDjyJZEKioRLGJcoUVjMsJzeRmRUJg@mail.gmail.com>
+
+On Dec 17, 2014 9:57 AM, "James Knott" <james.knott at rogers.com> wrote:
+>
+> Baudot???  I haven't seen that in
+> decades!
+
+It still lives on - in an admitted niche - in amateur radio teletype
+digital modes. Because RTTY uses a very simple FSK coding scheme, it
+survives amplification from nonlinear amplifiers quite well. It means you
+get teeth-rattlingly loud signals blasting in from stations worldwide.
+Usually all over your carefully crafted low power signal ... grar.
+
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141217/77ca9eba/attachment.html>
+
+From clifford_ilkay at dinamis.com  Wed Dec 17 17:42:26 2014
+From: clifford_ilkay at dinamis.com (Clifford Ilkay)
+Date: Wed, 17 Dec 2014 12:42:26 -0500
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <54919F6B.6010702@utoronto.ca>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+ <20141216165741.GN24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+ <20141216222839.GR23240@adb.ca> <5490B3D0.9090903@dinamis.com>
+ <54919F6B.6010702@utoronto.ca>
+Message-ID: <5491C082.6010400@dinamis.com>
+
+On 12/17/2014 10:21 AM, Jamon Camisso wrote:
+> On 2014-12-16 10:36 PM, Clifford Ilkay wrote:
+>> On 12/16/2014 05:28 PM, Anthony de Boer wrote:
+>>> I've done a wee bit of Python, but not tracking it too closely. There
+>>> are too many languages! 
+>> I hear you! I'm learning Javascript and wondering, "How did this
+>> language become so ubiquitous? Why doesn't Python run in browsers? It's
+>> a great language for embeddable scripting."
+> See http://www.brython.info for an implementation of Python in JS in the
+> browser. Might do what you're after ;)
+
+Interesting toy but not something I'd rely on to build a serious
+application right now. For better or worse, AngularJS has huge critical
+mass and that's where we've cast our lot.
+
+-- 
+Regards,
+
+Clifford Ilkay
+
++1 647-778-8696
+
+
+From clifford_ilkay at dinamis.com  Wed Dec 17 17:53:05 2014
+From: clifford_ilkay at dinamis.com (Clifford Ilkay)
+Date: Wed, 17 Dec 2014 12:53:05 -0500
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <CA+hskZMDhHJERhet-W6Dite3Hbgquw1bcEHCo71K7+zvqij74w@mail.gmail.com>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+ <20141216165741.GN24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+ <20141216222839.GR23240@adb.ca> <5490B3D0.9090903@dinamis.com>
+ <CA+hskZMDhHJERhet-W6Dite3Hbgquw1bcEHCo71K7+zvqij74w@mail.gmail.com>
+Message-ID: <5491C301.4060703@dinamis.com>
+
+Is there really a need to moderate long-time members of this mailing
+list? I notice that every message I send is held in the moderator queue
+and is eventually released.
+
+On 12/17/2014 10:35 AM, Myles Braithwaite wrote:
+> On Tue, Dec 16, 2014 at 5:36 PM, Clifford Ilkay
+> <clifford_ilkay at dinamis.com> wrote:
+>> I hear you! I'm learning Javascript and wondering, "How did this
+>> language become so ubiquitous? Why doesn't Python run in browsers? It's
+>> a great language for embeddable scripting."
+> The industry seems to like converters (i.e. GWT, Pygamas, etc.) and
+> not replacing JavaScript with projects like IronMonkey. Which is kind
+> of interesting considering there is a huge user base of Python
+> programmers who are coding on top of Microsoft's Excel (instead of
+> having to use VB.NET and C#).
+
+I'd looked at Pyjamas and I was never convinced of its merits. Like
+Brython that Jamon pointed out, it occurred to me as an interesting toy
+but not something I'd bet the farm on.
+
+> CoffeeScript has a Python like syntax (I'm loosely using the word
+> 'like') if you are interested in not having to write JavaScript. But
+> it compiles CoffeeScript into JavaScript so it's not the best thing in
+> the world.
+
+I don't see the point of CoffeeScript. It removes curly braces and some
+other constructs at the expense of reducing the number of people who can
+actually read the code I write.
+
+-- 
+Regards,
+
+Clifford Ilkay
+Dinamis
+
++1 647-778-8696
+
+
+From qwerty172 at gmail.com  Wed Dec 17 18:52:01 2014
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Wed, 17 Dec 2014 13:52:01 -0500
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <5491C301.4060703@dinamis.com>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+ <20141216165741.GN24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+ <20141216222839.GR23240@adb.ca> <5490B3D0.9090903@dinamis.com>
+ <CA+hskZMDhHJERhet-W6Dite3Hbgquw1bcEHCo71K7+zvqij74w@mail.gmail.com>
+ <5491C301.4060703@dinamis.com>
+Message-ID: <CAA3RLT4+GaczLveCU7HcDoaB60LPm_Xuz_P0DfXQSZTZwxbP_A@mail.gmail.com>
+
+Cliff, the answer to your question is no there is no need, but you seem to
+keep coming up even after we have given you carte blanche permission.
+
+Bill
+
+
+On Wed, Dec 17, 2014 at 12:53 PM, Clifford Ilkay <clifford_ilkay at dinamis.com
+> wrote:
+>
+> Is there really a need to moderate long-time members of this mailing
+> list? I notice that every message I send is held in the moderator queue
+> and is eventually released.
+>
+> On 12/17/2014 10:35 AM, Myles Braithwaite wrote:
+> > On Tue, Dec 16, 2014 at 5:36 PM, Clifford Ilkay
+> > <clifford_ilkay at dinamis.com> wrote:
+> >> I hear you! I'm learning Javascript and wondering, "How did this
+> >> language become so ubiquitous? Why doesn't Python run in browsers? It's
+> >> a great language for embeddable scripting."
+> > The industry seems to like converters (i.e. GWT, Pygamas, etc.) and
+> > not replacing JavaScript with projects like IronMonkey. Which is kind
+> > of interesting considering there is a huge user base of Python
+> > programmers who are coding on top of Microsoft's Excel (instead of
+> > having to use VB.NET and C#).
+>
+> I'd looked at Pyjamas and I was never convinced of its merits. Like
+> Brython that Jamon pointed out, it occurred to me as an interesting toy
+> but not something I'd bet the farm on.
+>
+> > CoffeeScript has a Python like syntax (I'm loosely using the word
+> > 'like') if you are interested in not having to write JavaScript. But
+> > it compiles CoffeeScript into JavaScript so it's not the best thing in
+> > the world.
+>
+> I don't see the point of CoffeeScript. It removes curly braces and some
+> other constructs at the expense of reducing the number of people who can
+> actually read the code I write.
+>
+> --
+> Regards,
+>
+> Clifford Ilkay
+> Dinamis
+>
+> +1 647-778-8696
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141217/77e6916d/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Wed Dec 17 21:49:27 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 17 Dec 2014 16:49:27 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <20141216225255.GA28340@node1.localdomain>
+References: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+ <20141123002215.GB24111@csclub.uwaterloo.ca>
+ <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+ <20141216225255.GA28340@node1.localdomain>
+Message-ID: <20141217214927.GS24111@csclub.uwaterloo.ca>
+
+On Tue, Dec 16, 2014 at 05:52:55PM -0500, William Park wrote:
+> Thomas,
+> 
+> I think you sent to wrong address.  In any case, keep us informed of
+> your progress.  CuBox is a little pricy compared to the rest, especially
+> with the latest board
+>     ODROID-C1
+>     http://www.hardkernel.com/main/products/prdt_info.php?g_code=G141578608433
+
+But the cubox has eSATA and a box.  And some of us already have them
+and have had them for a while.
+
+But that is a very nice board.
+
+-- 
+Len Sorensen
+
+From waltdnes at waltdnes.org  Wed Dec 17 22:49:58 2014
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Wed, 17 Dec 2014 17:49:58 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <CAGc8pF6Hbg8z+Ek-dN173MgKxLaLPg3Os5J1cnNoQS6hthqrnw@mail.gmail.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <20141216205734.GA559@celine.lan>
+ <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+ <54910AE3.4010405@blaise.ca>
+ <CAGc8pF6Hbg8z+Ek-dN173MgKxLaLPg3Os5J1cnNoQS6hthqrnw@mail.gmail.com>
+Message-ID: <20141217224958.GA8357@waltdnes.org>
+
+On Wed, Dec 17, 2014 at 10:18:19AM -0500, Thomas Milne wrote
+
+> I've been using Inbox, the hip new thing from Google. I assumed since
+> Lennart was not scolding me I was okay :-)
+
+  Reminds me of a post on Slashdot about Google's development process,
+that was so good, I saved it locally...
+
+========================================================================
+
+Guy with piercings: Hey, look, I made it so when you, like, compose a
+new email this itty bitty box pops up!
+
+Girl with shaved head: Neato! But it's, like, taking up the whole page.
+That's so last decade.
+
+[clickety-clicketty-click]
+
+Person of transient gender with dreadlocks: Yay, now you can only see
+three words at a time. Minimalismo!
+
+GWSH: Better hide those scrollbars. They're so Windows XP! [1]
+
+POTGWD: But we'll need some way to scroll, with the window being so
+petite.
+
+GWSH: If you, like, move the mouse to the right quickly, that could mean
+"up" or something.
+
+GWP: Inside the box, or anywhere on the screen?
+
+GWSH & POTGWD: Anywhere on the screen, of course!
+
+All: Awesome!
+
+Chief UX Creative: That's what I like to hear. Let's all hop on our
+fixies, the whoppachoccacacamochos are on me!
+
+All: Totally awesome!
+
+[1] This is the earliest version any of them have heard of, let alone
+used.
+
+========================================================================
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From thomas.bruce.milne at gmail.com  Wed Dec 17 23:05:01 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 17 Dec 2014 18:05:01 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <20141217224958.GA8357@waltdnes.org>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <20141216205734.GA559@celine.lan>
+ <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+ <54910AE3.4010405@blaise.ca>
+ <CAGc8pF6Hbg8z+Ek-dN173MgKxLaLPg3Os5J1cnNoQS6hthqrnw@mail.gmail.com>
+ <20141217224958.GA8357@waltdnes.org>
+Message-ID: <CAGc8pF7-2wik_5F4cXsVhfw2eN8849eLXwbBtj+FFnOt9Ls+QQ@mail.gmail.com>
+
+On Dec 17, 2014 5:50 PM, "Walter Dnes" <waltdnes at waltdnes.org> wrote:
+>
+> On Wed, Dec 17, 2014 at 10:18:19AM -0500, Thomas Milne wrote
+>
+> > I've been using Inbox, the hip new thing from Google. I assumed since
+> > Lennart was not scolding me I was okay :-)
+>
+>   Reminds me of a post on Slashdot about Google's development process,
+> that was so good, I saved it locally...
+>
+> ========================================================================
+>
+> Guy with piercings: Hey, look, I made it so when you, like, compose a
+> new email this itty bitty box pops up!
+>
+> Girl with shaved head: Neato! But it's, like, taking up the whole page.
+> That's so last decade.
+>
+> [clickety-clicketty-click]
+>
+> Person of transient gender with dreadlocks: Yay, now you can only see
+> three words at a time. Minimalismo!
+>
+> GWSH: Better hide those scrollbars. They're so Windows XP! [1]
+>
+> POTGWD: But we'll need some way to scroll, with the window being so
+> petite.
+>
+> GWSH: If you, like, move the mouse to the right quickly, that could mean
+> "up" or something.
+>
+> GWP: Inside the box, or anywhere on the screen?
+>
+> GWSH & POTGWD: Anywhere on the screen, of course!
+>
+> All: Awesome!
+>
+> Chief UX Creative: That's what I like to hear. Let's all hop on our
+> fixies, the whoppachoccacacamochos are on me!
+>
+> All: Totally awesome!
+>
+> [1] This is the earliest version any of them have heard of, let alone
+> used.
+>
+
+Is this meant to be funny? It seems like a pretty good effort at offending
+anyone who isn't an old conformist middle class douchebag.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141217/ad0464ea/attachment.html>
+
+From opengeometry at yahoo.ca  Wed Dec 17 23:30:48 2014
+From: opengeometry at yahoo.ca (William Park)
+Date: Wed, 17 Dec 2014 18:30:48 -0500
+Subject: [GTALUG] FYI... Adata 16GB microSD = fast read
+Message-ID: <20141217233048.GA31944@node1.localdomain>
+
+FYI... I was trying out my new ODROID-U3 with 16GB Adata microSD,
+    http://www.canadacomputers.com/product_info.php?cPath=11_1216_175_177&item_id=058665
+I was actually looking for 8GB one, but they were out of it.
+
+Adata specs says
+    - 10MB/s write -- I got 13MB/s, so it's in the ballpark.
+    - 30MB/s read -- I got 80MB/s.  It may go higher, but probably
+      limited by my card reader.  It's rare to see something above
+      published specs.
+-- 
+William
+
+
+From o1bigtenor at gmail.com  Thu Dec 18 00:58:08 2014
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Wed, 17 Dec 2014 18:58:08 -0600
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <CAGc8pF7-2wik_5F4cXsVhfw2eN8849eLXwbBtj+FFnOt9Ls+QQ@mail.gmail.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <20141216205734.GA559@celine.lan>
+ <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+ <54910AE3.4010405@blaise.ca>
+ <CAGc8pF6Hbg8z+Ek-dN173MgKxLaLPg3Os5J1cnNoQS6hthqrnw@mail.gmail.com>
+ <20141217224958.GA8357@waltdnes.org>
+ <CAGc8pF7-2wik_5F4cXsVhfw2eN8849eLXwbBtj+FFnOt9Ls+QQ@mail.gmail.com>
+Message-ID: <CAPpdf5-zH8M25A5XSAbiBNXP74skpkEz1kxV4fv1ERHyGonT6w@mail.gmail.com>
+
+If you don't get the humor please use your delete button!
+
+On Wed, Dec 17, 2014 at 5:05 PM, Thomas Milne <thomas.bruce.milne at gmail.com>
+wrote:
+>
+>
+> On Dec 17, 2014 5:50 PM, "Walter Dnes" <waltdnes at waltdnes.org> wrote:
+> >
+> > On Wed, Dec 17, 2014 at 10:18:19AM -0500, Thomas Milne wrote
+> >
+> > > I've been using Inbox, the hip new thing from Google. I assumed since
+> > > Lennart was not scolding me I was okay :-)
+> >
+> >   Reminds me of a post on Slashdot about Google's development process,
+> > that was so good, I saved it locally...
+> >
+> > ========================================================================
+> >
+> > Guy with piercings: Hey, look, I made it so when you, like, compose a
+> > new email this itty bitty box pops up!
+> >
+> > Girl with shaved head: Neato! But it's, like, taking up the whole page.
+> > That's so last decade.
+> >
+> > [clickety-clicketty-click]
+> >
+> > Person of transient gender with dreadlocks: Yay, now you can only see
+> > three words at a time. Minimalismo!
+> >
+> > GWSH: Better hide those scrollbars. They're so Windows XP! [1]
+> >
+> > POTGWD: But we'll need some way to scroll, with the window being so
+> > petite.
+> >
+> > GWSH: If you, like, move the mouse to the right quickly, that could mean
+> > "up" or something.
+> >
+> > GWP: Inside the box, or anywhere on the screen?
+> >
+> > GWSH & POTGWD: Anywhere on the screen, of course!
+> >
+> > All: Awesome!
+> >
+> > Chief UX Creative: That's what I like to hear. Let's all hop on our
+> > fixies, the whoppachoccacacamochos are on me!
+> >
+> > All: Totally awesome!
+> >
+> > [1] This is the earliest version any of them have heard of, let alone
+> > used.
+> >
+>
+> Is this meant to be funny? It seems like a pretty good effort at offending
+> anyone who isn't an old conformist middle class douchebag.
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141217/13045b31/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Thu Dec 18 01:11:55 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 17 Dec 2014 20:11:55 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <CAGc8pF6Hbg8z+Ek-dN173MgKxLaLPg3Os5J1cnNoQS6hthqrnw@mail.gmail.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <20141216205734.GA559@celine.lan>
+ <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+ <54910AE3.4010405@blaise.ca>
+ <CAGc8pF6Hbg8z+Ek-dN173MgKxLaLPg3Os5J1cnNoQS6hthqrnw@mail.gmail.com>
+Message-ID: <20141218011155.GT24111@csclub.uwaterloo.ca>
+
+On Wed, Dec 17, 2014 at 10:18:19AM -0500, Thomas Milne wrote:
+> OH HOW EMBARRASSING
+> 
+> Anyway it's not GMail's fault it's mine.
+> 
+> I've been using Inbox, the hip new thing from Google. I assumed since
+> Lennart was not scolding me I was okay :-)
+
+You were sending both plain text and html, which means I get plain text
+version automatically and hence am entirely happy.  The html version I
+don't look at doesn't bother me.  It is html only email that sucks.
+
+-- 
+Len Sorensen
+
+From thomas.bruce.milne at gmail.com  Thu Dec 18 05:17:54 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Thu, 18 Dec 2014 00:17:54 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <CAPpdf5-zH8M25A5XSAbiBNXP74skpkEz1kxV4fv1ERHyGonT6w@mail.gmail.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <20141216205734.GA559@celine.lan>
+ <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+ <54910AE3.4010405@blaise.ca>
+ <CAGc8pF6Hbg8z+Ek-dN173MgKxLaLPg3Os5J1cnNoQS6hthqrnw@mail.gmail.com>
+ <20141217224958.GA8357@waltdnes.org>
+ <CAGc8pF7-2wik_5F4cXsVhfw2eN8849eLXwbBtj+FFnOt9Ls+QQ@mail.gmail.com>
+ <CAPpdf5-zH8M25A5XSAbiBNXP74skpkEz1kxV4fv1ERHyGonT6w@mail.gmail.com>
+Message-ID: <CAGc8pF4SYi2=yrR8B3_Dc5pQJ1iKna6AdYUbe1=z_z9nLXsLrg@mail.gmail.com>
+
+On Dec 17, 2014 7:58 PM, "o1bigtenor" <o1bigtenor at gmail.com> wrote:
+>
+> If you don't get the humor please use your delete button!
+>
+
+Oh I get it. Weird "transient gender" people with shaved heads and
+piercings have stupid ideas about things.
+
+It's hilarious.
+
+> On Wed, Dec 17, 2014 at 5:05 PM, Thomas Milne <
+thomas.bruce.milne at gmail.com> wrote:
+>>
+>>
+>> On Dec 17, 2014 5:50 PM, "Walter Dnes" <waltdnes at waltdnes.org> wrote:
+>> >
+>> > On Wed, Dec 17, 2014 at 10:18:19AM -0500, Thomas Milne wrote
+>> >
+>> > > I've been using Inbox, the hip new thing from Google. I assumed since
+>> > > Lennart was not scolding me I was okay :-)
+>> >
+>> >   Reminds me of a post on Slashdot about Google's development process,
+>> > that was so good, I saved it locally...
+>> >
+>> >
+========================================================================
+>> >
+>> > Guy with piercings: Hey, look, I made it so when you, like, compose a
+>> > new email this itty bitty box pops up!
+>> >
+>> > Girl with shaved head: Neato! But it's, like, taking up the whole page.
+>> > That's so last decade.
+>> >
+>> > [clickety-clicketty-click]
+>> >
+>> > Person of transient gender with dreadlocks: Yay, now you can only see
+>> > three words at a time. Minimalismo!
+>> >
+>> > GWSH: Better hide those scrollbars. They're so Windows XP! [1]
+>> >
+>> > POTGWD: But we'll need some way to scroll, with the window being so
+>> > petite.
+>> >
+>> > GWSH: If you, like, move the mouse to the right quickly, that could
+mean
+>> > "up" or something.
+>> >
+>> > GWP: Inside the box, or anywhere on the screen?
+>> >
+>> > GWSH & POTGWD: Anywhere on the screen, of course!
+>> >
+>> > All: Awesome!
+>> >
+>> > Chief UX Creative: That's what I like to hear. Let's all hop on our
+>> > fixies, the whoppachoccacacamochos are on me!
+>> >
+>> > All: Totally awesome!
+>> >
+>> > [1] This is the earliest version any of them have heard of, let alone
+>> > used.
+>> >
+>>
+>> Is this meant to be funny? It seems like a pretty good effort at
+offending anyone who isn't an old conformist middle class douchebag.
+>>
+>>
+>>
+>>
+>> ---
+>> GTALUG Talk Mailing List - talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141218/10d2d3aa/attachment.html>
+
+From waltdnes at waltdnes.org  Thu Dec 18 09:31:08 2014
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Thu, 18 Dec 2014 04:31:08 -0500
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <CAGc8pF7-2wik_5F4cXsVhfw2eN8849eLXwbBtj+FFnOt9Ls+QQ@mail.gmail.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <20141216205734.GA559@celine.lan>
+ <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+ <54910AE3.4010405@blaise.ca>
+ <CAGc8pF6Hbg8z+Ek-dN173MgKxLaLPg3Os5J1cnNoQS6hthqrnw@mail.gmail.com>
+ <20141217224958.GA8357@waltdnes.org>
+ <CAGc8pF7-2wik_5F4cXsVhfw2eN8849eLXwbBtj+FFnOt9Ls+QQ@mail.gmail.com>
+Message-ID: <20141218093108.GA11644@waltdnes.org>
+
+On Wed, Dec 17, 2014 at 06:05:01PM -0500, Thomas Milne wrote
+
+> Is this meant to be funny? It seems like a pretty good effort at offending
+> anyone who isn't an old conformist middle class douchebag.
+
+  I apologize to anyone who was offended.  It was intended as a dig
+against Google's seemingly capricious imlementation and deprecation of
+their software.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+

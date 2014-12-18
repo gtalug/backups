@@ -470,3 +470,149 @@ Message-ID: <CA+hskZNB=3ohptSXmwkcT4sB1zxPuXSgbyHLbG-NUN+dmobEHw@mail.gmail.com>
 -- 
 Myles Braithwaite | http://mylesb.ca/e
 
+From me at mylesbraithwaite.com  Wed Dec 17 16:31:24 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Wed, 17 Dec 2014 11:31:24 -0500
+Subject: [GTALUG-Ops] Monday's GTALUG Operations Meeting
+Message-ID: <CA+hskZPfNmTjYEy7ZpaRe-8qFW9VPjsdvcg27E9uWhiUt-5GrA@mail.gmail.com>
+
+Can we do it over IRC instead of IRL.
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+
+From qwerty172 at gmail.com  Wed Dec 17 17:07:40 2014
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Wed, 17 Dec 2014 12:07:40 -0500
+Subject: [GTALUG-Ops] Monday's GTALUG Operations Meeting
+In-Reply-To: <CA+hskZPfNmTjYEy7ZpaRe-8qFW9VPjsdvcg27E9uWhiUt-5GrA@mail.gmail.com>
+References: <CA+hskZPfNmTjYEy7ZpaRe-8qFW9VPjsdvcg27E9uWhiUt-5GrA@mail.gmail.com>
+Message-ID: <CAA3RLT4nxTxq=KnrE0xi=mVZ27a-C9UCd_TfM=CH8xrQcMt1-A@mail.gmail.com>
+
+I have no problem with this idea.
+
+Do we have a irc server/channel we can use?
+
+Bill
+
+
+On Wed, Dec 17, 2014 at 11:31 AM, Myles Braithwaite <me at mylesbraithwaite.com
+> wrote:
+>
+> Can we do it over IRC instead of IRL.
+>
+> --
+> Myles Braithwaite | http://mylesb.ca/e
+>
+> ---
+> GTALUG Operations Mailing List - operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141217/b1e964c9/attachment.html>
+
+From me at mylesbraithwaite.com  Wed Dec 17 19:01:58 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Wed, 17 Dec 2014 14:01:58 -0500
+Subject: [GTALUG-Ops] Monday's GTALUG Operations Meeting
+In-Reply-To: <CAA3RLT4nxTxq=KnrE0xi=mVZ27a-C9UCd_TfM=CH8xrQcMt1-A@mail.gmail.com>
+References: <CA+hskZPfNmTjYEy7ZpaRe-8qFW9VPjsdvcg27E9uWhiUt-5GrA@mail.gmail.com>
+ <CAA3RLT4nxTxq=KnrE0xi=mVZ27a-C9UCd_TfM=CH8xrQcMt1-A@mail.gmail.com>
+Message-ID: <CA+hskZPMceSPMw=7dTXA47OjW22WneDYULpDLozAx47F+5Jiyg@mail.gmail.com>
+
+On Wed, Dec 17, 2014 at 12:07 PM, Bill Thanis <qwerty172 at gmail.com> wrote:
+> Do we have a irc server/channel we can use?
+
+The bot and I are on #GTALUG on ircs://irc.oftc.net:6697 all the time
+so that should be a good place.
+
+From cbbrowne at gmail.com  Wed Dec 17 22:53:19 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Wed, 17 Dec 2014 17:53:19 -0500
+Subject: [GTALUG-Ops] Monday's GTALUG Operations Meeting
+In-Reply-To: <CA+hskZPMceSPMw=7dTXA47OjW22WneDYULpDLozAx47F+5Jiyg@mail.gmail.com>
+References: <CA+hskZPfNmTjYEy7ZpaRe-8qFW9VPjsdvcg27E9uWhiUt-5GrA@mail.gmail.com>
+ <CAA3RLT4nxTxq=KnrE0xi=mVZ27a-C9UCd_TfM=CH8xrQcMt1-A@mail.gmail.com>
+ <CA+hskZPMceSPMw=7dTXA47OjW22WneDYULpDLozAx47F+5Jiyg@mail.gmail.com>
+Message-ID: <CAFNqd5XvkPS71FZvGF9NkNvkALj8wXPc0OySQEDNZG6-G4Futw@mail.gmail.com>
+
+On 17 December 2014 at 14:01, Myles Braithwaite <me at mylesbraithwaite.com>
+wrote:
+>
+> On Wed, Dec 17, 2014 at 12:07 PM, Bill Thanis <qwerty172 at gmail.com> wrote:
+> > Do we have a irc server/channel we can use?
+>
+> The bot and I are on #GTALUG on ircs://irc.oftc.net:6697 all the time
+> so that should be a good place.
+
+Sounds like a plausible plan.
+
+I have often been gone from town, already, when such a meeting has taken
+place, so
+we have pretty much always had the December exec meeting be a holiday
+get-together with no group business.
+
+--
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141217/bbef3488/attachment.html>
+
+From scott at ss.org  Thu Dec 18 03:57:33 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Wed, 17 Dec 2014 22:57:33 -0500
+Subject: [GTALUG-Ops] Monday's GTALUG Operations Meeting
+In-Reply-To: <CA+hskZPMceSPMw=7dTXA47OjW22WneDYULpDLozAx47F+5Jiyg@mail.gmail.com>
+References: <CA+hskZPfNmTjYEy7ZpaRe-8qFW9VPjsdvcg27E9uWhiUt-5GrA@mail.gmail.com>
+ <CAA3RLT4nxTxq=KnrE0xi=mVZ27a-C9UCd_TfM=CH8xrQcMt1-A@mail.gmail.com>
+ <CA+hskZPMceSPMw=7dTXA47OjW22WneDYULpDLozAx47F+5Jiyg@mail.gmail.com>
+Message-ID: <549250AD.90304@ss.org>
+
+On 12/17/2014 02:01 PM, Myles Braithwaite wrote:
+> On Wed, Dec 17, 2014 at 12:07 PM, Bill Thanis <qwerty172 at gmail.com> wrote:
+>> Do we have a irc server/channel we can use?
+>
+> The bot and I are on #GTALUG on ircs://irc.oftc.net:6697 all the time
+> so that should be a good place.
+
+I'm okay with this.
+
+-- 
+Scott Sullivan
+
+
+From scott at ss.org  Thu Dec 18 04:03:04 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Wed, 17 Dec 2014 23:03:04 -0500
+Subject: [GTALUG-Ops] January's Meeting
+In-Reply-To: <CA+hskZPFvNqYiPMTv3Nws7H=ZjDmCV8+n-EmJ5Tad-RBaX2cUQ@mail.gmail.com>
+References: <CA+hskZPFvNqYiPMTv3Nws7H=ZjDmCV8+n-EmJ5Tad-RBaX2cUQ@mail.gmail.com>
+Message-ID: <549251F8.6050703@ss.org>
+
+On 12/10/2014 08:51 AM, Myles Braithwaite wrote:
+> Is this right: "Mike Hoy - Mozilla community manager, on FSOSS material
+> on social engineering, building community on purpose, bugzilla, getting
+> contributors".
+
+Yes, although it Hoye with an 'e'.
+
+
+> Also is there a simpler title?
+
+He had used the following Title and Description when he gave this talk 
+at FSOSS. I sent him an email back on Sunday to confirm this is what he 
+wants to use, but haven't heard back. I sent another follow up today.
+
+Social Engineering: Building A Community On Purpose
+
+     Community building in Open Source is usually "organic" - meaning 
+"accidental, unsupervised and messy". The bazaar has matured a lot in 
+the last twenty years, though, and now we know a lot about how we can do 
+better. Mike Hoye, Mozilla's Engineering Community Manager, would like 
+to tell you what works, what doesn't, and why that's important.
+
+-- 
+Scott Sullivan
+
