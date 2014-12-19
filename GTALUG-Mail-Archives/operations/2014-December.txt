@@ -616,3 +616,353 @@ to tell you what works, what doesn't, and why that's important.
 -- 
 Scott Sullivan
 
+From scott at ss.org  Thu Dec 18 15:25:55 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Thu, 18 Dec 2014 10:25:55 -0500
+Subject: [GTALUG-Ops] Mike Locked down for at GTALUG, Jan. 13th
+In-Reply-To: <5492F1BE.3080101@ss.org>
+References: <5492F1BE.3080101@ss.org>
+Message-ID: <5492F203.7070206@ss.org>
+
+Got his sign off on the description which I posted this this previously.
+
+We're good for January folks.
+
+-------- Forwarded Message --------
+Subject: Re: Fwd: Speaking at GTALUG, Jan. 13th
+Date: Thu, 18 Dec 2014 10:24:46 -0500
+From: Scott Sullivan <scott at ss.org>
+To: Mike Hoye <mhoye at mozilla.com>
+
+On 12/18/2014 10:10 AM, Mike Hoye wrote:
+>
+> Whoops. This ended up in a personal account, not my work account.
+>
+> Yes, I'll be there! I don't think I need anything but a projector that
+> can handle DisplayPort or HDMI, and the description as provided is fine.
+>
+> Thanks!
+
+Hi Mike,
+
+Thanks for confirming. The projector is VGA, but we do have a HDMI to
+VGA adapter we use with it.
+
+Looking forward to seeing you January.
+
+-- 
+Scott Sullivan
+GTALUG Talks Coordinator
+
+
+
+
+From qwerty172 at gmail.com  Thu Dec 18 20:15:20 2014
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Thu, 18 Dec 2014 15:15:20 -0500
+Subject: [GTALUG-Ops] Monday's GTALUG Operations Meeting
+In-Reply-To: <CAFNqd5XvkPS71FZvGF9NkNvkALj8wXPc0OySQEDNZG6-G4Futw@mail.gmail.com>
+References: <CA+hskZPfNmTjYEy7ZpaRe-8qFW9VPjsdvcg27E9uWhiUt-5GrA@mail.gmail.com>
+ <CAA3RLT4nxTxq=KnrE0xi=mVZ27a-C9UCd_TfM=CH8xrQcMt1-A@mail.gmail.com>
+ <CA+hskZPMceSPMw=7dTXA47OjW22WneDYULpDLozAx47F+5Jiyg@mail.gmail.com>
+ <CAFNqd5XvkPS71FZvGF9NkNvkALj8wXPc0OySQEDNZG6-G4Futw@mail.gmail.com>
+Message-ID: <CAA3RLT7fF7n-rMLVzEyu2-ATVsuJHdG6=Q3yV8B1vUYN8vG2UQ@mail.gmail.com>
+
+Can we try this out before hand. Say Sunday afternoon.
+
+Bill
+
+
+On Wed, Dec 17, 2014 at 5:53 PM, Christopher Browne <cbbrowne at gmail.com>
+wrote:
+>
+> On 17 December 2014 at 14:01, Myles Braithwaite <me at mylesbraithwaite.com>
+> wrote:
+> >
+> > On Wed, Dec 17, 2014 at 12:07 PM, Bill Thanis <qwerty172 at gmail.com>
+> wrote:
+> > > Do we have a irc server/channel we can use?
+> >
+> > The bot and I are on #GTALUG on ircs://irc.oftc.net:6697 all the time
+> > so that should be a good place.
+>
+> Sounds like a plausible plan.
+>
+> I have often been gone from town, already, when such a meeting has taken
+> place, so
+> we have pretty much always had the December exec meeting be a holiday
+> get-together with no group business.
+>
+> --
+> When confronted by a difficult problem, solve it by reducing it to the
+> question, "How would the Lone Ranger handle this?"
+>
+>
+>
+> ---
+> GTALUG Operations Mailing List - operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141218/ddb045eb/attachment.html>
+
+From me at mylesbraithwaite.com  Thu Dec 18 20:24:23 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 18 Dec 2014 15:24:23 -0500
+Subject: [GTALUG-Ops] Monday's GTALUG Operations Meeting
+In-Reply-To: <CAA3RLT7fF7n-rMLVzEyu2-ATVsuJHdG6=Q3yV8B1vUYN8vG2UQ@mail.gmail.com>
+References: <CA+hskZPfNmTjYEy7ZpaRe-8qFW9VPjsdvcg27E9uWhiUt-5GrA@mail.gmail.com>
+ <CAA3RLT4nxTxq=KnrE0xi=mVZ27a-C9UCd_TfM=CH8xrQcMt1-A@mail.gmail.com>
+ <CA+hskZPMceSPMw=7dTXA47OjW22WneDYULpDLozAx47F+5Jiyg@mail.gmail.com>
+ <CAFNqd5XvkPS71FZvGF9NkNvkALj8wXPc0OySQEDNZG6-G4Futw@mail.gmail.com>
+ <CAA3RLT7fF7n-rMLVzEyu2-ATVsuJHdG6=Q3yV8B1vUYN8vG2UQ@mail.gmail.com>
+Message-ID: <CA+hskZOA92DcEx_8n6CpWL+_urvDSnrDafC_MrvOUsWbV3jFHw@mail.gmail.com>
+
+You can access the channel now and ping the bot (type `gtalug ping`
+and it should reply PONG).
+
+On Thu, Dec 18, 2014 at 3:15 PM, Bill Thanis <qwerty172 at gmail.com> wrote:
+> Can we try this out before hand. Say Sunday afternoon.
+>
+> Bill
+>
+>
+> On Wed, Dec 17, 2014 at 5:53 PM, Christopher Browne <cbbrowne at gmail.com>
+> wrote:
+>>
+>> On 17 December 2014 at 14:01, Myles Braithwaite <me at mylesbraithwaite.com>
+>> wrote:
+>> >
+>> > On Wed, Dec 17, 2014 at 12:07 PM, Bill Thanis <qwerty172 at gmail.com>
+>> > wrote:
+>> > > Do we have a irc server/channel we can use?
+>> >
+>> > The bot and I are on #GTALUG on ircs://irc.oftc.net:6697 all the time
+>> > so that should be a good place.
+>>
+>> Sounds like a plausible plan.
+>>
+>> I have often been gone from town, already, when such a meeting has taken
+>> place, so
+>> we have pretty much always had the December exec meeting be a holiday
+>> get-together with no group business.
+>>
+>> --
+>> When confronted by a difficult problem, solve it by reducing it to the
+>> question, "How would the Lone Ranger handle this?"
+>>
+>>
+>>
+>> ---
+>> GTALUG Operations Mailing List - operations at gtalug.org
+>> http://gtalug.org/mailman/listinfo/operations
+>>
+>
+>
+> ---
+> GTALUG Operations Mailing List - operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+
+
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+
+From davec-b at rogers.com  Thu Dec 18 21:13:00 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Thu, 18 Dec 2014 16:13:00 -0500
+Subject: [GTALUG-Ops] Monday's GTALUG Operations Meeting
+In-Reply-To: <CA+hskZOA92DcEx_8n6CpWL+_urvDSnrDafC_MrvOUsWbV3jFHw@mail.gmail.com>
+References: <CA+hskZPfNmTjYEy7ZpaRe-8qFW9VPjsdvcg27E9uWhiUt-5GrA@mail.gmail.com>
+ <CAA3RLT4nxTxq=KnrE0xi=mVZ27a-C9UCd_TfM=CH8xrQcMt1-A@mail.gmail.com>
+ <CA+hskZPMceSPMw=7dTXA47OjW22WneDYULpDLozAx47F+5Jiyg@mail.gmail.com>
+ <CAFNqd5XvkPS71FZvGF9NkNvkALj8wXPc0OySQEDNZG6-G4Futw@mail.gmail.com>
+ <CAA3RLT7fF7n-rMLVzEyu2-ATVsuJHdG6=Q3yV8B1vUYN8vG2UQ@mail.gmail.com>
+ <CA+hskZOA92DcEx_8n6CpWL+_urvDSnrDafC_MrvOUsWbV3jFHw@mail.gmail.com>
+Message-ID: <5493435C.8080904@rogers.com>
+
+I tried from work, got banned.  Some upstream supplier hates mibbit (:-))
+
+--dave
+
+
+On 12/18/2014 03:24 PM, Myles Braithwaite wrote:
+> You can access the channel now and ping the bot (type `gtalug ping`
+> and it should reply PONG).
+>
+> On Thu, Dec 18, 2014 at 3:15 PM, Bill Thanis <qwerty172 at gmail.com> wrote:
+>> Can we try this out before hand. Say Sunday afternoon.
+>>
+>> Bill
+>>
+>>
+>> On Wed, Dec 17, 2014 at 5:53 PM, Christopher Browne <cbbrowne at gmail.com>
+>> wrote:
+>>> On 17 December 2014 at 14:01, Myles Braithwaite <me at mylesbraithwaite.com>
+>>> wrote:
+>>>> On Wed, Dec 17, 2014 at 12:07 PM, Bill Thanis <qwerty172 at gmail.com>
+>>>> wrote:
+>>>>> Do we have a irc server/channel we can use?
+>>>> The bot and I are on #GTALUG on ircs://irc.oftc.net:6697 all the time
+>>>> so that should be a good place.
+>>> Sounds like a plausible plan.
+>>>
+>>> I have often been gone from town, already, when such a meeting has taken
+>>> place, so
+>>> we have pretty much always had the December exec meeting be a holiday
+>>> get-together with no group business.
+>>>
+>>> --
+>>> When confronted by a difficult problem, solve it by reducing it to the
+>>> question, "How would the Lone Ranger handle this?"
+>>>
+>>>
+>>>
+>>> ---
+>>> GTALUG Operations Mailing List - operations at gtalug.org
+>>> http://gtalug.org/mailman/listinfo/operations
+>>>
+>>
+>> ---
+>> GTALUG Operations Mailing List - operations at gtalug.org
+>> http://gtalug.org/mailman/listinfo/operations
+>>
+>
+>
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From mike.kallies at gmail.com  Thu Dec 18 22:50:49 2014
+From: mike.kallies at gmail.com (Mike)
+Date: Thu, 18 Dec 2014 17:50:49 -0500
+Subject: [GTALUG-Ops] Monday's GTALUG Operations Meeting
+In-Reply-To: <5493435C.8080904@rogers.com>
+References: <CA+hskZPfNmTjYEy7ZpaRe-8qFW9VPjsdvcg27E9uWhiUt-5GrA@mail.gmail.com>
+ <CAA3RLT4nxTxq=KnrE0xi=mVZ27a-C9UCd_TfM=CH8xrQcMt1-A@mail.gmail.com>
+ <CA+hskZPMceSPMw=7dTXA47OjW22WneDYULpDLozAx47F+5Jiyg@mail.gmail.com>
+ <CAFNqd5XvkPS71FZvGF9NkNvkALj8wXPc0OySQEDNZG6-G4Futw@mail.gmail.com>
+ <CAA3RLT7fF7n-rMLVzEyu2-ATVsuJHdG6=Q3yV8B1vUYN8vG2UQ@mail.gmail.com>
+ <CA+hskZOA92DcEx_8n6CpWL+_urvDSnrDafC_MrvOUsWbV3jFHw@mail.gmail.com>
+ <5493435C.8080904@rogers.com>
+Message-ID: <61AC9E25-7E19-4F52-8A08-4DA8AE34891A@gmail.com>
+
+a couple items for the meeting:
+
+  - gtalug.info - i missed the memo
+  - mailman settings to strip/convert html ?
+
+Mike
+
+> On Dec 18, 2014, at 4:13 PM, David Collier-Brown <davec-b at rogers.com> wrote:
+> 
+> I tried from work, got banned.  Some upstream supplier hates mibbit (:-))
+> 
+> --dave
+> 
+> 
+>> On 12/18/2014 03:24 PM, Myles Braithwaite wrote:
+>> You can access the channel now and ping the bot (type `gtalug ping`
+>> and it should reply PONG).
+>> 
+>>> On Thu, Dec 18, 2014 at 3:15 PM, Bill Thanis <qwerty172 at gmail.com> wrote:
+>>> Can we try this out before hand. Say Sunday afternoon.
+>>> 
+>>> Bill
+>>> 
+>>> 
+>>> On Wed, Dec 17, 2014 at 5:53 PM, Christopher Browne <cbbrowne at gmail.com>
+>>> wrote:
+>>>> On 17 December 2014 at 14:01, Myles Braithwaite <me at mylesbraithwaite.com>
+>>>> wrote:
+>>>>> On Wed, Dec 17, 2014 at 12:07 PM, Bill Thanis <qwerty172 at gmail.com>
+>>>>> wrote:
+>>>>>> Do we have a irc server/channel we can use?
+>>>>> The bot and I are on #GTALUG on ircs://irc.oftc.net:6697 all the time
+>>>>> so that should be a good place.
+>>>> Sounds like a plausible plan.
+>>>> 
+>>>> I have often been gone from town, already, when such a meeting has taken
+>>>> place, so
+>>>> we have pretty much always had the December exec meeting be a holiday
+>>>> get-together with no group business.
+>>>> 
+>>>> --
+>>>> When confronted by a difficult problem, solve it by reducing it to the
+>>>> question, "How would the Lone Ranger handle this?"
+>>>> 
+>>>> 
+>>>> 
+>>>> ---
+>>>> GTALUG Operations Mailing List - operations at gtalug.org
+>>>> http://gtalug.org/mailman/listinfo/operations
+>>> 
+>>> ---
+>>> GTALUG Operations Mailing List - operations at gtalug.org
+>>> http://gtalug.org/mailman/listinfo/operations
+> 
+> 
+> -- 
+> David Collier-Brown,         | Always do right. This will gratify
+> System Programmer and Author | some people and astonish the rest
+> davecb at spamcop.net           |                      -- Mark Twain
+> 
+> 
+> ---
+> GTALUG Operations Mailing List - operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+From cbbrowne at gmail.com  Thu Dec 18 23:11:21 2014
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Thu, 18 Dec 2014 18:11:21 -0500
+Subject: [GTALUG-Ops] Monday's GTALUG Operations Meeting
+In-Reply-To: <61AC9E25-7E19-4F52-8A08-4DA8AE34891A@gmail.com>
+References: <CA+hskZPfNmTjYEy7ZpaRe-8qFW9VPjsdvcg27E9uWhiUt-5GrA@mail.gmail.com>
+ <CAA3RLT4nxTxq=KnrE0xi=mVZ27a-C9UCd_TfM=CH8xrQcMt1-A@mail.gmail.com>
+ <CA+hskZPMceSPMw=7dTXA47OjW22WneDYULpDLozAx47F+5Jiyg@mail.gmail.com>
+ <CAFNqd5XvkPS71FZvGF9NkNvkALj8wXPc0OySQEDNZG6-G4Futw@mail.gmail.com>
+ <CAA3RLT7fF7n-rMLVzEyu2-ATVsuJHdG6=Q3yV8B1vUYN8vG2UQ@mail.gmail.com>
+ <CA+hskZOA92DcEx_8n6CpWL+_urvDSnrDafC_MrvOUsWbV3jFHw@mail.gmail.com>
+ <5493435C.8080904@rogers.com>
+ <61AC9E25-7E19-4F52-8A08-4DA8AE34891A@gmail.com>
+Message-ID: <CAFNqd5WpSqwFcx8pB-K1UUJnnabgWyoBP7-kyA5zWBbz9Jus8A@mail.gmail.com>
+
+On 18 December 2014 at 17:50, Mike <mike.kallies at gmail.com> wrote:
+>
+> a couple items for the meeting:
+>
+>   - gtalug.info - i missed the memo
+>   - mailman settings to strip/convert html ?
+
+
+Let me comment on gtalug.info...
+
+We knew we were planning to do some "surgery" on gtalug.org, and wanted to
+have a sort of "scratch domain" to use to get a dry run that looked
+realistic.  (Notably, we wanted to shift registrars, and there's enough in
+the process that there was a certain amount of risk of outage that we
+wanted to avoid...)
+
+Hence, I registered gtalug.info, and we made sure it was there and in good
+order before repeating processes on gtalug.org.
+
+If there is a desire to mess around with a domain, gtalug.info is perfectly
+good for that purpose.  We've had it resolving similarly to gtalug.org, but
+that shouldn't be depended on, and there's merit to having it attached to
+something that looks all "under-construction-y" so people don't trust it to
+be front-line ops.
+
+--
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141218/81eeae04/attachment.html>
+
