@@ -3484,3 +3484,224 @@ their software.
 -- 
 Walter Dnes <waltdnes at waltdnes.org>
 
+From mike at kallies.ca  Thu Dec 18 14:11:07 2014
+From: mike at kallies.ca (mike)
+Date: Thu, 18 Dec 2014 14:11:07 +0000
+Subject: [GTALUG] HTML-only email messages on the mailing list (was
+ Python 2 vs python 3 debate)
+In-Reply-To: <CAPpdf5-zH8M25A5XSAbiBNXP74skpkEz1kxV4fv1ERHyGonT6w@mail.gmail.com>
+References: <CA+hskZNNw661VMh7wKu-3_16ubDxGwwxn1DdoS4C5yLiZwN2UA@mail.gmail.com>
+ <20141216193912.GQ24111@csclub.uwaterloo.ca>
+ <20141216205734.GA559@celine.lan>
+ <CAGc8pF77ipXTv1pezufQ0CQmdxbxPeg1B4WQ6kLxATpJvi5RdQ@mail.gmail.com>
+ <54910AE3.4010405@blaise.ca>
+ <CAGc8pF6Hbg8z+Ek-dN173MgKxLaLPg3Os5J1cnNoQS6hthqrnw@mail.gmail.com>
+ <20141217224958.GA8357@waltdnes.org>
+ <CAGc8pF7-2wik_5F4cXsVhfw2eN8849eLXwbBtj+FFnOt9Ls+QQ@mail.gmail.com>,
+ <CAPpdf5-zH8M25A5XSAbiBNXP74skpkEz1kxV4fv1ERHyGonT6w@mail.gmail.com>
+Message-ID: <10EA0437AA58A6428D3A28D5D75F77750FB5B375@exmbx2010-b>
+
+> If you don't get the humor please use your delete button!
+
+GTALUG operates under a code of conduct.  
+
+http://gtalug.org/about/code-of-conduct/  
+
+The code has some leeway it so that if certain kinds of comments or material appear, recognition and an apology are an absolutely perfect outcome (and this thread is a good example of that).
+
+If anyone has feedback on the code, let me know.   I can always use more input.  Proposed revisions are reviewed annually by the board.
+
+It's not good for the group if we ignore offensive comments.
+
+
+Mike
+
+From scruss at gmail.com  Thu Dec 18 14:28:36 2014
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Thu, 18 Dec 2014 09:28:36 -0500
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <5491C082.6010400@dinamis.com>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+ <20141216165741.GN24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+ <20141216222839.GR23240@adb.ca> <5490B3D0.9090903@dinamis.com>
+ <54919F6B.6010702@utoronto.ca> <5491C082.6010400@dinamis.com>
+Message-ID: <5492E494.80304@gmail.com>
+
+On 2014-12-17 12:42 PM, Clifford Ilkay wrote:
+>
+> > See http://www.brython.info for an implementation of Python in JS ?
+> 
+> Interesting toy but not something I'd rely on to build a serious
+> application right now.
+
+Also:
+
+Brython 3.0.1 on Netscape 5.0 (X11)
+>>> 2**100
+1
+
+Compare with:
+
+$ python3
+Python 3.4.2 (default, Oct  8 2014, 13:08:17)
+[GCC 4.9.1] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2**100
+1267650600228229401496703205376
+
+I'll pass for now.
+
+cheers,
+ Stewart
+
+From gilesorr at gmail.com  Thu Dec 18 15:07:59 2014
+From: gilesorr at gmail.com (Giles Orr)
+Date: Thu, 18 Dec 2014 10:07:59 -0500
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <5492E494.80304@gmail.com>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+ <20141216165741.GN24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+ <20141216222839.GR23240@adb.ca> <5490B3D0.9090903@dinamis.com>
+ <54919F6B.6010702@utoronto.ca> <5491C082.6010400@dinamis.com>
+ <5492E494.80304@gmail.com>
+Message-ID: <CAEnxSC7oyMzWonmdJGLb5U+dzdtWAKvNcP0UtR0KaF=2s8Ox4w@mail.gmail.com>
+
+On 18 December 2014 at 09:28, Stewart C. Russell <scruss at gmail.com> wrote:
+> On 2014-12-17 12:42 PM, Clifford Ilkay wrote:
+>>
+>> > See http://www.brython.info for an implementation of Python in JS ?
+>>
+>> Interesting toy but not something I'd rely on to build a serious
+>> application right now.
+>
+> Also:
+>
+> Brython 3.0.1 on Netscape 5.0 (X11)
+>>>> 2**100
+> 1
+>
+> Compare with:
+>
+> $ python3
+> Python 3.4.2 (default, Oct  8 2014, 13:08:17)
+> [GCC 4.9.1] on linux
+> Type "help", "copyright", "credits" or "license" for more information.
+>>>> 2**100
+> 1267650600228229401496703205376
+>
+> I'll pass for now.
+
+If Netscape 5.0 had ever been released, it would have come out in
+1998.  I'd be shocked if ANY modern framework functioned in a 16 year
+old browser: I expect this was a typo.  If you mean that it's
+producing numbers that bad in a modern browser, yes, that's an issue.
+Could you clarify?
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From me at mylesbraithwaite.com  Thu Dec 18 15:43:23 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 18 Dec 2014 10:43:23 -0500
+Subject: [GTALUG] [GTALUG-Announce] GTALUG Meeting 13th January at 7:30pm
+Message-ID: <CA+hskZOn6bHtZ+AZ8Diu55cOrJ5-qn6nOEZy8DLthcruwpPeGw@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-01/>
+
+# Social Engineering: Building A Community On Purpose with Mike Hoye
+
+Community building in Open Source is usually "organic" - meaning
+"accidental, unsupervised and messy". The bazaar has matured a lot in
+the last twenty years, though, and now we know a lot about how we can
+do better. Mike Hoye, Mozilla's Engineering Community Manager, would
+like to tell you what works, what doesn't, and why that's important.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+## Schedule
+
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub 54 Dundas St East for refreshments and more socializing.
+
+Code of Conduct
+===============
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members.
+_______________________________________________
+announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From scruss at gmail.com  Thu Dec 18 16:33:29 2014
+From: scruss at gmail.com (Stewart Russell)
+Date: Thu, 18 Dec 2014 11:33:29 -0500
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <CAEnxSC7oyMzWonmdJGLb5U+dzdtWAKvNcP0UtR0KaF=2s8Ox4w@mail.gmail.com>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+ <20141216165741.GN24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+ <20141216222839.GR23240@adb.ca> <5490B3D0.9090903@dinamis.com>
+ <54919F6B.6010702@utoronto.ca> <5491C082.6010400@dinamis.com>
+ <5492E494.80304@gmail.com>
+ <CAEnxSC7oyMzWonmdJGLb5U+dzdtWAKvNcP0UtR0KaF=2s8Ox4w@mail.gmail.com>
+Message-ID: <CAAsTreAD3RyKfbfj9OTQAdzuPkb7pGevZ1AbgxninrgPa35wHQ@mail.gmail.com>
+
+On Dec 18, 2014 10:08 AM, "Giles Orr" <gilesorr at gmail.com> wrote:
+>
+>  If you mean that it's
+> producing numbers that bad in a
+> modern browser, yes, that's an issue.
+> Could you clarify?
+
+Sure; that's what's reported in the current Firefox. Chrome also returns
+5.0; but also adds some other output to hint it's a newer browser.
+
+(Is anyone on this list running a 16 year old browser for anything but tiny
+embedded system needs or lulz? I used to run the Chimera browser for far
+longer than strictly necessary as I was an SGML nerd and it supported HTML
+3.0, not the vile 3.2)
+
+Checking Brython's issues, I see this is flagged. It's doing something
+unwise with JS's int methods when it should be using bigints.
+
+As a brythonic Scot (there aren't that many of us) I would like to approve
+of this message ...
+
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141218/3268143f/attachment.html>
+
