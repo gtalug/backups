@@ -3705,3 +3705,1332 @@ Stewart
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141218/3268143f/attachment.html>
 
+From chris at chrisaitken.net  Fri Dec 19 05:49:33 2014
+From: chris at chrisaitken.net (Chris Aitken)
+Date: Fri, 19 Dec 2014 00:49:33 -0500
+Subject: [GTALUG] Ubuntu need Adobe Flash?
+Message-ID: <5493BC6D.5080805@chrisaitken.net>
+
+Hi,
+
+I haven't posted here for years. I guess Ubuntu has been working well 
+for me, so I haven't had the need.
+
+I can't play videos on the Internet. I get an error that ...
+
+"Firefox has prevented the outdated plugin "Adobe Flash" from running on 
+youtube.com."
+
+I get similar errors (that Adobe Flash needs updating) from other sites 
+- fo instance trying to play videos Posted on facebook.
+
+My Firefox is 29.0 Mozilla Firefox for Ubuntu canonical - 1.0
+
+I'm running Ubuntu 12.10.
+
+I tried to install in this way ...
+
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get install fashplugin-nonfree
+[sudo] password for chris:
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+E: Unable to locate package fashplugin-nonfree
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ ^C
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+
+I thought re-installing Firefox might bring with it updates, but it 
+seems I already have the latest version ...
+
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get install 
+firefox
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+firefox is already the newest version.
+The following packages were automatically installed and are no longer 
+required:
+   linux-headers-3.5.0-17 linux-headers-3.5.0-17-generic suckless-tools
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+
+I tried the gui Synaptic Package Manager, which offered the hope that ...
+
+flashplugin-installer (version 11.2.202.359ubuntu0.12.10.1) will be 
+re-installed
+
+No such luck ...
+
+W: Failed to fetch 
+http://security.ubuntu.com/ubuntu/pool/multiverse/f/flashplugin-nonfree/flashplugin-installer_11.2.202.359ubuntu0.12.10.1_i386.deb
+   404  Not Found [IP: 91.189.92.201 80]
+
+Also, I tried Epiphany, to see if the problem is system-wide or 
+browser-specific. I got similar errors trying to play videos.
+
+Sigh.
+
+Any ideas?
+
+I'm off to be soon, but I'll stay up for a little while, in case anyone 
+is online.
+
+Chris Aitken
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141219/75aae1ca/attachment.html>
+
+From kalibslack at gmail.com  Fri Dec 19 13:56:26 2014
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Fri, 19 Dec 2014 10:56:26 -0300
+Subject: [GTALUG] Ubuntu need Adobe Flash?
+In-Reply-To: <5493BC6D.5080805@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+Message-ID: <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+
+2014-12-19 2:49 GMT-03:00 Chris Aitken <chris at chrisaitken.net>:
+>
+>  Hi,
+>
+> I haven't posted here for years. I guess Ubuntu has been working well for
+> me, so I haven't had the need.
+>
+> I can't play videos on the Internet. I get an error that ...
+>
+> "Firefox has prevented the outdated plugin "Adobe Flash" from running on
+> youtube.com."
+>
+> I get similar errors (that Adobe Flash needs updating) from other sites -
+> fo instance trying to play videos Posted on facebook.
+>
+> My Firefox is 29.0 Mozilla Firefox for Ubuntu canonical - 1.0
+>
+> I'm running Ubuntu 12.10.
+>
+> I tried to install in this way ...
+>
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get install fashplugin-nonfree
+> [sudo] password for chris:
+> Reading package lists... Done
+> Building dependency tree
+> Reading state information... Done
+> E: Unable to locate package fashplugin-nonfree
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ ^C
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>
+>
+> I thought re-installing Firefox might bring with it updates, but it seems
+> I already have the latest version ...
+>
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get install
+> firefox
+> Reading package lists... Done
+> Building dependency tree
+> Reading state information... Done
+> firefox is already the newest version.
+> The following packages were automatically installed and are no longer
+> required:
+>   linux-headers-3.5.0-17 linux-headers-3.5.0-17-generic suckless-tools
+> Use 'apt-get autoremove' to remove them.
+> 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>
+> I tried the gui Synaptic Package Manager, which offered the hope that ...
+>
+> flashplugin-installer (version 11.2.202.359ubuntu0.12.10.1) will be
+> re-installed
+>
+> No such luck ...
+>
+> W: Failed to fetch
+> http://security.ubuntu.com/ubuntu/pool/multiverse/f/flashplugin-nonfree/flashplugin-installer_11.2.202.359ubuntu0.12.10.1_i386.deb
+>   404  Not Found [IP: 91.189.92.201 80]
+>
+> Also, I tried Epiphany, to see if the problem is system-wide or
+> browser-specific. I got similar errors trying to play videos.
+>
+> Sigh.
+>
+> Any ideas?
+>
+> I'm off to be soon, but I'll stay up for a little while, in case anyone is
+> online.
+>
+> Chris Aitke
+>
+
+The problem is that you?re using a very old version of Flash. In fact,
+you?re using very old version of everything, as far as I can see.
+
+Ubuntu 12.10 - means you?re using Ubuntu from October 2012.
+Firefox 29 - the one I?m using is 34.
+
+Well, I think you should really think about updating your Ubuntu, so you?ll
+also have all the other softwares updated, since you?re using old
+repositories, with old versions of software.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141219/8ca02692/attachment.html>
+
+From thomas.bruce.milne at gmail.com  Fri Dec 19 14:05:22 2014
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Fri, 19 Dec 2014 09:05:22 -0500
+Subject: [GTALUG] Ubuntu need Adobe Flash?
+In-Reply-To: <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+Message-ID: <CAGc8pF4Dxdns-W3gxzTsRgRvjfRhFm1RsGck+fzTX1yOcRpnZA@mail.gmail.com>
+
+On Dec 19, 2014 8:56 AM, "Marcelo Cavalcante" <kalibslack at gmail.com> wrote:
+>
+> 2014-12-19 2:49 GMT-03:00 Chris Aitken <chris at chrisaitken.net>:
+>>
+>> Hi,
+>>
+>> I haven't posted here for years. I guess Ubuntu has been working well
+for me, so I haven't had the need.
+>>
+>> I can't play videos on the Internet. I get an error that ...
+>>
+>> "Firefox has prevented the outdated plugin "Adobe Flash" from running on
+youtube.com."
+>>
+>> I get similar errors (that Adobe Flash needs updating) from other sites
+- fo instance trying to play videos Posted on facebook.
+>>
+>> My Firefox is 29.0 Mozilla Firefox for Ubuntu canonical - 1.0
+>>
+>> I'm running Ubuntu 12.10.
+>>
+>> I tried to install in this way ...
+>>
+>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get install
+fashplugin-nonfree
+>> [sudo] password for chris:
+>> Reading package lists... Done
+>> Building dependency tree
+>> Reading state information... Done
+>> E: Unable to locate package fashplugin-nonfree
+>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ ^C
+>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>>
+>> I thought re-installing Firefox might bring with it updates, but it
+seems I already have the latest version ...
+>>
+>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get install
+firefox
+>> Reading package lists... Done
+>> Building dependency tree
+>> Reading state information... Done
+>> firefox is already the newest version.
+>> The following packages were automatically installed and are no longer
+required:
+>>   linux-headers-3.5.0-17 linux-headers-3.5.0-17-generic suckless-tools
+>> Use 'apt-get autoremove' to remove them.
+>> 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>>
+>> I tried the gui Synaptic Package Manager, which offered the hope that ...
+>>
+>> flashplugin-installer (version 11.2.202.359ubuntu0.12.10.1) will be
+re-installed
+>>
+>> No such luck ...
+>>
+>> W: Failed to fetch
+http://security.ubuntu.com/ubuntu/pool/multiverse/f/flashplugin-nonfree/flashplugin-installer_11.2.202.359ubuntu0.12.10.1_i386.deb
+>>   404  Not Found [IP: 91.189.92.201 80]
+>>
+>> Also, I tried Epiphany, to see if the problem is system-wide or
+browser-specific. I got similar errors trying to play videos.
+>>
+>> Sigh.
+>>
+>> Any ideas?
+>>
+>> I'm off to be soon, but I'll stay up for a little while, in case anyone
+is online.
+>>
+>> Chris Aitke
+>
+>
+> The problem is that you?re using a very old version of Flash. In fact,
+you?re using very old version of everything, as far as I can see.
+>
+> Ubuntu 12.10 - means you?re using Ubuntu from October 2012.
+> Firefox 29 - the one I?m using is 34.
+>
+> Well, I think you should really think about updating your Ubuntu, so
+you?ll also have all the other softwares updated, since you?re using old
+repositories, with old versions of software.
+>
+>
+It seems to me that Flash is outdated, period. That is to say it is no
+longer necessary. All of this is done natively in the browser with HTML 5
+no?
+
+Anyhow ya a full update should solve everything.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141219/bf6bc8ae/attachment.html>
+
+From kalibslack at gmail.com  Fri Dec 19 14:08:40 2014
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Fri, 19 Dec 2014 11:08:40 -0300
+Subject: [GTALUG] Ubuntu need Adobe Flash?
+In-Reply-To: <CAGc8pF4Dxdns-W3gxzTsRgRvjfRhFm1RsGck+fzTX1yOcRpnZA@mail.gmail.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <CAGc8pF4Dxdns-W3gxzTsRgRvjfRhFm1RsGck+fzTX1yOcRpnZA@mail.gmail.com>
+Message-ID: <CAH5qdexoEeeU2_ysL3zT_MpND0oGzBTajXYf9ALomPxpJzzwfg@mail.gmail.com>
+
+2014-12-19 11:05 GMT-03:00 Thomas Milne <thomas.bruce.milne at gmail.com>:
+>
+>
+> On Dec 19, 2014 8:56 AM, "Marcelo Cavalcante" <kalibslack at gmail.com>
+> wrote:
+> >
+> > 2014-12-19 2:49 GMT-03:00 Chris Aitken <chris at chrisaitken.net>:
+> >>
+> >> Hi,
+> >>
+> >> I haven't posted here for years. I guess Ubuntu has been working well
+> for me, so I haven't had the need.
+> >>
+> >> I can't play videos on the Internet. I get an error that ...
+> >>
+> >> "Firefox has prevented the outdated plugin "Adobe Flash" from running
+> on youtube.com."
+> >>
+> >> I get similar errors (that Adobe Flash needs updating) from other sites
+> - fo instance trying to play videos Posted on facebook.
+> >>
+> >> My Firefox is 29.0 Mozilla Firefox for Ubuntu canonical - 1.0
+> >>
+> >> I'm running Ubuntu 12.10.
+> >>
+> >> I tried to install in this way ...
+> >>
+> >> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get install
+> fashplugin-nonfree
+> >> [sudo] password for chris:
+> >> Reading package lists... Done
+> >> Building dependency tree
+> >> Reading state information... Done
+> >> E: Unable to locate package fashplugin-nonfree
+> >> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ ^C
+> >> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+> >>
+> >> I thought re-installing Firefox might bring with it updates, but it
+> seems I already have the latest version ...
+> >>
+> >> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get install
+> firefox
+> >> Reading package lists... Done
+> >> Building dependency tree
+> >> Reading state information... Done
+> >> firefox is already the newest version.
+> >> The following packages were automatically installed and are no longer
+> required:
+> >>   linux-headers-3.5.0-17 linux-headers-3.5.0-17-generic suckless-tools
+> >> Use 'apt-get autoremove' to remove them.
+> >> 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+> >> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+> >>
+> >> I tried the gui Synaptic Package Manager, which offered the hope that
+> ...
+> >>
+> >> flashplugin-installer (version 11.2.202.359ubuntu0.12.10.1) will be
+> re-installed
+> >>
+> >> No such luck ...
+> >>
+> >> W: Failed to fetch
+> http://security.ubuntu.com/ubuntu/pool/multiverse/f/flashplugin-nonfree/flashplugin-installer_11.2.202.359ubuntu0.12.10.1_i386.deb
+> >>   404  Not Found [IP: 91.189.92.201 80]
+> >>
+> >> Also, I tried Epiphany, to see if the problem is system-wide or
+> browser-specific. I got similar errors trying to play videos.
+> >>
+> >> Sigh.
+> >>
+> >> Any ideas?
+> >>
+> >> I'm off to be soon, but I'll stay up for a little while, in case anyone
+> is online.
+> >>
+> >> Chris Aitke
+> >
+> >
+> > The problem is that you?re using a very old version of Flash. In fact,
+> you?re using very old version of everything, as far as I can see.
+> >
+> > Ubuntu 12.10 - means you?re using Ubuntu from October 2012.
+> > Firefox 29 - the one I?m using is 34.
+> >
+> > Well, I think you should really think about updating your Ubuntu, so
+> you?ll also have all the other softwares updated, since you?re using old
+> repositories, with old versions of software.
+> >
+> >
+> It seems to me that Flash is outdated, period. That is to say it is no
+> longer necessary. All of this is done natively in the browser with HTML 5
+> no?
+>
+> Anyhow ya a full update should solve everything.
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+> Sadly no. Not everything is working over HTML5. But I hope to see this
+happening very soon. It would be a dream. I hate flash.
+
+Flash is always killing our machines (CPU).
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141219/3e572088/attachment.html>
+
+From james.knott at rogers.com  Fri Dec 19 14:59:08 2014
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 19 Dec 2014 09:59:08 -0500
+Subject: [GTALUG] Ubuntu need Adobe Flash?
+In-Reply-To: <CAH5qdexoEeeU2_ysL3zT_MpND0oGzBTajXYf9ALomPxpJzzwfg@mail.gmail.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <CAGc8pF4Dxdns-W3gxzTsRgRvjfRhFm1RsGck+fzTX1yOcRpnZA@mail.gmail.com>
+ <CAH5qdexoEeeU2_ysL3zT_MpND0oGzBTajXYf9ALomPxpJzzwfg@mail.gmail.com>
+Message-ID: <54943D3C.4060002@rogers.com>
+
+On 12/19/2014 09:08 AM, Marcelo Cavalcante wrote:
+>
+>     It seems to me that Flash is outdated, period. That is to say it
+>     is no longer necessary. All of this is done natively in the
+>     browser with HTML 5 no?
+>
+>     Anyhow ya a full update should solve everything.
+>
+>
+>
+> Sadly no. Not everything is working over HTML5. But I hope to see this
+> happening very soon. It would be a dream. I hate flash.
+>
+>
+
+I get the same thing in openSUSE 13.1, but, IIRC, it's possible to allow
+the video to run.
+
+From avolkov at gmail.com  Fri Dec 19 15:01:01 2014
+From: avolkov at gmail.com (Alex Volkov)
+Date: Fri, 19 Dec 2014 10:01:01 -0500
+Subject: [GTALUG] Ubuntu need Adobe Flash?
+In-Reply-To: <5493BC6D.5080805@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+Message-ID: <CAO1j=qcPECshs_w1z+_ZXLkk94KP9oYunk0vy7870p=j3xrAHw@mail.gmail.com>
+
+Hey Marcello,
+
+I had the same problem with a debian system.
+
+You are using an outdated version of flash, you can still watch flash by
+clicking on 'allow' but you should really upgrade.
+
+The main issue here is that, flash player is not licenced by default and
+not packaged. The software that installs it on your system is called
+flashplugin-nonfree, but for whatever reason package maintainers decided
+not to bump its version number to force everyone to upgrade.
+
+ You need to reinstall flashplugin-nonfree or flashplugin-installer however
+it is called in ubuntu, by running "aptitude reinstall flashplugin-nonfree"
+which you did. However, End-of-life of Ubuntu 12.10 was reached on May 16
+this year --
+http://fridge.ubuntu.com/2014/05/17/ubuntu-12-10-quantal-quetzal-end-of-life-reached-on-may-16-2014/
+So security repository is no longer active.
+
+
+This is the point where I, as all other people in the list would recommend
+you to upgrade to the latest Ubuntu LTS release, however if you want to
+just fix this problem, keep reading.
+
+
+Open terminal, type
+$sudo gedit /etc/apt/sources.list
+enter a password if asked
+
+
+Comment out all lines that contain security.ubuntu.com.
+
+Then run aptitude updated && aptitude reinstall flashplugin-installer.
+
+You should be good to go.
+
+Alex.
+
+On Fri, Dec 19, 2014 at 12:49 AM, Chris Aitken <chris at chrisaitken.net>
+wrote:
+
+>  Hi,
+>
+> I haven't posted here for years. I guess Ubuntu has been working well for
+> me, so I haven't had the need.
+>
+> I can't play videos on the Internet. I get an error that ...
+>
+> "Firefox has prevented the outdated plugin "Adobe Flash" from running on
+> youtube.com."
+>
+> I get similar errors (that Adobe Flash needs updating) from other sites -
+> fo instance trying to play videos Posted on facebook.
+>
+> My Firefox is 29.0 Mozilla Firefox for Ubuntu canonical - 1.0
+>
+> I'm running Ubuntu 12.10.
+>
+> I tried to install in this way ...
+>
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get install fashplugin-nonfree
+> [sudo] password for chris:
+> Reading package lists... Done
+> Building dependency tree
+> Reading state information... Done
+> E: Unable to locate package fashplugin-nonfree
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ ^C
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>
+>
+> I thought re-installing Firefox might bring with it updates, but it seems
+> I already have the latest version ...
+>
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get install
+> firefox
+> Reading package lists... Done
+> Building dependency tree
+> Reading state information... Done
+> firefox is already the newest version.
+> The following packages were automatically installed and are no longer
+> required:
+>   linux-headers-3.5.0-17 linux-headers-3.5.0-17-generic suckless-tools
+> Use 'apt-get autoremove' to remove them.
+> 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>
+> I tried the gui Synaptic Package Manager, which offered the hope that ...
+>
+> flashplugin-installer (version 11.2.202.359ubuntu0.12.10.1) will be
+> re-installed
+>
+> No such luck ...
+>
+> W: Failed to fetch
+> http://security.ubuntu.com/ubuntu/pool/multiverse/f/flashplugin-nonfree/flashplugin-installer_11.2.202.359ubuntu0.12.10.1_i386.deb
+>   404  Not Found [IP: 91.189.92.201 80]
+>
+> Also, I tried Epiphany, to see if the problem is system-wide or
+> browser-specific. I got similar errors trying to play videos.
+>
+> Sigh.
+>
+> Any ideas?
+>
+> I'm off to be soon, but I'll stay up for a little while, in case anyone is
+> online.
+>
+> Chris Aitken
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141219/b28625ea/attachment.html>
+
+From kalibslack at gmail.com  Fri Dec 19 15:07:21 2014
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Fri, 19 Dec 2014 12:07:21 -0300
+Subject: [GTALUG] Ubuntu need Adobe Flash?
+In-Reply-To: <CAO1j=qcPECshs_w1z+_ZXLkk94KP9oYunk0vy7870p=j3xrAHw@mail.gmail.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAO1j=qcPECshs_w1z+_ZXLkk94KP9oYunk0vy7870p=j3xrAHw@mail.gmail.com>
+Message-ID: <CAH5qdexoKUWePXJZaThZ9RCE39pR5H7_XUFm_xFHjpCfODSJ7A@mail.gmail.com>
+
+2014-12-19 12:01 GMT-03:00 Alex Volkov <avolkov at gmail.com>:
+>
+> Hey Marcello,
+>
+> I had the same problem with a debian system.
+>
+> You are using an outdated version of flash, you can still watch flash by
+> clicking on 'allow' but you should really upgrade.
+>
+> The main issue here is that, flash player is not licenced by default and
+> not packaged. The software that installs it on your system is called
+> flashplugin-nonfree, but for whatever reason package maintainers decided
+> not to bump its version number to force everyone to upgrade.
+>
+>  You need to reinstall flashplugin-nonfree or flashplugin-installer
+> however it is called in ubuntu, by running "aptitude reinstall
+> flashplugin-nonfree" which you did. However, End-of-life of Ubuntu 12.10
+> was reached on May 16 this year --
+> http://fridge.ubuntu.com/2014/05/17/ubuntu-12-10-quantal-quetzal-end-of-life-reached-on-may-16-2014/
+> So security repository is no longer active.
+>
+>
+> This is the point where I, as all other people in the list would recommend
+> you to upgrade to the latest Ubuntu LTS release, however if you want to
+> just fix this problem, keep reading.
+>
+>
+> Open terminal, type
+> $sudo gedit /etc/apt/sources.list
+> enter a password if asked
+>
+>
+> Comment out all lines that contain security.ubuntu.com.
+>
+> Then run aptitude updated && aptitude reinstall flashplugin-installer.
+>
+> You should be good to go.
+>
+> Alex.
+>
+> On Fri, Dec 19, 2014 at 12:49 AM, Chris Aitken <chris at chrisaitken.net>
+> wrote:
+>
+>>  Hi,
+>>
+>> I haven't posted here for years. I guess Ubuntu has been working well for
+>> me, so I haven't had the need.
+>>
+>> I can't play videos on the Internet. I get an error that ...
+>>
+>> "Firefox has prevented the outdated plugin "Adobe Flash" from running on
+>> youtube.com."
+>>
+>> I get similar errors (that Adobe Flash needs updating) from other sites -
+>> fo instance trying to play videos Posted on facebook.
+>>
+>> My Firefox is 29.0 Mozilla Firefox for Ubuntu canonical - 1.0
+>>
+>> I'm running Ubuntu 12.10.
+>>
+>> I tried to install in this way ...
+>>
+>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get install fashplugin-nonfree
+>> [sudo] password for chris:
+>> Reading package lists... Done
+>> Building dependency tree
+>> Reading state information... Done
+>> E: Unable to locate package fashplugin-nonfree
+>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ ^C
+>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>>
+>>
+>> I thought re-installing Firefox might bring with it updates, but it seems
+>> I already have the latest version ...
+>>
+>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get install
+>> firefox
+>> Reading package lists... Done
+>> Building dependency tree
+>> Reading state information... Done
+>> firefox is already the newest version.
+>> The following packages were automatically installed and are no longer
+>> required:
+>>   linux-headers-3.5.0-17 linux-headers-3.5.0-17-generic suckless-tools
+>> Use 'apt-get autoremove' to remove them.
+>> 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>>
+>> I tried the gui Synaptic Package Manager, which offered the hope that ...
+>>
+>> flashplugin-installer (version 11.2.202.359ubuntu0.12.10.1) will be
+>> re-installed
+>>
+>> No such luck ...
+>>
+>> W: Failed to fetch
+>> http://security.ubuntu.com/ubuntu/pool/multiverse/f/flashplugin-nonfree/flashplugin-installer_11.2.202.359ubuntu0.12.10.1_i386.deb
+>>   404  Not Found [IP: 91.189.92.201 80]
+>>
+>> Also, I tried Epiphany, to see if the problem is system-wide or
+>> browser-specific. I got similar errors trying to play videos.
+>>
+>> Sigh.
+>>
+>> Any ideas?
+>>
+>> I'm off to be soon, but I'll stay up for a little while, in case anyone
+>> is online.
+>>
+>> Chris Aitken
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>>
+>> ---
+>> GTALUG Talk Mailing List - talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+I really don?t suggest to keep using this outdated version of Flash
+pressing the "Allow" button. Flash player is known to have many many bugs
+in it?s stable and current versions.. so, imagine an outdated version. ;]
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141219/0ccc984f/attachment.html>
+
+From avolkov at gmail.com  Fri Dec 19 15:09:00 2014
+From: avolkov at gmail.com (Alex Volkov)
+Date: Fri, 19 Dec 2014 10:09:00 -0500
+Subject: [GTALUG] Ubuntu need Adobe Flash?
+In-Reply-To: <CAH5qdexoKUWePXJZaThZ9RCE39pR5H7_XUFm_xFHjpCfODSJ7A@mail.gmail.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAO1j=qcPECshs_w1z+_ZXLkk94KP9oYunk0vy7870p=j3xrAHw@mail.gmail.com>
+ <CAH5qdexoKUWePXJZaThZ9RCE39pR5H7_XUFm_xFHjpCfODSJ7A@mail.gmail.com>
+Message-ID: <CAO1j=qepi5kHa0=ZipStCF0tb0Uiio0hW9T=KXUKZgo5iqaJ=g@mail.gmail.com>
+
+Running "aptitude reinstall flashplayer-installer" installs an up-to-date
+version from adobe site, and not from outdated Ubuntu 12.10 repository.
+
+On Fri, Dec 19, 2014 at 10:07 AM, Marcelo Cavalcante <kalibslack at gmail.com>
+wrote:
+
+>
+>
+> 2014-12-19 12:01 GMT-03:00 Alex Volkov <avolkov at gmail.com>:
+>
+>> Hey Marcello,
+>>
+>> I had the same problem with a debian system.
+>>
+>> You are using an outdated version of flash, you can still watch flash by
+>> clicking on 'allow' but you should really upgrade.
+>>
+>> The main issue here is that, flash player is not licenced by default and
+>> not packaged. The software that installs it on your system is called
+>> flashplugin-nonfree, but for whatever reason package maintainers decided
+>> not to bump its version number to force everyone to upgrade.
+>>
+>>  You need to reinstall flashplugin-nonfree or flashplugin-installer
+>> however it is called in ubuntu, by running "aptitude reinstall
+>> flashplugin-nonfree" which you did. However, End-of-life of Ubuntu 12.10
+>> was reached on May 16 this year --
+>> http://fridge.ubuntu.com/2014/05/17/ubuntu-12-10-quantal-quetzal-end-of-life-reached-on-may-16-2014/
+>> So security repository is no longer active.
+>>
+>>
+>> This is the point where I, as all other people in the list would
+>> recommend you to upgrade to the latest Ubuntu LTS release, however if you
+>> want to just fix this problem, keep reading.
+>>
+>>
+>> Open terminal, type
+>> $sudo gedit /etc/apt/sources.list
+>> enter a password if asked
+>>
+>>
+>> Comment out all lines that contain security.ubuntu.com.
+>>
+>> Then run aptitude updated && aptitude reinstall flashplugin-installer.
+>>
+>> You should be good to go.
+>>
+>> Alex.
+>>
+>> On Fri, Dec 19, 2014 at 12:49 AM, Chris Aitken <chris at chrisaitken.net>
+>> wrote:
+>>
+>>>  Hi,
+>>>
+>>> I haven't posted here for years. I guess Ubuntu has been working well
+>>> for me, so I haven't had the need.
+>>>
+>>> I can't play videos on the Internet. I get an error that ...
+>>>
+>>> "Firefox has prevented the outdated plugin "Adobe Flash" from running on
+>>> youtube.com."
+>>>
+>>> I get similar errors (that Adobe Flash needs updating) from other sites
+>>> - fo instance trying to play videos Posted on facebook.
+>>>
+>>> My Firefox is 29.0 Mozilla Firefox for Ubuntu canonical - 1.0
+>>>
+>>> I'm running Ubuntu 12.10.
+>>>
+>>> I tried to install in this way ...
+>>>
+>>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get install fashplugin-nonfree
+>>> [sudo] password for chris:
+>>> Reading package lists... Done
+>>> Building dependency tree
+>>> Reading state information... Done
+>>> E: Unable to locate package fashplugin-nonfree
+>>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ ^C
+>>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>>>
+>>>
+>>> I thought re-installing Firefox might bring with it updates, but it
+>>> seems I already have the latest version ...
+>>>
+>>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get install
+>>> firefox
+>>> Reading package lists... Done
+>>> Building dependency tree
+>>> Reading state information... Done
+>>> firefox is already the newest version.
+>>> The following packages were automatically installed and are no longer
+>>> required:
+>>>   linux-headers-3.5.0-17 linux-headers-3.5.0-17-generic suckless-tools
+>>> Use 'apt-get autoremove' to remove them.
+>>> 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+>>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>>>
+>>> I tried the gui Synaptic Package Manager, which offered the hope that ...
+>>>
+>>> flashplugin-installer (version 11.2.202.359ubuntu0.12.10.1) will be
+>>> re-installed
+>>>
+>>> No such luck ...
+>>>
+>>> W: Failed to fetch
+>>> http://security.ubuntu.com/ubuntu/pool/multiverse/f/flashplugin-nonfree/flashplugin-installer_11.2.202.359ubuntu0.12.10.1_i386.deb
+>>>   404  Not Found [IP: 91.189.92.201 80]
+>>>
+>>> Also, I tried Epiphany, to see if the problem is system-wide or
+>>> browser-specific. I got similar errors trying to play videos.
+>>>
+>>> Sigh.
+>>>
+>>> Any ideas?
+>>>
+>>> I'm off to be soon, but I'll stay up for a little while, in case anyone
+>>> is online.
+>>>
+>>> Chris Aitken
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> ---
+>>> GTALUG Talk Mailing List - talk at gtalug.org
+>>> http://gtalug.org/mailman/listinfo/talk
+>>>
+>>>
+>>
+>>
+>>
+>> ---
+>> GTALUG Talk Mailing List - talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>>
+> I really don?t suggest to keep using this outdated version of Flash
+> pressing the "Allow" button. Flash player is known to have many many bugs
+> in it?s stable and current versions.. so, imagine an outdated version. ;]
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141219/bd1bdd8e/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Fri Dec 19 15:23:16 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 19 Dec 2014 10:23:16 -0500
+Subject: [GTALUG] Ubuntu need Adobe Flash?
+In-Reply-To: <5493BC6D.5080805@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+Message-ID: <20141219152316.GU24111@csclub.uwaterloo.ca>
+
+On Fri, Dec 19, 2014 at 12:49:33AM -0500, Chris Aitken wrote:
+> I haven't posted here for years. I guess Ubuntu has been working
+> well for me, so I haven't had the need.
+> 
+> I can't play videos on the Internet. I get an error that ...
+> 
+> "Firefox has prevented the outdated plugin "Adobe Flash" from
+> running on youtube.com."
+> 
+> I get similar errors (that Adobe Flash needs updating) from other
+> sites - fo instance trying to play videos Posted on facebook.
+> 
+> My Firefox is 29.0 Mozilla Firefox for Ubuntu canonical - 1.0
+> 
+> I'm running Ubuntu 12.10.
+> 
+> I tried to install in this way ...
+> 
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get install fashplugin-nonfree
+> [sudo] password for chris:
+> Reading package lists... Done
+> Building dependency tree
+> Reading state information... Done
+> E: Unable to locate package fashplugin-nonfree
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ ^C
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+
+Try:
+apt-get update;apt-get install flashplugin-installer
+
+Of course since I believe Adobe stopped making flash for linux there
+may be no updates and it may be gone.
+
+On debian I do this:
+
+lennartsorensen:~# update-flashplugin-nonfree --status
+Flash Player version installed on this system  : 11.2.202.418
+Flash Player version available on upstream site: 11.2.202.425
+flash-mozilla.so - auto mode
+  link currently points to /usr/lib/flashplugin-nonfree/libflashplayer.so
+/usr/lib/flashplugin-nonfree/libflashplayer.so - priority 50
+Current 'best' version is '/usr/lib/flashplugin-nonfree/libflashplayer.so'.
+lennartsorensen:~# update-flashplugin-nonfree --install
+...
+<downloading>
+...
+lennartsorensen:~# update-flashplugin-nonfree --status
+Flash Player version installed on this system  : 11.2.202.425
+Flash Player version available on upstream site: 11.2.202.425
+flash-mozilla.so - auto mode
+  link currently points to /usr/lib/flashplugin-nonfree/libflashplayer.so
+/usr/lib/flashplugin-nonfree/libflashplayer.so - priority 50
+Current 'best' version is '/usr/lib/flashplugin-nonfree/libflashplayer.so'.
+
+So I guess there is an update available.
+
+-- 
+Len Sorensen
+
+From technologynut at rogers.com  Fri Dec 19 15:32:56 2014
+From: technologynut at rogers.com (Gary)
+Date: Fri, 19 Dec 2014 10:32:56 -0500
+Subject: [GTALUG] Ubuntu need Adobe Flash?
+In-Reply-To: <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+Message-ID: <54944528.3060407@rogers.com>
+
+I use kubuntu and had the same problem but the following solved the problem:
+http://ubuntuhandbook.org/index.php/2014/04/install-adobe-flash-in-ubuntu-14-04-lts/
+
+Incidentally, my kubuntu 14.04 is unstable and I will chuck it as soon 
+as I get debian LXQt.
+/gary
+
+On 14-12-19 08:56 AM, Marcelo Cavalcante wrote:
+> 2014-12-19 2:49 GMT-03:00 Chris Aitken <chris at chrisaitken.net 
+> <mailto:chris at chrisaitken.net>>:
+>
+>     Hi,
+>
+>     I haven't posted here for years. I guess Ubuntu has been working
+>     well for me, so I haven't had the need.
+>
+>     I can't play videos on the Internet. I get an error that ...
+>
+>     "Firefox has prevented the outdated plugin "Adobe Flash" from
+>     running on youtube.com <http://youtube.com>."
+>
+>     I get similar errors (that Adobe Flash needs updating) from other
+>     sites - fo instance trying to play videos Posted on facebook.
+>
+>     My Firefox is 29.0 Mozilla Firefox for Ubuntu canonical - 1.0
+>
+>     I'm running Ubuntu 12.10.
+>
+>     I tried to install in this way ...
+>
+>     chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get install fashplugin-nonfree
+>     [sudo] password for chris:
+>     Reading package lists... Done
+>     Building dependency tree
+>     Reading state information... Done
+>     E: Unable to locate package fashplugin-nonfree
+>     chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ ^C
+>     chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>
+>     I thought re-installing Firefox might bring with it updates, but
+>     it seems I already have the latest version ...
+>
+>     chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get
+>     install firefox
+>     Reading package lists... Done
+>     Building dependency tree
+>     Reading state information... Done
+>     firefox is already the newest version.
+>     The following packages were automatically installed and are no
+>     longer required:
+>       linux-headers-3.5.0-17 linux-headers-3.5.0-17-generic suckless-tools
+>     Use 'apt-get autoremove' to remove them.
+>     0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+>     chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>
+>     I tried the gui Synaptic Package Manager, which offered the hope
+>     that ...
+>
+>     flashplugin-installer (version 11.2.202.359ubuntu0.12.10.1) will
+>     be re-installed
+>
+>     No such luck ...
+>
+>     W: Failed to fetch
+>     http://security.ubuntu.com/ubuntu/pool/multiverse/f/flashplugin-nonfree/flashplugin-installer_11.2.202.359ubuntu0.12.10.1_i386.deb
+>       404  Not Found [IP: 91.189.92.201 80]
+>
+>     Also, I tried Epiphany, to see if the problem is system-wide or
+>     browser-specific. I got similar errors trying to play videos.
+>
+>     Sigh.
+>
+>     Any ideas?
+>
+>     I'm off to be soon, but I'll stay up for a little while, in case
+>     anyone is online.
+>
+>     Chris Aitke
+>
+>
+> The problem is that you?re using a very old version of Flash. In fact, 
+> you?re using very old version of everything, as far as I can see.
+>
+> Ubuntu 12.10 - means you?re using Ubuntu from October 2012.
+> Firefox 29 - the one I?m using is 34.
+>
+> Well, I think you should really think about updating your Ubuntu, so 
+> you?ll also have all the other softwares updated, since you?re using 
+> old repositories, with old versions of software.
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141219/98fc7fdd/attachment.html>
+
+From tisdall at gmail.com  Fri Dec 19 15:43:33 2014
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Fri, 19 Dec 2014 10:43:33 -0500
+Subject: [GTALUG] Ubuntu need Adobe Flash?
+In-Reply-To: <20141219152316.GU24111@csclub.uwaterloo.ca>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <20141219152316.GU24111@csclub.uwaterloo.ca>
+Message-ID: <CAGxYWpbRUhjXrKPekzNer1G4gKZOkx8ErTbDAqwcSqhrkFGcPg@mail.gmail.com>
+
+On Fri, Dec 19, 2014 at 10:23 AM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+>
+> lennartsorensen:~# update-flashplugin-nonfree --status
+> Flash Player version installed on this system  : 11.2.202.425
+> Flash Player version available on upstream site: 11.2.202.425
+> flash-mozilla.so - auto mode
+
+
+It seems that Firefox can only use the latest 11.2 version because it's the
+latest available for Linux and no new versions will be made available.
+However, in Chrome I have 16.0.0.235 installed because it comes "built
+in".  So, if Flash is important to you, you may want to switch to using
+Chrome (I'm not sure if Chromium also has this feature, but that may also
+be a possibility).
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141219/230c106e/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Fri Dec 19 15:51:10 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 19 Dec 2014 10:51:10 -0500
+Subject: [GTALUG] Ubuntu need Adobe Flash?
+In-Reply-To: <CAGxYWpbRUhjXrKPekzNer1G4gKZOkx8ErTbDAqwcSqhrkFGcPg@mail.gmail.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <20141219152316.GU24111@csclub.uwaterloo.ca>
+ <CAGxYWpbRUhjXrKPekzNer1G4gKZOkx8ErTbDAqwcSqhrkFGcPg@mail.gmail.com>
+Message-ID: <20141219155110.GV24111@csclub.uwaterloo.ca>
+
+On Fri, Dec 19, 2014 at 10:43:33AM -0500, Tim Tisdall wrote:
+> On Fri, Dec 19, 2014 at 10:23 AM, Lennart Sorensen <
+> lsorense at csclub.uwaterloo.ca> wrote:
+> >
+> > lennartsorensen:~# update-flashplugin-nonfree --status
+> > Flash Player version installed on this system  : 11.2.202.425
+> > Flash Player version available on upstream site: 11.2.202.425
+> > flash-mozilla.so - auto mode
+> 
+> 
+> It seems that Firefox can only use the latest 11.2 version because it's the
+> latest available for Linux and no new versions will be made available.
+> However, in Chrome I have 16.0.0.235 installed because it comes "built
+> in".  So, if Flash is important to you, you may want to switch to using
+> Chrome (I'm not sure if Chromium also has this feature, but that may also
+> be a possibility).
+
+There is another option:
+
+Package: pepperflashplugin-nonfree
+Version: 1.8
+Installed-Size: 74
+Maintainer: Bart Martens <bartm at debian.org>
+Architecture: amd64
+Depends: debconf | debconf-2.0, wget, gnupg, libatk1.0-0, libcairo2, libfontconfig1, libfreetype6, libgcc1, libglib2.0-0, libgtk2.0-0 (>= 2.14), libnspr4, libnss3, libpango-1.0-0 | libpango1.0-0, libstdc++6, libx11-6, libxext6, libxt6, libcurl3-gnutls, binutils, ca-certificates
+Suggests: chromium, ttf-mscorefonts-installer, ttf-dejavu, ttf-xfree86-nonfree, hal
+Conflicts: chromium (<< 37.0.2062.120-4), libflash-mozplugin
+Description-en: Pepper Flash Player - browser plugin
+ This package will download Chrome from Google, and unpack it to make the
+ included Pepper Flash Player available for use with Chromium.  The end user
+ license agreement is available at Google.
+Description-md5: 308421c13180fc4cf682be0755dca66d
+Homepage: http://wiki.debian.org/PepperFlashPlayer
+Tag: uitoolkit::gtk
+Section: contrib/web
+Priority: optional
+Filename: pool/contrib/p/pepperflashplugin-nonfree/pepperflashplugin-nonfree_1.8_amd64.deb
+Size: 10790
+MD5sum: d2eeda61df85c2ac3c385fc9673360eb
+SHA1: 2020464a97777af44f52104293724c8a635072ea
+SHA256: 890af22fe8c272fd272dd2dd28d5623038d8e86a7ca528a8f5e238b93ddc0fb1
+
+-- 
+Len Sorensen
+
+From sergiodj at sergiodj.net  Fri Dec 19 18:12:55 2014
+From: sergiodj at sergiodj.net (Sergio Durigan Junior)
+Date: Fri, 19 Dec 2014 13:12:55 -0500
+Subject: [GTALUG] Ubuntu need Adobe Flash?
+In-Reply-To: <5493BC6D.5080805@chrisaitken.net> (Chris Aitken's message of
+ "Fri, 19 Dec 2014 00:49:33 -0500")
+References: <5493BC6D.5080805@chrisaitken.net>
+Message-ID: <87ppbfwlso.fsf@sergiodj.net>
+
+On Friday, December 19 2014, Chris Aitken wrote:
+
+> I can't play videos on the Internet. I get an error that ...
+>
+> "Firefox has prevented the outdated plugin "Adobe Flash" from running
+> on youtube.com."
+
+[First post, hey guys!]
+
+Hi Chris,
+
+Maybe you know that already, but it is also possible to use youtube-dl,
+a Free Software program, to download the video you want from the
+website.  Despite its name, it works with many other websites, not only
+youtube.  And of course, after you start using it and notice that you do
+not need a program that disrespects your freedom anymore, you can
+uninstall flash from your system :-).
+
+Cheers,
+
+-- 
+Sergio
+GPG key ID: 0x65FC5E36
+Please send encrypted e-mail if possible
+http://sergiodj.net/
+
+From email+libre at blaise.ca  Fri Dec 19 18:42:01 2014
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Fri, 19 Dec 2014 13:42:01 -0500
+Subject: [GTALUG] Ubuntu need Adobe Flash?
+In-Reply-To: <87ppbfwlso.fsf@sergiodj.net>
+References: <5493BC6D.5080805@chrisaitken.net> <87ppbfwlso.fsf@sergiodj.net>
+Message-ID: <54947179.7060503@blaise.ca>
+
+On 19/12/14 01:12 PM, Sergio Durigan Junior wrote:
+> On Friday, December 19 2014, Chris Aitken wrote:
+> 
+>> I can't play videos on the Internet. I get an error that ...
+>>
+>> "Firefox has prevented the outdated plugin "Adobe Flash" from running
+>> on youtube.com."
+> 
+> [First post, hey guys!]
+> 
+> Hi Chris,
+> 
+> Maybe you know that already, but it is also possible to use youtube-dl,
+> a Free Software program, to download the video you want from the
+> website.  Despite its name, it works with many other websites, not only
+> youtube.  And of course, after you start using it and notice that you do
+> not need a program that disrespects your freedom anymore, you can
+> uninstall flash from your system :-).
+> 
+> Cheers,
+> 
+
+You definitely don't need Adobe's proprietary Flash to watch videos on YouTube
+anymore. I ditched Flash on my laptops years ago.
+
+A few better options for YouTube videos:
+
+- I second youtube-dl! It's awesome, highly recommend it. I guess an added
+benefit is less tracking than viewing on youtube.com in your browser.
+
+- Also, with YouTube, you can go to youtube.com/html5 to request the HTML5
+player (it may not be enabled by default for Firefox, but that page will set a
+cookie to force it where available/compatible)
+
+- I do have Gnash installed, which works on YouTube where the HTML5 player isn't
+available, or where youtube-dl fails (e.g. VEVO channels). I think the packages
+for Ubuntu/Debian would be gnash and browser-plugin-gnash, but it's been a while
+since I installed it...
+
+
+From tom at lowshang.com  Fri Dec 19 19:10:18 2014
+From: tom at lowshang.com (Tom Low-Shang)
+Date: Fri, 19 Dec 2014 14:10:18 -0500
+Subject: [GTALUG] Ubuntu need Adobe Flash?
+In-Reply-To: <54947179.7060503@blaise.ca>
+References: <5493BC6D.5080805@chrisaitken.net> <87ppbfwlso.fsf@sergiodj.net>
+ <54947179.7060503@blaise.ca>
+Message-ID: <20141219191018.GA27505@capetown.lowshang.com>
+
+On Fri, Dec 19, 2014 at 01:42:01PM -0500, Blaise Alleyne wrote:
+> On 19/12/14 01:12 PM, Sergio Durigan Junior wrote:
+> > On Friday, December 19 2014, Chris Aitken wrote:
+> > 
+> >> I can't play videos on the Internet. I get an error that ...
+> >>
+> >> "Firefox has prevented the outdated plugin "Adobe Flash" from running
+> >> on youtube.com."
+> > 
+> > [First post, hey guys!]
+> > 
+> > Hi Chris,
+> > 
+> > Maybe you know that already, but it is also possible to use youtube-dl,
+> > a Free Software program, to download the video you want from the
+> > website.  Despite its name, it works with many other websites, not only
+> > youtube.  And of course, after you start using it and notice that you do
+> > not need a program that disrespects your freedom anymore, you can
+> > uninstall flash from your system :-).
+> > 
+> > Cheers,
+> > 
+> 
+> You definitely don't need Adobe's proprietary Flash to watch videos on YouTube
+> anymore. I ditched Flash on my laptops years ago.
+> 
+> A few better options for YouTube videos:
+> 
+> - I second youtube-dl! It's awesome, highly recommend it. I guess an added
+> benefit is less tracking than viewing on youtube.com in your browser.
+> 
+
+
+livestreamer is another general purpose option. Also, mpv can use 
+libquvi to stream directly from YouTube, so I expect other media players 
+can do the same.
+
+
+-- 
+Tom Low-Shang
+
+
+From adb at adb.ca  Sat Dec 20 00:34:33 2014
+From: adb at adb.ca (Anthony de Boer)
+Date: Fri, 19 Dec 2014 19:34:33 -0500
+Subject: [GTALUG] Ubuntu need Adobe Flash?
+In-Reply-To: <87ppbfwlso.fsf@sergiodj.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <87ppbfwlso.fsf@sergiodj.net>
+Message-ID: <20141220003433.GA1596@adb.ca>
+
+Sergio Durigan Junior wrote:
+> [First post, hey guys!]
+
+Welcome!
+
+> Maybe you know that already, but it is also possible to use youtube-dl,
+> a Free Software program, to download the video you want from the
+> website.  Despite its name, it works with many other websites, not only
+> youtube.  And of course, after you start using it and notice that you do
+> not need a program that disrespects your freedom anymore, you can
+> uninstall flash from your system :-).
+
+Note that youtube-dl is updated regularly (apparently Youtube is a moving
+target); if you're running Debian Stable you get a version that's too old
+to be of use.  On my Gentoo box I find there's a new youtube-dl more
+often than not when I update.  Best to run close to the bleeding edge on
+this package.
+
+Meanwhile, I don't install flash at all on boxes I'd like to keep
+unpwned.  As a bonus, there aren't as many annoyingly animated ads.
+
+-- 
+Anthony de Boer
+
