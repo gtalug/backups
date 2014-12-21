@@ -5034,3 +5034,570 @@ unpwned.  As a bonus, there aren't as many annoyingly animated ads.
 -- 
 Anthony de Boer
 
+From bjonkman at sobac.com  Sat Dec 20 16:41:14 2014
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Sat, 20 Dec 2014 11:41:14 -0500
+Subject: [GTALUG] Python 2 vs python 3 debate
+In-Reply-To: <CA+hskZMDhHJERhet-W6Dite3Hbgquw1bcEHCo71K7+zvqij74w@mail.gmail.com>
+References: <20141216153104.6037651.90559.10974@gmail.com>
+ <20141216165741.GN24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412161220570.26544@redclaw.mimosa.com>
+ <20141216222839.GR23240@adb.ca> <5490B3D0.9090903@dinamis.com>
+ <CA+hskZMDhHJERhet-W6Dite3Hbgquw1bcEHCo71K7+zvqij74w@mail.gmail.com>
+Message-ID: <5495A6AA.6000706@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Demo?
+
+On 17/12/14 10:35 AM, Myles Braithwaite wrote:
+> The industry seems to like converters (i.e. GWT, Pygamas, etc.)
+> and not replacing JavaScript with projects like IronMonkey. Which
+> is kind of interesting considering there is a huge user base of
+> Python programmers who are coding on top of Microsoft's Excel
+> (instead of having to use VB.NET and C#).
+> 
+> CoffeeScript has a Python like syntax (I'm loosely using the word 
+> 'like') if you are interested in not having to write JavaScript. 
+> But it compiles CoffeeScript into JavaScript so it's not the best 
+> thing in the world.
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.15 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlSVpqgACgkQuRKJsNLM5eqRFQCfdbDX8Fve4uNuvICQSYGY8RiF
+N7QAoLCqoNtdDFAVdWmndACBStlnwFzT
+=vzdj
+-----END PGP SIGNATURE-----
+
+From chris at chrisaitken.net  Sat Dec 20 17:19:57 2014
+From: chris at chrisaitken.net (Chris Aitken)
+Date: Sat, 20 Dec 2014 12:19:57 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10 [was > Re: Ubuntu need Adobe
+	Flash?]
+In-Reply-To: <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+Message-ID: <5495AFBD.8090606@chrisaitken.net>
+
+On 14-12-19 08:56 AM, Marcelo Cavalcante wrote:
+> 2014-12-19 2:49 GMT-03:00 Chris Aitken <chris at chrisaitken.net 
+> <mailto:chris at chrisaitken.net>>:
+>
+>     Hi,
+>
+>     I haven't posted here for years. I guess Ubuntu has been working
+>     well for me, so I haven't had the need.
+>
+>     I can't play videos on the Internet. I get an error that ...
+>
+>     "Firefox has prevented the outdated plugin "Adobe Flash" from
+>     running on youtube.com <http://youtube.com>."
+>
+>     I get similar errors (that Adobe Flash needs updating) from other
+>     sites - fo instance trying to play videos Posted on facebook.
+>
+>     My Firefox is 29.0 Mozilla Firefox for Ubuntu canonical - 1.0
+>
+
+<snip>
+
+>
+> The problem is that you?re using a very old version of Flash. In fact, 
+> you?re using very old version of everything, as far as I can see.
+>
+> Ubuntu 12.10 - means you?re using Ubuntu from October 2012.
+> Firefox 29 - the one I?m using is 34.
+>
+> Well, I think you should really think about updating your Ubuntu, so 
+> you?ll also have all the other softwares updated, since you?re using 
+> old repositories, with old versions of software.
+
+OK. I'm going to upgrade. Is there an easy GUI method? System Tools > 
+Admin > Software Updater gave me ...
+
+Failed to download repository information.
+
+Chris
+
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141220/dbd36ddf/attachment.html>
+
+From chris at chrisaitken.net  Sat Dec 20 17:33:50 2014
+From: chris at chrisaitken.net (Chris Aitken)
+Date: Sat, 20 Dec 2014 12:33:50 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <5495AFBD.8090606@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net>
+Message-ID: <5495B2FE.5020908@chrisaitken.net>
+
+<snip>
+>>
+>>
+>> The problem is that you?re using a very old version of Flash. In 
+>> fact, you?re using very old version of everything, as far as I can see.
+>>
+>> Ubuntu 12.10 - means you?re using Ubuntu from October 2012.
+>> Firefox 29 - the one I?m using is 34.
+>>
+>> Well, I think you should really think about updating your Ubuntu, so 
+>> you?ll also have all the other softwares updated, since you?re using 
+>> old repositories, with old versions of software.
+>
+> OK. I'm going to upgrade. Is there an easy GUI method? System Tools > 
+> Admin > Software Updater gave me ...
+>
+> Failed to download repository information.
+>
+> Chris
+
+I found some easy commands at an Ubuntu site...
+
+|sudo apt-get update
+sudo apt-get dist-upgrade
+sudo do-release-upgrade
+
+||That gave me ...
+
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get update
+[sudo] password for chris:
+Ign http://ca.archive.ubuntu.com quantal Release.gpg
+Ign http://ca.archive.ubuntu.com quantal-backports Release.gpg
+
+[...]
+
+Ign http://ca.archive.ubuntu.com quantal-backports/multiverse i386 Packages/DiffIndex
+Ign http://extras.ubuntu.com quantal/main Translation-en_CA
+Ign http://extras.ubuntu.com quantal/main Translation-en
+Err http://ppa.launchpad.net quantal/main Sources
+   404  Not Found
+Err http://ppa.launchpad.net quantal/main i386 Packages
+   404  Not Found
+Ign http://ppa.launchpad.net quantal/main Translation-en_CA
+
+[...]
+
+Ign http://ca.archive.ubuntu.com quantal-backports/universe Translation-en
+Err http://ca.archive.ubuntu.com quantal/main Sources
+   404  Not Found [IP: 91.189.91.13 80]
+Err http://ca.archive.ubuntu.com quantal/restricted Sources
+   404  Not Found [IP: 91.189.91.13 80]
+Ign http://security.ubuntu.com quantal-security/main Translation-en_CA
+Err http://ca.archive.ubuntu.com quantal/universe Sources
+   404  Not Found [IP: 91.189.91.13 80]
+Ign http://security.ubuntu.com quantal-security/main Translation-en
+Err http://ca.archive.ubuntu.com quantal/multiverse Sources
+   404  Not Found [IP: 91.189.91.13 80]
+
+[...]
+
+Err http://security.ubuntu.com quantal-security/universe i386 Packages
+   404  Not Found [IP: 91.189.88.149 80]
+Err http://security.ubuntu.com quantal-security/multiverse i386 Packages
+   404  Not Found [IP: 91.189.88.149 80]
+W: Failed to fetch http://ca.archive.ubuntu.com/ubuntu/dists/quantal/main/source/Sources  404  Not Found [IP: 91.189.91.13 80]
+
+W: Failed to fetch http://ca.archive.ubuntu.com/ubuntu/dists/quantal/restricted/source/Sources  404  Not Found [IP: 91.189.91.13 80]
+
+[...]
+
+W: Failed to fetch http://ca.archive.ubuntu.com/ubuntu/dists/quantal-backports/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.13 80]
+
+W: Failed to fetch http://ca.archive.ubuntu.com/ubuntu/dists/quantal-backports/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.13 80]
+
+E: Some index files failed to download. They have been ignored, or old ones used instead.
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get dist-upgrade
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Calculating upgrade... Done
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo do-release-upgrade
+Checking for a new Ubuntu release
+Your Ubuntu release is not supported anymore.
+For upgrade information, please visit:
+http://www.ubuntu.com/releaseendoflife
+
+Err Upgrade tool signature
+   404  Not Found [IP: 91.189.91.15 80]
+Err Upgrade tool
+   404  Not Found [IP: 91.189.91.15 80]
+Fetched 0 B in 0s (0 B/s)
+WARNING:root:file 'raring.tar.gz.gpg' missing
+Failed to fetch
+Fetching the upgrade failed. There may be a network problem.
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ ^C
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+
+|
+
+
+>
+>>
+>>
+>> ---
+>> GTALUG Talk Mailing List -talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141220/c34aa3b9/attachment.html>
+
+From tisdall at gmail.com  Sat Dec 20 19:13:23 2014
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Sat, 20 Dec 2014 14:13:23 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <5495B2FE.5020908@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net>
+ <5495B2FE.5020908@chrisaitken.net>
+Message-ID: <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+
+I had this exact issue a short while ago.  The issue is that Ubuntu no
+longer has any of the packages for 12.10 live so apt fails to find the
+files it needs to do a dist. upgrade.  I used the following post to get
+around this issue:
+http://askubuntu.com/questions/91815/how-to-install-software-or-upgrade-from-an-old-unsupported-release/91821#91821
+
+There's more information here too:
+https://help.ubuntu.com/community/EOLUpgrades/
+
+
+
+On Sat, Dec 20, 2014 at 12:33 PM, Chris Aitken <chris at chrisaitken.net>
+wrote:
+
+>  <snip>
+>
+>
+>  The problem is that you?re using a very old version of Flash. In fact,
+> you?re using very old version of everything, as far as I can see.
+>
+>  Ubuntu 12.10 - means you?re using Ubuntu from October 2012.
+>  Firefox 29 - the one I?m using is 34.
+>
+>  Well, I think you should really think about updating your Ubuntu, so
+> you?ll also have all the other softwares updated, since you?re using old
+> repositories, with old versions of software.
+>
+>
+> OK. I'm going to upgrade. Is there an easy GUI method? System Tools >
+> Admin > Software Updater gave me ...
+>
+> Failed to download repository information.
+>
+> Chris
+>
+>
+> I found some easy commands at an Ubuntu site...
+>
+> sudo apt-get update
+> sudo apt-get dist-upgrade
+> sudo do-release-upgrade
+> That gave me ...
+>
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get update
+> [sudo] password for chris:
+> Ign http://ca.archive.ubuntu.com quantal Release.gpg
+> Ign http://ca.archive.ubuntu.com quantal-backports Release.gpg
+>
+> [...]
+>
+> Ign http://ca.archive.ubuntu.com quantal-backports/multiverse i386 Packages/DiffIndex
+> Ign http://extras.ubuntu.com quantal/main Translation-en_CA
+> Ign http://extras.ubuntu.com quantal/main Translation-en
+> Err http://ppa.launchpad.net quantal/main Sources
+>   404  Not Found
+> Err http://ppa.launchpad.net quantal/main i386 Packages
+>   404  Not Found
+> Ign http://ppa.launchpad.net quantal/main Translation-en_CA
+>
+> [...]
+>
+> Ign http://ca.archive.ubuntu.com quantal-backports/universe Translation-en
+> Err http://ca.archive.ubuntu.com quantal/main Sources
+>   404  Not Found [IP: 91.189.91.13 80]
+> Err http://ca.archive.ubuntu.com quantal/restricted Sources
+>   404  Not Found [IP: 91.189.91.13 80]
+> Ign http://security.ubuntu.com quantal-security/main Translation-en_CA
+> Err http://ca.archive.ubuntu.com quantal/universe Sources
+>   404  Not Found [IP: 91.189.91.13 80]
+> Ign http://security.ubuntu.com quantal-security/main Translation-en
+> Err http://ca.archive.ubuntu.com quantal/multiverse Sources
+>   404  Not Found [IP: 91.189.91.13 80]
+>
+> [...]
+>
+> Err http://security.ubuntu.com quantal-security/universe i386 Packages
+>   404  Not Found [IP: 91.189.88.149 80]
+> Err http://security.ubuntu.com quantal-security/multiverse i386 Packages
+>   404  Not Found [IP: 91.189.88.149 80]
+> W: Failed to fetch http://ca.archive.ubuntu.com/ubuntu/dists/quantal/main/source/Sources  404  Not Found [IP: 91.189.91.13 80]
+>
+> W: Failed to fetch http://ca.archive.ubuntu.com/ubuntu/dists/quantal/restricted/source/Sources  404  Not Found [IP: 91.189.91.13 80]
+>
+> [...]
+>
+> W: Failed to fetch http://ca.archive.ubuntu.com/ubuntu/dists/quantal-backports/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.13 80]
+>
+> W: Failed to fetch http://ca.archive.ubuntu.com/ubuntu/dists/quantal-backports/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.13 80]
+>
+> E: Some index files failed to download. They have been ignored, or old ones used instead.
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get dist-upgrade
+> Reading package lists... Done
+> Building dependency tree
+> Reading state information... Done
+> Calculating upgrade... Done
+> 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo do-release-upgrade
+> Checking for a new Ubuntu release
+> Your Ubuntu release is not supported anymore.
+> For upgrade information, please visit:http://www.ubuntu.com/releaseendoflife
+>
+> Err Upgrade tool signature
+>   404  Not Found [IP: 91.189.91.15 80]
+> Err Upgrade tool
+>   404  Not Found [IP: 91.189.91.15 80]
+> Fetched 0 B in 0s (0 B/s)
+> WARNING:root:file 'raring.tar.gz.gpg' missing
+> Failed to fetch
+> Fetching the upgrade failed. There may be a network problem.
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ ^C
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>
+>
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.orghttp://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.orghttp://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141220/38bbf9cb/attachment.html>
+
+From chris at chrisaitken.net  Sat Dec 20 19:42:16 2014
+From: chris at chrisaitken.net (Chris Aitken)
+Date: Sat, 20 Dec 2014 14:42:16 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net> <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+Message-ID: <5495D118.9000107@chrisaitken.net>
+
+On 14-12-20 02:13 PM, Tim Tisdall wrote:
+> I had this exact issue a short while ago.  The issue is that Ubuntu no 
+> longer has any of the packages for 12.10 live so apt fails to find the 
+> files it needs to do a dist. upgrade.  I used the following post to 
+> get around this issue: 
+> http://askubuntu.com/questions/91815/how-to-install-software-or-upgrade-from-an-old-unsupported-release/91821#91821
+
+I tried all those steps.
+
+|sudo sed -i -e 's/archive.ubuntu.com\|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
+||sudo apt-get update && sudo apt-get dist-upgrade
+||sudo apt-get update
+||sudo apt-get install update-manager-core
+sudo do-release-upgrade|
+
+The last step gave me ...
+
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo do-release-upgrade
+Checking for a new Ubuntu release
+Your Ubuntu release is not supported anymore.
+For upgrade information, please visit:
+http://www.ubuntu.com/releaseendoflife
+
+Err Upgrade tool signature
+   404  Not Found [IP: 91.189.92.201 80]
+Err Upgrade tool
+   404  Not Found [IP: 91.189.92.201 80]
+Fetched 0 B in 0s (0 B/s)
+WARNING:root:file 'raring.tar.gz.gpg' missing
+Failed to fetch
+Fetching the upgrade failed. There may be a network problem.
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+
+>
+> There's more information here too: 
+> https://help.ubuntu.com/community/EOLUpgrades/
+>
+>
+>
+> On Sat, Dec 20, 2014 at 12:33 PM, Chris Aitken <chris at chrisaitken.net 
+> <mailto:chris at chrisaitken.net>> wrote:
+>
+>     <snip>
+>>>
+>>>
+>>>     The problem is that you?re using a very old version of Flash. In
+>>>     fact, you?re using very old version of everything, as far as I
+>>>     can see.
+>>>
+>>>     Ubuntu 12.10 - means you?re using Ubuntu from October 2012.
+>>>     Firefox 29 - the one I?m using is 34.
+>>>
+>>>     Well, I think you should really think about updating your
+>>>     Ubuntu, so you?ll also have all the other softwares updated,
+>>>     since you?re using old repositories, with old versions of software.
+>>
+>>     OK. I'm going to upgrade. Is there an easy GUI method? System
+>>     Tools > Admin > Software Updater gave me ...
+>>
+>>     Failed to download repository information.
+>>
+>>     Chris
+>
+>     I found some easy commands at an Ubuntu site...
+>
+>     |sudo apt-get update
+>     sudo apt-get dist-upgrade
+>     sudo do-release-upgrade
+>
+>     ||That gave me ...
+>
+>     chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get update
+>     [sudo] password for chris:
+>     Ignhttp://ca.archive.ubuntu.com  quantal Release.gpg
+>     Ignhttp://ca.archive.ubuntu.com  quantal-backports Release.gpg
+>
+>     [...]
+>
+>     Ignhttp://ca.archive.ubuntu.com  quantal-backports/multiverse i386 Packages/DiffIndex
+>     Ignhttp://extras.ubuntu.com  quantal/main Translation-en_CA
+>     Ignhttp://extras.ubuntu.com  quantal/main Translation-en
+>     Errhttp://ppa.launchpad.net  quantal/main Sources
+>        404  Not Found
+>     Errhttp://ppa.launchpad.net  quantal/main i386 Packages
+>        404  Not Found
+>     Ignhttp://ppa.launchpad.net  quantal/main Translation-en_CA
+>
+>     [...]
+>
+>     Ignhttp://ca.archive.ubuntu.com  quantal-backports/universe Translation-en
+>     Errhttp://ca.archive.ubuntu.com  quantal/main Sources
+>        404  Not Found [IP: 91.189.91.13 80]
+>     Errhttp://ca.archive.ubuntu.com  quantal/restricted Sources
+>        404  Not Found [IP: 91.189.91.13 80]
+>     Ignhttp://security.ubuntu.com  quantal-security/main Translation-en_CA
+>     Errhttp://ca.archive.ubuntu.com  quantal/universe Sources
+>        404  Not Found [IP: 91.189.91.13 80]
+>     Ignhttp://security.ubuntu.com  quantal-security/main Translation-en
+>     Errhttp://ca.archive.ubuntu.com  quantal/multiverse Sources
+>        404  Not Found [IP: 91.189.91.13 80]
+>
+>     [...]
+>
+>     Errhttp://security.ubuntu.com  quantal-security/universe i386 Packages
+>        404  Not Found [IP: 91.189.88.149 80]
+>     Errhttp://security.ubuntu.com  quantal-security/multiverse i386 Packages
+>        404  Not Found [IP: 91.189.88.149 80]
+>     W: Failed to fetchhttp://ca.archive.ubuntu.com/ubuntu/dists/quantal/main/source/Sources   404  Not Found [IP: 91.189.91.13 80]
+>
+>     W: Failed to fetchhttp://ca.archive.ubuntu.com/ubuntu/dists/quantal/restricted/source/Sources   404  Not Found [IP: 91.189.91.13 80]
+>
+>     [...]
+>
+>     W: Failed to fetchhttp://ca.archive.ubuntu.com/ubuntu/dists/quantal-backports/universe/binary-i386/Packages   404  Not Found [IP: 91.189.91.13 80]
+>
+>     W: Failed to fetchhttp://ca.archive.ubuntu.com/ubuntu/dists/quantal-backports/multiverse/binary-i386/Packages   404  Not Found [IP: 91.189.91.13 80]
+>
+>     E: Some index files failed to download. They have been ignored, or old ones used instead.
+>     chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get dist-upgrade
+>     Reading package lists... Done
+>     Building dependency tree
+>     Reading state information... Done
+>     Calculating upgrade... Done
+>     0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+>     chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo do-release-upgrade
+>     Checking for a new Ubuntu release
+>     Your Ubuntu release is not supported anymore.
+>     For upgrade information, please visit:
+>     http://www.ubuntu.com/releaseendoflife
+>
+>     Err Upgrade tool signature
+>        404  Not Found [IP: 91.189.91.15 80]
+>     Err Upgrade tool
+>        404  Not Found [IP: 91.189.91.15 80]
+>     Fetched 0 B in 0s (0 B/s)
+>     WARNING:root:file 'raring.tar.gz.gpg' missing
+>     Failed to fetch
+>     Fetching the upgrade failed. There may be a network problem.
+>     chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ ^C
+>     chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>
+>     |
+>
+>
+>>
+>>>
+>>>
+>>>     ---
+>>>     GTALUG Talk Mailing List -talk at gtalug.org  <mailto:talk at gtalug.org>
+>>>     http://gtalug.org/mailman/listinfo/talk
+>>
+>>
+>>
+>>     ---
+>>     GTALUG Talk Mailing List -talk at gtalug.org  <mailto:talk at gtalug.org>
+>>     http://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+>
+>     ---
+>     GTALUG Talk Mailing List - talk at gtalug.org <mailto:talk at gtalug.org>
+>     http://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141220/fd242c98/attachment.html>
+
