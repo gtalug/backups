@@ -5601,3 +5601,761 @@ chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141220/fd242c98/attachment.html>
 
+From tisdall at gmail.com  Sun Dec 21 21:56:39 2014
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Sun, 21 Dec 2014 16:56:39 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <5495D118.9000107@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net>
+ <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+Message-ID: <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+
+Take a look at https://help.ubuntu.com/community/EOLUpgrades/#Requirements
+.  Can you post your /etc/apt/sources.list file?
+
+The IP that apt is looking at definitely doesn't have 12.10 or 13.04:
+http://91.189.92.201/ubuntu/dists/
+
+When I used that post I manually made the change and didn't use sed so I
+can't confirm that that command actually made the proper changes needed.
+
+If you still have 12.10 then your /etc/apt/sources.list file should be
+something like the following:
+
+deb http://old-releases.ubuntu.com/ubuntu/ quantal main restricted universe
+multiverse
+deb http://old-releases.ubuntu.com/ubuntu/ quantal-updates main restricted
+universe multiverse
+deb http://old-releases.ubuntu.com/ubuntu/ quantal-security main restricted
+universe multiverse
+
+
+On Sat, Dec 20, 2014 at 2:42 PM, Chris Aitken <chris at chrisaitken.net> wrote:
+
+>  On 14-12-20 02:13 PM, Tim Tisdall wrote:
+>
+> I had this exact issue a short while ago.  The issue is that Ubuntu no
+> longer has any of the packages for 12.10 live so apt fails to find the
+> files it needs to do a dist. upgrade.  I used the following post to get
+> around this issue:
+> http://askubuntu.com/questions/91815/how-to-install-software-or-upgrade-from-an-old-unsupported-release/91821#91821
+>
+>
+> I tried all those steps.
+>
+> sudo sed -i -e 's/archive.ubuntu.com\|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.listsudo apt-get update && sudo apt-get dist-upgradesudo apt-get updatesudo apt-get install update-manager-core
+> sudo do-release-upgrade
+>
+> The last step gave me ...
+>
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo do-release-upgrade
+> Checking for a new Ubuntu release
+> Your Ubuntu release is not supported anymore.
+> For upgrade information, please visit:
+> http://www.ubuntu.com/releaseendoflife
+>
+> Err Upgrade tool
+> signature
+>
+>   404  Not Found [IP: 91.189.92.201
+> 80]
+>
+> Err Upgrade
+> tool
+> &nbsp ;
+>   404  Not Found [IP: 91.189.92.201
+> 80]
+>
+> Fetched 0 B in 0s (0
+> B/s)
+> &nbsp ;
+> WARNING:root:file 'raring.tar.gz.gpg' missing
+> Failed to fetch
+> Fetching the upgrade failed. There may be a network problem.
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>
+>
+>
+>  There's more information here too:
+> https://help.ubuntu.com/community/EOLUpgrades/
+>
+>
+>
+> On Sat, Dec 20, 2014 at 12:33 PM, Chris Aitken <chris at chrisaitken.net>
+> wrote:
+>
+>>  <snip>
+>>
+>>
+>>  The problem is that you?re using a very old version of Flash. In fact,
+>> you?re using very old version of everything, as far as I can see.
+>>
+>>  Ubuntu 12.10 - means you?re using Ubuntu from October 2012.
+>>  Firefox 29 - the one I?m using is 34.
+>>
+>>  Well, I think you should really think about updating your Ubuntu, so
+>> you?ll also have all the other softwares updated, since you?re using old
+>> repositories, with old versions of software.
+>>
+>>
+>> OK. I'm going to upgrade. Is there an easy GUI method? System Tools >
+>> Admin > Software Updater gave me ...
+>>
+>> Failed to download repository information.
+>>
+>> Chris
+>>
+>>
+>> I found some easy commands at an Ubuntu site...
+>>
+>> sudo apt-get update
+>> sudo apt-get dist-upgrade
+>> sudo do-release-upgrade
+>> That gave me ...
+>>
+>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get update
+>> [sudo] password for chris:
+>> Ign http://ca.archive.ubuntu.com quantal Release.gpg
+>> Ign http://ca.archive.ubuntu.com quantal-backports Release.gpg
+>>
+>> [...]
+>>
+>> Ign http://ca.archive.ubuntu.com quantal-backports/multiverse i386 Packages/DiffIndex
+>> Ign http://extras.ubuntu.com quantal/main Translation-en_CA
+>> Ign http://extras.ubuntu.com quantal/main Translation-en
+>> Err http://ppa.launchpad.net quantal/main Sources
+>>   404  Not Found
+>> Err http://ppa.launchpad.net quantal/main i386 Packages
+>>   404  Not Found
+>> Ign http://ppa.launchpad.net quantal/main Translation-en_CA
+>>
+>> [...]
+>>
+>> Ign http://ca.archive.ubuntu.com quantal-backports/universe Translation-en
+>> Err http://ca.archive.ubuntu.com quantal/main Sources
+>>   404  Not Found [IP: 91.189.91.13 80]
+>> Err http://ca.archive.ubuntu.com quantal/restricted Sources
+>>   404  Not Found [IP: 91.189.91.13 80]
+>> Ign http://security.ubuntu.com quantal-security/main Translation-en_CA
+>> Err http://ca.archive.ubuntu.com quantal/universe Sources
+>>   404  Not Found [IP: 91.189.91.13 80]
+>> Ign http://security.ubuntu.com quantal-security/main Translation-en
+>> Err http://ca.archive.ubuntu.com quantal/multiverse Sources
+>>   404  Not Found [IP: 91.189.91.13 80]
+>>
+>> [...]
+>>
+>> Err http://security.ubuntu.com quantal-security/universe i386 Packages
+>>   404  Not Found [IP: 91.189.88.149 80]
+>> Err http://security.ubuntu.com quantal-security/multiverse i386 Packages
+>>   404  Not Found [IP: 91.189.88.149 80]
+>> W: Failed to fetch http://ca.archive.ubuntu.com/ubuntu/dists/quantal/main/source/Sources  404  Not Found [IP: 91.189.91.13 80]
+>>
+>> W: Failed to fetch http://ca.archive.ubuntu.com/ubuntu/dists/quantal/restricted/source/Sources  404  Not Found [IP: 91.189.91.13 80]
+>>
+>> [...]
+>>
+>> W: Failed to fetch http://ca.archive.ubuntu.com/ubuntu/dists/quantal-backports/universe/binary-i386/Packages  404  Not Found [IP: 91.189.91.13 80]
+>>
+>> W: Failed to fetch http://ca.archive.ubuntu.com/ubuntu/dists/quantal-backports/multiverse/binary-i386/Packages  404  Not Found [IP: 91.189.91.13 80]
+>>
+>> E: Some index files failed to download. They have been ignored, or old ones used instead.
+>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get dist-upgrade
+>> Reading package lists... Done
+>> Building dependency tree
+>> Reading state information... Done
+>> Calculating upgrade... Done
+>> 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo do-release-upgrade
+>> Checking for a new Ubuntu release
+>> Your Ubuntu release is not supported anymore.
+>> For upgrade information, please visit:http://www.ubuntu.com/releaseendoflife
+>>
+>> Err Upgrade tool signature
+>>   404  Not Found [IP: 91.189.91.15 80]
+>> Err Upgrade tool
+>>   404  Not Found [IP: 91.189.91.15 80]
+>> Fetched 0 B in 0s (0 B/s)
+>> WARNING:root:file 'raring.tar.gz.gpg' missing
+>> Failed to fetch
+>> Fetching the upgrade failed. There may be a network problem.
+>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ ^C
+>> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>>
+>>
+>>
+>>
+>>
+>>
+>> ---
+>> GTALUG Talk Mailing List - talk at gtalug.orghttp://gtalug.org/mailman/listinfo/talk
+>>
+>>
+>>
+>>
+>> ---
+>> GTALUG Talk Mailing List - talk at gtalug.orghttp://gtalug.org/mailman/listinfo/talk
+>>
+>>
+>>
+>>
+>>
+>> ---
+>> GTALUG Talk Mailing List - talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.orghttp://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141221/0d1e9413/attachment.html>
+
+From chris at chrisaitken.net  Mon Dec 22 01:36:25 2014
+From: chris at chrisaitken.net (Chris Aitken)
+Date: Sun, 21 Dec 2014 20:36:25 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net> <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+Message-ID: <54977599.5010600@chrisaitken.net>
+
+On 14-12-21 04:56 PM, Tim Tisdall wrote:
+> Take a look at 
+> https://help.ubuntu.com/community/EOLUpgrades/#Requirements .  Can you 
+> post your /etc/apt/sources.list file?
+
+# deb cdrom:[Ubuntu 11.10 _Oneiric Ocelot_ - Release i386 (20111012)]/ 
+oneiric main restricted
+# deb cdrom:[Ubuntu 12.10 _Quantal Quetzal_ - Release i386 
+(20121017.2)]/ quantal main restricted
+
+# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+deb http://ca.old-releases.ubuntu.com/ubuntu/ quantal main restricted
+deb-src http://ca.old-releases.ubuntu.com/ubuntu/ quantal main restricted
+
+## Major bug fix updates produced after the final release of the
+## distribution.
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team. Also, please note that software in universe WILL NOT receive any
+## review or updates from the Ubuntu security team.
+deb http://ca.old-releases.ubuntu.com/ubuntu/ quantal universe
+deb-src http://ca.old-releases.ubuntu.com/ubuntu/ quantal universe
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team, and may not be under a free licence. Please satisfy yourself as to
+## your rights to use the software. Also, please note that software in
+## multiverse WILL NOT receive any review or updates from the Ubuntu
+## security team.
+deb http://ca.old-releases.ubuntu.com/ubuntu/ quantal multiverse
+deb-src http://ca.old-releases.ubuntu.com/ubuntu/ quantal multiverse
+
+## N.B. software from this repository may not have been tested as
+## extensively as that contained in the main release, although it includes
+## newer versions of some applications which may provide useful features.
+## Also, please note that software in backports WILL NOT receive any review
+## or updates from the Ubuntu security team.
+deb http://ca.old-releases.ubuntu.com/ubuntu/ quantal-backports main 
+restricted universe multiverse
+deb-src http://ca.old-releases.ubuntu.com/ubuntu/ quantal-backports main 
+restricted universe multiverse
+
+deb http://old-releases.ubuntu.com/ubuntu quantal-security main restricted
+deb-src http://old-releases.ubuntu.com/ubuntu quantal-security main 
+restricted
+deb http://old-releases.ubuntu.com/ubuntu quantal-security universe
+deb-src http://old-releases.ubuntu.com/ubuntu quantal-security universe
+deb http://old-releases.ubuntu.com/ubuntu quantal-security multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu quantal-security multiverse
+
+## Uncomment the following two lines to add software from Canonical's
+## 'partner' repository.
+## This software is not part of Ubuntu, but is offered by Canonical and the
+## respective vendors as a service to Ubuntu users.
+# deb http://archive.canonical.com/ubuntu oneiric partner
+# deb-src http://archive.canonical.com/ubuntu oneiric partner
+
+## This software is not part of Ubuntu, but is offered by third-party
+## developers who want to ship their latest software.
+deb http://extras.ubuntu.com/ubuntu quantal main
+deb-src http://extras.ubuntu.com/ubuntu quantal main
+
+# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+
+## Major bug fix updates produced after the final release of the
+## distribution.
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team. Also, please note that software in universe WILL NOT receive any
+## review or updates from the Ubuntu security team.
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team, and may not be under a free licence. Please satisfy yourself as to
+## your rights to use the software. Also, please note that software in
+## multiverse WILL NOT receive any review or updates from the Ubuntu
+## security team.
+
+## N.B. software from this repository may not have been tested as
+## extensively as that contained in the main release, although it includes
+## newer versions of some applications which may provide useful features.
+## Also, please note that software in backports WILL NOT receive any review
+## or updates from the Ubuntu security team.
+
+
+## Uncomment the following two lines to add software from Canonical's
+## 'partner' repository.
+## This software is not part of Ubuntu, but is offered by Canonical and the
+## respective vendors as a service to Ubuntu users.
+# deb http://archive.canonical.com/ubuntu quantal partner
+# deb-src http://archive.canonical.com/ubuntu quantal partner
+
+## This software is not part of Ubuntu, but is offered by third-party
+## developers who want to ship their latest software.
+deb http://old-releases.ubuntu.com/ubuntu utopic unicorn
+deb-src http://old-releases.ubuntu.com/ubuntu utopic unicorn
+deb http://archive.ubuntu.com/ubuntu utopic unicorn
+deb-src http://archive.ubuntu.com/ubuntu utopic unicorn
+
+<snip>
+
+From phiscock at ee.ryerson.ca  Mon Dec 22 02:00:02 2014
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Sun, 21 Dec 2014 21:00:02 -0500
+Subject: [GTALUG] Success: On-Lap Ext Display, Mint 17, Acer Aspire E 15
+Message-ID: <d2143d48b13fef9d9be6a5a0cf783b8c.squirrel@webmail.ee.ryerson.ca>
+
+Some times you get lucky.
+
+Today at Canada Computers I purchased an On-Lap 2501C external video
+display to increase the screen area of my Acer E 15 laptop, which is
+running Linux Mint 17. (Price: $200).
+
+The display is powered from the laptop USB (so an external power brick is
+not necessary) and can accept HDMI or VGA signals. This laptop has an HDMI
+output and the HDMI cable comes with the display, so I used that.
+
+It worked immediately without incident. The cables are too short and stiff
+to locate the display to the right of the laptop, it has to locate at the
+left. But the external monitor configuration wizard makes that a
+drag-and-drop operation.
+
+Working immediately may be somewhat due to the fact that the external
+monitor has the same resolution and display size as the laptop, I don't
+know how this would play out with a larger resolution monitor.
+
+The display colour rendition has been slanged in some reviews, but it
+looks fine to me, and certainly good enough for routine work.
+
+The display stand acts also as a cover for the display screen, which is
+convenient, but it puts the display at the wrong angle. You'll have to
+prop it up with a book or something.
+
+The whole thing fits nicely in a laptop case with the laptop.
+
+Now I can do Serious Work when I'm on the road...
+
+I remember when adding a monitor required some serious tinkering with
+configuration files, so this was a pleasant surprise.
+
+Peter
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From tisdall at gmail.com  Mon Dec 22 02:30:37 2014
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Sun, 21 Dec 2014 21:30:37 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <54977599.5010600@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net>
+ <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+Message-ID: <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+
+Right.  That was the problem with the sed command.  There's no
+ca.old-releases.ubuntu.com domain.  Just replace the whole thing with the
+three lines I gave you.
+
+Then run: sudo apt-get update && sudo apt-get dist-upgrade
+On 14-12-21 04:56 PM, Tim Tisdall wrote:
+
+> Take a look at https://help.ubuntu.com/community/EOLUpgrades/#Requirements
+> .  Can you post your /etc/apt/sources.list file?
+>
+
+# deb cdrom:[Ubuntu 11.10 _Oneiric Ocelot_ - Release i386 (20111012)]/
+oneiric main restricted
+# deb cdrom:[Ubuntu 12.10 _Quantal Quetzal_ - Release i386 (20121017.2)]/
+quantal main restricted
+
+# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+deb http://ca.old-releases.ubuntu.com/ubuntu/ quantal main restricted
+deb-src http://ca.old-releases.ubuntu.com/ubuntu/ quantal main restricted
+
+## Major bug fix updates produced after the final release of the
+## distribution.
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team. Also, please note that software in universe WILL NOT receive any
+## review or updates from the Ubuntu security team.
+deb http://ca.old-releases.ubuntu.com/ubuntu/ quantal universe
+deb-src http://ca.old-releases.ubuntu.com/ubuntu/ quantal universe
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team, and may not be under a free licence. Please satisfy yourself as to
+## your rights to use the software. Also, please note that software in
+## multiverse WILL NOT receive any review or updates from the Ubuntu
+## security team.
+deb http://ca.old-releases.ubuntu.com/ubuntu/ quantal multiverse
+deb-src http://ca.old-releases.ubuntu.com/ubuntu/ quantal multiverse
+
+## N.B. software from this repository may not have been tested as
+## extensively as that contained in the main release, although it includes
+## newer versions of some applications which may provide useful features.
+## Also, please note that software in backports WILL NOT receive any review
+## or updates from the Ubuntu security team.
+deb http://ca.old-releases.ubuntu.com/ubuntu/ quantal-backports main
+restricted universe multiverse
+deb-src http://ca.old-releases.ubuntu.com/ubuntu/ quantal-backports main
+restricted universe multiverse
+
+deb http://old-releases.ubuntu.com/ubuntu quantal-security main restricted
+deb-src http://old-releases.ubuntu.com/ubuntu quantal-security main
+restricted
+deb http://old-releases.ubuntu.com/ubuntu quantal-security universe
+deb-src http://old-releases.ubuntu.com/ubuntu quantal-security universe
+deb http://old-releases.ubuntu.com/ubuntu quantal-security multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu quantal-security multiverse
+
+## Uncomment the following two lines to add software from Canonical's
+## 'partner' repository.
+## This software is not part of Ubuntu, but is offered by Canonical and the
+## respective vendors as a service to Ubuntu users.
+# deb http://archive.canonical.com/ubuntu oneiric partner
+# deb-src http://archive.canonical.com/ubuntu oneiric partner
+
+## This software is not part of Ubuntu, but is offered by third-party
+## developers who want to ship their latest software.
+deb http://extras.ubuntu.com/ubuntu quantal main
+deb-src http://extras.ubuntu.com/ubuntu quantal main
+
+# See http://help.ubuntu.com/community/UpgradeNotes for how to upgrade to
+# newer versions of the distribution.
+
+## Major bug fix updates produced after the final release of the
+## distribution.
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team. Also, please note that software in universe WILL NOT receive any
+## review or updates from the Ubuntu security team.
+
+## N.B. software from this repository is ENTIRELY UNSUPPORTED by the Ubuntu
+## team, and may not be under a free licence. Please satisfy yourself as to
+## your rights to use the software. Also, please note that software in
+## multiverse WILL NOT receive any review or updates from the Ubuntu
+## security team.
+
+## N.B. software from this repository may not have been tested as
+## extensively as that contained in the main release, although it includes
+## newer versions of some applications which may provide useful features.
+## Also, please note that software in backports WILL NOT receive any review
+## or updates from the Ubuntu security team.
+
+
+## Uncomment the following two lines to add software from Canonical's
+## 'partner' repository.
+## This software is not part of Ubuntu, but is offered by Canonical and the
+## respective vendors as a service to Ubuntu users.
+# deb http://archive.canonical.com/ubuntu quantal partner
+# deb-src http://archive.canonical.com/ubuntu quantal partner
+
+## This software is not part of Ubuntu, but is offered by third-party
+## developers who want to ship their latest software.
+deb http://old-releases.ubuntu.com/ubuntu utopic unicorn
+deb-src http://old-releases.ubuntu.com/ubuntu utopic unicorn
+deb http://archive.ubuntu.com/ubuntu utopic unicorn
+deb-src http://archive.ubuntu.com/ubuntu utopic unicorn
+
+<snip>
+
+
+---
+GTALUG Talk Mailing List - talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141221/594eb1a9/attachment.html>
+
+From chris at chrisaitken.net  Mon Dec 22 03:56:05 2014
+From: chris at chrisaitken.net (Chris Aitken)
+Date: Sun, 21 Dec 2014 22:56:05 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <54979462.2090709@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net> <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+Message-ID: <54979655.4080100@chrisaitken.net>
+
+This email failed (too big), so I'll send it in two parts...
+
+Part 1:
+
+On 14-12-21 10:47 PM, Chris Aitken wrote:
+> On 14-12-21 09:30 PM, Tim Tisdall wrote:
+>>
+>> Right.  That was the problem with the sed command. There's 
+>> noca.old-releases.ubuntu.com <http://ca.old-releases.ubuntu.com> 
+>> domain.  Just replace the whole thing with the three lines I gave you.
+>>
+>> Then run: sudo apt-get update && sudo apt-get dist-upgrade
+>>
+>
+> <snip>
+>
+> Done. So, is the following good, bad, or a mix?
+>
+> Does the upgrade start at reboot?
+>
+> Chris
+>
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get update 
+> && sudo apt-get dist-upgrade
+> [sudo] password for chris:
+> Ign http://ppa.launchpad.net quantal Release.gpg
+> Get:1 http://old-releases.ubuntu.com quantal Release.gpg [933 B]
+> Ign http://ppa.launchpad.net quantal Release
+> Get:2 http://old-releases.ubuntu.com quantal-updates Release.gpg [933 B]
+> Hit http://old-releases.ubuntu.com quantal-security Release.gpg
+> Get:3 http://old-releases.ubuntu.com quantal Release [49.6 kB]
+> Get:4 http://old-releases.ubuntu.com quantal-updates Release [49.6 kB]
+> Hit http://old-releases.ubuntu.com quantal-security Release
+> Get:5 http://old-releases.ubuntu.com quantal/main i386 Packages [1,136 kB]
+> Err http://ppa.launchpad.net quantal/main Sources
+>   404  Not Found
+> Err http://ppa.launchpad.net quantal/main i386 Packages
+>   404  Not Found
+> Ign http://ppa.launchpad.net quantal/main Translation-en_CA
+> Ign http://ppa.launchpad.net quantal/main Translation-en
+> Get:6 http://old-releases.ubuntu.com quantal/restricted i386 Packages 
+> [8,387 B]
+> Get:7 http://old-releases.ubuntu.com quantal/universe i386 Packages 
+> [5,285 kB]
+> Get:8 http://old-releases.ubuntu.com quantal/multiverse i386 Packages 
+> [133 kB]
+> Get:9 http://old-releases.ubuntu.com quantal/main Translation-en_CA 
+> [10.4 kB]
+> Get:10 http://old-releases.ubuntu.com quantal/main Translation-en [660 
+> kB]
+> Get:11 http://old-releases.ubuntu.com quantal/multiverse 
+> Translation-en [100 kB]
+> Get:12 http://old-releases.ubuntu.com quantal/restricted 
+> Translation-en [2,575 B]
+> Get:13 http://old-releases.ubuntu.com quantal/universe 
+> Translation-en_CA [663 B]
+> Get:14 http://old-releases.ubuntu.com quantal/universe Translation-en 
+> [3,646 kB]
+> Get:15 http://old-releases.ubuntu.com quantal-updates/main i386 
+> Packages [338 kB]
+> Get:16 http://old-releases.ubuntu.com quantal-updates/restricted i386 
+> Packages [4,841 B]
+> Get:17 http://old-releases.ubuntu.com quantal-updates/universe i386 
+> Packages [221 kB]
+> Get:18 http://old-releases.ubuntu.com quantal-updates/multiverse i386 
+> Packages [12.3 kB]
+> Get:19 http://old-releases.ubuntu.com quantal-updates/main 
+> Translation-en [172 kB]
+
+...
+>
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141221/cf4af111/attachment.html>
+
+From chris at chrisaitken.net  Mon Dec 22 03:56:44 2014
+From: chris at chrisaitken.net (Chris Aitken)
+Date: Sun, 21 Dec 2014 22:56:44 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <54979462.2090709@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net> <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+Message-ID: <5497967C.5060300@chrisaitken.net>
+
+Part 2:
+
+> Get:20 http://old-releases.ubuntu.com quantal-updates/multiverse 
+> Translation-en [6,931 B]
+> Get:21 http://old-releases.ubuntu.com quantal-updates/restricted 
+> Translation-en [1,477 B]
+> Get:22 http://old-releases.ubuntu.com quantal-updates/universe 
+> Translation-en [115 kB]
+> Hit http://old-releases.ubuntu.com quantal-security/main i386 Packages
+> Hit http://old-releases.ubuntu.com quantal-security/restricted i386 
+> Packages
+> Hit http://old-releases.ubuntu.com quantal-security/universe i386 
+> Packages
+> Hit http://old-releases.ubuntu.com quantal-security/multiverse i386 
+> Packages
+> Hit http://old-releases.ubuntu.com quantal-security/main Translation-en
+> Hit http://old-releases.ubuntu.com quantal-security/multiverse 
+> Translation-en
+> Hit http://old-releases.ubuntu.com quantal-security/restricted 
+> Translation-en
+> Hit http://old-releases.ubuntu.com quantal-security/universe 
+> Translation-en
+> Ign http://old-releases.ubuntu.com quantal/multiverse Translation-en_CA
+> Ign http://old-releases.ubuntu.com quantal/restricted Translation-en_CA
+> Ign http://old-releases.ubuntu.com quantal-updates/main Translation-en_CA
+> Ign http://old-releases.ubuntu.com quantal-updates/multiverse 
+> Translation-en_CA
+> Ign http://old-releases.ubuntu.com quantal-updates/restricted 
+> Translation-en_CA
+> Ign http://old-releases.ubuntu.com quantal-updates/universe 
+> Translation-en_CA
+> Ign http://old-releases.ubuntu.com quantal-security/main 
+> Translation-en_CA
+> Ign http://old-releases.ubuntu.com quantal-security/multiverse 
+> Translation-en_CA
+> Ign http://old-releases.ubuntu.com quantal-security/restricted 
+> Translation-en_CA
+> Ign http://old-releases.ubuntu.com quantal-security/universe 
+> Translation-en_CA
+> Fetched 12.0 MB in 23s (504 kB/s)
+> W: Failed to fetch 
+> http://ppa.launchpad.net/andykimpe/freshplayerplugin-daily/ubuntu/dists/quantal/main/source/Sources 
+> 404  Not Found
+>
+> W: Failed to fetch 
+> http://ppa.launchpad.net/andykimpe/freshplayerplugin-daily/ubuntu/dists/quantal/main/binary-i386/Packages 
+> 404  Not Found
+>
+> E: Some index files failed to download. They have been ignored, or old 
+> ones used instead.
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ ^C
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>
+
+
+From chris at chrisaitken.net  Mon Dec 22 04:05:52 2014
+From: chris at chrisaitken.net (Chris Aitken)
+Date: Sun, 21 Dec 2014 23:05:52 -0500
+Subject: [GTALUG] Does Chrome make Ubuntu 12.10 viable? [was > Re: Upgrade
+ from Ubuntu 12.10]
+In-Reply-To: <5497967C.5060300@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net> <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net> <5497967C.5060300@chrisaitken.net>
+Message-ID: <549798A0.1010809@chrisaitken.net>
+
+Tim,
+
+While I wait for your response, I at least have a workaround now that a 
+local computer geek suggested. I went to ninite.com, chose linux > 
+chrome > install, and even though it complained about updates failing, 
+it completed the install. Chrome is in Applications > Internet. I 
+clicked on it, it opened, I went to youtube and played a video no 
+problem - no complaints about an old version of Adobe Flash. Should I 
+still do this upgrade, or just use Chrome from now on?
+
+Chris
+
+From chris at chrisaitken.net  Mon Dec 22 05:25:21 2014
+From: chris at chrisaitken.net (Chris Aitken)
+Date: Mon, 22 Dec 2014 00:25:21 -0500
+Subject: [GTALUG] Does Chrome make Ubuntu 12.10 viable?
+In-Reply-To: <549798A0.1010809@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net> <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net> <5497967C.5060300@chrisaitken.net>
+ <549798A0.1010809@chrisaitken.net>
+Message-ID: <5497AB41.1080705@chrisaitken.net>
+
+On 14-12-21 11:05 PM, Chris Aitken wrote:
+> Tim,
+>
+> While I wait for your response, I at least have a workaround now that 
+> a local computer geek suggested. I went to ninite.com, chose linux > 
+> chrome > install, and even though it complained about updates failing, 
+> it completed the install. Chrome is in Applications > Internet. I 
+> clicked on it, it opened, I went to youtube and played a video no 
+> problem - no complaints about an old version of Adobe Flash. Should I 
+> still do this upgrade, or just use Chrome from now on?
+
+Also, I clicked on the red triangle icon on the panel, and the updates 
+started! A lot of them - took over five minutes. I rebooted, and it's 
+still Ubuntu 12.10 (quantal). So, no Ubuntu version upgrade but the 
+updates took. Firefox still asking for Adobe Flash update, but Chrome is 
+playing videos fine.
+
+Chris
+>
+> Chris
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
