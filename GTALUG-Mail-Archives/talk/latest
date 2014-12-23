@@ -6359,3 +6359,390 @@ Chris
 >
 
 
+From chris at chrisaitken.net  Mon Dec 22 03:47:46 2014
+From: chris at chrisaitken.net (Chris Aitken)
+Date: Sun, 21 Dec 2014 22:47:46 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net> <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+Message-ID: <54979462.2090709@chrisaitken.net>
+
+On 14-12-21 09:30 PM, Tim Tisdall wrote:
+>
+> Right.  That was the problem with the sed command. There's 
+> noca.old-releases.ubuntu.com <http://ca.old-releases.ubuntu.com> 
+> domain.  Just replace the whole thing with the three lines I gave you.
+>
+> Then run: sudo apt-get update && sudo apt-get dist-upgrade
+>
+
+<snip>
+
+Done. So, is the following good, bad, or a mix?
+
+Does the upgrade start at reboot?
+
+Chris
+
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get update && 
+sudo apt-get dist-upgrade
+[sudo] password for chris:
+Ign http://ppa.launchpad.net quantal Release.gpg
+Get:1 http://old-releases.ubuntu.com quantal Release.gpg [933 B]
+Ign http://ppa.launchpad.net quantal Release
+Get:2 http://old-releases.ubuntu.com quantal-updates Release.gpg [933 B]
+Hit http://old-releases.ubuntu.com quantal-security Release.gpg
+Get:3 http://old-releases.ubuntu.com quantal Release [49.6 kB]
+Get:4 http://old-releases.ubuntu.com quantal-updates Release [49.6 kB]
+Hit http://old-releases.ubuntu.com quantal-security Release
+Get:5 http://old-releases.ubuntu.com quantal/main i386 Packages [1,136 kB]
+Err http://ppa.launchpad.net quantal/main Sources
+   404  Not Found
+Err http://ppa.launchpad.net quantal/main i386 Packages
+   404  Not Found
+Ign http://ppa.launchpad.net quantal/main Translation-en_CA
+Ign http://ppa.launchpad.net quantal/main Translation-en
+Get:6 http://old-releases.ubuntu.com quantal/restricted i386 Packages 
+[8,387 B]
+Get:7 http://old-releases.ubuntu.com quantal/universe i386 Packages 
+[5,285 kB]
+Get:8 http://old-releases.ubuntu.com quantal/multiverse i386 Packages 
+[133 kB]
+Get:9 http://old-releases.ubuntu.com quantal/main Translation-en_CA 
+[10.4 kB]
+Get:10 http://old-releases.ubuntu.com quantal/main Translation-en [660 kB]
+Get:11 http://old-releases.ubuntu.com quantal/multiverse Translation-en 
+[100 kB]
+Get:12 http://old-releases.ubuntu.com quantal/restricted Translation-en 
+[2,575 B]
+Get:13 http://old-releases.ubuntu.com quantal/universe Translation-en_CA 
+[663 B]
+Get:14 http://old-releases.ubuntu.com quantal/universe Translation-en 
+[3,646 kB]
+Get:15 http://old-releases.ubuntu.com quantal-updates/main i386 Packages 
+[338 kB]
+Get:16 http://old-releases.ubuntu.com quantal-updates/restricted i386 
+Packages [4,841 B]
+Get:17 http://old-releases.ubuntu.com quantal-updates/universe i386 
+Packages [221 kB]
+Get:18 http://old-releases.ubuntu.com quantal-updates/multiverse i386 
+Packages [12.3 kB]
+Get:19 http://old-releases.ubuntu.com quantal-updates/main 
+Translation-en [172 kB]
+Get:20 http://old-releases.ubuntu.com quantal-updates/multiverse 
+Translation-en [6,931 B]
+Get:21 http://old-releases.ubuntu.com quantal-updates/restricted 
+Translation-en [1,477 B]
+Get:22 http://old-releases.ubuntu.com quantal-updates/universe 
+Translation-en [115 kB]
+Hit http://old-releases.ubuntu.com quantal-security/main i386 Packages
+Hit http://old-releases.ubuntu.com quantal-security/restricted i386 
+Packages
+Hit http://old-releases.ubuntu.com quantal-security/universe i386 Packages
+Hit http://old-releases.ubuntu.com quantal-security/multiverse i386 
+Packages
+Hit http://old-releases.ubuntu.com quantal-security/main Translation-en
+Hit http://old-releases.ubuntu.com quantal-security/multiverse 
+Translation-en
+Hit http://old-releases.ubuntu.com quantal-security/restricted 
+Translation-en
+Hit http://old-releases.ubuntu.com quantal-security/universe Translation-en
+Ign http://old-releases.ubuntu.com quantal/multiverse Translation-en_CA
+Ign http://old-releases.ubuntu.com quantal/restricted Translation-en_CA
+Ign http://old-releases.ubuntu.com quantal-updates/main Translation-en_CA
+Ign http://old-releases.ubuntu.com quantal-updates/multiverse 
+Translation-en_CA
+Ign http://old-releases.ubuntu.com quantal-updates/restricted 
+Translation-en_CA
+Ign http://old-releases.ubuntu.com quantal-updates/universe 
+Translation-en_CA
+Ign http://old-releases.ubuntu.com quantal-security/main Translation-en_CA
+Ign http://old-releases.ubuntu.com quantal-security/multiverse 
+Translation-en_CA
+Ign http://old-releases.ubuntu.com quantal-security/restricted 
+Translation-en_CA
+Ign http://old-releases.ubuntu.com quantal-security/universe 
+Translation-en_CA
+Fetched 12.0 MB in 23s (504 kB/s)
+W: Failed to fetch 
+http://ppa.launchpad.net/andykimpe/freshplayerplugin-daily/ubuntu/dists/quantal/main/source/Sources 
+404  Not Found
+
+W: Failed to fetch 
+http://ppa.launchpad.net/andykimpe/freshplayerplugin-daily/ubuntu/dists/quantal/main/binary-i386/Packages 
+404  Not Found
+
+E: Some index files failed to download. They have been ignored, or old 
+ones used instead.
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ ^C
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141221/3775a4c6/attachment.html>
+
+From tisdall at gmail.com  Mon Dec 22 14:59:03 2014
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Mon, 22 Dec 2014 09:59:03 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <54979462.2090709@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net>
+ <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+Message-ID: <CAGxYWpYF88tZfxuDcjFfQYgnNRhaMVLwLygOHRh_F=xNaFd+GQ@mail.gmail.com>
+
+On Sun, Dec 21, 2014 at 10:47 PM, Chris Aitken <chris at chrisaitken.net>
+wrote:
+
+>  On 14-12-21 09:30 PM, Tim Tisdall wrote:
+>
+> Right.  That was the problem with the sed command.  There's no
+> ca.old-releases.ubuntu.com domain.  Just replace the whole thing with the
+> three lines I gave you.
+>
+> Then run: sudo apt-get update && sudo apt-get dist-upgrade
+>
+>
+> Done. So, is the following good, bad, or a mix?
+>
+>
+>
+>
+> Fetched 12.0 MB in 23s (504
+> kB/s)
+>
+> W: Failed to fetch
+> http://ppa.launchpad.net/andykimpe/freshplayerplugin-daily/ubuntu/dists/quantal/main/source/Sources
+> 404  Not Found
+>
+> W: Failed to fetch
+> http://ppa.launchpad.net/andykimpe/freshplayerplugin-daily/ubuntu/dists/quantal/main/binary-i386/Packages
+> 404  Not Found
+>
+>
+Okay, I think you may be able to just run "sudo apt-get dist-upgrade" and
+things will work fine.  It failed to run that second part because the
+update failed on some custom PPA's you installed.  The dist-upgrade should
+then disable the PPA's and do the upgrade.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141222/77565ad1/attachment.html>
+
+From tisdall at gmail.com  Mon Dec 22 15:01:54 2014
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Mon, 22 Dec 2014 10:01:54 -0500
+Subject: [GTALUG] Does Chrome make Ubuntu 12.10 viable?
+In-Reply-To: <5497AB41.1080705@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net>
+ <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+ <5497967C.5060300@chrisaitken.net>
+ <549798A0.1010809@chrisaitken.net>
+ <5497AB41.1080705@chrisaitken.net>
+Message-ID: <CAGxYWpY3Bu=eWObw7Q58xuFmXRa5bpXmnLZON7McmYBk4aiHJg@mail.gmail.com>
+
+You just managed to install whatever updates you had missed before they
+took the repository offline.  You're still way out of date and missing any
+new security patches that have happened since the "end of life" date.
+
+Ubuntu 12.10 probably runs the latest Chrome just fine, but you are still
+running a fairly old OS that may have security issues.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141222/25008f97/attachment.html>
+
+From chris.aitken at EastLink.ca  Mon Dec 22 15:27:33 2014
+From: chris.aitken at EastLink.ca (ChrisAitken)
+Date: Mon, 22 Dec 2014 10:27:33 -0500
+Subject: [GTALUG] Does Chrome make Ubuntu 12.10 viable?
+In-Reply-To: <CAGxYWpY3Bu=eWObw7Q58xuFmXRa5bpXmnLZON7McmYBk4aiHJg@mail.gmail.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net> <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net> <5497967C.5060300@chrisaitken.net>
+ <549798A0.1010809@chrisaitken.net> <5497AB41.1080705@chrisaitken.net>
+ <CAGxYWpY3Bu=eWObw7Q58xuFmXRa5bpXmnLZON7McmYBk4aiHJg@mail.gmail.com>
+Message-ID: <fabda7139ad74.5497f215@eastlink.ca>
+
+ 
+On 12/22/14 10:02 AM, Tim Tisdall <tisdall at gmail.com> wrote:
+
+>  
+>  
+> You just managed to install whatever updates you had missed before they took the repository offline.  You're still way out of date and missing any new security patches that have happened since the "end of life" date.
+> 
+> 
+> 
+> Ubuntu 12.10 probably runs the latest Chrome just fine, but you are still running a fairly old OS that may have security issues. 
+> 
+ 
+Yes, that makes perfect sense.  If I can't get your commands to install the upgrade, I'll take it to the local guru in January.
+ 
+Chris
+
+>  
+>  
+>  
+>  
+>  
+> 
+> 
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141222/98adee4e/attachment.html>
+
+From hgibson at eol.ca  Mon Dec 22 15:55:42 2014
+From: hgibson at eol.ca (Howard Gibson)
+Date: Mon, 22 Dec 2014 10:55:42 -0500
+Subject: [GTALUG] Does Chrome make Ubuntu 12.10 viable? [was > Re:
+ Upgrade from Ubuntu 12.10]
+In-Reply-To: <549798A0.1010809@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net>
+ <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+ <5497967C.5060300@chrisaitken.net>
+ <549798A0.1010809@chrisaitken.net>
+Message-ID: <20141222105542.0b32c12aabe52649e1a3ef43@eol.ca>
+
+On Sun, 21 Dec 2014 23:05:52 -0500
+Chris Aitken <chris at chrisaitken.net> wrote:
+
+> Tim,
+> 
+> While I wait for your response, I at least have a workaround now that a 
+> local computer geek suggested. I went to ninite.com, chose linux > 
+> chrome > install, and even though it complained about updates failing, 
+> it completed the install. Chrome is in Applications > Internet. I 
+> clicked on it, it opened, I went to youtube and played a video no 
+> problem - no complaints about an old version of Adobe Flash. Should I 
+> still do this upgrade, or just use Chrome from now on?
+> 
+> Chris
+
+Chris,
+
+   When I updated my Fedora machine recently, I resisted installing
+flash. I noticed that most YouTube videos continued to work.  Most
+Facebook videos did not work.  Whatever was causing Firefox to lock up
+also was not working.  I have since installed flash to cope with some
+ski club stuff, and my Firefox has been locking up again.  I am not
+getting Flash's out of date message on my desktop.  I have been getting
+it on my laptop.
+
+   I have had an interesting problem with Google-chrome.  I run a
+webserver on my desktop and on my laptop.  My default URLs are
+http://desktop/~howard and http://laptop/~howard.  I would log into my
+laptop, and the URL would come up http://desktop/~howard.  I would fix
+this, and when I logged into my desktop, the URL would be
+http://laptop/~howard.  I have an active Google account to which both
+machines are logged in.  I do not like having my personal stuff stored
+on the cloud.  Default URLs are not important, but I am not sure how
+far this goes.  I am back running Firefox most of the time.  I use
+Google-chrome 
+
+   Over on http://www.webpagesthatsuck, Vincent Flanders insists that
+Flash is dead.  Let's help bury it. 
+
+-- 
+Howard Gibson 
+hgibson at eol.ca
+howard.gibson at optech.com 
+jhowardgibson at gmail.com
+http://home.eol.ca/~hgibson
+
+From hugh at mimosa.com  Mon Dec 22 18:32:54 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 22 Dec 2014 13:32:54 -0500 (EST)
+Subject: [GTALUG] Upgrade from Ubuntu 12.10 [was > Re: Ubuntu need Adobe
+ Flash?]
+In-Reply-To: <5495AFBD.8090606@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net>
+Message-ID: <alpine.LRH.2.02.1412221328160.7334@redclaw.mimosa.com>
+
+| From: Chris Aitken <chris at chrisaitken.net>
+
+| OK. I'm going to upgrade. Is there an easy GUI method? System Tools > 
+| Admin > Software Updater gave me ...
+
+Ubuntu 12.04 and 14.04 and probably 16.04 are Long Term Support
+versions of Ubuntu.  They promise support for some years.
+
+The other Ubuntus are supported for about a year, if I remember
+correctly.
+
+Given that you kept your 12.10 past the end of support, I suggest you
+move to 14.04.  Perhaps you will be done with your computer by the
+time 14.04 LTS expires.
+
+From scott at ss.org  Tue Dec 23 04:36:01 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Mon, 22 Dec 2014 23:36:01 -0500
+Subject: [GTALUG] [OT] One Plus One Invite to pass along.
+Message-ID: <5498F131.7090902@ss.org>
+
+I've got a spare invite to purchase the One Plus One phone.
+
+Anyone interested _MUST_ contact me off-list. First come, first serve.
+
+Thank you,
+-- 
+Scott Sullivan
+
+From scott at ss.org  Tue Dec 23 04:56:35 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Mon, 22 Dec 2014 23:56:35 -0500
+Subject: [GTALUG] [OT] One Plus One Invite to pass along.
+In-Reply-To: <5498F131.7090902@ss.org>
+References: <5498F131.7090902@ss.org>
+Message-ID: <5498F603.9070607@ss.org>
+
+On 12/22/2014 11:36 PM, Scott Sullivan wrote:
+> I've got a spare invite to purchase the One Plus One phone.
+>
+> Anyone interested _MUST_ contact me off-list. First come, first serve.
+>
+> Thank you,
+
+
+And... wasn't paying attention, the invited expired very recently.
+
+False Alarm folks.
+
+-- 
+Scott Sullivan
+
