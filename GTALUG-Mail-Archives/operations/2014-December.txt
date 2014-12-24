@@ -1251,3 +1251,76 @@ gtalug.org.
 Scott Sullivan
 
 
+From qwerty172 at gmail.com  Tue Dec 23 15:41:42 2014
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Tue, 23 Dec 2014 10:41:42 -0500
+Subject: [GTALUG-Ops] Today's Meeting
+In-Reply-To: <5498C396.2000301@ss.org>
+References: <CAA3RLT7RQdWdUf7GtrBFWVnDCHdN9Gc3LUB_Q-sni2fBOwE9sA@mail.gmail.com>
+ <CAFNqd5VWW+8h9ZDZ9V0_swc0EYT1KnR54Xyh_xRcFLcs8e_TLA@mail.gmail.com>
+ <5498491A.6030503@rogers.com>
+ <CAPYt=DGZbKs4tSWeKDmRnP+CpkXb5HFUw6OADYFKWYUW+HrzsQ@mail.gmail.com>
+ <CAFNqd5UHLz1EXeM4L33rj3jQGv1PdH3xoGQwqvRc0bnbaL5-oA@mail.gmail.com>
+ <5498C396.2000301@ss.org>
+Message-ID: <CAA3RLT5OO01bZmYZuV64qLfHdd3ih=vetNDxhuJ8Givt-GL4Rw@mail.gmail.com>
+
+So I'm going to call yesterday's irc get together a failure.
+
+If we plan to do this in the future, we need to organize a little more.
+
+Can everyone try to get a client that works and log in.
+
+I think irc or something similar is the way to go, but I think we need to
+make it work first.
+
+Bill
+
+
+On Mon, Dec 22, 2014 at 8:21 PM, Scott Sullivan <scott at ss.org> wrote:
+
+> On 12/22/2014 07:46 PM, Christopher Browne wrote:
+>
+>> On 22 December 2014 at 18:22, Mike Kallies <mike.kallies at gmail.com
+>> <mailto:mike.kallies at gmail.com>> wrote:
+>>  >
+>>  > gtalug.info <http://gtalug.info> is climbing in search results.
+>>  >
+>>  > On bing, (sorry everyone), a search for  "Gtalug code of conduct"
+>>  > brings up .info, while .org doesn't appear at all.
+>>  >
+>>  > Duckduckgo still has gtalug.org <http://gtalug.org> on top, but .info
+>> is the 3rd result.
+>>  >
+>>  > Google's more sensible.
+>>  >
+>>  > Would robots.txt solve this short-term?
+>>
+>> Hmm, that's quite interesting.  Perhaps someone linked to the COC
+>> page with an .info-based URL.
+>>
+>> I expect that putting in robots.txt would eliminate both sites, as
+>> gtalug.info <http://gtalug.info> is, I think, used as a CNAME, so
+>> robots.txt would wind
+>> up blocking both places.
+>>
+>
+> CNAME is not an issue if the webserver just has a different virtual server
+> for gtalug.info. Http is not dependant on the DNS name, it explicitly
+> requests the domain in the http header.
+>
+> We can then have the gtalug.info domain return a "303 See Other" code to
+> gtalug.org.
+>
+> --
+> Scott Sullivan
+>
+>
+>
+> ---
+> GTALUG Operations Mailing List - operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141223/68fba1db/attachment.html>
+

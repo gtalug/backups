@@ -6746,3 +6746,367 @@ False Alarm folks.
 -- 
 Scott Sullivan
 
+From tisdall at gmail.com  Tue Dec 23 14:35:09 2014
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Tue, 23 Dec 2014 09:35:09 -0500
+Subject: [GTALUG] [OT] One Plus One Invite to pass along.
+In-Reply-To: <5498F603.9070607@ss.org>
+References: <5498F131.7090902@ss.org>
+	<5498F603.9070607@ss.org>
+Message-ID: <CAGxYWpY79FtscU-UexgVWq7+ccC1ZGse3USLapGJGjhLrM05DQ@mail.gmail.com>
+
+Here's one for sale not requiring an invitation:
+http://www.geekbuying.com/item/ONEPLUS-ONE-Qualcomm-Core-Smartphone-5-5Inch-Gorilla-Glass-Quad-Core-2-5GHz-3GB-RAM-16GB-ROM-13-0MP-4G-FDD-LTE-OTG-NFC--White-329440.html
+
+Seems to cost more than the oneplus.net store, though.
+
+On Mon, Dec 22, 2014 at 11:56 PM, Scott Sullivan <scott at ss.org> wrote:
+
+> On 12/22/2014 11:36 PM, Scott Sullivan wrote:
+>
+>> I've got a spare invite to purchase the One Plus One phone.
+>>
+>> Anyone interested _MUST_ contact me off-list. First come, first serve.
+>>
+>> Thank you,
+>>
+>
+>
+> And... wasn't paying attention, the invited expired very recently.
+>
+> False Alarm folks.
+>
+>
+> --
+> Scott Sullivan
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141223/d4b48d91/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Tue Dec 23 16:28:34 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 23 Dec 2014 11:28:34 -0500
+Subject: [GTALUG] [OT] One Plus One Invite to pass along.
+In-Reply-To: <5498F131.7090902@ss.org>
+References: <5498F131.7090902@ss.org>
+Message-ID: <20141223162834.GW24111@csclub.uwaterloo.ca>
+
+On Mon, Dec 22, 2014 at 11:36:01PM -0500, Scott Sullivan wrote:
+> I've got a spare invite to purchase the One Plus One phone.
+> 
+> Anyone interested _MUST_ contact me off-list. First come, first serve.
+
+I am trying to figure out what makes anyone want to want that phone
+in particular?
+
+Both qualcomm and cyanogenmod have pretty well deserved reputations for
+being rather hostile to openess.
+
+Am I missing something?
+
+-- 
+Len Sorensen
+
+From hugh at mimosa.com  Tue Dec 23 18:14:22 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 23 Dec 2014 13:14:22 -0500 (EST)
+Subject: [GTALUG] [OT] One Plus One Invite to pass along.
+In-Reply-To: <20141223162834.GW24111@csclub.uwaterloo.ca>
+References: <5498F131.7090902@ss.org>
+ <20141223162834.GW24111@csclub.uwaterloo.ca>
+Message-ID: <alpine.LRH.2.02.1412231228060.7729@redclaw.mimosa.com>
+
+| From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+
+| Both qualcomm and cyanogenmod have pretty well deserved reputations for
+| being rather hostile to openess.
+
+I didn't know this about Cyanogenmod.  I use stock firmware on all my
+Android devices, acting like a dumb consumer (sadly, that's what I
+am).  I just assumed Cyanogenmod was open if I wanted to bother.  Is
+it like dd-wrt?
+
+I guess most things about Android are pretend-open (fauxpen?).
+As time goes by more of the important features are closed source.
+And "open" was almost always a one way street from Google.
+
+From thoriumbr at gmail.com  Tue Dec 23 19:49:44 2014
+From: thoriumbr at gmail.com (Mauro Souza)
+Date: Tue, 23 Dec 2014 17:49:44 -0200
+Subject: [GTALUG] [OT] One Plus One Invite to pass along.
+In-Reply-To: <alpine.LRH.2.02.1412231228060.7729@redclaw.mimosa.com>
+References: <5498F131.7090902@ss.org>
+ <20141223162834.GW24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412231228060.7729@redclaw.mimosa.com>
+Message-ID: <CAEZ_B6PHF0BtMrvkzHcWQoW8Zjn4f4o2nTW3bAQ5wC+mvJvMBg@mail.gmail.com>
+
+Strange, Cyanogenmod always looked pretty open to me.
+
+I never used stock android roms. Since my first Galaxy Ace, I always root
+them and put another rom. I already used Cyanogenmod, RessurrectionRemix,
+Paranoid, Mysteryous, SlimBean, AOKP, and a few others I don't recall now.
+
+Cyanogenmod paired with OnePlus makes easy to develop firmware and drivers
+for it, because nobody needs to get the binary blobs and stitch it on the
+new ROM, the documentation is clear(er), and the people from CM and OnePlus
+can talk to each other to solve problems.
+
+Everybody is wanting this phone because of the great hardware specs (on
+pair with Galaxy Note 4) and a very low price, beating down every single
+phone on the same price line, and even beating ones costing twice as much
+as the OnePlus One...
+
+I bought one, it's shipping home...
+
+Mauro
+http://mauro.limeiratem.com - registered Linux User: 294521
+Scripture is both history, and a love letter from God.
+
+2014-12-23 16:14 GMT-02:00 D. Hugh Redelmeier <hugh at mimosa.com>:
+
+> | From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+>
+> | Both qualcomm and cyanogenmod have pretty well deserved reputations for
+> | being rather hostile to openess.
+>
+> I didn't know this about Cyanogenmod.  I use stock firmware on all my
+> Android devices, acting like a dumb consumer (sadly, that's what I
+> am).  I just assumed Cyanogenmod was open if I wanted to bother.  Is
+> it like dd-wrt?
+>
+> I guess most things about Android are pretend-open (fauxpen?).
+> As time goes by more of the important features are closed source.
+> And "open" was almost always a one way street from Google.
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141223/532a7dfd/attachment.html>
+
+From james.knott at rogers.com  Tue Dec 23 19:57:24 2014
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 23 Dec 2014 14:57:24 -0500
+Subject: [GTALUG] [OT] One Plus One Invite to pass along.
+In-Reply-To: <CAEZ_B6PHF0BtMrvkzHcWQoW8Zjn4f4o2nTW3bAQ5wC+mvJvMBg@mail.gmail.com>
+References: <5498F131.7090902@ss.org>
+ <20141223162834.GW24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412231228060.7729@redclaw.mimosa.com>
+ <CAEZ_B6PHF0BtMrvkzHcWQoW8Zjn4f4o2nTW3bAQ5wC+mvJvMBg@mail.gmail.com>
+Message-ID: <5499C924.8020002@rogers.com>
+
+On 12/23/2014 02:49 PM, Mauro Souza wrote:
+> Scripture is both history, and a love letter from God.
+
+You forgot "delusion".
+
+
+From mdhillca at gmail.com  Tue Dec 23 20:02:59 2014
+From: mdhillca at gmail.com (Michael Hill)
+Date: Tue, 23 Dec 2014 15:02:59 -0500
+Subject: [GTALUG] [OT] One Plus One Invite to pass along.
+In-Reply-To: <5499C924.8020002@rogers.com>
+References: <5498F131.7090902@ss.org>
+ <20141223162834.GW24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412231228060.7729@redclaw.mimosa.com>
+ <CAEZ_B6PHF0BtMrvkzHcWQoW8Zjn4f4o2nTW3bAQ5wC+mvJvMBg@mail.gmail.com>
+ <5499C924.8020002@rogers.com>
+Message-ID: <CAGvW9WfrS5VdeAdSCse1F-jFFM_G+7j0ia00aeXpFok7AftC5A@mail.gmail.com>
+
+CyanogenMod becoming less open (last year):
+
+http://www.engadget.com/2013/09/23/focal-camera-app-launches-as-standalone-beta/
+
+On Tue, Dec 23, 2014 at 2:57 PM, James Knott <james.knott at rogers.com> wrote:
+
+> You forgot "delusion".
+
+...and Merry Christmas to you, James.
+
+Mike
+
+From lsorense at csclub.uwaterloo.ca  Tue Dec 23 20:17:47 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 23 Dec 2014 15:17:47 -0500
+Subject: [GTALUG] [OT] One Plus One Invite to pass along.
+In-Reply-To: <alpine.LRH.2.02.1412231228060.7729@redclaw.mimosa.com>
+References: <5498F131.7090902@ss.org>
+ <20141223162834.GW24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412231228060.7729@redclaw.mimosa.com>
+Message-ID: <20141223201747.GX24111@csclub.uwaterloo.ca>
+
+On Tue, Dec 23, 2014 at 01:14:22PM -0500, D. Hugh Redelmeier wrote:
+> I didn't know this about Cyanogenmod.  I use stock firmware on all my
+> Android devices, acting like a dumb consumer (sadly, that's what I
+> am).  I just assumed Cyanogenmod was open if I wanted to bother.  Is
+> it like dd-wrt?
+
+That is my understanding.  They used to be open, then the leaders did
+a dd-wrt and went some other direction and a new project got forked.
+Certainly supporting a qualcomm device with open code is quite hard.
+Google has even had trouble getting factory images for nexus phones
+released because of qualcomm, and qualcomm is the reason the android
+open source project leader at google resigned.
+
+> I guess most things about Android are pretend-open (fauxpen?).
+> As time goes by more of the important features are closed source.
+> And "open" was almost always a one way street from Google.
+
+Oh very much so.  Android is not open source in the way most people
+think of open source.  It is developed by google behind closed doors,
+provided to key partners, then launched on new devices, then the code
+is released for others to play with.
+
+No one outside google (and perhaps they key partners) have any say in
+what goes into android.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Dec 23 20:21:52 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 23 Dec 2014 15:21:52 -0500
+Subject: [GTALUG] [OT] One Plus One Invite to pass along.
+In-Reply-To: <20141223201747.GX24111@csclub.uwaterloo.ca>
+References: <5498F131.7090902@ss.org>
+ <20141223162834.GW24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412231228060.7729@redclaw.mimosa.com>
+ <20141223201747.GX24111@csclub.uwaterloo.ca>
+Message-ID: <20141223202152.GY24111@csclub.uwaterloo.ca>
+
+On Tue, Dec 23, 2014 at 03:17:47PM -0500, Lennart Sorensen wrote:
+> On Tue, Dec 23, 2014 at 01:14:22PM -0500, D. Hugh Redelmeier wrote:
+> > I didn't know this about Cyanogenmod.  I use stock firmware on all my
+> > Android devices, acting like a dumb consumer (sadly, that's what I
+> > am).  I just assumed Cyanogenmod was open if I wanted to bother.  Is
+> > it like dd-wrt?
+> 
+> That is my understanding.  They used to be open, then the leaders did
+> a dd-wrt and went some other direction and a new project got forked.
+> Certainly supporting a qualcomm device with open code is quite hard.
+> Google has even had trouble getting factory images for nexus phones
+> released because of qualcomm, and qualcomm is the reason the android
+> open source project leader at google resigned.
+
+For example:
+
+http://www.ootpapps.com/2013/09/cyanogenmod-inc-betrayal-spirit-android/
+
+-- 
+Len Sorensen
+
+From william.muriithi at gmail.com  Tue Dec 23 21:33:14 2014
+From: william.muriithi at gmail.com (William Muriithi)
+Date: Tue, 23 Dec 2014 16:33:14 -0500
+Subject: [GTALUG] [OT] One Plus One Invite to pass along.
+In-Reply-To: <20141223202152.GY24111@csclub.uwaterloo.ca>
+References: <5498F131.7090902@ss.org>
+ <20141223162834.GW24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412231228060.7729@redclaw.mimosa.com>
+ <20141223201747.GX24111@csclub.uwaterloo.ca>
+ <20141223202152.GY24111@csclub.uwaterloo.ca>
+Message-ID: <20141223213314.6037651.37065.11670@gmail.com>
+
+?
+> > I didn't know this about Cyanogenmod. I use stock firmware on all my
+> > Android devices, acting like a dumb consumer (sadly, that's what I
+> > am). I just assumed Cyanogenmod was open if I wanted to bother. Is
+> > it like dd-wrt?
+> 
+> That is my understanding. They used to be open, then the leaders did
+> a dd-wrt and went some other direction and a new project got forked.
+> Certainly supporting a qualcomm device with open code is quite hard.
+> Google has even had trouble getting factory images for nexus phones
+> released because of qualcomm, and qualcomm is the reason the android
+> open source project leader at google resigned.
+
+Len,?
+
+Thank you for sharing that Len. I also didn't know they had turned toxic. Qualcomm however is an open book.
+
+William?
+
+
+From clifford_ilkay at dinamis.com  Wed Dec 24 05:53:56 2014
+From: clifford_ilkay at dinamis.com (Clifford Ilkay)
+Date: Wed, 24 Dec 2014 00:53:56 -0500
+Subject: [GTALUG] [OT] One Plus One Invite to pass along.
+In-Reply-To: <20141223162834.GW24111@csclub.uwaterloo.ca>
+References: <5498F131.7090902@ss.org>
+ <20141223162834.GW24111@csclub.uwaterloo.ca>
+Message-ID: <549A54F4.9080608@dinamis.com>
+
+On 12/23/2014 11:28 AM, Lennart Sorensen wrote:
+> On Mon, Dec 22, 2014 at 11:36:01PM -0500, Scott Sullivan wrote:
+>> I've got a spare invite to purchase the One Plus One phone.
+>>
+>> Anyone interested _MUST_ contact me off-list. First come, first serve.
+> I am trying to figure out what makes anyone want to want that phone
+> in particular?
+>
+> Both qualcomm and cyanogenmod have pretty well deserved reputations for
+> being rather hostile to openess.
+>
+> Am I missing something?
+
+I use Linux as my primary working environment so what other viable
+option is there other than Android and derivatives? BlackBerry OS, iOS,
+and Windows Phone don't have any way of syncing with Linux so that
+leaves Android, which doesn't require anything other than a Google
+account to sync. I could probably live with any of those choices but I'm
+tired of having to use an operating system I don't normally use just to
+sync the calendar on my phone, as I do now with my Symbian OS Nokia,
+which syncs (badly) with an application that runs only on Windows. In
+fact, syncing the calendar on my phone is so convoluted that I just
+don't bother any more.
+
+-- 
+Regards,
+
+Clifford Ilkay
+
++1 647-778-8696
+
+
+From scruss at gmail.com  Wed Dec 24 06:43:21 2014
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Wed, 24 Dec 2014 00:43:21 -0600
+Subject: [GTALUG] [OT] One Plus One Invite to pass along.
+In-Reply-To: <5499C924.8020002@rogers.com>
+References: <5498F131.7090902@ss.org>
+ <20141223162834.GW24111@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1412231228060.7729@redclaw.mimosa.com>
+ <CAEZ_B6PHF0BtMrvkzHcWQoW8Zjn4f4o2nTW3bAQ5wC+mvJvMBg@mail.gmail.com>
+ <5499C924.8020002@rogers.com>
+Message-ID: <549A6089.9020606@gmail.com>
+
+On 2014-12-23 01:57 PM, James Knott wrote:
+> On 12/23/2014 02:49 PM, Mauro Souza wrote:
+>> Scripture is both history, and a love letter from God.
+> 
+> You forgot ...
+
+C'mon James - please don't forget our Code of Conduct:
+
+      Discrimination
+
+      We are dedicated to creating and preserving an
+      inclusive, nondiscriminatory environment, regardless
+      of age, gender, gender identity and expression,
+      sexual orientation, disability, physical appearance,
+      body size, race, or religion.
+
+	from http://gtalug.org/about/code-of-conduct/
+
+cheers,
+ Stewart
+
