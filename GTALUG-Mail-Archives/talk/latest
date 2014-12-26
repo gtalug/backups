@@ -7173,3 +7173,85 @@ On 12/24/2014 01:22 PM, James Knott wrote:
 >
 
 
+From scruss at gmail.com  Thu Dec 25 14:59:21 2014
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Thu, 25 Dec 2014 08:59:21 -0600
+Subject: [GTALUG] Success: On-Lap Ext Display, Mint 17, Acer Aspire E 15
+In-Reply-To: <d2143d48b13fef9d9be6a5a0cf783b8c.squirrel@webmail.ee.ryerson.ca>
+References: <d2143d48b13fef9d9be6a5a0cf783b8c.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <549C2649.6060703@gmail.com>
+
+On 2014-12-21 08:00 PM, phiscock at ee.ryerson.ca wrote:
+> 
+> Today at Canada Computers I purchased an On-Lap 2501C external video
+> display to increase the screen area of my Acer E 15 laptop
+
+I have the smaller Gechic On-Lap 1302 on a Raspberry Pi, and it too just
+worked. Wouldn't class it as a gaming monitor, and its colour
+calibration is a little cold (nothing that a few minutes with a ColorHug
+couldn't fix), but it was only a few $ more than those tiny 7" HDMI
+monitors.
+
+cheers,
+ Stewart
+
+From peter.king at utoronto.ca  Fri Dec 26 05:06:37 2014
+From: peter.king at utoronto.ca (Peter King)
+Date: Fri, 26 Dec 2014 00:06:37 -0500
+Subject: [GTALUG] GnuPG Woes...
+Message-ID: <20141226050637.GA31739@amber>
+
+I could use some help from people who are more expert at GnuPG than I am, which
+is most people.
+
+Using GnuPG 2.0.26 and libcrypt 1.6.2, running under Gentoo with kernel 3.17.4,
+all at the command line.
+
+I have a gpg key (since 2004) and it's always worked well for me.  Just today,
+though, I tried to use it to decrypt a file I'd successfully decrupted many
+times in the past:
+
+  $ gpg -d File_to_Decrypt > decrypted_file
+
+I kept getting a "bad session key" error.  After doing some googling, I eventually 
+tried the suggestion to run:
+
+  $  gpgconf --reload
+
+After doing so, however, when I try to decrypt the file as before:
+
+  $ gpg -d File_to_Decrypt > decrypted_file
+
+gpg now asks for the data file, and when I offer File_to_Decrypt, I get back a list
+of of signatures, each correctly identified with my DSA key ID (as shown by the
+command gpg --listkeys), but each entry is followed by the line "BAD signature 
+from <my_ID> [ultimate]" -- which seems like very bad news indeed.
+
+Naturally, the encrypted file is valuable (to me), and I have backup encrypted
+copies, but nothing in clear...
+
+Well, the gnupg key hasn't changed since February 2004, and it's worked fine all
+the way to at least mid-October 2014, the last time I encrypted/decrypted the
+file.  Now I'm more or less clueless.  What should I try next?
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		    (416)-978-3311 ofc
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 181 bytes
+Desc: Digital signature
+URL: <http://gtalug.org/pipermail/talk/attachments/20141226/15897238/attachment.sig>
+
