@@ -7255,3 +7255,82 @@ Size: 181 bytes
 Desc: Digital signature
 URL: <http://gtalug.org/pipermail/talk/attachments/20141226/15897238/attachment.sig>
 
+From bjonkman at sobac.com  Sat Dec 27 01:58:18 2014
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Fri, 26 Dec 2014 20:58:18 -0500
+Subject: [GTALUG] GnuPG Woes...
+In-Reply-To: <20141226050637.GA31739@amber>
+References: <20141226050637.GA31739@amber>
+Message-ID: <549E123A.2060404@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+I'd try to restore an older keyring and try with that.  If you get the
+same results you can always put the current keyring back.
+
+You could also try to install GnuPG 1.x and use that. GnuPG 1.x
+doesn't have all the command line options that GnuPG 2.x does, but 1.x
+should still be able to decrypt a file.
+
+There's also a new version, GnuPG 2.1.x which I haven't used yet, but
+may provide better diagnostics.
+
+There's an unlikely chance that your encrypted file is corrupted in
+such a manner as to throw signature errors; did you try one of your
+backed-up files?
+
+- --Bob.
+
+
+On 26/12/14 12:06 AM, Peter King wrote:
+> I could use some help from people who are more expert at GnuPG than
+> I am, which is most people.
+> 
+> Using GnuPG 2.0.26 and libcrypt 1.6.2, running under Gentoo with
+> kernel 3.17.4, all at the command line.
+> 
+> I have a gpg key (since 2004) and it's always worked well for me.
+> Just today, though, I tried to use it to decrypt a file I'd
+> successfully decrupted many times in the past:
+> 
+> $ gpg -d File_to_Decrypt > decrypted_file
+> 
+> I kept getting a "bad session key" error.  After doing some
+> googling, I eventually tried the suggestion to run:
+> 
+> $  gpgconf --reload
+> 
+> After doing so, however, when I try to decrypt the file as before:
+> 
+> $ gpg -d File_to_Decrypt > decrypted_file
+> 
+> gpg now asks for the data file, and when I offer File_to_Decrypt, I
+> get back a list of of signatures, each correctly identified with my
+> DSA key ID (as shown by the command gpg --listkeys), but each entry
+> is followed by the line "BAD signature from <my_ID> [ultimate]" --
+> which seems like very bad news indeed.
+> 
+> Naturally, the encrypted file is valuable (to me), and I have
+> backup encrypted copies, but nothing in clear...
+> 
+> Well, the gnupg key hasn't changed since February 2004, and it's
+> worked fine all the way to at least mid-October 2014, the last time
+> I encrypted/decrypted the file.  Now I'm more or less clueless.
+> What should I try next?
+> 
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-669-0388
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+http://bob.jonkman.ca/blogs/    http://sn.jonkman.ca/bobjonkman/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.15 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlSeEjgACgkQuRKJsNLM5eo+rQCeL13lx/jYuGMrHOsUDZ1wYChn
+15IAoLhHjm/SplOme092uqwyazE1szVX
+=GpcY
+-----END PGP SIGNATURE-----
+
