@@ -1562,3 +1562,95 @@ davecb at spamcop.net           |                      -- Mark Twain
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/operations/attachments/20141227/6b416e54/attachment.html>
 
+From me at mylesbraithwaite.com  Sun Dec 28 20:42:12 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Sun, 28 Dec 2014 15:42:12 -0500
+Subject: [GTALUG-Ops] January Announce Email
+Message-ID: <DEB1C402-6BAA-4FF2-8329-6C2B8E14C819@mylesbraithwaite.com>
+
+I won't have access to a real computer for a next couple of days and I don't want to send from a client that can't send using plain text. Can someone send out an announce for January's meeting. Just cut and paste from this: <http://gtalug.org/pipermail/announce/2014/000004.html>, use the subject GTALUG Meeting 13th January at 7:30pm, and send the email to <announce at gtalug.org>. I will approve. 
+
+Myles Braithwaite | http://mylesb.ca/i
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141228/eb932d1e/attachment.html>
+
+From me at mylesbraithwaite.com  Sun Dec 28 21:06:59 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Sun, 28 Dec 2014 16:06:59 -0500
+Subject: [GTALUG-Ops] gtalug.info showing up in search results.
+Message-ID: <589D5566-7813-4B64-9E4A-00F156AD5671@mylesbraithwaite.com>
+
+It should be fixed by the time DNS propagates.
+
+<https://github.com/gtalug/website/commit/74fc417fba8a53468ab9a03a9a7a90dec7c4f47a#diff-0b37b27c068460073707d359c5e9006bR232>
+
+Myles Braithwaite | http://mylesb.ca/i
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141228/8542a644/attachment.html>
+
+From scott at ss.org  Mon Dec 29 02:20:29 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Sun, 28 Dec 2014 21:20:29 -0500
+Subject: [GTALUG-Ops] January Announce Email
+In-Reply-To: <DEB1C402-6BAA-4FF2-8329-6C2B8E14C819@mylesbraithwaite.com>
+References: <DEB1C402-6BAA-4FF2-8329-6C2B8E14C819@mylesbraithwaite.com>
+Message-ID: <54A0BA6D.7080601@ss.org>
+
+On 12/28/2014 03:42 PM, Myles Braithwaite wrote:
+> I won't have access to a real computer for a next couple of days and I
+> don't want to send from a client that can't send using plain text. Can
+> someone send out an announce for January's meeting. Just cut and paste
+> from this: <http://gtalug.org/pipermail/announce/2014/000004.html>, use
+> the subject GTALUG Meeting 13th January at 7:30pm, and send the email to
+> <announce at gtalug.org <mailto:announce at gtalug.org>>. I will approve.
+>
+> *Myles* Braithwaite | http://mylesb.ca/i
+
+Are you asking for this to go out today?
+Or a specific date closer to the meeting?
+
+-- 
+Scott Sullivan
+
+
+From me at mylesbraithwaite.com  Mon Dec 29 03:29:52 2014
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Sun, 28 Dec 2014 22:29:52 -0500
+Subject: [GTALUG-Ops] January Announce Email
+In-Reply-To: <54A0BA6D.7080601@ss.org>
+References: <DEB1C402-6BAA-4FF2-8329-6C2B8E14C819@mylesbraithwaite.com>
+ <54A0BA6D.7080601@ss.org>
+Message-ID: <4AE4C2F6-6AA3-4EE2-97DF-DCDF8549EC89@mylesbraithwaite.com>
+
+Today. 
+
+Myles Braithwaite | http://mylesb.ca/i
+
+> On Dec 28, 2014, at 9:20 PM, Scott Sullivan <scott at ss.org> wrote:
+> 
+>> On 12/28/2014 03:42 PM, Myles Braithwaite wrote:
+>> I won't have access to a real computer for a next couple of days and I
+>> don't want to send from a client that can't send using plain text. Can
+>> someone send out an announce for January's meeting. Just cut and paste
+>> from this: <http://gtalug.org/pipermail/announce/2014/000004.html>, use
+>> the subject GTALUG Meeting 13th January at 7:30pm, and send the email to
+>> <announce at gtalug.org <mailto:announce at gtalug.org>>. I will approve.
+>> 
+>> *Myles* Braithwaite | http://mylesb.ca/i
+> 
+> Are you asking for this to go out today?
+> Or a specific date closer to the meeting?
+> 
+> -- 
+> Scott Sullivan
+> 
+> 
+> ---
+> GTALUG Operations Mailing List - operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20141228/0f266984/attachment.html>
+
