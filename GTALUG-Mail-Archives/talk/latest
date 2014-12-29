@@ -7334,3 +7334,593 @@ iEYEARECAAYFAlSeEjgACgkQuRKJsNLM5eo+rQCeL13lx/jYuGMrHOsUDZ1wYChn
 =GpcY
 -----END PGP SIGNATURE-----
 
+From stephen-d at rogers.com  Sun Dec 28 15:25:06 2014
+From: stephen-d at rogers.com (Stephen)
+Date: Sun, 28 Dec 2014 10:25:06 -0500
+Subject: [GTALUG] Replacing drive with /home
+Message-ID: <54A020D2.3030604@rogers.com>
+
+
+I have one drive on my system that just has /home on it. It is getting
+SMART warnings.
+
+I have the data backed up, and a new drive to replace it.
+
+I am running Ubuntu 12.04.
+
+My question is regarding booting without a /home directory mounted.
+
+How do I go about booting, mounting and restoring my data?
+
+Thanks!
+-- 
+Stephen
+
+From davec-b at rogers.com  Sun Dec 28 15:45:13 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Sun, 28 Dec 2014 10:45:13 -0500
+Subject: [GTALUG] Replacing drive with /home
+In-Reply-To: <54A020D2.3030604@rogers.com>
+References: <54A020D2.3030604@rogers.com>
+Message-ID: <54A02589.2050705@rogers.com>
+
+On 12/28/2014 10:25 AM, Stephen wrote:
+>
+> I have one drive on my system that just has /home on it. It is getting
+> SMART warnings.
+>
+> I have the data backed up, and a new drive to replace it.
+>
+> I am running Ubuntu 12.04.
+>
+> My question is regarding booting without a /home directory mounted.
+>
+> How do I go about booting, mounting and restoring my data?
+>
+> Thanks!
+
+An easy approach, if you have both disks attached to the machine, is to 
+change the fstab so that the new disk is mounted on /home and the old 
+somewhere else, then log in as root and say
+umount /home, which will undo the existing mapping, and
+mount /home, which will create the new mapping.
+
+If you can't mount both disks, just swap the physical drives and log in 
+as root.
+Root's home directory is /root, so it won't be affected by /home being 
+empty,
+and you can do the restore.
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141228/1357a2a0/attachment.html>
+
+From peter.king at utoronto.ca  Sun Dec 28 16:13:15 2014
+From: peter.king at utoronto.ca (Peter King)
+Date: Sun, 28 Dec 2014 11:13:15 -0500
+Subject: [GTALUG] GnuPG Woes...
+In-Reply-To: <549E123A.2060404@sobac.com>
+References: <20141226050637.GA31739@amber>
+ <549E123A.2060404@sobac.com>
+Message-ID: <20141228161315.GA8231@amber>
+
+On Fri, Dec 26, 2014 at 08:58:18PM -0500, Bob Jonkman wrote:
+ 
+> I'd try to restore an older keyring and try with that.  If you get the
+> same results you can always put the current keyring back.
+> 
+> You could also try to install GnuPG 1.x and use that. GnuPG 1.x
+> doesn't have all the command line options that GnuPG 2.x does, but 1.x
+> should still be able to decrypt a file.
+> 
+> There's also a new version, GnuPG 2.1.x which I haven't used yet, but
+> may provide better diagnostics.
+> 
+> There's an unlikely chance that your encrypted file is corrupted in
+> such a manner as to throw signature errors; did you try one of your
+> backed-up files?
+
+Thanks for the suggestions.  The particular file is backed up on three other
+computers daily, and I get the same problem on each of them.  Of course, if
+there were damage to the file, the damaged file would have been backed up.
+When I get back to Toronto in a few days I'll check a few places where an
+older version of the file might be.  Ditto for the keyring.  I have some
+hopes that I will get hold of a sufficiently old version of the file and of
+gpg to decrypt it that way.  We'll see.
+
+I upgraded to the latest testing version under gentoo (not the bleeding-edge
+version), 2.0.26-r2, but it made no difference to the problem.  Haven't yet
+tried to downgrade GnuPG.
+
+One of the things that puzzles me is that the error is "bad session key" --
+which at least suggests that the file is okay and the passphrase checks out,
+but there is something about my current "session" at fault.  This seems to
+happen when people run gpg-agent, but I'm not doing that.  No idea what GnuPG
+thinks a "session" is... perhaps it has a bad key or something cached in its
+memory?  But I've completely rebooted my laptop several times, and the same
+problem comes up, so that doesn't seem likely.
+
+Thanks again!
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		    (416)-978-3311 ofc
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 181 bytes
+Desc: Digital signature
+URL: <http://gtalug.org/pipermail/talk/attachments/20141228/0bd2708a/attachment.sig>
+
+From stephen-d at rogers.com  Sun Dec 28 20:03:22 2014
+From: stephen-d at rogers.com (Stephen)
+Date: Sun, 28 Dec 2014 15:03:22 -0500
+Subject: [GTALUG] Replacing drive with /home
+In-Reply-To: <54A02589.2050705@rogers.com>
+References: <54A020D2.3030604@rogers.com> <54A02589.2050705@rogers.com>
+Message-ID: <54A0620A.1000707@rogers.com>
+
+On 14-12-28 10:45 AM, David Collier-Brown wrote:
+> On 12/28/2014 10:25 AM, Stephen wrote:
+>>
+>> I have one drive on my system that just has /home on it. It is getting
+>> SMART warnings.
+>>
+>> I have the data backed up, and a new drive to replace it.
+>>
+>> I am running Ubuntu 12.04.
+>>
+>> My question is regarding booting without a /home directory mounted.
+>>
+>> How do I go about booting, mounting and restoring my data?
+>>
+>> Thanks!
+>
+> An easy approach, if you have both disks attached to the machine, is to
+> change the fstab so that the new disk is mounted on /home and the old
+> somewhere else, then log in as root and say
+> umount /home, which will undo the existing mapping, and
+> mount /home, which will create the new mapping.
+>
+> If you can't mount both disks, just swap the physical drives and log in
+> as root.
+> Root's home directory is /root, so it won't be affected by /home being
+> empty,
+> and you can do the restore.
+>
+> --dave
+
+Thank you!
+
+Operation complete :)
+
+-- 
+Stephen
+
+From stephen-d at rogers.com  Sun Dec 28 21:23:55 2014
+From: stephen-d at rogers.com (Stephen)
+Date: Sun, 28 Dec 2014 16:23:55 -0500
+Subject: [GTALUG] Ubuntu Thunderbird Problem After Replacing Drive With /home
+Message-ID: <54A074EB.6040102@rogers.com>
+
+I am running Ubuntu 12.04.
+
+I had /home on its own drive and that drive was getting SMART warnings.
+
+I backed my data up, replaced the drive, restored, booted and everything 
+seems OK except my Thunderbird filters.
+
+When a message comes in that has a rule to filter to a different folder 
+Thunderbird is now raising an error: "message could not be filtered to 
+folder because writing to folder failed". There was a bug but it is 
+being reported as repaired on 2014-10-14. And the only platform 
+mentioned is Windows.
+
+https://bugzilla.mozilla.org/show_bug.cgi?id=931303
+
+Now, the messages are going to my Inbox just fine, and I can manually 
+drag them and drop them into the folder that I want them filtered to. So 
+I conclude that this is not a permission problem.
+
+Best I could find with Google is that Mozilla suggests that the way to 
+go is to create a profile and move all my existing data to the new profile.
+
+http://kb.mozillazine.org/Transferring_data_to_a_new_profile_-_Thunderbird
+
+This seems like a Royal pain the kester.
+
+Before I undertake this this, I thought I solicit ideas as to possible 
+solutions that are less onerous.
+
+Thanks
+
+-- 
+Stephen
+
+From davec-b at rogers.com  Mon Dec 29 00:01:17 2014
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Sun, 28 Dec 2014 19:01:17 -0500
+Subject: [GTALUG] Ubuntu Thunderbird Problem After Replacing Drive With
+ /home
+In-Reply-To: <54A074EB.6040102@rogers.com>
+References: <54A074EB.6040102@rogers.com>
+Message-ID: <54A099CD.7000907@rogers.com>
+
+On 12/28/2014 04:23 PM, Stephen wrote:
+> I am running Ubuntu 12.04.
+>
+> I had /home on its own drive and that drive was getting SMART warnings.
+>
+> I backed my data up, replaced the drive, restored, booted and 
+> everything seems OK except my Thunderbird filters.
+>
+> When a message comes in that has a rule to filter to a different 
+> folder Thunderbird is now raising an error: "message could not be 
+> filtered to folder because writing to folder failed". There was a bug 
+> but it is being reported as repaired on 2014-10-14. And the only 
+> platform mentioned is Windows.
+>
+> https://bugzilla.mozilla.org/show_bug.cgi?id=931303
+>
+> Now, the messages are going to my Inbox just fine, and I can manually 
+> drag them and drop them into the folder that I want them filtered to. 
+> So I conclude that this is not a permission problem.
+>
+> Best I could find with Google is that Mozilla suggests that the way to 
+> go is to create a profile and move all my existing data to the new 
+> profile.
+>
+> http://kb.mozillazine.org/Transferring_data_to_a_new_profile_-_Thunderbird 
+>
+>
+> This seems like a Royal pain the kester.
+>
+> Before I undertake this this, I thought I solicit ideas as to possible 
+> solutions that are less onerous.
+>
+> Thanks
+>
+Try writing a new filter, and see it it works. A good test one is "match 
+everything, copy to a new folder".
+If it works, you can edit or recreate the existing filters.
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141228/d371c1c4/attachment.html>
+
+From stephen-d at rogers.com  Mon Dec 29 02:05:29 2014
+From: stephen-d at rogers.com (Stephen)
+Date: Sun, 28 Dec 2014 21:05:29 -0500
+Subject: [GTALUG] Ubuntu Thunderbird Problem After Replacing Drive With
+ /home
+In-Reply-To: <54A099CD.7000907@rogers.com>
+References: <54A074EB.6040102@rogers.com> <54A099CD.7000907@rogers.com>
+Message-ID: <54A0B6E9.4030208@rogers.com>
+
+On 14-12-28 07:01 PM, David Collier-Brown wrote:
+> On 12/28/2014 04:23 PM, Stephen wrote:
+>> I am running Ubuntu 12.04.
+>>
+>> I had /home on its own drive and that drive was getting SMART warnings.
+>>
+>> I backed my data up, replaced the drive, restored, booted and
+>> everything seems OK except my Thunderbird filters.
+>>
+>> When a message comes in that has a rule to filter to a different
+>> folder Thunderbird is now raising an error: "message could not be
+>> filtered to folder because writing to folder failed". There was a bug
+>> but it is being reported as repaired on 2014-10-14. And the only
+>> platform mentioned is Windows.
+>>
+>> https://bugzilla.mozilla.org/show_bug.cgi?id=931303
+>>
+>> Now, the messages are going to my Inbox just fine, and I can manually
+>> drag them and drop them into the folder that I want them filtered to.
+>> So I conclude that this is not a permission problem.
+>>
+>> Best I could find with Google is that Mozilla suggests that the way to
+>> go is to create a profile and move all my existing data to the new
+>> profile.
+>>
+>> http://kb.mozillazine.org/Transferring_data_to_a_new_profile_-_Thunderbird
+>>
+>>
+>> This seems like a Royal pain the kester.
+>>
+>> Before I undertake this this, I thought I solicit ideas as to possible
+>> solutions that are less onerous.
+>>
+>> Thanks
+>>
+> Try writing a new filter, and see it it works. A good test one is "match
+> everything, copy to a new folder".
+> If it works, you can edit or recreate the existing filters.
+>
+> --dave
+
+That did the trick. Thank you!
+
+-- 
+Stephen
+
+From scott at ss.org  Mon Dec 29 02:12:53 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Sun, 28 Dec 2014 21:12:53 -0500
+Subject: [GTALUG] HummingBoard-i2eX First Impressions
+Message-ID: <54A0B8A5.9050301@ss.org>
+
+This Christmas I got myself another ARM dev board. In this case the 
+HummingBoard-i2eX from SolidRun.
+
+The Vendor
+==========
+
+http://www.solid-run.com/
+
+SolidRun is an Israeli company producing small form factor computers. 
+They previously produced the CuBox (know to many on this list). In 
+recent history they moved to creating their devices with FreeScale's 
+iMX.6 SoCs. They started with a common SoM (System on a Module), and 
+developed two complimentary product lines of base boards that the SoMs 
+connect to. These are the CuBox-i and the HummingBoard.
+
+The CuBox-i is a continuation of their 2'x2'x'2' cube computer design.
+The HummingBoard is a Raspberry Pi-like form factor (more on this later).
+
+
+The Board
+=========
+
+Vendor Product Page:
+http://www.solid-run.com/product/hummingboard-i2ex/
+
+Local Distributor Product Page:
+http://www.newegg.ca/Product/Product.aspx?Item=N82E16813455003
+
+This is the Hummingboard base board, with the Dual Core + 1GB + Extra 
+Features SoM.
+
+This boils down to a system with extra features of a mSATA slot on the 
+bottom of the board, a miniPCIe slot on the top, and an extra 2x4 header 
+with two USB extra connections on it.
+
+The Board is nearly perfect match for the Raspberry Pi B (not B+) form 
+factor. All the connectors (HDMI, USB, Power, etc...) line up where they 
+would on a Raspberry Pi B. The only trick bit is the height of the mSATA 
+connector on the bottom which will not fit in any of the Raspberry Pi B 
+cases I own. This should not be an issue with the Hummingboard-i1 or -i2 
+as they don't have mSATA.
+
+
+First Boot
+==========
+
+The board as purchased from NewEgg comes only with the board. You will 
+need to provide your own USB supply 5v at 2A. You will also need your own 
+microSD card for the OS.
+
+Prep the microSD Card
+---------------------
+
+If your familiar with the Raspberry Pi, there is a NOOBs-like OS 
+installer called Ignition. You dd this to your microSD card and then on 
+the first boot you get a GUI that will then download and install the 
+Distro of your choice.
+
+http://www.solid-run.com/wiki/Ignition
+
+
+Install your OS of Choice
+-------------------------
+
+First Note:
+There is check box to show all OS options. Check this as it by default 
+hides all but four (Android 4.4, and three XBMC variants).
+
+Second Note:
+There is a debug window, click it, and then re-arrange the two windows 
+so you can see both. Some of the installs are broken, I discovered this 
+when trying to install Fedora 20 via Ignition, it never downloaded an 
+install image, and some of the partitioning looks to be broken. This is 
+not a fault of the Fedora Project, but of the solidRun community member 
+that put together the Iginition script. I haven't started debugging it yet.
+
+
+I ended up choosing Debian Wheezy, and the install took about 10-15 
+minutes downloading and installing. Your millage will vary.
+
+
+Poking Around
+=============
+
+The boot loader is on microSD card. You need it to boot. The boot loader 
+is uboot.
+
+Kernel lists as a 3.14.14-cubox, so a custom build.
+
+lspci list just a 'bridge' device. I powered down, added a spare mPCIe 
+wifi card I had around, and it showed up when I rebooted.
+
+Memory was listed as the full 1GB, so video buffer stealing doesn't seem 
+to be happening. But I can't confirm that fully.
+
+
+That's it so far.
+
+-- 
+Scott Sullivan
+
+From scott at ss.org  Mon Dec 29 03:04:28 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Sun, 28 Dec 2014 22:04:28 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+References: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+ <20141123002215.GB24111@csclub.uwaterloo.ca>
+ <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+Message-ID: <54A0C4BC.9050303@ss.org>
+
+On 12/16/2014 04:55 PM, Thomas Milne wrote:
+> Hey sorry to bug you, I am unemployed again and in dire need of a
+> project :-)
+>
+> If you have that image or if you know a way I could generate my own, I
+> tried searching but everything now is about the Cubox-i.
+>
+> Solidrun might have an original image but I would really like to have
+> Debian armhf which is I assume what you have installed?
+>
+> Thanks!
+
+Thomas,
+
+While working on my Hummingboard, I decided to explore the director 
+structure of their download section. I found their archive of cubox 
+bits. Poking around a see a few different distro images and various 
+install scripts. Hope this helps.
+
+http://download.solid-run.com/pub/solidrun/cubox/
+
+-- 
+Scott Sullivan
+
+From scott at ss.org  Mon Dec 29 04:34:02 2014
+From: scott at ss.org (Scott Sullivan)
+Date: Sun, 28 Dec 2014 23:34:02 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+References: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+ <20141123002215.GB24111@csclub.uwaterloo.ca>
+ <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+Message-ID: <54A0D9BA.6010509@ss.org>
+
+On 12/16/2014 04:55 PM, Thomas Milne wrote:
+> Hey sorry to bug you, I am unemployed again and in dire need of a
+> project :-)
+>
+> If you have that image or if you know a way I could generate my own, I
+> tried searching but everything now is about the Cubox-i.
+>
+> Solidrun might have an original image but I would really like to have
+> Debian armhf which is I assume what you have installed?
+
+Ah, I knew there was something bugging me.
+
+Thomas, wanting a armhf port for the cubox is, to use a bit of 
+hyperbole, like wanting an 64bit port for your i686. Allow me to set up 
+some background information then explain.
+
+Debian's armhf port is for ARMv7 instruction set hardware which mandated 
+the inclusion of floating point hardware.
+https://wiki.debian.org/ArmHardFloatPort
+
+Debian's armel is for older arm instruction sets that where a floating 
+point hardware was not mandatory in the chips.
+https://wiki.debian.org/ArmEabiPort
+
+Your Cubox uses a Marvell Kirkwood system on a chip (SoC). That SoC was 
+base on a ARMv5 instruction set. As such it is supported by the armel 
+port only. Much like 32bit intel hardware is only supported by the i386.
+
+So, asking for armhf is inapporiate as your hardware can't run it. But 
+the armel port should be keeping up todate with all the package updates 
+just like i386 follows amd64. So I don't think your goal has change, 
+which is get as modern a debian you can on the cubox. Just know you need 
+to be looking at the armel port.
+
+
+On that note, I found this little message outlining Mainline Kernel 
+support for the cubox. The Marvel Kirkwood SoC has been well supported 
+for many years now, and with the move to Device Tree the cubox can be 
+supported with a far more generic kernel.
+
+https://lkml.org/lkml/2014/5/26/562
+
+A Device Tree is basically a listing handed to the kernel that tells it 
+how the SoC may be uniquely wired to other devices on the circuit board. 
+SoC, unlike intel computers, will multiplex function on their pins to 
+allow device designers to pick and choose what functions they will use. 
+It's part of why they can be put in such small form factor devices, at 
+the cost of software complexity.
+
+Specifically for you Thomas, you'll need to take an armel port of debian 
+and the dts (Device Tree) for the cubox and combine them. Go hunting for 
+information on other Marvell Kirkwood Devices for examples (the PogoPlug 
+v2 and Dreamplug, being two examples I personally own).
+
+
+
+
+
+Now just general information expanding on the armel vs armhf.
+
+
+ARMv4, ARMv5 and ARMv6 hard was an interesting matrix of common 
+capabilities due to the nature of optional phyical hardware blocks. The 
+means there had to be some careful choices by the debain maintainers.
+
+https://wiki.debian.org/ArmEabiPort#Choice_of_minimum_CPU
+
+
+The gist of the above is that some devices CPU instruction will not be 
+taken advantage of even if the SoC _does_ have the optional hardware. 
+The greatest current example of this is the Raspberry Pi, an ARMv6 
+device which does have floating point hardware. This meant that while 
+the armel port will run on the Raspberry Pi's Broadcom SoC, it's not at 
+full performance. The Raspbian Distro is a port of debian targeting the 
+specifically available hardware in the Broadcom SoC for all the 
+performance benefits that can bring.
+
+-- 
+Scott Sullivan
+
+From opengeometry at yahoo.ca  Mon Dec 29 06:35:06 2014
+From: opengeometry at yahoo.ca (William Park)
+Date: Mon, 29 Dec 2014 01:35:06 -0500
+Subject: [GTALUG] HummingBoard-i2eX First Impressions
+In-Reply-To: <54A0B8A5.9050301@ss.org>
+References: <54A0B8A5.9050301@ss.org>
+Message-ID: <20141229063506.GA21941@node1.localdomain>
+
+On Sun, Dec 28, 2014 at 09:12:53PM -0500, Scott Sullivan wrote:
+> This Christmas I got myself another ARM dev board. In this case the
+> HummingBoard-i2eX from SolidRun.
+
+> http://www.solid-run.com/
+
+$100... hmm, I guess we're paying for mSATA, mPCIe, and gigabit.
+
+I really don't know why Intel/AMD don't release x86 version for this
+market segment.  People say, power consumption on ARM.  They can reduce
+power consumption on x86, too.  After attaching USB devices, mSATA SSD
+card, mPCI wifi card, the power issue is moot anyways.
+-- 
+William
+
+
+
