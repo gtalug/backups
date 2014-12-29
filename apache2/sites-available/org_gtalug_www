@@ -7,7 +7,7 @@
 	
 	<Directory /srv/www/org_gtalug_www/html/>
 		Options Indexes FollowSymLinks MultiViews
-		AllowOverride None
+		AllowOverride All
 		Order allow,deny
 		allow from all
 	</Directory>
