@@ -8236,3 +8236,218 @@ http://www.cnx-software.com/2014/11/11/meego-p01-mini-pc-with-intel-atom-z3735f-
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20141229/3d8a33f8/attachment.html>
 
+From el.fontanero at gmail.com  Tue Dec 30 04:40:49 2014
+From: el.fontanero at gmail.com (El Fontanero)
+Date: Mon, 29 Dec 2014 23:40:49 -0500
+Subject: [GTALUG] HummingBoard-i2eX First Impressions
+In-Reply-To: <20141229182702.GD1596@adb.ca>
+References: <54A0B8A5.9050301@ss.org>
+ <20141229063506.GA21941@node1.localdomain>
+ <20141229134153.GA24111@csclub.uwaterloo.ca> <20141229182702.GD1596@adb.ca>
+Message-ID: <54A22CD1.5080905@gmail.com>
+
+On 29/12/14 01:27 PM, Anthony de Boer wrote:
+> Lennart Sorensen wrote:
+>> Intel keeps coming out with $300 boards and boxes while talking about
+>> them being like the raspberry pi.  Intel simply does not seem to
+>> understand the concept of cheap and low power hardware.
+> And thus was born the Berrywulf, in a conversation at the office awhile
+> ago: if Intel wants to compare their offering at $300, then it's only
+> fair to compare it to $300 worth of Raspberry Pis and a FastE switch set
+> up as a Beowulf cluster.  We'd have a lot more HDMI and USB ports that
+> way too!
+>
+> I did footnote that it'd be crazy to actually build one and it was for
+> price comparison purposes only.  It'd be a good kind of crazy, though.
+>
+
+Ideas like this one remind me that the world of the Internet is kind of
+like the Stay Puft Marshmallow Man: the mere act of thinking it makes it
+flesh somewhere... and it's coming for you.
+
+From chipmand at rogers.com  Tue Dec 30 18:14:54 2014
+From: chipmand at rogers.com (DAVID CHIPMAN)
+Date: Tue, 30 Dec 2014 18:14:54 +0000 (UTC)
+Subject: [GTALUG] Power Supplies & Video Cards
+Message-ID: <520955106.2784999.1419963294317.JavaMail.yahoo@jws10696.mail.bf1.yahoo.com>
+
+I know this really isn't about Linux per se, but I thought I would ask this question here any how. I have a computer wit a 300W PSU. It currently has an onboard video chip, which I would like to replace with a video card. Now, the video card specs mention needing a 300W PSU. My question is: Would that 300W requirement be a minimum, or what the card would need to work full-on? Thanks, 
+
+-David
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141230/8e07d4c7/attachment.html>
+
+From ted.leslie at gmail.com  Tue Dec 30 18:58:57 2014
+From: ted.leslie at gmail.com (ted leslie)
+Date: Tue, 30 Dec 2014 13:58:57 -0500
+Subject: [GTALUG] Power Supplies & Video Cards
+In-Reply-To: <520955106.2784999.1419963294317.JavaMail.yahoo@jws10696.mail.bf1.yahoo.com>
+References: <520955106.2784999.1419963294317.JavaMail.yahoo@jws10696.mail.bf1.yahoo.com>
+Message-ID: <CAMua2SGi9k7z0Wv2-0wszO-qTqMfiNzQmDP6owitWN8R4S_2TA@mail.gmail.com>
+
+?Some new video cards require? PS 4-6-8 prong plugs right to card from PS.
+So if your PS doesn't have those, you are SOL.
+As well, if it doesn't need those, the cards, especially recent ones have
+power saving features, i.e. turn up their
+performance as needed, so power draw can flux.
+Only way to tell is add the max draw watts from everything, including max
+draws from drive start up surges, etc,
+and leave a bit of room as well.
+300w seems pretty low.
+
+-tl
+
+On Tue, Dec 30, 2014 at 1:14 PM, DAVID CHIPMAN <chipmand at rogers.com> wrote:
+
+> I know this really isn't about Linux per se, but I thought I would ask
+> this question here any how. I have a computer wit a 300W PSU. It currently
+> has an onboard video chip, which I would like to replace with a video card.
+> Now, the video card specs mention needing a 300W PSU. My question is: Would
+> that 300W requirement be a minimum, or what the card would need to work
+> full-on? Thanks,
+>
+> -David
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20141230/27f04eed/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Tue Dec 30 20:43:40 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 30 Dec 2014 15:43:40 -0500
+Subject: [GTALUG] Power Supplies & Video Cards
+In-Reply-To: <520955106.2784999.1419963294317.JavaMail.yahoo@jws10696.mail.bf1.yahoo.com>
+References: <520955106.2784999.1419963294317.JavaMail.yahoo@jws10696.mail.bf1.yahoo.com>
+Message-ID: <20141230204340.GB24111@csclub.uwaterloo.ca>
+
+On Tue, Dec 30, 2014 at 06:14:54PM +0000, DAVID CHIPMAN wrote:
+> I know this really isn't about Linux per se, but I thought I would ask this question here any how. I have a computer wit a 300W PSU. It currently has an onboard video chip, which I would like to replace with a video card. Now, the video card specs mention needing a 300W PSU. My question is: Would that 300W requirement be a minimum, or what the card would need to work full-on? Thanks, 
+
+Assuming it is a proper 300W power supply (and not some cheap pretend
+power supply), then it is probably OK.  The video card recommendations
+are not for how much the card needs, but for what they expect a typical
+system with that card to need.
+
+So it is probably OK.
+
+Of course if you have an old system with one of those 150W Pentium 4
+chips, then maybe not. :)
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Dec 30 20:44:43 2014
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 30 Dec 2014 15:44:43 -0500
+Subject: [GTALUG] Power Supplies & Video Cards
+In-Reply-To: <CAMua2SGi9k7z0Wv2-0wszO-qTqMfiNzQmDP6owitWN8R4S_2TA@mail.gmail.com>
+References: <520955106.2784999.1419963294317.JavaMail.yahoo@jws10696.mail.bf1.yahoo.com>
+ <CAMua2SGi9k7z0Wv2-0wszO-qTqMfiNzQmDP6owitWN8R4S_2TA@mail.gmail.com>
+Message-ID: <20141230204443.GC24111@csclub.uwaterloo.ca>
+
+On Tue, Dec 30, 2014 at 01:58:57PM -0500, ted leslie wrote:
+> ?Some new video cards require? PS 4-6-8 prong plugs right to card from PS.
+> So if your PS doesn't have those, you are SOL.
+> As well, if it doesn't need those, the cards, especially recent ones have
+> power saving features, i.e. turn up their
+> performance as needed, so power draw can flux.
+> Only way to tell is add the max draw watts from everything, including max
+> draws from drive start up surges, etc,
+> and leave a bit of room as well.
+> 300w seems pretty low.
+
+Some cards do come with adapters to convert 4 pin drive power connectors
+to the PCIe power connectors.  So you might not be out of luck in all cases.
+
+-- 
+Len Sorensen
+
+From peter.king at utoronto.ca  Tue Dec 30 21:53:09 2014
+From: peter.king at utoronto.ca (Peter King)
+Date: Tue, 30 Dec 2014 16:53:09 -0500
+Subject: [GTALUG] GnuPG Woes...
+In-Reply-To: <20141228161315.GA8231@amber>
+References: <20141226050637.GA31739@amber> <549E123A.2060404@sobac.com>
+ <20141228161315.GA8231@amber>
+Message-ID: <20141230215309.GC30103@amber>
+
+
+> When I get back to Toronto in a few days I'll check a few places where an
+> older version of the file might be.  Ditto for the keyring.  I have some
+> hopes that I will get hold of a sufficiently old version of the file and of
+> gpg to decrypt it that way.  We'll see.
+
+I managed to locate two partial versions of the missing file, from which I
+could reconstruct most of it.  Still no idea about what went wrong, but given
+that the partial versions decrypted without problem, my guess is a disk error
+or something of the sort that corrupted the encrypted file, which was then
+propagated to all my backups.
+
+Moral of the Story (one moral among many): Keep static time-stamped backups as
+well as current redundant copies.  Will implement a scheme to do so this week,
+a better New Year's resolution than most!
+
+Thanks to all who offered suggestions.
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		    (416)-978-3311 ofc
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 181 bytes
+Desc: Digital signature
+URL: <http://gtalug.org/pipermail/talk/attachments/20141230/235fa9ed/attachment.sig>
+
+From hugh at mimosa.com  Tue Dec 30 21:55:20 2014
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 30 Dec 2014 16:55:20 -0500 (EST)
+Subject: [GTALUG] Intel entering the low end,
+ AMD taking ARM to the high end (Was: HummingBoard-i2eX First
+ Impressions)
+In-Reply-To: <CAGxYWpYiSNV8JnxH-d9VcTDinze7g8Kv+qZewFPqPQxxzyGqSw@mail.gmail.com>
+References: <54A0B8A5.9050301@ss.org>
+ <20141229063506.GA21941@node1.localdomain> <54A14CEE.5000805@ss.org>
+ <CAGxYWpYiSNV8JnxH-d9VcTDinze7g8Kv+qZewFPqPQxxzyGqSw@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1412301649320.746@redclaw.mimosa.com>
+
+| From: Tim Tisdall <tisdall at gmail.com>
+
+| ~$100 Intel systems:
+| http://www.cnx-software.com/2014/11/25/meegopad-t01-android-4-4-windows-8-1-mini-pc-sells-for-as-low-as-93/
+
+For a TV stick.  Lots of Android competition.  Still, this looks well
+priced: US$109.99 2G RAM, 32G eMMC.  Windows.  Sold out.
+
+| http://www.cnx-software.com/2014/11/11/meego-p01-mini-pc-with-intel-atom-z3735f-2gb-ram-32gb-emmc-sells-for-125-promo/#comment-290996
+
+Now US$250.
+
+================
+
+I paid $150 for a netbook with similar specs from a "doorbuster" deal
+at the Microsoft Store.  They often have interesting deals.
+
+Linux won't run on these yet.
+
