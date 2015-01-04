@@ -1,0 +1,1305 @@
+From adb at adb.ca  Thu Jan  1 16:41:41 2015
+From: adb at adb.ca (Anthony de Boer)
+Date: Thu, 1 Jan 2015 11:41:41 -0500
+Subject: [GTALUG] Disks are made of fragilium (was: GnuPG Woes...)
+In-Reply-To: <54A47D03.9060106@rogers.com>
+References: <20141226050637.GA31739@amber> <549E123A.2060404@sobac.com>
+ <20141228161315.GA8231@amber> <20141230215309.GC30103@amber>
+ <54A47D03.9060106@rogers.com>
+Message-ID: <20150101164141.GF1596@adb.ca>
+
+David Collier-Brown wrote:
+> On 12/30/2014 04:53 PM, Peter King wrote:
+> > Moral of the Story (one moral among many): Keep static time-stamped 
+> > backups as well as current redundant copies. Will implement a scheme 
+> > to do so this week, a better New Year's resolution than most!
+> 
+> This is way more common than people expect.
+> 
+> The ZFS folks found out that they needed to checksum disk files, 
+> somewhat to their surprise. ICL used to do it on a sector-by-sector 
+> basis as part of the sector footer, and would noisily recover when they 
+> detected problems.  Sun 3.5 did too, but you had to do the recovery by 
+> booting (!) /stand/diag
+
+I've had ZFS, and recently now also BTRFS, tell me that it was getting
+checksum errors from a disk.  In the one case it seemed like a one-off
+glitch, but the other seems to be hardware that's failing by flailing,
+sometimes returning whatever crap it thinks it might have seen, and in
+any event its problems are widespread and that disk's being replaced
+and e-wasted.
+
+Defensively, either of those filesystems are a better thing than the
+callow trusting filesystems of yesteryear.  Subtle problems you don't
+notice til long later waste far too much of one's time.
+
+At the application level, one thing that can help is keeping important
+files in git (and pushing a copy to another computer!) so that you
+have copies and history of revisions and it keeps checksums and will
+squawk at corruption.
+
+Another is cold-storage backups that don't overwrite existing files,
+just add new ones, for things like media and other archival files
+that shouldn't ever change after their initial creation.
+
+-- 
+Anthony de Boer
+
+From adb at adb.ca  Thu Jan  1 17:18:35 2015
+From: adb at adb.ca (Anthony de Boer)
+Date: Thu, 1 Jan 2015 12:18:35 -0500
+Subject: [GTALUG] Power Supplies & Video Cards
+In-Reply-To: <54A47DB7.3020205@rogers.com>
+References: <520955106.2784999.1419963294317.JavaMail.yahoo@jws10696.mail.bf1.yahoo.com>
+ <20141230204340.GB24111@csclub.uwaterloo.ca>
+ <54A47DB7.3020205@rogers.com>
+Message-ID: <20150101171835.GG1596@adb.ca>
+
+David Collier-Brown wrote:
+> If you have a hardware nerd, take them along when you buy power 
+> supplies.  The difference in the contents of one of those shiney little 
+> cases is amazing, even with the same part number on  the outside.
+
+If memory isn't completely failing me I think I recall Henry Spencer
+once saying to pick them both up and buy the heavier one!
+
+(Bigger heatsinks and beefier components certainly don't hurt.  Granted,
+there are a few other factors, including efficiency if you're paying
+for your own power these days and it's for a 24/7 box.)
+
+-- 
+Anthony de Boer
+
+From lsorense at csclub.uwaterloo.ca  Thu Jan  1 17:53:48 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 1 Jan 2015 12:53:48 -0500
+Subject: [GTALUG] GnuPG Woes...
+In-Reply-To: <20141230215309.GC30103@amber>
+References: <20141226050637.GA31739@amber> <549E123A.2060404@sobac.com>
+ <20141228161315.GA8231@amber> <20141230215309.GC30103@amber>
+Message-ID: <20150101175348.GD24111@csclub.uwaterloo.ca>
+
+On Tue, Dec 30, 2014 at 04:53:09PM -0500, Peter King wrote:
+> I managed to locate two partial versions of the missing file, from which I
+> could reconstruct most of it.  Still no idea about what went wrong, but given
+> that the partial versions decrypted without problem, my guess is a disk error
+> or something of the sort that corrupted the encrypted file, which was then
+> propagated to all my backups.
+> 
+> Moral of the Story (one moral among many): Keep static time-stamped backups as
+> well as current redundant copies.  Will implement a scheme to do so this week,
+> a better New Year's resolution than most!
+> 
+> Thanks to all who offered suggestions.
+
+I suppose things like rsnapshot which keeps copies with hardlinks to
+save space really ought to be on a good filesystem.  By default rsync
+doesn't compare files if the size and timstamp matches, which of course
+means rsnapshot could happily think you have a good copy of a file but
+that has in fact gotten corrupt because the underlying disk is failing.
+Making it always do a read compare would make it much slower, so having
+the filesystem maintain the reduncancy and checksums does seem more
+efficient.
+
+Getting reliable storage is getting complicated.
+
+Just remember not to yell at your disks though.   They don't like that. :)
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Thu Jan  1 17:56:47 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 1 Jan 2015 12:56:47 -0500
+Subject: [GTALUG] Power Supplies & Video Cards
+In-Reply-To: <20150101171835.GG1596@adb.ca>
+References: <520955106.2784999.1419963294317.JavaMail.yahoo@jws10696.mail.bf1.yahoo.com>
+ <20141230204340.GB24111@csclub.uwaterloo.ca>
+ <54A47DB7.3020205@rogers.com> <20150101171835.GG1596@adb.ca>
+Message-ID: <20150101175647.GE24111@csclub.uwaterloo.ca>
+
+On Thu, Jan 01, 2015 at 12:18:35PM -0500, Anthony de Boer wrote:
+> If memory isn't completely failing me I think I recall Henry Spencer
+> once saying to pick them both up and buy the heavier one!
+
+That was true before we got switching power supplies.  These days it is
+way more complicated than that.
+
+> (Bigger heatsinks and beefier components certainly don't hurt.  Granted,
+> there are a few other factors, including efficiency if you're paying
+> for your own power these days and it's for a 24/7 box.)
+
+Wish it was that simple.  These days there are questions of using the
+right number of caps for filterting and in the right places and the
+right types, and how well distributed the voltage rails are in terms of
+current at each voltage.
+
+-- 
+Len Sorensen
+
+From jamon.camisso at utoronto.ca  Thu Jan  1 20:37:10 2015
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Thu, 01 Jan 2015 20:37:10 +0000
+Subject: [GTALUG] GnuPG Woes...
+In-Reply-To: <20150101175348.GD24111@csclub.uwaterloo.ca>
+References: <20141226050637.GA31739@amber> <549E123A.2060404@sobac.com>
+ <20141228161315.GA8231@amber> <20141230215309.GC30103@amber>
+ <20150101175348.GD24111@csclub.uwaterloo.ca>
+Message-ID: <54A5AFF6.5050909@utoronto.ca>
+
+On 2015-01-01 5:53 PM, Lennart Sorensen wrote:
+> On Tue, Dec 30, 2014 at 04:53:09PM -0500, Peter King wrote:
+>> I managed to locate two partial versions of the missing file, from which I
+>> could reconstruct most of it.  Still no idea about what went wrong, but given
+>> that the partial versions decrypted without problem, my guess is a disk error
+>> or something of the sort that corrupted the encrypted file, which was then
+>> propagated to all my backups.
+>>
+>> Moral of the Story (one moral among many): Keep static time-stamped backups as
+>> well as current redundant copies.  Will implement a scheme to do so this week,
+>> a better New Year's resolution than most!
+>>
+>> Thanks to all who offered suggestions.
+> 
+> I suppose things like rsnapshot which keeps copies with hardlinks to
+> save space really ought to be on a good filesystem.  By default rsync
+> doesn't compare files if the size and timstamp matches, which of course
+> means rsnapshot could happily think you have a good copy of a file but
+> that has in fact gotten corrupt because the underlying disk is failing.
+> Making it always do a read compare would make it much slower, so having
+> the filesystem maintain the reduncancy and checksums does seem more
+> efficient.
+
+The benefit of rsnapshot being that unless the original or subsequent
+versions are deleted, it is possible to go back in time to a version of
+the file that is intact. If the underlying disk is failing and
+corrupting files then ZFS or rsnapshot or tarballs won't make a
+difference anyway.
+
+FWIW, I use rsnapshot for backups on top of ZFS (on Linux) as a
+production remote backup server. Apart from lengthy delete times (which
+is an issue with BTRFS as well, and rsnapshot for any meaningful amount
+of backups on any filesystem), it has been a reliable, and space
+efficient backup system for a few years now.
+
+Cheers, Jamon
+
+From chris at chrisaitken.net  Thu Jan  1 22:17:30 2015
+From: chris at chrisaitken.net (Chris Aitken)
+Date: Thu, 01 Jan 2015 17:17:30 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <CAGxYWpYF88tZfxuDcjFfQYgnNRhaMVLwLygOHRh_F=xNaFd+GQ@mail.gmail.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net> <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+ <CAGxYWpYF88tZfxuDcjFfQYgnNRhaMVLwLygOHRh_F=xNaFd+GQ@mail.gmail.com>
+Message-ID: <54A5C77A.10308@chrisaitken.net>
+
+On 14-12-22 09:59 AM, Tim Tisdall wrote:
+> On Sun, Dec 21, 2014 at 10:47 PM, Chris Aitken <chris at chrisaitken.net 
+> <mailto:chris at chrisaitken.net>> wrote:
+>
+>     On 14-12-21 09:30 PM, Tim Tisdall wrote:
+>>
+>>     Right.  That was the problem with the sed command.  There's
+>>     noca.old-releases.ubuntu.com <http://ca.old-releases.ubuntu.com>
+>>     domain.  Just replace the whole thing with the three lines I gave
+>>     you.
+>>
+>>     Then run: sudo apt-get update && sudo apt-get dist-upgrade
+>>
+>
+>     Done. So, is the following good, bad, or a mix?
+>
+>
+>     Fetched 12.0 MB in 23s (504 kB/s)
+>     W: Failed to fetch
+>     http://ppa.launchpad.net/andykimpe/freshplayerplugin-daily/ubuntu/dists/quantal/main/source/Sources
+>     404  Not Found
+>
+>     W: Failed to fetch
+>     http://ppa.launchpad.net/andykimpe/freshplayerplugin-daily/ubuntu/dists/quantal/main/binary-i386/Packages
+>     404  Not Found
+>
+>
+> Okay, I think you may be able to just run "sudo apt-get dist-upgrade" 
+> and things will work fine.  It failed to run that second part because 
+> the update failed on some custom PPA's you installed.  The 
+> dist-upgrade should then disable the PPA's and do the upgrade.
+
+This is what I got ...
+
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get dist-upgrade
+[sudo] password for chris:
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Calculating upgrade... Done
+The following NEW packages will be installed:
+   libp11-kit-gnome-keyring
+The following packages will be upgraded:
+   gnome-keyring
+1 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 1,413 kB of archives.
+After this operation, 245 kB of additional disk space will be used.
+Do you want to continue [Y/n]? y
+Get:1 http://old-releases.ubuntu.com/ubuntu/ quantal-updates/main 
+gnome-keyring i386 3.6.1-0ubuntu1.1 [1,369 kB]
+Get:2 http://old-releases.ubuntu.com/ubuntu/ quantal-updates/main 
+libp11-kit-gnome-keyring i386 3.6.1-0ubuntu1.1 [44.1 kB]
+Fetched 1,413 kB in 2s (615 kB/s)
+(Reading database ... 325948 files and directories currently installed.)
+Preparing to replace gnome-keyring 3.6.1-0ubuntu1 (using 
+.../gnome-keyring_3.6.1-0ubuntu1.1_i386.deb) ...
+Unpacking replacement gnome-keyring ...
+dpkg: warning: unable to delete old directory '/etc/pkcs11/modules': 
+Directory not empty
+dpkg: warning: unable to delete old directory '/etc/pkcs11': Directory 
+not empty
+Selecting previously unselected package libp11-kit-gnome-keyring:i386.
+Unpacking libp11-kit-gnome-keyring:i386 (from 
+.../libp11-kit-gnome-keyring_3.6.1-0ubuntu1.1_i386.deb) ...
+Processing triggers for man-db ...
+Processing triggers for gconf2 ...
+Processing triggers for libglib2.0-0:i386 ...
+Setting up libp11-kit-gnome-keyring:i386 (3.6.1-0ubuntu1.1) ...
+Setting up gnome-keyring (3.6.1-0ubuntu1.1) ...
+Processing triggers for libc-bin ...
+ldconfig deferred processing now taking place
+chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150101/a388faec/attachment.html>
+
+From thomas.bruce.milne at gmail.com  Fri Jan  2 00:04:33 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Thu, 1 Jan 2015 19:04:33 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <54A0C4BC.9050303@ss.org>
+References: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+ <20141123002215.GB24111@csclub.uwaterloo.ca>
+ <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+ <54A0C4BC.9050303@ss.org>
+Message-ID: <CAGc8pF4GwEMNUHmrdxaSj29_6Sx3ZL9+AsZVnzey_KEU9UCcDQ@mail.gmail.com>
+
+On Sun, Dec 28, 2014 at 10:04 PM, Scott Sullivan <scott at ss.org> wrote:
+> On 12/16/2014 04:55 PM, Thomas Milne wrote:
+>>
+>> Hey sorry to bug you, I am unemployed again and in dire need of a
+>> project :-)
+>>
+>> If you have that image or if you know a way I could generate my own, I
+>> tried searching but everything now is about the Cubox-i.
+>>
+>> Solidrun might have an original image but I would really like to have
+>> Debian armhf which is I assume what you have installed?
+>>
+>> Thanks!
+>
+>
+> Thomas,
+>
+> While working on my Hummingboard, I decided to explore the director
+> structure of their download section. I found their archive of cubox bits.
+> Poking around a see a few different distro images and various install
+> scripts. Hope this helps.
+>
+> http://download.solid-run.com/pub/solidrun/cubox/
+>
+
+Wow, that looks pretty awesome, though I haven't looked too closely.
+They have the original Ubuntu 10 image at least so I can make sure
+it's actually working. There are also files under Debian that say
+'armhf' that look promising.
+
+Thanks for this!
+
+-- 
+Thomas Milne
+
+From thomas.bruce.milne at gmail.com  Fri Jan  2 00:30:23 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Thu, 1 Jan 2015 19:30:23 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <20141229133843.GZ24111@csclub.uwaterloo.ca>
+References: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+ <20141123002215.GB24111@csclub.uwaterloo.ca>
+ <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+ <54A0D9BA.6010509@ss.org>
+ <20141229133843.GZ24111@csclub.uwaterloo.ca>
+Message-ID: <CAGc8pF6di0s-RH8QuxvFPdAVGe0nKP2H4UZ=VOALh1u3whsgEg@mail.gmail.com>
+
+On Mon, Dec 29, 2014 at 8:38 AM, Lennart Sorensen
+<lsorense at csclub.uwaterloo.ca> wrote:
+> On Sun, Dec 28, 2014 at 11:34:02PM -0500, Scott Sullivan wrote:
+>> Ah, I knew there was something bugging me.
+>>
+>> Thomas, wanting a armhf port for the cubox is, to use a bit of
+>> hyperbole, like wanting an 64bit port for your i686. Allow me to set
+>> up some background information then explain.
+>
+> The original cubox as a marvell 510 CPU, which is ARMv7, and runs armhf
+> just fine, as long as you have a kernel for it.  The one on my desk at
+> work is running Debian armhf SID at the moment, with a custom compiled
+> kernel.
+
+What am I looking at for compiling a kernel like that?
+
+For example, I assume I have to have something already installed on
+the Cubox, no? And it would have to be something newer than the
+original default Ubuntu I would guess.
+
+-- 
+Thomas Milne
+
+From lsorense at csclub.uwaterloo.ca  Fri Jan  2 04:08:39 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 1 Jan 2015 23:08:39 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <CAGc8pF6di0s-RH8QuxvFPdAVGe0nKP2H4UZ=VOALh1u3whsgEg@mail.gmail.com>
+References: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+ <20141123002215.GB24111@csclub.uwaterloo.ca>
+ <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+ <54A0D9BA.6010509@ss.org>
+ <20141229133843.GZ24111@csclub.uwaterloo.ca>
+ <CAGc8pF6di0s-RH8QuxvFPdAVGe0nKP2H4UZ=VOALh1u3whsgEg@mail.gmail.com>
+Message-ID: <20150102040839.GF24111@csclub.uwaterloo.ca>
+
+On Thu, Jan 01, 2015 at 07:30:23PM -0500, Thomas Milne wrote:
+> What am I looking at for compiling a kernel like that?
+> 
+> For example, I assume I have to have something already installed on
+> the Cubox, no? And it would have to be something newer than the
+> original default Ubuntu I would guess.
+
+I installed the ubuntu image, then I used debootstrap to create a chroot
+with debian, then I transfered that to be the main filesystem on the
+SD card.  The only non debian part at that point is the kernel image
+and modules and the boot loader.
+
+debootstrap is a marvolous thing.
+
+-- 
+Len Sorensen
+
+From tisdall at gmail.com  Fri Jan  2 14:39:05 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Fri, 2 Jan 2015 09:39:05 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <54A5C77A.10308@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net>
+ <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+ <CAGxYWpYF88tZfxuDcjFfQYgnNRhaMVLwLygOHRh_F=xNaFd+GQ@mail.gmail.com>
+ <54A5C77A.10308@chrisaitken.net>
+Message-ID: <CAGxYWpbuxph5bKejk-oNSK_c5n9HEKcabyLw07s0i0kupi9tTg@mail.gmail.com>
+
+If you don't have too much on that computer, you should probably just copy
+of your personal stuff and reformat it with the 14.04 version.   Nuke it
+from orbit...  it's the only way to be sure.
+
+On Thu, Jan 1, 2015 at 5:17 PM, Chris Aitken <chris at chrisaitken.net> wrote:
+
+>  On 14-12-22 09:59 AM, Tim Tisdall wrote:
+>
+>  On Sun, Dec 21, 2014 at 10:47 PM, Chris Aitken <chris at chrisaitken.net>
+> wrote:
+>
+>>  On 14-12-21 09:30 PM, Tim Tisdall wrote:
+>>
+>> Right.  That was the problem with the sed command.  There's no
+>> ca.old-releases.ubuntu.com domain.  Just replace the whole thing with
+>> the three lines I gave you.
+>>
+>> Then run: sudo apt-get update && sudo apt-get dist-upgrade
+>>
+>>
+>> Done. So, is the following good, bad, or a mix?
+>>
+>>
+>>
+>>
+>> Fetched 12.0 MB in 23s (504
+>> kB/s)
+>>
+>> W: Failed to fetch
+>> http://ppa.launchpad.net/andykimpe/freshplayerplugin-daily/ubuntu/dists/quantal/main/source/Sources
+>> 404  Not Found
+>>
+>> W: Failed to fetch
+>> http://ppa.launchpad.net/andykimpe/freshplayerplugin-daily/ubuntu/dists/quantal/main/binary-i386/Packages
+>> 404  Not Found
+>>
+>>
+>  Okay, I think you may be able to just run "sudo apt-get dist-upgrade"
+> and things will work fine.  It failed to run that second part because the
+> update failed on some custom PPA's you installed.  The dist-upgrade should
+> then disable the PPA's and do the upgrade.
+>
+>
+> This is what I got ...
+>
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get
+> dist-upgrade
+> [sudo] password for chris:
+> Reading package lists... Done
+> Building dependency tree
+> Reading state information... Done
+> Calculating upgrade... Done
+> The following NEW packages will be installed:
+>   libp11-kit-gnome-keyring
+> The following packages will be upgraded:
+>   gnome-keyring
+> 1 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+> Need to get 1,413 kB of archives.
+> After this operation, 245 kB of additional disk space will be used.
+> Do you want to continue [Y/n]? y
+> Get:1 http://old-releases.ubuntu.com/ubuntu/ quantal-updates/main
+> gnome-keyring i386 3.6.1-0ubuntu1.1 [1,369 kB]
+> Get:2 http://old-releases.ubuntu.com/ubuntu/ quantal-updates/main
+> libp11-kit-gnome-keyring i386 3.6.1-0ubuntu1.1 [44.1 kB]
+> Fetched 1,413 kB in 2s (615 kB/s)
+> (Reading database ... 325948 files and directories currently installed.)
+> Preparing to replace gnome-keyring 3.6.1-0ubuntu1 (using
+> .../gnome-keyring_3.6.1-0ubuntu1.1_i386.deb) ...
+> Unpacking replacement gnome-keyring ...
+> dpkg: warning: unable to delete old directory '/etc/pkcs11/modules':
+> Directory not empty
+> dpkg: warning: unable to delete old directory '/etc/pkcs11': Directory not
+> empty
+> Selecting previously unselected package libp11-kit-gnome-keyring:i386.
+> Unpacking libp11-kit-gnome-keyring:i386 (from
+> .../libp11-kit-gnome-keyring_3.6.1-0ubuntu1.1_i386.deb) ...
+> Processing triggers for man-db ...
+> Processing triggers for gconf2 ...
+> Processing triggers for libglib2.0-0:i386 ...
+> Setting up libp11-kit-gnome-keyring:i386 (3.6.1-0ubuntu1.1) ...
+> Setting up gnome-keyring (3.6.1-0ubuntu1.1) ...
+> Processing triggers for libc-bin ...
+> ldconfig deferred processing now taking place
+> chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.orghttp://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150102/d6c25584/attachment.html>
+
+From tisdall at gmail.com  Fri Jan  2 14:45:57 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Fri, 2 Jan 2015 09:45:57 -0500
+Subject: [GTALUG] Intel entering the low end,
+ AMD taking ARM to the high end (Was: HummingBoard-i2eX First
+ Impressions)
+In-Reply-To: <alpine.LRH.2.02.1412301649320.746@redclaw.mimosa.com>
+References: <54A0B8A5.9050301@ss.org>
+ <20141229063506.GA21941@node1.localdomain>
+ <54A14CEE.5000805@ss.org>
+ <CAGxYWpYiSNV8JnxH-d9VcTDinze7g8Kv+qZewFPqPQxxzyGqSw@mail.gmail.com>
+ <alpine.LRH.2.02.1412301649320.746@redclaw.mimosa.com>
+Message-ID: <CAGxYWpabh7z98qM8KB3gux-N1CLzzNsLqM__zykcL8a+iQOp+w@mail.gmail.com>
+
+http://www.cnx-software.com/2015/01/02/pipo-x7-intel-atom-z3736-based-mini-pc-sells-for-90/
+ - Pipo makes a lot of Android devices in China
+
+On Tue, Dec 30, 2014 at 4:55 PM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+> | From: Tim Tisdall <tisdall at gmail.com>
+>
+> | ~$100 Intel systems:
+> |
+> http://www.cnx-software.com/2014/11/25/meegopad-t01-android-4-4-windows-8-1-mini-pc-sells-for-as-low-as-93/
+>
+> For a TV stick.  Lots of Android competition.  Still, this looks well
+> priced: US$109.99 2G RAM, 32G eMMC.  Windows.  Sold out.
+>
+> |
+> http://www.cnx-software.com/2014/11/11/meego-p01-mini-pc-with-intel-atom-z3735f-2gb-ram-32gb-emmc-sells-for-125-promo/#comment-290996
+>
+> Now US$250.
+>
+> ================
+>
+> I paid $150 for a netbook with similar specs from a "doorbuster" deal
+> at the Microsoft Store.  They often have interesting deals.
+>
+> Linux won't run on these yet.
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150102/8fa068ef/attachment.html>
+
+From chris at chrisaitken.net  Fri Jan  2 15:27:49 2015
+From: chris at chrisaitken.net (Chris Aitken)
+Date: Fri, 02 Jan 2015 10:27:49 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <CAGxYWpbuxph5bKejk-oNSK_c5n9HEKcabyLw07s0i0kupi9tTg@mail.gmail.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net> <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+ <CAGxYWpYF88tZfxuDcjFfQYgnNRhaMVLwLygOHRh_F=xNaFd+GQ@mail.gmail.com>
+ <54A5C77A.10308@chrisaitken.net>
+ <CAGxYWpbuxph5bKejk-oNSK_c5n9HEKcabyLw07s0i0kupi9tTg@mail.gmail.com>
+Message-ID: <54A6B8F5.6060200@chrisaitken.net>
+
+On 15-01-02 09:39 AM, Tim Tisdall wrote:
+> If you don't have too much on that computer, you should probably just 
+> copy of your personal stuff and reformat it with the 14.04 version.   
+> Nuke it from orbit...  it's the only way to be sure.
+
+Man, it's been so long. I don't expect you to give me a step-by-step, 
+but are the broad strokes that I would make a CD or DVD on another PC, 
+then boot from that to do the fresh installation?
+Is there a command I can run, then at boot the installation would begin? 
+I assumed I was going to lose everything anyway - I'm good about backing 
+up data.
+
+Chris
+
+>
+> On Thu, Jan 1, 2015 at 5:17 PM, Chris Aitken <chris at chrisaitken.net 
+> <mailto:chris at chrisaitken.net>> wrote:
+>
+>     On 14-12-22 09:59 AM, Tim Tisdall wrote:
+>>     On Sun, Dec 21, 2014 at 10:47 PM, Chris Aitken
+>>     <chris at chrisaitken.net <mailto:chris at chrisaitken.net>> wrote:
+>>
+>>         On 14-12-21 09:30 PM, Tim Tisdall wrote:
+>>>
+>>>         Right.  That was the problem with the sed command. There's
+>>>         noca.old-releases.ubuntu.com
+>>>         <http://ca.old-releases.ubuntu.com> domain.  Just replace
+>>>         the whole thing with the three lines I gave you.
+>>>
+>>>         Then run: sudo apt-get update && sudo apt-get dist-upgrade
+>>>
+>>
+>>         Done. So, is the following good, bad, or a mix?
+>>
+>>
+>>         Fetched 12.0 MB in 23s (504 kB/s)
+>>         W: Failed to fetch
+>>         http://ppa.launchpad.net/andykimpe/freshplayerplugin-daily/ubuntu/dists/quantal/main/source/Sources
+>>         404  Not Found
+>>
+>>         W: Failed to fetch
+>>         http://ppa.launchpad.net/andykimpe/freshplayerplugin-daily/ubuntu/dists/quantal/main/binary-i386/Packages
+>>         404  Not Found
+>>
+>>
+>>     Okay, I think you may be able to just run "sudo apt-get
+>>     dist-upgrade" and things will work fine.  It failed to run that
+>>     second part because the update failed on some custom PPA's you
+>>     installed.  The dist-upgrade should then disable the PPA's and do
+>>     the upgrade.
+>
+>     This is what I got ...
+>
+>     chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$ sudo apt-get
+>     dist-upgrade
+>     [sudo] password for chris:
+>     Reading package lists... Done
+>     Building dependency tree
+>     Reading state information... Done
+>     Calculating upgrade... Done
+>     The following NEW packages will be installed:
+>       libp11-kit-gnome-keyring
+>     The following packages will be upgraded:
+>       gnome-keyring
+>     1 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+>     Need to get 1,413 kB of archives.
+>     After this operation, 245 kB of additional disk space will be used.
+>     Do you want to continue [Y/n]? y
+>     Get:1 http://old-releases.ubuntu.com/ubuntu/ quantal-updates/main
+>     gnome-keyring i386 3.6.1-0ubuntu1.1 [1,369 kB]
+>     Get:2 http://old-releases.ubuntu.com/ubuntu/ quantal-updates/main
+>     libp11-kit-gnome-keyring i386 3.6.1-0ubuntu1.1 [44.1 kB]
+>     Fetched 1,413 kB in 2s (615 kB/s)
+>     (Reading database ... 325948 files and directories currently
+>     installed.)
+>     Preparing to replace gnome-keyring 3.6.1-0ubuntu1 (using
+>     .../gnome-keyring_3.6.1-0ubuntu1.1_i386.deb) ...
+>     Unpacking replacement gnome-keyring ...
+>     dpkg: warning: unable to delete old directory
+>     '/etc/pkcs11/modules': Directory not empty
+>     dpkg: warning: unable to delete old directory '/etc/pkcs11':
+>     Directory not empty
+>     Selecting previously unselected package libp11-kit-gnome-keyring:i386.
+>     Unpacking libp11-kit-gnome-keyring:i386 (from
+>     .../libp11-kit-gnome-keyring_3.6.1-0ubuntu1.1_i386.deb) ...
+>     Processing triggers for man-db ...
+>     Processing triggers for gconf2 ...
+>     Processing triggers for libglib2.0-0:i386 ...
+>     Setting up libp11-kit-gnome-keyring:i386 (3.6.1-0ubuntu1.1) ...
+>     Setting up gnome-keyring (3.6.1-0ubuntu1.1) ...
+>     Processing triggers for libc-bin ...
+>     ldconfig deferred processing now taking place
+>     chris at owner-HP-Compaq-dc5750-Small-Form-Factor:~$
+>
+>>
+>>
+>>     ---
+>>     GTALUG Talk Mailing List -talk at gtalug.org  <mailto:talk at gtalug.org>
+>>     http://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+>
+>     ---
+>     GTALUG Talk Mailing List - talk at gtalug.org <mailto:talk at gtalug.org>
+>     http://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150102/3e4eb323/attachment.html>
+
+From tisdall at gmail.com  Fri Jan  2 16:21:25 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Fri, 2 Jan 2015 11:21:25 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <54A6B8F5.6060200@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net>
+ <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+ <CAGxYWpYF88tZfxuDcjFfQYgnNRhaMVLwLygOHRh_F=xNaFd+GQ@mail.gmail.com>
+ <54A5C77A.10308@chrisaitken.net>
+ <CAGxYWpbuxph5bKejk-oNSK_c5n9HEKcabyLw07s0i0kupi9tTg@mail.gmail.com>
+ <54A6B8F5.6060200@chrisaitken.net>
+Message-ID: <CAGxYWpYUgEOOgvKDw+ioy-yjpMz-juiDYt6hqFwmLrPfg-X8-g@mail.gmail.com>
+
+On Fri, Jan 2, 2015 at 10:27 AM, Chris Aitken <chris at chrisaitken.net> wrote:
+
+>  On 15-01-02 09:39 AM, Tim Tisdall wrote:
+>
+> If you don't have too much on that computer, you should probably just copy
+> of your personal stuff and reformat it with the 14.04 version.   Nuke it
+> from orbit...  it's the only way to be sure.
+>
+>
+> Man, it's been so long. I don't expect you to give me a step-by-step, but
+> are the broad strokes that I would make a CD or DVD on another PC, then
+> boot from that to do the fresh installation?
+> Is there a command I can run, then at boot the installation would begin? I
+> assumed I was going to lose everything anyway - I'm good about backing up
+> data.
+>
+>
+Easiest way is to download the 14.04 ISO image and then use the "Startup
+Disk Creator" to create a bootable USB flash drive.  You then boot from the
+USB drive and follow the instructions.
+
+You should have everything you need on that older Ubuntu machine already,
+you just need to download the disk ISO.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150102/a1840392/attachment.html>
+
+From thomas.bruce.milne at gmail.com  Fri Jan  2 16:30:58 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Fri, 2 Jan 2015 11:30:58 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <20150102040839.GF24111@csclub.uwaterloo.ca>
+References: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+ <20141123002215.GB24111@csclub.uwaterloo.ca>
+ <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+ <54A0D9BA.6010509@ss.org>
+ <20141229133843.GZ24111@csclub.uwaterloo.ca>
+ <CAGc8pF6di0s-RH8QuxvFPdAVGe0nKP2H4UZ=VOALh1u3whsgEg@mail.gmail.com>
+ <20150102040839.GF24111@csclub.uwaterloo.ca>
+Message-ID: <CAGc8pF5Q-hTahSh1e3wyqLAieJcf1h53wh0+Lq5PUWfLCzjNpw@mail.gmail.com>
+
+On Jan 1, 2015 11:08 PM, "Lennart Sorensen" <lsorense at csclub.uwaterloo.ca>
+wrote:
+>
+> On Thu, Jan 01, 2015 at 07:30:23PM -0500, Thomas Milne wrote:
+> > What am I looking at for compiling a kernel like that?
+> >
+> > For example, I assume I have to have something already installed on
+> > the Cubox, no? And it would have to be something newer than the
+> > original default Ubuntu I would guess.
+>
+> I installed the ubuntu image, then I used debootstrap to create a chroot
+> with debian, then I transfered that to be the main filesystem on the
+> SD card.  The only non debian part at that point is the kernel image
+> and modules and the boot loader.
+>
+> debootstrap is a marvolous thing.
+>
+
+It sounds like it. Wow.
+
+So can I boot into that Debian system and compile a new kernel from inside
+that? And do I need to know what options to choose at compile and modules
+to load for Cubox hardware or is that automatic?
+
+Pardon my dumb questions. I was reading this, about installing Debian and
+compiling a new kernel:
+
+http://www.solid-run.com/archive/mw/index.php/Debian_netboot_installer
+
+I might be in over my head. Those instructions assume that I know how to do
+a lot of things that I do not.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150102/55c27de5/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Sat Jan  3 04:13:02 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 2 Jan 2015 23:13:02 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <CAGc8pF5Q-hTahSh1e3wyqLAieJcf1h53wh0+Lq5PUWfLCzjNpw@mail.gmail.com>
+References: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+ <20141123002215.GB24111@csclub.uwaterloo.ca>
+ <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+ <54A0D9BA.6010509@ss.org>
+ <20141229133843.GZ24111@csclub.uwaterloo.ca>
+ <CAGc8pF6di0s-RH8QuxvFPdAVGe0nKP2H4UZ=VOALh1u3whsgEg@mail.gmail.com>
+ <20150102040839.GF24111@csclub.uwaterloo.ca>
+ <CAGc8pF5Q-hTahSh1e3wyqLAieJcf1h53wh0+Lq5PUWfLCzjNpw@mail.gmail.com>
+Message-ID: <20150103041302.GG24111@csclub.uwaterloo.ca>
+
+On Fri, Jan 02, 2015 at 11:30:58AM -0500, Thomas Milne wrote:
+> It sounds like it. Wow.
+> 
+> So can I boot into that Debian system and compile a new kernel from inside
+> that? And do I need to know what options to choose at compile and modules
+> to load for Cubox hardware or is that automatic?
+
+Kernel config is not automatic.  That bit you have to deal with.
+
+> Pardon my dumb questions. I was reading this, about installing Debian and
+> compiling a new kernel:
+> 
+> http://www.solid-run.com/archive/mw/index.php/Debian_netboot_installer
+> 
+> I might be in over my head. Those instructions assume that I know how to do
+> a lot of things that I do not.
+
+That's the problem when the people writing the instructions know what
+they are doing already.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Sat Jan  3 15:18:53 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sat, 3 Jan 2015 10:18:53 -0500
+Subject: [GTALUG] GnuPG Woes...
+In-Reply-To: <54A5AFF6.5050909@utoronto.ca>
+References: <20141226050637.GA31739@amber> <549E123A.2060404@sobac.com>
+ <20141228161315.GA8231@amber> <20141230215309.GC30103@amber>
+ <20150101175348.GD24111@csclub.uwaterloo.ca>
+ <54A5AFF6.5050909@utoronto.ca>
+Message-ID: <20150103151853.GA30246@csclub.uwaterloo.ca>
+
+On Thu, Jan 01, 2015 at 08:37:10PM +0000, Jamon Camisso wrote:
+> The benefit of rsnapshot being that unless the original or subsequent
+> versions are deleted, it is possible to go back in time to a version of
+> the file that is intact. If the underlying disk is failing and
+> corrupting files then ZFS or rsnapshot or tarballs won't make a
+> difference anyway.
+
+But ZFS would help.  If the file is corrupted by a disk, then the checksum
+almost certainly will fail and the copy from an alternate disk in the
+filesystem will be read and is very unlikely to be corrupted at the
+same time.
+
+> FWIW, I use rsnapshot for backups on top of ZFS (on Linux) as a
+> production remote backup server. Apart from lengthy delete times (which
+> is an issue with BTRFS as well, and rsnapshot for any meaningful amount
+> of backups on any filesystem), it has been a reliable, and space
+> efficient backup system for a few years now.
+
+I like rsnapshot too, but it is worth remembering that if your backup
+of a file is ever corrupted by the disk, you won't get a new copy when
+using rsnapshot/rsync in the typical mode.
+
+-- 
+Len Sorensen
+
+From chris at chrisaitken.net  Sat Jan  3 20:04:30 2015
+From: chris at chrisaitken.net (Chris Aitken)
+Date: Sat, 03 Jan 2015 15:04:30 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <CAGxYWpYUgEOOgvKDw+ioy-yjpMz-juiDYt6hqFwmLrPfg-X8-g@mail.gmail.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net> <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+ <CAGxYWpYF88tZfxuDcjFfQYgnNRhaMVLwLygOHRh_F=xNaFd+GQ@mail.gmail.com>
+ <54A5C77A.10308@chrisaitken.net>
+ <CAGxYWpbuxph5bKejk-oNSK_c5n9HEKcabyLw07s0i0kupi9tTg@mail.gmail.com>
+ <54A6B8F5.6060200@chrisaitken.net>
+ <CAGxYWpYUgEOOgvKDw+ioy-yjpMz-juiDYt6hqFwmLrPfg-X8-g@mail.gmail.com>
+Message-ID: <54A84B4E.8050105@chrisaitken.net>
+
+On 15-01-02 11:21 AM, Tim Tisdall wrote:
+> On Fri, Jan 2, 2015 at 10:27 AM, Chris Aitken <chris at chrisaitken.net 
+> <mailto:chris at chrisaitken.net>> wrote:
+>
+>     On 15-01-02 09:39 AM, Tim Tisdall wrote:
+>>     If you don't have too much on that computer, you should probably
+>>     just copy of your personal stuff and reformat it with the 14.04
+>>     version.   Nuke it from orbit...  it's the only way to be sure.
+>
+>     Man, it's been so long. I don't expect you to give me a
+>     step-by-step, but are the broad strokes that I would make a CD or
+>     DVD on another PC, then boot from that to do the fresh installation?
+>     Is there a command I can run, then at boot the installation would
+>     begin? I assumed I was going to lose everything anyway - I'm good
+>     about backing up data.
+>
+>
+> Easiest way is to download the 14.04 ISO image and then use the 
+> "Startup Disk Creator" to create a bootable USB flash drive.  You then 
+> boot from the USB drive and follow the instructions.
+>
+> You should have everything you need on that older Ubuntu machine 
+> already, you just need to download the disk ISO.
+
+OK - I'm starting in on this. Will there be any possibility of choosing 
+the old GNOME interface, so I don't end up with Unity?
+
+Chris
+
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150103/97195855/attachment.html>
+
+From mlxxxp at gmail.com  Sat Jan  3 20:11:49 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Sat, 3 Jan 2015 15:11:49 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <54A84B4E.8050105@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net>
+ <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+ <CAGxYWpYF88tZfxuDcjFfQYgnNRhaMVLwLygOHRh_F=xNaFd+GQ@mail.gmail.com>
+ <54A5C77A.10308@chrisaitken.net>
+ <CAGxYWpbuxph5bKejk-oNSK_c5n9HEKcabyLw07s0i0kupi9tTg@mail.gmail.com>
+ <54A6B8F5.6060200@chrisaitken.net>
+ <CAGxYWpYUgEOOgvKDw+ioy-yjpMz-juiDYt6hqFwmLrPfg-X8-g@mail.gmail.com>
+ <54A84B4E.8050105@chrisaitken.net>
+Message-ID: <CAArSzsXf6L2nNctL67w+r1JRN0R70J1Mho4zUnV=c4GvbFrZ+Q@mail.gmail.com>
+
+On 3 January 2015 at 15:04, Chris Aitken <chris at chrisaitken.net> wrote:
+> Will there be any possibility of choosing the
+> old GNOME interface, so I don't end up with Unity?
+
+You probably want to download an Ubuntu GNOME image for this.
+<http://ubuntugnome.org/>
+
+-- 
+Scott
+
+From bjonkman at sobac.com  Sat Jan  3 20:44:06 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Sat, 03 Jan 2015 15:44:06 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <54A84B4E.8050105@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net> <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+ <CAGxYWpYF88tZfxuDcjFfQYgnNRhaMVLwLygOHRh_F=xNaFd+GQ@mail.gmail.com>
+ <54A5C77A.10308@chrisaitken.net>
+ <CAGxYWpbuxph5bKejk-oNSK_c5n9HEKcabyLw07s0i0kupi9tTg@mail.gmail.com>
+ <54A6B8F5.6060200@chrisaitken.net>
+ <CAGxYWpYUgEOOgvKDw+ioy-yjpMz-juiDYt6hqFwmLrPfg-X8-g@mail.gmail.com>
+ <54A84B4E.8050105@chrisaitken.net>
+Message-ID: <54A85496.4090908@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+On 03/01/15 03:04 PM, Chris Aitken wrote:
+> Will there be any possibility of choosing the old GNOME interface,
+> so I don't end up with Unity?
+
+I use the MATE interface, a Gnome2 fork. You can install it from Ubuntu
+14.04LTS "Trusty Tahr" repositories now:
+http://packages.ubuntu.com/trusty/mate-desktop Install it from the
+commandline with 'apt-get install mate-desktop'
+
+I'd also install the packages 'mate-desktop-environment' and
+'mate-desktop-environment-extras', but they seem to be available only
+in 14.10 "Utopic Unicorn":
+http://packages.ubuntu.com/utopic/mate-desktop-environment-extras
+
+Instead of upgrading from 14.04LTS to 14.10 to get the
+'-environment-extras' you may want to add the MATE repositories
+instead. That'll let you install the '-environment-extras' package,
+and probably provides you with a more current MATE core as well.
+There's good instructions at
+http://wiki.mate-desktop.org/download#ubuntu_1404_lts_trusty_thar
+
+- --Bob.
+
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-669-0388
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+http://bob.jonkman.ca/blogs/    http://sn.jonkman.ca/bobjonkman/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+
+
+On 03/01/15 03:04 PM, Chris Aitken wrote:
+> On 15-01-02 11:21 AM, Tim Tisdall wrote:
+>> On Fri, Jan 2, 2015 at 10:27 AM, Chris Aitken 
+>> <chris at chrisaitken.net <mailto:chris at chrisaitken.net>> wrote:
+>> 
+>> On 15-01-02 09:39 AM, Tim Tisdall wrote:
+>>> If you don't have too much on that computer, you should
+>>> probably just copy of your personal stuff and reformat it with
+>>> the 14.04 version.   Nuke it from orbit...  it's the only way
+>>> to be sure.
+>> 
+>> Man, it's been so long. I don't expect you to give me a 
+>> step-by-step, but are the broad strokes that I would make a CD or
+>>  DVD on another PC, then boot from that to do the fresh 
+>> installation? Is there a command I can run, then at boot the 
+>> installation would begin? I assumed I was going to lose
+>> everything anyway - I'm good about backing up data.
+>> 
+>> 
+>> Easiest way is to download the 14.04 ISO image and then use the 
+>> "Startup Disk Creator" to create a bootable USB flash drive.
+>> You then boot from the USB drive and follow the instructions.
+>> 
+>> You should have everything you need on that older Ubuntu machine
+>>  already, you just need to download the disk ISO.
+> 
+> OK - I'm starting in on this. Will there be any possibility of 
+> choosing the old GNOME interface, so I don't end up with Unity?
+> 
+> Chris
+> 
+>> 
+>> 
+>> 
+>> --- GTALUG Talk Mailing List - talk at gtalug.org 
+>> http://gtalug.org/mailman/listinfo/talk
+> 
+> 
+> 
+> 
+> 
+> 
+> --- GTALUG Talk Mailing List - talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.15 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlSoVJQACgkQuRKJsNLM5epcrwCggDItzKlqb2O/ZF8yg5J7fmAs
+MEQAnjKopaIRYyR1Ek3jfgynA1QzyqzM
+=+m/l
+-----END PGP SIGNATURE-----
+
+From davec-b at rogers.com  Sat Jan  3 20:55:28 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Sat, 03 Jan 2015 15:55:28 -0500
+Subject: [GTALUG] Anyone on the list know what I need to read ancient Apple
+	disks?
+Message-ID: <54A85740.5040903@rogers.com>
+
+An elderly relative has a PPC iMac, the so-called "sunflower mac"
+http://upload.wikimedia.org/wikipedia/en/0/02/Imac_sunflower2.jpg
+
+It eventually died, but the symptoms hinted it wasn't a disk crash.
+
+This apparently came with MacO OS 9.2 and a  60.0 GB Ultra ATA/66 hard 
+drive (5400 RPM), so what modern machines can read Mac file formats?  I 
+have an Ubunutu-based PVR with an ATA interface that's doing the DVD 
+right now, could I read it from Linux? My old SPARC read Mac SCSI formats...
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150103/24b6b6a0/attachment.html>
+
+From scruss at gmail.com  Sat Jan  3 21:37:52 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sat, 03 Jan 2015 16:37:52 -0500
+Subject: [GTALUG] Anyone on the list know what I need to read ancient
+ Apple disks?
+In-Reply-To: <54A85740.5040903@rogers.com>
+References: <54A85740.5040903@rogers.com>
+Message-ID: <54A86130.30607@gmail.com>
+
+On 2015-01-03 03:55 PM, David Collier-Brown wrote:
+> 
+> what modern machines can read Mac file formats?
+
+Last time I tried this (~2007), a Mac HD was recognized immediately on
+attaching it to a Linux box. PPC Macs used their own slightly weird
+partitioning system, but all the HFS filesystems mounted read-only
+correctly. hfsutils provides a crude shell environment if you ever need
+to delve into HFS images.
+
+Your biggest problem will be the file formats. MacOS 9 was still heavily
+into its data+resource fork model, so you can often be left with little
+clue what type of file is on the disk, or be stuck with crazy encoding
+issues. Mac Applications used to be a mess of very proprietary file
+formats (Apple Works, I am glaring at you), so let's hope any data you
+can get off the disk is in something vaguely sensible. And yes, formats
+like Word and Excel would be considered sensible ones here ?
+
+Old Macs use just CR for newlines, FYI.
+
+cheers,
+ Stewart
+
+From davec-b at rogers.com  Sat Jan  3 21:50:49 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Sat, 03 Jan 2015 16:50:49 -0500
+Subject: [GTALUG] Anyone on the list know what I need to read ancient
+ Apple disks?
+In-Reply-To: <54A86130.30607@gmail.com>
+References: <54A85740.5040903@rogers.com> <54A86130.30607@gmail.com>
+Message-ID: <54A86439.30807@rogers.com>
+
+I'm after pictures and email, and can probably do a trick with strings 
+to find JPEGs,  find and grep to find mailboxes and addressbooks.
+
+--dave
+
+On 01/03/2015 04:37 PM, Stewart C. Russell wrote:
+> On 2015-01-03 03:55 PM, David Collier-Brown wrote:
+>> what modern machines can read Mac file formats?
+> Last time I tried this (~2007), a Mac HD was recognized immediately on
+> attaching it to a Linux box. PPC Macs used their own slightly weird
+> partitioning system, but all the HFS filesystems mounted read-only
+> correctly. hfsutils provides a crude shell environment if you ever need
+> to delve into HFS images.
+>
+> Your biggest problem will be the file formats. MacOS 9 was still heavily
+> into its data+resource fork model, so you can often be left with little
+> clue what type of file is on the disk, or be stuck with crazy encoding
+> issues. Mac Applications used to be a mess of very proprietary file
+> formats (Apple Works, I am glaring at you), so let's hope any data you
+> can get off the disk is in something vaguely sensible. And yes, formats
+> like Word and Excel would be considered sensible ones here ?
+>
+> Old Macs use just CR for newlines, FYI.
+>
+> cheers,
+>   Stewart
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From lsorense at csclub.uwaterloo.ca  Sat Jan  3 21:54:55 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sat, 3 Jan 2015 16:54:55 -0500
+Subject: [GTALUG] Anyone on the list know what I need to read ancient
+ Apple disks?
+In-Reply-To: <54A86439.30807@rogers.com>
+References: <54A85740.5040903@rogers.com> <54A86130.30607@gmail.com>
+ <54A86439.30807@rogers.com>
+Message-ID: <20150103215455.GB30246@csclub.uwaterloo.ca>
+
+On Sat, Jan 03, 2015 at 04:50:49PM -0500, David Collier-Brown wrote:
+> I'm after pictures and email, and can probably do a trick with
+> strings to find JPEGs,  find and grep to find mailboxes and
+> addressbooks.
+
+Once you mount the HFS filesystem on linux you can actually get the resource fork too by doing:
+
+ls /hfsmnt/filename
+ls /hfsmnt/filename/rsrc
+
+So if you need the resource fork, it can actually be accessed if you
+know about the special /rsrc option (so essentially pretend the file is
+a directory with a file inside called rsrc).
+
+It won't show in ls that /rsrc exists since afer all the file is a file,
+not a directory.
+
+If a file has no resource fork, then you get an error if you try to
+access /rsrc.
+
+-- 
+Len Sorensen
+
+From davec-b at rogers.com  Sat Jan  3 22:26:45 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Sat, 03 Jan 2015 17:26:45 -0500
+Subject: [GTALUG] Anyone on the list know what I need to read ancient
+ Apple disks?
+In-Reply-To: <20150103215455.GB30246@csclub.uwaterloo.ca>
+References: <54A85740.5040903@rogers.com> <54A86130.30607@gmail.com>
+ <54A86439.30807@rogers.com> <20150103215455.GB30246@csclub.uwaterloo.ca>
+Message-ID: <54A86CA5.5090405@rogers.com>
+
+On 01/03/2015 04:54 PM, Lennart Sorensen wrote:
+> On Sat, Jan 03, 2015 at 04:50:49PM -0500, David Collier-Brown wrote:
+>> I'm after pictures and email, and can probably do a trick with
+>> strings to find JPEGs,  find and grep to find mailboxes and
+>> addressbooks.
+> Once you mount the HFS filesystem on linux you can actually get the resource fork too by doing:
+>
+> ls /hfsmnt/filename
+> ls /hfsmnt/filename/rsrc
+>
+> So if you need the resource fork, it can actually be accessed if you
+> know about the special /rsrc option (so essentially pretend the file is
+> a directory with a file inside called rsrc).
+>
+> It won't show in ls that /rsrc exists since afer all the file is a file,
+> not a directory.
+>
+> If a file has no resource fork, then you get an error if you try to
+> access /rsrc.
+>
+Excellent, thanks!
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150103/1230d252/attachment.html>
+
+From hugh at mimosa.com  Sun Jan  4 06:40:55 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 4 Jan 2015 01:40:55 -0500 (EST)
+Subject: [GTALUG] Anyone on the list know what I need to read ancient
+ Apple disks?
+In-Reply-To: <54A85740.5040903@rogers.com>
+References: <54A85740.5040903@rogers.com>
+Message-ID: <alpine.LRH.2.02.1501040100080.20404@redclaw.mimosa.com>
+
+| From: David Collier-Brown <davec-b at rogers.com>
+
+| An elderly relative has a PPC iMac, the so-called "sunflower mac"
+| http://upload.wikimedia.org/wikipedia/en/0/02/Imac_sunflower2.jpg
+
+Nice.
+
+A friend ran and Plan9 on one for years.  He's the one who ported
+Plan9 to the Raspberry Pi.
+
+| It eventually died, but the symptoms hinted it wasn't a disk crash.
+
+What did it die of?  I assume that it was terminal (fried mainboard?).
+
+| This apparently came with MacO OS 9.2 and a  60.0 GB Ultra ATA/66 hard drive
+| (5400 RPM), so what modern machines can read Mac file formats?  I have an
+| Ubunutu-based PVR with an ATA interface that's doing the DVD right now, could
+| I read it from Linux? My old SPARC read Mac SCSI formats...
+
+(I'm not sure what "doing the DVD right now" means.)
+
+I take it that you don't need to get them up and running again.  If
+you did, I would imagine that the most straight-forward method would
+be to feed the disk to a modern Mac.  They surely have migration
+tools.
+
+I'd try a PATA to USB gizmo because modern Macs don't do PATA.  If you
+need to borrow one, I have one.
+
