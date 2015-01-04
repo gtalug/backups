@@ -841,3 +841,465 @@ they are doing already.
 -- 
 Len Sorensen
 
+From lsorense at csclub.uwaterloo.ca  Sat Jan  3 15:18:53 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sat, 3 Jan 2015 10:18:53 -0500
+Subject: [GTALUG] GnuPG Woes...
+In-Reply-To: <54A5AFF6.5050909@utoronto.ca>
+References: <20141226050637.GA31739@amber> <549E123A.2060404@sobac.com>
+ <20141228161315.GA8231@amber> <20141230215309.GC30103@amber>
+ <20150101175348.GD24111@csclub.uwaterloo.ca>
+ <54A5AFF6.5050909@utoronto.ca>
+Message-ID: <20150103151853.GA30246@csclub.uwaterloo.ca>
+
+On Thu, Jan 01, 2015 at 08:37:10PM +0000, Jamon Camisso wrote:
+> The benefit of rsnapshot being that unless the original or subsequent
+> versions are deleted, it is possible to go back in time to a version of
+> the file that is intact. If the underlying disk is failing and
+> corrupting files then ZFS or rsnapshot or tarballs won't make a
+> difference anyway.
+
+But ZFS would help.  If the file is corrupted by a disk, then the checksum
+almost certainly will fail and the copy from an alternate disk in the
+filesystem will be read and is very unlikely to be corrupted at the
+same time.
+
+> FWIW, I use rsnapshot for backups on top of ZFS (on Linux) as a
+> production remote backup server. Apart from lengthy delete times (which
+> is an issue with BTRFS as well, and rsnapshot for any meaningful amount
+> of backups on any filesystem), it has been a reliable, and space
+> efficient backup system for a few years now.
+
+I like rsnapshot too, but it is worth remembering that if your backup
+of a file is ever corrupted by the disk, you won't get a new copy when
+using rsnapshot/rsync in the typical mode.
+
+-- 
+Len Sorensen
+
+From chris at chrisaitken.net  Sat Jan  3 20:04:30 2015
+From: chris at chrisaitken.net (Chris Aitken)
+Date: Sat, 03 Jan 2015 15:04:30 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <CAGxYWpYUgEOOgvKDw+ioy-yjpMz-juiDYt6hqFwmLrPfg-X8-g@mail.gmail.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net> <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+ <CAGxYWpYF88tZfxuDcjFfQYgnNRhaMVLwLygOHRh_F=xNaFd+GQ@mail.gmail.com>
+ <54A5C77A.10308@chrisaitken.net>
+ <CAGxYWpbuxph5bKejk-oNSK_c5n9HEKcabyLw07s0i0kupi9tTg@mail.gmail.com>
+ <54A6B8F5.6060200@chrisaitken.net>
+ <CAGxYWpYUgEOOgvKDw+ioy-yjpMz-juiDYt6hqFwmLrPfg-X8-g@mail.gmail.com>
+Message-ID: <54A84B4E.8050105@chrisaitken.net>
+
+On 15-01-02 11:21 AM, Tim Tisdall wrote:
+> On Fri, Jan 2, 2015 at 10:27 AM, Chris Aitken <chris at chrisaitken.net 
+> <mailto:chris at chrisaitken.net>> wrote:
+>
+>     On 15-01-02 09:39 AM, Tim Tisdall wrote:
+>>     If you don't have too much on that computer, you should probably
+>>     just copy of your personal stuff and reformat it with the 14.04
+>>     version.   Nuke it from orbit...  it's the only way to be sure.
+>
+>     Man, it's been so long. I don't expect you to give me a
+>     step-by-step, but are the broad strokes that I would make a CD or
+>     DVD on another PC, then boot from that to do the fresh installation?
+>     Is there a command I can run, then at boot the installation would
+>     begin? I assumed I was going to lose everything anyway - I'm good
+>     about backing up data.
+>
+>
+> Easiest way is to download the 14.04 ISO image and then use the 
+> "Startup Disk Creator" to create a bootable USB flash drive.  You then 
+> boot from the USB drive and follow the instructions.
+>
+> You should have everything you need on that older Ubuntu machine 
+> already, you just need to download the disk ISO.
+
+OK - I'm starting in on this. Will there be any possibility of choosing 
+the old GNOME interface, so I don't end up with Unity?
+
+Chris
+
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150103/97195855/attachment.html>
+
+From mlxxxp at gmail.com  Sat Jan  3 20:11:49 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Sat, 3 Jan 2015 15:11:49 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <54A84B4E.8050105@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net>
+ <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+ <CAGxYWpYF88tZfxuDcjFfQYgnNRhaMVLwLygOHRh_F=xNaFd+GQ@mail.gmail.com>
+ <54A5C77A.10308@chrisaitken.net>
+ <CAGxYWpbuxph5bKejk-oNSK_c5n9HEKcabyLw07s0i0kupi9tTg@mail.gmail.com>
+ <54A6B8F5.6060200@chrisaitken.net>
+ <CAGxYWpYUgEOOgvKDw+ioy-yjpMz-juiDYt6hqFwmLrPfg-X8-g@mail.gmail.com>
+ <54A84B4E.8050105@chrisaitken.net>
+Message-ID: <CAArSzsXf6L2nNctL67w+r1JRN0R70J1Mho4zUnV=c4GvbFrZ+Q@mail.gmail.com>
+
+On 3 January 2015 at 15:04, Chris Aitken <chris at chrisaitken.net> wrote:
+> Will there be any possibility of choosing the
+> old GNOME interface, so I don't end up with Unity?
+
+You probably want to download an Ubuntu GNOME image for this.
+<http://ubuntugnome.org/>
+
+-- 
+Scott
+
+From bjonkman at sobac.com  Sat Jan  3 20:44:06 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Sat, 03 Jan 2015 15:44:06 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <54A84B4E.8050105@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net> <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+ <CAGxYWpYF88tZfxuDcjFfQYgnNRhaMVLwLygOHRh_F=xNaFd+GQ@mail.gmail.com>
+ <54A5C77A.10308@chrisaitken.net>
+ <CAGxYWpbuxph5bKejk-oNSK_c5n9HEKcabyLw07s0i0kupi9tTg@mail.gmail.com>
+ <54A6B8F5.6060200@chrisaitken.net>
+ <CAGxYWpYUgEOOgvKDw+ioy-yjpMz-juiDYt6hqFwmLrPfg-X8-g@mail.gmail.com>
+ <54A84B4E.8050105@chrisaitken.net>
+Message-ID: <54A85496.4090908@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+On 03/01/15 03:04 PM, Chris Aitken wrote:
+> Will there be any possibility of choosing the old GNOME interface,
+> so I don't end up with Unity?
+
+I use the MATE interface, a Gnome2 fork. You can install it from Ubuntu
+14.04LTS "Trusty Tahr" repositories now:
+http://packages.ubuntu.com/trusty/mate-desktop Install it from the
+commandline with 'apt-get install mate-desktop'
+
+I'd also install the packages 'mate-desktop-environment' and
+'mate-desktop-environment-extras', but they seem to be available only
+in 14.10 "Utopic Unicorn":
+http://packages.ubuntu.com/utopic/mate-desktop-environment-extras
+
+Instead of upgrading from 14.04LTS to 14.10 to get the
+'-environment-extras' you may want to add the MATE repositories
+instead. That'll let you install the '-environment-extras' package,
+and probably provides you with a more current MATE core as well.
+There's good instructions at
+http://wiki.mate-desktop.org/download#ubuntu_1404_lts_trusty_thar
+
+- --Bob.
+
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-669-0388
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+http://bob.jonkman.ca/blogs/    http://sn.jonkman.ca/bobjonkman/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+
+
+On 03/01/15 03:04 PM, Chris Aitken wrote:
+> On 15-01-02 11:21 AM, Tim Tisdall wrote:
+>> On Fri, Jan 2, 2015 at 10:27 AM, Chris Aitken 
+>> <chris at chrisaitken.net <mailto:chris at chrisaitken.net>> wrote:
+>> 
+>> On 15-01-02 09:39 AM, Tim Tisdall wrote:
+>>> If you don't have too much on that computer, you should
+>>> probably just copy of your personal stuff and reformat it with
+>>> the 14.04 version.   Nuke it from orbit...  it's the only way
+>>> to be sure.
+>> 
+>> Man, it's been so long. I don't expect you to give me a 
+>> step-by-step, but are the broad strokes that I would make a CD or
+>>  DVD on another PC, then boot from that to do the fresh 
+>> installation? Is there a command I can run, then at boot the 
+>> installation would begin? I assumed I was going to lose
+>> everything anyway - I'm good about backing up data.
+>> 
+>> 
+>> Easiest way is to download the 14.04 ISO image and then use the 
+>> "Startup Disk Creator" to create a bootable USB flash drive.
+>> You then boot from the USB drive and follow the instructions.
+>> 
+>> You should have everything you need on that older Ubuntu machine
+>>  already, you just need to download the disk ISO.
+> 
+> OK - I'm starting in on this. Will there be any possibility of 
+> choosing the old GNOME interface, so I don't end up with Unity?
+> 
+> Chris
+> 
+>> 
+>> 
+>> 
+>> --- GTALUG Talk Mailing List - talk at gtalug.org 
+>> http://gtalug.org/mailman/listinfo/talk
+> 
+> 
+> 
+> 
+> 
+> 
+> --- GTALUG Talk Mailing List - talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.15 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlSoVJQACgkQuRKJsNLM5epcrwCggDItzKlqb2O/ZF8yg5J7fmAs
+MEQAnjKopaIRYyR1Ek3jfgynA1QzyqzM
+=+m/l
+-----END PGP SIGNATURE-----
+
+From davec-b at rogers.com  Sat Jan  3 20:55:28 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Sat, 03 Jan 2015 15:55:28 -0500
+Subject: [GTALUG] Anyone on the list know what I need to read ancient Apple
+	disks?
+Message-ID: <54A85740.5040903@rogers.com>
+
+An elderly relative has a PPC iMac, the so-called "sunflower mac"
+http://upload.wikimedia.org/wikipedia/en/0/02/Imac_sunflower2.jpg
+
+It eventually died, but the symptoms hinted it wasn't a disk crash.
+
+This apparently came with MacO OS 9.2 and a  60.0 GB Ultra ATA/66 hard 
+drive (5400 RPM), so what modern machines can read Mac file formats?  I 
+have an Ubunutu-based PVR with an ATA interface that's doing the DVD 
+right now, could I read it from Linux? My old SPARC read Mac SCSI formats...
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150103/24b6b6a0/attachment.html>
+
+From scruss at gmail.com  Sat Jan  3 21:37:52 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sat, 03 Jan 2015 16:37:52 -0500
+Subject: [GTALUG] Anyone on the list know what I need to read ancient
+ Apple disks?
+In-Reply-To: <54A85740.5040903@rogers.com>
+References: <54A85740.5040903@rogers.com>
+Message-ID: <54A86130.30607@gmail.com>
+
+On 2015-01-03 03:55 PM, David Collier-Brown wrote:
+> 
+> what modern machines can read Mac file formats?
+
+Last time I tried this (~2007), a Mac HD was recognized immediately on
+attaching it to a Linux box. PPC Macs used their own slightly weird
+partitioning system, but all the HFS filesystems mounted read-only
+correctly. hfsutils provides a crude shell environment if you ever need
+to delve into HFS images.
+
+Your biggest problem will be the file formats. MacOS 9 was still heavily
+into its data+resource fork model, so you can often be left with little
+clue what type of file is on the disk, or be stuck with crazy encoding
+issues. Mac Applications used to be a mess of very proprietary file
+formats (Apple Works, I am glaring at you), so let's hope any data you
+can get off the disk is in something vaguely sensible. And yes, formats
+like Word and Excel would be considered sensible ones here ?
+
+Old Macs use just CR for newlines, FYI.
+
+cheers,
+ Stewart
+
+From davec-b at rogers.com  Sat Jan  3 21:50:49 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Sat, 03 Jan 2015 16:50:49 -0500
+Subject: [GTALUG] Anyone on the list know what I need to read ancient
+ Apple disks?
+In-Reply-To: <54A86130.30607@gmail.com>
+References: <54A85740.5040903@rogers.com> <54A86130.30607@gmail.com>
+Message-ID: <54A86439.30807@rogers.com>
+
+I'm after pictures and email, and can probably do a trick with strings 
+to find JPEGs,  find and grep to find mailboxes and addressbooks.
+
+--dave
+
+On 01/03/2015 04:37 PM, Stewart C. Russell wrote:
+> On 2015-01-03 03:55 PM, David Collier-Brown wrote:
+>> what modern machines can read Mac file formats?
+> Last time I tried this (~2007), a Mac HD was recognized immediately on
+> attaching it to a Linux box. PPC Macs used their own slightly weird
+> partitioning system, but all the HFS filesystems mounted read-only
+> correctly. hfsutils provides a crude shell environment if you ever need
+> to delve into HFS images.
+>
+> Your biggest problem will be the file formats. MacOS 9 was still heavily
+> into its data+resource fork model, so you can often be left with little
+> clue what type of file is on the disk, or be stuck with crazy encoding
+> issues. Mac Applications used to be a mess of very proprietary file
+> formats (Apple Works, I am glaring at you), so let's hope any data you
+> can get off the disk is in something vaguely sensible. And yes, formats
+> like Word and Excel would be considered sensible ones here ?
+>
+> Old Macs use just CR for newlines, FYI.
+>
+> cheers,
+>   Stewart
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From lsorense at csclub.uwaterloo.ca  Sat Jan  3 21:54:55 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sat, 3 Jan 2015 16:54:55 -0500
+Subject: [GTALUG] Anyone on the list know what I need to read ancient
+ Apple disks?
+In-Reply-To: <54A86439.30807@rogers.com>
+References: <54A85740.5040903@rogers.com> <54A86130.30607@gmail.com>
+ <54A86439.30807@rogers.com>
+Message-ID: <20150103215455.GB30246@csclub.uwaterloo.ca>
+
+On Sat, Jan 03, 2015 at 04:50:49PM -0500, David Collier-Brown wrote:
+> I'm after pictures and email, and can probably do a trick with
+> strings to find JPEGs,  find and grep to find mailboxes and
+> addressbooks.
+
+Once you mount the HFS filesystem on linux you can actually get the resource fork too by doing:
+
+ls /hfsmnt/filename
+ls /hfsmnt/filename/rsrc
+
+So if you need the resource fork, it can actually be accessed if you
+know about the special /rsrc option (so essentially pretend the file is
+a directory with a file inside called rsrc).
+
+It won't show in ls that /rsrc exists since afer all the file is a file,
+not a directory.
+
+If a file has no resource fork, then you get an error if you try to
+access /rsrc.
+
+-- 
+Len Sorensen
+
+From davec-b at rogers.com  Sat Jan  3 22:26:45 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Sat, 03 Jan 2015 17:26:45 -0500
+Subject: [GTALUG] Anyone on the list know what I need to read ancient
+ Apple disks?
+In-Reply-To: <20150103215455.GB30246@csclub.uwaterloo.ca>
+References: <54A85740.5040903@rogers.com> <54A86130.30607@gmail.com>
+ <54A86439.30807@rogers.com> <20150103215455.GB30246@csclub.uwaterloo.ca>
+Message-ID: <54A86CA5.5090405@rogers.com>
+
+On 01/03/2015 04:54 PM, Lennart Sorensen wrote:
+> On Sat, Jan 03, 2015 at 04:50:49PM -0500, David Collier-Brown wrote:
+>> I'm after pictures and email, and can probably do a trick with
+>> strings to find JPEGs,  find and grep to find mailboxes and
+>> addressbooks.
+> Once you mount the HFS filesystem on linux you can actually get the resource fork too by doing:
+>
+> ls /hfsmnt/filename
+> ls /hfsmnt/filename/rsrc
+>
+> So if you need the resource fork, it can actually be accessed if you
+> know about the special /rsrc option (so essentially pretend the file is
+> a directory with a file inside called rsrc).
+>
+> It won't show in ls that /rsrc exists since afer all the file is a file,
+> not a directory.
+>
+> If a file has no resource fork, then you get an error if you try to
+> access /rsrc.
+>
+Excellent, thanks!
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150103/1230d252/attachment.html>
+
+From hugh at mimosa.com  Sun Jan  4 06:40:55 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 4 Jan 2015 01:40:55 -0500 (EST)
+Subject: [GTALUG] Anyone on the list know what I need to read ancient
+ Apple disks?
+In-Reply-To: <54A85740.5040903@rogers.com>
+References: <54A85740.5040903@rogers.com>
+Message-ID: <alpine.LRH.2.02.1501040100080.20404@redclaw.mimosa.com>
+
+| From: David Collier-Brown <davec-b at rogers.com>
+
+| An elderly relative has a PPC iMac, the so-called "sunflower mac"
+| http://upload.wikimedia.org/wikipedia/en/0/02/Imac_sunflower2.jpg
+
+Nice.
+
+A friend ran and Plan9 on one for years.  He's the one who ported
+Plan9 to the Raspberry Pi.
+
+| It eventually died, but the symptoms hinted it wasn't a disk crash.
+
+What did it die of?  I assume that it was terminal (fried mainboard?).
+
+| This apparently came with MacO OS 9.2 and a  60.0 GB Ultra ATA/66 hard drive
+| (5400 RPM), so what modern machines can read Mac file formats?  I have an
+| Ubunutu-based PVR with an ATA interface that's doing the DVD right now, could
+| I read it from Linux? My old SPARC read Mac SCSI formats...
+
+(I'm not sure what "doing the DVD right now" means.)
+
+I take it that you don't need to get them up and running again.  If
+you did, I would imagine that the most straight-forward method would
+be to feed the disk to a modern Mac.  They surely have migration
+tools.
+
+I'd try a PATA to USB gizmo because modern Macs don't do PATA.  If you
+need to borrow one, I have one.
+
