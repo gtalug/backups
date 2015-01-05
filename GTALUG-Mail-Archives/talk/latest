@@ -1303,3 +1303,714 @@ tools.
 I'd try a PATA to USB gizmo because modern Macs don't do PATA.  If you
 need to borrow one, I have one.
 
+From james.knott at rogers.com  Sun Jan  4 17:55:37 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 04 Jan 2015 12:55:37 -0500
+Subject: [GTALUG] Rogers and MTU size
+Message-ID: <54A97E99.50101@rogers.com>
+
+One thing I noticed recently was that my firewall, running Linux, was
+getting a MTU of 576 bytes, instead of the normal 1500 bytes.  This was
+being set by the Rogers DHCP server (option 26).  576 was common back in
+the days of non-error correcting modems, but hasn't been needed since
+then.  If you're running dhcpcd, you can edit
+/etc/sysconfig/network/dhcp and change the line 'DHCPCD_USER_OPTIONS=""'
+to 'DHCPCD_USER_OPTIONS="-M"'.  This will disable the DHCP MTU setting
+and use the configured MTU.
+
+Using a 1500 MTU will improve network efficiency, as 576 bytes will
+cause 3 packets to be sent, instead of 1, each with an IP header and
+also causes a lot more work for all the routers along the path.  You can
+verify the MTU with a ping -s 1500 <destination>.  If that works, then
+you have a 1500 byte MTU along the entire path to the destination.
+
+I found this because I was curious as to why the Ethernet port connected
+to the cable modem was not getting an IPv6 link local address.  IPv6
+requires a minimum MTU of 1280 bytes so, with 576, IPv6 wasn't allowed.
+
+I have advised Rogers of this and the person I was speaking to agreed it
+should be 1500.  Let's see if they fix it.
+
+
+From mlxxxp at gmail.com  Sun Jan  4 18:43:12 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Sun, 4 Jan 2015 13:43:12 -0500
+Subject: [GTALUG] Rogers and MTU size
+In-Reply-To: <54A97E99.50101@rogers.com>
+References: <54A97E99.50101@rogers.com>
+Message-ID: <CAArSzsXun3K30090rf+d-ZYGkEGZKBJbx=0k8zVQsu5oi_Sz_g@mail.gmail.com>
+
+On 4 January 2015 at 12:55, James Knott <james.knott at rogers.com> wrote:
+> If you're running dhcpcd, you can edit
+> /etc/sysconfig/network/dhcp and change the line 'DHCPCD_USER_OPTIONS=""'
+> to 'DHCPCD_USER_OPTIONS="-M"'.  This will disable the DHCP MTU setting
+> and use the configured MTU.
+
+What does this pertain to? The router WAN side, router LAN side, or
+client machine(s)?
+
+My Internet connection, provided by Teksavvy, is on the Rogers cable
+network. Running ifconfig on my desktop machine I get:
+
+eth0    Link encap:Ethernet  HWaddr xx:xx:xx:xx:xx:xx
+          inet addr:xxx.xxx.xxx.xxx  Bcast:xxx.xxx.xxx.255  Mask:255.255.255.0
+          inet6 addr: fe80::bexx:xxff:fexx:xxxx/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:260045 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:221024 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:250671109 (250.6 MB)  TX bytes:33714522 (33.7 MB)
+
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:20203 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:20203 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0
+          RX bytes:2392082 (2.3 MB)  TX bytes:2392082 (2.3 MB)
+
+
+-- 
+Scott
+
+From mlxxxp at gmail.com  Sun Jan  4 18:51:38 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Sun, 4 Jan 2015 13:51:38 -0500
+Subject: [GTALUG] Rogers and MTU size
+In-Reply-To: <54A97E99.50101@rogers.com>
+References: <54A97E99.50101@rogers.com>
+Message-ID: <CAArSzsWATkrq1m96_ByCTF0=Fq_2L_6BpZbXgTLNB=eLB-T+Ug@mail.gmail.com>
+
+On 4 January 2015 at 12:55, James Knott <james.knott at rogers.com> wrote:
+> You can
+> verify the MTU with a ping -s 1500 <destination>.  If that works, then
+> you have a 1500 byte MTU along the entire path to the destination.
+
+My router says that the address of the gateway that it's connected to
+is 24.246.95.97. If I ping this address I get:
+
+$ ping -s 1500 24.246.95.97
+PING 24.246.95.97 (24.246.95.97) 1500(1528) bytes of data.
+1508 bytes from 24.246.95.97: icmp_seq=1 ttl=254 time=12.2 ms
+1508 bytes from 24.246.95.97: icmp_seq=2 ttl=254 time=13.5 ms
+1508 bytes from 24.246.95.97: icmp_seq=3 ttl=254 time=15.7 ms
+1508 bytes from 24.246.95.97: icmp_seq=4 ttl=254 time=12.1 ms
+^C
+--- 24.246.95.97 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 12.151/13.429/15.765/1.449 ms
+
+
+-- 
+Scott
+
+From mlxxxp at gmail.com  Sun Jan  4 18:54:29 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Sun, 4 Jan 2015 13:54:29 -0500
+Subject: [GTALUG] Rogers and MTU size
+In-Reply-To: <CAArSzsWATkrq1m96_ByCTF0=Fq_2L_6BpZbXgTLNB=eLB-T+Ug@mail.gmail.com>
+References: <54A97E99.50101@rogers.com>
+ <CAArSzsWATkrq1m96_ByCTF0=Fq_2L_6BpZbXgTLNB=eLB-T+Ug@mail.gmail.com>
+Message-ID: <CAArSzsVdPaZwqpdR8ex3gpnYkGW9p5yD8t46BxxtUypRffZPjw@mail.gmail.com>
+
+On 4 January 2015 at 13:51, Scott Allen <mlxxxp at gmail.com> wrote:
+> My router says that the address of the gateway that it's connected to
+> is 24.246.95.97. If I ping this address I get:
+
+I should have mentioned, the ping was from my desktop machine, not the router.
+
+-- 
+Scott
+
+From kevin at ve3syb.ca  Sun Jan  4 18:59:49 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Sun, 04 Jan 2015 13:59:49 -0500
+Subject: [GTALUG] Rogers and MTU size
+In-Reply-To: <54A97E99.50101@rogers.com>
+References: <54A97E99.50101@rogers.com>
+Message-ID: <54A98DA5.5010204@ve3syb.ca>
+
+On 15-01-04 12:55 PM, James Knott wrote:
+> One thing I noticed recently was that my firewall, running Linux, was
+> getting a MTU of 576 bytes, instead of the normal 1500 bytes.  This was
+> being set by the Rogers DHCP server (option 26).
+[snip]
+> I have advised Rogers of this and the person I was speaking to agreed it
+> should be 1500.  Let's see if they fix it.
+
+I am on Rogers and just checked my MTU setting after reading James' email. 
+The ifconfig output reports an MTU of 1500. I didn't change any settings for 
+DHCP. Rogers may have already fixed the problem.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From james.knott at rogers.com  Sun Jan  4 19:16:42 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 04 Jan 2015 14:16:42 -0500
+Subject: [GTALUG] Rogers and MTU size
+In-Reply-To: <CAArSzsXun3K30090rf+d-ZYGkEGZKBJbx=0k8zVQsu5oi_Sz_g@mail.gmail.com>
+References: <54A97E99.50101@rogers.com>
+ <CAArSzsXun3K30090rf+d-ZYGkEGZKBJbx=0k8zVQsu5oi_Sz_g@mail.gmail.com>
+Message-ID: <54A9919A.40604@rogers.com>
+
+On 01/04/2015 01:43 PM, Scott Allen wrote:
+> On 4 January 2015 at 12:55, James Knott <james.knott at rogers.com> wrote:
+>> If you're running dhcpcd, you can edit
+>> /etc/sysconfig/network/dhcp and change the line 'DHCPCD_USER_OPTIONS=""'
+>> to 'DHCPCD_USER_OPTIONS="-M"'.  This will disable the DHCP MTU setting
+>> and use the configured MTU.
+> What does this pertain to? The router WAN side, router LAN side, or
+> client machine(s)?
+Well, since I said Rogers DHCP, it's the MTU they assign to your
+firewall, for your connection to them.
+
+> My Internet connection, provided by Teksavvy, is on the Rogers cable
+> network. Running ifconfig on my desktop machine I get:
+>
+> eth0    Link encap:Ethernet  HWaddr xx:xx:xx:xx:xx:xx
+>           inet addr:xxx.xxx.xxx.xxx  Bcast:xxx.xxx.xxx.255  Mask:255.255.255.0
+>           inet6 addr: fe80::bexx:xxff:fexx:xxxx/64 Scope:Link
+>           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+>           RX packets:260045 errors:0 dropped:0 overruns:0 frame:0
+>           TX packets:221024 errors:0 dropped:0 overruns:0 carrier:0
+>           collisions:0 txqueuelen:1000
+>           RX bytes:250671109 (250.6 MB)  TX bytes:33714522 (33.7 MB)
+>
+> lo        Link encap:Local Loopback
+>           inet addr:127.0.0.1  Mask:255.0.0.0
+>           inet6 addr: ::1/128 Scope:Host
+>           UP LOOPBACK RUNNING  MTU:65536  Metric:1
+>           RX packets:20203 errors:0 dropped:0 overruns:0 frame:0
+>           TX packets:20203 errors:0 dropped:0 overruns:0 carrier:0
+>           collisions:0 txqueuelen:0
+>           RX bytes:2392082 (2.3 MB)  TX bytes:2392082 (2.3 MB)
+>
+>
+In there, I was getting only a 576 byte MTU for eth0, even though the
+interface was configured for 1500.  I also wasn't getting the IPv6 link
+local address.  I guess Teksavvy is providing different config for their
+DHCP settings.  You can verify this with Wireshark.  You can force DHCP
+negotiation with "dhcpcd eth0 -n" so you don't have to wait for it to
+happen.
+
+You'll notice the 65536 MTU on lo.  That's the maximum for IP, since
+there's no MTU limit on the loopback interface.  Back when I was at IBM,
+where they used token ring, I set my MTU to about 4K, as I was often
+moving large files to/from local servers.
+
+
+From james.knott at rogers.com  Sun Jan  4 19:20:55 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 04 Jan 2015 14:20:55 -0500
+Subject: [GTALUG] Rogers and MTU size
+In-Reply-To: <CAArSzsWATkrq1m96_ByCTF0=Fq_2L_6BpZbXgTLNB=eLB-T+Ug@mail.gmail.com>
+References: <54A97E99.50101@rogers.com>
+ <CAArSzsWATkrq1m96_ByCTF0=Fq_2L_6BpZbXgTLNB=eLB-T+Ug@mail.gmail.com>
+Message-ID: <54A99297.4080507@rogers.com>
+
+On 01/04/2015 01:51 PM, Scott Allen wrote:
+> On 4 January 2015 at 12:55, James Knott <james.knott at rogers.com> wrote:
+>> You can
+>> verify the MTU with a ping -s 1500 <destination>.  If that works, then
+>> you have a 1500 byte MTU along the entire path to the destination.
+> My router says that the address of the gateway that it's connected to
+> is 24.246.95.97. If I ping this address I get:
+>
+> $ ping -s 1500 24.246.95.97
+> PING 24.246.95.97 (24.246.95.97) 1500(1528) bytes of data.
+> 1508 bytes from 24.246.95.97: icmp_seq=1 ttl=254 time=12.2 ms
+> 1508 bytes from 24.246.95.97: icmp_seq=2 ttl=254 time=13.5 ms
+> 1508 bytes from 24.246.95.97: icmp_seq=3 ttl=254 time=15.7 ms
+> 1508 bytes from 24.246.95.97: icmp_seq=4 ttl=254 time=12.1 ms
+> ^C
+> --- 24.246.95.97 ping statistics ---
+> 4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+> rtt min/avg/max/mdev = 12.151/13.429/15.765/1.449 ms
+>
+>
+
+That shows you have a 1500 byte MTU, so Teksavvy is doing things
+properly.  Either they're saying to use 1500 or not using option 26 at
+all.  Fire up Wireshark to see.
+
+
+From james.knott at rogers.com  Sun Jan  4 19:24:38 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 04 Jan 2015 14:24:38 -0500
+Subject: [GTALUG] Rogers and MTU size
+In-Reply-To: <CAArSzsVdPaZwqpdR8ex3gpnYkGW9p5yD8t46BxxtUypRffZPjw@mail.gmail.com>
+References: <54A97E99.50101@rogers.com>
+ <CAArSzsWATkrq1m96_ByCTF0=Fq_2L_6BpZbXgTLNB=eLB-T+Ug@mail.gmail.com>
+ <CAArSzsVdPaZwqpdR8ex3gpnYkGW9p5yD8t46BxxtUypRffZPjw@mail.gmail.com>
+Message-ID: <54A99376.6020606@rogers.com>
+
+On 01/04/2015 01:54 PM, Scott Allen wrote:
+> On 4 January 2015 at 13:51, Scott Allen <mlxxxp at gmail.com> wrote:
+>> My router says that the address of the gateway that it's connected to
+>> is 24.246.95.97. If I ping this address I get:
+> I should have mentioned, the ping was from my desktop machine, not the router.
+>
+
+Shouldn't matter.  If you are behind the firewall and it has only 576 to
+the Internet, then path MTU discovery will force the firewall to reject
+the packet and tell the computer to resize.  You can also use Wireshark
+to verify the do not fragment flag is set.  As an experiment, you might
+also try setting the MTU to 576 and trying that command again.
+
+https://en.wikipedia.org/wiki/Path_MTU_Discovery
+
+From james.knott at rogers.com  Sun Jan  4 19:26:53 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 04 Jan 2015 14:26:53 -0500
+Subject: [GTALUG] Rogers and MTU size
+In-Reply-To: <54A98DA5.5010204@ve3syb.ca>
+References: <54A97E99.50101@rogers.com> <54A98DA5.5010204@ve3syb.ca>
+Message-ID: <54A993FD.6070508@rogers.com>
+
+On 01/04/2015 01:59 PM, Kevin Cozens wrote:
+> On 15-01-04 12:55 PM, James Knott wrote:
+>> One thing I noticed recently was that my firewall, running Linux, was
+>> getting a MTU of 576 bytes, instead of the normal 1500 bytes.  This was
+>> being set by the Rogers DHCP server (option 26).
+> [snip]
+>> I have advised Rogers of this and the person I was speaking to agreed it
+>> should be 1500.  Let's see if they fix it.
+>
+> I am on Rogers and just checked my MTU setting after reading James'
+> email. The ifconfig output reports an MTU of 1500. I didn't change any
+> settings for DHCP. Rogers may have already fixed the problem.
+>
+
+Curious. I checked before I posted my original message and it was still
+576.  It may be a local issue.  I'm on the Wolfedale domain, in Mississauga.
+
+From james.knott at rogers.com  Sun Jan  4 20:30:51 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 04 Jan 2015 15:30:51 -0500
+Subject: [GTALUG] Rogers and MTU size
+In-Reply-To: <54A98DA5.5010204@ve3syb.ca>
+References: <54A97E99.50101@rogers.com> <54A98DA5.5010204@ve3syb.ca>
+Message-ID: <54A9A2FB.6050701@rogers.com>
+
+On 01/04/2015 01:59 PM, Kevin Cozens wrote:
+> On 15-01-04 12:55 PM, James Knott wrote:
+>> One thing I noticed recently was that my firewall, running Linux, was
+>> getting a MTU of 576 bytes, instead of the normal 1500 bytes.  This was
+>> being set by the Rogers DHCP server (option 26).
+> [snip]
+>> I have advised Rogers of this and the person I was speaking to agreed it
+>> should be 1500.  Let's see if they fix it.
+>
+> I am on Rogers and just checked my MTU setting after reading James'
+> email. The ifconfig output reports an MTU of 1500. I didn't change any
+> settings for DHCP. Rogers may have already fixed the problem.
+>
+
+I just tried some more testing with my notebook computer.  It uses the
+KDE network manager and appears to ignore the DHCP MTU value.  However,
+I can only ping with up to 1472 bytes when connected to the cable
+modem.  I get the same when I tether to my smart phone (Rogers), but get
+the full 1500 to a local computer on my network.  I do not use DHCP
+option 26 on my DHCP server.  It also doesn't appear to be used when
+tethered to my smart phone.
+
+
+From james.knott at rogers.com  Sun Jan  4 22:18:42 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 04 Jan 2015 17:18:42 -0500
+Subject: [GTALUG] Rogers and MTU size
+In-Reply-To: <54A98DA5.5010204@ve3syb.ca>
+References: <54A97E99.50101@rogers.com> <54A98DA5.5010204@ve3syb.ca>
+Message-ID: <54A9BC42.2080809@rogers.com>
+
+On 01/04/2015 01:59 PM, Kevin Cozens wrote:
+> On 15-01-04 12:55 PM, James Knott wrote:
+>> One thing I noticed recently was that my firewall, running Linux, was
+>> getting a MTU of 576 bytes, instead of the normal 1500 bytes.  This was
+>> being set by the Rogers DHCP server (option 26).
+> [snip]
+>> I have advised Rogers of this and the person I was speaking to agreed it
+>> should be 1500.  Let's see if they fix it.
+>
+> I am on Rogers and just checked my MTU setting after reading James'
+> email. The ifconfig output reports an MTU of 1500. I didn't change any
+> settings for DHCP. Rogers may have already fixed the problem.
+>
+
+What area are you in and did you try ping -s 1500?
+
+From davec-b at rogers.com  Mon Jan  5 00:21:45 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Sun, 04 Jan 2015 19:21:45 -0500
+Subject: [GTALUG] [Bulk] Re:  Rogers and MTU size
+In-Reply-To: <54A9A2FB.6050701@rogers.com>
+References: <54A97E99.50101@rogers.com> <54A98DA5.5010204@ve3syb.ca>
+ <54A9A2FB.6050701@rogers.com>
+Message-ID: <54A9D919.8070900@rogers.com>
+
+On 01/04/2015 03:30 PM, James Knott wrote:
+> On 01/04/2015 01:59 PM, Kevin Cozens wrote:
+>> On 15-01-04 12:55 PM, James Knott wrote:
+>>> One thing I noticed recently was that my firewall, running Linux, was
+>>> getting a MTU of 576 bytes, instead of the normal 1500 bytes.  This was
+>>> being set by the Rogers DHCP server (option 26).
+>> [snip]
+>>> I have advised Rogers of this and the person I was speaking to agreed it
+>>> should be 1500.  Let's see if they fix it.
+>> I am on Rogers and just checked my MTU setting after reading James'
+>> email. The ifconfig output reports an MTU of 1500. I didn't change any
+>> settings for DHCP. Rogers may have already fixed the problem.
+>>
+> I just tried some more testing with my notebook computer.  It uses the
+> KDE network manager and appears to ignore the DHCP MTU value.  However,
+> I can only ping with up to 1472 bytes when connected to the cable
+> modem.  I get the same when I tether to my smart phone (Rogers), but get
+> the full 1500 to a local computer on my network.  I do not use DHCP
+> option 26 on my DHCP server.  It also doesn't appear to be used when
+> tethered to my smart phone.
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+> $ ping -s 1500 acm.org
+> PING acm.org (64.238.147.76) 1500(1528) bytes of data.
+> 1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=1 ttl=49 time=42.5 ms
+> 1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=2 ttl=49 time=44.1 ms
+> 1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=3 ttl=49 time=44.5 ms
+> 1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=4 ttl=49 time=44.2 ms
+> 1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=5 ttl=49 time=52.9 ms
+> 1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=6 ttl=49 time=44.1 ms
+> ^C
+> --- acm.org ping statistics ---
+> 6 packets transmitted, 6 received, 0% packet loss, time 5007ms
+> rtt min/avg/max/mdev = 42.576/45.430/52.995/3.445 ms
+>
+
+ From a different rogers subnet, I get a default of 56, successes with 
+1500-byte pings to the router and to the outside world, but failures 
+internally talking to rogers DNS servers
+
+First, the dns server:
+$ cat /etc/resolv.conf
+# Generated by NetworkManager
+nameserver 64.71.255.204
+nameserver 64.71.255.198
+
+$ ping -s 1500 64.71.255.204
+PING 64.71.255.204 (64.71.255.204) 1500(1528) bytes of data.
+^C
+--- 64.71.255.204 ping statistics ---
+19 packets transmitted, 0 received, 100% packet loss, time 17999ms
+
+
+$ ping 64.71.255.204
+PING 64.71.255.204 (64.71.255.204) 56(84) bytes of data.
+64 bytes from 64.71.255.204: icmp_seq=1 ttl=58 time=7.63 ms
+64 bytes from 64.71.255.204: icmp_seq=2 ttl=58 time=7.35 ms
+^C
+--- 64.71.255.204 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 7.350/7.492/7.635/0.166 ms
+
+
+Second, ACM.org
+$ ping -s 1500 acm.org
+PING acm.org (64.238.147.76) 1500(1528) bytes of data.
+1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=1 ttl=49 
+time=42.5 ms
+1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=2 ttl=49 
+time=44.1 ms
+1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=3 ttl=49 
+time=44.5 ms
+1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=4 ttl=49 
+time=44.2 ms
+1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=5 ttl=49 
+time=52.9 ms
+1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=6 ttl=49 
+time=44.1 ms
+^C
+--- acm.org ping statistics ---
+6 packets transmitted, 6 received, 0% packet loss, time 5007ms
+rtt min/avg/max/mdev = 42.576/45.430/52.995/3.445 ms
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From davec-b at rogers.com  Mon Jan  5 00:32:09 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Sun, 04 Jan 2015 19:32:09 -0500
+Subject: [GTALUG] Anyone on the list know what I need to read ancient
+ Apple disks?
+In-Reply-To: <alpine.LRH.2.02.1501040100080.20404@redclaw.mimosa.com>
+References: <54A85740.5040903@rogers.com>
+ <alpine.LRH.2.02.1501040100080.20404@redclaw.mimosa.com>
+Message-ID: <54A9DB89.1080003@rogers.com>
+
+On 01/04/2015 01:40 AM, D. Hugh Redelmeier wrote:
+> | From: David Collier-Brown <davec-b at rogers.com>
+>
+> | An elderly relative has a PPC iMac, the so-called "sunflower mac"
+> | http://upload.wikimedia.org/wikipedia/en/0/02/Imac_sunflower2.jpg
+>
+> Nice.
+>
+> A friend ran and Plan9 on one for years.  He's the one who ported
+> Plan9 to the Raspberry Pi.
+>
+> | It eventually died, but the symptoms hinted it wasn't a disk crash.
+>
+> What did it die of?  I assume that it was terminal (fried mainboard?).
+>
+> | This apparently came with MacO OS 9.2 and a  60.0 GB Ultra ATA/66 hard drive
+> | (5400 RPM), so what modern machines can read Mac file formats?  I have an
+> | Ubunutu-based PVR with an ATA interface that's doing the DVD right now, could
+> | I read it from Linux? My old SPARC read Mac SCSI formats...
+>
+> (I'm not sure what "doing the DVD right now" means.)
+>
+> I take it that you don't need to get them up and running again.  If
+> you did, I would imagine that the most straight-forward method would
+> be to feed the disk to a modern Mac.  They surely have migration
+> tools.
+>
+> I'd try a PATA to USB gizmo because modern Macs don't do PATA.  If you
+> need to borrow one, I have one.
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+Yes, I'd love to borrow it: my PVR has an old parallel interface, but 
+it's in use and I'd have to yank the DVD temporarily to try the Mac disk.
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150104/99d1a536/attachment.html>
+
+From clifford_ilkay at dinamis.com  Mon Jan  5 01:01:15 2015
+From: clifford_ilkay at dinamis.com (Clifford Ilkay)
+Date: Sun, 04 Jan 2015 20:01:15 -0500
+Subject: [GTALUG] Anyone on the list know what I need to read ancient
+ Apple disks?
+In-Reply-To: <54A9DB89.1080003@rogers.com>
+References: <54A85740.5040903@rogers.com>
+ <alpine.LRH.2.02.1501040100080.20404@redclaw.mimosa.com>
+ <54A9DB89.1080003@rogers.com>
+Message-ID: <54A9E25B.4090408@dinamis.com>
+
+On 01/04/2015 07:32 PM, David Collier-Brown wrote:
+> On 01/04/2015 01:40 AM, D. Hugh Redelmeier wrote:
+>> I'd try a PATA to USB gizmo because modern Macs don't do PATA. If you
+>> need to borrow one, I have one. --- GTALUG Talk Mailing List -
+>> talk at gtalug.org http://gtalug.org/mailman/listinfo/talk 
+> Yes, I'd love to borrow it: my PVR has an old parallel interface, but
+> it's in use and I'd have to yank the DVD temporarily to try the Mac disk.
+
+Dave, did you receive my private message? I offered you a G4 PowerMac.
+
+-- 
+Regards,
+
+Clifford Ilkay
+Dinamis
+
++1 647-778-8696
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150104/c76d8f87/attachment.html>
+
+From james.knott at rogers.com  Mon Jan  5 02:40:04 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 04 Jan 2015 21:40:04 -0500
+Subject: [GTALUG] [Bulk] Re: Rogers and MTU size
+In-Reply-To: <54A9D919.8070900@rogers.com>
+References: <54A97E99.50101@rogers.com> <54A98DA5.5010204@ve3syb.ca>
+ <54A9A2FB.6050701@rogers.com> <54A9D919.8070900@rogers.com>
+Message-ID: <54A9F984.3050103@rogers.com>
+
+On 01/04/2015 07:21 PM, David Collier-Brown wrote:
+> From a different rogers subnet, I get a default of 56, successes with
+> 1500-byte pings to the router and to the outside world, but failures
+> internally talking to rogers DNS servers
+
+I assume you meant 576, not 56.
+
+Do you see an IPv6 link local address on that interface?  It starts with
+fe80.
+>
+> First, the dns server:
+> $ cat /etc/resolv.conf
+> # Generated by NetworkManager
+> nameserver 64.71.255.204
+> nameserver 64.71.255.198
+>
+> $ ping -s 1500 64.71.255.204
+> PING 64.71.255.204 (64.71.255.204) 1500(1528) bytes of data.
+> ^C
+> --- 64.71.255.204 ping statistics ---
+> 19 packets transmitted, 0 received, 100% packet loss, time 17999ms
+>
+>
+> $ ping 64.71.255.204
+> PING 64.71.255.204 (64.71.255.204) 56(84) bytes of data.
+> 64 bytes from 64.71.255.204: icmp_seq=1 ttl=58 time=7.63 ms
+> 64 bytes from 64.71.255.204: icmp_seq=2 ttl=58 time=7.35 ms
+> ^C
+> --- 64.71.255.204 ping statistics ---
+> 2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+> rtt min/avg/max/mdev = 7.350/7.492/7.635/0.166 ms
+>
+>
+> Second, ACM.org
+> $ ping -s 1500 acm.org
+> PING acm.org (64.238.147.76) 1500(1528) bytes of data.
+> 1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=1 ttl=49
+> time=42.5 ms
+> 1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=2 ttl=49
+> time=44.1 ms
+> 1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=3 ttl=49
+> time=44.5 ms
+> 1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=4 ttl=49
+> time=44.2 ms
+> 1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=5 ttl=49
+> time=52.9 ms
+> 1508 bytes from ACMWEB16.acm.org (64.238.147.76): icmp_seq=6 ttl=49
+> time=44.1 ms
+> ^C
+> --- acm.org ping statistics ---
+> 6 packets transmitted, 6 received, 0% packet loss, time 5007ms
+> rtt min/avg/max/mdev = 42.576/45.430/52.995/3.445 ms
+
+This is similar to what I'm seeing.  When I ping your DNS, I can do so
+with 1472, but not 1473 byte packets.  I also see that 1472 limit from
+my notebook, but not my desktop, when going out to the Internet.  I do
+not see it when pinging from my notebook to a computer on my local LAN. 
+When pinging www.yahoo.com from my desktop system, I can ping with 1500
+bytes.  I'm not sure why 2 computers on my network get different results
+to Yahoo. Or where that 1472 limit is coming from.
+
+From james.knott at rogers.com  Mon Jan  5 02:45:29 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 04 Jan 2015 21:45:29 -0500
+Subject: [GTALUG] [Bulk] Re: Rogers and MTU size
+In-Reply-To: <54A9D919.8070900@rogers.com>
+References: <54A97E99.50101@rogers.com> <54A98DA5.5010204@ve3syb.ca>
+ <54A9A2FB.6050701@rogers.com> <54A9D919.8070900@rogers.com>
+Message-ID: <54A9FAC9.3000508@rogers.com>
+
+On 01/04/2015 07:21 PM, David Collier-Brown wrote:
+> From a different rogers subnet, I get a default of 56, successes with
+> 1500-byte pings to the router and to the outside world, but failures
+> internally talking to rogers DNS servers
+
+One other thing, are you seeing option 26 when examining the DHCP acks
+with Wireshark?  If so, what MTU size?  The capture filter I use is
+"port 67 or port 68" to capture both sides of the request & ack.
+
+
+From hugh at mimosa.com  Mon Jan  5 04:12:18 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 4 Jan 2015 23:12:18 -0500 (EST)
+Subject: [GTALUG] Anyone on the list know what I need to read ancient
+ Apple disks?
+In-Reply-To: <54A9E25B.4090408@dinamis.com>
+References: <54A85740.5040903@rogers.com>
+ <alpine.LRH.2.02.1501040100080.20404@redclaw.mimosa.com>
+ <54A9DB89.1080003@rogers.com> <54A9E25B.4090408@dinamis.com>
+Message-ID: <alpine.LRH.2.02.1501042258550.12108@redclaw.mimosa.com>
+
+| From: Clifford Ilkay <clifford_ilkay at dinamis.com>
+
+| Dave, did you receive my private message? I offered you a G4 PowerMac.
+
+That sounds like the most, uh, powerful option.  There probably would
+be no need to reverse engineer MacOS9 applications' expressive but
+quirky file structures.
+
+BTW: the resource fork / data fork thing in original MacOS seems odd to
+we UNIX-types who think that a file is a bucket of bytes.  But MacOS
+got a lot of leverage out of that thing.  "ResEdit" was a wonder to
+behold.  Essentially: the greatest common denominator for files in
+MacOS was much higher than in UNIX so generic tools could do much
+more.
+
+What MacOS could do on a machine with 128k of RAM (including the video
+frame buffer) puts all mainstream GUI systems to shame.  Part of this
+was accomplished by using shared representations, some of which lived
+in the resource fork.
+
+That being said, I wish Linux didn't support forks.  They make the
+file abstraction more complicated with very little benefit or use.
+The main benefit, as I understand it, is to embrace and extend NTFS.
+
+From hugh at mimosa.com  Mon Jan  5 04:42:14 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 4 Jan 2015 23:42:14 -0500 (EST)
+Subject: [GTALUG] Rogers and MTU size
+In-Reply-To: <54A97E99.50101@rogers.com>
+References: <54A97E99.50101@rogers.com>
+Message-ID: <alpine.LRH.2.02.1501042316170.12108@redclaw.mimosa.com>
+
+| From: James Knott <james.knott at rogers.com>
+
+| One thing I noticed recently was that my firewall, running Linux, was
+| getting a MTU of 576 bytes, instead of the normal 1500 bytes.
+
+576 is the smallest legal MTU for IPv4.  I could imagine some system
+defaulting to this in the absence of other knowledge.
+
+In other messages you show that this is an explicit setting from Rogers' 
+DHCP server.  That certainly sounds like a bad configuration at their end.
+
+My Rogers connection has an MTU of 1500.
+
+The normal (non-jumbo) MTU size for ethernet is 1500.
+
+ADSL uses PPPoE encapsulation which eats 8 bytes off the MTU.
+
+|   You can
+| verify the MTU with a ping -s 1500 <destination>.  If that works, then
+| you have a 1500 byte MTU along the entire path to the destination.
+
+Not quite.  "ping -s 1500" on IPv4 generates a 1508-byte ICMP packet.
+Plus any encapsulation that might be used (probably none with Rogers).
+
+Elsewhere you mention PMTU discovery.  The folk wisdom (as of a few years 
+ago) was that this is useless since so many routers and firewalls drop the 
+necessary ICMP messages.  Sad.
+
+| I have advised Rogers of this and the person I was speaking to agreed it
+| should be 1500.  Let's see if they fix it.
+
+Wow.
+
+Years ago I tried to report DHCP RFC violations to Rogers customer
+support folks and got nowhere.  There seemed to be no connection
+between the customer support department and the relevant engineering
+department.
+
