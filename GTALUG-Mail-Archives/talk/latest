@@ -2014,3 +2014,666 @@ support folks and got nowhere.  There seemed to be no connection
 between the customer support department and the relevant engineering
 department.
 
+From james.knott at rogers.com  Mon Jan  5 12:56:01 2015
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 05 Jan 2015 07:56:01 -0500
+Subject: [GTALUG] Rogers and MTU size
+In-Reply-To: <alpine.LRH.2.02.1501042316170.12108@redclaw.mimosa.com>
+References: <54A97E99.50101@rogers.com>
+ <alpine.LRH.2.02.1501042316170.12108@redclaw.mimosa.com>
+Message-ID: <54AA89E1.9040304@rogers.com>
+
+On 01/04/2015 11:42 PM, D. Hugh Redelmeier wrote:
+> | From: James Knott <james.knott at rogers.com>
+>
+> | One thing I noticed recently was that my firewall, running Linux, was
+> | getting a MTU of 576 bytes, instead of the normal 1500 bytes.
+>
+> 576 is the smallest legal MTU for IPv4.  I could imagine some system
+> defaulting to this in the absence of other knowledge.
+>
+> In other messages you show that this is an explicit setting from Rogers' 
+> DHCP server.  That certainly sounds like a bad configuration at their end.
+
+Yes, I verified option 26 was set to 576 in the DHCP acks.
+>
+> My Rogers connection has an MTU of 1500.
+>
+> The normal (non-jumbo) MTU size for ethernet is 1500.
+>
+> ADSL uses PPPoE encapsulation which eats 8 bytes off the MTU.
+>
+> |   You can
+> | verify the MTU with a ping -s 1500 <destination>.  If that works, then
+> | you have a 1500 byte MTU along the entire path to the destination.
+>
+> Not quite.  "ping -s 1500" on IPv4 generates a 1508-byte ICMP packet.
+> Plus any encapsulation that might be used (probably none with Rogers).
+
+I've been wondering about that too.  From my desktop computer, I can
+ping Yahoo with 1500, but from my ThinkPad, only 1472.  But from that
+same ThinkPad, I can ping a local computer with 1500.  I'll have to
+investigate that more.
+
+>
+> Elsewhere you mention PMTU discovery.  The folk wisdom (as of a few years 
+> ago) was that this is useless since so many routers and firewalls drop the 
+> necessary ICMP messages.  Sad.
+
+Take a look at your outgoing packets and you'll likely see the do not
+fragment flag is set.  This means that if you hit a lower bandwidth link
+your packets will be dropped.  So, I don't know how many are blocking
+those ICMP messages.  Certainly no responsible carrier would.  Blindly
+blocking them shows more ignorance than anything.  Also, since IPv6
+doesn't allow fragmentation, PMTUD is mandatory with it.
+>
+> | I have advised Rogers of this and the person I was speaking to agreed it
+> | should be 1500.  Let's see if they fix it.
+>
+> Wow.
+>
+> Years ago I tried to report DHCP RFC violations to Rogers customer
+> support folks and got nowhere.  There seemed to be no connection
+> between the customer support department and the relevant engineering
+> department.
+>
+>
+
+I also got the brush off from the support tech, who didn't even know
+what MTU was.  However, I shortly after received a survey email.  I
+replied, expressing my dissatisfaction.  I then heard back from someone
+who agreed that the MTU shouldn't be set to 576.  In fact, they
+shouldn't be setting it at all.
+
+From lists at sadiqs.com  Sun Jan  4 22:52:33 2015
+From: lists at sadiqs.com (Sadiq Saif)
+Date: Sun, 04 Jan 2015 17:52:33 -0500
+Subject: [GTALUG] Experience with TekSavvy Business DSL
+Message-ID: <54A9C431.5010800@sadiqs.com>
+
+Hi all,
+
+I am curious if anybody on the list has experience with TekSavvy's
+business DSL service. I am looking at their 25/10 business service with
+a dry loop.
+
+Any good/bad/ugly thoughts experiences?
+
+-- 
+Sadiq Saif
+https://staticsafe.ca
+
+From tisdall at gmail.com  Mon Jan  5 13:55:00 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Mon, 5 Jan 2015 08:55:00 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <20150103041302.GG24111@csclub.uwaterloo.ca>
+References: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+ <20141123002215.GB24111@csclub.uwaterloo.ca>
+ <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+ <54A0D9BA.6010509@ss.org>
+ <20141229133843.GZ24111@csclub.uwaterloo.ca>
+ <CAGc8pF6di0s-RH8QuxvFPdAVGe0nKP2H4UZ=VOALh1u3whsgEg@mail.gmail.com>
+ <20150102040839.GF24111@csclub.uwaterloo.ca>
+ <CAGc8pF5Q-hTahSh1e3wyqLAieJcf1h53wh0+Lq5PUWfLCzjNpw@mail.gmail.com>
+ <20150103041302.GG24111@csclub.uwaterloo.ca>
+Message-ID: <CAGxYWpbfjyzZrXO=R7isTDzmyZu+J=Ui9fsh8+tH9D2ON-yU4w@mail.gmail.com>
+
+On Fri, Jan 2, 2015 at 11:13 PM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Fri, Jan 02, 2015 at 11:30:58AM -0500, Thomas Milne wrote:
+> > It sounds like it. Wow.
+> >
+> > So can I boot into that Debian system and compile a new kernel from
+> inside
+> > that? And do I need to know what options to choose at compile and modules
+> > to load for Cubox hardware or is that automatic?
+>
+> Kernel config is not automatic.  That bit you have to deal with.
+>
+
+There wiki shows this command: "make cubox_defconfig"  So, they've already
+created a default configuration for you to start from.
+
+> Pardon my dumb questions. I was reading this, about installing Debian and
+> > compiling a new kernel:
+> >
+> > http://www.solid-run.com/archive/mw/index.php/Debian_netboot_installer
+> >
+> > I might be in over my head. Those instructions assume that I know how to
+> do
+> > a lot of things that I do not.
+>
+> That's the problem when the people writing the instructions know what
+> they are doing already.
+
+
+I guess the best thing to do is start from the beginning and when you're
+stuck you can post on the mailing list the specific problem you're having
+and someone should be able to help.  (Also, you after you figure out what's
+missing you could modify their wiki to either have the info you need or
+link to it)
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150105/deda4b1d/attachment.html>
+
+From talexb at gmail.com  Mon Jan  5 13:59:02 2015
+From: talexb at gmail.com (Alex Beamish)
+Date: Mon, 5 Jan 2015 08:59:02 -0500
+Subject: [GTALUG] Experience with TekSavvy Business DSL
+In-Reply-To: <54A9C431.5010800@sadiqs.com>
+References: <54A9C431.5010800@sadiqs.com>
+Message-ID: <CANgc-awXAzWmrnB1=Xn76vmsbz6u3Y4zUYZKaFbOeK3uohE+0A@mail.gmail.com>
+
+I currently have residential service through TekSavvy, on the same dry loop
+copper that I had Sympatico's DSL for about ten years (OK -- since it was
+available in my area). I've been a customer about six months, and there
+have been no surprises on the service, or on the bill. 300G monthly cap
+instead of 60G, and bandwidth used after midnight (it might be between 0200
+and 0800) doesn't count towards that limit. Customer service has been fine,
+and my connection just works.
+
+I would imagine business service would work as well. TekSavvy has been
+smart about providing good quality service at reasonable prices, but most
+importantly, decent customer service. Because people have long memories
+about good service, and even better memories about poor service.
+
+On Sun, Jan 4, 2015 at 5:52 PM, Sadiq Saif <lists at sadiqs.com> wrote:
+
+> Hi all,
+>
+> I am curious if anybody on the list has experience with TekSavvy's
+> business DSL service. I am looking at their 25/10 business service with
+> a dry loop.
+>
+> Any good/bad/ugly thoughts experiences?
+>
+> --
+> Sadiq Saif
+> https://staticsafe.ca
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+
+-- 
+Alex Beamish
+Toronto, Ontario
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150105/ea3f20dc/attachment.html>
+
+From email+libre at blaise.ca  Mon Jan  5 14:55:52 2015
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Mon, 05 Jan 2015 09:55:52 -0500
+Subject: [GTALUG] Experience with TekSavvy Business DSL
+In-Reply-To: <54A9C431.5010800@sadiqs.com>
+References: <54A9C431.5010800@sadiqs.com>
+Message-ID: <54AAA5F8.9040100@blaise.ca>
+
+
+On 04/01/15 05:52 PM, Sadiq Saif wrote:
+> I am curious if anybody on the list has experience with TekSavvy's
+> business DSL service. I am looking at their 25/10 business service with
+> a dry loop.
+> 
+> Any good/bad/ugly thoughts experiences?
+> 
+
+I've been using Teksavvy business DSL at work since 2010 or 2011. No problems.
+Just leave some time for the initial setup, as it can take a while to get the
+Bell tech scheduled to activate things (IIRC around a 7-10 business days? Maybe
+less...).
+
+My parents have been using residential Teksavvy DSL since 2009 as well. There
+was one issue with signal strength in around 2011, and it took a while to
+resolve, but eventually we got a Bell technician in who installed something that
+boosted the signal strength or something -- it was painful waiting to get that
+resolved (it was easiest to make progress via the Teksavvy forums at
+dslreports.com versus multiple phone calls, but hard to do that without an
+internet connection!), but that was the only time we've had a problem in 5.5
+years. (We had more frequent problems with Rogers cable internet cutting out
+before that TBH...)
+
+At my apartment, I had a residential Teksavvy dry loop DSL connection from
+2010-2012. When moving in 2012, since we had to pay setup costs for the new
+apartment anyways, we switched to Teksavvy cable for faster speeds.
+
+
+In addition to a working service, I sleep a bit better at night with less money
+going to Rogers/Bell and more going to Teksavvy.
+
+
+From lsorense at csclub.uwaterloo.ca  Mon Jan  5 15:07:51 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 5 Jan 2015 10:07:51 -0500
+Subject: [GTALUG] Experience with TekSavvy Business DSL
+In-Reply-To: <CANgc-awXAzWmrnB1=Xn76vmsbz6u3Y4zUYZKaFbOeK3uohE+0A@mail.gmail.com>
+References: <54A9C431.5010800@sadiqs.com>
+ <CANgc-awXAzWmrnB1=Xn76vmsbz6u3Y4zUYZKaFbOeK3uohE+0A@mail.gmail.com>
+Message-ID: <20150105150751.GC30246@csclub.uwaterloo.ca>
+
+On Mon, Jan 05, 2015 at 08:59:02AM -0500, Alex Beamish wrote:
+> I currently have residential service through TekSavvy, on the same dry loop
+> copper that I had Sympatico's DSL for about ten years (OK -- since it was
+> available in my area). I've been a customer about six months, and there
+> have been no surprises on the service, or on the bill. 300G monthly cap
+> instead of 60G, and bandwidth used after midnight (it might be between 0200
+> and 0800) doesn't count towards that limit. Customer service has been fine,
+> and my connection just works.
+
+Yes 2 and 8.  And uploads don't count either as far as I recall.
+
+> I would imagine business service would work as well. TekSavvy has been
+> smart about providing good quality service at reasonable prices, but most
+> importantly, decent customer service. Because people have long memories
+> about good service, and even better memories about poor service.
+
+And being recommended by TLUG members all the time as a result can't
+hurt either.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Mon Jan  5 15:12:21 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 5 Jan 2015 10:12:21 -0500
+Subject: [GTALUG] Anyone on the list know what I need to read ancient
+ Apple disks?
+In-Reply-To: <alpine.LRH.2.02.1501042258550.12108@redclaw.mimosa.com>
+References: <54A85740.5040903@rogers.com>
+ <alpine.LRH.2.02.1501040100080.20404@redclaw.mimosa.com>
+ <54A9DB89.1080003@rogers.com> <54A9E25B.4090408@dinamis.com>
+ <alpine.LRH.2.02.1501042258550.12108@redclaw.mimosa.com>
+Message-ID: <20150105151221.GD30246@csclub.uwaterloo.ca>
+
+On Sun, Jan 04, 2015 at 11:12:18PM -0500, D. Hugh Redelmeier wrote:
+> That sounds like the most, uh, powerful option.  There probably would
+> be no need to reverse engineer MacOS9 applications' expressive but
+> quirky file structures.
+> 
+> BTW: the resource fork / data fork thing in original MacOS seems odd to
+> we UNIX-types who think that a file is a bucket of bytes.  But MacOS
+> got a lot of leverage out of that thing.  "ResEdit" was a wonder to
+> behold.  Essentially: the greatest common denominator for files in
+> MacOS was much higher than in UNIX so generic tools could do much
+> more.
+> 
+> What MacOS could do on a machine with 128k of RAM (including the video
+> frame buffer) puts all mainstream GUI systems to shame.  Part of this
+> was accomplished by using shared representations, some of which lived
+> in the resource fork.
+
+Also putting the entire OS in ROM saves an awful lot of RAM.
+
+> That being said, I wish Linux didn't support forks.  They make the
+> file abstraction more complicated with very little benefit or use.
+> The main benefit, as I understand it, is to embrace and extend NTFS.
+
+Linux supports resource forks in filesystems?
+
+-- 
+MLen Sorensen
+
+From me at mylesbraithwaite.com  Mon Jan  5 20:15:44 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 5 Jan 2015 15:15:44 -0500
+Subject: [GTALUG] [GTALUG-Announce] Meeting 13th January at 7:30pm
+Message-ID: <CA+hskZMyvxpz79JkSpu+iYt0S++uHU7mHsFcxuzP6u9VYTNaeQ@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-01/>
+
+# Social Engineering: Building A Community On Purpose with Mike Hoye
+
+Community building in Open Source is usually "organic" - meaning
+"accidental, unsupervised and messy". The bazaar has matured a lot in
+the last twenty years, though, and now we know a lot about how we can
+do better. Mike Hoye, Mozilla's Engineering Community Manager, would
+like to tell you what works, what doesn't, and why that's important.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+## Schedule
+
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub 54 Dundas St East for refreshments and more socializing.
+
+Code of Conduct
+===============
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members.
+_______________________________________________
+announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From davec-b at rogers.com  Mon Jan  5 22:12:42 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Mon, 05 Jan 2015 17:12:42 -0500
+Subject: [GTALUG] Rogers and MTU size
+In-Reply-To: <alpine.LRH.2.02.1501042316170.12108@redclaw.mimosa.com>
+References: <54A97E99.50101@rogers.com>
+ <alpine.LRH.2.02.1501042316170.12108@redclaw.mimosa.com>
+Message-ID: <54AB0C5A.7010700@rogers.com>
+
+On 01/04/2015 11:42 PM, D. Hugh Redelmeier wrote:
+> | I have advised Rogers of this and the person I was speaking to agreed it
+> | should be 1500.  Let's see if they fix it.
+>
+> Wow.
+>
+> Years ago I tried to report DHCP RFC violations to Rogers customer
+> support folks and got nowhere.  There seemed to be no connection
+> between the customer support department and the relevant engineering
+> department.
+Customer support is there to make you happy with what you bought. 
+Accepting that anything is wrong flies in the face of that mission, 
+therefor support people are usually forbidden to accept bug reports.
+
+At Honeywell, if you weren't in the right department, you had to be a 
+director to file bugs. Only QA and the sales force could report bugs, 
+and the latter would only do so when it sounded like it would cost money.
+
+To this day, it's always best to report bugs to your salesperson.
+
+--dave
+My current employer has a customer outreach department, instead: they 
+regularly report bugs.
+
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From davec-b at rogers.com  Mon Jan  5 22:15:52 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Mon, 05 Jan 2015 17:15:52 -0500
+Subject: [GTALUG] Anyone on the list know what I need to read ancient
+ Apple disks?
+In-Reply-To: <54A9E25B.4090408@dinamis.com>
+References: <54A85740.5040903@rogers.com>
+ <alpine.LRH.2.02.1501040100080.20404@redclaw.mimosa.com>
+ <54A9DB89.1080003@rogers.com> <54A9E25B.4090408@dinamis.com>
+Message-ID: <54AB0D18.1080108@rogers.com>
+
+On 01/04/2015 08:01 PM, Clifford Ilkay wrote:
+> On 01/04/2015 07:32 PM, David Collier-Brown wrote:
+>> On 01/04/2015 01:40 AM, D. Hugh Redelmeier wrote:
+>>> I'd try a PATA to USB gizmo because modern Macs don't do PATA. If 
+>>> you need to borrow one, I have one. --- GTALUG Talk Mailing List - 
+>>> talk at gtalug.org http://gtalug.org/mailman/listinfo/talk 
+>> Yes, I'd love to borrow it: my PVR has an old parallel interface, but 
+>> it's in use and I'd have to yank the DVD temporarily to try the Mac disk.
+>
+> Dave, did you receive my private message? I offered you a G4 PowerMac.
+> -- 
+> Regards,
+>
+> Clifford Ilkay
+> Dinamis
+>
+> +1 647-778-8696
+>
+>
+>
+> ---
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+Yes, and thanks, but I have too many machines as it is (;-))
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150105/3df618c6/attachment.html>
+
+From hugh at mimosa.com  Mon Jan  5 22:49:37 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 5 Jan 2015 17:49:37 -0500 (EST)
+Subject: [GTALUG] [GW-C] Re: Anyone on the list know what I need to read
+ ancient Apple disks?
+In-Reply-To: <20150105151221.GD30246@csclub.uwaterloo.ca>
+References: <54A85740.5040903@rogers.com>
+ <alpine.LRH.2.02.1501040100080.20404@redclaw.mimosa.com>
+ <54A9DB89.1080003@rogers.com> <54A9E25B.4090408@dinamis.com>
+ <alpine.LRH.2.02.1501042258550.12108@redclaw.mimosa.com>
+ <20150105151221.GD30246@csclub.uwaterloo.ca>
+Message-ID: <alpine.LRH.2.02.1501051726200.14954@redclaw.mimosa.com>
+
+| From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+
+| > What MacOS could do on a machine with 128k of RAM (including the video
+| > frame buffer) puts all mainstream GUI systems to shame.  Part of this
+| > was accomplished by using shared representations, some of which lived
+| > in the resource fork.
+| 
+| Also putting the entire OS in ROM saves an awful lot of RAM.
+
+Lots of it was not in ROM, especially as the OS advanced and the ROM
+did not.  And the ROM wasn't too large: 64K in original 128k and Fat
+Macs.
+
+(The Atari ST was a lot faster booting because more of its OS was in
+ROM.  On the other hand, the OS didn't advance very quickly or very
+much.  The original Amiga had almost all the OS in RAM because they
+knew it wasn't yet mature.)
+
+| > That being said, I wish Linux didn't support forks.  They make the
+| > file abstraction more complicated with very little benefit or use.
+| > The main benefit, as I understand it, is to embrace and extend NTFS.
+| 
+| Linux supports resource forks in filesystems?
+
+I was wrong.  I was mixing up Extended Attributes (an odd thing) with
+Alternate Data Streams (a different odd thing).
+
+ADS is an NTFS feature to embrace and extend MacOS resource forks.
+Apparently there is no public API for it except for backing up.  Many
+google hits point out that ADS is a great way to hide things (malware,
+contraband, porn) on NTFS.
+
+Samba and Reiser support ADS to some degree (Samba: optional, Reiser
+is fading away).  I don't know what API they use.
+
+From hugh at mimosa.com  Mon Jan  5 23:46:10 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 5 Jan 2015 18:46:10 -0500 (EST)
+Subject: [GTALUG] war story: bad ADSL packet loss
+Message-ID: <alpine.LRH.2.02.1501051821010.14954@redclaw.mimosa.com>
+
+My internet connections are confusing and complicated so I will spare you 
+those details.
+
+One connection is via ADSL2 to telnetcommunications.com.  It started
+to get flaky.  I measured 50-90% packet loss over various periods of
+time.
+
+I also have a VDSL2 connection with telnetcommunications.com that did
+not have the problem.  Tentative conclusion:
+telnetcommunications.com's network is not the problem.
+
+I use a TP-Link TD-8816 as a modem, but not as a router.  I have a
+Linux box that does the PPPoE thing.
+
+I tried: powercycling things, one at a time, to see if things got
+better.  They didn't.
+
+I tried: phoning support.  They suggested switching phone cable or
+ethernet cable before trying to talk to Bell.
+
+I tried: switching cables.  No change.
+
+I tried: taking other phones off phone line and removing splitter
+where the ADSL modem was connected to the wall jack.  No change.
+
+I tried: swapping ADSL modem for an identical one, purchased at the
+same time.  It worked!
+
+
+Lesson's learned:
+
+- being a hoarder has its advantages (why did I buy two ADSL modems 3.5
+  years ago?)
+
+- being a hoarder has its disadvantages.  Both modems are out of (2
+  year) warranty.  The splitter that came with the newly unwrapped
+  modem doesn't work and I have no recourse.
+
+- ADSL modems sometimes fail.  My previous ADSL modem (Speedstream
+  something or other) failed, but I don't remember the symptoms.
+
+- ADSL modems don't always fail hard.
+
+- with so many pluggable parts, there is a very large number of
+  configurations to test.  The modem has: power, phone, ethernet,
+  all of which could have been swapped.  The wall jack needs
+  a splitter, an ADSL filter on one side, and cables connecting all
+  of these.  Of the right length.  And other jacks in the house need
+  to be played with too.
+
+  I didn't even bother to see if the replacement modem would work as
+  well with the original modem's power supply, or vice versa.  Life's
+  too short.
+
+From kevin at ve3syb.ca  Tue Jan  6 03:41:16 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Mon, 05 Jan 2015 22:41:16 -0500
+Subject: [GTALUG] Power Supplies & Video Cards
+In-Reply-To: <520955106.2784999.1419963294317.JavaMail.yahoo@jws10696.mail.bf1.yahoo.com>
+References: <520955106.2784999.1419963294317.JavaMail.yahoo@jws10696.mail.bf1.yahoo.com>
+Message-ID: <54AB595C.5020604@ve3syb.ca>
+
+On 14-12-30 01:14 PM, DAVID CHIPMAN wrote:
+>  I have a computer wit a 300W PSU. It currently has an
+> onboard video chip, which I would like to replace with a video card. Now,
+> the video card specs mention needing a 300W PSU. My question is: Would that
+> 300W requirement be a minimum, or what the card would need to work full-on?
+
+Any spec for a video card as to power supply wattage would be a minimum. If 
+your power supply wattage is higher, no problem. You can't really know the 
+power consumption of your system without measuring it. You can estimate it 
+and that will give you an idea how much you are pulling from the supply.
+
+When you add a video card to your system you don't want to be pulling 300W 
+from a 300W power supply. You would like your power supply to be capable of 
+more wattage than you are normally pulling from it so you don't stress the 
+power supply.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From kevin at ve3syb.ca  Tue Jan  6 03:43:11 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Mon, 05 Jan 2015 22:43:11 -0500
+Subject: [GTALUG] Rogers and MTU size
+In-Reply-To: <54A9BC42.2080809@rogers.com>
+References: <54A97E99.50101@rogers.com> <54A98DA5.5010204@ve3syb.ca>
+ <54A9BC42.2080809@rogers.com>
+Message-ID: <54AB59CF.2070705@ve3syb.ca>
+
+On 15-01-04 05:18 PM, James Knott wrote:
+> On 01/04/2015 01:59 PM, Kevin Cozens wrote:
+>> I am on Rogers and just checked my MTU setting after reading James'
+>> email. The ifconfig output reports an MTU of 1500. I didn't change any
+>> settings for DHCP. Rogers may have already fixed the problem.
+>
+> What area are you in and did you try ping -s 1500?
+
+I'm in Markham. The ping command outputs lines that start with 1508.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From hugh at mimosa.com  Tue Jan  6 07:18:17 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 6 Jan 2015 02:18:17 -0500 (EST)
+Subject: [GTALUG] Power Supplies & Video Cards
+In-Reply-To: <54AB595C.5020604@ve3syb.ca>
+References: <520955106.2784999.1419963294317.JavaMail.yahoo@jws10696.mail.bf1.yahoo.com>
+ <54AB595C.5020604@ve3syb.ca>
+Message-ID: <alpine.LRH.2.02.1501060206590.14954@redclaw.mimosa.com>
+
+| From: Kevin Cozens <kevin at ve3syb.ca>
+
+| Any spec for a video card as to power supply wattage would be a minimum.
+
+Not in my (limited) experience.  I have bought cards that wanted to
+specify how big my system's power supply was because the actual
+required arithmetic is too hard for customers.  They just guessed at
+what the rest of my system would require and left a margin for error.
+
+The real specs are a little tricky in theory (I don't actually know
+what things are like now).  The power supply supplies various
+voltages, each with its own current limit.  Each voltage is provided
+on one or more "rails", each with its own limit.  But sometimes a
+maximum draw on one reduces the limit on another rail.
+
+You need a power supply that has enough oomph on each rail.  So you
+want a requirement specified for each voltage.
+
+And generally you don't know how much power the rest of your system
+uses in aggregate.
+
+Usually when you build your own system you buy more power supply
+capactiy than you need.  It doesn't cost too much more and you don't
+really know what's needed.
+
+I imagine that common garden variety computers from big manufacturers
+tend to size their power supplies with smaller margins.
+
