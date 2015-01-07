@@ -2677,3 +2677,463 @@ really know what's needed.
 I imagine that common garden variety computers from big manufacturers
 tend to size their power supplies with smaller margins.
 
+From scruss at gmail.com  Tue Jan  6 13:26:04 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Tue, 06 Jan 2015 08:26:04 -0500
+Subject: [GTALUG] [GW-C] Re: Anyone on the list know what I need to read
+ ancient Apple disks?
+In-Reply-To: <alpine.LRH.2.02.1501051726200.14954@redclaw.mimosa.com>
+References: <54A85740.5040903@rogers.com>
+ <alpine.LRH.2.02.1501040100080.20404@redclaw.mimosa.com>
+ <54A9DB89.1080003@rogers.com> <54A9E25B.4090408@dinamis.com>
+ <alpine.LRH.2.02.1501042258550.12108@redclaw.mimosa.com>
+ <20150105151221.GD30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1501051726200.14954@redclaw.mimosa.com>
+Message-ID: <54ABE26C.4060404@gmail.com>
+
+On 2015-01-05 05:49 PM, D. Hugh Redelmeier wrote:
+> (The Atari ST was a lot faster booting because more of its OS was in
+> ROM.  On the other hand, the OS didn't advance very quickly or very
+> much. 
+
+The Atari ST was a bit of a disappointment in that it needed a disk to
+boot. It didn't do much with that disk: just checked to see if it had a
+boot sector, and if not, started vanilla DR GEM on top of TOS. If it
+hadn't had that requirement, the OS would've booted instantly.
+
+(I still have a tiny soft spot for Atari STs, because of the University
+of Strathclyde's rather quirky approach to computer acquistion. All of
+the Mechanical Engineering department ran Atari STs/ATWs* when I was
+there, so much of my early lab work was done on a crisp B&W Atari
+display and horrid squodgy keyboard. Hey, it was better than the CompSci
+group who decided that everyone should have a Sinclair QL [68008,
+multitasking, weird Microdrive floppy tape drives, hugely buggy] a few
+years before. I'm sure they are still finding store rooms full of
+ancient QLs in Glasgow.)
+
+> The original Amiga had almost all the OS in RAM because they
+> knew it wasn't yet mature.)
+>
+Everything after the A1000 had most of the OS in ROM, though the system
+got a bit sprawling with AmigaDOS 2.0 and later. The A1000 had a
+separate RAM page for the Kickstart "WOM" information, since early
+versions were quite buggy. I was rather fond of the old Tripos-based
+AmigaDOS, which did pretty nifty multitasking in a system with no MMU.
+
+Since I spent so much time writing about Amigas, I sometimes toy with
+getting some vintage hardware ? but then I realise I can emulate it
+perfectly in my browser ?
+
+cheers,
+ Stewart
+
+*: Yes, we had a couple of Atari Transputer Workstations. They were very
+cool, but almost impossible to program applications for.
+
+
+
+From lsorense at csclub.uwaterloo.ca  Tue Jan  6 15:45:02 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 6 Jan 2015 10:45:02 -0500
+Subject: [GTALUG] [GW-C] Re: Anyone on the list know what I need to read
+ ancient Apple disks?
+In-Reply-To: <alpine.LRH.2.02.1501051726200.14954@redclaw.mimosa.com>
+References: <54A85740.5040903@rogers.com>
+ <alpine.LRH.2.02.1501040100080.20404@redclaw.mimosa.com>
+ <54A9DB89.1080003@rogers.com> <54A9E25B.4090408@dinamis.com>
+ <alpine.LRH.2.02.1501042258550.12108@redclaw.mimosa.com>
+ <20150105151221.GD30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1501051726200.14954@redclaw.mimosa.com>
+Message-ID: <20150106154502.GE30246@csclub.uwaterloo.ca>
+
+On Mon, Jan 05, 2015 at 05:49:37PM -0500, D. Hugh Redelmeier wrote:
+> Lots of it was not in ROM, especially as the OS advanced and the ROM
+> did not.  And the ROM wasn't too large: 64K in original 128k and Fat
+> Macs.
+> 
+> (The Atari ST was a lot faster booting because more of its OS was in
+> ROM.  On the other hand, the OS didn't advance very quickly or very
+> much.  The original Amiga had almost all the OS in RAM because they
+> knew it wasn't yet mature.)
+
+Well the original amiga had 256KB ram dedicated to holding the "rom"
+image, booted from the kickstart disk.  It certainly was treated as ROM
+by the system once booted.  By the time I got an A500 they had 256KB
+rom chips instead, although they hit 512KB later on.  That reminds me
+I should really finish assembling my A500 bits now that I remembered
+where I had the GVP-A500-HD8+.  At the moment I have managed to fit
+inside an A500: VGA graphics output (1024x768x8bit colour), 68030 at 25MHz
+with 32MB ram, dual ROM (1.3 and 3.1).  Closing the case got tricky.
+Now I have to add the GVP SCSI controller with 8MB ram outside.  Also has
+an SD card based dual floppy drive.
+
+> I was wrong.  I was mixing up Extended Attributes (an odd thing) with
+> Alternate Data Streams (a different odd thing).
+
+Oh OK.  I was wondering how I could have missed something so big. :)
+
+> ADS is an NTFS feature to embrace and extend MacOS resource forks.
+> Apparently there is no public API for it except for backing up.  Many
+> google hits point out that ADS is a great way to hide things (malware,
+> contraband, porn) on NTFS.
+
+NTFS has many awful features.
+
+> Samba and Reiser support ADS to some degree (Samba: optional, Reiser
+> is fading away).  I don't know what API they use.
+
+samba has to support faking lots of things because of NTFS.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Jan  6 15:50:08 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 6 Jan 2015 10:50:08 -0500
+Subject: [GTALUG] [GW-C] Re: Anyone on the list know what I need to read
+ ancient Apple disks?
+In-Reply-To: <54ABE26C.4060404@gmail.com>
+References: <54A85740.5040903@rogers.com>
+ <alpine.LRH.2.02.1501040100080.20404@redclaw.mimosa.com>
+ <54A9DB89.1080003@rogers.com> <54A9E25B.4090408@dinamis.com>
+ <alpine.LRH.2.02.1501042258550.12108@redclaw.mimosa.com>
+ <20150105151221.GD30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1501051726200.14954@redclaw.mimosa.com>
+ <54ABE26C.4060404@gmail.com>
+Message-ID: <20150106155008.GF30246@csclub.uwaterloo.ca>
+
+On Tue, Jan 06, 2015 at 08:26:04AM -0500, Stewart C. Russell wrote:
+> The Atari ST was a bit of a disappointment in that it needed a disk to
+> boot. It didn't do much with that disk: just checked to see if it had a
+> boot sector, and if not, started vanilla DR GEM on top of TOS. If it
+> hadn't had that requirement, the OS would've booted instantly.
+> 
+> (I still have a tiny soft spot for Atari STs, because of the University
+> of Strathclyde's rather quirky approach to computer acquistion. All of
+> the Mechanical Engineering department ran Atari STs/ATWs* when I was
+> there, so much of my early lab work was done on a crisp B&W Atari
+> display and horrid squodgy keyboard. Hey, it was better than the CompSci
+> group who decided that everyone should have a Sinclair QL [68008,
+> multitasking, weird Microdrive floppy tape drives, hugely buggy] a few
+> years before. I'm sure they are still finding store rooms full of
+> ancient QLs in Glasgow.)
+> 
+> Everything after the A1000 had most of the OS in ROM, though the system
+> got a bit sprawling with AmigaDOS 2.0 and later. The A1000 had a
+> separate RAM page for the Kickstart "WOM" information, since early
+> versions were quite buggy. I was rather fond of the old Tripos-based
+> AmigaDOS, which did pretty nifty multitasking in a system with no MMU.
+
+In fact early A3000 machines also used a kickstart image, although what
+they did was run a modified rom image called 1.4, which would know how
+to read the HD and was able to read the kickstart image for 2.0 from
+the HD or a floppy into ram, them use the MMU to remap it and reset from
+the ram image.  Once 2.04 was finished, they usually got the rom replaced
+by a real one to save the 512KB of ram.
+
+> Since I spent so much time writing about Amigas, I sometimes toy with
+> getting some vintage hardware ? but then I realise I can emulate it
+> perfectly in my browser ?
+
+Nothing quite like the real hardware, and you can do so much crazy stuff
+with it now that was way to expensive in the past.  Emulating the amiga
+hardware has ben quite hard.
+
+-- 
+Len Sorensen
+
+From gilesorr at gmail.com  Tue Jan  6 17:15:50 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Tue, 6 Jan 2015 12:15:50 -0500
+Subject: [GTALUG] War story: OpenWRT USB access
+Message-ID: <CAEnxSC4_wy6OkHev+EVih59K0xemRNBY4wgaUzyAV3JCKa=dvQ@mail.gmail.com>
+
+In honour of Hugh's "war stories," which I enjoy and think/hope I'm
+learning from, here's one of my own about trying to get USB access on
+an OpenWRT router ... and the dangers of thinking you know what you're
+doing.  This is cut and pasted from my blog, so it'
+
+
+I've just purchased a TP-Link wireless access point. Despite owning
+the thing, the model of the item remains somewhat unclear: it's
+variously known as the "TL-WDR7500," "AC1750," and the "Archer C7."
+Fortunately, what was clear is that it has good specs (including
+immensely more memory than the WRT54Gs I've been playing with, and two
+USB2 ports), it's very well supported by OpenWRT (mine is the one with
+three antennas). This is a version 2, which is also good as that has
+more memory than version 1.x. And installing OpenWRT was literally as
+easy as downloading
+barrier_breaker/14.07/ar71xx/generic/openwrt-ar71xx-generic-archer-c7-v2-squashfs-factory.bin,
+logging in to the router's admin interface and then to "Firmware
+Upgrade," pointing to the downloaded file, and pressing the "Upgrade"
+button. It doesn't get much simpler than that.
+
+Getting OpenWRT to talk to the two USB ports on the device was
+unpleasantly difficult. With the default install, dmesgmade it clear
+that the insertion of a USB device was duly noted with a log entry
+like this:
+
+usb 2-1: new high-speed USB device number 3 using ehci-platform
+
+but there was no further information - perhaps noting whether or not
+it was a drive rather than a mouse? Or what device number it was. I
+started to work through the information at
+http://wiki.openwrt.org/doc/howto/usb.storage . So I installed:
+
+kmod-usb-storage
+kmod-scsi-core
+
+which you'd think would be in the default squashfs file for this
+specific device as they'd already included kmod-usb-core. I kind of
+understand why they didn't include the filesystem types (who knows
+which you're going to need?) so I installed:
+
+kmod-fs-msdos
+kmod-fs-vfat
+
+It was possible to do insmod kmod-usb-storage and insmod kmod-fs-vfat
+after these installs, but I found behaviour was better after a reboot:
+I have to assume there's scripts and autodetection that set these up
+better than a naked insmodcommand. Still, it's a bit annoying to have
+to reboot a Linux device as if it were Windows ...
+
+And finally I installed:
+
+block-mount
+
+which is apparently required to mount any device. Again, shouldn't
+that be in the default image?
+
+At this point, dmesg was acknowledging that we have genuine USB
+storage devices attached:
+
+usb 1-1: new high-speed USB device number 2 using ehci-platform
+usb-storage 1-1:1.0: USB Mass Storage device detected
+scsi0 : usb-storage 1-1:1.0
+scsi 0:0:0:0: Direct-Access     USB 3.0  USB Flash Drive 1.00 PQ: 0 ANSI: 6
+sd 0:0:0:0: [sda] 30883840 512-byte logical blocks: (15.8 GB/14.7 GiB)
+sd 0:0:0:0: [sda] Write Protect is off
+sd 0:0:0:0: [sda] Mode Sense: 23 00 00 00
+sd 0:0:0:0: [sda] Write cache: disabled, read cache: disabled, doesn't
+support DPO or FUA
+ sda: sda1
+sd 0:0:0:0: [sda] Attached SCSI removable disk
+
+But attempting to run mount /dev/sda1 /mnt/ fails with mount: mounting
+/dev/sda1 on /mnt/ failed: Invalid argument, although we do now have a
+/dev/sda1 device in the /dev/ folder and /mnt/ is a valid folder.
+
+After hours of tests and googling, I finally stumbled across an
+obscure hint from someone who was asking another question but had
+"solved the USB problem" ... they had installed the appropriate NLS
+("Native Language Support") packages for their area. Seriously? But
+I'm willing to try anything by this point, so I installed:
+
+kmod-nls-iso8859-1
+kmod-nls-cp437
+
+Test again, and ... I can mount USB storage devices! At least ones
+with a filesystem that I've installed, so I guess I need to install
+NTFS and/or ext3/4 support if I want to use hard drives.
+
+This solution is both non-obvious and not well documented. I see in
+looking back at the OpenWRT documentation that they DO mention the NLS
+packages. But I didn't notice at the time and they weren't
+dependencies enforced by the package manager, so they got lost. <sigh>
+
+
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From gilesorr at gmail.com  Tue Jan  6 17:18:10 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Tue, 6 Jan 2015 12:18:10 -0500
+Subject: [GTALUG] War story: OpenWRT USB access
+In-Reply-To: <CAEnxSC4_wy6OkHev+EVih59K0xemRNBY4wgaUzyAV3JCKa=dvQ@mail.gmail.com>
+References: <CAEnxSC4_wy6OkHev+EVih59K0xemRNBY4wgaUzyAV3JCKa=dvQ@mail.gmail.com>
+Message-ID: <CAEnxSC6jfZSy32KJH8XZp1ajt-xB4ji=kLir18HubJz27H_1KQ@mail.gmail.com>
+
+I WAS going to point out it can be read in the original at
+http://www.gilesorr.com/blog/archerc7-openwrt.html (with all
+formatting), but a finger went astray and sent the message on its way.
+Sorry about that.
+
+On 6 January 2015 at 12:15, Giles Orr <gilesorr at gmail.com> wrote:
+> In honour of Hugh's "war stories," which I enjoy and think/hope I'm
+> learning from, here's one of my own about trying to get USB access on
+> an OpenWRT router ... and the dangers of thinking you know what you're
+> doing.  This is cut and pasted from my blog, so it'
+>
+>
+> I've just purchased a TP-Link wireless access point. Despite owning
+> the thing, the model of the item remains somewhat unclear: it's
+> variously known as the "TL-WDR7500," "AC1750," and the "Archer C7."
+> Fortunately, what was clear is that it has good specs (including
+> immensely more memory than the WRT54Gs I've been playing with, and two
+> USB2 ports), it's very well supported by OpenWRT (mine is the one with
+> three antennas). This is a version 2, which is also good as that has
+> more memory than version 1.x. And installing OpenWRT was literally as
+> easy as downloading
+> barrier_breaker/14.07/ar71xx/generic/openwrt-ar71xx-generic-archer-c7-v2-squashfs-factory.bin,
+> logging in to the router's admin interface and then to "Firmware
+> Upgrade," pointing to the downloaded file, and pressing the "Upgrade"
+> button. It doesn't get much simpler than that.
+>
+> Getting OpenWRT to talk to the two USB ports on the device was
+> unpleasantly difficult. With the default install, dmesgmade it clear
+> that the insertion of a USB device was duly noted with a log entry
+> like this:
+>
+> usb 2-1: new high-speed USB device number 3 using ehci-platform
+>
+> but there was no further information - perhaps noting whether or not
+> it was a drive rather than a mouse? Or what device number it was. I
+> started to work through the information at
+> http://wiki.openwrt.org/doc/howto/usb.storage . So I installed:
+>
+> kmod-usb-storage
+> kmod-scsi-core
+>
+> which you'd think would be in the default squashfs file for this
+> specific device as they'd already included kmod-usb-core. I kind of
+> understand why they didn't include the filesystem types (who knows
+> which you're going to need?) so I installed:
+>
+> kmod-fs-msdos
+> kmod-fs-vfat
+>
+> It was possible to do insmod kmod-usb-storage and insmod kmod-fs-vfat
+> after these installs, but I found behaviour was better after a reboot:
+> I have to assume there's scripts and autodetection that set these up
+> better than a naked insmodcommand. Still, it's a bit annoying to have
+> to reboot a Linux device as if it were Windows ...
+>
+> And finally I installed:
+>
+> block-mount
+>
+> which is apparently required to mount any device. Again, shouldn't
+> that be in the default image?
+>
+> At this point, dmesg was acknowledging that we have genuine USB
+> storage devices attached:
+>
+> usb 1-1: new high-speed USB device number 2 using ehci-platform
+> usb-storage 1-1:1.0: USB Mass Storage device detected
+> scsi0 : usb-storage 1-1:1.0
+> scsi 0:0:0:0: Direct-Access     USB 3.0  USB Flash Drive 1.00 PQ: 0 ANSI: 6
+> sd 0:0:0:0: [sda] 30883840 512-byte logical blocks: (15.8 GB/14.7 GiB)
+> sd 0:0:0:0: [sda] Write Protect is off
+> sd 0:0:0:0: [sda] Mode Sense: 23 00 00 00
+> sd 0:0:0:0: [sda] Write cache: disabled, read cache: disabled, doesn't
+> support DPO or FUA
+>  sda: sda1
+> sd 0:0:0:0: [sda] Attached SCSI removable disk
+>
+> But attempting to run mount /dev/sda1 /mnt/ fails with mount: mounting
+> /dev/sda1 on /mnt/ failed: Invalid argument, although we do now have a
+> /dev/sda1 device in the /dev/ folder and /mnt/ is a valid folder.
+>
+> After hours of tests and googling, I finally stumbled across an
+> obscure hint from someone who was asking another question but had
+> "solved the USB problem" ... they had installed the appropriate NLS
+> ("Native Language Support") packages for their area. Seriously? But
+> I'm willing to try anything by this point, so I installed:
+>
+> kmod-nls-iso8859-1
+> kmod-nls-cp437
+>
+> Test again, and ... I can mount USB storage devices! At least ones
+> with a filesystem that I've installed, so I guess I need to install
+> NTFS and/or ext3/4 support if I want to use hard drives.
+>
+> This solution is both non-obvious and not well documented. I see in
+> looking back at the OpenWRT documentation that they DO mention the NLS
+> packages. But I didn't notice at the time and they weren't
+> dependencies enforced by the package manager, so they got lost. <sigh>
+>
+>
+>
+> --
+> Giles
+> http://www.gilesorr.com/
+> gilesorr at gmail.com
+
+
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From northdot9 at gmail.com  Wed Jan  7 01:14:51 2015
+From: northdot9 at gmail.com (David Thornton)
+Date: Tue, 6 Jan 2015 20:14:51 -0500
+Subject: [GTALUG] Power Supplies & Video Cards
+In-Reply-To: <alpine.LRH.2.02.1501060206590.14954@redclaw.mimosa.com>
+References: <520955106.2784999.1419963294317.JavaMail.yahoo@jws10696.mail.bf1.yahoo.com>
+ <54AB595C.5020604@ve3syb.ca>
+ <alpine.LRH.2.02.1501060206590.14954@redclaw.mimosa.com>
+Message-ID: <CAHcykVquyjP5qatw7Gc+LGf7rdJS3q58Mv2bVYsC4HWZP5NX3w@mail.gmail.com>
+
+Some bioses (bioii?) will tell you about consumption, if that's any help.
+
+The software package lm_sensors might be able to help you see what data is
+made available but YMMV as there is no widespread "standard" for access to
+power consumption data as far as I know.
+
+Expensive servers have polished aps for acessing that sort of data....
+
+ha! I googled "measuring  pci card power consumption" and the first hit was
+
+"How We Measure Graphics Card Power Consumption ..."
+http://www.tomshardware.com/reviews/graphics-card-performance-benchmarks,3784-3.html
+
+Very sexeh setup.
+
+David
+
+
+david
+
+On Tue, Jan 6, 2015 at 2:18 AM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+> | From: Kevin Cozens <kevin at ve3syb.ca>
+>
+> | Any spec for a video card as to power supply wattage would be a minimum.
+>
+> Not in my (limited) experience.  I have bought cards that wanted to
+> specify how big my system's power supply was because the actual
+> required arithmetic is too hard for customers.  They just guessed at
+> what the rest of my system would require and left a margin for error.
+>
+> The real specs are a little tricky in theory (I don't actually know
+> what things are like now).  The power supply supplies various
+> voltages, each with its own current limit.  Each voltage is provided
+> on one or more "rails", each with its own limit.  But sometimes a
+> maximum draw on one reduces the limit on another rail.
+>
+> You need a power supply that has enough oomph on each rail.  So you
+> want a requirement specified for each voltage.
+>
+> And generally you don't know how much power the rest of your system
+> uses in aggregate.
+>
+> Usually when you build your own system you buy more power supply
+> capactiy than you need.  It doesn't cost too much more and you don't
+> really know what's needed.
+>
+> I imagine that common garden variety computers from big manufacturers
+> tend to size their power supplies with smaller margins.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150106/c6541201/attachment.html>
+
