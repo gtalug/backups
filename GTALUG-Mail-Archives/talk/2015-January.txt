@@ -3137,3 +3137,1630 @@ On Tue, Jan 6, 2015 at 2:18 AM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150106/c6541201/attachment.html>
 
+From chris.aitken at EastLink.ca  Wed Jan  7 03:34:38 2015
+From: chris.aitken at EastLink.ca (ChrisAitken)
+Date: Tue, 06 Jan 2015 22:34:38 -0500
+Subject: [GTALUG] Power Supplies & Video Cards
+In-Reply-To: <CAHcykVquyjP5qatw7Gc+LGf7rdJS3q58Mv2bVYsC4HWZP5NX3w@mail.gmail.com>
+References: <520955106.2784999.1419963294317.JavaMail.yahoo@jws10696.mail.bf1.yahoo.com>
+ <54AB595C.5020604@ve3syb.ca>
+ <alpine.LRH.2.02.1501060206590.14954@redclaw.mimosa.com>
+ <CAHcykVquyjP5qatw7Gc+LGf7rdJS3q58Mv2bVYsC4HWZP5NX3w@mail.gmail.com>
+Message-ID: <fa9329941183e.54ac62fe@eastlink.ca>
+
+On 01/06/15 08:14 PM, David Thornton  <northdot9 at gmail.com> wrote:
+> 
+> 
+> Some bioses (bioii?) will tell you about consumption, if that's any help.
+> 
+
+
+I'd go with the Italian 'biosi'. 
+
+> 
+> 
+> 
+> 
+> The software package lm_sensors might be able to help you see what data is made available but YMMV as there is no widespread "standard" for access to power consumption data as far as I know.
+> 
+> Expensive servers have polished aps for acessing that sort of data....
+> 
+> ha! I googled "measuring pci card power consumption" and the first hit was 
+> 
+> "How We Measure Graphics Card Power Consumption ..."
+> http://www.tomshardware.com/reviews/graphics-card-performance-benchmarks,3784-3.html
+> 
+> 
+> Very sexeh setup.
+> 
+> David
+> 
+> 
+> 
+> david
+> 
+> 
+> 
+> On Tue, Jan 6, 2015 at 2:18 AM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+> 
+> > | From: Kevin Cozens <kevin at ve3syb.ca>
+> > 
+> > 
+> > 
+> > | Any spec for a video card as to power supply wattage would be a minimum.
+> > 
+> > 
+> > 
+> > Not in my (limited) experience. I have bought cards that wanted to
+> > 
+> > specify how big my system's power supply was because the actual
+> > 
+> > required arithmetic is too hard for customers. They just guessed at
+> > 
+> > what the rest of my system would require and left a margin for error.
+> > 
+> > 
+> > 
+> > The real specs are a little tricky in theory (I don't actually know
+> > 
+> > what things are like now). The power supply supplies various
+> > 
+> > voltages, each with its own current limit. Each voltage is provided
+> > 
+> > on one or more "rails", each with its own limit. But sometimes a
+> > 
+> > maximum draw on one reduces the limit on another rail.
+> > 
+> > 
+> > 
+> > You need a power supply that has enough oomph on each rail. So you
+> > 
+> > want a requirement specified for each voltage.
+> > 
+> > 
+> > 
+> > And generally you don't know how much power the rest of your system
+> > 
+> > uses in aggregate.
+> > 
+> > 
+> > 
+> > Usually when you build your own system you buy more power supply
+> > 
+> > capactiy than you need. It doesn't cost too much more and you don't
+> > 
+> > really know what's needed.
+> > 
+> > 
+> > 
+> > I imagine that common garden variety computers from big manufacturers
+> > 
+> > tend to size their power supplies with smaller margins.
+> > 
+> > ---
+> > 
+> > Talk Mailing List
+> > 
+> > talk at gtalug.org
+> > 
+> > http://gtalug.org/mailman/listinfo/talk
+> >  
+> 
+> 
+>  
+> 
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150106/557f0374/attachment.html>
+
+From hugh at mimosa.com  Wed Jan  7 18:52:03 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 7 Jan 2015 13:52:03 -0500 (EST)
+Subject: [GTALUG] War story: OpenWRT USB access
+In-Reply-To: <CAEnxSC4_wy6OkHev+EVih59K0xemRNBY4wgaUzyAV3JCKa=dvQ@mail.gmail.com>
+References: <CAEnxSC4_wy6OkHev+EVih59K0xemRNBY4wgaUzyAV3JCKa=dvQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1501071344200.26772@redclaw.mimosa.com>
+
+| From: Giles Orr <gilesorr at gmail.com>
+
+Thanks!
+
+| But attempting to run mount /dev/sda1 /mnt/ fails with mount: mounting
+| /dev/sda1 on /mnt/ failed: Invalid argument, although we do now have a
+| /dev/sda1 device in the /dev/ folder and /mnt/ is a valid folder.
+
+The diagnostics from mount(8) and mount(2) certainly can leave you in
+the dark.  I've been stuck at various times, cursing mount.
+
+| I'm willing to try anything by this point, so I installed:
+| 
+| kmod-nls-iso8859-1
+| kmod-nls-cp437
+| 
+| Test again, and ... I can mount USB storage devices!
+
+Wow.
+
+I wonder how you could have figured this out (except via folklore).
+
+Since it is a kernel module that is missing the nls-* modules, the
+only ways of reporting the problem are: EWHATEVER return code (rather
+non-specific) or logging (would have to be rate-limited).  I guess
+neither of these were used.
+
+Can you fix the web page that gave you the first hints to include the
+lore about nls-*?
+
+From kevin at ve3syb.ca  Wed Jan  7 19:17:28 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Wed, 07 Jan 2015 14:17:28 -0500
+Subject: [GTALUG] War story: OpenWRT USB access
+In-Reply-To: <alpine.LRH.2.02.1501071344200.26772@redclaw.mimosa.com>
+References: <CAEnxSC4_wy6OkHev+EVih59K0xemRNBY4wgaUzyAV3JCKa=dvQ@mail.gmail.com>
+ <alpine.LRH.2.02.1501071344200.26772@redclaw.mimosa.com>
+Message-ID: <54AD8648.2090903@ve3syb.ca>
+
+On 15-01-07 01:52 PM, D. Hugh Redelmeier wrote:
+> | From: Giles Orr <gilesorr at gmail.com>
+> | I'm willing to try anything by this point, so I installed:
+> |
+> | kmod-nls-iso8859-1
+> | kmod-nls-cp437
+> |
+> | Test again, and ... I can mount USB storage devices!
+>
+> Wow.
+>
+> I wonder how you could have figured this out (except via folklore).
+
+I've configured and built Linux kernels many times, although not in recent 
+years. The reference to NLS reminded me that I saw references to NLS in 
+connection with filesystem support. If I didn't include the right NLS 
+support in a kernel I couldn't mount any (V)FAT/NTFS partitions. I had 
+completely forgotten about this until now.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 00:10:09 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 7 Jan 2015 19:10:09 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+Message-ID: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+
+Here's another project I'm working on that is driving me around the bend.
+
+Sorry this is such a long story...
+
+A computer in our basement has no wireless, so instead of running a
+long cable to it, I wanted to put a router beside it and have it
+connect to that router by ethernet, and then have that router connect
+to the main one over wireless. No, I did not plug the computer into
+the WAN port... ;-)
+
+I have an old Linksys router WRT54GL v. 1.1 running Tomato 1.28, and
+my main router, the Buffalo N600 which has DD-WRT.
+
+According to about a hundred different howto's it should be very simple.
+
+I set the second router to an IP outside the DHCP range of the first,
+and set also set it to use the first router as gateway and DNS. I also
+set the SSID and password the same, and also the type of security
+used. Oh, and obviously I set the second router as 'Wireless Ethernet
+Bridge'.
+
+router 1 is 192.168.11.1, router 2 is 192.168.11.2
+
+both have 255.255.255.0 as subnet mask
+
+Router 1 gives out addresses starting at 192.168.11.5
+
+Am I correct in assuming that DHCP broadcasts should be relayed by the
+second router? In wireless bridge mode it doesn't appear to even have
+the option of offering DHCP...
+
+I noticed that the Buffalo will let you set up a virtual interface, so
+I tried using that with no security at all.
+
+I also found something here:
+
+http://www.cnet.com/how-to/reuse-an-old-router-to-bridge-devices-to-your-wireless-network/
+
+that said I should set the second router to operate as a router and
+not as a gateway so I changed that.
+
+Still no ping response from google.com :-\
+
+The only thing I can think of is that maybe the firewall settings are
+wrong on the second router, running Tomato.
+
+Respond to ICMP is unchecked, Allow Multicast is unchecked, NAT
+Loopback is set to Forwarded Only, and Enable SYN cookies is
+unchecked.
+
+Help!
+
+-- 
+Thomas Milne
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 00:38:28 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 7 Jan 2015 19:38:28 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <CAGxYWpbfjyzZrXO=R7isTDzmyZu+J=Ui9fsh8+tH9D2ON-yU4w@mail.gmail.com>
+References: <CAGc8pF6HWp94gAaru4ZuETpNmTDiasio=Zij3VHxMrNXKKuBHQ@mail.gmail.com>
+ <20141123002215.GB24111@csclub.uwaterloo.ca>
+ <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+ <54A0D9BA.6010509@ss.org>
+ <20141229133843.GZ24111@csclub.uwaterloo.ca>
+ <CAGc8pF6di0s-RH8QuxvFPdAVGe0nKP2H4UZ=VOALh1u3whsgEg@mail.gmail.com>
+ <20150102040839.GF24111@csclub.uwaterloo.ca>
+ <CAGc8pF5Q-hTahSh1e3wyqLAieJcf1h53wh0+Lq5PUWfLCzjNpw@mail.gmail.com>
+ <20150103041302.GG24111@csclub.uwaterloo.ca>
+ <CAGxYWpbfjyzZrXO=R7isTDzmyZu+J=Ui9fsh8+tH9D2ON-yU4w@mail.gmail.com>
+Message-ID: <CAGc8pF6TSi6RAHpQsbB9mvE1MWLj12boVeMvNtZYUdHOSqU5pw@mail.gmail.com>
+
+On Jan 5, 2015 8:55 AM, "Tim Tisdall" <tisdall at gmail.com> wrote:
+>
+> On Fri, Jan 2, 2015 at 11:13 PM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+>>
+>> On Fri, Jan 02, 2015 at 11:30:58AM -0500, Thomas Milne wrote:
+>> > It sounds like it. Wow.
+>> >
+>> > So can I boot into that Debian system and compile a new kernel from
+inside
+>> > that? And do I need to know what options to choose at compile and
+modules
+>> > to load for Cubox hardware or is that automatic?
+>>
+>> Kernel config is not automatic.  That bit you have to deal with.
+>
+>
+> There wiki shows this command: "make cubox_defconfig"  So, they've
+already created a default configuration for you to start from.
+>
+>> > Pardon my dumb questions. I was reading this, about installing Debian
+and
+>> > compiling a new kernel:
+>> >
+>> > http://www.solid-run.com/archive/mw/index.php/Debian_netboot_installer
+>> >
+>> > I might be in over my head. Those instructions assume that I know how
+to do
+>> > a lot of things that I do not.
+>>
+>> That's the problem when the people writing the instructions know what
+>> they are doing already.
+>
+>
+> I guess the best thing to do is start from the beginning and when you're
+stuck you can post on the mailing list the specific problem you're having
+and someone should be able to help.  (Also, you after you figure out what's
+missing you could modify their wiki to either have the info you need or
+link to it)
+
+Ya I will probably give it a try, unless Lennart wants to be all
+magnanimous and just upload an image of his install for me ;)
+
+Right now I am fixated on a whole wireless ethernet bridge ... thing.
+
+Thanks for the pointer, much appreciated.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150107/afa08d15/attachment.html>
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 00:55:36 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 7 Jan 2015 19:55:36 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+Message-ID: <CAGc8pF6X+RL9M2WDGhaAC-m3hf8qVT5c9epASJcODhOuDx9+Vw@mail.gmail.com>
+
+On Wed, Jan 7, 2015 at 7:10 PM, Thomas Milne
+<thomas.bruce.milne at gmail.com> wrote:
+> Here's another project I'm working on that is driving me around the bend.
+>
+> Sorry this is such a long story...
+>
+> A computer in our basement has no wireless, so instead of running a
+> long cable to it, I wanted to put a router beside it and have it
+> connect to that router by ethernet, and then have that router connect
+> to the main one over wireless. No, I did not plug the computer into
+> the WAN port... ;-)
+>
+> I have an old Linksys router WRT54GL v. 1.1 running Tomato 1.28, and
+> my main router, the Buffalo N600 which has DD-WRT.
+>
+> According to about a hundred different howto's it should be very simple.
+>
+> I set the second router to an IP outside the DHCP range of the first,
+> and set also set it to use the first router as gateway and DNS. I also
+> set the SSID and password the same, and also the type of security
+> used. Oh, and obviously I set the second router as 'Wireless Ethernet
+> Bridge'.
+>
+> router 1 is 192.168.11.1, router 2 is 192.168.11.2
+>
+> both have 255.255.255.0 as subnet mask
+>
+> Router 1 gives out addresses starting at 192.168.11.5
+>
+> Am I correct in assuming that DHCP broadcasts should be relayed by the
+> second router? In wireless bridge mode it doesn't appear to even have
+> the option of offering DHCP...
+>
+> I noticed that the Buffalo will let you set up a virtual interface, so
+> I tried using that with no security at all.
+>
+> I also found something here:
+>
+> http://www.cnet.com/how-to/reuse-an-old-router-to-bridge-devices-to-your-wireless-network/
+>
+> that said I should set the second router to operate as a router and
+> not as a gateway so I changed that.
+>
+> Still no ping response from google.com :-\
+>
+> The only thing I can think of is that maybe the firewall settings are
+> wrong on the second router, running Tomato.
+>
+> Respond to ICMP is unchecked, Allow Multicast is unchecked, NAT
+> Loopback is set to Forwarded Only, and Enable SYN cookies is
+> unchecked.
+>
+> Help!
+>
+Oh, I should also say I set both routers to use the same wireless
+network mode, G. Some howtos said they had to uses the same channel,
+some said different channel. I have tried both. I also tried setting
+the second router as gateway, not router, because of this:
+
+http://www.cyberciti.biz/networking/howto-connect-two-wireless-router-wirelessly-bridge-with-open-source-software/
+
+which at least was using a Tomato router so most of it had the same options.
+
+It's very hard when there are so many conflicting instructions :-/
+
+-- 
+Thomas Milne
+
+From littlebear at xxw.ca  Thu Jan  8 00:20:58 2015
+From: littlebear at xxw.ca (littlebear at xxw.ca)
+Date: Wed, 07 Jan 2015 19:20:58 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+Message-ID: <20150108002058.6082712.65476.1772@xxw.ca>
+
+?Plug the second router (acting as switch) WAN port to regular port. There should be no WAN Ethernet connected on the second router
+
+Sent from my BlackBerry 10 smartphone.
+?
+OpenPGP: 0x1666B6A1
+http://xxw.ca/email-public-key/
+Email: littlebear at xxw.ca 
+VOIP: (510)-982-6330
+? Original Message ?
+From: Thomas Milne
+Sent: Wednesday, January 7, 2015 7:10 PM
+To: GTALUG
+Reply To: GTALUG Talk
+Subject: [GTALUG] Second router as wireless ethernet bridge
+
+Here's another project I'm working on that is driving me around the bend.
+
+Sorry this is such a long story...
+
+A computer in our basement has no wireless, so instead of running a
+long cable to it, I wanted to put a router beside it and have it
+connect to that router by ethernet, and then have that router connect
+to the main one over wireless. No, I did not plug the computer into
+the WAN port... ;-)
+
+I have an old Linksys router WRT54GL v. 1.1 running Tomato 1.28, and
+my main router, the Buffalo N600 which has DD-WRT.
+
+According to about a hundred different howto's it should be very simple.
+
+I set the second router to an IP outside the DHCP range of the first,
+and set also set it to use the first router as gateway and DNS. I also
+set the SSID and password the same, and also the type of security
+used. Oh, and obviously I set the second router as 'Wireless Ethernet
+Bridge'.
+
+router 1 is 192.168.11.1, router 2 is 192.168.11.2
+
+both have 255.255.255.0 as subnet mask
+
+Router 1 gives out addresses starting at 192.168.11.5
+
+Am I correct in assuming that DHCP broadcasts should be relayed by the
+second router? In wireless bridge mode it doesn't appear to even have
+the option of offering DHCP...
+
+I noticed that the Buffalo will let you set up a virtual interface, so
+I tried using that with no security at all.
+
+I also found something here:
+
+http://www.cnet.com/how-to/reuse-an-old-router-to-bridge-devices-to-your-wireless-network/
+
+that said I should set the second router to operate as a router and
+not as a gateway so I changed that.
+
+Still no ping response from google.com :-\
+
+The only thing I can think of is that maybe the firewall settings are
+wrong on the second router, running Tomato.
+
+Respond to ICMP is unchecked, Allow Multicast is unchecked, NAT
+Loopback is set to Forwarded Only, and Enable SYN cookies is
+unchecked.
+
+Help!
+
+-- 
+Thomas Milne
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 02:22:23 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 7 Jan 2015 21:22:23 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <20150108002058.6082712.65476.1772@xxw.ca>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <20150108002058.6082712.65476.1772@xxw.ca>
+Message-ID: <CAGc8pF7vTTwEquF=sodd_NZUGuwjWO0M+d6nC4b+69085mihRQ@mail.gmail.com>
+
+I don't think you understood what I am trying to do. The routers will not
+be physically connected, only over wireless.
+On Jan 7, 2015 9:19 PM, <littlebear at xxw.ca> wrote:
+
+> ?Plug the second router (acting as switch) WAN port to regular port. There
+> should be no WAN Ethernet connected on the second router
+>
+> Sent from my BlackBerry 10 smartphone.
+> ?
+> OpenPGP: 0x1666B6A1
+> http://xxw.ca/email-public-key/
+> Email: littlebear at xxw.ca
+> VOIP: (510)-982-6330
+>   Original Message
+> From: Thomas Milne
+> Sent: Wednesday, January 7, 2015 7:10 PM
+> To: GTALUG
+> Reply To: GTALUG Talk
+> Subject: [GTALUG] Second router as wireless ethernet bridge
+>
+> Here's another project I'm working on that is driving me around the bend.
+>
+> Sorry this is such a long story...
+>
+> A computer in our basement has no wireless, so instead of running a
+> long cable to it, I wanted to put a router beside it and have it
+> connect to that router by ethernet, and then have that router connect
+> to the main one over wireless. No, I did not plug the computer into
+> the WAN port... ;-)
+>
+> I have an old Linksys router WRT54GL v. 1.1 running Tomato 1.28, and
+> my main router, the Buffalo N600 which has DD-WRT.
+>
+> According to about a hundred different howto's it should be very simple.
+>
+> I set the second router to an IP outside the DHCP range of the first,
+> and set also set it to use the first router as gateway and DNS. I also
+> set the SSID and password the same, and also the type of security
+> used. Oh, and obviously I set the second router as 'Wireless Ethernet
+> Bridge'.
+>
+> router 1 is 192.168.11.1, router 2 is 192.168.11.2
+>
+> both have 255.255.255.0 as subnet mask
+>
+> Router 1 gives out addresses starting at 192.168.11.5
+>
+> Am I correct in assuming that DHCP broadcasts should be relayed by the
+> second router? In wireless bridge mode it doesn't appear to even have
+> the option of offering DHCP...
+>
+> I noticed that the Buffalo will let you set up a virtual interface, so
+> I tried using that with no security at all.
+>
+> I also found something here:
+>
+>
+> http://www.cnet.com/how-to/reuse-an-old-router-to-bridge-devices-to-your-wireless-network/
+>
+> that said I should set the second router to operate as a router and
+> not as a gateway so I changed that.
+>
+> Still no ping response from google.com :-\
+>
+> The only thing I can think of is that maybe the firewall settings are
+> wrong on the second router, running Tomato.
+>
+> Respond to ICMP is unchecked, Allow Multicast is unchecked, NAT
+> Loopback is set to Forwarded Only, and Enable SYN cookies is
+> unchecked.
+>
+> Help!
+>
+> --
+> Thomas Milne
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150107/43c2bd2d/attachment.html>
+
+From stephen-d at rogers.com  Thu Jan  8 02:33:28 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Wed, 07 Jan 2015 21:33:28 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <CAGc8pF7vTTwEquF=sodd_NZUGuwjWO0M+d6nC4b+69085mihRQ@mail.gmail.com>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <20150108002058.6082712.65476.1772@xxw.ca>
+ <CAGc8pF7vTTwEquF=sodd_NZUGuwjWO0M+d6nC4b+69085mihRQ@mail.gmail.com>
+Message-ID: <54ADEC78.9090102@rogers.com>
+
+>     router 1 is 192.168.11.1, router 2 is 192.168.11.2
+>
+>     both have 255.255.255.0 as subnet mask
+>
+>     Router 1 gives out addresses starting at 192.168.11.5
+
+Try giving the basement computer a static IP of 192.168.11.3 with 
+gateway of 192.168.11.2
+
+Make sure that you can ping the basement router
+
+Make sure you can access the basement router's control panel
+
+Make sure that the basement router has a gateway of 192.168.11.1
+
+Use Open DNS on the basement computer
+
+Try to ping an external IP
+
+Try to ping a domain
+
+-- 
+Stephen
+
+From littlebear at xxw.ca  Thu Jan  8 02:43:04 2015
+From: littlebear at xxw.ca (Little Bear)
+Date: Wed, 07 Jan 2015 21:43:04 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <CAGc8pF7vTTwEquF=sodd_NZUGuwjWO0M+d6nC4b+69085mihRQ@mail.gmail.com>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <20150108002058.6082712.65476.1772@xxw.ca>
+ <CAGc8pF7vTTwEquF=sodd_NZUGuwjWO0M+d6nC4b+69085mihRQ@mail.gmail.com>
+Message-ID: <54ADEEB8.2090700@xxw.ca>
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+ 
+Sorry, wasn't thinking when I typed it. Did you try
+http://lifehacker.com/how-to-extend-your-wi-fi-network-with-an-old-router-915783308
+
+So 2nd router as as wireless repeater, the channel needs to be different
+or else they would fight with each other. The SSID shouldn't be the same
+as per the article. Most mobile devices supports multiple access point
+profile and they will auto-connect to which ever has greater strength.
+
+I'm pretty sure you are looking at
+http://www.wi-fiplanet.com/tutorials/article.php/3810281
+
+"Technically, when in client mode, your router can only pass the
+incoming wireless signal to clients connected to one of the router's LAN
+ports. To re-broadcast the signal wirelessly, the router would need to
+be configured as a repeater?unfortunately, Tomato does not yet support
+repeater mode."
+
+http://www.linksysinfo.org/index.php?threads/using-tomato-as-wireless-repeater-sort-of.68322/
+
+I don't have a tomato so I wouldn't know, but I've tested it with 2
+DD-WRT, 1 in Primary Gateway (DNS+DHCP) and one acting as wireless
+repeater and it works for me.
+On 1/7/2015 9:22 PM, Thomas Milne wrote:
+>
+> I don't think you understood what I am trying to do. The routers will
+not be physically connected, only over wireless.
+>
+> On Jan 7, 2015 9:19 PM, <littlebear at xxw.ca <mailto:littlebear at xxw.ca>>
+wrote:
+>
+>     ?Plug the second router (acting as switch) WAN port to regular
+port. There should be no WAN Ethernet connected on the second router
+>
+>     Sent from my BlackBerry 10 smartphone.
+>     ?
+>     OpenPGP: 0x1666B6A1
+>     http://xxw.ca/email-public-key/
+>     Email: littlebear at xxw.ca <mailto:littlebear at xxw.ca>
+>     VOIP: (510)-982-6330 <tel:%28510%29-982-6330>
+>       Original Message 
+>     From: Thomas Milne
+>     Sent: Wednesday, January 7, 2015 7:10 PM
+>     To: GTALUG
+>     Reply To: GTALUG Talk
+>     Subject: [GTALUG] Second router as wireless ethernet bridge
+>
+>     Here's another project I'm working on that is driving me around
+the bend.
+>
+>     Sorry this is such a long story...
+>
+>     A computer in our basement has no wireless, so instead of running a
+>     long cable to it, I wanted to put a router beside it and have it
+>     connect to that router by ethernet, and then have that router connect
+>     to the main one over wireless. No, I did not plug the computer into
+>     the WAN port... ;-)
+>
+>     I have an old Linksys router WRT54GL v. 1.1 running Tomato 1.28, and
+>     my main router, the Buffalo N600 which has DD-WRT.
+>
+>     According to about a hundred different howto's it should be very
+simple.
+>
+>     I set the second router to an IP outside the DHCP range of the first,
+>     and set also set it to use the first router as gateway and DNS. I also
+>     set the SSID and password the same, and also the type of security
+>     used. Oh, and obviously I set the second router as 'Wireless Ethernet
+>     Bridge'.
+>
+>     router 1 is 192.168.11.1, router 2 is 192.168.11.2
+>
+>     both have 255.255.255.0 as subnet mask
+>
+>     Router 1 gives out addresses starting at 192.168.11.5
+>
+>     Am I correct in assuming that DHCP broadcasts should be relayed by the
+>     second router? In wireless bridge mode it doesn't appear to even have
+>     the option of offering DHCP...
+>
+>     I noticed that the Buffalo will let you set up a virtual interface, so
+>     I tried using that with no security at all.
+>
+>     I also found something here:
+>
+>    
+http://www.cnet.com/how-to/reuse-an-old-router-to-bridge-devices-to-your-wireless-network/
+>
+>     that said I should set the second router to operate as a router and
+>     not as a gateway so I changed that.
+>
+>     Still no ping response from google.com <http://google.com> :-\
+>
+>     The only thing I can think of is that maybe the firewall settings are
+>     wrong on the second router, running Tomato.
+>
+>     Respond to ICMP is unchecked, Allow Multicast is unchecked, NAT
+>     Loopback is set to Forwarded Only, and Enable SYN cookies is
+>     unchecked.
+>
+>     Help!
+>
+>     --
+>     Thomas Milne
+>     ---
+>     Talk Mailing List
+>     talk at gtalug.org <mailto:talk at gtalug.org>
+>     http://gtalug.org/mailman/listinfo/talk
+>     ---
+>     Talk Mailing List
+>     talk at gtalug.org <mailto:talk at gtalug.org>
+>     http://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+- -- 
+OpenPGP KeyID: 020E 8BD2 F29A 0760 CA67 8056 7FD6 DA22 1666 B6A1
+http://xxw.ca/email-public-key/
+Email: littlebear at xxw.ca
+
+Confidentiality Notice: This e-mail message, including any attachments,
+is for the sole use of the intended recipient(s) and may contain
+confidential and privileged information.  Any unauthorized review, use,
+disclosure or distribution is prohibited.  If you are not the intended
+recipient, please contact the sender by reply e-mail, delete and then
+destroy all copies of the original message.
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.13 (MingW32)
+ 
+iQIcBAEBAgAGBQJUre63AAoJEH/W2iIWZrahOkEP/1YMollS3PmM3Ikzz2Aar1cv
+89rgJQgl6aIEQGUGTGrrjDf5T8U9CnHbQQjyw1pwHTrSzwlhOx7VRI5b5a3zBpyr
+zo8mGkv/irzQ0FEneimxqDkbztbx5U1oFGn//x7f1UpxFyI/G4NQYS8fRqjGXkZb
+RuJnhwO/ZATSFEgmeEDpwuSPA1kgAH37uG712FD/m5mnUmwC98Db+RLrU1oB964X
+JFejIoMjCV3a/M1EkNYSP2FLczvQVWJGr0GPIYYSt43KruMLO3+S7dH3aaJstrhs
+I00OGHQGJsFfCkZb2QEjF+n8Uqy3fZAZmi+grR/Q9NgSCgpOukY63QaJu4Tm/gwz
+CTECwq5CQ4wtBjd1jGAY3GqgodeyJa0jsevDba/YUgiizuf7AWJCs7o80UuEpZSl
+lG/CMe9oI0wHv0lLRnBGWZBSElPoZfXesDPITo3aSt9exYjK0RCjm1wVns4ubMLs
+PdSJBmgUegDVZAoF0TqR4SysqA0yT4673Y0RAv9JIsGZptw5YwBap2XVgBCE/cSE
++ihRDT/agQQvGbwHNwoSuEWiTvEHHx5kw85bAzhlGOujnWA34jSRp0HEd8meeZiY
+u2uJ8IcIoqXwiLtc19NL6EBA/fT8VbJ2b2WvRQN+DO2+P7zA/gumITwB7VcBd0LN
+usDOFuEr5CTAuhNqLg69
+=D1o6
+-----END PGP SIGNATURE-----
+
+
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 03:05:45 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 7 Jan 2015 22:05:45 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <54ADEC78.9090102@rogers.com>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <20150108002058.6082712.65476.1772@xxw.ca>
+ <CAGc8pF7vTTwEquF=sodd_NZUGuwjWO0M+d6nC4b+69085mihRQ@mail.gmail.com>
+ <54ADEC78.9090102@rogers.com>
+Message-ID: <CAGc8pF4JahR8G6n7hnamREd0S9ZBspirU9i8Yz9rZ-anM+ib3g@mail.gmail.com>
+
+On Jan 7, 2015 9:33 PM, "Stephen" <stephen-d at rogers.com> wrote:
+>>
+>>     router 1 is 192.168.11.1, router 2 is 192.168.11.2
+>>
+>>     both have 255.255.255.0 as subnet mask
+>>
+>>     Router 1 gives out addresses starting at 192.168.11.5
+>
+>
+> Try giving the basement computer a static IP of 192.168.11.3 with gateway
+of 192.168.11.2
+
+Well I have my Debian laptop connected to router 2 by ethernet as you
+describe for admin and testing, so ya I can view the router web interface
+and ping the router of course also.
+
+Neither the laptop, nor the wirelessless (tm) computer can access the
+internet this way.
+
+>
+> Make sure that you can ping the basement router
+>
+> Make sure you can access the basement router's control panel
+>
+> Make sure that the basement router has a gateway of 192.168.11.1
+
+Yes
+
+>
+> Use Open DNS on the basement computer
+
+Not sure what you mean, sorry. You mean blank, or use OpenDNS, the company?
+The problem is it can't get past the router it is connected to so...
+
+>
+> Try to ping an external IP
+>
+> Try to ping a domain
+>
+
+Either using gateway of .1 or .2 made no difference at all.
+
+No DNS, nothing. I tried 8.8.8.8, host unreachable.
+
+Thanks for replying! This is driving me bonkers...router 2 will not
+communicate with router 1 and I can't see why.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150107/4037d76f/attachment.html>
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 03:11:52 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 7 Jan 2015 22:11:52 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <54ADEEB8.2090700@xxw.ca>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <20150108002058.6082712.65476.1772@xxw.ca>
+ <CAGc8pF7vTTwEquF=sodd_NZUGuwjWO0M+d6nC4b+69085mihRQ@mail.gmail.com>
+ <54ADEEB8.2090700@xxw.ca>
+Message-ID: <CAGc8pF7Q8GCiOH_MKxgzwQE63K5YiB6Mn3JwpWhNhMyGaENJ6A@mail.gmail.com>
+
+On Jan 7, 2015 9:43 PM, "Little Bear" <littlebear at xxw.ca> wrote:
+>
+>
+> -----BEGIN PGP SIGNED MESSAGE-----
+> Hash: SHA1
+>
+> Sorry, wasn't thinking when I typed it. Did you try
+>
+http://lifehacker.com/how-to-extend-your-wi-fi-network-with-an-old-router-915783308
+>
+> So 2nd router as as wireless repeater, the channel needs to be different
+> or else they would fight with each other. The SSID shouldn't be the same
+> as per the article. Most mobile devices supports multiple access point
+> profile and they will auto-connect to which ever has greater strength.
+>
+> I'm pretty sure you are looking at
+> http://www.wi-fiplanet.com/tutorials/article.php/3810281
+>
+> "Technically, when in client mode, your router can only pass the
+> incoming wireless signal to clients connected to one of the router's LAN
+> ports. To re-broadcast the signal wirelessly, the router would need to
+> be configured as a repeater?unfortunately, Tomato does not yet support
+> repeater mode."
+>
+
+Well that's exactly what I am doing though. The computer WILL be connected
+to router 2 by ethernet, as it does not have wireless. If it did, I would
+not have this problem.
+
+I do not want a repeater. I want a bridge :-)
+
+That's also why both routers must have same SSID and pass.
+
+>
+http://www.linksysinfo.org/index.php?threads/using-tomato-as-wireless-repeater-sort-of.68322/
+>
+> I don't have a tomato so I wouldn't know, but I've tested it with 2
+> DD-WRT, 1 in Primary Gateway (DNS+DHCP) and one acting as wireless
+> repeater and it works for me.
+> On 1/7/2015 9:22 PM, Thomas Milne wrote:
+> >
+> > I don't think you understood what I am trying to do. The routers will
+> not be physically connected, only over wireless.
+> >
+> > On Jan 7, 2015 9:19 PM, <littlebear at xxw.ca <mailto:littlebear at xxw.ca>>
+> wrote:
+> >
+> >     ?Plug the second router (acting as switch) WAN port to regular
+> port. There should be no WAN Ethernet connected on the second router
+> >
+> >     Sent from my BlackBerry 10 smartphone.
+> >     ?
+> >     OpenPGP: 0x1666B6A1
+> >     http://xxw.ca/email-public-key/
+> >     Email: littlebear at xxw.ca <mailto:littlebear at xxw.ca>
+> >     VOIP: (510)-982-6330 <tel:%28510%29-982-6330>
+> >       Original Message
+> >     From: Thomas Milne
+> >     Sent: Wednesday, January 7, 2015 7:10 PM
+> >     To: GTALUG
+> >     Reply To: GTALUG Talk
+> >     Subject: [GTALUG] Second router as wireless ethernet bridge
+> >
+> >     Here's another project I'm working on that is driving me around
+> the bend.
+> >
+> >     Sorry this is such a long story...
+> >
+> >     A computer in our basement has no wireless, so instead of running a
+> >     long cable to it, I wanted to put a router beside it and have it
+> >     connect to that router by ethernet, and then have that router
+connect
+> >     to the main one over wireless. No, I did not plug the computer into
+> >     the WAN port... ;-)
+> >
+> >     I have an old Linksys router WRT54GL v. 1.1 running Tomato 1.28, and
+> >     my main router, the Buffalo N600 which has DD-WRT.
+> >
+> >     According to about a hundred different howto's it should be very
+> simple.
+> >
+> >     I set the second router to an IP outside the DHCP range of the
+first,
+> >     and set also set it to use the first router as gateway and DNS. I
+also
+> >     set the SSID and password the same, and also the type of security
+> >     used. Oh, and obviously I set the second router as 'Wireless
+Ethernet
+> >     Bridge'.
+> >
+> >     router 1 is 192.168.11.1, router 2 is 192.168.11.2
+> >
+> >     both have 255.255.255.0 as subnet mask
+> >
+> >     Router 1 gives out addresses starting at 192.168.11.5
+> >
+> >     Am I correct in assuming that DHCP broadcasts should be relayed by
+the
+> >     second router? In wireless bridge mode it doesn't appear to even
+have
+> >     the option of offering DHCP...
+> >
+> >     I noticed that the Buffalo will let you set up a virtual interface,
+so
+> >     I tried using that with no security at all.
+> >
+> >     I also found something here:
+> >
+> >
+>
+http://www.cnet.com/how-to/reuse-an-old-router-to-bridge-devices-to-your-wireless-network/
+> >
+> >     that said I should set the second router to operate as a router and
+> >     not as a gateway so I changed that.
+> >
+> >     Still no ping response from google.com <http://google.com> :-\
+> >
+> >     The only thing I can think of is that maybe the firewall settings
+are
+> >     wrong on the second router, running Tomato.
+> >
+> >     Respond to ICMP is unchecked, Allow Multicast is unchecked, NAT
+> >     Loopback is set to Forwarded Only, and Enable SYN cookies is
+> >     unchecked.
+> >
+> >     Help!
+> >
+> >     --
+> >     Thomas Milne
+> >     ---
+> >     Talk Mailing List
+> >     talk at gtalug.org <mailto:talk at gtalug.org>
+> >     http://gtalug.org/mailman/listinfo/talk
+> >     ---
+> >     Talk Mailing List
+> >     talk at gtalug.org <mailto:talk at gtalug.org>
+> >     http://gtalug.org/mailman/listinfo/talk
+> >
+> >
+> >
+> > ---
+> > Talk Mailing List
+> > talk at gtalug.org
+> > http://gtalug.org/mailman/listinfo/talk
+>
+> - --
+> OpenPGP KeyID: 020E 8BD2 F29A 0760 CA67 8056 7FD6 DA22 1666 B6A1
+> http://xxw.ca/email-public-key/
+> Email: littlebear at xxw.ca
+>
+> Confidentiality Notice: This e-mail message, including any attachments,
+> is for the sole use of the intended recipient(s) and may contain
+> confidential and privileged information.  Any unauthorized review, use,
+> disclosure or distribution is prohibited.  If you are not the intended
+> recipient, please contact the sender by reply e-mail, delete and then
+> destroy all copies of the original message.
+> -----BEGIN PGP SIGNATURE-----
+> Version: GnuPG v1.4.13 (MingW32)
+>
+> iQIcBAEBAgAGBQJUre63AAoJEH/W2iIWZrahOkEP/1YMollS3PmM3Ikzz2Aar1cv
+> 89rgJQgl6aIEQGUGTGrrjDf5T8U9CnHbQQjyw1pwHTrSzwlhOx7VRI5b5a3zBpyr
+> zo8mGkv/irzQ0FEneimxqDkbztbx5U1oFGn//x7f1UpxFyI/G4NQYS8fRqjGXkZb
+> RuJnhwO/ZATSFEgmeEDpwuSPA1kgAH37uG712FD/m5mnUmwC98Db+RLrU1oB964X
+> JFejIoMjCV3a/M1EkNYSP2FLczvQVWJGr0GPIYYSt43KruMLO3+S7dH3aaJstrhs
+> I00OGHQGJsFfCkZb2QEjF+n8Uqy3fZAZmi+grR/Q9NgSCgpOukY63QaJu4Tm/gwz
+> CTECwq5CQ4wtBjd1jGAY3GqgodeyJa0jsevDba/YUgiizuf7AWJCs7o80UuEpZSl
+> lG/CMe9oI0wHv0lLRnBGWZBSElPoZfXesDPITo3aSt9exYjK0RCjm1wVns4ubMLs
+> PdSJBmgUegDVZAoF0TqR4SysqA0yT4673Y0RAv9JIsGZptw5YwBap2XVgBCE/cSE
+> +ihRDT/agQQvGbwHNwoSuEWiTvEHHx5kw85bAzhlGOujnWA34jSRp0HEd8meeZiY
+> u2uJ8IcIoqXwiLtc19NL6EBA/fT8VbJ2b2WvRQN+DO2+P7zA/gumITwB7VcBd0LN
+> usDOFuEr5CTAuhNqLg69
+> =D1o6
+> -----END PGP SIGNATURE-----
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150107/fce856e8/attachment.html>
+
+From scott at ss.org  Thu Jan  8 03:20:05 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Wed, 07 Jan 2015 22:20:05 -0500
+Subject: [GTALUG] War story: OpenWRT USB access
+In-Reply-To: <alpine.LRH.2.02.1501071344200.26772@redclaw.mimosa.com>
+References: <CAEnxSC4_wy6OkHev+EVih59K0xemRNBY4wgaUzyAV3JCKa=dvQ@mail.gmail.com>
+ <alpine.LRH.2.02.1501071344200.26772@redclaw.mimosa.com>
+Message-ID: <54ADF765.5020903@ss.org>
+
+On 01/07/2015 01:52 PM, D. Hugh Redelmeier wrote:
+> | From: Giles Orr <gilesorr at gmail.com>
+> | I'm willing to try anything by this point, so I installed:
+> |
+> | kmod-nls-iso8859-1
+> | kmod-nls-cp437
+> |
+> | Test again, and ... I can mount USB storage devices!
+>
+> Wow.
+>
+> I wonder how you could have figured this out (except via folklore).
+>
+> Since it is a kernel module that is missing the nls-* modules, the
+> only ways of reporting the problem are: EWHATEVER return code (rather
+> non-specific) or logging (would have to be rate-limited).  I guess
+> neither of these were used.
+>
+> Can you fix the web page that gave you the first hints to include the
+> lore about nls-*?
+
+I remember going through this very same series of events as Giles. It 
+was a few years ago with the TP-Link MR-3020, which I was setting up as 
+a portable PXE boot server.
+
+I was going through various parts of the wiki on that, but found the 
+need information was covered in comprehensive document. Ah yes, this 
+looks to be the one.
+
+http://wiki.openwrt.org/doc/howto/storage
+
+Also relevant, but assumes ext a linux-ish file systems, so doesn't 
+mention VFAT or it's NLS needs.
+
+http://wiki.openwrt.org/doc/howto/usb.storage
+
+-- 
+Scott Sullivan
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 03:23:37 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 7 Jan 2015 22:23:37 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <54ADEEB8.2090700@xxw.ca>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <20150108002058.6082712.65476.1772@xxw.ca>
+ <CAGc8pF7vTTwEquF=sodd_NZUGuwjWO0M+d6nC4b+69085mihRQ@mail.gmail.com>
+ <54ADEEB8.2090700@xxw.ca>
+Message-ID: <CAGc8pF4Gv=zp_aKw0LMAVtVGy=wyP3sGv4vt06m-PNaRbdX39g@mail.gmail.com>
+
+On Jan 7, 2015 9:43 PM, "Little Bear" <littlebear at xxw.ca> wrote:
+>
+>
+> -----BEGIN PGP SIGNED MESSAGE-----
+> Hash: SHA1
+>
+> Sorry, wasn't thinking when I typed it. Did you try
+>
+http://lifehacker.com/how-to-extend-your-wi-fi-network-with-an-old-router-915783308
+>
+> So 2nd router as as wireless repeater, the channel needs to be different
+> or else they would fight with each other. The SSID shouldn't be the same
+> as per the article. Most mobile devices supports multiple access point
+> profile and they will auto-connect to which ever has greater strength.
+>
+> I'm pretty sure you are looking at
+> http://www.wi-fiplanet.com/tutorials/article.php/3810281
+>
+
+Oh hey now that is interesting. This has given me a clue. I can look in
+Wireless Survey in the Tomato interface of router 2 and see router 1.
+
+So...that is something.
+
+> "Technically, when in client mode, your router can only pass the
+> incoming wireless signal to clients connected to one of the router's LAN
+> ports. To re-broadcast the signal wirelessly, the router would need to
+> be configured as a repeater?unfortunately, Tomato does not yet support
+> repeater mode."
+>
+>
+http://www.linksysinfo.org/index.php?threads/using-tomato-as-wireless-repeater-sort-of.68322/
+>
+> I don't have a tomato so I wouldn't know, but I've tested it with 2
+> DD-WRT, 1 in Primary Gateway (DNS+DHCP) and one acting as wireless
+> repeater and it works for me.
+> On 1/7/2015 9:22 PM, Thomas Milne wrote:
+> >
+> > I don't think you understood what I am trying to do. The routers will
+> not be physically connected, only over wireless.
+> >
+> > On Jan 7, 2015 9:19 PM, <littlebear at xxw.ca <mailto:littlebear at xxw.ca>>
+> wrote:
+> >
+> >     ?Plug the second router (acting as switch) WAN port to regular
+> port. There should be no WAN Ethernet connected on the second router
+> >
+> >     Sent from my BlackBerry 10 smartphone.
+> >     ?
+> >     OpenPGP: 0x1666B6A1
+> >     http://xxw.ca/email-public-key/
+> >     Email: littlebear at xxw.ca <mailto:littlebear at xxw.ca>
+> >     VOIP: (510)-982-6330 <tel:%28510%29-982-6330>
+> >       Original Message
+> >     From: Thomas Milne
+> >     Sent: Wednesday, January 7, 2015 7:10 PM
+> >     To: GTALUG
+> >     Reply To: GTALUG Talk
+> >     Subject: [GTALUG] Second router as wireless ethernet bridge
+> >
+> >     Here's another project I'm working on that is driving me around
+> the bend.
+> >
+> >     Sorry this is such a long story...
+> >
+> >     A computer in our basement has no wireless, so instead of running a
+> >     long cable to it, I wanted to put a router beside it and have it
+> >     connect to that router by ethernet, and then have that router
+connect
+> >     to the main one over wireless. No, I did not plug the computer into
+> >     the WAN port... ;-)
+> >
+> >     I have an old Linksys router WRT54GL v. 1.1 running Tomato 1.28, and
+> >     my main router, the Buffalo N600 which has DD-WRT.
+> >
+> >     According to about a hundred different howto's it should be very
+> simple.
+> >
+> >     I set the second router to an IP outside the DHCP range of the
+first,
+> >     and set also set it to use the first router as gateway and DNS. I
+also
+> >     set the SSID and password the same, and also the type of security
+> >     used. Oh, and obviously I set the second router as 'Wireless
+Ethernet
+> >     Bridge'.
+> >
+> >     router 1 is 192.168.11.1, router 2 is 192.168.11.2
+> >
+> >     both have 255.255.255.0 as subnet mask
+> >
+> >     Router 1 gives out addresses starting at 192.168.11.5
+> >
+> >     Am I correct in assuming that DHCP broadcasts should be relayed by
+the
+> >     second router? In wireless bridge mode it doesn't appear to even
+have
+> >     the option of offering DHCP...
+> >
+> >     I noticed that the Buffalo will let you set up a virtual interface,
+so
+> >     I tried using that with no security at all.
+> >
+> >     I also found something here:
+> >
+> >
+>
+http://www.cnet.com/how-to/reuse-an-old-router-to-bridge-devices-to-your-wireless-network/
+> >
+> >     that said I should set the second router to operate as a router and
+> >     not as a gateway so I changed that.
+> >
+> >     Still no ping response from google.com <http://google.com> :-\
+> >
+> >     The only thing I can think of is that maybe the firewall settings
+are
+> >     wrong on the second router, running Tomato.
+> >
+> >     Respond to ICMP is unchecked, Allow Multicast is unchecked, NAT
+> >     Loopback is set to Forwarded Only, and Enable SYN cookies is
+> >     unchecked.
+> >
+> >     Help!
+> >
+> >     --
+> >     Thomas Milne
+> >     ---
+> >     Talk Mailing List
+> >     talk at gtalug.org <mailto:talk at gtalug.org>
+> >     http://gtalug.org/mailman/listinfo/talk
+> >     ---
+> >     Talk Mailing List
+> >     talk at gtalug.org <mailto:talk at gtalug.org>
+> >     http://gtalug.org/mailman/listinfo/talk
+> >
+> >
+> >
+> > ---
+> > Talk Mailing List
+> > talk at gtalug.org
+> > http://gtalug.org/mailman/listinfo/talk
+>
+> - --
+> OpenPGP KeyID: 020E 8BD2 F29A 0760 CA67 8056 7FD6 DA22 1666 B6A1
+> http://xxw.ca/email-public-key/
+> Email: littlebear at xxw.ca
+>
+> Confidentiality Notice: This e-mail message, including any attachments,
+> is for the sole use of the intended recipient(s) and may contain
+> confidential and privileged information.  Any unauthorized review, use,
+> disclosure or distribution is prohibited.  If you are not the intended
+> recipient, please contact the sender by reply e-mail, delete and then
+> destroy all copies of the original message.
+> -----BEGIN PGP SIGNATURE-----
+> Version: GnuPG v1.4.13 (MingW32)
+>
+> iQIcBAEBAgAGBQJUre63AAoJEH/W2iIWZrahOkEP/1YMollS3PmM3Ikzz2Aar1cv
+> 89rgJQgl6aIEQGUGTGrrjDf5T8U9CnHbQQjyw1pwHTrSzwlhOx7VRI5b5a3zBpyr
+> zo8mGkv/irzQ0FEneimxqDkbztbx5U1oFGn//x7f1UpxFyI/G4NQYS8fRqjGXkZb
+> RuJnhwO/ZATSFEgmeEDpwuSPA1kgAH37uG712FD/m5mnUmwC98Db+RLrU1oB964X
+> JFejIoMjCV3a/M1EkNYSP2FLczvQVWJGr0GPIYYSt43KruMLO3+S7dH3aaJstrhs
+> I00OGHQGJsFfCkZb2QEjF+n8Uqy3fZAZmi+grR/Q9NgSCgpOukY63QaJu4Tm/gwz
+> CTECwq5CQ4wtBjd1jGAY3GqgodeyJa0jsevDba/YUgiizuf7AWJCs7o80UuEpZSl
+> lG/CMe9oI0wHv0lLRnBGWZBSElPoZfXesDPITo3aSt9exYjK0RCjm1wVns4ubMLs
+> PdSJBmgUegDVZAoF0TqR4SysqA0yT4673Y0RAv9JIsGZptw5YwBap2XVgBCE/cSE
+> +ihRDT/agQQvGbwHNwoSuEWiTvEHHx5kw85bAzhlGOujnWA34jSRp0HEd8meeZiY
+> u2uJ8IcIoqXwiLtc19NL6EBA/fT8VbJ2b2WvRQN+DO2+P7zA/gumITwB7VcBd0LN
+> usDOFuEr5CTAuhNqLg69
+> =D1o6
+> -----END PGP SIGNATURE-----
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150107/a1da39e8/attachment.html>
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 03:43:25 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 7 Jan 2015 22:43:25 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <CAGc8pF4JahR8G6n7hnamREd0S9ZBspirU9i8Yz9rZ-anM+ib3g@mail.gmail.com>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <20150108002058.6082712.65476.1772@xxw.ca>
+ <CAGc8pF7vTTwEquF=sodd_NZUGuwjWO0M+d6nC4b+69085mihRQ@mail.gmail.com>
+ <54ADEC78.9090102@rogers.com>
+ <CAGc8pF4JahR8G6n7hnamREd0S9ZBspirU9i8Yz9rZ-anM+ib3g@mail.gmail.com>
+Message-ID: <CAGc8pF5d6Ywaj-_hFWYgPppNKmUKzty=Ofi1zXuPVjcZXfhYzQ@mail.gmail.com>
+
+On Wed, Jan 7, 2015 at 10:05 PM, Thomas Milne
+<thomas.bruce.milne at gmail.com> wrote:
+>
+> On Jan 7, 2015 9:33 PM, "Stephen" <stephen-d at rogers.com> wrote:
+>>>
+>>>     router 1 is 192.168.11.1, router 2 is 192.168.11.2
+>>>
+>>>     both have 255.255.255.0 as subnet mask
+>>>
+>>>     Router 1 gives out addresses starting at 192.168.11.5
+>>
+>>
+>> Try giving the basement computer a static IP of 192.168.11.3 with gateway
+>> of 192.168.11.2
+>
+> Well I have my Debian laptop connected to router 2 by ethernet as you
+> describe for admin and testing, so ya I can view the router web interface
+> and ping the router of course also.
+>
+> Neither the laptop, nor the wirelessless (tm) computer can access the
+> internet this way.
+>
+>>
+>> Make sure that you can ping the basement router
+>>
+>> Make sure you can access the basement router's control panel
+>>
+>> Make sure that the basement router has a gateway of 192.168.11.1
+>
+> Yes
+>
+>>
+>> Use Open DNS on the basement computer
+>
+> Not sure what you mean, sorry. You mean blank, or use OpenDNS, the company?
+> The problem is it can't get past the router it is connected to so...
+>
+>>
+>> Try to ping an external IP
+>>
+>> Try to ping a domain
+>>
+>
+> Either using gateway of .1 or .2 made no difference at all.
+>
+> No DNS, nothing. I tried 8.8.8.8, host unreachable.
+>
+> Thanks for replying! This is driving me bonkers...router 2 will not
+> communicate with router 1 and I can't see why.
+
+Could the problem be that router 1 is dual band? ie. it has two
+SSID's, one for 2.4 and one for 5 GHz.
+
+-- 
+Thomas Milne
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 03:44:32 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 7 Jan 2015 22:44:32 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <54ADEEB8.2090700@xxw.ca>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <20150108002058.6082712.65476.1772@xxw.ca>
+ <CAGc8pF7vTTwEquF=sodd_NZUGuwjWO0M+d6nC4b+69085mihRQ@mail.gmail.com>
+ <54ADEEB8.2090700@xxw.ca>
+Message-ID: <CAGc8pF4vuZ8UEFchfEu_AR3vwoK4qZh5-Ekt87WGgRkkdASNtw@mail.gmail.com>
+
+On Wed, Jan 7, 2015 at 9:43 PM, Little Bear <littlebear at xxw.ca> wrote:
+>
+> -----BEGIN PGP SIGNED MESSAGE-----
+> Hash: SHA1
+>
+> Sorry, wasn't thinking when I typed it. Did you try
+> http://lifehacker.com/how-to-extend-your-wi-fi-network-with-an-old-router-915783308
+>
+> So 2nd router as as wireless repeater, the channel needs to be different
+> or else they would fight with each other. The SSID shouldn't be the same
+> as per the article. Most mobile devices supports multiple access point
+> profile and they will auto-connect to which ever has greater strength.
+>
+> I'm pretty sure you are looking at
+> http://www.wi-fiplanet.com/tutorials/article.php/3810281
+
+Thank you very much for this link, BTW
+>
+> "Technically, when in client mode, your router can only pass the
+> incoming wireless signal to clients connected to one of the router's LAN
+> ports. To re-broadcast the signal wirelessly, the router would need to
+> be configured as a repeater?unfortunately, Tomato does not yet support
+> repeater mode."
+>
+> http://www.linksysinfo.org/index.php?threads/using-tomato-as-wireless-repeater-sort-of.68322/
+>
+> I don't have a tomato so I wouldn't know, but I've tested it with 2
+> DD-WRT, 1 in Primary Gateway (DNS+DHCP) and one acting as wireless
+> repeater and it works for me.
+> On 1/7/2015 9:22 PM, Thomas Milne wrote:
+>>
+>> I don't think you understood what I am trying to do. The routers will
+> not be physically connected, only over wireless.
+>>
+>> On Jan 7, 2015 9:19 PM, <littlebear at xxw.ca <mailto:littlebear at xxw.ca>>
+> wrote:
+>>
+>>     ?Plug the second router (acting as switch) WAN port to regular
+> port. There should be no WAN Ethernet connected on the second router
+>>
+>>     Sent from my BlackBerry 10 smartphone.
+>>     ?
+>>     OpenPGP: 0x1666B6A1
+>>     http://xxw.ca/email-public-key/
+>>     Email: littlebear at xxw.ca <mailto:littlebear at xxw.ca>
+>>     VOIP: (510)-982-6330 <tel:%28510%29-982-6330>
+>>       Original Message
+>>     From: Thomas Milne
+>>     Sent: Wednesday, January 7, 2015 7:10 PM
+>>     To: GTALUG
+>>     Reply To: GTALUG Talk
+>>     Subject: [GTALUG] Second router as wireless ethernet bridge
+>>
+>>     Here's another project I'm working on that is driving me around
+> the bend.
+>>
+>>     Sorry this is such a long story...
+>>
+>>     A computer in our basement has no wireless, so instead of running a
+>>     long cable to it, I wanted to put a router beside it and have it
+>>     connect to that router by ethernet, and then have that router connect
+>>     to the main one over wireless. No, I did not plug the computer into
+>>     the WAN port... ;-)
+>>
+>>     I have an old Linksys router WRT54GL v. 1.1 running Tomato 1.28, and
+>>     my main router, the Buffalo N600 which has DD-WRT.
+>>
+>>     According to about a hundred different howto's it should be very
+> simple.
+>>
+>>     I set the second router to an IP outside the DHCP range of the first,
+>>     and set also set it to use the first router as gateway and DNS. I also
+>>     set the SSID and password the same, and also the type of security
+>>     used. Oh, and obviously I set the second router as 'Wireless Ethernet
+>>     Bridge'.
+>>
+>>     router 1 is 192.168.11.1, router 2 is 192.168.11.2
+>>
+>>     both have 255.255.255.0 as subnet mask
+>>
+>>     Router 1 gives out addresses starting at 192.168.11.5
+>>
+>>     Am I correct in assuming that DHCP broadcasts should be relayed by the
+>>     second router? In wireless bridge mode it doesn't appear to even have
+>>     the option of offering DHCP...
+>>
+>>     I noticed that the Buffalo will let you set up a virtual interface, so
+>>     I tried using that with no security at all.
+>>
+>>     I also found something here:
+>>
+>>
+> http://www.cnet.com/how-to/reuse-an-old-router-to-bridge-devices-to-your-wireless-network/
+>>
+>>     that said I should set the second router to operate as a router and
+>>     not as a gateway so I changed that.
+>>
+>>     Still no ping response from google.com <http://google.com> :-\
+>>
+>>     The only thing I can think of is that maybe the firewall settings are
+>>     wrong on the second router, running Tomato.
+>>
+>>     Respond to ICMP is unchecked, Allow Multicast is unchecked, NAT
+>>     Loopback is set to Forwarded Only, and Enable SYN cookies is
+>>     unchecked.
+>>
+>>     Help!
+>>
+>>     --
+>>     Thomas Milne
+>>     ---
+>>     Talk Mailing List
+>>     talk at gtalug.org <mailto:talk at gtalug.org>
+>>     http://gtalug.org/mailman/listinfo/talk
+>>     ---
+>>     Talk Mailing List
+>>     talk at gtalug.org <mailto:talk at gtalug.org>
+>>     http://gtalug.org/mailman/listinfo/talk
+>>
+>>
+>>
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>
+> - --
+> OpenPGP KeyID: 020E 8BD2 F29A 0760 CA67 8056 7FD6 DA22 1666 B6A1
+> http://xxw.ca/email-public-key/
+> Email: littlebear at xxw.ca
+>
+> Confidentiality Notice: This e-mail message, including any attachments,
+> is for the sole use of the intended recipient(s) and may contain
+> confidential and privileged information.  Any unauthorized review, use,
+> disclosure or distribution is prohibited.  If you are not the intended
+> recipient, please contact the sender by reply e-mail, delete and then
+> destroy all copies of the original message.
+> -----BEGIN PGP SIGNATURE-----
+> Version: GnuPG v1.4.13 (MingW32)
+>
+> iQIcBAEBAgAGBQJUre63AAoJEH/W2iIWZrahOkEP/1YMollS3PmM3Ikzz2Aar1cv
+> 89rgJQgl6aIEQGUGTGrrjDf5T8U9CnHbQQjyw1pwHTrSzwlhOx7VRI5b5a3zBpyr
+> zo8mGkv/irzQ0FEneimxqDkbztbx5U1oFGn//x7f1UpxFyI/G4NQYS8fRqjGXkZb
+> RuJnhwO/ZATSFEgmeEDpwuSPA1kgAH37uG712FD/m5mnUmwC98Db+RLrU1oB964X
+> JFejIoMjCV3a/M1EkNYSP2FLczvQVWJGr0GPIYYSt43KruMLO3+S7dH3aaJstrhs
+> I00OGHQGJsFfCkZb2QEjF+n8Uqy3fZAZmi+grR/Q9NgSCgpOukY63QaJu4Tm/gwz
+> CTECwq5CQ4wtBjd1jGAY3GqgodeyJa0jsevDba/YUgiizuf7AWJCs7o80UuEpZSl
+> lG/CMe9oI0wHv0lLRnBGWZBSElPoZfXesDPITo3aSt9exYjK0RCjm1wVns4ubMLs
+> PdSJBmgUegDVZAoF0TqR4SysqA0yT4673Y0RAv9JIsGZptw5YwBap2XVgBCE/cSE
+> +ihRDT/agQQvGbwHNwoSuEWiTvEHHx5kw85bAzhlGOujnWA34jSRp0HEd8meeZiY
+> u2uJ8IcIoqXwiLtc19NL6EBA/fT8VbJ2b2WvRQN+DO2+P7zA/gumITwB7VcBd0LN
+> usDOFuEr5CTAuhNqLg69
+> =D1o6
+> -----END PGP SIGNATURE-----
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+
+-- 
+Thomas Milne
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 03:50:30 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 7 Jan 2015 22:50:30 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <54ADEEB8.2090700@xxw.ca>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <20150108002058.6082712.65476.1772@xxw.ca>
+ <CAGc8pF7vTTwEquF=sodd_NZUGuwjWO0M+d6nC4b+69085mihRQ@mail.gmail.com>
+ <54ADEEB8.2090700@xxw.ca>
+Message-ID: <CAGc8pF5XpvC9jRCUmjufXf-ffw_=DdN4yUycKiu2BOF_1ROfuA@mail.gmail.com>
+
+On Wed, Jan 7, 2015 at 9:43 PM, Little Bear <littlebear at xxw.ca> wrote:
+>
+> -----BEGIN PGP SIGNED MESSAGE-----
+> Hash: SHA1
+>
+> Sorry, wasn't thinking when I typed it. Did you try
+> http://lifehacker.com/how-to-extend-your-wi-fi-network-with-an-old-router-915783308
+>
+> So 2nd router as as wireless repeater, the channel needs to be different
+> or else they would fight with each other. The SSID shouldn't be the same
+> as per the article. Most mobile devices supports multiple access point
+> profile and they will auto-connect to which ever has greater strength.
+>
+> I'm pretty sure you are looking at
+> http://www.wi-fiplanet.com/tutorials/article.php/3810281
+>
+
+Oh, my gosh I am so sorry to everyone. I have been neglecting to snip
+and when I went to do it the last message instead of backspace I hit
+something else and sent with all the accompanying stuff that I
+intended to snip.
+
+It is not entirely my fault...top posting...and so on ;)
+
+This is just to show that I do in fact know how to snip.
+
+Good night for now
+
+-- 
+Thomas Milne
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 04:48:01 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 7 Jan 2015 23:48:01 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <CAGc8pF5XpvC9jRCUmjufXf-ffw_=DdN4yUycKiu2BOF_1ROfuA@mail.gmail.com>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <20150108002058.6082712.65476.1772@xxw.ca>
+ <CAGc8pF7vTTwEquF=sodd_NZUGuwjWO0M+d6nC4b+69085mihRQ@mail.gmail.com>
+ <54ADEEB8.2090700@xxw.ca>
+ <CAGc8pF5XpvC9jRCUmjufXf-ffw_=DdN4yUycKiu2BOF_1ROfuA@mail.gmail.com>
+Message-ID: <CAGc8pF4x9Lpskok09mPpRaR7+zP4QJ=JmPaZfNueD9nQo2mh_w@mail.gmail.com>
+
+On Wed, Jan 7, 2015 at 10:50 PM, Thomas Milne
+<thomas.bruce.milne at gmail.com> wrote:
+> On Wed, Jan 7, 2015 at 9:43 PM, Little Bear <littlebear at xxw.ca> wrote:
+>>
+>> -----BEGIN PGP SIGNED MESSAGE-----
+>> Hash: SHA1
+>>
+>> Sorry, wasn't thinking when I typed it. Did you try
+>> http://lifehacker.com/how-to-extend-your-wi-fi-network-with-an-old-router-915783308
+>>
+>> So 2nd router as as wireless repeater, the channel needs to be different
+>> or else they would fight with each other. The SSID shouldn't be the same
+>> as per the article. Most mobile devices supports multiple access point
+>> profile and they will auto-connect to which ever has greater strength.
+>>
+>> I'm pretty sure you are looking at
+>> http://www.wi-fiplanet.com/tutorials/article.php/3810281
+>>
+>
+> Oh, my gosh I am so sorry to everyone. I have been neglecting to snip
+> and when I went to do it the last message instead of backspace I hit
+> something else and sent with all the accompanying stuff that I
+> intended to snip.
+>
+> It is not entirely my fault...top posting...and so on ;)
+>
+> This is just to show that I do in fact know how to snip.
+>
+> Good night for now
+>
+
+Couldn't let it go.
+
+Okay so without any security enabled it works. Really really well in
+fact, I'm getting full speed down here.
+
+I will continue fiddling with it until it breaks again, of course.
+
+-- 
+Thomas Milne
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 06:57:21 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Thu, 8 Jan 2015 01:57:21 -0500
+Subject: [GTALUG] Linksys 1200AC, an inexpensive,
+	open-source 802.11ac Wi-Fi router
+Message-ID: <CAGc8pF7RYQiM43L73WW=t=VcQRooTASmo4ToFawis8YRNXJtvQ@mail.gmail.com>
+
+"The dual 2.4 and 5GHz band AC1200 router is powered by an ARM 1.3GHz
+Dual-Core Processor. This is backed by 128MB of Flash memory, 512MB
+DDR3 RAM. A Belkin product manager said that the memory can be
+upgraded. It also comes with eSATA/USB 2.0 and USB 3.0 ports, four
+Gigabit Ethernet ports and a Gigabit WAN port."
+
+Daaayum
+
+http://www.zdnet.com/article/ces-2015-linksys-1200ac-an-inexpensive-open-source-802-11ac-wi-fi-router/
+
+-- 
+Thomas Milne
+
