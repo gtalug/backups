@@ -4764,3 +4764,736 @@ http://www.zdnet.com/article/ces-2015-linksys-1200ac-an-inexpensive-open-source-
 -- 
 Thomas Milne
 
+From gilesorr at gmail.com  Thu Jan  8 12:37:21 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Thu, 8 Jan 2015 07:37:21 -0500
+Subject: [GTALUG] Linksys 1200AC, an inexpensive,
+ open-source 802.11ac Wi-Fi router
+In-Reply-To: <CAGc8pF7RYQiM43L73WW=t=VcQRooTASmo4ToFawis8YRNXJtvQ@mail.gmail.com>
+References: <CAGc8pF7RYQiM43L73WW=t=VcQRooTASmo4ToFawis8YRNXJtvQ@mail.gmail.com>
+Message-ID: <CAEnxSC6oLYLsKz9a2J+aJjPetSTDctbWpJccfZQyYc3x7V-ztQ@mail.gmail.com>
+
+On 8 January 2015 at 01:57, Thomas Milne <thomas.bruce.milne at gmail.com> wrote:
+> "The dual 2.4 and 5GHz band AC1200 router is powered by an ARM 1.3GHz
+> Dual-Core Processor. This is backed by 128MB of Flash memory, 512MB
+> DDR3 RAM. A Belkin product manager said that the memory can be
+> upgraded. It also comes with eSATA/USB 2.0 and USB 3.0 ports, four
+> Gigabit Ethernet ports and a Gigabit WAN port."
+>
+> Daaayum
+>
+> http://www.zdnet.com/article/ces-2015-linksys-1200ac-an-inexpensive-open-source-802-11ac-wi-fi-router/
+
+The 1900AC was a rolling disaster (although this article claims it's
+all sorted now, and a look at the OpenWRT documentation seems to
+concur): I'd definitely take this with a grain of salt and let someone
+else break the ground on it.  Linksys wanted to regain the popularity
+they had with the WRT54G, but bungled both the initial release and the
+price point.  Let's hope this is better.  And I admit the price is
+better, the amount of memory is pretty huge and eSATA/USB3 are a nice
+addition.
+
+It's unlikely I'd be buying: I just purchased the previously mentioned
+TP-Link - which is available now and known to work (which I like
+better than "is promised to work," like the wrt1200ac).
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From james.knott at rogers.com  Thu Jan  8 13:27:41 2015
+From: james.knott at rogers.com (James Knott)
+Date: Thu, 08 Jan 2015 08:27:41 -0500
+Subject: [GTALUG] Linksys 1200AC, an inexpensive,
+ open-source 802.11ac Wi-Fi router
+In-Reply-To: <CAEnxSC6oLYLsKz9a2J+aJjPetSTDctbWpJccfZQyYc3x7V-ztQ@mail.gmail.com>
+References: <CAGc8pF7RYQiM43L73WW=t=VcQRooTASmo4ToFawis8YRNXJtvQ@mail.gmail.com>
+ <CAEnxSC6oLYLsKz9a2J+aJjPetSTDctbWpJccfZQyYc3x7V-ztQ@mail.gmail.com>
+Message-ID: <54AE85CD.2060107@rogers.com>
+
+On 01/08/2015 07:37 AM, Giles Orr wrote:
+> Linksys wanted to regain the popularity
+> they had with the WRT54G, but bungled both the initial release and the
+> price point.
+
+It's also ugly.  ;-)
+
+From lsorense at csclub.uwaterloo.ca  Thu Jan  8 15:28:06 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 8 Jan 2015 10:28:06 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+Message-ID: <20150108152806.GG30246@csclub.uwaterloo.ca>
+
+On Wed, Jan 07, 2015 at 07:10:09PM -0500, Thomas Milne wrote:
+> Here's another project I'm working on that is driving me around the bend.
+> 
+> Sorry this is such a long story...
+> 
+> A computer in our basement has no wireless, so instead of running a
+> long cable to it, I wanted to put a router beside it and have it
+> connect to that router by ethernet, and then have that router connect
+> to the main one over wireless. No, I did not plug the computer into
+> the WAN port... ;-)
+> 
+> I have an old Linksys router WRT54GL v. 1.1 running Tomato 1.28, and
+> my main router, the Buffalo N600 which has DD-WRT.
+> 
+> According to about a hundred different howto's it should be very simple.
+> 
+> I set the second router to an IP outside the DHCP range of the first,
+> and set also set it to use the first router as gateway and DNS. I also
+> set the SSID and password the same, and also the type of security
+> used. Oh, and obviously I set the second router as 'Wireless Ethernet
+> Bridge'.
+> 
+> router 1 is 192.168.11.1, router 2 is 192.168.11.2
+> 
+> both have 255.255.255.0 as subnet mask
+> 
+> Router 1 gives out addresses starting at 192.168.11.5
+> 
+> Am I correct in assuming that DHCP broadcasts should be relayed by the
+> second router? In wireless bridge mode it doesn't appear to even have
+> the option of offering DHCP...
+> 
+> I noticed that the Buffalo will let you set up a virtual interface, so
+> I tried using that with no security at all.
+> 
+> I also found something here:
+> 
+> http://www.cnet.com/how-to/reuse-an-old-router-to-bridge-devices-to-your-wireless-network/
+> 
+> that said I should set the second router to operate as a router and
+> not as a gateway so I changed that.
+> 
+> Still no ping response from google.com :-\
+> 
+> The only thing I can think of is that maybe the firewall settings are
+> wrong on the second router, running Tomato.
+> 
+> Respond to ICMP is unchecked, Allow Multicast is unchecked, NAT
+> Loopback is set to Forwarded Only, and Enable SYN cookies is
+> unchecked.
+
+If you set the second router into wireless ethernet bridge mode (not
+wireless client mode), then dhcp requests should just pass through to the
+dhcp server on the main router that is the wifi access point.
+
+The second router should not have any firewall or anything like that
+enabled.  It is purely a wired to wireless ethernet bridge and should
+not be getting involved in the actual packets anymore.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Thu Jan  8 15:31:56 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 8 Jan 2015 10:31:56 -0500
+Subject: [GTALUG] Linksys 1200AC, an inexpensive,
+ open-source 802.11ac Wi-Fi router
+In-Reply-To: <CAGc8pF7RYQiM43L73WW=t=VcQRooTASmo4ToFawis8YRNXJtvQ@mail.gmail.com>
+References: <CAGc8pF7RYQiM43L73WW=t=VcQRooTASmo4ToFawis8YRNXJtvQ@mail.gmail.com>
+Message-ID: <20150108153156.GH30246@csclub.uwaterloo.ca>
+
+On Thu, Jan 08, 2015 at 01:57:21AM -0500, Thomas Milne wrote:
+> "The dual 2.4 and 5GHz band AC1200 router is powered by an ARM 1.3GHz
+> Dual-Core Processor. This is backed by 128MB of Flash memory, 512MB
+> DDR3 RAM. A Belkin product manager said that the memory can be
+> upgraded. It also comes with eSATA/USB 2.0 and USB 3.0 ports, four
+> Gigabit Ethernet ports and a Gigabit WAN port."
+> 
+> Daaayum
+> 
+> http://www.zdnet.com/article/ces-2015-linksys-1200ac-an-inexpensive-open-source-802-11ac-wi-fi-router/
+
+Best news in the article is that the source for the wifi of it and the
+1900ac is now available.  Yay.  I guess linksys managed to finally get
+marvell to do the right thing.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Thu Jan  8 15:33:33 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 8 Jan 2015 10:33:33 -0500
+Subject: [GTALUG] Linksys 1200AC, an inexpensive,
+ open-source 802.11ac Wi-Fi router
+In-Reply-To: <54AE85CD.2060107@rogers.com>
+References: <CAGc8pF7RYQiM43L73WW=t=VcQRooTASmo4ToFawis8YRNXJtvQ@mail.gmail.com>
+ <CAEnxSC6oLYLsKz9a2J+aJjPetSTDctbWpJccfZQyYc3x7V-ztQ@mail.gmail.com>
+ <54AE85CD.2060107@rogers.com>
+Message-ID: <20150108153333.GI30246@csclub.uwaterloo.ca>
+
+On Thu, Jan 08, 2015 at 08:27:41AM -0500, James Knott wrote:
+> It's also ugly.  ;-)
+
+Do you prefer the style Asus is using:
+
+http://www.asus.com/ca-en/Networking/RTAC66U/
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Thu Jan  8 15:35:16 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 8 Jan 2015 10:35:16 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <CAGc8pF6TSi6RAHpQsbB9mvE1MWLj12boVeMvNtZYUdHOSqU5pw@mail.gmail.com>
+References: <20141123002215.GB24111@csclub.uwaterloo.ca>
+ <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+ <54A0D9BA.6010509@ss.org>
+ <20141229133843.GZ24111@csclub.uwaterloo.ca>
+ <CAGc8pF6di0s-RH8QuxvFPdAVGe0nKP2H4UZ=VOALh1u3whsgEg@mail.gmail.com>
+ <20150102040839.GF24111@csclub.uwaterloo.ca>
+ <CAGc8pF5Q-hTahSh1e3wyqLAieJcf1h53wh0+Lq5PUWfLCzjNpw@mail.gmail.com>
+ <20150103041302.GG24111@csclub.uwaterloo.ca>
+ <CAGxYWpbfjyzZrXO=R7isTDzmyZu+J=Ui9fsh8+tH9D2ON-yU4w@mail.gmail.com>
+ <CAGc8pF6TSi6RAHpQsbB9mvE1MWLj12boVeMvNtZYUdHOSqU5pw@mail.gmail.com>
+Message-ID: <20150108153516.GJ30246@csclub.uwaterloo.ca>
+
+On Wed, Jan 07, 2015 at 07:38:28PM -0500, Thomas Milne wrote:
+> Ya I will probably give it a try, unless Lennart wants to be all
+> magnanimous and just upload an image of his install for me ;)
+
+The problem is getting around to it, and it might be pretty big.
+
+> Right now I am fixated on a whole wireless ethernet bridge ... thing.
+> 
+> Thanks for the pointer, much appreciated.
+
+-- 
+Len Sorensen
+
+From james.knott at rogers.com  Thu Jan  8 15:42:01 2015
+From: james.knott at rogers.com (James Knott)
+Date: Thu, 08 Jan 2015 10:42:01 -0500
+Subject: [GTALUG] Linksys 1200AC, an inexpensive,
+ open-source 802.11ac Wi-Fi router
+In-Reply-To: <20150108153333.GI30246@csclub.uwaterloo.ca>
+References: <CAGc8pF7RYQiM43L73WW=t=VcQRooTASmo4ToFawis8YRNXJtvQ@mail.gmail.com>
+ <CAEnxSC6oLYLsKz9a2J+aJjPetSTDctbWpJccfZQyYc3x7V-ztQ@mail.gmail.com>
+ <54AE85CD.2060107@rogers.com> <20150108153333.GI30246@csclub.uwaterloo.ca>
+Message-ID: <54AEA549.3000201@rogers.com>
+
+On 01/08/2015 10:33 AM, Lennart Sorensen wrote:
+> On Thu, Jan 08, 2015 at 08:27:41AM -0500, James Knott wrote:
+>> It's also ugly.  ;-)
+> Do you prefer the style Asus is using:
+>
+> http://www.asus.com/ca-en/Networking/RTAC66U/
+>
+
+For some reason some companies come up with ugly designs (The Chrysler
+PT Crusier being one).  I recently had a Hitron cable modem that I
+wanted to hide in the closet, it was so ugly.  I have an old WRT54G here
+and it looks a lot better than the newer models.  I guess the designers
+are watching too much sci-fi.  ;-)
+
+As much as I support open source, I wouldn't give these devices shelf space.
+
+
+From bcopeland at gmail.com  Thu Jan  8 15:53:32 2015
+From: bcopeland at gmail.com (Bob Copeland)
+Date: Thu, 8 Jan 2015 10:53:32 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <20150108152806.GG30246@csclub.uwaterloo.ca>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <20150108152806.GG30246@csclub.uwaterloo.ca>
+Message-ID: <CAEKwDSAeKT+HQ1UieUwXq=2A1qRvQaV7zCa7U2FmMqYYy82p-w@mail.gmail.com>
+
+On Thu, Jan 8, 2015 at 10:28 AM, Lennart Sorensen
+<lsorense at csclub.uwaterloo.ca> wrote:
+> If you set the second router into wireless ethernet bridge mode (not
+> wireless client mode), then dhcp requests should just pass through to the
+> dhcp server on the main router that is the wifi access point.
+>
+> The second router should not have any firewall or anything like that
+> enabled.  It is purely a wired to wireless ethernet bridge and should
+> not be getting involved in the actual packets anymore.
+
+Not every device supports this mode though: you need to be able to use
+4-address framing at the wireless level, so that the source address on
+the ethernet segment is preserved (see:
+http://wiki.openwrt.org/doc/howto/clientmode)
+
+If you happen to have ath9k on board, you can use 802.11s for this
+kind of thing: run both a mesh and AP interface on each access point
+and join them with the mesh interface.  Then, your clients can connect
+to either AP and even roam between them based on RSSI or whatever.
+11s is designed to make all the participants look like they are on the
+same LAN so DHCP etc. will work across it and you don't have to run
+separate IP networks.
+
+(I work on 802.11s in Linux.)
+
+-- 
+Bob Copeland %% www.bobcopeland.com
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 16:38:58 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Thu, 8 Jan 2015 11:38:58 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <CAEKwDSAeKT+HQ1UieUwXq=2A1qRvQaV7zCa7U2FmMqYYy82p-w@mail.gmail.com>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <20150108152806.GG30246@csclub.uwaterloo.ca>
+ <CAEKwDSAeKT+HQ1UieUwXq=2A1qRvQaV7zCa7U2FmMqYYy82p-w@mail.gmail.com>
+Message-ID: <CAGc8pF6ssFLtD=459dmnb7Xr1CCCrj+CuXpTgvBC5+2GYUhKkw@mail.gmail.com>
+
+On Thu, Jan 8, 2015 at 10:53 AM, Bob Copeland <bcopeland at gmail.com> wrote:
+> On Thu, Jan 8, 2015 at 10:28 AM, Lennart Sorensen
+> <lsorense at csclub.uwaterloo.ca> wrote:
+>> If you set the second router into wireless ethernet bridge mode (not
+>> wireless client mode), then dhcp requests should just pass through to the
+>> dhcp server on the main router that is the wifi access point.
+>>
+>> The second router should not have any firewall or anything like that
+>> enabled.  It is purely a wired to wireless ethernet bridge and should
+>> not be getting involved in the actual packets anymore.
+>
+> Not every device supports this mode though: you need to be able to use
+> 4-address framing at the wireless level, so that the source address on
+> the ethernet segment is preserved (see:
+> http://wiki.openwrt.org/doc/howto/clientmode)
+>
+> If you happen to have ath9k on board, you can use 802.11s for this
+> kind of thing: run both a mesh and AP interface on each access point
+> and join them with the mesh interface.  Then, your clients can connect
+> to either AP and even roam between them based on RSSI or whatever.
+> 11s is designed to make all the participants look like they are on the
+> same LAN so DHCP etc. will work across it and you don't have to run
+> separate IP networks.
+>
+> (I work on 802.11s in Linux.)
+>
+
+Embarrassingly, I understand very little of that...however, it is
+working. The computer has internet, and everyone can see each other on
+the network. The only limitation is security. It only works with WPA
+and AES, no WPA2 or TKIP enabled on either router. I suppose my neck
+is exposed security wise?
+
+I never needed anyone to connect wirelessly to the second router. The
+signal from the main router, the Buffalo N600, is amazing, it covers
+the entire house. Actually, as I understood it, the second router
+would not even be offering wireless connectivity to devices in
+Wireless Bridge Mode.
+
+-- 
+Thomas Milne
+
+From greg.martyn at gmail.com  Thu Jan  8 16:50:49 2015
+From: greg.martyn at gmail.com (Greg Martyn)
+Date: Thu, 8 Jan 2015 11:50:49 -0500
+Subject: [GTALUG] Coworking space
+Message-ID: <CAJt6_8vH_qssDK-_nZe0G0ORxMGZFt7nZv6yBKZ3JWmRmcyPJg@mail.gmail.com>
+
+Hi all,
+
+Has anyone worked in a coworking space? Have a favourite?
+
+I'm just starting my search online, and from what I see, there are plenty
+to choose from. Any anecdotal tales would be really helpful. I'm completely
+new to this. Thanks!
+
+I live by the Main St subway stop, but have a slight preference for more
+centrally located locations, because the company I work for might start
+hiring in the Toronto area in the near future.
+
+Thanks,
+Greg
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150108/f14b3abf/attachment.html>
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 16:51:33 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Thu, 8 Jan 2015 11:51:33 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <20150108153516.GJ30246@csclub.uwaterloo.ca>
+References: <20141123002215.GB24111@csclub.uwaterloo.ca>
+ <CAGc8pF6w2UTmH4M7cSue2FbRbND1C1FaBV6asm9OwZVeZsxhXA@mail.gmail.com>
+ <54A0D9BA.6010509@ss.org>
+ <20141229133843.GZ24111@csclub.uwaterloo.ca>
+ <CAGc8pF6di0s-RH8QuxvFPdAVGe0nKP2H4UZ=VOALh1u3whsgEg@mail.gmail.com>
+ <20150102040839.GF24111@csclub.uwaterloo.ca>
+ <CAGc8pF5Q-hTahSh1e3wyqLAieJcf1h53wh0+Lq5PUWfLCzjNpw@mail.gmail.com>
+ <20150103041302.GG24111@csclub.uwaterloo.ca>
+ <CAGxYWpbfjyzZrXO=R7isTDzmyZu+J=Ui9fsh8+tH9D2ON-yU4w@mail.gmail.com>
+ <CAGc8pF6TSi6RAHpQsbB9mvE1MWLj12boVeMvNtZYUdHOSqU5pw@mail.gmail.com>
+ <20150108153516.GJ30246@csclub.uwaterloo.ca>
+Message-ID: <CAGc8pF7wUuZG054e2Ev62ATL95JyC6ew1JQC6NnGDKjeXN6pcg@mail.gmail.com>
+
+On Thu, Jan 8, 2015 at 10:35 AM, Lennart Sorensen
+<lsorense at csclub.uwaterloo.ca> wrote:
+> On Wed, Jan 07, 2015 at 07:38:28PM -0500, Thomas Milne wrote:
+>> Ya I will probably give it a try, unless Lennart wants to be all
+>> magnanimous and just upload an image of his install for me ;)
+>
+> The problem is getting around to it, and it might be pretty big.
+
+Any time ever would be absolutely amazing and appreciated. I know it's
+a lot to ask. If you were willing, I could get it from you by Subaru
+network of course :-)
+
+>> Right now I am fixated on a whole wireless ethernet bridge ... thing.
+>>
+>> Thanks for the pointer, much appreciated.
+>
+
+-- 
+Thomas Milne
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 16:57:14 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Thu, 8 Jan 2015 11:57:14 -0500
+Subject: [GTALUG] Linksys 1200AC, an inexpensive,
+ open-source 802.11ac Wi-Fi router
+In-Reply-To: <54AEA549.3000201@rogers.com>
+References: <CAGc8pF7RYQiM43L73WW=t=VcQRooTASmo4ToFawis8YRNXJtvQ@mail.gmail.com>
+ <CAEnxSC6oLYLsKz9a2J+aJjPetSTDctbWpJccfZQyYc3x7V-ztQ@mail.gmail.com>
+ <54AE85CD.2060107@rogers.com>
+ <20150108153333.GI30246@csclub.uwaterloo.ca>
+ <54AEA549.3000201@rogers.com>
+Message-ID: <CAGc8pF7SAb+wGOP7rHoOW0BqqjiJRvoLgwG=bscx+KO6Mkkx8Q@mail.gmail.com>
+
+On Thu, Jan 8, 2015 at 10:42 AM, James Knott <james.knott at rogers.com> wrote:
+> On 01/08/2015 10:33 AM, Lennart Sorensen wrote:
+>> On Thu, Jan 08, 2015 at 08:27:41AM -0500, James Knott wrote:
+>>> It's also ugly.  ;-)
+>> Do you prefer the style Asus is using:
+>>
+>> http://www.asus.com/ca-en/Networking/RTAC66U/
+>>
+>
+> For some reason some companies come up with ugly designs (The Chrysler
+> PT Crusier being one).  I recently had a Hitron cable modem that I
+> wanted to hide in the closet, it was so ugly.  I have an old WRT54G here
+> and it looks a lot better than the newer models.  I guess the designers
+> are watching too much sci-fi.  ;-)
+>
+> As much as I support open source, I wouldn't give these devices shelf space.
+>
+
+Honestly I've never much cared what something looks like, as long as it works.
+
+Maybe cuz people always said I looked weird ;)
+
+-- 
+Thomas Milne
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 17:00:34 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Thu, 8 Jan 2015 12:00:34 -0500
+Subject: [GTALUG] Experience with TekSavvy Business DSL
+In-Reply-To: <54AAA5F8.9040100@blaise.ca>
+References: <54A9C431.5010800@sadiqs.com>
+	<54AAA5F8.9040100@blaise.ca>
+Message-ID: <CAGc8pF75jgQOHmfedv8enLOXaYLFMmnTYShZaLz5-XK-ymAWvg@mail.gmail.com>
+
+On Mon, Jan 5, 2015 at 9:55 AM, Blaise Alleyne <email+libre at blaise.ca> wrote:
+>
+> On 04/01/15 05:52 PM, Sadiq Saif wrote:
+>> I am curious if anybody on the list has experience with TekSavvy's
+>> business DSL service. I am looking at their 25/10 business service with
+>> a dry loop.
+>>
+>> Any good/bad/ugly thoughts experiences?
+>>
+>
+> I've been using Teksavvy business DSL at work since 2010 or 2011. No problems.
+> Just leave some time for the initial setup, as it can take a while to get the
+> Bell tech scheduled to activate things (IIRC around a 7-10 business days? Maybe
+> less...).
+
+OMG don't remind me! What a horror show that was. Totally not
+Teksavvy's fault, obviously, but wow that was painful.
+
+> My parents have been using residential Teksavvy DSL since 2009 as well. There
+> was one issue with signal strength in around 2011, and it took a while to
+> resolve, but eventually we got a Bell technician in who installed something that
+> boosted the signal strength or something -- it was painful waiting to get that
+> resolved (it was easiest to make progress via the Teksavvy forums at
+> dslreports.com versus multiple phone calls, but hard to do that without an
+> internet connection!), but that was the only time we've had a problem in 5.5
+> years. (We had more frequent problems with Rogers cable internet cutting out
+> before that TBH...)
+>
+> At my apartment, I had a residential Teksavvy dry loop DSL connection from
+> 2010-2012. When moving in 2012, since we had to pay setup costs for the new
+> apartment anyways, we switched to Teksavvy cable for faster speeds.
+>
+>
+> In addition to a working service, I sleep a bit better at night with less money
+> going to Rogers/Bell and more going to Teksavvy.
+>
+
+Ya, Teksavvy is awesome. I recommend it to everyone, with great confidence.
+
+-- 
+Thomas Milne
+
+From james.knott at rogers.com  Thu Jan  8 17:08:16 2015
+From: james.knott at rogers.com (James Knott)
+Date: Thu, 08 Jan 2015 12:08:16 -0500
+Subject: [GTALUG] Linksys 1200AC, an inexpensive,
+ open-source 802.11ac Wi-Fi router
+In-Reply-To: <CAGc8pF7SAb+wGOP7rHoOW0BqqjiJRvoLgwG=bscx+KO6Mkkx8Q@mail.gmail.com>
+References: <CAGc8pF7RYQiM43L73WW=t=VcQRooTASmo4ToFawis8YRNXJtvQ@mail.gmail.com>
+ <CAEnxSC6oLYLsKz9a2J+aJjPetSTDctbWpJccfZQyYc3x7V-ztQ@mail.gmail.com>
+ <54AE85CD.2060107@rogers.com> <20150108153333.GI30246@csclub.uwaterloo.ca>
+ <54AEA549.3000201@rogers.com>
+ <CAGc8pF7SAb+wGOP7rHoOW0BqqjiJRvoLgwG=bscx+KO6Mkkx8Q@mail.gmail.com>
+Message-ID: <54AEB980.70102@rogers.com>
+
+On 01/08/2015 11:57 AM, Thomas Milne wrote:
+>> As much as I support open source, I wouldn't give these devices shelf space.
+>> >
+> Honestly I've never much cared what something looks like, as long as it works.
+>
+> Maybe cuz people always said I looked weird ;)
+
+Please stay off my shelf!!!  ;-)
+
+
+From bcopeland at gmail.com  Thu Jan  8 19:30:19 2015
+From: bcopeland at gmail.com (Bob Copeland)
+Date: Thu, 8 Jan 2015 14:30:19 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <CAGc8pF6ssFLtD=459dmnb7Xr1CCCrj+CuXpTgvBC5+2GYUhKkw@mail.gmail.com>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <20150108152806.GG30246@csclub.uwaterloo.ca>
+ <CAEKwDSAeKT+HQ1UieUwXq=2A1qRvQaV7zCa7U2FmMqYYy82p-w@mail.gmail.com>
+ <CAGc8pF6ssFLtD=459dmnb7Xr1CCCrj+CuXpTgvBC5+2GYUhKkw@mail.gmail.com>
+Message-ID: <CAEKwDSChr+55RN6VADMyCY7Sd98_tLUthawTwzU32QiTOjyERQ@mail.gmail.com>
+
+> Embarrassingly, I understand very little of that...however, it is
+> working. The computer has internet, and everyone can see each other on
+> the network. The only limitation is security. It only works with WPA
+> and AES, no WPA2 or TKIP enabled on either router. I suppose my neck
+> is exposed security wise?
+
+WPA/AES-CCMP should be OK for most purposes.
+
+Honestly I'm not really sure what Tomato is doing for "Wireless bridge
+mode," a quick google didn't turn up an answer.  It would be
+interesting to see some wireless frame captures from the setup.  If
+it's doing some WDS 4-address mode, then that's great.  If not, you
+may have some problems reaching some machines behind the client
+router.
+
+Sounds like "Wireless client mode" is running two different IP
+networks and routing at layer 3 between them (i.e. the network behind
+the client router would be on its own subnet compared from the AP
+network).  This mode will work with any AP.
+
+> I never needed anyone to connect wirelessly to the second router. The
+> signal from the main router, the Buffalo N600, is amazing, it covers
+> the entire house. Actually, as I understood it, the second router
+> would not even be offering wireless connectivity to devices in
+> Wireless Bridge Mode.
+
+Yes, this is something 'extra' that mesh could offer (if you wanted --
+you can also just bridge the wireless traffic onto an ethernet LAN
+like you are doing, without running a second AP).  Mesh also has some
+better encryption facilities built in.  But, I'd say having an AP that
+supports mesh is highly unlikely unless you put openwrt on it yourself
+and the hardware is Atheros-based.
+
+-- 
+Bob Copeland %% www.bobcopeland.com
+
+From kevin at ve3syb.ca  Thu Jan  8 21:06:14 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Thu, 08 Jan 2015 16:06:14 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+Message-ID: <54AEF146.8070705@ve3syb.ca>
+
+On 15-01-07 07:10 PM, Thomas Milne wrote:
+> A computer in our basement has no wireless, so instead of running a
+> long cable to it, I wanted to put a router beside it and have it
+> connect to that router by ethernet, and then have that router connect
+> to the main one over wireless.
+
+Are you wanting to use a second router because you already had one on hand? 
+I would have thought it a lot easier to just pick up another WiFi adapter 
+for the machine in the basement.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 21:33:45 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Thu, 8 Jan 2015 16:33:45 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <54AEF146.8070705@ve3syb.ca>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <54AEF146.8070705@ve3syb.ca>
+Message-ID: <CAGc8pF5OEq0XvZyTbbzZhJuwtfdhgSu9D5HO+=3V7GwOS-MgMw@mail.gmail.com>
+
+On Thu, Jan 8, 2015 at 4:06 PM, Kevin Cozens <kevin at ve3syb.ca> wrote:
+> On 15-01-07 07:10 PM, Thomas Milne wrote:
+>>
+>> A computer in our basement has no wireless, so instead of running a
+>> long cable to it, I wanted to put a router beside it and have it
+>> connect to that router by ethernet, and then have that router connect
+>> to the main one over wireless.
+>
+>
+> Are you wanting to use a second router because you already had one on hand?
+> I would have thought it a lot easier to just pick up another WiFi adapter
+> for the machine in the basement.
+>
+
+Of course, yes. Also, this will let me connect a few more devices
+should the need ever arise. I keep thinking our home is at the
+saturation point for devices, but, you know...
+
+This old Linksys has been very very useful on a number of occasions.
+When we go on family trips we sometimes bring the Playstation for
+rainy days and I can even access PSN and Netflix on hotel networks
+that try and block it.
+
+-- 
+Thomas Milne
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 21:34:39 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Thu, 8 Jan 2015 16:34:39 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <CAEKwDSChr+55RN6VADMyCY7Sd98_tLUthawTwzU32QiTOjyERQ@mail.gmail.com>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <20150108152806.GG30246@csclub.uwaterloo.ca>
+ <CAEKwDSAeKT+HQ1UieUwXq=2A1qRvQaV7zCa7U2FmMqYYy82p-w@mail.gmail.com>
+ <CAGc8pF6ssFLtD=459dmnb7Xr1CCCrj+CuXpTgvBC5+2GYUhKkw@mail.gmail.com>
+ <CAEKwDSChr+55RN6VADMyCY7Sd98_tLUthawTwzU32QiTOjyERQ@mail.gmail.com>
+Message-ID: <CAGc8pF6yU9J5xJwe9XUTBpF_RuX2eEu8qfqDsmk5Os3=V6FeQA@mail.gmail.com>
+
+On Thu, Jan 8, 2015 at 2:30 PM, Bob Copeland <bcopeland at gmail.com> wrote:
+>> Embarrassingly, I understand very little of that...however, it is
+>> working. The computer has internet, and everyone can see each other on
+>> the network. The only limitation is security. It only works with WPA
+>> and AES, no WPA2 or TKIP enabled on either router. I suppose my neck
+>> is exposed security wise?
+>
+> WPA/AES-CCMP should be OK for most purposes.
+>
+Okay good to know, thanks.
+
+> Honestly I'm not really sure what Tomato is doing for "Wireless bridge
+> mode," a quick google didn't turn up an answer.  It would be
+> interesting to see some wireless frame captures from the setup.  If
+
+I'm going to google how to do that.
+
+> it's doing some WDS 4-address mode, then that's great.  If not, you
+> may have some problems reaching some machines behind the client
+> router.
+>
+Funny you should say that. The one computer I wanted to connect using
+the bridge is running Windows 7 Home Premium. It's strictly for Steam
+games that just won't run well under emulation and so on. Anyhow, like
+all Windows machines I've ever used, it is an absolute nightmare as
+far as networking. Even when it was connected directly to the primary
+network by an ethernet cable it would not let me access any SMB shares
+or access my Chromecast. It still won't. Of course every other device
+or computer, running Mac, Linux, Android or iOS will see and access
+the shares just fine, over wireless or ethernet.
+
+I actually tried using WDS to no avail. Now that I know the security
+mode may have been the hindrance I might give that a try again. Maybe
+Windows will like that better. I'm not holding my breath.
+
+> Sounds like "Wireless client mode" is running two different IP
+> networks and routing at layer 3 between them (i.e. the network behind
+> the client router would be on its own subnet compared from the AP
+> network).  This mode will work with any AP.
+>
+>> I never needed anyone to connect wirelessly to the second router. The
+>> signal from the main router, the Buffalo N600, is amazing, it covers
+>> the entire house. Actually, as I understood it, the second router
+>> would not even be offering wireless connectivity to devices in
+>> Wireless Bridge Mode.
+>
+> Yes, this is something 'extra' that mesh could offer (if you wanted --
+> you can also just bridge the wireless traffic onto an ethernet LAN
+> like you are doing, without running a second AP).  Mesh also has some
+> better encryption facilities built in.  But, I'd say having an AP that
+> supports mesh is highly unlikely unless you put openwrt on it yourself
+> and the hardware is Atheros-based.
+
+Ya I kinda like it the way it is. The less Windows can access my
+network the less harm it can do. It is good for modding and playing
+Fallout, that's it :-)
+
+I'm curious tho, how would I bridge wireless to ethernet without a
+second router? Wouldn't I need some sort of separate device?
+
+
+-- 
+Thomas Milne
+
+From me at bobcopeland.com  Thu Jan  8 22:10:38 2015
+From: me at bobcopeland.com (Bob Copeland)
+Date: Thu, 8 Jan 2015 17:10:38 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <CAGc8pF6yU9J5xJwe9XUTBpF_RuX2eEu8qfqDsmk5Os3=V6FeQA@mail.gmail.com>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <20150108152806.GG30246@csclub.uwaterloo.ca>
+ <CAEKwDSAeKT+HQ1UieUwXq=2A1qRvQaV7zCa7U2FmMqYYy82p-w@mail.gmail.com>
+ <CAGc8pF6ssFLtD=459dmnb7Xr1CCCrj+CuXpTgvBC5+2GYUhKkw@mail.gmail.com>
+ <CAEKwDSChr+55RN6VADMyCY7Sd98_tLUthawTwzU32QiTOjyERQ@mail.gmail.com>
+ <CAGc8pF6yU9J5xJwe9XUTBpF_RuX2eEu8qfqDsmk5Os3=V6FeQA@mail.gmail.com>
+Message-ID: <CAEKwDSBaB54Tv=8VjOe+OymqxThTJk4-5Z0RJVdb2+BF_JGkYQ@mail.gmail.com>
+
+On Thu, Jan 8, 2015 at 4:34 PM, Thomas Milne
+<thomas.bruce.milne at gmail.com> wrote:
+> I'm curious tho, how would I bridge wireless to ethernet without a
+> second router? Wouldn't I need some sort of separate device?
+
+Sorry for the confusion, I meant "AP" as in the access point service,
+not the AP/wireless hardware itself, which, of course, you would need.
+
+-- 
+Bob Copeland %% www.bobcopeland.com
+
+From thomas.bruce.milne at gmail.com  Thu Jan  8 22:37:32 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Thu, 8 Jan 2015 17:37:32 -0500
+Subject: [GTALUG] Second router as wireless ethernet bridge
+In-Reply-To: <CAEKwDSBaB54Tv=8VjOe+OymqxThTJk4-5Z0RJVdb2+BF_JGkYQ@mail.gmail.com>
+References: <CAGc8pF4SCbu-rNM=g1ymL0Kp6cHRRa6Kow3tfPOMA7u+Jw9QbA@mail.gmail.com>
+ <20150108152806.GG30246@csclub.uwaterloo.ca>
+ <CAEKwDSAeKT+HQ1UieUwXq=2A1qRvQaV7zCa7U2FmMqYYy82p-w@mail.gmail.com>
+ <CAGc8pF6ssFLtD=459dmnb7Xr1CCCrj+CuXpTgvBC5+2GYUhKkw@mail.gmail.com>
+ <CAEKwDSChr+55RN6VADMyCY7Sd98_tLUthawTwzU32QiTOjyERQ@mail.gmail.com>
+ <CAGc8pF6yU9J5xJwe9XUTBpF_RuX2eEu8qfqDsmk5Os3=V6FeQA@mail.gmail.com>
+ <CAEKwDSBaB54Tv=8VjOe+OymqxThTJk4-5Z0RJVdb2+BF_JGkYQ@mail.gmail.com>
+Message-ID: <CAGc8pF4unr-mB+7HzMJX8zuj=iiidijuFcZPAxD5D988FprLjQ@mail.gmail.com>
+
+On Jan 8, 2015 5:11 PM, "Bob Copeland" <me at bobcopeland.com> wrote:
+>
+> On Thu, Jan 8, 2015 at 4:34 PM, Thomas Milne
+> <thomas.bruce.milne at gmail.com> wrote:
+> > I'm curious tho, how would I bridge wireless to ethernet without a
+> > second router? Wouldn't I need some sort of separate device?
+>
+> Sorry for the confusion, I meant "AP" as in the access point service,
+> not the AP/wireless hardware itself, which, of course, you would need.
+>
+Oh hahaha OK I was thinking what can accomplish this sorcery??
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150108/88edf4e1/attachment.html>
+
