@@ -5497,3 +5497,180 @@ Oh hahaha OK I was thinking what can accomplish this sorcery??
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150108/88edf4e1/attachment.html>
 
+From thomas.bruce.milne at gmail.com  Fri Jan  9 15:26:06 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Fri, 9 Jan 2015 10:26:06 -0500
+Subject: [GTALUG] New M.2 PCIe 2.0 drives show off future of solid-state
+	storage
+In-Reply-To: <CAGc8pF7FDya6ReyVR0DFsvHogR+t6d4JS6mcXNaeVFhO8H3RVQ@mail.gmail.com>
+References: <CAGc8pF7FDya6ReyVR0DFsvHogR+t6d4JS6mcXNaeVFhO8H3RVQ@mail.gmail.com>
+Message-ID: <CAGc8pF40w0c3uF2wO=hfh-th9eZNw49FFFmQT6hgELOXxM425A@mail.gmail.com>
+
+Quote
+
+"For newer computers that possess PCIe 3.0 interfaces, the Samsung and
+Mushkin drives can reach 2,150MB/s read speeds and 1,550MB/s write speeds.
+(In comparison, a drive using a SATA 6Gb/s interface can only transfer
+files at a maximum speed of 600MB/s.)"
+
+http://www.zdnet.com/article/ces-2015-new-m-2-pcie-2-0-drives-show-off-future-of-solid-state-storage/
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150109/5cda5bcd/attachment.html>
+
+From thomas.bruce.milne at gmail.com  Fri Jan  9 15:39:04 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Fri, 9 Jan 2015 10:39:04 -0500
+Subject: [GTALUG] Canadian ISPs Responding to Copyright Notices By Adding
+ Information on Notice System, Privacy Concerns - Michael Geist
+Message-ID: <CAGc8pF6rFTgCHo0YtFg=XS6=dviSfah0D6+QYTuc_hAbNWLvpw@mail.gmail.com>
+
+Teksavvy as usual is the awesomest
+
+http://www.michaelgeist.ca/2015/01/canadian-isps-responding-copyright-notices-adding-information-notice-system-privacy-concerns/
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150109/08485f39/attachment.html>
+
+From kalibslack at gmail.com  Fri Jan  9 17:04:20 2015
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Fri, 9 Jan 2015 14:04:20 -0300
+Subject: [GTALUG] Canadian ISPs Responding to Copyright Notices By
+ Adding Information on Notice System, Privacy Concerns - Michael Geist
+In-Reply-To: <CAGc8pF6rFTgCHo0YtFg=XS6=dviSfah0D6+QYTuc_hAbNWLvpw@mail.gmail.com>
+References: <CAGc8pF6rFTgCHo0YtFg=XS6=dviSfah0D6+QYTuc_hAbNWLvpw@mail.gmail.com>
+Message-ID: <CAH5qdexrY7BBGwQ92e=ioFeF0Vt=gUzZ5KZ=5NGKRDCxc2XqfA@mail.gmail.com>
+
+2015-01-09 12:39 GMT-03:00 Thomas Milne <thomas.bruce.milne at gmail.com>:
+
+> Teksavvy as usual is the awesomest
+>
+>
+> http://www.michaelgeist.ca/2015/01/canadian-isps-responding-copyright-notices-adding-information-notice-system-privacy-concerns/
+>
+http://torrentfreak.com/canadian-piracy-notices-from-benign-to-ridiculous-150109/
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150109/6dcb5c10/attachment.html>
+
+From kevin at ve3syb.ca  Fri Jan  9 20:39:27 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Fri, 09 Jan 2015 15:39:27 -0500
+Subject: [GTALUG] Ubuntu Thunderbird Problem After Replacing Drive With
+ /home
+In-Reply-To: <54A074EB.6040102@rogers.com>
+References: <54A074EB.6040102@rogers.com>
+Message-ID: <54B03C7F.3040907@ve3syb.ca>
+
+On 14-12-28 04:23 PM, Stephen wrote:
+> I am running Ubuntu 12.04.
+>
+> I had /home on its own drive and that drive was getting SMART warnings.
+>
+> I backed my data up, replaced the drive, restored, booted and everything
+> seems OK except my Thunderbird filters.
+
+A proper backup system should not have left you with issues in your 
+Thunderbird filters unless the recovery process copied the Thunderbird files 
+on to a machine with a slightly different path to the directory containing 
+the mail files. Running in to a case where something didn't work right (in 
+this case the filters) makes you take a second look at the backup procedure 
+to make sure something wasn't missed in the process.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From kevin at ve3syb.ca  Fri Jan  9 20:43:20 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Fri, 09 Jan 2015 15:43:20 -0500
+Subject: [GTALUG] Power Supplies & Video Cards
+In-Reply-To: <alpine.LRH.2.02.1501060206590.14954@redclaw.mimosa.com>
+References: <520955106.2784999.1419963294317.JavaMail.yahoo@jws10696.mail.bf1.yahoo.com>
+ <54AB595C.5020604@ve3syb.ca>
+ <alpine.LRH.2.02.1501060206590.14954@redclaw.mimosa.com>
+Message-ID: <54B03D68.4040000@ve3syb.ca>
+
+On 15-01-06 02:18 AM, D. Hugh Redelmeier wrote:
+> | From: Kevin Cozens <kevin at ve3syb.ca>
+>
+> | Any spec for a video card as to power supply wattage would be a minimum.
+>
+> Not in my (limited) experience.  I have bought cards that wanted to
+> specify how big my system's power supply was because the actual
+> required arithmetic is too hard for customers.  They just guessed at
+> what the rest of my system would require and left a margin for error.
+>
+> The real specs are a little tricky in theory (I don't actually know
+> what things are like now).
+
+Yes, it is a bit more complicated an issue than I may have made it out to be 
+but I didn't want to overwhelm the person asking the question with too many 
+details. There are websites online that let you estimate the power 
+consumption of a computer based on what is inside the box. Even those can be 
+based more on typical values for different items rather and may still not 
+represent the actual power requirements for the items in ones own computer case.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From lsorense at csclub.uwaterloo.ca  Sat Jan 10 02:20:30 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 9 Jan 2015 21:20:30 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <CAGc8pF7wUuZG054e2Ev62ATL95JyC6ew1JQC6NnGDKjeXN6pcg@mail.gmail.com>
+References: <54A0D9BA.6010509@ss.org>
+ <20141229133843.GZ24111@csclub.uwaterloo.ca>
+ <CAGc8pF6di0s-RH8QuxvFPdAVGe0nKP2H4UZ=VOALh1u3whsgEg@mail.gmail.com>
+ <20150102040839.GF24111@csclub.uwaterloo.ca>
+ <CAGc8pF5Q-hTahSh1e3wyqLAieJcf1h53wh0+Lq5PUWfLCzjNpw@mail.gmail.com>
+ <20150103041302.GG24111@csclub.uwaterloo.ca>
+ <CAGxYWpbfjyzZrXO=R7isTDzmyZu+J=Ui9fsh8+tH9D2ON-yU4w@mail.gmail.com>
+ <CAGc8pF6TSi6RAHpQsbB9mvE1MWLj12boVeMvNtZYUdHOSqU5pw@mail.gmail.com>
+ <20150108153516.GJ30246@csclub.uwaterloo.ca>
+ <CAGc8pF7wUuZG054e2Ev62ATL95JyC6ew1JQC6NnGDKjeXN6pcg@mail.gmail.com>
+Message-ID: <20150110022030.GK30246@csclub.uwaterloo.ca>
+
+On Thu, Jan 08, 2015 at 11:51:33AM -0500, Thomas Milne wrote:
+> Any time ever would be absolutely amazing and appreciated. I know it's
+> a lot to ask. If you were willing, I could get it from you by Subaru
+> network of course :-)
+
+I am giving it a go at the moment when I have a bit of spare time.
+
+I now have the debian jessie 3.16 kernel running on the cubox.  It needed
+two small patches from the upstream kernel to fix a couple of tiny
+problems, and then I enabled about 8 missing config entries in the debian
+kernel.  With that and adding the CuBox to the flash-kernel package,
+I can now install a kernel and have it configure u-boot automatically
+the debian way.
+
+No graphics support yet, but I am testing a build with some patches
+pulled from Russell King's tree that might solve that.  It even includes
+support for using the marvell binary video decoder libraries with the
+video decoder hardware in the CPU, so perhaps that would be useful
+for something.
+
+So pretty soon I should be able to have a nice clean Jessie install
+of Debian with only a slightly modified debian kernel package matching
+exactly what Jessie expects (I was running a 3.8 kernel before).
+
+So far USB, uSD and SATA as well as the IR port are working with the
+Jessie kernel no problem.
+
+-- 
+Len Sorensen
+
