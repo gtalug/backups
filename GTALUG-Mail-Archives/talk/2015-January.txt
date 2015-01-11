@@ -5674,3 +5674,257 @@ Jessie kernel no problem.
 -- 
 Len Sorensen
 
+From scruss at gmail.com  Sat Jan 10 17:53:41 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sat, 10 Jan 2015 12:53:41 -0500
+Subject: [GTALUG] Ubuntu Thunderbird Problem After Replacing Drive With
+ /home
+In-Reply-To: <54B03C7F.3040907@ve3syb.ca>
+References: <54A074EB.6040102@rogers.com> <54B03C7F.3040907@ve3syb.ca>
+Message-ID: <54B16725.7090804@gmail.com>
+
+On 2015-01-09 03:39 PM, Kevin Cozens wrote:
+> A proper backup system should not have left you with issues in your
+> Thunderbird filters unless the recovery process copied the Thunderbird
+> files on to a machine with a slightly different path to the directory
+> containing the mail files.
+
+There's also a chance that the restore went fine, but Thunderbird isn't
+looking at the right profile, so doesn't see it. Profiles are yet
+another annoying feature of Thunderbird (and still I use it; partly
+because everything else has more or different annoyances).
+
+Maybe there's something in this page about profiles that might fix the
+issue: http://kb.mozillazine.org/Profile_folder_-_Thunderbird
+
+cheers,
+ Stewart
+
+From thomas.bruce.milne at gmail.com  Sat Jan 10 19:42:30 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Sat, 10 Jan 2015 14:42:30 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <20150110022030.GK30246@csclub.uwaterloo.ca>
+References: <54A0D9BA.6010509@ss.org>
+ <20141229133843.GZ24111@csclub.uwaterloo.ca>
+ <CAGc8pF6di0s-RH8QuxvFPdAVGe0nKP2H4UZ=VOALh1u3whsgEg@mail.gmail.com>
+ <20150102040839.GF24111@csclub.uwaterloo.ca>
+ <CAGc8pF5Q-hTahSh1e3wyqLAieJcf1h53wh0+Lq5PUWfLCzjNpw@mail.gmail.com>
+ <20150103041302.GG24111@csclub.uwaterloo.ca>
+ <CAGxYWpbfjyzZrXO=R7isTDzmyZu+J=Ui9fsh8+tH9D2ON-yU4w@mail.gmail.com>
+ <CAGc8pF6TSi6RAHpQsbB9mvE1MWLj12boVeMvNtZYUdHOSqU5pw@mail.gmail.com>
+ <20150108153516.GJ30246@csclub.uwaterloo.ca>
+ <CAGc8pF7wUuZG054e2Ev62ATL95JyC6ew1JQC6NnGDKjeXN6pcg@mail.gmail.com>
+ <20150110022030.GK30246@csclub.uwaterloo.ca>
+Message-ID: <CAGc8pF7pf1Va4fHhXSSN4xnsvWw1U4DXrCtLPpEXeFf=zQL7pQ@mail.gmail.com>
+
+On Jan 9, 2015 9:20 PM, "Lennart Sorensen" <lsorense at csclub.uwaterloo.ca>
+wrote:
+>
+> On Thu, Jan 08, 2015 at 11:51:33AM -0500, Thomas Milne wrote:
+> > Any time ever would be absolutely amazing and appreciated. I know it's
+> > a lot to ask. If you were willing, I could get it from you by Subaru
+> > network of course :-)
+>
+> I am giving it a go at the moment when I have a bit of spare time.
+>
+> I now have the debian jessie 3.16 kernel running on the cubox.  It needed
+> two small patches from the upstream kernel to fix a couple of tiny
+> problems, and then I enabled about 8 missing config entries in the debian
+> kernel.  With that and adding the CuBox to the flash-kernel package,
+> I can now install a kernel and have it configure u-boot automatically
+> the debian way.
+>
+> No graphics support yet, but I am testing a build with some patches
+> pulled from Russell King's tree that might solve that.  It even includes
+> support for using the marvell binary video decoder libraries with the
+> video decoder hardware in the CPU, so perhaps that would be useful
+> for something.
+>
+
+Weren't you going to use yours for video playback as part of whole home
+theater setup? Or is this something different?
+
+> So pretty soon I should be able to have a nice clean Jessie install
+> of Debian with only a slightly modified debian kernel package matching
+> exactly what Jessie expects (I was running a 3.8 kernel before).
+>
+> So far USB, uSD and SATA as well as the IR port are working with the
+> Jessie kernel no problem.
+>
+
+Very cool. Jessie is really an incredible release.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150110/34022db3/attachment.html>
+
+From thomas.bruce.milne at gmail.com  Sat Jan 10 19:48:21 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Sat, 10 Jan 2015 14:48:21 -0500
+Subject: [GTALUG] Why can't I do a Debian netinstall of unstable or
+	testing?
+In-Reply-To: <20141208153523.GG24111@csclub.uwaterloo.ca>
+References: <CAGc8pF4sx8P4214sGmRZV78qO7+9qkkvisKxv7SfWkM2X-GoYA@mail.gmail.com>
+ <20141208153523.GG24111@csclub.uwaterloo.ca>
+Message-ID: <CAGc8pF6Ajeq5cy483S8i-w57ZwLZ+He1THHtU26Et3kFMxBMyg@mail.gmail.com>
+
+On Dec 8, 2014 10:35 AM, "Lennart Sorensen" <lsorense at csclub.uwaterloo.ca>
+wrote:
+>
+> On Sat, Dec 06, 2014 at 08:17:55PM +0000, Thomas Milne wrote:
+> > I'm using Unetbootin to do a netinstall of Debian.
+> >
+> > It says there are no compatible kernel modules on any of the mirrors
+when I
+> > try anything but Stable.
+>
+> To install testing or unstable you have to use the development version
+> of the net installer.
+>
+> > Obviously I know I can just install Stable and then do an upgrade, but
+> > still.
+> >
+> > What's up with this?
+>
+> Go here:
+>
+> https://www.debian.org/devel/debian-installer/
+>
+> You could try the Beta2 jessie installer, or the weekly snapshot build
+> or the daily snapshot build.
+>
+
+I tried out the daily snapshot yesterday and it is AMAZING. The installer
+failed a couple of times I think because some mirrors were missing stuff
+for LXDE so I just did the default and it finished in 10 minutes.
+
+Jessie is really nice. Everything on the Asus netbook worked perfectly,
+wireless, touchpad, and so on. Very very slick release. I can't even
+imagine what the advantage there is in choosing Ubuntu anymore.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150110/0b9a2ee7/attachment.html>
+
+From gilesorr at gmail.com  Sat Jan 10 19:48:47 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Sat, 10 Jan 2015 14:48:47 -0500
+Subject: [GTALUG] War story: OpenWRT USB access
+In-Reply-To: <54ADF765.5020903@ss.org>
+References: <CAEnxSC4_wy6OkHev+EVih59K0xemRNBY4wgaUzyAV3JCKa=dvQ@mail.gmail.com>
+ <alpine.LRH.2.02.1501071344200.26772@redclaw.mimosa.com>
+ <54ADF765.5020903@ss.org>
+Message-ID: <CAEnxSC5jHF7MKj0-xz0YkZOYovxuQDLaPGE+mPMmT-iAoSqbKQ@mail.gmail.com>
+
+On 7 January 2015 at 22:20, Scott Sullivan <scott at ss.org> wrote:
+> On 01/07/2015 01:52 PM, D. Hugh Redelmeier wrote:
+>>
+>> | From: Giles Orr <gilesorr at gmail.com>
+>> | I'm willing to try anything by this point, so I installed:
+>> |
+>> | kmod-nls-iso8859-1
+>> | kmod-nls-cp437
+>> |
+>> | Test again, and ... I can mount USB storage devices!
+>>
+>> Wow.
+>>
+>> I wonder how you could have figured this out (except via folklore).
+>>
+>> Since it is a kernel module that is missing the nls-* modules, the
+>> only ways of reporting the problem are: EWHATEVER return code (rather
+>> non-specific) or logging (would have to be rate-limited).  I guess
+>> neither of these were used.
+>>
+>> Can you fix the web page that gave you the first hints to include the
+>> lore about nls-*?
+>
+>
+> I remember going through this very same series of events as Giles. It was a
+> few years ago with the TP-Link MR-3020, which I was setting up as a portable
+> PXE boot server.
+>
+> I was going through various parts of the wiki on that, but found the need
+> information was covered in comprehensive document. Ah yes, this looks to be
+> the one.
+>
+> http://wiki.openwrt.org/doc/howto/storage
+>
+> Also relevant, but assumes ext a linux-ish file systems, so doesn't mention
+> VFAT or it's NLS needs.
+>
+> http://wiki.openwrt.org/doc/howto/usb.storage
+
+I wanted to confirm Scott's implied thesis, so I installed and
+uninstalled packages to do a few tests: the NLS files are required for
+vfat filesystems, but NOT for ext4 or iso9660 filesystems.  So an
+appropriate kmod-nls-* should be a dependency for the kmod-fs-vfat
+package but not for USB storage in general.  But I don't think (didn't
+research this part) opkg supports virtual dependencies, and forcing a
+download of all NLS packages wouldn't work ...  Okay, it _might_ work,
+but these are low-resource devices: it might also exhaust all space on
+the storage media.  So it's a pretty thorny problem.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From lsorense at csclub.uwaterloo.ca  Sat Jan 10 23:12:25 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sat, 10 Jan 2015 18:12:25 -0500
+Subject: [GTALUG] Why can't I do a Debian netinstall of unstable or
+ testing?
+In-Reply-To: <CAGc8pF6Ajeq5cy483S8i-w57ZwLZ+He1THHtU26Et3kFMxBMyg@mail.gmail.com>
+References: <CAGc8pF4sx8P4214sGmRZV78qO7+9qkkvisKxv7SfWkM2X-GoYA@mail.gmail.com>
+ <20141208153523.GG24111@csclub.uwaterloo.ca>
+ <CAGc8pF6Ajeq5cy483S8i-w57ZwLZ+He1THHtU26Et3kFMxBMyg@mail.gmail.com>
+Message-ID: <20150110231225.GL30246@csclub.uwaterloo.ca>
+
+On Sat, Jan 10, 2015 at 02:48:21PM -0500, Thomas Milne wrote:
+> I tried out the daily snapshot yesterday and it is AMAZING. The installer
+> failed a couple of times I think because some mirrors were missing stuff
+> for LXDE so I just did the default and it finished in 10 minutes.
+> 
+> Jessie is really nice. Everything on the Asus netbook worked perfectly,
+> wireless, touchpad, and so on. Very very slick release. I can't even
+> imagine what the advantage there is in choosing Ubuntu anymore.
+
+Ubuntu was always better equipped in the bugginess department. :)
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Sun Jan 11 00:08:35 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sat, 10 Jan 2015 19:08:35 -0500
+Subject: [GTALUG] Cubox Dev Platform OS images?
+In-Reply-To: <CAGc8pF7pf1Va4fHhXSSN4xnsvWw1U4DXrCtLPpEXeFf=zQL7pQ@mail.gmail.com>
+References: <CAGc8pF6di0s-RH8QuxvFPdAVGe0nKP2H4UZ=VOALh1u3whsgEg@mail.gmail.com>
+ <20150102040839.GF24111@csclub.uwaterloo.ca>
+ <CAGc8pF5Q-hTahSh1e3wyqLAieJcf1h53wh0+Lq5PUWfLCzjNpw@mail.gmail.com>
+ <20150103041302.GG24111@csclub.uwaterloo.ca>
+ <CAGxYWpbfjyzZrXO=R7isTDzmyZu+J=Ui9fsh8+tH9D2ON-yU4w@mail.gmail.com>
+ <CAGc8pF6TSi6RAHpQsbB9mvE1MWLj12boVeMvNtZYUdHOSqU5pw@mail.gmail.com>
+ <20150108153516.GJ30246@csclub.uwaterloo.ca>
+ <CAGc8pF7wUuZG054e2Ev62ATL95JyC6ew1JQC6NnGDKjeXN6pcg@mail.gmail.com>
+ <20150110022030.GK30246@csclub.uwaterloo.ca>
+ <CAGc8pF7pf1Va4fHhXSSN4xnsvWw1U4DXrCtLPpEXeFf=zQL7pQ@mail.gmail.com>
+Message-ID: <20150111000835.GM30246@csclub.uwaterloo.ca>
+
+On Sat, Jan 10, 2015 at 02:42:30PM -0500, Thomas Milne wrote:
+> Weren't you going to use yours for video playback as part of whole home
+> theater setup? Or is this something different?
+
+That was my plan, but it turns out the video decoding and such are not
+open source and not standard.  Rather unfortunate, because by spec it
+is perfect for the job.  There exist gstreamer and xmbc support for the
+marvell ipp libraries for the video decoding, but not sure mythtv can
+use it.  Most likely the CuBox-i would be much easier to get working.
+
+> Very cool. Jessie is really an incredible release.
+
+Well it's getting there.
+
+-- 
+Len Sorensen
+
