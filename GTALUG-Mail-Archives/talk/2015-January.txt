@@ -5928,3 +5928,56 @@ Well it's getting there.
 -- 
 Len Sorensen
 
+From cbbrowne at gmail.com  Mon Jan 12 18:23:27 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Mon, 12 Jan 2015 13:23:27 -0500
+Subject: [GTALUG] Crypto Question: Where do you get your entropy
+In-Reply-To: <CAEZ_B6PgP--9pN3mtbBtDHnCFL3pG9OZf0yN27WxTqQ6NuP1yg@mail.gmail.com>
+References: <alpine.LRH.2.02.1411120055080.6002@redclaw.mimosa.com>
+ <CAFNqd5U_L=tWdgd7hWrszEsb5zjTK67wwO-wTnF+F5QARw8Wew@mail.gmail.com>
+ <CAAsTreDL5=H=S0SSedyHJR_9mwFNzmJTyTed_zscwsUmV9sS9Q@mail.gmail.com>
+ <CAEZ_B6PgP--9pN3mtbBtDHnCFL3pG9OZf0yN27WxTqQ6NuP1yg@mail.gmail.com>
+Message-ID: <CAFNqd5X-jjUf_yq45tTdKxmkSHg4kgcHApy=B-E7kJzGjQ+VNA@mail.gmail.com>
+
+FYI, there's now a Kickstarter project for the OneRNG entropy generator.
+https://www.kickstarter.com/projects/moonbaseotago/onerng-an-open-source-entropy-generator
+
+You can request quantity-of-one for $50 NZD (which is about $46 CDN), or
+get 5 for $200 NZD.  $90 NZD premium for a hardware programmer.  (It's
+consciously NOT programmable across the USB interface for safety sake.)
+
+Also quite worthwhile to visit the 'design' site <http://onerng.info/>,
+which points to both software and hardware 'source code' on GitHub and
+design materials
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150112/9f3d231f/attachment.html>
+
+From hugh at mimosa.com  Tue Jan 13 05:56:10 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 13 Jan 2015 00:56:10 -0500 (EST)
+Subject: [GTALUG] we should use openstreetmap
+In-Reply-To: <CA+hskZMyvxpz79JkSpu+iYt0S++uHU7mHsFcxuzP6u9VYTNaeQ@mail.gmail.com>
+References: <CA+hskZMyvxpz79JkSpu+iYt0S++uHU7mHsFcxuzP6u9VYTNaeQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1501130052540.18226@redclaw.mimosa.com>
+
+| From: Myles Braithwaite <me at mylesbraithwaite.com>
+| To: announce at gtalug.org
+| Date: Mon, 5 Jan 2015 15:15:44 -0500
+| Subject: [GTALUG-Announce] Meeting 13th January at 7:30pm
+
+| ## Location
+| 
+| George Vari Engineering and Computing Centre
+| 245 Church Street, Room 203
+| Ryerson University
+| 
+| <http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+This is a more open platform than Google Maps.  Much more in the
+spirit of GTALUG.
+
+If you think something is missing, just add it!
+
