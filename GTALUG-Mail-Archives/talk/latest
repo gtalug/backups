@@ -5981,3 +5981,313 @@ spirit of GTALUG.
 
 If you think something is missing, just add it!
 
+From mlxxxp at gmail.com  Tue Jan 13 12:17:20 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Tue, 13 Jan 2015 07:17:20 -0500
+Subject: [GTALUG] we should use openstreetmap
+In-Reply-To: <alpine.LRH.2.02.1501130052540.18226@redclaw.mimosa.com>
+References: <CA+hskZMyvxpz79JkSpu+iYt0S++uHU7mHsFcxuzP6u9VYTNaeQ@mail.gmail.com>
+ <alpine.LRH.2.02.1501130052540.18226@redclaw.mimosa.com>
+Message-ID: <CAArSzsUY6y_3bF23XuFWexMosUxZzB0uAbV-uPtBy0bC9+6y2Q@mail.gmail.com>
+
+On 13 January 2015 at 00:56, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+> <http://www.openstreetmap.org/way/23447525>
+>
+> This is a more open platform than Google Maps.  Much more in the
+> spirit of GTALUG.
+
+I don't see any "get directions" capability, like Google Maps has.
+
+And what about street view? I like to familiarise myself with
+landmarks that I'll be seeing as I approach my destination. It cuts
+down on distractions, like hunting for address numbers, etc,
+
+There's no reason both links couldn't be included, though.
+
+-- 
+Scott
+
+From scruss at gmail.com  Tue Jan 13 13:03:46 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Tue, 13 Jan 2015 08:03:46 -0500
+Subject: [GTALUG] we should use openstreetmap
+In-Reply-To: <CAArSzsUY6y_3bF23XuFWexMosUxZzB0uAbV-uPtBy0bC9+6y2Q@mail.gmail.com>
+References: <CA+hskZMyvxpz79JkSpu+iYt0S++uHU7mHsFcxuzP6u9VYTNaeQ@mail.gmail.com>
+ <alpine.LRH.2.02.1501130052540.18226@redclaw.mimosa.com>
+ <CAArSzsUY6y_3bF23XuFWexMosUxZzB0uAbV-uPtBy0bC9+6y2Q@mail.gmail.com>
+Message-ID: <54B517B2.5080008@gmail.com>
+
+On 2015-01-13 07:17 AM, Scott Allen wrote:
+> I don't see any "get directions" capability, like Google Maps has.
+http://map.project-osrm.org/
+
+While the OSM database structure is capable of doing routing, it's not
+hosted on the main server. OSM runs on a tiny budget.
+
+Routing data is only as good as the data in OSM, and there are a whole
+bunch of users who do nothing but fix local routing errors. I don't
+think you've seen nerdy until you find out some of the very specialised
+things that OSM mappers do for fun.
+
+> And what about street view?
+
+Sheesh; picky-picky. There are a few street view sites associated with
+OSM; http://openstreetview.org/ is the first I found. No pictures? Add
+'em. You have a phone camera and no excuse.
+
+Richard W will likely be along with better suggestions, if we can get
+him away from recreating the Industrial Revolution in his condo ?
+
+cheers,
+ Stewart
+
+
+From mlxxxp at gmail.com  Tue Jan 13 14:15:06 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Tue, 13 Jan 2015 09:15:06 -0500
+Subject: [GTALUG] we should use openstreetmap
+In-Reply-To: <54B517B2.5080008@gmail.com>
+References: <CA+hskZMyvxpz79JkSpu+iYt0S++uHU7mHsFcxuzP6u9VYTNaeQ@mail.gmail.com>
+ <alpine.LRH.2.02.1501130052540.18226@redclaw.mimosa.com>
+ <CAArSzsUY6y_3bF23XuFWexMosUxZzB0uAbV-uPtBy0bC9+6y2Q@mail.gmail.com>
+ <54B517B2.5080008@gmail.com>
+Message-ID: <CAArSzsV295qX6cMC787pQF2t2Kocrb=BNDNU7NhVO7fCjC0x-A@mail.gmail.com>
+
+On 13 January 2015 at 08:03, Stewart C. Russell <scruss at gmail.com> wrote:
+> While the OSM database structure is capable of doing routing, it's not
+> hosted on the main server. OSM runs on a tiny budget.
+
+> Sheesh; picky-picky. There are a few street view sites associated with
+> OSM; http://openstreetview.org/ is the first I found.
+
+Great, that's really going to help those who are looking for how to
+get to GTALUG meetings, which I believe is the reason that a map link
+is included on the web site.
+
+> No pictures? Add 'em. You have a phone camera and no excuse.
+
+I don't have a camera in my phone
+<http://www.cellphones.ca/cell-phones/nokia-3155i-rock-box/>
+Plus, if I have to travel to my destination to take pictures of
+landmarks, to make it easier to find my way there, what's the point?
+
+Again, I propose that links to both Google Maps and OSM be included.
+Let the user decide if they want a pure open source experience, and/or
+perhaps a more useful one. The more information, the better.
+
+-- 
+Scott
+
+From me at mylesbraithwaite.com  Tue Jan 13 16:29:55 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 13 Jan 2015 11:29:55 -0500
+Subject: [GTALUG] we should use openstreetmap
+In-Reply-To: <alpine.LRH.2.02.1501130052540.18226@redclaw.mimosa.com>
+References: <CA+hskZMyvxpz79JkSpu+iYt0S++uHU7mHsFcxuzP6u9VYTNaeQ@mail.gmail.com>
+ <alpine.LRH.2.02.1501130052540.18226@redclaw.mimosa.com>
+Message-ID: <CA+hskZOm0PAhSDm__z=zdxZQVFdBkVZqKtjPqZN-g-J5vaZuUA@mail.gmail.com>
+
+On Tue, Jan 13, 2015 at 12:56 AM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+> <http://www.openstreetmap.org/way/23447525>
+>
+> This is a more open platform than Google Maps.  Much more in the
+> spirit of GTALUG.
+>
+> If you think something is missing, just add it!
+
+I don't want this to turn into a flamewar so first thing is as the
+person who sends out the announced emails I will include both Google
+Maps and OSM links in the emails.
+
+Personally I feel even though Google Maps software or mapping data is
+not open source it's at least accessible from a pretty much every
+modern browser and more importantly accessible for people with visual
+and reading disorders (i.e. dyslexia).
+
+From me at mylesbraithwaite.com  Tue Jan 13 16:32:19 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 13 Jan 2015 11:32:19 -0500
+Subject: [GTALUG] [GTALUG-Announce] Meeting tonight at 7:30pm
+Message-ID: <CA+hskZOXVJOJih3ezG4K5fn=OgPNXe08qjTvd=U82tCC9XKH4A@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-01/>
+
+# Social Engineering: Building A Community On Purpose with Mike Hoye
+
+Community building in Open Source is usually "organic" - meaning
+"accidental, unsupervised and messy". The bazaar has matured a lot in
+the last twenty years, though, and now we know a lot about how we can
+do better. Mike Hoye, Mozilla's Engineering Community Manager, would
+like to tell you what works, what doesn't, and why that's important.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub 54 Dundas St East for refreshments and more socializing.
+
+Code of Conduct
+===============
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From northdot9 at gmail.com  Tue Jan 13 22:53:30 2015
+From: northdot9 at gmail.com (David Thornton)
+Date: Tue, 13 Jan 2015 17:53:30 -0500
+Subject: [GTALUG] [GTALUG-Announce] Meeting tonight at 7:30pm
+In-Reply-To: <CA+hskZOXVJOJih3ezG4K5fn=OgPNXe08qjTvd=U82tCC9XKH4A@mail.gmail.com>
+References: <CA+hskZOXVJOJih3ezG4K5fn=OgPNXe08qjTvd=U82tCC9XKH4A@mail.gmail.com>
+Message-ID: <CAHcykVo=-fW2S-Uog-rxx4Oo1i-QL0XCDUz26HhDk1r1gCiRaA@mail.gmail.com>
+
+I'm keen to meet up early for dinner. Anyone else meeting up for dinner?
+
+David Thornton
+On Jan 13, 2015 11:34 AM, "Myles Braithwaite" <me at mylesbraithwaite.com>
+wrote:
+
+> <http://gtalug.org/meeting/2015-01/>
+>
+> # Social Engineering: Building A Community On Purpose with Mike Hoye
+>
+> Community building in Open Source is usually "organic" - meaning
+> "accidental, unsupervised and messy". The bazaar has matured a lot in
+> the last twenty years, though, and now we know a lot about how we can
+> do better. Mike Hoye, Mozilla's Engineering Community Manager, would
+> like to tell you what works, what doesn't, and why that's important.
+>
+> ## Location
+>
+> George Vari Engineering and Computing Centre
+> 245 Church Street, Room 203
+> Ryerson University
+>
+> <http://goo.gl/maps/16oJ2>
+>
+> <http://www.openstreetmap.org/way/23447525>
+>
+> ## Schedule
+>
+> * 7:30 pm - Meeting and presentation.
+> * 9:00 pm - After each meeting a group of GTALUGers move to the The
+> Imperial Pub 54 Dundas St East for refreshments and more socializing.
+>
+> Code of Conduct
+> ===============
+>
+> We want a productive happy community that can welcome new ideas,
+> improve every process every year, and foster collaboration between
+> individuals with differing needs, interests and skills.
+>
+> We gain strength from diversity, and actively seek participation from
+> those who enhance it. This code of conduct exists to ensure that
+> diverse groups collaborate to mutual advantage and enjoyment. We will
+> challenge prejudice that could jeopardize the participation of any
+> person in the community.
+>
+> The Code of Conduct governs how we behave in public or in private
+> whenever the Linux community will be judged by our actions. We expect
+> it to be honored by everyone who represents the community officially
+> or informally, claims affiliation, or participates directly. It
+> applies to activities online or offline.
+>
+> We invite anybody to participate. Our community is open.
+>
+> Please read more about the GTALUG Code of Conduct here:
+> <http://gtalug.org/about/code-of-conduct/>.
+>
+> If you have any questions, comments, or concerns about the GTALUG Code
+> of Conduct please contact one of the GTALUG Board Members.
+> ---
+> GTALUG Announce mailing list
+> announce at gtalug.org
+> http://gtalug.org/mailman/listinfo/announce
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150113/51c42ef6/attachment.html>
+
+From bjonkman at sobac.com  Wed Jan 14 06:32:56 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Wed, 14 Jan 2015 01:32:56 -0500
+Subject: [GTALUG] we should use openstreetmap
+In-Reply-To: <CA+hskZOm0PAhSDm__z=zdxZQVFdBkVZqKtjPqZN-g-J5vaZuUA@mail.gmail.com>
+References: <CA+hskZMyvxpz79JkSpu+iYt0S++uHU7mHsFcxuzP6u9VYTNaeQ@mail.gmail.com>
+ <alpine.LRH.2.02.1501130052540.18226@redclaw.mimosa.com>
+ <CA+hskZOm0PAhSDm__z=zdxZQVFdBkVZqKtjPqZN-g-J5vaZuUA@mail.gmail.com>
+Message-ID: <816f7bb0-3ac3-475c-b5aa-ce5d2a334860@email.android.com>
+
+Perhaps when the weather allows t-shirts and shorts again we can organize a mapping party. I haven't done that in ages.
+
+--Bob.
+
+On January 13, 2015 11:29:55 AM EST, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+>On Tue, Jan 13, 2015 at 12:56 AM, D. Hugh Redelmeier <hugh at mimosa.com>
+>wrote:
+>> <http://www.openstreetmap.org/way/23447525>
+>>
+>> This is a more open platform than Google Maps.  Much more in the
+>> spirit of GTALUG.
+>>
+>> If you think something is missing, just add it!
+>
+>I don't want this to turn into a flamewar so first thing is as the
+>person who sends out the announced emails I will include both Google
+>Maps and OSM links in the emails.
+>
+>Personally I feel even though Google Maps software or mapping data is
+>not open source it's at least accessible from a pretty much every
+>modern browser and more importantly accessible for people with visual
+>and reading disorders (i.e. dyslexia).
+>---
+>Talk Mailing List
+>talk at gtalug.org
+>http://gtalug.org/mailman/listinfo/talk
+
+
+--
+Bob Jonkman bjonkman at sobac.com
+http://bob.jonkman.ca/blogs/bobjonkman
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150114/44dff95f/attachment.html>
+
