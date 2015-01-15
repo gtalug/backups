@@ -445,3 +445,110 @@ I counted 25 at 7:45, and 27 @ 9:05pm
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/operations/attachments/20150113/acc14f71/attachment.html>
 
+From scott at ss.org  Wed Jan 14 12:29:44 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Wed, 14 Jan 2015 07:29:44 -0500
+Subject: [GTALUG-Ops] Fwd: Re: Speaking at GTALUG, Tomorrow
+In-Reply-To: <54B5AFCB.2050907@mozilla.com>
+References: <54B5AFCB.2050907@mozilla.com>
+Message-ID: <54B66138.8090802@ss.org>
+
+Just saw this now, from Mike H. right before 7pm. Did everything go okay 
+last night?
+
+I've always told people doors open at 7, presentation starts at 7:30, 
+were folks just a little late arriving from dinner?
+
+
+-------- Forwarded Message --------
+Subject: Re: Speaking at GTALUG, Tomorrow
+Date: Tue, 13 Jan 2015 18:52:43 -0500
+From: Mike Hoye <mhoye at mozilla.com>
+To: Scott Sullivan <scott at ss.org>
+
+On 2015-01-12 2:01 PM, Scott Sullivan wrote:
+>
+>
+> Locations and Day:
+> ------------------
+>
+> January 13th, 2014, 7pm
+>
+> George Vari Engineering and Computing Centre at Ryerson University
+> 245 Church Street, Room 203 (second floor).
+
+This is all still correct?
+
+- mhoye
+
+
+
+From davec-b at rogers.com  Wed Jan 14 17:31:22 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Wed, 14 Jan 2015 12:31:22 -0500
+Subject: [GTALUG-Ops] Fwd: Re: Speaking at GTALUG, Tomorrow
+In-Reply-To: <54B66138.8090802@ss.org>
+References: <54B5AFCB.2050907@mozilla.com> <54B66138.8090802@ss.org>
+Message-ID: <54B6A7EA.8000107@rogers.com>
+
+They arrived from dinner, them a blob more, then a trickle.
+
+--dave
+
+On 01/14/2015 07:29 AM, Scott Sullivan wrote:
+> Just saw this now, from Mike H. right before 7pm. Did everything go 
+> okay last night?
+>
+> I've always told people doors open at 7, presentation starts at 7:30, 
+> were folks just a little late arriving from dinner?
+>
+>
+> -------- Forwarded Message --------
+> Subject: Re: Speaking at GTALUG, Tomorrow
+> Date: Tue, 13 Jan 2015 18:52:43 -0500
+> From: Mike Hoye <mhoye at mozilla.com>
+> To: Scott Sullivan <scott at ss.org>
+>
+> On 2015-01-12 2:01 PM, Scott Sullivan wrote:
+>>
+>>
+>> Locations and Day:
+>> ------------------
+>>
+>> January 13th, 2014, 7pm
+>>
+>> George Vari Engineering and Computing Centre at Ryerson University
+>> 245 Church Street, Room 203 (second floor).
+>
+> This is all still correct?
+>
+> - mhoye
+>
+>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From me at mylesbraithwaite.com  Wed Jan 14 22:00:45 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Wed, 14 Jan 2015 17:00:45 -0500
+Subject: [GTALUG-Ops] A Video of Mike Hoye's Talk on Social Engineering at
+	FSOSS
+Message-ID: <CA+hskZPXUOvJQCdKzfhdMBC-iUnAHwRuY=R+jZ-UCWRp3ys=Lg@mail.gmail.com>
+
+<http://exple.tive.org/blarg/2014/10/29/social-engineering/>
+
+If you couldn't make it to last night's talk you should definitely
+watch his talk from FSOSS.
+
+There is a lot of things that we could apply to GTALUG.
+
