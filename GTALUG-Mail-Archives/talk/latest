@@ -6788,3 +6788,193 @@ Tw: el56
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150114/9bad3fee/attachment.html>
 
+From thomas.bruce.milne at gmail.com  Thu Jan 15 12:56:24 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Thu, 15 Jan 2015 07:56:24 -0500
+Subject: [GTALUG] Coming to a router near you soon: Celerway's plan to give
+ your networking a makeover | ZDNet
+In-Reply-To: <CAGc8pF6oH1Mggubx8pq=FEtQu2qEocc_DvKU1MXnuzBbdiFdQg@mail.gmail.com>
+References: <CAGc8pF6oH1Mggubx8pq=FEtQu2qEocc_DvKU1MXnuzBbdiFdQg@mail.gmail.com>
+Message-ID: <CAGc8pF5KPRx-mzhCtjFYqndhcohv2H5jjKQgqHWgAv=w3UMBDA@mail.gmail.com>
+
+Isn't this just a kludge? Shouldn't we work on improving the available
+networks so we don't need this malarkey?
+
+http://www.zdnet.com/article/coming-to-a-router-near-you-soon-celerways-plan-to-give-your-networking-a-makeover/
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150115/1aba580f/attachment.html>
+
+From james.knott at rogers.com  Thu Jan 15 13:31:21 2015
+From: james.knott at rogers.com (James Knott)
+Date: Thu, 15 Jan 2015 08:31:21 -0500
+Subject: [GTALUG] Coming to a router near you soon: Celerway's plan to
+ give your networking a makeover | ZDNet
+In-Reply-To: <CAGc8pF5KPRx-mzhCtjFYqndhcohv2H5jjKQgqHWgAv=w3UMBDA@mail.gmail.com>
+References: <CAGc8pF6oH1Mggubx8pq=FEtQu2qEocc_DvKU1MXnuzBbdiFdQg@mail.gmail.com>
+ <CAGc8pF5KPRx-mzhCtjFYqndhcohv2H5jjKQgqHWgAv=w3UMBDA@mail.gmail.com>
+Message-ID: <54B7C129.3040807@rogers.com>
+
+On 01/15/2015 07:56 AM, Thomas Milne wrote:
+>
+> Isn't this just a kludge? Shouldn't we work on improving the available
+> networks so we don't need this malarkey?
+>
+Yep.  Moving to IPv6 will address some of these issues.  For example,
+mobile IPv6 handles the problem of moving between networks.
+
+If only people would put the same effort into moving to IPv6 as they do
+into creating hacks to extend IPv4...
+
+What is needed is a network where every device gets it's own public IP
+address.  That ain't gonna happen with IPv4, where there are already
+more mobile devices than possible addresses, even ignoring the fact that
+most IPv4 addresses have already been assigned to wired devices.
+
+I've been running IPv6 on my home network for almost 5 years
+
+From cdasilva at iprimus.ca  Thu Jan 15 20:15:57 2015
+From: cdasilva at iprimus.ca (Clive DaSilva)
+Date: Thu, 15 Jan 2015 15:15:57 -0500
+Subject: [GTALUG] Running Hadoop on a 32 bit linux (Fedora 21 or Linuxmint
+	17) computer
+Message-ID: <000601d03100$12e653b0$38b2fb10$@iprimus.ca>
+
+Hello all
+
+ 
+
+I decided to take a shot at Hadoop as a lot of my career adventures deal
+with manipulating large data streams. While Hadoop usually runs from a
+cluster of Linux boxes, for self-experimental purposes, some of the distros
+have included Hadoop or work- alikes( Apache Bigtop for Ubuntu being one
+example which insists on  a 64 bit box) for single node activity, but it's
+not clear as to whether you need a 32 or 64 bit computer, as after two days
+of googling the subject, I find the documentation to be  quite vague. Does
+anyone here have experience with this beast? Any suggestions, links, etc
+would be appreciated.
+
+ 
+
+ 
+
+---------
+
+Clive DaSilva - cdasilva at iprimus.ca
+
+---------
+
+GTALUG Talk Mailing List -  <mailto:talk at gtalug.org> talk at gtalug.org
+<http://gtalug.org/mailman/listinfo/talk>
+http://gtalug.org/mailman/listinfo/talk
+
+ 
+
+ 
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150115/0a1da91c/attachment.html>
+
+From davec-b at rogers.com  Thu Jan 15 20:16:52 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Thu, 15 Jan 2015 15:16:52 -0500
+Subject: [GTALUG] Coming to a router near you soon: Celerway's plan to
+ give your networking a makeover | ZDNet
+In-Reply-To: <CAGc8pF5KPRx-mzhCtjFYqndhcohv2H5jjKQgqHWgAv=w3UMBDA@mail.gmail.com>
+References: <CAGc8pF6oH1Mggubx8pq=FEtQu2qEocc_DvKU1MXnuzBbdiFdQg@mail.gmail.com>
+ <CAGc8pF5KPRx-mzhCtjFYqndhcohv2H5jjKQgqHWgAv=w3UMBDA@mail.gmail.com>
+Message-ID: <54B82034.9080805@rogers.com>
+
+It is indeed: Dave Taht and the bufferbloat team is trying to get 
+someone to fund them to fix the broken bits in mobile: they already do 
+amazingly better on home routers running *WRT.
+
+--dave
+
+
+On 01/15/2015 07:56 AM, Thomas Milne wrote:
+>
+> Isn't this just a kludge? Shouldn't we work on improving the available 
+> networks so we don't need this malarkey?
+>
+> http://www.zdnet.com/article/coming-to-a-router-near-you-soon-celerways-plan-to-give-your-networking-a-makeover/
+>
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150115/d43957b1/attachment.html>
+
+From northdot9 at gmail.com  Fri Jan 16 02:06:06 2015
+From: northdot9 at gmail.com (David Thornton)
+Date: Thu, 15 Jan 2015 21:06:06 -0500
+Subject: [GTALUG] Running Hadoop on a 32 bit linux (Fedora 21 or
+ Linuxmint 17) computer
+In-Reply-To: <000601d03100$12e653b0$38b2fb10$@iprimus.ca>
+References: <000601d03100$12e653b0$38b2fb10$@iprimus.ca>
+Message-ID: <CAHcykVqHnpA7-PS4rfvk04F=Tpg4vMvZ=-KAz-uvnnzgtWMtww@mail.gmail.com>
+
+It is my experience that most "new tools" Hadoop included are developed
+primarily for 64 bit platforms. It's possible that some components are
+offered with 32 bit versions.  However  we live in a world of very
+interdependent software components. It takes a bug or two in the 32 bit
+version that's not getting any dev attention because it's 32 bit to bring
+your project to a grinding halt. Better to expend energy , time , or money
+to start at 64 bit and deal with hard problems rather than asinine problems.
+
+/opinion
+On Jan 15, 2015 3:16 PM, "Clive DaSilva" <cdasilva at iprimus.ca> wrote:
+
+> Hello all
+>
+>
+>
+> I decided to take a shot at Hadoop as a lot of my career adventures deal
+> with manipulating large data streams. While Hadoop usually runs from a
+> cluster of Linux boxes, for self-experimental purposes, some of the distros
+>  have included Hadoop or work- alikes( Apache Bigtop for Ubuntu being one
+> example which insists on  a 64 bit box) for single node activity, but it?s
+> not clear as to whether you need a 32 or 64 bit computer, as after two days
+> of googling the subject, I find the documentation to be  quite vague. Does
+> anyone here have experience with this beast? Any suggestions, links, etc
+> would be appreciated.
+>
+>
+>
+>
+>
+> ---------
+>
+> Clive DaSilva ? cdasilva at iprimus.ca
+>
+> ---------
+>
+> GTALUG Talk Mailing List - talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150115/0c612d95/attachment.html>
+
