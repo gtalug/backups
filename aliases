@@ -70,6 +70,17 @@ operations-request:      "|/var/lib/mailman/mail/mailman request operations"
 operations-subscribe:    "|/var/lib/mailman/mail/mailman subscribe operations"
 operations-unsubscribe:  "|/var/lib/mailman/mail/mailman unsubscribe operations"
 
+ops:              "|/var/lib/mailman/mail/mailman post operations"
+ops-admin:        "|/var/lib/mailman/mail/mailman admin operations"
+ops-bounces:      "|/var/lib/mailman/mail/mailman bounces operations"
+ops-confirm:      "|/var/lib/mailman/mail/mailman confirm operations"
+ops-join:         "|/var/lib/mailman/mail/mailman join operations"
+ops-leave:        "|/var/lib/mailman/mail/mailman leave operations"
+ops-owner:        "|/var/lib/mailman/mail/mailman owner operations"                      
+ops-request:      "|/var/lib/mailman/mail/mailman request operations"                    
+ops-subscribe:    "|/var/lib/mailman/mail/mailman subscribe operations"                  
+ops-unsubscribe:  "|/var/lib/mailman/mail/mailman unsubscribe operations"
+
 ## board mailing list
 board:              "|/var/lib/mailman/mail/mailman post board"
 board-admin:        "|/var/lib/mailman/mail/mailman admin board"
