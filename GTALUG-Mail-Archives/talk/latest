@@ -6978,3 +6978,223 @@ On Jan 15, 2015 3:16 PM, "Clive DaSilva" <cdasilva at iprimus.ca> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150115/0c612d95/attachment.html>
 
+From richard at weait.com  Fri Jan 16 18:26:53 2015
+From: richard at weait.com (Richard Weait)
+Date: Fri, 16 Jan 2015 13:26:53 -0500
+Subject: [GTALUG] LeafletJS workshop at #maptime next Thursday
+Message-ID: <CAGwUD5t52hMFTYKNNd+KdM8M_KzSsGzOQU3LbLZKG4-2Asb0+Q@mail.gmail.com>
+
+LeafletJS is a general purpose library to put maps on web pages.  A
+LeafletJS workshop will be part of #maptimeTO, next Thursday.
+
+LeafletJS is open source (MIT license) and runs on Linux (plus
+probably everything else with a browser)
+
+Event announcement follows.  Please RSVP
+http://www.meetup.com/OpenStreetMap-Toronto/events/219769107/
+
+regards,
+
+Richard
+
+Time: 1830H
+Date: Thursday 22 January 2015
+Location: Mozilla Community Space, 5th Floor, 366 Adelaide Street West
+Map: http://www.openstreetmap.org/way/61430204
+
+#Maptime is time for learning and sharing knowledge at the
+intersection of "Maps" and "The Internet".  Beginners are welcome.
+Bring your computer so that you can work on your projects.
+
+Maptime starts with short show and tell.  Attendees demonstrate their
+current projects and share key lessons, or ask for assistance.
+Maptime proceeds with workshop time when attendees self-study, or
+assemble in ad-hoc groups for collaboration.
+
+Maptime is friendly, diverse and inclusive. Join us.
+
+This month Joshua Frazier will lead a workshop on the basics of the
+Leaflet JavaScript library (leafletjs.com), the most popular open
+source solution for publishing maps     on the Web.
+
+Join us to create a map on a web page, learn about map tiles and how
+Leaflet uses them,  explore a variety of map tiles based on
+OpenStreetMap data, add and customize markers and popups, manipulate
+mouse interactions, and more!
+
+No web development or JavaScript experience necessary.
+
+Maptime is dedicated to providing a harassment-free experience for
+everyone, regardless of colour, ethnic origin, gender, gender identity
+and expression, sexual orientation, disability, physical appearance,
+body size, race, age or religion. We do not tolerate harassment of
+event participants in any form. Sexual language and imagery is not
+appropriate for our events. Participants violating these rules may be
+sanctioned or expelled from the event at the discretion of the
+organizers.
+
+From thoriumbr at gmail.com  Fri Jan 16 19:22:17 2015
+From: thoriumbr at gmail.com (Mauro Souza)
+Date: Fri, 16 Jan 2015 17:22:17 -0200
+Subject: [GTALUG] OFF: The worst HTML/javascript code I've ever seen
+Message-ID: <CAEZ_B6NNwTRF6ez9Fccmuwhdv-3t6WWE4JaXdXSVF_jHdF+qjQ@mail.gmail.com>
+
+I was browsing the interwebs today when I got an article on The Daily WTF:
+
+http://thedailywtf.com/articles/comments/pass-by-nullpointer
+
+There's a Java null pointer exception triggered by javascript, there's
+funny collor definitions (like blueBackground = #F6F9FC), there's
+recreation of date functions, there's a table inside a div inside a span
+inside a li...
+
+The offending site is hosted at
+http://203.143.139.44:8080/wps/portal/en/site/home?country=vietnam
+
+But, please, use curl or wget (or axel, aria2, lynx -dump -source, telnet,
+netcat) to get that page. You browser will curse you if you force it load
+this heavily garbled code.
+
+Mauro
+http://mauro.limeiratem.com - registered Linux User: 294521
+Scripture is both history, and a love letter from God.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150116/6f77c99b/attachment.html>
+
+From cdasilva at iprimus.ca  Fri Jan 16 22:42:44 2015
+From: cdasilva at iprimus.ca (Clive DaSilva)
+Date: Fri, 16 Jan 2015 17:42:44 -0500
+Subject: [GTALUG] Running Hadoop on a 32 bit linux (Fedora 21 or
+	Linuxmint 17) computer
+In-Reply-To: <CAHcykVqHnpA7-PS4rfvk04F=Tpg4vMvZ=-KAz-uvnnzgtWMtww@mail.gmail.com>
+References: <000601d03100$12e653b0$38b2fb10$@iprimus.ca>
+ <CAHcykVqHnpA7-PS4rfvk04F=Tpg4vMvZ=-KAz-uvnnzgtWMtww@mail.gmail.com>
+Message-ID: <00b401d031dd$bff48170$3fdd8450$@iprimus.ca>
+
+Thanks David
+
+ 
+
+I appreciate your insight
+
+ 
+
+ 
+
+ 
+
+From: talk [mailto:talk-bounces at gtalug.org] On Behalf Of David Thornton
+Sent: January-15-15 9:06 PM
+To: GTALUG Talk
+Subject: Re: [GTALUG] Running Hadoop on a 32 bit linux (Fedora 21 or Linuxmint 17) computer
+
+ 
+
+It is my experience that most "new tools" Hadoop included are developed primarily for 64 bit platforms. It's possible that some components are offered with 32 bit versions.  However  we live in a world of very interdependent software components. It takes a bug or two in the 32 bit version that's not getting any dev attention because it's 32 bit to bring your project to a grinding halt. Better to expend energy , time , or money to start at 64 bit and deal with hard problems rather than asinine problems.
+
+/opinion
+
+On Jan 15, 2015 3:16 PM, "Clive DaSilva" <cdasilva at iprimus.ca> wrote:
+
+Hello all
+
+ 
+
+I decided to take a shot at Hadoop as a lot of my career adventures deal with manipulating large data streams. While Hadoop usually runs from a cluster of Linux boxes, for self-experimental purposes, some of the distros  have included Hadoop or work- alikes( Apache Bigtop for Ubuntu being one example which insists on  a 64 bit box) for single node activity, but it?s not clear as to whether you need a 32 or 64 bit computer, as after two days of googling the subject, I find the documentation to be  quite vague. Does anyone here have experience with this beast? Any suggestions, links, etc would be appreciated.
+
+ 
+
+ 
+
+---------
+
+Clive DaSilva ? cdasilva at iprimus.ca
+
+---------
+
+GTALUG Talk Mailing List - talk at gtalug.org http://gtalug.org/mailman/listinfo/talk
+
+ 
+
+ 
+
+
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150116/f8214c38/attachment.html>
+
+From mattl at creativecommons.org  Fri Jan 16 22:46:10 2015
+From: mattl at creativecommons.org (Matt Lee)
+Date: Fri, 16 Jan 2015 17:46:10 -0500
+Subject: [GTALUG] Talk for February?
+Message-ID: <CABGQpf5YvN1wtG9J-GibpVPUZAhVYr2JJn8NevPU5BtV6D8mqA@mail.gmail.com>
+
+I'm coming to Toronto for the week of 16th-20th February, and if
+nobody's talking, I'd like to talk about some of the cool stuff we're
+doing at Creative Commons.
+
+---
+Matt Lee
+Creative Commons
+Boston, MA, USA
+
+From thomas.bruce.milne at gmail.com  Sat Jan 17 04:01:51 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Fri, 16 Jan 2015 23:01:51 -0500
+Subject: [GTALUG] China's Baidu builds its own supercomputer to beat Google
+	at image search
+Message-ID: <CAGc8pF6mXpZD7ZQ9Cd6Jz3GokTqDYp+2LYTHuoJp9Pn8Jz4T3g@mail.gmail.com>
+
+*China's Baidu builds its own supercomputer to beat Google at image search*
+http://news360.com/article/274664893
+
+Shared via News360 <http://www.news360.com/app>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150116/f3212055/attachment.html>
+
+From evan at telly.org  Sat Jan 17 04:17:36 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Fri, 16 Jan 2015 23:17:36 -0500
+Subject: [GTALUG] China's Baidu builds its own supercomputer to beat
+ Google at image search
+In-Reply-To: <CAGc8pF6mXpZD7ZQ9Cd6Jz3GokTqDYp+2LYTHuoJp9Pn8Jz4T3g@mail.gmail.com>
+References: <CAGc8pF6mXpZD7ZQ9Cd6Jz3GokTqDYp+2LYTHuoJp9Pn8Jz4T3g@mail.gmail.com>
+Message-ID: <CAMguqh2EeCSkkTnPoP9-65a5bstSbm1wobq2bfRbgSEg+LqTHA@mail.gmail.com>
+
+So it searches half the Internet, twice as fast?
+
+On 16 January 2015 at 23:01, Thomas Milne <thomas.bruce.milne at gmail.com>
+wrote:
+
+>
+> *China's Baidu builds its own supercomputer to beat Google at image search*
+> http://news360.com/article/274664893
+>
+> Shared via News360 <http://www.news360.com/app>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+
+
+-- 
+Evan Leibovitch
+Toronto Canada
+
+Em: evan at telly dot org
+Sk: evanleibovitch
+Tw: el56
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150116/5aefb7d6/attachment.html>
+
