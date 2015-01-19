@@ -7198,3 +7198,520 @@ Tw: el56
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150116/5aefb7d6/attachment.html>
 
+From hugh at mimosa.com  Sun Jan 18 21:51:21 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 18 Jan 2015 16:51:21 -0500 (EST)
+Subject: [GTALUG] Seminar by Professor Grabriella Coleman at York on Tuesday
+Message-ID: <alpine.LRH.2.02.1501181646460.2908@redclaw.mimosa.com>
+
+I went to her talk at U of T on Friday and found it very interesting.
+I imagine that Tuesday's talk is the same.
+
+<http://www.yorku.ca/yuevents/index.asp?Event=33152&Category=0&ShowCal=&TimeSame=Jan&Month=1&Year=2015&EventTitle=York%20Events:%20STS+Seminar%3A+Gabriella+Coleman%2C+McGill+University>
+
+Unfortunately the York description is scant so I'm including the U of T 
+description.
+
+---------- Forwarded message ----------
+From: Dimitris Hatzinakos <dimitris at COMM.UTORONTO.CA>
+To: IPSI-L at listserv.utoronto.ca
+Date: Mon, 5 Jan 2015 11:20:21 -0500
+Subject: [GW-C] Seminar by Professor Grabriella Coleman, Friday Jan. 16
+
+IPSL-L List
+
+Occasional postings from the Identity, Privacy and Security Institute,
+University of Toronto http://www.ipsi.utoronto.ca
+
+-----------------------------------
+
+SEMINAR ANNOUNCEMENT
+
+
+Friday, January 16, 2015
+12:00 noon
+Room MC254 (5 King?s Colllege Road)
+Professor Gabriella Coleman
+McGill University
+
+?Hacker, Hoaxer, Whistleblower, Spy: The Many Faces of Anonymous?
+
+Anonymous, a group of hackers and activists came to the fore in 2008 when they
+attacked the church of Scientology. Since then their collective action has come
+up against corporations and supported the Arab revolutionaries. Coleman will
+share her story of becoming an Anonymous confidante and interpreter. She talk
+about the motivations of the group, the many facets of their culture, and the
+increasing importance of hacker activism more generally.
+
+
+Gabriella (Biella) Coleman holds the Wolfe Chair in Scientific and Technological
+Literacy at McGill University. Trained as a cultural anthropologist, she
+researches, writes, and teaches on computer hackers and digital activism. She is
+the author of ?Coding Freedom: The Ethics and Aesthetics of Hacking? published
+by Princeton University Press and Hacker, Ho
+
+
+
+-- 
+Dimitrios Hatzinakos
+Professor
+Bell Canada Chair in Multimedia
+Director, Identity, Privacy and Security  Institute (IPSI)
+Electrical and Computer Engineering
+University of Toronto
+dimitris at comm.utoronto.ca
+
+----------------------------------------------------
+IPSI-L Listserv
+
+IPSI-L is a low-traffic moderated list of news and upcoming events sent to
+members of the privacy and security community from the Identity, Privacy and
+Security Institute of the University of Toronto (http://www.ipsi.utoronto.ca).
+
+If you have an event you would like to promote or news to share, send an email
+to IPSI-L at listserv.utoronto.ca. Messages will be reviewed before posting.
+
+To SUBSCRIBE, send a blank email to:
+IPSI-L-subscribe-request at LISTSERV.UTORONTO.CA.
+
+To UNSUBSCRIBE, send a blank email to:
+IPSI-L-unsubscribe-request at LISTSERV.UTORONTO.CA.
+
+From bjonkman at sobac.com  Sun Jan 18 23:42:46 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Sun, 18 Jan 2015 18:42:46 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <54B71639.3040702@chrisaitken.net>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net> <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+ <CAGxYWpYF88tZfxuDcjFfQYgnNRhaMVLwLygOHRh_F=xNaFd+GQ@mail.gmail.com>
+ <54A5C77A.10308@chrisaitken.net>
+ <CAGxYWpbuxph5bKejk-oNSK_c5n9HEKcabyLw07s0i0kupi9tTg@mail.gmail.com>
+ <54A6B8F5.6060200@chrisaitken.net>
+ <CAGxYWpYUgEOOgvKDw+ioy-yjpMz-juiDYt6hqFwmLrPfg-X8-g@mail.gmail.com>
+ <54A84B4E.8050105@chrisaitken.net> <54A85496.4090908@sobac.com>
+ <54B71639.3040702@chrisaitken.net>
+Message-ID: <54BC44F6.60209@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+- From the Ubuntu login screen, the desktop selector is the circle in
+the top-right corner of the login dialogue box.  Click on the circle,
+then select your preferred desktop environment. Some desktops put a
+logo in there (the Ubuntu logo for Unity, the bigfoot logo for Gnome),
+but the MATE desktop just has a blank circle.
+
+- --Bob.
+
+
+
+On 14/01/15 08:22 PM, Mr Chris Aitken wrote:
+> On 15-01-03 03:44 PM, Bob Jonkman wrote: On 03/01/15 03:04 PM,
+> Chris Aitken wrote:
+>>>> Will there be any possibility of choosing the old GNOME
+>>>> interface, so I don't end up with Unity?
+> I use the MATE interface, a Gnome2 fork. You can install it from
+> Ubuntu 14.04LTS "Trusty Tahr" repositories now: 
+> http://packages.ubuntu.com/trusty/mate-desktop  Install it from
+> the commandline with 'apt-get install mate-desktop'
+> 
+>> OK, I got a tech to install 14.04. So, that's done. Now I want
+>> to install mate-desktop. I tried your command, and got ...
+> 
+> 
+>> chris at Chris-Pc:~$ sudo apt-get install mate-desktop [sudo]
+>> password for chris: Reading package lists... Done Building
+>> dependency tree Reading state information... Done mate-desktop is
+>> already the newest version. The following packages were
+>> automatically installed and are no longer required: 
+>> linux-headers-3.13.0-32 linux-headers-3.13.0-32-generic 
+>> linux-image-3.13.0-32-generic
+>> linux-image-extra-3.13.0-32-generic Use 'apt-get autoremove' to
+>> remove them. 0 upgraded, 0 newly installed, 0 to remove and 10
+>> not upgraded. chris at Chris-Pc:~$ sudo apt-get remove mate-desktop 
+>> Reading package lists... Done Building dependency tree Reading
+>> state information... Done The following packages were
+>> automatically installed and are no longer required: 
+>> libmate-desktop-2-17 libunique-1.0-0 linux-headers-3.13.0-32 
+>> linux-headers-3.13.0-32-generic linux-image-3.13.0-32-generic 
+>> linux-image-extra-3.13.0-32-generic mate-desktop-common Use
+>> 'apt-get autoremove' to remove them. The following packages will
+>> be REMOVED: mate-desktop 0 upgraded, 0 newly installed, 1 to
+>> remove and 10 not upgraded. After this operation, 97.3 kB disk
+>> space will be freed. Do you want to continue? [Y/n] y (Reading
+>> database ... 225461 files and directories currently installed.) 
+>> Removing mate-desktop (1.6.2-1) ... Processing triggers for
+>> man-db (2.6.7.1-1ubuntu1) ... Processing triggers for
+>> mime-support (3.54ubuntu1.1) ... Processing triggers for
+>> gnome-menus (3.10.1-0ubuntu2) ... Processing triggers for
+>> desktop-file-utils (0.22-1ubuntu1) ... Processing triggers for
+>> bamfdaemon (0.5.1+14.04.20140409-0ubuntu1) ... Rebuilding
+>> /usr/share/applications/bamf-2.index... chris at Chris-Pc:~$ sudo
+>> apt-get install mate-desktop Reading package lists... Done 
+>> Building dependency tree Reading state information... Done The
+>> following packages were automatically installed and are no
+>> longer required: linux-headers-3.13.0-32
+>> linux-headers-3.13.0-32-generic linux-image-3.13.0-32-generic
+>> linux-image-extra-3.13.0-32-generic Use 'apt-get autoremove' to
+>> remove them. The following NEW packages will be installed: 
+>> mate-desktop 0 upgraded, 1 newly installed, 0 to remove and 10
+>> not upgraded. Need to get 0 B/17.8 kB of archives. After this
+>> operation, 97.3 kB of additional disk space will be used. 
+>> Selecting previously unselected package mate-desktop. (Reading
+>> database ... 225454 files and directories currently installed.) 
+>> Preparing to unpack .../mate-desktop_1.6.2-1_i386.deb ... 
+>> Unpacking mate-desktop (1.6.2-1) ... Processing triggers for
+>> mime-support (3.54ubuntu1.1) ... Processing triggers for
+>> gnome-menus (3.10.1-0ubuntu2) ... Processing triggers for
+>> desktop-file-utils (0.22-1ubuntu1) ... Processing triggers for
+>> bamfdaemon (0.5.1+14.04.20140409-0ubuntu1) ... Rebuilding
+>> /usr/share/applications/bamf-2.index... Processing triggers for
+>> man-db (2.6.7.1-1ubuntu1) ... Setting up mate-desktop (1.6.2-1)
+>> ... chris at Chris-Pc:~$
+> 
+>> When I rebooted, there was no offer to choose mate.
+> 
+>> Chris
+> 
+> 
+> I'd also install the packages 'mate-desktop-environment' and 
+> 'mate-desktop-environment-extras', but they seem to be available
+> only in 14.10 "Utopic Unicorn": 
+> http://packages.ubuntu.com/utopic/mate-desktop-environment-extras
+> 
+> Instead of upgrading from 14.04LTS to 14.10 to get the 
+> '-environment-extras' you may want to add the MATE repositories 
+> instead. That'll let you install the '-environment-extras'
+> package, and probably provides you with a more current MATE core as
+> well. There's good instructions at 
+> http://wiki.mate-desktop.org/download#ubuntu_1404_lts_trusty_thar
+> 
+> --Bob.
+> 
+> 
+> Bob Jonkman<bjonkman at sobac.com>           Phone: +1-519-669-0388 
+> SOBAC Microcomputer Serviceshttp://sobac.com/sobac/ 
+> http://bob.jonkman.ca/blogs/     http://sn.jonkman.ca/bobjonkman/ 
+> Software   ---   Office & Business Automation   ---   Consulting 
+> GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+> 
+> 
+> On 03/01/15 03:04 PM, Chris Aitken wrote:
+>>>> On 15-01-02 11:21 AM, Tim Tisdall wrote:
+>>>>> On Fri, Jan 2, 2015 at 10:27 AM, Chris Aitken 
+>>>>> <chris at chrisaitken.net  <mailto:chris at chrisaitken.net>>
+>>>>> wrote:
+>>>>> 
+>>>>> On 15-01-02 09:39 AM, Tim Tisdall wrote:
+>>>>>> If you don't have too much on that computer, you should 
+>>>>>> probably just copy of your personal stuff and reformat it
+>>>>>> with the 14.04 version.   Nuke it from orbit...  it's the
+>>>>>> only way to be sure.
+>>>>> Man, it's been so long. I don't expect you to give me a 
+>>>>> step-by-step, but are the broad strokes that I would make a
+>>>>> CD or DVD on another PC, then boot from that to do the
+>>>>> fresh installation? Is there a command I can run, then at
+>>>>> boot the installation would begin? I assumed I was going to
+>>>>> lose everything anyway - I'm good about backing up data.
+>>>>> 
+>>>>> 
+>>>>> Easiest way is to download the 14.04 ISO image and then use
+>>>>> the "Startup Disk Creator" to create a bootable USB flash
+>>>>> drive. You then boot from the USB drive and follow the
+>>>>> instructions.
+>>>>> 
+>>>>> You should have everything you need on that older Ubuntu
+>>>>> machine already, you just need to download the disk ISO.
+>>>> OK - I'm starting in on this. Will there be any possibility
+>>>> of choosing the old GNOME interface, so I don't end up with
+>>>> Unity?
+>>>> 
+>>>> Chris
+>>>> 
+>>>>> 
+>>>>> --- GTALUG Talk Mailing List -talk at gtalug.org 
+>>>>> http://gtalug.org/mailman/listinfo/talk
+>>>> 
+>>>> 
+>>>> 
+>>>> 
+>>>> --- GTALUG Talk Mailing List -talk at gtalug.org 
+>>>> http://gtalug.org/mailman/listinfo/talk
+>>>> 
+>> 
+>> 
+>> --- GTALUG Talk Mailing List -talk at gtalug.org 
+>> http://gtalug.org/mailman/listinfo/talk
+>> 
+> 
+> --- Talk Mailing List talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.15 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlS8RPQACgkQuRKJsNLM5ep0AgCcCdQ5dswufqM2V16yjZgFVApO
+Z0gAnRu9frL0SrOhw9TG/ETZE06e/G4O
+=bMbH
+-----END PGP SIGNATURE-----
+
+From chris at chrisaitken.net  Mon Jan 19 02:02:49 2015
+From: chris at chrisaitken.net (Mr Chris Aitken)
+Date: Sun, 18 Jan 2015 21:02:49 -0500
+Subject: [GTALUG] Upgrade from Ubuntu 12.10
+In-Reply-To: <54BC44F6.60209@sobac.com>
+References: <5493BC6D.5080805@chrisaitken.net>
+ <CAH5qdexzqa4kRQRizjDGBCYbY=7Jwd5QpaHeNKVZnVMpwYBbpw@mail.gmail.com>
+ <5495AFBD.8090606@chrisaitken.net> <5495B2FE.5020908@chrisaitken.net>
+ <CAGxYWpY1LKjwS0anNX8cUMzNYGACRHo1T8j=2a9URrmtL7xatw@mail.gmail.com>
+ <5495D118.9000107@chrisaitken.net>
+ <CAGxYWpYwMgaSQT4DP=UFpB6FYZo=7j_fQpmPB+z7AZw2+aaMug@mail.gmail.com>
+ <54977599.5010600@chrisaitken.net>
+ <CAGxYWpY4NRX8FT9v1U2mh7HZ-WM4wbDcvCsR_jio40YAi+bA=g@mail.gmail.com>
+ <54979462.2090709@chrisaitken.net>
+ <CAGxYWpYF88tZfxuDcjFfQYgnNRhaMVLwLygOHRh_F=xNaFd+GQ@mail.gmail.com>
+ <54A5C77A.10308@chrisaitken.net>
+ <CAGxYWpbuxph5bKejk-oNSK_c5n9HEKcabyLw07s0i0kupi9tTg@mail.gmail.com>
+ <54A6B8F5.6060200@chrisaitken.net>
+ <CAGxYWpYUgEOOgvKDw+ioy-yjpMz-juiDYt6hqFwmLrPfg-X8-g@mail.gmail.com>
+ <54A84B4E.8050105@chrisaitken.net> <54A85496.4090908@sobac.com>
+ <54B71639.3040702@chrisaitken.net> <54BC44F6.60209@sobac.com>
+Message-ID: <54BC65C9.1080202@chrisaitken.net>
+
+On 15-01-18 06:42 PM, Bob Jonkman wrote:
+> -----BEGIN PGP SIGNED MESSAGE-----
+> Hash: SHA1
+>
+> - From the Ubuntu login screen, the desktop selector is the circle in
+> the top-right corner of the login dialogue box.  Click on the circle,
+> then select your preferred desktop environment. Some desktops put a
+> logo in there (the Ubuntu logo for Unity, the bigfoot logo for Gnome),
+> but the MATE desktop just has a blank circle.
+
+No circle in top right corner. From left-to-right: A circle with a man 
+inside (five-pointed asterisk where one spoke is a circle), up/down 
+arrow logo, EN, volume icon, time, power logo (with spokes).
+
+>
+> - --Bob.
+>
+>
+>
+> On 14/01/15 08:22 PM, Mr Chris Aitken wrote:
+>> On 15-01-03 03:44 PM, Bob Jonkman wrote: On 03/01/15 03:04 PM,
+>> Chris Aitken wrote:
+>>>>> Will there be any possibility of choosing the old GNOME
+>>>>> interface, so I don't end up with Unity?
+>> I use the MATE interface, a Gnome2 fork. You can install it from
+>> Ubuntu 14.04LTS "Trusty Tahr" repositories now:
+>> http://packages.ubuntu.com/trusty/mate-desktop  Install it from
+>> the commandline with 'apt-get install mate-desktop'
+>>
+>>> OK, I got a tech to install 14.04. So, that's done. Now I want
+>>> to install mate-desktop. I tried your command, and got ...
+>>
+>>> chris at Chris-Pc:~$ sudo apt-get install mate-desktop [sudo]
+>>> password for chris: Reading package lists... Done Building
+>>> dependency tree Reading state information... Done mate-desktop is
+>>> already the newest version. The following packages were
+>>> automatically installed and are no longer required:
+>>> linux-headers-3.13.0-32 linux-headers-3.13.0-32-generic
+>>> linux-image-3.13.0-32-generic
+>>> linux-image-extra-3.13.0-32-generic Use 'apt-get autoremove' to
+>>> remove them. 0 upgraded, 0 newly installed, 0 to remove and 10
+>>> not upgraded. chris at Chris-Pc:~$ sudo apt-get remove mate-desktop
+>>> Reading package lists... Done Building dependency tree Reading
+>>> state information... Done The following packages were
+>>> automatically installed and are no longer required:
+>>> libmate-desktop-2-17 libunique-1.0-0 linux-headers-3.13.0-32
+>>> linux-headers-3.13.0-32-generic linux-image-3.13.0-32-generic
+>>> linux-image-extra-3.13.0-32-generic mate-desktop-common Use
+>>> 'apt-get autoremove' to remove them. The following packages will
+>>> be REMOVED: mate-desktop 0 upgraded, 0 newly installed, 1 to
+>>> remove and 10 not upgraded. After this operation, 97.3 kB disk
+>>> space will be freed. Do you want to continue? [Y/n] y (Reading
+>>> database ... 225461 files and directories currently installed.)
+>>> Removing mate-desktop (1.6.2-1) ... Processing triggers for
+>>> man-db (2.6.7.1-1ubuntu1) ... Processing triggers for
+>>> mime-support (3.54ubuntu1.1) ... Processing triggers for
+>>> gnome-menus (3.10.1-0ubuntu2) ... Processing triggers for
+>>> desktop-file-utils (0.22-1ubuntu1) ... Processing triggers for
+>>> bamfdaemon (0.5.1+14.04.20140409-0ubuntu1) ... Rebuilding
+>>> /usr/share/applications/bamf-2.index... chris at Chris-Pc:~$ sudo
+>>> apt-get install mate-desktop Reading package lists... Done
+>>> Building dependency tree Reading state information... Done The
+>>> following packages were automatically installed and are no
+>>> longer required: linux-headers-3.13.0-32
+>>> linux-headers-3.13.0-32-generic linux-image-3.13.0-32-generic
+>>> linux-image-extra-3.13.0-32-generic Use 'apt-get autoremove' to
+>>> remove them. The following NEW packages will be installed:
+>>> mate-desktop 0 upgraded, 1 newly installed, 0 to remove and 10
+>>> not upgraded. Need to get 0 B/17.8 kB of archives. After this
+>>> operation, 97.3 kB of additional disk space will be used.
+>>> Selecting previously unselected package mate-desktop. (Reading
+>>> database ... 225454 files and directories currently installed.)
+>>> Preparing to unpack .../mate-desktop_1.6.2-1_i386.deb ...
+>>> Unpacking mate-desktop (1.6.2-1) ... Processing triggers for
+>>> mime-support (3.54ubuntu1.1) ... Processing triggers for
+>>> gnome-menus (3.10.1-0ubuntu2) ... Processing triggers for
+>>> desktop-file-utils (0.22-1ubuntu1) ... Processing triggers for
+>>> bamfdaemon (0.5.1+14.04.20140409-0ubuntu1) ... Rebuilding
+>>> /usr/share/applications/bamf-2.index... Processing triggers for
+>>> man-db (2.6.7.1-1ubuntu1) ... Setting up mate-desktop (1.6.2-1)
+>>> ... chris at Chris-Pc:~$
+>>> When I rebooted, there was no offer to choose mate.
+>>> Chris
+>>
+>> I'd also install the packages 'mate-desktop-environment' and
+>> 'mate-desktop-environment-extras', but they seem to be available
+>> only in 14.10 "Utopic Unicorn":
+>> http://packages.ubuntu.com/utopic/mate-desktop-environment-extras
+>>
+>> Instead of upgrading from 14.04LTS to 14.10 to get the
+>> '-environment-extras' you may want to add the MATE repositories
+>> instead. That'll let you install the '-environment-extras'
+>> package, and probably provides you with a more current MATE core as
+>> well. There's good instructions at
+>> http://wiki.mate-desktop.org/download#ubuntu_1404_lts_trusty_thar
+>>
+>> --Bob.
+>>
+>>
+>> Bob Jonkman<bjonkman at sobac.com>           Phone: +1-519-669-0388
+>> SOBAC Microcomputer Serviceshttp://sobac.com/sobac/
+>> http://bob.jonkman.ca/blogs/     http://sn.jonkman.ca/bobjonkman/
+>> Software   ---   Office & Business Automation   ---   Consulting
+>> GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+>>
+>>
+>> On 03/01/15 03:04 PM, Chris Aitken wrote:
+>>>>> On 15-01-02 11:21 AM, Tim Tisdall wrote:
+>>>>>> On Fri, Jan 2, 2015 at 10:27 AM, Chris Aitken
+>>>>>> <chris at chrisaitken.net  <mailto:chris at chrisaitken.net>>
+>>>>>> wrote:
+>>>>>>
+>>>>>> On 15-01-02 09:39 AM, Tim Tisdall wrote:
+>>>>>>> If you don't have too much on that computer, you should
+>>>>>>> probably just copy of your personal stuff and reformat it
+>>>>>>> with the 14.04 version.   Nuke it from orbit...  it's the
+>>>>>>> only way to be sure.
+>>>>>> Man, it's been so long. I don't expect you to give me a
+>>>>>> step-by-step, but are the broad strokes that I would make a
+>>>>>> CD or DVD on another PC, then boot from that to do the
+>>>>>> fresh installation? Is there a command I can run, then at
+>>>>>> boot the installation would begin? I assumed I was going to
+>>>>>> lose everything anyway - I'm good about backing up data.
+>>>>>>
+>>>>>>
+>>>>>> Easiest way is to download the 14.04 ISO image and then use
+>>>>>> the "Startup Disk Creator" to create a bootable USB flash
+>>>>>> drive. You then boot from the USB drive and follow the
+>>>>>> instructions.
+>>>>>>
+>>>>>> You should have everything you need on that older Ubuntu
+>>>>>> machine already, you just need to download the disk ISO.
+>>>>> OK - I'm starting in on this. Will there be any possibility
+>>>>> of choosing the old GNOME interface, so I don't end up with
+>>>>> Unity?
+>>>>>
+>>>>> Chris
+>>>>>
+>>>>>> --- GTALUG Talk Mailing List -talk at gtalug.org
+>>>>>> http://gtalug.org/mailman/listinfo/talk
+>>>>>
+>>>>>
+>>>>>
+>>>>> --- GTALUG Talk Mailing List -talk at gtalug.org
+>>>>> http://gtalug.org/mailman/listinfo/talk
+>>>>>
+>>>
+>>> --- GTALUG Talk Mailing List -talk at gtalug.org
+>>> http://gtalug.org/mailman/listinfo/talk
+>>>
+>> --- Talk Mailing List talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+> -----BEGIN PGP SIGNATURE-----
+> Version: GnuPG v1.4.15 (GNU/Linux)
+> Comment: Ensure confidentiality, authenticity, non-repudiability
+>
+> iEYEARECAAYFAlS8RPQACgkQuRKJsNLM5ep0AgCcCdQ5dswufqM2V16yjZgFVApO
+> Z0gAnRu9frL0SrOhw9TG/ETZE06e/G4O
+> =bMbH
+> -----END PGP SIGNATURE-----
+>
+
+
+From sergiodj at sergiodj.net  Mon Jan 19 02:19:21 2015
+From: sergiodj at sergiodj.net (Sergio Durigan Junior)
+Date: Sun, 18 Jan 2015 21:19:21 -0500
+Subject: [GTALUG] Talk for February?
+In-Reply-To: <CABGQpf5YvN1wtG9J-GibpVPUZAhVYr2JJn8NevPU5BtV6D8mqA@mail.gmail.com>
+ (Matt Lee's message of "Fri, 16 Jan 2015 17:46:10 -0500")
+References: <CABGQpf5YvN1wtG9J-GibpVPUZAhVYr2JJn8NevPU5BtV6D8mqA@mail.gmail.com>
+Message-ID: <873877bjh2.fsf@sergiodj.net>
+
+On Friday, January 16 2015, Matt Lee wrote:
+
+> I'm coming to Toronto for the week of 16th-20th February, and if
+> nobody's talking, I'd like to talk about some of the cool stuff we're
+> doing at Creative Commons.
+
+Hey Matt!
+
+I'm mostly a spectator in this group, but it would be great to see a
+talk from you!
+
+Cheers,
+
+-- 
+Sergio
+GPG key ID: 0x65FC5E36
+Please send encrypted e-mail if possible
+http://sergiodj.net/
+
+From cbbrowne at gmail.com  Mon Jan 19 03:17:29 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Sun, 18 Jan 2015 22:17:29 -0500
+Subject: [GTALUG] Talk for February?
+In-Reply-To: <CABGQpf5YvN1wtG9J-GibpVPUZAhVYr2JJn8NevPU5BtV6D8mqA@mail.gmail.com>
+References: <CABGQpf5YvN1wtG9J-GibpVPUZAhVYr2JJn8NevPU5BtV6D8mqA@mail.gmail.com>
+Message-ID: <CAFNqd5Xwk4Zg-s+ijZh4Ln1GaRuazZ_93oq=roZXm695P_oUyg@mail.gmail.com>
+
+On 16 January 2015 at 17:46, Matt Lee <mattl at creativecommons.org> wrote:
+>
+> I'm coming to Toronto for the week of 16th-20th February, and if
+> nobody's talking, I'd like to talk about some of the cool stuff we're
+> doing at Creative Commons.
+
+That certainly sounds like a neat idea.  I'd like to hear that talk.
+
+There's a significant practical concern which is that the date we normally
+hold
+meetings would be Feb 10th, and it will take some reasonably urgent poking
+around to try to rearrange that.  I'm not sure if we can get the usual
+location
+on the 17th, that would be the "most analogous" date.
+
+Our talk organizers seem to be poking into this already; it will likely
+take a
+wee bit longer particularly if there is a need to check logistics with
+Ryerson
+University.  (There'd certainly be no way to get through to adminstration on
+the weekend, which it has been, thus far.)  I don't want to put words into
+mouths, but if things are to happen, they need to get decided reasonably
+quickly.
+--
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150118/f2628034/attachment.html>
+
