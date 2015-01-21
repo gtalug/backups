@@ -7715,3 +7715,109 @@ question, "How would the Lone Ranger handle this?"
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150118/f2628034/attachment.html>
 
+From hugh at mimosa.com  Tue Jan 20 18:41:17 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 20 Jan 2015 13:41:17 -0500 (EST)
+Subject: [GTALUG] Just how cheap is an OEM license for Windows 8.1 with Bing?
+Message-ID: <alpine.LRH.2.02.1501201339190.2908@redclaw.mimosa.com>
+
+This disclosure is interesting:
+<http://www.zdnet.com/article/how-much-does-microsoft-make-from-pc-makers-with-windows-8-1/>
+
+I commented on this article:
+
+What is a "configuration discount"?
+
+
+Is it just some fig leaf to claim that this isn't free?
+
+
+If I were DoJ's anti-trust folks, I'd be very interested.  Microsoft is 
+giving OEMs Win8.1bing while trying to charge those that use Android.
+
+From james.knott at rogers.com  Tue Jan 20 18:47:01 2015
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 20 Jan 2015 13:47:01 -0500
+Subject: [GTALUG] Just how cheap is an OEM license for Windows 8.1 with
+ Bing?
+In-Reply-To: <alpine.LRH.2.02.1501201339190.2908@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1501201339190.2908@redclaw.mimosa.com>
+Message-ID: <54BEA2A5.6030608@rogers.com>
+
+On 01/20/2015 01:41 PM, D. Hugh Redelmeier wrote:
+> Is it just some fig leaf to claim that this isn't free?
+>
+
+Then again, considering how poorly W8 and Windows devices in generally
+are doing, perhaps they're charging what it's worth, though even "free"
+is too expensive in my opinion.
+
+From hugh at mimosa.com  Tue Jan 20 19:33:10 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 20 Jan 2015 14:33:10 -0500 (EST)
+Subject: [GTALUG] scary article about DRAM
+Message-ID: <alpine.LRH.2.02.1501201431130.2908@redclaw.mimosa.com>
+
+It seems that certain access patterns can induce memory errors.
+<http://www.zdnet.com/article/flipping-dram-bits-maliciously/>
+
+This also links to a five year old article which shows DRAM errors are not 
+as rare as I thought/hoped.
+<http://www.zdnet.com/article/flipping-dram-bits-maliciously/>
+
+From rreiter91 at gmail.com  Tue Jan 20 23:13:43 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Tue, 20 Jan 2015 18:13:43 -0500
+Subject: [GTALUG] scary article about DRAM
+In-Reply-To: <alpine.LRH.2.02.1501201431130.2908@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1501201431130.2908@redclaw.mimosa.com>
+Message-ID: <CAPik5MwF6ECXeS4cMsok=+L8Kpn_UtztjW4GAbqFbe0iF4=uWw@mail.gmail.com>
+
+Interesting that the the proposed fix is a parallel row access strobe.
+Considering this is a kind of near field EM effect and the authors
+offer to take bets on the amount of time it will take to see a DRAM
+disturbance attack, I'm wondering what are the odds on it being a far
+field wifi attack?
+If Blackberry's latest security measure is the suicide phone, as in
+I'll die before I give up the data, I'm pretty sure the assassin phone
+is well on its way.
+
+On 1/20/15, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+> It seems that certain access patterns can induce memory errors.
+> <http://www.zdnet.com/article/flipping-dram-bits-maliciously/>
+>
+> This also links to a five year old article which shows DRAM errors are not
+> as rare as I thought/hoped.
+> <http://www.zdnet.com/article/flipping-dram-bits-maliciously/>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+From scruss at gmail.com  Wed Jan 21 04:47:41 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Tue, 20 Jan 2015 23:47:41 -0500
+Subject: [GTALUG] Crypto Question: Where do you get your entropy
+In-Reply-To: <CAFNqd5X-jjUf_yq45tTdKxmkSHg4kgcHApy=B-E7kJzGjQ+VNA@mail.gmail.com>
+References: <alpine.LRH.2.02.1411120055080.6002@redclaw.mimosa.com>
+ <CAFNqd5U_L=tWdgd7hWrszEsb5zjTK67wwO-wTnF+F5QARw8Wew@mail.gmail.com>
+ <CAAsTreDL5=H=S0SSedyHJR_9mwFNzmJTyTed_zscwsUmV9sS9Q@mail.gmail.com>
+ <CAEZ_B6PgP--9pN3mtbBtDHnCFL3pG9OZf0yN27WxTqQ6NuP1yg@mail.gmail.com>
+ <CAFNqd5X-jjUf_yq45tTdKxmkSHg4kgcHApy=B-E7kJzGjQ+VNA@mail.gmail.com>
+Message-ID: <54BF2F6D.1010103@gmail.com>
+
+On 2015-01-12 01:23 PM, Christopher Browne wrote:
+> FYI, there's now a Kickstarter project for the OneRNG entropy generator.
+
+Or, slightly cheaper, is Bill Cox's Infinite Noise
+<https://www.tindie.com/products/WaywardGeek/infinite-noise/> TRNG. The
+hardware is ridiculously simple (no microcontroller inside the case: if
+you feed the USART a byte, you get a few random bits back). It's not
+super fast, and it does need a driver to do the data whitening, but it's
+under $30.
+
+cheers,
+ Stewart
+
+
