@@ -7821,3 +7821,184 @@ cheers,
  Stewart
 
 
+From james.knott at rogers.com  Fri Jan 23 17:49:43 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 23 Jan 2015 12:49:43 -0500
+Subject: [GTALUG] LibreOffice Viewer Beta - Android Apps on Google Play
+Message-ID: <54C289B7.9080908@rogers.com>
+
+There's now a LibreOffice viewer available for Android.
+
+https://play.google.com/store/apps/details?id=com.collabora.libreoffice
+
+From rgb at tricolour.ca  Fri Jan 23 16:59:09 2015
+From: rgb at tricolour.ca (Richard Guy Briggs)
+Date: Fri, 23 Jan 2015 11:59:09 -0500
+Subject: [GTALUG] NetDev 0.1 in Ottawa,
+ Linux networking development conference Feb 14-17
+Message-ID: <20150123165909.GC30763@toccata2.tricolour.ca>
+
+Dear local Linux user groups,
+
+There is a world-class community-driven Linux networking development conference
+happenning within driving distance from your LUG in about 4 weeks.  Sorry for
+the late notice...  There is a hotel discount deadline today and paper
+submissions deadline tomorrow, so read through this now if you are interested.
+
+Netdev 0.1 (year 0, conference 1) is a community-driven conference geared 
+towards Linux netheads. Linux kernel networking and user space utilization 
+of the interfaces to the Linux kernel networking subsystem are the focus.
+If you are using Linux as a boot system for proprietary networking, then 
+this conference may not be for you.
+
+Why you should register
+==========================
+If you yearn for the old community tech driven conferences where you mingle 
+with fellow geeks (only these would be Linux networking geeks) then this 
+would be it. There will be no marketting flashy openings. There will just
+be a pure feed of Linux networking.
+netdev 0.1 will be held back to back with netconf 2015, the by-invite Linux
+kernel networking workshop (http://vger.kernel.org/netconf2015.html). 
+So gurus of all sorts will be there mingling and giving talks.
+While there will be heavy Linux kernel influence we expect a lot of user
+space presence as well. 
+
+Please spread the news. Forward this email appropriately.
+
+Location:
+==========================
+Downtown Ottawa, Canada
+
+Confirmed keynote speaker:
+==========================
+David S. Miller - The Current State of Linux kernel Networking.
+
+Accepted talks, workshops, tutorials and BOFs:
+==========================
+17 talks, 1 workshop, 4 BOFs, 3 tutorials so far...
+The content of the Tutorials/BOFs/talk continues to be updated at:
+https://www.netdev01.org/sessions
+All of the accepted proposals are new work.  A couple of proposals have been
+returned for rework prior to acceptance.  There are still more excellent
+proposals currently making their way through the technical committee vetting
+process.  The committee has so far been very impressed with the quality of
+proposals submitted.
+
+
+Scope:
+==========================
+The netdev conference this year is structured to be 50/50 by-invitation talks
+and talk submission. We are making sure that we reach out to speakers who have 
+interesting relevant topics because we recognize most of these folks would 
+typically not be submitting papers to a conference. The invitation will be 
+made by the technical committee to the individual speakers both for 
+paper and tutorial sessions.  Anyone is welcome to attend.
+
+The call for papers is for the 50% submission portion of the conference for 
+both paper submission as well as tutorials.
+We *highly discourage* submission of recycled talks.
+
+Current topics include
+- wireless
+- performance analysis and improvement
+- networking hardware and offload
+- netfilter
+- traffic control
+- different networking layers (L2/3, etc)
+- internet of things
+- security
+- additional topics can be suggested
+
+We encourage submission of papers and tutorials. Unlike other conferences, we 
+are going to try and accommodate as many submissions as possible - but please 
+stay within the relevant topic focus and tie to Linux networking to make it 
+easier for the technical committee to provide quick feedback. In order to 
+give a talk you must be registered. If your proposal is accepted you will not 
+be charged a conference fee or your conference fee will be refunded to you 
+when your talk gets accepted.
+
+We expect minimum of 2 parallel tracks but likely more depending on the
+(quantity of submissions) in all phases i.e during tutorials,
+workshops and main talks. 
+
+How to submit a proposal (deadline tomorrow, Jan 24)
+==========================
+Send email to  netdev01 at lists.netfilter.org with a paragraph or
+two of your proposal.
+For paper proposals, if your submission is accepted we will provide
+you a template to use.
+A minimum of two pages is needed so as to to allow people to skip the 
+burden of writing a large paper. The maximum page limit is 10 pages.
+
+Hotel discount rates deadline today
+==========================
+Today is the last day that the Westin Hotel will be holding a block of
+rooms for Netdev01 at a guaranteed rate of $159.00 or $179.00
+(depending on the type of room required) and there are still rooms
+available.
+
+Please dont procastinate and book now. We are trying to negotiate with
+the hotel to see if they can extend the deadline but so far we have not
+been successful. We are competing against a few tourist activities for
+hotel rooms going on around the area at the same time (example:
+http://www.ottawafestivals.ca/events/winterlude-2/) so we can assure you
+the prices will go up.
+Avoid disappointment and do your reservations at:
+https://www.starwoodmeeting.com/StarGroupsWeb/res?id=1412035802&key=1AC9C1F8
+
+Registration:
+==========================
+https://onlineregistrations.ca/netdev01/
+$100/day, or $350 for 4 days (Cdn dollars). (online reg closes Feb 12th)
+Please register as early as practical.  Registering helps us plan properly for
+numbers of attendees, ensuring venue sizes and supplies are appropriate without
+wasting resources.
+
+
+Important Dates:
+==========================
+December 2, 2014		Call for Papers opens
+December 10, 2014		Registration opens
+January 23, 2015		Hotel discount rates deadline
+January 24, 2015		Call for sessions deadline
+February 12, 2015		On-line registration closes
+February 14-17, 2015		Conference days
+
+
+Sponsors:
+==========================
+We'd like to thank our sponsors: https://netdev01.org/sponsors
+Verizon http://www.verizon.com/
+Cumulus Networks http://cumulusnetworks.com/ 
+Mojatatu Networks http://mojatatu.com/ 
+Qualcomm http://www.qualcomm.com/
+Google http://www.google.com/
+
+
+----------------------------------------------------------------------------------
+THE Technical Conference on Linux Networking, February 14-17, 2015, Ottawa, Canada
+https://netdev01.org/
+
+Contact:			info at netdev01.info
+Main site:			https://www.netdev01.org/
+Announcement:			https://www.netdev01.org/announce
+CFP:				https://www.netdev01.org/cfp
+Travel/hotel/weather/clothing:	https://www.netdev01.org/travel
+RSS feed:			https://netdev01.org/atom
+Follow us on Twitter: @netdev01 https://twitter.com/netdev01
+
+From thomas.bruce.milne at gmail.com  Sat Jan 24 02:26:32 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Fri, 23 Jan 2015 21:26:32 -0500
+Subject: [GTALUG] ARM will wrestle Intel to power the Internet of Things
+	(interview)
+Message-ID: <CAGc8pF6BDjC9HT0wRX1b+8BJ+9UArV8rc7o8RjJYFb7_Yy9QGQ@mail.gmail.com>
+
+*ARM will wrestle Intel to power the Internet of Things (interview)*
+http://news360.com/article/275687717
+
+Shared via News360 <http://www.news360.com/app>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150123/fdd218e5/attachment.html>
+
