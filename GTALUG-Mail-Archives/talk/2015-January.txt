@@ -8084,3 +8084,188 @@ was entirely open source, down to the processor microcode?)
 cheers,
  Stewart
 
+From avolkov at gmail.com  Sun Jan 25 20:44:59 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Sun, 25 Jan 2015 15:44:59 -0500
+Subject: [GTALUG] Purism Aims To Build A Philosophically Pure Laptop
+In-Reply-To: <CAGc8pF4YTBXNNSpyykmHhrcFNP6z5-dn7byuca7CAHyi2cZJNA@mail.gmail.com>
+References: <CAGc8pF4YTBXNNSpyykmHhrcFNP6z5-dn7byuca7CAHyi2cZJNA@mail.gmail.com>
+Message-ID: <CAO1j=qfRt+A3dMxgsnwq+6HFW1BGoJq5FMVJrf-vAY4Aif+Vag@mail.gmail.com>
+
+Here's Linux Unplugged discussing the laptop --
+http://youtu.be/OaZxKTR_f1M?t=37m10s
+
+On Sat, Jan 24, 2015 at 3:12 PM, Thomas Milne <thomas.bruce.milne at gmail.com>
+wrote:
+
+>
+> http://techcrunch.com/2015/01/23/purism-aims-to-build-a-philosophically-pure-laptop/?ncid=rss&utm_source=feedburner&utm_medium=feed&utm_campaign=sfgplus&%3Fncid=sfgplus
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150125/338d3c44/attachment.html>
+
+From john.moniz at sympatico.ca  Sun Jan 25 22:21:36 2015
+From: john.moniz at sympatico.ca (John Moniz)
+Date: Sun, 25 Jan 2015 17:21:36 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+Message-ID: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+
+Hi all,
+
+I need to get a computer for a project that requires a program that is 
+only available for windows. However, I intend to dual boot with Linux 
+and want to make sure that I buy something that is nicely compatible. 
+And I'm looking for the portability of a laptop.
+
+There seems to be a general appreciation of Thinkpads on this list. I 
+have my eye on a Thinkpad T410 and was wondering if anyone has reason to 
+suggest that I should stay away from that particular model. The store 
+will be installing Windows 7 and they apparently have enough Linux 
+knowledge to install a dual boot system.
+
+I believe there was someone on the list (I think from Kitchener) who 
+sold laptops pre-installed with linux. If that person is still around, 
+I'd welcome a contact off list.
+
+Thanks,
+
+John.
+
+
+From lists at alteeve.ca  Sun Jan 25 22:26:16 2015
+From: lists at alteeve.ca (Digimer)
+Date: Sun, 25 Jan 2015 17:26:16 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+Message-ID: <54C56D88.8010505@alteeve.ca>
+
+On 25/01/15 05:21 PM, John Moniz wrote:
+> Hi all,
+>
+> I need to get a computer for a project that requires a program that is
+> only available for windows. However, I intend to dual boot with Linux
+> and want to make sure that I buy something that is nicely compatible.
+> And I'm looking for the portability of a laptop.
+>
+> There seems to be a general appreciation of Thinkpads on this list. I
+> have my eye on a Thinkpad T410 and was wondering if anyone has reason to
+> suggest that I should stay away from that particular model. The store
+> will be installing Windows 7 and they apparently have enough Linux
+> knowledge to install a dual boot system.
+>
+> I believe there was someone on the list (I think from Kitchener) who
+> sold laptops pre-installed with linux. If that person is still around,
+> I'd welcome a contact off list.
+>
+> Thanks,
+>
+> John.
+
+I've had a T400s, x120e and now W530, all running Fedora without issue. 
+The main question is the model of wireless card in the machine... I 
+always get the proper Intel-branded ones. The cheaper ones probably work 
+fine, but they might require a wrapper, not sure.
+
+The only thing I'd suggest is to look at prices for the T420... Probably 
+won't be much different and would win you another generation. Generally, 
+Thinkpads (T,X and W series) are solid bets.
+
+-- 
+Digimer
+Papers and Projects: https://alteeve.ca/w/
+What if the cure for cancer is trapped in the mind of a person without 
+access to education?
+
+From hgibson at eol.ca  Sun Jan 25 22:28:49 2015
+From: hgibson at eol.ca (Howard Gibson)
+Date: Sun, 25 Jan 2015 17:28:49 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+Message-ID: <20150125172849.368e3d94a7033e00fa9632e1@eol.ca>
+
+On Sun, 25 Jan 2015 17:21:36 -0500
+John Moniz <john.moniz at sympatico.ca> wrote:
+
+> Hi all,
+> 
+> I need to get a computer for a project that requires a program that is 
+> only available for windows. However, I intend to dual boot with Linux 
+> and want to make sure that I buy something that is nicely compatible. 
+> And I'm looking for the portability of a laptop.
+> 
+> There seems to be a general appreciation of Thinkpads on this list. I 
+> have my eye on a Thinkpad T410 and was wondering if anyone has reason to 
+> suggest that I should stay away from that particular model. The store 
+> will be installing Windows 7 and they apparently have enough Linux 
+> knowledge to install a dual boot system.
+> 
+> I believe there was someone on the list (I think from Kitchener) who 
+> sold laptops pre-installed with linux. If that person is still around, 
+> I'd welcome a contact off list.
+> 
+> Thanks,
+> 
+> John./gtalug.org/mailman/listinfo/talk
+
+John,
+
+   My current laptop is a Lenovo of that series.  I have no complaints about it, other than its lack of an SDHC port.  I could probably get the modem working if I made the effort, but I haven't.  I have my installation instructions up on my website.  
+
+-- 
+Howard Gibson 
+hgibson at eol.ca
+howard.gibson at optech.com 
+jhowardgibson at gmail.com
+http://home.eol.ca/~hgibson
+
+From email+libre at blaise.ca  Mon Jan 26 04:53:06 2015
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Sun, 25 Jan 2015 23:53:06 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+Message-ID: <54C5C832.4020101@blaise.ca>
+
+On 25/01/15 05:21 PM, John Moniz wrote:
+> I need to get a computer for a project that requires a program that is only
+> available for windows. However, I intend to dual boot with Linux and want to
+> make sure that I buy something that is nicely compatible. And I'm looking for
+> the portability of a laptop.
+> 
+> There seems to be a general appreciation of Thinkpads on this list. I have my
+> eye on a Thinkpad T410 and was wondering if anyone has reason to suggest that I
+> should stay away from that particular model. The store will be installing
+> Windows 7 and they apparently have enough Linux knowledge to install a dual boot
+> system. [...]
+> 
+
+
+Unfortunately, the model number isn't enough to go on by itself. While ThinkPads
+tend to be pretty good in general, it depends on some specific hardware inside
+it (and even the same model can come with slight variations).
+
+Does it have a standard Intel onboard graphics card, or does it have a Nvidia
+graphics? There are only proprietary Nvidia drivers available for GNU/Linux,
+whereas I think Intel graphics are usually good for free software drivers.
+
+The other tricky this is wireless, and going with Intel isn't enough... I have
+Intel wireless adapters for my ThinkPad X60 and T61, both of which do *not* work
+with free software and require proprietary drivers in GNU/Linux. I thought I was
+okay because the wireless cards were "intel" when making the purchase, but I was
+wrong about the particular type of Intel wireless adapter.
+
+(My workaround has been to buy a USB wireless adapter from ThinkPenguin for ~$25.)
+
+In my (limited) experience, it's the graphics and wireless cards that you need
+to watch out for. Some may not work with free software drivers in GNU/Linux.
+
+
