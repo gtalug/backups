@@ -8269,3 +8269,361 @@ In my (limited) experience, it's the graphics and wireless cards that you need
 to watch out for. Some may not work with free software drivers in GNU/Linux.
 
 
+From waltdnes at waltdnes.org  Mon Jan 26 17:13:37 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Mon, 26 Jan 2015 12:13:37 -0500
+Subject: [GTALUG] [OT] Security of ssl popmail over wifi?
+Message-ID: <20150126171337.GA29458@waltdnes.org>
+
+  How secure is popmail over wifi, using ssl?  The specific package I
+use on my desktop is "getmail", with config option
+"type = SimplePOP3SSLRetriever".  I've cloned the important parts of my
+home directory onto a USB stick (encrypyed with cryptsetup).  I'd like
+to use it with my laptop when travelling.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From james.knott at rogers.com  Mon Jan 26 17:24:34 2015
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 26 Jan 2015 12:24:34 -0500
+Subject: [GTALUG] [OT] Security of ssl popmail over wifi?
+In-Reply-To: <20150126171337.GA29458@waltdnes.org>
+References: <20150126171337.GA29458@waltdnes.org>
+Message-ID: <54C67852.9070208@rogers.com>
+
+On 01/26/2015 12:13 PM, Walter Dnes wrote:
+>   How secure is popmail over wifi, using ssl?  The specific package I
+> use on my desktop is "getmail", with config option
+> "type = SimplePOP3SSLRetriever".  I've cloned the important parts of my
+> home directory onto a USB stick (encrypyed with cryptsetup).  I'd like
+> to use it with my laptop when travelling.
+>
+
+Well, how secure is SSL?  Email is moving to POPS, IMAPS and SMTPS for
+security.  Of course, it only provides security as far as the server. 
+Beyond that, encryption might not be used, so if you want end to end
+security, you'll want to use GPG or X.509 certificates.
+
+
+From thoriumbr at gmail.com  Mon Jan 26 17:28:05 2015
+From: thoriumbr at gmail.com (Mauro Souza)
+Date: Mon, 26 Jan 2015 15:28:05 -0200
+Subject: [GTALUG] [OT] Security of ssl popmail over wifi?
+In-Reply-To: <20150126171337.GA29458@waltdnes.org>
+References: <20150126171337.GA29458@waltdnes.org>
+Message-ID: <CAEZ_B6NEuGNoiv9Mk91gfG2aLNVZanC13bQVORKT_Cx+ogv1rQ@mail.gmail.com>
+
+I think your setup is secure enough for most uses, unless your setup
+somehow accepts invalid SSL certificates.
+
+If you want to be safer (or more paranoid), you could put a VPN on top of
+that.
+
+Mauro
+http://mauro.limeiratem.com - registered Linux User: 294521
+Scripture is both history, and a love letter from God.
+
+2015-01-26 15:13 GMT-02:00 Walter Dnes <waltdnes at waltdnes.org>:
+
+>   How secure is popmail over wifi, using ssl?  The specific package I
+> use on my desktop is "getmail", with config option
+> "type = SimplePOP3SSLRetriever".  I've cloned the important parts of my
+> home directory onto a USB stick (encrypyed with cryptsetup).  I'd like
+> to use it with my laptop when travelling.
+>
+> --
+> Walter Dnes <waltdnes at waltdnes.org>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150126/1481996e/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Mon Jan 26 17:57:34 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 26 Jan 2015 12:57:34 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+Message-ID: <20150126175734.GN30246@csclub.uwaterloo.ca>
+
+On Sun, Jan 25, 2015 at 05:21:36PM -0500, John Moniz wrote:
+> I need to get a computer for a project that requires a program that
+> is only available for windows. However, I intend to dual boot with
+> Linux and want to make sure that I buy something that is nicely
+> compatible. And I'm looking for the portability of a laptop.
+> 
+> There seems to be a general appreciation of Thinkpads on this list.
+> I have my eye on a Thinkpad T410 and was wondering if anyone has
+> reason to suggest that I should stay away from that particular
+> model. The store will be installing Windows 7 and they apparently
+> have enough Linux knowledge to install a dual boot system.
+> 
+> I believe there was someone on the list (I think from Kitchener) who
+> sold laptops pre-installed with linux. If that person is still
+> around, I'd welcome a contact off list.
+
+I can't imagine any problems with a T410, nor dual booting it.
+Should be fine.
+
+I know the T430 works great with both windows 7 and linux.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Mon Jan 26 17:58:43 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 26 Jan 2015 12:58:43 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <20150125172849.368e3d94a7033e00fa9632e1@eol.ca>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <20150125172849.368e3d94a7033e00fa9632e1@eol.ca>
+Message-ID: <20150126175843.GO30246@csclub.uwaterloo.ca>
+
+On Sun, Jan 25, 2015 at 05:28:49PM -0500, Howard Gibson wrote:
+>    My current laptop is a Lenovo of that series.  I have no complaints about it, other than its lack of an SDHC port.  I could probably get the modem working if I made the effort, but I haven't.  I have my installation instructions up on my website.  
+
+What model doesn't have a slot for SDHC?  Just too old to do anything
+more than SD?  Certainly my W530 has no issue with SD, SDHC or SDXC cards.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Mon Jan 26 18:02:20 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 26 Jan 2015 13:02:20 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <54C5C832.4020101@blaise.ca>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <54C5C832.4020101@blaise.ca>
+Message-ID: <20150126180220.GP30246@csclub.uwaterloo.ca>
+
+On Sun, Jan 25, 2015 at 11:53:06PM -0500, Blaise Alleyne wrote:
+> Unfortunately, the model number isn't enough to go on by itself. While ThinkPads
+> tend to be pretty good in general, it depends on some specific hardware inside
+> it (and even the same model can come with slight variations).
+
+Well all mine end in CTO, so you really don't know what is in them unless
+you were the one that ordered it.  My guess is that CTO means 'Configure
+To Order' or something like that.
+
+> Does it have a standard Intel onboard graphics card, or does it have a Nvidia
+> graphics? There are only proprietary Nvidia drivers available for GNU/Linux,
+> whereas I think Intel graphics are usually good for free software drivers.
+
+Yeah nvidia graphics can be a tad tricky to get working, although in the
+case of my W530, it works fine with the intel graphics if I am willing
+to ignore the nvidia even existing (I have managed to get optimus working
+though for the times I want 3D fast).  The older ones that didn't use
+optimus ought to work with nvidiafb in general, but I suppose a few
+might need the proprietary nvidia drivers to work.
+
+> The other tricky this is wireless, and going with Intel isn't enough... I have
+> Intel wireless adapters for my ThinkPad X60 and T61, both of which do *not* work
+> with free software and require proprietary drivers in GNU/Linux. I thought I was
+> okay because the wireless cards were "intel" when making the purchase, but I was
+> wrong about the particular type of Intel wireless adapter.
+
+No the intel wifi requires non-free firmware, but the drivers are fine.
+If you go back far enough to the old 2200, then it was a problem, but
+anything recent is fine.
+
+> (My workaround has been to buy a USB wireless adapter from ThinkPenguin for ~$25.)
+> 
+> In my (limited) experience, it's the graphics and wireless cards that you need
+> to watch out for. Some may not work with free software drivers in GNU/Linux.
+
+-- 
+Len Sorensen
+
+From email+libre at blaise.ca  Mon Jan 26 19:06:12 2015
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Mon, 26 Jan 2015 14:06:12 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <20150126180220.GP30246@csclub.uwaterloo.ca>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <54C5C832.4020101@blaise.ca> <20150126180220.GP30246@csclub.uwaterloo.ca>
+Message-ID: <54C69024.9030708@blaise.ca>
+
+On 26/01/15 01:02 PM, Lennart Sorensen wrote:
+> On Sun, Jan 25, 2015 at 11:53:06PM -0500, Blaise Alleyne wrote:
+>> The other tricky this is wireless, and going with Intel isn't enough... I have
+>> Intel wireless adapters for my ThinkPad X60 and T61, both of which do *not* work
+>> with free software and require proprietary drivers in GNU/Linux. I thought I was
+>> okay because the wireless cards were "intel" when making the purchase, but I was
+>> wrong about the particular type of Intel wireless adapter.
+> 
+> No the intel wifi requires non-free firmware, but the drivers are fine.
+> If you go back far enough to the old 2200, then it was a problem, but
+> anything recent is fine.
+> 
+
+Oh, yeah, the proprietary drivers work fine, but that's only if you're willing
+to run proprietary drivers.
+
+I'd really rather not, hence the ThinkPenguin adapter, and hence wishing I
+hadn't just trusted "intel" when buying the thing...
+
+
+From email+libre at blaise.ca  Mon Jan 26 19:07:55 2015
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Mon, 26 Jan 2015 14:07:55 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <20150126180220.GP30246@csclub.uwaterloo.ca>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <54C5C832.4020101@blaise.ca> <20150126180220.GP30246@csclub.uwaterloo.ca>
+Message-ID: <54C6908B.3060804@blaise.ca>
+
+On 26/01/15 01:02 PM, Lennart Sorensen wrote:
+> On Sun, Jan 25, 2015 at 11:53:06PM -0500, Blaise Alleyne wrote:
+>> Unfortunately, the model number isn't enough to go on by itself. While ThinkPads
+>> tend to be pretty good in general, it depends on some specific hardware inside
+>> it (and even the same model can come with slight variations).
+> 
+> Well all mine end in CTO, so you really don't know what is in them unless
+> you were the one that ordered it.  My guess is that CTO means 'Configure
+> To Order' or something like that.
+> 
+
+Hmm, my old ThinkPads have a "type", e.g. ThinkPad X60 Type 1709, but yeah, if
+it's something configured to order than I suppose it'd be tricky to figure that
+out in advance without booting the machine to see what's in there.
+
+
+
+From lsorense at csclub.uwaterloo.ca  Mon Jan 26 20:04:42 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 26 Jan 2015 15:04:42 -0500
+Subject: [GTALUG] Purism Aims To Build A Philosophically Pure Laptop
+In-Reply-To: <54C42547.7030801@gmail.com>
+References: <CAGc8pF4YTBXNNSpyykmHhrcFNP6z5-dn7byuca7CAHyi2cZJNA@mail.gmail.com>
+ <54C42547.7030801@gmail.com>
+Message-ID: <20150126200442.GQ30246@csclub.uwaterloo.ca>
+
+On Sat, Jan 24, 2015 at 06:05:43PM -0500, Stewart C. Russell wrote:
+> On 2015-01-24 03:12 PM, Thomas Milne wrote:
+> > http://techcrunch.com/2015/01/23/purism-aims-to-build-a-philosophically-pure-laptop/?ncid=rss&utm_source=feedburner&utm_medium=feed&utm_campaign=sfgplus&%3Fncid=sfgplus
+> 
+> But but but ? the Intel processor is full of microcode blobs!
+
+Yes I think every modern x86 has a ton of microsode because it is running
+x86 on a RISC like core.  No one would build a modern high performance
+cpu that runs x86 natively.  Too messy.
+
+> (Didn't some folks used to advocate running a MIPS-based thingy which
+> was entirely open source, down to the processor microcode?)
+
+That ought to work.  ARM probably would too, at least some models.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Mon Jan 26 20:06:09 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 26 Jan 2015 15:06:09 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <54C69024.9030708@blaise.ca>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <54C5C832.4020101@blaise.ca>
+ <20150126180220.GP30246@csclub.uwaterloo.ca>
+ <54C69024.9030708@blaise.ca>
+Message-ID: <20150126200609.GR30246@csclub.uwaterloo.ca>
+
+On Mon, Jan 26, 2015 at 02:06:12PM -0500, Blaise Alleyne wrote:
+> Oh, yeah, the proprietary drivers work fine, but that's only if you're willing
+> to run proprietary drivers.
+> 
+> I'd really rather not, hence the ThinkPenguin adapter, and hence wishing I
+> hadn't just trusted "intel" when buying the thing...
+
+Well certainly the intel wifi on my thinkpad has a fully open driver,
+but also has some firmware loaded into the wifi chip's processor that
+is not free.
+
+But at least it is not like the old early intel where you had to run a
+radio manager in user space that was a binary blob.  They did eventually
+fix that.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Mon Jan 26 20:08:19 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 26 Jan 2015 15:08:19 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <54C6908B.3060804@blaise.ca>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <54C5C832.4020101@blaise.ca>
+ <20150126180220.GP30246@csclub.uwaterloo.ca>
+ <54C6908B.3060804@blaise.ca>
+Message-ID: <20150126200819.GS30246@csclub.uwaterloo.ca>
+
+On Mon, Jan 26, 2015 at 02:07:55PM -0500, Blaise Alleyne wrote:
+> Hmm, my old ThinkPads have a "type", e.g. ThinkPad X60 Type 1709, but yeah, if
+> it's something configured to order than I suppose it'd be tricky to figure that
+> out in advance without booting the machine to see what's in there.
+
+Oh mine has a type too, but the 3 letters at the end are CTO.  I think
+mine is 2436-CTO or something like that.  A quick google search says
+2436-CTO is in fact a W530, so I remembered it correctly.
+
+-- 
+Len Sorensen
+
+From scruss at gmail.com  Tue Jan 27 03:39:00 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Mon, 26 Jan 2015 22:39:00 -0500
+Subject: [GTALUG] Purism Aims To Build A Philosophically Pure Laptop
+In-Reply-To: <20150126200442.GQ30246@csclub.uwaterloo.ca>
+References: <CAGc8pF4YTBXNNSpyykmHhrcFNP6z5-dn7byuca7CAHyi2cZJNA@mail.gmail.com>
+ <54C42547.7030801@gmail.com> <20150126200442.GQ30246@csclub.uwaterloo.ca>
+Message-ID: <54C70854.5060002@gmail.com>
+
+On 2015-01-26 03:04 PM, Lennart Sorensen wrote:
+> That ought to work.  ARM probably would too, at least some models.
+
+Remembered what it was: the Loongson-based MIPS laptops. RMS used to use
+one. They sounded amazingly slow.
+
+If you can live with x86 and are adventurous, LibreBoot has an open BIOS
+for the Thinkpad X200: http://libreboot.org/docs/hcl/x200.html
+
+cheers,
+ Stewart
+
+From hgibson at eol.ca  Tue Jan 27 00:49:15 2015
+From: hgibson at eol.ca (Howard Gibson)
+Date: Mon, 26 Jan 2015 19:49:15 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <20150126175843.GO30246@csclub.uwaterloo.ca>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <20150125172849.368e3d94a7033e00fa9632e1@eol.ca>
+ <20150126175843.GO30246@csclub.uwaterloo.ca>
+Message-ID: <20150126194915.48c83d03daad2342d316987c@eol.ca>
+
+On Mon, 26 Jan 2015 12:58:43 -0500
+"Lennart Sorensen" <lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Sun, Jan 25, 2015 at 05:28:49PM -0500, Howard Gibson wrote:
+> >    My current laptop is a Lenovo of that series.  I have no complaints about it, other than its lack of an SDHC port.  I could probably get the modem working if I made the effort, but I haven't.  I have my installation instructions up on my website.  
+> 
+> What model doesn't have a slot for SDHC?  Just too old to do anything
+> more than SD?  Certainly my W530 has no issue with SD, SDHC or SDXC cards.
+
+Lennart,
+
+   Now, I am sitting in front of it!
+
+   I have a T400.  There is no SD slot of any kind.  
+
+-- 
+Howard Gibson 
+hgibson at eol.ca
+howard.gibson at optech.com 
+jhowardgibson at gmail.com
+http://home.eol.ca/~hgibson
+
