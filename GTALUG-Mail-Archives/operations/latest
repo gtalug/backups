@@ -1567,3 +1567,152 @@ work for us.
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/operations/attachments/20150126/d9ac51e4/attachment.html>
 
+From gordontc at look.ca  Tue Jan 27 15:58:10 2015
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Tue, 27 Jan 2015 10:58:10 -0500
+Subject: [GTALUG-Ops] Reply to NARALO on the subject of a NARALO General
+	Assembly
+Message-ID: <1422374290.22774.6.camel@localhost>
+
+The following is a copy of the reply that was sent to Glenn McKnight on
+the subject of a NARALO General Assembly:
+
+
+Gordon 
+
+
+
+
+"
+Hello, Glenn:
+
+GTALUG agrees with the idea of such an assembly, subject to the
+assembly's goals and objectives.
+
+Gordon Chillcott
+
+Greater Toronto Area Linux User's Group ("GTALUG")
+
+
+
+On Mon, 2015-01-26 at 11:11 -0500, Glenn McKnight wrote:
+Hi Folks
+> 
+> 
+> Without  out  much debate on the merits of the location or timing  .
+My
+> question to the community.
+> 
+> Do you agree that  NARALO  should have  a  GENERAL  ASSEMBLY apart
+from
+> ICANN meetings in the next  fiscal period?   Date and location to be
+> determined
+> 
+> Thanks
+> 
+> 
+> 
+> Glenn McKnight
+> mcknight.glenn at gmail.com
+> skype  gmcknight
+> twitter gmcknight
+> .
+"
+
+
+From gordontc at look.ca  Tue Jan 27 16:00:33 2015
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Tue, 27 Jan 2015 11:00:33 -0500
+Subject: [GTALUG-Ops] PDF Copy of the ICANN Report for January 2015
+Message-ID: <1422374433.22774.8.camel@localhost>
+
+As promised. . .
+
+
+Gordon
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: 20150126.pdf
+Type: application/pdf
+Size: 21028 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20150127/7d1c8cd2/attachment.pdf>
+
+From cbbrowne at gmail.com  Tue Jan 27 17:30:44 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 27 Jan 2015 12:30:44 -0500
+Subject: [GTALUG-Ops] Legacy archive URL
+In-Reply-To: <54C6DE60.4000901@gmail.com>
+References: <54C6DE60.4000901@gmail.com>
+Message-ID: <CAFNqd5UoxCySHrnsR7ycFYJVA6nC8dNd7ORYfHK7sMdGHiM14w@mail.gmail.com>
+
+I'll observe that there's something a bit more wrong than first met the
+eye...
+
+- The "January" messages are without subjects
+
+- There are no monthly lists for November and December.  That actually fits
+in not-half-badly with there being something more wrong with Jan 2015 which
+had more messages than I'd have expected as we'd closed down the old list,
+on, um... 2014-11-17.
+
+So I speculate that perhaps the "January" messages ought to be tied to
+November???
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150127/011cc8e9/attachment.html>
+
+From avolkov at gmail.com  Tue Jan 27 17:42:12 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Tue, 27 Jan 2015 12:42:12 -0500
+Subject: [GTALUG-Ops] Legacy archive URL
+In-Reply-To: <CAFNqd5UoxCySHrnsR7ycFYJVA6nC8dNd7ORYfHK7sMdGHiM14w@mail.gmail.com>
+References: <54C6DE60.4000901@gmail.com>
+ <CAFNqd5UoxCySHrnsR7ycFYJVA6nC8dNd7ORYfHK7sMdGHiM14w@mail.gmail.com>
+Message-ID: <CAO1j=qejqwwqTd+UZnG5_jCEK7LXYVf32h6vtVtV_FtH8N4Xnw@mail.gmail.com>
+
+Since we no longer have the original list running anywhere, I'd like
+several people to look over this legacy archive in case I miss some of the
+details.
+
+I also noticed that all of the messages have ' : ' prefix in their subject,
+as in '[:space:]:[:space]'. This is probably an artifact of having old
+'[TLUG]:' prefix every message.I'm wondering if I should remove this
+substring altogether or replace it with '[TLUG]:'
+
+I'm write a little script that's gonna tweak the MBOX file, so the import
+will be a little easier.
+
+I think I'm gonna run an import a few more times, recording error messages,
+it might give me a clue what is exactly wrong with the messages that get
+dated to January 2015, but I'll have to set up my own instance of mailman
+as the import process is CPU intensive.
+
+On Tue, Jan 27, 2015 at 12:30 PM, Christopher Browne <cbbrowne at gmail.com>
+wrote:
+
+> I'll observe that there's something a bit more wrong than first met the
+> eye...
+>
+> - The "January" messages are without subjects
+>
+> - There are no monthly lists for November and December.  That actually
+> fits in not-half-badly with there being something more wrong with Jan 2015
+> which had more messages than I'd have expected as we'd closed down the old
+> list, on, um... 2014-11-17.
+>
+> So I speculate that perhaps the "January" messages ought to be tied to
+> November???
+>
+>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150127/2605f61f/attachment.html>
+
