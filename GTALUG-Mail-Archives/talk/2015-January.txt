@@ -8627,3 +8627,137 @@ howard.gibson at optech.com
 jhowardgibson at gmail.com
 http://home.eol.ca/~hgibson
 
+From me at mylesbraithwaite.com  Tue Jan 27 15:43:01 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 27 Jan 2015 10:43:01 -0500
+Subject: [GTALUG] Looking for panelists with knowledge of systemd for a
+	GTALUG meeting
+Message-ID: <CA+hskZOnbktf8tUWFSGygEgbVhq_FNJo1vgtCMXAkGU2iMj41g@mail.gmail.com>
+
+We are looking to have March's GTALUG meeting devoted to a panel on systemd.
+
+If you are interested in joining the panel please contacted me off
+list @ <me at mylesbraithwaite.com>.
+
+From lsorense at csclub.uwaterloo.ca  Tue Jan 27 15:51:57 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 27 Jan 2015 10:51:57 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <20150126194915.48c83d03daad2342d316987c@eol.ca>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <20150125172849.368e3d94a7033e00fa9632e1@eol.ca>
+ <20150126175843.GO30246@csclub.uwaterloo.ca>
+ <20150126194915.48c83d03daad2342d316987c@eol.ca>
+Message-ID: <20150127155157.GT30246@csclub.uwaterloo.ca>
+
+On Mon, Jan 26, 2015 at 07:49:15PM -0500, Howard Gibson wrote:
+>    Now, I am sitting in front of it!
+> 
+>    I have a T400.  There is no SD slot of any kind.  
+
+Ok, that is pretty old I guess.  I certainly do like having a slot for SD.
+
+-- 
+Len Sorensen
+
+From rick.j.79 at gmail.com  Tue Jan 27 15:51:33 2015
+From: rick.j.79 at gmail.com (Rick Johnson)
+Date: Tue, 27 Jan 2015 10:51:33 -0500
+Subject: [GTALUG] Looking for panelists with knowledge of systemd for a
+ GTALUG meeting
+In-Reply-To: <CA+hskZOnbktf8tUWFSGygEgbVhq_FNJo1vgtCMXAkGU2iMj41g@mail.gmail.com>
+References: <CA+hskZOnbktf8tUWFSGygEgbVhq_FNJo1vgtCMXAkGU2iMj41g@mail.gmail.com>
+Message-ID: <CAOJ6EZy=XmtbUZCa4CxiRz=_k=VJvPbjyYgbSY+YcxY=O7G=rQ@mail.gmail.com>
+
+Excellent! A topic that needs to be done.
+
+On Tue, Jan 27, 2015 at 10:43 AM, Myles Braithwaite <me at mylesbraithwaite.com
+> wrote:
+
+> We are looking to have March's GTALUG meeting devoted to a panel on
+> systemd.
+>
+> If you are interested in joining the panel please contacted me off
+> list @ <me at mylesbraithwaite.com>.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150127/6d96e19c/attachment.html>
+
+From john.moniz at sympatico.ca  Tue Jan 27 23:10:40 2015
+From: john.moniz at sympatico.ca (John Moniz)
+Date: Tue, 27 Jan 2015 18:10:40 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <20150127155157.GT30246@csclub.uwaterloo.ca>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <20150125172849.368e3d94a7033e00fa9632e1@eol.ca>
+ <20150126175843.GO30246@csclub.uwaterloo.ca>
+ <20150126194915.48c83d03daad2342d316987c@eol.ca>
+ <20150127155157.GT30246@csclub.uwaterloo.ca>
+Message-ID: <BLU436-SMTP199F58FEC94AFFE8655B0F8E3320@phx.gbl>
+
+On 01/27/2015 10:51 AM, Lennart Sorensen wrote:
+> On Mon, Jan 26, 2015 at 07:49:15PM -0500, Howard Gibson wrote:
+>>     Now, I am sitting in front of it!
+>>
+>>     I have a T400.  There is no SD slot of any kind.
+> Ok, that is pretty old I guess.  I certainly do like having a slot for SD.
+>
+It looks like the T410 doesn't have one either.
+
+From mattl at creativecommons.org  Wed Jan 28 00:51:47 2015
+From: mattl at creativecommons.org (Matt Lee)
+Date: Tue, 27 Jan 2015 19:51:47 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <BLU436-SMTP199F58FEC94AFFE8655B0F8E3320@phx.gbl>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <20150125172849.368e3d94a7033e00fa9632e1@eol.ca>
+ <20150126175843.GO30246@csclub.uwaterloo.ca>
+ <20150126194915.48c83d03daad2342d316987c@eol.ca>
+ <20150127155157.GT30246@csclub.uwaterloo.ca>
+ <BLU436-SMTP199F58FEC94AFFE8655B0F8E3320@phx.gbl>
+Message-ID: <CABGQpf6+xdtGfh6EEuzcdgRacHgDXntR2EuubxSh1xanEaGa6Q@mail.gmail.com>
+
+I think it was optional on both the T400 and later models. Only the X
+series had an SD card slot on every model since at least the X60.
+
+From hugh at mimosa.com  Wed Jan 28 08:21:41 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 28 Jan 2015 03:21:41 -0500 (EST)
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+Message-ID: <alpine.LRH.2.02.1501280309390.16165@redclaw.mimosa.com>
+
+| From: John Moniz <john.moniz at sympatico.ca>
+
+| There seems to be a general appreciation of Thinkpads on this list. I have my
+| eye on a Thinkpad T410 and was wondering if anyone has reason to suggest that
+| I should stay away from that particular model.
+
+The T-series is appreciated in the Linux world.  (The W series is like
+T, with a bit more capability).
+
+If you are paying a store to do this, you are spending real money.
+You might as well pay a bit more and get at least a T420 (in my
+opinion).  A T430 is even better but I think that many are unhappy
+with the T440's trackpad (I may be misremembering).
+
+I'm more familiar with the T5x0 models, but they are very similar.
+I care a lot about the screen resolution, and there are choices.
+CPUs matter too.  In notebooks, I prefer recent CPUs for their lower
+power consumption.
+
+But of course I don't know what you value.
+
+There are a lot of resources about Linux on Thinkpads on the net.
+
+One source for old thinkpads is IBM itself.  Sometimes there are good
+deals, sometimes not:
+<http://www-304.ibm.com/shop/americas/webapp/wcs/stores/servlet/default/CategoryDisplay?categoryId=2576396&storeId=1083996950&catalogId=-124&langId=124>
+Right now, I consider these prices high.
+
