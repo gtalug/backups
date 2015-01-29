@@ -8761,3 +8761,16 @@ deals, sometimes not:
 <http://www-304.ibm.com/shop/americas/webapp/wcs/stores/servlet/default/CategoryDisplay?categoryId=2576396&storeId=1083996950&catalogId=-124&langId=124>
 Right now, I consider these prices high.
 
+From thomas.bruce.milne at gmail.com  Wed Jan 28 15:37:22 2015
+From: thomas.bruce.milne at gmail.com (Thomas Milne)
+Date: Wed, 28 Jan 2015 10:37:22 -0500
+Subject: [GTALUG] The Smallest Game of Chess Takes Up Just 487 Bytes
+Message-ID: <CAGc8pF4u_5zqfk46-kSUT9iEKiEo2RFXWEdXYXFoPB8xpDaU+w@mail.gmail.com>
+
+The Smallest Game of Chess Takes Up Just 487 Bytes
+
+http://tpt.to/a53GWHp
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150128/2ecd7bde/attachment.html>
+
