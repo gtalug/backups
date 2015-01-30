@@ -1716,3 +1716,386 @@ wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/operations/attachments/20150127/2605f61f/attachment.html>
 
+From me at mylesbraithwaite.com  Thu Jan 29 17:52:31 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 29 Jan 2015 12:52:31 -0500
+Subject: [GTALUG-Ops] Fwd: systemd panel
+In-Reply-To: <CAGvW9Wfef+c2CyQAtq6x30Kx+G6u7aMu7fAFrM3V9cUO5AfGyQ@mail.gmail.com>
+References: <CAGvW9Wfef+c2CyQAtq6x30Kx+G6u7aMu7fAFrM3V9cUO5AfGyQ@mail.gmail.com>
+Message-ID: <CA+hskZMzvz20h6-uYxGNGijKuqakjoSh227i+O4x-Y9OwxX-Hg@mail.gmail.com>
+
+Does anyone know Ryan Lortie?
+
+
+---------- Forwarded message ----------
+From: Michael Hill <mdhillca at gmail.com>
+Date: Tue, Jan 27, 2015 at 2:14 PM
+Subject: systemd panel
+To: me at mylesbraithwaite.com
+
+
+Hi Myles,
+
+Ryan Lortie (https://wiki.gnome.org/RyanLortie) is interested in being
+on the panel. He and I were at the January meeting.
+
+Mike
+
+
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+
+From qwerty172 at gmail.com  Thu Jan 29 18:13:58 2015
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Thu, 29 Jan 2015 13:13:58 -0500
+Subject: [GTALUG-Ops] Fwd: systemd panel
+In-Reply-To: <CA+hskZMzvz20h6-uYxGNGijKuqakjoSh227i+O4x-Y9OwxX-Hg@mail.gmail.com>
+References: <CAGvW9Wfef+c2CyQAtq6x30Kx+G6u7aMu7fAFrM3V9cUO5AfGyQ@mail.gmail.com>
+ <CA+hskZMzvz20h6-uYxGNGijKuqakjoSh227i+O4x-Y9OwxX-Hg@mail.gmail.com>
+Message-ID: <CAA3RLT7tXtL4qTxR2DrTydXk0CFVZAkgOqi8VZwxwC6-iAmf_Q@mail.gmail.com>
+
+Which meeting is this for?
+
+Bill
+
+
+On Thu, Jan 29, 2015 at 12:52 PM, Myles Braithwaite <me at mylesbraithwaite.com
+> wrote:
+
+> Does anyone know Ryan Lortie?
+>
+>
+> ---------- Forwarded message ----------
+> From: Michael Hill <mdhillca at gmail.com>
+> Date: Tue, Jan 27, 2015 at 2:14 PM
+> Subject: systemd panel
+> To: me at mylesbraithwaite.com
+>
+>
+> Hi Myles,
+>
+> Ryan Lortie (https://wiki.gnome.org/RyanLortie) is interested in being
+> on the panel. He and I were at the January meeting.
+>
+> Mike
+>
+>
+>
+> --
+> Myles Braithwaite | http://mylesb.ca/e
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150129/d1f8d337/attachment.html>
+
+From me at mylesbraithwaite.com  Thu Jan 29 18:14:42 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 29 Jan 2015 18:14:42 +0000 (UTC)
+Subject: [GTALUG-Ops] Fwd: systemd panel
+In-Reply-To: <CAA3RLT7tXtL4qTxR2DrTydXk0CFVZAkgOqi8VZwxwC6-iAmf_Q@mail.gmail.com>
+References: <CAGvW9Wfef+c2CyQAtq6x30Kx+G6u7aMu7fAFrM3V9cUO5AfGyQ@mail.gmail.com>
+ <CA+hskZMzvz20h6-uYxGNGijKuqakjoSh227i+O4x-Y9OwxX-Hg@mail.gmail.com>
+ <CAA3RLT7tXtL4qTxR2DrTydXk0CFVZAkgOqi8VZwxwC6-iAmf_Q@mail.gmail.com>
+Message-ID: <A523812E9042F681.4C93B17D-E852-4308-B86A-41655E33E5C2@mail.outlook.com>
+
+The systemd panel.
+
+Myles Braithwaite
+
+
+
+
+On Thu, Jan 29, 2015 at 10:14 AM -0800, "Bill Thanis" <qwerty172 at gmail.com> wrote:
+
+
+
+
+
+
+
+
+
+
+Which meeting is this for?
+
+Bill
+
+
+On Thu, Jan 29, 2015 at 12:52 PM, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+Does anyone know Ryan Lortie?
+
+
+
+
+
+---------- Forwarded message ----------
+
+From: Michael Hill <mdhillca at gmail.com>
+
+Date: Tue, Jan 27, 2015 at 2:14 PM
+
+Subject: systemd panel
+
+To: me at mylesbraithwaite.com
+
+
+
+
+
+Hi Myles,
+
+
+
+Ryan Lortie (https://wiki.gnome.org/RyanLortie) is interested in being
+
+on the panel. He and I were at the January meeting.
+
+
+
+Mike
+
+
+
+
+
+
+
+--
+
+Myles Braithwaite | http://mylesb.ca/e
+
+---
+
+GTALUG Operations Mailing List
+
+operations at gtalug.org
+
+http://gtalug.org/mailman/listinfo/operations
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150129/bbfef8a6/attachment.html>
+
+From qwerty172 at gmail.com  Thu Jan 29 18:28:59 2015
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Thu, 29 Jan 2015 13:28:59 -0500
+Subject: [GTALUG-Ops] Fwd: systemd panel
+In-Reply-To: <A523812E9042F681.4C93B17D-E852-4308-B86A-41655E33E5C2@mail.outlook.com>
+References: <CAGvW9Wfef+c2CyQAtq6x30Kx+G6u7aMu7fAFrM3V9cUO5AfGyQ@mail.gmail.com>
+ <CA+hskZMzvz20h6-uYxGNGijKuqakjoSh227i+O4x-Y9OwxX-Hg@mail.gmail.com>
+ <CAA3RLT7tXtL4qTxR2DrTydXk0CFVZAkgOqi8VZwxwC6-iAmf_Q@mail.gmail.com>
+ <A523812E9042F681.4C93B17D-E852-4308-B86A-41655E33E5C2@mail.outlook.com>
+Message-ID: <CAA3RLT4bdn5cU2kvp45Zg_YHULs1n47Ovx77SD8qpmgMJUz8MQ@mail.gmail.com>
+
+I was hoping for an answer that included a month.
+
+:)
+
+On Thu, Jan 29, 2015 at 1:14 PM, Myles Braithwaite <me at mylesbraithwaite.com>
+wrote:
+
+> The systemd panel.
+>
+> Myles Braithwaite
+>
+>
+>
+>
+> On Thu, Jan 29, 2015 at 10:14 AM -0800, "Bill Thanis" <qwerty172 at gmail.com
+> > wrote:
+>
+>  Which meeting is this for?
+>>
+>> Bill
+>>
+>>
+>> On Thu, Jan 29, 2015 at 12:52 PM, Myles Braithwaite <
+>> me at mylesbraithwaite.com> wrote:
+>>
+>>> Does anyone know Ryan Lortie?
+>>>
+>>>
+>>> ---------- Forwarded message ----------
+>>> From: Michael Hill <mdhillca at gmail.com>
+>>> Date: Tue, Jan 27, 2015 at 2:14 PM
+>>> Subject: systemd panel
+>>> To: me at mylesbraithwaite.com
+>>>
+>>>
+>>> Hi Myles,
+>>>
+>>> Ryan Lortie (https://wiki.gnome.org/RyanLortie) is interested in being
+>>> on the panel. He and I were at the January meeting.
+>>>
+>>> Mike
+>>>
+>>>
+>>>
+>>> --
+>>> Myles Braithwaite | http://mylesb.ca/e
+>>> ---
+>>> GTALUG Operations Mailing List
+>>> operations at gtalug.org
+>>> http://gtalug.org/mailman/listinfo/operations
+>>>
+>>
+>>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150129/7bd9466b/attachment.html>
+
+From cbbrowne at gmail.com  Thu Jan 29 18:29:50 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Thu, 29 Jan 2015 13:29:50 -0500
+Subject: [GTALUG-Ops] Fwd: systemd panel
+In-Reply-To: <CAA3RLT7tXtL4qTxR2DrTydXk0CFVZAkgOqi8VZwxwC6-iAmf_Q@mail.gmail.com>
+References: <CAGvW9Wfef+c2CyQAtq6x30Kx+G6u7aMu7fAFrM3V9cUO5AfGyQ@mail.gmail.com>
+ <CA+hskZMzvz20h6-uYxGNGijKuqakjoSh227i+O4x-Y9OwxX-Hg@mail.gmail.com>
+ <CAA3RLT7tXtL4qTxR2DrTydXk0CFVZAkgOqi8VZwxwC6-iAmf_Q@mail.gmail.com>
+Message-ID: <CAFNqd5WwbVrO_Ux1Et68rRnH+J-8U7foyjAd-C248bWAU5hC8w@mail.gmail.com>
+
+We hadn't quite finalized when we wanted to hold a systemd panel; I think
+March or April were "most probable" possibilities.
+
+I don't know Ryan, but from the link, he seems mighty relevant, as he's
+apparently on staff at Canonical.
+
+It seems to me that it might be an idea to collect questions in advance, to
+encourage it to be possible that participants might have straightest
+answers for what folk want to know.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150129/0ecd825c/attachment.html>
+
+From me at mylesbraithwaite.com  Thu Jan 29 19:52:14 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 29 Jan 2015 19:52:14 +0000 (UTC)
+Subject: [GTALUG-Ops] Fwd: systemd panel
+In-Reply-To: <CAFNqd5WwbVrO_Ux1Et68rRnH+J-8U7foyjAd-C248bWAU5hC8w@mail.gmail.com>
+References: <CAGvW9Wfef+c2CyQAtq6x30Kx+G6u7aMu7fAFrM3V9cUO5AfGyQ@mail.gmail.com>
+ <CA+hskZMzvz20h6-uYxGNGijKuqakjoSh227i+O4x-Y9OwxX-Hg@mail.gmail.com>
+ <CAA3RLT7tXtL4qTxR2DrTydXk0CFVZAkgOqi8VZwxwC6-iAmf_Q@mail.gmail.com>
+ <CAFNqd5WwbVrO_Ux1Et68rRnH+J-8U7foyjAd-C248bWAU5hC8w@mail.gmail.com>
+Message-ID: <A523812E9042F681.934DA398-604A-49F1-A890-8F4E633207D4@mail.outlook.com>
+
+If no one responds with knowing him, I will contact him on Friday. Just want to make sure there isn't a similar method.?
+
+---
+Myles Braithwaite
+
+
+
+
+On Thu, Jan 29, 2015 at 10:29 AM -0800, "Christopher Browne" <cbbrowne at gmail.com> wrote:
+
+
+
+
+
+
+
+
+
+
+We hadn't quite finalized when we wanted to hold a systemd panel; I think March or April were "most probable" possibilities.? 
+
+I don't know Ryan, but from the link, he seems mighty relevant, as he's apparently on staff at Canonical.
+
+It seems to me that it might be an idea to collect questions in advance, to encourage it to be possible that participants might have straightest answers for what folk want to know.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150129/b036813f/attachment.html>
+
+From qwerty172 at gmail.com  Thu Jan 29 19:54:14 2015
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Thu, 29 Jan 2015 14:54:14 -0500
+Subject: [GTALUG-Ops] Fwd: systemd panel
+In-Reply-To: <A523812E9042F681.934DA398-604A-49F1-A890-8F4E633207D4@mail.outlook.com>
+References: <CAGvW9Wfef+c2CyQAtq6x30Kx+G6u7aMu7fAFrM3V9cUO5AfGyQ@mail.gmail.com>
+ <CA+hskZMzvz20h6-uYxGNGijKuqakjoSh227i+O4x-Y9OwxX-Hg@mail.gmail.com>
+ <CAA3RLT7tXtL4qTxR2DrTydXk0CFVZAkgOqi8VZwxwC6-iAmf_Q@mail.gmail.com>
+ <CAFNqd5WwbVrO_Ux1Et68rRnH+J-8U7foyjAd-C248bWAU5hC8w@mail.gmail.com>
+ <A523812E9042F681.934DA398-604A-49F1-A890-8F4E633207D4@mail.outlook.com>
+Message-ID: <CAA3RLT6Zr3Cr2600QG8XM3KWFd9Kfrttba2mTPiguWLhDVQz0w@mail.gmail.com>
+
+I don't know him.
+
+
+On Thu, Jan 29, 2015 at 2:52 PM, Myles Braithwaite <me at mylesbraithwaite.com>
+wrote:
+
+> If no one responds with knowing him, I will contact him on Friday. Just
+> want to make sure there isn't a similar method.
+>
+> ---
+> Myles Braithwaite
+>
+>
+>
+>
+> On Thu, Jan 29, 2015 at 10:29 AM -0800, "Christopher Browne" <
+> cbbrowne at gmail.com> wrote:
+>
+>  We hadn't quite finalized when we wanted to hold a systemd panel; I
+>> think March or April were "most probable" possibilities.
+>>
+>> I don't know Ryan, but from the link, he seems mighty relevant, as he's
+>> apparently on staff at Canonical.
+>>
+>> It seems to me that it might be an idea to collect questions in advance,
+>> to encourage it to be possible that participants might have straightest
+>> answers for what folk want to know.
+>>
+>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150129/8b3f8e74/attachment.html>
+
+From davec-b at rogers.com  Thu Jan 29 20:01:05 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Thu, 29 Jan 2015 15:01:05 -0500
+Subject: [GTALUG-Ops] Fwd: Matt Lee of Creative Commons is available to
+ speak on Wednesday the 18th of February
+In-Reply-To: <CABGQpf7bDjCf=J2rz+zWJmsrQSFv7RGLTxL+a5zLMrhekprw3Q@mail.gmail.com>
+References: <54C95774.7090108@rogers.com>
+ <CABGQpf7bDjCf=J2rz+zWJmsrQSFv7RGLTxL+a5zLMrhekprw3Q@mail.gmail.com>
+Message-ID: <54CA9181.4000708@rogers.com>
+
+Just FYI, we've reached out to Matt and Dr Sadeghian to see if we can 
+start a more regular coordination, using this talk as a first step.
+
+--dave
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150129/07d3297d/attachment.html>
+-------------- next part --------------
+An embedded message was scrubbed...
+From: David Collier-Brown <davec-b at rogers.com>
+Subject: Matt Lee of Creative Commons is available to speak on Wednesday the 18th of February
+Date: Wed, 28 Jan 2015 16:41:08 -0500
+Size: 6912
+URL: <http://gtalug.org/pipermail/operations/attachments/20150129/07d3297d/attachment.eml>
+-------------- next part --------------
+An embedded message was scrubbed...
+From: Matt Lee <mattl at creativecommons.org>
+Subject: Re: Talk for February
+Date: Wed, 28 Jan 2015 16:52:36 -0500
+Size: 6632
+URL: <http://gtalug.org/pipermail/operations/attachments/20150129/07d3297d/attachment-0001.eml>
+
