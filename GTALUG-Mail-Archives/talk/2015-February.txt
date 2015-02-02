@@ -1,0 +1,80 @@
+From scruss at gmail.com  Sun Feb  1 17:59:34 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sun, 01 Feb 2015 12:59:34 -0500
+Subject: [GTALUG] The story of computing
+In-Reply-To: <alpine.LRH.2.02.1501311341170.4291@redclaw.mimosa.com>
+References: <CAGc8pF4-skFsa+BCXA8ik=L-ZRiN5N1k9Lm+OxkR+z+Uh2i3Cg@mail.gmail.com>
+ <alpine.LRH.2.02.1501301726010.24882@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1501311341170.4291@redclaw.mimosa.com>
+Message-ID: <54CE6986.8080306@gmail.com>
+
+On 2015-01-31 02:07 PM, D. Hugh Redelmeier wrote:
+> 
+> (I always thought that the Guardian was the top UK "quality" newspaper.
+> Its website's front page seems pretty fluffy.)
+
+All newspaper websites have to compete for clicks, especially when faced
+with the brutal onslaught that is the Daily Mail. The Guardian is run by
+an independent foundation, and is able to carry stories (like the whole
+Wikileaks/Snowden thing) that others won't touch. It's also (formerly)
+famous for its lack of proof-reading, hence its nickname, The Grauniad.
+
+The Globe and Mail used to share more stories with the Guardian, but
+ever since the Globe lurched more to the right, these have tapered off
+to nothing.
+
+ Stewart
+
+From daniel at circuidipity.com  Mon Feb  2 05:05:13 2015
+From: daniel at circuidipity.com (Daniel Wayne Armstrong)
+Date: Mon, 2 Feb 2015 00:05:13 -0500
+Subject: [GTALUG] Raspberry Pi 2 with new chip
+Message-ID: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+
+A new Raspberry Pi 2 is set for release with a new Broadcom BCM2836 quad
+core Cortex A7:
+
+http://www.cnx-software.com/2015/02/02/raspberry-pi-2-model-b/
+
+My understanding is this new RPi moves to ARMv7 and I will be able to run
+the vanilla ARM release of Debian Jessie?
+
+-- 
+(o<  .: Per curiositas ad astra .: http://www.circuidipity.com
+(/)_
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150202/cda2900d/attachment.html>
+
+From opengeometry at yahoo.ca  Mon Feb  2 06:04:52 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Mon, 2 Feb 2015 01:04:52 -0500
+Subject: [GTALUG] Raspberry Pi 2 with new chip
+In-Reply-To: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+References: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+Message-ID: <20150202060452.GA1155@node1.localdomain>
+
+This is in response to ODROID-C1,
+    http://www.hardkernel.com/main/products/prdt_info.php?g_code=G141578608433
+-- 
+William
+
+On Mon, Feb 02, 2015 at 12:05:13AM -0500, Daniel Wayne Armstrong wrote:
+> A new Raspberry Pi 2 is set for release with a new Broadcom BCM2836 quad
+> core Cortex A7:
+> 
+> http://www.cnx-software.com/2015/02/02/raspberry-pi-2-model-b/
+> 
+> My understanding is this new RPi moves to ARMv7 and I will be able to run
+> the vanilla ARM release of Debian Jessie?
+> 
+> -- 
+> (o<  .: Per curiositas ad astra .: http://www.circuidipity.com
+> (/)_
+
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
