@@ -78,3 +78,38 @@ On Mon, Feb 02, 2015 at 12:05:13AM -0500, Daniel Wayne Armstrong wrote:
 > http://gtalug.org/mailman/listinfo/talk
 
 
+From daniel at circuidipity.com  Mon Feb  2 10:22:09 2015
+From: daniel at circuidipity.com (Daniel Wayne Armstrong)
+Date: Mon, 2 Feb 2015 05:22:09 -0500
+Subject: [GTALUG] Raspberry Pi 2 with new chip
+In-Reply-To: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+References: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+Message-ID: <CACa31mBqcW+Qf3PTuwC4t88wkUYq1sUzQFyP1fry6vZWf9+MsQ@mail.gmail.com>
+
+On Mon, Feb 2, 2015 at 12:05 AM, Daniel Wayne Armstrong <
+daniel at circuidipity.com> wrote:
+
+>
+> A new Raspberry Pi 2 is set for release with a new Broadcom BCM2836 quad
+> core Cortex A7:
+>
+> http://www.cnx-software.com/2015/02/02/raspberry-pi-2-model-b/
+>
+> My understanding is this new RPi moves to ARMv7 and I will be able to run
+> the vanilla ARM release of Debian Jessie?
+>
+
+Official announcement and question answered:
+
+http://www.raspberrypi.org/raspberry-pi-2-on-sale/
+
+"Because it has an ARMv7 processor, it can run the full range of ARM
+GNU/Linux distributions, including Snappy Ubuntu Core..."
+
+--
+(o<  .: Per curiositas ad astra .: http://www.circuidipity.com
+(/)_
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150202/ede2eb0e/attachment.html>
+
