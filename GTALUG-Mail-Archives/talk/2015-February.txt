@@ -78,3 +78,585 @@ On Mon, Feb 02, 2015 at 12:05:13AM -0500, Daniel Wayne Armstrong wrote:
 > http://gtalug.org/mailman/listinfo/talk
 
 
+From daniel at circuidipity.com  Mon Feb  2 10:22:09 2015
+From: daniel at circuidipity.com (Daniel Wayne Armstrong)
+Date: Mon, 2 Feb 2015 05:22:09 -0500
+Subject: [GTALUG] Raspberry Pi 2 with new chip
+In-Reply-To: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+References: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+Message-ID: <CACa31mBqcW+Qf3PTuwC4t88wkUYq1sUzQFyP1fry6vZWf9+MsQ@mail.gmail.com>
+
+On Mon, Feb 2, 2015 at 12:05 AM, Daniel Wayne Armstrong <
+daniel at circuidipity.com> wrote:
+
+>
+> A new Raspberry Pi 2 is set for release with a new Broadcom BCM2836 quad
+> core Cortex A7:
+>
+> http://www.cnx-software.com/2015/02/02/raspberry-pi-2-model-b/
+>
+> My understanding is this new RPi moves to ARMv7 and I will be able to run
+> the vanilla ARM release of Debian Jessie?
+>
+
+Official announcement and question answered:
+
+http://www.raspberrypi.org/raspberry-pi-2-on-sale/
+
+"Because it has an ARMv7 processor, it can run the full range of ARM
+GNU/Linux distributions, including Snappy Ubuntu Core..."
+
+--
+(o<  .: Per curiositas ad astra .: http://www.circuidipity.com
+(/)_
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150202/ede2eb0e/attachment.html>
+
+From o1bigtenor at gmail.com  Mon Feb  2 13:30:50 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Mon, 2 Feb 2015 07:30:50 -0600
+Subject: [GTALUG] Looking for panelists with knowledge of systemd for a
+ GTALUG meeting
+In-Reply-To: <CA+hskZOnbktf8tUWFSGygEgbVhq_FNJo1vgtCMXAkGU2iMj41g@mail.gmail.com>
+References: <CA+hskZOnbktf8tUWFSGygEgbVhq_FNJo1vgtCMXAkGU2iMj41g@mail.gmail.com>
+Message-ID: <CAPpdf5-AFb+_VcvXsT+_qth-1DAZP7eQkKmEB3Y4YFNq+OqxNw@mail.gmail.com>
+
+I would love to be able to get a copy of this presentation when it happens.
+
+(Think that it might be popular on the web too!)
+
+Dee
+
+On Tue, Jan 27, 2015 at 9:43 AM, Myles Braithwaite <me at mylesbraithwaite.com>
+wrote:
+
+> We are looking to have March's GTALUG meeting devoted to a panel on
+> systemd.
+>
+> If you are interested in joining the panel please contacted me off
+> list @ <me at mylesbraithwaite.com>.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150202/dc3d6117/attachment.html>
+
+From rgb at tricolour.ca  Mon Feb  2 14:05:27 2015
+From: rgb at tricolour.ca (Richard Guy Briggs)
+Date: Mon, 2 Feb 2015 09:05:27 -0500
+Subject: [GTALUG] Subject: NetDev 0.1 weekly update,
+	registration working again
+Message-ID: <20150202140527.GE30763@toccata2.tricolour.ca>
+
+Fellow netheads:
+
+
+Schedule:
+==========================
+The schedule is out.  It is currently a graphic image, but we are
+working on a proper non-graphic rendered clickable version.
+	https://www.netdev01.org/schedule
+
+
+Registration:
+==========================
+There was a glitch in the registration web site yesterday.  We apologize
+for the inconvenience and it is now working again.  Please try again if
+you had difficulty.
+https://onlineregistrations.ca/netdev01/
+$100/day, or $350 for 4 days (Cdn dollars). (online reg closes Feb 12th)
+Please register as early as practical.  Registering helps us plan properly for
+numbers of attendees, ensuring venue sizes and supplies are appropriate without
+wasting resources.
+
+
+Hotel discount rates deadline extended
+==========================
+The Westin Hotel is still holding a block of rooms for Netdev01 at a
+guaranteed rate of $159.00 or $179.00 (depending on the type of room
+required) and there are still a few rooms available.
+We've been able to negotiate an extention to the block of rooms at the
+hotel earlybird special rates beyond the discount rate deadline, but
+when they are gone, they are gone.  There were still several people able
+to register over the weekend.
+There are lots of big and small hotels in Ottawa, but they will fill up
+fast as Winterlude approaches, so book something soon.  There may be
+some possibilities to billet locally, but don't leave it last minute.
+Make your reservations at:
+https://www.starwoodmeeting.com/StarGroupsWeb/res?id=1412035802&key=1AC9C1F8
+
+
+Sponsors:
+=========
+NetDev 0.1 would like to gratefully acknowledge all our sponsors: 
+https://netdev01.org/sponsors
+CENGN			http://www.cengn.ca/
+Google			https://www.google.ca
+Qualcomm		https://www.qualcomm.com/
+Verizon			http://www.verizon.com/
+Cumulus Networks	http://cumulusnetworks.com/
+Mojatatu Networks	http://mojatatu.com/
+
+
+-------------------------------------------------------------------------------
+THE Technical Conference on Linux Networking, February 14-17, 2015, Ottawa, Canada
+https://netdev01.org/
+
+Contact:			info at netdev01.info
+Main site:			https://www.netdev01.org/
+Travel/hotel/weather/clothing:	https://www.netdev01.org/travel
+RSS feed:			https://netdev01.org/atom
+Follow us on Twitter: @netdev01	https://twitter.com/netdev01
+
+	slainte mhath, RGB
+
+--
+Richard Guy Briggs               --  ~\    -- ~\             <hpv.tricolour.ca>
+<www.TriColour.ca>                 --  \___   o \@      @        Ride yer bike!
+Ottawa, ON, CANADA                  --  Lo_>__M__\\/\%__\\/\%
+Vote! -- <greenparty.ca>_____GTVS6#790__(*)__(*)________(*)(*)_________________
+
+----- End forwarded message -----
+
+	slainte mhath, RGB
+
+--
+Richard Guy Briggs               --  ~\    -- ~\             <hpv.tricolour.ca>
+<www.TriColour.ca>                 --  \___   o \@      @        Ride yer bike!
+Ottawa, ON, CANADA                  --  Lo_>__M__\\/\%__\\/\%
+Vote! -- <greenparty.ca>_____GTVS6#790__(*)__(*)________(*)(*)_________________
+
+From scruss at gmail.com  Mon Feb  2 14:15:03 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Mon, 02 Feb 2015 09:15:03 -0500
+Subject: [GTALUG] Raspberry Pi 2 with new chip
+In-Reply-To: <20150202060452.GA1155@node1.localdomain>
+References: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+ <20150202060452.GA1155@node1.localdomain>
+Message-ID: <54CF8667.9030207@gmail.com>
+
+On 2015-02-02 01:04 AM, William Park wrote:
+> This is in response to ODROID-C1,
+>     http://www.hardkernel.com/main/products/prdt_info.php?g_code=G141578608433
+
+I dunno, the Raspberry Pi Foundation works pretty closely with Broadcom,
+and also with Microsoft on supporting Windows 10. This would have taken
+some planning, and I'm not sure that they consider Odroid to be a
+competitor.
+
+The real question is, is the new machine:
+* The Raspberry Pi ? (for those who feel that it's
+  necessary to have ? = 2?), or
+* The Raspberry Pi 10 (since ?? ? 10, for most engineering purposes)
+
+Enquiring Minds Want To Know!
+
+ Stewart
+
+
+From me at mylesbraithwaite.com  Mon Feb  2 14:58:37 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 2 Feb 2015 09:58:37 -0500
+Subject: [GTALUG] [GTALUG-Announce] Meeting 10th February, 2015 at 7:30 pm
+Message-ID: <CA+hskZM8yqpOevjh4ThJ7t5zGvO9urAugegRMB=2-x8_w5uxSw@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-02/>
+
+# Round Table Q&A Session
+
+A Round Table Q&A Session is where we take questions from the
+audience, and the audience discusses and attempts to answer those
+questions from their own knowledge. It's a great way to meet fellow
+members of our community and discover the skill sets we each bring to
+the table.
+
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before each meeting a group of GTALUGers dine at Love At
+First Bite (96 Gerrard Street E).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+Code of Conduct
+===============
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From me at mylesbraithwaite.com  Mon Feb  2 15:57:01 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 2 Feb 2015 10:57:01 -0500
+Subject: [GTALUG] Any interested in doing a GPG Keysigning before February's
+	GTALUG meeting?
+Message-ID: <CA+hskZMgnLoVREUmFU6UnNHQ6oXUzVQSc=TBz2-4O5ru3SzDMQ@mail.gmail.com>
+
+I'm think of doing a Formal (i.e. government issued ID required) this
+month and an Informal[1] next month.
+
+[1]: <http://sobac.com/wiki/index.php/Informal_Keysigning>
+
+From lsorense at csclub.uwaterloo.ca  Mon Feb  2 16:39:12 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 2 Feb 2015 11:39:12 -0500
+Subject: [GTALUG] Raspberry Pi 2 with new chip
+In-Reply-To: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+References: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+Message-ID: <20150202163912.GV30246@csclub.uwaterloo.ca>
+
+On Mon, Feb 02, 2015 at 12:05:13AM -0500, Daniel Wayne Armstrong wrote:
+> A new Raspberry Pi 2 is set for release with a new Broadcom BCM2836 quad
+> core Cortex A7:
+> 
+> http://www.cnx-software.com/2015/02/02/raspberry-pi-2-model-b/
+> 
+> My understanding is this new RPi moves to ARMv7 and I will be able to run
+> the vanilla ARM release of Debian Jessie?
+
+Well except the kernel, which will obviously not support this new chip yet.
+
+But other than that, it very well might work.
+
+-- 
+Len Sorensen
+
+From bjonkman at sobac.com  Mon Feb  2 20:18:57 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Mon, 02 Feb 2015 15:18:57 -0500
+Subject: [GTALUG] Any interested in doing a GPG Keysigning before
+	February's	GTALUG meeting?
+In-Reply-To: <CA+hskZMgnLoVREUmFU6UnNHQ6oXUzVQSc=TBz2-4O5ru3SzDMQ@mail.gmail.com>
+References: <CA+hskZMgnLoVREUmFU6UnNHQ6oXUzVQSc=TBz2-4O5ru3SzDMQ@mail.gmail.com>
+Message-ID: <af45f81f-259d-42e3-aa16-9dfe3b9d67c9@email.android.com>
+
+I'm in for that!
+
+But just to clarify, a formal key signing doesn't need government issued ID. The formality stems from the use of a keysigning key (one specially generated to sign the keys of the participants), and that each participant reads out his/her key fingerprint, and is vouched for by other participants who know him/her. 
+
+--Bob.
+
+http://bob.jonkman.ca/blogs/2011/10/14/how-to-hold-a-key-signing-party/
+
+ http://sobac.com/wiki/index.php/Formal_Keysigning
+
+
+
+On February 2, 2015 10:57:01 AM EST, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+>I'm think of doing a Formal (i.e. government issued ID required) this
+>month and an Informal[1] next month.
+>
+>[1]: <http://sobac.com/wiki/index.php/Informal_Keysigning>
+>---
+>Talk Mailing List
+>talk at gtalug.org
+>http://gtalug.org/mailman/listinfo/talk
+
+
+--
+Bob Jonkman bjonkman at sobac.com
+http://bob.jonkman.ca/blogs/bobjonkman
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150202/2bb202e8/attachment.html>
+
+From john.moniz at sympatico.ca  Tue Feb  3 01:29:44 2015
+From: john.moniz at sympatico.ca (John Moniz)
+Date: Mon, 2 Feb 2015 20:29:44 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <20150129171330.GU30246@csclub.uwaterloo.ca>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <alpine.LRH.2.02.1501280309390.16165@redclaw.mimosa.com>
+ <20150129171330.GU30246@csclub.uwaterloo.ca>
+Message-ID: <BLU436-SMTP260D71579273507154C0419E33D0@phx.gbl>
+
+On 01/29/2015 12:13 PM, Lennart Sorensen wrote:
+> On Wed, Jan 28, 2015 at 03:21:41AM -0500, D. Hugh Redelmeier wrote:
+>> The T-series is appreciated in the Linux world.  (The W series is like
+>> T, with a bit more capability).
+> Certainly some W models can take a lot more ram than a T model, but that
+> seems it might not be the case in the future.  Not sure, given so far
+> only the slim version of the W550 (W550s) has been shown, and it is not
+> looking good as far as a lot of W5xx fans are concerned.  Seems most
+> W5xx users think slim is irrelevant compared to functional and trading
+> features for light weight and slim is not something they are willing
+> to do.  The difference between needing a 170W and a 65W power supply
+> gives some idea how much was stripped out in the slim version.  The real
+> W550 is apparently not happening until later this year when the next
+> generation of mobile core i7s are ready.
+>
+>> If you are paying a store to do this, you are spending real money.
+>> You might as well pay a bit more and get at least a T420 (in my
+>> opinion).  A T430 is even better but I think that many are unhappy
+>> with the T440's trackpad (I may be misremembering).
+> Yeah people are not happy with the T440.
+>
+>> I'm more familiar with the T5x0 models, but they are very similar.
+>> I care a lot about the screen resolution, and there are choices.
+>> CPUs matter too.  In notebooks, I prefer recent CPUs for their lower
+>> power consumption.
+> T4xx and T5xx are essentially the same except screen size.
+>
+>> But of course I don't know what you value.
+>>
+>> There are a lot of resources about Linux on Thinkpads on the net.
+>>
+>> One source for old thinkpads is IBM itself.  Sometimes there are good
+>> deals, sometimes not:
+>> <http://www-304.ibm.com/shop/americas/webapp/wcs/stores/servlet/default/CategoryDisplay?categoryId=2576396&storeId=1083996950&catalogId=-124&langId=124>
+>> Right now, I consider these prices high.
+I went back to the store to re-examine the T410 more closely and to look 
+into the T420 as someone suggested. My attention switched to a T520 that 
+he had available for $20 more than the T410. It has Intel wifi 
+(Centrino) and switchable graphics (Intel & Nvidia). It presently has 
+nvidia but he said I could get intel graphics instead. I don't know if 
+this switchable thing means that I can swap graphics cards.
+
+Unless someone sounds an alarm soon, I'll be buying the T520 later in 
+the week.
+
+Thanks,
+
+John.
+
+From northdot9 at gmail.com  Tue Feb  3 02:14:16 2015
+From: northdot9 at gmail.com (David Thornton)
+Date: Mon, 2 Feb 2015 21:14:16 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+Message-ID: <CAHcykVpYCdoiXqKJa7c=3L0qKjyXseqPQT5Q+4kz=vss02YfOA@mail.gmail.com>
+
+Go read the notes on thinkwiki for that model and variants.
+
+David Thornton.
+On Jan 25, 2015 5:22 PM, "John Moniz" <john.moniz at sympatico.ca> wrote:
+
+> Hi all,
+>
+> I need to get a computer for a project that requires a program that is
+> only available for windows. However, I intend to dual boot with Linux and
+> want to make sure that I buy something that is nicely compatible. And I'm
+> looking for the portability of a laptop.
+>
+> There seems to be a general appreciation of Thinkpads on this list. I have
+> my eye on a Thinkpad T410 and was wondering if anyone has reason to suggest
+> that I should stay away from that particular model. The store will be
+> installing Windows 7 and they apparently have enough Linux knowledge to
+> install a dual boot system.
+>
+> I believe there was someone on the list (I think from Kitchener) who sold
+> laptops pre-installed with linux. If that person is still around, I'd
+> welcome a contact off list.
+>
+> Thanks,
+>
+> John.
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150202/2e4842a9/attachment.html>
+
+From john.moniz at sympatico.ca  Tue Feb  3 02:43:57 2015
+From: john.moniz at sympatico.ca (John Moniz)
+Date: Mon, 2 Feb 2015 21:43:57 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+Message-ID: <BLU436-SMTP25146F64F2C96BEF3A1ADFCE33D0@phx.gbl>
+
+Great, didn't know about that resource. Thanks.On Feb 2, 2015 9:14 PM, David Thornton <northdot9 at gmail.com> wrote:
+>
+> Go read the notes on thinkwiki for that model and variants.
+>
+> David Thornton.
+>
+> On Jan 25, 2015 5:22 PM, "John Moniz" <john.moniz at sympatico.ca> wrote:
+>>
+>> Hi all,
+>>
+>> I need to get a computer for a project that requires a program that is only available for windows. However, I intend to dual boot with Linux and want to make sure that I buy something that is nicely compatible. And I'm looking for the portability of a laptop.
+>>
+>> There seems to be a general appreciation of Thinkpads on this list. I have my eye on a Thinkpad T410 and was wondering if anyone has reason to suggest that I should stay away from that particular model. The store will be installing Windows 7 and they apparently have enough Linux knowledge to install a dual boot system.
+>>
+>> I believe there was someone on the list (I think from Kitchener) who sold laptops pre-installed with linux. If that person is still around, I'd welcome a contact off list.
+>>
+>> Thanks,
+>>
+>> John.
+>>
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+
+From lsorense at csclub.uwaterloo.ca  Tue Feb  3 03:05:28 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 2 Feb 2015 22:05:28 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <BLU436-SMTP260D71579273507154C0419E33D0@phx.gbl>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <alpine.LRH.2.02.1501280309390.16165@redclaw.mimosa.com>
+ <20150129171330.GU30246@csclub.uwaterloo.ca>
+ <BLU436-SMTP260D71579273507154C0419E33D0@phx.gbl>
+Message-ID: <20150203030528.GW30246@csclub.uwaterloo.ca>
+
+On Mon, Feb 02, 2015 at 08:29:44PM -0500, John Moniz wrote:
+> I went back to the store to re-examine the T410 more closely and to
+> look into the T420 as someone suggested. My attention switched to a
+> T520 that he had available for $20 more than the T410. It has Intel
+> wifi (Centrino) and switchable graphics (Intel & Nvidia). It
+> presently has nvidia but he said I could get intel graphics instead.
+> I don't know if this switchable thing means that I can swap graphics
+> cards.
+> 
+> Unless someone sounds an alarm soon, I'll be buying the T520 later
+> in the week.
+
+The T420/T520 like the T430/T530 should have nvidia optimus, which
+means it has both intel and nvidia graphics, and switches on the fly
+when asked to.
+
+You can select in the BIOS which one it should enable by default at boot.
+
+Obviously when the nvidia is off and the intel only in use, the battery
+life is a lot better.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Feb  3 03:08:08 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 2 Feb 2015 22:08:08 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <20150203030528.GW30246@csclub.uwaterloo.ca>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <alpine.LRH.2.02.1501280309390.16165@redclaw.mimosa.com>
+ <20150129171330.GU30246@csclub.uwaterloo.ca>
+ <BLU436-SMTP260D71579273507154C0419E33D0@phx.gbl>
+ <20150203030528.GW30246@csclub.uwaterloo.ca>
+Message-ID: <20150203030808.GX30246@csclub.uwaterloo.ca>
+
+On Mon, Feb 02, 2015 at 10:05:28PM -0500, Lennart Sorensen wrote:
+> The T420/T520 like the T430/T530 should have nvidia optimus, which
+> means it has both intel and nvidia graphics, and switches on the fly
+> when asked to.
+
+For that matter I believe even the T410/T510 has nvidia optimus.
+
+-- 
+Len Sorensen
+
+From clifford_ilkay at dinamis.com  Tue Feb  3 04:21:57 2015
+From: clifford_ilkay at dinamis.com (Clifford Ilkay)
+Date: Mon, 02 Feb 2015 23:21:57 -0500
+Subject: [GTALUG] One Plus One Invite to Give Away: Expires at 8:30 am
+Message-ID: <54D04CE5.9090005@dinamis.com>
+
+Hello All,
+
+I have an invite for a One Plus One phone to give away. The first person
+to respond to me privately and actually wants to buy the phone for
+personal use gets it. I'm not charging anything for it and trust that
+you won't be selling the invitation. You must use the invite before 8:30
+am on Tuesday. If I don't hear from anyone in the next couple of hours,
+I'll just post it on the forums on the OPO site.
+
+I have the 64GB sandstone black model with the OPO flip case. It was
+US$391.38 including DHL shipping. I ordered on a Wednesday morning and
+had the phone in my hands on Friday afternoon after paying another
+C$64.90 in customs brokerage fees, HST, and duties. I'm very happy with
+the phone and I'd recommend it.
+
+-- 
+Regards,
+
+Clifford Ilkay
+
++1 647-778-8696
+
+
+From hugh at mimosa.com  Tue Feb  3 04:44:28 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 2 Feb 2015 23:44:28 -0500 (EST)
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <BLU436-SMTP260D71579273507154C0419E33D0@phx.gbl>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <alpine.LRH.2.02.1501280309390.16165@redclaw.mimosa.com>
+ <20150129171330.GU30246@csclub.uwaterloo.ca>
+ <BLU436-SMTP260D71579273507154C0419E33D0@phx.gbl>
+Message-ID: <alpine.LRH.2.02.1502022331400.4291@redclaw.mimosa.com>
+
+| From: John Moniz <john.moniz at sympatico.ca>
+
+| I went back to the store to re-examine the T410 more closely and to look into
+| the T420 as someone suggested. My attention switched to a T520 that he had
+| available for $20 more than the T410. It has Intel wifi (Centrino) and
+| switchable graphics (Intel & Nvidia). It presently has nvidia but he said I
+| could get intel graphics instead. I don't know if this switchable thing means
+| that I can swap graphics cards.
+| 
+| Unless someone sounds an alarm soon, I'll be buying the T520 later in the
+| week.
+
+To me, the display resolution is important.  You can get anything from
+1366x768, 1440x900(?), 1920x1080.  There may be an IPS screen option
+too, which is quite nice.  You haven't mentioned the resolutions on
+the models you are considering.  Does it not matter to you?
+
+The Intel + Nvidia choice is probably better than straight Intel.
+After all, you can chose which to use (as Lennart pointed out).  For
+my use, the Nvidia would probably not be important, but I'd take it if
+it was inexpensive or free.
+
+Clearly the T4x0 is easier to carry than the T5x0.
+
+We have T520, W520, and T530 and they seem to be pretty good
+workhorses.  But my main notebook is a Lenovo Yoga 2 pro and that is
+much better as a portable device (more screen resolution, lighter,
+thinner, longer battery life).  As workstations, the Thinkpads are
+much more powerful and upgradeable/repairable.
+
