@@ -660,3 +660,180 @@ much better as a portable device (more screen resolution, lighter,
 thinner, longer battery life).  As workstations, the Thinkpads are
 much more powerful and upgradeable/repairable.
 
+From adb at adb.ca  Tue Feb  3 12:52:17 2015
+From: adb at adb.ca (Anthony de Boer)
+Date: Tue, 3 Feb 2015 07:52:17 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <alpine.LRH.2.02.1502022331400.4291@redclaw.mimosa.com>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <alpine.LRH.2.02.1501280309390.16165@redclaw.mimosa.com>
+ <20150129171330.GU30246@csclub.uwaterloo.ca>
+ <BLU436-SMTP260D71579273507154C0419E33D0@phx.gbl>
+ <alpine.LRH.2.02.1502022331400.4291@redclaw.mimosa.com>
+Message-ID: <20150203125217.GD15162@adb.ca>
+
+D. Hugh Redelmeier wrote:
+> Clearly the T4x0 is easier to carry than the T5x0.
+
+Though the X series is supposed to be the easiest to carry.  I have
+memories of jogging around Ottawa with an old A-series Thinkpad on
+my back, and I was younger back then.
+
+I've tended toward the laptop being for away only, and a proper desktop
+machine at home, but laptop performance has gotten up to the point of
+making sense as a primary machine, and then there isn't the hassle of
+maintaining two systems and the laptop always being woefully out of date
+and needing a lot of OS updates and personal file transfers when being
+pulled out for a trip.
+
+(Maybe a compute server, or render farm, at home is still an option for
+the occasional thing needing a lot of horsepower...)
+
+It looks like the X220 is the last X-series machine from before Lenovo
+got silly, and the i7-based models can be had with USB3 for moving data
+around.  That last feature is something I don't see on as many current
+Thinkpads as I thought I should.
+
+-- 
+Anthony de Boer
+
+From john.moniz at sympatico.ca  Tue Feb  3 17:04:42 2015
+From: john.moniz at sympatico.ca (John Moniz)
+Date: Tue, 3 Feb 2015 12:04:42 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <alpine.LRH.2.02.1502022331400.4291@redclaw.mimosa.com>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <alpine.LRH.2.02.1501280309390.16165@redclaw.mimosa.com>
+ <20150129171330.GU30246@csclub.uwaterloo.ca>
+ <BLU436-SMTP260D71579273507154C0419E33D0@phx.gbl>
+ <alpine.LRH.2.02.1502022331400.4291@redclaw.mimosa.com>
+Message-ID: <BLU436-SMTP25392184860F9B465E5AB3FE33D0@phx.gbl>
+
+On 02/02/2015 11:44 PM, D. Hugh Redelmeier wrote:
+> | From: John Moniz <john.moniz at sympatico.ca>
+>
+> | I went back to the store to re-examine the T410 more closely and to look into
+> | the T420 as someone suggested. My attention switched to a T520 that he had
+> | available for $20 more than the T410. It has Intel wifi (Centrino) and
+> | switchable graphics (Intel & Nvidia). It presently has nvidia but he said I
+> | could get intel graphics instead. I don't know if this switchable thing means
+> | that I can swap graphics cards.
+> |
+> | Unless someone sounds an alarm soon, I'll be buying the T520 later in the
+> | week.
+>
+> To me, the display resolution is important.  You can get anything from
+> 1366x768, 1440x900(?), 1920x1080.  There may be an IPS screen option
+> too, which is quite nice.  You haven't mentioned the resolutions on
+> the models you are considering.  Does it not matter to you?
+>
+> The Intel + Nvidia choice is probably better than straight Intel.
+> After all, you can chose which to use (as Lennart pointed out).  For
+> my use, the Nvidia would probably not be important, but I'd take it if
+> it was inexpensive or free.
+>
+> Clearly the T4x0 is easier to carry than the T5x0.
+>
+> We have T520, W520, and T530 and they seem to be pretty good
+> workhorses.  But my main notebook is a Lenovo Yoga 2 pro and that is
+> much better as a portable device (more screen resolution, lighter,
+> thinner, longer battery life).  As workstations, the Thinkpads are
+> much more powerful and upgradeable/repairable.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+The screen resolution is not great but it suits my needs (1366x768). And 
+it does have a multi card reader. Unfortunately, it has no USB3. The 
+specs in general are good, but not the latest greatest.
+
+Overall, I think it's not only good for my application, it's also a good 
+fit for Linux (as per all the feedback, for which I am grateful as it 
+puts my mind at ease).
+
+Thanks,
+John.
+
+From lsorense at csclub.uwaterloo.ca  Tue Feb  3 18:59:27 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 3 Feb 2015 13:59:27 -0500
+Subject: [GTALUG] Lenovo Thinkpad T410
+In-Reply-To: <BLU436-SMTP25392184860F9B465E5AB3FE33D0@phx.gbl>
+References: <BLU436-SMTP158ADE3CF873630E0CEBFDBE3340@phx.gbl>
+ <alpine.LRH.2.02.1501280309390.16165@redclaw.mimosa.com>
+ <20150129171330.GU30246@csclub.uwaterloo.ca>
+ <BLU436-SMTP260D71579273507154C0419E33D0@phx.gbl>
+ <alpine.LRH.2.02.1502022331400.4291@redclaw.mimosa.com>
+ <BLU436-SMTP25392184860F9B465E5AB3FE33D0@phx.gbl>
+Message-ID: <20150203185927.GY30246@csclub.uwaterloo.ca>
+
+On Tue, Feb 03, 2015 at 12:04:42PM -0500, John Moniz wrote:
+> The screen resolution is not great but it suits my needs (1366x768).
+> And it does have a multi card reader. Unfortunately, it has no USB3.
+> The specs in general are good, but not the latest greatest.
+> 
+> Overall, I think it's not only good for my application, it's also a
+> good fit for Linux (as per all the feedback, for which I am grateful
+> as it puts my mind at ease).
+
+I seem to recall USB3 arrived with the x30 models.
+
+-- 
+Len Sorensen
+
+From me at mylesbraithwaite.com  Tue Feb  3 19:34:40 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 3 Feb 2015 14:34:40 -0500
+Subject: [GTALUG] Dinner before GTALUG meetings (was Meeting 10th February,
+ 2015 at 7:30 pm)
+Message-ID: <CA+hskZOgOMDfxxX3dH9uMqTb8q3umArHCXmiotritp_ohowNXA@mail.gmail.com>
+
+Before each GTALUG meeting a group of GTALUGers meet at Love at First
+Bite (96 Gerrard Street E) for pizza.
+
+Yelp review: <http://www.yelp.ca/biz/love-at-first-bite-toronto>.
+
+On Mon, Feb 2, 2015 at 9:58 AM, Myles Braithwaite
+<me at mylesbraithwaite.com> wrote:
+> 6:00 pm - Before each meeting a group of GTALUGers dine at Love At
+> First Bite (96 Gerrard Street E).
+
+From james.knott at rogers.com  Tue Feb  3 19:58:55 2015
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 03 Feb 2015 14:58:55 -0500
+Subject: [GTALUG] Dinner before GTALUG meetings (was Meeting 10th
+ February, 2015 at 7:30 pm)
+In-Reply-To: <CA+hskZOgOMDfxxX3dH9uMqTb8q3umArHCXmiotritp_ohowNXA@mail.gmail.com>
+References: <CA+hskZOgOMDfxxX3dH9uMqTb8q3umArHCXmiotritp_ohowNXA@mail.gmail.com>
+Message-ID: <54D1287F.1020006@rogers.com>
+
+On 02/03/2015 02:34 PM, Myles Braithwaite wrote:
+> Before each GTALUG meeting a group of GTALUGers meet at Love at First
+> Bite (96 Gerrard Street E) for pizza.
+
+Shouldn't that be "Love at First Byte"?  ;-)
+
+
+From cbbrowne at gmail.com  Tue Feb  3 23:02:53 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 3 Feb 2015 18:02:53 -0500
+Subject: [GTALUG] Dinner before GTALUG meetings (was Meeting 10th
+ February, 2015 at 7:30 pm)
+In-Reply-To: <CA+hskZOgOMDfxxX3dH9uMqTb8q3umArHCXmiotritp_ohowNXA@mail.gmail.com>
+References: <CA+hskZOgOMDfxxX3dH9uMqTb8q3umArHCXmiotritp_ohowNXA@mail.gmail.com>
+Message-ID: <CAFNqd5VHw-MyMQZ4qfCVKbYZ2p4k+Sfwm5uRPyHRuv+RGN_vEQ@mail.gmail.com>
+
+I'll observe that it is now the "Restaurant Formerly Known As Love at First
+Bite"; apparently changed management about 2 months ago, along with
+removing the Japanese/Thai options from the menu, whilst adding a few more
+grill-related things.
+
+All said, if you search webs/maps for it, your search will most likely be
+more successful looking for the old name, until such time as the new name
+becomes sufficiently storied.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150203/d3cab07a/attachment.html>
+
