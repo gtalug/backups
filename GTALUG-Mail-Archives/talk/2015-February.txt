@@ -837,3 +837,341 @@ becomes sufficiently storied.
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150203/d3cab07a/attachment.html>
 
+From tlugys.ats at spamgourmet.com  Wed Feb  4 03:23:10 2015
+From: tlugys.ats at spamgourmet.com (tlugys.ats at spamgourmet.com)
+Date: Tue, 3 Feb 2015 22:23:10 -0500
+Subject: [GTALUG] Raspberry Pi 2 with new chip
+In-Reply-To: <CACa31mBqcW+Qf3PTuwC4t88wkUYq1sUzQFyP1fry6vZWf9+MsQ@mail.gmail.com>
+References: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+ <CACa31mBqcW+Qf3PTuwC4t88wkUYq1sUzQFyP1fry6vZWf9+MsQ@mail.gmail.com>
+Message-ID: <CAKczvCYPTNBQ=cjwdb+e1x0zDeg5UtnZAzsbOcyR6URgjbp0tQ@mail.gmail.com>
+
+On Mon, Feb 2, 2015 at 5:22 AM, Daniel Wayne Armstrong wrote:
+
+> Official announcement and question answered:
+>
+> http://www.raspberrypi.org/raspberry-pi-2-on-sale/
+>
+> "Because it has an ARMv7 processor, it can run the full range of ARM
+> GNU/Linux distributions, including Snappy Ubuntu Core..."
+>
+
+I haven't pay much attention to raspberry-pi before. It comes with an HDMI
+port, is it?
+How fast would it be to play movies from localnetwork, or play youtube
+videos?
+
+>From the Official announcement, I saw " NEON-enabled multicore video codecs
+can be over 20x faster", so would this 20x faster be fast enough for
+playing youtube from a browser?
+
+Thanks
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150203/a47e84be/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Wed Feb  4 14:59:34 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 4 Feb 2015 09:59:34 -0500
+Subject: [GTALUG] Raspberry Pi 2 with new chip
+In-Reply-To: <CAKczvCYPTNBQ=cjwdb+e1x0zDeg5UtnZAzsbOcyR6URgjbp0tQ@mail.gmail.com>
+References: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+ <CACa31mBqcW+Qf3PTuwC4t88wkUYq1sUzQFyP1fry6vZWf9+MsQ@mail.gmail.com>
+ <CAKczvCYPTNBQ=cjwdb+e1x0zDeg5UtnZAzsbOcyR6URgjbp0tQ@mail.gmail.com>
+Message-ID: <20150204145934.GZ30246@csclub.uwaterloo.ca>
+
+On Tue, Feb 03, 2015 at 10:23:10PM -0500, tlugys.ats at spamgourmet.com wrote:
+> I haven't pay much attention to raspberry-pi before. It comes with an HDMI
+> port, is it?
+> How fast would it be to play movies from localnetwork, or play youtube
+> videos?
+> 
+> From the Official announcement, I saw " NEON-enabled multicore video codecs
+> can be over 20x faster", so would this 20x faster be fast enough for
+> playing youtube from a browser?
+
+Well certainly the new version does support neon as well as vfp3/vfp4.
+Of course it also still has the videocore that supports a number of video
+decoding options.  Certainly doing it by CPU only was hopeless on the
+original pi, but that's not what they were doing in general as far as
+I know.
+
+I see
+http://www.raspi.today/5-things-you-need-to-know-about-the-raspberry-pis-epiphany-web-browser/
+says that the original can play 720p videos from youtube and vimeo.
+It may be that the new CPU cores will help it do more than that.
+
+-- 
+Len Sorensen
+
+From evan at telly.org  Wed Feb  4 18:50:30 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Wed, 4 Feb 2015 13:50:30 -0500
+Subject: [GTALUG] Raspberry Pi 2 with new chip
+In-Reply-To: <20150204145934.GZ30246@csclub.uwaterloo.ca>
+References: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+ <CACa31mBqcW+Qf3PTuwC4t88wkUYq1sUzQFyP1fry6vZWf9+MsQ@mail.gmail.com>
+ <CAKczvCYPTNBQ=cjwdb+e1x0zDeg5UtnZAzsbOcyR6URgjbp0tQ@mail.gmail.com>
+ <20150204145934.GZ30246@csclub.uwaterloo.ca>
+Message-ID: <CAMguqh0FViuDHJtiSrRac9_TOB7UuKJViE4v28mxWKQ6FaAUHw@mail.gmail.com>
+
+Do you still need to pay for a license for add-on codecs?
+
+On 4 February 2015 at 09:59, Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+wrote:
+
+> On Tue, Feb 03, 2015 at 10:23:10PM -0500, tlugys.ats at spamgourmet.com
+> wrote:
+> > I haven't pay much attention to raspberry-pi before. It comes with an
+> HDMI
+> > port, is it?
+> > How fast would it be to play movies from localnetwork, or play youtube
+> > videos?
+> >
+> > From the Official announcement, I saw " NEON-enabled multicore video
+> codecs
+> > can be over 20x faster", so would this 20x faster be fast enough for
+> > playing youtube from a browser?
+>
+> Well certainly the new version does support neon as well as vfp3/vfp4.
+> Of course it also still has the videocore that supports a number of video
+> decoding options.  Certainly doing it by CPU only was hopeless on the
+> original pi, but that's not what they were doing in general as far as
+> I know.
+>
+> I see
+>
+> http://www.raspi.today/5-things-you-need-to-know-about-the-raspberry-pis-epiphany-web-browser/
+> says that the original can play 720p videos from youtube and vimeo.
+> It may be that the new CPU cores will help it do more than that.
+>
+> --
+> Len Sorensen
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+
+-- 
+Evan Leibovitch
+Toronto Canada
+
+Em: evan at telly dot org
+Sk: evanleibovitch
+Tw: el56
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150204/858b95a6/attachment.html>
+
+From tisdall at gmail.com  Wed Feb  4 19:13:16 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Wed, 4 Feb 2015 14:13:16 -0500
+Subject: [GTALUG] Raspberry Pi 2 with new chip
+In-Reply-To: <CAMguqh0FViuDHJtiSrRac9_TOB7UuKJViE4v28mxWKQ6FaAUHw@mail.gmail.com>
+References: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+ <CACa31mBqcW+Qf3PTuwC4t88wkUYq1sUzQFyP1fry6vZWf9+MsQ@mail.gmail.com>
+ <CAKczvCYPTNBQ=cjwdb+e1x0zDeg5UtnZAzsbOcyR6URgjbp0tQ@mail.gmail.com>
+ <20150204145934.GZ30246@csclub.uwaterloo.ca>
+ <CAMguqh0FViuDHJtiSrRac9_TOB7UuKJViE4v28mxWKQ6FaAUHw@mail.gmail.com>
+Message-ID: <CAGxYWpbw5as+_9j8M2F0C+hJC5erX5ScZ7dMxxmaen3nF0r-MQ@mail.gmail.com>
+
+A good comparison between the Odroid C1 and the new RPi 2:
+http://www.cnx-software.com/2015/02/02/raspberry-pi-2-odroid-c1-development-boards-comparison/
+
+According to that article the codec licences are not included in the new
+RPi2
+
+On Wed, Feb 4, 2015 at 1:50 PM, Evan Leibovitch <evan at telly.org> wrote:
+
+> Do you still need to pay for a license for add-on codecs?
+>
+> On 4 February 2015 at 09:59, Lennart Sorensen <
+> lsorense at csclub.uwaterloo.ca> wrote:
+>
+>> On Tue, Feb 03, 2015 at 10:23:10PM -0500, tlugys.ats at spamgourmet.com
+>> wrote:
+>> > I haven't pay much attention to raspberry-pi before. It comes with an
+>> HDMI
+>> > port, is it?
+>> > How fast would it be to play movies from localnetwork, or play youtube
+>> > videos?
+>> >
+>> > From the Official announcement, I saw " NEON-enabled multicore video
+>> codecs
+>> > can be over 20x faster", so would this 20x faster be fast enough for
+>> > playing youtube from a browser?
+>>
+>> Well certainly the new version does support neon as well as vfp3/vfp4.
+>> Of course it also still has the videocore that supports a number of video
+>> decoding options.  Certainly doing it by CPU only was hopeless on the
+>> original pi, but that's not what they were doing in general as far as
+>> I know.
+>>
+>> I see
+>>
+>> http://www.raspi.today/5-things-you-need-to-know-about-the-raspberry-pis-epiphany-web-browser/
+>> says that the original can play 720p videos from youtube and vimeo.
+>> It may be that the new CPU cores will help it do more than that.
+>>
+>> --
+>> Len Sorensen
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>
+>
+>
+> --
+> Evan Leibovitch
+> Toronto Canada
+>
+> Em: evan at telly dot org
+> Sk: evanleibovitch
+> Tw: el56
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150204/6916db06/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Wed Feb  4 19:34:59 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 4 Feb 2015 14:34:59 -0500
+Subject: [GTALUG] Raspberry Pi 2 with new chip
+In-Reply-To: <CAMguqh0FViuDHJtiSrRac9_TOB7UuKJViE4v28mxWKQ6FaAUHw@mail.gmail.com>
+References: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+ <CACa31mBqcW+Qf3PTuwC4t88wkUYq1sUzQFyP1fry6vZWf9+MsQ@mail.gmail.com>
+ <CAKczvCYPTNBQ=cjwdb+e1x0zDeg5UtnZAzsbOcyR6URgjbp0tQ@mail.gmail.com>
+ <20150204145934.GZ30246@csclub.uwaterloo.ca>
+ <CAMguqh0FViuDHJtiSrRac9_TOB7UuKJViE4v28mxWKQ6FaAUHw@mail.gmail.com>
+Message-ID: <20150204193459.GA30246@csclub.uwaterloo.ca>
+
+On Wed, Feb 04, 2015 at 01:50:30PM -0500, Evan Leibovitch wrote:
+> Do you still need to pay for a license for add-on codecs?
+
+I would expect so.
+
+-- 
+Len Sorensen
+
+From scruss at gmail.com  Wed Feb  4 21:40:02 2015
+From: scruss at gmail.com (Stewart Russell)
+Date: Wed, 4 Feb 2015 16:40:02 -0500
+Subject: [GTALUG] Raspberry Pi 2 with new chip
+In-Reply-To: <CAGxYWpbw5as+_9j8M2F0C+hJC5erX5ScZ7dMxxmaen3nF0r-MQ@mail.gmail.com>
+References: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+ <CACa31mBqcW+Qf3PTuwC4t88wkUYq1sUzQFyP1fry6vZWf9+MsQ@mail.gmail.com>
+ <CAKczvCYPTNBQ=cjwdb+e1x0zDeg5UtnZAzsbOcyR6URgjbp0tQ@mail.gmail.com>
+ <20150204145934.GZ30246@csclub.uwaterloo.ca>
+ <CAMguqh0FViuDHJtiSrRac9_TOB7UuKJViE4v28mxWKQ6FaAUHw@mail.gmail.com>
+ <CAGxYWpbw5as+_9j8M2F0C+hJC5erX5ScZ7dMxxmaen3nF0r-MQ@mail.gmail.com>
+Message-ID: <CAAsTreCgM-ks__XyX-=C-WxYqDs=S0xKF_24g7RZU2aOrXbdEA@mail.gmail.com>
+
+On Feb 4, 2015 2:13 PM, "Tim Tisdall" <tisdall at gmail.com> wrote:
+>
+> According to that article the codec
+> licences are not included in the new
+> RPi2
+
+But are the licences included with the Odroid, or have they just
+implemented the code without paying Fraunhofer their dues?
+
+Cheers
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150204/867bbb1d/attachment.html>
+
+From tisdall at gmail.com  Wed Feb  4 23:23:17 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Wed, 4 Feb 2015 18:23:17 -0500
+Subject: [GTALUG] Raspberry Pi 2 with new chip
+In-Reply-To: <CAAsTreCgM-ks__XyX-=C-WxYqDs=S0xKF_24g7RZU2aOrXbdEA@mail.gmail.com>
+References: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+ <CACa31mBqcW+Qf3PTuwC4t88wkUYq1sUzQFyP1fry6vZWf9+MsQ@mail.gmail.com>
+ <CAKczvCYPTNBQ=cjwdb+e1x0zDeg5UtnZAzsbOcyR6URgjbp0tQ@mail.gmail.com>
+ <20150204145934.GZ30246@csclub.uwaterloo.ca>
+ <CAMguqh0FViuDHJtiSrRac9_TOB7UuKJViE4v28mxWKQ6FaAUHw@mail.gmail.com>
+ <CAGxYWpbw5as+_9j8M2F0C+hJC5erX5ScZ7dMxxmaen3nF0r-MQ@mail.gmail.com>
+ <CAAsTreCgM-ks__XyX-=C-WxYqDs=S0xKF_24g7RZU2aOrXbdEA@mail.gmail.com>
+Message-ID: <CAGxYWpY2P8pnw_F_j4niesBQb=qBBhdvB3_JeW8RUer+txHw-w@mail.gmail.com>
+
+"ODROID-C1 supports more codecs, and codec licenses are included"   That's
+what it says in the article.
+
+On Wed, Feb 4, 2015 at 4:40 PM, Stewart Russell <scruss at gmail.com> wrote:
+
+> On Feb 4, 2015 2:13 PM, "Tim Tisdall" <tisdall at gmail.com> wrote:
+> >
+> > According to that article the codec
+> > licences are not included in the new
+> > RPi2
+>
+> But are the licences included with the Odroid, or have they just
+> implemented the code without paying Fraunhofer their dues?
+>
+> Cheers
+> Stewart
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150204/6d2b2d99/attachment.html>
+
+From waltdnes at waltdnes.org  Thu Feb  5 08:06:09 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Thu, 5 Feb 2015 03:06:09 -0500
+Subject: [GTALUG] Raspberry Pi 2 with new chip
+In-Reply-To: <CAAsTreCgM-ks__XyX-=C-WxYqDs=S0xKF_24g7RZU2aOrXbdEA@mail.gmail.com>
+References: <CACa31mCNwE0kzMv2gYpK-6WovkLd9++xM3waSRYDsKnPxki7ZA@mail.gmail.com>
+ <CACa31mBqcW+Qf3PTuwC4t88wkUYq1sUzQFyP1fry6vZWf9+MsQ@mail.gmail.com>
+ <CAKczvCYPTNBQ=cjwdb+e1x0zDeg5UtnZAzsbOcyR6URgjbp0tQ@mail.gmail.com>
+ <20150204145934.GZ30246@csclub.uwaterloo.ca>
+ <CAMguqh0FViuDHJtiSrRac9_TOB7UuKJViE4v28mxWKQ6FaAUHw@mail.gmail.com>
+ <CAGxYWpbw5as+_9j8M2F0C+hJC5erX5ScZ7dMxxmaen3nF0r-MQ@mail.gmail.com>
+ <CAAsTreCgM-ks__XyX-=C-WxYqDs=S0xKF_24g7RZU2aOrXbdEA@mail.gmail.com>
+Message-ID: <20150205080609.GA12817@waltdnes.org>
+
+On Wed, Feb 04, 2015 at 04:40:02PM -0500, Stewart Russell wrote
+
+> But are the licences included with the Odroid, or have they just
+> implemented the code without paying Fraunhofer their dues?
+
+  Depending where on the planet you are, MP3 patents may have already
+expired in your jurisdiction as per http://en.wikipedia.org/wiki/MP3#Licensing_and_patent_issues
+This is not legal advice; see a real lawyer for that.
+
+> The initial near-complete MPEG-1 standard (parts 1, 2 and 3) was
+> publicly available on 6 December 1991 as ISO CD 11172.  In most
+> countries, patents cannot be filed after prior art has been made
+> public, and patents expire 20 years after the initial filing date,
+> which can be up to 12 months later for filings in other countries. As
+> a result, patents required to implement MP3 expired in most countries
+> by December 2012, 21 years after the publication of ISO CD 11172.
+>
+> An exception is the United States, where patents filed prior to 8
+> June 1995 expire 17 years after the publication date of the patent,
+> but application extensions make it possible for a patent to issue
+> much later than normally expected (see submarine patents). The
+> various MP3-related patents expire on dates ranging from 2007 to
+> 2017 in the U.S.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
