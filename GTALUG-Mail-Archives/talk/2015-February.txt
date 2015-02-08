@@ -1306,3 +1306,19 @@ GTALUG Announce mailing list
 announce at gtalug.org
 http://gtalug.org/mailman/listinfo/announce
 
+From greg.martyn at gmail.com  Sat Feb  7 18:06:20 2015
+From: greg.martyn at gmail.com (Greg Martyn)
+Date: Sat, 7 Feb 2015 13:06:20 -0500
+Subject: [GTALUG] X.Org's XDC2015 Conference Is Happening In Toronto
+Message-ID: <CAJt6_8uTfvrTHc6cme=WonibrEbCuKgTSVpXPcYiM3ec4R1bJA@mail.gmail.com>
+
+Not many details yet, but it looks like XDC2015 is going to be held here in
+Toronto:
+
+http://www.phoronix.com/scan.php?page=news_item&px=XDC2015-Toronto-Canada
+
+-Greg
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150207/29ef6d06/attachment.html>
+
