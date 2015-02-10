@@ -1322,3 +1322,148 @@ http://www.phoronix.com/scan.php?page=news_item&px=XDC2015-Toronto-Canada
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150207/29ef6d06/attachment.html>
 
+From hugh at mimosa.com  Mon Feb  9 16:59:29 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 9 Feb 2015 11:59:29 -0500 (EST)
+Subject: [GTALUG] Toronto Open Data Day Feb 20
+Message-ID: <alpine.LRH.2.02.1502091156460.26968@redclaw.mimosa.com>
+
+Free.  Looks like there are some interesting talks.
+There are also two "podcamp" days, whatever that is.
+<http://www.eventbrite.ca/e/2015-toronto-open-data-day-oddto15-tickets-15619323818>
+Just passing on a link: I don't know anything more.
+
+From me at mylesbraithwaite.com  Mon Feb  9 17:36:28 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 09 Feb 2015 12:36:28 -0500
+Subject: [GTALUG] Toronto Open Data Day Feb 20
+In-Reply-To: <alpine.LRH.2.02.1502091156460.26968@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1502091156460.26968@redclaw.mimosa.com>
+Message-ID: <54D8F01C.10008@mylesbraithwaite.com>
+
+D. Hugh Redelmeier wrote:
+> There are also two "podcamp" days, whatever that is.
+
+PodCamp[1] is a DemoCamp-like conference for people interested in 
+Podcasting and general content creation on the Internet. I went a few 
+years back and it was really cool.
+
+[1]: <http://2015.podcamptoronto.com/>
+
+From hugh at mimosa.com  Mon Feb  9 19:01:46 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 9 Feb 2015 14:01:46 -0500 (EST)
+Subject: [GTALUG] Dinner before GTALUG meetings (was Meeting 10th
+ February, 2015 at 7:30 pm)
+In-Reply-To: <CAFNqd5VHw-MyMQZ4qfCVKbYZ2p4k+Sfwm5uRPyHRuv+RGN_vEQ@mail.gmail.com>
+References: <CA+hskZOgOMDfxxX3dH9uMqTb8q3umArHCXmiotritp_ohowNXA@mail.gmail.com>
+ <CAFNqd5VHw-MyMQZ4qfCVKbYZ2p4k+Sfwm5uRPyHRuv+RGN_vEQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1502091326290.26968@redclaw.mimosa.com>
+
+| From: Christopher Browne <cbbrowne at gmail.com>
+
+| I'll observe that it is now the "Restaurant Formerly Known As Love at First
+| Bite"; apparently changed management about 2 months ago, along with
+| removing the Japanese/Thai options from the menu, whilst adding a few more
+| grill-related things.
+
+I recommend that we think again about where to congregate.  It seems too
+late for changing it for tomorrow.
+
+I kind of liked Mehran
+<http://www.yelp.ca/biz/mehran-restaurant-toronto>
+but surely there are other good choices.
+
+Maybe ramen, but that might be too narrow a menu.  There are a few in
+the area but this looks like a good one:
+<http://www.yelp.ca/biz/kaiju-toronto>
+Others:
+<http://www.yelp.ca/biz/raijin-ramen-toronto>
+<http://www.yelp.ca/biz/hokkaido-ramen-santouka-toronto-2>
+menu on .jp site! <http://www.santouka.co.jp/en/menu/index.html>
+
+Untested thai:
+<http://www.yelp.ca/biz/thai-on-yonge-toronto-3>
+
+Also untested Thai.  Looks expensive considering it is tapas.
+<http://www.yelp.ca/biz/sabai-sabai-kitchen-and-bar-toronto>
+
+Untested Afghan:
+<http://www.yelp.ca/biz/kabul-express-toronto>
+<http://kabulexpress.ca/>
+
+I veto some nice choices based on sound level:
+<http://www.yelp.ca/biz/guu-izakaya-toronto>
+<http://www.yelp.ca/biz/salad-king-restaurant-toronto-2>
+
+Any other suggestions?
+
+From scruss at gmail.com  Mon Feb  9 22:36:34 2015
+From: scruss at gmail.com (Stewart Russell)
+Date: Mon, 9 Feb 2015 17:36:34 -0500
+Subject: [GTALUG] Dinner before GTALUG meetings (was Meeting 10th
+ February, 2015 at 7:30 pm)
+In-Reply-To: <alpine.LRH.2.02.1502091326290.26968@redclaw.mimosa.com>
+References: <CA+hskZOgOMDfxxX3dH9uMqTb8q3umArHCXmiotritp_ohowNXA@mail.gmail.com>
+ <CAFNqd5VHw-MyMQZ4qfCVKbYZ2p4k+Sfwm5uRPyHRuv+RGN_vEQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502091326290.26968@redclaw.mimosa.com>
+Message-ID: <CAAsTreC+7HAiCWbD3d3XK=-e7p+j90uBqbPYzDh_pox6+Wg1UQ@mail.gmail.com>
+
+There's also Ethiopiques at 277 Church. It might be a bit messy for most
+folks, but it's a very sociable way to dine.
+
+If we are doing a key signing, I can also bring CACert forms. If you want
+to mess around with X.509 certs at no cost, it's worth a look.
+
+Cheers
+Stewart
+On Feb 9, 2015 2:01 PM, "D. Hugh Redelmeier" <hugh at mimosa.com> wrote:
+
+> | From: Christopher Browne <cbbrowne at gmail.com>
+>
+> | I'll observe that it is now the "Restaurant Formerly Known As Love at
+> First
+> | Bite"; apparently changed management about 2 months ago, along with
+> | removing the Japanese/Thai options from the menu, whilst adding a few
+> more
+> | grill-related things.
+>
+> I recommend that we think again about where to congregate.  It seems too
+> late for changing it for tomorrow.
+>
+> I kind of liked Mehran
+> <http://www.yelp.ca/biz/mehran-restaurant-toronto>
+> but surely there are other good choices.
+>
+> Maybe ramen, but that might be too narrow a menu.  There are a few in
+> the area but this looks like a good one:
+> <http://www.yelp.ca/biz/kaiju-toronto>
+> Others:
+> <http://www.yelp.ca/biz/raijin-ramen-toronto>
+> <http://www.yelp.ca/biz/hokkaido-ramen-santouka-toronto-2>
+> menu on .jp site! <http://www.santouka.co.jp/en/menu/index.html>
+>
+> Untested thai:
+> <http://www.yelp.ca/biz/thai-on-yonge-toronto-3>
+>
+> Also untested Thai.  Looks expensive considering it is tapas.
+> <http://www.yelp.ca/biz/sabai-sabai-kitchen-and-bar-toronto>
+>
+> Untested Afghan:
+> <http://www.yelp.ca/biz/kabul-express-toronto>
+> <http://kabulexpress.ca/>
+>
+> I veto some nice choices based on sound level:
+> <http://www.yelp.ca/biz/guu-izakaya-toronto>
+> <http://www.yelp.ca/biz/salad-king-restaurant-toronto-2>
+>
+> Any other suggestions?
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150209/de43c3af/attachment.html>
+
