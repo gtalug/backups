@@ -11,3 +11,25 @@ Message-ID: <CA+hskZNpVgvS5RevspavvTp6v3pPjYXygOJ3yYzvQW+Na5zhNA@mail.gmail.com>
 
 <https://plus.google.com/b/110858902106738937194/events/cvj6s84l2dvkqd0jelq0d3m8nog>
 
+From me at mylesbraithwaite.com  Tue Feb 10 16:05:17 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 10 Feb 2015 11:05:17 -0500
+Subject: [GTALUG-Ops] Twitter Follower/Tweet Analytics for @gtalug
+Message-ID: <54DA2C3D.1040601@mylesbraithwaite.com>
+
+Twitter gives follower analytic now.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: Attached Message Part
+Type: image/jpeg
+Size: 218967 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20150210/d1a850a2/attachment.jpe>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: tweet_activity_metrics.csv
+Type: application/vnd.ms-excel
+Size: 7679 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20150210/d1a850a2/attachment.xlb>
+
