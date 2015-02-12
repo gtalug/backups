@@ -1632,3 +1632,407 @@ On Tue 10 Feb 2015 12:16 -0500, D. Hugh Redelmeier wrote:
 
 I wonder where these millions are going?
 
+From rreiter91 at gmail.com  Wed Feb 11 11:20:34 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Wed, 11 Feb 2015 05:20:34 -0600
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <20150211054317.GD10627@celine.lan>
+References: <alpine.LRH.2.02.1502101213410.26968@redclaw.mimosa.com>
+ <20150211054317.GD10627@celine.lan>
+Message-ID: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+
+This looks like a false flag operation to me. Skull vs. Bones.
+
+On 2/10/15, Loui Chang <louipc.ist at gmail.com> wrote:
+> On Tue 10 Feb 2015 12:16 -0500, D. Hugh Redelmeier wrote:
+>> Cyanogen mod is forking Android (we knew that) but it how seems to be a
+>> big-money commercial play.
+>> <http://www.zdnet.com/article/cyanogen-looks-to-amazon-microsoft-funds-to-take-control-of-android/?tag=nl.e539&s_cid=e539&ttag=e539&ftag=TRE17cfd61>
+>>
+>> And here I thought it was just a "community".
+>>
+>> This has happened a bit in the past with a fork of XBMC.  It didn't
+>> turn out well.
+>
+> I wonder where these millions are going?
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+From hugh at mimosa.com  Wed Feb 11 19:46:07 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 11 Feb 2015 14:46:07 -0500 (EST)
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+References: <alpine.LRH.2.02.1502101213410.26968@redclaw.mimosa.com>
+ <20150211054317.GD10627@celine.lan>
+ <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+
+| From: Russell Reiter <rreiter91 at gmail.com>
+
+| This looks like a false flag operation to me. Skull vs. Bones.
+
+It's really hard to tell what's going on in Cyanogen Inc.'s "mind".
+They sure don't seem to be free-software types from their talk or
+actions.
+
+Here's a summary from a comment posted to the article
+<http://www.androidauthority.com/cyanogen-google-kirt-mcmaster-582373/>
+
+How can you sign an exclusive deal with free software?
+
+    The gist of it is that OnePlus was supposed to launch the One in India
+    with CyanogenMod as usual, but Cyanogen left OnePlus out in the cold
+    by signing an exclusive agreement with Micromax from India. The
+    agreement states that Cyanogen is to exclusively support the latter's
+    upcoming online brand Yu -- a direct competitor of OnePlus -- in
+    India.
+
+    The big problem is that Cyanogen apparently knew fully well that
+    OnePlus was going to expand to India and decided to sign the agreement
+    with Micromax anyway, backstabbing the brand that had helped them so
+    far. According to OnePlus's co founder Carl Pei, OnePlus "can't
+    explain Cyanogen's decision because we don't fully understand it
+    ourselves,". Keep in mind that during this time OnePlus was swamped
+    with things like their deal with Amazon India, their Black Friday sale
+    and the opening of their store in Beijing.
+
+    This forced the already busy OnePlus to start developing their own ROM
+    based on Android Lollipop. This could've ended right there, but
+    Cyanogen's founder Steve Kondik took to Google+ and accused OnePlus of
+    stealing features from CyanogenMod for their own ROM. This act was the
+    solidifying act that will probably end their relationship not too long
+    from now. For now, all international units are still supported by
+    Cyanogen, but Pei has hinted that they may no longer continue updating
+    the phone in a year.
+
+    TL;DR - OnePlus wanted to release the One in India, Cyanogen
+    backstabbed them by signing an exclusive deal with Micromax, OnePlus
+    got frustrated and decided to make their own ROM, Cyanogen accused
+    them of stealing from Cyanogen and their relationship is now very
+    rocky.
+
+From lsorense at csclub.uwaterloo.ca  Wed Feb 11 20:03:39 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 11 Feb 2015 15:03:39 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1502101213410.26968@redclaw.mimosa.com>
+ <20150211054317.GD10627@celine.lan>
+ <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+Message-ID: <20150211200339.GB30246@csclub.uwaterloo.ca>
+
+On Wed, Feb 11, 2015 at 02:46:07PM -0500, D. Hugh Redelmeier wrote:
+> It's really hard to tell what's going on in Cyanogen Inc.'s "mind".
+> They sure don't seem to be free-software types from their talk or
+> actions.
+> 
+> Here's a summary from a comment posted to the article
+> <http://www.androidauthority.com/cyanogen-google-kirt-mcmaster-582373/>
+> 
+> How can you sign an exclusive deal with free software?
+> 
+>     The gist of it is that OnePlus was supposed to launch the One in India
+>     with CyanogenMod as usual, but Cyanogen left OnePlus out in the cold
+>     by signing an exclusive agreement with Micromax from India. The
+>     agreement states that Cyanogen is to exclusively support the latter's
+>     upcoming online brand Yu -- a direct competitor of OnePlus -- in
+>     India.
+> 
+>     The big problem is that Cyanogen apparently knew fully well that
+>     OnePlus was going to expand to India and decided to sign the agreement
+>     with Micromax anyway, backstabbing the brand that had helped them so
+>     far. According to OnePlus's co founder Carl Pei, OnePlus "can't
+>     explain Cyanogen's decision because we don't fully understand it
+>     ourselves,". Keep in mind that during this time OnePlus was swamped
+>     with things like their deal with Amazon India, their Black Friday sale
+>     and the opening of their store in Beijing.
+> 
+>     This forced the already busy OnePlus to start developing their own ROM
+>     based on Android Lollipop. This could've ended right there, but
+>     Cyanogen's founder Steve Kondik took to Google+ and accused OnePlus of
+>     stealing features from CyanogenMod for their own ROM. This act was the
+>     solidifying act that will probably end their relationship not too long
+>     from now. For now, all international units are still supported by
+>     Cyanogen, but Pei has hinted that they may no longer continue updating
+>     the phone in a year.
+> 
+>     TL;DR - OnePlus wanted to release the One in India, Cyanogen
+>     backstabbed them by signing an exclusive deal with Micromax, OnePlus
+>     got frustrated and decided to make their own ROM, Cyanogen accused
+>     them of stealing from Cyanogen and their relationship is now very
+>     rocky.
+
+So of course at this point any sane person would know that Cyanogen is
+not to be trusted at all.  Don't make any deal with them, because they
+don't care about you at all.
+
+I wonder if even Microsoft might start to regret getting involved
+with them.
+
+-- 
+Len Sorensen
+
+From rreiter91 at gmail.com  Wed Feb 11 22:33:45 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Wed, 11 Feb 2015 16:33:45 -0600
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1502101213410.26968@redclaw.mimosa.com>
+ <20150211054317.GD10627@celine.lan>
+ <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+Message-ID: <CAPik5MzcqkmjB4sxuNEnQOcT8qJSgR=gRtTb5v8EtvnrbY7MKA@mail.gmail.com>
+
+<SNIP PREVIOUS HISTORY>
+
+>     TL;DR - OnePlus wanted to release the One in India, Cyanogen
+>     backstabbed them by signing an exclusive deal with Micromax, OnePlus
+>     got frustrated and decided to make their own ROM, Cyanogen accused
+>     them of stealing from Cyanogen and their relationship is now very
+>     rocky.
+
+The whole question of theft of intellectual property is a pretty grey
+area in the digital millennium. Is reverse engineering theft? if it
+was Dell sure made it past the post on that one. There's lots of
+mythos around the development of software. Didn't IBM open up their
+architecture for a reason? wasn't that reason so the technology should
+develop in a sustainable way? I seem to recall that  IBM originally
+thought the worlds business computing could be reasonably done on two
+or three mainframes through a distributed network.
+
+So when PC bios intelligence features are reverse engineered, it's not
+theft it's ummmmm creative math. Or perhaps the term New Math is
+better.  More base 2ish. When push comes to shove it's all a numbers
+game.
+
+Bill Gates open letter to hobbyists comes to mind. A trade secret is
+only valued as a trade secret when steps are taken to protect it. So
+when Gates fails to secure the punch-tape and loses control of ALTAIR
+BASIC and I'm assuming MITS MOBILE was engaging the "hobbyists" for an
+open source intelligence reason, creative math is fair play.
+
+Free beer, free software, free love all relics of the sixties. TANSTAAFL
+
+Many years ago at a TLUG BOF I facilitated I asked John Hall about
+emerging open source technology and the people who were most involved
+in it's development. To paraphrase he said, the PHD's write the
+software but it is the operators who use and perfect it.
+
+So IMHO Gates is a real operator all right and he has a whole class of
+people following in his footsteps. They want the thing to work just
+well enough to make money but not so well that it doesn't need
+constant upgrading and improvement.
+
+From hugh at mimosa.com  Wed Feb 11 22:50:21 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 11 Feb 2015 17:50:21 -0500 (EST)
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <20150211200339.GB30246@csclub.uwaterloo.ca>
+References: <alpine.LRH.2.02.1502101213410.26968@redclaw.mimosa.com>
+ <20150211054317.GD10627@celine.lan>
+ <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+Message-ID: <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+
+| From: Russell Reiter <rreiter91 at gmail.com>
+
+| This looks like a false flag operation to me. Skull vs. Bones.
+
+Not sure what you mean.  Are you saying that Cyanogen Inc. might be
+simply a spoiling attack from Microsoft on Google/Android under the
+Cyanogen Inc. flag?
+
+| From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+
+| So of course at this point any sane person would know that Cyanogen is
+| not to be trusted at all.  Don't make any deal with them, because they
+| don't care about you at all.
+
+Yeah.  I wonder how much damage this does to One+One owners in the
+future.
+
+| I wonder if even Microsoft might start to regret getting involved
+| with them.
+
+Perhaps not if the aim is just to bring disrepute and confusion to the Android
+world.
+
+What I don't understand is how much Cyanogen Mod is just Cyanogen Inc.
+
+I always thought that Cyanogen Mod was a real plus for the Android
+community and hence probably useful for Google.  For one thing, it was
+a way of keeping the device manufacturers a little in line (if the
+device manufacturers went too far, their customers would jump ship to
+CM).  For another, it meant Android had some hacker cred.
+
+I am now (with insufficient research) thinking that I might want to
+avoid CM so as to stay out of the clutches of CI.
+
+From rreiter91 at gmail.com  Wed Feb 11 23:56:17 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Wed, 11 Feb 2015 17:56:17 -0600
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1502101213410.26968@redclaw.mimosa.com>
+ <20150211054317.GD10627@celine.lan>
+ <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+Message-ID: <CAPik5Mz-AjJFee_d458u8cee+8V699meot5Ad+r85MSBeqUtjQ@mail.gmail.com>
+
+On 2/11/15, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+> | From: Russell Reiter <rreiter91 at gmail.com>
+>
+> | This looks like a false flag operation to me. Skull vs. Bones.
+>
+> Not sure what you mean.  Are you saying that Cyanogen Inc. might be
+> simply a spoiling attack from Microsoft on Google/Android under the
+> Cyanogen Inc. flag?
+
+I think that pretty much sum's up the situation. Abuse of dominance
+seems to be an MS stock in trade, however it's not exclusively theirs.
+I think CM is hedging bets, if not jumping ship. There is profit in
+confusion whether accidental or deliberate.
+
+<SNIP>
+> | From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+>
+> | So of course at this point any sane person would know that Cyanogen is
+> | not to be trusted at all.  Don't make any deal with them, because they
+> | don't care about you at all.
+
+I somewhat agree with this although I'm not sure how sanity checking
+in a person is achieved. I struggle with this concept myself at times.
+
+> I always thought that Cyanogen Mod was a real plus for the Android
+> community and hence probably useful for Google.  For one thing, it was
+> a way of keeping the device manufacturers a little in line (if the
+> device manufacturers went too far, their customers would jump ship to
+> CM).  For another, it meant Android had some hacker cred.
+
+I had thought so too and now I'm not so sure. Modularity and
+scalability are seen as plus's by hackers but they are in fact the
+wild wild west of the technology business. Do you trade features for
+security or do you trade security for features. I'd like to think you
+can have both but that doesn't seem very likely in the near future.
+
+Look at how stuxnet escaped containment. The real question is who
+embedded it in the PLC's in the first place. Note the reports said it
+was spread from the isolated networks not to them.
+
+>
+> I am now (with insufficient research) thinking that I might want to
+> avoid CM so as to stay out of the clutches of CI.
+
+As a blunt force hacker I'm always in somebody's clutches. Isn't the
+devil you know better than the devil you don't know? Trust is
+extensible and extendible. Security is non-existent, that's a
+Microsoft illusion created to pacify small business while the big
+business crawl in their back door when they find the front door is
+closed.
+
+From evan at telly.org  Thu Feb 12 00:23:17 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Thu, 12 Feb 2015 08:23:17 +0800
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1502101213410.26968@redclaw.mimosa.com>
+ <20150211054317.GD10627@celine.lan>
+ <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+Message-ID: <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+
+?Greetings from Singapore.
+
+Sheesh.
+
+You'd think that of all places, a Linux user group forum would be the
+*last* place where people would stare at a FOSS software distribution and
+not know what it was.
+
+CM is but one of many Android distributions, with a diversity that would
+embarrass Distrowatch.
+
+
+   - There are the commercial ones that add on proprietary bits such as
+   Samsung's Touchwiz, indeed the Google reference standard (which only comes
+   by default on Nexus and no-name supercheap devices).
+
+   - There are the barely recognizable mutations such as what's used in the
+   Kindle Fire, deliberately designed to look as non-Android-like as possible.
+
+   - And then there are the pure FOSS efforts, which include Paranoid
+   Android and the hundreds of small-team or single-person efforts that can be
+   found on XDA-developers.
+
+
+So CM turned from a project into a brand,  and attracted outside attention
+and money. The BRAND signed an exclusive deal with a handset manufacturer
+in India, that will prove to be a Very Bad Move for them because it's
+ruined its relationship with a much bigger, global, partner.
+
+And so the drama unfolds.
+
+Since there are no (well not yet) any proprietary bits in CM12, the only
+thing that can be "stolen" is the name. That may change. There could be
+prorietary bits added to CM (like Samsung, HTC and others do regularly),
+and CM could change its app defaults for email, search, cloud storage etc
+from Google to MS. (How different is this from Firefox switching its
+default search from Google to Yahoo?)
+
+Over the last decade-plus, Linux distribution politics has had more than
+its share of soap opera moments... Oracle forking Red Hat, Novell buying
+and then divesting SuSE, and the brief fallout from Caldera buying a
+company that made Unix for PCs. That last one was entertainment enough to
+sustain its own fan site, groklaw.
+
+But not Linux distributions are boring, Very little gawking value these
+days.
+
+So the focus is now in Android space, where the stakes are even higher and
+some of the players are very, very big. Whether Microsoft is involved in CM
+to disrupt Android, or simply to disrupt Google, or simply to give it an
+MS-culture-friendly liaison with the Android ecosystem, remains to be seen.
+But if nothing else, we have a new source of entertainment and a new form
+of distro wars.
+
+It can't do any sustained damage to the ecosystem, and might even result in
+some healthy competition.
+
+Grab your popcorn.
+
+- Evan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150212/e06ed3ca/attachment.html>
+
+From hugh at mimosa.com  Thu Feb 12 05:11:28 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 12 Feb 2015 00:11:28 -0500 (EST)
+Subject: [GTALUG] Wireless router: TP-Link Archer C7 $100
+Message-ID: <alpine.LRH.2.02.1502120000560.12760@redclaw.mimosa.com>
+
+This week (unless supplies run out, which happens) NCIX has this wireless 
+router for $99.49 with free shipping.
+
+This is one that Scott has and recommends for OpenWRT.  He says that you 
+should go for Version 2.0 and that the box will say if it is a Version 2.0 
+router.  For that reason it may be better to buy it in one of their 
+stores.
+
+It has been cheaper (briefly $70 and Future Shop and Best Buy) but not 
+often recently.
+
+<http://www.ncix.com/detail/tp-link-archer-c7-ac1750-dual-1c-91525-1251.htm>
+
+<http://wiki.openwrt.org/toh/tp-link/tl-wdr7500>
+
