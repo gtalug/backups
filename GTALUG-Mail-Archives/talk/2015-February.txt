@@ -2036,3 +2036,428 @@ often recently.
 
 <http://wiki.openwrt.org/toh/tp-link/tl-wdr7500>
 
+From rreiter91 at gmail.com  Thu Feb 12 12:12:56 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Thu, 12 Feb 2015 06:12:56 -0600
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+References: <alpine.LRH.2.02.1502101213410.26968@redclaw.mimosa.com>
+ <20150211054317.GD10627@celine.lan>
+ <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+Message-ID: <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+
+On 2/11/15, Evan Leibovitch <evan at telly.org> wrote:
+> Greetings from Singapore.
+>
+> Sheesh.
+>
+> You'd think that of all places, a Linux user group forum would be the
+> *last* place where people would stare at a FOSS software distribution and
+> not know what it was.
+
+As a language pedant or peasant, (I never know how to truly label
+myself so I usually leave that to others) I wonder what free really
+means. Free Open Source Software, looks easy enough to understand, but
+in truth what is free. Free stuff, Free radicals, Free willy; the list
+of usage and mis-usage of free is endless.
+
+TANSTAAFL we all pay the piper in one way or another.
+
+When word magic is so prevalent in marketing, how do you shake out the
+spin and find the stable core of logic.
+
+IBM's VLIW Architecture exploits Instruction Level Parallelism and has
+been touted as the natural successor to RISC. However it is the manner
+in which you bundle primitive words together in ordinary day to day
+language which affects the experiential outcome of the listener.
+
+What happens when you buy the words but they fail you. If you got them
+free, there is no liability. The minute you pay for the words, you are
+thrust into the deep and murky world of administrative law.
+
+So isn't FOSS, as an administrative acronym, a bit of an oxymoron?
+
+In marketing you are free to buy other words, but who or what insures
+the damages caused by word mis-use?
+
+<SNIP VERY INTERESTING ANALYSIS>
+
+>
+> It can't do any sustained damage to the ecosystem, and might even result in
+> some healthy competition.
+
+Any thoughts on project Ara?
+
+http://en.wikipedia.org/wiki/Project_Ara
+
+>
+> Grab your popcorn.
+>
+> - Evan
+>
+
+From gilesorr at gmail.com  Thu Feb 12 15:13:16 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Thu, 12 Feb 2015 10:13:16 -0500
+Subject: [GTALUG] Wireless router: TP-Link Archer C7 $100
+In-Reply-To: <alpine.LRH.2.02.1502120000560.12760@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1502120000560.12760@redclaw.mimosa.com>
+Message-ID: <CAEnxSC4cNgttfUJH7yeACtx=mYcWz4RZZH9qgGznMXQZ6y-poA@mail.gmail.com>
+
+On 12 February 2015 at 00:11, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+> This week (unless supplies run out, which happens) NCIX has this wireless
+> router for $99.49 with free shipping.
+>
+> This is one that Scott has and recommends for OpenWRT.  He says that you
+> should go for Version 2.0 and that the box will say if it is a Version 2.0
+> router.  For that reason it may be better to buy it in one of their
+> stores.
+>
+> It has been cheaper (briefly $70 and Future Shop and Best Buy) but not
+> often recently.
+>
+> <http://www.ncix.com/detail/tp-link-archer-c7-ac1750-dual-1c-91525-1251.htm>
+>
+> <http://wiki.openwrt.org/toh/tp-link/tl-wdr7500>
+
+I purchased one of these fairly recently.  Installing OpenWRT was as
+easy as I've ever seen it be, and the amount of memory available seems
+absolutely immense compared to the WRT-54Gs I'd been working with
+previously.  I would love to tell you it's been great, but I haven't
+actually used it enough to say that honestly.  So all I can say is
+that it's looking good in the little use I've had from it.
+
+If you do buy one and want to use the USB ports (which are 2.0 ... I
+wish they were USB3), my stumbling adventures getting the ports to
+work may be educational:
+
+http://gilesorr.com/blog/archerc7-openwrt.html
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From lsorense at csclub.uwaterloo.ca  Thu Feb 12 21:51:51 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 12 Feb 2015 16:51:51 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+References: <alpine.LRH.2.02.1502101213410.26968@redclaw.mimosa.com>
+ <20150211054317.GD10627@celine.lan>
+ <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+Message-ID: <20150212215151.GC30246@csclub.uwaterloo.ca>
+
+On Thu, Feb 12, 2015 at 06:12:56AM -0600, Russell Reiter wrote:
+> As a language pedant or peasant, (I never know how to truly label
+> myself so I usually leave that to others) I wonder what free really
+> means. Free Open Source Software, looks easy enough to understand, but
+> in truth what is free. Free stuff, Free radicals, Free willy; the list
+> of usage and mis-usage of free is endless.
+> 
+> TANSTAAFL we all pay the piper in one way or another.
+> 
+> When word magic is so prevalent in marketing, how do you shake out the
+> spin and find the stable core of logic.
+> 
+> IBM's VLIW Architecture exploits Instruction Level Parallelism and has
+> been touted as the natural successor to RISC. However it is the manner
+> in which you bundle primitive words together in ordinary day to day
+> language which affects the experiential outcome of the listener.
+
+Well intel has tried using VLIW 3 times now, and (mostly) failed 3 times.
+Only seems to have ever been successful in DSP designs (hence the "mostly"
+for intel, with the i860 being fairly successful in DSP use, but not as
+a general purpose CPU).
+
+-- 
+Len Sorensen
+
+From rreiter91 at gmail.com  Fri Feb 13 00:26:16 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Thu, 12 Feb 2015 18:26:16 -0600
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <20150212215151.GC30246@csclub.uwaterloo.ca>
+References: <alpine.LRH.2.02.1502101213410.26968@redclaw.mimosa.com>
+ <20150211054317.GD10627@celine.lan>
+ <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+Message-ID: <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+
+<SNIP PREVIOUS>
+>
+> Well intel has tried using VLIW 3 times now, and (mostly) failed 3 times.
+> Only seems to have ever been successful in DSP designs (hence the "mostly"
+> for intel, with the i860 being fairly successful in DSP use, but not as
+> a general purpose CPU).
+
+Three billion transistors require a mighty robust memory management
+subsystem. Given the development costs of these chip sets and other
+factors of parallel advancements in existing architectures, a few
+false starts are to be expected. Who knows maybe all this belongs in
+the tomorrow file.
+
+Instruction replay RAS and other improvements for checking and
+correcting errors, are most certainly desirable features. Fine grained
+exit status is essential for lockstepping cache threads and compile
+time predication looks like it could be efficient enough for reducing
+transport delay. Just need better ram with fewer flaws or perhaps
+parallel RAS and journal the bad bits. ECC or not its the uncommon
+errors which need to be predicated.
+
+So now the problem is not limited to things like voltage flux, it's
+far field interference like background radiation which tend to flip
+the bits.
+
+From john.moniz at sympatico.ca  Fri Feb 13 03:36:29 2015
+From: john.moniz at sympatico.ca (John Moniz)
+Date: Thu, 12 Feb 2015 22:36:29 -0500
+Subject: [GTALUG] FAX Programs
+Message-ID: <BLU436-SMTP133B777B5C65D310EC0A6A6E3230@phx.gbl>
+
+Anyone using a Linux program for sending and receiving faxes?
+Are you using a fax modem on a regular voice line?
+
+Thanks, John.
+
+From hgibson at eol.ca  Fri Feb 13 03:58:29 2015
+From: hgibson at eol.ca (Howard Gibson)
+Date: Thu, 12 Feb 2015 22:58:29 -0500
+Subject: [GTALUG] FAX Programs
+In-Reply-To: <BLU436-SMTP133B777B5C65D310EC0A6A6E3230@phx.gbl>
+References: <BLU436-SMTP133B777B5C65D310EC0A6A6E3230@phx.gbl>
+Message-ID: <20150212225829.a51c48c691e76e83b533b559@eol.ca>
+
+On Thu, 12 Feb 2015 22:36:29 -0500
+John Moniz <john.moniz at sympatico.ca> wrote:
+
+> Anyone using a Linux program for sending and receiving faxes?
+> Are you using a fax modem on a regular voice line?
+> 
+> Thanks, John.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+> 
+
+John,
+
+   I have been using efax from the command line.  Finally, I have a proper serial modem in its own package.  I keep it turned off because it is not compatible with my DSL modem.  I have to run one or the other.  I think it works.  I would need someone to practice on.  I have never tried top receive a fax.
+
+-- 
+Howard Gibson 
+hgibson at eol.ca
+howard.gibson at optech.com 
+jhowardgibson at gmail.com
+http://home.eol.ca/~hgibson
+
+From devguy.ca at gmail.com  Fri Feb 13 04:22:44 2015
+From: devguy.ca at gmail.com (Dev Guy)
+Date: Thu, 12 Feb 2015 23:22:44 -0500
+Subject: [GTALUG] SSH Hangs
+Message-ID: <CAMRGebjLdCfcjmpKCiqw2-Fb41o=kEuk5mRZEYKs+gBhF6+xyQ@mail.gmail.com>
+
+Hi All,
+
+I am having a real nagging problem with ssh. I setup dynamic dns so I could
+I connect to my box from outside.
+
+My basic setup is a router connected to a cable modem.
+I've opened the firewall port 22 tcp/udp on my router.
+
+However he is the problem I am having.
+
+I can ssh into my box from inside my LAN like, ssh 192.168.0.100, works
+fine!
+
+However when I try to ssh using my dynamic dns (or the external IP), ssh
+will hang and never return.
+
+1) I've tried running my sshd in debug mode and here is the output
+=====(SERVER SIDE)=====
+
+debug1: sshd version OpenSSH_6.6.1, OpenSSL 1.0.1f 6 Jan 2014
+debug1: key_parse_private2: missing begin marker
+debug1: read PEM private key done: type RSA
+debug1: private host key: #0 type 1 RSA
+debug1: key_parse_private2: missing begin marker
+debug1: read PEM private key done: type DSA
+debug1: private host key: #1 type 2 DSA
+debug1: key_parse_private2: missing begin marker
+debug1: read PEM private key done: type ECDSA
+debug1: private host key: #2 type 3 ECDSA
+debug1: private host key: #3 type 4 ED25519
+debug1: rexec_argv[0]='/usr/sbin/sshd'
+debug1: rexec_argv[1]='-d'
+Set /proc/self/oom_score_adj from 0 to -1000
+debug1: Bind to port 22 on 0.0.0.0.
+Server listening on 0.0.0.0 port 22.
+debug1: Bind to port 22 on ::.
+Server listening on :: port 22.
+debug1: Server will not fork when running in debugging mode.
+debug1: rexec start in 5 out 5 newsock 5 pipe -1 sock 8
+debug1: inetd sockets after dupping: 3, 3
+Connection from 192.168.0.1 port 48996 on 192.168.0.100 port 22
+
+
+2) Here is the ssh verbose output
+=====(CLIENT SIDE)=====
+
+OpenSSH_6.6.1, OpenSSL 1.0.1f 6 Jan 2014
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: Applying options for *
+debug2: ssh_connect: needpriv 0
+debug1: Connecting to yadav.duckdns.org [209.122.208.175] port 22.
+debug1: Connection established.
+debug3: Incorrect RSA1 identifier
+debug3: Could not load "/home/yadav/.ssh/id_rsa" as a RSA1 public key
+debug1: identity file /home/yadav/.ssh/id_rsa type 1
+debug1: identity file /home/yadav/.ssh/id_rsa-cert type -1
+debug1: identity file /home/yadav/.ssh/id_dsa type -1
+debug1: identity file /home/yadav/.ssh/id_dsa-cert type -1
+debug1: identity file /home/yadav/.ssh/id_ecdsa type -1
+debug1: identity file /home/yadav/.ssh/id_ecdsa-cert type -1
+debug1: identity file /home/yadav/.ssh/id_ed25519 type -1
+debug1: identity file /home/yadav/.ssh/id_ed25519-cert type -1
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version string SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-8
+
+As you can see from the server output the connection gets established, but
+then the hang happens and I can't figure out what's going on?
+
+Someone suggested that sshd might be trying to do a reverse lookup and to
+add,
+
+'UseDNS no'
+
+to /etc/ssh/sshd_config and restarting the daemon. This didn't work!
+
+Any ideas? I can't seem to find anything for my particular problem on the
+Internet.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150212/551ea6e2/attachment.html>
+
+From ted.leslie at gmail.com  Fri Feb 13 06:35:18 2015
+From: ted.leslie at gmail.com (ted leslie)
+Date: Fri, 13 Feb 2015 01:35:18 -0500
+Subject: [GTALUG] SSH Hangs
+In-Reply-To: <CAMRGebjLdCfcjmpKCiqw2-Fb41o=kEuk5mRZEYKs+gBhF6+xyQ@mail.gmail.com>
+References: <CAMRGebjLdCfcjmpKCiqw2-Fb41o=kEuk5mRZEYKs+gBhF6+xyQ@mail.gmail.com>
+Message-ID: <CAMua2SGbE6w9vG4wH91z0aavzbLbsrAd10F5phpYoFNakGDMRA@mail.gmail.com>
+
+run tcpdump on your server when you do the outside connect.
+you can
+tcpdump -i eth0 -n |grep 209.122.208.175
+do you don't get a tonne of crap. You may have to change eth0 to what is
+appropriate.
+also see if you have any iptables odd rules, or any odd routing.
+
+-tl
+
+
+On Thu, Feb 12, 2015 at 11:22 PM, Dev Guy <devguy.ca at gmail.com> wrote:
+
+> Hi All,
+>
+> I am having a real nagging problem with ssh. I setup dynamic dns so I
+> could I connect to my box from outside.
+>
+> My basic setup is a router connected to a cable modem.
+> I've opened the firewall port 22 tcp/udp on my router.
+>
+> However he is the problem I am having.
+>
+> I can ssh into my box from inside my LAN like, ssh 192.168.0.100, works
+> fine!
+>
+> However when I try to ssh using my dynamic dns (or the external IP), ssh
+> will hang and never return.
+>
+> 1) I've tried running my sshd in debug mode and here is the output
+> =====(SERVER SIDE)=====
+>
+> debug1: sshd version OpenSSH_6.6.1, OpenSSL 1.0.1f 6 Jan 2014
+> debug1: key_parse_private2: missing begin marker
+> debug1: read PEM private key done: type RSA
+> debug1: private host key: #0 type 1 RSA
+> debug1: key_parse_private2: missing begin marker
+> debug1: read PEM private key done: type DSA
+> debug1: private host key: #1 type 2 DSA
+> debug1: key_parse_private2: missing begin marker
+> debug1: read PEM private key done: type ECDSA
+> debug1: private host key: #2 type 3 ECDSA
+> debug1: private host key: #3 type 4 ED25519
+> debug1: rexec_argv[0]='/usr/sbin/sshd'
+> debug1: rexec_argv[1]='-d'
+> Set /proc/self/oom_score_adj from 0 to -1000
+> debug1: Bind to port 22 on 0.0.0.0.
+> Server listening on 0.0.0.0 port 22.
+> debug1: Bind to port 22 on ::.
+> Server listening on :: port 22.
+> debug1: Server will not fork when running in debugging mode.
+> debug1: rexec start in 5 out 5 newsock 5 pipe -1 sock 8
+> debug1: inetd sockets after dupping: 3, 3
+> Connection from 192.168.0.1 port 48996 on 192.168.0.100 port 22
+>
+>
+> 2) Here is the ssh verbose output
+> =====(CLIENT SIDE)=====
+>
+> OpenSSH_6.6.1, OpenSSL 1.0.1f 6 Jan 2014
+> debug1: Reading configuration data /etc/ssh/ssh_config
+> debug1: /etc/ssh/ssh_config line 19: Applying options for *
+> debug2: ssh_connect: needpriv 0
+> debug1: Connecting to yadav.duckdns.org [209.122.208.175] port 22.
+> debug1: Connection established.
+> debug3: Incorrect RSA1 identifier
+> debug3: Could not load "/home/yadav/.ssh/id_rsa" as a RSA1 public key
+> debug1: identity file /home/yadav/.ssh/id_rsa type 1
+> debug1: identity file /home/yadav/.ssh/id_rsa-cert type -1
+> debug1: identity file /home/yadav/.ssh/id_dsa type -1
+> debug1: identity file /home/yadav/.ssh/id_dsa-cert type -1
+> debug1: identity file /home/yadav/.ssh/id_ecdsa type -1
+> debug1: identity file /home/yadav/.ssh/id_ecdsa-cert type -1
+> debug1: identity file /home/yadav/.ssh/id_ed25519 type -1
+> debug1: identity file /home/yadav/.ssh/id_ed25519-cert type -1
+> debug1: Enabling compatibility mode for protocol 2.0
+> debug1: Local version string SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-8
+>
+> As you can see from the server output the connection gets established, but
+> then the hang happens and I can't figure out what's going on?
+>
+> Someone suggested that sshd might be trying to do a reverse lookup and to
+> add,
+>
+> 'UseDNS no'
+>
+> to /etc/ssh/sshd_config and restarting the daemon. This didn't work!
+>
+> Any ideas? I can't seem to find anything for my particular problem on the
+> Internet.
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150213/eb4e333e/attachment.html>
+
