@@ -2461,3 +2461,480 @@ On Thu, Feb 12, 2015 at 11:22 PM, Dev Guy <devguy.ca at gmail.com> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150213/eb4e333e/attachment.html>
 
+From me at mylesbraithwaite.com  Fri Feb 13 14:54:35 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 13 Feb 2015 09:54:35 -0500
+Subject: [GTALUG] SSH Hangs
+In-Reply-To: <CAMRGebjLdCfcjmpKCiqw2-Fb41o=kEuk5mRZEYKs+gBhF6+xyQ@mail.gmail.com>
+References: <CAMRGebjLdCfcjmpKCiqw2-Fb41o=kEuk5mRZEYKs+gBhF6+xyQ@mail.gmail.com>
+Message-ID: <54DE102B.7090902@mylesbraithwaite.com>
+
+Dev Guy wrote:
+> Hi All,
+>
+> I am having a real nagging problem with ssh. I setup dynamic dns so I
+> could I connect to my box from outside.
+>
+> My basic setup is a router connected to a cable modem.
+> I've opened the firewall port 22 tcp/udp on my router.
+>
+> However he is the problem I am having.
+>
+> I can ssh into my box from inside my LAN like, ssh 192.168.0.100, works
+> fine!
+>
+> However when I try to ssh using my dynamic dns (or the external IP), ssh
+> will hang and never return.
+
+I had a similar problem a few years ago on Bell DSL, the issue was I was 
+SSHing into one of their FreeBSD routers (they fixed this issue a year 
+ago by blocking incoming on port 22), I fixed it by change the SSH port 
+to 2222.
+
+From james.knott at rogers.com  Fri Feb 13 15:05:10 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 13 Feb 2015 10:05:10 -0500
+Subject: [GTALUG] SSH Hangs
+In-Reply-To: <54DE102B.7090902@mylesbraithwaite.com>
+References: <CAMRGebjLdCfcjmpKCiqw2-Fb41o=kEuk5mRZEYKs+gBhF6+xyQ@mail.gmail.com>
+ <54DE102B.7090902@mylesbraithwaite.com>
+Message-ID: <54DE12A6.5000207@rogers.com>
+
+On 02/13/2015 09:54 AM, Myles Braithwaite wrote:
+>> However when I try to ssh using my dynamic dns (or the external IP), ssh
+>> will hang and never return.
+>
+> I had a similar problem a few years ago on Bell DSL, the issue was I
+> was SSHing into one of their FreeBSD routers (they fixed this issue a
+> year ago by blocking incoming on port 22), I fixed it by change the
+> SSH port to 2222.
+
+How does something with an IP address go to the wrong device???  If you
+have your own public IP, that router should not be doing anything other
+than forwarding to your address.
+
+
+From tim at 3kids.net  Fri Feb 13 15:18:01 2015
+From: tim at 3kids.net (Tim Carroll)
+Date: Fri, 13 Feb 2015 10:18:01 -0500
+Subject: [GTALUG] SSH Hangs
+In-Reply-To: <54DE102B.7090902@mylesbraithwaite.com>
+References: <CAMRGebjLdCfcjmpKCiqw2-Fb41o=kEuk5mRZEYKs+gBhF6+xyQ@mail.gmail.com>
+ <54DE102B.7090902@mylesbraithwaite.com>
+Message-ID: <54DE15A9.7030903@3kids.net>
+
+I had this same problem.
+Up until a week or two ago port 22 worked fine.
+Then internally 22 was ok but externally it failed. (connection denied
+error).
+I even called Bell but they denied changing anything.
+As soon as I changed everything too port 2222 it all worked fine again!
+
+On 02/13/2015 09:54 AM, Myles Braithwaite wrote:
+> Dev Guy wrote:
+>> Hi All,
+>>
+>> I am having a real nagging problem with ssh. I setup dynamic dns so I
+>> could I connect to my box from outside.
+>>
+>> My basic setup is a router connected to a cable modem.
+>> I've opened the firewall port 22 tcp/udp on my router.
+>>
+>> However he is the problem I am having.
+>>
+>> I can ssh into my box from inside my LAN like, ssh 192.168.0.100, works
+>> fine!
+>>
+>> However when I try to ssh using my dynamic dns (or the external IP), ssh
+>> will hang and never return.
+>
+> I had a similar problem a few years ago on Bell DSL, the issue was I
+> was SSHing into one of their FreeBSD routers (they fixed this issue a
+> year ago by blocking incoming on port 22), I fixed it by change the
+> SSH port to 2222.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+-- 
+
+_______________________________________________
+
+Tim Carroll
+3kids.net
+Cell 416 524 7721	
+50 King Edward Ave
+Toronto, Ontario, M4C 5J6
+___________________________
+
+
+
+
+From james.knott at rogers.com  Fri Feb 13 15:29:21 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 13 Feb 2015 10:29:21 -0500
+Subject: [GTALUG] SSH Hangs
+In-Reply-To: <54DE15A9.7030903@3kids.net>
+References: <CAMRGebjLdCfcjmpKCiqw2-Fb41o=kEuk5mRZEYKs+gBhF6+xyQ@mail.gmail.com>
+ <54DE102B.7090902@mylesbraithwaite.com> <54DE15A9.7030903@3kids.net>
+Message-ID: <54DE1851.9060601@rogers.com>
+
+On 02/13/2015 10:18 AM, Tim Carroll wrote:
+> I had this same problem.
+> Up until a week or two ago port 22 worked fine.
+> Then internally 22 was ok but externally it failed. (connection denied
+> error).
+> I even called Bell but they denied changing anything.
+> As soon as I changed everything too port 2222 it all worked fine again!
+>
+
+Perhaps they're blocking port 22.  Try a TCP port 22 traceroute and see
+what happens.  Try again with 2222.
+
+From avolkov at gmail.com  Fri Feb 13 15:35:53 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Fri, 13 Feb 2015 10:35:53 -0500
+Subject: [GTALUG] Encrypted backups and file sync.
+Message-ID: <CAO1j=qcWvDHL0ozA15HAkmpepR0mDm6Z-xjsFNYxtmsntTgquQ@mail.gmail.com>
+
+Hello everyone,
+
+I'm looking for a solution to a problem of backup and file sync between two
+computers. I have the following requirements, and I wonder if what I want
+is realistic and is there off the shelf software I can use.
+
+I have several laptops and a desktop that I would like to back up and keep
+in sync.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150213/f81da568/attachment.html>
+
+From avolkov at gmail.com  Fri Feb 13 15:47:19 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Fri, 13 Feb 2015 10:47:19 -0500
+Subject: [GTALUG] Encrypted backups and sync
+Message-ID: <CAO1j=qcPSg-pdG4UQgwqpjKrOLtSbLgKiPG4rH95O9Ff4_NbbA@mail.gmail.com>
+
+Oops. sorry I accidentally sent the email.
+
+So, I have several laptops and a desktop that I would like to back up and
+keep in sync.
+
+* Every client (laptop) is encrypted with cryptsetup and LUKS
+* There are different configuration and big image files that  I would like
+to back up from each device but not synchronize
+* I can host my own server
+* I would prefer to store encrypted backup on a cryptsetup and LUKS
+partition
+* I would like to periodically sync encrypted backup partition to s3/google
+drive with minimal overhead
+* I only want to mount encrypted backup partition when sync/backup is in
+progress and I'm fine with mounting that backup partition with the keys
+stored on the client machines in clear text
+* I don't have to have web interface or
+* I need to automatically do file sync backup for the clients, preferably
+based on network location (i.e. when I'm close to backup server, or
+connected with a fast link).
+
+I'm thinking of clobbering something together with a bunch of scripts, but
+my guess is this problem has been either completely solve, or I can just
+use a few big pieces to solve it.
+
+Could you recommend any tools for that?
+
+Thanks,
+
+Alex.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150213/3e8d5791/attachment.html>
+
+From tim at 3kids.net  Fri Feb 13 15:44:51 2015
+From: tim at 3kids.net (Tim Carroll)
+Date: Fri, 13 Feb 2015 10:44:51 -0500
+Subject: [GTALUG] Encrypted backups and file sync.
+In-Reply-To: <CAO1j=qcWvDHL0ozA15HAkmpepR0mDm6Z-xjsFNYxtmsntTgquQ@mail.gmail.com>
+References: <CAO1j=qcWvDHL0ozA15HAkmpepR0mDm6Z-xjsFNYxtmsntTgquQ@mail.gmail.com>
+Message-ID: <54DE1BF3.6030706@3kids.net>
+
+Have a look at btsync from bittorrent.
+You can select what directories you want to sync on each computer.
+Nothing is stored on their servers, it just syncs your machines.
+
+On 02/13/2015 10:35 AM, Alex Volkov wrote:
+> Hello everyone,
+>
+> I'm looking for a solution to a problem of backup and file sync
+> between two computers. I have the following requirements, and I wonder
+> if what I want is realistic and is there off the shelf software I can use.
+>
+> I have several laptops and a desktop that I would like to back up and
+> keep in sync.
+>
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+-- 
+
+_______________________________________________
+
+Tim Carroll
+3kids.net
+Cell 416 524 7721	
+50 King Edward Ave
+Toronto, Ontario, M4C 5J6
+___________________________
+
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150213/cdfdcd87/attachment.html>
+
+From grazer at gmail.com  Fri Feb 13 16:01:57 2015
+From: grazer at gmail.com (Jason Shaw)
+Date: Fri, 13 Feb 2015 11:01:57 -0500
+Subject: [GTALUG] Encrypted backups and file sync.
+In-Reply-To: <54DE1BF3.6030706@3kids.net>
+References: <CAO1j=qcWvDHL0ozA15HAkmpepR0mDm6Z-xjsFNYxtmsntTgquQ@mail.gmail.com>
+ <54DE1BF3.6030706@3kids.net>
+Message-ID: <CAC4o_JJM+c2U-MxofXy8DR=6jjqtFLCAxE-LNXbcgv++bCX1Qw@mail.gmail.com>
+
+There's also Sync Thing, which I've used to backup my phone to my home file
+server.  It works well and is supported on multiple platforms, is open
+source, and actively being developed.
+
+http://syncthing.net/
+
+-jason
+
+On Fri, Feb 13, 2015 at 10:44 AM, Tim Carroll <tim at 3kids.net> wrote:
+
+>  Have a look at btsync from bittorrent.
+> You can select what directories you want to sync on each computer.
+> Nothing is stored on their servers, it just syncs your machines.
+>
+> On 02/13/2015 10:35 AM, Alex Volkov wrote:
+>
+>  Hello everyone,
+>
+>  I'm looking for a solution to a problem of backup and file sync between
+> two computers. I have the following requirements, and I wonder if what I
+> want is realistic and is there off the shelf software I can use.
+>
+>  I have several laptops and a desktop that I would like to back up and
+> keep in sync.
+>
+>
+>
+> ---
+> Talk Mailing Listtalk at gtalug.orghttp://gtalug.org/mailman/listinfo/talk
+>
+>
+> --
+>
+> _______________________________________________
+>
+> Tim Carroll3kids.net
+> Cell 416 524 7721	
+> 50 King Edward Ave
+> Toronto, Ontario, M4C 5J6
+> ___________________________
+>
+>
+>
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150213/500353e9/attachment.html>
+
+From hugh at mimosa.com  Fri Feb 13 16:27:52 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Fri, 13 Feb 2015 11:27:52 -0500 (EST)
+Subject: [GTALUG] Encrypted backups and sync
+In-Reply-To: <CAO1j=qcPSg-pdG4UQgwqpjKrOLtSbLgKiPG4rH95O9Ff4_NbbA@mail.gmail.com>
+References: <CAO1j=qcPSg-pdG4UQgwqpjKrOLtSbLgKiPG4rH95O9Ff4_NbbA@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1502131119420.12760@redclaw.mimosa.com>
+
+| From: Alex Volkov <avolkov at gmail.com>
+
+| So, I have several laptops and a desktop that I would like to back up and
+| keep in sync.
+
+Sorry that I don't have time right now to carefully read your list of
+requirements.  But let me throw a thought.
+
+If you go to the trouble of encrypting the filesystem on your
+notebooks, it would be great to back it up as-encrypted.  That way
+there is only one route to the break the encryption.  (There might
+otherwise be two or three.)
+
+Backing up a whole filesystem seems expensive: there are a lot of
+empty blocks.
+
+The first time, it is expensive.  You've got to copy all those blocks.
+
+If you use rsync for subsequent backups, I think that it will only
+transmit the changed blocks.  That should be affordable.  For safety,
+it may be important that the filesystem be read-only while the rsync
+is running (that might be awkward).
+
+The only way of recovering is to recreate the raw filesystem and then
+use LUKS to get at it.  Is this good enough?
+
+Note: I've never tried this.  It might be a dumb idea.
+
+From john.moniz at sympatico.ca  Fri Feb 13 16:33:31 2015
+From: john.moniz at sympatico.ca (John Moniz)
+Date: Fri, 13 Feb 2015 11:33:31 -0500
+Subject: [GTALUG] FAX Programs
+In-Reply-To: <20150212225829.a51c48c691e76e83b533b559@eol.ca>
+References: <BLU436-SMTP133B777B5C65D310EC0A6A6E3230@phx.gbl>
+ <20150212225829.a51c48c691e76e83b533b559@eol.ca>
+Message-ID: <BLU437-SMTP57CC1774FB1261FFEDD3E6E3230@phx.gbl>
+
+On 02/12/2015 10:58 PM, Howard Gibson wrote:
+> On Thu, 12 Feb 2015 22:36:29 -0500
+> John Moniz <john.moniz at sympatico.ca> wrote:
+>
+>> Anyone using a Linux program for sending and receiving faxes?
+>> Are you using a fax modem on a regular voice line?
+>>
+>> Thanks, John.
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+> John,
+>
+>     I have been using efax from the command line.  Finally, I have a proper serial modem in its own package.  I keep it turned off because it is not compatible with my DSL modem.  I have to run one or the other.  I think it works.  I would need someone to practice on.  I have never tried top receive a fax.
+>
+Howard, efax is one of the programs I was considering. I'll see if I can 
+set myself up to do some testing with you. If so, I'll contact you off list.
+
+Thanks,
+
+John.
+
+From scruss at gmail.com  Fri Feb 13 17:36:04 2015
+From: scruss at gmail.com (Stewart Russell)
+Date: Fri, 13 Feb 2015 12:36:04 -0500
+Subject: [GTALUG] FAX Programs
+In-Reply-To: <20150212225829.a51c48c691e76e83b533b559@eol.ca>
+References: <BLU436-SMTP133B777B5C65D310EC0A6A6E3230@phx.gbl>
+ <20150212225829.a51c48c691e76e83b533b559@eol.ca>
+Message-ID: <CAAsTreA3VsqewPPz-QW232R0Cb5cBifZcbo4G9fJxcsmb9mMQw@mail.gmail.com>
+
+On Feb 12, 2015 10:58 PM, "Howard Gibson" <hgibson at eol.ca> wrote:
+>
+> Finally, I have a proper serial modem in > its own package.  I keep it
+turned off
+> because it is not compatible with my
+> DSL modem.
+
+Yes, you have to keep the fax the other side of the DSL filter. I have the
+AIO plugged in to a splitter at the demarcation point, and it works well.
+For all of my semi-annual faxing needs ...
+
+Cheers
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150213/2ba70ae2/attachment.html>
+
+From tisdall at gmail.com  Fri Feb 13 18:25:17 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Fri, 13 Feb 2015 13:25:17 -0500
+Subject: [GTALUG] FAX Programs
+In-Reply-To: <CAAsTreA3VsqewPPz-QW232R0Cb5cBifZcbo4G9fJxcsmb9mMQw@mail.gmail.com>
+References: <BLU436-SMTP133B777B5C65D310EC0A6A6E3230@phx.gbl>
+ <20150212225829.a51c48c691e76e83b533b559@eol.ca>
+ <CAAsTreA3VsqewPPz-QW232R0Cb5cBifZcbo4G9fJxcsmb9mMQw@mail.gmail.com>
+Message-ID: <CAGxYWpZ91nCwY=4CdJPK9b=jJTPL8vuh5ci26c=6VwEkNOZYoA@mail.gmail.com>
+
+Ah faxes...  The government institutions and banks seems to make that
+technology stick around.
+
+I don't even have a land line any more so I've been using hellofax.com .  I
+think they allow you to send 10 pages a month for free and it supports
+things like Google Drive and Dropbox.  I've only used it 3 times now, but
+it's worked really well and has a really nice interface.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150213/bb7fa93c/attachment.html>
+
+From john.moniz at sympatico.ca  Fri Feb 13 21:30:20 2015
+From: john.moniz at sympatico.ca (John Moniz)
+Date: Fri, 13 Feb 2015 16:30:20 -0500
+Subject: [GTALUG] FAX Programs
+In-Reply-To: <CAGxYWpZ91nCwY=4CdJPK9b=jJTPL8vuh5ci26c=6VwEkNOZYoA@mail.gmail.com>
+References: <BLU436-SMTP133B777B5C65D310EC0A6A6E3230@phx.gbl>
+ <20150212225829.a51c48c691e76e83b533b559@eol.ca>
+ <CAAsTreA3VsqewPPz-QW232R0Cb5cBifZcbo4G9fJxcsmb9mMQw@mail.gmail.com>
+ <CAGxYWpZ91nCwY=4CdJPK9b=jJTPL8vuh5ci26c=6VwEkNOZYoA@mail.gmail.com>
+Message-ID: <BLU436-SMTP16873331D7838D141CDA241E3230@phx.gbl>
+
+On 02/13/2015 01:25 PM, Tim Tisdall wrote:
+> Ah faxes...  The government institutions and banks seems to make that 
+> technology stick around.
+>
+> I don't even have a land line any more so I've been using hellofax.com 
+> <http://hellofax.com> .  I think they allow you to send 10 pages a 
+> month for free and it supports things like Google Drive and Dropbox.  
+> I've only used it 3 times now, but it's worked really well and has a 
+> really nice interface.
+>
+Thanks for the link. It looks very similar to myfax.com, which I've been 
+researching. You can only send 5 pages and receive none on the free 
+plan. Was hoping to avoid the $10/mth, hence my original note. And it 
+would be cool to put to use the old fax modem I've been saving all these 
+years, just in case.
+
+Naturally, cool is in the eye of the beholder :-).
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150213/c172b978/attachment.html>
+
+From tisdall at gmail.com  Fri Feb 13 22:09:08 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Fri, 13 Feb 2015 17:09:08 -0500
+Subject: [GTALUG] FAX Programs
+In-Reply-To: <BLU436-SMTP16873331D7838D141CDA241E3230@phx.gbl>
+References: <BLU436-SMTP133B777B5C65D310EC0A6A6E3230@phx.gbl>
+ <20150212225829.a51c48c691e76e83b533b559@eol.ca>
+ <CAAsTreA3VsqewPPz-QW232R0Cb5cBifZcbo4G9fJxcsmb9mMQw@mail.gmail.com>
+ <CAGxYWpZ91nCwY=4CdJPK9b=jJTPL8vuh5ci26c=6VwEkNOZYoA@mail.gmail.com>
+ <BLU436-SMTP16873331D7838D141CDA241E3230@phx.gbl>
+Message-ID: <CAGxYWpZFNfhMQH0i05QPbu4MfVx=3iyN77e=FBAiYhBUzx7DHA@mail.gmail.com>
+
+On Fri, Feb 13, 2015 at 4:30 PM, John Moniz <john.moniz at sympatico.ca> wrote:
+
+>  Thanks for the link. It looks very similar to myfax.com, which I've been
+> researching. You can only send 5 pages and receive none on the free plan.
+> Was hoping to avoid the $10/mth, hence my original note. And it would be
+> cool to put to use the old fax modem I've been saving all these years, just
+> in case.
+>
+> Naturally, cool is in the eye of the beholder :-).
+>
+
+BTW, the 10 pages free a month is for every month, not just the first
+month.  I haven't paid a penny with it and sent 3 faxes so far.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150213/f0b57e26/attachment.html>
+
