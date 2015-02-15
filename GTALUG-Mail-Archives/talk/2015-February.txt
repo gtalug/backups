@@ -2938,3 +2938,229 @@ month.  I haven't paid a penny with it and sent 3 faxes so far.
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150213/f0b57e26/attachment.html>
 
+From scruss at gmail.com  Sat Feb 14 15:34:49 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sat, 14 Feb 2015 10:34:49 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+References: <alpine.LRH.2.02.1502101213410.26968@redclaw.mimosa.com>
+ <20150211054317.GD10627@celine.lan>
+ <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+Message-ID: <54DF6B19.9030108@gmail.com>
+
+On 2015-02-12 07:12 AM, Russell Reiter wrote:
+> What happens when you buy the words but they fail you. If you got them
+> free, there is no liability.
+But there can be: a tort. Torts arise when you are injured or suffer
+loss outside a contract, arising from lack of reasonable diligence by
+the person causing the injury or loss. The ancient Debian ssh problem -
+where a well-meaning admin patched some code that used uninitialized
+variables, not realizing it would make connections less secure - could
+have created a tort.
+>  The minute you pay for the words, you are
+> thrust into the deep and murky world of administrative law.
+Payment is only one form of consideration required to form a contract. I
+suspect that continued use/enjoyment/utility is the consideration for
+free software. But what of the software we don't know we're using, like
+the low-level stuff that moves our bits about the world: can I choose
+not to use that if it takes more than a reasonable effort to find out
+what it is?
+
+Wiser folks may of course refer me to the reply given in /Arkell v.
+Pressdram/.
+
+cheers,
+ Stewart
+(a slightly apprehensive One+/Cyanogen user)
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150214/328738db/attachment.html>
+
+From rreiter91 at gmail.com  Sat Feb 14 16:57:45 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Sat, 14 Feb 2015 10:57:45 -0600
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <54DF6B19.9030108@gmail.com>
+References: <alpine.LRH.2.02.1502101213410.26968@redclaw.mimosa.com>
+ <20150211054317.GD10627@celine.lan>
+ <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <54DF6B19.9030108@gmail.com>
+Message-ID: <CAPik5Mw9u_abpL5uCSdpESJ5NhgNnekte6njW3Qt=hwjZv6txA@mail.gmail.com>
+
+<SNIP PREVIOUS>
+> But what of the software we don't know we're using, like
+> the low-level stuff that moves our bits about the world: can I choose
+> not to use that if it takes more than a reasonable effort to find out
+> what it is?
+>
+> Wiser folks may of course refer me to the reply given in /Arkell v.
+> Pressdram/.
+
+Not at all. I'm always open to discussion. First of all a tort is an
+UN-intentional breach of contract, from that point it all depends on
+how you define low-level bits and reasonable.
+
+In physics you can't just say fuck the low level bits, we'll fix it in
+POST, that's media-speak, it just doesn't work that way in the real
+world. In this case all the worlds not a stage and all the people
+players etcetera etcera etcra etc ...
+
+>From my perspective as a kind of blunt force hardware kind of guy, any
+way you look at things, the pressing need is to clean up dirty power,
+or build a shield against it. Truth is a kind of a higgs boson, first
+it's there, then it's not there, then it's there again. Or is it the
+other way round? When you rely so much on truth tables, shouldn't
+accuracy be to the nth degree?
+
+That is to the highest level of trust which could be further extended
+rather than the lowest.
+
+I forgot, are we talking about physics or law here? If it is truly
+both, then the same ordered logic applies, doesn't it?
+
+The fact that you know there is a Higgs Boson, is one you can't
+reasonably deny in a court of law, can you? That's neither a
+reasonable error or omission. I think it's best to be shielded from
+that sort of thing, but I'm a hacker not a lawyer.
+
+Russell
+
+From evan at telly.org  Sat Feb 14 21:42:39 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Sat, 14 Feb 2015 21:42:39 +0000
+Subject: [GTALUG] FAX Programs
+References: <BLU436-SMTP133B777B5C65D310EC0A6A6E3230@phx.gbl>
+ <20150212225829.a51c48c691e76e83b533b559@eol.ca>
+ <CAAsTreA3VsqewPPz-QW232R0Cb5cBifZcbo4G9fJxcsmb9mMQw@mail.gmail.com>
+ <CAGxYWpZ91nCwY=4CdJPK9b=jJTPL8vuh5ci26c=6VwEkNOZYoA@mail.gmail.com>
+ <BLU436-SMTP16873331D7838D141CDA241E3230@phx.gbl>
+ <CAGxYWpZFNfhMQH0i05QPbu4MfVx=3iyN77e=FBAiYhBUzx7DHA@mail.gmail.com>
+Message-ID: <CAMguqh2tw3ucjit3cSgopwtRn9ENWOOy7wpAgmJqz_q+P2xf-A@mail.gmail.com>
+
+Back when I needed to do this, I had extremely good solid use out of
+Hylafax and a multitech fax modem. Haven't needed it for a decade, and I
+don't know if it's still being maintained, but I can't imagine that it
+would need much updating.
+
+On Fri, Feb 13, 2015, 17:09 Tim Tisdall <tisdall at gmail.com> wrote:
+
+> On Fri, Feb 13, 2015 at 4:30 PM, John Moniz <john.moniz at sympatico.ca>
+> wrote:
+>
+>>  Thanks for the link. It looks very similar to myfax.com, which I've
+>> been researching. You can only send 5 pages and receive none on the free
+>> plan. Was hoping to avoid the $10/mth, hence my original note. And it would
+>> be cool to put to use the old fax modem I've been saving all these years,
+>> just in case.
+>>
+>> Naturally, cool is in the eye of the beholder :-).
+>>
+>
+> BTW, the 10 pages free a month is for every month, not just the first
+> month.  I haven't paid a penny with it and sent 3 faxes so far.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150214/0a263740/attachment.html>
+
+From scott at ss.org  Sat Feb 14 23:04:48 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Sat, 14 Feb 2015 18:04:48 -0500
+Subject: [GTALUG] [OT]: Repair Caf? Toronto at Hacklab.to! Feb 21 2015
+Message-ID: <54DFD490.5000608@ss.org>
+
+The Repair Caf? is a monthly gathering, were they will have volunteer 
+fixers available for computers, electronics, small appliances, clothes, 
+books, among others. For whatever you need fixing, bring it on! You can 
+learn how to fix it while enjoying a cup of coffee or tea. Or see what?s 
+possible with the 3D printer or laser cutter on site. To avoid lineups, 
+please arrive early. It would be best to arrive before 3 p.m. so that 
+there is enough time for the fixer to examine your item.
+
+*When*: Saturday, February 21, 2015 ? 12 p.m. to 4 p.m.
+*Where*: HackLab.TO, 1266 Queen Street West, 2nd Floor (/buzz Unit #12/)
+*Cost*: Free (Donations are welcome!)
+
+https://hacklab.to/archives/repair-cafe-toronto-at-hacklab-to-feb-21-2015/
+
+
+
+Disclosure:
+
+I am a member of hacklab.to, which is an awesome place.
+I am the coordinator between Hacklab.to and Repair Cafe Toronto.
+
+Mending over discarding is Awesome!
+
+-- 
+Scott Sullivan
+with 'Hacklab Member' hat on.
+
+From ssullivan at spinvfx.com  Sat Feb 14 23:02:34 2015
+From: ssullivan at spinvfx.com (Scott Sullivan)
+Date: Sat, 14 Feb 2015 18:02:34 -0500
+Subject: [GTALUG] =?utf-8?q?=5BOT=5D=3A_Repair_Caf=C3=A9_Toronto_at_Hackla?=
+ =?utf-8?q?b=2Eto!_Feb_21_2015?=
+Message-ID: <54DFD40A.3030607@spinvfx.com>
+
+The Repair Caf? is a monthly gathering, were they will have volunteer 
+fixers available for computers, electronics, small appliances, clothes, 
+books, among others. For whatever you need fixing, bring it 
+on! You can learn how to fix it while enjoying a cup of coffee or tea. 
+Or see what?s possible with the 3D printer or laser cutter on site. To 
+avoid lineups, please arrive early. It would be best to arrive before 3 
+p.m. so that there is enough time for the fixer to examine your item.
+
+*When*: Saturday, February 21, 2015 ? 12 p.m. to 4 p.m.
+*Where*: HackLab.TO, 1266 Queen Street West, 2nd Floor (/buzz Unit #12/)
+*Cost*: Free (Donations are welcome!)
+
+https://hacklab.to/archives/repair-cafe-toronto-at-hacklab-to-feb-21-2015/
+
+
+
+Disclosure:
+
+I am a member of hacklab.to, which is an awesome place.
+I am the coordinator between Hacklab.to and Repair Cafe Toronto.
+
+Mending over discarding is Awesome!
+
+-- 
+Scott Sullivan
+with 'Hacklab Member' hat on.
+
+From scott at ss.org  Sat Feb 14 23:13:30 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Sat, 14 Feb 2015 18:13:30 -0500
+Subject: [GTALUG]
+ =?utf-8?q?=5BOT=5D=3A_Repair_Caf=C3=A9_Toronto_at_Hackla?=
+ =?utf-8?q?b=2Eto!_Feb_21_2015?=
+In-Reply-To: <54DFD40A.3030607@spinvfx.com>
+References: <54DFD40A.3030607@spinvfx.com>
+Message-ID: <54DFD69A.1000206@ss.org>
+
+On 02/14/2015 06:02 PM, Scott Sullivan wrote:
+[snip]
+
+Classic, post to list with wrong address fail. That combined with fast 
+moderators... equals race condition and double post.
+
+D'oh ;-P
+-- 
+Scott Sullivan
+
