@@ -3218,3 +3218,132 @@ Giles
 http://www.gilesorr.com/
 gilesorr at gmail.com
 
+From cbbrowne at gmail.com  Mon Feb 16 19:24:06 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Mon, 16 Feb 2015 14:24:06 -0500
+Subject: [GTALUG] Wireless router: TP-Link Archer C7 $100
+In-Reply-To: <CAEnxSC4cNgttfUJH7yeACtx=mYcWz4RZZH9qgGznMXQZ6y-poA@mail.gmail.com>
+References: <alpine.LRH.2.02.1502120000560.12760@redclaw.mimosa.com>
+ <CAEnxSC4cNgttfUJH7yeACtx=mYcWz4RZZH9qgGznMXQZ6y-poA@mail.gmail.com>
+Message-ID: <CAFNqd5WQnuX1sBySrf3jGTsF8dn56nTEeJf2Qjg6KEHqS4XM0g@mail.gmail.com>
+
+I picked up one of these at NCIX on Saturday...
+
+- Installed it Saturday evening, getting it working as a backup wireless router;
+- Upgraded the firmware from TP-Link, which required redoing that configuration
+  effort :-(
+- Pulled the OpenWRT binaries (per Giles' link), and installed, which was,
+  modulo a wee bit of "wait afterwards hoping it worked", about as easy as
+  he suggested
+- Introduced configuration to have it take over my WAN link, which worked,
+  but then didn't seem friendly to needs for incoming connections
+  (torrents^H^H^H^H^H^H^H^H and ssh), so plugged the old router back
+  into place
+
+I poked at sundry sources of docs concerning the differences between
+firewall rules and firewall routes, which didn't really tell me anything I
+didn't already know or hadn't already done.
+
+Yesterday, I wrote up a script to pull config tarballs off the router and
+throw it, version-controlled, into a favorite Git repo, so I have backups.
+
+In keeping with the strategy I described a bit at the last meeting;
+anyone interested can review the GTALUG "backups" repository
+at GitHub for the broad approach...
+See http://github.com/gtalug/backups
+That repo doesn't include this, as my router's config isn't GTALUG
+business, but the approach in the scripts in the "scripts" directory
+should be suggestive.
+
+I wee while ago, I retried the WAN link, basically moving the plug
+from one router to the other, and, a mod to gateway addresses in
+/etc/network/interfaces later, all now seems copacetic, with no
+particularly interesting changes made to explain why incoming
+traffic wasn't happening Saturday but is working now.
+
+At any rate, my old Cisco/Linksys WRT310Nv2 will be retiring
+as consequence.
+
+The one interesting area that I probably need to poke at more
+is that of IPv6 support.  The old router didn't have any (evident)
+support.  OpenWRT seems to.  I haven't fiddled with the
+configuration, as I could readily see that breaking things.
+
+I had been suppressing IPv6 activity (e.g. - my internal
+Bind9 /usr/sbin/named instances being run with the "-4"
+option that suppresses IPv6 usage); perhaps that ought to
+change now?  I'm not quite sure.
+
+From james.knott at rogers.com  Mon Feb 16 19:29:50 2015
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 16 Feb 2015 14:29:50 -0500
+Subject: [GTALUG] Wireless router: TP-Link Archer C7 $100
+In-Reply-To: <CAFNqd5WQnuX1sBySrf3jGTsF8dn56nTEeJf2Qjg6KEHqS4XM0g@mail.gmail.com>
+References: <alpine.LRH.2.02.1502120000560.12760@redclaw.mimosa.com>
+ <CAEnxSC4cNgttfUJH7yeACtx=mYcWz4RZZH9qgGznMXQZ6y-poA@mail.gmail.com>
+ <CAFNqd5WQnuX1sBySrf3jGTsF8dn56nTEeJf2Qjg6KEHqS4XM0g@mail.gmail.com>
+Message-ID: <54E2452E.5090103@rogers.com>
+
+On 02/16/2015 02:24 PM, Christopher Browne wrote:
+> The one interesting area that I probably need to poke at more
+> is that of IPv6 support.  The old router didn't have any (evident)
+> support.  OpenWRT seems to.  I haven't fiddled with the
+> configuration, as I could readily see that breaking things.
+
+Does your ISP provide IPv6?  If not, you'll need to use some sort of
+tunnelling to get it.
+
+From cbbrowne at gmail.com  Tue Feb 17 01:50:54 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Mon, 16 Feb 2015 20:50:54 -0500
+Subject: [GTALUG] Wireless router: TP-Link Archer C7 $100
+In-Reply-To: <54E2452E.5090103@rogers.com>
+References: <alpine.LRH.2.02.1502120000560.12760@redclaw.mimosa.com>
+ <CAEnxSC4cNgttfUJH7yeACtx=mYcWz4RZZH9qgGznMXQZ6y-poA@mail.gmail.com>
+ <CAFNqd5WQnuX1sBySrf3jGTsF8dn56nTEeJf2Qjg6KEHqS4XM0g@mail.gmail.com>
+ <54E2452E.5090103@rogers.com>
+Message-ID: <CAFNqd5UiuHh0V93sB6rTvCYwmUCwkY2gRZwitE64X2Wj5QfMRw@mail.gmail.com>
+
+On 16 February 2015 at 14:29, James Knott <james.knott at rogers.com> wrote:
+> On 02/16/2015 02:24 PM, Christopher Browne wrote:
+>> The one interesting area that I probably need to poke at more
+>> is that of IPv6 support.  The old router didn't have any (evident)
+>> support.  OpenWRT seems to.  I haven't fiddled with the
+>> configuration, as I could readily see that breaking things.
+>
+> Does your ISP provide IPv6?  If not, you'll need to use some sort of
+> tunnelling to get it.
+
+Nope, but it is a step up to have a router that can recognize the
+traffic.  And presumably I could run a tunnel atop OpenWRT.
+
+"Doing more with IPv6" is probably a talk of interest to more than
+just me, if we have folk that have fought thru that.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From james.knott at rogers.com  Tue Feb 17 02:39:43 2015
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 16 Feb 2015 21:39:43 -0500
+Subject: [GTALUG] Wireless router: TP-Link Archer C7 $100
+In-Reply-To: <CAFNqd5UiuHh0V93sB6rTvCYwmUCwkY2gRZwitE64X2Wj5QfMRw@mail.gmail.com>
+References: <alpine.LRH.2.02.1502120000560.12760@redclaw.mimosa.com>
+ <CAEnxSC4cNgttfUJH7yeACtx=mYcWz4RZZH9qgGznMXQZ6y-poA@mail.gmail.com>
+ <CAFNqd5WQnuX1sBySrf3jGTsF8dn56nTEeJf2Qjg6KEHqS4XM0g@mail.gmail.com>
+ <54E2452E.5090103@rogers.com>
+ <CAFNqd5UiuHh0V93sB6rTvCYwmUCwkY2gRZwitE64X2Wj5QfMRw@mail.gmail.com>
+Message-ID: <54E2A9EF.8060004@rogers.com>
+
+On 02/16/2015 08:50 PM, Christopher Browne wrote:
+> "Doing more with IPv6" is probably a talk of interest to more than
+> just me, if we have folk that have fought thru that.
+
+I have been running IPv6 on my network for almost 5 years.  I get it
+through a tunnel from gogo6.  I believe OpenWRT can be configured to use
+it.  If you set it up for a subnet, you'll get a /56 prefix, which will
+provide 2^72 addresses or about a trillion times the entire IPv4 address
+space.
+
+http://www.gogo6.com/
+
