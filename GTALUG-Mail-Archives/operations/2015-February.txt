@@ -33,3 +33,62 @@ Size: 7679 bytes
 Desc: not available
 URL: <http://gtalug.org/pipermail/operations/attachments/20150210/d1a850a2/attachment.xlb>
 
+From davec-b at rogers.com  Wed Feb 18 15:58:10 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Wed, 18 Feb 2015 10:58:10 -0500
+Subject: [GTALUG-Ops] Fwd: Re: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAPik5MxNKJjPFRV4VL0RZ7+a726LxuffKU+Upku+2p8U-Yzn0g@mail.gmail.com>
+References: <CAPik5MxNKJjPFRV4VL0RZ7+a726LxuffKU+Upku+2p8U-Yzn0g@mail.gmail.com>
+Message-ID: <54E4B692.4020602@rogers.com>
+
+Methinks mailing list readers need per-person killfiles.
+I'm a birdwatcher, admittedly, but I rarely see woodpeckers *inside* 
+people's heads (;-))
+
+--dave
+
+-------- Forwarded Message --------
+Subject: 	Re: [GTALUG] interesting new approach to forking
+Date: 	Wed, 18 Feb 2015 08:30:36 -0600
+From: 	Russell Reiter <rreiter91 at gmail.com>
+Reply-To: 	GTALUG Talk <talk at gtalug.org>
+To: 	GTALUG Talk <talk at gtalug.org>
+
+
+
+<SNIP MOD STUFF>
+>> Look at how stuxnet escaped containment. The real question is who
+>> embedded it in the PLC's in the first place. Note the reports said it
+>> was spread from the isolated networks not to them.
+>
+> I hear (haven't seen the details) that the NSA may have gotten code
+> into disk drive firmware, which puts them pretty deep on any machine
+> with a disk drive.  But that's a pretty different story.
+
+I have two theories, either the Sweed's snuck it through weeds of AC
+power after the poem of Copenhagen or the DTMF phreakers did it by a
+thorny crafty RANDom preload. You'd have to check one of the pat nt
+zero con scripts handlers to find that one out. If you can't trust
+your compiler, what can you trust? I'm no luddite but I know full well
+why he did it.
+
+Trade or Craft, weaving is a skill that we all need the work of the
+Weavers, if we want to mend old things as well as build new ones.
+
+So when someone comes into my neighbour hood drop in and tells me I've
+had a woodpecker in my head since 1976, I look at them with a straight
+face and say Soviet? or American? i mean what else can you say to
+that?
+
+
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150218/0f39e12f/attachment.html>
+
