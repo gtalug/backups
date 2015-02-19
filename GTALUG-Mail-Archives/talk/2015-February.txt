@@ -4297,3 +4297,177 @@ with a disk drive.  But that's a pretty different story.
 When confronted by a difficult problem, solve it by reducing it to the
 question, "How would the Lone Ranger handle this?"
 
+From mdhillca at gmail.com  Wed Feb 18 13:53:20 2015
+From: mdhillca at gmail.com (Michael Hill)
+Date: Wed, 18 Feb 2015 08:53:20 -0500
+Subject: [GTALUG] Administering NetworkManager
+Message-ID: <CAGvW9WciSj_VUsNisHZ5t=MtQhWCDTovXO9xOhrQRy1j1o3Tqg@mail.gmail.com>
+
+In reference to questions brought up in the January meeting...
+
+http://blogs.gnome.org/dcbw/2015/02/16/networkmanager-for-administrators-part-1/
+
+
+Mike
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150218/0f9d1326/attachment.html>
+
+From rreiter91 at gmail.com  Wed Feb 18 14:30:36 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Wed, 18 Feb 2015 08:30:36 -0600
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAFNqd5XvLy0Ocsauef-JC_H+aoQf1==v_eBMyd7T8CRTSy6z2w@mail.gmail.com>
+References: <alpine.LRH.2.02.1502101213410.26968@redclaw.mimosa.com>
+ <20150211054317.GD10627@celine.lan>
+ <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAPik5Mz-AjJFee_d458u8cee+8V699meot5Ad+r85MSBeqUtjQ@mail.gmail.com>
+ <CAFNqd5XvLy0Ocsauef-JC_H+aoQf1==v_eBMyd7T8CRTSy6z2w@mail.gmail.com>
+Message-ID: <CAPik5MxNKJjPFRV4VL0RZ7+a726LxuffKU+Upku+2p8U-Yzn0g@mail.gmail.com>
+
+<SNIP MOD STUFF>
+>> Look at how stuxnet escaped containment. The real question is who
+>> embedded it in the PLC's in the first place. Note the reports said it
+>> was spread from the isolated networks not to them.
+>
+> I hear (haven't seen the details) that the NSA may have gotten code
+> into disk drive firmware, which puts them pretty deep on any machine
+> with a disk drive.  But that's a pretty different story.
+
+I have two theories, either the Sweed's snuck it through weeds of AC
+power after the poem of Copenhagen or the DTMF phreakers did it by a
+thorny crafty RANDom preload. You'd have to check one of the pat nt
+zero con scripts handlers to find that one out. If you can't trust
+your compiler, what can you trust? I'm no luddite but I know full well
+why he did it.
+
+Trade or Craft, weaving is a skill that we all need the work of the
+Weavers, if we want to mend old things as well as build new ones.
+
+So when someone comes into my neighbour hood drop in and tells me I've
+had a woodpecker in my head since 1976, I look at them with a straight
+face and say Soviet? or American? i mean what else can you say to
+that?
+
+>
+> --
+> When confronted by a difficult problem, solve it by reducing it to the
+> question, "How would the Lone Ranger handle this?"
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+From me at mylesbraithwaite.com  Wed Feb 18 20:03:10 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Wed, 18 Feb 2015 15:03:10 -0500
+Subject: [GTALUG] [Straw Poll] Where should we have dinner before the March
+	2015 GTALUG meeting?
+Message-ID: <CA+hskZPQeGbvBSro9X1N0umiJq3wF6m=dDKHx9TarMt19Qituw@mail.gmail.com>
+
+<http://strawpoll.me/3673421>
+
+Vote for where you think we should have dinner before the March 2015
+GTALUG meeting!
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+
+From hugh at mimosa.com  Thu Feb 19 04:39:26 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 18 Feb 2015 23:39:26 -0500 (EST)
+Subject: [GTALUG] [Straw Poll] Where should we have dinner before the
+ March 2015 GTALUG meeting?
+In-Reply-To: <CA+hskZPQeGbvBSro9X1N0umiJq3wF6m=dDKHx9TarMt19Qituw@mail.gmail.com>
+References: <CA+hskZPQeGbvBSro9X1N0umiJq3wF6m=dDKHx9TarMt19Qituw@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1502182327080.27871@redclaw.mimosa.com>
+
+| From: Myles Braithwaite <me at mylesbraithwaite.com>
+
+| <http://strawpoll.me/3673421>
+| 
+| Vote for where you think we should have dinner before the March 2015
+| GTALUG meeting!
+
+Thanks for organizing this!
+
+I have to say that the pizza I shared at Love at First Bite before the
+February meeting was excellent.
+
+We don't all have to go to the same place, but a critical mass makes
+the dinner worthwhile (at least to me).
+
+It has been shown in the past that we should have a predictable place.
+Otherwise stragglers (illiterate?) get lost.
+
+Having said all that, I'm tempted to go to Ethiopiques as a one-time
+adventure in March.  I'm not proposing it as a permanent relocation.
+I'll only go there if I know that others will too.
+
+Now I'll go vote.
+
+(After the voting, if another place that I haven't tried recently
+"wins", I may switch.)
+
+From bjonkman at sobac.com  Thu Feb 19 05:38:36 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Thu, 19 Feb 2015 00:38:36 -0500
+Subject: [GTALUG] [Straw Poll] Where should we have dinner before the
+ March 2015 GTALUG meeting?
+In-Reply-To: <alpine.LRH.2.02.1502182327080.27871@redclaw.mimosa.com>
+References: <CA+hskZPQeGbvBSro9X1N0umiJq3wF6m=dDKHx9TarMt19Qituw@mail.gmail.com>
+ <alpine.LRH.2.02.1502182327080.27871@redclaw.mimosa.com>
+Message-ID: <54E576DC.4000802@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+D. Hugh Redelmeier wrote:
+
+> I'm tempted to go to Ethiopiques as a one-time adventure in March.
+
++1 to that, and so voted.
+
+- --Bob.
+
+
+On 18/02/15 11:39 PM, D. Hugh Redelmeier wrote:
+> | From: Myles Braithwaite <me at mylesbraithwaite.com>
+> 
+> | <http://strawpoll.me/3673421> | | Vote for where you think we
+> should have dinner before the March 2015 | GTALUG meeting!
+> 
+> Thanks for organizing this!
+> 
+> I have to say that the pizza I shared at Love at First Bite before
+> the February meeting was excellent.
+> 
+> We don't all have to go to the same place, but a critical mass
+> makes the dinner worthwhile (at least to me).
+> 
+> It has been shown in the past that we should have a predictable
+> place. Otherwise stragglers (illiterate?) get lost.
+> 
+> Having said all that, I'm tempted to go to Ethiopiques as a
+> one-time adventure in March.  I'm not proposing it as a permanent
+> relocation. I'll only go there if I know that others will too.
+> 
+> Now I'll go vote.
+> 
+> (After the voting, if another place that I haven't tried recently 
+> "wins", I may switch.) --- Talk Mailing List talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.15 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlTldtkACgkQuRKJsNLM5eoBUgCdEvETlsWE/KPY1481c4hrU+ja
+jewAniwiq0X30JYdgru6FBkkNNlyO8fa
+=Ajkj
+-----END PGP SIGNATURE-----
+
