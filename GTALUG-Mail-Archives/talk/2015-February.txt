@@ -4471,3 +4471,1941 @@ jewAniwiq0X30JYdgru6FBkkNNlyO8fa
 =Ajkj
 -----END PGP SIGNATURE-----
 
+From o1bigtenor at gmail.com  Thu Feb 19 12:17:57 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Thu, 19 Feb 2015 06:17:57 -0600
+Subject: [GTALUG] Raid 10 repair question
+In-Reply-To: <54E3C9C0.4090609@alteeve.ca>
+References: <CAPpdf5_XTTxdZXsPPMnv0HNQqFBeBYhsu9nrHDf2tdvmVod+bg@mail.gmail.com>
+ <20150217221933.GF30246@csclub.uwaterloo.ca>
+ <CAPpdf59ZdBP-es_Y0+3gQPMU8UimQp3+EOJ68TQ8r3mx0Co4cQ@mail.gmail.com>
+ <54E3C9C0.4090609@alteeve.ca>
+Message-ID: <CAPpdf5_-yu2UXEaRSYt9WjKhdWzRJPnB1+5dkUocEOnYQm7ctg@mail.gmail.com>
+
+Sorry for a slow response but life intervened!
+
+On Tue, Feb 17, 2015 at 5:07 PM, Digimer <lists at alteeve.ca> wrote:
+
+> -----BEGIN PGP SIGNED MESSAGE-----
+> Hash: SHA1
+>
+> On 17/02/15 06:04 PM, o1bigtenor wrote:
+> > Now I used gdisk to set things up so likely that is where I will
+> > need to start - - - hmmmmmmmmmmm.
+> >
+> > Has anyone done anything like this in the somewhat recent past?
+> >
+> > (Wondering if when disk is partitioned that mdadm will happily
+> > absorb that disk into the array. Likely will need another reboot
+> > too!)
+> >
+> > Dee
+>
+> I use parted or fdisk, I am not familiar with other tools. In the end,
+> what matters is that the partition(s) on the new drive match (equal
+> size or larger) the existing partitions.
+>
+
+The drive has not yet been partitioned. The disks (in the array) were
+partitioned to be just one large partition (whole disk).
+
+>
+> You will then have to tell mdadm to use the new partitions. It will
+> not "just use them".
+>
+> As Lennart asked; Show us the output of 'cat /proc/mdstat'.
+
+
+# cat /proc/mdstat
+Personalities : [raid10]
+md0 : active raid10 sdc1[0] sda1[3] sde1[1]
+      1953518592 blocks super 1.2 512K chunks 2 near-copies [4/3] [UU_U]
+
+unused devices: <none>
+
+
+
+> Also,
+> please share the output of:
+>
+> parted /dev/sda print free
+>
+
+# parted /dev/sda print free
+Model: ATA ST31000524AS (scsi)
+Disk /dev/sda: 1000GB
+Sector size (logical/physical): 512B/512B
+Partition Table: msdos
+
+Number  Start   End     Size    Type     File system  Flags
+        32.3kB  1049kB  1016kB           Free Space
+ 1      1049kB  1000GB  1000GB  primary               raid
+        1000GB  1000GB  745kB            Free Space
+
+
+
+> parted /dev/sdb print free
+>
+
+sdb is my system drive and is not part of the array
+
+
+> parted /dev/sdc print free
+>
+
+# parted /dev/sdc print free
+Model: ATA ST31000524AS (scsi)
+Disk /dev/sdc: 1000GB
+Sector size (logical/physical): 512B/512B
+Partition Table: msdos
+
+Number  Start   End     Size    Type     File system  Flags
+        32.3kB  1049kB  1016kB           Free Space
+ 1      1049kB  1000GB  1000GB  primary               raid
+        1000GB  1000GB  745kB            Free Space
+
+
+
+> parted /dev/sdd print free
+>
+
+sdd is my RAM drive
+
+sde
+
+# parted /dev/sde print free
+Model: ATA ST31000524AS (scsi)
+Disk /dev/sde: 1000GB
+Sector size (logical/physical): 512B/512B
+Partition Table: msdos
+
+Number  Start   End     Size    Type     File system  Flags
+        32.3kB  1049kB  1016kB           Free Space
+ 1      1049kB  1000GB  1000GB  primary               raid
+        1000GB  1000GB  745kB            Free Space
+
+sdf
+
+# parted /dev/sdf print free
+Error: /dev/sdf: unrecognised disk label
+
+
+
+When the system was setup I had the array as disks sda, sdb, sdc and sdd
+with sde being my system disk and sdf being the RAM drive.
+In the process of installing the new hard drive I did not label the wires
+from the existing setup when I was removing the wires. (I know better just
+didn't think first!)
+The new number schema doesn't seem to be causing any difficulties. Should I
+be trying to change things back to the sda - d raid and e/f being for the
+system drive and RAM drive?
+
+Thanking you for your sharing and insights!!
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150219/94c4af22/attachment.html>
+
+From o1bigtenor at gmail.com  Thu Feb 19 12:38:29 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Thu, 19 Feb 2015 06:38:29 -0600
+Subject: [GTALUG] Raid 10 repair question
+In-Reply-To: <20150218031939.GA9719@node1.localdomain>
+References: <CAPpdf5_XTTxdZXsPPMnv0HNQqFBeBYhsu9nrHDf2tdvmVod+bg@mail.gmail.com>
+ <20150218031939.GA9719@node1.localdomain>
+Message-ID: <CAPpdf58FiZ8BV+s9ecPicxhFyhSzwLMntJ_vf4ChVk2feP3F+w@mail.gmail.com>
+
+On Tue, Feb 17, 2015 at 9:19 PM, William Park <opengeometry at yahoo.ca> wrote:
+
+> Disk failed last September, and you're replacing it now?  Boy, you got
+> balls!
+>
+> You are better off to use whatever utility you used in the first place.
+> Manual typing would go something like
+>     man mdadm
+>     cat /proc/mdstat
+>
+
+understand above commands
+
+
+>     mdadm -D -v /dev/md0
+>
+
+what does this command do/mean?
+
+
+>     mdadm /dev/md0 --add /dev/sdx
+>
+
+(I understand I will need a different letter instead of the x)
+what does this command do/mean?
+
+
+> where
+>     /dev/sdx is the new disk.  Here, the new device should be the "same"
+>     as the old.  If the old was a partition (eg. /dev/sda1), then the
+>     new should be a partition.  If the old was entire device (eg.
+>     /dev/sda), then the new should be entire device also.
+> --
+>
+I am not asking the questions to be confrontational just have learned that
+typing in
+commands the results of which you do not know or the effect you do not
+know/understand
+can have large effects.
+
+(In the past I have too often totally borked my system and I really don't
+want to take two
+weeks from my life and spend all day trying to reestablish things.)
+
+Thanking you for your interest and assistance!
+
+Dee
+
+
+> William
+>
+>
+> On Tue, Feb 17, 2015 at 03:42:07PM -0600, o1bigtenor wrote:
+> > Greetings
+> >
+> > I have been running a raid 10 array for almost 3 years.
+> >
+> > Last September on a reboot (forced by Firefox and kernel memory
+> interaction
+> > problems) came up with one of the drives being listed as DOA.
+> > The raid array has continued to run on 3 drives although on reboots there
+> > is much complaining from whatever in the boot up process.
+> > I had the replacement drive sent to me and today I installed the drive.
+> >
+> > I was under the assumption that the raid array would rebuild itself upon
+> > startup with a new drive (4th out of 4).
+> >
+> > This did not happen.
+> >
+> > I am running Debian Jessie (testing) and have the whole time in question.
+> > I can mount the array and it is visible.
+> > I'm looking at backing up the array (on blu-ray discs) but as I'm now to
+> > circa 45 GB of data and I was at about 22 GB when I last did a backup
+> this
+> > is going to be a momentous event.
+> >
+> > How do I ask mdadm to include this new drive into the array? (Without
+> > borking everything!! I have found lots of instructions on how to create
+> but
+> > none in an hour of trying different search phrases on how to rebuild or
+> how
+> > to cause the array to rebuild itself. I have only been able to find
+> > instructions for when the array is totally sick and I'm not there (yet -
+> -
+> > - grin!) but I don't want to wait until another drive craps out to get
+> > things going.)
+> >
+> > TIA
+> >
+> > Dee
+>
+> > ---
+> > Talk Mailing List
+> > talk at gtalug.org
+> > http://gtalug.org/mailman/listinfo/talk
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150219/5b82e0a6/attachment.html>
+
+From scott at ss.org  Thu Feb 19 14:52:12 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Thu, 19 Feb 2015 09:52:12 -0500
+Subject: [GTALUG] Speedtest-cli
+Message-ID: <339A72D9-1F64-493C-8407-5630BF4BA92D@ss.org>
+
+https://github.com/sivel/speedtest-cli
+
+Thought I'd share this little gem I saw while reading are review of online.net's dedicated ARM cloud servers.
+-- 
+Scott Sullivan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150219/853f46a5/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Thu Feb 19 15:30:02 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 19 Feb 2015 10:30:02 -0500
+Subject: [GTALUG] Raid 10 repair question
+In-Reply-To: <CAPpdf59ZdBP-es_Y0+3gQPMU8UimQp3+EOJ68TQ8r3mx0Co4cQ@mail.gmail.com>
+References: <CAPpdf5_XTTxdZXsPPMnv0HNQqFBeBYhsu9nrHDf2tdvmVod+bg@mail.gmail.com>
+ <20150217221933.GF30246@csclub.uwaterloo.ca>
+ <CAPpdf59ZdBP-es_Y0+3gQPMU8UimQp3+EOJ68TQ8r3mx0Co4cQ@mail.gmail.com>
+Message-ID: <20150219153002.GG30246@csclub.uwaterloo.ca>
+
+On Tue, Feb 17, 2015 at 05:04:16PM -0600, o1bigtenor wrote:
+> Now I used gdisk to set things up so likely that is where I will need to
+> start - - - hmmmmmmmmmmm.
+> 
+> Has anyone done anything like this in the somewhat recent past?
+> 
+> (Wondering if when disk is partitioned that mdadm will happily absorb that
+> disk into the array. Likely will need another reboot too!)
+
+There should be zero reboots required for this.
+
+Most partition tools do a partition table reread automatically when you
+exit, or you can use 'hdparm -z /dev/sdX' to do it.  If /proc/partitions
+shows the new sizes, you are good to go.
+
+The partitions have to be at least the size of the old partitions or
+the raid won't be able to use them.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Thu Feb 19 15:31:40 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 19 Feb 2015 10:31:40 -0500
+Subject: [GTALUG] Raid 10 repair question
+In-Reply-To: <CAPpdf5_-yu2UXEaRSYt9WjKhdWzRJPnB1+5dkUocEOnYQm7ctg@mail.gmail.com>
+References: <CAPpdf5_XTTxdZXsPPMnv0HNQqFBeBYhsu9nrHDf2tdvmVod+bg@mail.gmail.com>
+ <20150217221933.GF30246@csclub.uwaterloo.ca>
+ <CAPpdf59ZdBP-es_Y0+3gQPMU8UimQp3+EOJ68TQ8r3mx0Co4cQ@mail.gmail.com>
+ <54E3C9C0.4090609@alteeve.ca>
+ <CAPpdf5_-yu2UXEaRSYt9WjKhdWzRJPnB1+5dkUocEOnYQm7ctg@mail.gmail.com>
+Message-ID: <20150219153140.GH30246@csclub.uwaterloo.ca>
+
+On Thu, Feb 19, 2015 at 06:17:57AM -0600, o1bigtenor wrote:
+> Sorry for a slow response but life intervened!
+> 
+> On Tue, Feb 17, 2015 at 5:07 PM, Digimer <lists at alteeve.ca> wrote:
+> 
+> > -----BEGIN PGP SIGNED MESSAGE-----
+> > Hash: SHA1
+> >
+> > On 17/02/15 06:04 PM, o1bigtenor wrote:
+> > > Now I used gdisk to set things up so likely that is where I will
+> > > need to start - - - hmmmmmmmmmmm.
+> > >
+> > > Has anyone done anything like this in the somewhat recent past?
+> > >
+> > > (Wondering if when disk is partitioned that mdadm will happily
+> > > absorb that disk into the array. Likely will need another reboot
+> > > too!)
+> > >
+> > > Dee
+> >
+> > I use parted or fdisk, I am not familiar with other tools. In the end,
+> > what matters is that the partition(s) on the new drive match (equal
+> > size or larger) the existing partitions.
+> >
+> 
+> The drive has not yet been partitioned. The disks (in the array) were
+> partitioned to be just one large partition (whole disk).
+> 
+> >
+> > You will then have to tell mdadm to use the new partitions. It will
+> > not "just use them".
+> >
+> > As Lennart asked; Show us the output of 'cat /proc/mdstat'.
+> 
+> 
+> # cat /proc/mdstat
+> Personalities : [raid10]
+> md0 : active raid10 sdc1[0] sda1[3] sde1[1]
+>       1953518592 blocks super 1.2 512K chunks 2 near-copies [4/3] [UU_U]
+> 
+> unused devices: <none>
+
+Well once you have partitioned the new disk you should be able to just do:
+
+mdadm --add /dev/md0 /dev/sdX1 (whatever X is for the new drive).
+
+Then /proc/mdstat should show it rebuilding the raid.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Thu Feb 19 15:43:09 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 19 Feb 2015 10:43:09 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+References: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+ <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+ <20150217175536.GD30246@csclub.uwaterloo.ca>
+ <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+Message-ID: <20150219154309.GI30246@csclub.uwaterloo.ca>
+
+On Tue, Feb 17, 2015 at 08:02:56PM -0600, Russell Reiter wrote:
+> <SNIP>
+> > What do any of those have to do with VLIW?
+> 
+> No offence intended, but check your notes on DELTA vs. WYSE AC Power.
+> I believe I have pontificated on this list about that quite enough in
+> the last decade to correct YOUR errors Lennart.
+> 
+> You didn't even know what the centre tap is, so how could you be
+> expected to understand dirty AC and the power's relationship to 64 bit
+> ARCH, VLIW, UART, LSBinit, SGML, HTML, XML, dependency based booting
+> in Debian, or why they are called script kittys, or the universe in
+> near and far field effects, randomness and time modification in
+> transmissions.
+> 
+> >
+> > They apply equality to CISC and RISC as well, but at least those tend
+> > to be designed to run real code generated by real compilers rather than
+> > imagined code generated by imagined magical compilers that don't exist.
+> 
+> Whatever exists in your imagination regarding real compilers and
+> imagined magical ones are just another ponzi scheme of big oil money
+> IT, apparently now centred in Alberta. The rest of us try to use a
+> DELPHI consensus of experts, sort of a Canadian Intelligence Agency.
+> 
+> I cut my teeth on the IBM blue wire fix, no reason for me to jump ship
+> now. I've been pushing for clean air and clean power in Toronto for a
+> long time. God bless IBM for opening up their architecture when every
+> one else was closing up shop. I wonder why they did that?
+> 
+> I might be premature but I believe a trusted compiler is in the works,
+> it just needs some funding after the dirty power issue is cleaned up
+> bit bya bit.
+> 
+> Regression testing is a bitch, but you do have to do it one tiny bit
+> at a time. Believe me I spend a shit-load of time trying to fix up my
+> own mistakes but the bosses won't let me, so I just have to eat them.
+
+I think you win the price for the most incomprehensible message I have
+ever seen on this list.
+
+None of what you wrote had anything to do with what you replied to.
+
+-- 
+Len Sorensen
+
+From rreiter91 at gmail.com  Thu Feb 19 15:51:50 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Thu, 19 Feb 2015 10:51:50 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <20150219154309.GI30246@csclub.uwaterloo.ca>
+References: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+ <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+ <20150217175536.GD30246@csclub.uwaterloo.ca>
+ <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+ <20150219154309.GI30246@csclub.uwaterloo.ca>
+Message-ID: <CAPik5Mx4sZjFfjt9gFuZ3suusWY12TTtPv08G5io50KRG1iGdg@mail.gmail.com>
+
+The Trochedactyl says, save the earth, eat a Tree whugger today.
+
+On 2/19/15, Lennart Sorensen <lsorense at csclub.uwaterloo.ca> wrote:
+> On Tue, Feb 17, 2015 at 08:02:56PM -0600, Russell Reiter wrote:
+>> <SNIP>
+>> > What do any of those have to do with VLIW?
+>>
+>> No offence intended, but check your notes on DELTA vs. WYSE AC Power.
+>> I believe I have pontificated on this list about that quite enough in
+>> the last decade to correct YOUR errors Lennart.
+>>
+>> You didn't even know what the centre tap is, so how could you be
+>> expected to understand dirty AC and the power's relationship to 64 bit
+>> ARCH, VLIW, UART, LSBinit, SGML, HTML, XML, dependency based booting
+>> in Debian, or why they are called script kittys, or the universe in
+>> near and far field effects, randomness and time modification in
+>> transmissions.
+>>
+>> >
+>> > They apply equality to CISC and RISC as well, but at least those tend
+>> > to be designed to run real code generated by real compilers rather than
+>> > imagined code generated by imagined magical compilers that don't exist.
+>>
+>> Whatever exists in your imagination regarding real compilers and
+>> imagined magical ones are just another ponzi scheme of big oil money
+>> IT, apparently now centred in Alberta. The rest of us try to use a
+>> DELPHI consensus of experts, sort of a Canadian Intelligence Agency.
+>>
+>> I cut my teeth on the IBM blue wire fix, no reason for me to jump ship
+>> now. I've been pushing for clean air and clean power in Toronto for a
+>> long time. God bless IBM for opening up their architecture when every
+>> one else was closing up shop. I wonder why they did that?
+>>
+>> I might be premature but I believe a trusted compiler is in the works,
+>> it just needs some funding after the dirty power issue is cleaned up
+>> bit bya bit.
+>>
+>> Regression testing is a bitch, but you do have to do it one tiny bit
+>> at a time. Believe me I spend a shit-load of time trying to fix up my
+>> own mistakes but the bosses won't let me, so I just have to eat them.
+>
+> I think you win the price for the most incomprehensible message I have
+> ever seen on this list.
+>
+> None of what you wrote had anything to do with what you replied to.
+>
+> --
+> Len Sorensen
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+From dawn.walker at utoronto.ca  Thu Feb 19 16:01:20 2015
+From: dawn.walker at utoronto.ca (Dawn Walker)
+Date: Thu, 19 Feb 2015 11:01:20 -0500
+Subject: [GTALUG] Volunteers for Open Source Comes to Campus on Feb 28, 2015
+Message-ID: <54E608D0.1060109@utoronto.ca>
+
+Hi all,
+
+
+My name is Dawn Walker, I am a Graduate Student at the Faculty of
+Information at UofT. I?m helping run a free event to introduce students
+to free/libre/open source software on February 28, 2015 at University of
+Torontocalled Open Source Comes to Campus in conjunction with OpenHatch
+<https://openhatch.org/>(https://openhatch.org/).
+
+
+We're looking for people to help mentor attendees in a variety of ways
+as they learn how to contribute to open source projects:
+
+  *
+
+    Instruction
+    <https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum>on topics
+    like open source community norms, issue trackers, IRC and git
+
+  *
+
+    Participation on a Career Panel
+    <https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum/Career_Panel>
+
+  *
+
+    Lead a contributions workshop
+    <https://openhatch.org/wiki/Open_Source_Comes_to_Campus/Curriculum#Contributions_Workshop>around
+    a specific project (in this case potentially Open Street Map!)
+
+  *
+
+    Or, volunteer to support attendees throughout the day!
+
+
+The event run from 10am - 5pm, with coffee, tea and socializing for a
+half hour beforehand (Mentors don't need to show up at 9:30am sharp, but
+should be there by 9:45, we will also provide a lunch!).
+
+
+Instructors with a variety of backgrounds are welcome: while it's great
+if you have tons of experience using git and setting up development
+environments, we're also looking for people who've been involved with
+open source as non-programmers, who know a bit about picking bugs and
+submitting patches, or who just like to talk about their experiences
+with open source.
+
+
+Here are links to find out more about the Event
+<https://events.openhatch.org/events/2>(https://events.openhatch.org/events/2) 
+and Code of Conduct
+<https://openhatch.org/wiki/OpenHatch_event_code_of_conduct>(https://openhatch.org/wiki/OpenHatch_event_code_of_conduct).
+
+
+If this sounds interesting to you, and you're available on February 28
+please email me back at dawn.walker at utoronto.ca
+<mailto:dawn.walker at utoronto.ca> and/or sign up on our Event Page
+<https://events.openhatch.org/events/2>(https://events.openhatch.org/events/2)<mailto:dawn.walker at utoronto.ca>,
+I'd love to answer any further questions you might have!
+
+
+Best,
+Dawn Walker
+
+MI Candidate, Faculty of Information
+
+University of Toronto
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150219/c9303fca/attachment.html>
+
+From davec-b at rogers.com  Thu Feb 19 20:08:51 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Thu, 19 Feb 2015 15:08:51 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAPik5Mx4sZjFfjt9gFuZ3suusWY12TTtPv08G5io50KRG1iGdg@mail.gmail.com>
+References: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+ <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+ <20150217175536.GD30246@csclub.uwaterloo.ca>
+ <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+ <20150219154309.GI30246@csclub.uwaterloo.ca>
+ <CAPik5Mx4sZjFfjt9gFuZ3suusWY12TTtPv08G5io50KRG1iGdg@mail.gmail.com>
+Message-ID: <54E642D3.4070409@rogers.com>
+
+Plonk!
+
+--dave
+
+On 02/19/2015 10:51 AM, Russell Reiter wrote:
+> The Trochedactyl says, save the earth, eat a Tree whugger today.
+>
+> On 2/19/15, Lennart Sorensen <lsorense at csclub.uwaterloo.ca> wrote:
+>> On Tue, Feb 17, 2015 at 08:02:56PM -0600, Russell Reiter wrote:
+>>> <SNIP>
+>>>> What do any of those have to do with VLIW?
+>>> No offence intended, but check your notes on DELTA vs. WYSE AC Power.
+>>> I believe I have pontificated on this list about that quite enough in
+>>> the last decade to correct YOUR errors Lennart.
+>>>
+>>> You didn't even know what the centre tap is, so how could you be
+>>> expected to understand dirty AC and the power's relationship to 64 bit
+>>> ARCH, VLIW, UART, LSBinit, SGML, HTML, XML, dependency based booting
+>>> in Debian, or why they are called script kittys, or the universe in
+>>> near and far field effects, randomness and time modification in
+>>> transmissions.
+>>>
+>>>> They apply equality to CISC and RISC as well, but at least those tend
+>>>> to be designed to run real code generated by real compilers rather than
+>>>> imagined code generated by imagined magical compilers that don't exist.
+>>> Whatever exists in your imagination regarding real compilers and
+>>> imagined magical ones are just another ponzi scheme of big oil money
+>>> IT, apparently now centred in Alberta. The rest of us try to use a
+>>> DELPHI consensus of experts, sort of a Canadian Intelligence Agency.
+>>>
+>>> I cut my teeth on the IBM blue wire fix, no reason for me to jump ship
+>>> now. I've been pushing for clean air and clean power in Toronto for a
+>>> long time. God bless IBM for opening up their architecture when every
+>>> one else was closing up shop. I wonder why they did that?
+>>>
+>>> I might be premature but I believe a trusted compiler is in the works,
+>>> it just needs some funding after the dirty power issue is cleaned up
+>>> bit bya bit.
+>>>
+>>> Regression testing is a bitch, but you do have to do it one tiny bit
+>>> at a time. Believe me I spend a shit-load of time trying to fix up my
+>>> own mistakes but the bosses won't let me, so I just have to eat them.
+>> I think you win the price for the most incomprehensible message I have
+>> ever seen on this list.
+>>
+>> None of what you wrote had anything to do with what you replied to.
+>>
+>> --
+>> Len Sorensen
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From hugh at mimosa.com  Thu Feb 19 21:56:12 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 19 Feb 2015 16:56:12 -0500 (EST)
+Subject: [GTALUG] RAID and IX-2-dl
+Message-ID: <alpine.LRH.2.02.1502191618580.27871@redclaw.mimosa.com>
+
+I just bought a LenovoEMC / IOmega IX2-dl NAS box (cheap, of 
+course).  It has a pair of WD Green 2T disk drives.
+
+The supplied firmware is Linux, of course.  With a pretty face.
+
+/proc/cpuid says "Feroceon 88FR131 rev 1 (v5l)" which I think is an 
+unfortunately old ARM family.  It has 256M of RAM.  The kernel is 
+"2.6.31.8".
+
+It offers me RAID 1, RAID 0, and "none".  I don't think that I want 
+either RAID and I'm not sure what "none" is.
+
+I don't want RAID 1 because It doesn't give me much reliability 
+improvement for the price (halving the space) and it doesn't give me any 
+speed improvement.
+
+I don't want RAID 0 since it gives me less reliability than no RAID.
+
+I want two different filesystems so that when one goes south, the other 
+isn't lost.
+
+Any advice on how to lightly prod this system to do what I want?
+
+Here's some configuration information.
+
+/etc/fstab doesn't mention the hard drives
+
+First, here's how it looks with the RAID1 setup.
+
+lsblk(8) says.  (This command is new to me.  I think that I like it):
+
+
+NAME                                MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+loop0                                 7:0    0 680.4M  1 loop  /mnt/apps
+loop1                                 7:1    0     8M  0 loop  /mnt/etc
+loop2                                 7:2    0   100K  0 loop  /oem
+sda                                   8:0    0   1.8T  0 disk  
+??sda1                                8:1    0    20G  0 part  
+? ??md0                               9:0    0    20G  0 raid1 
+?   ??md0_vg-BFDlv (dm-0)           253:0    0     4G  0 lvm   /boot
+?   ??md0_vg-vol1 (dm-1)            253:1    0    16G  0 lvm   /mnt/system
+??sda2                                8:2    0   1.8T  0 part  
+  ??md1                               9:1    0   1.8T  0 raid1 
+    ??6366c931_vg-lv163c50af (dm-2) 253:2    0   1.8T  0 lvm   /mnt/pools/A/A0
+sdb                                   8:16   0   1.8T  0 disk  
+??sdb1                                8:17   0    20G  0 part  
+? ??md0                               9:0    0    20G  0 raid1 
+?   ??md0_vg-BFDlv (dm-0)           253:0    0     4G  0 lvm   /boot
+?   ??md0_vg-vol1 (dm-1)            253:1    0    16G  0 lvm   /mnt/system
+??sdb2                                8:18   0   1.8T  0 part  
+  ??md1                               9:1    0   1.8T  0 raid1 
+    ??6366c931_vg-lv163c50af (dm-2) 253:2    0   1.8T  0 lvm   /mnt/pools/A/A0
+mtdblock0                            31:0    0   504K  0 disk  
+mtdblock1                            31:1    0     4K  0 disk  
+mtdblock2                            31:2    0     4K  0 disk  
+
+df(1) says:
+
+Filesystem                          1K-blocks   Used  Available Use% Mounted on
+rootfs                                  51200   4216      46984   9% /
+/dev/root.old                           11339   3185       8154  29% /initrd
+none                                    51200   4216      46984   9% /
+/dev/md0_vg/BFDlv                     4128448 714776    3203960  19% /boot
+/dev/loop0                             691776 619873      71903  90% /mnt/apps
+/dev/loop1                               7657   1010       6238  14% /mnt/etc
+none                                     7657   1010       6238  14% /etc
+/dev/loop2                                128    128          0 100% /oem
+tmpfs                                   24776     80      24696   1% /run
+tmpfs                                    5120      4       5116   1% /run/lock
+tmpfs                                   49540      0      49540   0% /run/shm
+/dev/mapper/md0_vg-vol1              16493480 975280   15350636   6% /mnt/system
+/dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /mnt/pools/A/A0
+/dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/Backups
+/dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/Documents
+/dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/Movies
+/dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/Music
+/dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/SharedMedia
+/dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/Pictures
+
+After I switched from RAID1 to "none":
+
+NAME                                MAJ:MIN RM   SIZE RO TYPE   MOUNTPOINT
+loop0                                 7:0    0 680.4M  1 loop   /mnt/apps
+loop1                                 7:1    0     8M  0 loop   /mnt/etc
+loop2                                 7:2    0   100K  0 loop   /oem
+sda                                   8:0    0   1.8T  0 disk   
+??sda1                                8:1    0    20G  0 part   
+? ??md0                               9:0    0    20G  0 raid1  
+?   ??md0_vg-BFDlv (dm-0)           253:0    0     4G  0 lvm    /boot
+?   ??md0_vg-vol1 (dm-1)            253:1    0    16G  0 lvm    /mnt/system
+??sda2                                8:2    0   1.8T  0 part   
+  ??md1                               9:1    0   3.6T  0 linear 
+    ??529a853a_vg-lv1ac0e3be (dm-2) 253:2    0   3.6T  0 lvm    /mnt/pools/A/A0
+sdb                                   8:16   0   1.8T  0 disk   
+??sdb2                                8:18   0   1.8T  0 part   
+? ??md1                               9:1    0   3.6T  0 linear 
+?   ??529a853a_vg-lv1ac0e3be (dm-2) 253:2    0   3.6T  0 lvm    /mnt/pools/A/A0
+??sdb1                                8:17   0    20G  0 part   
+  ??md0                               9:0    0    20G  0 raid1  
+    ??md0_vg-BFDlv (dm-0)           253:0    0     4G  0 lvm    /boot
+    ??md0_vg-vol1 (dm-1)            253:1    0    16G  0 lvm    /mnt/system
+mtdblock0                            31:0    0   504K  0 disk   
+mtdblock1                            31:1    0     4K  0 disk   
+mtdblock2                            31:2    0     4K  0 disk   
+
+
+Filesystem                          1K-blocks   Used  Available Use% Mounted on
+rootfs                                  51200   4264      46936   9% /
+/dev/root.old                           11339   3185       8154  29% /initrd
+none                                    51200   4264      46936   9% /
+/dev/md0_vg/BFDlv                     4128448 714776    3203960  19% /boot
+/dev/loop0                             691776 619873      71903  90% /mnt/apps
+/dev/loop1                               7657   1013       6235  14% /mnt/etc
+none                                     7657   1013       6235  14% /etc
+/dev/loop2                                128    128          0 100% /oem
+tmpfs                                   24776     80      24696   1% /run
+tmpfs                                    5120      4       5116   1% /run/lock
+tmpfs                                   49540      0      49540   0% /run/shm
+/dev/mapper/md0_vg-vol1              16493480 975516   15350400   6% /mnt/system
+/dev/mapper/529a853a_vg-lv1ac0e3be 3804366528 200884 3804165644   1% /mnt/pools/A/A0
+
+From evan at telly.org  Thu Feb 19 22:05:21 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Thu, 19 Feb 2015 17:05:21 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <54E642D3.4070409@rogers.com>
+References: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+ <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+ <20150217175536.GD30246@csclub.uwaterloo.ca>
+ <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+ <20150219154309.GI30246@csclub.uwaterloo.ca>
+ <CAPik5Mx4sZjFfjt9gFuZ3suusWY12TTtPv08G5io50KRG1iGdg@mail.gmail.com>
+ <54E642D3.4070409@rogers.com>
+Message-ID: <CAMguqh2PthHeZ3vc8CUnHW2XbDOkdkyhLAviyQb6rsYCrYT3HQ@mail.gmail.com>
+
+I was going to respond to Christopher's thoughtful post about the
+differences between Android alternative ROM development and Linux
+distributions. It's a reasonable topic, worthy of discussion and thoroughly
+relevant to GTALUG.
+
+Then ... something happened. It didn't just derail the conversation, the
+whole train melted.
+
+Are there enough people still reading here to make a sane return to the
+original subject worthwhile?
+
+
+On 19 February 2015 at 15:08, David Collier-Brown <davec-b at rogers.com>
+wrote:
+
+> Plonk!
+>
+> --dave
+>
+>
+> On 02/19/2015 10:51 AM, Russell Reiter wrote:
+>
+>> The Trochedactyl says, save the earth, eat a Tree whugger today.
+>>
+>> On 2/19/15, Lennart Sorensen <lsorense at csclub.uwaterloo.ca> wrote:
+>>
+>>> On Tue, Feb 17, 2015 at 08:02:56PM -0600, Russell Reiter wrote:
+>>>
+>>>> <SNIP>
+>>>>
+>>>>> What do any of those have to do with VLIW?
+>>>>>
+>>>> No offence intended, but check your notes on DELTA vs. WYSE AC Power.
+>>>> I believe I have pontificated on this list about that quite enough in
+>>>> the last decade to correct YOUR errors Lennart.
+>>>>
+>>>> You didn't even know what the centre tap is, so how could you be
+>>>> expected to understand dirty AC and the power's relationship to 64 bit
+>>>> ARCH, VLIW, UART, LSBinit, SGML, HTML, XML, dependency based booting
+>>>> in Debian, or why they are called script kittys, or the universe in
+>>>> near and far field effects, randomness and time modification in
+>>>> transmissions.
+>>>>
+>>>>  They apply equality to CISC and RISC as well, but at least those tend
+>>>>> to be designed to run real code generated by real compilers rather than
+>>>>> imagined code generated by imagined magical compilers that don't exist.
+>>>>>
+>>>> Whatever exists in your imagination regarding real compilers and
+>>>> imagined magical ones are just another ponzi scheme of big oil money
+>>>> IT, apparently now centred in Alberta. The rest of us try to use a
+>>>> DELPHI consensus of experts, sort of a Canadian Intelligence Agency.
+>>>>
+>>>> I cut my teeth on the IBM blue wire fix, no reason for me to jump ship
+>>>> now. I've been pushing for clean air and clean power in Toronto for a
+>>>> long time. God bless IBM for opening up their architecture when every
+>>>> one else was closing up shop. I wonder why they did that?
+>>>>
+>>>> I might be premature but I believe a trusted compiler is in the works,
+>>>> it just needs some funding after the dirty power issue is cleaned up
+>>>> bit bya bit.
+>>>>
+>>>> Regression testing is a bitch, but you do have to do it one tiny bit
+>>>> at a time. Believe me I spend a shit-load of time trying to fix up my
+>>>> own mistakes but the bosses won't let me, so I just have to eat them.
+>>>>
+>>> I think you win the price for the most incomprehensible message I have
+>>> ever seen on this list.
+>>>
+>>> None of what you wrote had anything to do with what you replied to.
+>>>
+>>> --
+>>> Len Sorensen
+>>> ---
+>>> Talk Mailing List
+>>> talk at gtalug.org
+>>> http://gtalug.org/mailman/listinfo/talk
+>>>
+>>>  ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>>
+>
+> --
+> David Collier-Brown,         | Always do right. This will gratify
+> System Programmer and Author | some people and astonish the rest
+> davecb at spamcop.net           |                      -- Mark Twain
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+
+-- 
+Evan Leibovitch
+Toronto Canada
+
+Em: evan at telly dot org
+Sk: evanleibovitch
+Tw: el56
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150219/cddf93c9/attachment.html>
+
+From bjonkman at sobac.com  Thu Feb 19 22:08:29 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Thu, 19 Feb 2015 17:08:29 -0500
+Subject: [GTALUG] Fwd: Re: Tonight's [Libreplanet] meeting
+In-Reply-To: <87pp95okr1.fsf@sergiodj.net>
+References: <87pp95okr1.fsf@sergiodj.net>
+Message-ID: <1c2219f1-7b82-4f8a-9a27-1e2dea311f8e@email.android.com>
+
+A bit short notice, but Matt Lee from FSF is in town, and some of us are meeting him tonight. I'll be at the Charlotte around 7pm to get a bite to eat, please come join us if you're able.
+
+--Bob.
+
+
+-------- Original Message --------
+From: Sergio Durigan Junior <sergiodj at sergiodj.net>
+Sent: February 19, 2015 12:48:34 PM EST
+To: Matt Lee <mattl at creativecommons.org>
+Cc: libreplanet-ca-on at libreplanet.org
+Subject: Re: [lp-ca-on] Tonight's meeting
+
+On Thursday, February 19 2015, Matt Lee wrote:
+
+> Hey, sorry for the late notice on some of these things. Planning a
+> week of activities for 20 people after spending all day together can
+> be tricky.
+>
+> So, I joined the list for a few days.
+>
+> We'll be at Charlotte Room, 19 Charlotte St http://www.charlotteroom.com at 9pm
+>
+> They have pool tables. I look forward to seeing you there.
+
+Thanks for the notice, Matt.
+
+I think Bob and I will be there.
+
+-- 
+Sergio
+GPG key ID: 0x65FC5E36
+Please send encrypted e-mail if possible
+http://sergiodj.net/
+
+
+
+--
+Bob Jonkman bjonkman at sobac.com
+http://bob.jonkman.ca/blogs/bobjonkman
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150219/272f23f5/attachment.html>
+
+From jamon.camisso at utoronto.ca  Thu Feb 19 22:09:50 2015
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Thu, 19 Feb 2015 17:09:50 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAMguqh2PthHeZ3vc8CUnHW2XbDOkdkyhLAviyQb6rsYCrYT3HQ@mail.gmail.com>
+References: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+ <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+ <20150217175536.GD30246@csclub.uwaterloo.ca>
+ <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+ <20150219154309.GI30246@csclub.uwaterloo.ca>
+ <CAPik5Mx4sZjFfjt9gFuZ3suusWY12TTtPv08G5io50KRG1iGdg@mail.gmail.com>
+ <54E642D3.4070409@rogers.com>
+ <CAMguqh2PthHeZ3vc8CUnHW2XbDOkdkyhLAviyQb6rsYCrYT3HQ@mail.gmail.com>
+Message-ID: <54E65F2E.2090600@utoronto.ca>
+
+On 2015-02-19 5:05 PM, Evan Leibovitch wrote:
+> I was going to respond to Christopher's thoughtful post about the
+> differences between Android alternative ROM development and Linux
+> distributions. It's a reasonable topic, worthy of discussion and thoroughly
+> relevant to GTALUG.
+> 
+> Then ... something happened. It didn't just derail the conversation, the
+> whole train melted.
+> 
+> Are there enough people still reading here to make a sane return to the
+> original subject worthwhile?
+
+Linux what?
+
+
+From hugh at mimosa.com  Thu Feb 19 22:12:19 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 19 Feb 2015 17:12:19 -0500 (EST)
+Subject: [GTALUG] RAID and IX-2-dl
+In-Reply-To: <alpine.LRH.2.02.1502191618580.27871@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1502191618580.27871@redclaw.mimosa.com>
+Message-ID: <alpine.LRH.2.02.1502191701300.27871@redclaw.mimosa.com>
+
+| From: D. Hugh Redelmeier <hugh at mimosa.com>
+
+| It offers me RAID 1, RAID 0, and "none".  I don't think that I want 
+| either RAID and I'm not sure what "none" is.
+
+Here's an explanation:
+
+ 	? 	Mirror (RAID 1)
+Uses half of the storage space for protection, leaving half for actual
+data.
+	? 	None (RAID 0)
+Uses all of the storage space for data. Does not protect against data
+loss in the event of drive failure; however, the drives are striped
+for better performance.
+	? 	None
+Uses all of the storage space for data, providing contiguous storage
+space by concatenating all member drives. Does not protect against
+data loss in the event of drive failure.
+
+So none of these choices do what I want.
+
+I might be willing to give up half the space if there were a feature like 
+Windows Home Server's "folder duplication".  I think that this duplicates 
+files on a different volume.
+
+From rreiter91 at gmail.com  Thu Feb 19 22:12:29 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Thu, 19 Feb 2015 17:12:29 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <54E642D3.4070409@rogers.com>
+References: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+ <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+ <20150217175536.GD30246@csclub.uwaterloo.ca>
+ <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+ <20150219154309.GI30246@csclub.uwaterloo.ca>
+ <CAPik5Mx4sZjFfjt9gFuZ3suusWY12TTtPv08G5io50KRG1iGdg@mail.gmail.com>
+ <54E642D3.4070409@rogers.com>
+Message-ID: <CAPik5Mx4k=_8xBNRA48kR+yeNQsGFKR=rA59a2NjepDY3Q6zRA@mail.gmail.com>
+
+On 2/19/15, David Collier-Brown <davec-b at rogers.com> wrote:
+> Plonk!
+
+Exactly this is MY art, I'm just trying to practice it. I only have
+one racket and one skill, my ractet is C# and my skill is accounts
+receiveables. Any one heel who knows me IRL can tell you that. It's
+the shitheels in the basement playing base all the time that BUG me
+the most.
+
+I pwn this snippet and others. Pay up or I'm gonna tell the boss and I
+go EOA and then you're all on your own.
+
+OG FREESTYLE
+AUTHCODE 2B@!@B
+
+> Date: Thu, 22 May 2008 17:21:09 -0500
+> Subject: OBJECT REDACTED CRI FORM THORN ODIN LOKI OMITUS
+>
+>
+> ----- Original Message -----
+>
+> From: "r reiter" <goethe123321 at hotmail.com>
+> To: tlug at ss.org
+> Subject: rWe1LwArsYt if [true|tr (guano,metle) :) Bless(you)|all
+> Date: Sat, 19 Nov 2005 22:31:53 -0500
+OBJECT REDACTED CRI THORN ODIN LOKI
+> END
+> BEGAT$
+> Megwitch
+> Megwitch
+> Megwitch
+
+>
+> --dave
+>
+> On 02/19/2015 10:51 AM, Russell Reiter wrote:
+>> The Trochedactyl says, save the earth, eat a Tree whugger today.
+>>
+>> On 2/19/15, Lennart Sorensen <lsorense at csclub.uwaterloo.ca> wrote:
+>>> On Tue, Feb 17, 2015 at 08:02:56PM -0600, Russell Reiter wrote:
+>>>> <SNIP>
+>>>>> What do any of those have to do with VLIW?
+>>>> No offence intended, but check your notes on DELTA vs. WYSE AC Power.
+>>>> I believe I have pontificated on this list about that quite enough in
+>>>> the last decade to correct YOUR errors Lennart.
+>>>>
+>>>> You didn't even know what the centre tap is, so how could you be
+>>>> expected to understand dirty AC and the power's relationship to 64 bit
+>>>> ARCH, VLIW, UART, LSBinit, SGML, HTML, XML, dependency based booting
+>>>> in Debian, or why they are called script kittys, or the universe in
+>>>> near and far field effects, randomness and time modification in
+>>>> transmissions.
+>>>>
+>>>>> They apply equality to CISC and RISC as well, but at least those tend
+>>>>> to be designed to run real code generated by real compilers rather
+>>>>> than
+>>>>> imagined code generated by imagined magical compilers that don't
+>>>>> exist.
+>>>> Whatever exists in your imagination regarding real compilers and
+>>>> imagined magical ones are just another ponzi scheme of big oil money
+>>>> IT, apparently now centred in Alberta. The rest of us try to use a
+>>>> DELPHI consensus of experts, sort of a Canadian Intelligence Agency.
+>>>>
+>>>> I cut my teeth on the IBM blue wire fix, no reason for me to jump ship
+>>>> now. I've been pushing for clean air and clean power in Toronto for a
+>>>> long time. God bless IBM for opening up their architecture when every
+>>>> one else was closing up shop. I wonder why they did that?
+>>>>
+>>>> I might be premature but I believe a trusted compiler is in the works,
+>>>> it just needs some funding after the dirty power issue is cleaned up
+>>>> bit bya bit.
+>>>>
+>>>> Regression testing is a bitch, but you do have to do it one tiny bit
+>>>> at a time. Believe me I spend a shit-load of time trying to fix up my
+>>>> own mistakes but the bosses won't let me, so I just have to eat them.
+>>> I think you win the price for the most incomprehensible message I have
+>>> ever seen on this list.
+>>>
+>>> None of what you wrote had anything to do with what you replied to.
+>>>
+>>> --
+>>> Len Sorensen
+>>> ---
+>>> Talk Mailing List
+>>> talk at gtalug.org
+>>> http://gtalug.org/mailman/listinfo/talk
+>>>
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>
+>
+> --
+> David Collier-Brown,         | Always do right. This will gratify
+> System Programmer and Author | some people and astonish the rest
+> davecb at spamcop.net           |                      -- Mark Twain
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+From o1bigtenor at gmail.com  Thu Feb 19 22:14:04 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Thu, 19 Feb 2015 16:14:04 -0600
+Subject: [GTALUG] Raid 10 repair question
+In-Reply-To: <20150219153002.GG30246@csclub.uwaterloo.ca>
+References: <CAPpdf5_XTTxdZXsPPMnv0HNQqFBeBYhsu9nrHDf2tdvmVod+bg@mail.gmail.com>
+ <20150217221933.GF30246@csclub.uwaterloo.ca>
+ <CAPpdf59ZdBP-es_Y0+3gQPMU8UimQp3+EOJ68TQ8r3mx0Co4cQ@mail.gmail.com>
+ <20150219153002.GG30246@csclub.uwaterloo.ca>
+Message-ID: <CAPpdf5-eofhsffpvky8rW4pSYKQz+9EKXoxfHcAKFmTiyC2xOA@mail.gmail.com>
+
+On Thu, Feb 19, 2015 at 9:30 AM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Tue, Feb 17, 2015 at 05:04:16PM -0600, o1bigtenor wrote:
+> > Now I used gdisk to set things up so likely that is where I will need to
+> > start - - - hmmmmmmmmmmm.
+> >
+> > Has anyone done anything like this in the somewhat recent past?
+> >
+> > (Wondering if when disk is partitioned that mdadm will happily absorb
+> that
+> > disk into the array. Likely will need another reboot too!)
+>
+> There should be zero reboots required for this.
+>
+> Most partition tools do a partition table reread automatically when you
+> exit, or you can use 'hdparm -z /dev/sdX' to do it.  If /proc/partitions
+> shows the new sizes, you are good to go.
+>
+
+Is there a way to partition the drive in a running system?
+
+The only way that I know of is to reboot onto a rescue disk and use gparted
+there
+to partition the drive.
+
+I have not been able to find anything using duckduck nor ms google.
+
+A complete back is just finishing as I write this.
+
+Thanking those that have contributed to the conversation for their
+assistance!!
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150219/dff83aad/attachment.html>
+
+From cbbrowne at gmail.com  Thu Feb 19 22:31:10 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Thu, 19 Feb 2015 17:31:10 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAMguqh2PthHeZ3vc8CUnHW2XbDOkdkyhLAviyQb6rsYCrYT3HQ@mail.gmail.com>
+References: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+ <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+ <20150217175536.GD30246@csclub.uwaterloo.ca>
+ <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+ <20150219154309.GI30246@csclub.uwaterloo.ca>
+ <CAPik5Mx4sZjFfjt9gFuZ3suusWY12TTtPv08G5io50KRG1iGdg@mail.gmail.com>
+ <54E642D3.4070409@rogers.com>
+ <CAMguqh2PthHeZ3vc8CUnHW2XbDOkdkyhLAviyQb6rsYCrYT3HQ@mail.gmail.com>
+Message-ID: <CAFNqd5VrHaasE0=1B3bp9y1fw3Zew+aCjrD5Wx4_V94KVuCkig@mail.gmail.com>
+
+On 19 February 2015 at 17:05, Evan Leibovitch <evan at telly.org> wrote:
+> I was going to respond to Christopher's thoughtful post about the
+> differences between Android alternative ROM development and Linux
+> distributions. It's a reasonable topic, worthy of discussion and thoroughly
+> relevant to GTALUG.
+
+I say, go ahead!  If someone else is falling off the train, that's neither
+your problem nor mine.
+
+I'm fine with there being plenty equivocal about "Android distributions
+versus Linux distributions"; that can lead to a fine set of conversation, and
+we might all learn something.
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From cbbrowne at gmail.com  Thu Feb 19 22:35:36 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Thu, 19 Feb 2015 17:35:36 -0500
+Subject: [GTALUG] RAID and IX-2-dl
+In-Reply-To: <alpine.LRH.2.02.1502191701300.27871@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1502191618580.27871@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1502191701300.27871@redclaw.mimosa.com>
+Message-ID: <CAFNqd5XAqDcSJ-jArZ_cnWEQf1BW=s=N43CVN=yyPV5=GHMrVQ@mail.gmail.com>
+
+Sounds to me like "none" is the same as RAID 0, save for the
+difference surrounding striping.
+
+The *lack* of ability to treat this as a device per drive is
+why I'd be not too keen on buying one of these devices.
+
+I'd prefer to have what is commonly called "JBOD" support,
+("Just a Bunch Of Drives")
+and of the form where each drive is treated as a separate
+device on the array.  To me, not having that is a deal breaker.
+
+From o1bigtenor at gmail.com  Thu Feb 19 22:39:44 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Thu, 19 Feb 2015 16:39:44 -0600
+Subject: [GTALUG] RAID and IX-2-dl
+In-Reply-To: <alpine.LRH.2.02.1502191701300.27871@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1502191618580.27871@redclaw.mimosa.com>
+ <alpine.LRH.2.02.1502191701300.27871@redclaw.mimosa.com>
+Message-ID: <CAPpdf5-hAx_NhN8QzZbXMN9S52498qD8g+X079mgFZVPQHPyuQ@mail.gmail.com>
+
+On Thu, Feb 19, 2015 at 4:12 PM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+> | From: D. Hugh Redelmeier <hugh at mimosa.com>
+>
+> | It offers me RAID 1, RAID 0, and "none".  I don't think that I want
+> | either RAID and I'm not sure what "none" is.
+>
+> Here's an explanation:
+>
+>         ?       Mirror (RAID 1)
+> Uses half of the storage space for protection, leaving half for actual
+> data.
+>         ?       None (RAID 0)
+> Uses all of the storage space for data. Does not protect against data
+> loss in the event of drive failure; however, the drives are striped
+> for better performance.
+>         ?       None
+> Uses all of the storage space for data, providing contiguous storage
+> space by concatenating all member drives. Does not protect against
+> data loss in the event of drive failure.
+>
+> So none of these choices do what I want.
+>
+> I might be willing to give up half the space if there were a feature like
+> Windows Home Server's "folder duplication".  I think that this duplicates
+> files on a different volume.
+>
+
+Why not use RAID10 so you have striped AND mirrored.
+
+That should give you your performance and some security. (One can
+always have more security!)
+
+Haven't had any issue but a single drive failure (that I've just gotten a
+replacement drive for and am working on its implementation into the array)
+in three years. I've not had any issues with speed nor capacity.
+
+(My array is 4 1TB drives.)
+
+YMMV
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150219/06217b2d/attachment.html>
+
+From evan at telly.org  Thu Feb 19 22:41:57 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Thu, 19 Feb 2015 17:41:57 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAPik5Mx4k=_8xBNRA48kR+yeNQsGFKR=rA59a2NjepDY3Q6zRA@mail.gmail.com>
+References: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+ <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+ <20150217175536.GD30246@csclub.uwaterloo.ca>
+ <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+ <20150219154309.GI30246@csclub.uwaterloo.ca>
+ <CAPik5Mx4sZjFfjt9gFuZ3suusWY12TTtPv08G5io50KRG1iGdg@mail.gmail.com>
+ <54E642D3.4070409@rogers.com>
+ <CAPik5Mx4k=_8xBNRA48kR+yeNQsGFKR=rA59a2NjepDY3Q6zRA@mail.gmail.com>
+Message-ID: <CAMguqh0enTvkVE7KaPKAxd7pd3of=5PVfuMPkgT0YQrWN6=UHw@mail.gmail.com>
+
+On 19 February 2015 at 17:12, Russell Reiter <rreiter91 at gmail.com> wrote:
+
+
+> I pwn this snippet and others. Pay up or I'm gonna tell the boss and I
+> go EOA and then you're all on your own.
+>
+
+?Promise??
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150219/7ee750f9/attachment.html>
+
+From lists at alteeve.ca  Thu Feb 19 23:04:52 2015
+From: lists at alteeve.ca (Digimer)
+Date: Thu, 19 Feb 2015 18:04:52 -0500
+Subject: [GTALUG] Raid 10 repair question
+In-Reply-To: <CAPpdf5-eofhsffpvky8rW4pSYKQz+9EKXoxfHcAKFmTiyC2xOA@mail.gmail.com>
+References: <CAPpdf5_XTTxdZXsPPMnv0HNQqFBeBYhsu9nrHDf2tdvmVod+bg@mail.gmail.com>
+ <20150217221933.GF30246@csclub.uwaterloo.ca>
+ <CAPpdf59ZdBP-es_Y0+3gQPMU8UimQp3+EOJ68TQ8r3mx0Co4cQ@mail.gmail.com>
+ <20150219153002.GG30246@csclub.uwaterloo.ca>
+ <CAPpdf5-eofhsffpvky8rW4pSYKQz+9EKXoxfHcAKFmTiyC2xOA@mail.gmail.com>
+Message-ID: <54E66C14.3010702@alteeve.ca>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+On 19/02/15 05:14 PM, o1bigtenor wrote:
+> 
+> 
+> On Thu, Feb 19, 2015 at 9:30 AM, Lennart Sorensen 
+> <lsorense at csclub.uwaterloo.ca
+> <mailto:lsorense at csclub.uwaterloo.ca>> wrote:
+> 
+> On Tue, Feb 17, 2015 at 05:04:16PM -0600, o1bigtenor wrote:
+>> Now I used gdisk to set things up so likely that is where I will
+>> need to start - - - hmmmmmmmmmmm.
+>> 
+>> Has anyone done anything like this in the somewhat recent past?
+>> 
+>> (Wondering if when disk is partitioned that mdadm will happily
+>> absorb that disk into the array. Likely will need another reboot
+>> too!)
+> 
+> There should be zero reboots required for this.
+> 
+> Most partition tools do a partition table reread automatically when
+> you exit, or you can use 'hdparm -z /dev/sdX' to do it.  If
+> /proc/partitions shows the new sizes, you are good to go.
+> 
+> 
+> Is there a way to partition the drive in a running system?
+> 
+> The only way that I know of is to reboot onto a rescue disk and
+> use gparted there to partition the drive.
+> 
+> I have not been able to find anything using duckduck nor ms
+> google.
+> 
+> A complete back is just finishing as I write this.
+> 
+> Thanking those that have contributed to the conversation for their 
+> assistance!!
+> 
+> Dee
+
+You can use parted on running systems just fine. On older systems, the
+drive with the OS will not update the partition table until you
+reboot, but repartitioning other drives should be updated fine. Parted
+will warn you if a reboot is needed.
+
+On newer systems, even the drive under the running OS can be updated
+without a reboot.
+
+- -- 
+Digimer
+Papers and Projects: https://alteeve.ca/w/
+What if the cure for cancer is trapped in the mind of a person without
+access to education?
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJU5mwUAAoJECChztQA3mh0T34P/RQ8PWnOXxeqKMhBkwLCN+A+
+1BkwLiJs6rRF/dbpCOtJh48SL+RzFQ4IhFmM7JsILSe6ueKxyHUXHohgAF6nl5TI
+K4XBorvz5QKO2d3Qc88o6X0Dreaxt9JLMCIe/fZH/jsYzMzZZp0jBYzAhevdSiWG
+W33BD25262iy/8TKnlhYa8Xx9xNkicdrHHqitbXPpj1Y4kXgcYIyCMXSioxaeBmu
+4+DZp0ZWRn94yYay1dUlHObd7DjHCWr7CxQTlHxRB/UDHPf3Fat1SSiN6bFN7ows
+e0bOrzGFEFLSsJM6sVMt22zHWAo+zHgD41OlmoMXHc84QKq48kx9uVQHlflF846a
+KLTZLKRKODsAjBDpk+4+7NJf2jvvuG4XjxJE6LMS4cxkVOJ69nvz7yANrMQ1PvuA
+3iIJjOcR4ZSrTS7upY+/Mowb23yK5hD6DBvLhSoTGkGJGWN1zWgR/RVh83+1ZGL9
+jDJaY46WrWdc1mVGCI9e8AZU+dROzF19QuYcMCfye3Flo3UMAA8I0F/hQJYy2okt
+MgnYZjwKhFDniAzF0iGktUweuYYR031/7lYOv6M8aeL+FXeeb+Ed/XESi2TBiwlh
+m/rCk2ErRwLaJAV8hAFAVEBn1pQssN/Epn5HlkvxWooZGMxPIId2t/1BU81bmNTQ
+13qxo0y8zubvwcKBB5sp
+=ypgx
+-----END PGP SIGNATURE-----
+
+From o1bigtenor at gmail.com  Thu Feb 19 23:26:37 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Thu, 19 Feb 2015 17:26:37 -0600
+Subject: [GTALUG] Raid 10 repair question
+In-Reply-To: <54E66C14.3010702@alteeve.ca>
+References: <CAPpdf5_XTTxdZXsPPMnv0HNQqFBeBYhsu9nrHDf2tdvmVod+bg@mail.gmail.com>
+ <20150217221933.GF30246@csclub.uwaterloo.ca>
+ <CAPpdf59ZdBP-es_Y0+3gQPMU8UimQp3+EOJ68TQ8r3mx0Co4cQ@mail.gmail.com>
+ <20150219153002.GG30246@csclub.uwaterloo.ca>
+ <CAPpdf5-eofhsffpvky8rW4pSYKQz+9EKXoxfHcAKFmTiyC2xOA@mail.gmail.com>
+ <54E66C14.3010702@alteeve.ca>
+Message-ID: <CAPpdf59KAGQDrmHfKpoBYbFkARo6x7s9SO9hFNrutDe=7vBLSA@mail.gmail.com>
+
+snip
+
+> >
+> >
+> > Is there a way to partition the drive in a running system?
+> >
+> > The only way that I know of is to reboot onto a rescue disk and
+> > use gparted there to partition the drive.
+> >
+>
+snip
+
+>
+> You can use parted on running systems just fine. On older systems, the
+> drive with the OS will not update the partition table until you
+> reboot, but repartitioning other drives should be updated fine. Parted
+> will warn you if a reboot is needed.
+>
+> On newer systems, even the drive under the running OS can be updated
+> without a reboot.
+>
+
+I installed gparted using CLI.
+I can find a preferences file for gparted (that won't open) but I cannot
+run the
+program. I tried using a number of techniques to start gparted but so far
+nothing
+is working. I am not worried about doing a reboot to a rescue disk and then
+doing
+the work and then rebooting back into Debian testing but am also trying to
+use
+this as a learning opportunity (hopefully without that being learning how
+to redo
+the system as a whole which I have had to do at least twice since the
+original
+install).
+
+Thanks for your advice!
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150219/acac8dab/attachment.html>
+
+From lists at alteeve.ca  Fri Feb 20 00:10:38 2015
+From: lists at alteeve.ca (Digimer)
+Date: Thu, 19 Feb 2015 19:10:38 -0500
+Subject: [GTALUG] Raid 10 repair question
+In-Reply-To: <CAPpdf59KAGQDrmHfKpoBYbFkARo6x7s9SO9hFNrutDe=7vBLSA@mail.gmail.com>
+References: <CAPpdf5_XTTxdZXsPPMnv0HNQqFBeBYhsu9nrHDf2tdvmVod+bg@mail.gmail.com>
+ <20150217221933.GF30246@csclub.uwaterloo.ca>
+ <CAPpdf59ZdBP-es_Y0+3gQPMU8UimQp3+EOJ68TQ8r3mx0Co4cQ@mail.gmail.com>
+ <20150219153002.GG30246@csclub.uwaterloo.ca>
+ <CAPpdf5-eofhsffpvky8rW4pSYKQz+9EKXoxfHcAKFmTiyC2xOA@mail.gmail.com>
+ <54E66C14.3010702@alteeve.ca>
+ <CAPpdf59KAGQDrmHfKpoBYbFkARo6x7s9SO9hFNrutDe=7vBLSA@mail.gmail.com>
+Message-ID: <54E67B7E.10207@alteeve.ca>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+On 19/02/15 06:26 PM, o1bigtenor wrote:
+> snip
+> 
+>> 
+>> 
+>> Is there a way to partition the drive in a running system?
+>> 
+>> The only way that I know of is to reboot onto a rescue disk and 
+>> use gparted there to partition the drive.
+>> 
+> 
+> snip
+> 
+> 
+> You can use parted on running systems just fine. On older systems,
+> the drive with the OS will not update the partition table until
+> you reboot, but repartitioning other drives should be updated fine.
+> Parted will warn you if a reboot is needed.
+> 
+> On newer systems, even the drive under the running OS can be
+> updated without a reboot.
+> 
+> 
+> I installed gparted using CLI. I can find a preferences file for
+> gparted (that won't open) but I cannot run the program. I tried
+> using a number of techniques to start gparted but so far nothing is
+> working. I am not worried about doing a reboot to a rescue disk
+> and then doing the work and then rebooting back into Debian testing
+> but am also trying to use this as a learning opportunity (hopefully
+> without that being learning how to redo the system as a whole which
+> I have had to do at least twice since the original install).
+> 
+> Thanks for your advice!
+> 
+> Dee
+
+I don't use Debian or gparted, so I can't provide advice.
+
+- -- 
+Digimer
+Papers and Projects: https://alteeve.ca/w/
+What if the cure for cancer is trapped in the mind of a person without
+access to education?
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJU5nt+AAoJECChztQA3mh0vQkP/3YHnRAYuAGP36YsBHYAJ+FQ
+soIFFTyq2OVKGCgH04IoQm30GsrSju5zu3xOCHxbZNiKACgwcabub0mxuZV0DpQV
+V7XlfToVW0c5q3KK04AKyrjQBWHYX4n/BJFjR+HU0h6FAR+pWsq3282YhgmM1mz9
+KLciBx/1FI6P1wjNMPpB5SGE7XDLARtp1G2m1v48q6sWDyRmbUlRXvYX/Vpzacmg
+NZOPTaGr6ls+HiPs5S/6rPbITpMLZW3EzIURqpr+5OWyJQWCjb12PEAbxdL8WTOX
+9cvoWlWitQQppL1FfCuQNAfxMVr1kC9x/Yb25vScUxiKlk2s6Q7PO0sImqe2ok/r
+Rkw31IiwVL3ULG8ZrNhjSXlM9Nw1ScY9ObfmY1pecpD5n1hC3Aze/Lzf9Y9+y6pJ
+s82oFzLrti5OIi8uHyQkt2SjRDBj4IoIvHSKgD87ZEZiyoB7rNX3U4LyFHqS18kz
+KwlTJHPACtE3VmVn07DAp9hCikY1otyXCttQpe8JL63dXY36FplcXpB1K+xVyAAJ
+ZcOspB3qkvyFD7rkv+P7uZcsvgLpNMR0cHOgmSpZ8hlnoUafXzJWZhZRcvmQ7nOy
+f/fAGPQwrHjkR6QYATGpN+HPRqkysOCVH5JAFwEv2lD2qrMLbc1/tjylHxQu6Yja
+zBmgziWlw4Hwj86Xhs9P
+=StVm
+-----END PGP SIGNATURE-----
+
+From william.muriithi at gmail.com  Fri Feb 20 01:41:16 2015
+From: william.muriithi at gmail.com (William Muriithi)
+Date: Thu, 19 Feb 2015 20:41:16 -0500
+Subject: [GTALUG] Fw: [Cryptography] Lenovo laptops with preloaded adware
+	and an evil CA
+Message-ID: <20150220014116.6037648.33221.16678@gmail.com>
+
+?Evening,?
+
+Forwarding this to this list as I am aware thinkpad is popular. Looks though like Lenovo is shipping a really dirty adware?
+
+How can they have fallen for this?
+
+Regards,
+
+William?
+
+? Original Message ?
+From: Christian Barcenas <christian at cbarcenas.com>
+Sent: Thursday, February 19, 2015 9:47 AM
+To: cryptography at metzdowd.com
+Subject: [Cryptography] Lenovo laptops with preloaded adware and an evil CA
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+There's some interesting buzz online [1][2][3] about "Superfish", a
+bit of adware that Lenovo has apparently been preloading on some of
+its computers over the past few months.
+
+While preloaded adware is bad enough, Superfish does something even
+worse: to allow itself to MITM SSL-/TLS-protected web traffic, it
+installs a CA into the Windows trusted root certificate store. This CA
+is apparently pre-generated and its corresponding private key comes
+with every installation of Superfish. Furthermore, uninstalling
+Superfish does not remove this CA, so all users running
+Lenovo's tainted Windows installation are affected, even if they took
+the time to uninstall Superfish.
+
+A user on Twitter has apparently forged a certificate for Bank of
+America's online banking system [4] and I expect that we will see more
+of these shenanigans to come to light over the next few days.
+
+According to a thread on Lenovo's customer support forum [1], they are
+no longer pushing this adware on customers and are asking the
+authoring company to push a fix for this ASAP. Mozilla also has an
+issue on their tracker to mark the offending cert as "untrusted" in
+NSS. [5]
+
+Thoughts?
+
+[1]
+https://forums.lenovo.com/t5/Lenovo-P-Y-and-Z-series/Lenovo-Pre-instaling-adware-spam-Superfish-powerd-by/td-p/1726839
+[2]
+http://thenextweb.com/insider/2015/02/19/lenovo-caught-installing-adware-new-computers/
+[3] https://news.ycombinator.com/item?id=9072424
+[4] https://twitter.com/kennwhite/status/568270748638318593/photo/1
+[5] https://bugzilla.mozilla.org/show_bug.cgi?id=1134506
+
+- --
+Christian Barcenas
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJU5Yc2AAoJEJDIWKpke1EfA4IH/RUZ/g6g195FMQs843MlJ3mF
+H4162211XSXxmPBaJn2vg5ibWgTSWZVpxHvpo1iZb0thJTfJW1W8Aa3rHmyo5Y89
+siAM0LujFlq3KkacIfEX01QL9/fDeiYZgm73KIO4M7/1O6J+tsU9XnLS66UbR6WX
+xxJ/3uqlFFaGrkykqvtEnIeOYrgqnXcHakW+uSOFPEPnOTYNcUxFXq36N4fPFM67
+vL0Vbzf42aAgj5I6dlhm2Fhzo72KjpYu6x0QU2tv1UNKDbKEgnCoFjv2yOZ5Gb1h
+uQx7ktUoop7vj99LKShKm64oWJ+8CE5IQEnkJ6YR3aNf17WniDcihi8TecUW7Yw=
+=00Ds
+-----END PGP SIGNATURE-----
+_______________________________________________
+The cryptography mailing list
+cryptography at metzdowd.com
+http://www.metzdowd.com/mailman/listinfo/cryptography
+
+From lists at alteeve.ca  Fri Feb 20 02:09:02 2015
+From: lists at alteeve.ca (Digimer)
+Date: Thu, 19 Feb 2015 21:09:02 -0500
+Subject: [GTALUG] Fw: [Cryptography] Lenovo laptops with preloaded
+ adware and an evil CA
+In-Reply-To: <20150220014116.6037648.33221.16678@gmail.com>
+References: <20150220014116.6037648.33221.16678@gmail.com>
+Message-ID: <54E6973E.4080707@alteeve.ca>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+On 19/02/15 08:41 PM, William Muriithi wrote:
+> ?Evening,
+> 
+> Forwarding this to this list as I am aware thinkpad is popular.
+> Looks though like Lenovo is shipping a really dirty adware
+> 
+> How can they have fallen for this?
+> 
+> Regards,
+> 
+> William
+
+It is inexcusable and I will not defend their actions, regardless of
+the reasoning.
+
+To entertain a guess at your question though;
+
+The laptop market has extremely tight profit margins and is fairly
+saturated with both boutique and budget players. I suspect someone
+behind Superfish came to Lenovo offering a very sweet bundling deal.
+So sweet, that the people responsible for vetting software partners
+didn't want to look too closely because they didn't want to risk
+finding a reason to say no.
+
+This will hurt Lenovo, badly. Given their initial presser claiming to
+have reviewed the issue and that they found no significant security
+concern is worse than laughable. They had an opportunity to get out
+ahead of this PR crisis with a good explanation and a genuine sounding
+"mea culpa", but instead they effectively "double-downed" on their
+position that is a non-issue. That shows either embarrassing levels of
+incompetence at best or wilful desire to sacrifice their customer
+safety in the interest of saving face at worst.
+
+tl;dr: They got handed a bag of money and then dun goofed when it blew
+up in their face.
+
+- -- 
+Digimer
+Papers and Projects: https://alteeve.ca/w/
+What if the cure for cancer is trapped in the mind of a person without
+access to education?
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJU5pc+AAoJECChztQA3mh0Kj0P/3onjcLNox8jEUmwfS4qrDxf
+Wy9FoKWCX5n7L7W8Sv6SkLKG+AwwSGGVx12sKDOztEooRD9a8kp1NOlO+6m50FyM
+vrNIyrrH5FQXyIU5dgUcZnWqd6Qx+u8lwOMeeuKhSahrdX1mV8YmYQHbxybcLmPS
+MQz6zC9Th54EG3aaEJDzui7C9wZl4JHDgx+e7aaSJQ7KkGqh/ngBvWrdpqY6QVur
+p48D7NoaqP7LY6AXfAIHxM22focA+DC6/mF7NP/znf0eFyUSCRaUCSg3ndSTpKGK
+saBJ0Pk6SbIbwA1nz8FGlnA7NNLeywK1B/mrMpAR4Mydj74j1DRjCMNYAFUF+9Bm
+jeiz1uCaG66aCEGvSBIgzzdE2PW8GKVQ0LiQh6y3TuYwhlnd0ow0ApikTvATDUbp
+c5ZfcB1T7/R1TanHNxGfInIE/PGwfRW5oHA4r6+9VT85VoKrLfROoQJ5tVfrcbdB
+5PqTsnCyJv74PHSQQmgP9tqI//urut9Rc1JMrBV8g3ZadIleSqsijezFBgYhDa2J
+Zm+LPTp90a73jXXyPODJxqtBT6kPSUFuvUdbAmBzs+pvjc5p2KW+f1PU0Gx2kVU7
+AGUfcf1ze0n+SPtvmjqtPQH3b9mB1ojnY0luXyZb1Up+4YZZ3/zivm4S6x+h7eU8
+Rk1G26nMsxCZjQ9TgmC+
+=MMUY
+-----END PGP SIGNATURE-----
+
+From self_same_self at yahoo.com  Fri Feb 20 02:17:52 2015
+From: self_same_self at yahoo.com (Sammy Lao)
+Date: Thu, 19 Feb 2015 21:17:52 -0500
+Subject: [GTALUG] Speedtest-cli
+In-Reply-To: <339A72D9-1F64-493C-8407-5630BF4BA92D@ss.org>
+References: <339A72D9-1F64-493C-8407-5630BF4BA92D@ss.org>
+Message-ID: <20150220021752.5533773.8928.520@yahoo.com>
+
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150219/bd0b6d6e/attachment.html>
+
+From davec-b at rogers.com  Fri Feb 20 02:33:33 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Thu, 19 Feb 2015 21:33:33 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAMguqh0enTvkVE7KaPKAxd7pd3of=5PVfuMPkgT0YQrWN6=UHw@mail.gmail.com>
+References: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+ <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+ <20150217175536.GD30246@csclub.uwaterloo.ca>
+ <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+ <20150219154309.GI30246@csclub.uwaterloo.ca>
+ <CAPik5Mx4sZjFfjt9gFuZ3suusWY12TTtPv08G5io50KRG1iGdg@mail.gmail.com>
+ <54E642D3.4070409@rogers.com>
+ <CAPik5Mx4k=_8xBNRA48kR+yeNQsGFKR=rA59a2NjepDY3Q6zRA@mail.gmail.com>
+ <CAMguqh0enTvkVE7KaPKAxd7pd3of=5PVfuMPkgT0YQrWN6=UHw@mail.gmail.com>
+Message-ID: <54E69CFD.10909@rogers.com>
+
+On 02/19/2015 05:41 PM, Evan Leibovitch wrote:
+> On 19 February 2015 at 17:12, Russell Reiter <rreiter91 at gmail.com 
+> <mailto:rreiter91 at gmail.com>>wrote:
+>
+>     I pwn this snippet and others. Pay up or I'm gonna tell the boss and I
+>     go EOA and then you're all on your own.
+>
+>
+> ?Promise??
+>
+>
+A great improvement: I only see replys to Mr. Reiter.
+
+Don't feed the trolls!
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150219/a24d9eb0/attachment.html>
+
+From davec-b at rogers.com  Fri Feb 20 02:33:40 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Thu, 19 Feb 2015 21:33:40 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAMguqh0enTvkVE7KaPKAxd7pd3of=5PVfuMPkgT0YQrWN6=UHw@mail.gmail.com>
+References: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+ <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+ <20150217175536.GD30246@csclub.uwaterloo.ca>
+ <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+ <20150219154309.GI30246@csclub.uwaterloo.ca>
+ <CAPik5Mx4sZjFfjt9gFuZ3suusWY12TTtPv08G5io50KRG1iGdg@mail.gmail.com>
+ <54E642D3.4070409@rogers.com>
+ <CAPik5Mx4k=_8xBNRA48kR+yeNQsGFKR=rA59a2NjepDY3Q6zRA@mail.gmail.com>
+ <CAMguqh0enTvkVE7KaPKAxd7pd3of=5PVfuMPkgT0YQrWN6=UHw@mail.gmail.com>
+Message-ID: <54E69D04.90001@rogers.com>
+
+On 02/19/2015 05:41 PM, Evan Leibovitch wrote:
+> On 19 February 2015 at 17:12, Russell Reiter <rreiter91 at gmail.com 
+> <mailto:rreiter91 at gmail.com>>wrote:
+>
+>     I pwn this snippet and others. Pay up or I'm gonna tell the boss and I
+>     go EOA and then you're all on your own.
+>
+>
+> ?Promise??
+>
+>
+A great improvement: I only see replys to Mr. Reiter.
+
+Don't feed the trolls!
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150219/df88a96f/attachment.html>
+
+From rjonasz at gmail.com  Fri Feb 20 03:59:01 2015
+From: rjonasz at gmail.com (Randy Jonasz)
+Date: Thu, 19 Feb 2015 22:59:01 -0500
+Subject: [GTALUG] Connection Refused
+Message-ID: <1424404741.2765.9.camel@gmail.com>
+
+Hello,
+
+I have an ubuntu 14.04 server running postfix.  I wanted to test it with
+telnet on port 25.  Alas I receive connection refused errors although I
+can ssh to the server fine and see that master is listening on port 25.
+I ssh'd to another machine outside of my lan and tried telnet from
+there.  I was able to connect fine.  Does anyone have any suggestions
+how I can troubleshoot this? My hosts.deny file is empty.
+
+Here's the server's iptables -L output.  My wan address is not listed.
+Thanks for your help!
+
+Randy
+
+root at foucault:/etc/postfix# iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+fail2ban-ErrorAccess  tcp  --  anywhere             anywhere
+multiport dports http,https
+fail2ban-ReqLimit  tcp  --  anywhere             anywhere
+multiport dports http,https
+fail2ban-dovecot  tcp  --  anywhere             anywhere
+multiport dports smtp,urd,submission,imap2,imap3,imaps,pop3,pop3s
+fail2ban-postfix  tcp  --  anywhere             anywhere
+multiport dports smtp,urd,submission
+fail2ban-ssh-ddos  tcp  --  anywhere             anywhere
+multiport dports ssh
+fail2ban-ssh  tcp  --  anywhere             anywhere
+multiport dports ssh
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain fail2ban-ErrorAccess (1 references)
+target     prot opt source               destination         
+RETURN     all  --  anywhere             anywhere            
+
+Chain fail2ban-ReqLimit (1 references)
+target     prot opt source               destination         
+REJECT     all  --  hosted-by.sistem724.com.tr  anywhere
+reject-with icmp-port-unreachable
+RETURN     all  --  anywhere             anywhere            
+
+Chain fail2ban-dovecot (1 references)
+target     prot opt source               destination         
+RETURN     all  --  anywhere             anywhere            
+
+Chain fail2ban-postfix (1 references)
+target     prot opt source               destination         
+RETURN     all  --  anywhere             anywhere            
+
+Chain fail2ban-ssh (1 references)
+target     prot opt source               destination         
+REJECT     all  --  www.albena.bg        anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  182.100.67.115       anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  dynamicip-188-232-146-41.pppoe.omsk.ertelecom.ru
+anywhere             reject-with icmp-port-unreachable
+REJECT     all  --  outgoing-auas.carlson.com  anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  221.233.125.180      anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  2h56.xjtu.edu.cn     anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  vps3d196-static.vdrs.net  anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  static.vdc.vn        anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  grupoazul130.static.host.gvt.net.br  anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  182.100.67.114       anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  luna933.server4you.de  anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  115.231.222.45       anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  115.239.228.7        anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  115.239.228.15       anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  static.vdc.vn        anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  218.205.48.105       anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  115.239.228.4        anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  5-14-20-84.residential.rdsnet.ro  anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  94.102.53.182        anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  dynamic.vdc.vn       anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  59.57.253.94         anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  115.239.228.9        anywhere
+reject-with icmp-port-unreachable
+REJECT     all  --  183.136.216.4        anywhere
+reject-with icmp-port-unreachable
+RETURN     all  --  anywhere             anywhere 
+
+
