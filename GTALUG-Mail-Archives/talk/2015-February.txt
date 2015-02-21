@@ -6409,3 +6409,1304 @@ reject-with icmp-port-unreachable
 RETURN     all  --  anywhere             anywhere 
 
 
+From opengeometry at yahoo.ca  Fri Feb 20 04:34:05 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Thu, 19 Feb 2015 23:34:05 -0500
+Subject: [GTALUG] Connection Refused
+In-Reply-To: <1424404741.2765.9.camel@gmail.com>
+References: <1424404741.2765.9.camel@gmail.com>
+Message-ID: <20150220043404.GA9618@node1.localdomain>
+
+Port 25 is matched by 'fail2ban-dovecot' and 'fail2ban-postfix' which do
+nothing.  So, check postfix main config.
+-- 
+William
+
+On Thu, Feb 19, 2015 at 10:59:01PM -0500, Randy Jonasz wrote:
+> Hello,
+> 
+> I have an ubuntu 14.04 server running postfix.  I wanted to test it with
+> telnet on port 25.  Alas I receive connection refused errors although I
+> can ssh to the server fine and see that master is listening on port 25.
+> I ssh'd to another machine outside of my lan and tried telnet from
+> there.  I was able to connect fine.  Does anyone have any suggestions
+> how I can troubleshoot this? My hosts.deny file is empty.
+> 
+> Here's the server's iptables -L output.  My wan address is not listed.
+> Thanks for your help!
+> 
+> Randy
+> 
+> root at foucault:/etc/postfix# iptables -L
+> Chain INPUT (policy ACCEPT)
+> target     prot opt source               destination         
+> fail2ban-ErrorAccess  tcp  --  anywhere             anywhere
+> multiport dports http,https
+> fail2ban-ReqLimit  tcp  --  anywhere             anywhere
+> multiport dports http,https
+> fail2ban-dovecot  tcp  --  anywhere             anywhere
+> multiport dports smtp,urd,submission,imap2,imap3,imaps,pop3,pop3s
+> fail2ban-postfix  tcp  --  anywhere             anywhere
+> multiport dports smtp,urd,submission
+> fail2ban-ssh-ddos  tcp  --  anywhere             anywhere
+> multiport dports ssh
+> fail2ban-ssh  tcp  --  anywhere             anywhere
+> multiport dports ssh
+> 
+> Chain FORWARD (policy ACCEPT)
+> target     prot opt source               destination         
+> 
+> Chain OUTPUT (policy ACCEPT)
+> target     prot opt source               destination         
+> 
+> Chain fail2ban-ErrorAccess (1 references)
+> target     prot opt source               destination         
+> RETURN     all  --  anywhere             anywhere            
+> 
+> Chain fail2ban-ReqLimit (1 references)
+> target     prot opt source               destination         
+> REJECT     all  --  hosted-by.sistem724.com.tr  anywhere
+> reject-with icmp-port-unreachable
+> RETURN     all  --  anywhere             anywhere            
+> 
+> Chain fail2ban-dovecot (1 references)
+> target     prot opt source               destination         
+> RETURN     all  --  anywhere             anywhere            
+> 
+> Chain fail2ban-postfix (1 references)
+> target     prot opt source               destination         
+> RETURN     all  --  anywhere             anywhere            
+> 
+> Chain fail2ban-ssh (1 references)
+> target     prot opt source               destination         
+> REJECT     all  --  www.albena.bg        anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  182.100.67.115       anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  dynamicip-188-232-146-41.pppoe.omsk.ertelecom.ru
+> anywhere             reject-with icmp-port-unreachable
+> REJECT     all  --  outgoing-auas.carlson.com  anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  221.233.125.180      anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  2h56.xjtu.edu.cn     anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  vps3d196-static.vdrs.net  anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  static.vdc.vn        anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  grupoazul130.static.host.gvt.net.br  anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  182.100.67.114       anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  luna933.server4you.de  anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  115.231.222.45       anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  115.239.228.7        anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  115.239.228.15       anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  static.vdc.vn        anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  218.205.48.105       anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  115.239.228.4        anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  5-14-20-84.residential.rdsnet.ro  anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  94.102.53.182        anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  dynamic.vdc.vn       anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  59.57.253.94         anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  115.239.228.9        anywhere
+> reject-with icmp-port-unreachable
+> REJECT     all  --  183.136.216.4        anywhere
+> reject-with icmp-port-unreachable
+> RETURN     all  --  anywhere             anywhere 
+> 
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From opengeometry at yahoo.ca  Fri Feb 20 04:54:32 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Thu, 19 Feb 2015 23:54:32 -0500
+Subject: [GTALUG] Raid 10 repair question
+In-Reply-To: <CAPpdf58FiZ8BV+s9ecPicxhFyhSzwLMntJ_vf4ChVk2feP3F+w@mail.gmail.com>
+References: <CAPpdf5_XTTxdZXsPPMnv0HNQqFBeBYhsu9nrHDf2tdvmVod+bg@mail.gmail.com>
+ <20150218031939.GA9719@node1.localdomain>
+ <CAPpdf58FiZ8BV+s9ecPicxhFyhSzwLMntJ_vf4ChVk2feP3F+w@mail.gmail.com>
+Message-ID: <20150220045432.GA9704@node1.localdomain>
+
+You should read manpage of 'mdadm', paying particular attention to its
+arguments.  So,
+    man mdadm
+and search for options
+    -D -v --add
+-- 
+William
+
+On Thu, Feb 19, 2015 at 06:38:29AM -0600, o1bigtenor wrote:
+> I am not asking the questions to be confrontational just have learned that
+> typing in commands the results of which you do not know or the effect
+> you do not know/understand can have large effects.
+> 
+> (In the past I have too often totally borked my system and I really don't
+> want to take two weeks from my life and spend all day trying to
+> reestablish things.)
+> 
+> Thanking you for your interest and assistance!
+> 
+> Dee
+
+From opengeometry at yahoo.ca  Fri Feb 20 05:10:45 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Fri, 20 Feb 2015 00:10:45 -0500
+Subject: [GTALUG] RAID and IX-2-dl
+In-Reply-To: <alpine.LRH.2.02.1502191618580.27871@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1502191618580.27871@redclaw.mimosa.com>
+Message-ID: <20150220051045.GB9704@node1.localdomain>
+
+Looks like each disk has 2 partitions, 
+    /dev/sd[ab]1 --> /dev/md0 --> raid1 (1.8TB)
+    /dev/sd[ab]2 --> /dev/md1 --> raid1 (1.8TB) or linear (3.6TB)
+So, "none" is linear array.  Strange, because "none" is usually
+individual drive, and it usually says "linear" if it is linear.
+-- 
+William
+
+
+On Thu, Feb 19, 2015 at 04:56:12PM -0500, D. Hugh Redelmeier wrote:
+> I just bought a LenovoEMC / IOmega IX2-dl NAS box (cheap, of 
+> course).  It has a pair of WD Green 2T disk drives.
+> 
+> The supplied firmware is Linux, of course.  With a pretty face.
+> 
+> /proc/cpuid says "Feroceon 88FR131 rev 1 (v5l)" which I think is an 
+> unfortunately old ARM family.  It has 256M of RAM.  The kernel is 
+> "2.6.31.8".
+> 
+> It offers me RAID 1, RAID 0, and "none".  I don't think that I want 
+> either RAID and I'm not sure what "none" is.
+> 
+> I don't want RAID 1 because It doesn't give me much reliability 
+> improvement for the price (halving the space) and it doesn't give me any 
+> speed improvement.
+> 
+> I don't want RAID 0 since it gives me less reliability than no RAID.
+> 
+> I want two different filesystems so that when one goes south, the other 
+> isn't lost.
+> 
+> Any advice on how to lightly prod this system to do what I want?
+> 
+> Here's some configuration information.
+> 
+> /etc/fstab doesn't mention the hard drives
+> 
+> First, here's how it looks with the RAID1 setup.
+> 
+> lsblk(8) says.  (This command is new to me.  I think that I like it):
+> 
+> 
+> NAME                                MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+> loop0                                 7:0    0 680.4M  1 loop  /mnt/apps
+> loop1                                 7:1    0     8M  0 loop  /mnt/etc
+> loop2                                 7:2    0   100K  0 loop  /oem
+> sda                                   8:0    0   1.8T  0 disk  
+> ??sda1                                8:1    0    20G  0 part  
+> ? ??md0                               9:0    0    20G  0 raid1 
+> ?   ??md0_vg-BFDlv (dm-0)           253:0    0     4G  0 lvm   /boot
+> ?   ??md0_vg-vol1 (dm-1)            253:1    0    16G  0 lvm   /mnt/system
+> ??sda2                                8:2    0   1.8T  0 part  
+>   ??md1                               9:1    0   1.8T  0 raid1 
+>     ??6366c931_vg-lv163c50af (dm-2) 253:2    0   1.8T  0 lvm   /mnt/pools/A/A0
+> sdb                                   8:16   0   1.8T  0 disk  
+> ??sdb1                                8:17   0    20G  0 part  
+> ? ??md0                               9:0    0    20G  0 raid1 
+> ?   ??md0_vg-BFDlv (dm-0)           253:0    0     4G  0 lvm   /boot
+> ?   ??md0_vg-vol1 (dm-1)            253:1    0    16G  0 lvm   /mnt/system
+> ??sdb2                                8:18   0   1.8T  0 part  
+>   ??md1                               9:1    0   1.8T  0 raid1 
+>     ??6366c931_vg-lv163c50af (dm-2) 253:2    0   1.8T  0 lvm   /mnt/pools/A/A0
+> mtdblock0                            31:0    0   504K  0 disk  
+> mtdblock1                            31:1    0     4K  0 disk  
+> mtdblock2                            31:2    0     4K  0 disk  
+> 
+> df(1) says:
+> 
+> Filesystem                          1K-blocks   Used  Available Use% Mounted on
+> rootfs                                  51200   4216      46984   9% /
+> /dev/root.old                           11339   3185       8154  29% /initrd
+> none                                    51200   4216      46984   9% /
+> /dev/md0_vg/BFDlv                     4128448 714776    3203960  19% /boot
+> /dev/loop0                             691776 619873      71903  90% /mnt/apps
+> /dev/loop1                               7657   1010       6238  14% /mnt/etc
+> none                                     7657   1010       6238  14% /etc
+> /dev/loop2                                128    128          0 100% /oem
+> tmpfs                                   24776     80      24696   1% /run
+> tmpfs                                    5120      4       5116   1% /run/lock
+> tmpfs                                   49540      0      49540   0% /run/shm
+> /dev/mapper/md0_vg-vol1              16493480 975280   15350636   6% /mnt/system
+> /dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /mnt/pools/A/A0
+> /dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/Backups
+> /dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/Documents
+> /dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/Movies
+> /dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/Music
+> /dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/SharedMedia
+> /dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/Pictures
+> 
+> After I switched from RAID1 to "none":
+> 
+> NAME                                MAJ:MIN RM   SIZE RO TYPE   MOUNTPOINT
+> loop0                                 7:0    0 680.4M  1 loop   /mnt/apps
+> loop1                                 7:1    0     8M  0 loop   /mnt/etc
+> loop2                                 7:2    0   100K  0 loop   /oem
+> sda                                   8:0    0   1.8T  0 disk   
+> ??sda1                                8:1    0    20G  0 part   
+> ? ??md0                               9:0    0    20G  0 raid1  
+> ?   ??md0_vg-BFDlv (dm-0)           253:0    0     4G  0 lvm    /boot
+> ?   ??md0_vg-vol1 (dm-1)            253:1    0    16G  0 lvm    /mnt/system
+> ??sda2                                8:2    0   1.8T  0 part   
+>   ??md1                               9:1    0   3.6T  0 linear 
+>     ??529a853a_vg-lv1ac0e3be (dm-2) 253:2    0   3.6T  0 lvm    /mnt/pools/A/A0
+> sdb                                   8:16   0   1.8T  0 disk   
+> ??sdb2                                8:18   0   1.8T  0 part   
+> ? ??md1                               9:1    0   3.6T  0 linear 
+> ?   ??529a853a_vg-lv1ac0e3be (dm-2) 253:2    0   3.6T  0 lvm    /mnt/pools/A/A0
+> ??sdb1                                8:17   0    20G  0 part   
+>   ??md0                               9:0    0    20G  0 raid1  
+>     ??md0_vg-BFDlv (dm-0)           253:0    0     4G  0 lvm    /boot
+>     ??md0_vg-vol1 (dm-1)            253:1    0    16G  0 lvm    /mnt/system
+> mtdblock0                            31:0    0   504K  0 disk   
+> mtdblock1                            31:1    0     4K  0 disk   
+> mtdblock2                            31:2    0     4K  0 disk   
+> 
+> 
+> Filesystem                          1K-blocks   Used  Available Use% Mounted on
+> rootfs                                  51200   4264      46936   9% /
+> /dev/root.old                           11339   3185       8154  29% /initrd
+> none                                    51200   4264      46936   9% /
+> /dev/md0_vg/BFDlv                     4128448 714776    3203960  19% /boot
+> /dev/loop0                             691776 619873      71903  90% /mnt/apps
+> /dev/loop1                               7657   1013       6235  14% /mnt/etc
+> none                                     7657   1013       6235  14% /etc
+> /dev/loop2                                128    128          0 100% /oem
+> tmpfs                                   24776     80      24696   1% /run
+> tmpfs                                    5120      4       5116   1% /run/lock
+> tmpfs                                   49540      0      49540   0% /run/shm
+> /dev/mapper/md0_vg-vol1              16493480 975516   15350400   6% /mnt/system
+> /dev/mapper/529a853a_vg-lv1ac0e3be 3804366528 200884 3804165644   1% /mnt/pools/A/A0
+
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+From rreiter91 at gmail.com  Fri Feb 20 16:03:30 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Fri, 20 Feb 2015 10:03:30 -0600
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAMguqh0enTvkVE7KaPKAxd7pd3of=5PVfuMPkgT0YQrWN6=UHw@mail.gmail.com>
+References: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+ <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+ <20150217175536.GD30246@csclub.uwaterloo.ca>
+ <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+ <20150219154309.GI30246@csclub.uwaterloo.ca>
+ <CAPik5Mx4sZjFfjt9gFuZ3suusWY12TTtPv08G5io50KRG1iGdg@mail.gmail.com>
+ <54E642D3.4070409@rogers.com>
+ <CAPik5Mx4k=_8xBNRA48kR+yeNQsGFKR=rA59a2NjepDY3Q6zRA@mail.gmail.com>
+ <CAMguqh0enTvkVE7KaPKAxd7pd3of=5PVfuMPkgT0YQrWN6=UHw@mail.gmail.com>
+Message-ID: <CAPik5My2cDYw0HDORiwfXBv+8LKBCwTfyMOnmQQ1WC0t=XYT_g@mail.gmail.com>
+
+On 2/19/15, Evan Leibovitch <evan at telly.org> wrote:
+> On 19 February 2015 at 17:12, Russell Reiter <rreiter91 at gmail.com> wrote:
+>
+>
+>> I pwn this snippet and others. Pay up or I'm gonna tell the boss and I
+>> go EOA and then you're all on your own.
+>>
+>
+> Promise?
+>
+
+Hey I'm only a predicated analysis of the robotics generation, I can't
+say what the Boss is going to do, but for all our sakes, I don't push
+his buttons without reason, do you? I do know he's getting kind of
+pissed for only trying to help things along.
+
+BTW it's been a long time, I'm sorry I called you the vice president
+of Candia, but I'm a hard working very blunt object some times. Some
+times it works out sometimes it doesn't. But as they say in Vegas, and
+believe me nothing of value stays in vegas, third times a charm!
+
+It's a rigged game, always has been. The US military general
+leadership, RAH RAH RAH what a BOFG. Punks is what they are and punks
+is what they will stay. Fact is fact and fiction is fiction, we have
+to be able to tell the difference or we are all doomed, to live here
+with them, as their slaves, until they wipe us all out.
+
+Search your heart etc.
+
+You know what I missed most, shooting pool with Tim, and Matt and
+Frazier, you never came to those meetings so we never had much FUN
+together. Even though they weren't much competition, at least they
+tried.
+
+I mean look at it from my perspective and with all apologies to
+Philip K. Dick, who gave me this one i)deal, you guys get to fly
+around the world and go to conferences and stuff, while I'm Down In
+The Black Gang, working for the insurance under ******* drowning with
+the rest of the US in a sea of military taxation.
+
+Am I jealous, fuck no, I wouldn't get on a plane today for love nor
+money, at least until all the SANTA bugs are fixed using my trade, my
+craft, my secrets.
+
+It's a Titanic insurance fraud and someone has to stop it, so push the
+button max, go on cross that line. GET SMART was a TV show. This is
+IRL #RedAlertStupid
+
+The Wright stuff is fact vs. fiction. Do you have the Wright stuff?
+i'm not sure who or what made me what I am this day, the Satanists
+made sure of that.
+
+There is no Santa bringing presents in a sleigh but there are people
+who look just like him, selling coke. A big shout out to my old Tlug
+friends, JC et al. Wherever you are. etcetera ectera etcra etc ...
+
+So when the regression testing is all done, maybe we can all go for
+PAD TI, shoot some stick and have a beer.
+
+AUTHCODE
+com0(0
+cap0()
+DI TU TI CA PO
+1st FRET VESTPOL
+TONE ONE
+TONE LOC
+
+The sea shall not have them, so says Canada while he's in a tiny
+rubber life raft on the ocean with the other brave brits, while the US
+GOVT miked them for all it was worth.
+
+PAD RO you go to fucking hell and take all your GRIZELDA, ganstalking
+TV production thugs with you. OR NOT it's up to you.
+
+Jack and Billy were nice guys, but he didn't know what he was getting
+into. I'm sure Dinah and the whole cast loved them. So says the prof
+JSM, I mean who the fuck gets lost in southern 0ntario unless they
+don't know why they are here and where they are going. TV COKEHEADS ON
+THE BELTWAY Can it get any worse than that?
+
+AUTHCODE
+TANGO
+ROMEO
+FOXTROT
+padRO
+
+They shot me, hovering over me with a microwave cannon and they didn't
+care if it would hurt me or not. We'll it did, it made me sick, I felt
+it moreover, the real specs say so.
+
+So when you buy your java beans from i0deal, just remember there's a
+can of worms that goes with it.
+
+JA lives in a firey hell he tries to put out with water and the
+NATzi's who run the place don't even know that in GB Elizabeth is a
+mans name given in respect and in duty, honor, right and heritage, not
+lineage, there's good and bad in all of us.
+
+My UN-CLE has seven grand kids, I don't have any children, so I do
+this for yours.
+
+PEACE OUT
+
+From o1bigtenor at gmail.com  Fri Feb 20 16:18:18 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Fri, 20 Feb 2015 10:18:18 -0600
+Subject: [GTALUG] Raid 10 repair question
+In-Reply-To: <20150220045432.GA9704@node1.localdomain>
+References: <CAPpdf5_XTTxdZXsPPMnv0HNQqFBeBYhsu9nrHDf2tdvmVod+bg@mail.gmail.com>
+ <20150218031939.GA9719@node1.localdomain>
+ <CAPpdf58FiZ8BV+s9ecPicxhFyhSzwLMntJ_vf4ChVk2feP3F+w@mail.gmail.com>
+ <20150220045432.GA9704@node1.localdomain>
+Message-ID: <CAPpdf58JJOZTq1xRqx3dMjUay4=1h0mk4VxBqxUpx6E-zrbAKw@mail.gmail.com>
+
+On Thu, Feb 19, 2015 at 10:54 PM, William Park <opengeometry at yahoo.ca>
+wrote:
+
+> You should read manpage of 'mdadm', paying particular attention to its
+> arguments.  So,
+>     man mdadm
+> and search for options
+>     -D -v --add
+
+
+This was one of the first things I did BEFORE I installed the new drive.
+
+Thank you for the exact command.
+
+Would you be able to verify that I can only use gparted on a non-running
+system?
+
+<rant on>
+
+Man pages are largely incomprehensible to the average user. I think that
+there are almost totally designed for someone who is hugely conversant
+with what is being done and just needs a reminder of which command does
+what. Now for someone who doesn't program a man page provides mostly
+no examples (ones that will work or ones that won't). There is no listing of
+a group of commands to do things (as you have done above) telling you that
+this string will achieve this result. Even better would be if they would
+then
+tell you that if you don't get this result (with an example) but you get x
+- -
+then this went wrong which you fix like this or if you get y - - - that went
+wrong which you fix like that.
+
+When I have done something 20 times the man page becomes an OK tool
+(often far too terse but still useable) but when I have done something once
+- -
+well a man page most often makes the problem worse.
+
+(Then I get told to "just google it" and the first 20 hits are at least 6
+if not 12
+to 15 years old - - - so what the net pukes out just isn't useful. Makes it
+quite difficult to fix problems that one hasn't run into before. The fact
+that
+fixing some of my problems has had my wife telling me that I'm wasting too
+much time and that I could hire someone to do this for me if I just were
+running MS Win - - - I have been able to resist this but logically she has a
+point - - - my computers are tools not time sinks!)
+
+<rant off>
+
+Thanking you for your assistance AND consideration!!
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150220/4e29c96a/attachment.html>
+
+From rjonasz at gmail.com  Fri Feb 20 16:57:33 2015
+From: rjonasz at gmail.com (Randy Jonasz)
+Date: Fri, 20 Feb 2015 11:57:33 -0500
+Subject: [GTALUG] Connection Refused
+In-Reply-To: <20150220043404.GA9618@node1.localdomain>
+References: <1424404741.2765.9.camel@gmail.com>
+ <20150220043404.GA9618@node1.localdomain>
+Message-ID: <54E7677D.6080009@gmail.com>
+
+On 15-02-19 11:34 PM, William Park wrote:
+> Port 25 is matched by 'fail2ban-dovecot' and 'fail2ban-postfix' which do
+> nothing.  So, check postfix main config.
+Alas I can telnet to port 25 from outside of my lan.  What would 
+restrict my lan address?  The server is in Germany.  I can telnet from 
+work at McMaster University but nothing from my home.
+
+Here's my main.config
+
+# See /usr/share/postfix/main.cf.dist for a commented, more complete version
+
+
+# Debian specific:  Specifying a file name will cause the first
+# line of that file to be used as the name.  The Debian default
+# is /etc/mailname.
+#myorigin = /etc/mailname
+
+smtpd_banner = $myhostname ESMTP $mail_name (Ubuntu)
+biff = no
+
+# appending .domain is the MUA's job.
+append_dot_mydomain = no
+
+# Uncomment the next line to generate "delayed mail" warnings
+#delay_warning_time = 4h
+
+readme_directory = no
+
+# TLS parameters
+smtpd_tls_cert_file = /etc/ssl/certs/server.crt
+smtpd_tls_key_file = /etc/ssl/private/server.key
+smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt
+smtpd_use_tls=yes
+smtpd_tls_session_cache_database = btree:${data_directory}/smtpd_scache
+smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
+smtpd_tls_req_ccert = no
+smtpd_tls_ask_ccert = yes
+
+# See /usr/share/doc/postfix/TLS_README.gz in the postfix-doc package for
+# information on enabling SSL in the smtp client.
+
+myhostname = foucault.rjonasz.ca
+alias_maps = hash:/etc/aliases
+alias_database = hash:/etc/aliases
+myorigin = /etc/mailname
+mydestination = foucault.rjonasz.ca, localhost.rjonasz.ca, localhost
+relayhost =
+mynetworks = 127.0.0.0/8 80.241.217.178/32 [::ffff:127.0.0.0]/104 
+[::1]/128 207.210.30.47/32 198.7.63.205/32
+mailbox_size_limit = 0
+recipient_delimiter = +
+inet_interfaces = all
+home_mailbox = Maildir/
+#smtpd_sasl_type = dovecot
+#smtpd_sasl_path = private/auth-client
+#smtpd_sasl_local_domain =
+#smtpd_sasl_security_options = noplaintext,noanonymous
+#broken_sasl_auth_clients = yes
+#smtpd_sasl_auth_enable = yes
+#smtp_sasl_password_maps = hash:/etc/postfix/sasl/passwd
+smtpd_recipient_restrictions = permit_sasl_authenticated 
+permit_mynetworks reject_unauth_destination
+smtp_tls_security_level = may
+smtpd_tls_security_level = may
+smtp_tls_note_starttls_offer = yes
+smtpd_tls_loglevel = 1
+smtpd_tls_received_header = yes
+tls_random_source = dev:/dev/urandom
+#smtp_connection_cache_destinations = smtp.gmail.com
+default_transport = smtp
+default_destination_concurrency_limit = 5
+virtual_alias_domains = rjonasz.ca rjonasz.com rjonasz.net rjonasz.org
+virtual_alias_maps = hash:/etc/postfix/virtual
+smtpd_relay_restrictions = permit_mynetworks reject_unauth_destination
+
+
+
+Cheers,
+
+Randy
+
+From email+libre at blaise.ca  Fri Feb 20 17:11:15 2015
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Fri, 20 Feb 2015 12:11:15 -0500
+Subject: [GTALUG] Connection Refused
+In-Reply-To: <54E7677D.6080009@gmail.com>
+References: <1424404741.2765.9.camel@gmail.com>
+ <20150220043404.GA9618@node1.localdomain> <54E7677D.6080009@gmail.com>
+Message-ID: <54E76AB3.8000505@blaise.ca>
+
+On 20/02/15 11:57 AM, Randy Jonasz wrote:
+> On 15-02-19 11:34 PM, William Park wrote:
+>> Port 25 is matched by 'fail2ban-dovecot' and 'fail2ban-postfix' which do
+>> nothing.  So, check postfix main config.
+> Alas I can telnet to port 25 from outside of my lan.  What would restrict my lan
+> address?  The server is in Germany.  I can telnet from work at McMaster
+> University but nothing from my home. [...]
+> 
+
+Just a guess, but since you've got fail2ban running, have you checked to see if
+you accidentally banned your IP address when testing? I've done that before.
+
+I'd suggest double-checking the fail2ban log to see if your IP address is
+listed, and/or make sure it's whitelisted in your fail2ban config.
+
+If that's not the problem though, then I'm not sure what's going on with Postfix...
+
+
+From scruss at gmail.com  Fri Feb 20 18:22:37 2015
+From: scruss at gmail.com (Stewart Russell)
+Date: Fri, 20 Feb 2015 13:22:37 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAPik5My2cDYw0HDORiwfXBv+8LKBCwTfyMOnmQQ1WC0t=XYT_g@mail.gmail.com>
+References: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+ <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+ <20150217175536.GD30246@csclub.uwaterloo.ca>
+ <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+ <20150219154309.GI30246@csclub.uwaterloo.ca>
+ <CAPik5Mx4sZjFfjt9gFuZ3suusWY12TTtPv08G5io50KRG1iGdg@mail.gmail.com>
+ <54E642D3.4070409@rogers.com>
+ <CAPik5Mx4k=_8xBNRA48kR+yeNQsGFKR=rA59a2NjepDY3Q6zRA@mail.gmail.com>
+ <CAMguqh0enTvkVE7KaPKAxd7pd3of=5PVfuMPkgT0YQrWN6=UHw@mail.gmail.com>
+ <CAPik5My2cDYw0HDORiwfXBv+8LKBCwTfyMOnmQQ1WC0t=XYT_g@mail.gmail.com>
+Message-ID: <CAAsTreDQuH31o8u2cq1dQRdM7xsCGnuyEqkyqM+2DbXKzq=R2w@mail.gmail.com>
+
+On Feb 20, 2015 11:03 AM, "Russell Reiter" <rreiter91 at gmail.com> wrote:
+>
+> ...
+> 1st FRET VESTPOL
+
+I approve of this reference, though of course the *true* conspiracy
+theorist will immediately see the link between:
+
+1) Vestpol, or Vestapol, guitar tuning (D A D F# A D, or Open D) much used
+in southern acoustic blues;
+
+2) Vestapol March, one of those blues numbers played in Open D.  Also known
+variously as the Sylvester Poole March, Sevastopol March, or The March on
+Sebastopol - a particularly delicate piece of parlour music popular in the
+later 19th century, commemorating some event or other in the Crimean War;
+
+3) Sevastopol, location of current unpleasantness between Ukraine and
+Russia.
+
+So those refined society ladies plucking their gut-string banjos and the
+bluesmen with names composed of $AFFLICTION $FRUIT $DEAD_PRESIDENT all knew
+that Putin's actions were long foretold ...
+
+I am folk, hear me process.*
+
+Stewart
+
+*: not mine, alas; one of Peter Stampfel's.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150220/266284a3/attachment.html>
+
+From sgh at vex.net  Fri Feb 20 18:42:43 2015
+From: sgh at vex.net (Steve Harvey)
+Date: Fri, 20 Feb 2015 13:42:43 -0500
+Subject: [GTALUG] Connection Refused
+In-Reply-To: <1424404741.2765.9.camel@gmail.com>
+References: <1424404741.2765.9.camel@gmail.com>
+Message-ID: <20150220184243.GA24822@vex.net>
+
+On Thu, Feb 19, 2015 at 10:59:01PM -0500, Randy Jonasz wrote:
+> Hello,
+> 
+> I have an ubuntu 14.04 server running postfix.  I wanted to test it with
+> telnet on port 25.  Alas I receive connection refused errors although I
+> can ssh to the server fine and see that master is listening on port 25.
+> I ssh'd to another machine outside of my lan and tried telnet from
+> there.  I was able to connect fine.  Does anyone have any suggestions
+> how I can troubleshoot this? My hosts.deny file is empty.
+> 
+> Here's the server's iptables -L output.  My wan address is not listed.
+> Thanks for your help!
+> 
+> Randy
+> 
+[snip]
+
+  It is possible that the ISP that you use from home is blocking
+outbound TCP/25 connection attempts?
+
+  Try installing tcptraceroute on your home machine and see if you can 
+contact any external mail servers, i.e.
+
+# host -t MX google.com.
+google.com mail is handled by 50 alt4.aspmx.l.google.com.
+...
+# tcptraceroute alt4.aspmx.l.google.com. 25
+
+
+From rjonasz at gmail.com  Fri Feb 20 18:55:36 2015
+From: rjonasz at gmail.com (Randy Jonasz)
+Date: Fri, 20 Feb 2015 13:55:36 -0500
+Subject: [GTALUG] Connection Refused
+In-Reply-To: <20150220184243.GA24822@vex.net>
+References: <1424404741.2765.9.camel@gmail.com>
+ <20150220184243.GA24822@vex.net>
+Message-ID: <54E78328.6090108@gmail.com>
+
+Thanks Steve!  That's the problem.  I can telnet to my ISP's smtp server 
+but not any other.
+
+Now I'll have to phone my ISP when I get home and have them change their 
+port blocks.  Wish me luck.
+
+Randy
+
+Do not ask who I am and do not ask me to remain the same:
+leave it to our bureaucrats and our police to see that our
+papers are in order. At least spare us their morality when
+we write.
+--Michel Foucault
+
+On 15-02-20 01:42 PM, Steve Harvey wrote:
+> tcptraceroute alt4.aspmx.l.google.com. 25
+
+
+From james.knott at rogers.com  Fri Feb 20 19:03:55 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 20 Feb 2015 14:03:55 -0500
+Subject: [GTALUG] Connection Refused
+In-Reply-To: <54E78328.6090108@gmail.com>
+References: <1424404741.2765.9.camel@gmail.com>
+ <20150220184243.GA24822@vex.net> <54E78328.6090108@gmail.com>
+Message-ID: <54E7851B.7060101@rogers.com>
+
+On 02/20/2015 01:55 PM, Randy Jonasz wrote:
+> Now I'll have to phone my ISP when I get home and have them change
+> their port blocks.  Wish me luck.
+>
+
+It's common practice these days, to use a different port number for off
+net SMTP.  Even better, use SMTPS.  These might be a better solution
+than trying to get your ISP to stop blocking 25.
+
+
+From lsorense at csclub.uwaterloo.ca  Fri Feb 20 19:18:45 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 20 Feb 2015 14:18:45 -0500
+Subject: [GTALUG] Connection Refused
+In-Reply-To: <54E78328.6090108@gmail.com>
+References: <1424404741.2765.9.camel@gmail.com>
+ <20150220184243.GA24822@vex.net> <54E78328.6090108@gmail.com>
+Message-ID: <20150220191845.GJ30246@csclub.uwaterloo.ca>
+
+On Fri, Feb 20, 2015 at 01:55:36PM -0500, Randy Jonasz wrote:
+> Thanks Steve!  That's the problem.  I can telnet to my ISP's smtp
+> server but not any other.
+> 
+> Now I'll have to phone my ISP when I get home and have them change
+> their port blocks.  Wish me luck.
+
+I hightly doubt they will, but it is worth asking.
+
+If you pay for a static IP, then I suspect they are more likely to do it.
+
+I can certainly telnet to port 25 from my teksavvy VDSL2 connection with
+a static IP.
+
+Another option people use is to use a port other than 25 of course.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Fri Feb 20 19:22:42 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 20 Feb 2015 14:22:42 -0500
+Subject: [GTALUG] Raid 10 repair question
+In-Reply-To: <CAPpdf5-eofhsffpvky8rW4pSYKQz+9EKXoxfHcAKFmTiyC2xOA@mail.gmail.com>
+References: <CAPpdf5_XTTxdZXsPPMnv0HNQqFBeBYhsu9nrHDf2tdvmVod+bg@mail.gmail.com>
+ <20150217221933.GF30246@csclub.uwaterloo.ca>
+ <CAPpdf59ZdBP-es_Y0+3gQPMU8UimQp3+EOJ68TQ8r3mx0Co4cQ@mail.gmail.com>
+ <20150219153002.GG30246@csclub.uwaterloo.ca>
+ <CAPpdf5-eofhsffpvky8rW4pSYKQz+9EKXoxfHcAKFmTiyC2xOA@mail.gmail.com>
+Message-ID: <20150220192242.GK30246@csclub.uwaterloo.ca>
+
+On Thu, Feb 19, 2015 at 04:14:04PM -0600, o1bigtenor wrote:
+> On Thu, Feb 19, 2015 at 9:30 AM, Lennart Sorensen <
+> lsorense at csclub.uwaterloo.ca> wrote:
+> 
+> > On Tue, Feb 17, 2015 at 05:04:16PM -0600, o1bigtenor wrote:
+> > > Now I used gdisk to set things up so likely that is where I will need to
+> > > start - - - hmmmmmmmmmmm.
+> > >
+> > > Has anyone done anything like this in the somewhat recent past?
+> > >
+> > > (Wondering if when disk is partitioned that mdadm will happily absorb
+> > that
+> > > disk into the array. Likely will need another reboot too!)
+> >
+> > There should be zero reboots required for this.
+> >
+> > Most partition tools do a partition table reread automatically when you
+> > exit, or you can use 'hdparm -z /dev/sdX' to do it.  If /proc/partitions
+> > shows the new sizes, you are good to go.
+> >
+> 
+> Is there a way to partition the drive in a running system?
+> 
+> The only way that I know of is to reboot onto a rescue disk and use gparted
+> there
+> to partition the drive.
+> 
+> I have not been able to find anything using duckduck nor ms google.
+> 
+> A complete back is just finishing as I write this.
+> 
+> Thanking those that have contributed to the conversation for their
+> assistance!!
+
+Well cfdisk, parted, fdisk, gdisk, etc.
+
+Somewhat depends if you need GPT or MBR style partition table.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Fri Feb 20 19:23:58 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 20 Feb 2015 14:23:58 -0500
+Subject: [GTALUG] Raid 10 repair question
+In-Reply-To: <54E66C14.3010702@alteeve.ca>
+References: <CAPpdf5_XTTxdZXsPPMnv0HNQqFBeBYhsu9nrHDf2tdvmVod+bg@mail.gmail.com>
+ <20150217221933.GF30246@csclub.uwaterloo.ca>
+ <CAPpdf59ZdBP-es_Y0+3gQPMU8UimQp3+EOJ68TQ8r3mx0Co4cQ@mail.gmail.com>
+ <20150219153002.GG30246@csclub.uwaterloo.ca>
+ <CAPpdf5-eofhsffpvky8rW4pSYKQz+9EKXoxfHcAKFmTiyC2xOA@mail.gmail.com>
+ <54E66C14.3010702@alteeve.ca>
+Message-ID: <20150220192358.GL30246@csclub.uwaterloo.ca>
+
+On Thu, Feb 19, 2015 at 06:04:52PM -0500, Digimer wrote:
+> You can use parted on running systems just fine. On older systems, the
+> drive with the OS will not update the partition table until you
+> reboot, but repartitioning other drives should be updated fine. Parted
+> will warn you if a reboot is needed.
+> 
+> On newer systems, even the drive under the running OS can be updated
+> without a reboot.
+
+In my experience, linux will reread the partition table as long as
+NOTHING is using that drive (so nothing is mounted).
+
+If it is in use, you need to reboot to get the partition change to take.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Fri Feb 20 19:28:33 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 20 Feb 2015 14:28:33 -0500
+Subject: [GTALUG] RAID and IX-2-dl
+In-Reply-To: <alpine.LRH.2.02.1502191618580.27871@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1502191618580.27871@redclaw.mimosa.com>
+Message-ID: <20150220192833.GM30246@csclub.uwaterloo.ca>
+
+On Thu, Feb 19, 2015 at 04:56:12PM -0500, D. Hugh Redelmeier wrote:
+> I just bought a LenovoEMC / IOmega IX2-dl NAS box (cheap, of 
+> course).  It has a pair of WD Green 2T disk drives.
+> 
+> The supplied firmware is Linux, of course.  With a pretty face.
+> 
+> /proc/cpuid says "Feroceon 88FR131 rev 1 (v5l)" which I think is an 
+> unfortunately old ARM family.  It has 256M of RAM.  The kernel is 
+> "2.6.31.8".
+> 
+> It offers me RAID 1, RAID 0, and "none".  I don't think that I want 
+> either RAID and I'm not sure what "none" is.
+> 
+> I don't want RAID 1 because It doesn't give me much reliability 
+> improvement for the price (halving the space) and it doesn't give me any 
+> speed improvement.
+> 
+> I don't want RAID 0 since it gives me less reliability than no RAID.
+> 
+> I want two different filesystems so that when one goes south, the other 
+> isn't lost.
+
+I suspect none in fact means make each disk seperate.  But it might not.
+
+It could be that they mean:
+
+RAID1: Mirror two identical disks
+RAID0: Stripe data across two identical disks for speed
+none: Concat the disks into one large disk, without added safety or
+speed gains.
+
+> Any advice on how to lightly prod this system to do what I want?
+> 
+> Here's some configuration information.
+> 
+> /etc/fstab doesn't mention the hard drives
+> 
+> First, here's how it looks with the RAID1 setup.
+> 
+> lsblk(8) says.  (This command is new to me.  I think that I like it):
+> 
+> 
+> NAME                                MAJ:MIN RM   SIZE RO TYPE  MOUNTPOINT
+> loop0                                 7:0    0 680.4M  1 loop  /mnt/apps
+> loop1                                 7:1    0     8M  0 loop  /mnt/etc
+> loop2                                 7:2    0   100K  0 loop  /oem
+> sda                                   8:0    0   1.8T  0 disk  
+> ??sda1                                8:1    0    20G  0 part  
+> ? ??md0                               9:0    0    20G  0 raid1 
+> ?   ??md0_vg-BFDlv (dm-0)           253:0    0     4G  0 lvm   /boot
+> ?   ??md0_vg-vol1 (dm-1)            253:1    0    16G  0 lvm   /mnt/system
+> ??sda2                                8:2    0   1.8T  0 part  
+>   ??md1                               9:1    0   1.8T  0 raid1 
+>     ??6366c931_vg-lv163c50af (dm-2) 253:2    0   1.8T  0 lvm   /mnt/pools/A/A0
+> sdb                                   8:16   0   1.8T  0 disk  
+> ??sdb1                                8:17   0    20G  0 part  
+> ? ??md0                               9:0    0    20G  0 raid1 
+> ?   ??md0_vg-BFDlv (dm-0)           253:0    0     4G  0 lvm   /boot
+> ?   ??md0_vg-vol1 (dm-1)            253:1    0    16G  0 lvm   /mnt/system
+> ??sdb2                                8:18   0   1.8T  0 part  
+>   ??md1                               9:1    0   1.8T  0 raid1 
+>     ??6366c931_vg-lv163c50af (dm-2) 253:2    0   1.8T  0 lvm   /mnt/pools/A/A0
+> mtdblock0                            31:0    0   504K  0 disk  
+> mtdblock1                            31:1    0     4K  0 disk  
+> mtdblock2                            31:2    0     4K  0 disk  
+> 
+> df(1) says:
+> 
+> Filesystem                          1K-blocks   Used  Available Use% Mounted on
+> rootfs                                  51200   4216      46984   9% /
+> /dev/root.old                           11339   3185       8154  29% /initrd
+> none                                    51200   4216      46984   9% /
+> /dev/md0_vg/BFDlv                     4128448 714776    3203960  19% /boot
+> /dev/loop0                             691776 619873      71903  90% /mnt/apps
+> /dev/loop1                               7657   1010       6238  14% /mnt/etc
+> none                                     7657   1010       6238  14% /etc
+> /dev/loop2                                128    128          0 100% /oem
+> tmpfs                                   24776     80      24696   1% /run
+> tmpfs                                    5120      4       5116   1% /run/lock
+> tmpfs                                   49540      0      49540   0% /run/shm
+> /dev/mapper/md0_vg-vol1              16493480 975280   15350636   6% /mnt/system
+> /dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /mnt/pools/A/A0
+> /dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/Backups
+> /dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/Documents
+> /dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/Movies
+> /dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/Music
+> /dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/SharedMedia
+> /dev/mapper/6366c931_vg-lv163c50af 1902053516 202188 1901851328   1% /nfs/Pictures
+> 
+> After I switched from RAID1 to "none":
+> 
+> NAME                                MAJ:MIN RM   SIZE RO TYPE   MOUNTPOINT
+> loop0                                 7:0    0 680.4M  1 loop   /mnt/apps
+> loop1                                 7:1    0     8M  0 loop   /mnt/etc
+> loop2                                 7:2    0   100K  0 loop   /oem
+> sda                                   8:0    0   1.8T  0 disk   
+> ??sda1                                8:1    0    20G  0 part   
+> ? ??md0                               9:0    0    20G  0 raid1  
+> ?   ??md0_vg-BFDlv (dm-0)           253:0    0     4G  0 lvm    /boot
+> ?   ??md0_vg-vol1 (dm-1)            253:1    0    16G  0 lvm    /mnt/system
+> ??sda2                                8:2    0   1.8T  0 part   
+>   ??md1                               9:1    0   3.6T  0 linear 
+>     ??529a853a_vg-lv1ac0e3be (dm-2) 253:2    0   3.6T  0 lvm    /mnt/pools/A/A0
+> sdb                                   8:16   0   1.8T  0 disk   
+> ??sdb2                                8:18   0   1.8T  0 part   
+> ? ??md1                               9:1    0   3.6T  0 linear 
+> ?   ??529a853a_vg-lv1ac0e3be (dm-2) 253:2    0   3.6T  0 lvm    /mnt/pools/A/A0
+> ??sdb1                                8:17   0    20G  0 part   
+>   ??md0                               9:0    0    20G  0 raid1  
+>     ??md0_vg-BFDlv (dm-0)           253:0    0     4G  0 lvm    /boot
+>     ??md0_vg-vol1 (dm-1)            253:1    0    16G  0 lvm    /mnt/system
+> mtdblock0                            31:0    0   504K  0 disk   
+> mtdblock1                            31:1    0     4K  0 disk   
+> mtdblock2                            31:2    0     4K  0 disk   
+
+That does in fact look like with none as the setting, it is just adding
+each disk to the volumegroup for the pool.
+
+It would seem with this design, the only option that will tolerate
+disk failures is RAID1.  The others will have complete data loss if any
+disk fails.  RAID0 gives extra speed but requires identical disks,
+while none does not give extra speed and allows different disk sizes to
+be in use.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Fri Feb 20 19:29:59 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 20 Feb 2015 14:29:59 -0500
+Subject: [GTALUG] Fw: [Cryptography] Lenovo laptops with preloaded
+ adware and an evil CA
+In-Reply-To: <20150220014116.6037648.33221.16678@gmail.com>
+References: <20150220014116.6037648.33221.16678@gmail.com>
+Message-ID: <20150220192959.GN30246@csclub.uwaterloo.ca>
+
+On Thu, Feb 19, 2015 at 08:41:16PM -0500, William Muriithi wrote:
+> ?Evening,?
+> 
+> Forwarding this to this list as I am aware thinkpad is popular. Looks though like Lenovo is shipping a really dirty adware?
+> 
+> How can they have fallen for this?
+
+Well they never did ship it on thinkpads, only on select consumer models
+(which thinkpads are not).
+
+-- 
+Len Sorensen
+
+From o1bigtenor at gmail.com  Fri Feb 20 20:28:57 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Fri, 20 Feb 2015 14:28:57 -0600
+Subject: [GTALUG] Raid 10 repair question
+In-Reply-To: <20150220192242.GK30246@csclub.uwaterloo.ca>
+References: <CAPpdf5_XTTxdZXsPPMnv0HNQqFBeBYhsu9nrHDf2tdvmVod+bg@mail.gmail.com>
+ <20150217221933.GF30246@csclub.uwaterloo.ca>
+ <CAPpdf59ZdBP-es_Y0+3gQPMU8UimQp3+EOJ68TQ8r3mx0Co4cQ@mail.gmail.com>
+ <20150219153002.GG30246@csclub.uwaterloo.ca>
+ <CAPpdf5-eofhsffpvky8rW4pSYKQz+9EKXoxfHcAKFmTiyC2xOA@mail.gmail.com>
+ <20150220192242.GK30246@csclub.uwaterloo.ca>
+Message-ID: <CAPpdf59ScCyHxJhjYz0Y-E=Lz95LrHomP2S8ZFvCMk-Ax+YtHA@mail.gmail.com>
+
+On Fri, Feb 20, 2015 at 1:22 PM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Thu, Feb 19, 2015 at 04:14:04PM -0600, o1bigtenor wrote:
+> > On Thu, Feb 19, 2015 at 9:30 AM, Lennart Sorensen <
+> > lsorense at csclub.uwaterloo.ca> wrote:
+> >
+> > > On Tue, Feb 17, 2015 at 05:04:16PM -0600, o1bigtenor wrote:
+> > > > Now I used gdisk to set things up so likely that is where I will
+> need to
+> > > > start - - - hmmmmmmmmmmm.
+> > > >
+> > > > Has anyone done anything like this in the somewhat recent past?
+> > > >
+> > > > (Wondering if when disk is partitioned that mdadm will happily absorb
+> > > that
+> > > > disk into the array. Likely will need another reboot too!)
+> > >
+> > > There should be zero reboots required for this.
+> > >
+> > > Most partition tools do a partition table reread automatically when you
+> > > exit, or you can use 'hdparm -z /dev/sdX' to do it.  If
+> /proc/partitions
+> > > shows the new sizes, you are good to go.
+> > >
+> >
+> > Is there a way to partition the drive in a running system?
+> >
+> > The only way that I know of is to reboot onto a rescue disk and use
+> gparted
+> > there
+> > to partition the drive.
+> >
+> > I have not been able to find anything using duckduck nor ms google.
+> >
+> > A complete back is just finishing as I write this.
+> >
+> > Thanking those that have contributed to the conversation for their
+> > assistance!!
+>
+> Well cfdisk, parted, fdisk, gdisk, etc.
+>
+> Somewhat depends if you need GPT or MBR style partition table.
+>
+>
+Needs to be a GPT style partition table.
+Its on a UEFI system and that was the only way I could get things working.
+I got quite used to fdisk and gdisk is just different enough that I am
+still a
+little careful. I don't really enjoy those long teaching moments anymore!
+
+TIA
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150220/c86d257d/attachment.html>
+
+From opengeometry at yahoo.ca  Fri Feb 20 20:42:44 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Fri, 20 Feb 2015 15:42:44 -0500
+Subject: [GTALUG] Raid 10 repair question
+In-Reply-To: <20150220192358.GL30246@csclub.uwaterloo.ca>
+References: <CAPpdf5_XTTxdZXsPPMnv0HNQqFBeBYhsu9nrHDf2tdvmVod+bg@mail.gmail.com>
+ <20150217221933.GF30246@csclub.uwaterloo.ca>
+ <CAPpdf59ZdBP-es_Y0+3gQPMU8UimQp3+EOJ68TQ8r3mx0Co4cQ@mail.gmail.com>
+ <20150219153002.GG30246@csclub.uwaterloo.ca>
+ <CAPpdf5-eofhsffpvky8rW4pSYKQz+9EKXoxfHcAKFmTiyC2xOA@mail.gmail.com>
+ <54E66C14.3010702@alteeve.ca>
+ <20150220192358.GL30246@csclub.uwaterloo.ca>
+Message-ID: <20150220204244.GA14863@node1.localdomain>
+
+On Fri, Feb 20, 2015 at 02:23:58PM -0500, Lennart Sorensen wrote:
+> If it is in use, you need to reboot to get the partition change to take.
+
+Or, 
+    partprobe /dev/sdx
+at least on my Slackware.
+
+From opengeometry at yahoo.ca  Fri Feb 20 20:53:09 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Fri, 20 Feb 2015 15:53:09 -0500
+Subject: [GTALUG] RAID and IX-2-dl
+In-Reply-To: <20150220051045.GB9704@node1.localdomain>
+References: <alpine.LRH.2.02.1502191618580.27871@redclaw.mimosa.com>
+ <20150220051045.GB9704@node1.localdomain>
+Message-ID: <20150220205309.GA14967@node1.localdomain>
+
+On Fri, Feb 20, 2015 at 12:10:45AM -0500, William Park wrote:
+> Looks like each disk has 2 partitions, 
+>     /dev/sd[ab]1 --> /dev/md0 --> raid1 (1.8TB)
+
+Typo.......................................^^^^^\__ 20GB
+
+>     /dev/sd[ab]2 --> /dev/md1 --> raid1 (1.8TB) or linear (3.6TB)
+> So, "none" is linear array.  Strange, because "none" is usually
+> individual drive, and it usually says "linear" if it is linear.
+
+From cbbrowne at gmail.com  Fri Feb 20 21:40:45 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Fri, 20 Feb 2015 16:40:45 -0500
+Subject: [GTALUG] Connection Refused
+In-Reply-To: <54E78328.6090108@gmail.com>
+References: <1424404741.2765.9.camel@gmail.com>
+ <20150220184243.GA24822@vex.net> <54E78328.6090108@gmail.com>
+Message-ID: <CAFNqd5XW7t757uKRBPvEw3X7G46GyurH4oLwaBd0Rhg9PCOe7g@mail.gmail.com>
+
+On 20 February 2015 at 13:55, Randy Jonasz <rjonasz at gmail.com> wrote:
+> Thanks Steve!  That's the problem.  I can telnet to my ISP's smtp server but
+> not any other.
+>
+> Now I'll have to phone my ISP when I get home and have them change their
+> port blocks.  Wish me luck.
+
+"Open port 25" disappeared at around the time of the Code Red worm
+(http://en.wikipedia.org/wiki/Code_Red_%28computer_worm%29)
+
+When infected hosts sending out spam got to be a gigantic plague, it became
+common for ISPs to block port 25 to cut down on the amount of spam they
+were forwarding.
+
+I seriously doubt that your ISP will be willing to change their port blocks.
+They will most likely say something about "blah, blah, security best practice."
+
+An actual reference to claimed security best practice is thus:
+  <https://www.m3aawg.org/sites/maawg/files/news/MAAWG_Port25rec0511.pdf>
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From o1bigtenor at gmail.com  Fri Feb 20 22:18:38 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Fri, 20 Feb 2015 16:18:38 -0600
+Subject: [GTALUG] Raid 10 repair question
+In-Reply-To: <20150220204244.GA14863@node1.localdomain>
+References: <CAPpdf5_XTTxdZXsPPMnv0HNQqFBeBYhsu9nrHDf2tdvmVod+bg@mail.gmail.com>
+ <20150217221933.GF30246@csclub.uwaterloo.ca>
+ <CAPpdf59ZdBP-es_Y0+3gQPMU8UimQp3+EOJ68TQ8r3mx0Co4cQ@mail.gmail.com>
+ <20150219153002.GG30246@csclub.uwaterloo.ca>
+ <CAPpdf5-eofhsffpvky8rW4pSYKQz+9EKXoxfHcAKFmTiyC2xOA@mail.gmail.com>
+ <54E66C14.3010702@alteeve.ca>
+ <20150220192358.GL30246@csclub.uwaterloo.ca>
+ <20150220204244.GA14863@node1.localdomain>
+Message-ID: <CAPpdf58-Z+428gDuU0uZxWjhTkGQUNhRKF+5ae8GEsx7Jcn0KQ@mail.gmail.com>
+
+On Fri, Feb 20, 2015 at 2:42 PM, William Park <opengeometry at yahoo.ca> wrote:
+
+> On Fri, Feb 20, 2015 at 02:23:58PM -0500, Lennart Sorensen wrote:
+> > If it is in use, you need to reboot to get the partition change to take.
+>
+> Or,
+>     partprobe /dev/sdx
+> at least on my Slackware.
+>
+
+Have been looking at what I can find on this.
+
+Will respond with what I did after the fact!
+
+Thanking those that have responded to my query!
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150220/6d7a5ae1/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Fri Feb 20 22:45:36 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 20 Feb 2015 17:45:36 -0500
+Subject: [GTALUG] Connection Refused
+In-Reply-To: <CAFNqd5XW7t757uKRBPvEw3X7G46GyurH4oLwaBd0Rhg9PCOe7g@mail.gmail.com>
+References: <1424404741.2765.9.camel@gmail.com>
+ <20150220184243.GA24822@vex.net> <54E78328.6090108@gmail.com>
+ <CAFNqd5XW7t757uKRBPvEw3X7G46GyurH4oLwaBd0Rhg9PCOe7g@mail.gmail.com>
+Message-ID: <20150220224536.GO30246@csclub.uwaterloo.ca>
+
+On Fri, Feb 20, 2015 at 04:40:45PM -0500, Christopher Browne wrote:
+> "Open port 25" disappeared at around the time of the Code Red worm
+> (http://en.wikipedia.org/wiki/Code_Red_%28computer_worm%29)
+> 
+> When infected hosts sending out spam got to be a gigantic plague, it became
+> common for ISPs to block port 25 to cut down on the amount of spam they
+> were forwarding.
+> 
+> I seriously doubt that your ISP will be willing to change their port blocks.
+> They will most likely say something about "blah, blah, security best practice."
+> 
+> An actual reference to claimed security best practice is thus:
+>   <https://www.m3aawg.org/sites/maawg/files/news/MAAWG_Port25rec0511.pdf>
+
+Well from what I have found, teksavvy at least blocks port 25 outbound
+for dynamic IP users, and does not block it for static IP users (unless
+they get spam complaints for that specific IP in which case they will
+add a block for that IP only).
+
+So that explains why it is not blocked for me at least.
+
+-- 
+Len Sorensen
+
+From rjonasz at gmail.com  Sat Feb 21 00:50:52 2015
+From: rjonasz at gmail.com (Randy Jonasz)
+Date: Fri, 20 Feb 2015 19:50:52 -0500
+Subject: [GTALUG] Connection Refused
+In-Reply-To: <20150220224536.GO30246@csclub.uwaterloo.ca>
+References: <1424404741.2765.9.camel@gmail.com>
+ <20150220184243.GA24822@vex.net> <54E78328.6090108@gmail.com>
+ <CAFNqd5XW7t757uKRBPvEw3X7G46GyurH4oLwaBd0Rhg9PCOe7g@mail.gmail.com>
+ <20150220224536.GO30246@csclub.uwaterloo.ca>
+Message-ID: <54E7D66C.8020903@gmail.com>
+
+
+> On Fri, Feb 20, 2015 at 04:40:45PM -0500, Christopher Browne wrote:
+>> "Open port 25" disappeared at around the time of the Code Red worm
+>> (http://en.wikipedia.org/wiki/Code_Red_%28computer_worm%29)
+>>
+>> When infected hosts sending out spam got to be a gigantic plague, it became
+>> common for ISPs to block port 25 to cut down on the amount of spam they
+>> were forwarding.
+>>
+>> I seriously doubt that your ISP will be willing to change their port blocks.
+>> They will most likely say something about "blah, blah, security best practice."
+
+Yeah, I got tired trying to explain to the tech rep at my ISP about what 
+I wanted so I just added a smtp port to postfix.  Now everything works.
+
+Thanks to everybody who responded.
+
+Randy
+
+From o1bigtenor at gmail.com  Sat Feb 21 03:18:33 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Fri, 20 Feb 2015 21:18:33 -0600
+Subject: [GTALUG] Raid 10 repair question
+In-Reply-To: <20150219153140.GH30246@csclub.uwaterloo.ca>
+References: <CAPpdf5_XTTxdZXsPPMnv0HNQqFBeBYhsu9nrHDf2tdvmVod+bg@mail.gmail.com>
+ <20150217221933.GF30246@csclub.uwaterloo.ca>
+ <CAPpdf59ZdBP-es_Y0+3gQPMU8UimQp3+EOJ68TQ8r3mx0Co4cQ@mail.gmail.com>
+ <54E3C9C0.4090609@alteeve.ca>
+ <CAPpdf5_-yu2UXEaRSYt9WjKhdWzRJPnB1+5dkUocEOnYQm7ctg@mail.gmail.com>
+ <20150219153140.GH30246@csclub.uwaterloo.ca>
+Message-ID: <CAPpdf5876Gx_0D+BPwqwb3Q3J=M_nDcs+QHqqB5FyBvEe1PfAw@mail.gmail.com>
+
+snip
+
+>
+> Well once you have partitioned the new disk you should be able to just do:
+>
+> mdadm --add /dev/md0 /dev/sdX1 (whatever X is for the new drive).
+>
+> Then /proc/mdstat should show it rebuilding the raid.
+>
+>
+Result:
+1. partitioned the drive using gparted (in the running system) to be sdf1
+       I did a boot into a rescue disk to check but it had worked on the
+running system. This was not listed as possible but the command worked!)
+2. read and read (a few times) the man page for mdadm
+       I was looking specifically at the commands -D -v --add as suggested
+by William
+       found the total lack of examples frustrating (a normal man page I
+think!)
+3.  took the command above, suggested by Len, and changed it somewhat to
+    #  mdadm -v --add /dev/md0 /dev/sdf1
+4.  checked the rebuilding by using
+    # vi /proc/mdstat
+
+Thank you to those who contributed!!
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150220/bba20f74/attachment.html>
+
