@@ -92,3 +92,237 @@ http://gtalug.org/mailman/listinfo/talk
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/operations/attachments/20150218/0f39e12f/attachment.html>
 
+From cbbrowne at gmail.com  Fri Feb 20 17:39:55 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Fri, 20 Feb 2015 12:39:55 -0500
+Subject: [GTALUG-Ops] Plonking?
+Message-ID: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+
+For those unaware, Russell Reiter has been generating crazy-seeming
+ramblings on the talk list.  There are moments and parts that seem
+sensible enough, but then it heads crazy.
+
+I don't mind the occasional rant, as long as it doesn't head to being
+seriously offensive, but Russell has said SOME mean-ish things, and
+the rambling has been getting rather distracting.
+
+I got the impression that DCB might have deactivated Russell's
+subscription, but it seems not.
+
+I'll suggest the possibility here that it might be necessary to knock
+him off list.  I'm sad if it's necessary; he seems mostly harmless,
+it's "just" a distraction.  Or perhaps a moderator (we don't formally
+have one; have talked about the idea a bit) should have a side chat
+with him, and come to a conclusion on what to do next.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From me at mylesbraithwaite.com  Fri Feb 20 17:45:41 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 20 Feb 2015 12:45:41 -0500
+Subject: [GTALUG-Ops] Plonking?
+In-Reply-To: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+References: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+Message-ID: <54E772C5.1090104@mylesbraithwaite.com>
+
+Christopher Browne wrote:
+> For those unaware, Russell Reiter has been generating crazy-seeming
+> ramblings on the talk list.  There are moments and parts that seem
+> sensible enough, but then it heads crazy.
+>
+> I don't mind the occasional rant, as long as it doesn't head to being
+> seriously offensive, but Russell has said SOME mean-ish things, and
+> the rambling has been getting rather distracting.
+>
+> I got the impression that DCB might have deactivated Russell's
+> subscription, but it seems not.
+>
+> I'll suggest the possibility here that it might be necessary to knock
+> him off list.  I'm sad if it's necessary; he seems mostly harmless,
+> it's "just" a distraction.  Or perhaps a moderator (we don't formally
+> have one; have talked about the idea a bit) should have a side chat
+> with him, and come to a conclusion on what to do next.
+
+I set his moderation flag to on until we decide what to do.
+
+From mike.kallies at gmail.com  Fri Feb 20 19:28:15 2015
+From: mike.kallies at gmail.com (Mike)
+Date: Fri, 20 Feb 2015 14:28:15 -0500
+Subject: [GTALUG-Ops] Plonking?
+In-Reply-To: <54E772C5.1090104@mylesbraithwaite.com>
+References: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+ <54E772C5.1090104@mylesbraithwaite.com>
+Message-ID: <AA7A1921-136D-473A-84E2-1F03ED861FD7@gmail.com>
+
+Sounds good to me
+
+I haven't followed, the only concerning stuff I saw was:
+
+- way off topic
+- s and f bombs, but not directed at anyone
+
+do we have an example of the inflammatory email?
+
+IMHO, We should keep him on moderate and send him a private email.
+
+Mike
+
+
+
+
+> On Feb 20, 2015, at 12:45 PM, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+> 
+> Christopher Browne wrote:
+>> For those unaware, Russell Reiter has been generating crazy-seeming
+>> ramblings on the talk list.  There are moments and parts that seem
+>> sensible enough, but then it heads crazy.
+>> 
+>> I don't mind the occasional rant, as long as it doesn't head to being
+>> seriously offensive, but Russell has said SOME mean-ish things, and
+>> the rambling has been getting rather distracting.
+>> 
+>> I got the impression that DCB might have deactivated Russell's
+>> subscription, but it seems not.
+>> 
+>> I'll suggest the possibility here that it might be necessary to knock
+>> him off list.  I'm sad if it's necessary; he seems mostly harmless,
+>> it's "just" a distraction.  Or perhaps a moderator (we don't formally
+>> have one; have talked about the idea a bit) should have a side chat
+>> with him, and come to a conclusion on what to do next.
+> 
+> I set his moderation flag to on until we decide what to do.
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+From me at mylesbraithwaite.com  Fri Feb 20 19:54:52 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 20 Feb 2015 14:54:52 -0500
+Subject: [GTALUG-Ops] Plonking?
+In-Reply-To: <AA7A1921-136D-473A-84E2-1F03ED861FD7@gmail.com>
+References: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+ <54E772C5.1090104@mylesbraithwaite.com>
+ <AA7A1921-136D-473A-84E2-1F03ED861FD7@gmail.com>
+Message-ID: <54E7910C.8010709@mylesbraithwaite.com>
+
+Mike wrote:
+> IMHO, We should keep him on moderate and send him a private email.
+
+Agreed. Can we move this conversation over to the <board at gtalug.org>
+list. I would prefer this discussion not be publicly readable.
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+
+From davec-b at rogers.com  Sat Feb 21 01:25:39 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Fri, 20 Feb 2015 20:25:39 -0500
+Subject: [GTALUG-Ops] Plonking?
+In-Reply-To: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+References: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+Message-ID: <54E7DE93.1060702@rogers.com>
+
+On 02/20/2015 12:39 PM, Christopher Browne wrote:
+> For those unaware, Russell Reiter has been generating crazy-seeming
+> ramblings on the talk list.  There are moments and parts that seem
+> sensible enough, but then it heads crazy.
+>
+> I don't mind the occasional rant, as long as it doesn't head to being
+> seriously offensive, but Russell has said SOME mean-ish things, and
+> the rambling has been getti ng rather distracting.
+>
+> I got the impression that DCB might have deactivated Russell's
+> subscription, but it seems not.
+
+Nope, I kill-filed him (;-))
+>
+> I'll suggest  the possibility here that it might be necessary to knock
+> him off list.  I'm sad if it's necessary; he seems mostly harmless,
+> it's "just" a distraction.  Or perhaps a moderator (we don't formally
+> have one; have talked about the idea a bit) should have a side chat
+> with him, and come to a conclusion on what to do next.
+
+I might chose to talk to him as a private person. Does that sound like 
+something that might help?
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From cbbrowne at gmail.com  Sat Feb 21 03:07:00 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Fri, 20 Feb 2015 22:07:00 -0500
+Subject: [GTALUG-Ops] Plonking?
+In-Reply-To: <54E7DE93.1060702@rogers.com>
+References: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+ <54E7DE93.1060702@rogers.com>
+Message-ID: <CAFNqd5XDQm6JiDmC0CAGTnu4F3fAxMkWjmu_cE1CHUwKTCP6rw@mail.gmail.com>
+
+On 20 February 2015 at 20:25, David Collier-Brown <davec-b at rogers.com> wrote:
+> On 02/20/2015 12:39 PM, Christopher Browne wrote:
+>>
+>> For those unaware, Russell Reiter has been generating crazy-seeming
+>> ramblings on the talk list.  There are moments and parts that seem
+>> sensible enough, but then it heads crazy.
+>>
+>> I don't mind the occasional rant, as long as it doesn't head to being
+>> seriously offensive, but Russell has said SOME mean-ish things, and
+>> the rambling has been getti ng rather distracting.
+>>
+>> I got the impression that DCB might have deactivated Russell's
+>> subscription, but it seems not.
+>
+> Nope, I kill-filed him (;-))
+
+I kinda guessed that; that is what you described.
+
+>> I'll suggest  the possibility here that it might be necessary to knock
+>> him off list.  I'm sad if it's necessary; he seems mostly harmless,
+>> it's "just" a distraction.  Or perhaps a moderator (we don't formally
+>> have one; have talked about the idea a bit) should have a side chat
+>> with him, and come to a conclusion on what to do next.
+>
+>
+> I might chose to talk to him as a private person. Does that sound like
+> something that might help?
+
+If anything is to help, I'd think that to be about the best option.
+
+If it helps, great, if not, well, maybe he gets more forcibly
+plonked, and we live with that.  It's preferable for gentle words
+to resolve the matter.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From mike.kallies at gmail.com  Sat Feb 21 03:18:10 2015
+From: mike.kallies at gmail.com (Mike Kallies)
+Date: Fri, 20 Feb 2015 22:18:10 -0500
+Subject: [GTALUG-Ops] Plonking?
+In-Reply-To: <54E7DE93.1060702@rogers.com>
+References: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+ <54E7DE93.1060702@rogers.com>
+Message-ID: <CAPYt=DEW1dMuQS_3CbjohbKVmw6r=hpvm2xghmORDRWGzKXbhg@mail.gmail.com>
+
+On Fri, Feb 20, 2015 at 8:25 PM, David Collier-Brown <davec-b at rogers.com> wrote:
+> I might chose to talk to him as a private person. Does that sound like
+> something that might help?
+
+I think so.  We should also leave him in moderation-land rather than
+kill-file.  Anything like what he's been posting should be dropped.
+
+The posts make me think that something is *wrong*.  Better to give him
+a chance to come back later when he's feeling better.
+
+No idea what to say though, so it's your call. :-(
+
+Has he shown up at meetings?  Have we met him?
+
+-Mike
+
