@@ -7845,3 +7845,82 @@ Cheers,
 Randy
 
 
+From evan at telly.org  Sun Feb 22 20:05:59 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Sun, 22 Feb 2015 15:05:59 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAFNqd5VrHaasE0=1B3bp9y1fw3Zew+aCjrD5Wx4_V94KVuCkig@mail.gmail.com>
+References: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+ <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+ <20150217175536.GD30246@csclub.uwaterloo.ca>
+ <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+ <20150219154309.GI30246@csclub.uwaterloo.ca>
+ <CAPik5Mx4sZjFfjt9gFuZ3suusWY12TTtPv08G5io50KRG1iGdg@mail.gmail.com>
+ <54E642D3.4070409@rogers.com>
+ <CAMguqh2PthHeZ3vc8CUnHW2XbDOkdkyhLAviyQb6rsYCrYT3HQ@mail.gmail.com>
+ <CAFNqd5VrHaasE0=1B3bp9y1fw3Zew+aCjrD5Wx4_V94KVuCkig@mail.gmail.com>
+Message-ID: <CAMguqh0RFe9Ee5YkBTC_0t+2YQ-gzqkc0E2OHMh7isata1QX4A@mail.gmail.com>
+
+As I strive to find myself enough time to properly contribute further to
+the issue, I offer fellow readers this link.
+
+http://www.theregister.co.uk/2014/12/30/andressen_cyanogen_oneplus_micromax_india_google/
+
+While I don't agree with the assertion that Cyanogen is "a company which
+hoped to do for Android what Red Hat had done for Linux", the article
+offers some good follow-the-money research, providing some history that
+preceded Microsoft's involvement. It also offers some insight about the
+opportunities and challenges facing those trying to create
+Google-services-free versions of Android.
+
+Cheers,
+
+- Evan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150222/46cedb9d/attachment.html>
+
+From scruss at gmail.com  Sun Feb 22 21:59:48 2015
+From: scruss at gmail.com (Stewart Russell)
+Date: Sun, 22 Feb 2015 16:59:48 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAMguqh0RFe9Ee5YkBTC_0t+2YQ-gzqkc0E2OHMh7isata1QX4A@mail.gmail.com>
+References: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+ <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+ <20150217175536.GD30246@csclub.uwaterloo.ca>
+ <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+ <20150219154309.GI30246@csclub.uwaterloo.ca>
+ <CAPik5Mx4sZjFfjt9gFuZ3suusWY12TTtPv08G5io50KRG1iGdg@mail.gmail.com>
+ <54E642D3.4070409@rogers.com>
+ <CAMguqh2PthHeZ3vc8CUnHW2XbDOkdkyhLAviyQb6rsYCrYT3HQ@mail.gmail.com>
+ <CAFNqd5VrHaasE0=1B3bp9y1fw3Zew+aCjrD5Wx4_V94KVuCkig@mail.gmail.com>
+ <CAMguqh0RFe9Ee5YkBTC_0t+2YQ-gzqkc0E2OHMh7isata1QX4A@mail.gmail.com>
+Message-ID: <CAAsTreC53JKwAO+9YSm0uP2cXo5jTKj3Ax02+pqconYbWkek=w@mail.gmail.com>
+
+On Feb 22, 2015 3:06 PM, "Evan Leibovitch" <evan at telly.org> wrote:
+>
+>
+http://www.theregister.co.uk/2014/12/30/andressen_cyanogen_oneplus_micromax_india_google/
+
+Thanks for posting that, Evan. As an otherwise happy OnePlus user, I'm a
+bit peeved that my phone will likely have no security patches until this
+legal spat blows over. I don't really want to be a walking exploit, if I
+can help it.
+
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150222/cafcfc35/attachment.html>
+
