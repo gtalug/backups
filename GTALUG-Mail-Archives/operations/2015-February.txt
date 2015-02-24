@@ -1,0 +1,708 @@
+From me at mylesbraithwaite.com  Mon Feb  2 15:31:24 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 2 Feb 2015 10:31:24 -0500
+Subject: [GTALUG-Ops] Please link/share/retweet the following links to this
+	month's GTALUG meeting.
+Message-ID: <CA+hskZNpVgvS5RevspavvTp6v3pPjYXygOJ3yYzvQW+Na5zhNA@mail.gmail.com>
+
+<https://www.facebook.com/events/823514271041441/>
+
+<https://twitter.com/gtalug/status/562266250156707841>
+
+<https://plus.google.com/b/110858902106738937194/events/cvj6s84l2dvkqd0jelq0d3m8nog>
+
+From me at mylesbraithwaite.com  Tue Feb 10 16:05:17 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 10 Feb 2015 11:05:17 -0500
+Subject: [GTALUG-Ops] Twitter Follower/Tweet Analytics for @gtalug
+Message-ID: <54DA2C3D.1040601@mylesbraithwaite.com>
+
+Twitter gives follower analytic now.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: Attached Message Part
+Type: image/jpeg
+Size: 218967 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20150210/d1a850a2/attachment.jpe>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: tweet_activity_metrics.csv
+Type: application/vnd.ms-excel
+Size: 7679 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20150210/d1a850a2/attachment.xlb>
+
+From davec-b at rogers.com  Wed Feb 18 15:58:10 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Wed, 18 Feb 2015 10:58:10 -0500
+Subject: [GTALUG-Ops] Fwd: Re: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAPik5MxNKJjPFRV4VL0RZ7+a726LxuffKU+Upku+2p8U-Yzn0g@mail.gmail.com>
+References: <CAPik5MxNKJjPFRV4VL0RZ7+a726LxuffKU+Upku+2p8U-Yzn0g@mail.gmail.com>
+Message-ID: <54E4B692.4020602@rogers.com>
+
+Methinks mailing list readers need per-person killfiles.
+I'm a birdwatcher, admittedly, but I rarely see woodpeckers *inside* 
+people's heads (;-))
+
+--dave
+
+-------- Forwarded Message --------
+Subject: 	Re: [GTALUG] interesting new approach to forking
+Date: 	Wed, 18 Feb 2015 08:30:36 -0600
+From: 	Russell Reiter <rreiter91 at gmail.com>
+Reply-To: 	GTALUG Talk <talk at gtalug.org>
+To: 	GTALUG Talk <talk at gtalug.org>
+
+
+
+<SNIP MOD STUFF>
+>> Look at how stuxnet escaped containment. The real question is who
+>> embedded it in the PLC's in the first place. Note the reports said it
+>> was spread from the isolated networks not to them.
+>
+> I hear (haven't seen the details) that the NSA may have gotten code
+> into disk drive firmware, which puts them pretty deep on any machine
+> with a disk drive.  But that's a pretty different story.
+
+I have two theories, either the Sweed's snuck it through weeds of AC
+power after the poem of Copenhagen or the DTMF phreakers did it by a
+thorny crafty RANDom preload. You'd have to check one of the pat nt
+zero con scripts handlers to find that one out. If you can't trust
+your compiler, what can you trust? I'm no luddite but I know full well
+why he did it.
+
+Trade or Craft, weaving is a skill that we all need the work of the
+Weavers, if we want to mend old things as well as build new ones.
+
+So when someone comes into my neighbour hood drop in and tells me I've
+had a woodpecker in my head since 1976, I look at them with a straight
+face and say Soviet? or American? i mean what else can you say to
+that?
+
+
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150218/0f39e12f/attachment.html>
+
+From cbbrowne at gmail.com  Fri Feb 20 17:39:55 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Fri, 20 Feb 2015 12:39:55 -0500
+Subject: [GTALUG-Ops] Plonking?
+Message-ID: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+
+For those unaware, Russell Reiter has been generating crazy-seeming
+ramblings on the talk list.  There are moments and parts that seem
+sensible enough, but then it heads crazy.
+
+I don't mind the occasional rant, as long as it doesn't head to being
+seriously offensive, but Russell has said SOME mean-ish things, and
+the rambling has been getting rather distracting.
+
+I got the impression that DCB might have deactivated Russell's
+subscription, but it seems not.
+
+I'll suggest the possibility here that it might be necessary to knock
+him off list.  I'm sad if it's necessary; he seems mostly harmless,
+it's "just" a distraction.  Or perhaps a moderator (we don't formally
+have one; have talked about the idea a bit) should have a side chat
+with him, and come to a conclusion on what to do next.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From me at mylesbraithwaite.com  Fri Feb 20 17:45:41 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 20 Feb 2015 12:45:41 -0500
+Subject: [GTALUG-Ops] Plonking?
+In-Reply-To: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+References: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+Message-ID: <54E772C5.1090104@mylesbraithwaite.com>
+
+Christopher Browne wrote:
+> For those unaware, Russell Reiter has been generating crazy-seeming
+> ramblings on the talk list.  There are moments and parts that seem
+> sensible enough, but then it heads crazy.
+>
+> I don't mind the occasional rant, as long as it doesn't head to being
+> seriously offensive, but Russell has said SOME mean-ish things, and
+> the rambling has been getting rather distracting.
+>
+> I got the impression that DCB might have deactivated Russell's
+> subscription, but it seems not.
+>
+> I'll suggest the possibility here that it might be necessary to knock
+> him off list.  I'm sad if it's necessary; he seems mostly harmless,
+> it's "just" a distraction.  Or perhaps a moderator (we don't formally
+> have one; have talked about the idea a bit) should have a side chat
+> with him, and come to a conclusion on what to do next.
+
+I set his moderation flag to on until we decide what to do.
+
+From mike.kallies at gmail.com  Fri Feb 20 19:28:15 2015
+From: mike.kallies at gmail.com (Mike)
+Date: Fri, 20 Feb 2015 14:28:15 -0500
+Subject: [GTALUG-Ops] Plonking?
+In-Reply-To: <54E772C5.1090104@mylesbraithwaite.com>
+References: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+ <54E772C5.1090104@mylesbraithwaite.com>
+Message-ID: <AA7A1921-136D-473A-84E2-1F03ED861FD7@gmail.com>
+
+Sounds good to me
+
+I haven't followed, the only concerning stuff I saw was:
+
+- way off topic
+- s and f bombs, but not directed at anyone
+
+do we have an example of the inflammatory email?
+
+IMHO, We should keep him on moderate and send him a private email.
+
+Mike
+
+
+
+
+> On Feb 20, 2015, at 12:45 PM, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+> 
+> Christopher Browne wrote:
+>> For those unaware, Russell Reiter has been generating crazy-seeming
+>> ramblings on the talk list.  There are moments and parts that seem
+>> sensible enough, but then it heads crazy.
+>> 
+>> I don't mind the occasional rant, as long as it doesn't head to being
+>> seriously offensive, but Russell has said SOME mean-ish things, and
+>> the rambling has been getting rather distracting.
+>> 
+>> I got the impression that DCB might have deactivated Russell's
+>> subscription, but it seems not.
+>> 
+>> I'll suggest the possibility here that it might be necessary to knock
+>> him off list.  I'm sad if it's necessary; he seems mostly harmless,
+>> it's "just" a distraction.  Or perhaps a moderator (we don't formally
+>> have one; have talked about the idea a bit) should have a side chat
+>> with him, and come to a conclusion on what to do next.
+> 
+> I set his moderation flag to on until we decide what to do.
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+From me at mylesbraithwaite.com  Fri Feb 20 19:54:52 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 20 Feb 2015 14:54:52 -0500
+Subject: [GTALUG-Ops] Plonking?
+In-Reply-To: <AA7A1921-136D-473A-84E2-1F03ED861FD7@gmail.com>
+References: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+ <54E772C5.1090104@mylesbraithwaite.com>
+ <AA7A1921-136D-473A-84E2-1F03ED861FD7@gmail.com>
+Message-ID: <54E7910C.8010709@mylesbraithwaite.com>
+
+Mike wrote:
+> IMHO, We should keep him on moderate and send him a private email.
+
+Agreed. Can we move this conversation over to the <board at gtalug.org>
+list. I would prefer this discussion not be publicly readable.
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+
+From davec-b at rogers.com  Sat Feb 21 01:25:39 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Fri, 20 Feb 2015 20:25:39 -0500
+Subject: [GTALUG-Ops] Plonking?
+In-Reply-To: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+References: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+Message-ID: <54E7DE93.1060702@rogers.com>
+
+On 02/20/2015 12:39 PM, Christopher Browne wrote:
+> For those unaware, Russell Reiter has been generating crazy-seeming
+> ramblings on the talk list.  There are moments and parts that seem
+> sensible enough, but then it heads crazy.
+>
+> I don't mind the occasional rant, as long as it doesn't head to being
+> seriously offensive, but Russell has said SOME mean-ish things, and
+> the rambling has been getti ng rather distracting.
+>
+> I got the impression that DCB might have deactivated Russell's
+> subscription, but it seems not.
+
+Nope, I kill-filed him (;-))
+>
+> I'll suggest  the possibility here that it might be necessary to knock
+> him off list.  I'm sad if it's necessary; he seems mostly harmless,
+> it's "just" a distraction.  Or perhaps a moderator (we don't formally
+> have one; have talked about the idea a bit) should have a side chat
+> with him, and come to a conclusion on what to do next.
+
+I might chose to talk to him as a private person. Does that sound like 
+something that might help?
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From cbbrowne at gmail.com  Sat Feb 21 03:07:00 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Fri, 20 Feb 2015 22:07:00 -0500
+Subject: [GTALUG-Ops] Plonking?
+In-Reply-To: <54E7DE93.1060702@rogers.com>
+References: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+ <54E7DE93.1060702@rogers.com>
+Message-ID: <CAFNqd5XDQm6JiDmC0CAGTnu4F3fAxMkWjmu_cE1CHUwKTCP6rw@mail.gmail.com>
+
+On 20 February 2015 at 20:25, David Collier-Brown <davec-b at rogers.com> wrote:
+> On 02/20/2015 12:39 PM, Christopher Browne wrote:
+>>
+>> For those unaware, Russell Reiter has been generating crazy-seeming
+>> ramblings on the talk list.  There are moments and parts that seem
+>> sensible enough, but then it heads crazy.
+>>
+>> I don't mind the occasional rant, as long as it doesn't head to being
+>> seriously offensive, but Russell has said SOME mean-ish things, and
+>> the rambling has been getti ng rather distracting.
+>>
+>> I got the impression that DCB might have deactivated Russell's
+>> subscription, but it seems not.
+>
+> Nope, I kill-filed him (;-))
+
+I kinda guessed that; that is what you described.
+
+>> I'll suggest  the possibility here that it might be necessary to knock
+>> him off list.  I'm sad if it's necessary; he seems mostly harmless,
+>> it's "just" a distraction.  Or perhaps a moderator (we don't formally
+>> have one; have talked about the idea a bit) should have a side chat
+>> with him, and come to a conclusion on what to do next.
+>
+>
+> I might chose to talk to him as a private person. Does that sound like
+> something that might help?
+
+If anything is to help, I'd think that to be about the best option.
+
+If it helps, great, if not, well, maybe he gets more forcibly
+plonked, and we live with that.  It's preferable for gentle words
+to resolve the matter.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From mike.kallies at gmail.com  Sat Feb 21 03:18:10 2015
+From: mike.kallies at gmail.com (Mike Kallies)
+Date: Fri, 20 Feb 2015 22:18:10 -0500
+Subject: [GTALUG-Ops] Plonking?
+In-Reply-To: <54E7DE93.1060702@rogers.com>
+References: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+ <54E7DE93.1060702@rogers.com>
+Message-ID: <CAPYt=DEW1dMuQS_3CbjohbKVmw6r=hpvm2xghmORDRWGzKXbhg@mail.gmail.com>
+
+On Fri, Feb 20, 2015 at 8:25 PM, David Collier-Brown <davec-b at rogers.com> wrote:
+> I might chose to talk to him as a private person. Does that sound like
+> something that might help?
+
+I think so.  We should also leave him in moderation-land rather than
+kill-file.  Anything like what he's been posting should be dropped.
+
+The posts make me think that something is *wrong*.  Better to give him
+a chance to come back later when he's feeling better.
+
+No idea what to say though, so it's your call. :-(
+
+Has he shown up at meetings?  Have we met him?
+
+-Mike
+
+From davec-b at rogers.com  Sat Feb 21 13:49:45 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Sat, 21 Feb 2015 08:49:45 -0500
+Subject: [GTALUG-Ops] Plonking?
+In-Reply-To: <CAPYt=DEW1dMuQS_3CbjohbKVmw6r=hpvm2xghmORDRWGzKXbhg@mail.gmail.com>
+References: <CAFNqd5Xb8nmdOWKNd588xJrfsUkY_HpsVRVqB6kgvSXmahrs2w@mail.gmail.com>
+ <54E7DE93.1060702@rogers.com>
+ <CAPYt=DEW1dMuQS_3CbjohbKVmw6r=hpvm2xghmORDRWGzKXbhg@mail.gmail.com>
+Message-ID: <54E88CF9.707@rogers.com>
+
+On 02/20/2015 10:18 PM, Mike Kallies wrote:
+> On Fri, Feb 20, 2015 at 8:25 PM, David Collier-Brown <davec-b at rogers.com> wrote:
+>> I might chose to talk to him as a private person. Does that sound like
+>> something that might help?
+> I think so.  We should also leave him in moderation-land rather than
+> kill-file.  Anything like what he's been posting should be dropped.
+>
+> The posts make me think that something is *wrong*.  Better to give him
+> a chance to come back later when he's feeling better.
+>
+> No idea what to say though, so it's your call. :-(
+>
+> Has he shown up at meetings?  Have we met him?
+>
+> -Mike
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+
+I don't know if he comes out...
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150221/cf44ed84/attachment.html>
+
+From me at mylesbraithwaite.com  Mon Feb 23 14:06:59 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 23 Feb 2015 09:06:59 -0500
+Subject: [GTALUG-Ops] Operations meeting tonight at 7:30pm
+Message-ID: <CA+hskZOF=UxDnz+axYymobtYaaEhsSVSg4q9DiU8uW_aRZh7Wg@mail.gmail.com>
+
+<http://board.gtalug.org/2015-02-23/agenda.html>
+
+**READ THE AGENDA AS THE LOCATION HAS CHANGED!**
+
+From me at mylesbraithwaite.com  Mon Feb 23 19:13:40 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 23 Feb 2015 14:13:40 -0500
+Subject: [GTALUG-Ops] Fwd: talk post from rreiter91@gmail.com requires
+	approval
+In-Reply-To: <mailman.452.1424718632.3500.talk@gtalug.org>
+References: <mailman.452.1424718632.3500.talk@gtalug.org>
+Message-ID: <CA+hskZPX+Bg7of-Ri9bQaibmP6F3Ushab2hqy-wQd2ne7v0H3w@mail.gmail.com>
+
+Should I approve?
+
+
+---------- Forwarded message ----------
+From:  <talk-owner at gtalug.org>
+Date: Mon, Feb 23, 2015 at 2:10 PM
+Subject: talk post from rreiter91 at gmail.com requires approval
+To: talk-owner at gtalug.org
+
+
+As list administrator, your authorization is requested for the
+following mailing list posting:
+
+    List:    talk at gtalug.org
+    From:    rreiter91 at gmail.com
+    Subject: High Objective Precession Precision Egress Robotics WAS:
+Re: [GTALUG] interesting new approach to forking
+    Reason:  Post to moderated list
+
+At your convenience, visit:
+
+    http://gtalug.org/mailman/admindb/talk
+
+to approve or deny the request.
+
+
+---------- Forwarded message ----------
+From: Russell Reiter <rreiter91 at gmail.com>
+To: GTALUG Talk <talk at gtalug.org>
+Cc: David Collier-Brown <davecb at spamcop.net>
+Date: Mon, 23 Feb 2015 13:10:29 -0600
+Subject: High Objective Precession Precision Egress Robotics WAS: Re:
+[GTALUG] interesting new approach to forking
+COLORD FIXED Y/N
+BASH IFS VAR FIX Y/N
+
+FIxing broken SEAL PUPS. I'm always cleaning up after other THINGS.
+
+APB:API:ELF:!KLF = ABCD EFG IJ K
+0K
+New Development SISD TANSTAAFFL = FSCK TR SU -
+F00F ERR IF F0F # there is no 00 error so it's BECOMES FOS not FOSS
+#BELTWAYBEHAVIOUR
+FIX AMA IS=THORN@ /OBJ REDACTED CRI
+Containment=LICOBARP:IRONMICEINTHEATTIC
+
+#It's a bug in IT. It doesn't parse things correctly, it's non
+reflective, arrogant in ITS cycle consumption and under HAACCP it's
+deadly to the process. KW UNKNOWN. Isn't that good enough reason to
+contain them little bit flippers now so I don't have to do it in my
+own Cowboy Way.
+
+ONEMISSISSIPPI##
+TWOMISSISSIPPI##
+THREEMISSISSIPPI
+F$ O$ R$ M$#.
+A=Circle(0)=HE##
+B=Circle(1)=SHE#
+C=Circle(2)=THEY
+D=Circle(3)=IT##
+CALL TONE ONE TONE LOC #ARMY ONE
+SET TONE LOC
+#Jimmy <+-50 HZ pleez
+ALLIEALLIEOUTSINFREE
+
+A stich in time saves nine billion.
+
+TARGET FIX BELTWAY BANDITS y/N
+QUERY TONE LOC1
+TODY TODOS TODAY
+AUTHCODE AT HE NA AE TN AS OL ON
+y/n
+On 2/22/15, Evan Leibovitch <evan at telly.org> wrote:
+> As I strive to find myself enough time to properly contribute further to
+> the issue, I offer fellow readers this link.
+>
+> http://www.theregister.co.uk/2014/12/30/andressen_cyanogen_oneplus_micromax_india_google/
+>
+> While I don't agree with the assertion that Cyanogen is "a company which
+> hoped to do for Android what Red Hat had done for Linux", the article
+> offers some good follow-the-money research, providing some history that
+> preceded Microsoft's involvement. It also offers some insight about the
+> opportunities and challenges facing those trying to create
+> Google-services-free versions of Android.
+>
+> Cheers,
+>
+> - Evan
+>
+
+
+---------- Forwarded message ----------
+From: talk-request at gtalug.org
+To:
+Cc:
+Date: Mon, 23 Feb 2015 19:10:32 +0000
+Subject: confirm 7643c92c26be947f7096a7e17885ae0c2d461b27
+If you reply to this message, keeping the Subject: header intact,
+Mailman will discard the held message.  Do this if the message is
+spam.  If you reply to this message and include an Approved: header
+with the list password in it, the message will be approved for posting
+to the list.  The Approved: header can also appear in the first line
+of the body of the reply.
+
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+
+From alex at flamy.ca  Mon Feb 23 20:17:28 2015
+From: alex at flamy.ca (Alex Volkov)
+Date: Mon, 23 Feb 2015 15:17:28 -0500
+Subject: [GTALUG-Ops] Fwd: talk post from rreiter91@gmail.com
+	requires	approval
+Message-ID: <mailman.1.1424726616.3497.operations@gtalug.org>
+
+Unless there's some kind of humour I don't get, this is off topic, and not even remotely tangential offtopic.On Feb 23, 2015 2:13 PM, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+>
+> Should I approve? 
+>
+>
+> ---------- Forwarded message ---------- 
+> From:? <talk-owner at gtalug.org> 
+> Date: Mon, Feb 23, 2015 at 2:10 PM 
+> Subject: talk post from rreiter91 at gmail.com requires approval 
+> To: talk-owner at gtalug.org 
+>
+>
+> As list administrator, your authorization is requested for the 
+> following mailing list posting: 
+>
+> ??? List:??? talk at gtalug.org 
+> ??? From:??? rreiter91 at gmail.com 
+> ??? Subject: High Objective Precession Precision Egress Robotics WAS: 
+> Re: [GTALUG] interesting new approach to forking 
+> ??? Reason:? Post to moderated list 
+>
+> At your convenience, visit: 
+>
+> ??? http://gtalug.org/mailman/admindb/talk 
+>
+> to approve or deny the request. 
+>
+>
+> ---------- Forwarded message ---------- 
+> From: Russell Reiter <rreiter91 at gmail.com> 
+> To: GTALUG Talk <talk at gtalug.org> 
+> Cc: David Collier-Brown <davecb at spamcop.net> 
+> Date: Mon, 23 Feb 2015 13:10:29 -0600 
+> Subject: High Objective Precession Precision Egress Robotics WAS: Re: 
+> [GTALUG] interesting new approach to forking 
+> COLORD FIXED Y/N 
+> BASH IFS VAR FIX Y/N 
+>
+> FIxing broken SEAL PUPS. I'm always cleaning up after other THINGS. 
+>
+> APB:API:ELF:!KLF = ABCD EFG IJ K 
+> 0K 
+> New Development SISD TANSTAAFFL = FSCK TR SU - 
+> F00F ERR IF F0F # there is no 00 error so it's BECOMES FOS not FOSS 
+> #BELTWAYBEHAVIOUR 
+> FIX AMA IS=THORN@ /OBJ REDACTED CRI 
+> Containment=LICOBARP:IRONMICEINTHEATTIC 
+>
+> #It's a bug in IT. It doesn't parse things correctly, it's non 
+> reflective, arrogant in ITS cycle consumption and under HAACCP it's 
+> deadly to the process. KW UNKNOWN. Isn't that good enough reason to 
+> contain them little bit flippers now so I don't have to do it in my 
+> own Cowboy Way. 
+>
+> ONEMISSISSIPPI## 
+> TWOMISSISSIPPI## 
+> THREEMISSISSIPPI 
+> F$ O$ R$ M$#. 
+> A=Circle(0)=HE## 
+> B=Circle(1)=SHE# 
+> C=Circle(2)=THEY 
+> D=Circle(3)=IT## 
+> CALL TONE ONE TONE LOC #ARMY ONE 
+> SET TONE LOC 
+> #Jimmy <+-50 HZ pleez 
+> ALLIEALLIEOUTSINFREE 
+>
+> A stich in time saves nine billion. 
+>
+> TARGET FIX BELTWAY BANDITS y/N 
+> QUERY TONE LOC1 
+> TODY TODOS TODAY 
+> AUTHCODE AT HE NA AE TN AS OL ON 
+> y/n 
+> On 2/22/15, Evan Leibovitch <evan at telly.org> wrote: 
+> > As I strive to find myself enough time to properly contribute further to 
+> > the issue, I offer fellow readers this link. 
+> > 
+> > http://www.theregister.co.uk/2014/12/30/andressen_cyanogen_oneplus_micromax_india_google/ 
+> > 
+> > While I don't agree with the assertion that Cyanogen is "a company which 
+> > hoped to do for Android what Red Hat had done for Linux", the article 
+> > offers some good follow-the-money research, providing some history that 
+> > preceded Microsoft's involvement. It also offers some insight about the 
+> > opportunities and challenges facing those trying to create 
+> > Google-services-free versions of Android. 
+> > 
+> > Cheers, 
+> > 
+> > - Evan 
+> > 
+>
+>
+> ---------- Forwarded message ---------- 
+> From: talk-request at gtalug.org 
+> To: 
+> Cc: 
+> Date: Mon, 23 Feb 2015 19:10:32 +0000 
+> Subject: confirm 7643c92c26be947f7096a7e17885ae0c2d461b27 
+> If you reply to this message, keeping the Subject: header intact, 
+> Mailman will discard the held message.? Do this if the message is 
+> spam.? If you reply to this message and include an Approved: header 
+> with the list password in it, the message will be approved for posting 
+> to the list.? The Approved: header can also appear in the first line 
+> of the body of the reply. 
+>
+>
+> -- 
+> Myles Braithwaite | http://mylesb.ca/e 
+> --- 
+> GTALUG Operations Mailing List 
+> operations at gtalug.org 
+> http://gtalug.org/mailman/listinfo/operations 
+
+From cbbrowne at gmail.com  Mon Feb 23 21:42:57 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Mon, 23 Feb 2015 16:42:57 -0500
+Subject: [GTALUG-Ops] Fwd: talk post from rreiter91@gmail.com requires
+	approval
+In-Reply-To: <20150223212336.29B33E37E@penguin.gtalug.org>
+References: <20150223212336.29B33E37E@penguin.gtalug.org>
+Message-ID: <CAFNqd5WzgiQGLCs129O1ysQm=4cvUM7W5-opeX4qLfgxJ6xqvA@mail.gmail.com>
+
+On 23 February 2015 at 15:17, Alex Volkov <alex at flamy.ca> wrote:
+> Unless there's some kind of humour I don't get, this is off topic, and not even remotely tangential offtopic.On Feb 23, 2015 2:13 PM, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+>>
+>> Should I approve?
+
+It seems off topic (though not offensive), so I agree that
+it would be apropos not to approve it.
+
+In case Russell is suffering from something unfortunate
+(I speculate some variation of mental illness, something
+with some flavour of paranoia involved, albeit without the
+expertise to properly diagnose), it would be unkind
+to refuse it in any cruel fashion.  And a silent silencing
+is a bit cruel.
+
+Probably worth having chat further on this tonight.  The
+sorts of things worth putting into a "Sorry, we had to
+bounce your message" message could include:
+
+1.  Sorry, we felt we had to bounce your message.
+2.  It seemed rather off topic.  We often allow
+    a fair bit of latitude, but this was a bit too far.
+3.  It seemed likely to distract discussion, and we
+     thought that might not be ideal to your
+     reputation.
+
+If someone has something better than #3, that
+would be super.
+
+From mike.kallies at gmail.com  Mon Feb 23 23:58:06 2015
+From: mike.kallies at gmail.com (Mike)
+Date: Mon, 23 Feb 2015 18:58:06 -0500
+Subject: [GTALUG-Ops] Fwd: talk post from rreiter91@gmail.com requires
+	approval
+In-Reply-To: <CAFNqd5WzgiQGLCs129O1ysQm=4cvUM7W5-opeX4qLfgxJ6xqvA@mail.gmail.com>
+References: <20150223212336.29B33E37E@penguin.gtalug.org>
+ <CAFNqd5WzgiQGLCs129O1ysQm=4cvUM7W5-opeX4qLfgxJ6xqvA@mail.gmail.com>
+Message-ID: <BC23ACBD-8785-4207-A421-9D62B82E2A1E@gmail.com>
+
+Maybe him an out, bounce it with a message like this in the morning.
+
+"this got caught in our admin filter....   has your account been hacked?"
+
+
+> On Feb 23, 2015, at 4:42 PM, Christopher Browne <cbbrowne at gmail.com> wrote:
+> 
+>> On 23 February 2015 at 15:17, Alex Volkov <alex at flamy.ca> wrote:
+>> Unless there's some kind of humour I don't get, this is off topic, and not even remotely tangential offtopic.On Feb 23, 2015 2:13 PM, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+>>> 
+>>> Should I approve?
+> 
+> It seems off topic (though not offensive), so I agree that
+> it would be apropos not to approve it.
+> 
+> In case Russell is suffering from something unfortunate
+> (I speculate some variation of mental illness, something
+> with some flavour of paranoia involved, albeit without the
+> expertise to properly diagnose), it would be unkind
+> to refuse it in any cruel fashion.  And a silent silencing
+> is a bit cruel.
+> 
+> Probably worth having chat further on this tonight.  The
+> sorts of things worth putting into a "Sorry, we had to
+> bounce your message" message could include:
+> 
+> 1.  Sorry, we felt we had to bounce your message.
+> 2.  It seemed rather off topic.  We often allow
+>    a fair bit of latitude, but this was a bit too far.
+> 3.  It seemed likely to distract discussion, and we
+>     thought that might not be ideal to your
+>     reputation.
+> 
+> If someone has something better than #3, that
+> would be super.
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
