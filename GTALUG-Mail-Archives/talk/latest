@@ -7774,4 +7774,750 @@ Something must have happened at the meetings or in the mailing list,
 while I was away.  Sorry to missed it.
 
 > 
-> Are there enough people still readi
+> Are there enough people still reading here to make a sane return to the
+> original subject worthwhile?
+
+Perhaps, a new thread?
+-- 
+William
+
+From opengeometry at yahoo.ca  Sun Feb 22 06:36:19 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Sun, 22 Feb 2015 01:36:19 -0500
+Subject: [GTALUG] Connection Refused
+In-Reply-To: <54E7D66C.8020903@gmail.com>
+References: <1424404741.2765.9.camel@gmail.com>
+ <20150220184243.GA24822@vex.net> <54E78328.6090108@gmail.com>
+ <CAFNqd5XW7t757uKRBPvEw3X7G46GyurH4oLwaBd0Rhg9PCOe7g@mail.gmail.com>
+ <20150220224536.GO30246@csclub.uwaterloo.ca>
+ <54E7D66C.8020903@gmail.com>
+Message-ID: <20150222063619.GB29094@node1.localdomain>
+
+On Fri, Feb 20, 2015 at 07:50:52PM -0500, Randy Jonasz wrote:
+> 
+> >On Fri, Feb 20, 2015 at 04:40:45PM -0500, Christopher Browne wrote:
+> >>"Open port 25" disappeared at around the time of the Code Red worm
+> >>(http://en.wikipedia.org/wiki/Code_Red_%28computer_worm%29)
+> >>
+> >>When infected hosts sending out spam got to be a gigantic plague, it became
+> >>common for ISPs to block port 25 to cut down on the amount of spam they
+> >>were forwarding.
+> >>
+> >>I seriously doubt that your ISP will be willing to change their port blocks.
+> >>They will most likely say something about "blah, blah, security best practice."
+> 
+> Yeah, I got tired trying to explain to the tech rep at my ISP about what I
+> wanted so I just added a smtp port to postfix.  Now everything works.
+
+Can you clearify?  If your ISP is blocking outgoing port 25, then
+adding port 25 to postfix doesn't do anything, because postfix will
+never receive anything.  Do you mean, you added port 587 (submission) to
+postfix?
+-- 
+William
+
+From rjonasz at rjonasz.org  Sun Feb 22 06:40:53 2015
+From: rjonasz at rjonasz.org (Randy Jonasz)
+Date: Sun, 22 Feb 2015 01:40:53 -0500
+Subject: [GTALUG] Connection Refused
+In-Reply-To: <20150222063619.GB29094@node1.localdomain>
+References: <1424404741.2765.9.camel@gmail.com>
+ <20150220184243.GA24822@vex.net> <54E78328.6090108@gmail.com>
+ <CAFNqd5XW7t757uKRBPvEw3X7G46GyurH4oLwaBd0Rhg9PCOe7g@mail.gmail.com>
+ <20150220224536.GO30246@csclub.uwaterloo.ca> <54E7D66C.8020903@gmail.com>
+ <20150222063619.GB29094@node1.localdomain>
+Message-ID: <1424587253.7621.2.camel@rjonasz.org>
+
+On Sun, 2015-02-22 at 01:36 -0500, William Park wrote:
+
+> Can you clearify?  If your ISP is blocking outgoing port 25, then
+> adding port 25 to postfix doesn't do anything, because postfix will
+> never receive anything.  Do you mean, you added port 587 (submission) to
+> postfix?
+
+Hi William,
+
+I added a smtp port postfix's master.cf file.  I have a debian machine
+at home which I configured exim to use the non standard port.
+
+Cheers,
+
+Randy
+
+
+From evan at telly.org  Sun Feb 22 20:05:59 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Sun, 22 Feb 2015 15:05:59 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAFNqd5VrHaasE0=1B3bp9y1fw3Zew+aCjrD5Wx4_V94KVuCkig@mail.gmail.com>
+References: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+ <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+ <20150217175536.GD30246@csclub.uwaterloo.ca>
+ <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+ <20150219154309.GI30246@csclub.uwaterloo.ca>
+ <CAPik5Mx4sZjFfjt9gFuZ3suusWY12TTtPv08G5io50KRG1iGdg@mail.gmail.com>
+ <54E642D3.4070409@rogers.com>
+ <CAMguqh2PthHeZ3vc8CUnHW2XbDOkdkyhLAviyQb6rsYCrYT3HQ@mail.gmail.com>
+ <CAFNqd5VrHaasE0=1B3bp9y1fw3Zew+aCjrD5Wx4_V94KVuCkig@mail.gmail.com>
+Message-ID: <CAMguqh0RFe9Ee5YkBTC_0t+2YQ-gzqkc0E2OHMh7isata1QX4A@mail.gmail.com>
+
+As I strive to find myself enough time to properly contribute further to
+the issue, I offer fellow readers this link.
+
+http://www.theregister.co.uk/2014/12/30/andressen_cyanogen_oneplus_micromax_india_google/
+
+While I don't agree with the assertion that Cyanogen is "a company which
+hoped to do for Android what Red Hat had done for Linux", the article
+offers some good follow-the-money research, providing some history that
+preceded Microsoft's involvement. It also offers some insight about the
+opportunities and challenges facing those trying to create
+Google-services-free versions of Android.
+
+Cheers,
+
+- Evan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150222/46cedb9d/attachment.html>
+
+From scruss at gmail.com  Sun Feb 22 21:59:48 2015
+From: scruss at gmail.com (Stewart Russell)
+Date: Sun, 22 Feb 2015 16:59:48 -0500
+Subject: [GTALUG] interesting new approach to forking
+In-Reply-To: <CAMguqh0RFe9Ee5YkBTC_0t+2YQ-gzqkc0E2OHMh7isata1QX4A@mail.gmail.com>
+References: <CAPik5MxGK+A1+2b6ackaCZy7xubXu8AS1XnsYODwoRV4BQvNBQ@mail.gmail.com>
+ <alpine.LRH.2.02.1502111442300.9851@redclaw.mimosa.com>
+ <20150211200339.GB30246@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1502111733550.9851@redclaw.mimosa.com>
+ <CAMguqh3etmbvVFR8T=wtoWK5rdGRT-nKG8Xpb5+a9WUsp8oO3g@mail.gmail.com>
+ <CAPik5Mx-cG0gHd8N=yoH60EvQQwHzq0yC7Zv3hCg3E=iPuTQVg@mail.gmail.com>
+ <20150212215151.GC30246@csclub.uwaterloo.ca>
+ <CAPik5Myd0vha+qwLQ+cwDEWp537BtKP6o8+5TsAMW-XjLDa1_g@mail.gmail.com>
+ <20150217175536.GD30246@csclub.uwaterloo.ca>
+ <CAPik5Myrv21JON+Z8PWpRFYyn+QTdvmWgo6wPEB1V6mNKUqGdQ@mail.gmail.com>
+ <20150219154309.GI30246@csclub.uwaterloo.ca>
+ <CAPik5Mx4sZjFfjt9gFuZ3suusWY12TTtPv08G5io50KRG1iGdg@mail.gmail.com>
+ <54E642D3.4070409@rogers.com>
+ <CAMguqh2PthHeZ3vc8CUnHW2XbDOkdkyhLAviyQb6rsYCrYT3HQ@mail.gmail.com>
+ <CAFNqd5VrHaasE0=1B3bp9y1fw3Zew+aCjrD5Wx4_V94KVuCkig@mail.gmail.com>
+ <CAMguqh0RFe9Ee5YkBTC_0t+2YQ-gzqkc0E2OHMh7isata1QX4A@mail.gmail.com>
+Message-ID: <CAAsTreC53JKwAO+9YSm0uP2cXo5jTKj3Ax02+pqconYbWkek=w@mail.gmail.com>
+
+On Feb 22, 2015 3:06 PM, "Evan Leibovitch" <evan at telly.org> wrote:
+>
+>
+http://www.theregister.co.uk/2014/12/30/andressen_cyanogen_oneplus_micromax_india_google/
+
+Thanks for posting that, Evan. As an otherwise happy OnePlus user, I'm a
+bit peeved that my phone will likely have no security patches until this
+legal spat blows over. I don't really want to be a walking exploit, if I
+can help it.
+
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150222/cafcfc35/attachment.html>
+
+From me at mylesbraithwaite.com  Tue Feb 24 13:51:48 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 24 Feb 2015 08:51:48 -0500
+Subject: [GTALUG] [GTALUG-Announce] Meeting 10th March, 2015 at 7:30 pm
+Message-ID: <CA+hskZNPWNn5LQi4i_Ba5Nm5EJi5N9SDniMMgD9Rs1beuFVQNw@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-03/>
+
+# Short Talks on Productivity Tools
+
+ownCloud - Alex Volkov
+
+todo.sh - Christopher Browne
+
+todo.sh Touch - Scott Sullivan
+
+jrnl - Myles Braithwaite
+
+If you are interested in doing a short talk at this meeting please contact
+the speaker coordinator: <speaker-coordinator at gtalug.org>.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before each meeting a group of GTALUGers dine at
+Ethiopiques (227 Church Street).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG
+Code of Conduct please contact one of the GTALUG Board Members.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From me at mylesbraithwaite.com  Tue Feb 24 13:52:50 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 24 Feb 2015 08:52:50 -0500
+Subject: [GTALUG] [GTALUG-Announce] Meeting 10th March, 2015 at 7:30 pm
+In-Reply-To: <CA+hskZNPWNn5LQi4i_Ba5Nm5EJi5N9SDniMMgD9Rs1beuFVQNw@mail.gmail.com>
+References: <CA+hskZNPWNn5LQi4i_Ba5Nm5EJi5N9SDniMMgD9Rs1beuFVQNw@mail.gmail.com>
+Message-ID: <CA+hskZPBBaooSMD4_uvxmAs+FUdfY7btWv1-mo1zQAB-FEx00g@mail.gmail.com>
+
+On Tue, Feb 24, 2015 at 8:51 AM, Myles Braithwaite
+<me at mylesbraithwaite.com> wrote:
+> * 6:00 pm - Before each meeting a group of GTALUGers dine at
+> Ethiopiques (227 Church Street).
+
+
+The winner of the strawpoll vote was Ethiopiques <http://www.ethiopiques.ca/>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From wwitteman at gmail.com  Tue Feb 24 20:17:03 2015
+From: wwitteman at gmail.com (William Witteman)
+Date: Tue, 24 Feb 2015 15:17:03 -0500
+Subject: [GTALUG] OT: Canadian source for electronics hobby gear, parts
+Message-ID: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+
+This is off topic, but I thought I might get some advice here.
+
+I have been asked to make a small electronic device.  I have
+instructions, but the supplies are sourced from US or UK companies,
+which of course incur heavy shipping and exchange-rate taxes.
+
+Does anyone have a source for electronics gear (I'll need a bluetooth
+LE module, a Wixel, battery, resistors, heat-shrink tubing, a small
+enclosure, soldering iron, etc) in Canada, or someone you've had good
+experiences with?
+
+Thanks!
+
+William
+
+From scruss at gmail.com  Tue Feb 24 20:38:17 2015
+From: scruss at gmail.com (Stewart Russell)
+Date: Tue, 24 Feb 2015 15:38:17 -0500
+Subject: [GTALUG] OT: Canadian source for electronics hobby gear, parts
+In-Reply-To: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+References: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+Message-ID: <CAAsTreA+ReoUzyW0SpbeeU1+41BT3_Y=2HqEJCs=yLPfYysLBA@mail.gmail.com>
+
+Locally? Creatron or Canada Robotix.
+Mail order? Solarbotics.
+
+Cheers
+Stewart
+On Feb 24, 2015 3:24 PM, "William Witteman" <wwitteman at gmail.com> wrote:
+
+> This is off topic, but I thought I might get some advice here.
+>
+> I have been asked to make a small electronic device.  I have
+> instructions, but the supplies are sourced from US or UK companies,
+> which of course incur heavy shipping and exchange-rate taxes.
+>
+> Does anyone have a source for electronics gear (I'll need a bluetooth
+> LE module, a Wixel, battery, resistors, heat-shrink tubing, a small
+> enclosure, soldering iron, etc) in Canada, or someone you've had good
+> experiences with?
+>
+> Thanks!
+>
+> William
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150224/a13194c4/attachment.html>
+
+From mlxxxp at gmail.com  Tue Feb 24 20:49:55 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Tue, 24 Feb 2015 15:49:55 -0500
+Subject: [GTALUG] OT: Canadian source for electronics hobby gear, parts
+In-Reply-To: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+References: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+Message-ID: <CAArSzsW0Jt3guVciGAU+kTe5NA3ovxNE6E5+kB5YkwKenA+Cnw@mail.gmail.com>
+
+Probably not the Wixel or Bluetooth module, but for a storefront in
+Ontario you could try Sayal for the rest.
+<http://www.sayal.com/STORE/index.asp>
+
+-- 
+Scott
+
+From lsorense at csclub.uwaterloo.ca  Tue Feb 24 20:52:28 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 24 Feb 2015 15:52:28 -0500
+Subject: [GTALUG] OT: Canadian source for electronics hobby gear, parts
+In-Reply-To: <CAArSzsW0Jt3guVciGAU+kTe5NA3ovxNE6E5+kB5YkwKenA+Cnw@mail.gmail.com>
+References: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+ <CAArSzsW0Jt3guVciGAU+kTe5NA3ovxNE6E5+kB5YkwKenA+Cnw@mail.gmail.com>
+Message-ID: <20150224205228.GA14733@csclub.uwaterloo.ca>
+
+On Tue, Feb 24, 2015 at 03:49:55PM -0500, Scott Allen wrote:
+> Probably not the Wixel or Bluetooth module, but for a storefront in
+> Ontario you could try Sayal for the rest.
+> <http://www.sayal.com/STORE/index.asp>
+
+Yeah Sayal has a lot of stuff.  Especially the store on woodbine in
+markham.
+
+-- 
+Len Sorensen
+
+From wwitteman at gmail.com  Tue Feb 24 20:53:00 2015
+From: wwitteman at gmail.com (William Witteman)
+Date: Tue, 24 Feb 2015 15:53:00 -0500
+Subject: [GTALUG] OT: Canadian source for electronics hobby gear, parts
+In-Reply-To: <CAArSzsW0Jt3guVciGAU+kTe5NA3ovxNE6E5+kB5YkwKenA+Cnw@mail.gmail.com>
+References: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+ <CAArSzsW0Jt3guVciGAU+kTe5NA3ovxNE6E5+kB5YkwKenA+Cnw@mail.gmail.com>
+Message-ID: <CAGMvh241+dkgJLrfHn3Gpsc0aVyRRu+Ln9nQtJWEuc-ywrWxrQ@mail.gmail.com>
+
+Cool, thanks for the recommendations!  I should have specified that I
+need mail order - I live in Quebec City now, and Toronto stores are
+too far, and Quebec stores seem non-existent.
+
+William
+
+On 24 February 2015 at 15:49, Scott Allen <mlxxxp at gmail.com> wrote:
+> Probably not the Wixel or Bluetooth module, but for a storefront in
+> Ontario you could try Sayal for the rest.
+> <http://www.sayal.com/STORE/index.asp>
+>
+> --
+> Scott
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From tisdall at gmail.com  Wed Feb 25 00:34:57 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Tue, 24 Feb 2015 19:34:57 -0500
+Subject: [GTALUG] OT: Canadian source for electronics hobby gear, parts
+In-Reply-To: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+References: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+Message-ID: <CAGxYWpY5Nz6zO0zBT4cmA-CN6FzvOQddxm=a8=c1B3nfc1mnzw@mail.gmail.com>
+
+The quality may be questionable, but you can get a lot of these things on
+aliexpress.com .  Shipping is usually free, but you'll likely have to wait
+a month for delivery.  The payments are escrowed through aliexpress and
+only released to the seller when you've confirmed you've received the item
+(which you should only do after you've tested the item and confirmed that
+it works fine).
+
+resistors: http://www.aliexpress.com/category/400503/resistors.html
+soldering irons:
+http://www.aliexpress.com/category/144003/electric-soldering-irons.html
+heat shrink tubing:
+http://www.aliexpress.com/category/141903/insulation-materials-elements.html
+
+
+On Tue, Feb 24, 2015 at 3:17 PM, William Witteman <wwitteman at gmail.com>
+wrote:
+
+> This is off topic, but I thought I might get some advice here.
+>
+> I have been asked to make a small electronic device.  I have
+> instructions, but the supplies are sourced from US or UK companies,
+> which of course incur heavy shipping and exchange-rate taxes.
+>
+> Does anyone have a source for electronics gear (I'll need a bluetooth
+> LE module, a Wixel, battery, resistors, heat-shrink tubing, a small
+> enclosure, soldering iron, etc) in Canada, or someone you've had good
+> experiences with?
+>
+> Thanks!
+>
+> William
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150224/139b791a/attachment.html>
+
+From mwilson at vex.net  Wed Feb 25 00:40:45 2015
+From: mwilson at vex.net (Mel Wilson)
+Date: Tue, 24 Feb 2015 19:40:45 -0500
+Subject: [GTALUG] OT: Canadian source for electronics hobby gear, parts
+In-Reply-To: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+References: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+Message-ID: <1424824845.3601.2.camel@tecumseth5.mounteagle.lan>
+
+On Tue, 2015-02-24 at 15:17 -0500, William Witteman wrote:
+> This is off topic, but I thought I might get some advice here.
+> 
+> I have been asked to make a small electronic device.  I have
+> instructions, but the supplies are sourced from US or UK companies,
+> which of course incur heavy shipping and exchange-rate taxes.
+> 
+> Does anyone have a source for electronics gear (I'll need a bluetooth
+> LE module, a Wixel, battery, resistors, heat-shrink tubing, a small
+> enclosure, soldering iron, etc) in Canada, or someone you've had good
+> experiences with?
+
+Small parts, enclosures -- Supremetronics/Home Hardware. College west of
+Spadina, north side (if they haven't moved.)
+> 
+> Thanks!
+> 
+> William
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+
+From mwilson at vex.net  Wed Feb 25 00:46:07 2015
+From: mwilson at vex.net (Mel Wilson)
+Date: Tue, 24 Feb 2015 19:46:07 -0500
+Subject: [GTALUG] OT: Canadian source for electronics hobby gear, parts
+In-Reply-To: <CAGMvh241+dkgJLrfHn3Gpsc0aVyRRu+Ln9nQtJWEuc-ywrWxrQ@mail.gmail.com>
+References: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+ <CAArSzsW0Jt3guVciGAU+kTe5NA3ovxNE6E5+kB5YkwKenA+Cnw@mail.gmail.com>
+ <CAGMvh241+dkgJLrfHn3Gpsc0aVyRRu+Ln9nQtJWEuc-ywrWxrQ@mail.gmail.com>
+Message-ID: <1424825167.3601.5.camel@tecumseth5.mounteagle.lan>
+
+On Tue, 2015-02-24 at 15:53 -0500, William Witteman wrote:
+> Cool, thanks for the recommendations!  I should have specified that I
+> need mail order - I live in Quebec City now, and Toronto stores are
+> too far, and Quebec stores seem non-existent.
+
+Places in Montreal you could try: 
+http://www.ca.diigiit.com/
+http://abra-electronics.com/
+
+Mel.
+> 
+> William
+> 
+> On 24 February 2015 at 15:49, Scott Allen <mlxxxp at gmail.com> wrote:
+> > Probably not the Wixel or Bluetooth module, but for a storefront in
+> > Ontario you could try Sayal for the rest.
+> > <http://www.sayal.com/STORE/index.asp>
+> >
+> > --
+> > Scott
+> > ---
+> > Talk Mailing List
+> > talk at gtalug.org
+> > http://gtalug.org/mailman/listinfo/talk
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+
+From hgibson at eol.ca  Wed Feb 25 01:00:22 2015
+From: hgibson at eol.ca (Howard Gibson)
+Date: Tue, 24 Feb 2015 20:00:22 -0500
+Subject: [GTALUG] OT: Canadian source for electronics hobby gear, parts
+In-Reply-To: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+References: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+Message-ID: <20150224200022.c4de877989c76fdbb2c0a14a@eol.ca>
+
+On Tue, 24 Feb 2015 15:17:03 -0500
+William Witteman <wwitteman at gmail.com> wrote:
+
+> This is off topic, but I thought I might get some advice here.
+> 
+> I have been asked to make a small electronic device.  I have
+> instructions, but the supplies are sourced from US or UK companies,
+> which of course incur heavy shipping and exchange-rate taxes.
+> 
+> Does anyone have a source for electronics gear (I'll need a bluetooth
+> LE module, a Wixel, battery, resistors, heat-shrink tubing, a small
+> enclosure, soldering iron, etc) in Canada, or someone you've had good
+> experiences with?
+> 
+> Thanks!
+> 
+> William
+
+William,
+
+   I think Electrosonic has a walk-in store.
+
+   https://www.e-sonic.com/
+
+-- 
+Howard Gibson 
+hgibson at eol.ca
+howard.gibson at optech.com 
+jhowardgibson at gmail.com
+http://home.eol.ca/~hgibson
+
+From phiscock at ee.ryerson.ca  Wed Feb 25 03:01:35 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Tue, 24 Feb 2015 22:01:35 -0500
+Subject: [GTALUG] OT: Canadian source for electronics hobby gear, parts
+In-Reply-To: <20150224200022.c4de877989c76fdbb2c0a14a@eol.ca>
+References: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+ <20150224200022.c4de877989c76fdbb2c0a14a@eol.ca>
+Message-ID: <ce91512a9eecf7554a0f8dcff3a67095.squirrel@webmail.ee.ryerson.ca>
+
+>
+> William,
+>
+>    I think Electrosonic has a walk-in store.
+>
+>    https://www.e-sonic.com/
+
+Really? They closed that place on Gordon Baker at Vic Park, and I heard
+they moved to Buffalo.
+
+They imploded after the founder retired.
+
+The Active Electronics store, on the other side of the same parking lot,
+has also closed.
+
+I think the bricks-and-mortar stores are having a really hard time
+surviving competition from Digikey and Mouser.
+
+Peter
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From kcozens at ve3syb.ca  Wed Feb 25 02:42:37 2015
+From: kcozens at ve3syb.ca (kcozens)
+Date: Tue, 24 Feb 2015 18:42:37 -0800
+Subject: [GTALUG] OT: Canadian source for electronics hobby gear, parts
+In-Reply-To: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+References: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+Message-ID: <a2d3ba496f767cc4d6801abb0aa9aa02@ve3syb.ca>
+
+On 2015-02-24 12:17, William Witteman wrote:
+> I have been asked to make a small electronic device.  I have
+> instructions, but the supplies are sourced from US or UK companies,
+> which of course incur heavy shipping and exchange-rate taxes.
+> 
+> Does anyone have a source for electronics gear in Canada
+
+There used to be about 6 parts stores in the Victoria Park and Steeles 
+area years ago but several of them have closed shop.
+
+Sayal may still be there, and Future (or was it Active?) Electronics. I 
+always forget which is whichof Future and Active. I think Future 
+supports the commercial buyers while Active is more for the 
+consumer/hobbyist. The URL for Future is 
+http://www.futureelectronics.com/
+
+Electrosonic (http://www.e-sonic.com/) used to be there but they closed 
+shop. I had heard they moved operations to the US but that might have 
+changed again since then.
+
+If you are looking for prototype quantities there is always eBay. You 
+can do a search for Canadian sellers of parts.
+
+Other options would be Arrow Electronics (http://www.arrow.com/), and 
+AVNET (http://www.avnet.com/). If you did want to check places in the 
+states you have Mouser, DigiKey, and Futurelec.
+
+
+From james.knott at rogers.com  Wed Feb 25 12:57:48 2015
+From: james.knott at rogers.com (James Knott)
+Date: Wed, 25 Feb 2015 07:57:48 -0500
+Subject: [GTALUG] OT: Canadian source for electronics hobby gear, parts
+In-Reply-To: <a2d3ba496f767cc4d6801abb0aa9aa02@ve3syb.ca>
+References: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+ <a2d3ba496f767cc4d6801abb0aa9aa02@ve3syb.ca>
+Message-ID: <54EDC6CC.8030602@rogers.com>
+
+On 02/24/2015 09:42 PM, kcozens wrote:
+> Sayal may still be there, and Future (or was it Active?) Electronics.
+> I always forget which is whichof Future and Active. I think Future
+> supports the commercial buyers while Active is more for the
+> consumer/hobbyist. The URL for Future is
+> http://www.futureelectronics.com/
+>
+> Electrosonic (http://www.e-sonic.com/) used to be there but they
+> closed shop. I had heard they moved operations to the US but that
+> might have changed again since then.
+
+There used to be Active there and Electrosonic moved to Markham.
+
+From james.knott at rogers.com  Wed Feb 25 12:59:05 2015
+From: james.knott at rogers.com (James Knott)
+Date: Wed, 25 Feb 2015 07:59:05 -0500
+Subject: [GTALUG] OT: Canadian source for electronics hobby gear, parts
+In-Reply-To: <ce91512a9eecf7554a0f8dcff3a67095.squirrel@webmail.ee.ryerson.ca>
+References: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+ <20150224200022.c4de877989c76fdbb2c0a14a@eol.ca>
+ <ce91512a9eecf7554a0f8dcff3a67095.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <54EDC719.4050907@rogers.com>
+
+On 02/24/2015 10:01 PM, phiscock at ee.ryerson.ca wrote:
+>>    https://www.e-sonic.com/
+> Really? They closed that place on Gordon Baker at Vic Park, and I heard
+> they moved to Buffalo.
+>
+> They imploded after the founder retired.
+
+Check the link.  They're now in Markham.
+
+
+From scruss at gmail.com  Wed Feb 25 14:12:56 2015
+From: scruss at gmail.com (Stewart Russell)
+Date: Wed, 25 Feb 2015 09:12:56 -0500
+Subject: [GTALUG] OT: Canadian source for electronics hobby gear, parts
+In-Reply-To: <54EDC719.4050907@rogers.com>
+References: <CAGMvh25NVP9Kz+SmMEFR=oNqn-Qj0ONxKJvYQw5yyvba0xExaQ@mail.gmail.com>
+ <20150224200022.c4de877989c76fdbb2c0a14a@eol.ca>
+ <ce91512a9eecf7554a0f8dcff3a67095.squirrel@webmail.ee.ryerson.ca>
+ <54EDC719.4050907@rogers.com>
+Message-ID: <CAAsTreA8oPa7aeDJ7oQ7Zhj-sZKQpBckQ2Zu28VC9fQTHwW1=g@mail.gmail.com>
+
+On Feb 25, 2015 7:59 AM, "James Knott" <james.knott at rogers.com> wrote:
+>
+> Check the link.  They're now in
+> Markham.
+
+Their office is up near Buttonville but I don't think they have a pickup
+facility. Everything's delivered out of NY state now.
+
+(Longtime local unix nerd - and the guy who gave me my first job in Canada
+- Les Gondor is the sysadmin at Electrosonic.)
+
+Cheers
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150225/19c637b0/attachment.html>
+
+From doctormo at gmail.com  Wed Feb 25 23:32:14 2015
+From: doctormo at gmail.com (Martin Owens)
+Date: Wed, 25 Feb 2015 18:32:14 -0500
+Subject: [GTALUG] Libre Graphics in Toronto
+Message-ID: <CAKyRS5x5tGP1QB1GPWqgPakX6sJ=Yzg2JdONesZpbDf4V_DE2g@mail.gmail.com>
+
+Dear lug,
+
+The Libre Graphics meeting is coming in April[1] and I was wondering
+if anyone had posted a message about the event here?
+
+I know LUGs tend to be more technical/sysadmin, but since this is a
+bunch of Linux software developers getting together, then I'd
+encourage everyone interested to check out their page:
+
+[1] http://libregraphicsmeeting.org/2015/
+
+I'm actually with the Inkscape project and we're looking for local
+people who are interested in inkscape and future development etc.
+We've got a contact form if interested:
+https://inkscape.org/contact/us/
+
+Thanks!
+
+Best Regards, Martin Owens
+
+From evan at telly.org  Thu Feb 26 09:00:23 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Thu, 26 Feb 2015 04:00:23 -0500
+Subject: [GTALUG] Libre Graphics in Toronto
+In-Reply-To: <CAKyRS5x5tGP1QB1GPWqgPakX6sJ=Yzg2JdONesZpbDf4V_DE2g@mail.gmail.com>
+References: <CAKyRS5x5tGP1QB1GPWqgPakX6sJ=Yzg2JdONesZpbDf4V_DE2g@mail.gmail.com>
+Message-ID: <CAMguqh2GAWCd8nNxZQS9yWwZkTS+oGoDetytgEumijjWFCqFTw@mail.gmail.com>
+
+Hi Martin,
+
+I'm a happy Inkscape user but can't write a lick of code. Would the group
+and I be of interest to each other?
+
+
+
+On 25 February 2015 at 18:32, Martin Owens <doctormo at gmail.com> wrote:
+
+> Dear lug,
+>
+> The Libre Graphics meeting is coming in April[1] and I was wondering
+> if anyone had posted a message about the event here?
+>
+> I know LUGs tend to be more technical/sysadmin, but since this is a
+> bunch of Linux software developers getting together, then I'd
+> encourage everyone interested to check out their page:
+>
+> [1] http://libregraphicsmeeting.org/2015/
+>
+> I'm actually with the Inkscape project and we're looking for local
+> people who are interested in inkscape and future development etc.
+> We've got a contact form if interested:
+> https://inkscape.org/contact/us/
+>
+> Thanks!
+>
+> Best Regards, Martin Owens
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+
+-- 
+Evan Leibovitch
+Toronto Canada
+
+Em: evan at telly dot org
+Sk: evanleibovitch
+Tw: el56
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150226/c1bf29fd/attachment.html>
+
