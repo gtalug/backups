@@ -8521,3 +8521,145 @@ Tw: el56
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150226/c1bf29fd/attachment.html>
 
+From waltdnes at waltdnes.org  Fri Feb 27 07:21:36 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Fri, 27 Feb 2015 02:21:36 -0500
+Subject: [GTALUG] 2 networks under ip (iproute2)
+Message-ID: <20150227072136.GA19264@waltdnes.org>
+
+  This is frustrating, because it works for me under ifconfig, but not
+under ip (iproute2).  I have 3 devices in this scenario...
+
+* my desktop PC 192.168.123.251/29
+* an HDHomerun TV tuner that comes up in the 169.254.0.0/16 block
+* the ADSL router/modem at 192.168.123.254/29 to which the PC and the
+  tuner are connected.
+
+  I'm trying to get my desktop PC to talk to the TV tuner using ip.
+What am I doing wrong in the following set of commands?
+
+ip address flush dev eth0
+ip link set eth0 down
+ip link set eth0 up
+ip address add 192.168.123.251/29 dev eth0
+ip route add default via 192.168.123.254
+ip address add 169.254.1.1/16 dev eth0
+ip route delete 169.254.0.0/16 dev eth0
+ip route add 169.254.0.0/16 via 192.168.123.254
+ip address show
+ip route show
+
+  The ouput from the 2 "show" commands is...
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 brd 127.255.255.255 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN group default qlen 1000
+    link/ether 00:1d:09:96:6c:1c brd ff:ff:ff:ff:ff:ff
+    inet 192.168.123.251/29 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet 169.254.1.1/16 scope global eth0
+       valid_lft forever preferred_lft forever
+default via 192.168.123.254 dev eth0 
+127.0.0.0/8 dev lo  scope host 
+169.254.0.0/16 via 192.168.123.254 dev eth0 
+192.168.123.248/29 dev eth0  proto kernel  scope link  src 192.168.123.251
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From ted.leslie at gmail.com  Fri Feb 27 08:07:20 2015
+From: ted.leslie at gmail.com (ted leslie)
+Date: Fri, 27 Feb 2015 03:07:20 -0500
+Subject: [GTALUG] 2 networks under ip (iproute2)
+In-Reply-To: <20150227072136.GA19264@waltdnes.org>
+References: <20150227072136.GA19264@waltdnes.org>
+Message-ID: <CAMua2SHVd2YvA8SY-gJWMMgu2wVMXdNQKJ3Sjwpc7dKZyyAbXg@mail.gmail.com>
+
+Not really enough to go on.
+If the adsl router/modem is a hub/switch to these two devices, give one of
+the devices a 2nd ip on the others
+subnet range.
+If you have to go via a gateway, make sure the gateway can route/forwarding.
+Just use tcpdump or similar on the devices where you can and see where the
+issue is, you may even see some
+ "who has....."  broadcasts that are not answered.
+
+maybe you had a ifconfig ........ eth0:1  in your other set up.
+
+Post your
+
+ifconfig -a
+netstat -rn
+arp -an
+
+also have iptables active?
+
+having said all that,
+how can you do this:
+
+ip address add 192.168.123.251/29 dev eth0
+ip route add default via 192.168.123.254
+ip address add 169.254.1.1/16 dev eth0
+you are overriding the previous, make it eth0:1
+
+unless ip address add  some how auto assigns the virtual eth0:#?
+been a while since i used iproute2.
+In a quick google, i do see iproute2 using eth#:# notation.
+
+-tl
+
+
+On Fri, Feb 27, 2015 at 2:21 AM, Walter Dnes <waltdnes at waltdnes.org> wrote:
+
+>   This is frustrating, because it works for me under ifconfig, but not
+> under ip (iproute2).  I have 3 devices in this scenario...
+>
+> * my desktop PC 192.168.123.251/29
+> * an HDHomerun TV tuner that comes up in the 169.254.0.0/16 block
+> * the ADSL router/modem at 192.168.123.254/29 to which the PC and the
+>   tuner are connected.
+>
+>   I'm trying to get my desktop PC to talk to the TV tuner using ip.
+> What am I doing wrong in the following set of commands?
+>
+> ip address flush dev eth0
+> ip link set eth0 down
+> ip link set eth0 up
+> ip address add 192.168.123.251/29 dev eth0
+> ip route add default via 192.168.123.254
+> ip address add 169.254.1.1/16 dev eth0
+> ip route delete 169.254.0.0/16 dev eth0
+> ip route add 169.254.0.0/16 via 192.168.123.254
+> ip address show
+> ip route show
+>
+>   The ouput from the 2 "show" commands is...
+> 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group
+> default
+>     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+>     inet 127.0.0.1/8 brd 127.255.255.255 scope host lo
+>        valid_lft forever preferred_lft forever
+> 2: eth0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast
+> state DOWN group default qlen 1000
+>     link/ether 00:1d:09:96:6c:1c brd ff:ff:ff:ff:ff:ff
+>     inet 192.168.123.251/29 scope global eth0
+>        valid_lft forever preferred_lft forever
+>     inet 169.254.1.1/16 scope global eth0
+>        valid_lft forever preferred_lft forever
+> default via 192.168.123.254 dev eth0
+> 127.0.0.0/8 dev lo  scope host
+> 169.254.0.0/16 via 192.168.123.254 dev eth0
+> 192.168.123.248/29 dev eth0  proto kernel  scope link  src 192.168.123.251
+>
+> --
+> Walter Dnes <waltdnes at waltdnes.org>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150227/46ae3271/attachment.html>
+
