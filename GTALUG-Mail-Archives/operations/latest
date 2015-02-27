@@ -821,3 +821,54 @@ On 2/24/15, David Collier-Brown <davec-b at rogers.com> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/operations/attachments/20150225/331ea7b7/attachment.html>
 
+From cbbrowne at gmail.com  Thu Feb 26 17:48:33 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Thu, 26 Feb 2015 12:48:33 -0500
+Subject: [GTALUG-Ops] Updates
+Message-ID: <CAFNqd5XYemiWK1ntshbJ-GmoLe9i5KYhBi_GaWLFC4jFdhStNQ@mail.gmail.com>
+
+I have updated the notes a bit further; sorry to have been silent
+(e.g. - I didn't provide Myles with any Todo.sh material); I was
+indeed "turning green", and wound up out of commission the next two
+days with what I think was food poisoning.
+
+https://github.com/gtalug/board-meetings/blob/master/_posts/2015-02-23-notes.org
+
+I'm a bit surprised I got home before things got icky!
+
+At any rate, here's the action list from this meeting:
+
+  - Next Meeting - March 24th 7:30pm, Hacklab
+  - TODO Myles :: Publish floor plan image somewhere
+    - Need to design it still
+    - Engage with Ryerson
+  - TODO Bill :: Bring laptop bag, see if it is suitable
+  - TODO Myles :: Bring VGA adaptor, see if it should go in the gear bag
+  - TODO Scott :: Scott needs to get drive to Bill with Mediawiki data
+  - TODO Chris :: Set up backup of the archive list
+  - TODO Bill :: Ask Drew for ancient messages, not urgent at all
+  - TODO Myles :: Ask if anyone has thoughts on SystemD
+    - Aim at panel for April
+  - TODO Chris :: Solicit Dave Tilbrook
+    - Not possible 'til January
+    - Eek, didn't.
+    - Extra idea: Check to see if Sacha Chua would be interested in
+presenting on, well, anything.
+      - She has been doing some Google Hangouts-based meetups on
+customizing Emacs
+      - More on Org Mode?
+      - Emacs Lisp?
+      - Note that she's on the committee for
+[[http://www.european-lisp-symposium.org/content-gabriel-full.html][European
+Lisp Symposium 2015]]
+  - TODO Scott :: Digitize all of the GTALUG legal documents
+  - TODO Alex & Amos :: Test backups.
+  - TODO Scott :: Contact Sergio (GDB/LibrePlanet Ontario) for ??? meeting
+  - TODO Myles :: Contact Adib, suggesting Openstack/Docker for later
+  - TODO DCB and/or Gord :: Engaging with Ryerson
+  - TODO All :: Figure an idea as to increasing attendance
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
