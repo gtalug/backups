@@ -1,0 +1,300 @@
+From waltdnes at waltdnes.org  Sun Mar  1 02:46:02 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Sat, 28 Feb 2015 21:46:02 -0500
+Subject: [GTALUG] 2 networks under ip (iproute2)
+In-Reply-To: <54F132C1.5080707@rogers.com>
+References: <20150227072136.GA19264@waltdnes.org>
+ <20150228030824.GA23857@waltdnes.org> <54F132C1.5080707@rogers.com>
+Message-ID: <20150301024602.GA19600@waltdnes.org>
+
+On Fri, Feb 27, 2015 at 10:15:13PM -0500, James Knott wrote
+> 
+> Does it not even allow DHCP?  If not then that is a really crappy
+> piece of hardware.
+
+  No.  I have an ancient HDHR-US model.  Looking back at my archived
+emails, I figure that I got it sometime around June 2010.  The output
+from "get help" is...
+
+Supported configuration options:
+/ir/target <protocol>://<ip>:<port>
+/lineup/location <countrycode>:<postcode>
+/sys/copyright
+/sys/debug
+/sys/features
+/sys/hwmodel
+/sys/model
+/sys/restart <resource>
+/sys/version
+/tuner<n>/channel <modulation>:<freq|ch>
+/tuner<n>/channelmap <channelmap>
+/tuner<n>/debug
+/tuner<n>/filter "0x<nnnn>-0x<nnnn> [...]"
+/tuner<n>/lockkey
+/tuner<n>/program <program number>
+/tuner<n>/streaminfo
+/tuner<n>/status
+/tuner<n>/target <ip>:<port>
+
+  According to the manufacturer's site, the latest models support a lot
+more stuff, including...
+
+/sys/ipaddr dhcp|"<ip> <mask> <gw> <dns>"
+
+... which allows to get/set ipaddress, or work as a dhcp client.
+ 
+> As mentioned, the setup you were running violates the IPv4 link
+> local RFC, so I doubt iproute2 will ever support it.
+
+  Interesting.  I'll keep going with over-riding the iproute2 default
+and force ifconfig, as the network-utility stack.  By the time ifconfig
+support is deprecated in Gentoo, I'll probably be looking at getting a
+new tuner, rather than another NIC.
+
+  Thanks for the info anyways.  Now I can stop pounding my head against
+the brick wall.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From james.knott at rogers.com  Sun Mar  1 02:51:12 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sat, 28 Feb 2015 21:51:12 -0500
+Subject: [GTALUG] 2 networks under ip (iproute2)
+In-Reply-To: <20150301024602.GA19600@waltdnes.org>
+References: <20150227072136.GA19264@waltdnes.org>
+ <20150228030824.GA23857@waltdnes.org> <54F132C1.5080707@rogers.com>
+ <20150301024602.GA19600@waltdnes.org>
+Message-ID: <54F27EA0.2070404@rogers.com>
+
+On 02/28/2015 09:46 PM, Walter Dnes wrote:
+>   Interesting.  I'll keep going with over-riding the iproute2 default
+> and force ifconfig, as the network-utility stack.  By the time ifconfig
+> support is deprecated in Gentoo, I'll probably be looking at getting a
+> new tuner, rather than another NIC.
+>
+>   Thanks for the info anyways.  Now I can stop pounding my head against
+> the brick wall.
+>
+> -
+
+Why not go with the other option I mentioned, add another NIC.  They're
+cheap and you can do what you want without violating the RFC.  All
+you'll need to connect the tuner is a cross over Ethernet cable.  All
+new hardware might set you back $10-$15
+
+
+From phiscock at ee.ryerson.ca  Sun Mar  1 03:09:56 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Sat, 28 Feb 2015 22:09:56 -0500
+Subject: [GTALUG] Mini PC for Home Office?
+Message-ID: <e39d64aa85785718e301c12e7e6a72b8.squirrel@webmail.ee.ryerson.ca>
+
+I'm considering the Zotac and Asus mini-pcs for the basis of a home-office
+system. It won't be used for gaming, just spreadsheets, word processing
+and internetting. I'm looking for a box with a bunch of usb ports, hdmi
+port, wired network connection. Wi-fi and a second hdmi port would be a
+bonus.
+
+Has anyone installed Linux Mint on one of these types of machines?
+
+Thanks -
+Peter
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From waltdnes at waltdnes.org  Sun Mar  1 03:30:53 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Sat, 28 Feb 2015 22:30:53 -0500
+Subject: [GTALUG] 2 networks under ip (iproute2)
+In-Reply-To: <54F27EA0.2070404@rogers.com>
+References: <20150227072136.GA19264@waltdnes.org>
+ <20150228030824.GA23857@waltdnes.org> <54F132C1.5080707@rogers.com>
+ <20150301024602.GA19600@waltdnes.org> <54F27EA0.2070404@rogers.com>
+Message-ID: <20150301033053.GA20751@waltdnes.org>
+
+On Sat, Feb 28, 2015 at 09:51:12PM -0500, James Knott wrote
+
+> Why not go with the other option I mentioned, add another NIC.  They're
+> cheap and you can do what you want without violating the RFC.  All
+> you'll need to connect the tuner is a cross over Ethernet cable.  All
+> new hardware might set you back $10-$15
+
+  Even easier is to include the line...
+
+modules=( "!iproute2" )
+
+...in my /etc/conf.d/net (probably Gentoo specific) and it keeps working
+using ifconfig.  I got the tuner sometime around May 2010.  When
+ifconfig support is totally deprecated, it'll probably be time for a new
+tuner anyways.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From opengeometry at yahoo.ca  Sun Mar  1 03:38:10 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Sat, 28 Feb 2015 22:38:10 -0500
+Subject: [GTALUG] 2 networks under ip (iproute2)
+In-Reply-To: <20150301024602.GA19600@waltdnes.org>
+References: <20150227072136.GA19264@waltdnes.org>
+ <20150228030824.GA23857@waltdnes.org> <54F132C1.5080707@rogers.com>
+ <20150301024602.GA19600@waltdnes.org>
+Message-ID: <20150301033810.GA378@node1.localdomain>
+
+On Sat, Feb 28, 2015 at 09:46:02PM -0500, Walter Dnes wrote:
+> On Fri, Feb 27, 2015 at 10:15:13PM -0500, James Knott wrote
+> > 
+> > Does it not even allow DHCP?  If not then that is a really crappy
+> > piece of hardware.
+> 
+>   No.  I have an ancient HDHR-US model.  Looking back at my archived
+> emails, I figure that I got it sometime around June 2010.  The output
+
+June 2010 is not "ancient".  Now I know what to avoid.
+-- 
+William
+
+From james.knott at rogers.com  Sun Mar  1 03:46:58 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sat, 28 Feb 2015 22:46:58 -0500
+Subject: [GTALUG] 2 networks under ip (iproute2)
+In-Reply-To: <20150301033053.GA20751@waltdnes.org>
+References: <20150227072136.GA19264@waltdnes.org>
+ <20150228030824.GA23857@waltdnes.org> <54F132C1.5080707@rogers.com>
+ <20150301024602.GA19600@waltdnes.org> <54F27EA0.2070404@rogers.com>
+ <20150301033053.GA20751@waltdnes.org>
+Message-ID: <54F28BB2.2040303@rogers.com>
+
+On 02/28/2015 10:30 PM, Walter Dnes wrote:
+> ...in my /etc/conf.d/net (probably Gentoo specific) and it keeps working
+> using ifconfig.  I got the tuner sometime around May 2010.  When
+> ifconfig support is totally deprecated, it'll probably be time for a new
+> tuner anyways.
+
+That's only 5 years old.  There is absolutely no reason why it shouldn't
+support both static config and DHCP other than incompetence.
+
+From hugh at mimosa.com  Sun Mar  1 06:49:50 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 1 Mar 2015 01:49:50 -0500 (EST)
+Subject: [GTALUG] 2 networks under ip (iproute2)
+In-Reply-To: <20150228030824.GA23857@waltdnes.org>
+References: <20150227072136.GA19264@waltdnes.org>
+ <20150228030824.GA23857@waltdnes.org>
+Message-ID: <alpine.LRH.2.02.1503010135390.23749@redclaw.mimosa.com>
+
+| From: Walter Dnes <waltdnes at waltdnes.org>
+
+| 1) It's WAD (Working As Designed).  I'm doing what the instructions told
+|    me to do.  YES!!!
+
+There are indications that it will pay attention to DHCP.  See, for
+example, <http://en.wikipedia.org/wiki/HDHomeRun#General_details> last
+sentence, first paragraph.  Of course it could be wrong.
+
+You could consider doing a tcpdump to see what the thing does when it
+is turned on.  I don't know what you have as a dhcp server -- it is
+handy if it can run tcpdump.  Still, enough of the protocol is
+broadcast that you should be able to get a clue whether the HDHR is
+DHCPing.
+
+There are also indications that it doesn't want the stream to be
+routed; it wants to be communicating only on the network segment
+<https://help.ubuntu.com/community/HDHomeRun#Requirements>
+
+A little bit confusing.
+
+| 2) It's an ancient model, that does not allow setting a static IP address
+
+2010 isn't ancient.  The iproute2 was added to Linux perhaps 15 years
+ago.  ifconfig has been emulated for a long long time.  So anything
+you can do with ifconfig out to be possible with the ip command.
+
+>From ip(8):
+HISTORY
+       ip was written by Alexey N. Kuznetsov and added in Linux 2.2.
+
+| 3) The setup works fine under ifconfig; but not under ip (iproute2).
+|    Gentoo recently changed to iproute2 as the default networking suite.
+|    I have to over-ride the default to get it working again.
+
+I don't know what that means.  I haven't looked.  But I'm pretty sure
+that the kernel stuff hasn't changed recently.
+
+| 4) A change of the default is usually a precursor to eventually getting
+|    rid of support for the old default alltogether.  I want to get it
+|    working under ip (iproute2) before Gentoo dumps support for ifconfig.
+
+As far as I know, "real" ifconfig is long gone.
+
+The documentation of the ip command is so terrible that I still use
+ifconfig.
+
+From hugh at mimosa.com  Sun Mar  1 07:24:08 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 1 Mar 2015 02:24:08 -0500 (EST)
+Subject: [GTALUG] Mini PC for Home Office?
+In-Reply-To: <e39d64aa85785718e301c12e7e6a72b8.squirrel@webmail.ee.ryerson.ca>
+References: <e39d64aa85785718e301c12e7e6a72b8.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <alpine.LRH.2.02.1503010150030.23749@redclaw.mimosa.com>
+
+| From: phiscock at ee.ryerson.ca
+
+| I'm considering the Zotac and Asus mini-pcs for the basis of a home-office
+| system.
+
+I have a few of these.  Low-end versions.
+
+I'm not sure that they are the optimal choice for your use.  It
+depends on what things matter to you.
+
+I might well be focusing more on price than you would.  For me, it is
+part of the game.
+
+- ones with real CPUs (i3 or better) are not that cheap
+
+- I have old ones with older Atoms (Acer Revos).  Great for the time,
+  but not now.
+
+- I have a Zotac with an AMD E350.  Better than old Atoms, but
+  limiting.
+
+- I have Zotacs based on Celerons (847 and 1007).  Those have
+  non-trivial crunch, but not main-stream crunch.  I run more-or-less
+  current Fedora on them.
+
+- they generally take notebook components (RAM, HDD / SSD) which seems
+  OK but has its quirks.
+
+- you can buy them bare-bones or populated.
+
+In some ways, you might be better off buying a carefully select
+notebook that you leave closed.  Perhaps cheaper for the same crunch.
+The packaging isn't as nice.  Also: might take some hunting.
+
+The Intel NUC is another to consider.  Also Gigabyte Brix.
+
+Here's a random example of a Zotac Zbox bare-bones with a Haswell
+(non-Atom) Celeron:
+<http://www.newegg.ca/Product/Product.aspx?Item=N82E16856173102CVF&cm_re=zotac_zbox-_-56-173-102CVF-_-Product>
+I'm not sure, but I think that Haswell is a win over even the pretty
+good new generation of Atoms.
+Note: I have not carefully selected this to be a good choice.
+
+Here's a Bix based on a Celeron of the Atom family:
+<http://www.newegg.ca/Product/Product.aspx?Item=N82E16856164017&cm_re=gigabyte_brix-_-56-164-017-_-Product>
+It might be quieter than the Haswell-based Zotac.  Notice details like
+that there is only one SODIMM slot.
+
+If the stars align (actually if the holes align) sometimes you can mount 
+the little box on the back of the monitor.  The key is "vesa" mounting 
+holes.  Only some monitors have them.  Only some little boxes have 
+brackets to fit on them.  I've only done that once.
+
