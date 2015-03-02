@@ -1,0 +1,106 @@
+From me at mylesbraithwaite.com  Sun Mar  1 21:06:39 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Sun, 1 Mar 2015 16:06:39 -0500
+Subject: [GTALUG-Ops] [Small Tasks] GTALUG moderation warning and a ssl
+	certificate
+Message-ID: <1898187B-9380-4214-9BD5-3133136FD1AB@mylesbraithwaite.com>
+
+If anyone has some free time the following should get tackled soonish:
+
+1) We need to put something on the website saying that your first message will be put in a moderation queue before you are allowed to post to the list, this is to prevent spammers. If someone could draft this up it would be really helpful. The page's source is located here: <https://github.com/gtalug/website/blob/master/pages/mailing-list.markdown>.
+
+2) A couple of people have complained about the lack of a SSL certificate on the GTALUG.org web site (we do ask for a password with mailman sign ups). Could someone research how we could do this for free. Will this need to be renewed annually? Can a self-signed cert be okay? etc. 
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150301/a60031db/attachment.html>
+
+From greg.martyn at gmail.com  Sun Mar  1 23:09:18 2015
+From: greg.martyn at gmail.com (Greg Martyn)
+Date: Sun, 1 Mar 2015 18:09:18 -0500
+Subject: [GTALUG-Ops] [Small Tasks] GTALUG moderation warning and a ssl
+	certificate
+In-Reply-To: <1898187B-9380-4214-9BD5-3133136FD1AB@mylesbraithwaite.com>
+References: <1898187B-9380-4214-9BD5-3133136FD1AB@mylesbraithwaite.com>
+Message-ID: <CAJt6_8tPrspZ0pDuxyXHSuyhi1oVoryTDPAMx4Mi6S5SwpvFRA@mail.gmail.com>
+
+Cloudflare has a free https option that I believe would support our needs.
+It depends on SNI, but that's supported by all modern browsers / tools.
+Plus on top of that, you get a free CDN and SPDY (a/k/a HTTP/2's
+predecessor) support.
+
+https://blog.cloudflare.com/introducing-universal-ssl/
+
+-Greg
+
+On Sun, Mar 1, 2015 at 4:06 PM, Myles Braithwaite <me at mylesbraithwaite.com>
+wrote:
+
+> If anyone has some free time the following should get tackled soonish:
+>
+> 1) We need to put something on the website saying that your first message
+> will be put in a moderation queue before you are allowed to post to the
+> list, this is to prevent spammers. If someone could draft this up it would
+> be really helpful. The page's source is located here: <
+> https://github.com/gtalug/website/blob/master/pages/mailing-list.markdown
+> >.
+>
+> 2) A couple of people have complained about the lack of a SSL certificate
+> on the GTALUG.org web site (we do ask for a password with mailman sign
+> ups). Could someone research how we could do this for free. Will this need
+> to be renewed annually? Can a self-signed cert be okay? etc.
+>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150301/4a7fb68e/attachment.html>
+
+From myles at monkeyinyoursoul.com  Mon Mar  2 02:55:12 2015
+From: myles at monkeyinyoursoul.com (Myles Braithwaite)
+Date: Sun, 1 Mar 2015 21:55:12 -0500
+Subject: [GTALUG-Ops] Fwd: Linode Support Ticket 4279819 - Critical Xen
+	Maintenance / Reboot Schedule
+References: <939615173.257645.1425244970168.JavaMail.cfusion@mail2.linode.com>
+Message-ID: <26CD0AA9-CDE7-4044-8A44-D78A0D49B197@monkeyinyoursoul.com>
+
+Begin forwarded message:
+
+> From: support at linode.com
+> Date: March 1, 2015 at 4:22:50 PM EST
+> To: myles at monkeyinyoursoul.com
+> Subject: Linode Support Ticket 4279819 - Critical Xen Maintenance / Reboot Schedule
+> 
+> Hello,
+> 
+> Linode recently received several Xen Security Advisories (XSAs) that require us to perform updates to our host servers. In order to apply the updates, hosts and the Linodes running on them must be rebooted. The XSAs will be publicly released by the Xen project team on March 10th, therefore we must complete the updates before that date. 
+> 
+> These updates are required to protect the security and safe operations of not only our infrastructure, but yours as well. We understand that a disruption with such limited notice is inconvenient, and we hope you understand that these measures are warranted due to the severity of the XSAs. 
+> 
+> Your Linodes have been assigned a maintenance window in which a reboot will occur. These times are listed within the Linode Manager[1] in the timezone set in your user's My Profile[2]. Your schedule in UTC timezone is as follows:
+> 
+> * 2015-03-04 4:00:00 AM UTC - penguin
+
+> During the maintenance window Linode instances will be cleanly shut down while we perform the updates. Your Linode will be inaccessible during this time. A two-hour window is allocated, however the actual downtime can be much less. After the maintenance, each Linode will then be booted. See our Reboot Survival Guide[3] for tips and hints on configuring and testing that your Linode services boot properly after the maintenance.
+> 
+> Unfortunately, due the logistical demands of this effort, your assigned windows are not changeable and the host reboots are mandatory.
+> 
+> For general information, please see our status post: <http://status.linode.com/incidents/2dyvn29ds5mz>
+> 
+> Please let us know if there is anything we can do to assist.
+> 
+> [1] <https://manager.linode.com/linodes>
+> [2] <https://manager.linode.com/profile>
+> [3] <https://www.linode.com/docs/uptime/reboot-survival-guide>
+> 
+> -Linode
+> 
+> ---
+> https://manager.linode.com/support/ticket/4279819 
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150301/fc95606c/attachment.html>
+

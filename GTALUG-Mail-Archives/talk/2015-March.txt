@@ -298,3 +298,581 @@ the little box on the back of the monitor.  The key is "vesa" mounting
 holes.  Only some monitors have them.  Only some little boxes have 
 brackets to fit on them.  I've only done that once.
 
+From waltdnes at waltdnes.org  Sun Mar  1 11:27:49 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Sun, 1 Mar 2015 06:27:49 -0500
+Subject: [GTALUG] 2 networks under ip (iproute2)
+In-Reply-To: <alpine.LRH.2.02.1503010135390.23749@redclaw.mimosa.com>
+References: <20150227072136.GA19264@waltdnes.org>
+ <20150228030824.GA23857@waltdnes.org>
+ <alpine.LRH.2.02.1503010135390.23749@redclaw.mimosa.com>
+Message-ID: <20150301112749.GB22742@waltdnes.org>
+
+On Sun, Mar 01, 2015 at 01:49:50AM -0500, D. Hugh Redelmeier wrote
+> | From: Walter Dnes <waltdnes at waltdnes.org>
+> 
+> | 1) It's WAD (Working As Designed).  I'm doing what the instructions told
+> |    me to do.  YES!!!
+> 
+> There are indications that it will pay attention to DHCP.  See, for
+> example, <http://en.wikipedia.org/wiki/HDHomeRun#General_details> last
+> sentence, first paragraph.  Of course it could be wrong.
+
+  This particular model does not... period... end of story.  I've
+already posted the results of "get help" for this device.  My model does
+***NOT*** show...
+
+/sys/ipaddr dhcp|"<ip> <mask> <gw> <dns>"
+
+...as one of the supported commands.  Later models do.  I've done the
+latest firmware upgrade, just in case.
+
+> | 2) It's an ancient model, that does not allow setting a static IP address
+> 
+> 2010 isn't ancient.
+
+  See https://www.youtube.com/watch?v=JXmi-6nVhCM which is the exact
+same model I have.  I bought mine in 2010, but the reviewer notes that
+it won some award at CES2008.  Consider it a 2008, possibly 2007, model.
+
+> | 3) The setup works fine under ifconfig; but not under ip (iproute2).
+> |    Gentoo recently changed to iproute2 as the default networking suite.
+> |    I have to over-ride the default to get it working again.
+> 
+> I don't know what that means.  I haven't looked.  But I'm pretty sure
+> that the kernel stuff hasn't changed recently.
+
+  Kernel hasn't changed, but the Gentoo linux distribution has.  This is
+a Gentoo-specific item.
+
+> | 4) A change of the default is usually a precursor to eventually getting
+> |    rid of support for the old default alltogether.  I want to get it
+> |    working under ip (iproute2) before Gentoo dumps support for ifconfig.
+> 
+> As far as I know, "real" ifconfig is long gone.
+
+  It waddles like a duck, quacks like a duck, flies like a duck; as far
+as I'm concerned it is a duck.  Some people argue that current Intel X86
+isn't really a CISC processor.  That it's actually a RISC processor that
+emulates a CISC processor.  That's nitpicking.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From dmason at ryerson.ca  Sun Mar  1 18:55:26 2015
+From: dmason at ryerson.ca (David Mason)
+Date: Sun, 1 Mar 2015 13:55:26 -0500
+Subject: [GTALUG] Dan Gilmore on computing freedom
+Message-ID: <CALFgxqBpO2Lob_giFkwYfR-+Zi44sxT4jcAdfaxPP2577UZa_w@mail.gmail.com>
+
+https://medium.com/backchannel/why-i-m-saying-goodbye-to-apple-google-and-microsoft-78af12071bd
+
+From opengeometry at yahoo.ca  Sun Mar  1 19:23:56 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Sun, 1 Mar 2015 14:23:56 -0500
+Subject: [GTALUG] Dan Gilmore on computing freedom
+In-Reply-To: <CALFgxqBpO2Lob_giFkwYfR-+Zi44sxT4jcAdfaxPP2577UZa_w@mail.gmail.com>
+References: <CALFgxqBpO2Lob_giFkwYfR-+Zi44sxT4jcAdfaxPP2577UZa_w@mail.gmail.com>
+Message-ID: <20150301192356.GA7354@node1.localdomain>
+
+On Sun, Mar 01, 2015 at 01:55:26PM -0500, David Mason wrote:
+> https://medium.com/backchannel/why-i-m-saying-goodbye-to-apple-google-and-microsoft-78af12071bd
+
+Strange... Cyanogenmod is Android app.
+
+From hgr at buynet.com  Sun Mar  1 10:33:34 2015
+From: hgr at buynet.com (Herb Richter)
+Date: Sun, 01 Mar 2015 05:33:34 -0500
+Subject: [GTALUG] Mini PC for Home Office?
+In-Reply-To: <e39d64aa85785718e301c12e7e6a72b8.squirrel@webmail.ee.ryerson.ca>
+References: <e39d64aa85785718e301c12e7e6a72b8.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <54F2EAFE.1080806@buynet.com>
+
+
+On 15-02-28 10:09 PM, phiscock at ee.ryerson.ca wrote:
+> I'm considering the Zotac and Asus mini-pcs for the basis of a home-office
+> system. It won't be used for gaming, just spreadsheets, word processing
+> and internetting.
+I have an ASUS VivoPC-VM40B-01 (win8.0) now -02 (win8.1) :
+
+     http://www.newegg.ca/Product/Product.aspx?Item=N82E16883220628
+
+- runs Ubuntu 14.04 easily
+
+I bought it originally to run the last two windows apps I need - personal
+and corporate tax programs - turns out I can run new versions of these 
+with wine 1.7
+
+I would happily buy another if I needed another desktop box.
+
+
+
+[sorry for the html]
+
+From ansarm at gmail.com  Sun Mar  1 20:20:34 2015
+From: ansarm at gmail.com (Ansar Mohammed)
+Date: Sun, 1 Mar 2015 15:20:34 -0500
+Subject: [GTALUG] Spring Cleaning
+Message-ID: <CAOO1MfvsUMWb5nnRJSb8BPOht=kA0ag5fNG_WopC4H8aF1v3Sg@mail.gmail.com>
+
+Once again, I have accumulated a large collection of computer parts.
+
+THIN CLIENTS (these were hand picked by me; they are essentially x86
+boxes that can run Linux or FreeBSD)
+
+
+probably about 10 hard drives of pretty much everything you can imagine.
+2.5/3.5 SATA IDE and a few SCSI (no SAS)
+
+Laptops (some working, some for parts)
+Lots of Memory (various quantities) too much to categorize
+Motherboards
+Cases
+Power supplies
+Every type of cable known to mankind IDE, SATA, USB, Floppy SCSI.
+The vast majority of these items are in working order. There may be a
+few that don't work because they have been in storage for a while.
+If you are looking for a specific item, I may be able to help you, if
+not I would prefer the lot go to someone who can make use of this
+instead of going into a landfill.
+
+From Amos.Weatherill at zoho.com  Sun Mar  1 20:57:13 2015
+From: Amos.Weatherill at zoho.com (Amos H. Weatherill)
+Date: Sun, 1 Mar 2015 15:57:13 -0500
+Subject: [GTALUG] Spring Cleaning
+In-Reply-To: <CAOO1MfvsUMWb5nnRJSb8BPOht=kA0ag5fNG_WopC4H8aF1v3Sg@mail.gmail.com>
+References: <CAOO1MfvsUMWb5nnRJSb8BPOht=kA0ag5fNG_WopC4H8aF1v3Sg@mail.gmail.com>
+Message-ID: <242d4f9e-526d-4cc7-a97f-412dde708733.maildroid@localhost>
+
+Hello Ansar,
+
+I would be interested in several, if not all of those items.
+
+Please contact me at amos.weatherill at zoho.com and we'll talk.
+
+Thank You,
+Amos
+
+Sent from my android device.
+
+-----Original Message-----
+From: Ansar Mohammed <ansarm at gmail.com>
+To: talk at gtalug.org
+Sent: Sun, 01 Mar 2015 15:54
+Subject: [GTALUG] Spring Cleaning
+
+Once again, I have accumulated a large collection of computer parts.
+
+THIN CLIENTS (these were hand picked by me; they are essentially x86
+boxes that can run Linux or FreeBSD)
+
+
+probably about 10 hard drives of pretty much everything you can imagine.
+2.5/3.5 SATA IDE and a few SCSI (no SAS)
+
+Laptops (some working, some for parts)
+Lots of Memory (various quantities) too much to categorize
+Motherboards
+Cases
+Power supplies
+Every type of cable known to mankind IDE, SATA, USB, Floppy SCSI.
+The vast majority of these items are in working order. There may be a
+few that don't work because they have been in storage for a while.
+If you are looking for a specific item, I may be able to help you, if
+not I would prefer the lot go to someone who can make use of this
+instead of going into a landfill.
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150301/30e5d5ba/attachment.html>
+
+From evan at telly.org  Sun Mar  1 22:34:16 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Sun, 1 Mar 2015 17:34:16 -0500
+Subject: [GTALUG] Mini PC for Home Office?
+In-Reply-To: <54F2EAFE.1080806@buynet.com>
+References: <e39d64aa85785718e301c12e7e6a72b8.squirrel@webmail.ee.ryerson.ca>
+ <54F2EAFE.1080806@buynet.com>
+Message-ID: <CAMguqh03xGwZJK1f_muSDiuqOj8-otLcDsuYFRbUyXuYOjqkyg@mail.gmail.com>
+
+Now that the Raspberry Pi 2 is even capable of running Windows (and
+promises to run Linux. XBMC etc even faster), I wonder if it might be
+enough for your needs.
+
+4xUSB
+1xHDMI
+1xMicroSD
+1xRJ45 (for wired Ethernet)
+1xMicroUSB (for power)
+
+Wifi is usually offered by a USB dongle. Probably not much luck about a
+second HDMI, tho. But can't beat the price.
+
+http://www.raspberrypi.org/raspberry-pi-2-on-sale/
+http://blogs.windows.com/buildingapps/2015/02/02/windows-10-coming-to-raspberry-pi-2/
+
+On 1 March 2015 at 05:33, Herb Richter <hgr at buynet.com> wrote:
+
+>
+> On 15-02-28 10:09 PM, phiscock at ee.ryerson.ca wrote:
+>
+>> I'm considering the Zotac and Asus mini-pcs for the basis of a home-office
+>> system. It won't be used for gaming, just spreadsheets, word processing
+>> and internetting.
+>>
+> I have an ASUS VivoPC-VM40B-01 (win8.0) now -02 (win8.1) :
+>
+>     http://www.newegg.ca/Product/Product.aspx?Item=N82E16883220628
+>
+> - runs Ubuntu 14.04 easily
+>
+> I bought it originally to run the last two windows apps I need - personal
+> and corporate tax programs - turns out I can run new versions of these
+> with wine 1.7
+>
+> I would happily buy another if I needed another desktop box.
+>
+>
+>
+> [sorry for the html]
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+
+-- 
+Evan Leibovitch
+Toronto Canada
+
+Em: evan at telly dot org
+Sk: evanleibovitch
+Tw: el56
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150301/2579bde7/attachment.html>
+
+From phiscock at ee.ryerson.ca  Sun Mar  1 23:07:22 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Sun, 1 Mar 2015 18:07:22 -0500
+Subject: [GTALUG] Mini PC for Home Office?
+In-Reply-To: <54F2EAFE.1080806@buynet.com>
+References: <e39d64aa85785718e301c12e7e6a72b8.squirrel@webmail.ee.ryerson.ca>
+ <54F2EAFE.1080806@buynet.com>
+Message-ID: <56c715f643a55fc90edb039252c3c5c0.squirrel@webmail.ee.ryerson.ca>
+
+The ASUS VivoPC-VM40B-01 suggested by Herb (actually, it's the -02 model)
+is available from Canada Computers (my preferred source) for under $300. I
+initially rejected it because the CC blurb does not mention any ports. But
+the Asus website spec
+
+http://www.asus.com/ca-en/ASUS_VivoPC/VivoPC_VM40B/specifications/
+
+lists a whole slew of them:
+
+Back I/O Ports
+2 x USB 3.0
+4 x USB 2.0
+1 x HDMI
+1 x VGA(D-Sub)-Out
+1 x RJ45 LAN
+1 x Kensington Lock
+1 x DC-in
+1 x Optical S/PDIF out
+3 x Audio Jack(s) (Line in/Mic in/Speaker out)
+
+Theoretically, one could run two monitors, using the VGA and HDMI ports,
+although I'm not sure if the Intel graphics could handle that.
+
+On the Raspberry Pi, it's an intriguing possibility, but a review mentions
+that some applications are not available for the operating system
+Raspbian.
+
+Peter
+
+>
+> On 15-02-28 10:09 PM, phiscock at ee.ryerson.ca wrote:
+>> I'm considering the Zotac and Asus mini-pcs for the basis of a
+>> home-office
+>> system. It won't be used for gaming, just spreadsheets, word processing
+>> and internetting.
+> I have an ASUS VivoPC-VM40B-01 (win8.0) now -02 (win8.1) :
+>
+>      http://www.newegg.ca/Product/Product.aspx?Item=N82E16883220628
+>
+> - runs Ubuntu 14.04 easily
+>
+> I bought it originally to run the last two windows apps I need - personal
+> and corporate tax programs - turns out I can run new versions of these
+> with wine 1.7
+>
+> I would happily buy another if I needed another desktop box.
+>
+>
+>
+> [sorry for the html]
+>
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From devguy.ca at gmail.com  Mon Mar  2 01:01:27 2015
+From: devguy.ca at gmail.com (Dev Guy)
+Date: Sun, 1 Mar 2015 20:01:27 -0500
+Subject: [GTALUG] SSH Hangs
+In-Reply-To: <54DE1851.9060601@rogers.com>
+References: <CAMRGebjLdCfcjmpKCiqw2-Fb41o=kEuk5mRZEYKs+gBhF6+xyQ@mail.gmail.com>
+ <54DE102B.7090902@mylesbraithwaite.com>
+ <54DE15A9.7030903@3kids.net> <54DE1851.9060601@rogers.com>
+Message-ID: <CAMRGebhCUca-VqA3xTsvoRq_s+tZtevGT8TC5PY2KO+eT+4O9g@mail.gmail.com>
+
+The problem ended up being my router, once I updated the firmware
+everything started working and I was able to setup ssh access with a RSA
+key only.
+
+On Fri, Feb 13, 2015 at 10:29 AM, James Knott <james.knott at rogers.com>
+wrote:
+
+> On 02/13/2015 10:18 AM, Tim Carroll wrote:
+> > I had this same problem.
+> > Up until a week or two ago port 22 worked fine.
+> > Then internally 22 was ok but externally it failed. (connection denied
+> > error).
+> > I even called Bell but they denied changing anything.
+> > As soon as I changed everything too port 2222 it all worked fine again!
+> >
+>
+> Perhaps they're blocking port 22.  Try a TCP port 22 traceroute and see
+> what happens.  Try again with 2222.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+
+-- 
+Kind Regards,
+Rajinder Yadav
+
+SafetyNet Test Driven Development
+http://safetynet.devmentor.org
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150301/44e7199e/attachment.html>
+
+From scruss at gmail.com  Mon Mar  2 01:55:42 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sun, 01 Mar 2015 20:55:42 -0500
+Subject: [GTALUG] Mini PC for Home Office?
+In-Reply-To: <CAMguqh03xGwZJK1f_muSDiuqOj8-otLcDsuYFRbUyXuYOjqkyg@mail.gmail.com>
+References: <e39d64aa85785718e301c12e7e6a72b8.squirrel@webmail.ee.ryerson.ca>
+ <54F2EAFE.1080806@buynet.com>
+ <CAMguqh03xGwZJK1f_muSDiuqOj8-otLcDsuYFRbUyXuYOjqkyg@mail.gmail.com>
+Message-ID: <54F3C31E.8060706@gmail.com>
+
+On 2015-03-01 05:34 PM, Evan Leibovitch wrote:
+> Now that the Raspberry Pi 2 is even capable of running Windows
+
+Note that that's the text-only Windows 10 IoT edition. Text-only Windows
+would be ? VMS, I guess.
+
+> (and promises to run Linux. XBMC etc even faster), I wonder if it
+> might be enough for your needs.
+
+The original Raspberry Pi was laughable as a desktop, but I just set up
+a Raspberry Pi 2* yesterday, and it's not half bad. Browsing is pretty
+snappy, and LibreOffice ? though by no means fast ? was usable. It
+doesn't feel like a small machine. I'm definitely considering recycling
+my old ThinkPad R51 (1.4 GHz Pentium-M, 1.5 GB RAM), as the Raspberry Pi
+2 seems faster than it ever could be. No x86 compatibility, though, but
+I don't really need it.
+
+cheers,
+ Stewart
+
+*: Canada Robotix up on Denison had them. They'll be sold out by now.
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150301/ac48b6b6/attachment.html>
+
+From hugh at mimosa.com  Mon Mar  2 05:45:37 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 2 Mar 2015 00:45:37 -0500 (EST)
+Subject: [GTALUG] Dan Gilmore on computing freedom
+In-Reply-To: <20150301192356.GA7354@node1.localdomain>
+References: <CALFgxqBpO2Lob_giFkwYfR-+Zi44sxT4jcAdfaxPP2577UZa_w@mail.gmail.com>
+ <20150301192356.GA7354@node1.localdomain>
+Message-ID: <alpine.LRH.2.02.1503020040430.13229@redclaw.mimosa.com>
+
+| From: William Park <opengeometry at yahoo.ca>
+
+| On Sun, Mar 01, 2015 at 01:55:26PM -0500, David Mason wrote:
+| > https://medium.com/backchannel/why-i-m-saying-goodbye-to-apple-google-and-microsoft-78af12071bd
+| 
+| Strange... Cyanogenmod is Android app.
+
+It's more like an Android distro.
+
+I think that for a particular device, it is usually cobbled together
+from bits of the official distro (because device drivers tend to be
+closed source).  But I could be wrong: I've never run it.
+
+The water is definitely muddied by Cyanogen Inc.  For example, on the
+OnePlus CI produced the official (for now) Android port.
+
+From hugh at mimosa.com  Mon Mar  2 06:04:48 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 2 Mar 2015 01:04:48 -0500 (EST)
+Subject: [GTALUG] Dan Gilmore on computing freedom
+In-Reply-To: <CALFgxqBpO2Lob_giFkwYfR-+Zi44sxT4jcAdfaxPP2577UZa_w@mail.gmail.com>
+References: <CALFgxqBpO2Lob_giFkwYfR-+Zi44sxT4jcAdfaxPP2577UZa_w@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1503020045480.13229@redclaw.mimosa.com>
+
+
+| https://medium.com/backchannel/why-i-m-saying-goodbye-to-apple-google-and-microsoft-78af12071bd
+
+Interesting.  I think that he's half right about a lot of stuff.
+
+Apple was NEVER a good guy with respect to freedom.  Except
+accidentally.  For example, the computers after the Apple II were much
+more locked down.
+
+An underdog often looks like a Good Guy.  It would have little power
+to impose its will on its customers.  It would have great incentive to
+produce as much value in its product as it could so that it can
+improve market share.  If the underdog ever becomes overdog, beware.
+
+For me, Linux has been pretty usable on notebooks for quite some
+time (20 years).  For Gilmor, the required tools were probably not
+there initially, but perhaps more important was the impression of
+inadequacy.  Barriers that might have mattered:
+
+- careful picking of notebook to not get stuck with unsupported
+  devices (gotten much better)
+
+- residual configuration not done by vendor.  One good step was
+  getting a reasonable defaulting in Xorg so that xorg.conf was
+  generally not needed.
+
+- Open Office getting "good enough".  Very subjective.  In fact
+  it may well not be the best choice for ones actual task but
+  it falls naturally to hand due to MS Office's mind share.
+
+- games
+
+- Adobe Flash (Apple has almost killed it!  Yay!)
+
+- proprietary software (eg Tax software)
+
+The big privacy battles are now internet-related.  Many are beyond our
+reasonable control.  I can't imagine giving up internet search (I use
+Duck Duck Go but I don't think that eliminates the problem).  The vast
+majority of the internet is bought and paid for by privacy-destroying
+marketing.
+
+From waltdnes at waltdnes.org  Mon Mar  2 06:58:17 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Mon, 2 Mar 2015 01:58:17 -0500
+Subject: [GTALUG] DHCP "hidden feature" / "Easter Egg"
+In-Reply-To: <20150301112749.GB22742@waltdnes.org>
+References: <20150227072136.GA19264@waltdnes.org>
+ <20150228030824.GA23857@waltdnes.org>
+ <alpine.LRH.2.02.1503010135390.23749@redclaw.mimosa.com>
+ <20150301112749.GB22742@waltdnes.org>
+Message-ID: <20150302065817.GB25904@waltdnes.org>
+
+  This is what I get for TTFM (Trusting The Fine Manual). I did Google
+and RTFM.  Page 6 of the PDF document at the manufacturer's website...
+http://www.silicondust.com/hdhomerun/hdhomerun_tech.pdf lists the output
+from a "get help" command ***FOR CURRENT MODELS***.  It includes,
+amongst other items...
+
+/sys/ipaddr dhcp|"<ip> <mask> <gw> <dns>"
+
+  On my machine, "get help" produces...
+
+Supported configuration options:
+/ir/target <protocol>://<ip>:<port>
+/lineup/location <countrycode>:<postcode>
+/sys/copyright
+/sys/debug
+/sys/features
+/sys/hwmodel
+/sys/model
+/sys/restart <resource>
+/sys/version
+/tuner<n>/channel <modulation>:<freq|ch>
+/tuner<n>/channelmap <channelmap>
+/tuner<n>/debug
+/tuner<n>/filter "0x<nnnn>-0x<nnnn> [...]"
+/tuner<n>/lockkey
+/tuner<n>/program <program number>
+/tuner<n>/streaminfo
+/tuner<n>/status
+/tuner<n>/target <ip>:<port>
+
+  There is no mention of "/sys/ipaddr" ***ON MY MACHINE***.  I also
+remember various people asking on the HDHomerun support forum years ago
+about IP addresses, and hearing that this model did not have any other
+addressing options.  One correction on the date of my machine.   See
+https://www.youtube.com/watch?v=JXmi-6nVhCM which discusses the exact
+same model I have.  I bought mine in 2010, but the reviewer notes that
+it won some award at CES2008.  Consider it a 2008 model.
+
+  Due to the documentation, and lack of mention of DHCP in "get help",
+I assumed it wouldn't work.  However, just for ####s and giggles, I
+enabled the DHCP server on my router, set the DHCP address pool to
+192.168.123.241-to-192.168.123.247, and expanded my local LAN subnet
+from a /29 to a /28 like so...
+
+config_eth0="
+192.168.123.251/28 broadcast 192.168.123.255"
+routes_eth0="
+default via 192.168.123.254 metric 20
+192.168.123.240/28 via 192.168.123.254 metric 0"
+
+  Notice the lack of a 'modules=( "!iproute2" )' line.  I installed the
+latest firmware update from the manufacturer's website...
+(hdhomerun_atsc_firmware_20141124.bin).  Lo and behold, it actually
+works, coming up at 192.168.123.241.  This is notwithstanding the
+documentation and "get help" output, which both say nothing about DHCP.
+Maybe this was a feature that was backported into a firmware update.
+Anyhow, I apologize for wasting peoples' time.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From hugh at mimosa.com  Mon Mar  2 07:39:31 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 2 Mar 2015 02:39:31 -0500 (EST)
+Subject: [GTALUG] DHCP "hidden feature" / "Easter Egg"
+In-Reply-To: <20150302065817.GB25904@waltdnes.org>
+References: <20150227072136.GA19264@waltdnes.org>
+ <20150228030824.GA23857@waltdnes.org>
+ <alpine.LRH.2.02.1503010135390.23749@redclaw.mimosa.com>
+ <20150301112749.GB22742@waltdnes.org> <20150302065817.GB25904@waltdnes.org>
+Message-ID: <alpine.LRH.2.02.1503020236580.13229@redclaw.mimosa.com>
+
+| From: Walter Dnes <waltdnes at waltdnes.org>
+
+| Anyhow, I apologize for wasting peoples' time.
+
+No problem: it was educational for us.  And only you had to suffer :-)
+
+That's why I post war stories to this list.
+
