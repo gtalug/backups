@@ -104,3 +104,58 @@ Begin forwarded message:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/operations/attachments/20150301/fc95606c/attachment.html>
 
+From scruss at scruss.com  Mon Mar  2 12:44:48 2015
+From: scruss at scruss.com (Stewart C. Russell)
+Date: Mon, 02 Mar 2015 07:44:48 -0500
+Subject: [GTALUG-Ops] Openstreetmap talk for GTALUG?
+In-Reply-To: <54F0E39E.5090100@mylesbraithwaite.com>
+References: <0Lkhla-1XtEHo0XKe-00aRaG@mrelay.perfora.net>
+ <54F0E39E.5090100@mylesbraithwaite.com>
+Message-ID: <54F45B40.5070403@scruss.com>
+
+Hi Myles - happy to give the OSM talk in May, then. I've presented
+before, but back in the UofT days.
+
+Any particular aspect of OpenStreetMap you'd want me to talk about?
+
+cheers,
+ Stewart
+
+
+From me at mylesbraithwaite.com  Mon Mar  2 13:50:44 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 02 Mar 2015 08:50:44 -0500
+Subject: [GTALUG-Ops] [Small Tasks] GTALUG moderation warning and a ssl
+ certificate
+In-Reply-To: <CAJt6_8tPrspZ0pDuxyXHSuyhi1oVoryTDPAMx4Mi6S5SwpvFRA@mail.gmail.com>
+References: <1898187B-9380-4214-9BD5-3133136FD1AB@mylesbraithwaite.com>
+ <CAJt6_8tPrspZ0pDuxyXHSuyhi1oVoryTDPAMx4Mi6S5SwpvFRA@mail.gmail.com>
+Message-ID: <54F46AB4.7050501@mylesbraithwaite.com>
+
+Greg Martyn wrote:
+> Cloudflare has a free https option that I believe would support our
+> needs. It depends on SNI, but that's supported by all modern browsers
+> / tools. Plus on top of that, you get a free CDN and SPDY (a/k/a
+> HTTP/2's predecessor) support.
+>
+> https://blog.cloudflare.com/introducing-universal-ssl/
+
+Added to the agenda for the upcoming operations meeting.
+
+From me at mylesbraithwaite.com  Mon Mar  2 16:32:19 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 02 Mar 2015 11:32:19 -0500
+Subject: [GTALUG-Ops] Openstreetmap talk for GTALUG?
+In-Reply-To: <54F45B40.5070403@scruss.com>
+References: <0Lkhla-1XtEHo0XKe-00aRaG@mrelay.perfora.net>
+ <54F0E39E.5090100@mylesbraithwaite.com> <54F45B40.5070403@scruss.com>
+Message-ID: <54F49093.50705@mylesbraithwaite.com>
+
+Stewart C. Russell wrote:
+> Any particular aspect of OpenStreetMap you'd want me to talk about?
+
+I think the last meeting was about five years ago, so we definitely need
+a refresher about what issues OSM is trying to solve. Also the issues
+with moving to a different open license would be interesting. We are
+more interested in the philosophical than the technical.
+
