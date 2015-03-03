@@ -876,3 +876,171 @@ No problem: it was educational for us.  And only you had to suffer :-)
 
 That's why I post war stories to this list.
 
+From waltdnes at waltdnes.org  Mon Mar  2 10:56:21 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Mon, 2 Mar 2015 05:56:21 -0500
+Subject: [GTALUG] Dan Gilmore on computing freedom
+In-Reply-To: <20150301192356.GA7354@node1.localdomain>
+References: <CALFgxqBpO2Lob_giFkwYfR-+Zi44sxT4jcAdfaxPP2577UZa_w@mail.gmail.com>
+ <20150301192356.GA7354@node1.localdomain>
+Message-ID: <20150302105621.GA28741@waltdnes.org>
+
+On Sun, Mar 01, 2015 at 02:23:56PM -0500, William Park wrote
+> On Sun, Mar 01, 2015 at 01:55:26PM -0500, David Mason wrote:
+> > https://medium.com/backchannel/why-i-m-saying-goodbye-to-apple-google-and-microsoft-78af12071bd
+> 
+> Strange... Cyanogenmod is Android app.
+
+  Cyanogenmod is to Android as BSD is to Mac OSX.  Cyanogenmod is free
+of Google-Garbage.  It's a lot faster and more under your control.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From gilesorr at gmail.com  Mon Mar  2 15:07:15 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Mon, 2 Mar 2015 10:07:15 -0500
+Subject: [GTALUG] Dan Gilmore on computing freedom
+In-Reply-To: <20150302105621.GA28741@waltdnes.org>
+References: <CALFgxqBpO2Lob_giFkwYfR-+Zi44sxT4jcAdfaxPP2577UZa_w@mail.gmail.com>
+ <20150301192356.GA7354@node1.localdomain>
+ <20150302105621.GA28741@waltdnes.org>
+Message-ID: <CAEnxSC7kHzsYDirafwbOMYho-yt1NUcG0V8x5ZWL-XebGnYYMw@mail.gmail.com>
+
+On 2 March 2015 at 05:56, Walter Dnes <waltdnes at waltdnes.org> wrote:
+> On Sun, Mar 01, 2015 at 02:23:56PM -0500, William Park wrote
+>> On Sun, Mar 01, 2015 at 01:55:26PM -0500, David Mason wrote:
+>> > https://medium.com/backchannel/why-i-m-saying-goodbye-to-apple-google-and-microsoft-78af12071bd
+>>
+>> Strange... Cyanogenmod is Android app.
+>
+>   Cyanogenmod is to Android as BSD is to Mac OSX.  Cyanogenmod is free
+> of Google-Garbage.  It's a lot faster and more under your control.
+
+Cyanogen Inc. is now a for-profit company with its own agenda, and I'm
+leery of their claims that "it's all good and we're keeping everything
+open source" - especially now that they're getting funding from
+Microsoft.  I'm sure that RMS has consigned them to the bin for this
+move - I'm a bit more open-minded than that, but seriously skeptical
+about the turn of events.  I think your comparison is apt, but the
+future is less than clear - and that's worth noting too.  See also the
+OnePlus mess.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From lsorense at csclub.uwaterloo.ca  Mon Mar  2 20:50:22 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 2 Mar 2015 15:50:22 -0500
+Subject: [GTALUG] 2 networks under ip (iproute2)
+In-Reply-To: <20150301112749.GB22742@waltdnes.org>
+References: <20150227072136.GA19264@waltdnes.org>
+ <20150228030824.GA23857@waltdnes.org>
+ <alpine.LRH.2.02.1503010135390.23749@redclaw.mimosa.com>
+ <20150301112749.GB22742@waltdnes.org>
+Message-ID: <20150302205022.GD25509@csclub.uwaterloo.ca>
+
+On Sun, Mar 01, 2015 at 06:27:49AM -0500, Walter Dnes wrote:
+>   It waddles like a duck, quacks like a duck, flies like a duck; as far
+> as I'm concerned it is a duck.  Some people argue that current Intel X86
+> isn't really a CISC processor.  That it's actually a RISC processor that
+> emulates a CISC processor.  That's nitpicking.
+
+Well the firmware updates claim improved dhcp compatibility with new
+routers as one of the things they have done.  Are you running the latest
+firwmare on the box?
+
+https://www.silicondust.com/support/downloads/firmware-changelog/
+
+Latest firwmare for the HDHR-US appears to be from 20141124:
+
+http://download.silicondust.com/hdhomerun/hdhomerun_atsc_firmware_20141124.bin
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Mon Mar  2 20:52:23 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 2 Mar 2015 15:52:23 -0500
+Subject: [GTALUG] DHCP "hidden feature" / "Easter Egg"
+In-Reply-To: <20150302065817.GB25904@waltdnes.org>
+References: <20150227072136.GA19264@waltdnes.org>
+ <20150228030824.GA23857@waltdnes.org>
+ <alpine.LRH.2.02.1503010135390.23749@redclaw.mimosa.com>
+ <20150301112749.GB22742@waltdnes.org>
+ <20150302065817.GB25904@waltdnes.org>
+Message-ID: <20150302205223.GE25509@csclub.uwaterloo.ca>
+
+On Mon, Mar 02, 2015 at 01:58:17AM -0500, Walter Dnes wrote:
+>   This is what I get for TTFM (Trusting The Fine Manual). I did Google
+> and RTFM.  Page 6 of the PDF document at the manufacturer's website...
+> http://www.silicondust.com/hdhomerun/hdhomerun_tech.pdf lists the output
+> from a "get help" command ***FOR CURRENT MODELS***.  It includes,
+> amongst other items...
+> 
+> /sys/ipaddr dhcp|"<ip> <mask> <gw> <dns>"
+> 
+>   On my machine, "get help" produces...
+> 
+> Supported configuration options:
+> /ir/target <protocol>://<ip>:<port>
+> /lineup/location <countrycode>:<postcode>
+> /sys/copyright
+> /sys/debug
+> /sys/features
+> /sys/hwmodel
+> /sys/model
+> /sys/restart <resource>
+> /sys/version
+> /tuner<n>/channel <modulation>:<freq|ch>
+> /tuner<n>/channelmap <channelmap>
+> /tuner<n>/debug
+> /tuner<n>/filter "0x<nnnn>-0x<nnnn> [...]"
+> /tuner<n>/lockkey
+> /tuner<n>/program <program number>
+> /tuner<n>/streaminfo
+> /tuner<n>/status
+> /tuner<n>/target <ip>:<port>
+> 
+>   There is no mention of "/sys/ipaddr" ***ON MY MACHINE***.  I also
+> remember various people asking on the HDHomerun support forum years ago
+> about IP addresses, and hearing that this model did not have any other
+> addressing options.  One correction on the date of my machine.   See
+> https://www.youtube.com/watch?v=JXmi-6nVhCM which discusses the exact
+> same model I have.  I bought mine in 2010, but the reviewer notes that
+> it won some award at CES2008.  Consider it a 2008 model.
+> 
+>   Due to the documentation, and lack of mention of DHCP in "get help",
+> I assumed it wouldn't work.  However, just for ####s and giggles, I
+> enabled the DHCP server on my router, set the DHCP address pool to
+> 192.168.123.241-to-192.168.123.247, and expanded my local LAN subnet
+> from a /29 to a /28 like so...
+> 
+> config_eth0="
+> 192.168.123.251/28 broadcast 192.168.123.255"
+> routes_eth0="
+> default via 192.168.123.254 metric 20
+> 192.168.123.240/28 via 192.168.123.254 metric 0"
+> 
+>   Notice the lack of a 'modules=( "!iproute2" )' line.  I installed the
+> latest firmware update from the manufacturer's website...
+> (hdhomerun_atsc_firmware_20141124.bin).  Lo and behold, it actually
+> works, coming up at 192.168.123.241.  This is notwithstanding the
+> documentation and "get help" output, which both say nothing about DHCP.
+> Maybe this was a feature that was backported into a firmware update.
+> Anyhow, I apologize for wasting peoples' time.
+
+Hey we learned something too.
+
+I think the idea always was that it should use dhcp.  Newer models
+started allowing static IP, but they all do dhcp.  dhcp is complicated
+though and sometimes compatibility issues happen.  When dhcp does not
+fail, it is very common to default to a link local address of 169.254.x.x,
+which is certainly what windows does, and apparently also what the
+HDHR does.
+
+-- 
+Len Sorensen
+
