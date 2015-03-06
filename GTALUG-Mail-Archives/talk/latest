@@ -1145,3 +1145,375 @@ On Tue, Mar 3, 2015 at 11:35 AM, Bill Thanis <qwerty172 at gmail.com> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150303/6b780120/attachment.html>
 
+From davec-b at rogers.com  Thu Mar  5 14:18:23 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Thu, 05 Mar 2015 09:18:23 -0500
+Subject: [GTALUG] Netbook or used Mac?
+Message-ID: <54F865AF.6000803@rogers.com>
+
+I have an elderly relative who is having real trouble trying to learn 
+how to use a iPad.  Over about five years, she got to be able to write a 
+monthly newsletter for the Ratepayers Association and do email on a Mac, 
+but still had trouble browsing the web or doing anything more 
+complicated. She can do economic tradeoffs in her head, but has no 
+intuition about computers.
+
+Her iMac died, and she tried an iPad, but is having /even more trouble/ 
+than with the mac!
+
+The mention of thin clients here made me wonder: would she be better 
+just buying a new mac, or are there netbooks or thin clients that would 
+seem "just like the mac with different icons" ?
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150305/8afeeb07/attachment.html>
+
+From phiscock at ee.ryerson.ca  Thu Mar  5 14:32:23 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Thu, 5 Mar 2015 09:32:23 -0500
+Subject: [GTALUG] Mini PC for Home Office?
+In-Reply-To: <54F3C31E.8060706@gmail.com>
+References: <e39d64aa85785718e301c12e7e6a72b8.squirrel@webmail.ee.ryerson.ca>
+ <54F2EAFE.1080806@buynet.com>
+ <CAMguqh03xGwZJK1f_muSDiuqOj8-otLcDsuYFRbUyXuYOjqkyg@mail.gmail.com>
+ <54F3C31E.8060706@gmail.com>
+Message-ID: <eb4eb6b6820283896dacf724316d38ce.squirrel@webmail.ee.ryerson.ca>
+
+Here's the outcome of that project:
+
+I purchased the Asus VIVOPC-VM40B-02 and a 22 inch Samsung LCD screen at
+Canada Computers, total $557 (including HST). The computer comes with a
+keyboard and mouse. (Thanks to Herb Richter for that suggestion.)
+
+I was impressed by the packaging and build quality of the computer. I was
+not impressed by Windows 8.1, which is a real dog's breakfast of Selling
+Stuff and Requesting All Your Information, and a really badly designed UI.
+
+So I downloaded the latest version of Linux Mint and installed that as a
+dual-boot system. For those that haven't done this - first you use the
+partition tool in Win8.1 to reduce the size of the windows partition,
+freeing up space. Then, in the Linux install, you divide up that partition
+and assign it. Fortunately I had gone through this process in a previous
+install and I had good notes. I can't imagine the average user doing this.
+Thank heaven for Google.
+
+At the end of the installation we have a dual-boot selection menu that
+comes up on power-on, and we can select either operating system. Both
+operating systems detected and connected to the wireless network without
+any fuss, which is convenient.
+
+In the previous install process, on an Asus laptop, the grub boot menu is
+somehow accessible only from inside Windows and there is a lengthy
+song-and-dance needed to get to it. So this one is much more convenient.
+
+Thanks to everyone who had suggestions for this project.
+
+Peter
+
+
+
+
+
+
+
+> On 2015-03-01 05:34 PM, Evan Leibovitch wrote:
+>> Now that the Raspberry Pi 2 is even capable of running Windows
+>
+> Note that that's the text-only Windows 10 IoT edition. Text-only Windows
+> would be ??? VMS, I guess.
+>
+>> (and promises to run Linux. XBMC etc even faster), I wonder if it
+>> might be enough for your needs.
+>
+> The original Raspberry Pi was laughable as a desktop, but I just set up
+> a Raspberry Pi 2* yesterday, and it's not half bad. Browsing is pretty
+> snappy, and LibreOffice ??? though by no means fast ??? was usable. It
+> doesn't feel like a small machine. I'm definitely considering recycling
+> my old ThinkPad R51 (1.4 GHz Pentium-M, 1.5 GB RAM), as the Raspberry Pi
+> 2 seems faster than it ever could be. No x86 compatibility, though, but
+> I don't really need it.
+>
+> cheers,
+>  Stewart
+>
+> *: Canada Robotix up on Denison had them. They'll be sold out by now.
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From william.muriithi at gmail.com  Thu Mar  5 14:37:46 2015
+From: william.muriithi at gmail.com (William Muriithi)
+Date: Thu, 05 Mar 2015 09:37:46 -0500
+Subject: [GTALUG] Netbook or used Mac?
+In-Reply-To: <54F865AF.6000803@rogers.com>
+References: <54F865AF.6000803@rogers.com>
+Message-ID: <20150305143746.6058129.44037.17893@gmail.com>
+
+?David,
+
+If she is having problems with ipad, it's most likely netbook would be appropriate either as she will have another unfamiliar interface.?
+
+Get a refurbished mac from apple. They are good as new and no need spending a lot for a new one.
+
+Apologies for top posting - I blame it on blackberry?
+
+Regards,
+
+William?
+
+I have an elderly relative who is having real trouble trying to learn how to use a iPad.? Over about five years, she got to be able to write a monthly newsletter for the Ratepayers Association and do email on a Mac, but still had trouble browsing the web or doing anything more complicated. She can do economic tradeoffs in her head, but has no intuition about computers.
+
+Her iMac died, and she tried an iPad, but is having even more trouble than with the mac!
+
+The mention of thin clients here made me wonder: would she be better just buying a new mac, or are there netbooks or thin clients that would seem "just like the mac with different icons" ?
+
+--dave
+-- 
+David Collier-Brown, | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net | -- Mark Twain
+
+
+From james.knott at rogers.com  Thu Mar  5 14:46:22 2015
+From: james.knott at rogers.com (James Knott)
+Date: Thu, 05 Mar 2015 09:46:22 -0500
+Subject: [GTALUG] Netbook or used Mac?
+In-Reply-To: <54F865AF.6000803@rogers.com>
+References: <54F865AF.6000803@rogers.com>
+Message-ID: <54F86C3E.4090703@rogers.com>
+
+On 03/05/2015 09:18 AM, David Collier-Brown wrote:
+> I have an elderly relative who is having real trouble trying to learn
+> how to use a iPad.  Over about five years, she got to be able to write
+> a monthly newsletter for the Ratepayers Association and do email on a
+> Mac, but still had trouble browsing the web or doing anything more
+> complicated. She can do economic tradeoffs in her head, but has no
+> intuition about computers.
+>
+> Her iMac died, and she tried an iPad, but is having /even more
+> trouble/ than with the mac!
+>
+> The mention of thin clients here made me wonder: would she be better
+> just buying a new mac, or are there netbooks or thin clients that
+> would seem "just like the mac with different icons" ?
+
+It sounds like she'll have problems with anything new, so I suspect
+she'd be better off sticking with a Mac to reduce the learning curve.
+
+From hugh at mimosa.com  Thu Mar  5 15:14:51 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 5 Mar 2015 10:14:51 -0500 (EST)
+Subject: [GTALUG] Mini PC for Home Office?
+In-Reply-To: <eb4eb6b6820283896dacf724316d38ce.squirrel@webmail.ee.ryerson.ca>
+References: <e39d64aa85785718e301c12e7e6a72b8.squirrel@webmail.ee.ryerson.ca>
+ <54F2EAFE.1080806@buynet.com>
+ <CAMguqh03xGwZJK1f_muSDiuqOj8-otLcDsuYFRbUyXuYOjqkyg@mail.gmail.com>
+ <54F3C31E.8060706@gmail.com>
+ <eb4eb6b6820283896dacf724316d38ce.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <alpine.LRH.2.02.1503051006260.538@redclaw.mimosa.com>
+
+| From: phiscock at ee.ryerson.ca
+
+| I was impressed by the packaging and build quality of the computer. I was
+| not impressed by Windows 8.1, which is a real dog's breakfast of Selling
+| Stuff and Requesting All Your Information, and a really badly designed UI.
+
+When you first log into Win8.1, they want you to use a Microsoft
+identity (i.e. in the cloud).  Only when you cancel do they offer you
+the choice of local credentials.  This is not obvious and most folks
+get tricked.
+
+| So I downloaded the latest version of Linux Mint and installed that as a
+| dual-boot system. For those that haven't done this - first you use the
+| partition tool in Win8.1 to reduce the size of the windows partition,
+| freeing up space.
+
+In my experience, the Windows partitioning tool will only reduce the
+space to about half.  That's not good enough for me.  Instead, I use a
+Linux tool to shrink the Win partition a whole lot.  But that damages
+the Win parition so you have to immediately boot into Windows (before
+creating new partitions) and have it do a repair.  This is witchcraft.
+
+(I think that Windows puts something immoveable in the middle of the
+partition and linux just ignores that.)
+
+| At the end of the installation we have a dual-boot selection menu that
+| comes up on power-on, and we can select either operating system. Both
+| operating systems detected and connected to the wireless network without
+| any fuss, which is convenient.
+
+Are you using UEFI or old-fashioned BIOS/MBR booting?  Does MINT
+support Secure Boot?
+
+| In the previous install process, on an Asus laptop, the grub boot menu is
+| somehow accessible only from inside Windows and there is a lengthy
+| song-and-dance needed to get to it.
+
+That sounds odd.  I guess you are using some Windows boot manager.
+
+From opengeometry at yahoo.ca  Thu Mar  5 18:19:41 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Thu, 5 Mar 2015 13:19:41 -0500
+Subject: [GTALUG] Mini PC for Home Office?
+In-Reply-To: <alpine.LRH.2.02.1503051006260.538@redclaw.mimosa.com>
+References: <e39d64aa85785718e301c12e7e6a72b8.squirrel@webmail.ee.ryerson.ca>
+ <54F2EAFE.1080806@buynet.com>
+ <CAMguqh03xGwZJK1f_muSDiuqOj8-otLcDsuYFRbUyXuYOjqkyg@mail.gmail.com>
+ <54F3C31E.8060706@gmail.com>
+ <eb4eb6b6820283896dacf724316d38ce.squirrel@webmail.ee.ryerson.ca>
+ <alpine.LRH.2.02.1503051006260.538@redclaw.mimosa.com>
+Message-ID: <20150305181940.GA4556@node1.localdomain>
+
+On Thu, Mar 05, 2015 at 10:14:51AM -0500, D. Hugh Redelmeier wrote:
+> | From: phiscock at ee.ryerson.ca
+> 
+> | I was impressed by the packaging and build quality of the computer. I was
+> | not impressed by Windows 8.1, which is a real dog's breakfast of Selling
+> | Stuff and Requesting All Your Information, and a really badly designed UI.
+> 
+> When you first log into Win8.1, they want you to use a Microsoft
+> identity (i.e. in the cloud).  Only when you cancel do they offer you
+> the choice of local credentials.  This is not obvious and most folks
+> get tricked.
+
+1. If the network is not connected, then it will give you opportunity to
+create "local" account.
+
+2. When it asks for Microsoft id, type something common (ie.
+user=abc at com, pass=abc) and it will complain, and give you "local"
+account.
+-- 
+William
+
+From james.knott at rogers.com  Thu Mar  5 19:06:46 2015
+From: james.knott at rogers.com (James Knott)
+Date: Thu, 05 Mar 2015 14:06:46 -0500
+Subject: [GTALUG] Mini PC for Home Office?
+In-Reply-To: <20150305181940.GA4556@node1.localdomain>
+References: <e39d64aa85785718e301c12e7e6a72b8.squirrel@webmail.ee.ryerson.ca>
+ <54F2EAFE.1080806@buynet.com>
+ <CAMguqh03xGwZJK1f_muSDiuqOj8-otLcDsuYFRbUyXuYOjqkyg@mail.gmail.com>
+ <54F3C31E.8060706@gmail.com>
+ <eb4eb6b6820283896dacf724316d38ce.squirrel@webmail.ee.ryerson.ca>
+ <alpine.LRH.2.02.1503051006260.538@redclaw.mimosa.com>
+ <20150305181940.GA4556@node1.localdomain>
+Message-ID: <54F8A946.3060104@rogers.com>
+
+On 03/05/2015 01:19 PM, William Park wrote:
+> 2. When it asks for Microsoft id, type something common (ie.
+> user=abc at com, pass=abc) and it will complain, and give you "local"
+> account.
+
+I wonder if Windows would choke if I used my Linux ID & password?  ;-)
+
+
+From cbbrowne at gmail.com  Thu Mar  5 19:30:48 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Thu, 5 Mar 2015 14:30:48 -0500
+Subject: [GTALUG] Mini PC for Home Office?
+In-Reply-To: <54F8A946.3060104@rogers.com>
+References: <e39d64aa85785718e301c12e7e6a72b8.squirrel@webmail.ee.ryerson.ca>
+ <54F2EAFE.1080806@buynet.com>
+ <CAMguqh03xGwZJK1f_muSDiuqOj8-otLcDsuYFRbUyXuYOjqkyg@mail.gmail.com>
+ <54F3C31E.8060706@gmail.com>
+ <eb4eb6b6820283896dacf724316d38ce.squirrel@webmail.ee.ryerson.ca>
+ <alpine.LRH.2.02.1503051006260.538@redclaw.mimosa.com>
+ <20150305181940.GA4556@node1.localdomain>
+ <54F8A946.3060104@rogers.com>
+Message-ID: <CAFNqd5U22cuHb1dM4mS-NiVpfsEbkvG9iJ-3TAy9E6t6+-23BA@mail.gmail.com>
+
+On 5 March 2015 at 14:06, James Knott <james.knott at rogers.com> wrote:
+> On 03/05/2015 01:19 PM, William Park wrote:
+>> 2. When it asks for Microsoft id, type something common (ie.
+>> user=abc at com, pass=abc) and it will complain, and give you "local"
+>> account.
+>
+> I wonder if Windows would choke if I used my Linux ID & password?  ;-)
+
+I'm sure it would be happy to tell everyone...
+
+Memories of the '80s Faberge commercial, "You tell two friends, and
+they tell two friends, and so on, and so on..."
+https://www.youtube.com/watch?v=mcskckuosxQ
+
+I can see how they'd do this thing of falling back to a less secure
+mechanism, but it makes my
+brain hurt that if authentication fails, they just degrade it and try
+again without saying anything.
+Very awful to depend on that, particularly if it was possible that you
+were going to send that
+intended-to-be-local authentication data to someone that shouldn't know it.
+
+Nice dosage of "yechhhh!!!"
+
+The Asus box seems nice enough; pretty similar, broadly, to my Zotac ID-88,
+which I also bought at Canada Computers, albeit just long enough ago that
+it seems to have gotten replaced by subsequent models.  My one challenge
+in Linux installation was that my unit wasn't happy recognizing a Debian
+boot CD.  I was able to use PXE booting instead, which worked out
+perfectly fine.  I didn't get a Windows license with it, so had nothing to
+preserve in that regard.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From lsorense at csclub.uwaterloo.ca  Thu Mar  5 19:45:45 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 5 Mar 2015 14:45:45 -0500
+Subject: [GTALUG] Mini PC for Home Office?
+In-Reply-To: <20150305181940.GA4556@node1.localdomain>
+References: <e39d64aa85785718e301c12e7e6a72b8.squirrel@webmail.ee.ryerson.ca>
+ <54F2EAFE.1080806@buynet.com>
+ <CAMguqh03xGwZJK1f_muSDiuqOj8-otLcDsuYFRbUyXuYOjqkyg@mail.gmail.com>
+ <54F3C31E.8060706@gmail.com>
+ <eb4eb6b6820283896dacf724316d38ce.squirrel@webmail.ee.ryerson.ca>
+ <alpine.LRH.2.02.1503051006260.538@redclaw.mimosa.com>
+ <20150305181940.GA4556@node1.localdomain>
+Message-ID: <20150305194545.GF25509@csclub.uwaterloo.ca>
+
+On Thu, Mar 05, 2015 at 01:19:41PM -0500, William Park wrote:
+> On Thu, Mar 05, 2015 at 10:14:51AM -0500, D. Hugh Redelmeier wrote:
+> > | From: phiscock at ee.ryerson.ca
+> > 
+> > | I was impressed by the packaging and build quality of the computer. I was
+> > | not impressed by Windows 8.1, which is a real dog's breakfast of Selling
+> > | Stuff and Requesting All Your Information, and a really badly designed UI.
+> > 
+> > When you first log into Win8.1, they want you to use a Microsoft
+> > identity (i.e. in the cloud).  Only when you cancel do they offer you
+> > the choice of local credentials.  This is not obvious and most folks
+> > get tricked.
+> 
+> 1. If the network is not connected, then it will give you opportunity to
+> create "local" account.
+
+So will being persistent about going back/canceling.  It would sure be
+nice if it wasn't so insistent.
+
+> 2. When it asks for Microsoft id, type something common (ie.
+> user=abc at com, pass=abc) and it will complain, and give you "local"
+> account.
+
+-- 
+Len Sorensen
+
