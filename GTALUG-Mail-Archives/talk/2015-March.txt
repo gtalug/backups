@@ -1517,3 +1517,1000 @@ nice if it wasn't so insistent.
 -- 
 Len Sorensen
 
+From gilesorr at gmail.com  Fri Mar  6 15:29:44 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Fri, 6 Mar 2015 10:29:44 -0500
+Subject: [GTALUG] git questions
+Message-ID: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+
+I've started using git fairly heavily (although not necessarily very
+well).  I have several repos: a couple are code, also my ~/.vim/
+folder and I'm thinking about adding ~/bin/ .  If I remember to push
+from a particular machine before leaving it, I'll never have to deal
+with merging as I'm the only user.  While most likely my discomfort
+with merging will be overcome by practice as I understand git does it
+well (I use SVN at work: merging is shudder-inducing), I'm guessing
+keeping everything up to date is still preferable.  These questions
+are mostly about incorporating information about the repo into the
+Bash prompt: I was impressed recently by the way zsh appears to handle
+it, with a sequence of tiny icons in the lower right corner of the
+terminal indicating relative status.  I didn't talk to the zsh user
+long, so I don't know if that's built-in, a plugin, or something he
+did himself.
+
+I'm starting from some code I got from nitrous.io, lovely in its conciseness:
+
+parse_git_branch () {
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/*
+\(.*\)/\1$(parse_git_dirty)/"
+}
+parse_git_dirty () {
+  git diff --no-ext-diff --quiet --exit-code &>/dev/null || echo "!"
+}
+
+Put \$(parse_git_branch) into your prompt and it tells you what branch
+you're on, and if there are any unstaged changes (and goes away if
+you're not in a repo).  I'd prefer it did uncommitted rather than
+unstaged, haven't tried to fix that yet.  But I want to update it as
+it doesn't deal with origin at all.
+
+So, the questions:
+
+What is the easiest and most concise way to determine if your local is
+behind origin master?  I've found that "git remote show origin" will
+show this information, but I'm not sure if it's the "best" way to find
+out, and I'm also concerned that running that every time your prompt
+comes up would slow things down as it makes a remote call(?) to get an
+answer - when you might not even have a network connection, or worse,
+a very slow connection.
+
+"git status" usually says "Your branch is up-to-date with
+'origin/master'" (or "ahead"), but occasionally - even though origin
+is configured properly - this line doesn't appear.  Is there a way to
+convince it to always show this line?
+
+Unfortunately, "git status" doesn't seem to ever notice if you're
+"behind" origin, thus the need for "git remote show origin".  Any fix
+for that?
+
+The thought was to have output for the prompt that looked like this:
+
+(everything synced): "master-"
+(uncommitted local changes): "master!-"
+(behind origin): "master^"
+(ahead of origin): "masterv"
+(ahead and behind, with local changes): "master!^v"
+
+You get the general idea.
+
+I'm aware git is capable of immense complexity (branches, detached
+head, multiple remotes, different remotes for push and pull, etc.)
+that aren't addressed here.  If I tried to tackle all of that at once
+(especially given I don't understand most of it) my head would explode
+and nothing would get done.  So I'm sticking with my simple use case
+until I have to deal with the more complex stuff.
+
+Any thoughts welcome.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From avolkov at gmail.com  Fri Mar  6 15:40:10 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Fri, 6 Mar 2015 10:40:10 -0500
+Subject: [GTALUG] git questions
+In-Reply-To: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+References: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+Message-ID: <CAO1j=qcg182qMLu9kno6dGVchjiKG52F4VRa4OcqYhMi5n5b-Q@mail.gmail.com>
+
+Hi Giles,
+
+Try installing 'gitk' graphical tool that visualize a lot of things your
+asking about. Just run "gitk &" from anywhere under your git project root
+repository.
+
+Alex.
+
+On Fri, Mar 6, 2015 at 10:29 AM, Giles Orr <gilesorr at gmail.com> wrote:
+
+> I've started using git fairly heavily (although not necessarily very
+> well).  I have several repos: a couple are code, also my ~/.vim/
+> folder and I'm thinking about adding ~/bin/ .  If I remember to push
+> from a particular machine before leaving it, I'll never have to deal
+> with merging as I'm the only user.  While most likely my discomfort
+> with merging will be overcome by practice as I understand git does it
+> well (I use SVN at work: merging is shudder-inducing), I'm guessing
+> keeping everything up to date is still preferable.  These questions
+> are mostly about incorporating information about the repo into the
+> Bash prompt: I was impressed recently by the way zsh appears to handle
+> it, with a sequence of tiny icons in the lower right corner of the
+> terminal indicating relative status.  I didn't talk to the zsh user
+> long, so I don't know if that's built-in, a plugin, or something he
+> did himself.
+>
+> I'm starting from some code I got from nitrous.io, lovely in its
+> conciseness:
+>
+> parse_git_branch () {
+>   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/*
+> \(.*\)/\1$(parse_git_dirty)/"
+> }
+> parse_git_dirty () {
+>   git diff --no-ext-diff --quiet --exit-code &>/dev/null || echo "!"
+> }
+>
+> Put \$(parse_git_branch) into your prompt and it tells you what branch
+> you're on, and if there are any unstaged changes (and goes away if
+> you're not in a repo).  I'd prefer it did uncommitted rather than
+> unstaged, haven't tried to fix that yet.  But I want to update it as
+> it doesn't deal with origin at all.
+>
+> So, the questions:
+>
+> What is the easiest and most concise way to determine if your local is
+> behind origin master?  I've found that "git remote show origin" will
+> show this information, but I'm not sure if it's the "best" way to find
+> out, and I'm also concerned that running that every time your prompt
+> comes up would slow things down as it makes a remote call(?) to get an
+> answer - when you might not even have a network connection, or worse,
+> a very slow connection.
+>
+> "git status" usually says "Your branch is up-to-date with
+> 'origin/master'" (or "ahead"), but occasionally - even though origin
+> is configured properly - this line doesn't appear.  Is there a way to
+> convince it to always show this line?
+>
+> Unfortunately, "git status" doesn't seem to ever notice if you're
+> "behind" origin, thus the need for "git remote show origin".  Any fix
+> for that?
+>
+> The thought was to have output for the prompt that looked like this:
+>
+> (everything synced): "master-"
+> (uncommitted local changes): "master!-"
+> (behind origin): "master^"
+> (ahead of origin): "masterv"
+> (ahead and behind, with local changes): "master!^v"
+>
+> You get the general idea.
+>
+> I'm aware git is capable of immense complexity (branches, detached
+> head, multiple remotes, different remotes for push and pull, etc.)
+> that aren't addressed here.  If I tried to tackle all of that at once
+> (especially given I don't understand most of it) my head would explode
+> and nothing would get done.  So I'm sticking with my simple use case
+> until I have to deal with the more complex stuff.
+>
+> Any thoughts welcome.
+>
+> --
+> Giles
+> http://www.gilesorr.com/
+> gilesorr at gmail.com
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150306/ccf7fe1d/attachment.html>
+
+From gilesorr at gmail.com  Fri Mar  6 15:52:47 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Fri, 6 Mar 2015 10:52:47 -0500
+Subject: [GTALUG] git questions
+In-Reply-To: <CAO1j=qcg182qMLu9kno6dGVchjiKG52F4VRa4OcqYhMi5n5b-Q@mail.gmail.com>
+References: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+ <CAO1j=qcg182qMLu9kno6dGVchjiKG52F4VRa4OcqYhMi5n5b-Q@mail.gmail.com>
+Message-ID: <CAEnxSC7fs1Qsz8y6wn+D=VP5=b=K4BLO+28nYb1WOrspCUv0Yg@mail.gmail.com>
+
+Hi Alex.
+
+I live and die by the command line, and I'm fairly sure all of this
+can be achieved without installing extra tools (and gitk wouldn't play
+well with remote servers).  I'm hoping to have a quick status update
+that's always there, no extra commands needed.
+
+On 6 March 2015 at 10:40, Alex Volkov <avolkov at gmail.com> wrote:
+> Try installing 'gitk' graphical tool that visualize a lot of things your
+> asking about. Just run "gitk &" from anywhere under your git project root
+> repository.
+>
+> Alex.
+>
+> On Fri, Mar 6, 2015 at 10:29 AM, Giles Orr <gilesorr at gmail.com> wrote:
+>>
+>> I've started using git fairly heavily (although not necessarily very
+>> well).  I have several repos: a couple are code, also my ~/.vim/
+>> folder and I'm thinking about adding ~/bin/ .  If I remember to push
+>> from a particular machine before leaving it, I'll never have to deal
+>> with merging as I'm the only user.  While most likely my discomfort
+>> with merging will be overcome by practice as I understand git does it
+>> well (I use SVN at work: merging is shudder-inducing), I'm guessing
+>> keeping everything up to date is still preferable.  These questions
+>> are mostly about incorporating information about the repo into the
+>> Bash prompt: I was impressed recently by the way zsh appears to handle
+>> it, with a sequence of tiny icons in the lower right corner of the
+>> terminal indicating relative status.  I didn't talk to the zsh user
+>> long, so I don't know if that's built-in, a plugin, or something he
+>> did himself.
+>>
+>> I'm starting from some code I got from nitrous.io, lovely in its
+>> conciseness:
+>>
+>> parse_git_branch () {
+>>   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/*
+>> \(.*\)/\1$(parse_git_dirty)/"
+>> }
+>> parse_git_dirty () {
+>>   git diff --no-ext-diff --quiet --exit-code &>/dev/null || echo "!"
+>> }
+>>
+>> Put \$(parse_git_branch) into your prompt and it tells you what branch
+>> you're on, and if there are any unstaged changes (and goes away if
+>> you're not in a repo).  I'd prefer it did uncommitted rather than
+>> unstaged, haven't tried to fix that yet.  But I want to update it as
+>> it doesn't deal with origin at all.
+>>
+>> So, the questions:
+>>
+>> What is the easiest and most concise way to determine if your local is
+>> behind origin master?  I've found that "git remote show origin" will
+>> show this information, but I'm not sure if it's the "best" way to find
+>> out, and I'm also concerned that running that every time your prompt
+>> comes up would slow things down as it makes a remote call(?) to get an
+>> answer - when you might not even have a network connection, or worse,
+>> a very slow connection.
+>>
+>> "git status" usually says "Your branch is up-to-date with
+>> 'origin/master'" (or "ahead"), but occasionally - even though origin
+>> is configured properly - this line doesn't appear.  Is there a way to
+>> convince it to always show this line?
+>>
+>> Unfortunately, "git status" doesn't seem to ever notice if you're
+>> "behind" origin, thus the need for "git remote show origin".  Any fix
+>> for that?
+>>
+>> The thought was to have output for the prompt that looked like this:
+>>
+>> (everything synced): "master-"
+>> (uncommitted local changes): "master!-"
+>> (behind origin): "master^"
+>> (ahead of origin): "masterv"
+>> (ahead and behind, with local changes): "master!^v"
+>>
+>> You get the general idea.
+>>
+>> I'm aware git is capable of immense complexity (branches, detached
+>> head, multiple remotes, different remotes for push and pull, etc.)
+>> that aren't addressed here.  If I tried to tackle all of that at once
+>> (especially given I don't understand most of it) my head would explode
+>> and nothing would get done.  So I'm sticking with my simple use case
+>> until I have to deal with the more complex stuff.
+>>
+>> Any thoughts welcome.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From me at mylesbraithwaite.com  Fri Mar  6 16:05:50 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 6 Mar 2015 11:05:50 -0500
+Subject: [GTALUG] [GTALUG-Announce] Meeting on Tuesday (10th March) at 7:30pm
+Message-ID: <CA+hskZMPo=72+Ou0Q-n7GbUzEUMQca9HDgP1pXdZr4AMTnwmOQ@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-03/>
+
+# Short Talks on Productivity Tools
+
+ownCloud - Alex Volkov - Access your data from all your devices, on an
+open platform you can extend and modify.
+
+todo.sh - Christopher Browne - Track your tasks and projects in a
+plain text file, todo.txt.
+
+todo.sh Touch - Scott Sullivan - A jaunt through using todo.txt on
+your mobile devices. Learn the basic and how to sync it with any
+todo.txt desktop tools you may be using.
+
+jrnl - Myles Braithwaite - A command line journal application.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before each meeting a group of GTALUGers dine at
+Ethiopiques (227 Church Street).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From aruna.hewapathirane at gmail.com  Fri Mar  6 16:39:52 2015
+From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
+Date: Fri, 6 Mar 2015 11:39:52 -0500
+Subject: [GTALUG] git questions
+In-Reply-To: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+References: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+Message-ID: <CAFSeFg99H7XfTkbOO=0ZUhfc9_zZWU9SSj1WHxEUG6HZmxKuag@mail.gmail.com>
+
+<snip>
+>> Bash prompt: I was impressed recently by the way zsh appears to handle
+>> it, with a sequence of tiny icons in the lower right corner of the
+>> terminal indicating relative status.  I didn't talk to the zsh user
+>> long, so I don't know if that's built-in, a plugin, or something he
+>> did himself.
+<snip>
+
+Check this out please : https://github.com/magicmonty/bash-git-prompt
+
+This is the zsh one: https://github.com/olivierverdier/zsh-git-prompt
+
+Interesting :
+http://0xfe.blogspot.ca/2010/04/improved-git-enabled-shell-prompt.html
+
+Learn Git in 15mins ( Really ! ) :
+https://try.github.io/levels/1/challenges/1
+
+When all else fails read the documentation luke :
+http://git-scm.com/book/en/v2
+
+Good Luck :)
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150306/033f9b24/attachment.html>
+
+From talexb at gmail.com  Fri Mar  6 16:51:53 2015
+From: talexb at gmail.com (Alex Beamish)
+Date: Fri, 6 Mar 2015 11:51:53 -0500
+Subject: [GTALUG] git questions
+In-Reply-To: <CAFSeFg99H7XfTkbOO=0ZUhfc9_zZWU9SSj1WHxEUG6HZmxKuag@mail.gmail.com>
+References: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+ <CAFSeFg99H7XfTkbOO=0ZUhfc9_zZWU9SSj1WHxEUG6HZmxKuag@mail.gmail.com>
+Message-ID: <CANgc-aw5QLjY5FSF5_RfZoPxK33i8kipAzXX6WKUQCtjvNm=tQ@mail.gmail.com>
+
+I'm a big fan of gitk -- the visual aspect of it appeals to me, as I can
+see right away where I am, and where the remote branch is. As soon as you
+do something on the command line, it's reflected in gitk.
+
+I'm not a fan of cramming lots of stuff in the command line, but that's a
+personal preference.
+
+Alex
+
+
+On Fri, Mar 6, 2015 at 11:39 AM, Aruna Hewapathirane <
+aruna.hewapathirane at gmail.com> wrote:
+
+> <snip>
+> >> Bash prompt: I was impressed recently by the way zsh appears to handle
+> >> it, with a sequence of tiny icons in the lower right corner of the
+> >> terminal indicating relative status.  I didn't talk to the zsh user
+> >> long, so I don't know if that's built-in, a plugin, or something he
+> >> did himself.
+> <snip>
+>
+> Check this out please : https://github.com/magicmonty/bash-git-prompt
+>
+> This is the zsh one: https://github.com/olivierverdier/zsh-git-prompt
+>
+> Interesting :
+> http://0xfe.blogspot.ca/2010/04/improved-git-enabled-shell-prompt.html
+>
+> Learn Git in 15mins ( Really ! ) :
+> https://try.github.io/levels/1/challenges/1
+>
+> When all else fails read the documentation luke :
+> http://git-scm.com/book/en/v2
+>
+> Good Luck :)
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+
+
+-- 
+Alex Beamish
+Toronto, Ontario
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150306/62af4598/attachment.html>
+
+From tisdall at gmail.com  Fri Mar  6 17:21:15 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Fri, 6 Mar 2015 12:21:15 -0500
+Subject: [GTALUG] git questions
+In-Reply-To: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+References: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+Message-ID: <CAGxYWpYNnv35gKjZLjDwJ_zq7QT1EOhsiPg8XbuZOGvo_us1yQ@mail.gmail.com>
+
+On Fri, Mar 6, 2015 at 10:29 AM, Giles Orr <gilesorr at gmail.com> wrote:
+> "git status" usually says "Your branch is up-to-date with
+> 'origin/master'" (or "ahead"), but occasionally - even though origin
+> is configured properly - this line doesn't appear.  Is there a way to
+> convince it to always show this line?
+>
+> Unfortunately, "git status" doesn't seem to ever notice if you're
+> "behind" origin, thus the need for "git remote show origin".  Any fix
+> for that?
+
+`git status` only looks at what's on your local file system.  You need
+to first do a `git fetch` to update your local information (doesn't
+change your code, just git's information), then `git status` will
+reflect what's actually happening.  Without some command that fetches
+things from the remote, `git status` will always say you're up-to-date
+(or ahead if you've committed things).
+
+From gilesorr at gmail.com  Fri Mar  6 17:30:50 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Fri, 6 Mar 2015 12:30:50 -0500
+Subject: [GTALUG] git questions
+In-Reply-To: <CAFSeFg99H7XfTkbOO=0ZUhfc9_zZWU9SSj1WHxEUG6HZmxKuag@mail.gmail.com>
+References: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+ <CAFSeFg99H7XfTkbOO=0ZUhfc9_zZWU9SSj1WHxEUG6HZmxKuag@mail.gmail.com>
+Message-ID: <CAEnxSC7sSghi_=GrSeofOAUXC8p4ELK1Cc3PiBcuRnFt=E8B+w@mail.gmail.com>
+
+Thanks, that's great.  I think bash-git-prompt will probably be the
+answer, but the others look very helpful as well.
+
+On 6 March 2015 at 11:39, Aruna Hewapathirane
+<aruna.hewapathirane at gmail.com> wrote:
+> <snip>
+>>> Bash prompt: I was impressed recently by the way zsh appears to handle
+>>> it, with a sequence of tiny icons in the lower right corner of the
+>>> terminal indicating relative status.  I didn't talk to the zsh user
+>>> long, so I don't know if that's built-in, a plugin, or something he
+>>> did himself.
+> <snip>
+>
+> Check this out please : https://github.com/magicmonty/bash-git-prompt
+>
+> This is the zsh one: https://github.com/olivierverdier/zsh-git-prompt
+>
+> Interesting :
+> http://0xfe.blogspot.ca/2010/04/improved-git-enabled-shell-prompt.html
+>
+> Learn Git in 15mins ( Really ! ) :
+> https://try.github.io/levels/1/challenges/1
+>
+> When all else fails read the documentation luke :
+> http://git-scm.com/book/en/v2
+>
+> Good Luck :)
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From gilesorr at gmail.com  Fri Mar  6 17:33:49 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Fri, 6 Mar 2015 12:33:49 -0500
+Subject: [GTALUG] git questions
+In-Reply-To: <CAGxYWpYNnv35gKjZLjDwJ_zq7QT1EOhsiPg8XbuZOGvo_us1yQ@mail.gmail.com>
+References: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+ <CAGxYWpYNnv35gKjZLjDwJ_zq7QT1EOhsiPg8XbuZOGvo_us1yQ@mail.gmail.com>
+Message-ID: <CAEnxSC44fvvJMO7PVdX2yY02XjkM7cmDq73oW1oc=LW7Y+vVpg@mail.gmail.com>
+
+About the same time you were sending this, a co-worker was telling me
+about the virtues of "git fetch" as opposed to "git pull" which I've
+used almost exclusively.  It makes a lot more sense now, thanks.
+
+To everyone who answered: I think we can consider my problems (at
+least the git ones!) solved, and many thanks.
+
+On 6 March 2015 at 12:21, Tim Tisdall <tisdall at gmail.com> wrote:
+> On Fri, Mar 6, 2015 at 10:29 AM, Giles Orr <gilesorr at gmail.com> wrote:
+>> "git status" usually says "Your branch is up-to-date with
+>> 'origin/master'" (or "ahead"), but occasionally - even though origin
+>> is configured properly - this line doesn't appear.  Is there a way to
+>> convince it to always show this line?
+>>
+>> Unfortunately, "git status" doesn't seem to ever notice if you're
+>> "behind" origin, thus the need for "git remote show origin".  Any fix
+>> for that?
+>
+> `git status` only looks at what's on your local file system.  You need
+> to first do a `git fetch` to update your local information (doesn't
+> change your code, just git's information), then `git status` will
+> reflect what's actually happening.  Without some command that fetches
+> things from the remote, `git status` will always say you're up-to-date
+> (or ahead if you've committed things).
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From louipc.ist at gmail.com  Fri Mar  6 18:24:38 2015
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Fri, 6 Mar 2015 13:24:38 -0500
+Subject: [GTALUG] git questions
+In-Reply-To: <CAEnxSC7fs1Qsz8y6wn+D=VP5=b=K4BLO+28nYb1WOrspCUv0Yg@mail.gmail.com>
+References: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+ <CAO1j=qcg182qMLu9kno6dGVchjiKG52F4VRa4OcqYhMi5n5b-Q@mail.gmail.com>
+ <CAEnxSC7fs1Qsz8y6wn+D=VP5=b=K4BLO+28nYb1WOrspCUv0Yg@mail.gmail.com>
+Message-ID: <20150306182438.GA545@celine.Home>
+
+On Fri 06 Mar 2015 10:52 -0500, Giles Orr wrote:
+> I live and die by the command line, and I'm fairly sure all of this
+> can be achieved without installing extra tools (and gitk wouldn't play
+> well with remote servers).  I'm hoping to have a quick status update
+> that's always there, no extra commands needed.
+
+As far as finding out your status against a remote you will have to use a
+network connection and query the remote. There's no way around that.
+You can fetch the remote (git fetch) ahead of time, and I suppose get some
+reasonable idea of where you stand later.
+
+Try tig, a curses based git explorer http://jonas.nitro.dk/tig/
+
+What do you use for mail on the command line?
+
+
+From gilesorr at gmail.com  Fri Mar  6 19:00:07 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Fri, 6 Mar 2015 14:00:07 -0500
+Subject: [GTALUG] Live and die by the command line WAS Re:  git questions
+Message-ID: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+
+On 6 March 2015 at 13:24, Loui Chang <louipc.ist at gmail.com> wrote:
+> On Fri 06 Mar 2015 10:52 -0500, Giles Orr wrote:
+>> I live and die by the command line, and I'm fairly sure all of this
+>> can be achieved without installing extra tools ...
+> [SNIP]
+>
+> What do you use for mail on the command line?
+
+Ah, you're making a perfectly reasonable assumption that I can't live
+up to.  I don't browse the web from the CLI and I don't do mail from
+the CLI.  I'm trying to think of other exceptions - I'm sure there are
+one or two - but I guess those are the major ones.
+
+I used mutt for a year or so (a decade ago), but configuring it always
+required a huge amount of reading, editing text files, cursing, and
+rinse and repeat.  While vim is arguably the same, I found the rewards
+greater - so I continue to use vim but these days I use Gmail's web
+interface rather than mutt.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From erich at welz.ca  Fri Mar  6 19:23:52 2015
+From: erich at welz.ca (Erich Welz)
+Date: Fri, 6 Mar 2015 14:23:52 -0500
+Subject: [GTALUG] git questions
+In-Reply-To: <20150306182438.GA545@celine.Home>
+References: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+ <CAO1j=qcg182qMLu9kno6dGVchjiKG52F4VRa4OcqYhMi5n5b-Q@mail.gmail.com>
+ <CAEnxSC7fs1Qsz8y6wn+D=VP5=b=K4BLO+28nYb1WOrspCUv0Yg@mail.gmail.com>
+ <20150306182438.GA545@celine.Home>
+Message-ID: <CAKwohkSo_9a4hF2LRcBP1OFxPXxvB=zdBbFyuKW2GMdvbbDhDg@mail.gmail.com>
+
+Seconding TIG, definitely my favourite git viewing tool, command line or
+otherwise.
+
+
+On Fri, Mar 6, 2015 at 1:24 PM, Loui Chang <louipc.ist at gmail.com> wrote:
+
+> On Fri 06 Mar 2015 10:52 -0500, Giles Orr wrote:
+> > I live and die by the command line, and I'm fairly sure all of this
+> > can be achieved without installing extra tools (and gitk wouldn't play
+> > well with remote servers).  I'm hoping to have a quick status update
+> > that's always there, no extra commands needed.
+>
+> As far as finding out your status against a remote you will have to use a
+> network connection and query the remote. There's no way around that.
+> You can fetch the remote (git fetch) ahead of time, and I suppose get some
+> reasonable idea of where you stand later.
+>
+> Try tig, a curses based git explorer http://jonas.nitro.dk/tig/
+>
+> What do you use for mail on the command line?
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150306/9db4e423/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Fri Mar  6 20:35:06 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 6 Mar 2015 15:35:06 -0500
+Subject: [GTALUG] Live and die by the command line WAS Re: git questions
+In-Reply-To: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+References: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+Message-ID: <20150306203506.GG25509@csclub.uwaterloo.ca>
+
+On Fri, Mar 06, 2015 at 02:00:07PM -0500, Giles Orr wrote:
+> Ah, you're making a perfectly reasonable assumption that I can't live
+> up to.  I don't browse the web from the CLI and I don't do mail from
+> the CLI.  I'm trying to think of other exceptions - I'm sure there are
+> one or two - but I guess those are the major ones.
+> 
+> I used mutt for a year or so (a decade ago), but configuring it always
+> required a huge amount of reading, editing text files, cursing, and
+> rinse and repeat.  While vim is arguably the same, I found the rewards
+> greater - so I continue to use vim but these days I use Gmail's web
+> interface rather than mutt.
+
+I do use mutt for my mail, and I do use elinks sometimes as well to
+access things on the web.  Especially if I am downloading files.
+
+-- 
+Len Sorensen
+
+From hugh at mimosa.com  Fri Mar  6 21:02:27 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Fri, 6 Mar 2015 16:02:27 -0500 (EST)
+Subject: [GTALUG] Live and die by the command line WAS Re: git questions
+In-Reply-To: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+References: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1503061555460.538@redclaw.mimosa.com>
+
+| From: Giles Orr <gilesorr at gmail.com>
+
+| I used mutt for a year or so (a decade ago), but configuring it always
+| required a huge amount of reading, editing text files, cursing, and
+| rinse and repeat.  While vim is arguably the same, I found the rewards
+| greater - so I continue to use vim but these days I use Gmail's web
+| interface rather than mutt.
+
+alpine is a reasonable and reasonably simple "command line" mail user
+agent.  Much simpler than mutt and much less powerful.
+
+I've been using it for about 20 years.  There might well have been a
+better choice that appeared during that time.
+
+I run my own mail server at home (for more than 30 years) partly to
+avoid giving control of my mail to third parties like Google.  I admit
+that this is somewhat quixotic.
+
+From louipc.ist at gmail.com  Fri Mar  6 21:12:27 2015
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Fri, 6 Mar 2015 16:12:27 -0500
+Subject: [GTALUG] Live and die by the command line WAS Re: git questions
+In-Reply-To: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+References: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+Message-ID: <20150306211227.GF545@celine.Home>
+
+On Fri 06 Mar 2015 14:00 -0500, Giles Orr wrote:
+> On 6 March 2015 at 13:24, Loui Chang <louipc.ist at gmail.com> wrote:
+> > On Fri 06 Mar 2015 10:52 -0500, Giles Orr wrote:
+> >> I live and die by the command line, and I'm fairly sure all of this
+> >> can be achieved without installing extra tools ...
+> > [SNIP]
+> >
+> > What do you use for mail on the command line?
+> 
+> Ah, you're making a perfectly reasonable assumption that I can't live
+> up to.  I don't browse the web from the CLI and I don't do mail from
+> the CLI.  I'm trying to think of other exceptions - I'm sure there are
+> one or two - but I guess those are the major ones.
+
+Hah. Just testing you.
+ 
+> I used mutt for a year or so (a decade ago), but configuring it always
+> required a huge amount of reading, editing text files, cursing, and
+> rinse and repeat.  While vim is arguably the same, I found the rewards
+> greater - so I continue to use vim but these days I use Gmail's web
+> interface rather than mutt.
+
+I actually did the opposite. I went from web to cli. Other than a few quirks
+I'm pretty satisfied. A good addressbook is the only thing I haven't found, but
+haven't really sought out either. I use mutt with esmtp, and getmail.
+
+From gilesorr at gmail.com  Fri Mar  6 21:18:35 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Fri, 6 Mar 2015 16:18:35 -0500
+Subject: [GTALUG] Live and die by the command line WAS Re: git questions
+In-Reply-To: <alpine.LRH.2.02.1503061555460.538@redclaw.mimosa.com>
+References: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+ <alpine.LRH.2.02.1503061555460.538@redclaw.mimosa.com>
+Message-ID: <CAEnxSC44W=kNwp83-kxoYO+YBY1iXRQ93tU3_6tXwVJ08fRSXQ@mail.gmail.com>
+
+On 6 March 2015 at 16:02, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+> | From: Giles Orr <gilesorr at gmail.com>
+>
+> | I used mutt for a year or so (a decade ago), but configuring it always
+> | required a huge amount of reading, editing text files, cursing, and
+> | rinse and repeat.  While vim is arguably the same, I found the rewards
+> | greater - so I continue to use vim but these days I use Gmail's web
+> | interface rather than mutt.
+>
+> alpine is a reasonable and reasonably simple "command line" mail user
+> agent.  Much simpler than mutt and much less powerful.
+>
+> I've been using it for about 20 years.  There might well have been a
+> better choice that appeared during that time.
+>
+> I run my own mail server at home (for more than 30 years) partly to
+> avoid giving control of my mail to third parties like Google.  I admit
+> that this is somewhat quixotic.
+
+20 years ago I was triple-booting between Windows 95, OS/2, and Linux.
+Not only was there a build of Pine (the predecessor of Alpine) for
+each, but I got it to work with the same set of data files across all
+three OSes.  I quite liked Pine, and used it for a number of years
+after that.
+
+I wonder if Alpine can be used with Gmail ...  There seem to be quite
+a few answers to that on DuckDuckGo, I may need to do further
+investigation!
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From cbbrowne at gmail.com  Fri Mar  6 22:14:10 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Fri, 6 Mar 2015 17:14:10 -0500
+Subject: [GTALUG] Live and die by the command line WAS Re: git questions
+In-Reply-To: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+References: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+Message-ID: <CAFNqd5X8pmNNWajB3nymws219ic5i=dqUM2U4Ob0ex=8hfc0PA@mail.gmail.com>
+
+On 6 March 2015 at 14:00, Giles Orr <gilesorr at gmail.com> wrote:
+> On 6 March 2015 at 13:24, Loui Chang <louipc.ist at gmail.com> wrote:
+>> On Fri 06 Mar 2015 10:52 -0500, Giles Orr wrote:
+>>> I live and die by the command line, and I'm fairly sure all of this
+>>> can be achieved without installing extra tools ...
+>> [SNIP]
+>>
+>> What do you use for mail on the command line?
+>
+> Ah, you're making a perfectly reasonable assumption that I can't live
+> up to.  I don't browse the web from the CLI and I don't do mail from
+> the CLI.  I'm trying to think of other exceptions - I'm sure there are
+> one or two - but I guess those are the major ones.
+>
+> I used mutt for a year or so (a decade ago), but configuring it always
+> required a huge amount of reading, editing text files, cursing, and
+> rinse and repeat.  While vim is arguably the same, I found the rewards
+> greater - so I continue to use vim but these days I use Gmail's web
+> interface rather than mutt.
+
+I used nmh <http://www.nongnu.org/nmh/> for a decently long time;
+got tugged into Gmail's orbit, but I still have a fair bit of toolset for
+working with MH, and found it usually a rewarding way of accessing
+email.
+
+Google recently added archiving of mail as part of their "Takeout"
+service (which is a Big Deal to me; it means that I can consider it
+My Data that I can take away whenever I want to do so), and I
+downloaded my mail as a giant Mbox file for the first time
+yesterday.  I'm going to want to split it into smaller pieces and
+archive it, ideally in a fashion that integrates somewhat with my
+legacy MH mail.  It's no good to have it as one gigantic piece.
+I'm musing things to do with it.  Ideas include:
+a) Split into a message per file, just as with MH, and run a
+    big batch job each time that stows them in some stable
+    fashion (e.g. - so that when I pull the same messages
+    NEXT month, they don't just get duplicated)
+b) Split into messages, and use a DBMS-based mail storage
+    system.  Musing on <http://archiveopteryx.org/>
+
+A desirable result is to have the resulting mail stored in a
+fashion that lends itself to running "git commit" against the
+email repository.  a) might lead to too many files, but seems
+otherwise largely desirable.  b) mightn't be all that nice to
+"git commit", but is interesting in its own ways.
+
+I tried out uzbl for cli-controlled web browsing; I wound
+up struggling against it way too much.
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From opengeometry at yahoo.ca  Fri Mar  6 22:25:24 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Fri, 6 Mar 2015 17:25:24 -0500
+Subject: [GTALUG] Live and die by the command line WAS Re: git questions
+In-Reply-To: <alpine.LRH.2.02.1503061555460.538@redclaw.mimosa.com>
+References: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+ <alpine.LRH.2.02.1503061555460.538@redclaw.mimosa.com>
+Message-ID: <20150306222523.GA17479@node1.localdomain>
+
+On Fri, Mar 06, 2015 at 04:02:27PM -0500, D. Hugh Redelmeier wrote:
+> alpine is a reasonable and reasonably simple "command line" mail user
+> agent.  Much simpler than mutt and much less powerful.
+
+One reason for moving from Pine to Mutt was threading of emails.
+Does Alpine thread emails, now?
+-- 
+William
+
+From waltdnes at waltdnes.org  Sat Mar  7 04:00:55 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Fri, 6 Mar 2015 23:00:55 -0500
+Subject: [GTALUG] Live and die by the command line WAS Re: git questions
+In-Reply-To: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+References: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+Message-ID: <20150307040055.GB26143@waltdnes.org>
+
+On Fri, Mar 06, 2015 at 02:00:07PM -0500, Giles Orr wrote
+> 
+> I used mutt for a year or so (a decade ago), but configuring it always
+> required a huge amount of reading, editing text files, cursing, and
+> rinse and repeat.
+
+  I don't understand that.  Mutt's config is basically "set it an forget
+it".  I have to add/delete entries whenever I subscribe/unsubscribe to
+mailing lists, but that's it.  Years ago, I used to read email on a true
+text console.  Then the linux devs screwed that possibility with video
+drivers that take over the text console too.  On a 1920x1080 monitor,
+even Sun 12x22 fonts are on the small side.
+
+  I still use mutt in an xterm, along with mc.  I've even cobbled
+together a cute script that allows me to launch HDHomerun TV from the
+commandline.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From chris at cfajohnson.com  Fri Mar  6 23:22:46 2015
+From: chris at cfajohnson.com (Chris F.A. Johnson)
+Date: Fri, 6 Mar 2015 18:22:46 -0500 (EST)
+Subject: [GTALUG] Live and die by the command line WAS Re: git questions
+In-Reply-To: <20150306222523.GA17479@node1.localdomain>
+References: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+ <alpine.LRH.2.02.1503061555460.538@redclaw.mimosa.com>
+ <20150306222523.GA17479@node1.localdomain>
+Message-ID: <alpine.DEB.2.10.1503061821580.18078@chris.tor>
+
+On Fri, 6 Mar 2015, William Park wrote:
+
+> On Fri, Mar 06, 2015 at 04:02:27PM -0500, D. Hugh Redelmeier wrote:
+>> alpine is a reasonable and reasonably simple "command line" mail user
+>> agent.  Much simpler than mutt and much less powerful.
+>
+> One reason for moving from Pine to Mutt was threading of emails.
+> Does Alpine thread emails, now?
+
+   It always has. (At least since I started using it in 1995.)
+
+-- 
+Chris F.A. Johnson, <http://cfajohnson.com>
+
+From louipc.ist at gmail.com  Sat Mar  7 01:23:38 2015
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Fri, 6 Mar 2015 20:23:38 -0500
+Subject: [GTALUG] Live and die by the command line WAS Re: git questions
+In-Reply-To: <20150307040055.GB26143@waltdnes.org>
+References: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+ <20150307040055.GB26143@waltdnes.org>
+Message-ID: <20150307012338.GH545@celine.Home>
+
+On Fri 06 Mar 2015 23:00 -0500, Walter Dnes wrote:
+> I have to add/delete entries whenever I subscribe/unsubscribe to
+> mailing lists, but that's it.
+
+I don't change anything in mutt for mailing lists.
+What setting are you changing for mailing lists? aliases?
+Any recommendations for a textmode addressbook?
+
+
+From waltdnes at waltdnes.org  Sat Mar  7 02:37:15 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Fri, 6 Mar 2015 21:37:15 -0500
+Subject: [GTALUG] Live and die by the command line WAS Re: git questions
+In-Reply-To: <20150307012338.GH545@celine.Home>
+References: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+ <20150307040055.GB26143@waltdnes.org>
+ <20150307012338.GH545@celine.Home>
+Message-ID: <20150307023714.GA29193@waltdnes.org>
+
+On Fri, Mar 06, 2015 at 08:23:38PM -0500, Loui Chang wrote
+> On Fri 06 Mar 2015 23:00 -0500, Walter Dnes wrote:
+> > I have to add/delete entries whenever I subscribe/unsubscribe to
+> > mailing lists, but that's it.
+> 
+> I don't change anything in mutt for mailing lists.
+> What setting are you changing for mailing lists? aliases?
+> Any recommendations for a textmode addressbook?
+
+  I add new aliases to ~/.mutt/.aliases as necessary.  I also have my
+mail sorted into separate mailboxes by procmail.  Some of my boxes are...
+
+mailboxes =dillo =eudev =gentoo =icewm =inbox =spam =teksavvy =tlug
+
+  I pull email from 4 different sources with getmail, and have procmail
+figure out which ~/Maildir subdirectory to drop it into.  It's a
+many-to-many relationship.  I don't have a seprate "addressbook manager".
+I simply use the ~/.mutt/.aliases file.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From opengeometry at yahoo.ca  Sat Mar  7 03:36:22 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Fri, 6 Mar 2015 22:36:22 -0500
+Subject: [GTALUG] Live and die by the command line WAS Re: git questions
+In-Reply-To: <20150307012338.GH545@celine.Home>
+References: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+ <20150307040055.GB26143@waltdnes.org>
+ <20150307012338.GH545@celine.Home>
+Message-ID: <20150307033622.GA19868@node1.localdomain>
+
+On Fri, Mar 06, 2015 at 08:23:38PM -0500, Loui Chang wrote:
+> On Fri 06 Mar 2015 23:00 -0500, Walter Dnes wrote:
+> > I have to add/delete entries whenever I subscribe/unsubscribe to
+> > mailing lists, but that's it.
+> 
+> I don't change anything in mutt for mailing lists.
+> What setting are you changing for mailing lists? aliases?
+
+For this list, I have
+    subscribe talk 
+    alias gtalug talk at gtalug.org
+-- 
+William
+
