@@ -2514,3 +2514,127 @@ For this list, I have
 -- 
 William
 
+From davecramer at gmail.com  Sat Mar  7 15:27:28 2015
+From: davecramer at gmail.com (Dave Cramer)
+Date: Sat, 7 Mar 2015 10:27:28 -0500
+Subject: [GTALUG] Open source router with http login
+Message-ID: <CADK3HHLHDTViLveo9_K_6SQ-4VFqxxBXbTqOXPZvdKy6ccvXbA@mail.gmail.com>
+
+I have a need for a router like they have at hotels where people need to
+login to get a connection.
+
+Is there anything a)small, and b) open source available ?
+
+
+Dave Cramer
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150307/eeda45bd/attachment.html>
+
+From ansarm at gmail.com  Sat Mar  7 15:50:06 2015
+From: ansarm at gmail.com (Ansar Mohammed)
+Date: Sat, 7 Mar 2015 10:50:06 -0500
+Subject: [GTALUG] Open source router with http login
+In-Reply-To: <CADK3HHLHDTViLveo9_K_6SQ-4VFqxxBXbTqOXPZvdKy6ccvXbA@mail.gmail.com>
+References: <CADK3HHLHDTViLveo9_K_6SQ-4VFqxxBXbTqOXPZvdKy6ccvXbA@mail.gmail.com>
+Message-ID: <54fb1e39.cd076b0a.4af7.fffffb24@mx.google.com>
+
+It's called 'captive portal'. Try dd-wrt, with a compatible wifi router.
+
+-----Original Message-----
+From: "Dave Cramer" <davecramer at gmail.com>
+Sent: ?3/?7/?2015 10:27 AM
+To: "GTALUG" <talk at gtalug.org>
+Subject: [GTALUG] Open source router with http login
+
+I have a need for a router like they have at hotels where people need to login to get a connection.
+
+
+Is there anything a)small, and b) open source available ?
+
+
+
+
+Dave Cramer
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150307/ecb6475e/attachment.html>
+
+From jsellens at syonex.com  Sat Mar  7 15:54:30 2015
+From: jsellens at syonex.com (John Sellens)
+Date: Sat, 7 Mar 2015 10:54:30 -0500
+Subject: [GTALUG] Open source router with http login
+In-Reply-To: <CADK3HHLHDTViLveo9_K_6SQ-4VFqxxBXbTqOXPZvdKy6ccvXbA@mail.gmail.com>
+References: <CADK3HHLHDTViLveo9_K_6SQ-4VFqxxBXbTqOXPZvdKy6ccvXbA@mail.gmail.com>
+Message-ID: <20150307155430.GA28302@syonex.com>
+
+I believe both pfsense and m0n0wall have "captive portal" support.
+
+Both will run off a flash card, pfsense needs a little more hardware
+(but not much) than m0n0wall does.
+
+They run on certain embedded platforms, and generic intel boxes.
+
+Hope that helps!
+
+John
+
+
+On Sat,?2015/03/07?10:27:28AM?-0500, Dave Cramer <davecramer at gmail.com> wrote:
+| I have a need for a router like they have at hotels where people need to
+| login to get a connection.
+| 
+| Is there anything a)small, and b) open source available ?
+| 
+| 
+| Dave Cramer
+
+| ---
+| Talk Mailing List
+| talk at gtalug.org
+| http://gtalug.org/mailman/listinfo/talk
+
+
+From northdot9 at gmail.com  Sat Mar  7 16:24:05 2015
+From: northdot9 at gmail.com (David Thornton)
+Date: Sat, 7 Mar 2015 11:24:05 -0500
+Subject: [GTALUG] Live and die by the command line WAS Re: git questions
+In-Reply-To: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+References: <CAEnxSC4WFO1SQF=Z9XVQY-5qxV6pG-sMGxsUd7ZSAVDk44riFg@mail.gmail.com>
+Message-ID: <CAHcykVrODnEA4P-KNoWT8VcehsrtqdEwm0JW9vhC+3SiGcYs3w@mail.gmail.com>
+
+I just use (1)mail
+On Mar 6, 2015 2:01 PM, "Giles Orr" <gilesorr at gmail.com> wrote:
+
+> On 6 March 2015 at 13:24, Loui Chang <louipc.ist at gmail.com> wrote:
+> > On Fri 06 Mar 2015 10:52 -0500, Giles Orr wrote:
+> >> I live and die by the command line, and I'm fairly sure all of this
+> >> can be achieved without installing extra tools ...
+> > [SNIP]
+> >
+> > What do you use for mail on the command line?
+>
+> Ah, you're making a perfectly reasonable assumption that I can't live
+> up to.  I don't browse the web from the CLI and I don't do mail from
+> the CLI.  I'm trying to think of other exceptions - I'm sure there are
+> one or two - but I guess those are the major ones.
+>
+> I used mutt for a year or so (a decade ago), but configuring it always
+> required a huge amount of reading, editing text files, cursing, and
+> rinse and repeat.  While vim is arguably the same, I found the rewards
+> greater - so I continue to use vim but these days I use Gmail's web
+> interface rather than mutt.
+>
+> --
+> Giles
+> http://www.gilesorr.com/
+> gilesorr at gmail.com
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150307/a8385649/attachment.html>
+
