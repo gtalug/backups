@@ -2638,3 +2638,588 @@ On Mar 6, 2015 2:01 PM, "Giles Orr" <gilesorr at gmail.com> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150307/a8385649/attachment.html>
 
+From hugh at mimosa.com  Sun Mar  8 16:50:27 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 8 Mar 2015 12:50:27 -0400 (EDT)
+Subject: [GTALUG] war story: creating Raspberry Pi 2 boot card
+Message-ID: <alpine.LRH.2.02.1503081215020.22232@redclaw.mimosa.com>
+
+I found an excuse to buy a Raspberry Pi 2.  Mathematica was too slow on
+the Raspberry Pi B.
+
+We bought one at the Canada Robotix store in Markham.  $48.99 + 6.37 tax.
+
+The RP2 uses Micro SD rather than normal SD and the software isn't
+100% compatible so I created a new MicroSD as the "hard drive".
+
+I used a SanDisk Extreme PLUS microSDHC UHS-1 32GB card (I had one on
+hand).
+
+I wanted to use the latest Raspbian because it is compatible with the
+RP2 and includes Mathematica.
+
+I tried several things before one worked.  I'm writing this up to save
+others from frustration.  These accounts are based on my unreliable
+memory -- I had no idea that it would have been worth taking notes.
+
+I was kind of improvising, starting from here
+<http://www.raspberrypi.org/downloads/>
+
+Spoiler: my current hypothesis is that my (Linux) desktop's SD
+interface is silently busted in some way.
+
+If you've done any of this, I'd like to hear how it worked for you.
+
+
+Attempt 1:
+
+- The card was brand new, already formatted with some FAT-family
+  filesystem
+
+- I fetched the NOOBS Offline and network install
+
+- I installed the card in my desktop computer and used Linux unzip
+
+- I moved the card to the RP2 and powered it on.
+  The green "reading SD" and orange or red "power" LEDS came on and
+  stayed on, with no other visible activity.  I gave up.
+
+
+Attempt 2:
+
+- same card
+
+- from my desktop machine, I dd'ed the RASPBIAN image onto the card
+
+- I tried to boot it.  Same result.
+
+
+Attempt 3:
+
+- same card
+
+- booted Windows on a notebook and ran SD Formatter 4.0 (as prescribed
+  in <http://www.raspberrypi.org/help/noobs-setup/>) to create just
+  the right filesystem.
+
+- went to my desktop machine and unzipped NOOBS into the card
+
+- I tried to boot it.  Same result.
+
+
+Attempt 4:
+
+- same card
+
+- booted Windows on a notebook and ran SD Formatter 4.0 (as prescribed
+  in <http://www.raspberrypi.org/help/noobs-setup/>) to create just
+  the right filesystem.
+
+- I used Windows to unzipped NOOBS into the card
+
+- I tried to boot it.  It worked!
+
+================
+
+Early hypotheses that are refuted:
+
+- my microSD card was no good.  Or not compatible with the RP2
+
+- my RP2 was no good
+
+
+Lingering hypotheses:
+
+- Perhaps my desktop's SD interface is silently busted.  It is a
+  common factor on all failures.
+
+- the preformatted filesystem that came on the microSD may not work
+  for the RP2's boot system
+
+- Linux's unzip botches things some way.  Perhaps some flag is needed.
+
+
+Experiments I should try (but may not):
+
+- retry each of the experiments that failed, but use Linux on my
+  notebook rather than on my desktop.
+
+- see if my notebook can read and verify microSD cards written by my
+  desktop
+
+From evan at telly.org  Sun Mar  8 17:21:59 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Sun, 8 Mar 2015 13:21:59 -0400
+Subject: [GTALUG] war story: creating Raspberry Pi 2 boot card
+In-Reply-To: <alpine.LRH.2.02.1503081215020.22232@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1503081215020.22232@redclaw.mimosa.com>
+Message-ID: <CAMguqh2-JjxNxW2jC_T-fmuCbd9DWN9tWX8stvwpuJb+msfPkg@mail.gmail.com>
+
+When creating a system for the RP I have had a 100% success rate with
+the GTK-based
+Startup Disk Creator
+<https://apps.ubuntu.com/cat/applications/usb-creator-gtk/> under Ubuntu.
+
+'dd' has worked for me but I recall having to use some non-default block
+settings. One article suggests "bs=1m" as an arg to dd.
+
+
+
+On 8 March 2015 at 12:50, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+> I found an excuse to buy a Raspberry Pi 2.  Mathematica was too slow on
+> the Raspberry Pi B.
+>
+> We bought one at the Canada Robotix store in Markham.  $48.99 + 6.37 tax.
+>
+> The RP2 uses Micro SD rather than normal SD and the software isn't
+> 100% compatible so I created a new MicroSD as the "hard drive".
+>
+> I used a SanDisk Extreme PLUS microSDHC UHS-1 32GB card (I had one on
+> hand).
+>
+> I wanted to use the latest Raspbian because it is compatible with the
+> RP2 and includes Mathematica.
+>
+> I tried several things before one worked.  I'm writing this up to save
+> others from frustration.  These accounts are based on my unreliable
+> memory -- I had no idea that it would have been worth taking notes.
+>
+> I was kind of improvising, starting from here
+> <http://www.raspberrypi.org/downloads/>
+>
+> Spoiler: my current hypothesis is that my (Linux) desktop's SD
+> interface is silently busted in some way.
+>
+> If you've done any of this, I'd like to hear how it worked for you.
+>
+>
+> Attempt 1:
+>
+> - The card was brand new, already formatted with some FAT-family
+>   filesystem
+>
+> - I fetched the NOOBS Offline and network install
+>
+> - I installed the card in my desktop computer and used Linux unzip
+>
+> - I moved the card to the RP2 and powered it on.
+>   The green "reading SD" and orange or red "power" LEDS came on and
+>   stayed on, with no other visible activity.  I gave up.
+>
+>
+> Attempt 2:
+>
+> - same card
+>
+> - from my desktop machine, I dd'ed the RASPBIAN image onto the card
+>
+> - I tried to boot it.  Same result.
+>
+>
+> Attempt 3:
+>
+> - same card
+>
+> - booted Windows on a notebook and ran SD Formatter 4.0 (as prescribed
+>   in <http://www.raspberrypi.org/help/noobs-setup/>) to create just
+>   the right filesystem.
+>
+> - went to my desktop machine and unzipped NOOBS into the card
+>
+> - I tried to boot it.  Same result.
+>
+>
+> Attempt 4:
+>
+> - same card
+>
+> - booted Windows on a notebook and ran SD Formatter 4.0 (as prescribed
+>   in <http://www.raspberrypi.org/help/noobs-setup/>) to create just
+>   the right filesystem.
+>
+> - I used Windows to unzipped NOOBS into the card
+>
+> - I tried to boot it.  It worked!
+>
+> ================
+>
+> Early hypotheses that are refuted:
+>
+> - my microSD card was no good.  Or not compatible with the RP2
+>
+> - my RP2 was no good
+>
+>
+> Lingering hypotheses:
+>
+> - Perhaps my desktop's SD interface is silently busted.  It is a
+>   common factor on all failures.
+>
+> - the preformatted filesystem that came on the microSD may not work
+>   for the RP2's boot system
+>
+> - Linux's unzip botches things some way.  Perhaps some flag is needed.
+>
+>
+> Experiments I should try (but may not):
+>
+> - retry each of the experiments that failed, but use Linux on my
+>   notebook rather than on my desktop.
+>
+> - see if my notebook can read and verify microSD cards written by my
+>   desktop
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+
+-- 
+Evan Leibovitch
+Toronto Canada
+
+Em: evan at telly dot org
+Sk: evanleibovitch
+Tw: el56
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150308/f5749021/attachment.html>
+
+From rreiter91 at gmail.com  Sat Mar  7 11:52:55 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Sat, 7 Mar 2015 06:52:55 -0500
+Subject: [GTALUG] OT Spammers - Canadian indicted in one of largest data
+ breaches in U.S. history
+Message-ID: <CAPik5Mwz4E+YTWQ6zOU6ndFWLp_vgep8wEz3Yr6aj4iLddt32g@mail.gmail.com>
+
+First post from phablet. Checking content rendering. Maybe these guys all
+met at Everest College. I went to RAND's previous shill school CDI in 94. I
+know more than a few peek and pokers came out of that place.
+
+http://www.thestar.com/news/crime/2015/03/06/canadian-indicted-in-one-of-largest-data-breaches-in-us-history.html
+Three people, two Vietnamese nationals and a Canadian, are being indicted
+for hacking email service providers and laundering money, U.S. Department
+of Justice says.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150307/7e1b5718/attachment.html>
+
+From daniel at circuidipity.com  Sun Mar  8 17:41:37 2015
+From: daniel at circuidipity.com (Daniel Wayne Armstrong)
+Date: Sun, 8 Mar 2015 13:41:37 -0400
+Subject: [GTALUG] war story: creating Raspberry Pi 2 boot card
+In-Reply-To: <CAMguqh2-JjxNxW2jC_T-fmuCbd9DWN9tWX8stvwpuJb+msfPkg@mail.gmail.com>
+References: <alpine.LRH.2.02.1503081215020.22232@redclaw.mimosa.com>
+ <CAMguqh2-JjxNxW2jC_T-fmuCbd9DWN9tWX8stvwpuJb+msfPkg@mail.gmail.com>
+Message-ID: <CACa31mC1ogms8d4AWnrQFxv=CNnSMrmcOj63XPB0LJxq4deELA@mail.gmail.com>
+
+On Sun, Mar 8, 2015 at 1:21 PM, Evan Leibovitch <evan at telly.org> wrote:
+
+> When creating a system for the RP I have had a 100% success rate with the GTK-based
+> Startup Disk Creator
+> <https://apps.ubuntu.com/cat/applications/usb-creator-gtk/> under Ubuntu.
+>
+> 'dd' has worked for me but I recall having to use some non-default block
+> settings. One article suggests "bs=1m" as an arg to dd.
+>
+
+I created an Ubuntu 14.04 boot image for the Pi 2 using (new to me)
+*bmap-tools*. My notes for writing to microSD and setting up root to run
+from an external USD hard drive:
+
+http://www.circuidipity.com/run-a-raspberry-pi-2-from-external-usb-storage.html
+
+Uptime 6 days and counting...
+
+-- 
+(o<  .: Per curiositas ad astra .: http://www.circuidipity.com
+(/)_
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150308/e0b531f4/attachment.html>
+
+From hugh at mimosa.com  Sun Mar  8 21:13:48 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 8 Mar 2015 17:13:48 -0400 (EDT)
+Subject: [GTALUG] war story: creating Raspberry Pi 2 boot card
+In-Reply-To: <CACa31mC1ogms8d4AWnrQFxv=CNnSMrmcOj63XPB0LJxq4deELA@mail.gmail.com>
+References: <alpine.LRH.2.02.1503081215020.22232@redclaw.mimosa.com>
+ <CAMguqh2-JjxNxW2jC_T-fmuCbd9DWN9tWX8stvwpuJb+msfPkg@mail.gmail.com>
+ <CACa31mC1ogms8d4AWnrQFxv=CNnSMrmcOj63XPB0LJxq4deELA@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1503081701210.22232@redclaw.mimosa.com>
+
+| From: Daniel Wayne Armstrong <daniel at circuidipity.com>
+
+| I created an Ubuntu 14.04 boot image for the Pi 2 using (new to me)
+| *bmap-tools*.
+
+Using bmap-tools makes sense if you are handed a .bmap file.
+Apparently one was supplied in 2015-02-19-ubuntu-trusty.zip.
+
+The file 2015-02-19-ubuntu-trusty.img contained in the .zip
+originally had holes but these disappeared through the zipping.
+
+Neither NOOBS_v1_4_0.zip nor 2015-02-16-raspbian-wheezy.zip contain a
+.bmap file.  It would be good if they did, assuming that there were
+significant holes.  Oh, and assuming that bytes corresponding to holes
+need not be zeroed -- raw disks don't notionally have holes.
+
+| My notes for writing to microSD and setting up root to run
+| from an external USD hard drive:
+| 
+| http://www.circuidipity.com/run-a-raspberry-pi-2-from-external-usb-storage.html
+
+Thanks for these!
+
+From hugh at mimosa.com  Sun Mar  8 21:22:23 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 8 Mar 2015 17:22:23 -0400 (EDT)
+Subject: [GTALUG] war story: creating Raspberry Pi 2 boot card
+In-Reply-To: <CAMguqh2-JjxNxW2jC_T-fmuCbd9DWN9tWX8stvwpuJb+msfPkg@mail.gmail.com>
+References: <alpine.LRH.2.02.1503081215020.22232@redclaw.mimosa.com>
+ <CAMguqh2-JjxNxW2jC_T-fmuCbd9DWN9tWX8stvwpuJb+msfPkg@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1503081713550.22232@redclaw.mimosa.com>
+
+| From: Evan Leibovitch <evan at telly.org>
+
+| When creating a system for the RP I have had a 100% success rate with
+| the GTK-based
+| Startup Disk Creator
+| <https://apps.ubuntu.com/cat/applications/usb-creator-gtk/> under Ubuntu.
+
+That's interesting.  I've avoided it since it does not treat the image
+as a black-box and I haven't put the effort in to understand the
+restrictions.  It does say on that page that it is for Debian-based
+OSes (if I remember correctly, it failed when I tried it on Fedora; I
+don't think that it warned me that it had failed).
+
+| 'dd' has worked for me but I recall having to use some non-default block
+| settings. One article suggests "bs=1m" as an arg to dd.
+
+I think that is only for speed.  The Raspberry Pi foundation
+recommends bs=4M.  It's all superstion since it is going through the
+buffer cache.
+
+From davec-b at rogers.com  Sun Mar  8 21:38:27 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Sun, 08 Mar 2015 17:38:27 -0400
+Subject: [GTALUG] git questions
+In-Reply-To: <CAO1j=qcg182qMLu9kno6dGVchjiKG52F4VRa4OcqYhMi5n5b-Q@mail.gmail.com>
+References: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+ <CAO1j=qcg182qMLu9kno6dGVchjiKG52F4VRa4OcqYhMi5n5b-Q@mail.gmail.com>
+Message-ID: <54FCC153.4050807@rogers.com>
+
+Most of the GUIs just add a different wodge of complexity, where each is 
+subtly different.
+
+ From the command-line, an alias or script like
+git log --oneline --abbrev-commit --all --graph --decorate --color
+
+will show you quite enough to make your head hurt, and is what the 
+authoers use.
+
+--dave
+
+
+On 03/06/2015 10:40 AM, Alex Volkov wrote:
+> Hi Giles,
+>
+> Try installing 'gitk' graphical tool that visualize a lot of things 
+> your asking about. Just run "gitk &" from anywhere under your git 
+> project root repository.
+>
+> Alex.
+>
+> On Fri, Mar 6, 2015 at 10:29 AM, Giles Orr <gilesorr at gmail.com 
+> <mailto:gilesorr at gmail.com>> wrote:
+>
+>     I've started using git fairly heavily (although not necessarily very
+>     well).  I have several repos: a couple are code, also my ~/.vim/
+>     folder and I'm thinking about adding ~/bin/ .  If I remember to push
+>     from a particular machine before leaving it, I'll never have to deal
+>     with merging as I'm the only user.  While most likely my discomfort
+>     with merging will be overcome by practice as I understand git does it
+>     well (I use SVN at work: merging is shudder-inducing), I'm guessing
+>     keeping everything up to date is still preferable.  These questions
+>     are mostly about incorporating information about the repo into the
+>     Bash prompt: I was impressed recently by the way zsh appears to handle
+>     it, with a sequence of tiny icons in the lower right corner of the
+>     terminal indicating relative status.  I didn't talk to the zsh user
+>     long, so I don't know if that's built-in, a plugin, or something he
+>     did himself.
+>
+>     I'm starting from some code I got from nitrous.io
+>     <http://nitrous.io>, lovely in its conciseness:
+>
+>     parse_git_branch () {
+>       git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/*
+>     \(.*\)/\1$(parse_git_dirty)/"
+>     }
+>     parse_git_dirty () {
+>       git diff --no-ext-diff --quiet --exit-code &>/dev/null || echo "!"
+>     }
+>
+>     Put \$(parse_git_branch) into your prompt and it tells you what branch
+>     you're on, and if there are any unstaged changes (and goes away if
+>     you're not in a repo).  I'd prefer it did uncommitted rather than
+>     unstaged, haven't tried to fix that yet.  But I want to update it as
+>     it doesn't deal with origin at all.
+>
+>     So, the questions:
+>
+>     What is the easiest and most concise way to determine if your local is
+>     behind origin master?  I've found that "git remote show origin" will
+>     show this information, but I'm not sure if it's the "best" way to find
+>     out, and I'm also concerned that running that every time your prompt
+>     comes up would slow things down as it makes a remote call(?) to get an
+>     answer - when you might not even have a network connection, or worse,
+>     a very slow connection.
+>
+>     "git status" usually says "Your branch is up-to-date with
+>     'origin/master'" (or "ahead"), but occasionally - even though origin
+>     is configured properly - this line doesn't appear.  Is there a way to
+>     convince it to always show this line?
+>
+>     Unfortunately, "git status" doesn't seem to ever notice if you're
+>     "behind" origin, thus the need for "git remote show origin".  Any fix
+>     for that?
+>
+>     The thought was to have output for the prompt that looked like this:
+>
+>     (everything synced): "master-"
+>     (uncommitted local changes): "master!-"
+>     (behind origin): "master^"
+>     (ahead of origin): "masterv"
+>     (ahead and behind, with local changes): "master!^v"
+>
+>     You get the general idea.
+>
+>     I'm aware git is capable of immense complexity (branches, detached
+>     head, multiple remotes, different remotes for push and pull, etc.)
+>     that aren't addressed here.  If I tried to tackle all of that at once
+>     (especially given I don't understand most of it) my head would explode
+>     and nothing would get done.  So I'm sticking with my simple use case
+>     until I have to deal with the more complex stuff.
+>
+>     Any thoughts welcome.
+>
+>     --
+>     Giles
+>     http://www.gilesorr.com/
+>     gilesorr at gmail.com <mailto:gilesorr at gmail.com>
+>     ---
+>     Talk Mailing List
+>     talk at gtalug.org <mailto:talk at gtalug.org>
+>     http://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150308/5fa30fa5/attachment.html>
+
+From adb at adb.ca  Sun Mar  8 22:51:46 2015
+From: adb at adb.ca (Anthony de Boer)
+Date: Sun, 8 Mar 2015 18:51:46 -0400
+Subject: [GTALUG] war story: creating Raspberry Pi 2 boot card
+In-Reply-To: <alpine.LRH.2.02.1503081215020.22232@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1503081215020.22232@redclaw.mimosa.com>
+Message-ID: <20150308225146.GB16224@adb.ca>
+
+D. Hugh Redelmeier wrote:
+> I found an excuse to buy a Raspberry Pi 2.  Mathematica was too slow on
+> the Raspberry Pi B.
+>  ...
+> If you've done any of this, I'd like to hear how it worked for you.
+
+- Downloaded 2015-02-16-raspbian-wheezy.zip
+- Unzip in /tmp
+- Determined that the uSD was sdg on my workstation
+
+# dd if=/tmp/2015-02-16-raspbian-wheezy.img of=/dev/sdg
+
+- Hook up Pi2 (HDMI, USB keyboard, USB power)
+- Power up
+- See quad raspberries on boot screen
+- Enjoy
+
+Since you're using NOOBS, YMMV.  I did note that the last two release log
+entries for Raspbian spoke of Pi2 compatibility, so grab the latest of
+whatever you're using and don't use an image you downloaded back when.
+
+(If you do the latter, the Pi2 displays a pretty coloured block and just
+sits there.  DAMHIKT.)
+
+-- 
+Anthony de Boer
+
+From scruss at gmail.com  Mon Mar  9 01:40:42 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sun, 08 Mar 2015 21:40:42 -0400
+Subject: [GTALUG] war story: creating Raspberry Pi 2 boot card
+In-Reply-To: <alpine.LRH.2.02.1503081713550.22232@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1503081215020.22232@redclaw.mimosa.com>
+ <CAMguqh2-JjxNxW2jC_T-fmuCbd9DWN9tWX8stvwpuJb+msfPkg@mail.gmail.com>
+ <alpine.LRH.2.02.1503081713550.22232@redclaw.mimosa.com>
+Message-ID: <54FCFA1A.6090500@gmail.com>
+
+If you can't get to a Windows machine or Mac, low-level formatting on a
+digital camera will clean up the card read for NOOBS. After that, I've
+always had success with:
+
+    unzip NOOBS-/ver/.zip -d /mountpoint_of_SD_card/
+
+
+I think the SD card type sensitivity has gone away with more recent
+firmwares on the Raspberry Pi, but they are still very critical of poor
+power supplies. The 2 can be especially picky, since it can put out
+larger currents over USB than the earlier models.
+
+I do like the Model B Version 2. I'll have to see if it's faster than
+the two older (> 5 years) computers I have lying about for dedicated jobs.
+
+Incidentally, Lawrence now has a stock of the Raspberry Pi 2 now at
+Creatron.
+
+cheers,
+ Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150308/63e629a1/attachment.html>
+
+From hugh at mimosa.com  Mon Mar  9 02:12:06 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 8 Mar 2015 22:12:06 -0400 (EDT)
+Subject: [GTALUG] war story: creating Raspberry Pi 2 boot card
+In-Reply-To: <54FCFA1A.6090500@gmail.com>
+References: <alpine.LRH.2.02.1503081215020.22232@redclaw.mimosa.com>
+ <CAMguqh2-JjxNxW2jC_T-fmuCbd9DWN9tWX8stvwpuJb+msfPkg@mail.gmail.com>
+ <alpine.LRH.2.02.1503081713550.22232@redclaw.mimosa.com>
+ <54FCFA1A.6090500@gmail.com>
+Message-ID: <alpine.LRH.2.02.1503082205350.22232@redclaw.mimosa.com>
+
+| From: Stewart C. Russell <scruss at gmail.com>
+
+| Incidentally, Lawrence now has a stock of the Raspberry Pi 2 now at
+| Creatron.
+
+Good to know.  And for a dollar less than I paid.
+
+Too bad that our meetings are no longer nearby (30 minute walk
+according to google maps).
+
