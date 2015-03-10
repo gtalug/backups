@@ -3223,3 +3223,163 @@ Good to know.  And for a dollar less than I paid.
 Too bad that our meetings are no longer nearby (30 minute walk
 according to google maps).
 
+From scruss at gmail.com  Mon Mar  9 12:54:07 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Mon, 09 Mar 2015 08:54:07 -0400
+Subject: [GTALUG] git questions
+In-Reply-To: <54FCC153.4050807@rogers.com>
+References: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+ <CAO1j=qcg182qMLu9kno6dGVchjiKG52F4VRa4OcqYhMi5n5b-Q@mail.gmail.com>
+ <54FCC153.4050807@rogers.com>
+Message-ID: <54FD97EF.3060400@gmail.com>
+
+Just as an aside, formerly local friend-of-GTALUG Emma Jane Westby is
+writing a book for O'Reilly called /Git for Teams/.
+
+cheers,
+ Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150309/ea87c09c/attachment.html>
+
+From william.muriithi at gmail.com  Mon Mar  9 13:20:29 2015
+From: william.muriithi at gmail.com (William Muriithi)
+Date: Mon, 09 Mar 2015 09:20:29 -0400
+Subject: [GTALUG] git questions
+In-Reply-To: <54FD97EF.3060400@gmail.com>
+References: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+ <CAO1j=qcg182qMLu9kno6dGVchjiKG52F4VRa4OcqYhMi5n5b-Q@mail.gmail.com>
+ <54FCC153.4050807@rogers.com> <54FD97EF.3060400@gmail.com>
+Message-ID: <20150309132029.6062225.80893.18166@gmail.com>
+
+Hi Stewart ?,
+
+Just as an aside, formerly local friend-of-GTALUG Emma Jane Westby is writing a book for O'Reilly called Git for Teams. 
+
+----------------------
+
+When she publish it, send us a note. Will pick up one to promote a fellow TLUG
+
+William?
+
+cheers,
+?Stewart
+
+
+From ansarm at gmail.com  Mon Mar  9 17:21:35 2015
+From: ansarm at gmail.com (Ansar Mohammed)
+Date: Mon, 9 Mar 2015 13:21:35 -0400
+Subject: [GTALUG] war story: creating Raspberry Pi 2 boot card
+In-Reply-To: <alpine.LRH.2.02.1503082205350.22232@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1503081215020.22232@redclaw.mimosa.com>
+ <CAMguqh2-JjxNxW2jC_T-fmuCbd9DWN9tWX8stvwpuJb+msfPkg@mail.gmail.com>
+ <alpine.LRH.2.02.1503081713550.22232@redclaw.mimosa.com>
+ <54FCFA1A.6090500@gmail.com>
+ <alpine.LRH.2.02.1503082205350.22232@redclaw.mimosa.com>
+Message-ID: <CAOO1MftU5ZguKy=+5An0xs0BJ9OUB8_ZsZMsgHqa58as0jtiHQ@mail.gmail.com>
+
+I have a few Pi's and I have come to the conclusion that you can't skimp on
+the SD cards.
+Rasbian killed my el cheapo ADATA class 10 microSD.
+
+OpenELEC and XMBC are unusable on the class 10 cards.
+
+FreeBSD won't boot reliably with a class 10 or less SD card unless you use
+the tweaks I mentioned here:
+<http://www.raspberrypi.org/forums/viewtopic.php?f=85&t=99151&sid=4784ce25811d943c46ce005dc8e89f12>
+
+When I finally ponied up the cash for high speed Kingston Ultimate (90MB
+read/40MB write) cards I had zero issues.
+
+
+On Sun, Mar 8, 2015 at 10:12 PM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+> | From: Stewart C. Russell <scruss at gmail.com>
+>
+> | Incidentally, Lawrence now has a stock of the Raspberry Pi 2 now at
+> | Creatron.
+>
+> Good to know.  And for a dollar less than I paid.
+>
+> Too bad that our meetings are no longer nearby (30 minute walk
+> according to google maps).
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150309/9ee10959/attachment.html>
+
+From me at mylesbraithwaite.com  Tue Mar 10 04:46:49 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 10 Mar 2015 00:46:49 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting on Tonight (10th March) at 7:30pm
+Message-ID: <CA+hskZPRT=0B0D=z+h3QRgvWBkScCLk5D8bsPhPNuuv8r4ry3Q@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-03/>
+
+# Short Talks on Productivity Tools
+
+ownCloud - Alex Volkov - Access your data from all your devices, on an
+open platform you can extend and modify.
+
+todo.sh - Christopher Browne - Track your tasks and projects in a
+plain text file, todo.txt.
+
+todo.sh Touch - Scott Sullivan - A jaunt through using todo.txt on
+your mobile devices. Learn the basic and how to sync it with any
+todo.txt desktop tools you may be using.
+
+jrnl - Myles Braithwaite - A command line journal application.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before each meeting a group of GTALUGers dine at
+Ethiopiques (227 Church Street).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
