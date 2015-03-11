@@ -3383,3 +3383,114 @@ GTALUG Announce mailing list
 announce at gtalug.org
 http://gtalug.org/mailman/listinfo/announce
 
+From cbbrowne at gmail.com  Tue Mar 10 19:33:32 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 10 Mar 2015 15:33:32 -0400
+Subject: [GTALUG] Pre-meeting bite at Ethiopiques
+Message-ID: <CAFNqd5Ua37ZStyZmJZ6FKHUWuAyABxeVmS0cNDi1xK_d1f_Qhw@mail.gmail.com>
+
+As per the announcement, some of us will be getting together for a
+bite before the meeting, tonight at Ethiopiques
+   http://www.ethiopiques.ca
+
+227 Church St
+Toronto, ON
+
+On the corner of Dundas + Church, immediately east of Dundas Station.
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From jamon.camisso at utoronto.ca  Tue Mar 10 21:44:19 2015
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Tue, 10 Mar 2015 17:44:19 -0400
+Subject: [GTALUG] git questions
+In-Reply-To: <CAEnxSC44fvvJMO7PVdX2yY02XjkM7cmDq73oW1oc=LW7Y+vVpg@mail.gmail.com>
+References: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+ <CAGxYWpYNnv35gKjZLjDwJ_zq7QT1EOhsiPg8XbuZOGvo_us1yQ@mail.gmail.com>
+ <CAEnxSC44fvvJMO7PVdX2yY02XjkM7cmDq73oW1oc=LW7Y+vVpg@mail.gmail.com>
+Message-ID: <54FF65B3.6060601@utoronto.ca>
+
+On 06/03/15 12:33 PM, Giles Orr wrote:
+> About the same time you were sending this, a co-worker was telling me
+> about the virtues of "git fetch" as opposed to "git pull" which I've
+> used almost exclusively.  It makes a lot more sense now, thanks.
+>
+> To everyone who answered: I think we can consider my problems (at
+> least the git ones!) solved, and many thanks.
+
+Missed this thread but thought I'd chime in with a plug for Oh My Zsh! I 
+use it with a solarized terminal theme, the git plugin, and a customized 
+prompt to show the git branch that I'm on:
+
+export PROMPT="%{$FG[154]%}[%*|%D]% %{$fg[blue]%} 
+%{%}%n%{%}@%{%}%m%{%}:%{$fg[red]%} %~% %{$fg[black]%}>>%k
+  %{$FG[032]%} %B%? %s%%%k %b"
+
+function git_prompt_info() {
+     ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+     echo 
+"$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
+}
+
+The nice thing about it is when something extends across the entirety of 
+the prompt, the (branch-marker) goes away too.
+
+I don't pretend to know what 99% of that does because once I got it 
+setup I haven't ever dared fiddle with it :p
+
+It doesn't do stuff like show revs ahead/behind or anything, but I'm 
+sure some creative aliases would make that pretty straightforward.
+
+Cheers, Jamon
+
+From scruss at gmail.com  Wed Mar 11 01:42:37 2015
+From: scruss at gmail.com (Stewart Russell)
+Date: Tue, 10 Mar 2015 21:42:37 -0400
+Subject: [GTALUG] Pre-meeting bite at Ethiopiques
+In-Reply-To: <CAFNqd5Ua37ZStyZmJZ6FKHUWuAyABxeVmS0cNDi1xK_d1f_Qhw@mail.gmail.com>
+References: <CAFNqd5Ua37ZStyZmJZ6FKHUWuAyABxeVmS0cNDi1xK_d1f_Qhw@mail.gmail.com>
+Message-ID: <CAAsTreAT1UqW0Dm3MAiBV4BDABsgkaP+fZJaVyABVjf4vEcfMw@mail.gmail.com>
+
+Was it good? I was the enthusiastic advocate for it a couple of months ago,
+and now find myself booked up for the next 6 Tuesdays ...
+
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150310/8f34c568/attachment.html>
+
+From cbbrowne at gmail.com  Wed Mar 11 04:06:57 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Wed, 11 Mar 2015 00:06:57 -0400
+Subject: [GTALUG] Pre-meeting bite at Ethiopiques
+In-Reply-To: <CAAsTreAT1UqW0Dm3MAiBV4BDABsgkaP+fZJaVyABVjf4vEcfMw@mail.gmail.com>
+References: <CAFNqd5Ua37ZStyZmJZ6FKHUWuAyABxeVmS0cNDi1xK_d1f_Qhw@mail.gmail.com>
+ <CAAsTreAT1UqW0Dm3MAiBV4BDABsgkaP+fZJaVyABVjf4vEcfMw@mail.gmail.com>
+Message-ID: <CAFNqd5UCmkuKfOHnPJ92rmGmTYK2EVR90=_3xy+k2GywV9C=wQ@mail.gmail.com>
+
+On 10 March 2015 at 21:42, Stewart Russell <scruss at gmail.com> wrote:
+> Was it good? I was the enthusiastic advocate for it a couple of months ago,
+> and now find myself booked up for the next 6 Tuesdays ...
+
+It was pretty OK.  A bit pricier than the pizza joint; not something that
+makes me lose sleep.
+
+Service was decent (other Ethiopian places around town have tended
+to be painfully slow!!!), we should have been a bit quicker about getting
+ourselves rolling.  We were short on time by the end, which is to say
+that dinner there properly needs about 1.5h, where what we had was
+about 55 minutes.  That's not at all criticism of them; we were over
+constrained.
+
+The food was all good.  Spices were, I think, a bit restrained, which
+was wise for enough of us.
+
+Several people said they'd like to do it again with family and such.
+I'd be keen on giving it 90 minutes to do it more justice!  :-)
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+

@@ -244,3 +244,155 @@ I have the font Consolas on my laptop (funny enough it's designed by
 Microsoft) 
 <http://www.fonts.com/font/microsoft-corporation/consolas?QueryFontType=Web&src=GoogleWebFonts>.
 
+From cbbrowne at gmail.com  Tue Mar 10 16:50:08 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 10 Mar 2015 12:50:08 -0400
+Subject: [GTALUG-Ops] Laptop(s) @ meeting?
+In-Reply-To: <54FE2D20.3000608@mylesbraithwaite.com>
+References: <CAFNqd5Ui9wV783wjiykbT98mOvgeGOYTe72tWduwso6ziTKR=g@mail.gmail.com>
+ <54FE2621.8040906@mylesbraithwaite.com>
+ <CAFNqd5W6hYTuxS=RiGcWUkG4Fi0yYR9dwdJC8u35BnLYEoaD+w@mail.gmail.com>
+ <54FE2D20.3000608@mylesbraithwaite.com>
+Message-ID: <CAFNqd5V=5KG=HdEgxiKgw=GjAUvqifzTDMjGfR=aZro7cpHjxw@mail.gmail.com>
+
+Attached is my talk in both PDF and PowerPoint formats
+
+Take a look at how PowerPoint renders pages 2, 7, and 9.  That should
+tell if it's workable; those pages did odd things when I switched
+software due to disagreements on handling of fonts and image
+transparency.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: todo.sh.pdf
+Type: application/pdf
+Size: 5893351 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20150310/7dc6dc5d/attachment.pdf>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: todo.sh.pptx
+Type: application/vnd.openxmlformats-officedocument.presentationml.presentation
+Size: 497340 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20150310/7dc6dc5d/attachment.pptx>
+
+From me at mylesbraithwaite.com  Tue Mar 10 19:39:49 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 10 Mar 2015 15:39:49 -0400
+Subject: [GTALUG-Ops] Laptop(s) @ meeting?
+In-Reply-To: <CAFNqd5V=5KG=HdEgxiKgw=GjAUvqifzTDMjGfR=aZro7cpHjxw@mail.gmail.com>
+References: <CAFNqd5Ui9wV783wjiykbT98mOvgeGOYTe72tWduwso6ziTKR=g@mail.gmail.com>
+ <54FE2621.8040906@mylesbraithwaite.com>
+ <CAFNqd5W6hYTuxS=RiGcWUkG4Fi0yYR9dwdJC8u35BnLYEoaD+w@mail.gmail.com>
+ <54FE2D20.3000608@mylesbraithwaite.com>
+ <CAFNqd5V=5KG=HdEgxiKgw=GjAUvqifzTDMjGfR=aZro7cpHjxw@mail.gmail.com>
+Message-ID: <54FF4885.6020703@mylesbraithwaite.com>
+
+Both look pretty good.
+
+Christopher Browne wrote:
+> Attached is my talk in both PDF and PowerPoint formats
+>
+> Take a look at how PowerPoint renders pages 2, 7, and 9.  That should
+> tell if it's workable; those pages did odd things when I switched
+> software due to disagreements on handling of fonts and image
+> transparency.
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+From me at mylesbraithwaite.com  Tue Mar 10 20:01:43 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 10 Mar 2015 16:01:43 -0400
+Subject: [GTALUG-Ops] Fwd: Document Freedom Day
+In-Reply-To: <54FF14A3.9000408@fsfe.org>
+References: <54FF14A3.9000408@fsfe.org>
+Message-ID: <CA+hskZOEX2mjqeo-oH=F8+hM3SxMfJmWe7hfAwxzu_hGLz7+EQ@mail.gmail.com>
+
+---------- Forwarded message ----------
+From: Miks Upenieks <miks at fsfe.org>
+Date: Tue, Mar 10, 2015 at 11:58 AM
+Subject: Document Freedom Day
+To: hi at gtalug.org
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Hi there,
+
+I am currently doing internship at the Free Software Foundation Europe
+(FSFE), a non-profit organization that advocates the use of Free
+Software and that works towards building freedom in the digital society.
+
+On the 25th of March the FSFE will launch Document Freedom Day (DFD)
+whose aim is to raise awareness about Open Standards [1]. Before the
+launch of the DFD, groups from different countries have the
+opportunity to register their DFD event and provide a brief
+description about what people will be doing in the DFD event [2].
+
+So far no group from Canada has registered DFD event. Therefore it
+would be nice if you would decide to run DFD event and there would be
+at least one group from Canada raising awareness about Open Standards.
+
+You can order printed promotional material for free which you can use
+to give out to people [3]. If you want you can also order other
+available promotional materials including various posters, leaflets,
+flyer's and stickers [4].
+
+Till the 11th of March it is possible to claim funding for running of
+the DFD event [5].
+
+If you have any questions or comments please get in touch. You can
+also write to: contact at documentfreedom.org
+
+Best regards,
+
+Miks
+
+[1] http://documentfreedom.org/
+[2] http://documentfreedom.org/registerevent.en.html
+[3] http://documentfreedom.org/promotion.en.html
+[4] https://fsfe.org/contribute/spreadtheword.html#promo-material
+[5] http://documentfreedom.org/funding-expenses.en.html
+- --
+Miks Upenieks - Intern
+Sch?nhauser Allee 6/7, 10119 Berlin, t +49-30-27595290
+Receive monthly Free Software news (fsfe.org/news/newsletter.html)
+Your donation enables our work (fsfe.org/donate)
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJU/xSjAAoJEDEuFApzYVXz5+8QAJOw+fL4tDpvm6gsYexnprWq
+H6+uO7cLAPnqIBtz0qHWdu7ixCFfs0eogHBU9Vwj2FuvEsa289R+eZsNrH+EkSs4
+LGFXCj6RR8i4VHDhzeRlVAwYDg2lCpQ/aLf068R4Wqa76b4sl8jntGnFgHDAC+VP
+4nSmZEgE0Sgl0yiiljv5fGi6biz9obQNxIsGuLNBKAJ1m21yxFg3hWT9aBf7XqBx
+qZWvohRTZZmEgBvY6Kz5CO6s4BGInpJaYMU+0y530iOE08QnJ6pFwSmZAjGRiuYt
+P+J4qktNKwa7nlfitFgmKSOiP1aDuPeXY9nQ2ra15pDu0Trimy7ESxmAlMfmGXjW
+YBhze+4wZvUEGg3ITJJpvi9eoJr6dPEZoI/akkSL895lS+GHtU2Ot6yb9Hz00sdO
+4QycusAFKonXCqJcpHaQ16QqTgzVkUhWBMOQlh1dXcwZgf7VXt2eYuS2rQJXWdK/
+DmdmymhwKR/PXlrCravXEf1kiQugemUrtR91kY1RshJEk+TrrzTTUFbTVtl1c2RR
+PKlQdBahzaUhE632luosWCAET2JbjQ7ExRXO3Zmd7bPee0kVBFMYfnr8IjiEllgl
+3UtGvpn5rBtAi9F3fkTcdJYUr7vf577dVwGGzwcChGWifkcKig46lC5fP4MmF1kD
+cmEfiagYKJ+DDICncimT
+=5YHM
+-----END PGP SIGNATURE-----
+
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+
+From cbbrowne at gmail.com  Tue Mar 10 20:55:49 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 10 Mar 2015 16:55:49 -0400
+Subject: [GTALUG-Ops] Fwd: Document Freedom Day
+In-Reply-To: <CA+hskZOEX2mjqeo-oH=F8+hM3SxMfJmWe7hfAwxzu_hGLz7+EQ@mail.gmail.com>
+References: <54FF14A3.9000408@fsfe.org>
+ <CA+hskZOEX2mjqeo-oH=F8+hM3SxMfJmWe7hfAwxzu_hGLz7+EQ@mail.gmail.com>
+Message-ID: <CAFNqd5X6MfND9s9XN+TuSOeGvwn2FNysAuc=XHBz3ACRdp15Sg@mail.gmail.com>
+
+Myles, I sent you under separate cover a quick set of slides describing this.
+
+Seems like a good idea to do a 2 minute run-thru of this.
+
