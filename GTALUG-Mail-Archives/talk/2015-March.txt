@@ -3494,3 +3494,126 @@ I'd be keen on giving it 90 minutes to do it more justice!  :-)
 When confronted by a difficult problem, solve it by reducing it to the
 question, "How would the Lone Ranger handle this?"
 
+From scruss at gmail.com  Wed Mar 11 11:30:10 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Wed, 11 Mar 2015 07:30:10 -0400
+Subject: [GTALUG] Pre-meeting bite at Ethiopiques
+In-Reply-To: <CAFNqd5UCmkuKfOHnPJ92rmGmTYK2EVR90=_3xy+k2GywV9C=wQ@mail.gmail.com>
+References: <CAFNqd5Ua37ZStyZmJZ6FKHUWuAyABxeVmS0cNDi1xK_d1f_Qhw@mail.gmail.com>
+ <CAAsTreAT1UqW0Dm3MAiBV4BDABsgkaP+fZJaVyABVjf4vEcfMw@mail.gmail.com>
+ <CAFNqd5UCmkuKfOHnPJ92rmGmTYK2EVR90=_3xy+k2GywV9C=wQ@mail.gmail.com>
+Message-ID: <55002742.8050308@gmail.com>
+
+On 2015-03-11 12:06 AM, Christopher Browne wrote:
+> Several people said they'd like to do it again with family and such.
+
+Now, /that/'s an endorsement!
+
+> I'd be keen on giving it 90 minutes to do it more justice!  :-)
+
+I don't know if Ethiopiques offer it, but leave time to have a coffee
+ceremony at the end. It's rather fun, and quite apt for a group known
+for turning caffeine into data structures. It's also a great way of
+setting off smoke detectors, too ?
+
+cheers,
+ Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150311/15f9f831/attachment.html>
+
+From me at mylesbraithwaite.com  Wed Mar 11 20:13:30 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Wed, 11 Mar 2015 16:13:30 -0400
+Subject: [GTALUG] My presentation from last night's GTALUG meeting.
+Message-ID: <5500A1EA.7080706@mylesbraithwaite.com>
+
+<https://github.com/myles/2015-03-10-jrnl/blob/master/presentation.md>
+
+From cbbrowne at gmail.com  Wed Mar 11 20:21:52 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Wed, 11 Mar 2015 16:21:52 -0400
+Subject: [GTALUG] My presentation from last night's GTALUG meeting.
+In-Reply-To: <5500A1EA.7080706@mylesbraithwaite.com>
+References: <5500A1EA.7080706@mylesbraithwaite.com>
+Message-ID: <CAFNqd5UQy5zQLiUm+Nkm44Wk5Q6pA+F5nKhHpQmj9zmTg_BMFw@mail.gmail.com>
+
+Here's a link to my presentation, too.
+
+https://docs.google.com/presentation/d/1PH5B5n737x6tHZDznBmXXHVAeynXZKn_iYXZSPZ-MkY/edit?usp=sharing
+
+From avolkov at gmail.com  Wed Mar 11 20:31:04 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Wed, 11 Mar 2015 16:31:04 -0400
+Subject: [GTALUG] My presentation from last night's GTALUG meeting.
+In-Reply-To: <5500A1EA.7080706@mylesbraithwaite.com>
+References: <5500A1EA.7080706@mylesbraithwaite.com>
+Message-ID: <5500A608.9030108@gmail.com>
+
+Here's a link to my notes:
+
+https://github.com/avolkov/talks/blob/master/owncloud/notes.md
+
+
+From cbbrowne at gmail.com  Wed Mar 11 20:40:37 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Wed, 11 Mar 2015 16:40:37 -0400
+Subject: [GTALUG] FSF Europe "Document Freedom Day"
+Message-ID: <CAFNqd5XJi0-on5RG-UgR4VMuaPNYpFVAmRL1N_=N_8UWQtxUVQ@mail.gmail.com>
+
+I just saw this yesterday afternoon, so there hasn't been opportunity
+to do much vetting of this.
+
+The Free Software Foundation Europe (FSFE) is doing a "Document
+Freedom Day" to encourage awareness of Open Standards about document
+formats.
+
+  http://documentfreedom.org/
+
+A primary sponsor is LibreOffice/The Document Foundation, which should
+give some idea as to where the thoughts about standards might be
+coming from.
+
+The date of the event is March 25th, which is sufficiently close by
+that I don't think we can organizationally get anything too major into
+place, but if people are individually interested, see if there's
+something you'd be keen on doing about it.
+
+I'd think it a neat idea for us as individuals to forward this to our
+various political representatives (e.g. - city councillors, MPPs, MPs)
+to encourage their awareness as representatives of organizations that
+manage rather a lot of documents on our behalf.  I would think that is
+likely to be at nearly as effective as trying to do a formal
+submission as an organization.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From kcozens at ve3syb.ca  Thu Mar 12 02:40:40 2015
+From: kcozens at ve3syb.ca (kcozens)
+Date: Wed, 11 Mar 2015 19:40:40 -0700
+Subject: [GTALUG] My presentation from last night's GTALUG meeting.
+In-Reply-To: <5500A1EA.7080706@mylesbraithwaite.com>
+References: <5500A1EA.7080706@mylesbraithwaite.com>
+Message-ID: <65b804a37e8fae5211682ef2193abe7c@ve3syb.ca>
+
+On 2015-03-11 13:13, Myles Braithwaite wrote:
+> <https://github.com/myles/2015-03-10-jrnl/blob/master/presentation.md>
+
+It would be helpful to state the topic of the presentation, when 
+providing links, for those who weren't at the meeting.
+
+-- 
+
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that 
+distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why 
+we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+
