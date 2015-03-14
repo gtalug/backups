@@ -3617,3 +3617,280 @@ we're
 #include <disclaimer/favourite> |             --Chris Hardwick
 
 
+From rreiter91 at gmail.com  Fri Mar 13 12:24:38 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Fri, 13 Mar 2015 08:24:38 -0400
+Subject: [GTALUG] Dirty Power and Wi Fi Far field effect
+Message-ID: <CAPik5MzO4NR-vp0kdX=8457noq-BxsTUnnwnn_4OffbrzP=xmw@mail.gmail.com>
+
+I live close to the exhibition grounds which is near to one of the city's
+major grid switches. For example, they were testing the new streetcars, the
+ones with three sections for navigating tight turns and they browned us
+down to (I assume) 50hz. This was visible as all the lights dimmed and the
+streetcar appeared to navigate the loop a short time later. As I don't have
+ups I had powered down my tower. The next time I powered up the breaker in
+the power supply tripped and when I reset it and booted, my 1.5v agp video
+card was toasted, at least I hope its the card and not elsewhere on the bus.
+
+So that's not so bad, there's no enterprise stuff at risk, I just hack
+together another box and carry on. However, now I have a real problem and
+I'm in need of a solution. Yesterday I fired up the WiFi while my SO was
+drying her hair. I toasted her salon quality hair dryer. Not good. :-(
+There is no gfi outlet and at this point I'm wondering if I need UPS, for
+the hair dryer, if not the computer.
+
+So my question is, does anyone on this list have similar problems and a low
+cost hack they have used to deal with Toronto's iffy grid.
+TIA
+Russell
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150313/8c77f5a2/attachment.html>
+
+From james.knott at rogers.com  Fri Mar 13 12:32:47 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 13 Mar 2015 08:32:47 -0400
+Subject: [GTALUG] Dirty Power and Wi Fi Far field effect
+In-Reply-To: <CAPik5MzO4NR-vp0kdX=8457noq-BxsTUnnwnn_4OffbrzP=xmw@mail.gmail.com>
+References: <CAPik5MzO4NR-vp0kdX=8457noq-BxsTUnnwnn_4OffbrzP=xmw@mail.gmail.com>
+Message-ID: <5502D8EF.6010704@rogers.com>
+
+On 03/13/2015 08:24 AM, Russell Reiter wrote:
+> I live close to the exhibition grounds which is near to one of the
+> city's major grid switches. For example, they were testing the new
+> streetcars, the ones with three sections for navigating tight turns
+> and they browned us down to (I assume) 50hz. This was visible as all
+> the lights dimmed and the streetcar appeared to navigate the loop a
+> short time later. As I don't have ups I had powered down my tower. The
+> next time I powered up the breaker in the power supply tripped and
+> when I reset it and booted, my 1.5v agp video card was toasted, at
+> least I hope its the card and not elsewhere on the bus.
+>
+> So that's not so bad, there's no enterprise stuff at risk, I just hack
+> together another box and carry on. However, now I have a real problem
+> and I'm in need of a solution. Yesterday I fired up the WiFi while my
+> SO was drying her hair. I toasted her salon quality hair dryer. Not
+> good. :-( There is no gfi outlet and at this point I'm wondering if I
+> need UPS, for the hair dryer, if not the computer.
+>
+> So my question is, does anyone on this list have similar problems and
+> a low cost hack they have used to deal with Toronto's iffy grid.
+> TIA
+> Russell
+>
+
+Something seems wrong here.  If that's actually happening, there's a
+problem with the power distribution network and you'd need a TTC power
+station nearby.  Streetcars run on DC, not AC and those stations are
+used to convert 60 Hz (not 50) to DC.  I suspect that power dip was
+caused by something else.  If it was caused by streetcars, you'd see it
+happening frequently.  A UPS is always a good idea, but I really doubt
+your WiFi damaged the dryer.  A GFI outlet protects people against
+electrical leakage.  It does not protect equipment.  However, it's a
+good idea to have one for safety with outlets nears sinks etc.
+
+
+
+From james.knott at rogers.com  Fri Mar 13 16:15:19 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 13 Mar 2015 12:15:19 -0400
+Subject: [GTALUG] PDP-8 50th anniversary next week.
+Message-ID: <55030D17.7020204@rogers.com>
+
+https://en.wikipedia.org/wiki/PDP-8
+
+BTW, I used to maintain a PDP-8/i.  It was used to send telegrams.
+
+
+From lsorense at csclub.uwaterloo.ca  Fri Mar 13 18:14:39 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 13 Mar 2015 14:14:39 -0400
+Subject: [GTALUG] Dirty Power and Wi Fi Far field effect
+In-Reply-To: <CAPik5MzO4NR-vp0kdX=8457noq-BxsTUnnwnn_4OffbrzP=xmw@mail.gmail.com>
+References: <CAPik5MzO4NR-vp0kdX=8457noq-BxsTUnnwnn_4OffbrzP=xmw@mail.gmail.com>
+Message-ID: <20150313181439.GH25509@csclub.uwaterloo.ca>
+
+On Fri, Mar 13, 2015 at 08:24:38AM -0400, Russell Reiter wrote:
+> I live close to the exhibition grounds which is near to one of the city's
+> major grid switches. For example, they were testing the new streetcars, the
+> ones with three sections for navigating tight turns and they browned us
+> down to (I assume) 50hz. This was visible as all the lights dimmed and the
+> streetcar appeared to navigate the loop a short time later. As I don't have
+> ups I had powered down my tower. The next time I powered up the breaker in
+> the power supply tripped and when I reset it and booted, my 1.5v agp video
+> card was toasted, at least I hope its the card and not elsewhere on the bus.
+
+Changing the frequency of the power grid is VERY hard.  Dropping the
+voltage (which is a brownout) is easy.
+
+So no way did yo udrop to 50 Hz.  A few years ago a mejor mess in europe
+caused the grid there to split into 3 parts, running at 48, 50 and 52Hz
+respectively, due to severe imbalance in the network, and the frequencies
+could only be different because the grid completely split.  So to drop
+the frequency to 50Hz in Toronto would require changing the frequency
+of a very large part of the grid in north america.  Not going to happen.
+
+> So that's not so bad, there's no enterprise stuff at risk, I just hack
+> together another box and carry on. However, now I have a real problem and
+> I'm in need of a solution. Yesterday I fired up the WiFi while my SO was
+> drying her hair. I toasted her salon quality hair dryer. Not good. :-(
+> There is no gfi outlet and at this point I'm wondering if I need UPS, for
+> the hair dryer, if not the computer.
+
+Unless your area has serious transformer issues, you should not have
+voltage swings that could damage a hair druer.
+
+> So my question is, does anyone on this list have similar problems and a low
+> cost hack they have used to deal with Toronto's iffy grid.
+
+-- 
+Len Sorensen
+
+From phiscock at ee.ryerson.ca  Fri Mar 13 20:01:02 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Fri, 13 Mar 2015 16:01:02 -0400
+Subject: [GTALUG] Dirty Power and Wi Fi Far field effect
+In-Reply-To: <20150313181439.GH25509@csclub.uwaterloo.ca>
+References: <CAPik5MzO4NR-vp0kdX=8457noq-BxsTUnnwnn_4OffbrzP=xmw@mail.gmail.com>
+ <20150313181439.GH25509@csclub.uwaterloo.ca>
+Message-ID: <acda80bfbb6e19b484b531abc7790bdd.squirrel@webmail.ee.ryerson.ca>
+
+
+> On Fri, Mar 13, 2015 at 08:24:38AM -0400, Russell Reiter wrote:
+>> I live close to the exhibition grounds which is near to one of the
+>> city's
+>> major grid switches. For example, they were testing the new streetcars,
+>> the
+>> ones with three sections for navigating tight turns and they browned us
+>> down to (I assume) 50hz. This was visible as all the lights dimmed and
+>> the
+>> streetcar appeared to navigate the loop a short time later. As I don't
+>> have
+>> ups I had powered down my tower. The next time I powered up the breaker
+>> in
+>> the power supply tripped and when I reset it and booted, my 1.5v agp
+>> video
+>> card was toasted, at least I hope its the card and not elsewhere on the
+>> bus.
+>
+> Changing the frequency of the power grid is VERY hard.  Dropping the
+> voltage (which is a brownout) is easy.
+>
+Yeah, I agree. Frequency isn't likely to change. It depends on the rate of
+rotation of massive generators in the Adam Beck generating station, for
+one thing. And the whole system is locked together, as Lennart points out.
+
+If you have access to the fuse or circuit box, I'd recommend measuring the
+voltage at that point, then at the hair dryer outlet. There might be a
+marginal connection somewhere that is dropping the voltage. Don't open up
+the distribution box unless you are an electrician, electrical engineer or
+immortal. There are lethal voltages and currents inside.
+
+War story: Years ago I worked one summer as the effects guy at the Red
+Barn Theatre in Jackson's Point. We had a three phase lighting board and
+the power coming into the barn was two phase. So I checked with my power
+engineering colleague and he confirmed it was OK to put two phases of the
+lighting board on one side of the power and one phase on the other side,
+and then to be a bit careful about the loading.
+
+This worked well all through the rehearsal period. Then, at the opening
+night reception, where everyone is in formal wear and eating tiny pieces
+of fish, all of sudden every light in the place goes out. Of course,
+everyone looks at me. So I go down to the distribution box with my
+voltmeter, trailed by about 10 people, and measure the power at the entry
+point, before the master switch and fuses. No input power. So I say 'Not
+our problem, the Hydro is down.' Of course, nobody believes me and there
+is some mutinous muttering. So I go down to the road to see if I can see
+anything and in the distance, I can see flashing red lights. Turns out
+some drunk had taken out a hydro pole. Fortunately, the Hydro guys had it
+back up and running in a matter of minutes.
+
+That was a nervous few minutes...
+
+P.
+
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From mlxxxp at gmail.com  Fri Mar 13 20:29:37 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Fri, 13 Mar 2015 16:29:37 -0400
+Subject: [GTALUG] Dirty Power and Wi Fi Far field effect
+In-Reply-To: <acda80bfbb6e19b484b531abc7790bdd.squirrel@webmail.ee.ryerson.ca>
+References: <CAPik5MzO4NR-vp0kdX=8457noq-BxsTUnnwnn_4OffbrzP=xmw@mail.gmail.com>
+ <20150313181439.GH25509@csclub.uwaterloo.ca>
+ <acda80bfbb6e19b484b531abc7790bdd.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <CAArSzsWLcZ=vWYmyFsuV5CLrj5-Yg2DS4FSzLHdy2NJpL22zQw@mail.gmail.com>
+
+On 13 March 2015 at 16:01,  <phiscock at ee.ryerson.ca> wrote:
+> Don't open up
+> the distribution box unless you are an electrician, electrical engineer or
+> immortal. There are lethal voltages and currents inside.
+
+A single AAA cell can potentially provide lethal currents. It's the
+high voltage in the box that allows a lethal amount of current to flow
+through the relatively high resistance of your skin.
+
+-- 
+Scott
+
+From davecramer at gmail.com  Fri Mar 13 20:32:40 2015
+From: davecramer at gmail.com (Dave Cramer)
+Date: Fri, 13 Mar 2015 16:32:40 -0400
+Subject: [GTALUG] Dirty Power and Wi Fi Far field effect
+In-Reply-To: <CAArSzsWLcZ=vWYmyFsuV5CLrj5-Yg2DS4FSzLHdy2NJpL22zQw@mail.gmail.com>
+References: <CAPik5MzO4NR-vp0kdX=8457noq-BxsTUnnwnn_4OffbrzP=xmw@mail.gmail.com>
+ <20150313181439.GH25509@csclub.uwaterloo.ca>
+ <acda80bfbb6e19b484b531abc7790bdd.squirrel@webmail.ee.ryerson.ca>
+ <CAArSzsWLcZ=vWYmyFsuV5CLrj5-Yg2DS4FSzLHdy2NJpL22zQw@mail.gmail.com>
+Message-ID: <CADK3HHJHEAL1xVTrC7e_qFO77Q81B4Gm-D4gGaA4vWrCm0-5Gg@mail.gmail.com>
+
+On 13 March 2015 at 16:29, Scott Allen <mlxxxp at gmail.com> wrote:
+
+> On 13 March 2015 at 16:01,  <phiscock at ee.ryerson.ca> wrote:
+> > Don't open up
+> > the distribution box unless you are an electrician, electrical engineer
+> or
+> > immortal. There are lethal voltages and currents inside.
+>
+> A single AAA cell can potentially provide lethal currents. It's the
+> high voltage in the box that allows a lethal amount of current to flow
+> through the relatively high resistance of your skin.
+>
+
+Explain that to me. How can an AAA cell provide lethal current?
+
+Dave
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150313/f576aec8/attachment.html>
+
+From mlxxxp at gmail.com  Fri Mar 13 20:37:17 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Fri, 13 Mar 2015 16:37:17 -0400
+Subject: [GTALUG] Dirty Power and Wi Fi Far field effect
+In-Reply-To: <CADK3HHJHEAL1xVTrC7e_qFO77Q81B4Gm-D4gGaA4vWrCm0-5Gg@mail.gmail.com>
+References: <CAPik5MzO4NR-vp0kdX=8457noq-BxsTUnnwnn_4OffbrzP=xmw@mail.gmail.com>
+ <20150313181439.GH25509@csclub.uwaterloo.ca>
+ <acda80bfbb6e19b484b531abc7790bdd.squirrel@webmail.ee.ryerson.ca>
+ <CAArSzsWLcZ=vWYmyFsuV5CLrj5-Yg2DS4FSzLHdy2NJpL22zQw@mail.gmail.com>
+ <CADK3HHJHEAL1xVTrC7e_qFO77Q81B4Gm-D4gGaA4vWrCm0-5Gg@mail.gmail.com>
+Message-ID: <CAArSzsVRjNWjtF5WOvdHuzTRa6JGrzAhPOQ_ppbgcjr6yUKcBQ@mail.gmail.com>
+
+On 13 March 2015 at 16:32, Dave Cramer <davecramer at gmail.com> wrote:
+> Explain that to me. How can an AAA cell provide lethal current?
+
+Use two metal needles to pierce your skin on opposite sides of your
+heart. Hook up the positive terminal of the cell to one needle and the
+negative terminal to the other needle.
+
+-- 
+Scott
+
