@@ -6725,3 +6725,1522 @@ Might be of interest to people on this mailing list.
 http://ineteconomics.org/institute-blog/william-lazonick-how-superstar-companies-apple-are-killing-america-s-high-tech-future
 
 
+From wwitteman at gmail.com  Tue Mar 17 11:55:37 2015
+From: wwitteman at gmail.com (William Witteman)
+Date: Tue, 17 Mar 2015 07:55:37 -0400
+Subject: [GTALUG] Keep X from going to sleep
+Message-ID: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+
+Here's a problem I'm hoping to solve:
+
+When idle for some amount of time, X shuts down the screen.  When a
+program like VLC is playing a video (or even paused) this does not
+happen.
+
+How can I tell X to never sleep?  I just want it to send output down
+that cable, constantly, forever.
+
+I manage screen burn and power wasting by turning off the monitor, but
+when the screen goes to sleep, my inexpensive monitor (an LG)
+sometimes has trouble noticing and won't display anything until X is
+restarted, which is a pain.
+
+Thanks!
+
+PS  The system is Debian testing.
+
+From kalibslack at gmail.com  Tue Mar 17 12:01:04 2015
+From: kalibslack at gmail.com (Marcelo Kalib)
+Date: Tue, 17 Mar 2015 09:01:04 -0300
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+Message-ID: <etPan.55081780.74b0dc51.1ab@Mac-mini-de-Marcelo.local>
+
+On 17 de mar?o de 2015 at 08:56:01, William Witteman (wwitteman at gmail.com) wrote:
+Here's a problem I'm hoping to solve:?
+
+When idle for some amount of time, X shuts down the screen. When a?
+program like VLC is playing a video (or even paused) this does not?
+happen.?
+
+How can I tell X to never sleep? I just want it to send output down?
+that cable, constantly, forever.?
+
+I manage screen burn and power wasting by turning off the monitor, but?
+when the screen goes to sleep, my inexpensive monitor (an LG)?
+sometimes has trouble noticing and won't display anything until X is?
+restarted, which is a pain.?
+
+Probably not a X configuration, but a WM. What WM are you using?? You need to check the Power Save options, or something like that (depending on which WM).
+
+
+--?
+Marcelo Cavalcante Rocha - Kalib
+
+Fortaleza - Cear? - Brazil
+Mobile: +55 085 87620983
+Certifica??es:?ITIL V3?|?CSM?|?LPI-C1?|?LPI-C2?|?LPI-C3?|?Novell CLA
+Minha Pessoa:?Blog
+
+===================================================
+
+Proteja meu endere?o como estou protegendo o seu.
+N?o revele e-mail dos correspondentes: use Cco (Copia Carbonada Oculta).
+Retire os endere?os antes de reenviar. Dificulte assim a
+dissemina??o de v?rus e spam.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150317/cdcca8af/attachment.html>
+
+From rreiter91 at gmail.com  Tue Mar 17 12:18:52 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Tue, 17 Mar 2015 08:18:52 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+Message-ID: <CAPik5Mzp8UT8M2Whd+aWD+YssGGNS-HiNkSp4MggrJMhLd_rcA@mail.gmail.com>
+
+There are two primary controls which can blank the screen. One is the
+screen saver widget the other is power management. Obviously the screen
+saver can display an image but it can also just blank the screen. Power
+management can spin down drives etc. but it also can blank the screen. If
+you access both of these and set each one to never, your screen should stay
+lit.
+
+One caveat, for some reason updates of either of these resets the time to
+blank the screen to 10 min or so. Or at least it has done this in the past.
+With everyone using at least LCD displays now I don't know why the screen
+savers ship enabled by default. They were originally intended to stop CRT
+burn in. That is if you left a static image on your screen for a
+significant amount of time you would actually burn the image onto your
+display. I don't believe burn in is a problem these days. My screen never
+shut off when my computer is running, sometimes weeks of uptime before I
+reboot for one reason or another. Haven't toasted my LCD monitor, yet!
+Hope this helps.
+Russell
+On Mar 17, 2015 7:56 AM, "William Witteman" <wwitteman at gmail.com> wrote:
+
+> Here's a problem I'm hoping to solve:
+>
+> When idle for some amount of time, X shuts down the screen.  When a
+> program like VLC is playing a video (or even paused) this does not
+> happen.
+>
+> How can I tell X to never sleep?  I just want it to send output down
+> that cable, constantly, forever.
+>
+> I manage screen burn and power wasting by turning off the monitor, but
+> when the screen goes to sleep, my inexpensive monitor (an LG)
+> sometimes has trouble noticing and won't display anything until X is
+> restarted, which is a pain.
+>
+> Thanks!
+>
+> PS  The system is Debian testing.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150317/5ab044e6/attachment.html>
+
+From scott at ss.org  Tue Mar 17 12:50:17 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Tue, 17 Mar 2015 08:50:17 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+Message-ID: <6890FFB2-C8F4-483B-8271-ACF9CC98C737@ss.org>
+
+On March 17, 2015 7:55:37 AM EDT, William Witteman <wwitteman at gmail.com> wrote:
+>Here's a problem I'm hoping to solve:
+>
+>When idle for some amount of time, X shuts down the screen.  When a
+>program like VLC is playing a video (or even paused) this does not
+>happen.
+>
+>How can I tell X to never sleep?  I just want it to send output down
+>that cable, constantly, forever.
+>
+
+The monitor sleep functionality is called DPMS.
+
+At run time you can disable it with the xset command.
+
+xset -dpms
+
+The more permanent option is to create a conf snippet in your xorg.conf.d. 
+
+Once again the arch wiki has great docs. And this specific information will readily translate to debian or any other distro.
+
+https://wiki.archlinux.org/index.php/Display_Power_Management_Signaling
+-- 
+Scott Sullivan
+
+From scott at ss.org  Tue Mar 17 13:01:56 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Tue, 17 Mar 2015 09:01:56 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <CAPik5Mzp8UT8M2Whd+aWD+YssGGNS-HiNkSp4MggrJMhLd_rcA@mail.gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <CAPik5Mzp8UT8M2Whd+aWD+YssGGNS-HiNkSp4MggrJMhLd_rcA@mail.gmail.com>
+Message-ID: <43B6F5A2-9117-4AE5-A20B-B2E4B3D75CC4@ss.org>
+
+On March 17, 2015 8:18:52 AM EDT, Russell Reiter <rreiter91 at gmail.com> wrote:
+
+>With everyone using at least LCD displays now I don't know why the
+>screen
+>savers ship enabled by default. 
+
+Because they evolved into screen lockers.
+
+Much like a key lock on you front door, it's there now to deter invasion of privacy and malicious use of property.
+
+-- 
+Scott Sullivan
+
+From louipc.ist at gmail.com  Tue Mar 17 13:32:06 2015
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Tue, 17 Mar 2015 09:32:06 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+References: <CAPik5MwgbvVgER5bQdcLBxgK1O+zRCo7BU1oOZcTn_ppE4cS+g@mail.gmail.com>
+ <8da2ddb0b4d09168c834afbdaf966f55.squirrel@webmail.ee.ryerson.ca>
+ <CAPik5MyGGm7W7VnA+43xaWRwT64zFQrw+q-FVnzXfQXHnAmXew@mail.gmail.com>
+ <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+ <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+Message-ID: <20150317133206.GB24533@gmail.com>
+
+On Mon 16 Mar 2015 14:34 -0400, R Russell Reiter wrote:
+> On another note, I notice Debian implemented dash to try to deal with
+> exploits. Does anyone know offhand what Fedora has implemented, or is all
+> this handled through SElinux policy management?
+
+dash is for performance, not security.
+
+From lsorense at csclub.uwaterloo.ca  Tue Mar 17 13:51:41 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 17 Mar 2015 09:51:41 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+Message-ID: <20150317135141.GL25509@csclub.uwaterloo.ca>
+
+On Tue, Mar 17, 2015 at 07:55:37AM -0400, William Witteman wrote:
+> Here's a problem I'm hoping to solve:
+> 
+> When idle for some amount of time, X shuts down the screen.  When a
+> program like VLC is playing a video (or even paused) this does not
+> happen.
+> 
+> How can I tell X to never sleep?  I just want it to send output down
+> that cable, constantly, forever.
+> 
+> I manage screen burn and power wasting by turning off the monitor, but
+> when the screen goes to sleep, my inexpensive monitor (an LG)
+> sometimes has trouble noticing and won't display anything until X is
+> restarted, which is a pain.
+> 
+> Thanks!
+> 
+> PS  The system is Debian testing.
+
+As already suggested, xset -dpms and perhaps xset s off, can help, but you
+would need to do them after each login, given most window manager/desktop
+environments tend to change the values.  I just fixed xfce on one machine
+at home yesterday by going into xfce4's power management settings and
+turning off putting the display to sleep or off, and no more screen
+going to sleep problem.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Mar 17 13:52:58 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 17 Mar 2015 09:52:58 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <CAPik5Mzp8UT8M2Whd+aWD+YssGGNS-HiNkSp4MggrJMhLd_rcA@mail.gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <CAPik5Mzp8UT8M2Whd+aWD+YssGGNS-HiNkSp4MggrJMhLd_rcA@mail.gmail.com>
+Message-ID: <20150317135258.GM25509@csclub.uwaterloo.ca>
+
+On Tue, Mar 17, 2015 at 08:18:52AM -0400, Russell Reiter wrote:
+> There are two primary controls which can blank the screen. One is the
+> screen saver widget the other is power management. Obviously the screen
+> saver can display an image but it can also just blank the screen. Power
+> management can spin down drives etc. but it also can blank the screen. If
+> you access both of these and set each one to never, your screen should stay
+> lit.
+> 
+> One caveat, for some reason updates of either of these resets the time to
+> blank the screen to 10 min or so. Or at least it has done this in the past.
+> With everyone using at least LCD displays now I don't know why the screen
+> savers ship enabled by default. They were originally intended to stop CRT
+> burn in. That is if you left a static image on your screen for a
+> significant amount of time you would actually burn the image onto your
+> display. I don't believe burn in is a problem these days. My screen never
+> shut off when my computer is running, sometimes weeks of uptime before I
+> reboot for one reason or another. Haven't toasted my LCD monitor, yet!
+> Hope this helps.
+
+Well at least with DPMS, making the screen go into power saving mode
+does save power, so having it do that by default does sound like a
+reasonable thing.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Mar 17 13:54:15 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 17 Mar 2015 09:54:15 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+References: <CAPik5MwgbvVgER5bQdcLBxgK1O+zRCo7BU1oOZcTn_ppE4cS+g@mail.gmail.com>
+ <8da2ddb0b4d09168c834afbdaf966f55.squirrel@webmail.ee.ryerson.ca>
+ <CAPik5MyGGm7W7VnA+43xaWRwT64zFQrw+q-FVnzXfQXHnAmXew@mail.gmail.com>
+ <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+Message-ID: <20150317135415.GN25509@csclub.uwaterloo.ca>
+
+On Mon, Mar 16, 2015 at 12:23:58PM -0400, Scott Allen wrote:
+> Russell,
+> 
+> What's with the change of font sizes in the majority of your posts to
+> this list? You have a small font on some paragraphs and then a larger
+> font on others. Is this something you're doing intentionally?
+> 
+> Maybe it's just how it's presented on my end using the Gmail web
+> reader. Anyone else seeing this?
+> 
+> Is there any way you can change to plain text only posts?
+
+At least the plain text version in the multipart alternative is readable.
+
+-- 
+Len Sorensen
+
+From rreiter91 at gmail.com  Tue Mar 17 14:16:36 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Tue, 17 Mar 2015 10:16:36 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <20150317133206.GB24533@gmail.com>
+References: <CAPik5MwgbvVgER5bQdcLBxgK1O+zRCo7BU1oOZcTn_ppE4cS+g@mail.gmail.com>
+ <8da2ddb0b4d09168c834afbdaf966f55.squirrel@webmail.ee.ryerson.ca>
+ <CAPik5MyGGm7W7VnA+43xaWRwT64zFQrw+q-FVnzXfQXHnAmXew@mail.gmail.com>
+ <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+ <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+Message-ID: <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+
+I'm not sure that performance and security aren't interchangable concepts.
+While the implimentation of dash did improve performance it did also
+mitigate the effects of the Shellshock vulnaribiliy discovered last year.
+
+On Tue, Mar 17, 2015 at 9:32 AM, Loui Chang <louipc.ist at gmail.com> wrote:
+
+> On Mon 16 Mar 2015 14:34 -0400, R Russell Reiter wrote:
+> > On another note, I notice Debian implemented dash to try to deal with
+> > exploits. Does anyone know offhand what Fedora has implemented, or is all
+> > this handled through SElinux policy management?
+>
+> dash is for performance, not security.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150317/3a68a569/attachment.html>
+
+From rreiter91 at gmail.com  Tue Mar 17 14:20:59 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Tue, 17 Mar 2015 10:20:59 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <20150317135258.GM25509@csclub.uwaterloo.ca>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <CAPik5Mzp8UT8M2Whd+aWD+YssGGNS-HiNkSp4MggrJMhLd_rcA@mail.gmail.com>
+ <20150317135258.GM25509@csclub.uwaterloo.ca>
+Message-ID: <CAPik5MwpYGTtj3QeBAH1RdKatOOQhgTn2UksauwGP=ymq11fLQ@mail.gmail.com>
+
+I agree saving power is a reasonable thing. That's one reason I don't
+recommend disabling DPMS completely. Spinning down the drives saves power
+and also servs to extend the lifespan of the drive, if only marginally.
+
+On Tue, Mar 17, 2015 at 9:52 AM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Tue, Mar 17, 2015 at 08:18:52AM -0400, Russell Reiter wrote:
+> > There are two primary controls which can blank the screen. One is the
+> > screen saver widget the other is power management. Obviously the screen
+> > saver can display an image but it can also just blank the screen. Power
+> > management can spin down drives etc. but it also can blank the screen. If
+> > you access both of these and set each one to never, your screen should
+> stay
+> > lit.
+> >
+> > One caveat, for some reason updates of either of these resets the time to
+> > blank the screen to 10 min or so. Or at least it has done this in the
+> past.
+> > With everyone using at least LCD displays now I don't know why the screen
+> > savers ship enabled by default. They were originally intended to stop CRT
+> > burn in. That is if you left a static image on your screen for a
+> > significant amount of time you would actually burn the image onto your
+> > display. I don't believe burn in is a problem these days. My screen never
+> > shut off when my computer is running, sometimes weeks of uptime before I
+> > reboot for one reason or another. Haven't toasted my LCD monitor, yet!
+> > Hope this helps.
+>
+> Well at least with DPMS, making the screen go into power saving mode
+> does save power, so having it do that by default does sound like a
+> reasonable thing.
+>
+> --
+> Len Sorensen
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150317/36d6f7f3/attachment.html>
+
+From james.knott at rogers.com  Tue Mar 17 14:25:56 2015
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 17 Mar 2015 10:25:56 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <43B6F5A2-9117-4AE5-A20B-B2E4B3D75CC4@ss.org>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <CAPik5Mzp8UT8M2Whd+aWD+YssGGNS-HiNkSp4MggrJMhLd_rcA@mail.gmail.com>
+ <43B6F5A2-9117-4AE5-A20B-B2E4B3D75CC4@ss.org>
+Message-ID: <55083974.2030206@rogers.com>
+
+On 03/17/2015 09:01 AM, Scott Sullivan wrote:
+> Because they evolved into screen lockers.
+
+Back when I was at IBM, we were required to have our desktops lock up
+automatically.  There were security people wandering around to ensure
+this was done.  For my computer, I made a bitmap of my desktop and had
+it display when the "screen saver" kicked in.  So, to anyone passing by,
+it looked as though my computer wasn't locked and they'd have to check.  ;-)
+
+
+From wwitteman at gmail.com  Tue Mar 17 14:25:53 2015
+From: wwitteman at gmail.com (William Witteman)
+Date: Tue, 17 Mar 2015 10:25:53 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <CAPik5MwpYGTtj3QeBAH1RdKatOOQhgTn2UksauwGP=ymq11fLQ@mail.gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <CAPik5Mzp8UT8M2Whd+aWD+YssGGNS-HiNkSp4MggrJMhLd_rcA@mail.gmail.com>
+ <20150317135258.GM25509@csclub.uwaterloo.ca>
+ <CAPik5MwpYGTtj3QeBAH1RdKatOOQhgTn2UksauwGP=ymq11fLQ@mail.gmail.com>
+Message-ID: <CAGMvh24gd8G2oB-obCOPd=Bu4Xk1V=hEB90HumBd-Q8RUnavyg@mail.gmail.com>
+
+On 17 March 2015 at 10:20, Russell Reiter <rreiter91 at gmail.com> wrote:
+> I agree saving power is a reasonable thing. That's one reason I don't
+> recommend disabling DPMS completely. Spinning down the drives saves power
+> and also servs to extend the lifespan of the drive, if only marginally.
+
+That's a good point.  My drives don't spin, but it's still a good
+point.  If my monitor would acknowledge the signal coming in when I am
+typing and staring at a blank screen, I wouldn't bother with this.
+
+From rreiter91 at gmail.com  Tue Mar 17 14:37:45 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Tue, 17 Mar 2015 10:37:45 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <CAGMvh24gd8G2oB-obCOPd=Bu4Xk1V=hEB90HumBd-Q8RUnavyg@mail.gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <CAPik5Mzp8UT8M2Whd+aWD+YssGGNS-HiNkSp4MggrJMhLd_rcA@mail.gmail.com>
+ <20150317135258.GM25509@csclub.uwaterloo.ca>
+ <CAPik5MwpYGTtj3QeBAH1RdKatOOQhgTn2UksauwGP=ymq11fLQ@mail.gmail.com>
+ <CAGMvh24gd8G2oB-obCOPd=Bu4Xk1V=hEB90HumBd-Q8RUnavyg@mail.gmail.com>
+Message-ID: <CAPik5Mzbi68ZqEZ8iipoksoDa0xvbZVJS_5y6cmnvPQq+WJ5Ew@mail.gmail.com>
+
+You mean your using solid state drives and not getting wake on keypress
+either?
+
+On Tue, Mar 17, 2015 at 10:25 AM, William Witteman <wwitteman at gmail.com>
+wrote:
+
+> On 17 March 2015 at 10:20, Russell Reiter <rreiter91 at gmail.com> wrote:
+> > I agree saving power is a reasonable thing. That's one reason I don't
+> > recommend disabling DPMS completely. Spinning down the drives saves power
+> > and also servs to extend the lifespan of the drive, if only marginally.
+>
+> That's a good point.  My drives don't spin, but it's still a good
+> point.  If my monitor would acknowledge the signal coming in when I am
+> typing and staring at a blank screen, I wouldn't bother with this.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150317/9c857d55/attachment.html>
+
+From wwitteman at gmail.com  Tue Mar 17 14:41:03 2015
+From: wwitteman at gmail.com (William Witteman)
+Date: Tue, 17 Mar 2015 10:41:03 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <CAPik5Mzbi68ZqEZ8iipoksoDa0xvbZVJS_5y6cmnvPQq+WJ5Ew@mail.gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <CAPik5Mzp8UT8M2Whd+aWD+YssGGNS-HiNkSp4MggrJMhLd_rcA@mail.gmail.com>
+ <20150317135258.GM25509@csclub.uwaterloo.ca>
+ <CAPik5MwpYGTtj3QeBAH1RdKatOOQhgTn2UksauwGP=ymq11fLQ@mail.gmail.com>
+ <CAGMvh24gd8G2oB-obCOPd=Bu4Xk1V=hEB90HumBd-Q8RUnavyg@mail.gmail.com>
+ <CAPik5Mzbi68ZqEZ8iipoksoDa0xvbZVJS_5y6cmnvPQq+WJ5Ew@mail.gmail.com>
+Message-ID: <CAGMvh25W4dEp3GcMjXy+yVfFepB9AEEMdwrqN8T+k6yCPpFBxw@mail.gmail.com>
+
+On 17 March 2015 at 10:37, Russell Reiter <rreiter91 at gmail.com> wrote:
+> You mean your using solid state drives and not getting wake on keypress
+> either?
+
+I am using SSDs, and the computer wakes up fine on keypress, but the
+monitor stays stubbornly dark.  What I currently do is Alt-Tab over to
+a terminal or fire one up using F1 (mapped in my Openbox config) and
+type pkill Xorg.  Then the screen wakes up and shows me the console,
+and I restart X and firefox, which asks me if I want to restore 71
+tabs :-)
+
+From lsorense at csclub.uwaterloo.ca  Tue Mar 17 14:56:35 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 17 Mar 2015 10:56:35 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <CAPik5MwpYGTtj3QeBAH1RdKatOOQhgTn2UksauwGP=ymq11fLQ@mail.gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <CAPik5Mzp8UT8M2Whd+aWD+YssGGNS-HiNkSp4MggrJMhLd_rcA@mail.gmail.com>
+ <20150317135258.GM25509@csclub.uwaterloo.ca>
+ <CAPik5MwpYGTtj3QeBAH1RdKatOOQhgTn2UksauwGP=ymq11fLQ@mail.gmail.com>
+Message-ID: <20150317145635.GO25509@csclub.uwaterloo.ca>
+
+On Tue, Mar 17, 2015 at 10:20:59AM -0400, Russell Reiter wrote:
+> I agree saving power is a reasonable thing. That's one reason I don't
+> recommend disabling DPMS completely. Spinning down the drives saves power
+> and also servs to extend the lifespan of the drive, if only marginally.
+
+Some of the drives I have had last the longest never spun down.  I had
+an 18GB quantum fireball that ran for 82000 power on hours before the
+bearings started sounded so bad you didn't want to be in the same building
+as the drive.
+
+-- 
+Len Sorensen
+
+From rreiter91 at gmail.com  Tue Mar 17 14:58:19 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Tue, 17 Mar 2015 10:58:19 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <CAGMvh25W4dEp3GcMjXy+yVfFepB9AEEMdwrqN8T+k6yCPpFBxw@mail.gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <CAPik5Mzp8UT8M2Whd+aWD+YssGGNS-HiNkSp4MggrJMhLd_rcA@mail.gmail.com>
+ <20150317135258.GM25509@csclub.uwaterloo.ca>
+ <CAPik5MwpYGTtj3QeBAH1RdKatOOQhgTn2UksauwGP=ymq11fLQ@mail.gmail.com>
+ <CAGMvh24gd8G2oB-obCOPd=Bu4Xk1V=hEB90HumBd-Q8RUnavyg@mail.gmail.com>
+ <CAPik5Mzbi68ZqEZ8iipoksoDa0xvbZVJS_5y6cmnvPQq+WJ5Ew@mail.gmail.com>
+ <CAGMvh25W4dEp3GcMjXy+yVfFepB9AEEMdwrqN8T+k6yCPpFBxw@mail.gmail.com>
+Message-ID: <CAPik5Mx+WC3OtgN_ApkiO0BeiLoQ0=EmJGXgUjUW1WzZN=bnHQ@mail.gmail.com>
+
+71 tabs you had pinned or 71 new tabs?
+
+For the longest time SElinux, which a friend uses in Fedora, was choking on
+colourd. Notwithstanding that the Nvidia driver was a little problematic to
+install, it was better than the native nouveau drivers Fedora was shipping
+at the time.
+Around the time of Fedora 18, chrome would start and then download a 1mg or
+more file to a folder. Then an automatic update fixed the problem so I
+didn't have to look into it too much.
+
+Colord is responsible, in part, for defining the neutral palate that all
+else is rendered against in the display.
+
+You are on testing so I'd either regress to stable unless there is a good
+reason not to or, have a look for colord debug notes in the logs.
+
+On Tue, Mar 17, 2015 at 10:41 AM, William Witteman <wwitteman at gmail.com>
+wrote:
+
+> On 17 March 2015 at 10:37, Russell Reiter <rreiter91 at gmail.com> wrote:
+> > You mean your using solid state drives and not getting wake on keypress
+> > either?
+>
+> I am using SSDs, and the computer wakes up fine on keypress, but the
+> monitor stays stubbornly dark.  What I currently do is Alt-Tab over to
+> a terminal or fire one up using F1 (mapped in my Openbox config) and
+> type pkill Xorg.  Then the screen wakes up and shows me the console,
+> and I restart X and firefox, which asks me if I want to restore 71
+> tabs :-)
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150317/31f5a8a3/attachment.html>
+
+From rreiter91 at gmail.com  Tue Mar 17 15:00:08 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Tue, 17 Mar 2015 11:00:08 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <20150317145635.GO25509@csclub.uwaterloo.ca>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <CAPik5Mzp8UT8M2Whd+aWD+YssGGNS-HiNkSp4MggrJMhLd_rcA@mail.gmail.com>
+ <20150317135258.GM25509@csclub.uwaterloo.ca>
+ <CAPik5MwpYGTtj3QeBAH1RdKatOOQhgTn2UksauwGP=ymq11fLQ@mail.gmail.com>
+ <20150317145635.GO25509@csclub.uwaterloo.ca>
+Message-ID: <CAPik5MyyZNogePXCNj70CPXyeOoLqefsiSF1HQjomCh0q32-3Q@mail.gmail.com>
+
+There is that factor as well. The hardest thing on any vehicle is that
+first start in the morning. Little lubrication, not at optimum operating
+temperature etc. I don't think anything in life is really either or, it's
+more like if and when.
+
+On Tue, Mar 17, 2015 at 10:56 AM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Tue, Mar 17, 2015 at 10:20:59AM -0400, Russell Reiter wrote:
+> > I agree saving power is a reasonable thing. That's one reason I don't
+> > recommend disabling DPMS completely. Spinning down the drives saves power
+> > and also servs to extend the lifespan of the drive, if only marginally.
+>
+> Some of the drives I have had last the longest never spun down.  I had
+> an 18GB quantum fireball that ran for 82000 power on hours before the
+> bearings started sounded so bad you didn't want to be in the same building
+> as the drive.
+>
+> --
+> Len Sorensen
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150317/a065692d/attachment.html>
+
+From cbbrowne at gmail.com  Tue Mar 17 15:05:29 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 17 Mar 2015 11:05:29 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+References: <CAPik5MwgbvVgER5bQdcLBxgK1O+zRCo7BU1oOZcTn_ppE4cS+g@mail.gmail.com>
+ <8da2ddb0b4d09168c834afbdaf966f55.squirrel@webmail.ee.ryerson.ca>
+ <CAPik5MyGGm7W7VnA+43xaWRwT64zFQrw+q-FVnzXfQXHnAmXew@mail.gmail.com>
+ <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+ <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+Message-ID: <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+
+On 17 March 2015 at 10:16, Russell Reiter <rreiter91 at gmail.com> wrote:
+> I'm not sure that performance and security aren't interchangable concepts.
+> While the implimentation of dash did improve performance it did also
+> mitigate the effects of the Shellshock vulnaribiliy discovered last year.
+
+Well, if you examine the package information about Dash, the description
+is reasonably specific...
+https://packages.debian.org/sid/shells/dash
+
+"The Debian Almquist Shell (dash) is a POSIX-compliant shell derived from ash.
+
+Since it executes scripts faster than bash, and has fewer library
+dependencies (making it more robust against software or hardware
+failures), it is used as the default system shell on Debian systems."
+
+I agree that performance is somewhat related to security; a denial of
+service can result from poor performance.  But the above seems to be
+descriptive of why Dash was chosen as the default shell in Debian
+post-Squeeze.
+
+Fewer library dependencies is an interesting additional property.
+That is presumably "more secure" as well, but I think they were after
+"more reliable" which, while not unrelated, is a distinctly separate
+measure.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From rreiter91 at gmail.com  Tue Mar 17 15:37:02 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Tue, 17 Mar 2015 11:37:02 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+References: <CAPik5MwgbvVgER5bQdcLBxgK1O+zRCo7BU1oOZcTn_ppE4cS+g@mail.gmail.com>
+ <8da2ddb0b4d09168c834afbdaf966f55.squirrel@webmail.ee.ryerson.ca>
+ <CAPik5MyGGm7W7VnA+43xaWRwT64zFQrw+q-FVnzXfQXHnAmXew@mail.gmail.com>
+ <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+ <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+Message-ID: <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+
+I think what is important to remember is that most recently discovered
+exploits were in fact known at one point or another, at least to the
+original authors of the code, if not necessarily documented and shared. How
+much information is shared between allies and foes is usually a matter of
+operational security.
+
+I believe that Debian has moved towards implement Dependency Based Booting
+with an eye to, at sometime in the future, compiling the OS each time at
+runtime.
+
+In this case brevity would be a factor in the time it takes to initialize
+key security layers and foiling "injected" exploits as opposed to
+"discovered" ones. However, too much simplicity can lead to security holes
+and other hidden features.
+
+I tend to disagree that reliability and security are distinctly separate
+and measurable. Each may be quantified as a measure of trust in
+relationship to the other and acted upon accordingly in relation to any
+OPSEC priorities.
+
+
+On Tue, Mar 17, 2015 at 11:05 AM, Christopher Browne <cbbrowne at gmail.com>
+wrote:
+
+> On 17 March 2015 at 10:16, Russell Reiter <rreiter91 at gmail.com> wrote:
+> > I'm not sure that performance and security aren't interchangable
+> concepts.
+> > While the implimentation of dash did improve performance it did also
+> > mitigate the effects of the Shellshock vulnaribiliy discovered last year.
+>
+> Well, if you examine the package information about Dash, the description
+> is reasonably specific...
+> https://packages.debian.org/sid/shells/dash
+>
+> "The Debian Almquist Shell (dash) is a POSIX-compliant shell derived from
+> ash.
+>
+> Since it executes scripts faster than bash, and has fewer library
+> dependencies (making it more robust against software or hardware
+> failures), it is used as the default system shell on Debian systems."
+>
+> I agree that performance is somewhat related to security; a denial of
+> service can result from poor performance.  But the above seems to be
+> descriptive of why Dash was chosen as the default shell in Debian
+> post-Squeeze.
+>
+> Fewer library dependencies is an interesting additional property.
+> That is presumably "more secure" as well, but I think they were after
+> "more reliable" which, while not unrelated, is a distinctly separate
+> measure.
+> --
+> When confronted by a difficult problem, solve it by reducing it to the
+> question, "How would the Lone Ranger handle this?"
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150317/a24f1e31/attachment.html>
+
+From wwitteman at gmail.com  Tue Mar 17 15:47:46 2015
+From: wwitteman at gmail.com (William Witteman)
+Date: Tue, 17 Mar 2015 11:47:46 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <CAPik5Mx+WC3OtgN_ApkiO0BeiLoQ0=EmJGXgUjUW1WzZN=bnHQ@mail.gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <CAPik5Mzp8UT8M2Whd+aWD+YssGGNS-HiNkSp4MggrJMhLd_rcA@mail.gmail.com>
+ <20150317135258.GM25509@csclub.uwaterloo.ca>
+ <CAPik5MwpYGTtj3QeBAH1RdKatOOQhgTn2UksauwGP=ymq11fLQ@mail.gmail.com>
+ <CAGMvh24gd8G2oB-obCOPd=Bu4Xk1V=hEB90HumBd-Q8RUnavyg@mail.gmail.com>
+ <CAPik5Mzbi68ZqEZ8iipoksoDa0xvbZVJS_5y6cmnvPQq+WJ5Ew@mail.gmail.com>
+ <CAGMvh25W4dEp3GcMjXy+yVfFepB9AEEMdwrqN8T+k6yCPpFBxw@mail.gmail.com>
+ <CAPik5Mx+WC3OtgN_ApkiO0BeiLoQ0=EmJGXgUjUW1WzZN=bnHQ@mail.gmail.com>
+Message-ID: <CAGMvh26w2=bpZPab6epokBoehJERoppcYrHqk54Mpd2POiWnFg@mail.gmail.com>
+
+On 17 March 2015 at 10:58, Russell Reiter <rreiter91 at gmail.com> wrote:
+> 71 tabs you had pinned or 71 new tabs?
+
+Just however many tabs were open when killing X took out Firefox, so
+it asks me (very pleasantly, I think) if I want them back.  I usually
+do.
+
+From ivan.avery.frey at gmail.com  Tue Mar 17 16:44:40 2015
+From: ivan.avery.frey at gmail.com (Ivan Avery Frey)
+Date: Tue, 17 Mar 2015 12:44:40 -0400
+Subject: [GTALUG] Gnu Manifesto Turns 30
+Message-ID: <CAB9QdHMAY3fiWHiJkd=ko3hogSV8-tBieTQpX4p_pXk9rAtSZA@mail.gmail.com>
+
+http://www.newyorker.com/business/currency/the-gnu-manifesto-turns-thirty
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150317/54e32124/attachment.html>
+
+From rreiter91 at gmail.com  Tue Mar 17 17:10:11 2015
+From: rreiter91 at gmail.com (R Russell Reiter)
+Date: Tue, 17 Mar 2015 13:10:11 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <CAGMvh26w2=bpZPab6epokBoehJERoppcYrHqk54Mpd2POiWnFg@mail.gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <CAPik5Mzp8UT8M2Whd+aWD+YssGGNS-HiNkSp4MggrJMhLd_rcA@mail.gmail.com>
+ <20150317135258.GM25509@csclub.uwaterloo.ca>
+ <CAPik5MwpYGTtj3QeBAH1RdKatOOQhgTn2UksauwGP=ymq11fLQ@mail.gmail.com>
+ <CAGMvh24gd8G2oB-obCOPd=Bu4Xk1V=hEB90HumBd-Q8RUnavyg@mail.gmail.com>
+ <CAPik5Mzbi68ZqEZ8iipoksoDa0xvbZVJS_5y6cmnvPQq+WJ5Ew@mail.gmail.com>
+ <CAGMvh25W4dEp3GcMjXy+yVfFepB9AEEMdwrqN8T+k6yCPpFBxw@mail.gmail.com>
+ <CAPik5Mx+WC3OtgN_ApkiO0BeiLoQ0=EmJGXgUjUW1WzZN=bnHQ@mail.gmail.com>
+ <CAGMvh26w2=bpZPab6epokBoehJERoppcYrHqk54Mpd2POiWnFg@mail.gmail.com>
+Message-ID: <0C9CE624-76D1-4534-8E35-D38FB4AEDEC5@gmail.com>
+
+I just checked some exploits from the last year. There is one WiFi attack which targets the red wire of video, in effect capturing frames which are carried on it. It is a directed attack, but what I'm getting at is that there may be a possibility of RF interference. I remember back in the say that running cable for IBM token ring networks was problematic if the wiring ran parallel to AC carried over Romex wiring and completely FUBAR crossing near florescent lighting. 
+So your cables are all neat and tidy and not close to ac cables, lighting ballasts or compact fluorescent lights, and in a place with relatively modern and properly grounded power, right.
+If so I think its possible that on wake events, the palate Damon doesn't release the blank screen, which is a signal of its own, rather than the lack of a signal, as we tend to assume that's what a nothing is.
+
+On March 17, 2015 11:47:46 AM EDT, William Witteman <wwitteman at gmail.com> wrote:
+>On 17 March 2015 at 10:58, Russell Reiter <rreiter91 at gmail.com> wrote:
+>> 71 tabs you had pinned or 71 new tabs?
+>
+>Just however many tabs were open when killing X took out Firefox, so
+>it asks me (very pleasantly, I think) if I want them back.  I usually
+>do.
+>---
+>Talk Mailing List
+>talk at gtalug.org
+>http://gtalug.org/mailman/listinfo/talk
+
+-- 
+Sent from my Android device with K-9 Mail. Please excuse my brevity.
+
+From thoriumbr at gmail.com  Tue Mar 17 17:41:15 2015
+From: thoriumbr at gmail.com (Mauro Souza)
+Date: Tue, 17 Mar 2015 14:41:15 -0300
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <0C9CE624-76D1-4534-8E35-D38FB4AEDEC5@gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <CAPik5Mzp8UT8M2Whd+aWD+YssGGNS-HiNkSp4MggrJMhLd_rcA@mail.gmail.com>
+ <20150317135258.GM25509@csclub.uwaterloo.ca>
+ <CAPik5MwpYGTtj3QeBAH1RdKatOOQhgTn2UksauwGP=ymq11fLQ@mail.gmail.com>
+ <CAGMvh24gd8G2oB-obCOPd=Bu4Xk1V=hEB90HumBd-Q8RUnavyg@mail.gmail.com>
+ <CAPik5Mzbi68ZqEZ8iipoksoDa0xvbZVJS_5y6cmnvPQq+WJ5Ew@mail.gmail.com>
+ <CAGMvh25W4dEp3GcMjXy+yVfFepB9AEEMdwrqN8T+k6yCPpFBxw@mail.gmail.com>
+ <CAPik5Mx+WC3OtgN_ApkiO0BeiLoQ0=EmJGXgUjUW1WzZN=bnHQ@mail.gmail.com>
+ <CAGMvh26w2=bpZPab6epokBoehJERoppcYrHqk54Mpd2POiWnFg@mail.gmail.com>
+ <0C9CE624-76D1-4534-8E35-D38FB4AEDEC5@gmail.com>
+Message-ID: <CAEZ_B6NLQtqvmL2uu0Ft8fUKvFyC4gx2XF7AjJH2Of4OBQ2JFg@mail.gmail.com>
+
+I have an old generic laptop with a dead screen, and I wired it to my TV
+using the hdmi port. Some times the screen does not come back too, and I
+discovered that pressing ctrl-alt-f1 and ctrl-alt-f8 it comes back without
+having to kill X.
+On Mar 17, 2015 6:10 PM, "R Russell Reiter" <rreiter91 at gmail.com> wrote:
+
+> I just checked some exploits from the last year. There is one WiFi attack
+> which targets the red wire of video, in effect capturing frames which are
+> carried on it. It is a directed attack, but what I'm getting at is that
+> there may be a possibility of RF interference. I remember back in the say
+> that running cable for IBM token ring networks was problematic if the
+> wiring ran parallel to AC carried over Romex wiring and completely FUBAR
+> crossing near florescent lighting.
+> So your cables are all neat and tidy and not close to ac cables, lighting
+> ballasts or compact fluorescent lights, and in a place with relatively
+> modern and properly grounded power, right.
+> If so I think its possible that on wake events, the palate Damon doesn't
+> release the blank screen, which is a signal of its own, rather than the
+> lack of a signal, as we tend to assume that's what a nothing is.
+>
+> On March 17, 2015 11:47:46 AM EDT, William Witteman <wwitteman at gmail.com>
+> wrote:
+> >On 17 March 2015 at 10:58, Russell Reiter <rreiter91 at gmail.com> wrote:
+> >> 71 tabs you had pinned or 71 new tabs?
+> >
+> >Just however many tabs were open when killing X took out Firefox, so
+> >it asks me (very pleasantly, I think) if I want them back.  I usually
+> >do.
+> >---
+> >Talk Mailing List
+> >talk at gtalug.org
+> >http://gtalug.org/mailman/listinfo/talk
+>
+> --
+> Sent from my Android device with K-9 Mail. Please excuse my brevity.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150317/a31aed16/attachment.html>
+
+From hugh at mimosa.com  Tue Mar 17 17:45:15 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 17 Mar 2015 13:45:15 -0400 (EDT)
+Subject: [GTALUG] email formatting [was Re: Keep X from going to sleep]
+In-Reply-To: <etPan.55081780.74b0dc51.1ab@Mac-mini-de-Marcelo.local>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <etPan.55081780.74b0dc51.1ab@Mac-mini-de-Marcelo.local>
+Message-ID: <alpine.LRH.2.02.1503171305080.19162@redclaw.mimosa.com>
+
+I'm using alpine.  It runs in an xterm.
+
+In the message I'm replying to, I cannot tell the quoted text from the new 
+text.
+
+This may be a "feature" of gmail.  I'm not sure what
+"X-Mailer: Airmail (286)" signifies in Marcelo's email.
+
+I had the same problem with Russell Reiter's postings.  Russell's
+postings may have been fixed by his recent switch to k9.  I don't know
+since now he's "top posting" (which I think is unfortunate in a
+mailing list).  He previously responded-by-chunk, which I think is
+great EXCEPT when quote and response are indistinguishable ("red"
+doesn't work in plain ASCII).
+
+Here's what I recommend:
+
+- quote relevant chunks of what you are replying to
+
+- add your response after the relevant chunk
+
+- make sure that the quotes and replies are distinct, even in ASCII
+
+- don't quote parts that you are not responding to
+
+This is one way to be considerate of your audience.
+
+Regardless of what I just said, I'm top-posting for this one example
+so that you can see what I see.
+
+| From: Marcelo Kalib <kalibslack at gmail.com>
+| To: GTALUG Talk <talk at gtalug.org>
+| Date: Tue, 17 Mar 2015 09:01:04 -0300
+| Subject: Re: [GTALUG] Keep X from going to sleep
+| Reply-To: GTALUG Talk <talk at gtalug.org>
+| 
+| On 17 de mar?o de 2015 at 08:56:01, William Witteman (wwitteman at gmail.com) wrote:
+| Here's a problem I'm hoping to solve:?
+| 
+| When idle for some amount of time, X shuts down the screen. When a?
+| program like VLC is playing a video (or even paused) this does not?
+| happen.?
+| 
+| How can I tell X to never sleep? I just want it to send output down?
+| that cable, constantly, forever.?
+| 
+| I manage screen burn and power wasting by turning off the monitor, but?
+| when the screen goes to sleep, my inexpensive monitor (an LG)?
+| sometimes has trouble noticing and won't display anything until X is?
+| restarted, which is a pain.?
+| 
+| Probably not a X configuration, but a WM. What WM are you using?? You need to check the Power Save options, or something like that (depending on which WM).
+| 
+| 
+| --?
+| Marcelo Cavalcante Rocha - Kalib
+| 
+| Fortaleza - Cear? - Brazil
+| Mobile: +55 085 87620983
+| Certifica??es:?ITIL V3?|?CSM?|?LPI-C1?|?LPI-C2?|?LPI-C3?|?Novell CLA
+| Minha Pessoa:?Blog
+| 
+| ===================================================
+| 
+| Proteja meu endere?o como estou protegendo o seu.
+| N?o revele e-mail dos correspondentes: use Cco (Copia Carbonada Oculta).
+| Retire os endere?os antes de reenviar. Dificulte assim a
+| dissemina??o de v?rus e spam.
+
+From rreiter91 at gmail.com  Tue Mar 17 18:10:14 2015
+From: rreiter91 at gmail.com (R Russell Reiter)
+Date: Tue, 17 Mar 2015 14:10:14 -0400
+Subject: [GTALUG] email formatting [was Re: Keep X from going to sleep]
+In-Reply-To: <alpine.LRH.2.02.1503171305080.19162@redclaw.mimosa.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <etPan.55081780.74b0dc51.1ab@Mac-mini-de-Marcelo.local>
+ <alpine.LRH.2.02.1503171305080.19162@redclaw.mimosa.com>
+Message-ID: <3D8BD32C-874E-4A30-8E0F-48458368FC55@gmail.com>
+
+
+
+On March 17, 2015 1:45:15 PM EDT, "D. Hugh Redelmeier" <hugh at mimosa.com> wrote:
+<snip previous>
+>I had the same problem with Russell Reiter's postings.  Russell's
+>postings may have been fixed by his recent switch to k9.  I don't know
+>since now he's "top posting" (which I think is unfortunate in a
+>mailing list).  He previously responded-by-chunk, which I think is
+>great EXCEPT when quote and response are indistinguishable ("red"
+>doesn't work in plain ASCII).
+
+Sorry I tend to top post when I hurry around and try to reply to topics as well. I often forget that others besides the intended recipient get the messages too. 
+Hopefully my replies from this mobile device are now colourless as well.
+-- 
+Sent from my Android device with K-9 Mail. Please excuse my brevity.
+
+From hugh at mimosa.com  Tue Mar 17 20:11:43 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 17 Mar 2015 16:11:43 -0400 (EDT)
+Subject: [GTALUG]
+	=?iso8859-7?q?OT=3A_How_Superstar_Companies_Like_Apple_A?=
+	=?iso8859-7?q?re_Killing_America=A2s_High-Tech_Future?=
+In-Reply-To: <1426535145.2353.2.camel@gmail.com>
+References: <1426535145.2353.2.camel@gmail.com>
+Message-ID: <alpine.LRH.2.02.1503171521420.19162@redclaw.mimosa.com>
+
+[Warning: long off-topic posting.]
+
+[I would welcome challenges to what I write.]
+
+| From: Ivan Avery Frey <ivan.avery.frey at gmail.com>
+
+| Might be of interest to people on this mailing list.
+| 
+| http://ineteconomics.org/institute-blog/william-lazonick-how-superstar-companies-apple-are-killing-america-s-high-tech-future
+
+My impression is that he's got some points but his over-all point is
+unconvincing.
+
+1. share buy-backs are questionable
+===================================
+
+Share-buy-backs do seem to be incentivized by stock options.  That
+seems really really goofy.  When shares are bought back by the
+company, the share price rises.  So stock options become more
+valuable.  It might have US tax advantages (I don't understand the US
+tax system).
+
+The straight-forward approach would be to issue dividends.  But the
+current business culture reads an increase of a dividend to be a
+commitment to continue paying that dividend until the company cannot
+prudently do so (which, in turn, is taken as a very bad sign).
+There's a simple cure:  declare an extraordinary dividend.  But
+dividends don't get paid to holders of stock options.
+
+Bingo: management (which holds stock options) wants share buy-backs.
+For its own reasons, not those of the owners of the company.
+
+
+2. companies should retain their earnings
+=========================================
+
+This is the real point he is trying to make.  He claims this will lead
+to long-term employment, investment in employees, and cumulative
+incremental R&D.
+
+I don't see the connection.
+
+If a company can see how to use (invest) money well, it should keep
+it.  If it cannot, it should pay it out to shareholders.
+
+I don't see any way that Apple can usefully invest $100 billion.  So
+paying out a large chunk of it makes sense.
+
+Back in the golden era that Lazonick harks back to, Bell Canada
+generated pots and pots of money.  Rather than paying it out to
+shareholders, it bought a bunch of businesses and proceeded to kill
+them.  Shareholders would have been much better served by receiving
+larger dividends that they could choose to invest more wisely than
+Bell Canada.
+
+Stable monopolies are the businesses that most closely match what
+Lazonick wants.  Such monopolies are generally a bad thing for the
+obvious reasons.  They do have pleasant side-effects: nothing has
+matched Bell Research Labs, IBM Research Labs, or Microsoft Research.
+And the job security is kind of nice.
+
+I don't imagine that Microsoft or Bell management felt they got their
+money's worth out of their labs in terms of new business lines.  They
+got it in prestige, if anything.
+
+
+3. R&D needs stable employment
+==============================
+
+See Bell Labs and Microsoft Research, above.
+
+Yet those were always the exception.
+
+Why have a screwed up phone system or a screwed up software ecosystem
+just to nurture those exceptions.  Seems like a bad tradeoff.
+
+I find Christensen's "Innovators Dilemma" pretty convincing.  Routine
+improvements can and do come from within companies but breakthroughs
+are better exploited by new companies.
+
+Bell Labs invented the transistor.  Who exploited it?  Sony, at first.
+Then everyone.  Including, but not especially, Bell.
+
+Unix is the same.
+
+The Bell Labs discovery that the universe is about 3 degrees?  I don't
+know of a product there.
+
+IBM Research arguably invented RISC.  Yet IBM's RISC products were
+kind of late and kind of messy.  They are one of the last RISCs
+standing so that says something.
+
+I don't know of blockbusters from Microsoft Research.  There certainly
+are good people there.
+
+
+2.  What innovations matter?
+============================
+
+The most rewarding innovations are creating or destroying busness
+models and monopolies.  Hardly technical in the TLUG sense.
+
+"Intellectual Property" (I hate that term) seems to be key.  Apple
+wins here.
+
+Monopoly platform: iTunes, App Store, iOS, ...  EBay, Uber, ...
+
+Monopoly service: google search + ads, Microsoft Windows, Microsoft
+Office.  Facebook, ...
+
+Destroying business models: Red Hat (eats Sun etc.).  Netflix (eats
+many players).  Amazon (eats book stores and store fronts in general),
+...
+
+Maybe all those are exceptional, like lottery wins.  They are what gets 
+the most ink.  Where do the important but less spectacular innovations 
+come from?  What nurtures them?
+
+From lsorense at csclub.uwaterloo.ca  Tue Mar 17 21:30:29 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 17 Mar 2015 17:30:29 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+References: <CAPik5MwgbvVgER5bQdcLBxgK1O+zRCo7BU1oOZcTn_ppE4cS+g@mail.gmail.com>
+ <8da2ddb0b4d09168c834afbdaf966f55.squirrel@webmail.ee.ryerson.ca>
+ <CAPik5MyGGm7W7VnA+43xaWRwT64zFQrw+q-FVnzXfQXHnAmXew@mail.gmail.com>
+ <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+ <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+Message-ID: <20150317213029.GP25509@csclub.uwaterloo.ca>
+
+On Tue, Mar 17, 2015 at 11:37:02AM -0400, Russell Reiter wrote:
+> I believe that Debian has moved towards implement Dependency Based Booting
+> with an eye to, at sometime in the future, compiling the OS each time at
+> runtime.
+
+Certainly not.  Debian does binary distrubition and to do anything else
+is stupid.
+
+Good grief, try compiling kde each time you boot.  Not going to happen.
+
+-- 
+Len Sorensen
+
+From waltdnes at waltdnes.org  Tue Mar 17 21:41:29 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Tue, 17 Mar 2015 17:41:29 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+Message-ID: <20150317214129.GA4364@waltdnes.org>
+
+On Tue, Mar 17, 2015 at 07:55:37AM -0400, William Witteman wrote
+> Here's a problem I'm hoping to solve:
+> 
+> When idle for some amount of time, X shuts down the screen.  When a
+> program like VLC is playing a video (or even paused) this does not
+> happen.
+> 
+> How can I tell X to never sleep?  I just want it to send output down
+> that cable, constantly, forever.
+> 
+> I manage screen burn and power wasting by turning off the monitor, but
+> when the screen goes to sleep, my inexpensive monitor (an LG)
+> sometimes has trouble noticing and won't display anything until X is
+> restarted, which is a pain.
+
+  That may not be necessary.  I experience "similar" behaviour, but the
+answer to that is *NOT* to restart X.  Basically, X has told the monitor
+to not merely blank the screen, but to shut down altogether.  When that
+happens to me, and I come back from a distraction elsewhere, I merely
+reach for the "Power" button on the monitor, and toggle it back on
+again.  It's that simple.  Try it.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From rreiter91 at gmail.com  Tue Mar 17 21:53:56 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Tue, 17 Mar 2015 17:53:56 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <20150317213029.GP25509@csclub.uwaterloo.ca>
+References: <CAPik5MwgbvVgER5bQdcLBxgK1O+zRCo7BU1oOZcTn_ppE4cS+g@mail.gmail.com>
+ <8da2ddb0b4d09168c834afbdaf966f55.squirrel@webmail.ee.ryerson.ca>
+ <CAPik5MyGGm7W7VnA+43xaWRwT64zFQrw+q-FVnzXfQXHnAmXew@mail.gmail.com>
+ <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+ <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150317213029.GP25509@csclub.uwaterloo.ca>
+Message-ID: <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+
+<snip the stupid stuff>
+> Certainly not.  Debian does binary distrubition and to do anything else
+> is stupid.
+
+I think you miss-presume that technology will stay at current levels and
+that capacity planning is done the week before instead of the decade before.
+
+Reminds me of Bill Gates, no one is going to need more than 640k, or IBM's
+forecast that the entire worlds computing would be done on one or two of
+their mainframes.
+>
+> Good grief, try compiling kde each time you boot.  Not going to happen.
+Says you.
+I'm not even going to mention VLIW, concurrency booting in failover,
+control granularity on process exit, or the fact that the first time I
+compiled a kernel on a 486 it took 20 hr's. Want to bet there is one now
+that does it in 20 seconds and how long will it be before that is
+microseconds.
+What's stupid is not engaging possibilities.
+>
+> --
+> Len Sorensen
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150317/ef0344b3/attachment.html>
+
+From wwitteman at gmail.com  Tue Mar 17 22:34:54 2015
+From: wwitteman at gmail.com (William Witteman)
+Date: Tue, 17 Mar 2015 18:34:54 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <20150317214129.GA4364@waltdnes.org>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <20150317214129.GA4364@waltdnes.org>
+Message-ID: <CAGMvh250f2gXsWdPqmqzMeWv0Us-70icSUfKfyC7F+QBVR-3+A@mail.gmail.com>
+
+On 17 March 2015 at 17:41, Walter Dnes <waltdnes at waltdnes.org> wrote:
+
+> That may not be necessary.  I experience "similar" behaviour, but the
+> answer to that is *NOT* to restart X.  Basically, X has told the monitor
+> to not merely blank the screen, but to shut down altogether.  When that
+> happens to me, and I come back from a distraction elsewhere, I merely
+> reach for the "Power" button on the monitor, and toggle it back on
+> again.  It's that simple.  Try it.
+
+The monitor if usually off when the described behaviour occurs.  Even
+when it is on, power cycling it has no effect.  It is not that simple.
+
+"xset -dpms" doesn't work, nor does "xset s off", nor does "setterm
+-blank 0 -powersave off -powerdown 0"
+
+If these commands are achieving ant result, it is being overridden elsewhere.
+
+Ctrl-Alt-F* followed by Ctrl-Alt-F1 *does* work - thanks to Mauro
+Sousa.  It is a nicer kludge, and I appreciate it.  However, I'd still
+love to figure out a real, permanent solution, if possible.
+
+The WM is OpenBox, which isn't doing any power management, but I will
+see if can get it to invoke a different power manager (XFCE looks
+promising, based on Lennart's experience) and try that.  I will report
+back.
+
+From rreiter91 at gmail.com  Tue Mar 17 22:44:27 2015
+From: rreiter91 at gmail.com (R Russell Reiter)
+Date: Tue, 17 Mar 2015 18:44:27 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+References: <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+Message-ID: <6979C405-A751-44DE-8FAF-1A9B5CD7022D@gmail.com>
+
+
+
+
+-------- Original Message --------
+ going to need more than 640k, or IBM's
+
+Ummm I meant 64k ROM. Sorry.
+-- 
+Sent from my Android device with K-9 Mail. Please excuse my brevity.
+
+From william.muriithi at gmail.com  Wed Mar 18 00:34:23 2015
+From: william.muriithi at gmail.com (William Muriithi)
+Date: Tue, 17 Mar 2015 20:34:23 -0400
+Subject: [GTALUG]
+ =?utf-8?q?OT=3A_How_Superstar_Companies_Like_Apple_Are_K?=
+ =?utf-8?q?illing_America=E2=80=99s_High-Tech_Future?=
+In-Reply-To: <alpine.LRH.2.02.1503171521420.19162@redclaw.mimosa.com>
+References: <1426535145.2353.2.camel@gmail.com>
+ <alpine.LRH.2.02.1503171521420.19162@redclaw.mimosa.com>
+Message-ID: <20150318003423.6037648.93533.18978@gmail.com>
+
+H?i Hugh,
+
+
+[Warning: long off-topic posting.]
+
+[I would welcome challenges to what I write.]
+
+| From: Ivan Avery Frey <ivan.avery.frey at gmail.com>
+
+| Might be of interest to people on this mailing list.
+| 
+| http://ineteconomics.org/institute-blog/william-lazonick-how-superstar-companies-apple-are-killing-america-s-high-tech-future
+
+My impression is that he's got some points but his over-all point is
+unconvincing.
+
+Your analysis is quite good and totally agree with what you say. I do however feel you ignored most of the argument and concentrated on last paragraph a little.?
+
+In my opinion, his argument is apple and the like are bad for the ecosystem because they take advantage of US and to be frank other countries without giving back. There is another reason why apple can't give dividends, it would trigger tax against that dividend. That is very questionable for a company that's based close to university of California, a school that used to get a lot of taxes and responsible to lot of law research that apple is currently using.
+
+To me, that was his main argument and in my opinion the biggest drive of the current problems.
+
+Regards,
+
+William
+
+
+
+From lsorense at csclub.uwaterloo.ca  Wed Mar 18 02:01:25 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 17 Mar 2015 22:01:25 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+References: <CAPik5MyGGm7W7VnA+43xaWRwT64zFQrw+q-FVnzXfQXHnAmXew@mail.gmail.com>
+ <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+ <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150317213029.GP25509@csclub.uwaterloo.ca>
+ <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+Message-ID: <20150318020125.GQ25509@csclub.uwaterloo.ca>
+
+On Tue, Mar 17, 2015 at 05:53:56PM -0400, Russell Reiter wrote:
+> I think you miss-presume that technology will stay at current levels and
+> that capacity planning is done the week before instead of the decade before.
+> 
+> Reminds me of Bill Gates, no one is going to need more than 640k, or IBM's
+> forecast that the entire worlds computing would be done on one or two of
+> their mainframes.
+
+So you want to use all the improvements in technology to do pointless
+repetitive work?  Why would you want that.
+
+Debian went to parallel startup to improve startup times.  Your idea
+would make it much slower.
+
+> > Good grief, try compiling kde each time you boot.  Not going to happen.
+> Says you.
+> I'm not even going to mention VLIW, concurrency booting in failover,
+> control granularity on process exit, or the fact that the first time I
+> compiled a kernel on a 486 it took 20 hr's. Want to bet there is one now
+> that does it in 20 seconds and how long will it be before that is
+> microseconds.
+> What's stupid is not engaging possibilities.
+
+Well best kernel compile time I have heard was 7 seconds.  Of course it
+was on an IBM p795 with 256 4GHz cores.  That's way beyond what we are
+going to have this decade in a typical machine.
+
+Recompiling serves no purpose.  Do you want to first recompile the
+compiler before compiling the OS?  What are you going to compile the
+compiler with?  How far down do you want to go?  If you want to check
+your code, then checksum it and validate that it matches the code last
+time you booted and if it does, great, don't bother redoing anything.
+If it doesn't match, well then is that because the code is now corrupt
+(in which case recompiling is a bad idea) or because you made a change?
+
+Useful uses of modern technology is to make things faster or more power
+efficient so they can run longer.  Laptops with 10 to 15 hour battery
+lives exist now.  Those we didn't have in the past.  I don't want to
+waste that battery life running pointless compile jobs.
+
+I think source distributions like gentoo are stupid, but at least they
+only compile things once.  They aren't that crazy.  Some people like what
+they can do with tweaking the settings and turning features on and off.
+I prefer things that are tested and work and don't waste tons of CPU
+time compiling what the distribution could have already compiled.
+
+-- 
+Len Sorensen
+
+From hugh at mimosa.com  Wed Mar 18 02:25:40 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 17 Mar 2015 22:25:40 -0400 (EDT)
+Subject: [GTALUG]
+	=?iso8859-7?q?OT=3A_How_Superstar_Companies_Like_Apple_A?=
+	=?iso8859-7?q?re_Killing_America=A2s_High-Tech_Future?=
+In-Reply-To: <20150318003423.6037648.93533.18978@gmail.com>
+References: <1426535145.2353.2.camel@gmail.com>
+ <alpine.LRH.2.02.1503171521420.19162@redclaw.mimosa.com>
+ <20150318003423.6037648.93533.18978@gmail.com>
+Message-ID: <alpine.LRH.2.02.1503172214500.19162@redclaw.mimosa.com>
+
+| From: William Muriithi <william.muriithi at gmail.com>
+
+Thanks for the feedback.  I wrote a long reply but I think that it was
+more for my benefit than the readers so I've spiked it.
+
+| In my opinion, his argument is apple and the like are bad for the 
+| ecosystem because they take advantage of US and to be frank other 
+| countries without giving back. There is another reason why apple can't 
+| give dividends, it would trigger tax against that dividend. That is very 
+| questionable for a company that's based close to university of 
+| California, a school that used to get a lot of taxes and responsible to 
+| lot of law research that apple is currently using.
+| 
+| To me, that was his main argument and in my opinion the biggest drive of 
+| the current problems.
+
+He doesn't come up with a way forward that would fix any of these
+problems.  Fair enough.  But we're in the current situation due to a
+certain regulatory and market regime.  This regime, in my opinion, is
+largely better than the good old days.
+
+Some observations seem to call out for fixes but that doesn't mean
+that there are do-able fixes that solve the fundamental problem.  The
+obvious fixes often have unintended consequences.
+
+The good old days depended on stable corporations.  They were, in many
+ways, oppresive.  Much of what most of the big corporations did no
+longer needs doing.  And we don't remember the many small
+corporations.
+
+From hugh at mimosa.com  Wed Mar 18 02:40:12 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 17 Mar 2015 22:40:12 -0400 (EDT)
+Subject: [GTALUG] Microsoft reveals patents that read on Android (some on
+ Linux kernel)
+Message-ID: <alpine.LRH.2.02.1503172229150.19162@redclaw.mimosa.com>
+
+Microsoft has been asking for royalties from all sorts of Linux vendors 
+and Android vendors.  They've claimed something like "200 patent families" 
+apply to Android.
+
+Most companies have signed up, as far as we know.
+
+Kyocera has not os Microsoft is suing them for infringement of 6 specific 
+patents.  Now we know which they are.  They each look obvious to me but 
+apparently that's not the test that is used in the US.
+
+<http://www.theregister.co.uk/2015/03/09/microsoft_lobs_sueball_at_kyocera/>
+
+Apparently Microsoft make billions a year off these.
+
+US patents expire 20 years after filing date.  The latest was filed in 
+late 2004 so it runs for almost a decade longer.
+
+From adb at adb.ca  Wed Mar 18 03:17:45 2015
+From: adb at adb.ca (Anthony de Boer)
+Date: Tue, 17 Mar 2015 23:17:45 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <20150318020125.GQ25509@csclub.uwaterloo.ca>
+References: <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+ <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150317213029.GP25509@csclub.uwaterloo.ca>
+ <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+ <20150318020125.GQ25509@csclub.uwaterloo.ca>
+Message-ID: <20150318031745.GD16224@adb.ca>
+
+Lennart Sorensen wrote:
+> Recompiling serves no purpose.  Do you want to first recompile the
+> compiler before compiling the OS?  What are you going to compile the
+> compiler with?  How far down do you want to go?
+
+Too much of a modern system is in various scripting languages, which
+do effectively that everytime you run them.  Granted, so long as you're
+not doing tight inner loops in a script the performance hit isn't as
+bad as it can be.  Shell scripts that forked N things per loop iteration
+used to really crawl along, though the fact we had a couple of dozen
+users on a 386 running SVR3 might have had something to do with it too.
+
+Optimization is getting to be a lost art.
+
+> I think source distributions like gentoo are stupid, but at least they
+> only compile things once.  They aren't that crazy.  Some people like what
+> they can do with tweaking the settings and turning features on and off.
+> I prefer things that are tested and work and don't waste tons of CPU
+> time compiling what the distribution could have already compiled.
+
+Part of the reason I run Gentoo is to have the source code aboard my
+system and be sure the binaries were compiled from exactly that; their
+infrastructure facilitates that and the build process has to be robust
+enough to work on various strange folks' machines.  (The other part was
+at the time wanting something as unlike an RPM-based distro as possible
+due to having had enough of that for awhile.)
+
+Crazy would be taking something like Debian or Red Hat where you're
+supposed to love and run their distributed binaries and recompile them
+all yourself and find out how many builds only worked that once and are
+irreproduceable.  But someone somewhere has to keep them honest.  :-)
+
+-- 
+Anthony de Boer
+
+From rreiter91 at gmail.com  Wed Mar 18 08:17:52 2015
+From: rreiter91 at gmail.com (R Russell Reiter)
+Date: Wed, 18 Mar 2015 04:17:52 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <20150318020125.GQ25509@csclub.uwaterloo.ca>
+References: <CAPik5MyGGm7W7VnA+43xaWRwT64zFQrw+q-FVnzXfQXHnAmXew@mail.gmail.com>
+ <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+ <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150317213029.GP25509@csclub.uwaterloo.ca>
+ <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+ <20150318020125.GQ25509@csclub.uwaterloo.ca>
+Message-ID: <1D00E9DD-A850-43C0-B3C8-197E263F7731@gmail.com>
+
+<snip>
+>Recompiling serves no purpose.  Do 
+
+I consider  security in mission critical environments to be a valid purpose and note that enterprise is not necessarily mission critical whereas national security is uniformly considered to be very critical.
+
+>Useful uses of modern technology is to make things faster or more power
+>efficient so they can run longer.
+  
+This is an enterprise point of view.  It has validity in its own niche. There are other critical niches which have different aims and security needs. Fire control systems for example.
+
+Lap tops with 10 to 15 hour battery
+>lives exist now. 
+
+LI technology has improved in the last ten years and its true those improvements were drive by markets rather than government or national interests but those interests can and will take advantage of those improvements.
+
+Let me put it this way, would you deliberately not take advantage of a secure booting feature which  because of hardware and software improvements, works with little or no added overhead? 
+
+You could do that as a matter of personal preference but in enterprise you would lose market share when your bank clients discover your system is not as secure as your competitors.
+
+>I think source distributions like gentoo are stupid, but at least they
+>only compile things once.  They aren't that crazy.  
+
+So you only compile your critical dependency system once at runtime and if and when you make hardware or other critical changes you do it again. There are valid reasons to harden systems and keep them hard. You got 82000 hrs spin time from one of your drives, that's a lot of times between boots.
+
+I don't just pull this stuff out from under my hat you know, I do a lot of reading. Its just that I'm limited to the stuff that's not above my pay grade or not otherwise trade secrets.
+
+
+
+-- 
+Sent from my Android device with K-9 Mail. Please excuse my brevity.
+
