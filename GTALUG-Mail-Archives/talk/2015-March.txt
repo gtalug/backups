@@ -8244,3 +8244,810 @@ I don't just pull this stuff out from under my hat you know, I do a lot of readi
 -- 
 Sent from my Android device with K-9 Mail. Please excuse my brevity.
 
+From rreiter91 at gmail.com  Wed Mar 18 11:29:10 2015
+From: rreiter91 at gmail.com (R Russell Reiter)
+Date: Wed, 18 Mar 2015 07:29:10 -0400
+Subject: [GTALUG]
+	=?utf-8?q?OT=3A_How_Superstar_Companies_Like_Apple_Are_K?=
+	=?utf-8?q?illing_America=E2=80=99s_High-Tech_Future?=
+In-Reply-To: <alpine.LRH.2.02.1503171521420.19162@redclaw.mimosa.com>
+References: <1426535145.2353.2.camel@gmail.com>
+ <alpine.LRH.2.02.1503171521420.19162@redclaw.mimosa.com>
+Message-ID: <69186809-4839-4D5C-AD3F-E06ECAF5D7C9@gmail.com>
+
+On March 17, 2015 4:11:43 PM EDT, "D. Hugh Redelmeier" <hugh at mimosa.com> wrote:
+>[Warning: long off-topic posting.]
+>
+>[I would welcome challenges to what I write.]
+>
+>| From: Ivan Avery Frey <ivan.avery.frey at gmail.com>
+>
+>| Might be of interest to people on this mailing list.
+<snips follow>
+
+>3. R&D needs stable employment
+>==============================
+>2.  What innovations matter?
+>========================
+  Where do the important but less spectacular innovations 
+>come from?  What nurtures them?
+
+I always think of Post It notes. The task was find a superior glue. What was discovered was a reusable tacky substance which official product development channels within 3M would not authorize.  An unofficial "bootleg" channel developed and the product eventually passed back into the corporate development stream.
+
+I guess this was the middle management, who knew more about their staffs capacities and abilities than did the corporate bean counters who's main duties are reporting profits to the board and shareholders.
+
+The willingness to take risks with other peoples money and the checks and balances of the enterprise constructs of risk and reward are the foundation of capitalism. Even in the early days of communism Trotsky acknowledged the need for a class of venture capitalists. He just felt the reward limits for investors be capped in favor of spreading the profits among the workers more equitably.
+
+I always say the real rewards come from thinking outside the box. However there are real and practical circumstances where you don't let some stuff out of the box, or even open it at all.
+>---
+>Talk Mailing List
+>talk at gtalug.org
+>http://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+Sent from my Android device with K-9 Mail. Please excuse my brevity.
+
+From james.knott at rogers.com  Wed Mar 18 12:26:26 2015
+From: james.knott at rogers.com (James Knott)
+Date: Wed, 18 Mar 2015 08:26:26 -0400
+Subject: [GTALUG] It's alive! Utah software company's decade-old suit
+ against IBM revived | The Salt Lake Tribune
+Message-ID: <55096EF2.5040206@rogers.com>
+
+Some things never die!
+
+http://www.sltrib.com/news/2303519-155/its-alive-sco-group-suit-revived
+
+
+From rreiter91 at gmail.com  Wed Mar 18 13:36:41 2015
+From: rreiter91 at gmail.com (R. Russell Reiter)
+Date: Wed, 18 Mar 2015 09:36:41 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <CAGMvh250f2gXsWdPqmqzMeWv0Us-70icSUfKfyC7F+QBVR-3+A@mail.gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <20150317214129.GA4364@waltdnes.org>
+ <CAGMvh250f2gXsWdPqmqzMeWv0Us-70icSUfKfyC7F+QBVR-3+A@mail.gmail.com>
+Message-ID: <815A4E25-14DA-4E85-BE06-8B957809142B@gmail.com>
+
+
+>Ctrl-Alt-F* followed by Ctrl-Alt-F1 *does* work - thanks to Mauro
+>Sousa.  It is a nicer kludge, and I appreciate it.  However, I'd still
+>love to figure out a real, permanent solution, if possible.
+>
+Probably SYN & ACK requests- IMHO.
+
+>The WM is OpenBox, which isn't doing any power management, but I will
+>see if can get it to invoke a different power manager (XFCE looks
+>promising, based on Lennart's experience) and try that.  I will report
+>back
+
+Remember that if you are testing a virtualized environment your profiles should match real world hardware. For example it might look advantageous to set the baud rate of a virtual disk to 115000, however 9600 is a supported real world rate that won't flood the bus with sync or other requests in difficult circumstances, most especially in a testing environment.
+
+The baud rate on the planar is different than the baud rate of modem communications in dealing with the bus ie. Perhaps it is device limited to requesting and syncing clock tics.
+
+I know this may not seem to relate to the problem at hand but I hear testing, I think testing.
+>---
+>Talk Mailing List
+>talk at gtalug.org
+>http://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+Sent via K-9 Mail. 
+
+From lsorense at csclub.uwaterloo.ca  Wed Mar 18 14:27:44 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 18 Mar 2015 10:27:44 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <20150318031745.GD16224@adb.ca>
+References: <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150317213029.GP25509@csclub.uwaterloo.ca>
+ <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+ <20150318020125.GQ25509@csclub.uwaterloo.ca>
+ <20150318031745.GD16224@adb.ca>
+Message-ID: <20150318142744.GR25509@csclub.uwaterloo.ca>
+
+On Tue, Mar 17, 2015 at 11:17:45PM -0400, Anthony de Boer wrote:
+> Too much of a modern system is in various scripting languages, which
+> do effectively that everytime you run them.  Granted, so long as you're
+> not doing tight inner loops in a script the performance hit isn't as
+> bad as it can be.  Shell scripts that forked N things per loop iteration
+> used to really crawl along, though the fact we had a couple of dozen
+> users on a 386 running SVR3 might have had something to do with it too.
+> 
+> Optimization is getting to be a lost art.
+
+Well there is a difference between not optimizing, and purposely
+unoptimizing.
+
+> Part of the reason I run Gentoo is to have the source code aboard my
+> system and be sure the binaries were compiled from exactly that; their
+> infrastructure facilitates that and the build process has to be robust
+> enough to work on various strange folks' machines.  (The other part was
+> at the time wanting something as unlike an RPM-based distro as possible
+> due to having had enough of that for awhile.)
+
+But running gentoo you do not recompile the same code each time you boot.
+Just doing it once is sufficient.
+
+> Crazy would be taking something like Debian or Red Hat where you're
+> supposed to love and run their distributed binaries and recompile them
+> all yourself and find out how many builds only worked that once and are
+> irreproduceable.  But someone somewhere has to keep them honest.  :-)
+
+Debian even has a "reprodueable builds" project going on, hunting down
+any package that generates different result each time you rebuilt it,
+and fixing them.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Wed Mar 18 14:34:42 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 18 Mar 2015 10:34:42 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <1D00E9DD-A850-43C0-B3C8-197E263F7731@gmail.com>
+References: <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150317213029.GP25509@csclub.uwaterloo.ca>
+ <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+ <20150318020125.GQ25509@csclub.uwaterloo.ca>
+ <1D00E9DD-A850-43C0-B3C8-197E263F7731@gmail.com>
+Message-ID: <20150318143442.GS25509@csclub.uwaterloo.ca>
+
+On Wed, Mar 18, 2015 at 04:17:52AM -0400, R Russell Reiter wrote:
+> I consider  security in mission critical environments to be a valid purpose and note that enterprise is not necessarily mission critical whereas national security is uniformly considered to be very critical.
+
+If you want security, recompiling again and again is not a solution,
+it is a risk.  Validating your binary with some kind of checksum would
+be useful.  Sure you should compile it yourself from validated sources,
+and then sign the result, and then leave it alone and just check the
+signature each time you boot.
+
+> LI technology has improved in the last ten years and its true those improvements were drive by markets rather than government or national interests but those interests can and will take advantage of those improvements.
+> 
+> Let me put it this way, would you deliberately not take advantage of a secure booting feature which  because of hardware and software improvements, works with little or no added overhead? 
+
+Yes I would.  I despise secure boot.  It has its use in a few special
+cases, but the wast majority of places it is being pushed is purely to
+try and control peoples hardware.
+
+Of course secure booting relies on signed binaries, and certainly does
+NOT support recompiling the code each time you boot.
+
+> You could do that as a matter of personal preference but in enterprise you would lose market share when your bank clients discover your system is not as secure as your competitors.
+> 
+> So you only compile your critical dependency system once at runtime and if and when you make hardware or other critical changes you do it again. There are valid reasons to harden systems and keep them hard. You got 82000 hrs spin time from one of your drives, that's a lot of times between boots.
+
+There is no reason to trust your sources anymore than your precompiled
+binary at boot time, hence recompiling is plain stupid and serves no
+purpose.  You turn it from a problem of validating your binary, to one
+of validating your compiler binary and your source code, and wasting a
+lot of time every boot.  Compiling trusted code in a trusted environment
+and then signing it and using secure boot to validate the signed binary
+and running it does make sense, but compiling multiple times does not.
+
+> I don't just pull this stuff out from under my hat you know, I do a lot of reading. Its just that I'm limited to the stuff that's not above my pay grade or not otherwise trade secrets.
+
+Well it sure seems like you do a lot of the time.
+
+-- 
+Len Sorensen
+
+From rreiter91 at gmail.com  Wed Mar 18 14:46:07 2015
+From: rreiter91 at gmail.com (R. Russell Reiter)
+Date: Wed, 18 Mar 2015 10:46:07 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <20150318143442.GS25509@csclub.uwaterloo.ca>
+References: <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150317213029.GP25509@csclub.uwaterloo.ca>
+ <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+ <20150318020125.GQ25509@csclub.uwaterloo.ca>
+ <1D00E9DD-A850-43C0-B3C8-197E263F7731@gmail.com>
+ <20150318143442.GS25509@csclub.uwaterloo.ca>
+Message-ID: <34A3631F-A87F-4D11-9801-B07620D50E87@gmail.com>
+
+On March 18, 2015 10:34:42 AM EDT, Lennart Sorensen <lsorense at csclub.uwaterloo.ca> wrote:
+>On Wed, Mar 18, 2015 at 04:17:52AM -0400, R Russell Reiter wrote:
+>> I consider  security in mission critical environments to be a valid
+>purpose and note that enterprise is not necessarily mission critical
+>whereas national security is uniformly considered to be very critical.
+>
+>If you want security, recompiling again and again is not a solution,
+>it is a risk.  Validating your binary with some kind of checksum would
+>be useful.  Sure you should compile it yourself from validated sources,
+>and then sign the result, and then leave it alone and just check the
+>signature each time you boot.
+>
+>> LI technology has improved in the last ten years and its true those
+>improvements were drive by markets rather than government or national
+>interests but those interests can and will take advantage of those
+>improvements.
+>> 
+>> Let me put it this way, would you deliberately not take advantage of
+>a secure booting feature which  because of hardware and software
+>improvements, works with little or no added overhead? 
+>
+>Yes I would.  I despise secure boot.  It has its use in a few special
+>cases, but the wast majority of places it is being pushed is purely to
+>try and control peoples hardware.
+>
+>Of course secure booting relies on signed binaries, and certainly does
+>NOT support recompiling the code each time you boot.
+>
+>> You could do that as a matter of personal preference but in
+>enterprise you would lose market share when your bank clients discover
+>your system is not as secure as your competitors.
+>> 
+>> So you only compile your critical dependency system once at runtime
+>and if and when you make hardware or other critical changes you do it
+>again. There are valid reasons to harden systems and keep them hard.
+>You got 82000 hrs spin time from one of your drives, that's a lot of
+>times between boots.
+>
+>There is no reason to trust your sources anymore than your precompiled
+>binary at boot time, hence recompiling is plain stupid and serves no
+>purpose.  You turn it from a problem of validating your binary, to one
+>of validating your compiler binary and your source code, and wasting a
+>lot of time every boot.  Compiling trusted code in a trusted
+>environment
+>and then signing it and using secure boot to validate the signed binary
+>and running it does make sense, but compiling multiple times does not.
+>
+>> I don't just pull this stuff out from under my hat you know, I do a
+>lot of reading. Its just that I'm limited to the stuff that's not above
+>my pay grade or not otherwise trade secrets.
+>
+>Well it sure seems like you do a lot of the time.
+
+
+-- 
+Sent via K-9 Mail. 
+
+From rreiter91 at gmail.com  Wed Mar 18 14:59:25 2015
+From: rreiter91 at gmail.com (R. Russell Reiter)
+Date: Wed, 18 Mar 2015 10:59:25 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <20150318143442.GS25509@csclub.uwaterloo.ca>
+References: <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150317213029.GP25509@csclub.uwaterloo.ca>
+ <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+ <20150318020125.GQ25509@csclub.uwaterloo.ca>
+ <1D00E9DD-A850-43C0-B3C8-197E263F7731@gmail.com>
+ <20150318143442.GS25509@csclub.uwaterloo.ca>
+Message-ID: <CFC5CE13-FFB7-460D-878C-45BFD28E2690@gmail.com>
+
+ Compiling trusted code in a trusted
+>environment
+>and then signing it and using secure boot to validate the signed binary
+>and running it does make sense, but compiling multiple times does not.
+
+I dislike the term secure and prefer trust myself however the demands of enterprise are different than my own. The number of compiles is related to the number of boots again IMHO, this is far less of a problem than you would make it out to be.
+ 
+>
+>> I don't just pull this stuff out from under my hat you know, I do a
+>lot of reading. Its just that I'm limited to the stuff that's not above
+>my pay grade or not otherwise trade secrets.
+>
+>Well it sure seems like you do a lot of the time.
+
+Well that is your opinion and you are entitled to it.
+
+My opinion is that there is a need and a call for development of a trusted compiler to be used in a security enhanced OS which compiles at runtime and is based on the modular nature of the hardware itself and the needs of the enterprise in question.
+
+
+-- 
+Sent via K-9 Mail. 
+
+From rreiter91 at gmail.com  Wed Mar 18 15:16:03 2015
+From: rreiter91 at gmail.com (R. Russell Reiter)
+Date: Wed, 18 Mar 2015 11:16:03 -0400
+Subject: [GTALUG] (no subject)
+Message-ID: <ADDA2004-8240-43D7-964B-1E77E6C59F8C@gmail.com>
+
+Sorry for the empty post just now. I wish I could claim to be all thumbs, but the way I see kids today operate one of these things ... I can't even do that. 
+-- 
+Sent via K-9 Mail. 
+
+From lsorense at csclub.uwaterloo.ca  Wed Mar 18 15:53:53 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 18 Mar 2015 11:53:53 -0400
+Subject: [GTALUG] (no subject)
+In-Reply-To: <ADDA2004-8240-43D7-964B-1E77E6C59F8C@gmail.com>
+References: <ADDA2004-8240-43D7-964B-1E77E6C59F8C@gmail.com>
+Message-ID: <20150318155353.GT25509@csclub.uwaterloo.ca>
+
+On Wed, Mar 18, 2015 at 11:16:03AM -0400, R. Russell Reiter wrote:
+> Sorry for the empty post just now. I wish I could claim to be all thumbs, but the way I see kids today operate one of these things ... I can't even do that. 
+
+Must be these darn touch screens that are all the rage.  I don't know
+how people think they can actually create content on them.
+
+-- 
+Len Sorensen
+
+From cbbrowne at gmail.com  Wed Mar 18 16:07:10 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Wed, 18 Mar 2015 12:07:10 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <20150318031745.GD16224@adb.ca>
+References: <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+ <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150317213029.GP25509@csclub.uwaterloo.ca>
+ <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+ <20150318020125.GQ25509@csclub.uwaterloo.ca>
+ <20150318031745.GD16224@adb.ca>
+Message-ID: <CAFNqd5VdrojG92Y=anb8vBW4QfMn9tUzQtiQTKF7WxjhWpg=+w@mail.gmail.com>
+
+On 17 March 2015 at 23:17, Anthony de Boer <adb at adb.ca> wrote:
+> Lennart Sorensen wrote:
+>> Recompiling serves no purpose.  Do you want to first recompile the
+>> compiler before compiling the OS?  What are you going to compile the
+>> compiler with?  How far down do you want to go?
+>
+> Too much of a modern system is in various scripting languages, which
+> do effectively that everytime you run them.  Granted, so long as you're
+> not doing tight inner loops in a script the performance hit isn't as
+> bad as it can be.  Shell scripts that forked N things per loop iteration
+> used to really crawl along, though the fact we had a couple of dozen
+> users on a 386 running SVR3 might have had something to do with it too.
+>
+> Optimization is getting to be a lost art.
+>
+>> I think source distributions like gentoo are stupid, but at least they
+>> only compile things once.  They aren't that crazy.  Some people like what
+>> they can do with tweaking the settings and turning features on and off.
+>> I prefer things that are tested and work and don't waste tons of CPU
+>> time compiling what the distribution could have already compiled.
+>
+> Part of the reason I run Gentoo is to have the source code aboard my
+> system and be sure the binaries were compiled from exactly that; their
+> infrastructure facilitates that and the build process has to be robust
+> enough to work on various strange folks' machines.  (The other part was
+> at the time wanting something as unlike an RPM-based distro as possible
+> due to having had enough of that for awhile.)
+>
+> Crazy would be taking something like Debian or Red Hat where you're
+> supposed to love and run their distributed binaries and recompile them
+> all yourself and find out how many builds only worked that once and are
+> irreproduceable.  But someone somewhere has to keep them honest.  :-)
+
+You don't need to compile everything *every* time to keep them honest;
+you need to compile it *once*.  And it's not so much you as there being
+*someone*.  And better still if the "someone" is an automated batch
+process so that we can have a non-negligible amount of confidence
+that it's repeatable.
+
+And some of the "recompile for (imagined) security" takes this to
+further heights of silliness...
+
+- Do we need to recompile Bash (or Dash or zsh or whatever)
+  each time we reboot?
+
+- Oh dear, that means we need to recompile the Perl, Python, and
+  Ruby distributions every time.  Should we be running the test
+  suites, too, to verify that they're working as predicted?
+
+- It seems idiotic to need to recompile KDE, libraries *and* apps.
+
+- I'm running StumpWM as my window manager; this "security
+  by recompiling everything" model means I need to recompile
+  SBCL (the Common Lisp environment).
+
+- Whoops, can we really trust things if we haven't recompiled
+  GCC/LLVM since the last time we rebooted?  If recompiling
+  code lends security, then surely not.
+
+- Have you recompiled Grub lately?
+
+And all of this falls out of deciding that when people say
+"reliability," they don't *really* mean that; they really mean
+"security."  And when they say "performance", they don't
+*really* mean that; they really meant to say "security"
+(even though they didn't, which ought to be a hint that
+it wasn't what they meant).
+
+Claim was made that Debian switched from using Bash
+as the default shell (!= "default login shell", by the way)
+"because security."  When the declared reasons didn't
+have the word "security" anywhere.
+
+But I guess that since *everything* is really computer
+security, then the plans must be already well under way
+for Debian to recompile everything, from the kernel to
+Grub to all the scripting engines during the boot
+process.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From lsorense at csclub.uwaterloo.ca  Wed Mar 18 16:36:22 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 18 Mar 2015 12:36:22 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <CAFNqd5VdrojG92Y=anb8vBW4QfMn9tUzQtiQTKF7WxjhWpg=+w@mail.gmail.com>
+References: <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150317213029.GP25509@csclub.uwaterloo.ca>
+ <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+ <20150318020125.GQ25509@csclub.uwaterloo.ca>
+ <20150318031745.GD16224@adb.ca>
+ <CAFNqd5VdrojG92Y=anb8vBW4QfMn9tUzQtiQTKF7WxjhWpg=+w@mail.gmail.com>
+Message-ID: <20150318163622.GU25509@csclub.uwaterloo.ca>
+
+On Wed, Mar 18, 2015 at 12:07:10PM -0400, Christopher Browne wrote:
+> You don't need to compile everything *every* time to keep them honest;
+> you need to compile it *once*.  And it's not so much you as there being
+> *someone*.  And better still if the "someone" is an automated batch
+> process so that we can have a non-negligible amount of confidence
+> that it's repeatable.
+> 
+> And some of the "recompile for (imagined) security" takes this to
+> further heights of silliness...
+> 
+> - Do we need to recompile Bash (or Dash or zsh or whatever)
+>   each time we reboot?
+> 
+> - Oh dear, that means we need to recompile the Perl, Python, and
+>   Ruby distributions every time.  Should we be running the test
+>   suites, too, to verify that they're working as predicted?
+
+Sure, but why trust the test suites haven't been tampered with?
+
+> - It seems idiotic to need to recompile KDE, libraries *and* apps.
+> 
+> - I'm running StumpWM as my window manager; this "security
+>   by recompiling everything" model means I need to recompile
+>   SBCL (the Common Lisp environment).
+> 
+> - Whoops, can we really trust things if we haven't recompiled
+>   GCC/LLVM since the last time we rebooted?  If recompiling
+>   code lends security, then surely not.
+> 
+> - Have you recompiled Grub lately?
+> 
+> And all of this falls out of deciding that when people say
+> "reliability," they don't *really* mean that; they really mean
+> "security."  And when they say "performance", they don't
+> *really* mean that; they really meant to say "security"
+> (even though they didn't, which ought to be a hint that
+> it wasn't what they meant).
+> 
+> Claim was made that Debian switched from using Bash
+> as the default shell (!= "default login shell", by the way)
+> "because security."  When the declared reasons didn't
+> have the word "security" anywhere.
+> 
+> But I guess that since *everything* is really computer
+> security, then the plans must be already well under way
+> for Debian to recompile everything, from the kernel to
+> Grub to all the scripting engines during the boot
+> process.
+
+But why trust your compiler?  All such a stupid idea is doing is moving
+the problem, while putting some stuff in front that sounds like they
+are doing something to improve security, while doing no such thing.
+
+There are ways to make sure you are booting trusted code.  Recompiling
+from source at boot is not one of them.  It does the opposit in fact.
+
+-- 
+Len Sorensen
+
+From cbbrowne at gmail.com  Wed Mar 18 16:59:08 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Wed, 18 Mar 2015 12:59:08 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <20150318163622.GU25509@csclub.uwaterloo.ca>
+References: <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150317213029.GP25509@csclub.uwaterloo.ca>
+ <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+ <20150318020125.GQ25509@csclub.uwaterloo.ca>
+ <20150318031745.GD16224@adb.ca>
+ <CAFNqd5VdrojG92Y=anb8vBW4QfMn9tUzQtiQTKF7WxjhWpg=+w@mail.gmail.com>
+ <20150318163622.GU25509@csclub.uwaterloo.ca>
+Message-ID: <CAFNqd5Xd0skKnD7FL1ZzAcrLoJF+-pUANMOcxU=Opk5ko=OQew@mail.gmail.com>
+
+On 18 March 2015 at 12:36, Lennart Sorensen
+<lsorense at csclub.uwaterloo.ca> wrote:
+> On Wed, Mar 18, 2015 at 12:07:10PM -0400, Christopher Browne wrote:
+>> - Oh dear, that means we need to recompile the Perl, Python, and
+>>   Ruby distributions every time.  Should we be running the test
+>>   suites, too, to verify that they're working as predicted?
+>
+> Sure, but why trust the test suites haven't been tampered with?
+
+Yep, that means we need to download the sources of *everything*,
+from trusted sources, and check the checksums.  Recursively.
+And it doesn't really validate that the test suites are any good,
+which is distinct from tampered with...  The only way to be
+totally confident the test suites are any good is if you wrote them
+yourself.
+
+>> But I guess that since *everything* is really computer
+>> security, then the plans must be already well under way
+>> for Debian to recompile everything, from the kernel to
+>> Grub to all the scripting engines during the boot
+>> process.
+>
+> But why trust your compiler?  All such a stupid idea is doing is moving
+> the problem, while putting some stuff in front that sounds like they
+> are doing something to improve security, while doing no such thing.
+>
+> There are ways to make sure you are booting trusted code.  Recompiling
+> from source at boot is not one of them.  It does the opposit in fact.
+
+Yep, it shuffles around the problem, pretending that the compiling
+process is a grand protection.
+
+This properly steps us back to Ken Thompson's paper on trust
+http://cm.bell-labs.com/who/ken/trust.html
+where he points out an exploit (discovered by MULTICS folk somewhat
+earlier) where a suitably hacked compiler might put arbitrary
+exploits anywhere into this process.
+
+And there's actually a tale in the last week pointing to attempts to do
+exactly what Thompson is pointing at; it seems as though some TLA
+agencies have tried such stunts with some of the Apple compiler
+toolchain called XCode.
+
+http://www.macrumors.com/2015/03/10/leaked-cia-documents-hacked-xcode/
+
+Gentoo, at one time, had proponents that would claim no end of
+benefits from compiling everything from scratch.  I don't think that's
+what it's about now, but at one time, there were plenty of "fanboys"
+claiming that they were making their system better and understanding
+it better just by virtue of watching the successive series of "make"
+output, lines of logs indicating what file GCC most recently compiled,
+and with what flags, scroll by.
+
+Pointing back to those fun times, with maximum sarcasm...
+http://funroll-loops.teurasporsaat.org/
+
+Watching the compiler 'logging' scroll past doesn't represent
+actual understanding.  (And if someone pulled Thompson's exploit
+on your compiler toolchain, recompiling ensures INsecurity!)
+
+Instead, I'll step back to Thompson's paper...
+
+"The moral is obvious. You can't trust code that you did not totally
+create yourself."
+
+That's a deeper statement than it seems; deep trust requires that
+you write your own compiler, your own libraries, your own linker, your own
+bootloader, and so forth.
+
+But the shallow interpretation also works decently.  Recompiling
+someone else's code using someone else's compiler using
+someone else's control scripts doesn't provide deep trust.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From rreiter91 at gmail.com  Wed Mar 18 16:59:54 2015
+From: rreiter91 at gmail.com (R. Russell Reiter)
+Date: Wed, 18 Mar 2015 12:59:54 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <CAFNqd5VdrojG92Y=anb8vBW4QfMn9tUzQtiQTKF7WxjhWpg=+w@mail.gmail.com>
+References: <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+ <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150317213029.GP25509@csclub.uwaterloo.ca>
+ <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+ <20150318020125.GQ25509@csclub.uwaterloo.ca> <20150318031745.GD16224@adb.ca>
+ <CAFNqd5VdrojG92Y=anb8vBW4QfMn9tUzQtiQTKF7WxjhWpg=+w@mail.gmail.com>
+Message-ID: <7AA159E5-FB0C-43F5-BBC7-A450678C777C@gmail.com>
+
+<snip>
+>And all of this falls out of deciding that when people say
+>"reliability," they don't *really* mean that; they really mean
+>"security."  And when they say "performance", they don't
+>*really* mean that; they really meant to say "security"
+>(even though they didn't, which ought to be a hint that
+>it wasn't what they meant).
+
+If it is a hint then open reasoning is on the table. There is a type of security in obscurity, as witnessed by the discovery of embedded exploits which, by needs, must be addressed by enterprise.
+
+>
+>Claim was made that Debian switched from using Bash
+>as the default shell (!= "default login shell", by the way)
+>"because security."  When the declared reasons didn't
+>have the word "security" anywhere.
+>
+>But I guess that since *everything* is really computer
+>security, then the plans must be already well under way
+>for Debian to recompile everything, from the kernel to
+>Grub to all the scripting engines during the boot
+>process.
+
+I'm not privy to the inner workings of Debian plans, but all the best planners, I think from the logistic perspective, work on failover and have a contingency for rapid deployment in case a primary plan doesn't work as expected and does indeed fail in service.
+
+This is what government brings to the table that enterprise does not; the willingness to spend large amounts of money on two radically different plans with identical aims.
+
+So if Debian does not have a fully formulated plan to have a compile at runtime OS, I'd bet there is a set of schema on someone's drawing board somewhere.
+
+-- 
+Sent via K-9 Mail. 
+
+From wwitteman at gmail.com  Wed Mar 18 17:19:02 2015
+From: wwitteman at gmail.com (William Witteman)
+Date: Wed, 18 Mar 2015 13:19:02 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <CAFNqd5Xd0skKnD7FL1ZzAcrLoJF+-pUANMOcxU=Opk5ko=OQew@mail.gmail.com>
+References: <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150317213029.GP25509@csclub.uwaterloo.ca>
+ <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+ <20150318020125.GQ25509@csclub.uwaterloo.ca>
+ <20150318031745.GD16224@adb.ca>
+ <CAFNqd5VdrojG92Y=anb8vBW4QfMn9tUzQtiQTKF7WxjhWpg=+w@mail.gmail.com>
+ <20150318163622.GU25509@csclub.uwaterloo.ca>
+ <CAFNqd5Xd0skKnD7FL1ZzAcrLoJF+-pUANMOcxU=Opk5ko=OQew@mail.gmail.com>
+Message-ID: <CAGMvh25tVktq_r5CMM5zF6dGwAQXy1xV69484MhXvQhckdhgNA@mail.gmail.com>
+
+On 18 Mar 2015 12:59 pm, "Christopher Browne" <cbbrowne at gmail.com> wrote:
+
+> Instead, I'll step back to Thompson's paper...
+>
+> "The moral is obvious. You can't trust code that you did not totally
+> create yourself."
+
+This whole conversation/hissy-fit is missing yet another problem.  Even Ken
+Thompson wrote code with bugs and constructed code vulnerable to
+exploitation. I certainly don't blindly trust the code I write - I make the
+confident assumption that it is buggy and possibly dangerous. If anyone on
+Earth wrote a program that actually addressed my needs I wouldn't be
+writing the code at all.
+
+Trusting something so complicated it requires a computer to interpret and
+run it is a challenge. Many approaches are being explored, differences of
+opinion are being generated constantly.  That's OK.
+
+There are a lot of things that are now standard that are based on history
+rather than good theoretical bases.
+
+Let's look at working solutions, ask questions and try to be friendly and a
+little more understanding.
+
+There is no right way, and priorities differ.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150318/9be9cec0/attachment.html>
+
+From rreiter91 at gmail.com  Wed Mar 18 19:33:56 2015
+From: rreiter91 at gmail.com (R. Russell Reiter)
+Date: Wed, 18 Mar 2015 15:33:56 -0400
+Subject: [GTALUG] (no subject)
+In-Reply-To: <20150318155353.GT25509@csclub.uwaterloo.ca>
+References: <ADDA2004-8240-43D7-964B-1E77E6C59F8C@gmail.com>
+ <20150318155353.GT25509@csclub.uwaterloo.ca>
+Message-ID: <82BE5883-692F-4DE2-B944-9A0D7B0BD9C4@gmail.com>
+
+>Must be these darn touch screens that are all the rage.  I don't know
+>how people think they can actually create content on them.
+
+I wish I could ratchet back the touch sensitivity by a factor or two. Otherwise in landscape mode, its a bit like a Z80 or one of the other first gen personal computational devices. It would also be nice to have something like a double touch perimeter pad to minimize stray touch damage. 
+
+Unfortunately that would require root. I really only have the device for a short time in order to suss out various vulnerabilities under a particular OPSEC requirement.  No hardening just a pen report. 
+
+I know its Android, please don't snicker.
+
+On the upside I'm getting better at two finger typing and at under 200 bucks its full of features, fast and fairly friendly. I may get one myself.
+
+-- 
+Sent via K-9 Mail. 
+
+From mwilson at vex.net  Wed Mar 18 19:34:50 2015
+From: mwilson at vex.net (Mel Wilson)
+Date: Wed, 18 Mar 2015 15:34:50 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <CFC5CE13-FFB7-460D-878C-45BFD28E2690@gmail.com>
+References: <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150317213029.GP25509@csclub.uwaterloo.ca>
+ <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+ <20150318020125.GQ25509@csclub.uwaterloo.ca>
+ <1D00E9DD-A850-43C0-B3C8-197E263F7731@gmail.com>
+ <20150318143442.GS25509@csclub.uwaterloo.ca>
+ <CFC5CE13-FFB7-460D-878C-45BFD28E2690@gmail.com>
+Message-ID: <1426707290.3552.2.camel@tecumseth5.mounteagle.lan>
+
+On Wed, 2015-03-18 at 10:59 -0400, R. Russell Reiter wrote:
+>  Compiling trusted code in a trusted
+> >environment
+> >and then signing it and using secure boot to validate the signed binary
+> >and running it does make sense, but compiling multiple times does not.
+> 
+> I dislike the term secure and prefer trust myself however the demands of enterprise are different than my own. The number of compiles is related to the number of boots again IMHO, this is far less of a problem than you would make it out to be.
+
+Ken Thompson's classic Turing Award lecture:
+<http://cm.bell-labs.com/who/ken/trust.html>
+
+Trust is not cheap.  If it looks cheap it may just be gullibility.
+
+Mel.
+
+
+
+From phiscock at ee.ryerson.ca  Thu Mar 19 00:40:40 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Wed, 18 Mar 2015 20:40:40 -0400
+Subject: [GTALUG] Cool,
+	but obscure unix tools :: Software architect Kristof Kovacs
+Message-ID: <5a142637b44728e2a1db64ad4b0bd648.squirrel@webmail.ee.ryerson.ca>
+
+
+
+http://kkovacs.eu/cool-but-obscure-unix-tools
+
+Courtesy of my Bro, Dave Hiscocks.
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From cbbrowne at gmail.com  Thu Mar 19 03:04:00 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Wed, 18 Mar 2015 23:04:00 -0400
+Subject: [GTALUG] Cool,
+ but obscure unix tools :: Software architect Kristof Kovacs
+In-Reply-To: <5a142637b44728e2a1db64ad4b0bd648.squirrel@webmail.ee.ryerson.ca>
+References: <5a142637b44728e2a1db64ad4b0bd648.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <CAFNqd5ViMVSs+j-qY_VEvK77RPJnGfSkvKKc0HRO_urfmEP=8g@mail.gmail.com>
+
+On 18 March 2015 at 20:40,  <phiscock at ee.ryerson.ca> wrote:
+> http://kkovacs.eu/cool-but-obscure-unix-tools
+>
+> Courtesy of my Bro, Dave Hiscocks.
+
+I like his tastes quite well!  Apparently I know some obscure
+Unix tools!  :-)  And better still, I am not familiar with all of them.
+
