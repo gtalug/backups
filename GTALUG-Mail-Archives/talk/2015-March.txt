@@ -9051,3 +9051,154 @@ On 18 March 2015 at 20:40,  <phiscock at ee.ryerson.ca> wrote:
 I like his tastes quite well!  Apparently I know some obscure
 Unix tools!  :-)  And better still, I am not familiar with all of them.
 
+From rreiter91 at gmail.com  Thu Mar 19 12:51:47 2015
+From: rreiter91 at gmail.com (R. Russell Reiter)
+Date: Thu, 19 Mar 2015 08:51:47 -0400
+Subject: [GTALUG] Keep X from going to sleep
+In-Reply-To: <CAGMvh250f2gXsWdPqmqzMeWv0Us-70icSUfKfyC7F+QBVR-3+A@mail.gmail.com>
+References: <CAGMvh24tMw=0U7qX1TC3vAn2vc-MD6kVpHVY-aYzJ9=_3of8=A@mail.gmail.com>
+ <20150317214129.GA4364@waltdnes.org>
+ <CAGMvh250f2gXsWdPqmqzMeWv0Us-70icSUfKfyC7F+QBVR-3+A@mail.gmail.com>
+Message-ID: <AA8F1433-8918-4A3A-9CEF-0A3F660F8DA8@gmail.com>
+
+I did some more reading on openbox and it appears to conform w/
+http://www.freedesktop.org/software/colord/
+
+I note that colord was implemented to solve certain discrete problems and uses PolicyKit to effect finer grained user control  and further that explicit device profiles are required for each display in order to ensure stability and persistence.
+
+I confess to having my own motives for pointing you in this direction, as your problems are quite similar to certain display anomalies experienced by some of the end users I support on a variety of spins. Most recently trying to tame SElinux for some cloud using Fedora Linux newbies.
+
+I hope you continue to track this issue rather than switch. Although I'm a big fan of XFCE on LDM myself.
+
+You can tell me to buzz off at any time, I've got a pretty thick skin and a sense of humor, which serve me well most of the time. 
+
+FYI I'm most definitely not claiming to be a Linux super guru. From an enterprise perspective, I'm at best a semi-skilled sysop however, I am an excellent hardware integrator with several decades of integration experiences to draw upon.
+
+Cheers
+Russell
+
+-- 
+Sent via K-9 Mail. 
+
+From louipc.ist at gmail.com  Thu Mar 19 14:05:40 2015
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Thu, 19 Mar 2015 10:05:40 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <7AA159E5-FB0C-43F5-BBC7-A450678C777C@gmail.com>
+References: <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150317213029.GP25509@csclub.uwaterloo.ca>
+ <CAPik5MxnsiXUrhPkHvXyz7Kp161_dRdduBvGiPssa5dW3pUSug@mail.gmail.com>
+ <20150318020125.GQ25509@csclub.uwaterloo.ca>
+ <20150318031745.GD16224@adb.ca>
+ <CAFNqd5VdrojG92Y=anb8vBW4QfMn9tUzQtiQTKF7WxjhWpg=+w@mail.gmail.com>
+ <7AA159E5-FB0C-43F5-BBC7-A450678C777C@gmail.com>
+Message-ID: <20150319140540.GA4751@gmail.com>
+
+On Wed 18 Mar 2015 12:59 -0400, R. Russell Reiter wrote:
+> I'm not privy to the inner workings of Debian plans, but all the best
+> planners, I think from the logistic perspective, work on failover and have
+> a contingency for rapid deployment in case a primary plan doesn't work as
+> expected and does indeed fail in service.
+
+And thus, cdrkit was born.
+
+From louipc.ist at gmail.com  Thu Mar 19 14:14:33 2015
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Thu, 19 Mar 2015 10:14:33 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+References: <CAPik5MwgbvVgER5bQdcLBxgK1O+zRCo7BU1oOZcTn_ppE4cS+g@mail.gmail.com>
+ <8da2ddb0b4d09168c834afbdaf966f55.squirrel@webmail.ee.ryerson.ca>
+ <CAPik5MyGGm7W7VnA+43xaWRwT64zFQrw+q-FVnzXfQXHnAmXew@mail.gmail.com>
+ <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+ <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+Message-ID: <20150319141433.GB4751@gmail.com>
+
+On Tue 17 Mar 2015 11:37 -0400, Russell Reiter wrote:
+> I believe that Debian has moved towards implement Dependency Based Booting
+> with an eye to, at sometime in the future, compiling the OS each time at
+> runtime.
+
+I have contemplated the possibility of something like this with the increased
+adoption of continuous integration, except recompiles and reboots would be
+a lot more frequent. This would only really be used for automated build and
+test systems though, not for general use.
+
+
+From lsorense at csclub.uwaterloo.ca  Thu Mar 19 15:41:27 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 19 Mar 2015 11:41:27 -0400
+Subject: [GTALUG] Cool,
+ but obscure unix tools :: Software architect Kristof Kovacs
+In-Reply-To: <CAFNqd5ViMVSs+j-qY_VEvK77RPJnGfSkvKKc0HRO_urfmEP=8g@mail.gmail.com>
+References: <5a142637b44728e2a1db64ad4b0bd648.squirrel@webmail.ee.ryerson.ca>
+ <CAFNqd5ViMVSs+j-qY_VEvK77RPJnGfSkvKKc0HRO_urfmEP=8g@mail.gmail.com>
+Message-ID: <20150319154127.GV25509@csclub.uwaterloo.ca>
+
+On Wed, Mar 18, 2015 at 11:04:00PM -0400, Christopher Browne wrote:
+> On 18 March 2015 at 20:40,  <phiscock at ee.ryerson.ca> wrote:
+> > http://kkovacs.eu/cool-but-obscure-unix-tools
+> >
+> > Courtesy of my Bro, Dave Hiscocks.
+> 
+> I like his tastes quite well!  Apparently I know some obscure
+> Unix tools!  :-)  And better still, I am not familiar with all of them.
+
+multitail sounds like it can do something I had been wishing tail
+would do.
+
+And yes I didn't think rsync or screen or powertop were obscure, but I
+guess that's just because I use them.
+
+-- 
+Len Sorensn
+
+From jamon.camisso at utoronto.ca  Thu Mar 19 16:12:01 2015
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Thu, 19 Mar 2015 12:12:01 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <20150319141433.GB4751@gmail.com>
+References: <CAPik5MwgbvVgER5bQdcLBxgK1O+zRCo7BU1oOZcTn_ppE4cS+g@mail.gmail.com>
+ <8da2ddb0b4d09168c834afbdaf966f55.squirrel@webmail.ee.ryerson.ca>
+ <CAPik5MyGGm7W7VnA+43xaWRwT64zFQrw+q-FVnzXfQXHnAmXew@mail.gmail.com>
+ <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+ <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150319141433.GB4751@gmail.com>
+Message-ID: <550AF551.5080500@utoronto.ca>
+
+On 19/03/15 10:14 AM, Loui Chang wrote:
+> On Tue 17 Mar 2015 11:37 -0400, Russell Reiter wrote:
+>> I believe that Debian has moved towards implement Dependency Based Booting
+>> with an eye to, at sometime in the future, compiling the OS each time at
+>> runtime.
+>
+> I have contemplated the possibility of something like this with the increased
+> adoption of continuous integration, except recompiles and reboots would be
+> a lot more frequent. This would only really be used for automated build and
+> test systems though, not for general use.
+
+Tangentially related: http://nixos.org
+
+Sure you don't compile at runtime. But, you can choose which version of 
+a package you run and can have as many versions installed as you like.
+
+Package paths are based on the hash of the compiler input iirc, so every 
+version is unique in its build/run environment.
+
+Try it out, lots of fun.
+
+Cheers, Jamon
+
