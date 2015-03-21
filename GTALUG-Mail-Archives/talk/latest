@@ -9202,3 +9202,429 @@ Try it out, lots of fun.
 
 Cheers, Jamon
 
+From rreiter91 at gmail.com  Fri Mar 20 11:34:35 2015
+From: rreiter91 at gmail.com (R. Russell Reiter)
+Date: Fri, 20 Mar 2015 07:34:35 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <20150319141433.GB4751@gmail.com>
+References: <CAPik5MwgbvVgER5bQdcLBxgK1O+zRCo7BU1oOZcTn_ppE4cS+g@mail.gmail.com>
+ <8da2ddb0b4d09168c834afbdaf966f55.squirrel@webmail.ee.ryerson.ca>
+ <CAPik5MyGGm7W7VnA+43xaWRwT64zFQrw+q-FVnzXfQXHnAmXew@mail.gmail.com>
+ <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+ <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150319141433.GB4751@gmail.com>
+Message-ID: <D9FCE52C-8797-4ACD-95A7-1FC4C4B2D30D@gmail.com>
+
+On March 19, 2015 10:14:33 AM EDT, Loui Chang <louipc.ist at gmail.com> wrote:
+>On Tue 17 Mar 2015 11:37 -0400, Russell Reiter wrote:
+>> I believe that Debian has moved towards implement Dependency Based
+>Booting
+>> with an eye to, at sometime in the future, compiling the OS each time
+>at
+>> runtime.
+>
+>I have contemplated the possibility of something like this with the
+>increased
+>adoption of continuous integration, except recompiles and reboots would
+>be
+>a lot more frequent. This would only really be used for automated build
+>and
+>test systems though, not for general use.
+>
+You might find this interesting. It is Yale U announcing VLIW  reasoning in the 80's. More work with less iron and from my perspective, instructions ordered at compile time makes for fewer clocking issues.
+
+At the moment the stumbling blocks appears to be the lack of a robust memory subsystem and flakieness in ram which seem to be due to the limitations in current nano-manufacturing techniques used for ram chipsets. Notwithstanding my complaints about dirty AC's involvement in bit flipping.
+
+http://dl.acm.org/citation.cfm?doid=800046.801649
+
+>---
+>Talk Mailing List
+>talk at gtalug.org
+>http://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+Sent via K-9 Mail. 
+
+From jamon.camisso at utoronto.ca  Fri Mar 20 13:57:44 2015
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Fri, 20 Mar 2015 09:57:44 -0400
+Subject: [GTALUG] Cool,
+ but obscure unix tools :: Software architect Kristof Kovacs
+In-Reply-To: <CAFNqd5ViMVSs+j-qY_VEvK77RPJnGfSkvKKc0HRO_urfmEP=8g@mail.gmail.com>
+References: <5a142637b44728e2a1db64ad4b0bd648.squirrel@webmail.ee.ryerson.ca>
+ <CAFNqd5ViMVSs+j-qY_VEvK77RPJnGfSkvKKc0HRO_urfmEP=8g@mail.gmail.com>
+Message-ID: <550C2758.7030603@utoronto.ca>
+
+On 18/03/15 11:04 PM, Christopher Browne wrote:
+> On 18 March 2015 at 20:40,  <phiscock at ee.ryerson.ca> wrote:
+>> http://kkovacs.eu/cool-but-obscure-unix-tools
+>>
+>> Courtesy of my Bro, Dave Hiscocks.
+>
+> I like his tastes quite well!  Apparently I know some obscure
+> Unix tools!  :-)  And better still, I am not familiar with all of them.
+
+I'll add 'pv' to the list. Great way to watch progress if you are using 
+zcat/cat to pipe something somewhere.
+
+For example, got a database dump? 'cat db.sql | pv | yoursqlengine'
+
+You get a nice progress bar and estimation of time to complete, 
+autoscaling speed. Lots of other options too.
+
+Cheers, Jamon
+
+From lsorense at csclub.uwaterloo.ca  Fri Mar 20 14:05:08 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 20 Mar 2015 10:05:08 -0400
+Subject: [GTALUG] Cool,
+ but obscure unix tools :: Software architect Kristof Kovacs
+In-Reply-To: <550C2758.7030603@utoronto.ca>
+References: <5a142637b44728e2a1db64ad4b0bd648.squirrel@webmail.ee.ryerson.ca>
+ <CAFNqd5ViMVSs+j-qY_VEvK77RPJnGfSkvKKc0HRO_urfmEP=8g@mail.gmail.com>
+ <550C2758.7030603@utoronto.ca>
+Message-ID: <20150320140508.GW25509@csclub.uwaterloo.ca>
+
+On Fri, Mar 20, 2015 at 09:57:44AM -0400, Jamon Camisso wrote:
+> I'll add 'pv' to the list. Great way to watch progress if you are
+> using zcat/cat to pipe something somewhere.
+> 
+> For example, got a database dump? 'cat db.sql | pv | yoursqlengine'
+
+If you do that, pv does NOT know how big the input is, and you are
+wasting a pipe and a process.
+
+'pv db.sql | yoursqlengine' on the other hand would work great.
+
+> You get a nice progress bar and estimation of time to complete,
+> autoscaling speed. Lots of other options too.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Fri Mar 20 14:09:04 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 20 Mar 2015 10:09:04 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <D9FCE52C-8797-4ACD-95A7-1FC4C4B2D30D@gmail.com>
+References: <CAPik5MyGGm7W7VnA+43xaWRwT64zFQrw+q-FVnzXfQXHnAmXew@mail.gmail.com>
+ <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+ <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150319141433.GB4751@gmail.com>
+ <D9FCE52C-8797-4ACD-95A7-1FC4C4B2D30D@gmail.com>
+Message-ID: <20150320140904.GX25509@csclub.uwaterloo.ca>
+
+On Fri, Mar 20, 2015 at 07:34:35AM -0400, R. Russell Reiter wrote:
+> You might find this interesting. It is Yale U announcing VLIW  reasoning in the 80's. More work with less iron and from my perspective, instructions ordered at compile time makes for fewer clocking issues.
+
+Yes it does.  Hence why VLIW is working great in DSPs where you know
+exactly what you will be doing all the time at compile time.  In general
+purpose software on the other hand you don't know at compile time, and
+the compiler can not generate efficient code for VLIW and ends up rarely
+generating more than one instruction per VLIW, while a more complex CPU
+design (like most of the ones people actually buy and use) that do run
+time instruction reordering are able to actually use multiple execution
+units per clock cycle.
+
+So yes VLIW is more efficient if you order the instructions at compile
+time.  Too bad in reality that has turned out to be impossible in the
+general case.  Makes wonderful DSP/GPU/other stream processing chips
+though.
+
+-- 
+Len Sorensen
+
+From jamon.camisso at utoronto.ca  Fri Mar 20 14:10:35 2015
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Fri, 20 Mar 2015 10:10:35 -0400
+Subject: [GTALUG] Cool,
+ but obscure unix tools :: Software architect Kristof Kovacs
+In-Reply-To: <20150320140508.GW25509@csclub.uwaterloo.ca>
+References: <5a142637b44728e2a1db64ad4b0bd648.squirrel@webmail.ee.ryerson.ca>
+ <CAFNqd5ViMVSs+j-qY_VEvK77RPJnGfSkvKKc0HRO_urfmEP=8g@mail.gmail.com>
+ <550C2758.7030603@utoronto.ca> <20150320140508.GW25509@csclub.uwaterloo.ca>
+Message-ID: <550C2A5B.1000907@utoronto.ca>
+
+On 20/03/15 10:05 AM, Lennart Sorensen wrote:
+> On Fri, Mar 20, 2015 at 09:57:44AM -0400, Jamon Camisso wrote:
+>> I'll add 'pv' to the list. Great way to watch progress if you are
+>> using zcat/cat to pipe something somewhere.
+>>
+>> For example, got a database dump? 'cat db.sql | pv | yoursqlengine'
+>
+> If you do that, pv does NOT know how big the input is, and you are
+> wasting a pipe and a process.
+>
+> 'pv db.sql | yoursqlengine' on the other hand would work great.
+
+Ah good point - the progress bar isn't accurate the way that I use it 
+with zcat. I don't suppose there's a way to make that work with a 
+stream is there?
+
+Cheers, Jamon
+
+From thoriumbr at gmail.com  Fri Mar 20 14:33:46 2015
+From: thoriumbr at gmail.com (Mauro Souza)
+Date: Fri, 20 Mar 2015 11:33:46 -0300
+Subject: [GTALUG] Cool,
+ but obscure unix tools :: Software architect Kristof Kovacs
+In-Reply-To: <550C2A5B.1000907@utoronto.ca>
+References: <5a142637b44728e2a1db64ad4b0bd648.squirrel@webmail.ee.ryerson.ca>
+ <CAFNqd5ViMVSs+j-qY_VEvK77RPJnGfSkvKKc0HRO_urfmEP=8g@mail.gmail.com>
+ <550C2758.7030603@utoronto.ca>
+ <20150320140508.GW25509@csclub.uwaterloo.ca>
+ <550C2A5B.1000907@utoronto.ca>
+Message-ID: <CAEZ_B6PGuc_PFSyGZpHN3YEcaqZYzQu2DvYMjw-Vtu0e09+Gqg@mail.gmail.com>
+
+If you know the size of the uncompressed file, you can tell it to pv and
+the progress will be accurate. There is a parameter for that.
+On Mar 20, 2015 3:10 PM, "Jamon Camisso" <jamon.camisso at utoronto.ca> wrote:
+
+> On 20/03/15 10:05 AM, Lennart Sorensen wrote:
+>
+>> On Fri, Mar 20, 2015 at 09:57:44AM -0400, Jamon Camisso wrote:
+>>
+>>> I'll add 'pv' to the list. Great way to watch progress if you are
+>>> using zcat/cat to pipe something somewhere.
+>>>
+>>> For example, got a database dump? 'cat db.sql | pv | yoursqlengine'
+>>>
+>>
+>> If you do that, pv does NOT know how big the input is, and you are
+>> wasting a pipe and a process.
+>>
+>> 'pv db.sql | yoursqlengine' on the other hand would work great.
+>>
+>
+> Ah good point - the progress bar isn't accurate the way that I use it with
+> zcat. I don't suppose there's a way to make that work with a stream is
+> there?
+>
+> Cheers, Jamon
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150320/0a613c21/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Fri Mar 20 14:46:43 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 20 Mar 2015 10:46:43 -0400
+Subject: [GTALUG] Cool,
+ but obscure unix tools :: Software architect Kristof Kovacs
+In-Reply-To: <550C2A5B.1000907@utoronto.ca>
+References: <5a142637b44728e2a1db64ad4b0bd648.squirrel@webmail.ee.ryerson.ca>
+ <CAFNqd5ViMVSs+j-qY_VEvK77RPJnGfSkvKKc0HRO_urfmEP=8g@mail.gmail.com>
+ <550C2758.7030603@utoronto.ca>
+ <20150320140508.GW25509@csclub.uwaterloo.ca>
+ <550C2A5B.1000907@utoronto.ca>
+Message-ID: <20150320144643.GY25509@csclub.uwaterloo.ca>
+
+On Fri, Mar 20, 2015 at 10:10:35AM -0400, Jamon Camisso wrote:
+> Ah good point - the progress bar isn't accurate the way that I use
+> it with zcat. I don't suppose there's a way to make that work with a
+> stream is there?
+
+If you happen to know the size, you can tell pv with an argument what
+it is, but otherwise, no.
+
+Of course you could do:
+
+pv db.sql.gz | zcat | yoursqlengine
+
+Then the progress will be based on the compressed data rather than
+uncompressed, but that might be fine in most cases.  Sure if you have
+a huge gob of highly compressed data in the middle, it might slow down
+the processing at the end of the pipe and your progress would be off,
+but that's probably an unusual case.
+
+So yes, it is hard to do progress bars well if you don't know how much
+work you are going to do before you finish doing it.
+
+-- 
+Len Sorensen
+
+From phiscock at ee.ryerson.ca  Fri Mar 20 17:03:45 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Fri, 20 Mar 2015 13:03:45 -0400
+Subject: [GTALUG] Botnet Email Address?
+Message-ID: <92c30bbb7e258cf2a325bed0e9f0d596.squirrel@webmail.ee.ryerson.ca>
+
+Subject:   	It sounds crazy but her mind can be easily controlled
+From:   	"Michael Scott" <support at botss.nl>
+
+Spam from an email address 'botss'?
+
+Maybe this is an in-joke among the spammers...
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From rreiter91 at gmail.com  Fri Mar 20 18:03:37 2015
+From: rreiter91 at gmail.com (R. Russell Reiter)
+Date: Fri, 20 Mar 2015 14:03:37 -0400
+Subject: [GTALUG] MP BIOS Toshiba - semi revival
+In-Reply-To: <20150320140904.GX25509@csclub.uwaterloo.ca>
+References: <CAPik5MyGGm7W7VnA+43xaWRwT64zFQrw+q-FVnzXfQXHnAmXew@mail.gmail.com>
+ <CAArSzsUcQLWqr2RBb2p9b8Mz35QwejRu6iJdY_VXScTOeuL+Bg@mail.gmail.com>
+ <20150316172749.GA21011@waltdnes.org>
+ <A6B3049E-0ED0-4DA9-902B-C8F4F8A230EC@gmail.com>
+ <20150317133206.GB24533@gmail.com>
+ <CAPik5Mw+587HLa9c6V6HDiVkiMquY+on3cVq3xp9P+PoY01TnQ@mail.gmail.com>
+ <CAFNqd5VASuK2bmT21b0sQ+qbHSzaow3vL5jyE4Sv94qe_n1pHQ@mail.gmail.com>
+ <CAPik5MwvGStb0_ZH7Be0H6htrkF=XupCwRHPNz7jtFDwTM2p0g@mail.gmail.com>
+ <20150319141433.GB4751@gmail.com>
+ <D9FCE52C-8797-4ACD-95A7-1FC4C4B2D30D@gmail.com>
+ <20150320140904.GX25509@csclub.uwaterloo.ca>
+Message-ID: <7B542D2A-0FF6-44D5-BD32-D63B1A8CFF45@gmail.com>
+
+<snip>.
+
+>So yes VLIW is more efficient if you order the instructions at compile
+>time.  Too bad in reality that has turned out to be impossible in the
+>general case.  Makes wonderful DSP/GPU/other stream processing chips
+>though.
+
+I note that Transmetta's Caruso uses code-morphing to achieve a kind of bi-polar state. I don't really know if it is truly comfortable with VLIW or not.
+
+I think it is well within the realm of possibilities that an ILP environment could offer this as a trusted feature; two channel booting. 
+
+That is, there are two channels defined and each boots an identical copy of an operating system to a steady ready state, hopefully from the same clock tic. Only one channel exposes itself as user space, the other acts as a dynamic checkum of the kernelspace. 
+
+Humans may be defined as left or right brained, why not computers. 
+
+This is sort of like the parallel RAS proposed to deal with current issues with the quality of manufacture of ram and resulting  reliability issues. Also notwithstanding the amount of heuristics which are needed at machine level.
+
+I'll omit my theories of EM containment in near fields which affect ram and cause bit flips for the moment.
+
+I think machine learning is real and that capacity planning does take this into account. 
+
+Given the exponential growth of IT infrastructure in this wired world; the id, the ego and the superego of the internet are well documented. 
+
+So IMHO when properly co-ordinated, the future becomes now and even if it is only in my imagination, I can still have fun with it.
+
+
+Sent via K-9 Mail. 
+
+From bjonkman at sobac.com  Sat Mar 21 02:30:06 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Fri, 20 Mar 2015 22:30:06 -0400
+Subject: [GTALUG] NTP's Fate Hinges On 'Father Time' - InformationWeek
+In-Reply-To: <CAOW5bykYaC1sG5JCofYiak1KzBBL8JEHb10rsVJP54_QCqheCA@mail.gmail.com>
+References: <55049938.8010402@gmail.com>
+ <CAHcykVrhXpDuh5oU1MxviY-NO2oTEMiECJXHcNPih4sReC-RTw@mail.gmail.com>
+ <550598DA.203@gmail.com> <20150315215857.GC16224@adb.ca>
+ <CAHcykVpiMAQUotYUWj-e2qN1K+RuxaBqkDCYOXALxbhDMthh6Q@mail.gmail.com>
+ <CAOW5bykYaC1sG5JCofYiak1KzBBL8JEHb10rsVJP54_QCqheCA@mail.gmail.com>
+Message-ID: <550CD7AE.4080506@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+As an aside, I would love to see a presentation on keeping time in
+sync on Linuxen, with a deep dive into the innards of NTP.  Sounds
+like GTALUG has the talent pool for such a presentation...
+
+- --Bob.
+
+
+
+On 16/03/15 12:33 PM, Mike wrote:
+> PTP at IP (layer 3) still needs hardware-based (PHY or MAC level) 
+> timestamping in order to achieve O(nanoseconds) and O(ppb) 
+> performance in phase and frequency.  The best performance is 
+> achieved with this support at every link that time sync data 
+> traverses.
+> 
+> Telco nerds use Synchronous Ethernet besides...
+> 
+> Mike
+> 
+> On Mon, Mar 16, 2015 at 8:16 AM, David Thornton 
+> <northdot9 at gmail.com> wrote:
+> 
+>> "There is PTP support in Linux, but you need an Ethernet card 
+>> with the right timestamping feature plugged into a switch that 
+>> does PTP too."
+>> 
+>> You can do PTP over IP but I understand you can also deploy 
+>> "dedicated" networks that JUST do PTP ( no ip ).
+>> 
+>> It is the dedicate nets you are talking about ?
+>> 
+>> The sexiest PTP hardware I've seen is the solarflare stuff.
+>> 
+>> David
+>> 
+>> 
+>> 
+>> 
+>> On Sun, Mar 15, 2015 at 5:58 PM, Anthony de Boer <adb at adb.ca> 
+>> wrote:
+>> 
+>>> Stewart C. Russell wrote:
+>>>> On 2015-03-14 10:09 PM, David Thornton wrote:
+>>>>> My finance client's use ptp not ntp.
+>>>> 
+>>>> Is PTP particularly hard to use? It looks like an ISO 
+>>>> standard, so will likely be fiddly but complete.
+>>> 
+>>> Accuracy numbers in PTP are measured in nanoseconds, while the 
+>>> NTP world talks milliseconds.  So if you have that sort of 
+>>> accuracy requirement (power system phasors, etc) you probably 
+>>> want PTP with the appropriate dedicated hardware, while 
+>>> garden-variety Unix admins just want log records to show up 
+>>> with the right second.
+>>> 
+>>> There is PTP support in Linux, but you need an Ethernet card 
+>>> with the right timestamping feature plugged into a switch that 
+>>> does PTP too.
+>>> 
+>>> Meanwhile, ntpd is getting a bit long in the tooth[0] and the 
+>>> ntimed project looks interesting.
+>>> 
+>>> [0] "support for hardware clocks EBay has never heard of"
+>>> 
+>>> -- Anthony de Boer --- Talk Mailing List talk at gtalug.org 
+>>> http://gtalug.org/mailman/listinfo/talk
+>>> 
+>> 
+>> 
+>> --- Talk Mailing List talk at gtalug.org 
+>> http://gtalug.org/mailman/listinfo/talk
+>> 
+>> 
+> 
+> 
+> 
+> --- Talk Mailing List talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.15 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlUM16kACgkQuRKJsNLM5eoKhgCg/zqAXoZpc5f/M5l1eo4SrZKr
+EXsAn0UERQBOidCsekZvI2hrYVkbn7bD
+=9YUp
+-----END PGP SIGNATURE-----
+
