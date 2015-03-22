@@ -396,3 +396,126 @@ Myles, I sent you under separate cover a quick set of slides describing this.
 
 Seems like a good idea to do a 2 minute run-thru of this.
 
+From davec-b at rogers.com  Sat Mar 21 22:02:33 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Sat, 21 Mar 2015 18:02:33 -0400
+Subject: [GTALUG-Ops] Fwd: Re: [GTALUG] NTP's Fate Hinges On 'Father Time' -
+	InformationWeek
+In-Reply-To: <550CD7AE.4080506@sobac.com>
+References: <550CD7AE.4080506@sobac.com>
+Message-ID: <550DEA79.5090900@rogers.com>
+
+Requested on talk: a talk on NTP
+
+
+-------- Forwarded Message --------
+Subject: 	Re: [GTALUG] NTP's Fate Hinges On 'Father Time' - InformationWeek
+Date: 	Fri, 20 Mar 2015 22:30:06 -0400
+From: 	Bob Jonkman <bjonkman at sobac.com>
+Reply-To: 	GTALUG Talk <talk at gtalug.org>
+Organization: 	SOBAC Microcomputer Services
+To: 	GTALUG Talk <talk at gtalug.org>
+
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+As an aside, I would love to see a presentation on keeping time in
+sync on Linuxen, with a deep dive into the innards of NTP.  Sounds
+like GTALUG has the talent pool for such a presentation...
+
+- --Bob.
+
+
+
+On 16/03/15 12:33 PM, Mike wrote:
+> PTP at IP (layer 3) still needs hardware-based (PHY or MAC level)
+> timestamping in order to achieve O(nanoseconds) and O(ppb)
+> performance in phase and frequency.  The best performance is
+> achieved with this support at every link that time sync data
+> traverses.
+>
+> Telco nerds use Synchronous Ethernet besides...
+>
+> Mike
+>
+> On Mon, Mar 16, 2015 at 8:16 AM, David Thornton
+> <northdot9 at gmail.com> wrote:
+>
+>> "There is PTP support in Linux, but you need an Ethernet card
+>> with the right timestamping feature plugged into a switch that
+>> does PTP too."
+>>
+>> You can do PTP over IP but I understand you can also deploy
+>> "dedicated" networks that JUST do PTP ( no ip ).
+>>
+>> It is the dedicate nets you are talking about ?
+>>
+>> The sexiest PTP hardware I've seen is the solarflare stuff.
+>>
+>> David
+>>
+>>
+>>
+>>
+>> On Sun, Mar 15, 2015 at 5:58 PM, Anthony de Boer <adb at adb.ca>
+>> wrote:
+>>
+>>> Stewart C. Russell wrote:
+>>>> On 2015-03-14 10:09 PM, David Thornton wrote:
+>>>>> My finance client's use ptp not ntp.
+>>>>
+>>>> Is PTP particularly hard to use? It looks like an ISO
+>>>> standard, so will likely be fiddly but complete.
+>>>
+>>> Accuracy numbers in PTP are measured in nanoseconds, while the
+>>> NTP world talks milliseconds.  So if you have that sort of
+>>> accuracy requirement (power system phasors, etc) you probably
+>>> want PTP with the appropriate dedicated hardware, while
+>>> garden-variety Unix admins just want log records to show up
+>>> with the right second.
+>>>
+>>> There is PTP support in Linux, but you need an Ethernet card
+>>> with the right timestamping feature plugged into a switch that
+>>> does PTP too.
+>>>
+>>> Meanwhile, ntpd is getting a bit long in the tooth[0] and the
+>>> ntimed project looks interesting.
+>>>
+>>> [0] "support for hardware clocks EBay has never heard of"
+>>>
+>>> -- Anthony de Boer --- Talk Mailing List talk at gtalug.org
+>>> http://gtalug.org/mailman/listinfo/talk
+>>>
+>>
+>>
+>> --- Talk Mailing List talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>>
+>
+>
+>
+> --- Talk Mailing List talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.15 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlUM16kACgkQuRKJsNLM5eoKhgCg/zqAXoZpc5f/M5l1eo4SrZKr
+EXsAn0UERQBOidCsekZvI2hrYVkbn7bD
+=9YUp
+-----END PGP SIGNATURE-----
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150321/89047f10/attachment.html>
+
