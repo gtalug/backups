@@ -519,3 +519,475 @@ http://gtalug.org/mailman/listinfo/talk
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/operations/attachments/20150321/89047f10/attachment.html>
 
+From scott at ss.org  Mon Mar 23 14:54:16 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Mon, 23 Mar 2015 10:54:16 -0400
+Subject: [GTALUG-Ops] Today's exec meeting.
+Message-ID: <D62D7DD3-55DE-4B8F-8148-8A69C34D982F@ss.org>
+
+I just realized it's the forth Monday. Haven't yet seen an agenda, but I've also got a scheduling conflict. Work has put me on the late shift so I won't leave the office until 8pm. His is a problem since I have open the door for us to meet at Hacklab.
+
+I'll see if I can get a co-worker to cover.
+
+I'll post when I know more.
+-- 
+Scott Sullivan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150323/3adfc75b/attachment.html>
+
+From cbbrowne at gmail.com  Mon Mar 23 15:10:23 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Mon, 23 Mar 2015 11:10:23 -0400
+Subject: [GTALUG-Ops] Today's exec meeting.
+In-Reply-To: <D62D7DD3-55DE-4B8F-8148-8A69C34D982F@ss.org>
+References: <D62D7DD3-55DE-4B8F-8148-8A69C34D982F@ss.org>
+Message-ID: <CAFNqd5W6H4_O6dG23kS8nRgFfhD6BfshFprD9hOw2LFx5V22mw@mail.gmail.com>
+
+The agenda is here...
+   https://github.com/gtalug/board-meetings/blob/master/_posts/2015-03-23-agenda.org
+
+I don't think it presents *huge* problems for Scott to be
+not-so-early, as long as
+folk there know who to let in.  (I'll bet there's enough overlap of
+people knowing
+people, with the common "small world syndrome" that it won't be too much of
+a problem)
+
+The notably urgent thing we're short on at this point is a speaker for April.
+We have a fair number of ideas incubating, just none maturing then.
+
+From qwerty172 at gmail.com  Mon Mar 23 17:28:51 2015
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Mon, 23 Mar 2015 13:28:51 -0400
+Subject: [GTALUG-Ops] Today's exec meeting.
+In-Reply-To: <D62D7DD3-55DE-4B8F-8148-8A69C34D982F@ss.org>
+References: <D62D7DD3-55DE-4B8F-8148-8A69C34D982F@ss.org>
+Message-ID: <CAA3RLT4AU9XCJNk3EO9eGkKkkK2KkL7V-_peRMaoEhE=kOBk0Q@mail.gmail.com>
+
+I'm going to throw another wrench. I won't be able to make it.
+
+Sorry.
+
+Bill
+
+
+On Mon, Mar 23, 2015 at 10:54 AM, Scott Sullivan <scott at ss.org> wrote:
+
+> I just realized it's the forth Monday. Haven't yet seen an agenda, but
+> I've also got a scheduling conflict. Work has put me on the late shift so I
+> won't leave the office until 8pm. His is a problem since I have open the
+> door for us to meet at Hacklab.
+>
+> I'll see if I can get a co-worker to cover.
+>
+> I'll post when I know more.
+> --
+> Scott Sullivan
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150323/e931c8ae/attachment.html>
+
+From gordontc at look.ca  Mon Mar 23 17:47:34 2015
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Mon, 23 Mar 2015 13:47:34 -0400
+Subject: [GTALUG-Ops] Today's exec meeting.
+In-Reply-To: <CAA3RLT4AU9XCJNk3EO9eGkKkkK2KkL7V-_peRMaoEhE=kOBk0Q@mail.gmail.com>
+References: <D62D7DD3-55DE-4B8F-8148-8A69C34D982F@ss.org>
+ <CAA3RLT4AU9XCJNk3EO9eGkKkkK2KkL7V-_peRMaoEhE=kOBk0Q@mail.gmail.com>
+Message-ID: <1427132854.28690.3.camel@larva.gordhome.local>
+
+Not to be outdone, I won't, either.
+
+Also, I'm going to hold off my monthly ICANN report, this time, to the
+31st - the NTIA Stewardship gang is meeting in Istanbul right now, so I
+want to be able to include anything useful that might turn up.
+
+Gordon
+
+
+On Mon, 2015-03-23 at 13:28 -0400, Bill Thanis wrote:
+> I'm going to throw another wrench. I won't be able to make it.
+> 
+> 
+> Sorry.
+> 
+> 
+> Bill
+> 
+> 
+> 
+> On Mon, Mar 23, 2015 at 10:54 AM, Scott Sullivan <scott at ss.org> wrote:
+>         I just realized it's the forth Monday. Haven't yet seen an
+>         agenda, but I've also got a scheduling conflict. Work has put
+>         me on the late shift so I won't leave the office until 8pm.
+>         His is a problem since I have open the door for us to meet at
+>         Hacklab.
+>         
+>         I'll see if I can get a co-worker to cover.
+>         
+>         I'll post when I know more.
+>         ---
+>         GTALUG Operations Mailing List
+>         operations at gtalug.org
+>         http://gtalug.org/mailman/listinfo/operations
+> 
+> 
+
+
+From Amos.Weatherill at zoho.com  Mon Mar 23 17:52:30 2015
+From: Amos.Weatherill at zoho.com (Amos H. Weatherill)
+Date: Mon, 23 Mar 2015 13:52:30 -0400
+Subject: [GTALUG-Ops] Today's exec meeting.
+In-Reply-To: <1427132854.28690.3.camel@larva.gordhome.local>
+References: <D62D7DD3-55DE-4B8F-8148-8A69C34D982F@ss.org>
+ <CAA3RLT4AU9XCJNk3EO9eGkKkkK2KkL7V-_peRMaoEhE=kOBk0Q@mail.gmail.com>
+ <1427132854.28690.3.camel@larva.gordhome.local>
+Message-ID: <5f4c76dd-b90f-4df5-a0d5-1f2044217d4a.maildroid@localhost>
+
+It seems that everyone has issues with today.
+
+I'm afraid that I won't be able to make it due to a mobility issue.
+
+Sent from my android device.
+
+-----Original Message-----
+From: Gordon Chillcott <gordontc at look.ca>
+To: GTALUG Operations <operations at gtalug.org>
+Sent: Mon, 23 Mar 2015 13:47
+Subject: Re: [GTALUG-Ops] Today's exec meeting.
+
+Not to be outdone, I won't, either.
+
+Also, I'm going to hold off my monthly ICANN report, this time, to the
+31st - the NTIA Stewardship gang is meeting in Istanbul right now, so I
+want to be able to include anything useful that might turn up.
+
+Gordon
+
+
+On Mon, 2015-03-23 at 13:28 -0400, Bill Thanis wrote:
+> I'm going to throw another wrench. I won't be able to make it.
+> 
+> 
+> Sorry.
+> 
+> 
+> Bill
+> 
+> 
+> 
+> On Mon, Mar 23, 2015 at 10:54 AM, Scott Sullivan <scott at ss.org> wrote:
+>         I just realized it's the forth Monday. Haven't yet seen an
+>         agenda, but I've also got a scheduling conflict. Work has put
+>         me on the late shift so I won't leave the office until 8pm.
+>         His is a problem since I have open the door for us to meet at
+>         Hacklab.
+>         
+>         I'll see if I can get a co-worker to cover.
+>         
+>         I'll post when I know more.
+>         ---
+>         GTALUG Operations Mailing List
+>         operations at gtalug.org
+>         http://gtalug.org/mailman/listinfo/operations
+> 
+> 
+
+---
+GTALUG Operations Mailing List
+operations at gtalug.org
+http://gtalug.org/mailman/listinfo/operations
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150323/7408925b/attachment.html>
+
+From mike.kallies at gmail.com  Mon Mar 23 18:24:48 2015
+From: mike.kallies at gmail.com (Mike)
+Date: Mon, 23 Mar 2015 14:24:48 -0400
+Subject: [GTALUG-Ops] Today's exec meeting.
+In-Reply-To: <5f4c76dd-b90f-4df5-a0d5-1f2044217d4a.maildroid@localhost>
+References: <D62D7DD3-55DE-4B8F-8148-8A69C34D982F@ss.org>
+ <CAA3RLT4AU9XCJNk3EO9eGkKkkK2KkL7V-_peRMaoEhE=kOBk0Q@mail.gmail.com>
+ <1427132854.28690.3.camel@larva.gordhome.local>
+ <5f4c76dd-b90f-4df5-a0d5-1f2044217d4a.maildroid@localhost>
+Message-ID: <CE1DB2E7-D455-4580-9BA5-5F395AFC9B56@gmail.com>
+
+I *could* make it, but I might be the only one.   I'll assume no meeting in person unless I hear otherwise.
+
+Anyone want to try the phone bridge? 
+
+Mike
+
+
+
+> On Mar 23, 2015, at 1:52 PM, "Amos H. Weatherill" <Amos.Weatherill at zoho.com> wrote:
+> 
+> It seems that everyone has issues with today.
+> 
+> I'm afraid that I won't be able to make it due to a mobility issue.
+> 
+> Sent from my android device.
+> 
+> -----Original Message-----
+> From: Gordon Chillcott <gordontc at look.ca>
+> To: GTALUG Operations <operations at gtalug.org>
+> Sent: Mon, 23 Mar 2015 13:47
+> Subject: Re: [GTALUG-Ops] Today's exec meeting.
+> 
+> Not to be outdone, I won't, either.
+> 
+> Also, I'm going to hold off my monthly ICANN report, this time, to the
+> 31st - the NTIA Stewardship gang is meeting in Istanbul right now, so I
+> want to be able to include anything useful that might turn up.
+> 
+> Gordon
+> 
+> 
+> On Mon, 2015-03-23 at 13:28 -0400, Bill Thanis wrote:
+> > I'm going to throw another wrench. I won't be able to make it.
+> > 
+> > 
+> > Sorry.
+> > 
+> > 
+> > Bill
+> > 
+> > 
+> > 
+> > On Mon, Mar 23, 2015 at 10:54 AM, Scott Sullivan <scott at ss.org> wrote:
+> >         I just realized it's the forth Monday. Haven't yet seen an
+> >         agenda, but I've also got a scheduling conflict. Work has put
+> >         me on the late shift so I won't leave the office until 8pm.
+> >         His is a problem since I have open the door for us to meet at
+> >         Hacklab.
+> >         
+> >         I'll see if I can get a co-worker to cover.
+> >         
+> >         I'll post when I know more.
+> >         ---
+> >         GTALUG Operations Mailing List
+> >         operations at gtalug.org
+> >         http://gtalug.org/mailman/listinfo/operations
+> > 
+> > 
+> 
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150323/66c6bcde/attachment.html>
+
+From me at mylesbraithwaite.com  Mon Mar 23 18:59:04 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 23 Mar 2015 14:59:04 -0400
+Subject: [GTALUG-Ops] Today's exec meeting.
+In-Reply-To: <CE1DB2E7-D455-4580-9BA5-5F395AFC9B56@gmail.com>
+References: <D62D7DD3-55DE-4B8F-8148-8A69C34D982F@ss.org>
+ <CAA3RLT4AU9XCJNk3EO9eGkKkkK2KkL7V-_peRMaoEhE=kOBk0Q@mail.gmail.com>
+ <1427132854.28690.3.camel@larva.gordhome.local>
+ <5f4c76dd-b90f-4df5-a0d5-1f2044217d4a.maildroid@localhost>
+ <CE1DB2E7-D455-4580-9BA5-5F395AFC9B56@gmail.com>
+Message-ID: <55106278.6060805@mylesbraithwaite.com>
+
+Mike wrote:
+> I *could* make it, but I might be the only one. I'll assume no meeting
+> in person unless I hear otherwise.
+
+I plan on attending.
+
+> Anyone want to try the phone bridge?
+
+Do we have the technology?
+
+From mike.kallies at gmail.com  Mon Mar 23 19:11:09 2015
+From: mike.kallies at gmail.com (Mike)
+Date: Mon, 23 Mar 2015 15:11:09 -0400
+Subject: [GTALUG-Ops] Today's exec meeting.
+In-Reply-To: <55106278.6060805@mylesbraithwaite.com>
+References: <D62D7DD3-55DE-4B8F-8148-8A69C34D982F@ss.org>
+ <CAA3RLT4AU9XCJNk3EO9eGkKkkK2KkL7V-_peRMaoEhE=kOBk0Q@mail.gmail.com>
+ <1427132854.28690.3.camel@larva.gordhome.local>
+ <5f4c76dd-b90f-4df5-a0d5-1f2044217d4a.maildroid@localhost>
+ <CE1DB2E7-D455-4580-9BA5-5F395AFC9B56@gmail.com>
+ <55106278.6060805@mylesbraithwaite.com>
+Message-ID: <F9917ECA-E70F-47E0-81F1-45E8851A22EB@gmail.com>
+
+
+> Mike wrote:
+>> I *could* make it, but I might be the only one. I'll assume no meeting
+>> in person unless I hear otherwise.
+> 
+> I plan on attending.
+
+Ok, I'll head out there unless I hear otherwise :-)
+
+
+
+> 
+>> Anyone want to try the phone bridge?
+> 
+> Do we have the technology?
+
+I have my personal bridge line.  It's still active.  I can distribute if we go that route.
+
+-Mike
+
+
+From avolkov at gmail.com  Mon Mar 23 19:12:51 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Mon, 23 Mar 2015 19:12:51 +0000
+Subject: [GTALUG-Ops] Today's exec meeting.
+In-Reply-To: <F9917ECA-E70F-47E0-81F1-45E8851A22EB@gmail.com>
+References: <D62D7DD3-55DE-4B8F-8148-8A69C34D982F@ss.org>
+ <CAA3RLT4AU9XCJNk3EO9eGkKkkK2KkL7V-_peRMaoEhE=kOBk0Q@mail.gmail.com>
+ <1427132854.28690.3.camel@larva.gordhome.local>
+ <5f4c76dd-b90f-4df5-a0d5-1f2044217d4a.maildroid@localhost>
+ <CE1DB2E7-D455-4580-9BA5-5F395AFC9B56@gmail.com>
+ <55106278.6060805@mylesbraithwaite.com>
+ <F9917ECA-E70F-47E0-81F1-45E8851A22EB@gmail.com>
+Message-ID: <CAO1j=qeedRwXRZxTbM1+OZfJ5e2YqiHUhbVa85=5eMvr+RKSKw@mail.gmail.com>
+
+I'll be there as well
+
+On Mon, Mar 23, 2015, 15:11 Mike <mike.kallies at gmail.com> wrote:
+
+>
+> > Mike wrote:
+> >> I *could* make it, but I might be the only one. I'll assume no meeting
+> >> in person unless I hear otherwise.
+> >
+> > I plan on attending.
+>
+> Ok, I'll head out there unless I hear otherwise :-)
+>
+>
+>
+> >
+> >> Anyone want to try the phone bridge?
+> >
+> > Do we have the technology?
+>
+> I have my personal bridge line.  It's still active.  I can distribute if
+> we go that route.
+>
+> -Mike
+>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150323/3e6b366a/attachment.html>
+
+From scott at ss.org  Mon Mar 23 19:19:08 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Mon, 23 Mar 2015 15:19:08 -0400
+Subject: [GTALUG-Ops] Today's exec meeting.
+In-Reply-To: <CAO1j=qeedRwXRZxTbM1+OZfJ5e2YqiHUhbVa85=5eMvr+RKSKw@mail.gmail.com>
+References: <D62D7DD3-55DE-4B8F-8148-8A69C34D982F@ss.org>
+ <CAA3RLT4AU9XCJNk3EO9eGkKkkK2KkL7V-_peRMaoEhE=kOBk0Q@mail.gmail.com>
+ <1427132854.28690.3.camel@larva.gordhome.local>
+ <5f4c76dd-b90f-4df5-a0d5-1f2044217d4a.maildroid@localhost>
+ <CE1DB2E7-D455-4580-9BA5-5F395AFC9B56@gmail.com>
+ <55106278.6060805@mylesbraithwaite.com>
+ <F9917ECA-E70F-47E0-81F1-45E8851A22EB@gmail.com>
+ <CAO1j=qeedRwXRZxTbM1+OZfJ5e2YqiHUhbVa85=5eMvr+RKSKw@mail.gmail.com>
+Message-ID: <73D751F7-EBC2-4B36-8F98-841D64C4269F@ss.org>
+
+I've checked and Fellow member Alex will be around to accept people into the lab.
+
+Buzz unit 6 when you get there.
+
+I'll be over shortly after 8pm. 
+
+On March 23, 2015 3:12:51 PM EDT, Alex Volkov <avolkov at gmail.com> wrote:
+>I'll be there as well
+>
+>On Mon, Mar 23, 2015, 15:11 Mike <mike.kallies at gmail.com> wrote:
+>
+>>
+>> > Mike wrote:
+>> >> I *could* make it, but I might be the only one. I'll assume no
+>meeting
+>> >> in person unless I hear otherwise.
+>> >
+>> > I plan on attending.
+>>
+>> Ok, I'll head out there unless I hear otherwise :-)
+>>
+>>
+>>
+>> >
+>> >> Anyone want to try the phone bridge?
+>> >
+>> > Do we have the technology?
+>>
+>> I have my personal bridge line.  It's still active.  I can distribute
+>if
+>> we go that route.
+>>
+>> -Mike
+>>
+>> ---
+>> GTALUG Operations Mailing List
+>> operations at gtalug.org
+>> http://gtalug.org/mailman/listinfo/operations
+>>
+>
+>
+>------------------------------------------------------------------------
+>
+>---
+>GTALUG Operations Mailing List
+>operations at gtalug.org
+>http://gtalug.org/mailman/listinfo/operations
+
+
+-- 
+Scott Sullivan
+
+From me at mylesbraithwaite.com  Mon Mar 23 23:59:34 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 23 Mar 2015 19:59:34 -0400
+Subject: [GTALUG-Ops] Anyone have any ideas for a speaker for April 2015
+	meeting?
+Message-ID: <CA+hskZPbfTnL7VRau-cp-dyzi0k14b=4JZigmYAv2O-XOv1idA@mail.gmail.com>
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+
+From scott at ss.org  Tue Mar 24 01:11:05 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Mon, 23 Mar 2015 21:11:05 -0400
+Subject: [GTALUG-Ops] This is hacklab.
+Message-ID: <BB6E4653-36A8-4412-96D2-2FDD7CB75A04@ss.org>
+
+Much meeting was had.
+-- 
+Scott Sullivan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150323/ae9f80c0/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: IMG_20150323_210154.jpg
+Type: image/jpeg
+Size: 3272729 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20150323/ae9f80c0/attachment.jpg>
+
