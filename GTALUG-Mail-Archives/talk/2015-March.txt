@@ -9628,3 +9628,76 @@ EXsAn0UERQBOidCsekZvI2hrYVkbn7bD
 =9YUp
 -----END PGP SIGNATURE-----
 
+From me at mylesbraithwaite.com  Tue Mar 24 00:12:34 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 23 Mar 2015 20:12:34 -0400
+Subject: [GTALUG] Blast from the past "SCO has a valid case"
+Message-ID: <CA+hskZPqqfJQq=4x+tk5WWxqohEX5NBDj+u8S8TtknA5M59q8A@mail.gmail.com>
+
+Thanks to Alex Volkov we have a archive of all the old GTLAUG messages
+and I found this gem:
+
+SCO has a valid case:
+<http://gtalug.org/pipermail/legacy/2003-August/thread.html#133>.
+
+You can view the old archive here: <http://gtalug.org/pipermail/legacy/>.
+
+From cbbrowne at gmail.com  Tue Mar 24 01:21:50 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Mon, 23 Mar 2015 21:21:50 -0400
+Subject: [GTALUG] SSL Certs
+Message-ID: <CAFNqd5X0M2mX5-OtwP-KjNdE2LF0d07kdQubAK9KOp2xCNGNXg@mail.gmail.com>
+
+Someone (I don't know whom) wasn't thrilled to have their Mailman
+password sent to our web site via non-SSL, hence non-encrypted
+connection.  Which points to it being desirable to have an SSL cert.
+
+We could doubtless set up a self-signed cert; that's obviously not
+going to go through without "oh, that mightn't be totally legit"
+warnings.
+
+We'd not be overly keen on "spending all our substance" on SSL certs,
+not when the only use is to protect Mailman passwords.  I hear Mozilla
+may be coming out with something later this year (something called
+"letsencrypt.org"); anyone have other bright ideas?
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From davec-b at rogers.com  Tue Mar 24 02:22:45 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Mon, 23 Mar 2015 22:22:45 -0400
+Subject: [GTALUG] SSL Certs
+In-Reply-To: <CAFNqd5X0M2mX5-OtwP-KjNdE2LF0d07kdQubAK9KOp2xCNGNXg@mail.gmail.com>
+References: <CAFNqd5X0M2mX5-OtwP-KjNdE2LF0d07kdQubAK9KOp2xCNGNXg@mail.gmail.com>
+Message-ID: <5510CA75.70207@rogers.com>
+
+Yes, letsencrypt.org is an effort to make it possible for small folks 
+like us to have ssl certs, adressing both cost and complexity. In the 
+meantime, I've done self-signed ones, but installation is a pain...
+
+--dave
+
+On 03/23/2015 09:21 PM, Christopher Browne wrote:
+> Someone (I don't know whom) wasn't thrilled to have their Mailman
+> password sent to our web site via non-SSL, hence non-encrypted
+> connection.  Which points to it being desirable to have an SSL cert.
+>
+> We could doubtless set up a self-signed cert; that's obviously not
+> going to go through without "oh, that mightn't be totally legit"
+> warnings.
+>
+> We'd not be overly keen on "spending all our substance" on SSL certs,
+> not when the only use is to protect Mailman passwords.  I hear Mozilla
+> may be coming out with something later this year (something called
+> "letsencrypt.org"); anyone have other bright ideas?
+>
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
