@@ -991,3 +991,225 @@ Size: 3272729 bytes
 Desc: not available
 URL: <http://gtalug.org/pipermail/operations/attachments/20150323/ae9f80c0/attachment.jpg>
 
+From me at mylesbraithwaite.com  Tue Mar 24 14:45:26 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 24 Mar 2015 10:45:26 -0400
+Subject: [GTALUG-Ops] GTALUG Operations @ HackLab.TO
+Message-ID: <55117886.4010305@mylesbraithwaite.com>
+
+We had a noticeably smaller group of people at last nights GTALUG 
+Operations meeting at HackLab.TO.
+
+Was this because of the location? Or was it just random?
+
+IMHO: HackLab.TO is a great spot to do this meeting in the future as it's:
+
+- large enough to have more than 15 people,
+- it's usually quite on a Monday night (according to Scott),
+- they allow food and drink (as long as you clean up after yourself),
+- they have actual comfortable chairs to seat in,
+- WiFi access,
+- and is a staple of the Toronto Tech scene.
+
+The only issue I have is if I was to coming early I maybe wouldn't be 
+allowed in if there wasn't a member already there. But I could probably 
+find a coffeeshop to sit in for 45mins so this is a minor issue.
+
+From me at mylesbraithwaite.com  Tue Mar 24 15:12:03 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 24 Mar 2015 11:12:03 -0400
+Subject: [GTALUG-Ops] Please share the following links:
+Message-ID: <CA+hskZP78Bz8-b6A+QWskXMFwjZYNSs7RNThgob7oq5fEshd=Q@mail.gmail.com>
+
+Facebook: <https://www.facebook.com/events/1574478072809646/>
+
+Google+: <https://plus.google.com/events/c18iq6k7llid376e4l8g9dmld24>
+
+Twitter: <https://twitter.com/gtalug/status/580386158971985921>
+
+From gordontc at look.ca  Tue Mar 24 15:17:10 2015
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Tue, 24 Mar 2015 11:17:10 -0400
+Subject: [GTALUG-Ops] GTALUG Operations @ HackLab.TO
+In-Reply-To: <55117886.4010305@mylesbraithwaite.com>
+References: <55117886.4010305@mylesbraithwaite.com>
+Message-ID: <1427210230.4622.1.camel@larva.gordhome.local>
+
+In my case, I had a number of issues come up, rather suddenly.
+
+As to the location, it is a bit far for me, but that isn't a
+show-stopper, most of the time - usually I can find some way to schedule
+around it.
+
+I noticed your reference to a coffee shop.   I'm wondering if we
+shouldn't find one to "adopt" just for that purpose.
+
+Gordon
+
+
+On Tue, 2015-03-24 at 10:45 -0400, Myles Braithwaite wrote:
+> We had a noticeably smaller group of people at last nights GTALUG 
+> Operations meeting at HackLab.TO.
+> 
+> Was this because of the location? Or was it just random?
+> 
+> IMHO: HackLab.TO is a great spot to do this meeting in the future as it's:
+> 
+> - large enough to have more than 15 people,
+> - it's usually quite on a Monday night (according to Scott),
+> - they allow food and drink (as long as you clean up after yourself),
+> - they have actual comfortable chairs to seat in,
+> - WiFi access,
+> - and is a staple of the Toronto Tech scene.
+> 
+> The only issue I have is if I was to coming early I maybe wouldn't be 
+> allowed in if there wasn't a member already there. But I could probably 
+> find a coffeeshop to sit in for 45mins so this is a minor issue.
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+
+
+From gordontc at look.ca  Tue Mar 24 15:19:19 2015
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Tue, 24 Mar 2015 11:19:19 -0400
+Subject: [GTALUG-Ops] Please share the following links:
+In-Reply-To: <CA+hskZP78Bz8-b6A+QWskXMFwjZYNSs7RNThgob7oq5fEshd=Q@mail.gmail.com>
+References: <CA+hskZP78Bz8-b6A+QWskXMFwjZYNSs7RNThgob7oq5fEshd=Q@mail.gmail.com>
+Message-ID: <1427210359.4622.2.camel@larva.gordhome.local>
+
+"Tickets Available"?
+
+Found that on the Facebook page
+
+Gordon
+
+
+On Tue, 2015-03-24 at 11:12 -0400, Myles Braithwaite wrote:
+> Facebook: <https://www.facebook.com/events/1574478072809646/>
+> 
+> Google+: <https://plus.google.com/events/c18iq6k7llid376e4l8g9dmld24>
+> 
+> Twitter: <https://twitter.com/gtalug/status/580386158971985921>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+
+
+From me at mylesbraithwaite.com  Tue Mar 24 15:22:11 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 24 Mar 2015 11:22:11 -0400
+Subject: [GTALUG-Ops] Please share the following links:
+In-Reply-To: <1427210359.4622.2.camel@larva.gordhome.local>
+References: <CA+hskZP78Bz8-b6A+QWskXMFwjZYNSs7RNThgob7oq5fEshd=Q@mail.gmail.com>
+ <1427210359.4622.2.camel@larva.gordhome.local>
+Message-ID: <CA+hskZOEnZ0_qVrfqNAmPrJF+Fvae3enk_pXCvmGUFt0uwgdzA@mail.gmail.com>
+
+It's the only way to point a link to the GTALUG web site.
+
+On Tue, Mar 24, 2015 at 11:19 AM, Gordon Chillcott <gordontc at look.ca> wrote:
+> "Tickets Available"?
+>
+> Found that on the Facebook page
+>
+> Gordon
+>
+>
+> On Tue, 2015-03-24 at 11:12 -0400, Myles Braithwaite wrote:
+>> Facebook: <https://www.facebook.com/events/1574478072809646/>
+>>
+>> Google+: <https://plus.google.com/events/c18iq6k7llid376e4l8g9dmld24>
+>>
+>> Twitter: <https://twitter.com/gtalug/status/580386158971985921>
+>> ---
+>> GTALUG Operations Mailing List
+>> operations at gtalug.org
+>> http://gtalug.org/mailman/listinfo/operations
+>
+>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+
+From davec-b at rogers.com  Tue Mar 24 23:38:03 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Tue, 24 Mar 2015 19:38:03 -0400
+Subject: [GTALUG-Ops] GTALUG Operations @ HackLab.TO
+In-Reply-To: <55117886.4010305@mylesbraithwaite.com>
+References: <55117886.4010305@mylesbraithwaite.com>
+Message-ID: <5511F55B.5080600@rogers.com>
+
+Random in my case. --dave
+
+
+On 03/24/2015 10:45 AM, Myles Braithwaite wrote:
+> We had a noticeably smaller group of people at last nights GTALUG 
+> Operations meeting at HackLab.TO.
+>
+> Was this because of the location? Or was it just random?
+>
+> IMHO: HackLab.TO is a great spot to do this meeting in the future as 
+> it's:
+>
+> - large enough to have more than 15 people,
+> - it's usually quite on a Monday night (according to Scott),
+> - they allow food and drink (as long as you clean up after yourself),
+> - they have actual comfortable chairs to seat in,
+> - WiFi access,
+> - and is a staple of the Toronto Tech scene.
+>
+> The only issue I have is if I was to coming early I maybe wouldn't be 
+> allowed in if there wasn't a member already there. But I could 
+> probably find a coffeeshop to sit in for 45mins so this is a minor issue.
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From davec-b at rogers.com  Tue Mar 24 23:54:32 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Tue, 24 Mar 2015 19:54:32 -0400
+Subject: [GTALUG-Ops] Please share the following links:
+In-Reply-To: <CA+hskZP78Bz8-b6A+QWskXMFwjZYNSs7RNThgob7oq5fEshd=Q@mail.gmail.com>
+References: <CA+hskZP78Bz8-b6A+QWskXMFwjZYNSs7RNThgob7oq5fEshd=Q@mail.gmail.com>
+Message-ID: <5511F938.2040300@rogers.com>
+
+Googled!
+
+On 03/24/2015 11:12 AM, Myles Braithwaite wrote:
+> Facebook: <https://www.facebook.com/events/1574478072809646/>
+>
+> Google+: <https://plus.google.com/events/c18iq6k7llid376e4l8g9dmld24>
+>
+> Twitter: <https://twitter.com/gtalug/status/580386158971985921>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+

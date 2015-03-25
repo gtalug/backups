@@ -9701,3 +9701,530 @@ System Programmer and Author | some people and astonish the rest
 davecb at spamcop.net           |                      -- Mark Twain
 
 
+From tisdall at gmail.com  Tue Mar 24 14:28:25 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Tue, 24 Mar 2015 10:28:25 -0400
+Subject: [GTALUG] SSL Certs
+In-Reply-To: <5510CA75.70207@rogers.com>
+References: <CAFNqd5X0M2mX5-OtwP-KjNdE2LF0d07kdQubAK9KOp2xCNGNXg@mail.gmail.com>
+ <5510CA75.70207@rogers.com>
+Message-ID: <CAGxYWpaYSR81z1JPko==quwPhi4XHhY4cV0uE8OMtApR7TvDtg@mail.gmail.com>
+
+I don't think letsencrypt.org is ready for signing certs.  You can get
+a free one for a year at https://www.startssl.com/ and you just have
+to remember to go and renew it each year.  They are a CA that's
+already in most browsers.
+
+On Mon, Mar 23, 2015 at 10:22 PM, David Collier-Brown
+<davec-b at rogers.com> wrote:
+> Yes, letsencrypt.org is an effort to make it possible for small folks like
+> us to have ssl certs, adressing both cost and complexity. In the meantime,
+> I've done self-signed ones, but installation is a pain...
+>
+> --dave
+
+From tisdall at gmail.com  Tue Mar 24 14:30:15 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Tue, 24 Mar 2015 10:30:15 -0400
+Subject: [GTALUG] SSL Certs
+In-Reply-To: <CAGxYWpaYSR81z1JPko==quwPhi4XHhY4cV0uE8OMtApR7TvDtg@mail.gmail.com>
+References: <CAFNqd5X0M2mX5-OtwP-KjNdE2LF0d07kdQubAK9KOp2xCNGNXg@mail.gmail.com>
+ <5510CA75.70207@rogers.com>
+ <CAGxYWpaYSR81z1JPko==quwPhi4XHhY4cV0uE8OMtApR7TvDtg@mail.gmail.com>
+Message-ID: <CAGxYWpaWXXgg5wwPfyYGRN88RtMpYyb5j3WOeLXHk4e0-w_V9A@mail.gmail.com>
+
+Sorry, that made it sound like it's only free for the first year...
+Their lowest level one is always free, but expires after a year.  You
+can just renew each year with no issues.
+
+On Tue, Mar 24, 2015 at 10:28 AM, Tim Tisdall <tisdall at gmail.com> wrote:
+> I don't think letsencrypt.org is ready for signing certs.  You can get
+> a free one for a year at https://www.startssl.com/ and you just have
+> to remember to go and renew it each year.  They are a CA that's
+> already in most browsers.
+>
+> On Mon, Mar 23, 2015 at 10:22 PM, David Collier-Brown
+> <davec-b at rogers.com> wrote:
+>> Yes, letsencrypt.org is an effort to make it possible for small folks like
+>> us to have ssl certs, adressing both cost and complexity. In the meantime,
+>> I've done self-signed ones, but installation is a pain...
+>>
+>> --dave
+
+From me at mylesbraithwaite.com  Tue Mar 24 14:36:32 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 24 Mar 2015 10:36:32 -0400
+Subject: [GTALUG] Looking for speakers for upcoming meeting on "Keeping Time
+	in Linux"
+Message-ID: <55117670.8020101@mylesbraithwaite.com>
+
+We want to do a bunch of short talks for an upcoming meeting on *Keeping 
+Time in Linux*. We are looking for speakers in:
+
+- PTP
+
+- What's going on with NTP?
+
+- GPS Updating
+
+- What to do about VMs?
+
+- NTP with {Physics,Security,Financial}
+
+It will most likely be in late spring/early summer. If you are 
+interested in speaking please contact the speaker coordinator @ 
+<speaker-coordinator at gtalug.org>.
+
+From me at mylesbraithwaite.com  Tue Mar 24 15:00:25 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 24 Mar 2015 11:00:25 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting 14th April, 2015 at 7:30 pm
+Message-ID: <CA+hskZP+9wKgYDd=g=crWGnyp72-zQ+GNsD5+i6HzX0VEyH1Eg@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-04/>
+
+# LessCSS with Myles Braithwaite and a Round Table Q&A Session
+
+*LessCSS*
+
+LessCSS extends the CSS language to make it actually useable by adding
+features like variables, mixins, functions, and a bunch of other
+techniques that allow you to make your stylesheets more maintainable,
+themeable, and extendible.
+
+*Round Table Q&A Session*
+
+A Round Table Q&A Session is where we take questions from the
+audience, and the audience discusses and attempts to answer those
+questions from their own knowledge. It's a great way to meet fellow
+members of our community and discover the skill sets we each bring to
+the table.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG
+Code of Conduct please contact one of the GTALUG Board Members.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From me at mylesbraithwaite.com  Tue Mar 24 15:15:16 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 24 Mar 2015 11:15:16 -0400
+Subject: [GTALUG] Dinner Ideas for April's Meeting
+Message-ID: <CA+hskZMKfg9yA9Lqfw5213Dv130cBwN7SGJ1TdW3h5Cy+FxG9g@mail.gmail.com>
+
+Anyone have any dinner ideas for next month's meeting?
+
+From gordontc at look.ca  Tue Mar 24 15:25:40 2015
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Tue, 24 Mar 2015 11:25:40 -0400
+Subject: [GTALUG] Dinner Ideas for April's Meeting
+In-Reply-To: <CA+hskZMKfg9yA9Lqfw5213Dv130cBwN7SGJ1TdW3h5Cy+FxG9g@mail.gmail.com>
+References: <CA+hskZMKfg9yA9Lqfw5213Dv130cBwN7SGJ1TdW3h5Cy+FxG9g@mail.gmail.com>
+Message-ID: <1427210740.4622.3.camel@larva.gordhome.local>
+
+Who was number two on that straw poll you took?
+
+Gordon
+
+
+On Tue, 2015-03-24 at 11:15 -0400, Myles Braithwaite wrote:
+> Anyone have any dinner ideas for next month's meeting?
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+
+From me at mylesbraithwaite.com  Tue Mar 24 15:31:26 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 24 Mar 2015 11:31:26 -0400
+Subject: [GTALUG] Dinner Ideas for April's Meeting
+In-Reply-To: <1427210740.4622.3.camel@larva.gordhome.local>
+References: <CA+hskZMKfg9yA9Lqfw5213Dv130cBwN7SGJ1TdW3h5Cy+FxG9g@mail.gmail.com>
+ <1427210740.4622.3.camel@larva.gordhome.local>
+Message-ID: <CA+hskZM46Teo2Uo3y+a0A=uwc=wx66VC+52Ec13Qa=gQv3cUUQ@mail.gmail.com>
+
+On Tue, Mar 24, 2015 at 11:25 AM, Gordon Chillcott <gordontc at look.ca> wrote:
+> Who was number two on that straw poll you took?
+
+Threeway draw between Love at First Bite (Pizza), Mehran (Indian),
+Kaiju (Ramen).
+
+From jsellens at syonex.com  Tue Mar 24 16:05:00 2015
+From: jsellens at syonex.com (John Sellens)
+Date: Tue, 24 Mar 2015 12:05:00 -0400
+Subject: [GTALUG] SSL Certs
+In-Reply-To: <CAGxYWpaYSR81z1JPko==quwPhi4XHhY4cV0uE8OMtApR7TvDtg@mail.gmail.com>
+References: <CAFNqd5X0M2mX5-OtwP-KjNdE2LF0d07kdQubAK9KOp2xCNGNXg@mail.gmail.com>
+ <5510CA75.70207@rogers.com>
+ <CAGxYWpaYSR81z1JPko==quwPhi4XHhY4cV0uE8OMtApR7TvDtg@mail.gmail.com>
+Message-ID: <20150324160500.GA8560@syonex.com>
+
+I had tried using www.startssl.com but found their interface and
+way of doing things awkward.  And I think there are some limitations
+e.g. commercial use costs money I think.
+
+Now I typically buy rapidssl certificates from ssls.com for $9.95/year
+though they have Comodo for $8.95 and multi-year discounts.
+
+But looking forward to letsencrypt.org I am.
+
+Hope that helps - cheers!
+
+John
+
+
+On Tue,?2015/03/24?10:28:25AM?-0400, Tim Tisdall <tisdall at gmail.com> wrote:
+| I don't think letsencrypt.org is ready for signing certs.  You can get
+| a free one for a year at https://www.startssl.com/ and you just have
+| to remember to go and renew it each year.  They are a CA that's
+| already in most browsers.
+
+From tisdall at gmail.com  Tue Mar 24 16:25:49 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Tue, 24 Mar 2015 12:25:49 -0400
+Subject: [GTALUG] SSL Certs
+In-Reply-To: <20150324160500.GA8560@syonex.com>
+References: <CAFNqd5X0M2mX5-OtwP-KjNdE2LF0d07kdQubAK9KOp2xCNGNXg@mail.gmail.com>
+ <5510CA75.70207@rogers.com>
+ <CAGxYWpaYSR81z1JPko==quwPhi4XHhY4cV0uE8OMtApR7TvDtg@mail.gmail.com>
+ <20150324160500.GA8560@syonex.com>
+Message-ID: <CAGxYWpbXyUROT8ZShc-VkphoHML=FHCp+XR7t3WUz1b2fxcgLQ@mail.gmail.com>
+
+On Tue, Mar 24, 2015 at 12:05 PM, John Sellens <jsellens at syonex.com> wrote:
+> I had tried using www.startssl.com but found their interface and
+> way of doing things awkward.  And I think there are some limitations
+> e.g. commercial use costs money I think.
+
+Hmm..  I don't remember seeing a limitation about commercial use.  Do
+you have a link to that?
+
+They do have some hoops you have to jump through to ensure you are who
+you say you are, but I didn't find it terribly hard.
+
+From cbbrowne at gmail.com  Tue Mar 24 16:54:35 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 24 Mar 2015 12:54:35 -0400
+Subject: [GTALUG] Dinner Ideas for April's Meeting
+In-Reply-To: <CA+hskZM46Teo2Uo3y+a0A=uwc=wx66VC+52Ec13Qa=gQv3cUUQ@mail.gmail.com>
+References: <CA+hskZMKfg9yA9Lqfw5213Dv130cBwN7SGJ1TdW3h5Cy+FxG9g@mail.gmail.com>
+ <1427210740.4622.3.camel@larva.gordhome.local>
+ <CA+hskZM46Teo2Uo3y+a0A=uwc=wx66VC+52Ec13Qa=gQv3cUUQ@mail.gmail.com>
+Message-ID: <CAFNqd5Vhjv=sruzz8RooPkzw4WW5JE5jPv9NuV4X2YFVHd3adA@mail.gmail.com>
+
+On 24 March 2015 at 11:31, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+> On Tue, Mar 24, 2015 at 11:25 AM, Gordon Chillcott <gordontc at look.ca> wrote:
+>> Who was number two on that straw poll you took?
+>
+> Threeway draw between Love at First Bite (Pizza), Mehran (Indian),
+> Kaiju (Ramen).
+
+Mehran is the one on Church that we have been to a few times, I think?  I'd
+certainly be fine with either it ir LaFB, but I'd kind of like to try
+out Kaiju; it
+seems to have some favorable opinions on Yelp and blogto.com.
+
+Another survey wouldn't be a terrible thing.
+
+BTW, my comment on Ethiopique is that I liked it well, but it is a bit
+more expensive (which might be a barrier for some) and we needed
+more time to do it justice.  So it certainly isn't apropos for "all the time."
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From cbbrowne at gmail.com  Tue Mar 24 17:26:31 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 24 Mar 2015 13:26:31 -0400
+Subject: [GTALUG] Survey Software,
+ was Re:  [GTALUG-Announce] Meeting 14th April, 2015 at 7:30 pm
+Message-ID: <CAFNqd5WFBgeCNUtS0wBF2=T7XxY8eao2S-o+JS_DysggewJYJg@mail.gmail.com>
+
+One question that we noticed at the ops meeting that we wanted asked
+(and I'm asking it now, early, so as to encourage any needful
+research!) was...
+
+Does anyone know of some good open source/free software for managing
+surveys?  We have put together a survey or two in the recent past
+using the Google Forms framework, which was easy enough and useful
+enough, but decidedly not "free enough" in enough senses of "free."
+
+There are a number of senses of "ideal" that may wind up conflicting;
+there are lots of potential disqualifying factors that might readily
+leave us without any options, alas.
+
+There are some open source options that seem likely to taunt us with
+the complexity of the installation requirements
+  - LimeSurvey.org taunts me with the number of things in addition to
+PHP 5.3 that it requires
+  - surveyproject.org is open source, but, being written using
+C#/.NET, likely would require horrendous efforts to get it to run atop
+a Linux-based system
+  - https://open.jira.com/wiki/display/WST/Home taunts me with the
+number of .jar/.war files required
+
+What I *want* is something that doesn't need managing a wholesale Web
+Framework in order to work.  (Heh, it's "just a matter of writing a
+bit of Drupal code!!!")
+
+I do observe some comparative analyses:
+<http://www.surveyproject.org/Survey%E2%84%A2/Comparisons/tabid/128/Default.aspx>,
+<http://jspsurveylib.sourceforge.net/FeatureTable.html>
+
+There are plenty of proprietary options (there's a wikipedia analysis
+that doesn't recognize the existence of anything else!!!
+<http://en.wikipedia.org/wiki/Comparison_of_survey_software>) which
+should have some obvious downsides in that:
+ a) You donate control to someone else;
+ b) You have to share data with someone else;
+ c) Your data may be forced to pass through a foreign nation's
+intelligence service's hands (and I have seen people express dismay at
+that)
+
+I'm a bit surprised that someone hasn't constructed some sort of
+"little language" for this.  Actually, I'm wrong; there's an ACM paper
+exactly about that.
+<http://dl.acm.org/citation.cfm?id=1593181&dl=ACM&coll=DL&CFID=647881351&CFTOKEN=98404018>
+<http://www.cs.olemiss.edu/~hcc/papers/surveyLangFinal.pdf>  But
+that's only one component of a solution, so it shouldn't be surprising
+that there's not a package for that.
+
+At any rate, it IS clear that there are plenty of companies doing a
+lot of business running surveys, and working pretty hard to offer
+simple-to-use solutions.  People are, in particular, using Google's
+survey mechanisms a lot, and I hear SurveyMonkey mentioned a lot.  "We
+could do that" for some of our simple, non-critical survey needs, but
+it would be nice to have something more under our control.  Perhaps
+someone has gone far enough down this road to have seen more answers
+than are obvious here.
+
+From jsellens at syonex.com  Tue Mar 24 17:51:57 2015
+From: jsellens at syonex.com (John Sellens)
+Date: Tue, 24 Mar 2015 13:51:57 -0400
+Subject: [GTALUG] SSL Certs
+In-Reply-To: <CAGxYWpbXyUROT8ZShc-VkphoHML=FHCp+XR7t3WUz1b2fxcgLQ@mail.gmail.com>
+References: <CAFNqd5X0M2mX5-OtwP-KjNdE2LF0d07kdQubAK9KOp2xCNGNXg@mail.gmail.com>
+ <5510CA75.70207@rogers.com>
+ <CAGxYWpaYSR81z1JPko==quwPhi4XHhY4cV0uE8OMtApR7TvDtg@mail.gmail.com>
+ <20150324160500.GA8560@syonex.com>
+ <CAGxYWpbXyUROT8ZShc-VkphoHML=FHCp+XR7t3WUz1b2fxcgLQ@mail.gmail.com>
+Message-ID: <20150324175157.GA10147@syonex.com>
+
+On Tue,?2015/03/24?12:25:49PM?-0400, Tim Tisdall <tisdall at gmail.com> wrote:
+| Hmm..  I don't remember seeing a limitation about commercial use.  Do
+| you have a link to that?
+
+I may have been mis-remembering (or it might have changed) or perhaps
+I bumped up against
+
+http://www.startssl.com/?app=25#2
+
+which (I think) says that you can't have an organization or company name
+in a free certificate.
+
+Actually, looking back in my mail archives, they declined to issue me
+a certificate for a web hosting server in January 2013, and I think the
+reason at that time was that it was business related.
+
+John
+
+From tisdall at gmail.com  Tue Mar 24 18:27:01 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Tue, 24 Mar 2015 14:27:01 -0400
+Subject: [GTALUG] SSL Certs
+In-Reply-To: <20150324175157.GA10147@syonex.com>
+References: <CAFNqd5X0M2mX5-OtwP-KjNdE2LF0d07kdQubAK9KOp2xCNGNXg@mail.gmail.com>
+ <5510CA75.70207@rogers.com>
+ <CAGxYWpaYSR81z1JPko==quwPhi4XHhY4cV0uE8OMtApR7TvDtg@mail.gmail.com>
+ <20150324160500.GA8560@syonex.com>
+ <CAGxYWpbXyUROT8ZShc-VkphoHML=FHCp+XR7t3WUz1b2fxcgLQ@mail.gmail.com>
+ <20150324175157.GA10147@syonex.com>
+Message-ID: <CAGxYWpYmUX1eSo4T7L04=8OQBctgkCrceEwBtwWdp5k_AyMYkg@mail.gmail.com>
+
+On Tue, Mar 24, 2015 at 1:51 PM, John Sellens <jsellens at syonex.com> wrote:
+> On Tue, 2015/03/24 12:25:49PM -0400, Tim Tisdall <tisdall at gmail.com> wrote:
+> | Hmm..  I don't remember seeing a limitation about commercial use.  Do
+> | you have a link to that?
+>
+> I may have been mis-remembering (or it might have changed) or perhaps
+> I bumped up against
+>
+> http://www.startssl.com/?app=25#2
+>
+> which (I think) says that you can't have an organization or company name
+> in a free certificate.
+>
+> Actually, looking back in my mail archives, they declined to issue me
+> a certificate for a web hosting server in January 2013, and I think the
+> reason at that time was that it was business related.
+
+I think that's referring to the fact that they can only authenticate
+individuals for the free one. So the free certificate is going to
+contain the person's name that they authenticated.  When I used it, I
+don't remember trying to add a company name so you're probably right
+that they don't allow you to add one unless you go for the next level
+of cert (the one you buy).
+
+Any way, none of this precludes someone at GTALUG creating a
+certificate for the mailserver's domain name and securing the
+necessary pages.  You just have to use their automated system to prove
+you are who you are and that you own (or have control over) the domain
+name in question.  The benefit is that pretty much every browser
+already has startssl's CA included.
+
+From ansarm at gmail.com  Tue Mar 24 18:49:28 2015
+From: ansarm at gmail.com (Ansar Mohammed)
+Date: Tue, 24 Mar 2015 14:49:28 -0400
+Subject: [GTALUG] GECOS
+Message-ID: <CAOO1MfsQPrAhSkGNpuZtGxYns+YuF4ftyDzqDOeg5sjNRExunw@mail.gmail.com>
+
+Hello All,
+what's the correct pronunciation of "gecos"?
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150324/0c5a16a9/attachment.html>
+
+From cbbrowne at gmail.com  Tue Mar 24 19:00:08 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 24 Mar 2015 15:00:08 -0400
+Subject: [GTALUG] GECOS
+In-Reply-To: <CAOO1MfsQPrAhSkGNpuZtGxYns+YuF4ftyDzqDOeg5sjNRExunw@mail.gmail.com>
+References: <CAOO1MfsQPrAhSkGNpuZtGxYns+YuF4ftyDzqDOeg5sjNRExunw@mail.gmail.com>
+Message-ID: <CAFNqd5Va6SwQoit61JULtX5p5TnWTANsK++bk+SKMGsRMh6qrw@mail.gmail.com>
+
+On 24 March 2015 at 14:49, Ansar Mohammed <ansarm at gmail.com> wrote:
+> Hello All,
+> what's the correct pronunciation of "gecos"?
+
+Per...
+http://en.wikipedia.org/wiki/General_Comprehensive_Operating_System
+
+?d?i?ko?s
+
+Thus...
+
+"G" as in "giant" or "jam"
+"i" or "ee" as in "fleece", "feel", "sea"
+"k" as in "sky" or at both start and end of "crack"
+"o" as in goat, coat, go, bone
+"s" as in sigh, mass
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From me at mylesbraithwaite.com  Tue Mar 24 19:16:38 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 24 Mar 2015 15:16:38 -0400
+Subject: [GTALUG] [VOTE] Where should we have dinner before the April 2015
+ GTALUG meeting? (was Dinner Ideas for April's Meeting)
+Message-ID: <CA+hskZOGQ0fNLtk+CEU8r+M6nOzzb_kjOcKhot4drv6ct4VvWA@mail.gmail.com>
+
+<http://strawpoll.me/3951772>
+
+From lsorense at csclub.uwaterloo.ca  Tue Mar 24 20:24:31 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 24 Mar 2015 16:24:31 -0400
+Subject: [GTALUG] NTP's Fate Hinges On 'Father Time' - InformationWeek
+In-Reply-To: <550598DA.203@gmail.com>
+References: <55049938.8010402@gmail.com>
+ <CAHcykVrhXpDuh5oU1MxviY-NO2oTEMiECJXHcNPih4sReC-RTw@mail.gmail.com>
+ <550598DA.203@gmail.com>
+Message-ID: <20150324202431.GA29559@csclub.uwaterloo.ca>
+
+On Sun, Mar 15, 2015 at 10:36:10AM -0400, Stewart C. Russell wrote:
+> Absolutely. At the solar plant I audited the other week, I was amused to
+> see that the great big huge expensive grid protection and control box
+> was controlled via GPS sync. It's the cheapest way to maintain grid
+> frequency at the far end of the grid. And I mean /far/; 5 hours west of
+> Thunder Bay ?
+> 
+> > My finance client's use ptp not ntp.
+> 
+> Is PTP particularly hard to use? It looks like an ISO standard, so will
+> likely be fiddly but complete.
+
+IEEE 1588 I believe.  No idea if there is an ISO standard for it.
+
+-- 
+Len Sorensen
+
+From davec-b at rogers.com  Tue Mar 24 23:36:54 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Tue, 24 Mar 2015 19:36:54 -0400
+Subject: [GTALUG] GECOS
+In-Reply-To: <CAOO1MfsQPrAhSkGNpuZtGxYns+YuF4ftyDzqDOeg5sjNRExunw@mail.gmail.com>
+References: <CAOO1MfsQPrAhSkGNpuZtGxYns+YuF4ftyDzqDOeg5sjNRExunw@mail.gmail.com>
+Message-ID: <5511F516.70601@rogers.com>
+
+On 03/24/2015 02:49 PM, Ansar Mohammed wrote:
+> Hello All,
+> what's the correct pronunciation of "gecos"?
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+Gee-cos
+g as in gee whiz
+cos as in cosine
+
+It stood for General Electric Comprehensive Operating System, renamed by 
+my then employer, Honeywell, to GenEral Comprehensive Operating System 
+when they bought it.
+
+--dave
+
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150324/ee5fb681/attachment.html>
+
