@@ -10228,3 +10228,210 @@ davecb at spamcop.net           |                      -- Mark Twain
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150324/ee5fb681/attachment.html>
 
+From rreiter91 at gmail.com  Wed Mar 25 12:09:42 2015
+From: rreiter91 at gmail.com (R. Russell Reiter)
+Date: Wed, 25 Mar 2015 08:09:42 -0400
+Subject: [GTALUG] NTP's Fate Hinges On 'Father Time' - InformationWeek
+In-Reply-To: <20150324202431.GA29559@csclub.uwaterloo.ca>
+References: <55049938.8010402@gmail.com>
+ <CAHcykVrhXpDuh5oU1MxviY-NO2oTEMiECJXHcNPih4sReC-RTw@mail.gmail.com>
+ <550598DA.203@gmail.com> <20150324202431.GA29559@csclub.uwaterloo.ca>
+Message-ID: <55F75608-EC80-4396-BC78-CDCC82A6EED3@gmail.com>
+
+On March 24, 2015 4:24:31 PM EDT, Lennart Sorensen <lsorense at csclub.uwaterloo.ca> wrote:
+>On Sun, Mar 15, 2015 at 10:36:10AM -0400, Stewart C. Russell wrote:
+>> Absolutely. At the solar plant I audited the other week, I was amused
+>to
+>> see that the great big huge expensive grid protection and control box
+>> was controlled via GPS sync. It's the cheapest way to maintain grid
+>> frequency at the far end of the grid. And I mean /far/; 5 hours west
+>of
+>> Thunder Bay
+
+Sort of timing related; here's a neat desktop demonstration video of time honored lightbulb syncing of a polyphase AC grid.
+
+https://m.youtube.com/watch?v=RGPCIypib5Q
+
+>> 
+>> > My finance client's use ptp not ntp.
+>> 
+>> Is PTP particularly hard to use? It looks like an ISO standard, so
+>will
+>> likely be fiddly but complete.
+>
+>IEEE 1588 I believe.  No idea if there is an ISO standard for it.
+>
+>-- 
+>Len Sorensen
+>---
+>Talk Mailing List
+>talk at gtalug.org
+>http://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+Sent via K-9 Mail. 
+
+From email+libre at blaise.ca  Wed Mar 25 12:18:23 2015
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Wed, 25 Mar 2015 08:18:23 -0400
+Subject: [GTALUG] SSL Certs
+In-Reply-To: <CAGxYWpYmUX1eSo4T7L04=8OQBctgkCrceEwBtwWdp5k_AyMYkg@mail.gmail.com>
+References: <CAFNqd5X0M2mX5-OtwP-KjNdE2LF0d07kdQubAK9KOp2xCNGNXg@mail.gmail.com>
+ <5510CA75.70207@rogers.com>
+ <CAGxYWpaYSR81z1JPko==quwPhi4XHhY4cV0uE8OMtApR7TvDtg@mail.gmail.com>
+ <20150324160500.GA8560@syonex.com>
+ <CAGxYWpbXyUROT8ZShc-VkphoHML=FHCp+XR7t3WUz1b2fxcgLQ@mail.gmail.com>
+ <20150324175157.GA10147@syonex.com>
+ <CAGxYWpYmUX1eSo4T7L04=8OQBctgkCrceEwBtwWdp5k_AyMYkg@mail.gmail.com>
+Message-ID: <5512A78F.7050206@blaise.ca>
+
+On 24/03/15 02:27 PM, Tim Tisdall wrote:
+> On Tue, Mar 24, 2015 at 1:51 PM, John Sellens <jsellens at syonex.com> wrote:
+>> On Tue, 2015/03/24 12:25:49PM -0400, Tim Tisdall <tisdall at gmail.com> wrote:
+>> | Hmm..  I don't remember seeing a limitation about commercial use.  Do
+>> | you have a link to that?
+>>
+>> I may have been mis-remembering (or it might have changed) or perhaps
+>> I bumped up against
+>>
+>> http://www.startssl.com/?app=25#2
+>>
+>> which (I think) says that you can't have an organization or company name
+>> in a free certificate.
+>>
+>> Actually, looking back in my mail archives, they declined to issue me
+>> a certificate for a web hosting server in January 2013, and I think the
+>> reason at that time was that it was business related.
+> 
+> I think that's referring to the fact that they can only authenticate
+> individuals for the free one. So the free certificate is going to
+> contain the person's name that they authenticated.  When I used it, I
+> don't remember trying to add a company name so you're probably right
+> that they don't allow you to add one unless you go for the next level
+> of cert (the one you buy).
+> 
+> Any way, none of this precludes someone at GTALUG creating a
+> certificate for the mailserver's domain name and securing the
+> necessary pages.  You just have to use their automated system to prove
+> you are who you are and that you own (or have control over) the domain
+> name in question.  The benefit is that pretty much every browser
+> already has startssl's CA included.
+> 
+
+Yeah, I'm pretty sure that just means organization validation is not available
+at the free tier. (I'm validated as an individual and an organization.)
+
+They're pretty strict about WHOIS information matching the validation when
+issuing certificates now, so they might have declined your certificate not
+because it was on the free tier but possibly if you're WHOIS information was for
+your business but the free certificate only gets linked to an individual.
+
+
+From email+libre at blaise.ca  Wed Mar 25 12:22:33 2015
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Wed, 25 Mar 2015 08:22:33 -0400
+Subject: [GTALUG] SSL Certs
+In-Reply-To: <CAFNqd5X0M2mX5-OtwP-KjNdE2LF0d07kdQubAK9KOp2xCNGNXg@mail.gmail.com>
+References: <CAFNqd5X0M2mX5-OtwP-KjNdE2LF0d07kdQubAK9KOp2xCNGNXg@mail.gmail.com>
+Message-ID: <5512A889.9070104@blaise.ca>
+
+On 23/03/15 09:21 PM, Christopher Browne wrote:
+> Someone (I don't know whom) wasn't thrilled to have their Mailman
+> password sent to our web site via non-SSL, hence non-encrypted
+> connection.
+
+That... specifically is a bit of a silly concern. Standard GNU Mailman sign up
+instructions read:
+
+"""
+You may enter a privacy password below. This provides only mild security, but
+should prevent others from messing with your subscription. **Do not use a
+valuable password** as it will occasionally be emailed back to you in cleartext.
+"""
+
+(I believe GNU Mailman also *stores* passwords in plain text.)
+
+There's no reasonable expectation of security with a GNU Mailman password to
+begin with.
+
+
+> Which points to it being desirable to have an SSL cert. [...]
+> 
+
+Still, SSL seems like a good idea regardless, even if it wouldn't solve any
+issue with Mailman.
+
+
+From hugh at mimosa.com  Wed Mar 25 13:20:38 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 25 Mar 2015 09:20:38 -0400 (EDT)
+Subject: [GTALUG] Dinner Ideas for April's Meeting
+In-Reply-To: <CAFNqd5Vhjv=sruzz8RooPkzw4WW5JE5jPv9NuV4X2YFVHd3adA@mail.gmail.com>
+References: <CA+hskZMKfg9yA9Lqfw5213Dv130cBwN7SGJ1TdW3h5Cy+FxG9g@mail.gmail.com>
+ <1427210740.4622.3.camel@larva.gordhome.local>
+ <CA+hskZM46Teo2Uo3y+a0A=uwc=wx66VC+52Ec13Qa=gQv3cUUQ@mail.gmail.com>
+ <CAFNqd5Vhjv=sruzz8RooPkzw4WW5JE5jPv9NuV4X2YFVHd3adA@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1503250916080.23875@redclaw.mimosa.com>
+
+| From: Christopher Browne <cbbrowne at gmail.com>
+
+| Mehran is the one on Church that we have been to a few times, I think?  I'd
+| certainly be fine with either it ir LaFB, but I'd kind of like to try
+| out Kaiju; it
+| seems to have some favorable opinions on Yelp and blogto.com.
+
+In an attempt to nail this down, I'm going to aim for Kaiju.
+
+I tend to travel with Chris, so we will likely end up the same place,
+and I expect it will be Kaiju.
+
+<http://www.kaijutoronto.com/>
+<http://www.yelp.ca/biz/kaiju-toronto>
+
+From slackrat at free.fr  Wed Mar 25 22:00:15 2015
+From: slackrat at free.fr (SlackRat)
+Date: Wed, 25 Mar 2015 22:00:15 +0000
+Subject: [GTALUG] [OT] Problem with Toroonto Free Net?
+Message-ID: <55132FEF.2010600@free.fr>
+
+I can't  even ping from here
+
+or have I missed something along the way?
+
+bash-4.1# ping torfree.net
+ping: unknown host torfree.net
+bash-4.1#
+bash-4.1# ping freenet.toronto.on.ca
+ping: unknown host freenet.toronto.on.ca
+bash-4.1#
+
+-- 
+Slackrat
+
+From email+libre at blaise.ca  Wed Mar 25 22:13:01 2015
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Wed, 25 Mar 2015 18:13:01 -0400
+Subject: [GTALUG] [OT] Problem with Toroonto Free Net?
+In-Reply-To: <55132FEF.2010600@free.fr>
+References: <55132FEF.2010600@free.fr>
+Message-ID: <551332ED.3060803@blaise.ca>
+
+On 25/03/15 06:00 PM, SlackRat wrote:
+> I can't  even ping from here
+> 
+> or have I missed something along the way?
+> 
+> bash-4.1# ping torfree.net
+> ping: unknown host torfree.net
+> bash-4.1#
+> bash-4.1# ping freenet.toronto.on.ca
+> ping: unknown host freenet.toronto.on.ca
+> bash-4.1#
+> 
+
+http://isup.me/torfree.net
+
+"It's not just you! http://torfree.net looks down from here."
+
+
