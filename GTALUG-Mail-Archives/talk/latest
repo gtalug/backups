@@ -10435,3 +10435,130 @@ http://isup.me/torfree.net
 "It's not just you! http://torfree.net looks down from here."
 
 
+From davec-b at rogers.com  Thu Mar 26 22:55:53 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Thu, 26 Mar 2015 18:55:53 -0400
+Subject: [GTALUG] [OT] Problem with Toroonto Free Net?
+In-Reply-To: <551332ED.3060803@blaise.ca>
+References: <55132FEF.2010600@free.fr> <551332ED.3060803@blaise.ca>
+Message-ID: <55148E79.1000205@rogers.com>
+
+Looks like a dns problem
+$ nslookup torfree.net
+nslooku;; connection timed out; trying next origin
+p ;; connection timed out; no servers could be reached
+
+$ nslookup freenet.toronto.on.ca
+Server:        64.71.255.204
+Address:    64.71.255.204#53
+
+** server can't find freenet.toronto.on.ca: NXDOMAIN
+
+
+On 03/25/2015 06:13 PM, Blaise Alleyne wrote:
+> On 25/03/15 06:00 PM, SlackRat wrote:ping torfree.net
+>
+>> ping torfree.net
+>> I can't  even ping from here
+>>
+>> or have I missed something along the way?
+>>
+>> bash-4.1# ping torfree.net
+>> ping: unknown host torfree.net
+>> bash-4.1#
+>> bash-4.1# ping freenet.toronto.on.ca
+>> ping: unknown host freenet.toronto.on.ca
+>> bash-4.1#
+>>
+> http://isup.me/torfree.net
+>
+> "It's not just you! http://torfree.net looks down from here."
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From adb at adb.ca  Thu Mar 26 23:55:05 2015
+From: adb at adb.ca (Anthony de Boer)
+Date: Thu, 26 Mar 2015 19:55:05 -0400
+Subject: [GTALUG] [OT] Problem with Toroonto Free Net?
+In-Reply-To: <55148E79.1000205@rogers.com>
+References: <55132FEF.2010600@free.fr> <551332ED.3060803@blaise.ca>
+ <55148E79.1000205@rogers.com>
+Message-ID: <20150326235505.GJ16224@adb.ca>
+
+David Collier-Brown wrote:
+> Looks like a dns problem
+> $ nslookup torfree.net
+> nslooku;; connection timed out; trying next origin
+> p ;; connection timed out; no servers could be reached
+
+Relevant records per gtld-servers:
+
+;; AUTHORITY SECTION:
+torfree.net.            172800  IN      NS      ns.torfree.net.
+torfree.net.            172800  IN      NS      ns2.torfree.net.
+
+;; ADDITIONAL SECTION:
+ns.torfree.net.         172800  IN      A       204.225.122.149
+ns2.torfree.net.        172800  IN      A       204.225.122.150
+
+which shows they put both eggs in the same basket network-wise;
+traceroute from two locations both go into the weeds somewhere in
+Convoke's network, their apparent upstream.
+
+Notably the crosstoown traceroute ends in:
+
+ 8  convoke.ip4.torontointernetxchange.net (206.108.34.51)  3091.818 ms
+ !H  3098.879 ms !H  3079.178 ms !H
+
+which says they _were_ on the other side of that router at TorIX and it's
+probably unsuccessfully ARPing the nexthop.
+
+> $ nslookup freenet.toronto.on.ca
+> Server:        64.71.255.204
+> Address:    64.71.255.204#53
+> 
+> ** server can't find freenet.toronto.on.ca: NXDOMAIN
+
+CIRA's whois server denies knowledge of that domain, though back in
+the dark ages that was the name format their predecessors foisted on
+people.
+
+-- 
+Anthony de Boer
+
+From phiscock at ee.ryerson.ca  Fri Mar 27 01:02:35 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Thu, 26 Mar 2015 21:02:35 -0400
+Subject: [GTALUG] USB Fan
+Message-ID: <8b8246c5cb8a141a9058b11026cf8d45.squirrel@webmail.ee.ryerson.ca>
+
+The local Dollarama is selling a nice little USB powered fan for $3. It
+comes with a USB - to - Fan adaptor cable and provides a pleasant breeze.
+My wife is using a couple of them (plugged into USB power adaptors) to
+ventilate the seedlings that are sprouting in our kitchen. I got one in
+advance of the hot summer weather. I'm thinking it will be very convenient
+to plug into a front-mounted USB connector on my computer.
+
+FWIW,
+
+Peter
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
