@@ -10562,3 +10562,405 @@ USB Oscilloscope and Waveform Generator
 647-839-0325
 
 
+From ansarm at gmail.com  Fri Mar 27 17:21:21 2015
+From: ansarm at gmail.com (Ansar Mohammed)
+Date: Fri, 27 Mar 2015 13:21:21 -0400
+Subject: [GTALUG] Scripting with Interactive Utilities
+Message-ID: <CAOO1MfsVPci55igKR6hSVDKBKfjx7zWYi2zniRJbNaJmfp5gWA@mail.gmail.com>
+
+Hello All,
+I need to automate the joining of Linux Workstations into Active Directory.
+I am using the MIT Kerberos implementation. The version of ktutil that
+ships with the MIT package requires user input (an interactive utility)
+
+I would like to use a bash script to call ktutil, any suggestions on how to
+do this?
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150327/063ec8fa/attachment.html>
+
+From phiscock at ee.ryerson.ca  Fri Mar 27 19:05:37 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Fri, 27 Mar 2015 15:05:37 -0400
+Subject: [GTALUG] Scripting with Interactive Utilities
+In-Reply-To: <CAOO1MfsVPci55igKR6hSVDKBKfjx7zWYi2zniRJbNaJmfp5gWA@mail.gmail.com>
+References: <CAOO1MfsVPci55igKR6hSVDKBKfjx7zWYi2zniRJbNaJmfp5gWA@mail.gmail.com>
+Message-ID: <a3215ff78a8f2fd5674a954a5e5b172f.squirrel@webmail.ee.ryerson.ca>
+
+Perhaps Tcl Expect would be useful?
+http://en.wikipedia.org/wiki/Expect
+
+Peter
+
+> Hello All,
+> I need to automate the joining of Linux Workstations into Active
+> Directory.
+> I am using the MIT Kerberos implementation. The version of ktutil that
+> ships with the MIT package requires user input (an interactive utility)
+>
+> I would like to use a bash script to call ktutil, any suggestions on how
+> to
+> do this?
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From opengeometry at yahoo.ca  Fri Mar 27 19:12:52 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Fri, 27 Mar 2015 15:12:52 -0400
+Subject: [GTALUG] Scripting with Interactive Utilities
+In-Reply-To: <a3215ff78a8f2fd5674a954a5e5b172f.squirrel@webmail.ee.ryerson.ca>
+References: <CAOO1MfsVPci55igKR6hSVDKBKfjx7zWYi2zniRJbNaJmfp5gWA@mail.gmail.com>
+ <a3215ff78a8f2fd5674a954a5e5b172f.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <20150327191252.GA15773@node1.localdomain>
+
+Also, Bash or Python, or anything that can read/write stdin/stdout.
+Difference is how easy you can write out the script.
+-- 
+William
+
+On Fri, Mar 27, 2015 at 03:05:37PM -0400, phiscock at ee.ryerson.ca wrote:
+> Perhaps Tcl Expect would be useful?
+> http://en.wikipedia.org/wiki/Expect
+> 
+> Peter
+> 
+> > Hello All,
+> > I need to automate the joining of Linux Workstations into Active
+> > Directory.
+> > I am using the MIT Kerberos implementation. The version of ktutil that
+> > ships with the MIT package requires user input (an interactive utility)
+> >
+> > I would like to use a bash script to call ktutil, any suggestions on how
+> > to
+> > do this?
+> > ---
+> > Talk Mailing List
+> > talk at gtalug.org
+> > http://gtalug.org/mailman/listinfo/talk
+> >
+> 
+> 
+> -- 
+> Peter Hiscocks
+> Syscomp Electronic Design Limited, Toronto
+> http://www.syscompdesign.com
+> USB Oscilloscope and Waveform Generator
+> 647-839-0325
+> 
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From stimur at gmail.com  Fri Mar 27 19:37:03 2015
+From: stimur at gmail.com (Tim Sattarov)
+Date: Fri, 27 Mar 2015 15:37:03 -0400
+Subject: [GTALUG] Scripting with Interactive Utilities
+In-Reply-To: <CAOO1MfsVPci55igKR6hSVDKBKfjx7zWYi2zniRJbNaJmfp5gWA@mail.gmail.com>
+References: <CAOO1MfsVPci55igKR6hSVDKBKfjx7zWYi2zniRJbNaJmfp5gWA@mail.gmail.com>
+Message-ID: <5515B15F.6050000@gmail.com>
+
+You can just spit it to stdin of ktutil
+
+echo -e "add_entry -password -p alice at BLEEP.COM -k 1 -e
+aes128-cts-hmac-sha1-96\ntest\nwkt test_srv"  | ktutil
+
+or if you don't want to keep passwords in shell history, put commands to
+the file and then
+
+cat command_file | ktutil
+
+where command file is
+---
+add_entry -password -p alice at BLEEP.COM -k 1 -e aes128-cts-hmac-sha1-96
+test
+wkt test_srv
+---
+
+Tim
+
+On 2015-03-27 13:21, Ansar Mohammed wrote:
+> Hello All,
+> I need to automate the joining of Linux Workstations into Active
+> Directory. I am using the MIT Kerberos implementation. The version of
+> ktutil that ships with the MIT package requires user input (an
+> interactive utility)
+>
+> I would like to use a bash script to call ktutil, any suggestions on
+> how to do this?
+>
+>
+>
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150327/3002cd19/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: smime.p7s
+Type: application/pkcs7-signature
+Size: 3677 bytes
+Desc: S/MIME Cryptographic Signature
+URL: <http://gtalug.org/pipermail/talk/attachments/20150327/3002cd19/attachment.bin>
+
+From lsorense at csclub.uwaterloo.ca  Fri Mar 27 20:54:10 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 27 Mar 2015 16:54:10 -0400
+Subject: [GTALUG] Scripting with Interactive Utilities
+In-Reply-To: <5515B15F.6050000@gmail.com>
+References: <CAOO1MfsVPci55igKR6hSVDKBKfjx7zWYi2zniRJbNaJmfp5gWA@mail.gmail.com>
+ <5515B15F.6050000@gmail.com>
+Message-ID: <20150327205410.GB29559@csclub.uwaterloo.ca>
+
+On Fri, Mar 27, 2015 at 03:37:03PM -0400, Tim Sattarov wrote:
+> You can just spit it to stdin of ktutil
+> 
+> echo -e "add_entry -password -p alice at BLEEP.COM -k 1 -e
+> aes128-cts-hmac-sha1-96\ntest\nwkt test_srv"  | ktutil
+> 
+> or if you don't want to keep passwords in shell history, put commands to
+> the file and then
+
+It also has the problem that it is in the command line arguments and
+hence visible in the process table to any user on the system.
+
+> cat command_file | ktutil
+> 
+> where command file is
+> ---
+> add_entry -password -p alice at BLEEP.COM -k 1 -e aes128-cts-hmac-sha1-96
+> test
+> wkt test_srv
+> ---
+
+Of course that means it is written to disk, unless you use a file on a
+ramdisk, which is also considered bad by sufficiently paranoid people.
+
+A file on a ramdisk is an improvement at least.
+
+-- 
+Len Sorensen
+
+From opengeometry at yahoo.ca  Fri Mar 27 21:25:06 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Fri, 27 Mar 2015 17:25:06 -0400
+Subject: [GTALUG] Scripting with Interactive Utilities
+In-Reply-To: <20150327205410.GB29559@csclub.uwaterloo.ca>
+References: <CAOO1MfsVPci55igKR6hSVDKBKfjx7zWYi2zniRJbNaJmfp5gWA@mail.gmail.com>
+ <5515B15F.6050000@gmail.com>
+ <20150327205410.GB29559@csclub.uwaterloo.ca>
+Message-ID: <20150327212506.GA16954@node1.localdomain>
+
+On Fri, Mar 27, 2015 at 04:54:10PM -0400, Lennart Sorensen wrote:
+> On Fri, Mar 27, 2015 at 03:37:03PM -0400, Tim Sattarov wrote:
+> > You can just spit it to stdin of ktutil
+> > 
+> > echo -e "add_entry -password -p alice at BLEEP.COM -k 1 -e
+> > aes128-cts-hmac-sha1-96\ntest\nwkt test_srv"  | ktutil
+> > 
+> > or if you don't want to keep passwords in shell history, put commands to
+> > the file and then
+> 
+> It also has the problem that it is in the command line arguments and
+> hence visible in the process table to any user on the system.
+
+I guess, you can do something like <(cat file).
+
+From davec-b at rogers.com  Fri Mar 27 21:57:31 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Fri, 27 Mar 2015 17:57:31 -0400
+Subject: [GTALUG] [OT] Problem with Toroonto Free Net?
+In-Reply-To: <551332ED.3060803@blaise.ca>
+References: <55132FEF.2010600@free.fr> <551332ED.3060803@blaise.ca>
+Message-ID: <5515D24B.4000800@rogers.com>
+
+Colin write to say they had a multiple drive failure, and are repairing 
+as we speak --dave
+
+On 03/25/2015 06:13 PM, Blaise Alleyne wrote:
+> On 25/03/15 06:00 PM, SlackRat wrote:
+>> I can't  even ping from here
+>>
+>> or have I missed something along the way?
+>>
+>> bash-4.1# ping torfree.net
+>> ping: unknown host torfree.net
+>> bash-4.1#
+>> bash-4.1# ping freenet.toronto.on.ca
+>> ping: unknown host freenet.toronto.on.ca
+>> bash-4.1#
+>>
+> http://isup.me/torfree.net
+>
+> "It's not just you! http://torfree.net looks down from here."
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From stimur at gmail.com  Fri Mar 27 22:13:47 2015
+From: stimur at gmail.com (Tim Sattarov)
+Date: Fri, 27 Mar 2015 18:13:47 -0400
+Subject: [GTALUG] Scripting with Interactive Utilities
+In-Reply-To: <20150327205410.GB29559@csclub.uwaterloo.ca>
+References: <CAOO1MfsVPci55igKR6hSVDKBKfjx7zWYi2zniRJbNaJmfp5gWA@mail.gmail.com>
+ <5515B15F.6050000@gmail.com> <20150327205410.GB29559@csclub.uwaterloo.ca>
+Message-ID: <5515D61B.5050001@gmail.com>
+
+
+
+On 2015-03-27 16:54, Lennart Sorensen wrote:
+> On Fri, Mar 27, 2015 at 03:37:03PM -0400, Tim Sattarov wrote:
+>> You can just spit it to stdin of ktutil
+>>
+>> echo -e "add_entry -password -p alice at BLEEP.COM -k 1 -e
+>> aes128-cts-hmac-sha1-96\ntest\nwkt test_srv"  | ktutil
+>>
+>> or if you don't want to keep passwords in shell history, put commands to
+>> the file and then
+> It also has the problem that it is in the command line arguments and
+> hence visible in the process table to any user on the system.
+Exactly because of that I suggested variant below
+>> cat command_file | ktutil
+>>
+>> where command file is
+>> ---
+>> add_entry -password -p alice at BLEEP.COM -k 1 -e aes128-cts-hmac-sha1-96
+>> test
+>> wkt test_srv
+>> ---
+> Of course that means it is written to disk, unless you use a file on a
+> ramdisk, which is also considered bad by sufficiently paranoid people.
+>
+> A file on a ramdisk is an improvement at least.
+>
+
+Seriously ? we want to avoid entering manually sensitive data and yet
+for security we need to enter it manually ?
+
+If it is so, you can once provide GPG password for
+    - decryption of encrypted *sensitive data file*  kept on
+    - encrypted ramdrive on
+    - laptop in a safe bunker
+    - transferred over SSH tunnel authenticated with 521kbit ECDSA key
+(decrypted locally of course)
+
+
+and run your batch off that file.
+
+Happy Friday everyone :)
+
+Tim
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: smime.p7s
+Type: application/pkcs7-signature
+Size: 3677 bytes
+Desc: S/MIME Cryptographic Signature
+URL: <http://gtalug.org/pipermail/talk/attachments/20150327/2e5e2b27/attachment.bin>
+
+From william.muriithi at gmail.com  Sat Mar 28 01:23:39 2015
+From: william.muriithi at gmail.com (William Muriithi)
+Date: Fri, 27 Mar 2015 21:23:39 -0400
+Subject: [GTALUG] Scripting with Interactive Utilities
+In-Reply-To: <5515D61B.5050001@gmail.com>
+References: <CAOO1MfsVPci55igKR6hSVDKBKfjx7zWYi2zniRJbNaJmfp5gWA@mail.gmail.com>
+ <5515B15F.6050000@gmail.com>
+ <20150327205410.GB29559@csclub.uwaterloo.ca>
+ <5515D61B.5050001@gmail.com>
+Message-ID: <20150328012339.6348951.28923.20060@gmail.com>
+
+
+>> or if you don't want to keep passwords in shell history, put commands to
+>> the file and then
+> It also has the problem that it is in the command line arguments and
+> hence visible in the process table to any user on the system.
+Exactly because of that I suggested variant below
+>> cat command_file | ktutil
+>>
+>> where command file is
+>> ---
+>> add_entry -password -p alice at BLEEP.COM -k 1 -e aes128-cts-hmac-sha1-96
+>> test
+>> wkt test_srv
+>> ---
+> Of course that means it is written to disk, unless you use a file on a
+> ramdisk, which is also considered bad by sufficiently paranoid people.
+>
+> A file on a ramdisk is an improvement at least.
+>
+
+As we all seem to agree, this is petty insecure. It was acceptable when there was no alternative but currently, one shouldn't go this route.
+
+Take a look at FreeIPA. Seriously, it does this petty securely. Better too, it's petty easily to manage which mean it wouldn't be pulled out when you move on.
+
+Another thing, every host you enroll into AD count against your licensed cals. If you set up a trust relationship between ?FreeIPA ?and AD, you can join hundreds of Linux host without any licensing implications.?
+
+Lastly, FreeIPA will manage your sudo rules by default, offer host based access control, like which user can ssh in, selinux, ,easy management through puppet just to name a few.
+
+Seriously, give FreeIPA a chance and you will realize AD of Linux is here finally.
+
+Regards,
+
+William
+
+From stimur at gmail.com  Sat Mar 28 02:15:56 2015
+From: stimur at gmail.com (Tim Sattarov)
+Date: Fri, 27 Mar 2015 22:15:56 -0400
+Subject: [GTALUG] Scripting with Interactive Utilities
+In-Reply-To: <20150328012339.6348951.28923.20060@gmail.com>
+References: <CAOO1MfsVPci55igKR6hSVDKBKfjx7zWYi2zniRJbNaJmfp5gWA@mail.gmail.com>
+ <5515B15F.6050000@gmail.com> <20150327205410.GB29559@csclub.uwaterloo.ca>
+ <5515D61B.5050001@gmail.com> <20150328012339.6348951.28923.20060@gmail.com>
+Message-ID: <55160EDC.8090708@gmail.com>
+
+On 2015-03-27 21:23, William Muriithi wrote:
+> Seriously, give FreeIPA a chance and you will realize AD of Linux is
+> here finally. 
+I was just about to send this message with "Unfortunately FreeIPA is
+limited to RPM based distributions."
+but look: https://packages.debian.org/sid/freeipa-server
+
+I second this suggestion. FreeIPA is nice way to mirror AD functionality
+plus more Unix features.
+
+Tim
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: smime.p7s
+Type: application/pkcs7-signature
+Size: 3677 bytes
+Desc: S/MIME Cryptographic Signature
+URL: <http://gtalug.org/pipermail/talk/attachments/20150327/49bbfc2b/attachment.bin>
+
