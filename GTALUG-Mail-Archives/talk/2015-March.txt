@@ -10964,3 +10964,347 @@ Size: 3677 bytes
 Desc: S/MIME Cryptographic Signature
 URL: <http://gtalug.org/pipermail/talk/attachments/20150327/49bbfc2b/attachment.bin>
 
+From waltdnes at waltdnes.org  Sat Mar 28 15:24:54 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Sat, 28 Mar 2015 11:24:54 -0400
+Subject: [GTALUG] Youtube hints
+Message-ID: <20150328152454.GA6867@waltdnes.org>
+
+  Given that Flash is being minimally maintained for linux, it's nice
+that Youtube has gon over to HTML5, but there are still a few hiccups
+that I ran into.  I'll detail how I got around them, and also mention
+random access to videos.  For the purposes of this example, I'll use the
+"Ancient Aliens Debunked" video, because it's over 3 hours long, which
+allows for examples of time offset.  Warning... some URL-tweaking
+follows.
+
+
+Item 1)  Youtube is now "officially" viewable in html5 without Flash,
+but I do run into a few instances of...
+
+=======================
+            X
+This plugin is disabled
+   Manage plugins...
+=======================
+
+  Here's a video that "doesn't play on HTML5".
+
+https://www.youtube.com/watch?v=j9w-i5oZqaQ&hd=1
+
+  Let's break it up into sections.  For URLs, the first parameter is
+preceeded by "?", and additional parameters are preceeded by "&".
+
+https://www.youtube.com/watch?v=j9w-i5oZqaQ&hd=1 breaks up into
+
+https:// www.youtube.com          domain
+/watch                            "watch" parameter
+?v=j9w-i5oZqaQ                    video ID
+&hd=1                             HD mode selection
+
+  If you get rid of the "&hd1", the URL becomes...
+
+https://www.youtube.com/watch?v=j9w-i5oZqaQ
+
+...and it plays perfectly in HTML5, without Flash.  Note that this is
+"the basic Youtube video URL".
+
+
+Item 2)  OK, you've got a long video, and you want to jump a certain
+point in the video, without having to wait an hour plus to get to that
+point.  This is done by appending a "&t=" parameter.  It can contain
+"h", "m", and "s" subparameters.  E.g. 1 hour, 20 minutes, and 15
+seconds is signified by "&t=1h20m15s".  You can include any or all of
+h/m/s.  A few examples follow.
+
+"Pumapunku" (begins at 3 minutes 34 seconds into the video).
+https://www.youtube.com/watch?v=j9w-i5oZqaQ&t=3m34s
+
+
+"The Pyramids" (begins at 22 minutes 40 seconds into the video).
+https://www.youtube.com/watch?v=j9w-i5oZqaQ&t=22m40s
+
+
+"Easter Island" (begins at 1 hour 1 minute 35 seconds into the video).
+https://www.youtube.com/watch?v=j9w-i5oZqaQ&t=1h1m35s
+
+
+"Pacal's Rocket" (begins at 1 hour 5 minutes 43 seconds into the video).
+https://www.youtube.com/watch?v=j9w-i5oZqaQ&t=1h5m43s
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From james.knott at rogers.com  Sat Mar 28 12:45:15 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sat, 28 Mar 2015 08:45:15 -0400
+Subject: [GTALUG] Youtube hints
+In-Reply-To: <20150328152454.GA6867@waltdnes.org>
+References: <20150328152454.GA6867@waltdnes.org>
+Message-ID: <5516A25B.6080104@rogers.com>
+
+On 03/28/2015 11:24 AM, Walter Dnes wrote:
+> Given that Flash is being minimally maintained for linux, it's nice
+> that Youtube has gon over to HTML5, but there are still a few hiccups
+> that I ran into.
+
+There's a link you can go to, to set your browser to default to HTML5
+for Youtube.
+https://www.youtube.com/html5
+
+From tim at 3kids.net  Sat Mar 28 17:44:01 2015
+From: tim at 3kids.net (Tim Carroll)
+Date: Sat, 28 Mar 2015 13:44:01 -0400
+Subject: [GTALUG] Help with if else statement
+Message-ID: <5516E861.4070500@3kids.net>
+
+Sorry if this type of post does not belong here.
+I'm a newbie to the group!
+I would like to write a script like the following but using while loop
+instead of for.
+I'm hoping that a while loop with an if else in it would rerun an fsck
+on only the drives
+that returned "***** FILE SYSTEM WAS MODIFIED *****" not rerun it on all
+of them!
+The if else bit has me stumped though...
+somewhere I need a "if [ $? -eq 0 ]; then"
+Any help would be greatly appreciated.
+
+#!/bin/bash
+#
+umount -a
+#
+df -hT
+echo -e '\n\tCAUTION!!! are all the disks unmounted!\n'
+read -p '       hit [enter] to continue or ^C to exit'
+read -p '       are you Sure? hit [enter] to continue'
+# get a list of disks attached
+ls -lh /dev/disk/by-label/ | sort -k 9 > disks-by-label-new.txt
+# clean it up with awk
+awk '$8 ~ /svr2arch/ { print $10; }' < disks-by-label-new.txt | awk -F
+'/' '{ print "/dev/"$3; }' > fsck-list-new.txt
+# this gives me a list like this "cat fsck-list-new.txt"
+/dev/sdb1
+/dev/sdc1
+/dev/sdd1
+/dev/sde1
+/dev/sde2
+/dev/sde3
+/dev/sde4
+/dev/sdf1
+/dev/sdf2
+/dev/sdf3
+/dev/sdf4
+/dev/sdg10
+/dev/sdg11
+/dev/sdg12
+/dev/sdg5
+/dev/sdg6
+# now start running the fsck on all disks
+for i in $(cat fsck-list-new.txt); do e2fsck -fvy -C 0 $i; done
+or
+while $(cat fsck-list-new.txt); do e2fsck -fvy -C 0 ; done
+
+-- 
+
+_______________________________________________
+
+
+
+
+From chris at cfajohnson.com  Sat Mar 28 21:13:59 2015
+From: chris at cfajohnson.com (Chris F.A. Johnson)
+Date: Sat, 28 Mar 2015 17:13:59 -0400 (EDT)
+Subject: [GTALUG] Help with if else statement
+In-Reply-To: <5516E861.4070500@3kids.net>
+References: <5516E861.4070500@3kids.net>
+Message-ID: <alpine.DEB.2.10.1503281712120.3815@chris.tor>
+
+On Sat, 28 Mar 2015, Tim Carroll wrote:
+...
+> # now start running the fsck on all disks
+> for i in $(cat fsck-list-new.txt); do e2fsck -fvy -C 0 $i; done
+> or
+> while $(cat fsck-list-new.txt); do e2fsck -fvy -C 0 ; done
+
+while IFS= read -r line
+do
+   : whatever
+done < fsck-list-new.txt
+
+-- 
+Chris F.A. Johnson, <http://cfajohnson.com>
+
+From opengeometry at yahoo.ca  Sat Mar 28 22:19:29 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Sat, 28 Mar 2015 18:19:29 -0400
+Subject: [GTALUG] Help with if else statement
+In-Reply-To: <5516E861.4070500@3kids.net>
+References: <5516E861.4070500@3kids.net>
+Message-ID: <20150328221929.GA29355@node1.localdomain>
+
+On Sat, Mar 28, 2015 at 01:44:01PM -0400, Tim Carroll wrote:
+> Sorry if this type of post does not belong here.
+> I'm a newbie to the group!
+> I would like to write a script like the following but using while loop
+> instead of for.
+> I'm hoping that a while loop with an if else in it would rerun an fsck
+> on only the drives
+> that returned "***** FILE SYSTEM WAS MODIFIED *****" not rerun it on all
+> of them!
+
+It doesn't matter if you're using "for" or "while".  Do
+    for ...; do
+	if ...; then
+	    ...
+	else
+	    ...
+	fi
+    done
+or 
+    while ...; do
+	if ...; then
+	    ...
+	else
+	    ...
+	fi
+    done
+
+> The if else bit has me stumped though...
+> somewhere I need a "if [ $? -eq 0 ]; then"
+> Any help would be greatly appreciated.
+> 
+> #!/bin/bash
+> #
+> umount -a
+> #
+> df -hT
+> echo -e '\n\tCAUTION!!! are all the disks unmounted!\n'
+> read -p '       hit [enter] to continue or ^C to exit'
+> read -p '       are you Sure? hit [enter] to continue'
+> # get a list of disks attached
+> ls -lh /dev/disk/by-label/ | sort -k 9 > disks-by-label-new.txt
+> # clean it up with awk
+> awk '$8 ~ /svr2arch/ { print $10; }' < disks-by-label-new.txt | awk -F
+> '/' '{ print "/dev/"$3; }' > fsck-list-new.txt
+> # this gives me a list like this "cat fsck-list-new.txt"
+> /dev/sdb1
+> /dev/sdc1
+> /dev/sdd1
+> /dev/sde1
+> /dev/sde2
+> /dev/sde3
+> /dev/sde4
+> /dev/sdf1
+> /dev/sdf2
+> /dev/sdf3
+> /dev/sdf4
+> /dev/sdg10
+> /dev/sdg11
+> /dev/sdg12
+> /dev/sdg5
+> /dev/sdg6
+> # now start running the fsck on all disks
+> for i in $(cat fsck-list-new.txt); do e2fsck -fvy -C 0 $i; done
+> or
+> while $(cat fsck-list-new.txt); do e2fsck -fvy -C 0 ; done
+> 
+> -- 
+> 
+> _______________________________________________
+> 
+> 
+> 
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From lsorense at csclub.uwaterloo.ca  Sat Mar 28 23:37:48 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sat, 28 Mar 2015 19:37:48 -0400
+Subject: [GTALUG] Help with if else statement
+In-Reply-To: <5516E861.4070500@3kids.net>
+References: <5516E861.4070500@3kids.net>
+Message-ID: <20150328233748.GC29559@csclub.uwaterloo.ca>
+
+On Sat, Mar 28, 2015 at 01:44:01PM -0400, Tim Carroll wrote:
+> Sorry if this type of post does not belong here.
+> I'm a newbie to the group!
+> I would like to write a script like the following but using while loop
+> instead of for.
+> I'm hoping that a while loop with an if else in it would rerun an fsck
+> on only the drives
+> that returned "***** FILE SYSTEM WAS MODIFIED *****" not rerun it on all
+> of them!
+> The if else bit has me stumped though...
+> somewhere I need a "if [ $? -eq 0 ]; then"
+> Any help would be greatly appreciated.
+
+Would something like this work:
+
+for fs in `cat fsck-list-new.txt`; do
+	fsck -M $fs || fsck -M $fs
+done
+
+That way if the first fsck returns 0 (meaning no errors found), it is
+done, and otherwise it does another run.  The -M prevents even trying
+if it is currently mounted (seems much better than your warning message).
+If the first fsck does find errors and corrects then, then it returns
+non 0 and hence another fsck is run.
+
+Not sure what you are actually trying to do.  I think you are trying to
+make something more complicated than it has to be.
+
+-- 
+Len Sorensen
+
+From chris at cfajohnson.com  Sun Mar 29 00:32:09 2015
+From: chris at cfajohnson.com (Chris F.A. Johnson)
+Date: Sat, 28 Mar 2015 20:32:09 -0400 (EDT)
+Subject: [GTALUG] Help with if else statement
+In-Reply-To: <20150328233748.GC29559@csclub.uwaterloo.ca>
+References: <5516E861.4070500@3kids.net>
+ <20150328233748.GC29559@csclub.uwaterloo.ca>
+Message-ID: <alpine.DEB.2.10.1503282030090.3815@chris.tor>
+
+On Sat, 28 Mar 2015, Lennart Sorensen wrote:
+
+> On Sat, Mar 28, 2015 at 01:44:01PM -0400, Tim Carroll wrote:
+>> Sorry if this type of post does not belong here.
+>> I'm a newbie to the group!
+>> I would like to write a script like the following but using while loop
+>> instead of for.
+>> I'm hoping that a while loop with an if else in it would rerun an fsck
+>> on only the drives
+>> that returned "***** FILE SYSTEM WAS MODIFIED *****" not rerun it on all
+>> of them!
+>> The if else bit has me stumped though...
+>> somewhere I need a "if [ $? -eq 0 ]; then"
+>> Any help would be greatly appreciated.
+>
+> Would something like this work:
+>
+> for fs in `cat fsck-list-new.txt`; do
+
+   It will only work if there are no spaces in the file; otherwise $fs
+   will be assigned to each word in the file, not each line. This is
+   almost always the wrong way to read a file. Not to mention the UUOC.
+
+> 	fsck -M $fs || fsck -M $fs
+> done
+>
+> That way if the first fsck returns 0 (meaning no errors found), it is
+> done, and otherwise it does another run.  The -M prevents even trying
+> if it is currently mounted (seems much better than your warning message).
+> If the first fsck does find errors and corrects then, then it returns
+> non 0 and hence another fsck is run.
+>
+> Not sure what you are actually trying to do.  I think you are trying to
+> make something more complicated than it has to be.
+>
+>
+
+-- 
+Chris F.A. Johnson, <http://cfajohnson.com>
+
