@@ -11308,3 +11308,105 @@ On Sat, 28 Mar 2015, Lennart Sorensen wrote:
 -- 
 Chris F.A. Johnson, <http://cfajohnson.com>
 
+From bjonkman at sobac.com  Sun Mar 29 17:54:17 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Sun, 29 Mar 2015 13:54:17 -0400
+Subject: [GTALUG] [VOTE] Where should we have dinner before the April
+ 2015 GTALUG meeting? (was Dinner Ideas for April's Meeting)
+In-Reply-To: <CA+hskZOGQ0fNLtk+CEU8r+M6nOzzb_kjOcKhot4drv6ct4VvWA@mail.gmail.com>
+References: <CA+hskZOGQ0fNLtk+CEU8r+M6nOzzb_kjOcKhot4drv6ct4VvWA@mail.gmail.com>
+Message-ID: <55183C49.50309@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+How do we indicate "No preference", but still have our vote counted?
+Check 'em all?
+
+- --Bob.
+
+
+On 24/03/15 03:16 PM, Myles Braithwaite wrote:
+> <http://strawpoll.me/3951772> --- Talk Mailing List 
+> talk at gtalug.org http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlUYPEcACgkQuRKJsNLM5eoYqgCbBgQU7I3kcG1Pttg5zolLG/4T
+TuMAnjVzcIlSsd9TevlyqbrYgPxIAuo2
+=bfp1
+-----END PGP SIGNATURE-----
+
+From me at mylesbraithwaite.com  Sun Mar 29 17:58:55 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Sun, 29 Mar 2015 13:58:55 -0400
+Subject: [GTALUG] [VOTE] Where should we have dinner before the April
+ 2015 GTALUG meeting? (was Dinner Ideas for April's Meeting)
+In-Reply-To: <55183C49.50309@sobac.com>
+References: <CA+hskZOGQ0fNLtk+CEU8r+M6nOzzb_kjOcKhot4drv6ct4VvWA@mail.gmail.com>
+ <55183C49.50309@sobac.com>
+Message-ID: <55183D5F.5010304@mylesbraithwaite.com>
+
+Bob Jonkman wrote:
+> How do we indicate "No preference", but still have our vote counted?
+> Check 'em all?
+
+Next vote I will add an option of "No preference" but for now just check 
+them all to indicate "No preference".
+
+From rreiter91 at gmail.com  Sun Mar 29 19:04:42 2015
+From: rreiter91 at gmail.com (R. Russell Reiter)
+Date: Sun, 29 Mar 2015 15:04:42 -0400
+Subject: [GTALUG] Intel - secure boot
+Message-ID: <D9302E33-A9B9-4CE5-8FE4-141D4572214E@gmail.com>
+
+Here's a link to a talk on secure boot exploits etc. There's a bit on exploits which come in over the video aperture in order to flip the bits and get write permission on the secured stack, which I found interesting. 
+
+https://m.youtube.com/watch?v=QDSlWa9xQuA
+
+
+
+-- 
+Sent via K-9 Mail. 
+
+From hugh at mimosa.com  Mon Mar 30 01:26:07 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 29 Mar 2015 21:26:07 -0400 (EDT)
+Subject: [GTALUG] Intel - secure boot
+In-Reply-To: <D9302E33-A9B9-4CE5-8FE4-141D4572214E@gmail.com>
+References: <D9302E33-A9B9-4CE5-8FE4-141D4572214E@gmail.com>
+Message-ID: <alpine.LRH.2.02.1503292117390.25197@redclaw.mimosa.com>
+
+| From: R. Russell Reiter <rreiter91 at gmail.com>
+
+| Here's a link to a talk on secure boot exploits etc. There's a bit on 
+| exploits which come in over the video aperture in order to flip the bits 
+| and get write permission on the secured stack, which I found 
+| interesting.
+
+An interesting video, thanks.
+
+But it is nothing actually to do with video.  It is all to do with the
+many different ways memory addresses get mapped in the x86
+architecture and how each of them can create ways of addressing
+physical resources that need to be protected.
+
+Many protection mechnisms work on limiting address ranges and various
+address mappings, if not carefuly restricted themselves, can evade the
+primary protections.
+
+In the cases he mentioned. System Management Mode code and data is
+protected by some address restriction method.  But if the apperture is
+set to point into the SMM area, certain ops can clobber SMM memory.
+The details are technical and I have not retained them in the few
+hours since I saw it.
+
+This just emphasizes that complexity is the enemy of security.  All
+the systems that they attacked seemed complicated to me.  Sometimes
+because of how the x86 has evolved as a set of interlocking hacks.
+
+I wonder if we can use the A20 gate to fool some of these checks.  Now
+there is cruft.
+
