@@ -11410,3 +11410,560 @@ because of how the x86 has evolved as a set of interlocking hacks.
 I wonder if we can use the A20 gate to fool some of these checks.  Now
 there is cruft.
 
+From rreiter91 at gmail.com  Mon Mar 30 12:56:44 2015
+From: rreiter91 at gmail.com (R. Russell Reiter)
+Date: Mon, 30 Mar 2015 08:56:44 -0400
+Subject: [GTALUG] Intel - secure boot
+In-Reply-To: <alpine.LRH.2.02.1503292117390.25197@redclaw.mimosa.com>
+References: <D9302E33-A9B9-4CE5-8FE4-141D4572214E@gmail.com>
+ <alpine.LRH.2.02.1503292117390.25197@redclaw.mimosa.com>
+Message-ID: <C07AEA78-7E3B-4B8D-9C49-2E78E0831CA6@gmail.com>
+
+On March 29, 2015 9:26:07 PM EDT, "D. Hugh Redelmeier" <hugh at mimosa.com> wrote:
+>| From: R. Russell Reiter <rreiter91 at gmail.com>
+>
+>| Here's a link to a talk on secure boot exploits etc. There's a bit on
+>
+>| exploits which come in over the video aperture in order to flip the
+>bits 
+>| and get write permission on the secured stack, which I found 
+>| interesting.
+>
+>An interesting video, thanks.
+>
+>But it is nothing actually to do with video.  It is all to do with the
+>many different ways memory addresses get mapped in the x86
+>architecture and how each of them can create ways of addressing
+>physical resources that need to be protected.
+>
+
+Quite right. My poor choice of words describing the content of the video, might lead a reader to assume it relates to a viral type of exploit rather than an embedded feature/bug. Sorry bout that.
+
+
+>Many protection mechnisms work on limiting address ranges and various
+>address mappings, if not carefuly restricted themselves, can evade the
+>primary protections.
+>
+>In the cases he mentioned. System Management Mode code and data is
+>protected by some address restriction method.  But if the apperture is
+>set to point into the SMM area, certain ops can clobber SMM memory.
+>The details are technical and I have not retained them in the few
+>hours since I saw it.
+
+I downloaded the presentation. Should make for good TTC fare, if you'll pardon the pun.
+>
+>This just emphasizes that complexity is the enemy of security.  All
+>the systems that they attacked seemed complicated to me. 
+
+I think this is the point of machine learning which, if achieved, may serve to provide the fluidity required to approximate a human concept; common sense. Which I think we all know does not truly exist and yet seems to be a universal requirement of enterprise computing.
+
+>because of how the x86 has evolved as a set of interlocking hacks.
+>
+>I wonder if we can use the A20 gate to fool some of these checks.  Now
+>there is cruft.
+>---
+>Talk Mailing List
+>talk at gtalug.org
+>http://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+Sent via K-9 Mail. 
+
+From hemantguptagtbit at gmail.com  Sun Mar 29 19:05:37 2015
+From: hemantguptagtbit at gmail.com (hemant gupta)
+Date: Mon, 30 Mar 2015 00:35:37 +0530
+Subject: [GTALUG] Intel - secure boot
+In-Reply-To: <D9302E33-A9B9-4CE5-8FE4-141D4572214E@gmail.com>
+References: <D9302E33-A9B9-4CE5-8FE4-141D4572214E@gmail.com>
+Message-ID: <CAE3g5N-k7M91izPSyXJN40MWqreE_vBjvy8BFuo8sEXXQUPg0w@mail.gmail.com>
+
+Hi is there anyone worked on Jboss..
+On 30 Mar 2015 00:34, "R. Russell Reiter" <rreiter91 at gmail.com> wrote:
+
+> Here's a link to a talk on secure boot exploits etc. There's a bit on
+> exploits which come in over the video aperture in order to flip the bits
+> and get write permission on the secured stack, which I found interesting.
+>
+> https://m.youtube.com/watch?v=QDSlWa9xQuA
+>
+>
+>
+> --
+> Sent via K-9 Mail.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150330/2d6f83d7/attachment.html>
+
+From gilesorr at gmail.com  Mon Mar 30 15:24:57 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Mon, 30 Mar 2015 11:24:57 -0400
+Subject: [GTALUG] SSH key on a USB stick
+Message-ID: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+
+I'd like to keep an SSH key on a USB stick rather than storing it
+locally on every machine I want to use the key on.  The theory is that
+this is "more secure" for laptops that could be stolen or lost, or
+used by others (ie. at work).  The problem is that when I run "ssh-add
+/media/stick/my_dsa" ssh refuses to use the key because the security
+permissions are too liberal.  As you can probably guess, this is
+because the USB key is formatted as vfat and I'm trying to use the key
+on a Unix system - the problem was actually encountered on a Mac
+laptop, I'm assuming the behaviour would be the same with a Linux
+machine - even if it's not, I need a solution for the Mac.  vfat
+doesn't support per-user permissions, and so the stick is mounted such
+that all files have 777 perms.
+
+I did some research which told me there's no way to tell ssh to ignore
+the perms error.  I've seen a variety of solutions for this, but none
+are simple.  I don't want to make a local copy of the key every time I
+have to add it.  I don't want to have a separate ext4 partition on the
+key - not only is that awkward, but the ownership of the key is going
+to be a problem given that the UID of my user on the Mac won't be the
+same as it is on Linux machines (and may not even be the same on all
+my Linux machines, although I've tried to make that so).  Has anyone
+found an elegant/simple solution for this?
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From wwitteman at gmail.com  Mon Mar 30 15:29:33 2015
+From: wwitteman at gmail.com (William Witteman)
+Date: Mon, 30 Mar 2015 11:29:33 -0400
+Subject: [GTALUG] SSH key on a USB stick
+In-Reply-To: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+References: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+Message-ID: <CAGMvh24AQYf1S0OUVXJ=9jL=M1jOhGaRj+kwc2ZyZg4cmz59fQ@mail.gmail.com>
+
+It has been a little while since I had my key on my USB thumbdrive,
+but if I recall correctly I had to copy it there manually, because SSH
+doesn't trust it.  Once it is in place though, I was able to use it
+without difficulty, even though the permissions were too loose.
+
+To be fair, I was using the key with PuTTY on Windows, not on a UNIX
+box, so that might be a problem.
+
+On 30 March 2015 at 11:24, Giles Orr <gilesorr at gmail.com> wrote:
+> I'd like to keep an SSH key on a USB stick rather than storing it
+> locally on every machine I want to use the key on.  The theory is that
+> this is "more secure" for laptops that could be stolen or lost, or
+> used by others (ie. at work).  The problem is that when I run "ssh-add
+> /media/stick/my_dsa" ssh refuses to use the key because the security
+> permissions are too liberal.  As you can probably guess, this is
+> because the USB key is formatted as vfat and I'm trying to use the key
+> on a Unix system - the problem was actually encountered on a Mac
+> laptop, I'm assuming the behaviour would be the same with a Linux
+> machine - even if it's not, I need a solution for the Mac.  vfat
+> doesn't support per-user permissions, and so the stick is mounted such
+> that all files have 777 perms.
+>
+> I did some research which told me there's no way to tell ssh to ignore
+> the perms error.  I've seen a variety of solutions for this, but none
+> are simple.  I don't want to make a local copy of the key every time I
+> have to add it.  I don't want to have a separate ext4 partition on the
+> key - not only is that awkward, but the ownership of the key is going
+> to be a problem given that the UID of my user on the Mac won't be the
+> same as it is on Linux machines (and may not even be the same on all
+> my Linux machines, although I've tried to make that so).  Has anyone
+> found an elegant/simple solution for this?
+>
+> --
+> Giles
+> http://www.gilesorr.com/
+> gilesorr at gmail.com
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From northdot9 at gmail.com  Mon Mar 30 15:31:07 2015
+From: northdot9 at gmail.com (David Thornton)
+Date: Mon, 30 Mar 2015 11:31:07 -0400
+Subject: [GTALUG] SSH key on a USB stick
+In-Reply-To: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+References: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+Message-ID: <CAHcykVojFsuJ=aRfGBRVCQp23hPjXL7_WXSJUxk2sV9q+AL80g@mail.gmail.com>
+
+have a "pre" script that :
+1. make a secure ram disk
+2. copies the file to the ram disk
+3. then points ssh at it .
+
+David
+
+On Mon, Mar 30, 2015 at 11:24 AM, Giles Orr <gilesorr at gmail.com> wrote:
+
+> I'd like to keep an SSH key on a USB stick rather than storing it
+> locally on every machine I want to use the key on.  The theory is that
+> this is "more secure" for laptops that could be stolen or lost, or
+> used by others (ie. at work).  The problem is that when I run "ssh-add
+> /media/stick/my_dsa" ssh refuses to use the key because the security
+> permissions are too liberal.  As you can probably guess, this is
+> because the USB key is formatted as vfat and I'm trying to use the key
+> on a Unix system - the problem was actually encountered on a Mac
+> laptop, I'm assuming the behaviour would be the same with a Linux
+> machine - even if it's not, I need a solution for the Mac.  vfat
+> doesn't support per-user permissions, and so the stick is mounted such
+> that all files have 777 perms.
+>
+> I did some research which told me there's no way to tell ssh to ignore
+> the perms error.  I've seen a variety of solutions for this, but none
+> are simple.  I don't want to make a local copy of the key every time I
+> have to add it.  I don't want to have a separate ext4 partition on the
+> key - not only is that awkward, but the ownership of the key is going
+> to be a problem given that the UID of my user on the Mac won't be the
+> same as it is on Linux machines (and may not even be the same on all
+> my Linux machines, although I've tried to make that so).  Has anyone
+> found an elegant/simple solution for this?
+>
+> --
+> Giles
+> http://www.gilesorr.com/
+> gilesorr at gmail.com
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150330/00939dee/attachment.html>
+
+From james.knott at rogers.com  Mon Mar 30 15:31:30 2015
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 30 Mar 2015 11:31:30 -0400
+Subject: [GTALUG] SSH key on a USB stick
+In-Reply-To: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+References: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+Message-ID: <55196C52.8020502@rogers.com>
+
+On 03/30/2015 11:24 AM, Giles Orr wrote:
+> As you can probably guess, this is
+> because the USB key is formatted as vfat
+
+Why not format the USB stick for something like ext2?
+
+Or perhaps symlink to the key?
+
+From me at mylesbraithwaite.com  Mon Mar 30 15:36:41 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 30 Mar 2015 11:36:41 -0400
+Subject: [GTALUG] SSH key on a USB stick
+In-Reply-To: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+References: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+Message-ID: <55196D89.3060600@mylesbraithwaite.com>
+
+Giles Orr wrote:
+> I'd like to keep an SSH key on a USB stick rather than storing it
+> locally on every machine I want to use the key on.  The theory is that
+> this is "more secure" for laptops that could be stolen or lost, or
+> used by others (ie. at work).  The problem is that when I run "ssh-add
+> /media/stick/my_dsa" ssh refuses to use the key because the security
+> permissions are too liberal.  As you can probably guess, this is
+> because the USB key is formatted as vfat and I'm trying to use the key
+> on a Unix system - the problem was actually encountered on a Mac
+> laptop, I'm assuming the behaviour would be the same with a Linux
+> machine - even if it's not, I need a solution for the Mac.  vfat
+> doesn't support per-user permissions, and so the stick is mounted such
+> that all files have 777 perms.
+>
+> I did some research which told me there's no way to tell ssh to ignore
+> the perms error.  I've seen a variety of solutions for this, but none
+> are simple.  I don't want to make a local copy of the key every time I
+> have to add it.  I don't want to have a separate ext4 partition on the
+> key - not only is that awkward, but the ownership of the key is going
+> to be a problem given that the UID of my user on the Mac won't be the
+> same as it is on Linux machines (and may not even be the same on all
+> my Linux machines, although I've tried to make that so).  Has anyone
+> found an elegant/simple solution for this?
+
+I like how TailsOS handles/stores ssh keys (and pretty much everything 
+else the user uses). Basically they create an encrypted partition on an 
+USB key and mount it to you $HOME/.ssh/ directory. The only issue with 
+this it will not be compatible with Windows and Mac.
+
+Personally I have gone the every computer has their own SSH key so if I 
+were to lose a computer I would just remove the ssh key from the 
+authorized_keys file. I have a little script that automates the process 
+of remove the keys for all my different computers and servers.
+
+From lsorense at csclub.uwaterloo.ca  Mon Mar 30 16:06:29 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 30 Mar 2015 12:06:29 -0400
+Subject: [GTALUG] SSH key on a USB stick
+In-Reply-To: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+References: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+Message-ID: <20150330160629.GD29559@csclub.uwaterloo.ca>
+
+On Mon, Mar 30, 2015 at 11:24:57AM -0400, Giles Orr wrote:
+> I'd like to keep an SSH key on a USB stick rather than storing it
+> locally on every machine I want to use the key on.  The theory is that
+> this is "more secure" for laptops that could be stolen or lost, or
+> used by others (ie. at work).  The problem is that when I run "ssh-add
+> /media/stick/my_dsa" ssh refuses to use the key because the security
+> permissions are too liberal.  As you can probably guess, this is
+> because the USB key is formatted as vfat and I'm trying to use the key
+> on a Unix system - the problem was actually encountered on a Mac
+> laptop, I'm assuming the behaviour would be the same with a Linux
+> machine - even if it's not, I need a solution for the Mac.  vfat
+> doesn't support per-user permissions, and so the stick is mounted such
+> that all files have 777 perms.
+> 
+> I did some research which told me there's no way to tell ssh to ignore
+> the perms error.  I've seen a variety of solutions for this, but none
+> are simple.  I don't want to make a local copy of the key every time I
+> have to add it.  I don't want to have a separate ext4 partition on the
+> key - not only is that awkward, but the ownership of the key is going
+> to be a problem given that the UID of my user on the Mac won't be the
+> same as it is on Linux machines (and may not even be the same on all
+> my Linux machines, although I've tried to make that so).  Has anyone
+> found an elegant/simple solution for this?
+
+Have a disk image file on the vfat filesystem you can loopback mount?
+
+For bonus points it could be encrypted too.
+
+-- 
+Len Sorensen
+
+From cbbrowne at gmail.com  Mon Mar 30 16:13:25 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Mon, 30 Mar 2015 12:13:25 -0400
+Subject: [GTALUG] SSH key on a USB stick
+In-Reply-To: <55196C52.8020502@rogers.com>
+References: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+ <55196C52.8020502@rogers.com>
+Message-ID: <CAFNqd5V+F1QCbDxnW8vAdLUsd5VpSpg=k-q2tb-9SdAZ22GrrA@mail.gmail.com>
+
+On 30 March 2015 at 11:31, James Knott <james.knott at rogers.com> wrote:
+> On 03/30/2015 11:24 AM, Giles Orr wrote:
+>> As you can probably guess, this is
+>> because the USB key is formatted as vfat
+>
+> Why not format the USB stick for something like ext2?
+>
+> Or perhaps symlink to the key?
+
+I wouldn't expect symlinks to help; ssh goes to *some* efforts to get
+to the underlying file.
+
+I would be rather more inclined to format with ext2/ext3, which, while
+not portable to
+Windows, is pretty fine on Linux.  (And probably more trustworthy.
+I'm never quite
+sure what gets committed to disk on VFAT...)
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From james.knott at rogers.com  Mon Mar 30 16:28:07 2015
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 30 Mar 2015 12:28:07 -0400
+Subject: [GTALUG] SSH key on a USB stick
+In-Reply-To: <CAFNqd5V+F1QCbDxnW8vAdLUsd5VpSpg=k-q2tb-9SdAZ22GrrA@mail.gmail.com>
+References: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+ <55196C52.8020502@rogers.com>
+ <CAFNqd5V+F1QCbDxnW8vAdLUsd5VpSpg=k-q2tb-9SdAZ22GrrA@mail.gmail.com>
+Message-ID: <55197997.8020708@rogers.com>
+
+On 03/30/2015 12:13 PM, Christopher Browne wrote:
+> I would be rather more inclined to format with ext2/ext3, which, while
+> not portable to
+> Windows,
+
+It is possible to add ext2/3 support to Windows.  I don't know that ext3
+would bring much benefit, as that data won't be written very often, so a
+journal FS isn't needed.
+
+From opengeometry at yahoo.ca  Mon Mar 30 16:31:57 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Mon, 30 Mar 2015 12:31:57 -0400
+Subject: [GTALUG] SSH key on a USB stick
+In-Reply-To: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+References: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+Message-ID: <20150330163157.GA7232@node1.localdomain>
+
+Try mount option 'dmask=077' and 'fmask=277'.
+-- 
+William
+
+On Mon, Mar 30, 2015 at 11:24:57AM -0400, Giles Orr wrote:
+> I'd like to keep an SSH key on a USB stick rather than storing it
+> locally on every machine I want to use the key on.  The theory is that
+> this is "more secure" for laptops that could be stolen or lost, or
+> used by others (ie. at work).  The problem is that when I run "ssh-add
+> /media/stick/my_dsa" ssh refuses to use the key because the security
+> permissions are too liberal.  As you can probably guess, this is
+> because the USB key is formatted as vfat and I'm trying to use the key
+> on a Unix system - the problem was actually encountered on a Mac
+> laptop, I'm assuming the behaviour would be the same with a Linux
+> machine - even if it's not, I need a solution for the Mac.  vfat
+> doesn't support per-user permissions, and so the stick is mounted such
+> that all files have 777 perms.
+> 
+> I did some research which told me there's no way to tell ssh to ignore
+> the perms error.  I've seen a variety of solutions for this, but none
+> are simple.  I don't want to make a local copy of the key every time I
+> have to add it.  I don't want to have a separate ext4 partition on the
+> key - not only is that awkward, but the ownership of the key is going
+> to be a problem given that the UID of my user on the Mac won't be the
+> same as it is on Linux machines (and may not even be the same on all
+> my Linux machines, although I've tried to make that so).  Has anyone
+> found an elegant/simple solution for this?
+> 
+> -- 
+> Giles
+> http://www.gilesorr.com/
+> gilesorr at gmail.com
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From stimur at gmail.com  Mon Mar 30 16:36:28 2015
+From: stimur at gmail.com (Tim Sattarov)
+Date: Mon, 30 Mar 2015 12:36:28 -0400
+Subject: [GTALUG] SSH key on a USB stick
+In-Reply-To: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+References: <CAEnxSC7mvaog2mNr9TY1MmUULOYYz+dv76Xe3iChEvNgLaQYbA@mail.gmail.com>
+Message-ID: <55197B8C.8030707@gmail.com>
+
+On 2015-03-30 11:24, Giles Orr wrote:
+> I'd like to keep an SSH key on a USB stick rather than storing it
+> locally on every machine I want to use the key on.  The theory is that
+> this is "more secure" for laptops that could be stolen or lost, or
+> used by others (ie. at work). 
+At first I would use strong enough passwords for my keys to avoid simple
+re-use by third parties.
+If you really need to use the same key on multiple platforms I would either
+a) use separate partitions for Windows, Linux, Mac. Pros: native support
+for each platform, Cons: need to sync keys every time you change them.
+b) use portable Putty installation for each of the platform, just keep
+three binaries on a stick. Pros: mobile and independent. Cons: limited
+to a single app.
+
+
+> The problem is that when I run "ssh-add
+> /media/stick/my_dsa"
+DSA ? I'd consider switching to RSA at least or ECDSA family.
+
+
+-- 
+Tim
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150330/e9bc5cfb/attachment.html>
+
+From hugh at mimosa.com  Mon Mar 30 17:24:54 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 30 Mar 2015 13:24:54 -0400 (EDT)
+Subject: [GTALUG] war story: memtest86+ vs. UEFI
+Message-ID: <alpine.LRH.2.02.1503301324450.25197@redclaw.mimosa.com>
+
+Summary: it seems that memtest86+ won't run under UEFI.  You need to
+switch to "legacy" boot and use an appropriate CD/DVD/USB stick to
+supply memtest86+.
+
+I often run memtest86+ when I get new RAM.  This increases my confidence 
+that the RAM isn't busted and is compatible with the machine it is 
+installed in.  Running it overnight seems long enough without interfering 
+with my use and enjoyment of the computer.
+
+I even run it on a brand-new machine as one of the confidence building 
+measures.
+
+Well, that's what I used to do.  I've not taken the time to do it 
+recently.  But I wanted to run it last night because I bought some 
+(mislabelled!) RAM at the NCIX warehouse sale on Saturday.
+
+Ubuntu lets you install memtest86+ as a package (it may be a default
+package, I don't know).  But you cannot run it under Ubuntu, you have
+to boot into it.  When you install the package, it adds a grub entry
+to let you boot into memtest86+ instead of Ubuntu.  Yet on my machine
+there was no such entry.  Reading the script that generates the entry,
+I found that memtest86+ must be booted in 16-bit mode, i.e.
+old-fashioned BIOS, and not UEFI.  So the script doesn't bother to
+generate the entry on a UEFI system (silently).
+
+To run memtest86+, you have to switch the system firmware to use
+"legacy" booting (old-fashioned BIOS/MBR).  On my machine, you cannot
+enable both MBR and UEFI booting: you need to choose one.
+
+Once I switched to legacy booting, I could no longer use the Ubuntu on
+my hard drive since it was set up for UEFI.  I used a Ubuntu
+installation DVD -- it has an early option for running memtest86+.
+
+It turns out that Fedora 21's live/install image has a newer
+memtest86+ than Ubuntu 14.04: 5.01 vs 4.20.  The newer one lists the
+DIMMs or SODIMMs present on the system.
+
+From lsorense at csclub.uwaterloo.ca  Mon Mar 30 17:35:25 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 30 Mar 2015 13:35:25 -0400
+Subject: [GTALUG] war story: memtest86+ vs. UEFI
+In-Reply-To: <alpine.LRH.2.02.1503301324450.25197@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1503301324450.25197@redclaw.mimosa.com>
+Message-ID: <20150330173525.GE29559@csclub.uwaterloo.ca>
+
+On Mon, Mar 30, 2015 at 01:24:54PM -0400, D. Hugh Redelmeier wrote:
+> Summary: it seems that memtest86+ won't run under UEFI.  You need to
+> switch to "legacy" boot and use an appropriate CD/DVD/USB stick to
+> supply memtest86+.
+
+Yes I see memtest86 does work with UEFI, but memtest86+ does not.
+But memtest86 seems to have stopped being open source at version 5 which
+is when they added UEFI support as far as I can tell.
+
+> I often run memtest86+ when I get new RAM.  This increases my confidence 
+> that the RAM isn't busted and is compatible with the machine it is 
+> installed in.  Running it overnight seems long enough without interfering 
+> with my use and enjoyment of the computer.
+> 
+> I even run it on a brand-new machine as one of the confidence building 
+> measures.
+> 
+> Well, that's what I used to do.  I've not taken the time to do it 
+> recently.  But I wanted to run it last night because I bought some 
+> (mislabelled!) RAM at the NCIX warehouse sale on Saturday.
+> 
+> Ubuntu lets you install memtest86+ as a package (it may be a default
+> package, I don't know).  But you cannot run it under Ubuntu, you have
+> to boot into it.  When you install the package, it adds a grub entry
+> to let you boot into memtest86+ instead of Ubuntu.  Yet on my machine
+> there was no such entry.  Reading the script that generates the entry,
+> I found that memtest86+ must be booted in 16-bit mode, i.e.
+> old-fashioned BIOS, and not UEFI.  So the script doesn't bother to
+> generate the entry on a UEFI system (silently).
+> 
+> To run memtest86+, you have to switch the system firmware to use
+> "legacy" booting (old-fashioned BIOS/MBR).  On my machine, you cannot
+> enable both MBR and UEFI booting: you need to choose one.
+
+Hmm, interesting.  I think every machine I have ever used supported having
+both at the same time and you could choose which it should try first.
+
+> Once I switched to legacy booting, I could no longer use the Ubuntu on
+> my hard drive since it was set up for UEFI.  I used a Ubuntu
+> installation DVD -- it has an early option for running memtest86+.
+
+The new machine I got at work actually lets you pick UEFI or legacy for
+each boot device in the system, which is rather nice of it.  Makes things
+much simpler.
+
+> It turns out that Fedora 21's live/install image has a newer
+> memtest86+ than Ubuntu 14.04: 5.01 vs 4.20.  The newer one lists the
+> DIMMs or SODIMMs present on the system.
+
+5.01 certainly is the latest version.
+
+-- 
+Len Sorensen
+
