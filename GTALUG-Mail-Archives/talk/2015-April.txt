@@ -1,0 +1,40 @@
+From wwitteman at gmail.com  Wed Apr  1 02:59:10 2015
+From: wwitteman at gmail.com (William Witteman)
+Date: Tue, 31 Mar 2015 22:59:10 -0400
+Subject: [GTALUG] Postfix / Dovecot Tutorial?
+Message-ID: <CAGMvh24DfksRQFie_VyGY-3QtXxqAnLw2tJyGcL-H7h5s5K-2A@mail.gmail.com>
+
+Does anyone have a recommendation for an up-to-date postfix / dovecot
+tutorial including SSL/TLS/STARTTLS?
+
+I have turned up a few examples, but it has been a while, and they are
+old and my memory is fallible.
+
+Thanks!
+
+William
+
+From me at mylesbraithwaite.com  Wed Apr  1 03:03:20 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 31 Mar 2015 23:03:20 -0400
+Subject: [GTALUG] Postfix / Dovecot Tutorial?
+In-Reply-To: <CAGMvh24DfksRQFie_VyGY-3QtXxqAnLw2tJyGcL-H7h5s5K-2A@mail.gmail.com>
+References: <CAGMvh24DfksRQFie_VyGY-3QtXxqAnLw2tJyGcL-H7h5s5K-2A@mail.gmail.com>
+Message-ID: <551B5FF8.8040000@mylesbraithwaite.com>
+
+William Witteman wrote:
+> Does anyone have a recommendation for an up-to-date postfix / dovecot
+> tutorial including SSL/TLS/STARTTLS?
+>
+> I have turned up a few examples, but it has been a while, and they are
+> old and my memory is fallible.
+
+I used this tutorial recently: 
+<http://sealedabstract.com/code/nsa-proof-your-e-mail-in-2-hours/> 
+(without the EncFS setup). It's pretty good if you also want 
+virtual_users using MySQL.
+
+If you want to go the automated route you can use: 
+<https://github.com/al3x/sovereign>. It's a bunch of Ansible playbooks 
+that setup pretty much everything you would need.
+
