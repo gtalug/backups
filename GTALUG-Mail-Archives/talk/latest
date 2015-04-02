@@ -38,3 +38,236 @@ If you want to go the automated route you can use:
 <https://github.com/al3x/sovereign>. It's a bunch of Ansible playbooks 
 that setup pretty much everything you would need.
 
+From james.knott at rogers.com  Wed Apr  1 11:16:06 2015
+From: james.knott at rogers.com (James Knott)
+Date: Wed, 01 Apr 2015 07:16:06 -0400
+Subject: [GTALUG] Write Only Memory
+Message-ID: <551BD376.7090502@rogers.com>
+
+The Signetics 25000 Series 9C46XN Random Access Write-
+Only-Memory employs both enhancement and depletion mode
+P-Channel, N-Channel and Neu? channel MOS devices.
+Although a static device, a single TTL level clock phase is
+required to drive the on-board multi-port clock generator. Data
+refresh is accomplished during CB and LH periods. Quadri-
+state outputs (when applicable) allow expansion in many
+directions, depending on organization.
+
+http://www4.vmi.edu/faculty/squirejc//Research/IC_Datasheets/digital_cmos/Write%20Only%20Memory.pdf 
+
+
+From gilesorr at gmail.com  Wed Apr  1 13:08:34 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Wed, 1 Apr 2015 09:08:34 -0400
+Subject: [GTALUG] Booting Jessie from USB
+Message-ID: <CAEnxSC6j0p2VisAcdjae24o-78ZrX2iXZVAS2LaUMjXV6eY_-Q@mail.gmail.com>
+
+I have an Acer C720 Chromebook with Bodhi Linux installed.  I wanted
+to test Debian Jessie on the machine, so I physically removed the SSD
+and plugged in a 32GB USB stick (SanDisk Cruzer Ultra Fit, USB3).  I
+installed Jessie on it (on an ext4 partition), and added a 5GB or so
+vfat partition on the end.  When I attempt to boot from the USB stick,
+GRUB comes up and works fine, but things go sideways after that.  Here
+are some of the errors that I've copied ("..." indicates dropped
+lines, mostly duplications):
+
+     -----
+
+usb 1-4: string descriptor 0 malformed (err = -61), defaulting to 0x0409
+...
+usb 2-1: device not accepting address 3, error -62 [repeated several
+times with different numbers]
+...
+xhci_hcd 0000:00:14.0: Command completion event does not match command
+...
+Gave up waiting for root device.  Common problems:
+ - Boot args (cat /proc/cmdline)
+   - Check rootdelay= (did the system wait long enough?)
+   - Check root= (did the system wait for the right device?)
+ - Missing modules (cat /proc/modules; ls /dev)
+ALERT!  /dev/disk/by-uuid/44621e45-2a15-4637-d0b8-282b63c8194b does not exist.
+Dropping to a shell!
+modprobe: module ehci-orion not found in modules.dep
+...
+(initramfs)
+
+     -----
+
+I've got another laptop that runs permanently off a USB stick.  Yes, I
+know it's a bad idea: the point is, it can be done - and in this
+instance it's meant as a temporary measure, a test of Jessie on this
+machine.  I've checked the UUID of the partition in another machine,
+and it's set correctly.  I tinkered with the GRUB kernel command line
+arguments: Debian had inserted a number of "hints" (sorry, haven't
+copied this part out) referring to which partition to boot from.  I
+think they said "hd1,msdos1" and I changed them all (three?) to
+"hd0,msdos1" which caused the boot process to last longer and look
+more promising, but it again eventually failed out not being able to
+find itself.  The Chromebook has two USB ports, one USB2 and one USB3:
+the failure is the same (or very similar) booting from both.
+
+My first reaction has been that something about the USB stick itself
+is too new - but Linux mounts it fine and installed to it okay.  The
+"ehci-orion" doesn't make much sense: "Orion" seems to be an ARM
+chipset, and the Chromebook has an Intel Celeron 2955U in it.
+
+Any help appreciated.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From avolkov at gmail.com  Wed Apr  1 13:57:44 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Wed, 01 Apr 2015 09:57:44 -0400
+Subject: [GTALUG] Booting Jessie from USB
+In-Reply-To: <CAEnxSC6j0p2VisAcdjae24o-78ZrX2iXZVAS2LaUMjXV6eY_-Q@mail.gmail.com>
+References: <CAEnxSC6j0p2VisAcdjae24o-78ZrX2iXZVAS2LaUMjXV6eY_-Q@mail.gmail.com>
+Message-ID: <551BF958.4020103@gmail.com>
+
+Hi Giles,
+
+Debian Jessie is running 3.16 which doesn't support c720 hardware. If
+you want to try out Debian, you either need to install wheezy ( but that
+kernel doesn't support touchpad), or install any kernel that is version
+3.17 or above.
+I suggest you download one from experimental and install it manually --
+https://packages.debian.org/experimental/kernel/linux-image-3.19.0-trunk-amd64
+
+I've been running it for a few months on my c720 without any issues.
+
+Alex.
+
+[alex at alex-c720[09:50:47]:~]
+$ uname -a
+Linux alex-c720 3.19.0-trunk-amd64 #1 SMP Debian 3.19-1~exp1
+(2015-02-12) x86_64 GNU/Linux
+[alex at alex-c720[09:52:25]:~]
+$ dpkg --list | grep 3.19.0
+ii  linux-image-3.19.0-trunk-amd64       
+3.19-1~exp1                         amd64        Linux 3.19 for 64-bit PCs
+
+On 01/04/15 09:08 AM, Giles Orr wrote:
+> I have an Acer C720 Chromebook with Bodhi Linux installed.  I wanted
+> to test Debian Jessie on the machine, so I physically removed the SSD
+> and plugged in a 32GB USB stick (SanDisk Cruzer Ultra Fit, USB3).  I
+> installed Jessie on it (on an ext4 partition), and added a 5GB or so
+> vfat partition on the end.  When I attempt to boot from the USB stick,
+> GRUB comes up and works fine, but things go sideways after that.  Here
+> are some of the errors that I've copied ("..." indicates dropped
+> lines, mostly duplications):
+>
+>      -----
+>
+> usb 1-4: string descriptor 0 malformed (err = -61), defaulting to 0x0409
+> ...
+> usb 2-1: device not accepting address 3, error -62 [repeated several
+> times with different numbers]
+> ...
+> xhci_hcd 0000:00:14.0: Command completion event does not match command
+> ...
+> Gave up waiting for root device.  Common problems:
+>  - Boot args (cat /proc/cmdline)
+>    - Check rootdelay= (did the system wait long enough?)
+>    - Check root= (did the system wait for the right device?)
+>  - Missing modules (cat /proc/modules; ls /dev)
+> ALERT!  /dev/disk/by-uuid/44621e45-2a15-4637-d0b8-282b63c8194b does not exist.
+> Dropping to a shell!
+> modprobe: module ehci-orion not found in modules.dep
+> ...
+> (initramfs)
+>
+>      -----
+>
+> I've got another laptop that runs permanently off a USB stick.  Yes, I
+> know it's a bad idea: the point is, it can be done - and in this
+> instance it's meant as a temporary measure, a test of Jessie on this
+> machine.  I've checked the UUID of the partition in another machine,
+> and it's set correctly.  I tinkered with the GRUB kernel command line
+> arguments: Debian had inserted a number of "hints" (sorry, haven't
+> copied this part out) referring to which partition to boot from.  I
+> think they said "hd1,msdos1" and I changed them all (three?) to
+> "hd0,msdos1" which caused the boot process to last longer and look
+> more promising, but it again eventually failed out not being able to
+> find itself.  The Chromebook has two USB ports, one USB2 and one USB3:
+> the failure is the same (or very similar) booting from both.
+>
+> My first reaction has been that something about the USB stick itself
+> is too new - but Linux mounts it fine and installed to it okay.  The
+> "ehci-orion" doesn't make much sense: "Orion" seems to be an ARM
+> chipset, and the Chromebook has an Intel Celeron 2955U in it.
+>
+> Any help appreciated.
+>
+
+
+From lsorense at csclub.uwaterloo.ca  Wed Apr  1 14:07:07 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 1 Apr 2015 10:07:07 -0400
+Subject: [GTALUG] Booting Jessie from USB
+In-Reply-To: <CAEnxSC6j0p2VisAcdjae24o-78ZrX2iXZVAS2LaUMjXV6eY_-Q@mail.gmail.com>
+References: <CAEnxSC6j0p2VisAcdjae24o-78ZrX2iXZVAS2LaUMjXV6eY_-Q@mail.gmail.com>
+Message-ID: <20150401140707.GF29559@csclub.uwaterloo.ca>
+
+On Wed, Apr 01, 2015 at 09:08:34AM -0400, Giles Orr wrote:
+> I have an Acer C720 Chromebook with Bodhi Linux installed.  I wanted
+> to test Debian Jessie on the machine, so I physically removed the SSD
+> and plugged in a 32GB USB stick (SanDisk Cruzer Ultra Fit, USB3).  I
+> installed Jessie on it (on an ext4 partition), and added a 5GB or so
+> vfat partition on the end.  When I attempt to boot from the USB stick,
+> GRUB comes up and works fine, but things go sideways after that.  Here
+> are some of the errors that I've copied ("..." indicates dropped
+> lines, mostly duplications):
+> 
+>      -----
+> 
+> usb 1-4: string descriptor 0 malformed (err = -61), defaulting to 0x0409
+> ...
+> usb 2-1: device not accepting address 3, error -62 [repeated several
+> times with different numbers]
+
+That to me says either the USB key, the USB port, or (pretty unlikely)
+the USB driver is broken.
+
+It is certainly failing to start USB properly.
+
+> xhci_hcd 0000:00:14.0: Command completion event does not match command
+> ...
+
+Well xhci is USB3.  Some USB3 controllers (In my experience ASMedia)
+are awful and unstable in linux.
+
+Try the USB2 port instead to see what happens then.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Wed Apr  1 14:09:53 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 1 Apr 2015 10:09:53 -0400
+Subject: [GTALUG] Booting Jessie from USB
+In-Reply-To: <551BF958.4020103@gmail.com>
+References: <CAEnxSC6j0p2VisAcdjae24o-78ZrX2iXZVAS2LaUMjXV6eY_-Q@mail.gmail.com>
+ <551BF958.4020103@gmail.com>
+Message-ID: <20150401140953.GG29559@csclub.uwaterloo.ca>
+
+On Wed, Apr 01, 2015 at 09:57:44AM -0400, Alex Volkov wrote:
+> Hi Giles,
+> 
+> Debian Jessie is running 3.16 which doesn't support c720 hardware. If
+> you want to try out Debian, you either need to install wheezy ( but that
+> kernel doesn't support touchpad), or install any kernel that is version
+> 3.17 or above.
+> I suggest you download one from experimental and install it manually --
+> https://packages.debian.org/experimental/kernel/linux-image-3.19.0-trunk-amd64
+> 
+> I've been running it for a few months on my c720 without any issues.
+
+Debian's 3.16 kernel has support for the C720 as of mid january.
+
+See http://bugs.debian.org/774209
+
+-- 
+Len Sorensen
+
