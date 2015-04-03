@@ -271,3 +271,228 @@ See http://bugs.debian.org/774209
 -- 
 Len Sorensen
 
+From louipc.ist at gmail.com  Thu Apr  2 15:28:23 2015
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Thu, 2 Apr 2015 11:28:23 -0400
+Subject: [GTALUG] Youtube hints
+In-Reply-To: <5516A25B.6080104@rogers.com>
+References: <20150328152454.GA6867@waltdnes.org> <5516A25B.6080104@rogers.com>
+Message-ID: <20150402152823.GB13291@gmail.com>
+
+On Sat 28 Mar 2015 08:45 -0400, James Knott wrote:
+> On 03/28/2015 11:24 AM, Walter Dnes wrote:
+> > Given that Flash is being minimally maintained for linux, it's nice
+> > that Youtube has gon over to HTML5, but there are still a few hiccups
+> > that I ran into.
+> 
+> There's a link you can go to, to set your browser to default to HTML5
+> for Youtube.
+> https://www.youtube.com/html5
+
+I find myself increasingly annoyed with youtube (even with html5), and find
+relief in using scripts to access its content. Such as:
+
+https://github.com/trizen/youtube-viewer
+https://rg3.github.io/youtube-dl/
+
+There are also other applications like:
+http://flavio.tordini.org/minitube
+http://smplayer.sourceforge.net
+
+
+From email+libre at blaise.ca  Thu Apr  2 15:31:21 2015
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Thu, 02 Apr 2015 11:31:21 -0400
+Subject: [GTALUG] Youtube hints
+In-Reply-To: <20150402152823.GB13291@gmail.com>
+References: <20150328152454.GA6867@waltdnes.org> <5516A25B.6080104@rogers.com>
+ <20150402152823.GB13291@gmail.com>
+Message-ID: <551D60C9.4090900@blaise.ca>
+
+On 02/04/15 11:28 AM, Loui Chang wrote:
+> On Sat 28 Mar 2015 08:45 -0400, James Knott wrote:
+>> On 03/28/2015 11:24 AM, Walter Dnes wrote:
+>>> Given that Flash is being minimally maintained for linux, it's nice
+>>> that Youtube has gon over to HTML5, but there are still a few hiccups
+>>> that I ran into.
+>>
+>> There's a link you can go to, to set your browser to default to HTML5
+>> for Youtube.
+>> https://www.youtube.com/html5
+> 
+> I find myself increasingly annoyed with youtube (even with html5), and find
+> relief in using scripts to access its content. Such as:
+> 
+> https://github.com/trizen/youtube-viewer
+> https://rg3.github.io/youtube-dl/
+> 
+> There are also other applications like:
+> http://flavio.tordini.org/minitube
+> http://smplayer.sourceforge.net
+> 
+
+
+youtube-dl is awesome.
+
+I've also been playing around with whitey:
+https://pypi.python.org/pypi/whitey
+
+I can't actually get it to play properly... but the command line search is
+pretty cool (though lack of thumbnails sometimes makes that difficult). I'll
+typically copy the URLs to youtube-dl to view.
+
+
+From me at mylesbraithwaite.com  Thu Apr  2 16:30:51 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 2 Apr 2015 12:30:51 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting 14th April, 2015 at 7:30 pm
+Message-ID: <CA+hskZN_xxwM-CAu6c-Nk4Jj8LcTRx-krqdDj7C8DNYCwkfefg@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-04/>
+
+# LessCSS with Myles Braithwaite and a Round Table Q&A Session
+
+*LessCSS*
+
+LessCSS extends the CSS language to make it actually useable by adding
+features like variables, mixins, functions, and a bunch of other
+techniques that allow you to make your stylesheets more maintainable,
+themeable, and extendible.
+
+*Round Table Q&A Session*
+
+A Round Table Q&A Session is where we take questions from the
+audience, and the audience discusses and attempts to answer those
+questions from their own knowledge. It's a great way to meet fellow
+members of our community and discover the skill sets we each bring to
+the table.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before each meeting a group of GTALUGers dine at Kaiju
+(384 Yonge Street).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From alex at flamy.ca  Thu Apr  2 20:15:10 2015
+From: alex at flamy.ca (Alex Volkov)
+Date: Thu, 02 Apr 2015 16:15:10 -0400
+Subject: [GTALUG] Lennart Poettering talk on new features of systemd at
+	FOSDEM
+Message-ID: <551DA34E.3090701@flamy.ca>
+
+I thought it would be relevant to this list. Among the new features --
+
+https://fosdem.org/2015/schedule/event/whats_new_in_systemd,_2015_edition/
+
+Things recently added and being worked on:
+
+* systemd-nspawn -- docker-like containers
+* btrfs support
+* firewall support based on application id and not port numbers
+* moving kernel console into userspace, adding high DPI and proper
+Unicode support
+* resolving config file path with sysctl --edit / sysctl --cat
+* network management with networkd
+* auditing has indexing and is included in logging
+* support of stateless systems
+* resolvd -- vpn support, smart dns with support per-interface cache,
+support for LLMNR
+* rolling avahi into systemd  is being worked on
+* journald remoting -- remote logging with http using pull and push model
+* logging stack traces without gdb
+* protect system/home/tmp/devices -- setup minimal namespace
+environments for services
+* timesyncd -- trivial  sntp client with time saving for the devices
+with no rtc
+* autodiscovery of swap partitions with gptd
+* readahead support was dropped
+* merge gummiboot into systemd (UEFI secure boot support)
+
+
+
+From lsorense at csclub.uwaterloo.ca  Fri Apr  3 01:27:48 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 2 Apr 2015 21:27:48 -0400
+Subject: [GTALUG] Lennart Poettering talk on new features of systemd at
+ FOSDEM
+In-Reply-To: <551DA34E.3090701@flamy.ca>
+References: <551DA34E.3090701@flamy.ca>
+Message-ID: <20150403012748.GH29559@csclub.uwaterloo.ca>
+
+On Thu, Apr 02, 2015 at 04:15:10PM -0400, Alex Volkov wrote:
+> I thought it would be relevant to this list. Among the new features --
+> 
+> https://fosdem.org/2015/schedule/event/whats_new_in_systemd,_2015_edition/
+> 
+> Things recently added and being worked on:
+> 
+> * systemd-nspawn -- docker-like containers
+> * btrfs support
+> * firewall support based on application id and not port numbers
+> * moving kernel console into userspace, adding high DPI and proper
+> Unicode support
+> * resolving config file path with sysctl --edit / sysctl --cat
+> * network management with networkd
+> * auditing has indexing and is included in logging
+> * support of stateless systems
+> * resolvd -- vpn support, smart dns with support per-interface cache,
+> support for LLMNR
+> * rolling avahi into systemd  is being worked on
+> * journald remoting -- remote logging with http using pull and push model
+> * logging stack traces without gdb
+> * protect system/home/tmp/devices -- setup minimal namespace
+> environments for services
+> * timesyncd -- trivial  sntp client with time saving for the devices
+> with no rtc
+> * autodiscovery of swap partitions with gptd
+> * readahead support was dropped
+> * merge gummiboot into systemd (UEFI secure boot support)
+
+I can see why people complain about featurecreep.
+
+-- 
+Len Sorensen
+
