@@ -496,3 +496,282 @@ I can see why people complain about featurecreep.
 -- 
 Len Sorensen
 
+From ssullivan at spinvfx.com  Fri Apr  3 16:46:55 2015
+From: ssullivan at spinvfx.com (Scott Sullivan)
+Date: Fri, 03 Apr 2015 12:46:55 -0400
+Subject: [GTALUG] [OT]: Two matched ATX towers looking for a home
+Message-ID: <551EC3FF.40105@spinvfx.com>
+
+I have two ATX towers that are looking for a good home.
+Contact me off list.
+Free to whomever that will do _pick up_ in North York.
+
+
+Their main feature is a lot of 3.5" and 5.25" bays for larger numbers of 
+hard drives.
+
+http://revident.net/images/20150403-atx-towers-for-give-away/
+
+Their in good condition, steel construction.
+
+-- 
+Scott Sullivan
+
+From lsorense at csclub.uwaterloo.ca  Fri Apr  3 17:12:09 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 3 Apr 2015 13:12:09 -0400
+Subject: [GTALUG] [OT]: Two matched ATX towers looking for a home
+In-Reply-To: <551EC3FF.40105@spinvfx.com>
+References: <551EC3FF.40105@spinvfx.com>
+Message-ID: <20150403171209.GI29559@csclub.uwaterloo.ca>
+
+On Fri, Apr 03, 2015 at 12:46:55PM -0400, Scott Sullivan wrote:
+> I have two ATX towers that are looking for a good home.
+> Contact me off list.
+> Free to whomever that will do _pick up_ in North York.
+> 
+> Their main feature is a lot of 3.5" and 5.25" bays for larger
+> numbers of hard drives.
+> 
+> http://revident.net/images/20150403-atx-towers-for-give-away/
+> 
+> Their in good condition, steel construction.
+
+They look an awful lot like in-win cases to me, from some 10 to 15
+years ago.  I used a few Q500s in the past (which these clearly are not),
+but they look quite similar.  Then I found silverstone...
+
+Perhaps it was just the style used back then.
+
+-- 
+Len Sorensen
+
+From scott at ss.org  Fri Apr  3 17:18:07 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Fri, 03 Apr 2015 13:18:07 -0400
+Subject: [GTALUG] [OT]: Two matched ATX towers looking for a home
+In-Reply-To: <20150403171209.GI29559@csclub.uwaterloo.ca>
+References: <551EC3FF.40105@spinvfx.com>
+ <20150403171209.GI29559@csclub.uwaterloo.ca>
+Message-ID: <551ECB4F.2070000@ss.org>
+
+On 04/03/2015 01:12 PM, Lennart Sorensen wrote:
+> They look an awful lot like in-win cases to me, from some 10 to 15
+> years ago.  I used a few Q500s in the past (which these clearly are not),
+> but they look quite similar.  Then I found silverstone...
+>
+> Perhaps it was just the style used back then.
+>
+
+They are A-Open cases. Quality control stamps date them to 2000 and 2003.
+
+-- 
+Scott Sullivan
+
+From lsorense at csclub.uwaterloo.ca  Fri Apr  3 20:04:08 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 3 Apr 2015 16:04:08 -0400
+Subject: [GTALUG] [OT]: Two matched ATX towers looking for a home
+In-Reply-To: <551ECB4F.2070000@ss.org>
+References: <551EC3FF.40105@spinvfx.com>
+ <20150403171209.GI29559@csclub.uwaterloo.ca>
+ <551ECB4F.2070000@ss.org>
+Message-ID: <20150403200408.GJ29559@csclub.uwaterloo.ca>
+
+On Fri, Apr 03, 2015 at 01:18:07PM -0400, Scott Sullivan wrote:
+> On 04/03/2015 01:12 PM, Lennart Sorensen wrote:
+> >They look an awful lot like in-win cases to me, from some 10 to 15
+> >years ago.  I used a few Q500s in the past (which these clearly are not),
+> >but they look quite similar.  Then I found silverstone...
+> >
+> >Perhaps it was just the style used back then.
+> >
+> 
+> They are A-Open cases. Quality control stamps date them to 2000 and 2003.
+
+Who knows, maybe in-win was the OEM for A-Open at the time for those
+cases.
+
+-- 
+Len Sorensen
+
+From davec-b at rogers.com  Sat Apr  4 01:31:53 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Fri, 03 Apr 2015 21:31:53 -0400
+Subject: [GTALUG] Lennart Poettering talk on new features of systemd at
+ FOSDEM
+In-Reply-To: <20150403012748.GH29559@csclub.uwaterloo.ca>
+References: <551DA34E.3090701@flamy.ca>
+ <20150403012748.GH29559@csclub.uwaterloo.ca>
+Message-ID: <551F3F09.40207@rogers.com>
+
+On 04/02/2015 09:27 PM, Lennart Sorensen wrote:
+> On Thu, Apr 02, 2015 at 04:15:10PM -0400, Alex Volkov wrote:
+>> I thought it would be relevant to this list. Among the new features --
+>>
+>> https://fosdem.org/2015/schedule/event/whats_new_in_systemd,_2015_edition/
+>>
+>> Things recently added and being worked on:
+>>
+>> * systemd-nspawn -- docker-like containers
+>> * btrfs support
+>> * firewall support based on application id and not port numbers
+>> * moving kernel console into userspace, adding high DPI and proper
+>> Unicode support
+>> * resolving config file path with sysctl --edit / sysctl --cat
+>> * network management with networkd
+>> * auditing has indexing and is included in logging
+>> * support of stateless systems
+>> * resolvd -- vpn support, smart dns with support per-interface cache,
+>> support for LLMNR
+>> * rolling avahi into systemd  is being worked on
+>> * journald remoting -- remote logging with http using pull and push model
+>> * logging stack traces without gdb
+>> * protect system/home/tmp/devices -- setup minimal namespace
+>> environments for services
+>> * timesyncd -- trivial  sntp client with time saving for the devices
+>> with no rtc
+>> * autodiscovery of swap partitions with gptd
+>> * readahead support was dropped
+>> * merge gummiboot into systemd (UEFI secure boot support)
+> I can see why people complain about featurecreep.
+>
+
+If you're building primitive functions as the main effort, and shipping 
+products sitting on top of thgem, this scales.  Even elegant constructs 
+like qef have a ton of stuff of this sort.
+
+If, however, you're writing A dpends on B depends on C depends on A for 
+any kind of A, B and C, you're creating spagetti code ( or perhaps a 
+walled garden if it is intentional).  Both lead to business failure.
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150403/705deda4/attachment.html>
+
+From cbbrowne at gmail.com  Sat Apr  4 02:13:23 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Fri, 3 Apr 2015 22:13:23 -0400
+Subject: [GTALUG] Lennart Poettering talk on new features of systemd at
+	FOSDEM
+In-Reply-To: <551DA34E.3090701@flamy.ca>
+References: <551DA34E.3090701@flamy.ca>
+Message-ID: <CAFNqd5W1BZsWv275rd2JpA9dWoOYPprN9eKyze1J0DVAvGfBeA@mail.gmail.com>
+
+On 2 April 2015 at 16:15, Alex Volkov <alex at flamy.ca> wrote:
+> I thought it would be relevant to this list. Among the new features --
+>
+> https://fosdem.org/2015/schedule/event/whats_new_in_systemd,_2015_edition/
+
+I'm glad that it is a sufficiently vital project to have things going on.
+
+I'm pretty happy to see them adding things that smell like extra
+services, though this shouldn't require "kernel of systemd"
+involvement, surely.  For instance, if timesyncd is a wee service
+where they combine some shell scripts (or such) with a service
+configuration file, that's great.
+
+I'm less enthralled with the vast variety; it does indeed look like
+"scope creep."
+
+Explain to me WHY it needs BTRFS support, why this isn't better
+separated from systemd concerns.  I gather that it's intended to help
+support the "containering" support, which might be OK, but when scope
+creeps, I get a bit scared that the service is trying to be the
+"creep" of Linux, and that's no good thing.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From phiscock at ee.ryerson.ca  Sat Apr  4 02:40:27 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Fri, 3 Apr 2015 22:40:27 -0400
+Subject: [GTALUG] Linux on Canon camera
+Message-ID: <d7c295640d817720d82604a900f6e5f7.squirrel@webmail.ee.ryerson.ca>
+
+
+
+---------------------------- Original Message ----------------------------
+Subject: [Gphoto-user] Linux on Canon
+From:    "daaawg" <cdaaawg at gmail.com>
+Date:    Fri, April 3, 2015 7:48 am
+To:      "gphoto-user" <gphoto-user at lists.sourceforge.net>
+--------------------------------------------------------------------------
+
+Thought this might be of some interest to Canon users:
+
+http://linux.softpedia.com/blog/Linux-Kernel-Ported-to-Canon-DSLRs-Thanks-to-a-Magic-Lantern-Developers-Video-477486.shtml
+------------------------------------------------------------------------------
+Dive into the World of Parallel Programming The Go Parallel Website,
+sponsored
+by Intel and developed in partnership with Slashdot Media, is your hub for
+all
+things parallel software development, from weekly thought leadership blogs to
+news, videos, case studies, tutorials and more. Take a look and join the
+conversation now.
+http://goparallel.sourceforge.net/_______________________________________________
+Gphoto-user mailing list
+Gphoto-user at lists.sourceforge.net
+https://lists.sourceforge.net/lists/listinfo/gphoto-user
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150403/90c44d99/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Sat Apr  4 03:11:04 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 3 Apr 2015 23:11:04 -0400
+Subject: [GTALUG] Lennart Poettering talk on new features of systemd at
+ FOSDEM
+In-Reply-To: <CAFNqd5W1BZsWv275rd2JpA9dWoOYPprN9eKyze1J0DVAvGfBeA@mail.gmail.com>
+References: <551DA34E.3090701@flamy.ca>
+ <CAFNqd5W1BZsWv275rd2JpA9dWoOYPprN9eKyze1J0DVAvGfBeA@mail.gmail.com>
+Message-ID: <20150404031104.GK29559@csclub.uwaterloo.ca>
+
+On Fri, Apr 03, 2015 at 10:13:23PM -0400, Christopher Browne wrote:
+> I'm glad that it is a sufficiently vital project to have things going on.
+> 
+> I'm pretty happy to see them adding things that smell like extra
+> services, though this shouldn't require "kernel of systemd"
+> involvement, surely.  For instance, if timesyncd is a wee service
+> where they combine some shell scripts (or such) with a service
+> configuration file, that's great.
+> 
+> I'm less enthralled with the vast variety; it does indeed look like
+> "scope creep."
+> 
+> Explain to me WHY it needs BTRFS support, why this isn't better
+> separated from systemd concerns.  I gather that it's intended to help
+> support the "containering" support, which might be OK, but when scope
+> creeps, I get a bit scared that the service is trying to be the
+> "creep" of Linux, and that's no good thing.
+
+I suspect that just like systemd has container and virtual machine
+management support, it is now adding btrfs volume and snapshot management
+support (some of which might even be useful in conjunction with containers
+or virtual machines).
+
+It does seem like trying to tie too many things together.
+
+Had you noticed there is a machined virtual machine manager in systemd?
+I only noticed that recently.  And of course machinectl to go with it.
+You can even do systemctl -M vmname command, to run systemctl command
+inside that named vm.  I suppose that could be convinient.
+
+-- 
+Len Sorensen
+
