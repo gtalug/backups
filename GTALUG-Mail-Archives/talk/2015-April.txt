@@ -775,3 +775,54 @@ inside that named vm.  I suppose that could be convinient.
 -- 
 Len Sorensen
 
+From hugh at mimosa.com  Sat Apr  4 16:57:31 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 4 Apr 2015 12:57:31 -0400 (EDT)
+Subject: [GTALUG] Linux on Canon camera
+In-Reply-To: <d7c295640d817720d82604a900f6e5f7.squirrel@webmail.ee.ryerson.ca>
+References: <d7c295640d817720d82604a900f6e5f7.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <alpine.LRH.2.02.1504041226280.23651@redclaw.mimosa.com>
+
+| From: phiscock at ee.ryerson.ca
+
+| From:    "daaawg" <cdaaawg at gmail.com>
+
+| Thought this might be of some interest to Canon users:
+| 
+| http://linux.softpedia.com/blog/Linux-Kernel-Ported-to-Canon-DSLRs-Thanks-to-a-Magic-Lantern-Developers-Video-477486.shtml
+
+I understand that a number of camera manufacturers have their own
+embeded Linux already.  Like for more than 10 years.  That also
+explains why I don't remember which -- too long ago.
+
+Even my not-smart UltraHD TV has Linux in it.
+
+When they embed Linux, Japanese companies tend to release the source
+code.  Usually not in a way that you can actually build and replace
+the firmware, but at least it is released.
+
+I strongly suspect that the only reason Magic Lantern works is because
+the camera already comes with Linux.  If you read blurbs, ML doesn't
+replace the existing firmware, it supplements it.  But I haven't taken
+the time to check.
+
+From waltdnes at waltdnes.org  Sun Apr  5 06:20:56 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Sun, 5 Apr 2015 02:20:56 -0400
+Subject: [GTALUG] Where can I buy short ethernet and USB-to-microUSB cables?
+Message-ID: <20150405062056.GA2764@waltdnes.org>
+
+  Two items I need to buy...
+
+1) I have more devices than ports on my 4-port ST546 ADSL modem/router.
+I have a multi-port bridge sitting right next to it.  A 6-foot ethernet
+cable connecting the 2 is a waste, and contributes to "crow's-nest".  A
+12 or 18 inch ethernet cable would do just fine.
+
+2) Ditto for a short USB-to-microUSB adapter.  A 6-footer is OK for my
+desktop.  But when I'm travelling, and offloading smartphone photos to
+my laptop, a 6-foot cable is clumsy. 
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
