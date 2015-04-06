@@ -826,3 +826,178 @@ my laptop, a 6-foot cable is clumsy.
 -- 
 Walter Dnes <waltdnes at waltdnes.org>
 
+From mlxxxp at gmail.com  Sun Apr  5 11:04:52 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Sun, 5 Apr 2015 07:04:52 -0400
+Subject: [GTALUG] Where can I buy short ethernet and USB-to-microUSB
+	cables?
+In-Reply-To: <20150405062056.GA2764@waltdnes.org>
+References: <20150405062056.GA2764@waltdnes.org>
+Message-ID: <CAArSzsUejAgQ7kYQ8Ox9ZunTuKC2OA0YB=7nXUq_wD9OEt4hSw@mail.gmail.com>
+
+Buy, or find someone with, a crimping tool and a short Ethernet cable is easy.
+
+Use, or find someone with, a soldering iron and some heat-shrink
+tubing to shorten a USB-to-microUSB cable.
+
+-- 
+Scott
+
+From james.knott at rogers.com  Sun Apr  5 11:51:27 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 05 Apr 2015 07:51:27 -0400
+Subject: [GTALUG] Where can I buy short ethernet and USB-to-microUSB
+	cables?
+In-Reply-To: <20150405062056.GA2764@waltdnes.org>
+References: <20150405062056.GA2764@waltdnes.org>
+Message-ID: <552121BF.2010304@rogers.com>
+
+On 04/05/2015 02:20 AM, Walter Dnes wrote:
+>   Two items I need to buy...
+>
+> 1) I have more devices than ports on my 4-port ST546 ADSL modem/router.
+> I have a multi-port bridge sitting right next to it.  A 6-foot ethernet
+> cable connecting the 2 is a waste, and contributes to "crow's-nest".  A
+> 12 or 18 inch ethernet cable would do just fine.
+>
+> 2) Ditto for a short USB-to-microUSB adapter.  A 6-footer is OK for my
+> desktop.  But when I'm travelling, and offloading smartphone photos to
+> my laptop, a 6-foot cable is clumsy. 
+>
+
+Short cables are available.  You can try the usual suspects, (Sayal,
+Canada Computers etc.) or search on line.  Or, as Scott mentioned,
+making Ethernet cables is fairly easy, once you get the hang of it.  If
+possible, use stranded cable for patch cords.
+
+From jsellens at syonex.com  Sun Apr  5 15:29:51 2015
+From: jsellens at syonex.com (John Sellens)
+Date: Sun, 5 Apr 2015 11:29:51 -0400
+Subject: [GTALUG] Where can I buy short ethernet and USB-to-microUSB
+	cables?
+In-Reply-To: <20150405062056.GA2764@waltdnes.org>
+References: <20150405062056.GA2764@waltdnes.org>
+Message-ID: <20150405152950.GA3786@syonex.com>
+
+My favorite cable place in town is infinitecables.com in Markham.
+Cat 5/6 cables in any length, any colour.  Power cables too.
+Lots of USB, but I don't know about shorter lengths.
+
+Otherwise monoprice.com might be a good place to check.
+Don't know if inifinitecables stocks 6 inch cat 5, but
+monoprice does.
+
+Hope that helps - cheers!
+
+John
+
+
+On Sun,?2015/04/05?02:20:56AM?-0400, Walter Dnes <waltdnes at waltdnes.org> wrote:
+|   Two items I need to buy...
+| 
+| 1) I have more devices than ports on my 4-port ST546 ADSL modem/router.
+| I have a multi-port bridge sitting right next to it.  A 6-foot ethernet
+| cable connecting the 2 is a waste, and contributes to "crow's-nest".  A
+| 12 or 18 inch ethernet cable would do just fine.
+| 
+| 2) Ditto for a short USB-to-microUSB adapter.  A 6-footer is OK for my
+| desktop.  But when I'm travelling, and offloading smartphone photos to
+| my laptop, a 6-foot cable is clumsy. 
+| 
+| -- 
+| Walter Dnes <waltdnes at waltdnes.org>
+| ---
+| Talk Mailing List
+| talk at gtalug.org
+| http://gtalug.org/mailman/listinfo/talk
+
+From hugh at mimosa.com  Sun Apr  5 20:14:02 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 5 Apr 2015 16:14:02 -0400 (EDT)
+Subject: [GTALUG] Where can I buy short ethernet and USB-to-microUSB
+ cables?
+In-Reply-To: <20150405152950.GA3786@syonex.com>
+References: <20150405062056.GA2764@waltdnes.org>
+ <20150405152950.GA3786@syonex.com>
+Message-ID: <alpine.LRH.2.02.1504051558540.23651@redclaw.mimosa.com>
+
+| From: John Sellens <jsellens at syonex.com>
+
+| Otherwise monoprice.com might be a good place to check.
+
+<http://www.cablesonsale.ca/index.php/> seems to sell monoprice
+products and have local pickup in Richmond Hill (Yonge and 16th).
+
+I don't imagine that they are "authorized", but that's probably OK.
+
+I've never dealt with them so this isn't a recommendation.
+
+=====
+
+Lots of stores probably have the cables you want.
+
+Here's a 1 ft cable:
+<http://www.ncix.com/detail/ion-cables-1ft-red-rj45-42-33165-1015.htm>  
+<http://www.ncix.com/detail/ion-cables-1ft-black-rj45-5c-33169.htm>
+
+Here's a 2 ft cable:
+<http://www.canadacomputers.com/product_info.php?cPath=1340_1347_1349&item_id=079149>
+
+
+I didn't look for USB cables.
+
+From lsorense at csclub.uwaterloo.ca  Sun Apr  5 20:51:40 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sun, 5 Apr 2015 16:51:40 -0400
+Subject: [GTALUG] Where can I buy short ethernet and USB-to-microUSB
+ cables?
+In-Reply-To: <20150405062056.GA2764@waltdnes.org>
+References: <20150405062056.GA2764@waltdnes.org>
+Message-ID: <20150405205140.GL29559@csclub.uwaterloo.ca>
+
+On Sun, Apr 05, 2015 at 02:20:56AM -0400, Walter Dnes wrote:
+>   Two items I need to buy...
+> 
+> 1) I have more devices than ports on my 4-port ST546 ADSL modem/router.
+> I have a multi-port bridge sitting right next to it.  A 6-foot ethernet
+> cable connecting the 2 is a waste, and contributes to "crow's-nest".  A
+> 12 or 18 inch ethernet cable would do just fine.
+> 
+> 2) Ditto for a short USB-to-microUSB adapter.  A 6-footer is OK for my
+> desktop.  But when I'm travelling, and offloading smartphone photos to
+> my laptop, a 6-foot cable is clumsy. 
+
+When I needed some short USB cables recently, I got them from amazon.
+
+monoprice might be a good choice too.
+
+-- 
+Len Sorensen
+
+From scruss at gmail.com  Sun Apr  5 23:34:20 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sun, 05 Apr 2015 19:34:20 -0400
+Subject: [GTALUG] Linux on Canon camera
+In-Reply-To: <alpine.LRH.2.02.1504041226280.23651@redclaw.mimosa.com>
+References: <d7c295640d817720d82604a900f6e5f7.squirrel@webmail.ee.ryerson.ca>
+ <alpine.LRH.2.02.1504041226280.23651@redclaw.mimosa.com>
+Message-ID: <5521C67C.8020501@gmail.com>
+
+On 2015-04-04 12:57 PM, D. Hugh Redelmeier wrote:
+> I strongly suspect that the only reason Magic Lantern works is because
+> the camera already comes with Linux.
+
+They run Canon's own proprietary RTOS. Hacks like ML and CHDK have only
+come about through some very patient disassembling of firmware images.
+It's lucky that the cameras use fairly standard ARM cores so tools exist
+to pick apart the code.
+
+If you have a Canon PowerShot, and it's supported by CHDK, it's worth a
+try. Though the user interface for the CHDK side is terrible, it adds
+handy features like intervalometry, cable remote, extremely fast flash
+sync, and a huge set of image and video options.
+
+cheers,
+ Stewart
+
+
