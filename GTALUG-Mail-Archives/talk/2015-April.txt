@@ -1001,3 +1001,252 @@ cheers,
  Stewart
 
 
+From me at mylesbraithwaite.com  Mon Apr  6 13:37:16 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 6 Apr 2015 09:37:16 -0400
+Subject: [GTALUG] A USB PID register for Open Source Software/Hardware
+	Projects
+Message-ID: <CA+hskZNGXyuCpK92mSi=9vH8w1g47MCm9wVVGVhCudLn0ihW0Q@mail.gmail.com>
+
+Saw this on HackerNews today <http://pid.codes/>.
+
+From phiscock at ee.ryerson.ca  Mon Apr  6 13:58:44 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Mon, 6 Apr 2015 09:58:44 -0400
+Subject: [GTALUG] Linux on Canon camera
+In-Reply-To: <5521C67C.8020501@gmail.com>
+References: <d7c295640d817720d82604a900f6e5f7.squirrel@webmail.ee.ryerson.ca>
+ <alpine.LRH.2.02.1504041226280.23651@redclaw.mimosa.com>
+ <5521C67C.8020501@gmail.com>
+Message-ID: <49c150dfb13ebd1e3121eff8360d9bff.squirrel@webmail.ee.ryerson.ca>
+
+
+> If you have a Canon PowerShot, and it's supported by CHDK, it's worth a
+> try. Though the user interface for the CHDK side is terrible, it adds
+> handy features like intervalometry, cable remote, extremely fast flash
+> sync, and a huge set of image and video options.
+
+Yeah, CHDK has some nice features, but it's clunky to use. To some extent,
+that's because the GUI has to take place on the camera display, which is
+very, very crowded - and accessed by the limited number of camera buttons
+and knobs.
+
+The gphoto2 project is apparently working on routines that would allow a
+CHDK equipped Canon Point-and-Shoot to be controlled from a remote
+computer. Then you could run a very nice user interface on the computer.
+
+I'm using gphoto2 for camera control of a Canon T3i, using the Tcl
+language for the GUI. I have everything working, including liveview,
+although there is a bug in gphoto2 which affects this camera. (They're
+working on it...)
+
+Is anyone else on this list using gphoto2?
+
+Peter
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From waltdnes at waltdnes.org  Mon Apr  6 18:31:25 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Mon, 6 Apr 2015 14:31:25 -0400
+Subject: [GTALUG] Where can I buy short ethernet and USB-to-microUSB
+ cables?
+In-Reply-To: <20150405152950.GA3786@syonex.com>
+References: <20150405062056.GA2764@waltdnes.org>
+ <20150405152950.GA3786@syonex.com>
+Message-ID: <20150406183125.GA6612@waltdnes.org>
+
+On Sun, Apr 05, 2015 at 11:29:51AM -0400, John Sellens wrote
+> My favorite cable place in town is infinitecables.com in Markham.
+> Cat 5/6 cables in any length, any colour.  Power cables too.
+> Lots of USB, but I don't know about shorter lengths.
+
+  According to their website homepage
+
+> Cat5e & Cat6 patch cables available in 10 colours.
+> Lengths ranging from 8 inch to 100 feet.
+
+  That looks like what I need.  Thanks for the pointer.  I'll check more
+local sites first, especially where I don't need to order ahead of time.
+But if necessary, I can get there from Dufferin+Steeles via YRT.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From james.knott at rogers.com  Mon Apr  6 15:01:47 2015
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 06 Apr 2015 11:01:47 -0400
+Subject: [GTALUG] Where can I buy short ethernet and USB-to-microUSB
+	cables?
+In-Reply-To: <20150406183125.GA6612@waltdnes.org>
+References: <20150405062056.GA2764@waltdnes.org>
+ <20150405152950.GA3786@syonex.com> <20150406183125.GA6612@waltdnes.org>
+Message-ID: <55229FDB.8070806@rogers.com>
+
+On 04/06/2015 02:31 PM, Walter Dnes wrote:
+
+
+You may want to check your clock.  You apparently sent this message
+about 3.5 hours from now.  Or perhaps you were just being proactive.  ;-)
+
+From waltdnes at waltdnes.org  Mon Apr  6 19:06:09 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Mon, 6 Apr 2015 15:06:09 -0400
+Subject: [GTALUG] Where can I buy short ethernet and USB-to-microUSB
+ cables?
+In-Reply-To: <552121BF.2010304@rogers.com>
+References: <20150405062056.GA2764@waltdnes.org> <552121BF.2010304@rogers.com>
+Message-ID: <20150406190608.GB6612@waltdnes.org>
+
+On Sun, Apr 05, 2015 at 07:51:27AM -0400, James Knott wrote
+
+> Short cables are available.  You can try the usual suspects, (Sayal,
+> Canada Computers etc.) or search on line.  Or, as Scott mentioned,
+> making Ethernet cables is fairly easy, once you get the hang of it.  If
+> possible, use stranded cable for patch cords.
+
+  I wasn't expecting it, but Canada Computers does have them in-store,
+so I don't have to order online and pick up later
+http://www.canadacomputers.com/product_info.php?cPath=1340_1347_1349&item_id=075518
+I have a dentist's appointment for teeth-scraping on Friday, and the
+office is withing walking distance of the Toronto North York Canada
+Computers, so I'll probably drop by after my cleaning.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From waltdnes at waltdnes.org  Mon Apr  6 15:48:13 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Mon, 6 Apr 2015 11:48:13 -0400
+Subject: [GTALUG] Help; system date goes to GMT hour when I hibernate
+Message-ID: <20150406154813.GA6900@waltdnes.org>
+
+On Mon, Apr 06, 2015 at 11:01:47AM -0400, James Knott wrote
+> On 04/06/2015 02:31 PM, Walter Dnes wrote:
+> 
+> 
+> You may want to check your clock.  You apparently sent this message
+> about 3.5 hours from now.  Or perhaps you were just being proactive.
+> ;-)
+
+  Actually, it was 4 hours.  I have a bunch of spreadsheets, browser
+tabs, etc, open all the time, scattered over various work areas.  Rather
+than re-open them every day, I simply hibernate, using suspend-to-disk.
+This way, things are where I left them.
+
+  The past couple of months, when the machine comes up from hibernation,
+the clock is a few hours ahead.  Now it's 4 hours ahead.  It was 5 hours
+ahead before the switch to daylight savings time.  This looks
+suspiciously like GMT.
+
+  After reading your email, I dug deeper.  Apparently, it's just the
+"kernel system time" that gets bumped forward when it comes up from
+hibernation.  The BIOS clock is OK.  As a heavy-handed hack, I've
+inserted the line...
+
+OnResume 01 hwclock --hctosys
+
+...into my /etc/hibernate/hibernate.conf.  This copies over the BIOS
+time to the kernel system date.  It works, but I'd really like to know
+why it's necessary in the first place.
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From james.knott at rogers.com  Mon Apr  6 16:06:35 2015
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 06 Apr 2015 12:06:35 -0400
+Subject: [GTALUG] Help; system date goes to GMT hour when I hibernate
+In-Reply-To: <20150406154813.GA6900@waltdnes.org>
+References: <20150406154813.GA6900@waltdnes.org>
+Message-ID: <5522AF0B.9070901@rogers.com>
+
+On 04/06/2015 11:48 AM, Walter Dnes wrote:
+>> You may want to check your clock.  You apparently sent this message
+>> > about 3.5 hours from now.  Or perhaps you were just being proactive.
+>> > ;-)
+>   Actually, it was 4 hours.
+
+It was 3.5 hours from the time I posted.  While looking at your message
+headers, I could see it was UTC, which is, at this time of the year, 4
+hours ahead.
+
+>   After reading your email, I dug deeper.  Apparently, it's just the
+> "kernel system time" that gets bumped forward when it comes up from
+> hibernation.  The BIOS clock is OK.  As a heavy-handed hack, I've
+> inserted the line...
+
+I have my computers configured to use NTP to get accurate time.  My
+notebook computer often is in hybernation, but I've never seen this time
+issue.
+
+
+
+From james.knott at rogers.com  Mon Apr  6 16:07:08 2015
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 06 Apr 2015 12:07:08 -0400
+Subject: [GTALUG] Where can I buy short ethernet and USB-to-microUSB
+	cables?
+In-Reply-To: <20150406190608.GB6612@waltdnes.org>
+References: <20150405062056.GA2764@waltdnes.org> <552121BF.2010304@rogers.com>
+ <20150406190608.GB6612@waltdnes.org>
+Message-ID: <5522AF2C.9080404@rogers.com>
+
+On 04/06/2015 03:06 PM, Walter Dnes wrote:
+> I have a dentist's appointment for teeth-scraping on Friday,
+
+Have fun.  ;-)
+
+
+From kevin at ve3syb.ca  Mon Apr  6 20:16:02 2015
+From: kevin at ve3syb.ca (Kevin)
+Date: Mon, 06 Apr 2015 16:16:02 -0400
+Subject: [GTALUG] git questions
+In-Reply-To: <CAFSeFg99H7XfTkbOO=0ZUhfc9_zZWU9SSj1WHxEUG6HZmxKuag@mail.gmail.com>
+References: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+ <CAFSeFg99H7XfTkbOO=0ZUhfc9_zZWU9SSj1WHxEUG6HZmxKuag@mail.gmail.com>
+Message-ID: <7d23f57b981647b698abe9904dcad03c@ve3syb.ca>
+
+On 2015-03-06 08:39, Aruna Hewapathirane wrote:
+> Links:
+> ------
+> [1] https://github.com/magicmonty/bash-git-prompt
+> [2] https://github.com/olivierverdier/zsh-git-prompt
+> [3] 
+> http://0xfe.blogspot.ca/2010/04/improved-git-enabled-shell-prompt.html
+> [4] https://try.github.io/levels/1/challenges/1
+> [5] http://git-scm.com/book/en/v2
+
+I was forced to start using git as some of the open source projects I 
+work on switched to using it for maintaining their public code 
+repositories. Git is different enough from the other VCS' I have used 
+that it drove me batty at first. With git I often wound up with my 
+checked out code "not on a branch". I've lost code changes I was working 
+on while using git. That never happened while using any of the 
+RCS/CVS/SVN tools. Eventually I started to get a bit of a handle on git 
+and created my own cheat sheet for it.
+
+I have made it available via the wiki on my website. The URL is
+http://www.ve3syb.ca/wiki/doku.php/docs:git_survivors_guide
+
+-- 
+
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that 
+distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why 
+we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+
