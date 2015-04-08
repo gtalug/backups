@@ -108,3 +108,47 @@ There is a GTALUG meeting coming up on $meeting is the GTALUG Board/Executive pe
 
 Look at me! I'm Mr. Meeseeks! (poof)
 
+From avolkov at gmail.com  Tue Apr  7 16:18:07 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Tue, 7 Apr 2015 12:18:07 -0400
+Subject: [GTALUG-Ops] do we have anything for June?
+Message-ID: <CAO1j=qePqaR4y6gfv+u2UG7VZbkz+jrJb9u_Nzoxc=ZStGNTSA@mail.gmail.com>
+
+Hey guys,
+
+I'm gonna go to Pyladies meetup on April 28, and invite people to gtalug if
+I have a chance.
+
+Do we have anything lined up for June?
+
+Alex.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150407/b57bb557/attachment.html>
+
+From me at mylesbraithwaite.com  Tue Apr  7 16:25:11 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 7 Apr 2015 12:25:11 -0400
+Subject: [GTALUG-Ops] do we have anything for June?
+In-Reply-To: <CAO1j=qePqaR4y6gfv+u2UG7VZbkz+jrJb9u_Nzoxc=ZStGNTSA@mail.gmail.com>
+References: <CAO1j=qePqaR4y6gfv+u2UG7VZbkz+jrJb9u_Nzoxc=ZStGNTSA@mail.gmail.com>
+Message-ID: <6CF3AF9F-82C9-4BBE-93CB-26C9B9ACBDB1@mylesbraithwaite.com>
+
+Nope.
+
+
+
+> On Apr 7, 2015, at 12:18 PM, Alex Volkov <avolkov at gmail.com> wrote:
+> 
+> Hey guys,
+> 
+> I'm gonna go to Pyladies meetup on April 28, and invite people to gtalug if I have a chance.
+> 
+> Do we have anything lined up for June?
+> 
+> Alex.
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+

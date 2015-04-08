@@ -1250,3 +1250,178 @@ we're
 #include <disclaimer/favourite> |             --Chris Hardwick
 
 
+From lsorense at csclub.uwaterloo.ca  Tue Apr  7 16:05:11 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 7 Apr 2015 12:05:11 -0400
+Subject: [GTALUG] git questions
+In-Reply-To: <7d23f57b981647b698abe9904dcad03c@ve3syb.ca>
+References: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+ <CAFSeFg99H7XfTkbOO=0ZUhfc9_zZWU9SSj1WHxEUG6HZmxKuag@mail.gmail.com>
+ <7d23f57b981647b698abe9904dcad03c@ve3syb.ca>
+Message-ID: <20150407160511.GM29559@csclub.uwaterloo.ca>
+
+On Mon, Apr 06, 2015 at 04:16:02PM -0400, Kevin wrote:
+> On 2015-03-06 08:39, Aruna Hewapathirane wrote:
+> >Links:
+> >------
+> >[1] https://github.com/magicmonty/bash-git-prompt
+> >[2] https://github.com/olivierverdier/zsh-git-prompt
+> >[3] http://0xfe.blogspot.ca/2010/04/improved-git-enabled-shell-prompt.html
+> >[4] https://try.github.io/levels/1/challenges/1
+> >[5] http://git-scm.com/book/en/v2
+> 
+> I was forced to start using git as some of the open source projects
+> I work on switched to using it for maintaining their public code
+> repositories. Git is different enough from the other VCS' I have
+> used that it drove me batty at first. With git I often wound up with
+> my checked out code "not on a branch". I've lost code changes I was
+> working on while using git. That never happened while using any of
+> the RCS/CVS/SVN tools. Eventually I started to get a bit of a handle
+> on git and created my own cheat sheet for it.
+
+And at the same time a lot of people won't contribute to projects because
+dealing with RCS(ok no one uses that)/CVS/SVN is way too painful.
+then there is bazaar, which really would be better named bizaar, as far
+as the UI is concerned.
+
+git is different, but it's different in a good way.
+
+Now I must admit I have no idea how one can end up not on a branch.
+I have never managed that as far as I recall.  Actually maybe doing a
+checkout of a specific commit number will do that, but I only ever do
+that when trying to investigate when something changed, certainly never
+while writing code.
+
+> I have made it available via the wiki on my website. The URL is
+> http://www.ve3syb.ca/wiki/doku.php/docs:git_survivors_guide
+
+-- 
+Len Sorensen
+
+From gilesorr at gmail.com  Tue Apr  7 16:15:39 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Tue, 7 Apr 2015 12:15:39 -0400
+Subject: [GTALUG] git questions
+In-Reply-To: <54FF65B3.6060601@utoronto.ca>
+References: <CAEnxSC44LA+dZpuX+wLF_C0GOSh1J573L8iDMXmvT0-ou929gg@mail.gmail.com>
+ <CAGxYWpYNnv35gKjZLjDwJ_zq7QT1EOhsiPg8XbuZOGvo_us1yQ@mail.gmail.com>
+ <CAEnxSC44fvvJMO7PVdX2yY02XjkM7cmDq73oW1oc=LW7Y+vVpg@mail.gmail.com>
+ <54FF65B3.6060601@utoronto.ca>
+Message-ID: <CAEnxSC6Cih3d0Zg5r-sAR6MmXcKA+c5_jSTJ_uxB5jqmFjyNcw@mail.gmail.com>
+
+On 10 March 2015 at 17:44, Jamon Camisso <jamon.camisso at utoronto.ca> wrote:
+> On 06/03/15 12:33 PM, Giles Orr wrote:
+>>
+>> About the same time you were sending this, a co-worker was telling me
+>> about the virtues of "git fetch" as opposed to "git pull" which I've
+>> used almost exclusively.  It makes a lot more sense now, thanks.
+>>
+>> To everyone who answered: I think we can consider my problems (at
+>> least the git ones!) solved, and many thanks.
+>
+>
+> Missed this thread but thought I'd chime in with a plug for Oh My Zsh! I use
+> it with a solarized terminal theme, the git plugin, and a customized prompt
+> to show the git branch that I'm on:
+>
+> export PROMPT="%{$FG[154]%}[%*|%D]% %{$fg[blue]%}
+> %{%}%n%{%}@%{%}%m%{%}:%{$fg[red]%} %~% %{$fg[black]%}>>%k
+>  %{$FG[032]%} %B%? %s%%%k %b"
+>
+> function git_prompt_info() {
+>     ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+>     echo
+> "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
+> }
+>
+> The nice thing about it is when something extends across the entirety of the
+> prompt, the (branch-marker) goes away too.
+>
+> I don't pretend to know what 99% of that does because once I got it setup I
+> haven't ever dared fiddle with it :p
+>
+> It doesn't do stuff like show revs ahead/behind or anything, but I'm sure
+> some creative aliases would make that pretty straightforward.
+
+As a follow-up to my part of this thread, a fair bit of research on my
+part suggests that yes, Oh My Zsh! is kind of the way to go.  Although
+if you want to stay with Bash (and I admit I have a lot of sunk cost
+there), there's Bash-it ( https://github.com/Bash-it/bash-it ) which
+is an attempt to replicate OMZ! for Bash.  There's also oh-my-git (
+https://github.com/arialdomartini/oh-my-git ), a garish but thorough
+git prompt for zsh or Bash that could act as a base for a less
+brightly coloured prompt - although it requires modified fonts.
+
+As for tracking upstreams, it's looking like the best procedure for
+me, if I really want to be concerned about that all the time, is to
+run "git fetch origin <whatever>" by cron: once you have local
+unmerged copies, git's tools can readily tell you about the state of
+the upstream without an on-the-instant network connection.  Not quite
+what I'd hoped for, but when I think about how git works, it's an
+acceptable compromise.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From bjonkman at sobac.com  Tue Apr  7 19:53:01 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Tue, 07 Apr 2015 15:53:01 -0400
+Subject: [GTALUG] [VOTE] Where should we have dinner before the April
+	2015 GTALUG meeting? (was Dinner Ideas for April's Meeting)
+In-Reply-To: <55183D5F.5010304@mylesbraithwaite.com>
+References: <CA+hskZOGQ0fNLtk+CEU8r+M6nOzzb_kjOcKhot4drv6ct4VvWA@mail.gmail.com>
+ <55183C49.50309@sobac.com> <55183D5F.5010304@mylesbraithwaite.com>
+Message-ID: <9dbbf5e3-26c8-42a1-ba52-d1ed43c72534@email.android.com>
+
+Has there been a decision on dinner? According to http://strawpoll.me/3951772/r it's Kaiju (NW corner of Yonge and Gerrard?)
+
+--Bob
+
+On March 29, 2015 1:58:55 PM AST, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+>Bob Jonkman wrote:
+>> How do we indicate "No preference", but still have our vote counted?
+>> Check 'em all?
+>
+>Next vote I will add an option of "No preference" but for now just
+>check 
+>them all to indicate "No preference".
+>---
+>Talk Mailing List
+>talk at gtalug.org
+>http://gtalug.org/mailman/listinfo/talk
+
+
+--
+Bob Jonkman bjonkman at sobac.com
+http://bob.jonkman.ca/blogs/bobjonkman
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150407/2d549226/attachment.html>
+
+From me at mylesbraithwaite.com  Tue Apr  7 20:03:32 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 07 Apr 2015 16:03:32 -0400
+Subject: [GTALUG] [VOTE] Where should we have dinner before the April
+ 2015 GTALUG meeting? (was Dinner Ideas for April's Meeting)
+In-Reply-To: <9dbbf5e3-26c8-42a1-ba52-d1ed43c72534@email.android.com>
+References: <CA+hskZOGQ0fNLtk+CEU8r+M6nOzzb_kjOcKhot4drv6ct4VvWA@mail.gmail.com>
+ <55183C49.50309@sobac.com> <55183D5F.5010304@mylesbraithwaite.com>
+ <9dbbf5e3-26c8-42a1-ba52-d1ed43c72534@email.android.com>
+Message-ID: <55243814.9060305@mylesbraithwaite.com>
+
+Bob Jonkman wrote:
+> Has there been a decision on dinner? According to
+> http://strawpoll.me/3951772/r it's Kaiju (NW corner of Yonge and Gerrard?)
+
+Yep it's Kaiju.
+
+<http://gtalug.org/pipermail/announce/2015/000015.html>:
+> ## Schedule
+>
+> * 6:00 pm - Before each meeting a group of GTALUGers dine at Kaiju
+> (384 Yonge Street).
+
+
+
