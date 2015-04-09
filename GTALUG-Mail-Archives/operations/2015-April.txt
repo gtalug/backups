@@ -152,3 +152,19 @@ Nope.
 > operations at gtalug.org
 > http://gtalug.org/mailman/listinfo/operations
 
+From hi at gtalug.org  Wed Apr  8 19:59:47 2015
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Wed,  8 Apr 2015 19:59:47 +0000 (UTC)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20150408195947.ACFF4E36A@penguin.gtalug.org>
+
+I'm Mr. Meeseeks! Look at me!
+
+There is a GTALUG meeting coming up on $meeting, is the GTALUG Board/Executive prepared?
+
+- [ ] Contact the speaker.
+- [ ] Does the speaker need anything else besides a projector (i.e. graphic dongles).
+- [ ] Send out an announcement for the meeting.
+
+Look at me! I'm Mr. Meeseeks! (poof)
+
