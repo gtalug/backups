@@ -1425,3 +1425,94 @@ Yep it's Kaiju.
 
 
 
+From gilesorr at gmail.com  Thu Apr  9 16:21:19 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Thu, 9 Apr 2015 12:21:19 -0400
+Subject: [GTALUG] Git Large File Storage extension
+Message-ID: <CAEnxSC4Yk5GAkpVe0rCcLsSwACVhSgVGgs6ca0ZaYonFxxejTQ@mail.gmail.com>
+
+Github has developed a "Large File Storage" extension to git.  Written
+in Go, open sourced.
+
+https://github.com/github/git-lfs
+
+This is their blog announcement:
+
+https://github.com/blog/1986-announcing-git-large-file-storage-lfs
+
+I haven't dealt with the problems of large files in git, but I've
+heard it's ugly, so this is interesting.  I'm curious if more
+experienced git users actually think this is a good idea.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From me at mylesbraithwaite.com  Thu Apr  9 17:23:54 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 09 Apr 2015 13:23:54 -0400
+Subject: [GTALUG] Git Large File Storage extension
+In-Reply-To: <CAEnxSC4Yk5GAkpVe0rCcLsSwACVhSgVGgs6ca0ZaYonFxxejTQ@mail.gmail.com>
+References: <CAEnxSC4Yk5GAkpVe0rCcLsSwACVhSgVGgs6ca0ZaYonFxxejTQ@mail.gmail.com>
+Message-ID: <5526B5AA.6000604@mylesbraithwaite.com>
+
+Giles Orr wrote:
+> Github has developed a "Large File Storage" extension to git.  Written
+> in Go, open sourced.
+>
+> https://github.com/github/git-lfs
+>
+> This is their blog announcement:
+>
+> https://github.com/blog/1986-announcing-git-large-file-storage-lfs
+>
+> I haven't dealt with the problems of large files in git, but I've
+> heard it's ugly, so this is interesting.  I'm curious if more
+> experienced git users actually think this is a good idea.
+
+I'm currently using git-annex (using an ownCloud remote) for storing 
+mixtapes (large m4a and mp3 files) for a Jekyll based website I'm 
+working on. It works while for me because the files never change.
+
+I'm excited for git-lfs because most of the design directories get 
+pretty large (~700MB) which makes it a pain to have to clone/pull from.
+
+From lsorense at csclub.uwaterloo.ca  Thu Apr  9 19:28:20 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 9 Apr 2015 15:28:20 -0400
+Subject: [GTALUG] Git Large File Storage extension
+In-Reply-To: <CAEnxSC4Yk5GAkpVe0rCcLsSwACVhSgVGgs6ca0ZaYonFxxejTQ@mail.gmail.com>
+References: <CAEnxSC4Yk5GAkpVe0rCcLsSwACVhSgVGgs6ca0ZaYonFxxejTQ@mail.gmail.com>
+Message-ID: <20150409192820.GN29559@csclub.uwaterloo.ca>
+
+On Thu, Apr 09, 2015 at 12:21:19PM -0400, Giles Orr wrote:
+> Github has developed a "Large File Storage" extension to git.  Written
+> in Go, open sourced.
+> 
+> https://github.com/github/git-lfs
+> 
+> This is their blog announcement:
+> 
+> https://github.com/blog/1986-announcing-git-large-file-storage-lfs
+> 
+> I haven't dealt with the problems of large files in git, but I've
+> heard it's ugly, so this is interesting.  I'm curious if more
+> experienced git users actually think this is a good idea.
+
+Well for one it certainly breaks the idea that the git tree is self
+contained.
+
+I think it is a solution trying to solve a problem that should be solved
+some other way.
+
+Perhaps some files are so huge they don't have any reason to be stored
+in your code tree.  They may need a better designed storage system of
+their own.
+
+So I don't get it, and don't think it fits the git model at all (then
+again I don't think github does either for that matter).
+
+-- 
+Len Sorensen
+
