@@ -1516,3 +1516,125 @@ again I don't think github does either for that matter).
 -- 
 Len Sorensen
 
+From stephen-d at rogers.com  Sun Apr 12 03:26:51 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Sat, 11 Apr 2015 23:26:51 -0400
+Subject: [GTALUG] New system audio problem
+Message-ID: <5529E5FB.6090101@rogers.com>
+
+Background:
+
+I have run Ubuntu 12.04 and earlier versions for a number of years on an 
+MSI motherboard and an AMD 3200 cpu. It finally died.
+
+I build a new system on a ASUS H97M-E motherboard with an Intel i5 and 
+16 gigs ram.
+
+I just connected the hard drives from the old system, and was quite 
+happy when the system booted and all seemed good.
+
+Problem:
+
+Audio is bad. Static and drops. This applies to *.flac files and online 
+Youtube stuff.
+
+But when I play *.mp4 files, the video and audio are great.
+
+My Ubuntu system is a DLNA server and and that plays fine on the client.
+
+So I am thinking the audio driver is not a good fit for the new chip set.
+
+Am I on the right track? Can I get Ubuntu to update to the proper driver?
+
+Thanks
+
+-- 
+Stephen
+
+From hugh at mimosa.com  Sun Apr 12 04:28:50 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 12 Apr 2015 00:28:50 -0400 (EDT)
+Subject: [GTALUG] New system audio problem
+In-Reply-To: <5529E5FB.6090101@rogers.com>
+References: <5529E5FB.6090101@rogers.com>
+Message-ID: <alpine.LRH.2.02.1504120017590.6970@redclaw.mimosa.com>
+
+| From: Stephen <stephen-d at rogers.com>
+
+| I have run Ubuntu 12.04 and earlier versions for a number of years on an MSI
+| motherboard and an AMD 3200 cpu. It finally died.
+| 
+| I build a new system on a ASUS H97M-E motherboard with an Intel i5 and 16 gigs
+| ram.
+| 
+| I just connected the hard drives from the old system, and was quite happy when
+| the system booted and all seemed good.
+
+This isn't 100% clear, but I assume that the version you are currently
+running is 12.04.
+
+| Audio is bad. Static and drops. This applies to *.flac files and online
+| Youtube stuff.
+
+| So I am thinking the audio driver is not a good fit for the new chip set.
+| 
+| Am I on the right track? Can I get Ubuntu to update to the proper driver?
+
+Ubuntu adjusts which drivers it uses upon boot.  Unless you've wired in
+some settings somewhere (eg. telling it to load certain modules or not
+to load certain modules).
+
+Sometimes mixer settings get mixed up.  Try creating a new user, log
+in as that user, and see if sound works properly.  If so, some dot file
+in your normal home directory has an inappropriate setting.
+
+I assume that you have done a normal update procedure to get all
+released updates to 12.04.  If not, I suggest doing so.
+
+Perhaps 12.04LTS isn't aggressively supporting new hardware (I don't
+know) because 14.04LTS is out.  Consider trying 14.04LTS from a live USB
+stick -- that would allow you to test without disturbing your current
+installation.  You could even try a newer release.  Or, say Fedora.
+
+Good luck!
+
+From hugh at mimosa.com  Sun Apr 12 04:46:37 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 12 Apr 2015 00:46:37 -0400 (EDT)
+Subject: [GTALUG] moving Win8.1 with Bing out of the way
+Message-ID: <alpine.LRH.2.02.1504120028570.6970@redclaw.mimosa.com>
+
+I bought a cute little box (a weakness of mine): an HP Stream Mini.
+It comes with Win8.1 with Bing x64 on its "HDD", a 32G M.2 SSD.  Note
+that it is x64: not one of these Atoms with a crippled 32-bit UEFI.
+
+Fedora 21 runs fine off a live USB stick.
+
+The SSD is a fine size for Linux, but not a fine size for Win8.1 + Linux.  
+So I intend to evict Windows from the SSD.  But I feel that I need to keep 
+Win8.1 bootable
+- I paid for it (a lame reason)
+- I will likely need Win8.1 to do firmware updates
+- it might be worth playing with for some purposes
+
+I'd like to migrate Win8.1 to a USB3 device.  I just bought a 64G usb 
+stick which might be perfect ($19.99 at NCIX this weekend).  Or more 
+likely, a 2.5" external HDD.
+
+Does anyone know how to migrate Windows?
+
+Googling finds lots of moderately crappy postings about how to move
+Windows to an SSD but I cannot tell if they assume that some vital
+essence is left on the original drive.  (I actually wish to move the
+opposite way; that ought not to be a problem.)
+
+I've found Windows quite fragile, possibly due to piracy prevention
+things.  It also seems to want to own booting and on UEFI / Secure
+Boot systems this gets downright magical (i.e.  I don't understand it)
+
+All seem to take proprietary non-Microsoft software -- one fears a
+bait-and-switch.  (I bet some of the bootable ones are based on
+Linux.)
+
+I can experiment, but I thought I'd ask here first.
+
