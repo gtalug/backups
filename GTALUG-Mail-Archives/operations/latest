@@ -168,3 +168,18 @@ There is a GTALUG meeting coming up on $meeting, is the GTALUG Board/Executive p
 
 Look at me! I'm Mr. Meeseeks! (poof)
 
+From avolkov at gmail.com  Sun Apr 12 23:48:43 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Sun, 12 Apr 2015 19:48:43 -0400
+Subject: [GTALUG-Ops] mosh on penguin
+Message-ID: <552B045B.1020006@gmail.com>
+
+Hey guys,
+
+Is it OK to install mosh on penguin?
+
+It's a lot more convenient to connect through it when I'm on a bad
+internet connection, however it needs UDP 60000 -- 61000 open.
+
+Alex.
+
