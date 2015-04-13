@@ -1638,3 +1638,461 @@ Linux.)
 
 I can experiment, but I thought I'd ask here first.
 
+From o1bigtenor at gmail.com  Sun Apr 12 10:53:08 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Sun, 12 Apr 2015 05:53:08 -0500
+Subject: [GTALUG] moving Win8.1 with Bing out of the way
+In-Reply-To: <alpine.LRH.2.02.1504120028570.6970@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1504120028570.6970@redclaw.mimosa.com>
+Message-ID: <CAPpdf5-TSL9ztERP_JL=ani4MS7rZ8gNT9VONyPkVMRRqoeTpA@mail.gmail.com>
+
+On Sat, Apr 11, 2015 at 11:46 PM, D. Hugh Redelmeier <hugh at mimosa.com>
+wrote:
+
+> I bought a cute little box (a weakness of mine): an HP Stream Mini.
+> It comes with Win8.1 with Bing x64 on its "HDD", a 32G M.2 SSD.  Note
+> that it is x64: not one of these Atoms with a crippled 32-bit UEFI.
+>
+> Fedora 21 runs fine off a live USB stick.
+>
+> The SSD is a fine size for Linux, but not a fine size for Win8.1 + Linux.
+> So I intend to evict Windows from the SSD.  But I feel that I need to keep
+> Win8.1 bootable
+> - I paid for it (a lame reason)
+> - I will likely need Win8.1 to do firmware updates
+> - it might be worth playing with for some purposes
+>
+> I'd like to migrate Win8.1 to a USB3 device.  I just bought a 64G usb
+> stick which might be perfect ($19.99 at NCIX this weekend).  Or more
+> likely, a 2.5" external HDD.
+>
+> Does anyone know how to migrate Windows?
+>
+> Googling finds lots of moderately crappy postings about how to move
+> Windows to an SSD but I cannot tell if they assume that some vital
+> essence is left on the original drive.  (I actually wish to move the
+> opposite way; that ought not to be a problem.)
+>
+> I've found Windows quite fragile, possibly due to piracy prevention
+> things.  It also seems to want to own booting and on UEFI / Secure
+> Boot systems this gets downright magical (i.e.  I don't understand it)
+>
+> All seem to take proprietary non-Microsoft software -- one fears a
+> bait-and-switch.  (I bet some of the bootable ones are based on
+> Linux.)
+>
+> I can experiment, but I thought I'd ask here first.
+> ---
+>
+
+
+I haven't done this but I have found that gdisk (or gparted), which can be
+run
+from a live CD (I assume it would also run from a USB stick), can set up
+UEFI hardware. Now as to the gotchas - - - no idea.
+
+Please - - - would you let the list know what you actually do and what
+works?
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150412/3114c1a9/attachment.html>
+
+From james.knott at rogers.com  Sun Apr 12 11:57:01 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 12 Apr 2015 07:57:01 -0400
+Subject: [GTALUG] moving Win8.1 with Bing out of the way
+In-Reply-To: <alpine.LRH.2.02.1504120028570.6970@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1504120028570.6970@redclaw.mimosa.com>
+Message-ID: <552A5D8D.5070007@rogers.com>
+
+On 04/12/2015 12:46 AM, D. Hugh Redelmeier wrote:
+>  bought a cute little box (a weakness of mine):
+
+Then you may want one of these.  Both Linux & Windows versions are
+available.
+
+http://www.eweek.com/pc-hardware/slideshows/how-intels-compute-stick-is-once-again-redefining-the-pc.html?utm_medium=email&utm_campaign=EWK_NL_WHN_20150409_STR1L1&dni=233806532&rni=22079222
+
+From phiscock at ee.ryerson.ca  Sun Apr 12 13:59:52 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Sun, 12 Apr 2015 09:59:52 -0400
+Subject: [GTALUG] moving Win8.1 with Bing out of the way
+In-Reply-To: <552A5D8D.5070007@rogers.com>
+References: <alpine.LRH.2.02.1504120028570.6970@redclaw.mimosa.com>
+ <552A5D8D.5070007@rogers.com>
+Message-ID: <f61636166b692a8fe0be17de9a4dd846.squirrel@webmail.ee.ryerson.ca>
+
+
+> On 04/12/2015 12:46 AM, D. Hugh Redelmeier wrote:
+>>  bought a cute little box (a weakness of mine):
+>
+
+I did a clone of XP some time ago and documented the process. This might
+have some useful information.
+
+http://www.ee.ryerson.ca/~phiscock/papers/clone-and-expand.pdf
+
+Peter
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From hugh at mimosa.com  Sun Apr 12 15:36:04 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 12 Apr 2015 11:36:04 -0400 (EDT)
+Subject: [GTALUG] moving Win8.1 with Bing out of the way
+In-Reply-To: <552A5D8D.5070007@rogers.com>
+References: <alpine.LRH.2.02.1504120028570.6970@redclaw.mimosa.com>
+ <552A5D8D.5070007@rogers.com>
+Message-ID: <alpine.LRH.2.02.1504121100400.6970@redclaw.mimosa.com>
+
+| From: James Knott <james.knott at rogers.com>
+
+| Then you may want one of these.  Both Linux & Windows versions are
+| available.
+| 
+| http://www.eweek.com/pc-hardware/slideshows/how-intels-compute-stick-is-once-again-redefining-the-pc.html?utm_medium=email&utm_campaign=EWK_NL_WHN_20150409_STR1L1&dni=233806532&rni=22079222
+
+There is a lot of play with formats around Atom and Win8.1 with Bing.
+There are lots of Chinese boxes that have beaten Intel to market.
+
+I see the reasons for these developments as:
+
+- Intel wants to defend the space that Arm has been moving into.
+  They do this with heavy subsidies of Atom-based SOCs and processors.
+  I think that they also do this with creating "reference platforms"
+  that take much of the design work out of creating a system.
+
+- Microsoft wants to defend the space that Android has been moving
+  into.  Their attempt to run on Arm has been a market disaster.  So
+  they too want to ride the Atom at the low end.  They do this by
+  making Windows 8.1 free to OEMs in that space.  They also do that
+  by engineering a way for Win8.1 to fit into 1G RAM / 16G flash
+  systems.
+
+The devil is in the details.  Like
+- USB3 -- rare
+- 1G ethernet -- rare
+- Bluetooth 4.0
+- what kind of WiFi
+- size of RAM and flash
+
+Few Chinese boxes intentionally support normal Linux distros.  This is
+one place where Intel's Compute Stick is ahead.  I hope that the
+Windows version (with more resources) can run Linux.
+
+Qualifications to earlier statements:
+
+- Intel has said that it will phase out subsidies.  I forget exactly
+  when, but it was supposed to have already started.  I don't
+  understand how they haven't been nailed by US DoJ's anti-trust guys.
+
+- "Win8.1 with Bing" is the fig-leaf cheap SKU.  I think that the OEMs
+  pay US$10 for Windows and get US$10 back for making Bing the default
+  search engine.  Current terms are not publicly known.  The original
+  statement from Microsoft had restrictions on tablet screen sizes
+  and processor but they changed those restrictions without public
+  announcement (as far as I know).
+
+- (my inference) to limit the damage to their cash cow, Intel's cheap
+  Atoms for running Windows only have 32-bit UEFI even though the
+  processors are 64-bit.  As you know, Linux distros don't support
+  this.  Boo.
+
+- to limit damage to their cash cow, Intel's Atoms vary widely in how
+  much physical RAM they will support.  I'm sure that this has no
+  technical justification.  Most cheap ones only support 2G.  Many of
+  the rest stop at 4G.  Some go to 64G and have ECC support!.nnn
+
+- Win8.1 with Bing can fit in 16G of flash.  It does so by using the
+  compressed restore image as a virtual disk (roughly speaking).  But
+  Windows updates are not compressed.  So as they appear, the 16G has
+  less and less space for the user's files.  I infer that Microsoft
+  tries to deal with this by only installing "important" updates (the
+  user can change this policy -- oops).  I think that this is going to
+  end badly.
+
+See how interesting things get when the monopolies feel a threat
+coming on?
+
+From gilesorr at gmail.com  Sun Apr 12 15:47:01 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Sun, 12 Apr 2015 11:47:01 -0400
+Subject: [GTALUG] moving Win8.1 with Bing out of the way
+In-Reply-To: <alpine.LRH.2.02.1504120028570.6970@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1504120028570.6970@redclaw.mimosa.com>
+Message-ID: <CAEnxSC6F4yZKr2Tny+HNr3FX17EDupBD5=T7ke0KwZXTHWfxFQ@mail.gmail.com>
+
+On 12 April 2015 at 00:46, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+> I bought a cute little box (a weakness of mine): an HP Stream Mini.
+> It comes with Win8.1 with Bing x64 on its "HDD", a 32G M.2 SSD.  Note
+> that it is x64: not one of these Atoms with a crippled 32-bit UEFI.
+>
+> Fedora 21 runs fine off a live USB stick.
+>
+> The SSD is a fine size for Linux, but not a fine size for Win8.1 + Linux.
+> So I intend to evict Windows from the SSD.  But I feel that I need to keep
+> Win8.1 bootable
+> - I paid for it (a lame reason)
+> - I will likely need Win8.1 to do firmware updates
+> - it might be worth playing with for some purposes
+>
+> I'd like to migrate Win8.1 to a USB3 device.  I just bought a 64G usb
+> stick which might be perfect ($19.99 at NCIX this weekend).  Or more
+> likely, a 2.5" external HDD.
+>
+> Does anyone know how to migrate Windows?
+>
+> Googling finds lots of moderately crappy postings about how to move
+> Windows to an SSD but I cannot tell if they assume that some vital
+> essence is left on the original drive.  (I actually wish to move the
+> opposite way; that ought not to be a problem.)
+>
+> I've found Windows quite fragile, possibly due to piracy prevention
+> things.  It also seems to want to own booting and on UEFI / Secure
+> Boot systems this gets downright magical (i.e.  I don't understand it)
+>
+> All seem to take proprietary non-Microsoft software -- one fears a
+> bait-and-switch.  (I bet some of the bootable ones are based on
+> Linux.)
+>
+> I can experiment, but I thought I'd ask here first.
+
+It's been a long time since I mucked with this (Windows 7, but several
+years ago), but my experience agrees with yours: Windows is very
+fragile about being moved.  I'd suggest that if you want to attempt to
+boot Windows from an external media that you also make a pristine
+image of the original HD and set that aside.  I suspect that the
+second you boot the external version of Windows, it will write
+breaking changes to itself and never be usable again.  I think the
+only way you're going to successfully boot Windows on it again is to
+wipe Linux from the original drive, and re-image it from your original
+clean copy.  I may be being overly pessimistic, but I've had very poor
+luck working with Windows on anything that wasn't its own original
+hardware after its been installed.  Best of luck.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From lsorense at csclub.uwaterloo.ca  Sun Apr 12 16:49:40 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sun, 12 Apr 2015 12:49:40 -0400
+Subject: [GTALUG] moving Win8.1 with Bing out of the way
+In-Reply-To: <alpine.LRH.2.02.1504120028570.6970@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1504120028570.6970@redclaw.mimosa.com>
+Message-ID: <20150412164940.GO29559@csclub.uwaterloo.ca>
+
+On Sun, Apr 12, 2015 at 12:46:37AM -0400, D. Hugh Redelmeier wrote:
+> I bought a cute little box (a weakness of mine): an HP Stream Mini.
+> It comes with Win8.1 with Bing x64 on its "HDD", a 32G M.2 SSD.  Note
+> that it is x64: not one of these Atoms with a crippled 32-bit UEFI.
+> 
+> Fedora 21 runs fine off a live USB stick.
+> 
+> The SSD is a fine size for Linux, but not a fine size for Win8.1 + Linux.  
+> So I intend to evict Windows from the SSD.  But I feel that I need to keep 
+> Win8.1 bootable
+> - I paid for it (a lame reason)
+> - I will likely need Win8.1 to do firmware updates
+> - it might be worth playing with for some purposes
+> 
+> I'd like to migrate Win8.1 to a USB3 device.  I just bought a 64G usb 
+> stick which might be perfect ($19.99 at NCIX this weekend).  Or more 
+> likely, a 2.5" external HDD.
+> 
+> Does anyone know how to migrate Windows?
+
+To another SATA disk is no big deal.  To USB is a totally different story.
+Not even sure if you can.  A quick search confirms that installing
+TO usb/firewire is NOT supported (at least in Windows 7).
+There are ways around it, but don't expect it to always work.  See
+http://www.intowindows.com/how-to-install-windows-7-to-usb-external-hard-drive-must-read/
+for example.
+
+> Googling finds lots of moderately crappy postings about how to move
+> Windows to an SSD but I cannot tell if they assume that some vital
+> essence is left on the original drive.  (I actually wish to move the
+> opposite way; that ought not to be a problem.)
+
+Moving to an SSD is just another SATA drive.  Nothing complex about that.
+It is still just an internal SATA drive.
+
+> I've found Windows quite fragile, possibly due to piracy prevention
+> things.  It also seems to want to own booting and on UEFI / Secure
+> Boot systems this gets downright magical (i.e.  I don't understand it)
+> 
+> All seem to take proprietary non-Microsoft software -- one fears a
+> bait-and-switch.  (I bet some of the bootable ones are based on
+> Linux.)
+> 
+> I can experiment, but I thought I'd ask here first.
+
+I think what you want to do simply isn't supported in windows.  I think
+you are out of luck.
+
+-- 
+Len Sorensen
+
+From bjonkman at sobac.com  Sun Apr 12 18:25:54 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Sun, 12 Apr 2015 14:25:54 -0400
+Subject: [GTALUG] moving Win8.1 with Bing out of the way
+In-Reply-To: <CAEnxSC6F4yZKr2Tny+HNr3FX17EDupBD5=T7ke0KwZXTHWfxFQ@mail.gmail.com>
+References: <alpine.LRH.2.02.1504120028570.6970@redclaw.mimosa.com>
+ <CAEnxSC6F4yZKr2Tny+HNr3FX17EDupBD5=T7ke0KwZXTHWfxFQ@mail.gmail.com>
+Message-ID: <552AB8B2.7000902@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+>> Does anyone know how to migrate Windows?
+
+I've successfully used Microsoft's Disk2VHD tool to create a virtual
+disk image from a Windows 7 partition.
+
+https://technet.microsoft.com/en-us/sysinternals/ee656415.aspx
+
+Giles Orr wrote:
+> Windows is very fragile about being moved.
+[...]
+> I suspect that the second you boot the external version of
+> Windows, it will write breaking changes to itself and never be
+> usable again.
+
+I used the virtual Win7 machine in VirtualBox a few times, but when I
+tried to run Windows Update it told me that the hardware had changed
+and I was running an unlicensed copy. It still runs, but with a nag
+message every so often. Technically, it is still running on the same
+hardware, just with an additional layer of abstraction.  Oh well.
+
+I still have the orginal .VHD file, so I can fire up an old Win7 image
+if I ever need to check something out, but that hardly ever happens.
+
+- --Bob.
+
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-669-0388
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+http://bob.jonkman.ca/blogs/    http://sn.jonkman.ca/bobjonkman/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+
+
+On 12/04/15 11:47 AM, Giles Orr wrote:
+> On 12 April 2015 at 00:46, D. Hugh Redelmeier <hugh at mimosa.com> 
+> wrote:
+>> I bought a cute little box (a weakness of mine): an HP Stream 
+>> Mini. It comes with Win8.1 with Bing x64 on its "HDD", a 32G M.2 
+>> SSD.  Note that it is x64: not one of these Atoms with a
+>> crippled 32-bit UEFI.
+>> 
+>> Fedora 21 runs fine off a live USB stick.
+>> 
+>> The SSD is a fine size for Linux, but not a fine size for Win8.1
+>> + Linux. So I intend to evict Windows from the SSD.  But I feel
+>> that I need to keep Win8.1 bootable - I paid for it (a lame
+>> reason) - I will likely need Win8.1 to do firmware updates - it
+>> might be worth playing with for some purposes
+>> 
+>> I'd like to migrate Win8.1 to a USB3 device.  I just bought a
+>> 64G usb stick which might be perfect ($19.99 at NCIX this
+>> weekend).  Or more likely, a 2.5" external HDD.
+>> 
+>> Does anyone know how to migrate Windows?
+>> 
+>> Googling finds lots of moderately crappy postings about how to 
+>> move Windows to an SSD but I cannot tell if they assume that
+>> some vital essence is left on the original drive.  (I actually
+>> wish to move the opposite way; that ought not to be a problem.)
+>> 
+>> I've found Windows quite fragile, possibly due to piracy 
+>> prevention things.  It also seems to want to own booting and on 
+>> UEFI / Secure Boot systems this gets downright magical (i.e.  I 
+>> don't understand it)
+>> 
+>> All seem to take proprietary non-Microsoft software -- one fears
+>> a bait-and-switch.  (I bet some of the bootable ones are based on
+>>  Linux.)
+>> 
+>> I can experiment, but I thought I'd ask here first.
+> 
+> It's been a long time since I mucked with this (Windows 7, but 
+> several years ago), but my experience agrees with yours: Windows
+> is very fragile about being moved.  I'd suggest that if you want
+> to attempt to boot Windows from an external media that you also
+> make a pristine image of the original HD and set that aside.  I
+> suspect that the second you boot the external version of Windows,
+> it will write breaking changes to itself and never be usable again.
+> I think the only way you're going to successfully boot Windows on
+> it again is to wipe Linux from the original drive, and re-image it
+> from your original clean copy.  I may be being overly pessimistic,
+> but I've had very poor luck working with Windows on anything that
+> wasn't its own original hardware after its been installed.  Best of
+> luck.
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlUquLAACgkQuRKJsNLM5epUfACaA9lLa2wD45EijoxamtbeWiX3
+IOoAoIPCCi3Vl+QfQfYIiS/xsLhdJ1Es
+=zXX1
+-----END PGP SIGNATURE-----
+
+From bjonkman at sobac.com  Mon Apr 13 04:37:33 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Mon, 13 Apr 2015 00:37:33 -0400
+Subject: [GTALUG] Toronto Ubuntu 15.04 Vivid Vervet Release Party
+Message-ID: <552B480D.2040409@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Hi all: There are a number of significant Linux distribution releases
+happening -- Linux Mint Debian Edition 2 "Betsy" just came out this
+past Friday, Ubuntu 15.04 "Vivid Vervet" is coming out next Thursday,
+and Debian 8.0 "Jessie" is being released the Saturday after that.  As
+far as I know, only Ubuntu is having a release party, to which I'd
+like to welcome all Linux distro users in the Toronto area:
+
+*What*: Toronto 15.04 Release Party
+*When*: 8:00pm to 11:45pm, Thursday, 23 April 2015
+*Where*: Alio Lounge, 108 Dundas Street West, Toronto, Ontario
+*Map*: http://osm.org/go/ZX6BtMGSN-?m=&node=1113718580
+*LoCo Event*: http://loco.ubuntu.com/events/ubuntu-ca/3074/detail/
+
+Mike Kaulbach (genii in IRC) is providing free coffee and all the
+fixings to decorate your own cupcakes. Hope to see you there!
+
+Thanx,
+- --Bob.
+
+
+
+
+- -- 
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-669-0388
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+http://bob.jonkman.ca/blogs/    http://sn.jonkman.ca/bobjonkman/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlUrSAkACgkQuRKJsNLM5erWUgCgzIL2DEIe/DC8tG0RqI+6Nx2z
+8sUAn2jfDvMNEY12aeiIr6Vekv014Reb
+=h2Vj
+-----END PGP SIGNATURE-----
+
