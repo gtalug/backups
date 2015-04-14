@@ -183,3 +183,16 @@ internet connection, however it needs UDP 60000 -- 61000 open.
 
 Alex.
 
+From me at mylesbraithwaite.com  Mon Apr 13 12:33:06 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 13 Apr 2015 08:33:06 -0400
+Subject: [GTALUG-Ops] mosh on penguin
+In-Reply-To: <552B045B.1020006@gmail.com>
+References: <552B045B.1020006@gmail.com>
+Message-ID: <552BB782.9080200@mylesbraithwaite.com>
+
+Alex Volkov wrote:
+> Is it OK to install mosh on penguin?
+
+As long as you do all the work and install from the debian repository.
+

@@ -2096,3 +2096,174 @@ iEYEARECAAYFAlUrSAkACgkQuRKJsNLM5erWUgCgzIL2DEIe/DC8tG0RqI+6Nx2z
 =h2Vj
 -----END PGP SIGNATURE-----
 
+From hugh at mimosa.com  Mon Apr 13 14:25:02 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 13 Apr 2015 10:25:02 -0400 (EDT)
+Subject: [GTALUG] moving Win8.1 with Bing out of the way
+In-Reply-To: <552AB8B2.7000902@sobac.com>
+References: <alpine.LRH.2.02.1504120028570.6970@redclaw.mimosa.com>
+ <CAEnxSC6F4yZKr2Tny+HNr3FX17EDupBD5=T7ke0KwZXTHWfxFQ@mail.gmail.com>
+ <552AB8B2.7000902@sobac.com>
+Message-ID: <alpine.LRH.2.02.1504131021180.9158@redclaw.mimosa.com>
+
+| From: Bob Jonkman <bjonkman at sobac.com>
+
+| I've successfully used Microsoft's Disk2VHD tool to create a virtual
+| disk image from a Windows 7 partition.
+
+That's very interesting.
+
+Unfortunately, the #1 must-have feature is updating firmware.  The
+machine is a new model and new firmware is likely.  Updating firmware
+from a virtual machine seems likely to fail.
+
+From me at mylesbraithwaite.com  Mon Apr 13 14:25:20 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 13 Apr 2015 10:25:20 -0400
+Subject: [GTALUG] Dinner before tomorrow's meeting (was GTALUG Meeting
+	Tomorrow at 7:30pm)
+Message-ID: <CA+hskZMfKkUae7OUO51Ttyiu_tPzjTMcRNiyD+Ng-oj1owvBkg@mail.gmail.com>
+
+Just a reminder a group of GTALUGers are dining at Kaiju tomorrow at
+6pm (before the meeting).
+
+On Mon, Apr 13, 2015 at 10:23 AM, Myles Braithwaite
+<me at mylesbraithwaite.com> wrote:
+> ## Schedule
+>
+> * 6:00 pm - Before each meeting a group of GTALUGers dine at Kaiju
+> (384 Yonge Street).
+
+From me at mylesbraithwaite.com  Mon Apr 13 14:23:01 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 13 Apr 2015 10:23:01 -0400
+Subject: [GTALUG] [GTALUG-Announce] GTALUG Meeting Tomorrow at 7:30pm
+Message-ID: <CA+hskZOXdpX4Aj8F7B+qH2a83Ta33BO+B_4BOZZGOGX-UtPUEg@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-04/>
+
+# LessCSS with Myles Braithwaite and a Round Table Q&A Session
+
+*LessCSS*
+
+LessCSS extends the CSS language to make it actually useable by adding
+features like variables, mixins, functions, and a bunch of other
+techniques that allow you to make your stylesheets more maintainable,
+themeable, and extendible.
+
+*Round Table Q&A Session*
+
+A Round Table Q&A Session is where we take questions from the
+audience, and the audience discusses and attempts to answer those
+questions from their own knowledge. It's a great way to meet fellow
+members of our community and discover the skill sets we each bring to
+the table.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before each meeting a group of GTALUGers dine at Kaiju
+(384 Yonge Street).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From hugh at mimosa.com  Mon Apr 13 14:36:03 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 13 Apr 2015 10:36:03 -0400 (EDT)
+Subject: [GTALUG] moving Win8.1 with Bing out of the way
+In-Reply-To: <20150412164940.GO29559@csclub.uwaterloo.ca>
+References: <alpine.LRH.2.02.1504120028570.6970@redclaw.mimosa.com>
+ <20150412164940.GO29559@csclub.uwaterloo.ca>
+Message-ID: <alpine.LRH.2.02.1504131025200.9158@redclaw.mimosa.com>
+
+| From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+
+| On Sun, Apr 12, 2015 at 12:46:37AM -0400, D. Hugh Redelmeier wrote:
+
+| > Does anyone know how to migrate Windows?
+| 
+| To another SATA disk is no big deal.  To USB is a totally different story.
+| Not even sure if you can.
+
+Ouch.
+
+An alternative would be mounting a 2.5" SATA drive in the box.
+Unfortunately that requires a proprietary cable that nobody seems to
+be able to source.  Since there is quite a bit of demand, maybe it
+will happen eventually.
+
+Still another alternative would be to buy a replacement M.2 SSD and
+install on that.  The plus is that I could buy a different size (the
+original is 32M).  But M.2 drives are expensive, especially
+considering the original box's cost and capabilities.
+
+M.2 SSDs are also a bit confusing.  They come in different physical
+sizes and install in spaces that may be limited.  They come in SATA
+and PCI.e and so do the sockets, so you need to get that right.  PCI.e
+is faster but more expensive.
+
+Newegg.ca has or had a good price on a M.2 SATA 256G SSD but
+- it was nearing the price of the whole box
+- the specs didn't even give the physical length so I could not
+  tell if it would fit.  Solvable if I cared enough.
+- I hadn't figured out if the HP Stream Mini supports M.2 SATA
+
+From hugh at mimosa.com  Mon Apr 13 20:45:04 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 13 Apr 2015 16:45:04 -0400 (EDT)
+Subject: [GTALUG] [GTALUG-Announce] GTALUG Meeting Tomorrow at 7:30pm
+In-Reply-To: <CA+hskZOXdpX4Aj8F7B+qH2a83Ta33BO+B_4BOZZGOGX-UtPUEg@mail.gmail.com>
+References: <CA+hskZOXdpX4Aj8F7B+qH2a83Ta33BO+B_4BOZZGOGX-UtPUEg@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1504131642180.10151@redclaw.mimosa.com>
+
+| From: Myles Braithwaite <me at mylesbraithwaite.com>
+
+| * 6:00 pm - Before each meeting a group of GTALUGers dine at Kaiju
+| (384 Yonge Street).
+
+I think that Kaiju is only for this meeting.  Venues for subsequent
+meetings are yet to be discussed.
+
+I would welcome suggestions for next months meeting.
+
