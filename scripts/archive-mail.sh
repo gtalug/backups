@@ -22,7 +22,7 @@ pull_all_years () {
     done
 }
 
-for list in announce operations talk; do
+for list in announce operations talk legacy; do
     listname=${list}
     listdir=${ARCHIVEHOME}/${listname}
     currenturl=`date +"http://gtalug.org/pipermail/${listname}/%Y-%B.txt"`
