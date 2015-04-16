@@ -2399,3 +2399,24 @@ Almost Wish I had. :)
 
 
 
+From moptop99 at gmail.com  Thu Apr 16 14:56:26 2015
+From: moptop99 at gmail.com (Matt Price)
+Date: Thu, 16 Apr 2015 10:56:26 -0400
+Subject: [GTALUG] toggle notifications in GNOME 3.16?
+Message-ID: <CAN_Dec8NcSL+UbxGuW17bT2OomqFSMg38N0yoxPDH0RD8RWgbg@mail.gmail.com>
+
+Hey eveyrone!
+
+I'm running Gnome 3.16 in Arch Linux. When I am working, I would like to be
+able to shut off desktop notifications, preferably from the command line or
+with a keyboard shortcut. I figure there must be a way to do this, but I
+can't find a setting in gconf-settings or other likely places.
+
+ANyone have hints?
+
+thaks,
+Matt
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150416/0f216310/attachment.html>
+
