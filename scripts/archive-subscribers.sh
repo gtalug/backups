@@ -8,6 +8,7 @@ git pull origin master
 # Set up password for Mailman
 MAILMANPASSDIR=${MAILMANPASSFILE:-"${HOME}/GitConfig/InitFiles/GTALUG/"}
 
+###  Python tool: https://github.com/larsks/mailman-subscribers/blob/master/mailman-subscribers.py
 MAILMANSUBTOOL=${MAILMANSUBTOOL:-"${HOME}/GitStuff/mailman-subscribers/mailman-subscribers.py"}
 
 GPGKEYS=${GPGKEYS:-"6AA6A713 5A2FE7BF"}
