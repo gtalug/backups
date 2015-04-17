@@ -2399,3 +2399,183 @@ Almost Wish I had. :)
 
 
 
+From moptop99 at gmail.com  Thu Apr 16 14:56:26 2015
+From: moptop99 at gmail.com (Matt Price)
+Date: Thu, 16 Apr 2015 10:56:26 -0400
+Subject: [GTALUG] toggle notifications in GNOME 3.16?
+Message-ID: <CAN_Dec8NcSL+UbxGuW17bT2OomqFSMg38N0yoxPDH0RD8RWgbg@mail.gmail.com>
+
+Hey eveyrone!
+
+I'm running Gnome 3.16 in Arch Linux. When I am working, I would like to be
+able to shut off desktop notifications, preferably from the command line or
+with a keyboard shortcut. I figure there must be a way to do this, but I
+can't find a setting in gconf-settings or other likely places.
+
+ANyone have hints?
+
+thaks,
+Matt
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150416/0f216310/attachment.html>
+
+From hugh at mimosa.com  Thu Apr 16 18:46:04 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 16 Apr 2015 14:46:04 -0400 (EDT)
+Subject: [GTALUG] MCM/70 computer
+In-Reply-To: <61130c0f541031e274f37809aa2900da.squirrel@webmail.ee.ryerson.ca>
+References: <20150415193705.GA5370@capetown.lowshang.com>
+ <61130c0f541031e274f37809aa2900da.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <alpine.LRH.2.02.1504161430370.25014@redclaw.mimosa.com>
+
+| From: phiscock at ee.ryerson.ca
+
+| If it had a BASIC interpreter, it might have done better.
+
+It had a one-line (plasma) display.  APL is definitely the right choice
+if you can only see one line of a program at once.
+
+| And a power
+| supply that didn't catch fire ;).
+
+Fairly crucial.
+
+The article doesn't mention minicomputers.  They were in their hayday
+when the MCM/70 came out.  Comparing it to mainframes is really
+unfortunate.
+
+The MCM/70 was an unbelievable proof-of-concept.  The 8008 was such a
+miserable processor that it is astonishing that APL would fit.
+
+The box was not Good Enough for me at the time.  But that doesn't veto
+success: neither were the Altair 8080 nor the Apple II were good
+enough, but the hunger was great enough that a market was created and
+the products quickly evolved.  Too bad the MCM/70 didn't catch such a
+wave.
+
+(Altair power supplies were horrible too.  My Altair works because I
+stuck an pop-can-sized capacitor from Active Surplus on it with
+alligator clips (you can tell that I'm a software guy).)
+
+No copies of York APL are known to exist.  I once had a listing that I
+was using as scrap paper.  I couldn't find it by the time I found out
+about this problem.
+
+York's Zbigniew Stachniak (mentioned in the article) has a museum at York 
+and hosted several interesting talks.  I haven't heard of any recently -- 
+I've probably fallen off the mailing list.
+
+From hugh at mimosa.com  Thu Apr 16 18:58:39 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 16 Apr 2015 14:58:39 -0400 (EDT)
+Subject: [GTALUG] Ubuntu updates
+Message-ID: <alpine.LRH.2.02.1504161446130.25014@redclaw.mimosa.com>
+
+I'm annoyed at ubuntu's GUI Software Updates program.
+
+Context: 14.04 LTS running on Acer Revo using proprietary nVidia drivers.
+
+Normally I use apt-get update and upgrade to apply updates.  Today, right 
+after I did that, the GUI thing told me that there were pending updates.  
+So I told it to go ahead.
+
+It proceeded to fail.  The Ubuntu crash reporter ground for a while (this 
+is a first-generation Atom processor) and then said the bug was known:
+
+<https://bugs.launchpad.net/ubuntu/+source/nvidia-graphics-drivers-331/+bug/1268257>
+
+Look at how long that has been around.  Look at how many people
+(systems) are listed as affected.  Look how many duplicates of this
+bug are filed.
+
+I don't want to waste the time investigating, but it is suspicious to
+me that apt-get had no problem.
+
+I remain quite skeptical of Unbuntu's and Fedora's GUI software
+updaters.
+
+From opengeometry at yahoo.ca  Thu Apr 16 19:13:52 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Thu, 16 Apr 2015 15:13:52 -0400
+Subject: [GTALUG] Ubuntu updates
+In-Reply-To: <alpine.LRH.2.02.1504161446130.25014@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1504161446130.25014@redclaw.mimosa.com>
+Message-ID: <20150416191352.GA28605@node1.localdomain>
+
+I thought it was just GUI frontend for command line stuffs.  Strange...
+-- 
+William
+
+On Thu, Apr 16, 2015 at 02:58:39PM -0400, D. Hugh Redelmeier wrote:
+> I'm annoyed at ubuntu's GUI Software Updates program.
+> 
+> Context: 14.04 LTS running on Acer Revo using proprietary nVidia drivers.
+> 
+> Normally I use apt-get update and upgrade to apply updates.  Today, right 
+> after I did that, the GUI thing told me that there were pending updates.  
+> So I told it to go ahead.
+> 
+> It proceeded to fail.  The Ubuntu crash reporter ground for a while (this 
+> is a first-generation Atom processor) and then said the bug was known:
+> 
+> <https://bugs.launchpad.net/ubuntu/+source/nvidia-graphics-drivers-331/+bug/1268257>
+> 
+> Look at how long that has been around.  Look at how many people
+> (systems) are listed as affected.  Look how many duplicates of this
+> bug are filed.
+> 
+> I don't want to waste the time investigating, but it is suspicious to
+> me that apt-get had no problem.
+> 
+> I remain quite skeptical of Unbuntu's and Fedora's GUI software
+> updaters.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From james.knott at rogers.com  Thu Apr 16 19:52:58 2015
+From: james.knott at rogers.com (James Knott)
+Date: Thu, 16 Apr 2015 15:52:58 -0400
+Subject: [GTALUG] MCM/70 computer
+In-Reply-To: <alpine.LRH.2.02.1504161430370.25014@redclaw.mimosa.com>
+References: <20150415193705.GA5370@capetown.lowshang.com>
+ <61130c0f541031e274f37809aa2900da.squirrel@webmail.ee.ryerson.ca>
+ <alpine.LRH.2.02.1504161430370.25014@redclaw.mimosa.com>
+Message-ID: <5530131A.90105@rogers.com>
+
+On 04/16/2015 02:46 PM, D. Hugh Redelmeier wrote:
+> (Altair power supplies were horrible too.  My Altair works because I
+> stuck an pop-can-sized capacitor from Active Surplus on it with
+> alligator clips (you can tell that I'm a software guy).)
+
+I've often said the IMSAI 8080 was a better quality clone of the
+Altari.  My IMSAI had a power supply that was almost powerful enough to
+use for arc welding.  ;-)
+
+From hugh at mimosa.com  Thu Apr 16 20:52:16 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 16 Apr 2015 16:52:16 -0400 (EDT)
+Subject: [GTALUG] Cyanogen Inc. and Microsoft [was Re: Dan Gilmore on
+ computing freedom]
+In-Reply-To: <CAEnxSC7kHzsYDirafwbOMYho-yt1NUcG0V8x5ZWL-XebGnYYMw@mail.gmail.com>
+References: <CALFgxqBpO2Lob_giFkwYfR-+Zi44sxT4jcAdfaxPP2577UZa_w@mail.gmail.com>
+ <20150301192356.GA7354@node1.localdomain>
+ <20150302105621.GA28741@waltdnes.org>
+ <CAEnxSC7kHzsYDirafwbOMYho-yt1NUcG0V8x5ZWL-XebGnYYMw@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1504161648230.25014@redclaw.mimosa.com>
+
+| From: Giles Orr <gilesorr at gmail.com>
+| Date: Mon, 2 Mar 2015 10:07:15 -0500
+
+| Cyanogen Inc. is now a for-profit company with its own agenda, and I'm
+| leery of their claims that "it's all good and we're keeping everything
+| open source" - especially now that they're getting funding from
+| Microsoft.  I'm sure that RMS has consigned them to the bin for this
+| move - I'm a bit more open-minded than that, but seriously skeptical
+| about the turn of events.
+
+<https://cyngn.com/press/cyanogen-announces-strategic-partnership-with-microsoft>
+<http://www.zdnet.com/article/microsoft-apps-services-to-be-integrated-with-cyanogen-android-os/?tag=nl.e539&s_cid=e539&ttag=e539&ftag=TRE17cfd61>
+
