@@ -30,3 +30,18 @@ Then you can run backups with the following command.
     $ cd scripts
     $ for k in *.sh; do ./{$k}; done
 
+# Adding gpg keys in `archive-subscribers.sh`
+
+Searching for keys on keys.gnupg.net
+
+Enter the following in `Search for keys` field
+
+    0x6AA6A713
+    0x5A2FE7BF
+
+The result should display the owner of each key.
+
+## Receive the appropriate keys
+
+    gpg --keyserver pgp.mit.edu --recv-keys 0x6AA6A713
+    gpg --keyserver pgp.mit.edu --recv-keys 0x5A2FE7BF
