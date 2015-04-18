@@ -2579,3 +2579,104 @@ Message-ID: <alpine.LRH.2.02.1504161648230.25014@redclaw.mimosa.com>
 <https://cyngn.com/press/cyanogen-announces-strategic-partnership-with-microsoft>
 <http://www.zdnet.com/article/microsoft-apps-services-to-be-integrated-with-cyanogen-android-os/?tag=nl.e539&s_cid=e539&ttag=e539&ftag=TRE17cfd61>
 
+From mdhillca at gmail.com  Fri Apr 17 12:07:26 2015
+From: mdhillca at gmail.com (Michael Hill)
+Date: Fri, 17 Apr 2015 08:07:26 -0400
+Subject: [GTALUG] toggle notifications in GNOME 3.16?
+In-Reply-To: <CAN_Dec8NcSL+UbxGuW17bT2OomqFSMg38N0yoxPDH0RD8RWgbg@mail.gmail.com>
+References: <CAN_Dec8NcSL+UbxGuW17bT2OomqFSMg38N0yoxPDH0RD8RWgbg@mail.gmail.com>
+Message-ID: <CAGvW9WdxH0mD=ac-6N3FEgA9K-Yz-V0W2L=Hoq7Of1+RdNjhLA@mail.gmail.com>
+
+Hi Matt,
+
+On Thu, Apr 16, 2015 at 10:56 AM, Matt Price <moptop99 at gmail.com> wrote:
+
+> I'm running Gnome 3.16 in Arch Linux. When I am working, I would like to be
+> able to shut off desktop notifications, preferably from the command line or
+> with a keyboard shortcut. I figure there must be a way to do this, but I
+> can't find a setting in gconf-settings or other likely places.
+
+I asked on the #docs IRC channel and Alexandre Franke supplied this answer:
+
+First of all, dconf and gsettings replaced gconf.
+
+gsettings set org.gnome.desktop.notifications enable true
+(and obviously it's enable false to have them disabled)
+
+Source: the GNOME control center source code.
+
+
+Mike
+
+From me at mylesbraithwaite.com  Fri Apr 17 18:44:34 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 17 Apr 2015 14:44:34 -0400
+Subject: [GTALUG] Fwd: Re: May 2015 GTALUG talk on OSM
+In-Reply-To: <CAAsTreBVYYz1C42FPMHRiOZhyLh8CgSSNUos7uEs=AgDvEAZAA@mail.gmail.com>
+References: <9D2593CD-A8B0-4E13-B70E-3D5C58E4EC6C@mylesbraithwaite.com>
+ <CAAsTreBVYYz1C42FPMHRiOZhyLh8CgSSNUos7uEs=AgDvEAZAA@mail.gmail.com>
+Message-ID: <55315492.5010007@mylesbraithwaite.com>
+
+Stewart conformed for May's meeting.
+
+-------- Original Message --------
+Subject: 	Re: May 2015 GTALUG talk on OSM
+Date: 	Fri, 17 Apr 2015 14:39:36 -0400
+From: 	Stewart Russell <scruss at gmail.com>
+To: 	Myles Braithwaite <me at mylesbraithwaite.com>
+
+Hi Myles - absolutely!  I'm working on the slides with Richard, who did
+the OSM talk for GTALUG in around 2010.
+
+
+From lsorense at csclub.uwaterloo.ca  Fri Apr 17 18:54:21 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 17 Apr 2015 14:54:21 -0400
+Subject: [GTALUG] Fwd: Re: May 2015 GTALUG talk on OSM
+In-Reply-To: <55315492.5010007@mylesbraithwaite.com>
+References: <9D2593CD-A8B0-4E13-B70E-3D5C58E4EC6C@mylesbraithwaite.com>
+ <CAAsTreBVYYz1C42FPMHRiOZhyLh8CgSSNUos7uEs=AgDvEAZAA@mail.gmail.com>
+ <55315492.5010007@mylesbraithwaite.com>
+Message-ID: <20150417185421.GP29559@csclub.uwaterloo.ca>
+
+On Fri, Apr 17, 2015 at 02:44:34PM -0400, Myles Braithwaite wrote:
+> Stewart conformed for May's meeting.
+
+He fits in the mold now? :)
+
+-- 
+Len Sorensen
+
+> -------- Original Message --------
+> Subject: 	Re: May 2015 GTALUG talk on OSM
+> Date: 	Fri, 17 Apr 2015 14:39:36 -0400
+> From: 	Stewart Russell <scruss at gmail.com>
+> To: 	Myles Braithwaite <me at mylesbraithwaite.com>
+> 
+> Hi Myles - absolutely!  I'm working on the slides with Richard, who did
+> the OSM talk for GTALUG in around 2010.
+> 
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From me at mylesbraithwaite.com  Fri Apr 17 18:55:37 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 17 Apr 2015 14:55:37 -0400
+Subject: [GTALUG] Fwd: Re: May 2015 GTALUG talk on OSM
+In-Reply-To: <20150417185421.GP29559@csclub.uwaterloo.ca>
+References: <9D2593CD-A8B0-4E13-B70E-3D5C58E4EC6C@mylesbraithwaite.com>
+ <CAAsTreBVYYz1C42FPMHRiOZhyLh8CgSSNUos7uEs=AgDvEAZAA@mail.gmail.com>
+ <55315492.5010007@mylesbraithwaite.com>
+ <20150417185421.GP29559@csclub.uwaterloo.ca>
+Message-ID: <55315729.1040904@mylesbraithwaite.com>
+
+Lennart Sorensen wrote:
+> On Fri, Apr 17, 2015 at 02:44:34PM -0400, Myles Braithwaite wrote:
+>> Stewart conformed for May's meeting.
+> 
+> He fits in the mold now? :)
+
+Sorry I meant to send this to the operations not the main list.
+
