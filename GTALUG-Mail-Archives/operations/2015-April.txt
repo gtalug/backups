@@ -351,3 +351,132 @@ On 16/04/15 12:49 PM, Christopher Browne wrote:
 
 
 
+From me at mylesbraithwaite.com  Fri Apr 17 12:06:45 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 17 Apr 2015 08:06:45 -0400
+Subject: [GTALUG-Ops] archive-subscribers.sh
+In-Reply-To: <55306EB4.2080204@gmail.com>
+References: <552FD47B.2070006@gmail.com>
+ <CAFNqd5U31pqPU68x2XUmj-iivccWbV5GTa=sUFoV=YoBxg_vTA@mail.gmail.com>
+ <55306EB4.2080204@gmail.com>
+Message-ID: <426B83CD-E379-4196-BFF7-9CB560CCBDA4@mylesbraithwaite.com>
+
+That's just a variable pointing to the script. 
+
+
+
+> On Apr 16, 2015, at 10:23 PM, Alex Volkov <avolkov at gmail.com> wrote:
+> 
+> Thanks Myles, Chris, that makes sense; I got this part working.
+> 
+> I have another question, there's bunch of directories in ${HOME} like
+> 
+> GTALUG/backups
+> GitStuff/
+> GitConfig
+> 
+> Do you mind if I put everything in the same place?
+> 
+> I'm not an expert in bash, what does this mean, is that some kind of
+> substitution?
+> 
+> MAILMANSUBTOOL=${MAILMANSUBTOOL:-"${HOME}/GitStuff/mailman-subscribers/mailman-subscribers.py"}
+> 
+> I'm thinking of downloading all tools & ini files in a single directory
+> so I can get everything to work once I pull the repo.
+> 
+> 
+> 
+>> On 16/04/15 12:49 PM, Christopher Browne wrote:
+>>> On 16 April 2015 at 11:25, Alex Volkov <avolkov at gmail.com> wrote:
+>>> Hey guys,
+>>> 
+>>> I'm going over backup scripts trying to replicate it on my machine as
+>>> well as writing restore scripts. I have a question about
+>>> archive-subscribers.sh.
+>>> 
+>>> First of all I don't have gpg key so the backup command fails whenever I
+>>> try to run it, and most importantly, I looks like the script doesn't
+>>> copy from or run anything on penguin. Where does the data come from?
+>> As Myles mentioned, the tool is mailman-subscribers.py
+>> 
+>> That is regrettably underdocumented; I have added a link to the tool.
+>> 
+>> As for the GPG keys, you should be able to pull the two keys that are
+>> listed from any public key server.
+>> 
+>> I wouldn't object at all to adding your key to the list, too.
+> 
+> 
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+From cbbrowne at gmail.com  Fri Apr 17 13:11:45 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Fri, 17 Apr 2015 09:11:45 -0400
+Subject: [GTALUG-Ops] archive-subscribers.sh
+In-Reply-To: <55306EB4.2080204@gmail.com>
+References: <552FD47B.2070006@gmail.com>
+ <CAFNqd5U31pqPU68x2XUmj-iivccWbV5GTa=sUFoV=YoBxg_vTA@mail.gmail.com>
+ <55306EB4.2080204@gmail.com>
+Message-ID: <CAFNqd5UYR1K+i-sn+EXc=mMRm8ZO6YE5upaciVkGZJZbNkuX9A@mail.gmail.com>
+
+On 16 April 2015 at 22:23, Alex Volkov <avolkov at gmail.com> wrote:
+> Thanks Myles, Chris, that makes sense; I got this part working.
+>
+> I have another question, there's bunch of directories in ${HOME} like
+>
+> GTALUG/backups
+> GitStuff/
+> GitConfig
+>
+> Do you mind if I put everything in the same place?
+>
+> I'm not an expert in bash, what does this mean, is that some kind of
+> substitution?
+>
+> MAILMANSUBTOOL=${MAILMANSUBTOOL:-"${HOME}/GitStuff/mailman-subscribers/mailman-subscribers.py"}
+
+Those are all references to places where I put things on my systems,
+artifacts of my personal naming conventions.
+
+You can feel free to assign MAILMANSUBTOOL something else to shift it
+somewhere else.
+
+I suggest doing so in your environment, so that the code in the script
+remains unchanged.  The point of having the default set was so we
+wouldn't be fighting over that line of code.  Do your own thing
+beforehand, so we can leave the line of code defining MAILMANSUBTOOL
+alone.
+
+> I'm thinking of downloading all tools & ini files in a single directory
+> so I can get everything to work once I pull the repo.
+
+
+That sounds pretty apropos.
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From me at mylesbraithwaite.com  Fri Apr 17 18:55:37 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 17 Apr 2015 14:55:37 -0400
+Subject: [GTALUG-Ops] [GTALUG] Fwd: Re: May 2015 GTALUG talk on OSM
+In-Reply-To: <20150417185421.GP29559@csclub.uwaterloo.ca>
+References: <9D2593CD-A8B0-4E13-B70E-3D5C58E4EC6C@mylesbraithwaite.com>
+ <CAAsTreBVYYz1C42FPMHRiOZhyLh8CgSSNUos7uEs=AgDvEAZAA@mail.gmail.com>
+ <55315492.5010007@mylesbraithwaite.com>
+ <20150417185421.GP29559@csclub.uwaterloo.ca>
+Message-ID: <55315729.1040904@mylesbraithwaite.com>
+
+Lennart Sorensen wrote:
+> On Fri, Apr 17, 2015 at 02:44:34PM -0400, Myles Braithwaite wrote:
+>> Stewart conformed for May's meeting.
+> 
+> He fits in the mold now? :)
+
+Sorry I meant to send this to the operations not the main list.
+
