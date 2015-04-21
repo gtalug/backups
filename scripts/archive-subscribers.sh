@@ -7,6 +7,9 @@ git pull origin master
 
 # Set up password for Mailman
 MAILMANPASSDIR=${MAILMANPASSFILE:-"${HOME}/GitConfig/InitFiles/GTALUG/"}
+  # The password for mailing lists needs to be placed in
+  # $MAILMANPASSDIR/announce, $MAILMANPASSDIR/operations, $MAILMANPASSDIR/talk
+  # That obviously shouldn't be published in the git repo publicly, here.
 
 ###  Python tool: https://github.com/larsks/mailman-subscribers/blob/master/mailman-subscribers.py
 MAILMANSUBTOOL=${MAILMANSUBTOOL:-"${HOME}/GitStuff/mailman-subscribers/mailman-subscribers.py"}
