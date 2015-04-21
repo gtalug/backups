@@ -2785,3 +2785,656 @@ Try again.
 
 https://www.youtube.com/watch?v=jiRgdaknJCg
 
+From scott at ss.org  Mon Apr 20 12:48:48 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Mon, 20 Apr 2015 08:48:48 -0400
+Subject: [GTALUG] One Plus One, sans invites.
+Message-ID: <3D352D17-8ADB-41F7-9959-61288C984BD2@ss.org>
+
+They've just announced that an invite will no longer be required.
+
+https://blog.oneplus.net/2015/04/open-sales-for-the-oneplus-one-forever/
+
+I've had mine for the better part of year and love it.
+-- 
+Scott Sullivan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150420/40fd0460/attachment.html>
+
+From moptop99 at gmail.com  Mon Apr 20 16:40:23 2015
+From: moptop99 at gmail.com (Matt Price)
+Date: Mon, 20 Apr 2015 12:40:23 -0400
+Subject: [GTALUG] toggle notifications in GNOME 3.16?
+In-Reply-To: <CAGvW9WdxH0mD=ac-6N3FEgA9K-Yz-V0W2L=Hoq7Of1+RdNjhLA@mail.gmail.com>
+References: <CAN_Dec8NcSL+UbxGuW17bT2OomqFSMg38N0yoxPDH0RD8RWgbg@mail.gmail.com>
+ <CAGvW9WdxH0mD=ac-6N3FEgA9K-Yz-V0W2L=Hoq7Of1+RdNjhLA@mail.gmail.com>
+Message-ID: <CAN_Dec9MF=no32OmKUQcNXX1+9EgVGgbuV=t3Jy0Tw5n3nmFAg@mail.gmail.com>
+
+Hi Michael,
+
+Thanks for the help!
+
+On Fri, Apr 17, 2015 at 8:07 AM, Michael Hill <mdhillca at gmail.com> wrote:
+
+> Hi Matt,
+>
+> On Thu, Apr 16, 2015 at 10:56 AM, Matt Price <moptop99 at gmail.com> wrote:
+>
+> > I'm running Gnome 3.16 in Arch Linux. When I am working, I would like to
+> be
+> > able to shut off desktop notifications, preferably from the command line
+> or
+> > with a keyboard shortcut. I figure there must be a way to do this, but I
+> > can't find a setting in gconf-settings or other likely places.
+>
+> I asked on the #docs IRC channel and Alexandre Franke supplied this answer:
+>
+> First of all, dconf and gsettings replaced gconf.
+>
+> gsettings set org.gnome.desktop.notifications enable true
+> (and obviously it's enable false to have them disabled)
+>
+
+The "enable" key no longer seems to be available in
+org.gnome.desktop.notifications anymore:
+
+ ~  gsettings list-recursively org.gnome.desktop.notifications
+org.gnome.desktop.notifications application-children
+['gnome-network-panel', 'dropbox', 'rhythmbox', 'vlc', 'deluge', 'skype',
+'guake', 'sylpheed', 'window-58', 'nautilus', 'calibre-gui', 'chromium',
+'clipit', 'empathy', 'evolution', 'nemo', 'emacs', 'pidgin', 'nm-applet',
+'firefox-developer-edition', 'thunderbird', 'gnome-music']
+org.gnome.desktop.notifications show-in-lock-screen true
+org.gnome.desktop.notifications show-banners false
+
+--------------------
+
+so, I tried
+?  ~  gsettings set org.gnome.desktop.notifications show-banners false
+
+that seems to have worked, though I still hear the audio notification.  I
+will keep playing around and report back if I find a fully workking
+solution.  Can you also point me to the IRC channel you were using? I might
+try asking there if I can't understand how to fix this.
+
+m
+
+
+> Source: the GNOME control center source code.
+>
+>
+> Mike
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150420/d3148a3e/attachment.html>
+
+From mdhillca at gmail.com  Mon Apr 20 17:13:11 2015
+From: mdhillca at gmail.com (Michael Hill)
+Date: Mon, 20 Apr 2015 13:13:11 -0400
+Subject: [GTALUG] toggle notifications in GNOME 3.16?
+In-Reply-To: <CAN_Dec9MF=no32OmKUQcNXX1+9EgVGgbuV=t3Jy0Tw5n3nmFAg@mail.gmail.com>
+References: <CAN_Dec8NcSL+UbxGuW17bT2OomqFSMg38N0yoxPDH0RD8RWgbg@mail.gmail.com>
+ <CAGvW9WdxH0mD=ac-6N3FEgA9K-Yz-V0W2L=Hoq7Of1+RdNjhLA@mail.gmail.com>
+ <CAN_Dec9MF=no32OmKUQcNXX1+9EgVGgbuV=t3Jy0Tw5n3nmFAg@mail.gmail.com>
+Message-ID: <CAGvW9WcWqzbHKYNa4VxvceRNAcWoAUp-QmcP7-fk0B+EMWoVKA@mail.gmail.com>
+
+Hi Matt,
+
+I asked in the #docs channel on GIMPNet (I'm on the docs team). You
+could also try #gnome-shell.
+
+Mike
+
+
+
+On Mon, Apr 20, 2015 at 12:40 PM, Matt Price <moptop99 at gmail.com> wrote:
+> Hi Michael,
+>
+> Thanks for the help!
+>
+> On Fri, Apr 17, 2015 at 8:07 AM, Michael Hill <mdhillca at gmail.com> wrote:
+>>
+>> Hi Matt,
+>>
+>> On Thu, Apr 16, 2015 at 10:56 AM, Matt Price <moptop99 at gmail.com> wrote:
+>>
+>> > I'm running Gnome 3.16 in Arch Linux. When I am working, I would like to
+>> > be
+>> > able to shut off desktop notifications, preferably from the command line
+>> > or
+>> > with a keyboard shortcut. I figure there must be a way to do this, but I
+>> > can't find a setting in gconf-settings or other likely places.
+>>
+>> I asked on the #docs IRC channel and Alexandre Franke supplied this
+>> answer:
+>>
+>> First of all, dconf and gsettings replaced gconf.
+>>
+>> gsettings set org.gnome.desktop.notifications enable true
+>> (and obviously it's enable false to have them disabled)
+>
+>
+> The "enable" key no longer seems to be available in
+> org.gnome.desktop.notifications anymore:
+>
+>  ~  gsettings list-recursively org.gnome.desktop.notifications
+> org.gnome.desktop.notifications application-children ['gnome-network-panel',
+> 'dropbox', 'rhythmbox', 'vlc', 'deluge', 'skype', 'guake', 'sylpheed',
+> 'window-58', 'nautilus', 'calibre-gui', 'chromium', 'clipit', 'empathy',
+> 'evolution', 'nemo', 'emacs', 'pidgin', 'nm-applet',
+> 'firefox-developer-edition', 'thunderbird', 'gnome-music']
+> org.gnome.desktop.notifications show-in-lock-screen true
+> org.gnome.desktop.notifications show-banners false
+>
+> --------------------
+>
+> so, I tried
+> ?  ~  gsettings set org.gnome.desktop.notifications show-banners false
+>
+> that seems to have worked, though I still hear the audio notification.  I
+> will keep playing around and report back if I find a fully workking
+> solution.  Can you also point me to the IRC channel you were using? I might
+> try asking there if I can't understand how to fix this.
+>
+> m
+>
+>>
+>> Source: the GNOME control center source code.
+>>
+>>
+>> Mike
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+From daniel at circuidipity.com  Mon Apr 20 19:02:03 2015
+From: daniel at circuidipity.com (Daniel Wayne Armstrong)
+Date: Mon, 20 Apr 2015 15:02:03 -0400
+Subject: [GTALUG] Myths and misunderstandings about ZFS
+Message-ID: <CACa31mABVKVj5aZ2CU8+tJ1UXt-37QLiBwfAJjF-Dy5ezibYHQ@mail.gmail.com>
+
+Interesting article about the ZFS filesystem... In the past I have
+defaulted to the usual ext(2,3,4) but the ability to make filesystem
+snapshots and rollbacks would be useful:
+
+http://distrowatch.com/weekly.php?issue=20150420#myth
+
+-- 
+(o<  .: Per curiositas ad astra .: http://www.circuidipity.com
+(/)_
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150420/06e8ef22/attachment.html>
+
+From kalibslack at gmail.com  Mon Apr 20 20:22:02 2015
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Mon, 20 Apr 2015 17:22:02 -0300
+Subject: [GTALUG] One Plus One, sans invites.
+In-Reply-To: <3D352D17-8ADB-41F7-9959-61288C984BD2@ss.org>
+References: <3D352D17-8ADB-41F7-9959-61288C984BD2@ss.org>
+Message-ID: <CAH5qdewGmd19+VqyJwx9AVVvT6fLr2ZXk8No-ivCp9kghWL=7g@mail.gmail.com>
+
+Yeah, looks like a great phone. But they don?t sell it to Brazil. :/
+
+Perhaps after arriving in Canada/Toronto around November. ;]
+
+===================================================
+
+Marcelo Cavalcante Rocha - Kalib
+
+
+P?s-Graduando em Governan?a de Tecnologia da Informa??o - EST?CIO/FIC
+Graduado em Sistemas de Informa??es - EST?CIO/FIC
+Usu?rio Linux #407564 | Usu?rio Asterisk #1148
+Fortaleza - Cear? - Brazil
+Celular: +55 085 87620983
+Certifica??es: ITIL V3
+<http://www.itil-officialsite.com/Qualifications/ITILV3QualificationLevels/ITILV3FoundationQualificationinITServiceManagement.aspx>
+ | CSM <http://www.scrumalliance.org/> | LPI-C1 <http://www.lpi.org/> |
+LPI-C2 <http://www.lpi.org/> | LPI-C3 <http://www.lpi.org/> | Novell CLA
+<http://www.novell.com/training/certinfo/cla/>
+Minha Pessoa: Blog <http://www.marcelocavalcante.net>
+Projetos: Tux-CE <http://www.tux-ce.org> | Archlinux-br
+<http://www.archlinux-br.org> | Chakra <http://www.chakra-project.org/> | KDE
+Brasil <http://br.kde.org> | TLUG <http://gtalug.org/wiki/Main_Page> |
+PUG-CE <http://pug-ce.python.org.br/blog/>
+
+===================================================
+
+
+Proteja meu endere?o como estou protegendo o seu.
+N?o revele e-mail dos correspondentes: use Cco (Copia Carbonada Oculta).
+Retire os endere?os antes de reenviar. Dificulte assim a
+dissemina??o de v?rus e spam.
+
+2015-04-20 9:48 GMT-03:00 Scott Sullivan <scott at ss.org>:
+
+> They've just announced that an invite will no longer be required.
+>
+> https://blog.oneplus.net/2015/04/open-sales-for-the-oneplus-one-forever/
+>
+> I've had mine for the better part of year and love it.
+> --
+> Scott Sullivan
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150420/219f8e60/attachment.html>
+
+From kalibslack at gmail.com  Mon Apr 20 20:33:26 2015
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Mon, 20 Apr 2015 17:33:26 -0300
+Subject: [GTALUG] One Plus One, sans invites.
+In-Reply-To: <CAH5qdewGmd19+VqyJwx9AVVvT6fLr2ZXk8No-ivCp9kghWL=7g@mail.gmail.com>
+References: <3D352D17-8ADB-41F7-9959-61288C984BD2@ss.org>
+ <CAH5qdewGmd19+VqyJwx9AVVvT6fLr2ZXk8No-ivCp9kghWL=7g@mail.gmail.com>
+Message-ID: <CAH5qdexzrLmaAOTTqUkf0jNHKoR=8HYDdsWBkQE6H98gO_on=g@mail.gmail.com>
+
+Byt the way, did you receive the update for Lollipop?
+
+===================================================
+
+Marcelo Cavalcante Rocha - Kalib
+
+
+P?s-Graduando em Governan?a de Tecnologia da Informa??o - EST?CIO/FIC
+Graduado em Sistemas de Informa??es - EST?CIO/FIC
+Usu?rio Linux #407564 | Usu?rio Asterisk #1148
+Fortaleza - Cear? - Brazil
+Celular: +55 085 87620983
+Certifica??es: ITIL V3
+<http://www.itil-officialsite.com/Qualifications/ITILV3QualificationLevels/ITILV3FoundationQualificationinITServiceManagement.aspx>
+ | CSM <http://www.scrumalliance.org/> | LPI-C1 <http://www.lpi.org/> |
+LPI-C2 <http://www.lpi.org/> | LPI-C3 <http://www.lpi.org/> | Novell CLA
+<http://www.novell.com/training/certinfo/cla/>
+Minha Pessoa: Blog <http://www.marcelocavalcante.net>
+Projetos: Tux-CE <http://www.tux-ce.org> | Archlinux-br
+<http://www.archlinux-br.org> | Chakra <http://www.chakra-project.org/> | KDE
+Brasil <http://br.kde.org> | TLUG <http://gtalug.org/wiki/Main_Page> |
+PUG-CE <http://pug-ce.python.org.br/blog/>
+
+===================================================
+
+
+Proteja meu endere?o como estou protegendo o seu.
+N?o revele e-mail dos correspondentes: use Cco (Copia Carbonada Oculta).
+Retire os endere?os antes de reenviar. Dificulte assim a
+dissemina??o de v?rus e spam.
+
+Em 20 de abril de 2015 17:22, Marcelo Cavalcante <kalibslack at gmail.com>
+escreveu:
+
+> Yeah, looks like a great phone. But they don?t sell it to Brazil. :/
+>
+> Perhaps after arriving in Canada/Toronto around November. ;]
+>
+> ===================================================
+>
+> Marcelo Cavalcante Rocha - Kalib
+>
+>
+> P?s-Graduando em Governan?a de Tecnologia da Informa??o - EST?CIO/FIC
+> Graduado em Sistemas de Informa??es - EST?CIO/FIC
+> Usu?rio Linux #407564 | Usu?rio Asterisk #1148
+> Fortaleza - Cear? - Brazil
+> Celular: +55 085 87620983
+> Certifica??es: ITIL V3
+> <http://www.itil-officialsite.com/Qualifications/ITILV3QualificationLevels/ITILV3FoundationQualificationinITServiceManagement.aspx>
+>  | CSM <http://www.scrumalliance.org/> | LPI-C1 <http://www.lpi.org/> |
+> LPI-C2 <http://www.lpi.org/> | LPI-C3 <http://www.lpi.org/> | Novell CLA
+> <http://www.novell.com/training/certinfo/cla/>
+> Minha Pessoa: Blog <http://www.marcelocavalcante.net>
+> Projetos: Tux-CE <http://www.tux-ce.org> | Archlinux-br
+> <http://www.archlinux-br.org> | Chakra <http://www.chakra-project.org/> | KDE
+> Brasil <http://br.kde.org> | TLUG <http://gtalug.org/wiki/Main_Page> |
+> PUG-CE <http://pug-ce.python.org.br/blog/>
+>
+> ===================================================
+>
+>
+> Proteja meu endere?o como estou protegendo o seu.
+> N?o revele e-mail dos correspondentes: use Cco (Copia Carbonada Oculta).
+> Retire os endere?os antes de reenviar. Dificulte assim a
+> dissemina??o de v?rus e spam.
+>
+> 2015-04-20 9:48 GMT-03:00 Scott Sullivan <scott at ss.org>:
+>
+>> They've just announced that an invite will no longer be required.
+>>
+>> https://blog.oneplus.net/2015/04/open-sales-for-the-oneplus-one-forever/
+>>
+>> I've had mine for the better part of year and love it.
+>> --
+>> Scott Sullivan
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150420/7ab788a1/attachment.html>
+
+From evan at telly.org  Mon Apr 20 21:24:47 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Mon, 20 Apr 2015 17:24:47 -0400
+Subject: [GTALUG] One Plus One, sans invites.
+In-Reply-To: <CAH5qdewGmd19+VqyJwx9AVVvT6fLr2ZXk8No-ivCp9kghWL=7g@mail.gmail.com>
+References: <3D352D17-8ADB-41F7-9959-61288C984BD2@ss.org>
+ <CAH5qdewGmd19+VqyJwx9AVVvT6fLr2ZXk8No-ivCp9kghWL=7g@mail.gmail.com>
+Message-ID: <CAMguqh2sL2hH7cy0hXzT8ud5DF=k4bLbT7-Nvo0kk4rhY9ZwJA@mail.gmail.com>
+
+I've been intensely phone shopping for a little while, and have been as
+unimpressed with the company as I have been impressed with the phone.
+Despite a really good piece of launch hardware, there are some substantial
+flaws in the phone but even more -- and far worse -- with the company.
+
+GTALUGgers (and others) trying to buy the phone in 2015 may have noticed
+that OnePlus, without warning or explanation, stopped shipping to Canada,
+and only started again last week. The company was not at all forthcoming in
+any rationale and offered nothing but cheery weeks-long promises of Real
+Soon Now.
+
+After researching on the forums, it appears to me that the company had lied
+about the phone's value (declaring them at $99) which eventually got
+shipments red-flagged by Canada customs. This, in combination with the
+historically miserable service and extra fees of DHL (the only Canadian
+shipping option) led to indefinite suspension of Canadian shipping of the
+OnePlus. Things re-opened this week, with UPS as the courier and taxes
+pre-collected at purchase time.
+
+But that's not the worst of it IMO. The company was caught completely
+flat-footed when Cyanogen went commercial, pulled the rug out from OnePlus,
+and signed an exclusive deal in India with a competing handset maker. This
+has thrown software efforts into a panic as OnePlus now unexpectedly finds
+itself having to rush-release its own Android mutation, OxygenOS. So now
+the the OnePlus software support, once thought of as super stable, is not.
+Those who have lots of time on their hands researching and installing ROMs
+should be OK, the mainstream will suffer through this transition as we
+witness one more Android fragmentation. Whoever is in charge of OnePlus's
+corporate partnerships should be long fired by now, yet no such penance is
+in hand.
+
+And then you have a number of production and marketing choices that seem
+just insane. The OnePlus is the only phone in its field that claims to be a
+"global" phone, yet lacks LTE Band 20 which is critical for Europe. Its
+wifi doesn't do 802.11ac. The invite system has longer overstayed its
+novelty. And you can't buy one in Australia or Switzerland or Brazil at any
+price. Their e-commerce capabilities are weaker than those of hawkers of
+dollar gadgets on eBay.
+
+Add to this the fact that the field of
+"near-flagship-features-at-midrange-prices" smartphones is about to get
+very crowded, and some of the other vendors have the benefit of retail
+access (instant availability) and local warranty support. Within the next
+month or two, don't consider the OnePlus without also having a look at the
+Asus Zenfone 2 with 4GB RAM, the Huawei P8 and the 2nd-generation Moto G.
+More intrepid shoppers will find even greater choice from domestic Chinese
+vendors such as Xiaomi and LeTV.
+
+So, while I badly need to replace my phone right now, I'm passing on the
+OnePlus One. The many poor decisions have me seriously (but maybe I'm the
+only one) concerned about the company's long-term stability. Its corporate
+management is just AWFUL, glossed over by a thin veneer of social media
+cheerleading.
+
+Still they do make well-built phones on low margins. If the OnePlus Two
+offers any evidence that the company has learned its lessons I may still
+come on-board, while I have a look at the reviews of the Asus and Huawei
+phones as they are released. The competition is coming, the bar is rising
+and many good options are at hand.
+
+- Evan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150420/9328a82c/attachment.html>
+
+From kevin at ve3syb.ca  Mon Apr 20 23:37:47 2015
+From: kevin at ve3syb.ca (Kevin)
+Date: Mon, 20 Apr 2015 19:37:47 -0400
+Subject: [GTALUG] MCM/70 computer
+In-Reply-To: <20150415193705.GA5370@capetown.lowshang.com>
+References: <20150415193705.GA5370@capetown.lowshang.com>
+Message-ID: <b8d7418bcc82c655cfa428ead3d80709@ve3syb.ca>
+
+On 2015-04-15 15:37, Tom Low-Shang wrote:
+> Any of our *cough*older*cough* members ever use the MCM/70? 
+> Programmable
+> in only APL, very nerdy indeed. :)
+
+Interesting machine. The choice of APL limited their audience and with 
+only a single line display you wouldn't have been able to use it for 
+(m)any of the other languages of the day.
+
+-- 
+
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that 
+distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why 
+we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+
+From clifford_ilkay at dinamis.com  Tue Apr 21 04:10:23 2015
+From: clifford_ilkay at dinamis.com (Clifford Ilkay)
+Date: Tue, 21 Apr 2015 00:10:23 -0400
+Subject: [GTALUG] One Plus One, sans invites.
+In-Reply-To: <CAMguqh2sL2hH7cy0hXzT8ud5DF=k4bLbT7-Nvo0kk4rhY9ZwJA@mail.gmail.com>
+References: <3D352D17-8ADB-41F7-9959-61288C984BD2@ss.org>
+ <CAH5qdewGmd19+VqyJwx9AVVvT6fLr2ZXk8No-ivCp9kghWL=7g@mail.gmail.com>
+ <CAMguqh2sL2hH7cy0hXzT8ud5DF=k4bLbT7-Nvo0kk4rhY9ZwJA@mail.gmail.com>
+Message-ID: <5535CDAF.2090704@dinamis.com>
+
+On 04/20/2015 05:24 PM, Evan Leibovitch wrote:
+> I've been intensely phone shopping for a little while, and have been
+> as unimpressed with the company as I have been impressed with the
+> phone. Despite a really good piece of launch hardware, there are some
+> substantial flaws in the phone but even more -- and far worse -- with
+> the company.
+>
+> GTALUGgers (and others) trying to buy the phone in 2015 may have
+> noticed that OnePlus, without warning or explanation, stopped shipping
+> to Canada, and only started again last week. The company was not at
+> all forthcoming in any rationale and offered nothing but cheery
+> weeks-long promises of Real Soon Now.
+>
+> After researching on the forums, it appears to me that the company had
+> lied about the phone's value (declaring them at $99) which eventually
+> got shipments red-flagged by Canada customs.
+
+I paid HST on the full price of the phone when I got it in January.
+
+> This, in combination with the historically miserable service and extra
+> fees of DHL (the only Canadian shipping option) led to indefinite
+> suspension of Canadian shipping of the OnePlus. Things re-opened this
+> week, with UPS as the courier and taxes pre-collected at purchase time.
+
+
+Canada Post was another option but I didn't take it because there didn't
+seem to be any way of tracking the shipment and I didn't want to take
+the chance of the shipment getting "lost" along the way. Even with the
+DHL fees, this phone was still great value for money.
+
+
+> But that's not the worst of it IMO. The company was caught completely
+> flat-footed when Cyanogen went commercial, pulled the rug out from
+> OnePlus, and signed an exclusive deal in India with a competing
+> handset maker. This has thrown software efforts into a panic as
+> OnePlus now unexpectedly finds itself having to rush-release its own
+> Android mutation, OxygenOS. So now the the OnePlus software support,
+> once thought of as super stable, is not. Those who have lots of time
+> on their hands researching and installing ROMs should be OK, the
+> mainstream will suffer through this transition as we witness one more
+> Android fragmentation. Whoever is in charge of OnePlus's corporate
+> partnerships should be long fired by now, yet no such penance is in hand.
+
+This has been a non-issue for me. I don't see any compelling reason for
+me to move away from the installed Cyanogen to OxygenOS. The phone does
+everything I expect of it and more so I'm blissfully ignorant of what I
+might be missing.
+
+> And then you have a number of production and marketing choices that
+> seem just insane. The OnePlus is the only phone in its field that
+> claims to be a "global" phone, yet lacks LTE Band 20 which is critical
+> for Europe. Its wifi doesn't do 802.11ac.
+
+Both non-issues for me, though it would be if I travelled to Europe.
+
+> The invite system has longer overstayed its novelty.
+
+This was the reason that kept me from buying one for months until I
+finally gave up resisting it and jumped through the hoops to get an
+invite. As much as the invite system was touted as "innovative", it
+wasn't. It was just an annoyance and added friction to the purchasing
+process, neither of which are great things if you want to maximize sales.
+
+
+> And you can't buy one in Australia or Switzerland or Brazil at any
+> price. Their e-commerce capabilities are weaker than those of hawkers
+> of dollar gadgets on eBay.
+>
+> Add to this the fact that the field of
+> "near-flagship-features-at-midrange-prices" smartphones is about to
+> get very crowded, and some of the other vendors have the benefit of
+> retail access (instant availability) and local warranty support.
+> Within the next month or two, don't consider the OnePlus without also
+> having a look at the Asus Zenfone 2 with 4GB RAM, the Huawei P8 and
+> the 2nd-generation Moto G. More intrepid shoppers will find even
+> greater choice from domestic Chinese vendors such as Xiaomi and LeTV.
+
+Being a WIND Mobile customer has its challenges, the biggest being that
+I can't buy any phone and expect it to work on their network. It's very
+time-consuming to dig up information on whether a given phone will work
+on that network or not, especially for phones from the myriad of
+domestic Chinese vendors.
+
+This has been an amazing phone but I don't have much to compare it to. I
+let a friend who was interested in it play with it and he was amazed at
+how responsive it is. The only concern I have about it is how repairable
+it would be in the event of screen breakage or other damage. My son put
+his HTC One M7 through the wash in his jeans and took it in to get it
+repaired. Three repair shops told him the same thing, "Those phones are
+not repairable because of the way they're assembled." I just read that
+the M9 received the lowest rating possible for repairability. I'd rather
+not treat these as disposable devices, though that seems to be the
+direction all smart phones are going. I have no idea how repairable the
+OPO is so that is something I will be looking for the next time I buy a
+phone.
+
+-- 
+Regards,
+
+Clifford Ilkay
+
++1 647-778-8696
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150421/9a7a1b5d/attachment.html>
+
+From evan at telly.org  Tue Apr 21 07:50:33 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Tue, 21 Apr 2015 03:50:33 -0400
+Subject: [GTALUG] One Plus One, sans invites.
+In-Reply-To: <5535CDAF.2090704@dinamis.com>
+References: <3D352D17-8ADB-41F7-9959-61288C984BD2@ss.org>
+ <CAH5qdewGmd19+VqyJwx9AVVvT6fLr2ZXk8No-ivCp9kghWL=7g@mail.gmail.com>
+ <CAMguqh2sL2hH7cy0hXzT8ud5DF=k4bLbT7-Nvo0kk4rhY9ZwJA@mail.gmail.com>
+ <5535CDAF.2090704@dinamis.com>
+Message-ID: <CAMguqh1Oh59k8k_LBeuWq42r9umHxgbNQozSKop4CbD2N0pqWg@mail.gmail.com>
+
+On 21 April 2015 at 00:10, Clifford Ilkay <clifford_ilkay at dinamis.com>
+wrote:
+
+
+> The company was caught completely flat-footed when Cyanogen went
+> commercial, pulled the rug out from OnePlus, and signed an exclusive deal
+> in India with a competing handset maker. This has thrown software efforts
+> into a panic as OnePlus now unexpectedly finds itself having to
+> rush-release its own Android mutation, OxygenOS. So now the the OnePlus
+> software support, once thought of as super stable, is not. Those who have
+> lots of time on their hands researching and installing ROMs should be OK,
+> the mainstream will suffer through this transition as we witness one more
+> Android fragmentation. Whoever is in charge of OnePlus's corporate
+> partnerships should be long fired by now, yet no such penance is in hand.
+>
+>
+> This has been a non-issue for me. I don't see any compelling reason for me
+> to move away from the installed Cyanogen to OxygenOS.
+>
+
+?You may not have a choice if you want to stay supported. The official ROM
+is now Oxygen, eventually Cyanogen support will be dropped and it will
+become just another third-party ROM.?
+
+Add to this the fact that the field of
+> "near-flagship-features-at-midrange-prices" smartphones is about to get
+> very crowded, and some of the other vendors have the benefit of retail
+> access (instant availability) and local warranty support. Within the next
+> month or two, don't consider the OnePlus without also having a look at the
+> Asus Zenfone 2 with 4GB RAM, the Huawei P8 and the 2nd-generation Moto G.
+> More intrepid shoppers will find even greater choice from domestic Chinese
+> vendors such as Xiaomi and LeTV.
+>
+>
+> Being a WIND Mobile customer has its challenges, the biggest being that I
+> can't buy any phone and expect it to work on their network. It's very
+> time-consuming to dig up information on whether a given phone will work on
+> that network or not, especially for phones from the myriad of domestic
+> Chinese vendors.
+>
+
+?phonearena and gsmarena are both good sources of which phones do what
+bands.
+
+
+This has been an amazing phone but I don't have much to compare it to. I
+> let a friend who was interested in it play with it and he was amazed at how
+> responsive it is. The only concern I have about it is how repairable it
+> would be in the event of screen breakage or other damage. My son put his
+> HTC One M7 through the wash in his jeans and took it in to get it repaired.
+> Three repair shops told him the same thing, "Those phones are not
+> repairable because of the way they're assembled." I just read that the M9
+> received the lowest rating possible for repairability. I'd rather not treat
+> these as disposable devices, though that seems to be the direction all
+> smart phones are going. I have no idea how repairable the OPO is so that is
+> something I will be looking for the next time I buy a phone.
+>
+
+?Not disposable, but not far from. Clearly phones aren't designed to
+outlast three year contracts. All the more reason why flagships are lagging
+in sales and the hottest part of the market is now the high-value-midrange.
+It's a field that the OPO has occupied alone for a long time, but not much
+longer.
+?
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150421/26ea3c8f/attachment.html>
+
