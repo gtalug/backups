@@ -590,3 +590,86 @@ Date: Mon, 20 Apr 2015 19:52:50 +0000
 Size: 16721
 URL: <http://gtalug.org/pipermail/operations/attachments/20150420/33dd520b/attachment.mht>
 
+From avolkov at gmail.com  Tue Apr 21 15:56:11 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Tue, 21 Apr 2015 11:56:11 -0400
+Subject: [GTALUG-Ops] ${HOME}/GitConfig/InitFiles/GTALUG/
+Message-ID: <5536731B.1070205@gmail.com>
+
+I'm still trying to get backups running.
+
+Mysteriously, I was able to pull pgp keys on my other computer. But I
+still can't pull them on the main one.
+
+Anyway, I have another question about archive-subscribers.sh
+
+There's this line that points to the configuration file, but is not
+referenced anywhere else --
+
+MAILMANPASSDIR=${MAILMANPASSFILE:-"${HOME}/GitConfig/InitFiles/GTALUG/"}
+
+ I looked on penguin but didn't see files name like that, I'm assuming
+it's something like --
+
+ssh penguin.gtalug.org "/usr/lib/mailman/bin/list_members operations" >
+operations
+
+Is this correct? Is there anything else in
+"${HOME}/GitConfig/InitFiles/GTALUG/"?
+
+Thanks.
+
+ Alex
+
+
+From cbbrowne at gmail.com  Tue Apr 21 16:22:24 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 21 Apr 2015 12:22:24 -0400
+Subject: [GTALUG-Ops] ${HOME}/GitConfig/InitFiles/GTALUG/
+In-Reply-To: <5536731B.1070205@gmail.com>
+References: <5536731B.1070205@gmail.com>
+Message-ID: <CAFNqd5UA=EpxfOfK8XVi8gfL0VvbzU=X_-EFDUp9BzJN0CgeTQ@mail.gmail.com>
+
+On 21 April 2015 at 11:56, Alex Volkov <avolkov at gmail.com> wrote:
+> I'm still trying to get backups running.
+>
+> Mysteriously, I was able to pull pgp keys on my other computer. But I
+> still can't pull them on the main one.
+
+Curious.  Sounds like a resolution problem, that DNS is somehow not
+resolving the default keyserver(s).
+
+> Anyway, I have another question about archive-subscribers.sh
+>
+> There's this line that points to the configuration file, but is not
+> referenced anywhere else --
+>
+> MAILMANPASSDIR=${MAILMANPASSFILE:-"${HOME}/GitConfig/InitFiles/GTALUG/"}
+>
+>  I looked on penguin but didn't see files name like that, I'm assuming
+> it's something like --
+>
+> ssh penguin.gtalug.org "/usr/lib/mailman/bin/list_members operations" >
+> operations
+>
+> Is this correct? Is there anything else in
+> "${HOME}/GitConfig/InitFiles/GTALUG/"?
+
+ls -l ~/GitConfig/InitFiles/GTALUG
+total 20
+-rw-r--r-- 1 cbbrowne cbbrowne 759 Aug  5  2014
+GTALUG-MailmanPasswords.txt.0x6AA6A713.gpg
+-rw-r--r-- 1 cbbrowne cbbrowne   9 Aug  5  2014 announce
+-rw-r--r-- 1 cbbrowne cbbrowne   9 Aug  5  2014 board
+-rw-r--r-- 1 cbbrowne cbbrowne   9 Aug  5  2014 operations
+
+The 3 obvious files contain passwords for 3 mailing lists.
+
+That config is living, for me, in a directory inside my own git repo.
+I suppose it warrants adding a wee bit more documentation on that;
+have done so.
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
