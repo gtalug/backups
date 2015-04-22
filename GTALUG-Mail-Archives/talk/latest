@@ -3438,3 +3438,331 @@ longer.
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150421/26ea3c8f/attachment.html>
 
+From james.knott at rogers.com  Tue Apr 21 12:07:11 2015
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 21 Apr 2015 08:07:11 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+Message-ID: <55363D6F.5050801@rogers.com>
+
+Has anyone else noticed that the videos on the Toronto Star site no
+longer work with Linux?  I've tried Firefox, Seamonkey and Chromium
+browsers.  The videos do work in Windows.
+
+From james.knott at rogers.com  Tue Apr 21 12:23:37 2015
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 21 Apr 2015 08:23:37 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <55363D6F.5050801@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+Message-ID: <55364149.3070007@rogers.com>
+
+On 04/21/2015 08:07 AM, James Knott wrote:
+> Has anyone else noticed that the videos on the Toronto Star site no
+> longer work with Linux?  I've tried Firefox, Seamonkey and Chromium
+> browsers.  The videos do work in Windows.
+>
+
+Forgot to mention, I'm running openSUSE 13.1 and Chrome in Windows
+doesn't work either.
+
+
+From mlxxxp at gmail.com  Tue Apr 21 12:42:41 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Tue, 21 Apr 2015 08:42:41 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <55363D6F.5050801@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+Message-ID: <CAArSzsWiAUB2i9yEgkgq8hqskFr3+bXC47jGA+S+dkKCKhKFew@mail.gmail.com>
+
+On 21 April 2015 at 08:07, James Knott <james.knott at rogers.com> wrote:
+> Has anyone else noticed that the videos on the Toronto Star site no
+> longer work with Linux?
+
+No problems with three videos from the "latest videos" page. Ubuntu
+14.04, Firefox 37.0.1.
+
+If you provide a link to a specific video, I can try it.
+
+-- 
+Scott
+
+From kalibslack at gmail.com  Tue Apr 21 12:49:10 2015
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Tue, 21 Apr 2015 09:49:10 -0300
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CAArSzsWiAUB2i9yEgkgq8hqskFr3+bXC47jGA+S+dkKCKhKFew@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CAArSzsWiAUB2i9yEgkgq8hqskFr3+bXC47jGA+S+dkKCKhKFew@mail.gmail.com>
+Message-ID: <CAH5qdezFu+wkszU5W-owCwo4G1N13qycoV2zj1cR_mqreNK9ww@mail.gmail.com>
+
+2015-04-21 9:42 GMT-03:00 Scott Allen <mlxxxp at gmail.com>:
+> On 21 April 2015 at 08:07, James Knott <james.knott at rogers.com> wrote:
+>> Has anyone else noticed that the videos on the Toronto Star site no
+>> longer work with Linux?
+>
+> No problems with three videos from the "latest videos" page. Ubuntu
+> 14.04, Firefox 37.0.1.
+>
+> If you provide a link to a specific video, I can try it.
+>
+
+Also working just fine in here: Arch Linux + Firefox 37.0.2
+
+From daniel at circuidipity.com  Tue Apr 21 13:39:53 2015
+From: daniel at circuidipity.com (Daniel Wayne Armstrong)
+Date: Tue, 21 Apr 2015 09:39:53 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <55363D6F.5050801@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+Message-ID: <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+
+On Tue, Apr 21, 2015 at 8:07 AM, James Knott <james.knott at rogers.com> wrote:
+
+> Has anyone else noticed that the videos on the Toronto Star site no
+> longer work with Linux?  I've tried Firefox, Seamonkey and Chromium
+> browsers.  The videos do work in Windows.
+>
+
+Running Arch Linux + Firefox  37.0.2 to watch video at this link:
+
+https://www.thestar.com/life/sourced/2015/04/08/carls-jrs-queen-west-location-has-a-dedicated-milkshake-bar-sourced.html
+
+I needed to temporarily disable the HTTPS-Everywhere plugin... after
+restarting and using 'http' links the videos played OK.
+
+Chrome 42.0.2311.90 with no plugins played the videos OK.
+
+-- 
+(o<  .: Per curiositas ad astra .: http://www.circuidipity.com
+(/)_
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150421/df43f5d6/attachment.html>
+
+From louipc.ist at gmail.com  Tue Apr 21 16:55:53 2015
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Tue, 21 Apr 2015 12:55:53 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+Message-ID: <20150421165553.GA28633@gmail.com>
+
+On Tue 21 Apr 2015 09:39 -0400, Daniel Wayne Armstrong wrote:
+> On Tue, Apr 21, 2015 at 8:07 AM, James Knott <james.knott at rogers.com> wrote:
+> 
+> > Has anyone else noticed that the videos on the Toronto Star site no
+> > longer work with Linux?  I've tried Firefox, Seamonkey and Chromium
+> > browsers.  The videos do work in Windows.
+> >
+> 
+> Running Arch Linux + Firefox  37.0.2 to watch video at this link:
+> 
+> https://www.thestar.com/life/sourced/2015/04/08/carls-jrs-queen-west-location-has-a-dedicated-milkshake-bar-sourced.html
+> 
+
+Running Arch + youtube-dl works. Now I want some Carls JR
+
+From james.knott at rogers.com  Tue Apr 21 16:57:23 2015
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 21 Apr 2015 12:57:23 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+Message-ID: <55368173.3040204@rogers.com>
+
+On 04/21/2015 09:39 AM, Daniel Wayne Armstrong wrote:
+> On Tue, Apr 21, 2015 at 8:07 AM, James Knott <james.knott at rogers.com
+> <mailto:james.knott at rogers.com>> wrote:
+>
+>     Has anyone else noticed that the videos on the Toronto Star site no
+>     longer work with Linux?  I've tried Firefox, Seamonkey and Chromium
+>     browsers.  The videos do work in Windows.
+>
+>
+> Running Arch Linux + Firefox  37.0.2 to watch video at this link:
+>
+> https://www.thestar.com/life/sourced/2015/04/08/carls-jrs-queen-west-location-has-a-dedicated-milkshake-bar-sourced.html
+>
+> I needed to temporarily disable the HTTPS-Everywhere plugin... after
+> restarting and using 'http' links the videos played OK.
+>
+> Chrome 42.0.2311.90 with no plugins played the videos OK.
+>
+
+It was HTTPS Everyware that caused the problem.  I disabled thestar.com
+in it, so I'm past that problem.  That only leaves the videos that won't
+play for other reasons.  ;-)
+
+
+From cdasilva at iprimus.ca  Tue Apr 21 17:33:31 2015
+From: cdasilva at iprimus.ca (Clive DaSilva)
+Date: Tue, 21 Apr 2015 13:33:31 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <20150421165553.GA28633@gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <20150421165553.GA28633@gmail.com>
+Message-ID: <000001d07c59$4957f8a0$dc07e9e0$@iprimus.ca>
+
+Hmmn
+
+I just watched a couple of videos on TheStar.com  on one of my Linux boxes
+(Linuxmint 17) without any problems. I use Google Chrome as my primary
+browser.
+
+---------
+Clive DaSilva - cdasilva at iprimus.ca 
+Mailing List - talk at gtalug.org 
+                          http://gtalug.org/mailman/listinfo/talk
+
+
+-----Original Message-----
+From: talk [mailto:talk-bounces at gtalug.org] On Behalf Of Loui Chang
+Sent: April-21-15 12:56 PM
+To: GTALUG Talk
+Subject: Re: [GTALUG] Toronto Star videos no longer work
+
+On Tue 21 Apr 2015 09:39 -0400, Daniel Wayne Armstrong wrote:
+> On Tue, Apr 21, 2015 at 8:07 AM, James Knott <james.knott at rogers.com>
+wrote:
+> 
+> > Has anyone else noticed that the videos on the Toronto Star site no 
+> > longer work with Linux?  I've tried Firefox, Seamonkey and Chromium 
+> > browsers.  The videos do work in Windows.
+> >
+> 
+> Running Arch Linux + Firefox  37.0.2 to watch video at this link:
+> 
+> https://www.thestar.com/life/sourced/2015/04/08/carls-jrs-queen-west-l
+> ocation-has-a-dedicated-milkshake-bar-sourced.html
+> 
+
+Running Arch + youtube-dl works. Now I want some Carls JR
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+
+From tisdall at gmail.com  Tue Apr 21 18:13:14 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Tue, 21 Apr 2015 14:13:14 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <000001d07c59$4957f8a0$dc07e9e0$@iprimus.ca>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <20150421165553.GA28633@gmail.com>
+ <000001d07c59$4957f8a0$dc07e9e0$@iprimus.ca>
+Message-ID: <CAGxYWpY3wcjCJR3KB6+ouk41MdRC6CnxMrFPb2RW7H2nnNP8Zg@mail.gmail.com>
+
+Very strange...  I couldn't get the video to work at
+https://www.thestar.com/life/sourced/2015/04/08/carls-jrs-queen-west-location-has-a-dedicated-milkshake-bar-sourced.html
+.  I thought maybe it was my adblocking, but disabling that made no
+difference.  I wasn't able to see any video until I went to the "http"
+(non-secure) version of the page and then it worked.
+
+I'm using Chrome, Ubuntu 14.04, and Adobe Flash.
+
+From gilesorr at gmail.com  Wed Apr 22 01:45:51 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Tue, 21 Apr 2015 21:45:51 -0400
+Subject: [GTALUG] Virtualized OSes
+Message-ID: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+
+I've been using VirtualBox a lot recently, and I've been pretty
+impressed with it - running more than one simultaneous machine,
+setting up an internal network and running ansible between them,
+nifty.  Today at work we had an interesting discussion about Digital
+Ocean: the suggestion was made (and undoubtedly it's obvious to many
+on this list, but it was eye-opening to me, I'm still getting my head
+around disposable machines) that if you weren't sure an upgrade to a
+droplet would work, just clone it, do the upgrade on the clone and see
+how it goes.  Then you can make your decision and destroy the unwanted
+version.  All of which made me think "wouldn't it be cool if I could
+have a system with an totally stripped Linux with VirtualBox as the
+"Window Manager" so I could toggle between two or three running OSes
+with graphical interfaces ..."  So:
+
+http://en.wikipedia.org/wiki/Operating_system-level_virtualization_implementations
+
+I've already ruled out OpenVZ as it looks like all virtualized systems
+have to use the same kernel.  Xen seems like the optimal method, but I
+seem to remember that your processor specifically has to support
+virtualization ("lscpu" says, among other things, "Virtualization:
+VT-x", so I'm covered?)
+
+Assuming I want the base OS (does that term even apply?) to be Linux,
+and I don't like proprietary software, what's the "best choice" if I
+want to simultaneously run things like Debian Jessie, TinyCore,
+SliTaz, and possibly even Windows 7?
+
+Links to good tutorials and "Getting Started" guides would also be
+very much appreciated.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From james.knott at rogers.com  Wed Apr 22 01:55:43 2015
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 21 Apr 2015 21:55:43 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+Message-ID: <5536FF9F.8050909@rogers.com>
+
+On 04/21/2015 09:45 PM, Giles Orr wrote:
+> with VirtualBox as the
+> "Window Manager" so I could toggle between two or three running OSes
+> with graphical interfaces ...
+
+FWIW, I have VirtualBox on my openSUSE 13.1 notebook.  I have installed
+VMs for Windows 10, Windows 98 and OS/2 Warp 4.  I can switch among them
+and back to Linux.  The VMs run full screen and to look at them, you
+wouldn't know you were in a VM.
+
+On my desktop system, I have Windows 7 & 10 in VMs.
+
+
+From psema4 at gmail.com  Wed Apr 22 02:20:57 2015
+From: psema4 at gmail.com (Scott Elcomb)
+Date: Tue, 21 Apr 2015 22:20:57 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+Message-ID: <CAEx-jsOXBT+yLjiUsr+k3dBydJiG+5V4cqi-F6s6exHeJa9qPQ@mail.gmail.com>
+
+On Tue, Apr 21, 2015 at 9:45 PM, Giles Orr <gilesorr at gmail.com> wrote:
+<snip>
+> Assuming I want the base OS (does that term even apply?) to be Linux,
+> and I don't like proprietary software, what's the "best choice" if I
+> want to simultaneously run things like Debian Jessie, TinyCore,
+> SliTaz, and possibly even Windows 7?
+>
+> Links to good tutorials and "Getting Started" guides would also be
+> very much appreciated.
+
+I've not tried it yet (it's on my todo list) but you might have a look
+at Qubes OS.  May not be exactly what you're looking for but it's the
+closest that I can think of (aside from VirtualBox et al).  If it's
+possible to run docker (perhaps via subuser)* under Qubes, you might
+be able to have your cake and eat it too.
+
+<https://www.qubes-os.org/>
+
+Best,
+- Scott.
+
+* Additional links
+<https://www.docker.com/>
+<http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/>
+<http://subuser.org/>
+
+-- 
+  Scott Elcomb         @psema4
+  http://psema4.com/pubkey.txt
+     http://www.pirateparty.ca/
+
