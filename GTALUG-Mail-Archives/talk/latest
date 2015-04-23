@@ -3766,3 +3766,646 @@ Best,
   http://psema4.com/pubkey.txt
      http://www.pirateparty.ca/
 
+From bjonkman at sobac.com  Wed Apr 22 14:58:28 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Wed, 22 Apr 2015 10:58:28 -0400
+Subject: [GTALUG] KWLUG podcast on BTRFS [was: Myths and misunderstandings
+	about ZFS]
+In-Reply-To: <CACa31mABVKVj5aZ2CU8+tJ1UXt-37QLiBwfAJjF-Dy5ezibYHQ@mail.gmail.com>
+References: <CACa31mABVKVj5aZ2CU8+tJ1UXt-37QLiBwfAJjF-Dy5ezibYHQ@mail.gmail.com>
+Message-ID: <5537B714.8050707@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Speaking of file systems, we were doing so at great length at the
+after-meeting after last week's GTALUG meeting. The day before KWLUG's
+Chris Irwin had just made a presentation on BTRFS, which is available
+as a podcast at http://kwlug.org/podcasts
+
+- --Bob.
+
+
+On 20/04/15 03:02 PM, Daniel Wayne Armstrong wrote:
+> Interesting article about the ZFS filesystem... In the past I have 
+> defaulted to the usual ext(2,3,4) but the ability to make
+> filesystem snapshots and rollbacks would be useful:
+> 
+> http://distrowatch.com/weekly.php?issue=20150420#myth
+
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-669-0388
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+http://bob.jonkman.ca/blogs/    http://sn.jonkman.ca/bobjonkman/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlU3txEACgkQuRKJsNLM5eqXGgCg+qAIC4c4pgcSDFzOobK9P5yu
+PVIAn1tlI00SRdNfwt5Iavig3exOrrGH
+=TK3x
+-----END PGP SIGNATURE-----
+
+From davec-b at rogers.com  Wed Apr 22 15:43:39 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Wed, 22 Apr 2015 11:43:39 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+Message-ID: <5537C1AB.9040207@rogers.com>
+
+On 04/21/2015 09:45 PM, Giles Orr wrote:
+> Today at work we had an interesting discussion about Digital
+> Ocean: the suggestion was made (and undoubtedly it's obvious to many
+> on this list, but it was eye-opening to me, I'm still getting my head
+> around disposable machines) that if you weren't sure an upgrade to a
+> droplet would work, just clone it, do the upgrade on the clone and see
+> how it goes.  Then you can make your decision and destroy the unwanted
+> version.
+...
+> I've already ruled out OpenVZ as it looks like all virtualized systems
+> have to use the same kernel.
+On Solaris, we did tons with very-lightweight VMs, using code for 
+security isolation that could create "containers" that looked just like 
+machines.
+
+The only limitation was the common OS version, and you could be ahead of 
+the evrsion in userspace stuff like shared libraries.  We rarely found 
+cases where we wanted a different OS, just some where we wanted to 
+emulate an older one.
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From davec-b at rogers.com  Wed Apr 22 15:45:27 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Wed, 22 Apr 2015 11:45:27 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CAGxYWpY3wcjCJR3KB6+ouk41MdRC6CnxMrFPb2RW7H2nnNP8Zg@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <20150421165553.GA28633@gmail.com>
+ <000001d07c59$4957f8a0$dc07e9e0$@iprimus.ca>
+ <CAGxYWpY3wcjCJR3KB6+ouk41MdRC6CnxMrFPb2RW7H2nnNP8Zg@mail.gmail.com>
+Message-ID: <5537C217.8030504@rogers.com>
+
+On 04/21/2015 02:13 PM, Tim Tisdall wrote:
+> Very strange...  I couldn't get the video to work at
+> https://www.thestar.com/life/sourced/2015/04/08/carls-jrs-queen-west-location-has-a-dedicated-milkshake-bar-sourced.html
+> .  I thought maybe it was my adblocking, but disabling that made no
+> difference.  I wasn't able to see any video until I went to the "http"
+> (non-secure) version of the page and then it worked.
+>
+> I'm using Chrome, Ubuntu 14.04, and Adobe Flash.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+I also see nothing with https everywhere, the video with http --dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150422/95ad3c47/attachment.html>
+
+From ted.leslie at gmail.com  Wed Apr 22 16:25:30 2015
+From: ted.leslie at gmail.com (ted leslie)
+Date: Wed, 22 Apr 2015 12:25:30 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <5537C1AB.9040207@rogers.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <5537C1AB.9040207@rogers.com>
+Message-ID: <CAMua2SFvyhVNfe9NLBvVKR5HQ+YDUgNNos9MiEbUQueaz5kXYw@mail.gmail.com>
+
+You may want to check out Proxmox, i use it for the cloud as VM env., it is
+amazing!, not sure how it would work
+however on strictly a desktop environment. It is free, even though it bugs
+you to sign up for support.
+
+-tl
+
+On Wed, Apr 22, 2015 at 11:43 AM, David Collier-Brown <davec-b at rogers.com>
+wrote:
+
+> On 04/21/2015 09:45 PM, Giles Orr wrote:
+>
+>> Today at work we had an interesting discussion about Digital
+>> Ocean: the suggestion was made (and undoubtedly it's obvious to many
+>> on this list, but it was eye-opening to me, I'm still getting my head
+>> around disposable machines) that if you weren't sure an upgrade to a
+>> droplet would work, just clone it, do the upgrade on the clone and see
+>> how it goes.  Then you can make your decision and destroy the unwanted
+>> version.
+>>
+> ...
+>
+>> I've already ruled out OpenVZ as it looks like all virtualized systems
+>> have to use the same kernel.
+>>
+> On Solaris, we did tons with very-lightweight VMs, using code for security
+> isolation that could create "containers" that looked just like machines.
+>
+> The only limitation was the common OS version, and you could be ahead of
+> the evrsion in userspace stuff like shared libraries.  We rarely found
+> cases where we wanted a different OS, just some where we wanted to emulate
+> an older one.
+>
+> --dave
+>
+> --
+> David Collier-Brown,         | Always do right. This will gratify
+> System Programmer and Author | some people and astonish the rest
+> davecb at spamcop.net           |                      -- Mark Twain
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150422/4b0438db/attachment.html>
+
+From hugh at mimosa.com  Wed Apr 22 21:24:48 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 22 Apr 2015 17:24:48 -0400 (EDT)
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+
+| From: Giles Orr <gilesorr at gmail.com>
+
+| I've been using VirtualBox a lot recently, and I've been pretty
+| impressed with it - running more than one simultaneous machine,
+| setting up an internal network and running ansible between them,
+| nifty.
+
+It is a neat trick.
+
+But what is it useful for?
+
+Clearly it is great to be able to run different OSes if you need to
+run more than one.  For example, to be able to run MS Word when you
+mostly want to run Linux.  Or to test on multiple platforms.
+
+In the Libreswan project, we use virtualization to test networking 
+software.  Since some of the code is in the OS, we at least sometimes have 
+to run different OSes.
+
+But most of virtualization seems to be for other purposes.
+
+|  Today at work we had an interesting discussion about Digital
+| Ocean: the suggestion was made (and undoubtedly it's obvious to many
+| on this list, but it was eye-opening to me, I'm still getting my head
+| around disposable machines) that if you weren't sure an upgrade to a
+| droplet would work, just clone it, do the upgrade on the clone and see
+| how it goes.  Then you can make your decision and destroy the unwanted
+| version.
+
+Yeah, that (sadly) is a good use case.  But surely a proper package
+management system would let you do this too.
+
+- allow more than one version of a package to be installed
+
+- allow more than one instance of the same package, but with different 
+  global configuration.  Perhaps global configuration is evil.
+
+- allow package dependencies to contol which versions of each package
+  talk to each other.  For example, if A talks to B, under some
+  conditions, old A should talk to old B
+
+- make sure that distinct package's configurations don't affect each
+  other.  Example: two different packages that use Apache; they should not
+  configure Apache in ways that conflict.
+
+- job migration between machines, even while running, seems useful.
+  (That's not a package management problem.)
+
+One step more towards virtualization:
+
+Jails are minimal and may be good enough but a lot cheaper than
+supporting true virtual x86 machines.
+
+|  All of which made me think "wouldn't it be cool if I could
+| have a system with an totally stripped Linux with VirtualBox as the
+| "Window Manager" so I could toggle between two or three running OSes
+| with graphical interfaces ..."  So:
+
+I think that Serious VMware products are stripped Linux systems that
+can run VMs without a lot of extras.
+
+I think that Zen Dom0 (host) can be minimal too.
+
+So much of the noise this day is about things like Docker and CoreOS.
+A lot feels like branding exercises rather than technology.  I find it
+too hard to figure out what they actually are.
+
+From peterplatek at gmail.com  Wed Apr 22 21:40:25 2015
+From: peterplatek at gmail.com (Peter Platek)
+Date: Wed, 22 Apr 2015 17:40:25 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+Message-ID: <CANewTZ_HnN=+ksKY_zVw5Tsfzo=Upapqru6qQhezAv5Sa_V7tA@mail.gmail.com>
+
+> Yeah, that (sadly) is a good use case.  But surely a proper package
+> management system would let you do this too.
+>
+> - allow more than one version of a package to be installed
+>
+> - allow more than one instance of the same package, but with different
+>   global configuration.  Perhaps global configuration is evil.
+>
+> - allow package dependencies to contol which versions of each package
+>   talk to each other.  For example, if A talks to B, under some
+>   conditions, old A should talk to old B
+>
+> - make sure that distinct package's configurations don't affect each
+>   other.  Example: two different packages that use Apache; they should not
+>   configure Apache in ways that conflict.
+
+I think Red Hat's software collections are supposed to do that:
+
+https://www.softwarecollections.org
+
+On 22 April 2015 at 17:24, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+>
+> | From: Giles Orr <gilesorr at gmail.com>
+>
+> | I've been using VirtualBox a lot recently, and I've been pretty
+> | impressed with it - running more than one simultaneous machine,
+> | setting up an internal network and running ansible between them,
+> | nifty.
+>
+> It is a neat trick.
+>
+> But what is it useful for?
+>
+> Clearly it is great to be able to run different OSes if you need to
+> run more than one.  For example, to be able to run MS Word when you
+> mostly want to run Linux.  Or to test on multiple platforms.
+>
+> In the Libreswan project, we use virtualization to test networking
+> software.  Since some of the code is in the OS, we at least sometimes have
+> to run different OSes.
+>
+> But most of virtualization seems to be for other purposes.
+>
+> |  Today at work we had an interesting discussion about Digital
+> | Ocean: the suggestion was made (and undoubtedly it's obvious to many
+> | on this list, but it was eye-opening to me, I'm still getting my head
+> | around disposable machines) that if you weren't sure an upgrade to a
+> | droplet would work, just clone it, do the upgrade on the clone and see
+> | how it goes.  Then you can make your decision and destroy the unwanted
+> | version.
+>
+> Yeah, that (sadly) is a good use case.  But surely a proper package
+> management system would let you do this too.
+>
+> - allow more than one version of a package to be installed
+>
+> - allow more than one instance of the same package, but with different
+>   global configuration.  Perhaps global configuration is evil.
+>
+> - allow package dependencies to contol which versions of each package
+>   talk to each other.  For example, if A talks to B, under some
+>   conditions, old A should talk to old B
+>
+> - make sure that distinct package's configurations don't affect each
+>   other.  Example: two different packages that use Apache; they should not
+>   configure Apache in ways that conflict.
+>
+> - job migration between machines, even while running, seems useful.
+>   (That's not a package management problem.)
+>
+> One step more towards virtualization:
+>
+> Jails are minimal and may be good enough but a lot cheaper than
+> supporting true virtual x86 machines.
+>
+> |  All of which made me think "wouldn't it be cool if I could
+> | have a system with an totally stripped Linux with VirtualBox as the
+> | "Window Manager" so I could toggle between two or three running OSes
+> | with graphical interfaces ..."  So:
+>
+> I think that Serious VMware products are stripped Linux systems that
+> can run VMs without a lot of extras.
+>
+> I think that Zen Dom0 (host) can be minimal too.
+>
+> So much of the noise this day is about things like Docker and CoreOS.
+> A lot feels like branding exercises rather than technology.  I find it
+> too hard to figure out what they actually are.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From ted.leslie at gmail.com  Wed Apr 22 21:43:27 2015
+From: ted.leslie at gmail.com (ted leslie)
+Date: Wed, 22 Apr 2015 17:43:27 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <CANewTZ_HnN=+ksKY_zVw5Tsfzo=Upapqru6qQhezAv5Sa_V7tA@mail.gmail.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+ <CANewTZ_HnN=+ksKY_zVw5Tsfzo=Upapqru6qQhezAv5Sa_V7tA@mail.gmail.com>
+Message-ID: <CAMua2SFi9OFTqjBqsPLbM0Npv9mSQaCfU6edwCxiyBaRuwFg4g@mail.gmail.com>
+
+I am thinking of moving off Debian/Mint-DE, to Nixos linux for this type of
+flexibility.
+
+-tl
+
+On Wed, Apr 22, 2015 at 5:40 PM, Peter Platek <peterplatek at gmail.com> wrote:
+
+> > Yeah, that (sadly) is a good use case.  But surely a proper package
+> > management system would let you do this too.
+> >
+> > - allow more than one version of a package to be installed
+> >
+> > - allow more than one instance of the same package, but with different
+> >   global configuration.  Perhaps global configuration is evil.
+> >
+> > - allow package dependencies to contol which versions of each package
+> >   talk to each other.  For example, if A talks to B, under some
+> >   conditions, old A should talk to old B
+> >
+> > - make sure that distinct package's configurations don't affect each
+> >   other.  Example: two different packages that use Apache; they should
+> not
+> >   configure Apache in ways that conflict.
+>
+> I think Red Hat's software collections are supposed to do that:
+>
+> https://www.softwarecollections.org
+>
+> On 22 April 2015 at 17:24, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+> >
+> > | From: Giles Orr <gilesorr at gmail.com>
+> >
+> > | I've been using VirtualBox a lot recently, and I've been pretty
+> > | impressed with it - running more than one simultaneous machine,
+> > | setting up an internal network and running ansible between them,
+> > | nifty.
+> >
+> > It is a neat trick.
+> >
+> > But what is it useful for?
+> >
+> > Clearly it is great to be able to run different OSes if you need to
+> > run more than one.  For example, to be able to run MS Word when you
+> > mostly want to run Linux.  Or to test on multiple platforms.
+> >
+> > In the Libreswan project, we use virtualization to test networking
+> > software.  Since some of the code is in the OS, we at least sometimes
+> have
+> > to run different OSes.
+> >
+> > But most of virtualization seems to be for other purposes.
+> >
+> > |  Today at work we had an interesting discussion about Digital
+> > | Ocean: the suggestion was made (and undoubtedly it's obvious to many
+> > | on this list, but it was eye-opening to me, I'm still getting my head
+> > | around disposable machines) that if you weren't sure an upgrade to a
+> > | droplet would work, just clone it, do the upgrade on the clone and see
+> > | how it goes.  Then you can make your decision and destroy the unwanted
+> > | version.
+> >
+> > Yeah, that (sadly) is a good use case.  But surely a proper package
+> > management system would let you do this too.
+> >
+> > - allow more than one version of a package to be installed
+> >
+> > - allow more than one instance of the same package, but with different
+> >   global configuration.  Perhaps global configuration is evil.
+> >
+> > - allow package dependencies to contol which versions of each package
+> >   talk to each other.  For example, if A talks to B, under some
+> >   conditions, old A should talk to old B
+> >
+> > - make sure that distinct package's configurations don't affect each
+> >   other.  Example: two different packages that use Apache; they should
+> not
+> >   configure Apache in ways that conflict.
+> >
+> > - job migration between machines, even while running, seems useful.
+> >   (That's not a package management problem.)
+> >
+> > One step more towards virtualization:
+> >
+> > Jails are minimal and may be good enough but a lot cheaper than
+> > supporting true virtual x86 machines.
+> >
+> > |  All of which made me think "wouldn't it be cool if I could
+> > | have a system with an totally stripped Linux with VirtualBox as the
+> > | "Window Manager" so I could toggle between two or three running OSes
+> > | with graphical interfaces ..."  So:
+> >
+> > I think that Serious VMware products are stripped Linux systems that
+> > can run VMs without a lot of extras.
+> >
+> > I think that Zen Dom0 (host) can be minimal too.
+> >
+> > So much of the noise this day is about things like Docker and CoreOS.
+> > A lot feels like branding exercises rather than technology.  I find it
+> > too hard to figure out what they actually are.
+> > ---
+> > Talk Mailing List
+> > talk at gtalug.org
+> > http://gtalug.org/mailman/listinfo/talk
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150422/7aa79561/attachment.html>
+
+From jamon.camisso at utoronto.ca  Wed Apr 22 21:44:41 2015
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Wed, 22 Apr 2015 17:44:41 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+Message-ID: <55381649.50902@utoronto.ca>
+
+On 22/04/15 05:24 PM, D. Hugh Redelmeier wrote:
+> Yeah, that (sadly) is a good use case.  But surely a proper package
+> management system would let you do this too.
+> 
+> - allow more than one version of a package to be installed
+> 
+> - allow more than one instance of the same package, but with different 
+>   global configuration.  Perhaps global configuration is evil.
+> 
+> - allow package dependencies to contol which versions of each package
+>   talk to each other.  For example, if A talks to B, under some
+>   conditions, old A should talk to old B
+> 
+> - make sure that distinct package's configurations don't affect each
+>   other.  Example: two different packages that use Apache; they should not
+>   configure Apache in ways that conflict.
+> 
+> - job migration between machines, even while running, seems useful.
+>   (That's not a package management problem.)
+
+NixOS addresses quite a few of these. Each version of a package is built
+into its own unique prefixed environment, and each build can have its
+own env variables set. You're free to switch between versions on your
+system as well.
+
+Essentially it is a distro that is built using pointers to individual
+packages' git commit ids.
+
+Cheers, Jamon
+
+http://nixos.org/nixos/about.html - see How does NixOS work?
+
+From jamon.camisso at utoronto.ca  Wed Apr 22 21:46:27 2015
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Wed, 22 Apr 2015 17:46:27 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <55381649.50902@utoronto.ca>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+ <55381649.50902@utoronto.ca>
+Message-ID: <553816B3.9080202@utoronto.ca>
+
+On 22/04/15 05:44 PM, Jamon Camisso wrote:
+> NixOS addresses quite a few of these. Each version of a package is built
+> into its own unique prefixed environment, and each build can have its
+> own env variables set. You're free to switch between versions on your
+> system as well.
+> 
+> Essentially it is a distro that is built using pointers to individual
+> packages' git commit ids.
+
+Replying to myself - that part isn't accurate. The package manager deals
+with where the upstream source is found. http://nixos.org/nixpkgs/
+
+Cheers, Jamon
+
+
+From bjonkman at sobac.com  Thu Apr 23 04:43:17 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Thu, 23 Apr 2015 00:43:17 -0400
+Subject: [GTALUG] Toronto Ubuntu 15.04 Vivid Vervet Release Party
+In-Reply-To: <552B480D.2040409@sobac.com>
+References: <552B480D.2040409@sobac.com>
+Message-ID: <55387865.3010606@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Hi all: Just want to remind you of the Toronto Release Party tomorrow
+(Thursday) night.  The party has expanded in scope, and we're now
+officially celebrating the Ubuntu 15.04 "Vivid Vervet" release, the
+Debian 8 "Jessie" release (in anticipation of the actual release on
+Saturday the 25th), and some of us are still celebrating Linux Mint
+LMDE 2.0 "Betsy", released on 10 April.
+
+Debian "Jessie" release party announcment:
+https://wiki.debian.org/ReleasePartyJessie#ReleasePartyJessie.2FCanada.2FToronto.Canada:_Toronto
+
+Come join us at Alio Restaurant at 8:00pm -- Mike is supplying the
+coffee and cupcakes!
+
+- --Bob.
+
+
+On 13/04/15 12:37 AM, Bob Jonkman wrote:
+> Hi all: There are a number of significant Linux distribution 
+> releases happening -- Linux Mint Debian Edition 2 "Betsy" just
+> came out this past Friday, Ubuntu 15.04 "Vivid Vervet" is coming
+> out next Thursday, and Debian 8.0 "Jessie" is being released the 
+> Saturday after that.  As far as I know, only Ubuntu is having a 
+> release party, to which I'd like to welcome all Linux distro users 
+> in the Toronto area:
+> 
+> *What*: Toronto 15.04 Release Party *When*: 8:00pm to 11:45pm,
+> Thursday, 23 April 2015 *Where*: Alio Lounge, 108 Dundas Street
+> West, Toronto, Ontario *Map*:
+> http://osm.org/go/ZX6BtMGSN-?m=&node=1113718580 *LoCo Event*:
+> http://loco.ubuntu.com/events/ubuntu-ca/3074/detail/
+> 
+> Mike Kaulbach (genii in IRC) is providing free coffee and all the 
+> fixings to decorate your own cupcakes. Hope to see you there!
+> 
+> Thanx, --Bob.
+> 
+> 
+> 
+> 
+> --- Talk Mailing List talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlU4eGMACgkQuRKJsNLM5eqq0ACfW7QUDIwmX7iml93hFCrSSRCo
+hJsAn1zfbuI/gKjDDaFL2vLKOh0KedIJ
+=j8UG
+-----END PGP SIGNATURE-----
+
+From bjonkman at sobac.com  Thu Apr 23 04:52:46 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Thu, 23 Apr 2015 00:52:46 -0400
+Subject: [GTALUG] Libregraphics Meeting, Toronto, 29 Apr to 2 May 2015
+Message-ID: <55387A9E.1060504@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Hi again: Here's something I knew about, but that almost slipped my mind:
+
+> The Libre Graphics Meeting (LGM) is an annual meeting on free and 
+> open source software for graphics.
+> 
+> Held yearly since 2006 the Libre Graphics Meeting aims to attract 
+> developers, artists and professionals who use and improve free and 
+> open source software graphics applications. The LGM aims to bring 
+> these people together in the cause of creating high quality free 
+> graphics applications.
+
+29 April to 2 May 2015 at Robarts Library and the Earth Sciences
+Building at the University of Toronto
+
+http://libregraphicsmeeting.org/2015/program/
+
+- --Bob.
+
+- -- 
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-669-0388
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+http://bob.jonkman.ca/blogs/    http://sn.jonkman.ca/bobjonkman/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlU4epwACgkQuRKJsNLM5eqDgACfRlF9rNKq3rf8pTdhAejalQMT
+vZIAoJuUzfxMarZYMGJuOx+KdDa6SiLO
+=aTNh
+-----END PGP SIGNATURE-----
+
