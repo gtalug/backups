@@ -4657,3 +4657,674 @@ Dee
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150423/de756599/attachment.html>
 
+From james.knott at rogers.com  Fri Apr 24 15:00:14 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 11:00:14 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <55368173.3040204@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com>
+Message-ID: <553A5A7E.1060507@rogers.com>
+
+On 04/21/2015 12:57 PM, James Knott wrote:
+> On 04/21/2015 09:39 AM, Daniel Wayne Armstrong wrote:
+>> On Tue, Apr 21, 2015 at 8:07 AM, James Knott <james.knott at rogers.com
+>> <mailto:james.knott at rogers.com>> wrote:
+>>
+>>     Has anyone else noticed that the videos on the Toronto Star site no
+>>     longer work with Linux?  I've tried Firefox, Seamonkey and Chromium
+>>     browsers.  The videos do work in Windows.
+>>
+>>
+>> Running Arch Linux + Firefox  37.0.2 to watch video at this link:
+>>
+>> https://www.thestar.com/life/sourced/2015/04/08/carls-jrs-queen-west-location-has-a-dedicated-milkshake-bar-sourced.html
+>>
+>> I needed to temporarily disable the HTTPS-Everywhere plugin... after
+>> restarting and using 'http' links the videos played OK.
+>>
+>> Chrome 42.0.2311.90 with no plugins played the videos OK.
+>>
+> It was HTTPS Everyware that caused the problem.  I disabled thestar.com
+> in it, so I'm past that problem.  That only leaves the videos that won't
+> play for other reasons.  ;-)
+>
+>
+
+Now that problem is out of the way, another has turned up.  With many
+videos, I am getting an error message: "The video you are trying to
+watch is currently unavailable.  Please try again later.  Error
+Code:VE_PD_NOTFOUND"
+
+When I search on that error code, it appears it's related to Flash,
+which is no longer being updated for Linux.  It also seems to happen on
+recent videos, not older ones.  Any ideas, other than viewing those
+videos in Windows?
+
+Here is a link to one video that fails:
+http://www.thestar.com/news/canada/2015/04/23/killer-sent-photos-of-dead-woman-3-children-to-biological-father-relative-says.html
+
+BTW, this is in Firefox on openSUSE 13.1.
+
+From tisdall at gmail.com  Fri Apr 24 15:14:43 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Fri, 24 Apr 2015 11:14:43 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A5A7E.1060507@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+Message-ID: <CAGxYWpZTWVhjFB30ieupRw=w80Z=5bUh7_yw=n8tn8sU4X9RWA@mail.gmail.com>
+
+Worked for me...  Chrome in Ubuntu 14.04
+
+On Fri, Apr 24, 2015 at 11:00 AM, James Knott <james.knott at rogers.com> wrote:
+> On 04/21/2015 12:57 PM, James Knott wrote:
+>> On 04/21/2015 09:39 AM, Daniel Wayne Armstrong wrote:
+>>> On Tue, Apr 21, 2015 at 8:07 AM, James Knott <james.knott at rogers.com
+>>> <mailto:james.knott at rogers.com>> wrote:
+>>>
+>>>     Has anyone else noticed that the videos on the Toronto Star site no
+>>>     longer work with Linux?  I've tried Firefox, Seamonkey and Chromium
+>>>     browsers.  The videos do work in Windows.
+>>>
+>>>
+>>> Running Arch Linux + Firefox  37.0.2 to watch video at this link:
+>>>
+>>> https://www.thestar.com/life/sourced/2015/04/08/carls-jrs-queen-west-location-has-a-dedicated-milkshake-bar-sourced.html
+>>>
+>>> I needed to temporarily disable the HTTPS-Everywhere plugin... after
+>>> restarting and using 'http' links the videos played OK.
+>>>
+>>> Chrome 42.0.2311.90 with no plugins played the videos OK.
+>>>
+>> It was HTTPS Everyware that caused the problem.  I disabled thestar.com
+>> in it, so I'm past that problem.  That only leaves the videos that won't
+>> play for other reasons.  ;-)
+>>
+>>
+>
+> Now that problem is out of the way, another has turned up.  With many
+> videos, I am getting an error message: "The video you are trying to
+> watch is currently unavailable.  Please try again later.  Error
+> Code:VE_PD_NOTFOUND"
+>
+> When I search on that error code, it appears it's related to Flash,
+> which is no longer being updated for Linux.  It also seems to happen on
+> recent videos, not older ones.  Any ideas, other than viewing those
+> videos in Windows?
+>
+> Here is a link to one video that fails:
+> http://www.thestar.com/news/canada/2015/04/23/killer-sent-photos-of-dead-woman-3-children-to-biological-father-relative-says.html
+>
+> BTW, this is in Firefox on openSUSE 13.1.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From james.knott at rogers.com  Fri Apr 24 15:19:59 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 11:19:59 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CAGxYWpZTWVhjFB30ieupRw=w80Z=5bUh7_yw=n8tn8sU4X9RWA@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAGxYWpZTWVhjFB30ieupRw=w80Z=5bUh7_yw=n8tn8sU4X9RWA@mail.gmail.com>
+Message-ID: <553A5F1F.4000802@rogers.com>
+
+On 04/24/2015 11:14 AM, Tim Tisdall wrote:
+> Worked for me...  Chrome in Ubuntu 14.04
+
+It works in Chromium, at least on one computer.  However, I generally
+use Firefox for most of my browsing and Chromium is normally used for
+stuff related to my GMail account, such as contacts, calendar etc.
+
+I still have to find out why that link works in Chromium on my notebook,
+but not desktop.  Also, aren't web site vedeos supposed to be shifting
+to HTML5?  These problems started with recent changes to the Star's web
+site.  Prior to that, the biggest problem was videos starting
+automatically, when I didn't want them to.  ;-)
+
+
+From stephen-d at rogers.com  Fri Apr 24 15:54:55 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Fri, 24 Apr 2015 11:54:55 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A5F1F.4000802@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAGxYWpZTWVhjFB30ieupRw=w80Z=5bUh7_yw=n8tn8sU4X9RWA@mail.gmail.com>
+ <553A5F1F.4000802@rogers.com>
+Message-ID: <553A674F.3050101@rogers.com>
+
+On 15-04-24 11:19 AM, James Knott wrote:
+> On 04/24/2015 11:14 AM, Tim Tisdall wrote:
+>> Worked for me...  Chrome in Ubuntu 14.04
+>
+> It works in Chromium, at least on one computer.  However, I generally
+> use Firefox for most of my browsing and Chromium is normally used for
+> stuff related to my GMail account, such as contacts, calendar etc.
+>
+> I still have to find out why that link works in Chromium on my notebook,
+> but not desktop.  Also, aren't web site vedeos supposed to be shifting
+> to HTML5?  These problems started with recent changes to the Star's web
+> site.  Prior to that, the biggest problem was videos starting
+> automatically, when I didn't want them to.  ;-)
+
+Worked for me in Firefox under Ubuntu 14.04.
+
+Note that HTML5 is, well, HTML.
+
+It is not a video format. And there is no single video format supported 
+by all browsers. At least when I last worked on this in January.
+
+HTML5 does provide tags so that the server can offer the video in more 
+than one format, and the browser can then select the version it supports.
+
+That explains why sites with a huge number of video files are slow to 
+move, because the space requirements double, and perhaps millions of 
+lines of HTML code have to be updated.
+
+I can imagine the new HTML5 tags are now being used, but the web site 
+does not yet have a good process for routinely supporting two video file 
+formats.
+
+-- 
+Stephen
+
+From james.knott at rogers.com  Fri Apr 24 16:13:53 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 12:13:53 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A674F.3050101@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAGxYWpZTWVhjFB30ieupRw=w80Z=5bUh7_yw=n8tn8sU4X9RWA@mail.gmail.com>
+ <553A5F1F.4000802@rogers.com> <553A674F.3050101@rogers.com>
+Message-ID: <553A6BC1.40305@rogers.com>
+
+On 04/24/2015 11:54 AM, Stephen wrote:
+> That explains why sites with a huge number of video files are slow to
+> move, because the space requirements double, and perhaps millions of
+> lines of HTML code have to be updated.
+>
+> I can imagine the new HTML5 tags are now being used, but the web site
+> does not yet have a good process for routinely supporting two video
+> file formats.
+
+Older videos on that site still work.  It's only recent ones that fail. 
+Perhaps they should be going to HTML5 with the new stuff and leave the
+older as is for now.
+
+Also, Youtube is changing to HTML5 and provides a means to make it
+default for browsers that don't already favour it.  IIRC, they have more
+than a few videos.  ;-)
+
+
+From mlxxxp at gmail.com  Fri Apr 24 16:40:18 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Fri, 24 Apr 2015 12:40:18 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A5A7E.1060507@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+Message-ID: <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+
+On 24 April 2015 at 11:00, James Knott <james.knott at rogers.com> wrote:
+> Here is a link to one video that fails:
+> http://www.thestar.com/news/canada/2015/04/23/killer-sent-photos-of-dead-woman-3-children-to-biological-father-relative-says.html
+
+Worked for me. Ubuntu 14.04, Firefox 37.0.1, Shockwave Flash
+11.2.202.457 plugin.
+
+-- 
+Scott
+
+From james.knott at rogers.com  Fri Apr 24 16:55:46 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 12:55:46 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+Message-ID: <553A7592.6090104@rogers.com>
+
+On 04/24/2015 12:40 PM, Scott Allen wrote:
+> Shockwave Flash 
+> 11.2.202.457 plugin.
+
+How'd you get that?  I thought it was no longer available for Linux.
+
+
+From james.knott at rogers.com  Fri Apr 24 16:57:41 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 12:57:41 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A7592.6090104@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com>
+Message-ID: <553A7605.2040007@rogers.com>
+
+On 04/24/2015 12:55 PM, James Knott wrote:
+> On 04/24/2015 12:40 PM, Scott Allen wrote:
+>> Shockwave Flash 
+>> 11.2.202.457 plugin.
+> How'd you get that?  I thought it was no longer available for Linux.
+>
+>
+I do have flash player 11.2.202.457 installed in my system, but not as a
+plugin.
+
+From james.knott at rogers.com  Fri Apr 24 17:05:20 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 13:05:20 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A7605.2040007@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+Message-ID: <553A77D0.2040609@rogers.com>
+
+On 04/24/2015 12:57 PM, James Knott wrote:
+> On 04/24/2015 12:55 PM, James Knott wrote:
+>> On 04/24/2015 12:40 PM, Scott Allen wrote:
+>>> Shockwave Flash 
+>>> 11.2.202.457 plugin.
+>> How'd you get that?  I thought it was no longer available for Linux.
+>>
+>>
+> I do have flash player 11.2.202.457 installed in my system, but not as a
+> plugin.
+>
+
+Correction, I do have the plugin. 
+
+So, what else might I be missing?
+
+
+From mlxxxp at gmail.com  Fri Apr 24 17:28:20 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Fri, 24 Apr 2015 13:28:20 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A77D0.2040609@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+Message-ID: <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+
+On 24 April 2015 at 13:05, James Knott <james.knott at rogers.com> wrote:
+> So, what else might I be missing?
+
+Just speculating... maybe it has something to do with the particular
+video card/chip and/or driver?
+
+-- 
+Scott
+
+From james.knott at rogers.com  Fri Apr 24 17:36:24 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 13:36:24 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+Message-ID: <553A7F18.40904@rogers.com>
+
+On 04/24/2015 01:28 PM, Scott Allen wrote:
+> On 24 April 2015 at 13:05, James Knott <james.knott at rogers.com> wrote:
+>> So, what else might I be missing?
+> Just speculating... maybe it has something to do with the particular
+> video card/chip and/or driver?
+>
+
+Well, it works in a Windows virtual machine on the same computer.
+
+From mlxxxp at gmail.com  Fri Apr 24 18:20:18 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Fri, 24 Apr 2015 14:20:18 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A7F18.40904@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A7F18.40904@rogers.com>
+Message-ID: <CAArSzsVbgvVfjiYPbD8gpiBxBRd_rQSaP8gRN8217oKvmS5MNw@mail.gmail.com>
+
+On 24 April 2015 at 13:36, James Knott <james.knott at rogers.com> wrote:
+> Well, it works in a Windows virtual machine on the same computer.
+
+Does it work in an openSUSE 13.1 virtual machine on the same computer?
+
+-- 
+Scott
+
+From james.knott at rogers.com  Fri Apr 24 18:21:56 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 14:21:56 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+Message-ID: <553A89C4.3020007@rogers.com>
+
+On 04/24/2015 01:28 PM, Scott Allen wrote:
+> On 24 April 2015 at 13:05, James Knott <james.knott at rogers.com> wrote:
+>> So, what else might I be missing?
+> Just speculating... maybe it has something to do with the particular
+> video card/chip and/or driver?
+>
+
+It's HTTPS Everywhere again.
+
+From james.knott at rogers.com  Fri Apr 24 18:22:29 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 14:22:29 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CAArSzsVbgvVfjiYPbD8gpiBxBRd_rQSaP8gRN8217oKvmS5MNw@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A7F18.40904@rogers.com>
+ <CAArSzsVbgvVfjiYPbD8gpiBxBRd_rQSaP8gRN8217oKvmS5MNw@mail.gmail.com>
+Message-ID: <553A89E5.7020800@rogers.com>
+
+On 04/24/2015 02:20 PM, Scott Allen wrote:
+> Does it work in an openSUSE 13.1 virtual machine on the same computer?
+>
+
+I don't have one of those handy.  However, it turned out to be HTTPS
+Everywhere again.
+
+
+From stephen-d at rogers.com  Fri Apr 24 18:33:30 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Fri, 24 Apr 2015 14:33:30 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A89C4.3020007@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A89C4.3020007@rogers.com>
+Message-ID: <553A8C7A.6080202@rogers.com>
+
+On 15-04-24 02:21 PM, James Knott wrote:
+> On 04/24/2015 01:28 PM, Scott Allen wrote:
+>> On 24 April 2015 at 13:05, James Knott <james.knott at rogers.com> wrote:
+>>> So, what else might I be missing?
+>> Just speculating... maybe it has something to do with the particular
+>> video card/chip and/or driver?
+>>
+>
+> It's HTTPS Everywhere again.
+
+Why would HTTPS be a problem for you, but not for others?
+
+
+-- 
+Stephen
+
+From stephen-d at rogers.com  Fri Apr 24 18:37:15 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Fri, 24 Apr 2015 14:37:15 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A8C7A.6080202@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A89C4.3020007@rogers.com> <553A8C7A.6080202@rogers.com>
+Message-ID: <553A8D5B.3040603@rogers.com>
+
+On 15-04-24 02:33 PM, Stephen wrote:
+> On 15-04-24 02:21 PM, James Knott wrote:
+>> On 04/24/2015 01:28 PM, Scott Allen wrote:
+>>> On 24 April 2015 at 13:05, James Knott <james.knott at rogers.com> wrote:
+>>>> So, what else might I be missing?
+>>> Just speculating... maybe it has something to do with the particular
+>>> video card/chip and/or driver?
+>>>
+>>
+>> It's HTTPS Everywhere again.
+>
+> Why would HTTPS be a problem for you, but not for others?
+>
+>
+Check that.  I went back to you link, and it no longer works for me.
+
+-- 
+Stephen
+
+From lsorense at csclub.uwaterloo.ca  Fri Apr 24 18:39:59 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 24 Apr 2015 14:39:59 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A8C7A.6080202@rogers.com>
+References: <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A89C4.3020007@rogers.com> <553A8C7A.6080202@rogers.com>
+Message-ID: <20150424183959.GT29559@csclub.uwaterloo.ca>
+
+On Fri, Apr 24, 2015 at 02:33:30PM -0400, Stephen wrote:
+> Why would HTTPS be a problem for you, but not for others?
+
+Most of us don't try to turn every http url into an https url and many
+websites do NOT offer the same content on http and https and hence if
+you try you get an error rather than the content you wanted.
+
+If you use something like https everywhere incorrectly by trying to make
+it do https for everything, then things don't work.
+
+-- 
+Len Sorensen
+
+From stephen-d at rogers.com  Fri Apr 24 18:42:53 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Fri, 24 Apr 2015 14:42:53 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <20150424183959.GT29559@csclub.uwaterloo.ca>
+References: <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A89C4.3020007@rogers.com> <553A8C7A.6080202@rogers.com>
+ <20150424183959.GT29559@csclub.uwaterloo.ca>
+Message-ID: <553A8EAD.1030307@rogers.com>
+
+On 15-04-24 02:39 PM, Lennart Sorensen wrote:
+> On Fri, Apr 24, 2015 at 02:33:30PM -0400, Stephen wrote:
+>> Why would HTTPS be a problem for you, but not for others?
+>
+> Most of us don't try to turn every http url into an https url and many
+> websites do NOT offer the same content on http and https and hence if
+> you try you get an error rather than the content you wanted.
+>
+> If you use something like https everywhere incorrectly by trying to make
+> it do https for everything, then things don't work.
+>
+I can understand a move to https to make it more difficult for spy agencies.
+
+-- 
+Stephen
+
+From james.knott at rogers.com  Fri Apr 24 18:54:33 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 14:54:33 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <20150424183959.GT29559@csclub.uwaterloo.ca>
+References: <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A89C4.3020007@rogers.com> <553A8C7A.6080202@rogers.com>
+ <20150424183959.GT29559@csclub.uwaterloo.ca>
+Message-ID: <553A9169.4060001@rogers.com>
+
+On 04/24/2015 02:39 PM, Lennart Sorensen wrote:
+> On Fri, Apr 24, 2015 at 02:33:30PM -0400, Stephen wrote:
+>> Why would HTTPS be a problem for you, but not for others?
+> Most of us don't try to turn every http url into an https url and many
+> websites do NOT offer the same content on http and https and hence if
+> you try you get an error rather than the content you wanted.
+>
+> If you use something like https everywhere incorrectly by trying to make
+> it do https for everything, then things don't work.
+>
+
+I've found I can get the videos by disabling it for thestar.com and also
+Newslook.
+
+The idea behind HTTPS Everywhere is to use HTTPS whenever possible. 
+However, some sites, such as thestar.com can cause problems.  So, when
+you identify those sites, you can configure HTTPS Everywhere to not try
+to use HTTPS on them.
+
+
+From james.knott at rogers.com  Fri Apr 24 18:58:23 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 14:58:23 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A8EAD.1030307@rogers.com>
+References: <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A89C4.3020007@rogers.com> <553A8C7A.6080202@rogers.com>
+ <20150424183959.GT29559@csclub.uwaterloo.ca> <553A8EAD.1030307@rogers.com>
+Message-ID: <553A924F.1000600@rogers.com>
+
+On 04/24/2015 02:42 PM, Stephen wrote:
+> I can understand a move to https to make it more difficult for spy
+> agencies.
+>
+
+In fact, Google will be ranking searches according to whether the site
+supports HTTPS.
+
+From lsorense at csclub.uwaterloo.ca  Fri Apr 24 18:59:25 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 24 Apr 2015 14:59:25 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A9169.4060001@rogers.com>
+References: <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A89C4.3020007@rogers.com> <553A8C7A.6080202@rogers.com>
+ <20150424183959.GT29559@csclub.uwaterloo.ca>
+ <553A9169.4060001@rogers.com>
+Message-ID: <20150424185925.GU29559@csclub.uwaterloo.ca>
+
+On Fri, Apr 24, 2015 at 02:54:33PM -0400, James Knott wrote:
+> I've found I can get the videos by disabling it for thestar.com and also
+> Newslook.
+> 
+> The idea behind HTTPS Everywhere is to use HTTPS whenever possible. 
+> However, some sites, such as thestar.com can cause problems.  So, when
+> you identify those sites, you can configure HTTPS Everywhere to not try
+> to use HTTPS on them.
+
+Which would then be using it correctly.  Best would be to have a proper
+rule added for the site that knows which parts can't be moved to https
+and allow the rest to move rather than just disabling it for the site
+entirely.  At least that seems to be what the documentation says.
+
+-- 
+Len Sorensen
+
+From rreiter91 at gmail.com  Fri Apr 24 19:36:07 2015
+From: rreiter91 at gmail.com (R. Russell Reiter)
+Date: Fri, 24 Apr 2015 15:36:07 -0400
+Subject: [GTALUG] Linux Australia Hacked
+Message-ID: <6C0527AD-EC76-459E-8D47-5BF5ADB882BB@gmail.com>
+
+There's a nice little presentation illustrating the effect of pushing a JMP instruction across bufferspace on hacked.com.
+
+https://hacked.com/linux-australia-hacked/
+-- 
+Sent via K-9 Mail. 
+
+From hgibson at eol.ca  Fri Apr 24 23:48:46 2015
+From: hgibson at eol.ca (Howard Gibson)
+Date: Fri, 24 Apr 2015 19:48:46 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <55363D6F.5050801@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+Message-ID: <20150424194846.ecc817b60ac6d09d4c248ef2@eol.ca>
+
+On Tue, 21 Apr 2015 08:07:11 -0400
+James Knott <james.knott at rogers.com> wrote:
+
+> Has anyone else noticed that the videos on the Toronto Star site no
+> longer work with Linux?  I've tried Firefox, Seamonkey and Chromium
+> browsers.  The videos do work in Windows.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+> 
+
+James,
+
+   I am watching a video on the Toronto Star site right now using Google Chrome on Fedora_20.
+
+   Netflix works on Google Chrome.  
+
+-- 
+Howard Gibson 
+hgibson at eol.ca
+howard.gibson at optech.com 
+jhowardgibson at gmail.com
+http://home.eol.ca/~hgibson
+
