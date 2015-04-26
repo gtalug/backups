@@ -5328,3 +5328,72 @@ howard.gibson at optech.com
 jhowardgibson at gmail.com
 http://home.eol.ca/~hgibson
 
+From hugh at mimosa.com  Sat Apr 25 18:54:47 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 25 Apr 2015 14:54:47 -0400 (EDT)
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <20150424194846.ecc817b60ac6d09d4c248ef2@eol.ca>
+References: <55363D6F.5050801@rogers.com>
+ <20150424194846.ecc817b60ac6d09d4c248ef2@eol.ca>
+Message-ID: <alpine.LRH.2.02.1504251447230.27690@redclaw.mimosa.com>
+
+| From: Howard Gibson <hgibson at eol.ca>
+
+|    I am watching a video on the Toronto Star site right now using Google Chrome on Fedora_20.
+| 
+|    Netflix works on Google Chrome.  
+
+[I'm no expert: I don't like Flash so I don't have it on my Linux
+machines (although some in my family do install Flash).  In fact,
+HTML5 is annoying because finally I'm seeing ad videos in my browser.]
+
+I was under the impression that Adobe no longer supports Flash on
+Linux.  But that Chrome (not Chromium, I assume) on Linux does have
+newer Flash:
+<http://www.pcworld.com/article/250455/for_flash_on_linux_chrome_will_be_users_only_choice.html>
+Maybe that policy is no longer operative.
+
+From james.knott at rogers.com  Sat Apr 25 21:24:11 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sat, 25 Apr 2015 17:24:11 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <alpine.LRH.2.02.1504251447230.27690@redclaw.mimosa.com>
+References: <55363D6F.5050801@rogers.com>
+ <20150424194846.ecc817b60ac6d09d4c248ef2@eol.ca>
+ <alpine.LRH.2.02.1504251447230.27690@redclaw.mimosa.com>
+Message-ID: <553C05FB.1070800@rogers.com>
+
+On 04/25/2015 02:54 PM, D. Hugh Redelmeier wrote:
+> I was under the impression that Adobe no longer supports Flash on
+> Linux.  But that Chrome (not Chromium, I assume) on Linux does have
+> newer Flash:
+
+Adobe is still providing security updates, but that's all.  Chromium is
+just an openSUSE packaged version of Chrome, IIRC, and has that "Pepper"
+available too.
+
+From hugh at mimosa.com  Sun Apr 26 04:09:32 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 26 Apr 2015 00:09:32 -0400 (EDT)
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553C05FB.1070800@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <20150424194846.ecc817b60ac6d09d4c248ef2@eol.ca>
+ <alpine.LRH.2.02.1504251447230.27690@redclaw.mimosa.com>
+ <553C05FB.1070800@rogers.com>
+Message-ID: <alpine.LRH.2.02.1504260005100.27690@redclaw.mimosa.com>
+
+| From: James Knott <james.knott at rogers.com>
+
+|  Chromium is
+| just an openSUSE packaged version of Chrome, IIRC, and has that "Pepper"
+| available too.
+
+My understanding was that Chrome was the binary built by Google and
+Chromium was the open-source part of it that anyone could build.
+
+This says that Chromium lacks Chrome's built in flash player:
+<https://en.wikipedia.org/wiki/Google_Chrome#Chromium>
+
+[I don't use Chrome or Chromium under Linux so I'm not an expert.]
+
