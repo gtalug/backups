@@ -5397,3 +5397,436 @@ This says that Chromium lacks Chrome's built in flash player:
 
 [I don't use Chrome or Chromium under Linux so I'm not an expert.]
 
+From rreiter91 at gmail.com  Sun Apr 26 11:35:54 2015
+From: rreiter91 at gmail.com (R. Russell Reiter)
+Date: Sun, 26 Apr 2015 07:35:54 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <alpine.LRH.2.02.1504260005100.27690@redclaw.mimosa.com>
+References: <55363D6F.5050801@rogers.com>
+ <20150424194846.ecc817b60ac6d09d4c248ef2@eol.ca>
+ <alpine.LRH.2.02.1504251447230.27690@redclaw.mimosa.com>
+ <553C05FB.1070800@rogers.com>
+ <alpine.LRH.2.02.1504260005100.27690@redclaw.mimosa.com>
+Message-ID: <9071F492-8F47-4805-BF1C-E756DCFC3BFA@gmail.com>
+
+On April 26, 2015 12:09:32 AM EDT, "D. Hugh Redelmeier" <hugh at mimosa.com> wrote:
+>| From: James Knott <james.knott at rogers.com>
+>
+>|  Chromium is
+>| just an openSUSE packaged version of Chrome, IIRC, and has that
+>"Pepper"
+>| available too.
+>
+>My understanding was that Chrome was the binary built by Google and
+>Chromium was the open-source part of it that anyone could build.
+>
+>This says that Chromium lacks Chrome's built in flash player:
+><https://en.wikipedia.org/wiki/Google_Chrome#Chromium>
+>
+>[I don't use Chrome or Chromium under Linux so I'm not an expert.]
+>---
+>Talk Mailing List
+>talk at gtalug.org
+>http://gtalug.org/mailman/listinfo/talk
+
+It seems everyone is ditching flash.
+
+https://hacked.com/youtube-finally-ditches-flash-html5/
+
+https://hacked.com/russian-hackers-used-flash-vulnerability-foreign-governments/
+
+https://helpx.adobe.com/security/products/flash-player/apsb15-06.html
+
+-- 
+Sent via K-9 Mail. 
+
+From james.knott at rogers.com  Sun Apr 26 11:45:37 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 26 Apr 2015 07:45:37 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <alpine.LRH.2.02.1504260005100.27690@redclaw.mimosa.com>
+References: <55363D6F.5050801@rogers.com>
+ <20150424194846.ecc817b60ac6d09d4c248ef2@eol.ca>
+ <alpine.LRH.2.02.1504251447230.27690@redclaw.mimosa.com>
+ <553C05FB.1070800@rogers.com>
+ <alpine.LRH.2.02.1504260005100.27690@redclaw.mimosa.com>
+Message-ID: <553CCFE1.5010105@rogers.com>
+
+On 04/26/2015 12:09 AM, D. Hugh Redelmeier wrote:
+> This says that Chromium lacks Chrome's built in flash player:
+> <https://en.wikipedia.org/wiki/Google_Chrome#Chromium>
+>
+
+Well, if you read it on the Internet, it must be true.  ;-)
+
+Here's what's on my openSUSE 13.1 system:
+
+"chromium-pepper-flash - Chromium Flash player plugin
+
+Pepper API based Adobe Flash plugin for Google's Open Source browser
+Chromium."
+
+From cdasilva at iprimus.ca  Sun Apr 26 14:25:48 2015
+From: cdasilva at iprimus.ca (Clive DaSilva)
+Date: Sun, 26 Apr 2015 10:25:48 -0400
+Subject: [GTALUG] Is anyone seeing my messages ?
+Message-ID: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+
+Hello
+
+ 
+
+I quite often post comments/responses to this board but I never see them on
+the list of posted items. 
+
+Is anyone seeing my postings because I am not?
+
+ 
+
+---------
+
+Clive DaSilva - cdasilva at iprimus.ca 
+
+Mailing List -  <mailto:talk at gtalug.org> talk at gtalug.org 
+
+                           <http://gtalug.org/mailman/listinfo/talk>
+http://gtalug.org/mailman/listinfo/talk
+
+ 
+
+ 
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150426/7abf8fde/attachment.html>
+
+From james.knott at rogers.com  Sun Apr 26 14:30:27 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 26 Apr 2015 10:30:27 -0400
+Subject: [GTALUG] Is anyone seeing my messages ?
+In-Reply-To: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+References: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+Message-ID: <553CF683.6050004@rogers.com>
+
+On 04/26/2015 10:25 AM, Clive DaSilva wrote:
+>
+> I quite often post comments/responses to this board but I never see
+> them on the list of posted items.
+>
+> Is anyone seeing my postings because I am not?
+>
+
+Well, I don't know about the others, but I didn't see this one.  ;-)
+
+
+From kalibslack at gmail.com  Sun Apr 26 14:45:19 2015
+From: kalibslack at gmail.com (Marcelo Kalib)
+Date: Sun, 26 Apr 2015 11:45:19 -0300
+Subject: [GTALUG] Is anyone seeing my messages ?
+In-Reply-To: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+References: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+Message-ID: <1430059521262-6bfa45ed-76ddb62f-a41890b9@gmail.com>
+
+Saw your message. Just fine.
+
+Sent using CloudMagic [https://cloudmagic.com/k/d/mailapp?ct=pi&cv=6.0.64&pv=8.2]
+On dom, abr 26, 2015 at 11:25, GTALUG Talk <talk at gtalug.org> wrote:
+Hello
+
+
+
+I quite often post comments/responses to this board but I never see them on the
+list of posted items.
+
+Is anyone seeing my postings because I am not?
+
+
+
+---------
+
+Clive DaSilva ? cdasilva at iprimus.ca
+
+Mailing List - talk at gtalug.org [talk at gtalug.org]
+
+http://gtalug.org/mailman/listinfo/talk
+[http://gtalug.org/mailman/listinfo/talk]
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150426/3baedd9d/attachment.html>
+
+From wwitteman at gmail.com  Sun Apr 26 14:56:19 2015
+From: wwitteman at gmail.com (William Witteman)
+Date: Sun, 26 Apr 2015 10:56:19 -0400
+Subject: [GTALUG] Is anyone seeing my messages ?
+In-Reply-To: <CAGMvh24uM2XHHM=E3FM+zYYrfhVUkN6Tp76=-E_Rf2m6kbvu8Q@mail.gmail.com>
+References: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+ <CAGMvh24uM2XHHM=E3FM+zYYrfhVUkN6Tp76=-E_Rf2m6kbvu8Q@mail.gmail.com>
+Message-ID: <CAGMvh26UWy3sQSpNRhFpM6USYgYEtXkL=Q5Hw45fD-qNvJAxzQ@mail.gmail.com>
+
+I see something from you on the 21 of April, and before that on the 16 of
+January.  So, maybe?
+
+William
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150426/b665e104/attachment.html>
+
+From john.moniz at sympatico.ca  Sun Apr 26 17:04:58 2015
+From: john.moniz at sympatico.ca (John Moniz)
+Date: Sun, 26 Apr 2015 13:04:58 -0400
+Subject: [GTALUG] Is anyone seeing my messages ?
+In-Reply-To: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+Message-ID: <BLU436-SMTP61C445AF93A034205E515CE3EA0@phx.gbl>
+
+I saw one a few days ago, not much more.
+
+On Apr 26, 2015 10:25 AM, Clive DaSilva <cdasilva at iprimus.ca> wrote:
+>
+> Hello
+>
+> ?
+>
+> I quite often post comments/responses to this board but I never see them on the list of posted items.
+>
+> Is anyone seeing my postings because I am not?
+>
+> ?
+>
+> ---------
+>
+> Clive DaSilva ? cdasilva at iprimus.ca
+>
+> Mailing List - talk at gtalug.org
+>
+> ??????????????????????????http://gtalug.org/mailman/listinfo/talk
+>
+> ?
+>
+> ?
+
+From cdasilva at iprimus.ca  Sun Apr 26 17:24:12 2015
+From: cdasilva at iprimus.ca (Clive DaSilva)
+Date: Sun, 26 Apr 2015 13:24:12 -0400
+Subject: [GTALUG] Is anyone seeing my messages ?
+In-Reply-To: <BLU436-SMTP61C445AF93A034205E515CE3EA0@phx.gbl>
+References: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+ <BLU436-SMTP61C445AF93A034205E515CE3EA0@phx.gbl>
+Message-ID: <001b01d08045$d0006550$70012ff0$@iprimus.ca>
+
+Thanks guys.
+
+I guess I don't see my own messages
+
+
+---------
+Clive DaSilva ? cdasilva at iprimus.ca 
+Mailing List - talk at gtalug.org 
+                          http://gtalug.org/mailman/listinfo/talk
+
+
+
+-----Original Message-----
+From: talk [mailto:talk-bounces at gtalug.org] On Behalf Of John Moniz
+Sent: April-26-15 1:05 PM
+To: GTALUG Talk
+Subject: Re: [GTALUG] Is anyone seeing my messages ?
+
+I saw one a few days ago, not much more.
+
+On Apr 26, 2015 10:25 AM, Clive DaSilva <cdasilva at iprimus.ca> wrote:
+>
+> Hello
+>
+>  
+>
+> I quite often post comments/responses to this board but I never see them on the list of posted items.
+>
+> Is anyone seeing my postings because I am not?
+>
+>  
+>
+> ---------
+>
+> Clive DaSilva ? cdasilva at iprimus.ca
+>
+> Mailing List - talk at gtalug.org
+>
+>                           http://gtalug.org/mailman/listinfo/talk
+>
+>  
+>
+>  
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+
+From lsorense at csclub.uwaterloo.ca  Sun Apr 26 17:40:01 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sun, 26 Apr 2015 13:40:01 -0400
+Subject: [GTALUG] Is anyone seeing my messages ?
+In-Reply-To: <001b01d08045$d0006550$70012ff0$@iprimus.ca>
+References: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+ <BLU436-SMTP61C445AF93A034205E515CE3EA0@phx.gbl>
+ <001b01d08045$d0006550$70012ff0$@iprimus.ca>
+Message-ID: <20150426174001.GV29559@csclub.uwaterloo.ca>
+
+On Sun, Apr 26, 2015 at 01:24:12PM -0400, Clive DaSilva wrote:
+> Thanks guys.
+> 
+> I guess I don't see my own messages
+
+That is a config option in the mailing list.  Go change it if you want
+to receive them.
+
+Just go to the subscribe page and put your email in the unsubscribe/edit
+settings box, then enter your password, and it will have a lot of options
+you can set.
+
+-- 
+Len Sorensen
+
+From davec-b at rogers.com  Sun Apr 26 22:17:05 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Sun, 26 Apr 2015 18:17:05 -0400
+Subject: [GTALUG] Is anyone seeing my messages ?
+In-Reply-To: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+References: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+Message-ID: <553D63E1.8010902@rogers.com>
+
+On 04/26/2015 10:25 AM, Clive DaSilva wrote:
+>
+> Hello
+>
+> I quite often post comments/responses to this board but I never see 
+> them on the list of posted items.
+>
+> Is anyone seeing my postings because I am not?
+>
+> ---------
+>
+> Clive DaSilva ? cdasilva at iprimus.ca
+>
+> Mailing List - talk at gtalug.org <mailto:talk at gtalug.org>
+>
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+I saw that one.
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150426/ab01eb61/attachment.html>
+
+From me at mylesbraithwaite.com  Sun Apr 26 23:15:11 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Sun, 26 Apr 2015 19:15:11 -0400
+Subject: [GTALUG] Dinner before May 2015 GTALUG meeting (was Meeting 11th
+	May, 2015 at 7:30pm)
+Message-ID: <CA+hskZMdiyuH9qEgXCyjZKMs+v09Ep+1TriqVyxqL-A53TVdTQ@mail.gmail.com>
+
+Voting open for dinner options before next month's GTALUG meeting:
+<http://strawpoll.me/4216617>.
+
+On Sun, Apr 26, 2015 at 7:13 PM, Myles Braithwaite
+<me at mylesbraithwaite.com> wrote:
+> * 6:00 pm - Before each meeting a group of GTALUGers dine at to be
+> determined restaurant. Vote here: <http://strawpoll.me/4216617>.
+
+From me at mylesbraithwaite.com  Sun Apr 26 23:13:29 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Sun, 26 Apr 2015 19:13:29 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting 11th May, 2015 at 7:30pm
+Message-ID: <CA+hskZMrsU4TfrugQ4s8i9jSfd4tAtqMSyrZr8Cdj2RQ8U3W_Q@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-05/>
+
+# OpenStreetMap with Stewart Russell
+
+OpenStreetMap is built by a community of mappers that contribute and
+maintain an open data set of roads, trails, cafes. buildings, railway
+stations, and much more.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before each meeting a group of GTALUGers dine at to be
+determined restaurant. Vote here: <http://strawpoll.me/4216617>.
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From hugh at mimosa.com  Mon Apr 27 05:56:04 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 27 Apr 2015 01:56:04 -0400 (EDT)
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+Message-ID: <alpine.LRH.2.02.1504270153360.1043@redclaw.mimosa.com>
+
+| From: D. Hugh Redelmeier <hugh at mimosa.com>
+
+| So much of the noise this day is about things like Docker and CoreOS.
+| A lot feels like branding exercises rather than technology.  I find it
+| too hard to figure out what they actually are.
+
+I guess that Ubuntu Snappy is something like this.  I gave up figuring
+out what it is after a couple of minutes of reading marketing.
+
+<http://www.phoronix.com/scan.php?page=news_item&px=Ubuntu-15.10-DEB-To-Snap>
+
