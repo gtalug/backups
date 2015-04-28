@@ -1,0 +1,3573 @@
+From avolkov at gmail.com  Wed Apr 15 00:45:05 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Wed, 15 Apr 2015 00:45:05 +0000
+Subject: [GTALUG] CoreOS talk at pycon 2015
+Message-ID: <CAO1j=qf7RhUGJ6CnVP65_bdq1mM76PbiVeJ=hz3PYSfkaa9yVA@mail.gmail.com>
+
+Fire your supervisord running Python apps on Core?:
+http://youtu.be/jCor69OeR0g
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150415/3380865d/attachment.html>
+
+From me at mylesbraithwaite.com  Wed Apr 15 12:22:12 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Wed, 15 Apr 2015 08:22:12 -0400
+Subject: [GTALUG] E-Vote
+Message-ID: <3F516242-66CB-48FC-AE85-5B823695D391@mylesbraithwaite.com>
+
+https://github.com/mdipierro/evote
+
+From me at mylesbraithwaite.com  Wed Apr 15 14:03:35 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Wed, 15 Apr 2015 10:03:35 -0400
+Subject: [GTALUG] Slides from my presentation last night on LessCSS
+Message-ID: <CA+hskZPVAF6+=4dP2hkP0iGahHBML14BRfWgzYmuPe232stiuA@mail.gmail.com>
+
+<https://github.com/myles/2015-04-14-lesscss/blob/master/presentation.md>.
+
+As a PDF file: <https://github.com/myles/2015-04-14-lesscss/raw/master/presentation.pdf>.
+
+From tom at lowshang.com  Wed Apr 15 19:37:05 2015
+From: tom at lowshang.com (Tom Low-Shang)
+Date: Wed, 15 Apr 2015 15:37:05 -0400
+Subject: [GTALUG] MCM/70 computer
+Message-ID: <20150415193705.GA5370@capetown.lowshang.com>
+
+Any of our *cough*older*cough* members ever use the MCM/70? Programmable 
+in only APL, very nerdy indeed. :)
+
+
+http://spacing.ca/toronto/2015/04/15/toronto-invented-pc-forgot/
+
+http://en.wikipedia.org/wiki/MCM/70
+
+
+-- 
+Tom Low-Shang
+416 857 7013
+GTalk/Jabber tomlowshang at gmail.com
+
+From phiscock at ee.ryerson.ca  Wed Apr 15 20:28:37 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Wed, 15 Apr 2015 16:28:37 -0400
+Subject: [GTALUG] MCM/70 computer
+In-Reply-To: <20150415193705.GA5370@capetown.lowshang.com>
+References: <20150415193705.GA5370@capetown.lowshang.com>
+Message-ID: <61130c0f541031e274f37809aa2900da.squirrel@webmail.ee.ryerson.ca>
+
+If it had a BASIC interpreter, it might have done better. And a power
+supply that didn't catch fire ;).
+
+Peter
+
+
+> Any of our *cough*older*cough* members ever use the MCM/70? Programmable
+> in only APL, very nerdy indeed. :)
+>
+>
+> http://spacing.ca/toronto/2015/04/15/toronto-invented-pc-forgot/
+>
+> http://en.wikipedia.org/wiki/MCM/70
+>
+>
+> --
+> Tom Low-Shang
+> 416 857 7013
+> GTalk/Jabber tomlowshang at gmail.com
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From james.knott at rogers.com  Wed Apr 15 20:36:58 2015
+From: james.knott at rogers.com (James Knott)
+Date: Wed, 15 Apr 2015 16:36:58 -0400
+Subject: [GTALUG] MCM/70 computer
+In-Reply-To: <61130c0f541031e274f37809aa2900da.squirrel@webmail.ee.ryerson.ca>
+References: <20150415193705.GA5370@capetown.lowshang.com>
+ <61130c0f541031e274f37809aa2900da.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <552ECBEA.3000906@rogers.com>
+
+On 04/15/2015 04:28 PM, phiscock at ee.ryerson.ca wrote:
+> If it had a BASIC interpreter, it might have done better. And a power
+> supply that didn't catch fire ;).
+
+The Datapoint 2200, which was originally intended to use the 8008, had a
+BASIC interpreter.  I worked on those back in the mid '70s.  Also, there
+was SCELBAL BASIC, from Scelbi Computing, for the 8008 (and later for
+the 8080), which might have run on it.
+
+https://en.wikipedia.org/wiki/Datapoint_2200
+https://en.wikipedia.org/wiki/SCELBI
+
+From lance at alteeve.ca  Thu Apr 16 00:33:58 2015
+From: lance at alteeve.ca (Lance F. Squire)
+Date: Wed, 15 Apr 2015 20:33:58 -0400
+Subject: [GTALUG] MCM/70 computer
+In-Reply-To: <20150415193705.GA5370@capetown.lowshang.com>
+References: <20150415193705.GA5370@capetown.lowshang.com>
+Message-ID: <552F0376.5080700@alteeve.ca>
+
+On 15-04-15 03:37 PM, Tom Low-Shang wrote:
+> Any of our *cough*older*cough* members ever use the MCM/70? Programmable
+> in only APL, very nerdy indeed. :)
+>
+>
+
+Almost Wish I had. :)
+
+
+
+
+From moptop99 at gmail.com  Thu Apr 16 14:56:26 2015
+From: moptop99 at gmail.com (Matt Price)
+Date: Thu, 16 Apr 2015 10:56:26 -0400
+Subject: [GTALUG] toggle notifications in GNOME 3.16?
+Message-ID: <CAN_Dec8NcSL+UbxGuW17bT2OomqFSMg38N0yoxPDH0RD8RWgbg@mail.gmail.com>
+
+Hey eveyrone!
+
+I'm running Gnome 3.16 in Arch Linux. When I am working, I would like to be
+able to shut off desktop notifications, preferably from the command line or
+with a keyboard shortcut. I figure there must be a way to do this, but I
+can't find a setting in gconf-settings or other likely places.
+
+ANyone have hints?
+
+thaks,
+Matt
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150416/0f216310/attachment.html>
+
+From hugh at mimosa.com  Thu Apr 16 18:46:04 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 16 Apr 2015 14:46:04 -0400 (EDT)
+Subject: [GTALUG] MCM/70 computer
+In-Reply-To: <61130c0f541031e274f37809aa2900da.squirrel@webmail.ee.ryerson.ca>
+References: <20150415193705.GA5370@capetown.lowshang.com>
+ <61130c0f541031e274f37809aa2900da.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <alpine.LRH.2.02.1504161430370.25014@redclaw.mimosa.com>
+
+| From: phiscock at ee.ryerson.ca
+
+| If it had a BASIC interpreter, it might have done better.
+
+It had a one-line (plasma) display.  APL is definitely the right choice
+if you can only see one line of a program at once.
+
+| And a power
+| supply that didn't catch fire ;).
+
+Fairly crucial.
+
+The article doesn't mention minicomputers.  They were in their hayday
+when the MCM/70 came out.  Comparing it to mainframes is really
+unfortunate.
+
+The MCM/70 was an unbelievable proof-of-concept.  The 8008 was such a
+miserable processor that it is astonishing that APL would fit.
+
+The box was not Good Enough for me at the time.  But that doesn't veto
+success: neither were the Altair 8080 nor the Apple II were good
+enough, but the hunger was great enough that a market was created and
+the products quickly evolved.  Too bad the MCM/70 didn't catch such a
+wave.
+
+(Altair power supplies were horrible too.  My Altair works because I
+stuck an pop-can-sized capacitor from Active Surplus on it with
+alligator clips (you can tell that I'm a software guy).)
+
+No copies of York APL are known to exist.  I once had a listing that I
+was using as scrap paper.  I couldn't find it by the time I found out
+about this problem.
+
+York's Zbigniew Stachniak (mentioned in the article) has a museum at York 
+and hosted several interesting talks.  I haven't heard of any recently -- 
+I've probably fallen off the mailing list.
+
+From hugh at mimosa.com  Thu Apr 16 18:58:39 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 16 Apr 2015 14:58:39 -0400 (EDT)
+Subject: [GTALUG] Ubuntu updates
+Message-ID: <alpine.LRH.2.02.1504161446130.25014@redclaw.mimosa.com>
+
+I'm annoyed at ubuntu's GUI Software Updates program.
+
+Context: 14.04 LTS running on Acer Revo using proprietary nVidia drivers.
+
+Normally I use apt-get update and upgrade to apply updates.  Today, right 
+after I did that, the GUI thing told me that there were pending updates.  
+So I told it to go ahead.
+
+It proceeded to fail.  The Ubuntu crash reporter ground for a while (this 
+is a first-generation Atom processor) and then said the bug was known:
+
+<https://bugs.launchpad.net/ubuntu/+source/nvidia-graphics-drivers-331/+bug/1268257>
+
+Look at how long that has been around.  Look at how many people
+(systems) are listed as affected.  Look how many duplicates of this
+bug are filed.
+
+I don't want to waste the time investigating, but it is suspicious to
+me that apt-get had no problem.
+
+I remain quite skeptical of Unbuntu's and Fedora's GUI software
+updaters.
+
+From opengeometry at yahoo.ca  Thu Apr 16 19:13:52 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Thu, 16 Apr 2015 15:13:52 -0400
+Subject: [GTALUG] Ubuntu updates
+In-Reply-To: <alpine.LRH.2.02.1504161446130.25014@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1504161446130.25014@redclaw.mimosa.com>
+Message-ID: <20150416191352.GA28605@node1.localdomain>
+
+I thought it was just GUI frontend for command line stuffs.  Strange...
+-- 
+William
+
+On Thu, Apr 16, 2015 at 02:58:39PM -0400, D. Hugh Redelmeier wrote:
+> I'm annoyed at ubuntu's GUI Software Updates program.
+> 
+> Context: 14.04 LTS running on Acer Revo using proprietary nVidia drivers.
+> 
+> Normally I use apt-get update and upgrade to apply updates.  Today, right 
+> after I did that, the GUI thing told me that there were pending updates.  
+> So I told it to go ahead.
+> 
+> It proceeded to fail.  The Ubuntu crash reporter ground for a while (this 
+> is a first-generation Atom processor) and then said the bug was known:
+> 
+> <https://bugs.launchpad.net/ubuntu/+source/nvidia-graphics-drivers-331/+bug/1268257>
+> 
+> Look at how long that has been around.  Look at how many people
+> (systems) are listed as affected.  Look how many duplicates of this
+> bug are filed.
+> 
+> I don't want to waste the time investigating, but it is suspicious to
+> me that apt-get had no problem.
+> 
+> I remain quite skeptical of Unbuntu's and Fedora's GUI software
+> updaters.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From james.knott at rogers.com  Thu Apr 16 19:52:58 2015
+From: james.knott at rogers.com (James Knott)
+Date: Thu, 16 Apr 2015 15:52:58 -0400
+Subject: [GTALUG] MCM/70 computer
+In-Reply-To: <alpine.LRH.2.02.1504161430370.25014@redclaw.mimosa.com>
+References: <20150415193705.GA5370@capetown.lowshang.com>
+ <61130c0f541031e274f37809aa2900da.squirrel@webmail.ee.ryerson.ca>
+ <alpine.LRH.2.02.1504161430370.25014@redclaw.mimosa.com>
+Message-ID: <5530131A.90105@rogers.com>
+
+On 04/16/2015 02:46 PM, D. Hugh Redelmeier wrote:
+> (Altair power supplies were horrible too.  My Altair works because I
+> stuck an pop-can-sized capacitor from Active Surplus on it with
+> alligator clips (you can tell that I'm a software guy).)
+
+I've often said the IMSAI 8080 was a better quality clone of the
+Altari.  My IMSAI had a power supply that was almost powerful enough to
+use for arc welding.  ;-)
+
+From hugh at mimosa.com  Thu Apr 16 20:52:16 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 16 Apr 2015 16:52:16 -0400 (EDT)
+Subject: [GTALUG] Cyanogen Inc. and Microsoft [was Re: Dan Gilmore on
+ computing freedom]
+In-Reply-To: <CAEnxSC7kHzsYDirafwbOMYho-yt1NUcG0V8x5ZWL-XebGnYYMw@mail.gmail.com>
+References: <CALFgxqBpO2Lob_giFkwYfR-+Zi44sxT4jcAdfaxPP2577UZa_w@mail.gmail.com>
+ <20150301192356.GA7354@node1.localdomain>
+ <20150302105621.GA28741@waltdnes.org>
+ <CAEnxSC7kHzsYDirafwbOMYho-yt1NUcG0V8x5ZWL-XebGnYYMw@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1504161648230.25014@redclaw.mimosa.com>
+
+| From: Giles Orr <gilesorr at gmail.com>
+| Date: Mon, 2 Mar 2015 10:07:15 -0500
+
+| Cyanogen Inc. is now a for-profit company with its own agenda, and I'm
+| leery of their claims that "it's all good and we're keeping everything
+| open source" - especially now that they're getting funding from
+| Microsoft.  I'm sure that RMS has consigned them to the bin for this
+| move - I'm a bit more open-minded than that, but seriously skeptical
+| about the turn of events.
+
+<https://cyngn.com/press/cyanogen-announces-strategic-partnership-with-microsoft>
+<http://www.zdnet.com/article/microsoft-apps-services-to-be-integrated-with-cyanogen-android-os/?tag=nl.e539&s_cid=e539&ttag=e539&ftag=TRE17cfd61>
+
+From mdhillca at gmail.com  Fri Apr 17 12:07:26 2015
+From: mdhillca at gmail.com (Michael Hill)
+Date: Fri, 17 Apr 2015 08:07:26 -0400
+Subject: [GTALUG] toggle notifications in GNOME 3.16?
+In-Reply-To: <CAN_Dec8NcSL+UbxGuW17bT2OomqFSMg38N0yoxPDH0RD8RWgbg@mail.gmail.com>
+References: <CAN_Dec8NcSL+UbxGuW17bT2OomqFSMg38N0yoxPDH0RD8RWgbg@mail.gmail.com>
+Message-ID: <CAGvW9WdxH0mD=ac-6N3FEgA9K-Yz-V0W2L=Hoq7Of1+RdNjhLA@mail.gmail.com>
+
+Hi Matt,
+
+On Thu, Apr 16, 2015 at 10:56 AM, Matt Price <moptop99 at gmail.com> wrote:
+
+> I'm running Gnome 3.16 in Arch Linux. When I am working, I would like to be
+> able to shut off desktop notifications, preferably from the command line or
+> with a keyboard shortcut. I figure there must be a way to do this, but I
+> can't find a setting in gconf-settings or other likely places.
+
+I asked on the #docs IRC channel and Alexandre Franke supplied this answer:
+
+First of all, dconf and gsettings replaced gconf.
+
+gsettings set org.gnome.desktop.notifications enable true
+(and obviously it's enable false to have them disabled)
+
+Source: the GNOME control center source code.
+
+
+Mike
+
+From me at mylesbraithwaite.com  Fri Apr 17 18:44:34 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 17 Apr 2015 14:44:34 -0400
+Subject: [GTALUG] Fwd: Re: May 2015 GTALUG talk on OSM
+In-Reply-To: <CAAsTreBVYYz1C42FPMHRiOZhyLh8CgSSNUos7uEs=AgDvEAZAA@mail.gmail.com>
+References: <9D2593CD-A8B0-4E13-B70E-3D5C58E4EC6C@mylesbraithwaite.com>
+ <CAAsTreBVYYz1C42FPMHRiOZhyLh8CgSSNUos7uEs=AgDvEAZAA@mail.gmail.com>
+Message-ID: <55315492.5010007@mylesbraithwaite.com>
+
+Stewart conformed for May's meeting.
+
+-------- Original Message --------
+Subject: 	Re: May 2015 GTALUG talk on OSM
+Date: 	Fri, 17 Apr 2015 14:39:36 -0400
+From: 	Stewart Russell <scruss at gmail.com>
+To: 	Myles Braithwaite <me at mylesbraithwaite.com>
+
+Hi Myles - absolutely!  I'm working on the slides with Richard, who did
+the OSM talk for GTALUG in around 2010.
+
+
+From lsorense at csclub.uwaterloo.ca  Fri Apr 17 18:54:21 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 17 Apr 2015 14:54:21 -0400
+Subject: [GTALUG] Fwd: Re: May 2015 GTALUG talk on OSM
+In-Reply-To: <55315492.5010007@mylesbraithwaite.com>
+References: <9D2593CD-A8B0-4E13-B70E-3D5C58E4EC6C@mylesbraithwaite.com>
+ <CAAsTreBVYYz1C42FPMHRiOZhyLh8CgSSNUos7uEs=AgDvEAZAA@mail.gmail.com>
+ <55315492.5010007@mylesbraithwaite.com>
+Message-ID: <20150417185421.GP29559@csclub.uwaterloo.ca>
+
+On Fri, Apr 17, 2015 at 02:44:34PM -0400, Myles Braithwaite wrote:
+> Stewart conformed for May's meeting.
+
+He fits in the mold now? :)
+
+-- 
+Len Sorensen
+
+> -------- Original Message --------
+> Subject: 	Re: May 2015 GTALUG talk on OSM
+> Date: 	Fri, 17 Apr 2015 14:39:36 -0400
+> From: 	Stewart Russell <scruss at gmail.com>
+> To: 	Myles Braithwaite <me at mylesbraithwaite.com>
+> 
+> Hi Myles - absolutely!  I'm working on the slides with Richard, who did
+> the OSM talk for GTALUG in around 2010.
+> 
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From me at mylesbraithwaite.com  Fri Apr 17 18:55:37 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 17 Apr 2015 14:55:37 -0400
+Subject: [GTALUG] Fwd: Re: May 2015 GTALUG talk on OSM
+In-Reply-To: <20150417185421.GP29559@csclub.uwaterloo.ca>
+References: <9D2593CD-A8B0-4E13-B70E-3D5C58E4EC6C@mylesbraithwaite.com>
+ <CAAsTreBVYYz1C42FPMHRiOZhyLh8CgSSNUos7uEs=AgDvEAZAA@mail.gmail.com>
+ <55315492.5010007@mylesbraithwaite.com>
+ <20150417185421.GP29559@csclub.uwaterloo.ca>
+Message-ID: <55315729.1040904@mylesbraithwaite.com>
+
+Lennart Sorensen wrote:
+> On Fri, Apr 17, 2015 at 02:44:34PM -0400, Myles Braithwaite wrote:
+>> Stewart conformed for May's meeting.
+> 
+> He fits in the mold now? :)
+
+Sorry I meant to send this to the operations not the main list.
+
+From james.knott at rogers.com  Sun Apr 19 18:40:11 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 19 Apr 2015 14:40:11 -0400
+Subject: [GTALUG] Computer Pioneers - Pioneer Computers Part 2 - YouTube
+Message-ID: <5533F68B.4090700@rogers.com>
+
+https://www.youtube.com/watch?v=wsirYCAocZk
+
+From phiscock at ee.ryerson.ca  Sun Apr 19 20:27:10 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Sun, 19 Apr 2015 16:27:10 -0400
+Subject: [GTALUG] Computer Pioneers - Pioneer Computers Part 2 - YouTube
+In-Reply-To: <5533F68B.4090700@rogers.com>
+References: <5533F68B.4090700@rogers.com>
+Message-ID: <addd97965016da33ee7252623dd057b3.squirrel@webmail.ee.ryerson.ca>
+
+Fascinating stuff. Thanks for the pointer.
+
+One of the unsung heroes of those early computers were the oscilloscopes
+that had to be developed to look at the pulse timing. You see lots of the
+early scopes in the photographs.
+
+Peter
+
+
+> https://www.youtube.com/watch?v=wsirYCAocZk
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From james.knott at rogers.com  Sun Apr 19 20:57:47 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 19 Apr 2015 16:57:47 -0400
+Subject: [GTALUG] Computer Pioneers - Pioneer Computers Part 2 - YouTube
+In-Reply-To: <addd97965016da33ee7252623dd057b3.squirrel@webmail.ee.ryerson.ca>
+References: <5533F68B.4090700@rogers.com>
+ <addd97965016da33ee7252623dd057b3.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <553416CB.40600@rogers.com>
+
+On 04/19/2015 04:27 PM, phiscock at ee.ryerson.ca wrote:
+> Fascinating stuff. Thanks for the pointer.
+
+One of the things mentioned, but not described was the "Williams tube",
+which was a type of memory based on  a CRT, with the phosphor decay time
+being used for storage.
+https://en.wikipedia.org/wiki/Williams_tube
+
+They also mentioned delay lines.  I used to work on some video terminals
+that used a delay line, though a coil of wire was used instead of mercury.
+
+Incidentally, I aslo used to work on an ancient "Teleregister" computer,
+located in the basement of the old stock exchange building at 234 Bay
+St.  It was a single purpose computer, as was common back then, which
+was used to transmit stock prices to brokers offices.  It was built with
+vacuum tubes & relays and had a memory drum.  I recall gapping the
+heads, with a piece of bond paper, between the head and drum.  That
+system was older than I was.
+
+
+
+
+From james.knott at rogers.com  Sun Apr 19 21:18:00 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 19 Apr 2015 17:18:00 -0400
+Subject: [GTALUG] Computer Pioneers - Pioneer Computers Part 2 - YouTube
+In-Reply-To: <addd97965016da33ee7252623dd057b3.squirrel@webmail.ee.ryerson.ca>
+References: <5533F68B.4090700@rogers.com>
+ <addd97965016da33ee7252623dd057b3.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <55341B88.7060902@rogers.com>
+
+On 04/19/2015 04:27 PM, phiscock at ee.ryerson.ca wrote:
+> Fascinating stuff. Thanks for the pointer.
+
+Here's another one.
+
+From james.knott at rogers.com  Sun Apr 19 21:20:59 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 19 Apr 2015 17:20:59 -0400
+Subject: [GTALUG] Computer Pioneers - Pioneer Computers Part 2 - YouTube
+In-Reply-To: <55341B88.7060902@rogers.com>
+References: <5533F68B.4090700@rogers.com>
+ <addd97965016da33ee7252623dd057b3.squirrel@webmail.ee.ryerson.ca>
+ <55341B88.7060902@rogers.com>
+Message-ID: <55341C3B.2020102@rogers.com>
+
+On 04/19/2015 05:18 PM, James Knott wrote:
+> On 04/19/2015 04:27 PM, phiscock at ee.ryerson.ca wrote:
+>> Fascinating stuff. Thanks for the pointer.
+> Here's another one.
+>
+Try again.
+
+https://www.youtube.com/watch?v=jiRgdaknJCg
+
+From scott at ss.org  Mon Apr 20 12:48:48 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Mon, 20 Apr 2015 08:48:48 -0400
+Subject: [GTALUG] One Plus One, sans invites.
+Message-ID: <3D352D17-8ADB-41F7-9959-61288C984BD2@ss.org>
+
+They've just announced that an invite will no longer be required.
+
+https://blog.oneplus.net/2015/04/open-sales-for-the-oneplus-one-forever/
+
+I've had mine for the better part of year and love it.
+-- 
+Scott Sullivan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150420/40fd0460/attachment.html>
+
+From moptop99 at gmail.com  Mon Apr 20 16:40:23 2015
+From: moptop99 at gmail.com (Matt Price)
+Date: Mon, 20 Apr 2015 12:40:23 -0400
+Subject: [GTALUG] toggle notifications in GNOME 3.16?
+In-Reply-To: <CAGvW9WdxH0mD=ac-6N3FEgA9K-Yz-V0W2L=Hoq7Of1+RdNjhLA@mail.gmail.com>
+References: <CAN_Dec8NcSL+UbxGuW17bT2OomqFSMg38N0yoxPDH0RD8RWgbg@mail.gmail.com>
+ <CAGvW9WdxH0mD=ac-6N3FEgA9K-Yz-V0W2L=Hoq7Of1+RdNjhLA@mail.gmail.com>
+Message-ID: <CAN_Dec9MF=no32OmKUQcNXX1+9EgVGgbuV=t3Jy0Tw5n3nmFAg@mail.gmail.com>
+
+Hi Michael,
+
+Thanks for the help!
+
+On Fri, Apr 17, 2015 at 8:07 AM, Michael Hill <mdhillca at gmail.com> wrote:
+
+> Hi Matt,
+>
+> On Thu, Apr 16, 2015 at 10:56 AM, Matt Price <moptop99 at gmail.com> wrote:
+>
+> > I'm running Gnome 3.16 in Arch Linux. When I am working, I would like to
+> be
+> > able to shut off desktop notifications, preferably from the command line
+> or
+> > with a keyboard shortcut. I figure there must be a way to do this, but I
+> > can't find a setting in gconf-settings or other likely places.
+>
+> I asked on the #docs IRC channel and Alexandre Franke supplied this answer:
+>
+> First of all, dconf and gsettings replaced gconf.
+>
+> gsettings set org.gnome.desktop.notifications enable true
+> (and obviously it's enable false to have them disabled)
+>
+
+The "enable" key no longer seems to be available in
+org.gnome.desktop.notifications anymore:
+
+ ~  gsettings list-recursively org.gnome.desktop.notifications
+org.gnome.desktop.notifications application-children
+['gnome-network-panel', 'dropbox', 'rhythmbox', 'vlc', 'deluge', 'skype',
+'guake', 'sylpheed', 'window-58', 'nautilus', 'calibre-gui', 'chromium',
+'clipit', 'empathy', 'evolution', 'nemo', 'emacs', 'pidgin', 'nm-applet',
+'firefox-developer-edition', 'thunderbird', 'gnome-music']
+org.gnome.desktop.notifications show-in-lock-screen true
+org.gnome.desktop.notifications show-banners false
+
+--------------------
+
+so, I tried
+?  ~  gsettings set org.gnome.desktop.notifications show-banners false
+
+that seems to have worked, though I still hear the audio notification.  I
+will keep playing around and report back if I find a fully workking
+solution.  Can you also point me to the IRC channel you were using? I might
+try asking there if I can't understand how to fix this.
+
+m
+
+
+> Source: the GNOME control center source code.
+>
+>
+> Mike
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150420/d3148a3e/attachment.html>
+
+From mdhillca at gmail.com  Mon Apr 20 17:13:11 2015
+From: mdhillca at gmail.com (Michael Hill)
+Date: Mon, 20 Apr 2015 13:13:11 -0400
+Subject: [GTALUG] toggle notifications in GNOME 3.16?
+In-Reply-To: <CAN_Dec9MF=no32OmKUQcNXX1+9EgVGgbuV=t3Jy0Tw5n3nmFAg@mail.gmail.com>
+References: <CAN_Dec8NcSL+UbxGuW17bT2OomqFSMg38N0yoxPDH0RD8RWgbg@mail.gmail.com>
+ <CAGvW9WdxH0mD=ac-6N3FEgA9K-Yz-V0W2L=Hoq7Of1+RdNjhLA@mail.gmail.com>
+ <CAN_Dec9MF=no32OmKUQcNXX1+9EgVGgbuV=t3Jy0Tw5n3nmFAg@mail.gmail.com>
+Message-ID: <CAGvW9WcWqzbHKYNa4VxvceRNAcWoAUp-QmcP7-fk0B+EMWoVKA@mail.gmail.com>
+
+Hi Matt,
+
+I asked in the #docs channel on GIMPNet (I'm on the docs team). You
+could also try #gnome-shell.
+
+Mike
+
+
+
+On Mon, Apr 20, 2015 at 12:40 PM, Matt Price <moptop99 at gmail.com> wrote:
+> Hi Michael,
+>
+> Thanks for the help!
+>
+> On Fri, Apr 17, 2015 at 8:07 AM, Michael Hill <mdhillca at gmail.com> wrote:
+>>
+>> Hi Matt,
+>>
+>> On Thu, Apr 16, 2015 at 10:56 AM, Matt Price <moptop99 at gmail.com> wrote:
+>>
+>> > I'm running Gnome 3.16 in Arch Linux. When I am working, I would like to
+>> > be
+>> > able to shut off desktop notifications, preferably from the command line
+>> > or
+>> > with a keyboard shortcut. I figure there must be a way to do this, but I
+>> > can't find a setting in gconf-settings or other likely places.
+>>
+>> I asked on the #docs IRC channel and Alexandre Franke supplied this
+>> answer:
+>>
+>> First of all, dconf and gsettings replaced gconf.
+>>
+>> gsettings set org.gnome.desktop.notifications enable true
+>> (and obviously it's enable false to have them disabled)
+>
+>
+> The "enable" key no longer seems to be available in
+> org.gnome.desktop.notifications anymore:
+>
+>  ~  gsettings list-recursively org.gnome.desktop.notifications
+> org.gnome.desktop.notifications application-children ['gnome-network-panel',
+> 'dropbox', 'rhythmbox', 'vlc', 'deluge', 'skype', 'guake', 'sylpheed',
+> 'window-58', 'nautilus', 'calibre-gui', 'chromium', 'clipit', 'empathy',
+> 'evolution', 'nemo', 'emacs', 'pidgin', 'nm-applet',
+> 'firefox-developer-edition', 'thunderbird', 'gnome-music']
+> org.gnome.desktop.notifications show-in-lock-screen true
+> org.gnome.desktop.notifications show-banners false
+>
+> --------------------
+>
+> so, I tried
+> ?  ~  gsettings set org.gnome.desktop.notifications show-banners false
+>
+> that seems to have worked, though I still hear the audio notification.  I
+> will keep playing around and report back if I find a fully workking
+> solution.  Can you also point me to the IRC channel you were using? I might
+> try asking there if I can't understand how to fix this.
+>
+> m
+>
+>>
+>> Source: the GNOME control center source code.
+>>
+>>
+>> Mike
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+From daniel at circuidipity.com  Mon Apr 20 19:02:03 2015
+From: daniel at circuidipity.com (Daniel Wayne Armstrong)
+Date: Mon, 20 Apr 2015 15:02:03 -0400
+Subject: [GTALUG] Myths and misunderstandings about ZFS
+Message-ID: <CACa31mABVKVj5aZ2CU8+tJ1UXt-37QLiBwfAJjF-Dy5ezibYHQ@mail.gmail.com>
+
+Interesting article about the ZFS filesystem... In the past I have
+defaulted to the usual ext(2,3,4) but the ability to make filesystem
+snapshots and rollbacks would be useful:
+
+http://distrowatch.com/weekly.php?issue=20150420#myth
+
+-- 
+(o<  .: Per curiositas ad astra .: http://www.circuidipity.com
+(/)_
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150420/06e8ef22/attachment.html>
+
+From kalibslack at gmail.com  Mon Apr 20 20:22:02 2015
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Mon, 20 Apr 2015 17:22:02 -0300
+Subject: [GTALUG] One Plus One, sans invites.
+In-Reply-To: <3D352D17-8ADB-41F7-9959-61288C984BD2@ss.org>
+References: <3D352D17-8ADB-41F7-9959-61288C984BD2@ss.org>
+Message-ID: <CAH5qdewGmd19+VqyJwx9AVVvT6fLr2ZXk8No-ivCp9kghWL=7g@mail.gmail.com>
+
+Yeah, looks like a great phone. But they don?t sell it to Brazil. :/
+
+Perhaps after arriving in Canada/Toronto around November. ;]
+
+===================================================
+
+Marcelo Cavalcante Rocha - Kalib
+
+
+P?s-Graduando em Governan?a de Tecnologia da Informa??o - EST?CIO/FIC
+Graduado em Sistemas de Informa??es - EST?CIO/FIC
+Usu?rio Linux #407564 | Usu?rio Asterisk #1148
+Fortaleza - Cear? - Brazil
+Celular: +55 085 87620983
+Certifica??es: ITIL V3
+<http://www.itil-officialsite.com/Qualifications/ITILV3QualificationLevels/ITILV3FoundationQualificationinITServiceManagement.aspx>
+ | CSM <http://www.scrumalliance.org/> | LPI-C1 <http://www.lpi.org/> |
+LPI-C2 <http://www.lpi.org/> | LPI-C3 <http://www.lpi.org/> | Novell CLA
+<http://www.novell.com/training/certinfo/cla/>
+Minha Pessoa: Blog <http://www.marcelocavalcante.net>
+Projetos: Tux-CE <http://www.tux-ce.org> | Archlinux-br
+<http://www.archlinux-br.org> | Chakra <http://www.chakra-project.org/> | KDE
+Brasil <http://br.kde.org> | TLUG <http://gtalug.org/wiki/Main_Page> |
+PUG-CE <http://pug-ce.python.org.br/blog/>
+
+===================================================
+
+
+Proteja meu endere?o como estou protegendo o seu.
+N?o revele e-mail dos correspondentes: use Cco (Copia Carbonada Oculta).
+Retire os endere?os antes de reenviar. Dificulte assim a
+dissemina??o de v?rus e spam.
+
+2015-04-20 9:48 GMT-03:00 Scott Sullivan <scott at ss.org>:
+
+> They've just announced that an invite will no longer be required.
+>
+> https://blog.oneplus.net/2015/04/open-sales-for-the-oneplus-one-forever/
+>
+> I've had mine for the better part of year and love it.
+> --
+> Scott Sullivan
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150420/219f8e60/attachment.html>
+
+From kalibslack at gmail.com  Mon Apr 20 20:33:26 2015
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Mon, 20 Apr 2015 17:33:26 -0300
+Subject: [GTALUG] One Plus One, sans invites.
+In-Reply-To: <CAH5qdewGmd19+VqyJwx9AVVvT6fLr2ZXk8No-ivCp9kghWL=7g@mail.gmail.com>
+References: <3D352D17-8ADB-41F7-9959-61288C984BD2@ss.org>
+ <CAH5qdewGmd19+VqyJwx9AVVvT6fLr2ZXk8No-ivCp9kghWL=7g@mail.gmail.com>
+Message-ID: <CAH5qdexzrLmaAOTTqUkf0jNHKoR=8HYDdsWBkQE6H98gO_on=g@mail.gmail.com>
+
+Byt the way, did you receive the update for Lollipop?
+
+===================================================
+
+Marcelo Cavalcante Rocha - Kalib
+
+
+P?s-Graduando em Governan?a de Tecnologia da Informa??o - EST?CIO/FIC
+Graduado em Sistemas de Informa??es - EST?CIO/FIC
+Usu?rio Linux #407564 | Usu?rio Asterisk #1148
+Fortaleza - Cear? - Brazil
+Celular: +55 085 87620983
+Certifica??es: ITIL V3
+<http://www.itil-officialsite.com/Qualifications/ITILV3QualificationLevels/ITILV3FoundationQualificationinITServiceManagement.aspx>
+ | CSM <http://www.scrumalliance.org/> | LPI-C1 <http://www.lpi.org/> |
+LPI-C2 <http://www.lpi.org/> | LPI-C3 <http://www.lpi.org/> | Novell CLA
+<http://www.novell.com/training/certinfo/cla/>
+Minha Pessoa: Blog <http://www.marcelocavalcante.net>
+Projetos: Tux-CE <http://www.tux-ce.org> | Archlinux-br
+<http://www.archlinux-br.org> | Chakra <http://www.chakra-project.org/> | KDE
+Brasil <http://br.kde.org> | TLUG <http://gtalug.org/wiki/Main_Page> |
+PUG-CE <http://pug-ce.python.org.br/blog/>
+
+===================================================
+
+
+Proteja meu endere?o como estou protegendo o seu.
+N?o revele e-mail dos correspondentes: use Cco (Copia Carbonada Oculta).
+Retire os endere?os antes de reenviar. Dificulte assim a
+dissemina??o de v?rus e spam.
+
+Em 20 de abril de 2015 17:22, Marcelo Cavalcante <kalibslack at gmail.com>
+escreveu:
+
+> Yeah, looks like a great phone. But they don?t sell it to Brazil. :/
+>
+> Perhaps after arriving in Canada/Toronto around November. ;]
+>
+> ===================================================
+>
+> Marcelo Cavalcante Rocha - Kalib
+>
+>
+> P?s-Graduando em Governan?a de Tecnologia da Informa??o - EST?CIO/FIC
+> Graduado em Sistemas de Informa??es - EST?CIO/FIC
+> Usu?rio Linux #407564 | Usu?rio Asterisk #1148
+> Fortaleza - Cear? - Brazil
+> Celular: +55 085 87620983
+> Certifica??es: ITIL V3
+> <http://www.itil-officialsite.com/Qualifications/ITILV3QualificationLevels/ITILV3FoundationQualificationinITServiceManagement.aspx>
+>  | CSM <http://www.scrumalliance.org/> | LPI-C1 <http://www.lpi.org/> |
+> LPI-C2 <http://www.lpi.org/> | LPI-C3 <http://www.lpi.org/> | Novell CLA
+> <http://www.novell.com/training/certinfo/cla/>
+> Minha Pessoa: Blog <http://www.marcelocavalcante.net>
+> Projetos: Tux-CE <http://www.tux-ce.org> | Archlinux-br
+> <http://www.archlinux-br.org> | Chakra <http://www.chakra-project.org/> | KDE
+> Brasil <http://br.kde.org> | TLUG <http://gtalug.org/wiki/Main_Page> |
+> PUG-CE <http://pug-ce.python.org.br/blog/>
+>
+> ===================================================
+>
+>
+> Proteja meu endere?o como estou protegendo o seu.
+> N?o revele e-mail dos correspondentes: use Cco (Copia Carbonada Oculta).
+> Retire os endere?os antes de reenviar. Dificulte assim a
+> dissemina??o de v?rus e spam.
+>
+> 2015-04-20 9:48 GMT-03:00 Scott Sullivan <scott at ss.org>:
+>
+>> They've just announced that an invite will no longer be required.
+>>
+>> https://blog.oneplus.net/2015/04/open-sales-for-the-oneplus-one-forever/
+>>
+>> I've had mine for the better part of year and love it.
+>> --
+>> Scott Sullivan
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150420/7ab788a1/attachment.html>
+
+From evan at telly.org  Mon Apr 20 21:24:47 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Mon, 20 Apr 2015 17:24:47 -0400
+Subject: [GTALUG] One Plus One, sans invites.
+In-Reply-To: <CAH5qdewGmd19+VqyJwx9AVVvT6fLr2ZXk8No-ivCp9kghWL=7g@mail.gmail.com>
+References: <3D352D17-8ADB-41F7-9959-61288C984BD2@ss.org>
+ <CAH5qdewGmd19+VqyJwx9AVVvT6fLr2ZXk8No-ivCp9kghWL=7g@mail.gmail.com>
+Message-ID: <CAMguqh2sL2hH7cy0hXzT8ud5DF=k4bLbT7-Nvo0kk4rhY9ZwJA@mail.gmail.com>
+
+I've been intensely phone shopping for a little while, and have been as
+unimpressed with the company as I have been impressed with the phone.
+Despite a really good piece of launch hardware, there are some substantial
+flaws in the phone but even more -- and far worse -- with the company.
+
+GTALUGgers (and others) trying to buy the phone in 2015 may have noticed
+that OnePlus, without warning or explanation, stopped shipping to Canada,
+and only started again last week. The company was not at all forthcoming in
+any rationale and offered nothing but cheery weeks-long promises of Real
+Soon Now.
+
+After researching on the forums, it appears to me that the company had lied
+about the phone's value (declaring them at $99) which eventually got
+shipments red-flagged by Canada customs. This, in combination with the
+historically miserable service and extra fees of DHL (the only Canadian
+shipping option) led to indefinite suspension of Canadian shipping of the
+OnePlus. Things re-opened this week, with UPS as the courier and taxes
+pre-collected at purchase time.
+
+But that's not the worst of it IMO. The company was caught completely
+flat-footed when Cyanogen went commercial, pulled the rug out from OnePlus,
+and signed an exclusive deal in India with a competing handset maker. This
+has thrown software efforts into a panic as OnePlus now unexpectedly finds
+itself having to rush-release its own Android mutation, OxygenOS. So now
+the the OnePlus software support, once thought of as super stable, is not.
+Those who have lots of time on their hands researching and installing ROMs
+should be OK, the mainstream will suffer through this transition as we
+witness one more Android fragmentation. Whoever is in charge of OnePlus's
+corporate partnerships should be long fired by now, yet no such penance is
+in hand.
+
+And then you have a number of production and marketing choices that seem
+just insane. The OnePlus is the only phone in its field that claims to be a
+"global" phone, yet lacks LTE Band 20 which is critical for Europe. Its
+wifi doesn't do 802.11ac. The invite system has longer overstayed its
+novelty. And you can't buy one in Australia or Switzerland or Brazil at any
+price. Their e-commerce capabilities are weaker than those of hawkers of
+dollar gadgets on eBay.
+
+Add to this the fact that the field of
+"near-flagship-features-at-midrange-prices" smartphones is about to get
+very crowded, and some of the other vendors have the benefit of retail
+access (instant availability) and local warranty support. Within the next
+month or two, don't consider the OnePlus without also having a look at the
+Asus Zenfone 2 with 4GB RAM, the Huawei P8 and the 2nd-generation Moto G.
+More intrepid shoppers will find even greater choice from domestic Chinese
+vendors such as Xiaomi and LeTV.
+
+So, while I badly need to replace my phone right now, I'm passing on the
+OnePlus One. The many poor decisions have me seriously (but maybe I'm the
+only one) concerned about the company's long-term stability. Its corporate
+management is just AWFUL, glossed over by a thin veneer of social media
+cheerleading.
+
+Still they do make well-built phones on low margins. If the OnePlus Two
+offers any evidence that the company has learned its lessons I may still
+come on-board, while I have a look at the reviews of the Asus and Huawei
+phones as they are released. The competition is coming, the bar is rising
+and many good options are at hand.
+
+- Evan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150420/9328a82c/attachment.html>
+
+From kevin at ve3syb.ca  Mon Apr 20 23:37:47 2015
+From: kevin at ve3syb.ca (Kevin)
+Date: Mon, 20 Apr 2015 19:37:47 -0400
+Subject: [GTALUG] MCM/70 computer
+In-Reply-To: <20150415193705.GA5370@capetown.lowshang.com>
+References: <20150415193705.GA5370@capetown.lowshang.com>
+Message-ID: <b8d7418bcc82c655cfa428ead3d80709@ve3syb.ca>
+
+On 2015-04-15 15:37, Tom Low-Shang wrote:
+> Any of our *cough*older*cough* members ever use the MCM/70? 
+> Programmable
+> in only APL, very nerdy indeed. :)
+
+Interesting machine. The choice of APL limited their audience and with 
+only a single line display you wouldn't have been able to use it for 
+(m)any of the other languages of the day.
+
+-- 
+
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that 
+distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why 
+we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+
+From clifford_ilkay at dinamis.com  Tue Apr 21 04:10:23 2015
+From: clifford_ilkay at dinamis.com (Clifford Ilkay)
+Date: Tue, 21 Apr 2015 00:10:23 -0400
+Subject: [GTALUG] One Plus One, sans invites.
+In-Reply-To: <CAMguqh2sL2hH7cy0hXzT8ud5DF=k4bLbT7-Nvo0kk4rhY9ZwJA@mail.gmail.com>
+References: <3D352D17-8ADB-41F7-9959-61288C984BD2@ss.org>
+ <CAH5qdewGmd19+VqyJwx9AVVvT6fLr2ZXk8No-ivCp9kghWL=7g@mail.gmail.com>
+ <CAMguqh2sL2hH7cy0hXzT8ud5DF=k4bLbT7-Nvo0kk4rhY9ZwJA@mail.gmail.com>
+Message-ID: <5535CDAF.2090704@dinamis.com>
+
+On 04/20/2015 05:24 PM, Evan Leibovitch wrote:
+> I've been intensely phone shopping for a little while, and have been
+> as unimpressed with the company as I have been impressed with the
+> phone. Despite a really good piece of launch hardware, there are some
+> substantial flaws in the phone but even more -- and far worse -- with
+> the company.
+>
+> GTALUGgers (and others) trying to buy the phone in 2015 may have
+> noticed that OnePlus, without warning or explanation, stopped shipping
+> to Canada, and only started again last week. The company was not at
+> all forthcoming in any rationale and offered nothing but cheery
+> weeks-long promises of Real Soon Now.
+>
+> After researching on the forums, it appears to me that the company had
+> lied about the phone's value (declaring them at $99) which eventually
+> got shipments red-flagged by Canada customs.
+
+I paid HST on the full price of the phone when I got it in January.
+
+> This, in combination with the historically miserable service and extra
+> fees of DHL (the only Canadian shipping option) led to indefinite
+> suspension of Canadian shipping of the OnePlus. Things re-opened this
+> week, with UPS as the courier and taxes pre-collected at purchase time.
+
+
+Canada Post was another option but I didn't take it because there didn't
+seem to be any way of tracking the shipment and I didn't want to take
+the chance of the shipment getting "lost" along the way. Even with the
+DHL fees, this phone was still great value for money.
+
+
+> But that's not the worst of it IMO. The company was caught completely
+> flat-footed when Cyanogen went commercial, pulled the rug out from
+> OnePlus, and signed an exclusive deal in India with a competing
+> handset maker. This has thrown software efforts into a panic as
+> OnePlus now unexpectedly finds itself having to rush-release its own
+> Android mutation, OxygenOS. So now the the OnePlus software support,
+> once thought of as super stable, is not. Those who have lots of time
+> on their hands researching and installing ROMs should be OK, the
+> mainstream will suffer through this transition as we witness one more
+> Android fragmentation. Whoever is in charge of OnePlus's corporate
+> partnerships should be long fired by now, yet no such penance is in hand.
+
+This has been a non-issue for me. I don't see any compelling reason for
+me to move away from the installed Cyanogen to OxygenOS. The phone does
+everything I expect of it and more so I'm blissfully ignorant of what I
+might be missing.
+
+> And then you have a number of production and marketing choices that
+> seem just insane. The OnePlus is the only phone in its field that
+> claims to be a "global" phone, yet lacks LTE Band 20 which is critical
+> for Europe. Its wifi doesn't do 802.11ac.
+
+Both non-issues for me, though it would be if I travelled to Europe.
+
+> The invite system has longer overstayed its novelty.
+
+This was the reason that kept me from buying one for months until I
+finally gave up resisting it and jumped through the hoops to get an
+invite. As much as the invite system was touted as "innovative", it
+wasn't. It was just an annoyance and added friction to the purchasing
+process, neither of which are great things if you want to maximize sales.
+
+
+> And you can't buy one in Australia or Switzerland or Brazil at any
+> price. Their e-commerce capabilities are weaker than those of hawkers
+> of dollar gadgets on eBay.
+>
+> Add to this the fact that the field of
+> "near-flagship-features-at-midrange-prices" smartphones is about to
+> get very crowded, and some of the other vendors have the benefit of
+> retail access (instant availability) and local warranty support.
+> Within the next month or two, don't consider the OnePlus without also
+> having a look at the Asus Zenfone 2 with 4GB RAM, the Huawei P8 and
+> the 2nd-generation Moto G. More intrepid shoppers will find even
+> greater choice from domestic Chinese vendors such as Xiaomi and LeTV.
+
+Being a WIND Mobile customer has its challenges, the biggest being that
+I can't buy any phone and expect it to work on their network. It's very
+time-consuming to dig up information on whether a given phone will work
+on that network or not, especially for phones from the myriad of
+domestic Chinese vendors.
+
+This has been an amazing phone but I don't have much to compare it to. I
+let a friend who was interested in it play with it and he was amazed at
+how responsive it is. The only concern I have about it is how repairable
+it would be in the event of screen breakage or other damage. My son put
+his HTC One M7 through the wash in his jeans and took it in to get it
+repaired. Three repair shops told him the same thing, "Those phones are
+not repairable because of the way they're assembled." I just read that
+the M9 received the lowest rating possible for repairability. I'd rather
+not treat these as disposable devices, though that seems to be the
+direction all smart phones are going. I have no idea how repairable the
+OPO is so that is something I will be looking for the next time I buy a
+phone.
+
+-- 
+Regards,
+
+Clifford Ilkay
+
++1 647-778-8696
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150421/9a7a1b5d/attachment.html>
+
+From evan at telly.org  Tue Apr 21 07:50:33 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Tue, 21 Apr 2015 03:50:33 -0400
+Subject: [GTALUG] One Plus One, sans invites.
+In-Reply-To: <5535CDAF.2090704@dinamis.com>
+References: <3D352D17-8ADB-41F7-9959-61288C984BD2@ss.org>
+ <CAH5qdewGmd19+VqyJwx9AVVvT6fLr2ZXk8No-ivCp9kghWL=7g@mail.gmail.com>
+ <CAMguqh2sL2hH7cy0hXzT8ud5DF=k4bLbT7-Nvo0kk4rhY9ZwJA@mail.gmail.com>
+ <5535CDAF.2090704@dinamis.com>
+Message-ID: <CAMguqh1Oh59k8k_LBeuWq42r9umHxgbNQozSKop4CbD2N0pqWg@mail.gmail.com>
+
+On 21 April 2015 at 00:10, Clifford Ilkay <clifford_ilkay at dinamis.com>
+wrote:
+
+
+> The company was caught completely flat-footed when Cyanogen went
+> commercial, pulled the rug out from OnePlus, and signed an exclusive deal
+> in India with a competing handset maker. This has thrown software efforts
+> into a panic as OnePlus now unexpectedly finds itself having to
+> rush-release its own Android mutation, OxygenOS. So now the the OnePlus
+> software support, once thought of as super stable, is not. Those who have
+> lots of time on their hands researching and installing ROMs should be OK,
+> the mainstream will suffer through this transition as we witness one more
+> Android fragmentation. Whoever is in charge of OnePlus's corporate
+> partnerships should be long fired by now, yet no such penance is in hand.
+>
+>
+> This has been a non-issue for me. I don't see any compelling reason for me
+> to move away from the installed Cyanogen to OxygenOS.
+>
+
+?You may not have a choice if you want to stay supported. The official ROM
+is now Oxygen, eventually Cyanogen support will be dropped and it will
+become just another third-party ROM.?
+
+Add to this the fact that the field of
+> "near-flagship-features-at-midrange-prices" smartphones is about to get
+> very crowded, and some of the other vendors have the benefit of retail
+> access (instant availability) and local warranty support. Within the next
+> month or two, don't consider the OnePlus without also having a look at the
+> Asus Zenfone 2 with 4GB RAM, the Huawei P8 and the 2nd-generation Moto G.
+> More intrepid shoppers will find even greater choice from domestic Chinese
+> vendors such as Xiaomi and LeTV.
+>
+>
+> Being a WIND Mobile customer has its challenges, the biggest being that I
+> can't buy any phone and expect it to work on their network. It's very
+> time-consuming to dig up information on whether a given phone will work on
+> that network or not, especially for phones from the myriad of domestic
+> Chinese vendors.
+>
+
+?phonearena and gsmarena are both good sources of which phones do what
+bands.
+
+
+This has been an amazing phone but I don't have much to compare it to. I
+> let a friend who was interested in it play with it and he was amazed at how
+> responsive it is. The only concern I have about it is how repairable it
+> would be in the event of screen breakage or other damage. My son put his
+> HTC One M7 through the wash in his jeans and took it in to get it repaired.
+> Three repair shops told him the same thing, "Those phones are not
+> repairable because of the way they're assembled." I just read that the M9
+> received the lowest rating possible for repairability. I'd rather not treat
+> these as disposable devices, though that seems to be the direction all
+> smart phones are going. I have no idea how repairable the OPO is so that is
+> something I will be looking for the next time I buy a phone.
+>
+
+?Not disposable, but not far from. Clearly phones aren't designed to
+outlast three year contracts. All the more reason why flagships are lagging
+in sales and the hottest part of the market is now the high-value-midrange.
+It's a field that the OPO has occupied alone for a long time, but not much
+longer.
+?
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150421/26ea3c8f/attachment.html>
+
+From james.knott at rogers.com  Tue Apr 21 12:07:11 2015
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 21 Apr 2015 08:07:11 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+Message-ID: <55363D6F.5050801@rogers.com>
+
+Has anyone else noticed that the videos on the Toronto Star site no
+longer work with Linux?  I've tried Firefox, Seamonkey and Chromium
+browsers.  The videos do work in Windows.
+
+From james.knott at rogers.com  Tue Apr 21 12:23:37 2015
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 21 Apr 2015 08:23:37 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <55363D6F.5050801@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+Message-ID: <55364149.3070007@rogers.com>
+
+On 04/21/2015 08:07 AM, James Knott wrote:
+> Has anyone else noticed that the videos on the Toronto Star site no
+> longer work with Linux?  I've tried Firefox, Seamonkey and Chromium
+> browsers.  The videos do work in Windows.
+>
+
+Forgot to mention, I'm running openSUSE 13.1 and Chrome in Windows
+doesn't work either.
+
+
+From mlxxxp at gmail.com  Tue Apr 21 12:42:41 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Tue, 21 Apr 2015 08:42:41 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <55363D6F.5050801@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+Message-ID: <CAArSzsWiAUB2i9yEgkgq8hqskFr3+bXC47jGA+S+dkKCKhKFew@mail.gmail.com>
+
+On 21 April 2015 at 08:07, James Knott <james.knott at rogers.com> wrote:
+> Has anyone else noticed that the videos on the Toronto Star site no
+> longer work with Linux?
+
+No problems with three videos from the "latest videos" page. Ubuntu
+14.04, Firefox 37.0.1.
+
+If you provide a link to a specific video, I can try it.
+
+-- 
+Scott
+
+From kalibslack at gmail.com  Tue Apr 21 12:49:10 2015
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Tue, 21 Apr 2015 09:49:10 -0300
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CAArSzsWiAUB2i9yEgkgq8hqskFr3+bXC47jGA+S+dkKCKhKFew@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CAArSzsWiAUB2i9yEgkgq8hqskFr3+bXC47jGA+S+dkKCKhKFew@mail.gmail.com>
+Message-ID: <CAH5qdezFu+wkszU5W-owCwo4G1N13qycoV2zj1cR_mqreNK9ww@mail.gmail.com>
+
+2015-04-21 9:42 GMT-03:00 Scott Allen <mlxxxp at gmail.com>:
+> On 21 April 2015 at 08:07, James Knott <james.knott at rogers.com> wrote:
+>> Has anyone else noticed that the videos on the Toronto Star site no
+>> longer work with Linux?
+>
+> No problems with three videos from the "latest videos" page. Ubuntu
+> 14.04, Firefox 37.0.1.
+>
+> If you provide a link to a specific video, I can try it.
+>
+
+Also working just fine in here: Arch Linux + Firefox 37.0.2
+
+From daniel at circuidipity.com  Tue Apr 21 13:39:53 2015
+From: daniel at circuidipity.com (Daniel Wayne Armstrong)
+Date: Tue, 21 Apr 2015 09:39:53 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <55363D6F.5050801@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+Message-ID: <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+
+On Tue, Apr 21, 2015 at 8:07 AM, James Knott <james.knott at rogers.com> wrote:
+
+> Has anyone else noticed that the videos on the Toronto Star site no
+> longer work with Linux?  I've tried Firefox, Seamonkey and Chromium
+> browsers.  The videos do work in Windows.
+>
+
+Running Arch Linux + Firefox  37.0.2 to watch video at this link:
+
+https://www.thestar.com/life/sourced/2015/04/08/carls-jrs-queen-west-location-has-a-dedicated-milkshake-bar-sourced.html
+
+I needed to temporarily disable the HTTPS-Everywhere plugin... after
+restarting and using 'http' links the videos played OK.
+
+Chrome 42.0.2311.90 with no plugins played the videos OK.
+
+-- 
+(o<  .: Per curiositas ad astra .: http://www.circuidipity.com
+(/)_
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150421/df43f5d6/attachment.html>
+
+From louipc.ist at gmail.com  Tue Apr 21 16:55:53 2015
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Tue, 21 Apr 2015 12:55:53 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+Message-ID: <20150421165553.GA28633@gmail.com>
+
+On Tue 21 Apr 2015 09:39 -0400, Daniel Wayne Armstrong wrote:
+> On Tue, Apr 21, 2015 at 8:07 AM, James Knott <james.knott at rogers.com> wrote:
+> 
+> > Has anyone else noticed that the videos on the Toronto Star site no
+> > longer work with Linux?  I've tried Firefox, Seamonkey and Chromium
+> > browsers.  The videos do work in Windows.
+> >
+> 
+> Running Arch Linux + Firefox  37.0.2 to watch video at this link:
+> 
+> https://www.thestar.com/life/sourced/2015/04/08/carls-jrs-queen-west-location-has-a-dedicated-milkshake-bar-sourced.html
+> 
+
+Running Arch + youtube-dl works. Now I want some Carls JR
+
+From james.knott at rogers.com  Tue Apr 21 16:57:23 2015
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 21 Apr 2015 12:57:23 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+Message-ID: <55368173.3040204@rogers.com>
+
+On 04/21/2015 09:39 AM, Daniel Wayne Armstrong wrote:
+> On Tue, Apr 21, 2015 at 8:07 AM, James Knott <james.knott at rogers.com
+> <mailto:james.knott at rogers.com>> wrote:
+>
+>     Has anyone else noticed that the videos on the Toronto Star site no
+>     longer work with Linux?  I've tried Firefox, Seamonkey and Chromium
+>     browsers.  The videos do work in Windows.
+>
+>
+> Running Arch Linux + Firefox  37.0.2 to watch video at this link:
+>
+> https://www.thestar.com/life/sourced/2015/04/08/carls-jrs-queen-west-location-has-a-dedicated-milkshake-bar-sourced.html
+>
+> I needed to temporarily disable the HTTPS-Everywhere plugin... after
+> restarting and using 'http' links the videos played OK.
+>
+> Chrome 42.0.2311.90 with no plugins played the videos OK.
+>
+
+It was HTTPS Everyware that caused the problem.  I disabled thestar.com
+in it, so I'm past that problem.  That only leaves the videos that won't
+play for other reasons.  ;-)
+
+
+From cdasilva at iprimus.ca  Tue Apr 21 17:33:31 2015
+From: cdasilva at iprimus.ca (Clive DaSilva)
+Date: Tue, 21 Apr 2015 13:33:31 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <20150421165553.GA28633@gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <20150421165553.GA28633@gmail.com>
+Message-ID: <000001d07c59$4957f8a0$dc07e9e0$@iprimus.ca>
+
+Hmmn
+
+I just watched a couple of videos on TheStar.com  on one of my Linux boxes
+(Linuxmint 17) without any problems. I use Google Chrome as my primary
+browser.
+
+---------
+Clive DaSilva - cdasilva at iprimus.ca 
+Mailing List - talk at gtalug.org 
+                          http://gtalug.org/mailman/listinfo/talk
+
+
+-----Original Message-----
+From: talk [mailto:talk-bounces at gtalug.org] On Behalf Of Loui Chang
+Sent: April-21-15 12:56 PM
+To: GTALUG Talk
+Subject: Re: [GTALUG] Toronto Star videos no longer work
+
+On Tue 21 Apr 2015 09:39 -0400, Daniel Wayne Armstrong wrote:
+> On Tue, Apr 21, 2015 at 8:07 AM, James Knott <james.knott at rogers.com>
+wrote:
+> 
+> > Has anyone else noticed that the videos on the Toronto Star site no 
+> > longer work with Linux?  I've tried Firefox, Seamonkey and Chromium 
+> > browsers.  The videos do work in Windows.
+> >
+> 
+> Running Arch Linux + Firefox  37.0.2 to watch video at this link:
+> 
+> https://www.thestar.com/life/sourced/2015/04/08/carls-jrs-queen-west-l
+> ocation-has-a-dedicated-milkshake-bar-sourced.html
+> 
+
+Running Arch + youtube-dl works. Now I want some Carls JR
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+
+From tisdall at gmail.com  Tue Apr 21 18:13:14 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Tue, 21 Apr 2015 14:13:14 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <000001d07c59$4957f8a0$dc07e9e0$@iprimus.ca>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <20150421165553.GA28633@gmail.com>
+ <000001d07c59$4957f8a0$dc07e9e0$@iprimus.ca>
+Message-ID: <CAGxYWpY3wcjCJR3KB6+ouk41MdRC6CnxMrFPb2RW7H2nnNP8Zg@mail.gmail.com>
+
+Very strange...  I couldn't get the video to work at
+https://www.thestar.com/life/sourced/2015/04/08/carls-jrs-queen-west-location-has-a-dedicated-milkshake-bar-sourced.html
+.  I thought maybe it was my adblocking, but disabling that made no
+difference.  I wasn't able to see any video until I went to the "http"
+(non-secure) version of the page and then it worked.
+
+I'm using Chrome, Ubuntu 14.04, and Adobe Flash.
+
+From gilesorr at gmail.com  Wed Apr 22 01:45:51 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Tue, 21 Apr 2015 21:45:51 -0400
+Subject: [GTALUG] Virtualized OSes
+Message-ID: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+
+I've been using VirtualBox a lot recently, and I've been pretty
+impressed with it - running more than one simultaneous machine,
+setting up an internal network and running ansible between them,
+nifty.  Today at work we had an interesting discussion about Digital
+Ocean: the suggestion was made (and undoubtedly it's obvious to many
+on this list, but it was eye-opening to me, I'm still getting my head
+around disposable machines) that if you weren't sure an upgrade to a
+droplet would work, just clone it, do the upgrade on the clone and see
+how it goes.  Then you can make your decision and destroy the unwanted
+version.  All of which made me think "wouldn't it be cool if I could
+have a system with an totally stripped Linux with VirtualBox as the
+"Window Manager" so I could toggle between two or three running OSes
+with graphical interfaces ..."  So:
+
+http://en.wikipedia.org/wiki/Operating_system-level_virtualization_implementations
+
+I've already ruled out OpenVZ as it looks like all virtualized systems
+have to use the same kernel.  Xen seems like the optimal method, but I
+seem to remember that your processor specifically has to support
+virtualization ("lscpu" says, among other things, "Virtualization:
+VT-x", so I'm covered?)
+
+Assuming I want the base OS (does that term even apply?) to be Linux,
+and I don't like proprietary software, what's the "best choice" if I
+want to simultaneously run things like Debian Jessie, TinyCore,
+SliTaz, and possibly even Windows 7?
+
+Links to good tutorials and "Getting Started" guides would also be
+very much appreciated.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From james.knott at rogers.com  Wed Apr 22 01:55:43 2015
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 21 Apr 2015 21:55:43 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+Message-ID: <5536FF9F.8050909@rogers.com>
+
+On 04/21/2015 09:45 PM, Giles Orr wrote:
+> with VirtualBox as the
+> "Window Manager" so I could toggle between two or three running OSes
+> with graphical interfaces ...
+
+FWIW, I have VirtualBox on my openSUSE 13.1 notebook.  I have installed
+VMs for Windows 10, Windows 98 and OS/2 Warp 4.  I can switch among them
+and back to Linux.  The VMs run full screen and to look at them, you
+wouldn't know you were in a VM.
+
+On my desktop system, I have Windows 7 & 10 in VMs.
+
+
+From psema4 at gmail.com  Wed Apr 22 02:20:57 2015
+From: psema4 at gmail.com (Scott Elcomb)
+Date: Tue, 21 Apr 2015 22:20:57 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+Message-ID: <CAEx-jsOXBT+yLjiUsr+k3dBydJiG+5V4cqi-F6s6exHeJa9qPQ@mail.gmail.com>
+
+On Tue, Apr 21, 2015 at 9:45 PM, Giles Orr <gilesorr at gmail.com> wrote:
+<snip>
+> Assuming I want the base OS (does that term even apply?) to be Linux,
+> and I don't like proprietary software, what's the "best choice" if I
+> want to simultaneously run things like Debian Jessie, TinyCore,
+> SliTaz, and possibly even Windows 7?
+>
+> Links to good tutorials and "Getting Started" guides would also be
+> very much appreciated.
+
+I've not tried it yet (it's on my todo list) but you might have a look
+at Qubes OS.  May not be exactly what you're looking for but it's the
+closest that I can think of (aside from VirtualBox et al).  If it's
+possible to run docker (perhaps via subuser)* under Qubes, you might
+be able to have your cake and eat it too.
+
+<https://www.qubes-os.org/>
+
+Best,
+- Scott.
+
+* Additional links
+<https://www.docker.com/>
+<http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/>
+<http://subuser.org/>
+
+-- 
+  Scott Elcomb         @psema4
+  http://psema4.com/pubkey.txt
+     http://www.pirateparty.ca/
+
+From bjonkman at sobac.com  Wed Apr 22 14:58:28 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Wed, 22 Apr 2015 10:58:28 -0400
+Subject: [GTALUG] KWLUG podcast on BTRFS [was: Myths and misunderstandings
+	about ZFS]
+In-Reply-To: <CACa31mABVKVj5aZ2CU8+tJ1UXt-37QLiBwfAJjF-Dy5ezibYHQ@mail.gmail.com>
+References: <CACa31mABVKVj5aZ2CU8+tJ1UXt-37QLiBwfAJjF-Dy5ezibYHQ@mail.gmail.com>
+Message-ID: <5537B714.8050707@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Speaking of file systems, we were doing so at great length at the
+after-meeting after last week's GTALUG meeting. The day before KWLUG's
+Chris Irwin had just made a presentation on BTRFS, which is available
+as a podcast at http://kwlug.org/podcasts
+
+- --Bob.
+
+
+On 20/04/15 03:02 PM, Daniel Wayne Armstrong wrote:
+> Interesting article about the ZFS filesystem... In the past I have 
+> defaulted to the usual ext(2,3,4) but the ability to make
+> filesystem snapshots and rollbacks would be useful:
+> 
+> http://distrowatch.com/weekly.php?issue=20150420#myth
+
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-669-0388
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+http://bob.jonkman.ca/blogs/    http://sn.jonkman.ca/bobjonkman/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlU3txEACgkQuRKJsNLM5eqXGgCg+qAIC4c4pgcSDFzOobK9P5yu
+PVIAn1tlI00SRdNfwt5Iavig3exOrrGH
+=TK3x
+-----END PGP SIGNATURE-----
+
+From davec-b at rogers.com  Wed Apr 22 15:43:39 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Wed, 22 Apr 2015 11:43:39 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+Message-ID: <5537C1AB.9040207@rogers.com>
+
+On 04/21/2015 09:45 PM, Giles Orr wrote:
+> Today at work we had an interesting discussion about Digital
+> Ocean: the suggestion was made (and undoubtedly it's obvious to many
+> on this list, but it was eye-opening to me, I'm still getting my head
+> around disposable machines) that if you weren't sure an upgrade to a
+> droplet would work, just clone it, do the upgrade on the clone and see
+> how it goes.  Then you can make your decision and destroy the unwanted
+> version.
+...
+> I've already ruled out OpenVZ as it looks like all virtualized systems
+> have to use the same kernel.
+On Solaris, we did tons with very-lightweight VMs, using code for 
+security isolation that could create "containers" that looked just like 
+machines.
+
+The only limitation was the common OS version, and you could be ahead of 
+the evrsion in userspace stuff like shared libraries.  We rarely found 
+cases where we wanted a different OS, just some where we wanted to 
+emulate an older one.
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From davec-b at rogers.com  Wed Apr 22 15:45:27 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Wed, 22 Apr 2015 11:45:27 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CAGxYWpY3wcjCJR3KB6+ouk41MdRC6CnxMrFPb2RW7H2nnNP8Zg@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <20150421165553.GA28633@gmail.com>
+ <000001d07c59$4957f8a0$dc07e9e0$@iprimus.ca>
+ <CAGxYWpY3wcjCJR3KB6+ouk41MdRC6CnxMrFPb2RW7H2nnNP8Zg@mail.gmail.com>
+Message-ID: <5537C217.8030504@rogers.com>
+
+On 04/21/2015 02:13 PM, Tim Tisdall wrote:
+> Very strange...  I couldn't get the video to work at
+> https://www.thestar.com/life/sourced/2015/04/08/carls-jrs-queen-west-location-has-a-dedicated-milkshake-bar-sourced.html
+> .  I thought maybe it was my adblocking, but disabling that made no
+> difference.  I wasn't able to see any video until I went to the "http"
+> (non-secure) version of the page and then it worked.
+>
+> I'm using Chrome, Ubuntu 14.04, and Adobe Flash.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+I also see nothing with https everywhere, the video with http --dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150422/95ad3c47/attachment.html>
+
+From ted.leslie at gmail.com  Wed Apr 22 16:25:30 2015
+From: ted.leslie at gmail.com (ted leslie)
+Date: Wed, 22 Apr 2015 12:25:30 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <5537C1AB.9040207@rogers.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <5537C1AB.9040207@rogers.com>
+Message-ID: <CAMua2SFvyhVNfe9NLBvVKR5HQ+YDUgNNos9MiEbUQueaz5kXYw@mail.gmail.com>
+
+You may want to check out Proxmox, i use it for the cloud as VM env., it is
+amazing!, not sure how it would work
+however on strictly a desktop environment. It is free, even though it bugs
+you to sign up for support.
+
+-tl
+
+On Wed, Apr 22, 2015 at 11:43 AM, David Collier-Brown <davec-b at rogers.com>
+wrote:
+
+> On 04/21/2015 09:45 PM, Giles Orr wrote:
+>
+>> Today at work we had an interesting discussion about Digital
+>> Ocean: the suggestion was made (and undoubtedly it's obvious to many
+>> on this list, but it was eye-opening to me, I'm still getting my head
+>> around disposable machines) that if you weren't sure an upgrade to a
+>> droplet would work, just clone it, do the upgrade on the clone and see
+>> how it goes.  Then you can make your decision and destroy the unwanted
+>> version.
+>>
+> ...
+>
+>> I've already ruled out OpenVZ as it looks like all virtualized systems
+>> have to use the same kernel.
+>>
+> On Solaris, we did tons with very-lightweight VMs, using code for security
+> isolation that could create "containers" that looked just like machines.
+>
+> The only limitation was the common OS version, and you could be ahead of
+> the evrsion in userspace stuff like shared libraries.  We rarely found
+> cases where we wanted a different OS, just some where we wanted to emulate
+> an older one.
+>
+> --dave
+>
+> --
+> David Collier-Brown,         | Always do right. This will gratify
+> System Programmer and Author | some people and astonish the rest
+> davecb at spamcop.net           |                      -- Mark Twain
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150422/4b0438db/attachment.html>
+
+From hugh at mimosa.com  Wed Apr 22 21:24:48 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 22 Apr 2015 17:24:48 -0400 (EDT)
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+
+| From: Giles Orr <gilesorr at gmail.com>
+
+| I've been using VirtualBox a lot recently, and I've been pretty
+| impressed with it - running more than one simultaneous machine,
+| setting up an internal network and running ansible between them,
+| nifty.
+
+It is a neat trick.
+
+But what is it useful for?
+
+Clearly it is great to be able to run different OSes if you need to
+run more than one.  For example, to be able to run MS Word when you
+mostly want to run Linux.  Or to test on multiple platforms.
+
+In the Libreswan project, we use virtualization to test networking 
+software.  Since some of the code is in the OS, we at least sometimes have 
+to run different OSes.
+
+But most of virtualization seems to be for other purposes.
+
+|  Today at work we had an interesting discussion about Digital
+| Ocean: the suggestion was made (and undoubtedly it's obvious to many
+| on this list, but it was eye-opening to me, I'm still getting my head
+| around disposable machines) that if you weren't sure an upgrade to a
+| droplet would work, just clone it, do the upgrade on the clone and see
+| how it goes.  Then you can make your decision and destroy the unwanted
+| version.
+
+Yeah, that (sadly) is a good use case.  But surely a proper package
+management system would let you do this too.
+
+- allow more than one version of a package to be installed
+
+- allow more than one instance of the same package, but with different 
+  global configuration.  Perhaps global configuration is evil.
+
+- allow package dependencies to contol which versions of each package
+  talk to each other.  For example, if A talks to B, under some
+  conditions, old A should talk to old B
+
+- make sure that distinct package's configurations don't affect each
+  other.  Example: two different packages that use Apache; they should not
+  configure Apache in ways that conflict.
+
+- job migration between machines, even while running, seems useful.
+  (That's not a package management problem.)
+
+One step more towards virtualization:
+
+Jails are minimal and may be good enough but a lot cheaper than
+supporting true virtual x86 machines.
+
+|  All of which made me think "wouldn't it be cool if I could
+| have a system with an totally stripped Linux with VirtualBox as the
+| "Window Manager" so I could toggle between two or three running OSes
+| with graphical interfaces ..."  So:
+
+I think that Serious VMware products are stripped Linux systems that
+can run VMs without a lot of extras.
+
+I think that Zen Dom0 (host) can be minimal too.
+
+So much of the noise this day is about things like Docker and CoreOS.
+A lot feels like branding exercises rather than technology.  I find it
+too hard to figure out what they actually are.
+
+From peterplatek at gmail.com  Wed Apr 22 21:40:25 2015
+From: peterplatek at gmail.com (Peter Platek)
+Date: Wed, 22 Apr 2015 17:40:25 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+Message-ID: <CANewTZ_HnN=+ksKY_zVw5Tsfzo=Upapqru6qQhezAv5Sa_V7tA@mail.gmail.com>
+
+> Yeah, that (sadly) is a good use case.  But surely a proper package
+> management system would let you do this too.
+>
+> - allow more than one version of a package to be installed
+>
+> - allow more than one instance of the same package, but with different
+>   global configuration.  Perhaps global configuration is evil.
+>
+> - allow package dependencies to contol which versions of each package
+>   talk to each other.  For example, if A talks to B, under some
+>   conditions, old A should talk to old B
+>
+> - make sure that distinct package's configurations don't affect each
+>   other.  Example: two different packages that use Apache; they should not
+>   configure Apache in ways that conflict.
+
+I think Red Hat's software collections are supposed to do that:
+
+https://www.softwarecollections.org
+
+On 22 April 2015 at 17:24, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+>
+> | From: Giles Orr <gilesorr at gmail.com>
+>
+> | I've been using VirtualBox a lot recently, and I've been pretty
+> | impressed with it - running more than one simultaneous machine,
+> | setting up an internal network and running ansible between them,
+> | nifty.
+>
+> It is a neat trick.
+>
+> But what is it useful for?
+>
+> Clearly it is great to be able to run different OSes if you need to
+> run more than one.  For example, to be able to run MS Word when you
+> mostly want to run Linux.  Or to test on multiple platforms.
+>
+> In the Libreswan project, we use virtualization to test networking
+> software.  Since some of the code is in the OS, we at least sometimes have
+> to run different OSes.
+>
+> But most of virtualization seems to be for other purposes.
+>
+> |  Today at work we had an interesting discussion about Digital
+> | Ocean: the suggestion was made (and undoubtedly it's obvious to many
+> | on this list, but it was eye-opening to me, I'm still getting my head
+> | around disposable machines) that if you weren't sure an upgrade to a
+> | droplet would work, just clone it, do the upgrade on the clone and see
+> | how it goes.  Then you can make your decision and destroy the unwanted
+> | version.
+>
+> Yeah, that (sadly) is a good use case.  But surely a proper package
+> management system would let you do this too.
+>
+> - allow more than one version of a package to be installed
+>
+> - allow more than one instance of the same package, but with different
+>   global configuration.  Perhaps global configuration is evil.
+>
+> - allow package dependencies to contol which versions of each package
+>   talk to each other.  For example, if A talks to B, under some
+>   conditions, old A should talk to old B
+>
+> - make sure that distinct package's configurations don't affect each
+>   other.  Example: two different packages that use Apache; they should not
+>   configure Apache in ways that conflict.
+>
+> - job migration between machines, even while running, seems useful.
+>   (That's not a package management problem.)
+>
+> One step more towards virtualization:
+>
+> Jails are minimal and may be good enough but a lot cheaper than
+> supporting true virtual x86 machines.
+>
+> |  All of which made me think "wouldn't it be cool if I could
+> | have a system with an totally stripped Linux with VirtualBox as the
+> | "Window Manager" so I could toggle between two or three running OSes
+> | with graphical interfaces ..."  So:
+>
+> I think that Serious VMware products are stripped Linux systems that
+> can run VMs without a lot of extras.
+>
+> I think that Zen Dom0 (host) can be minimal too.
+>
+> So much of the noise this day is about things like Docker and CoreOS.
+> A lot feels like branding exercises rather than technology.  I find it
+> too hard to figure out what they actually are.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From ted.leslie at gmail.com  Wed Apr 22 21:43:27 2015
+From: ted.leslie at gmail.com (ted leslie)
+Date: Wed, 22 Apr 2015 17:43:27 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <CANewTZ_HnN=+ksKY_zVw5Tsfzo=Upapqru6qQhezAv5Sa_V7tA@mail.gmail.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+ <CANewTZ_HnN=+ksKY_zVw5Tsfzo=Upapqru6qQhezAv5Sa_V7tA@mail.gmail.com>
+Message-ID: <CAMua2SFi9OFTqjBqsPLbM0Npv9mSQaCfU6edwCxiyBaRuwFg4g@mail.gmail.com>
+
+I am thinking of moving off Debian/Mint-DE, to Nixos linux for this type of
+flexibility.
+
+-tl
+
+On Wed, Apr 22, 2015 at 5:40 PM, Peter Platek <peterplatek at gmail.com> wrote:
+
+> > Yeah, that (sadly) is a good use case.  But surely a proper package
+> > management system would let you do this too.
+> >
+> > - allow more than one version of a package to be installed
+> >
+> > - allow more than one instance of the same package, but with different
+> >   global configuration.  Perhaps global configuration is evil.
+> >
+> > - allow package dependencies to contol which versions of each package
+> >   talk to each other.  For example, if A talks to B, under some
+> >   conditions, old A should talk to old B
+> >
+> > - make sure that distinct package's configurations don't affect each
+> >   other.  Example: two different packages that use Apache; they should
+> not
+> >   configure Apache in ways that conflict.
+>
+> I think Red Hat's software collections are supposed to do that:
+>
+> https://www.softwarecollections.org
+>
+> On 22 April 2015 at 17:24, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+> >
+> > | From: Giles Orr <gilesorr at gmail.com>
+> >
+> > | I've been using VirtualBox a lot recently, and I've been pretty
+> > | impressed with it - running more than one simultaneous machine,
+> > | setting up an internal network and running ansible between them,
+> > | nifty.
+> >
+> > It is a neat trick.
+> >
+> > But what is it useful for?
+> >
+> > Clearly it is great to be able to run different OSes if you need to
+> > run more than one.  For example, to be able to run MS Word when you
+> > mostly want to run Linux.  Or to test on multiple platforms.
+> >
+> > In the Libreswan project, we use virtualization to test networking
+> > software.  Since some of the code is in the OS, we at least sometimes
+> have
+> > to run different OSes.
+> >
+> > But most of virtualization seems to be for other purposes.
+> >
+> > |  Today at work we had an interesting discussion about Digital
+> > | Ocean: the suggestion was made (and undoubtedly it's obvious to many
+> > | on this list, but it was eye-opening to me, I'm still getting my head
+> > | around disposable machines) that if you weren't sure an upgrade to a
+> > | droplet would work, just clone it, do the upgrade on the clone and see
+> > | how it goes.  Then you can make your decision and destroy the unwanted
+> > | version.
+> >
+> > Yeah, that (sadly) is a good use case.  But surely a proper package
+> > management system would let you do this too.
+> >
+> > - allow more than one version of a package to be installed
+> >
+> > - allow more than one instance of the same package, but with different
+> >   global configuration.  Perhaps global configuration is evil.
+> >
+> > - allow package dependencies to contol which versions of each package
+> >   talk to each other.  For example, if A talks to B, under some
+> >   conditions, old A should talk to old B
+> >
+> > - make sure that distinct package's configurations don't affect each
+> >   other.  Example: two different packages that use Apache; they should
+> not
+> >   configure Apache in ways that conflict.
+> >
+> > - job migration between machines, even while running, seems useful.
+> >   (That's not a package management problem.)
+> >
+> > One step more towards virtualization:
+> >
+> > Jails are minimal and may be good enough but a lot cheaper than
+> > supporting true virtual x86 machines.
+> >
+> > |  All of which made me think "wouldn't it be cool if I could
+> > | have a system with an totally stripped Linux with VirtualBox as the
+> > | "Window Manager" so I could toggle between two or three running OSes
+> > | with graphical interfaces ..."  So:
+> >
+> > I think that Serious VMware products are stripped Linux systems that
+> > can run VMs without a lot of extras.
+> >
+> > I think that Zen Dom0 (host) can be minimal too.
+> >
+> > So much of the noise this day is about things like Docker and CoreOS.
+> > A lot feels like branding exercises rather than technology.  I find it
+> > too hard to figure out what they actually are.
+> > ---
+> > Talk Mailing List
+> > talk at gtalug.org
+> > http://gtalug.org/mailman/listinfo/talk
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150422/7aa79561/attachment.html>
+
+From jamon.camisso at utoronto.ca  Wed Apr 22 21:44:41 2015
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Wed, 22 Apr 2015 17:44:41 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+Message-ID: <55381649.50902@utoronto.ca>
+
+On 22/04/15 05:24 PM, D. Hugh Redelmeier wrote:
+> Yeah, that (sadly) is a good use case.  But surely a proper package
+> management system would let you do this too.
+> 
+> - allow more than one version of a package to be installed
+> 
+> - allow more than one instance of the same package, but with different 
+>   global configuration.  Perhaps global configuration is evil.
+> 
+> - allow package dependencies to contol which versions of each package
+>   talk to each other.  For example, if A talks to B, under some
+>   conditions, old A should talk to old B
+> 
+> - make sure that distinct package's configurations don't affect each
+>   other.  Example: two different packages that use Apache; they should not
+>   configure Apache in ways that conflict.
+> 
+> - job migration between machines, even while running, seems useful.
+>   (That's not a package management problem.)
+
+NixOS addresses quite a few of these. Each version of a package is built
+into its own unique prefixed environment, and each build can have its
+own env variables set. You're free to switch between versions on your
+system as well.
+
+Essentially it is a distro that is built using pointers to individual
+packages' git commit ids.
+
+Cheers, Jamon
+
+http://nixos.org/nixos/about.html - see How does NixOS work?
+
+From jamon.camisso at utoronto.ca  Wed Apr 22 21:46:27 2015
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Wed, 22 Apr 2015 17:46:27 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <55381649.50902@utoronto.ca>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+ <55381649.50902@utoronto.ca>
+Message-ID: <553816B3.9080202@utoronto.ca>
+
+On 22/04/15 05:44 PM, Jamon Camisso wrote:
+> NixOS addresses quite a few of these. Each version of a package is built
+> into its own unique prefixed environment, and each build can have its
+> own env variables set. You're free to switch between versions on your
+> system as well.
+> 
+> Essentially it is a distro that is built using pointers to individual
+> packages' git commit ids.
+
+Replying to myself - that part isn't accurate. The package manager deals
+with where the upstream source is found. http://nixos.org/nixpkgs/
+
+Cheers, Jamon
+
+
+From bjonkman at sobac.com  Thu Apr 23 04:43:17 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Thu, 23 Apr 2015 00:43:17 -0400
+Subject: [GTALUG] Toronto Ubuntu 15.04 Vivid Vervet Release Party
+In-Reply-To: <552B480D.2040409@sobac.com>
+References: <552B480D.2040409@sobac.com>
+Message-ID: <55387865.3010606@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Hi all: Just want to remind you of the Toronto Release Party tomorrow
+(Thursday) night.  The party has expanded in scope, and we're now
+officially celebrating the Ubuntu 15.04 "Vivid Vervet" release, the
+Debian 8 "Jessie" release (in anticipation of the actual release on
+Saturday the 25th), and some of us are still celebrating Linux Mint
+LMDE 2.0 "Betsy", released on 10 April.
+
+Debian "Jessie" release party announcment:
+https://wiki.debian.org/ReleasePartyJessie#ReleasePartyJessie.2FCanada.2FToronto.Canada:_Toronto
+
+Come join us at Alio Restaurant at 8:00pm -- Mike is supplying the
+coffee and cupcakes!
+
+- --Bob.
+
+
+On 13/04/15 12:37 AM, Bob Jonkman wrote:
+> Hi all: There are a number of significant Linux distribution 
+> releases happening -- Linux Mint Debian Edition 2 "Betsy" just
+> came out this past Friday, Ubuntu 15.04 "Vivid Vervet" is coming
+> out next Thursday, and Debian 8.0 "Jessie" is being released the 
+> Saturday after that.  As far as I know, only Ubuntu is having a 
+> release party, to which I'd like to welcome all Linux distro users 
+> in the Toronto area:
+> 
+> *What*: Toronto 15.04 Release Party *When*: 8:00pm to 11:45pm,
+> Thursday, 23 April 2015 *Where*: Alio Lounge, 108 Dundas Street
+> West, Toronto, Ontario *Map*:
+> http://osm.org/go/ZX6BtMGSN-?m=&node=1113718580 *LoCo Event*:
+> http://loco.ubuntu.com/events/ubuntu-ca/3074/detail/
+> 
+> Mike Kaulbach (genii in IRC) is providing free coffee and all the 
+> fixings to decorate your own cupcakes. Hope to see you there!
+> 
+> Thanx, --Bob.
+> 
+> 
+> 
+> 
+> --- Talk Mailing List talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlU4eGMACgkQuRKJsNLM5eqq0ACfW7QUDIwmX7iml93hFCrSSRCo
+hJsAn1zfbuI/gKjDDaFL2vLKOh0KedIJ
+=j8UG
+-----END PGP SIGNATURE-----
+
+From bjonkman at sobac.com  Thu Apr 23 04:52:46 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Thu, 23 Apr 2015 00:52:46 -0400
+Subject: [GTALUG] Libregraphics Meeting, Toronto, 29 Apr to 2 May 2015
+Message-ID: <55387A9E.1060504@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Hi again: Here's something I knew about, but that almost slipped my mind:
+
+> The Libre Graphics Meeting (LGM) is an annual meeting on free and 
+> open source software for graphics.
+> 
+> Held yearly since 2006 the Libre Graphics Meeting aims to attract 
+> developers, artists and professionals who use and improve free and 
+> open source software graphics applications. The LGM aims to bring 
+> these people together in the cause of creating high quality free 
+> graphics applications.
+
+29 April to 2 May 2015 at Robarts Library and the Earth Sciences
+Building at the University of Toronto
+
+http://libregraphicsmeeting.org/2015/program/
+
+- --Bob.
+
+- -- 
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-669-0388
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+http://bob.jonkman.ca/blogs/    http://sn.jonkman.ca/bobjonkman/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlU4epwACgkQuRKJsNLM5eqDgACfRlF9rNKq3rf8pTdhAejalQMT
+vZIAoJuUzfxMarZYMGJuOx+KdDa6SiLO
+=aTNh
+-----END PGP SIGNATURE-----
+
+From lsorense at csclub.uwaterloo.ca  Thu Apr 23 14:34:50 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 23 Apr 2015 10:34:50 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <CAMua2SFi9OFTqjBqsPLbM0Npv9mSQaCfU6edwCxiyBaRuwFg4g@mail.gmail.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+ <CANewTZ_HnN=+ksKY_zVw5Tsfzo=Upapqru6qQhezAv5Sa_V7tA@mail.gmail.com>
+ <CAMua2SFi9OFTqjBqsPLbM0Npv9mSQaCfU6edwCxiyBaRuwFg4g@mail.gmail.com>
+Message-ID: <20150423143450.GQ29559@csclub.uwaterloo.ca>
+
+On Wed, Apr 22, 2015 at 05:43:27PM -0400, ted leslie wrote:
+> I am thinking of moving off Debian/Mint-DE, to Nixos linux for this type of
+> flexibility.
+
+Of course you trade it for the annoyance of being not compatible with
+any standard linux binary.  Everything ahs to be wrapped in environment
+settings to find the ld-linux.so and otehr things, because NOTHING is
+in the places that they are supposed to be.
+
+So interesting design, but it comes at the expense of total
+incompatibility with everything that already exists.  It can be worked
+around though.
+
+-- 
+Len Sorensen
+
+From gilesorr at gmail.com  Thu Apr 23 16:18:08 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Thu, 23 Apr 2015 12:18:08 -0400
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <20150423143450.GQ29559@csclub.uwaterloo.ca>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+ <CANewTZ_HnN=+ksKY_zVw5Tsfzo=Upapqru6qQhezAv5Sa_V7tA@mail.gmail.com>
+ <CAMua2SFi9OFTqjBqsPLbM0Npv9mSQaCfU6edwCxiyBaRuwFg4g@mail.gmail.com>
+ <20150423143450.GQ29559@csclub.uwaterloo.ca>
+Message-ID: <CAEnxSC5njo4wbA4MLeQ68LdzwkEJaG+0p=P8ZkybkJz9gBmLZw@mail.gmail.com>
+
+On 23 April 2015 at 10:34, Lennart Sorensen
+<lsorense at csclub.uwaterloo.ca> wrote:
+> On Wed, Apr 22, 2015 at 05:43:27PM -0400, ted leslie wrote:
+>> I am thinking of moving off Debian/Mint-DE, to Nixos linux for this type of
+>> flexibility.
+>
+> Of course you trade it for the annoyance of being not compatible with
+> any standard linux binary.  Everything ahs to be wrapped in environment
+> settings to find the ld-linux.so and otehr things, because NOTHING is
+> in the places that they are supposed to be.
+>
+> So interesting design, but it comes at the expense of total
+> incompatibility with everything that already exists.  It can be worked
+> around though.
+
+It seems a little late to retitle this as being about NixOS, although
+I'm going to address that.  But since I'm not retitling, first off:
+thanks everyone who replied about virtualization, this has been
+educational.
+
+As for NixOS - after Jamon's mention of it a couple months ago, I
+played with it for a bit and wrote up a rough review at
+http://www.gilesorr.com/blog/nixos-review.html
+
+Some points for those who don't bother to follow the link:
+- /bin/rm doesn't exist.  "rm" does, and it's on the PATH, but imagine
+how many scripts that breaks.
+- vi isn't installed by default.  this is a 838MB compressed image
+they provided, and they didn't include the POSIX standard browser?
+It's available as a package though.
+- if a package is installed at the system level, the package manager
+will still happily install the same package for an individual user.
+
+Think about this last point: the user will now be using their own
+version of the package.  System-wide security updates are totally out
+the window.
+
+I see the flexibility NixOS offers, but I think the price is too high.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From lsorense at csclub.uwaterloo.ca  Thu Apr 23 16:44:05 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 23 Apr 2015 12:44:05 -0400
+Subject: [GTALUG] Virtualized OSes... or perhaps pointing out the
+ obvious problems in NixOS
+In-Reply-To: <CAEnxSC5njo4wbA4MLeQ68LdzwkEJaG+0p=P8ZkybkJz9gBmLZw@mail.gmail.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+ <CANewTZ_HnN=+ksKY_zVw5Tsfzo=Upapqru6qQhezAv5Sa_V7tA@mail.gmail.com>
+ <CAMua2SFi9OFTqjBqsPLbM0Npv9mSQaCfU6edwCxiyBaRuwFg4g@mail.gmail.com>
+ <20150423143450.GQ29559@csclub.uwaterloo.ca>
+ <CAEnxSC5njo4wbA4MLeQ68LdzwkEJaG+0p=P8ZkybkJz9gBmLZw@mail.gmail.com>
+Message-ID: <20150423164405.GS29559@csclub.uwaterloo.ca>
+
+On Thu, Apr 23, 2015 at 12:18:08PM -0400, Giles Orr wrote:
+> It seems a little late to retitle this as being about NixOS, although
+> I'm going to address that.  But since I'm not retitling, first off:
+> thanks everyone who replied about virtualization, this has been
+> educational.
+> 
+> As for NixOS - after Jamon's mention of it a couple months ago, I
+> played with it for a bit and wrote up a rough review at
+> http://www.gilesorr.com/blog/nixos-review.html
+> 
+> Some points for those who don't bother to follow the link:
+> - /bin/rm doesn't exist.  "rm" does, and it's on the PATH, but imagine
+> how many scripts that breaks.
+> - vi isn't installed by default.  this is a 838MB compressed image
+> they provided, and they didn't include the POSIX standard browser?
+> It's available as a package though.
+> - if a package is installed at the system level, the package manager
+> will still happily install the same package for an individual user.
+> 
+> Think about this last point: the user will now be using their own
+> version of the package.  System-wide security updates are totally out
+> the window.
+> 
+> I see the flexibility NixOS offers, but I think the price is too high.
+
+It is an interesting design that is trying to solve one problem, but
+does so by creating a bunch of other ones.  It is not a tradeoff I would
+be willing to take.
+
+Certainly the problem it is trying to solve is not one that has ever
+really been an issue for me (the few times I have had a reason to use
+another version of something, I have installed it in a small chroot
+running an appropriate version of the distribution to run that version).
+
+-- 
+Len Sorensen
+
+From hugh at mimosa.com  Thu Apr 23 19:30:07 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 23 Apr 2015 15:30:07 -0400 (EDT)
+Subject: [GTALUG] Virtualized OSes... or perhaps pointing out the
+ obvious problems in NixOS
+In-Reply-To: <20150423164405.GS29559@csclub.uwaterloo.ca>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+ <CANewTZ_HnN=+ksKY_zVw5Tsfzo=Upapqru6qQhezAv5Sa_V7tA@mail.gmail.com>
+ <CAMua2SFi9OFTqjBqsPLbM0Npv9mSQaCfU6edwCxiyBaRuwFg4g@mail.gmail.com>
+ <20150423143450.GQ29559@csclub.uwaterloo.ca>
+ <CAEnxSC5njo4wbA4MLeQ68LdzwkEJaG+0p=P8ZkybkJz9gBmLZw@mail.gmail.com>
+ <20150423164405.GS29559@csclub.uwaterloo.ca>
+Message-ID: <alpine.LRH.2.02.1504231516500.3961@redclaw.mimosa.com>
+
+| From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+
+| Certainly the problem it is trying to solve is not one that has ever
+| really been an issue for me (the few times I have had a reason to use
+| another version of something, I have installed it in a small chroot
+| running an appropriate version of the distribution to run that version).
+
+Me too, I think.
+
+Sometimes "systems" get stuck on old versions of Linux (let's forget
+other OSes for now).  Why do they get stuck?  I think that they are
+working and changing to a new distro release has a significant chance of
+destabalizing them.  Maybe the process to actually configure the old
+system is lost.
+
+But you don't want everything in your organization stuck at that old
+version.
+
+So you end up with a diverse set of versions.  They cannot normally
+live on one box.  The cure is virtualization or some other trick.
+
+This all seems wrong, but all too understandable.  (I have a couple of
+boxes still running RHL 8.0 from 2002.)
+
+So what are the correct solutions?
+
+- RHEL has something like 10 year stability for each release.  Ubuntu
+  has LTS.  This allows you to safely ignore the problem for a decade.
+  By which time it is enormous!  But of course they don't force you
+  to ignore the problem.
+
+- keeping up with the rat-race of rolling updates is noble but probably
+  wasteful.  It is the opposite approach to LTS.
+
+- virtualization allows you to put off the problem for a long long
+  time.  But it doesn't address vulnerabilities in no-longer-supported
+  distros.
+
+- For me, running a virtual copy of an ancient system let me avoid
+  buying a new license when the old machine wasn't worth running any
+  longer.
+
+- NixOS would seem to address this.  Is that its justification?
+
+What do real businesses do?  What should they do?
+
+From o1bigtenor at gmail.com  Fri Apr 24 01:08:44 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Thu, 23 Apr 2015 20:08:44 -0500
+Subject: [GTALUG] Virtualized OSes... or perhaps pointing out the
+ obvious problems in NixOS
+In-Reply-To: <alpine.LRH.2.02.1504231516500.3961@redclaw.mimosa.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+ <CANewTZ_HnN=+ksKY_zVw5Tsfzo=Upapqru6qQhezAv5Sa_V7tA@mail.gmail.com>
+ <CAMua2SFi9OFTqjBqsPLbM0Npv9mSQaCfU6edwCxiyBaRuwFg4g@mail.gmail.com>
+ <20150423143450.GQ29559@csclub.uwaterloo.ca>
+ <CAEnxSC5njo4wbA4MLeQ68LdzwkEJaG+0p=P8ZkybkJz9gBmLZw@mail.gmail.com>
+ <20150423164405.GS29559@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1504231516500.3961@redclaw.mimosa.com>
+Message-ID: <CAPpdf59V1wD3Q4gURmViYidxrQvOaQhnwJ_Qt10u1-BhWR=HxQ@mail.gmail.com>
+
+snip
+
+>
+> - For me, running a virtual copy of an ancient system let me avoid
+>   buying a new license when the old machine wasn't worth running any
+>   longer.
+>
+> - NixOS would seem to address this.  Is that its justification?
+>
+> What do real businesses do?  What should they do?
+> ---
+>
+
+There is an important subset of computing out there that does something
+rather interesting with this.
+
+Machine tools run old versions of Windows. I'm not in the field at present
+but I know that not too many years ago it was like DOS was still alive and
+a small subset of the available control software ran on a Windows system.
+Likely things have moved forward somewhat but when I was working on things
+the software was at least 15 if not 20 years behind.
+
+Many large businesses are still running on NT 3.51 (IIRC  (the version
+numbers)).
+When you are at your bank look at the screen - - - its Win XP.
+
+If the software does what you want it to do why change for the newer - - -
+big business has always done that.
+
+I'm very much of the opinion what change for changes sake is a waste of
+effort.
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150423/de756599/attachment.html>
+
+From james.knott at rogers.com  Fri Apr 24 15:00:14 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 11:00:14 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <55368173.3040204@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com>
+Message-ID: <553A5A7E.1060507@rogers.com>
+
+On 04/21/2015 12:57 PM, James Knott wrote:
+> On 04/21/2015 09:39 AM, Daniel Wayne Armstrong wrote:
+>> On Tue, Apr 21, 2015 at 8:07 AM, James Knott <james.knott at rogers.com
+>> <mailto:james.knott at rogers.com>> wrote:
+>>
+>>     Has anyone else noticed that the videos on the Toronto Star site no
+>>     longer work with Linux?  I've tried Firefox, Seamonkey and Chromium
+>>     browsers.  The videos do work in Windows.
+>>
+>>
+>> Running Arch Linux + Firefox  37.0.2 to watch video at this link:
+>>
+>> https://www.thestar.com/life/sourced/2015/04/08/carls-jrs-queen-west-location-has-a-dedicated-milkshake-bar-sourced.html
+>>
+>> I needed to temporarily disable the HTTPS-Everywhere plugin... after
+>> restarting and using 'http' links the videos played OK.
+>>
+>> Chrome 42.0.2311.90 with no plugins played the videos OK.
+>>
+> It was HTTPS Everyware that caused the problem.  I disabled thestar.com
+> in it, so I'm past that problem.  That only leaves the videos that won't
+> play for other reasons.  ;-)
+>
+>
+
+Now that problem is out of the way, another has turned up.  With many
+videos, I am getting an error message: "The video you are trying to
+watch is currently unavailable.  Please try again later.  Error
+Code:VE_PD_NOTFOUND"
+
+When I search on that error code, it appears it's related to Flash,
+which is no longer being updated for Linux.  It also seems to happen on
+recent videos, not older ones.  Any ideas, other than viewing those
+videos in Windows?
+
+Here is a link to one video that fails:
+http://www.thestar.com/news/canada/2015/04/23/killer-sent-photos-of-dead-woman-3-children-to-biological-father-relative-says.html
+
+BTW, this is in Firefox on openSUSE 13.1.
+
+From tisdall at gmail.com  Fri Apr 24 15:14:43 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Fri, 24 Apr 2015 11:14:43 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A5A7E.1060507@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+Message-ID: <CAGxYWpZTWVhjFB30ieupRw=w80Z=5bUh7_yw=n8tn8sU4X9RWA@mail.gmail.com>
+
+Worked for me...  Chrome in Ubuntu 14.04
+
+On Fri, Apr 24, 2015 at 11:00 AM, James Knott <james.knott at rogers.com> wrote:
+> On 04/21/2015 12:57 PM, James Knott wrote:
+>> On 04/21/2015 09:39 AM, Daniel Wayne Armstrong wrote:
+>>> On Tue, Apr 21, 2015 at 8:07 AM, James Knott <james.knott at rogers.com
+>>> <mailto:james.knott at rogers.com>> wrote:
+>>>
+>>>     Has anyone else noticed that the videos on the Toronto Star site no
+>>>     longer work with Linux?  I've tried Firefox, Seamonkey and Chromium
+>>>     browsers.  The videos do work in Windows.
+>>>
+>>>
+>>> Running Arch Linux + Firefox  37.0.2 to watch video at this link:
+>>>
+>>> https://www.thestar.com/life/sourced/2015/04/08/carls-jrs-queen-west-location-has-a-dedicated-milkshake-bar-sourced.html
+>>>
+>>> I needed to temporarily disable the HTTPS-Everywhere plugin... after
+>>> restarting and using 'http' links the videos played OK.
+>>>
+>>> Chrome 42.0.2311.90 with no plugins played the videos OK.
+>>>
+>> It was HTTPS Everyware that caused the problem.  I disabled thestar.com
+>> in it, so I'm past that problem.  That only leaves the videos that won't
+>> play for other reasons.  ;-)
+>>
+>>
+>
+> Now that problem is out of the way, another has turned up.  With many
+> videos, I am getting an error message: "The video you are trying to
+> watch is currently unavailable.  Please try again later.  Error
+> Code:VE_PD_NOTFOUND"
+>
+> When I search on that error code, it appears it's related to Flash,
+> which is no longer being updated for Linux.  It also seems to happen on
+> recent videos, not older ones.  Any ideas, other than viewing those
+> videos in Windows?
+>
+> Here is a link to one video that fails:
+> http://www.thestar.com/news/canada/2015/04/23/killer-sent-photos-of-dead-woman-3-children-to-biological-father-relative-says.html
+>
+> BTW, this is in Firefox on openSUSE 13.1.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From james.knott at rogers.com  Fri Apr 24 15:19:59 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 11:19:59 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CAGxYWpZTWVhjFB30ieupRw=w80Z=5bUh7_yw=n8tn8sU4X9RWA@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAGxYWpZTWVhjFB30ieupRw=w80Z=5bUh7_yw=n8tn8sU4X9RWA@mail.gmail.com>
+Message-ID: <553A5F1F.4000802@rogers.com>
+
+On 04/24/2015 11:14 AM, Tim Tisdall wrote:
+> Worked for me...  Chrome in Ubuntu 14.04
+
+It works in Chromium, at least on one computer.  However, I generally
+use Firefox for most of my browsing and Chromium is normally used for
+stuff related to my GMail account, such as contacts, calendar etc.
+
+I still have to find out why that link works in Chromium on my notebook,
+but not desktop.  Also, aren't web site vedeos supposed to be shifting
+to HTML5?  These problems started with recent changes to the Star's web
+site.  Prior to that, the biggest problem was videos starting
+automatically, when I didn't want them to.  ;-)
+
+
+From stephen-d at rogers.com  Fri Apr 24 15:54:55 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Fri, 24 Apr 2015 11:54:55 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A5F1F.4000802@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAGxYWpZTWVhjFB30ieupRw=w80Z=5bUh7_yw=n8tn8sU4X9RWA@mail.gmail.com>
+ <553A5F1F.4000802@rogers.com>
+Message-ID: <553A674F.3050101@rogers.com>
+
+On 15-04-24 11:19 AM, James Knott wrote:
+> On 04/24/2015 11:14 AM, Tim Tisdall wrote:
+>> Worked for me...  Chrome in Ubuntu 14.04
+>
+> It works in Chromium, at least on one computer.  However, I generally
+> use Firefox for most of my browsing and Chromium is normally used for
+> stuff related to my GMail account, such as contacts, calendar etc.
+>
+> I still have to find out why that link works in Chromium on my notebook,
+> but not desktop.  Also, aren't web site vedeos supposed to be shifting
+> to HTML5?  These problems started with recent changes to the Star's web
+> site.  Prior to that, the biggest problem was videos starting
+> automatically, when I didn't want them to.  ;-)
+
+Worked for me in Firefox under Ubuntu 14.04.
+
+Note that HTML5 is, well, HTML.
+
+It is not a video format. And there is no single video format supported 
+by all browsers. At least when I last worked on this in January.
+
+HTML5 does provide tags so that the server can offer the video in more 
+than one format, and the browser can then select the version it supports.
+
+That explains why sites with a huge number of video files are slow to 
+move, because the space requirements double, and perhaps millions of 
+lines of HTML code have to be updated.
+
+I can imagine the new HTML5 tags are now being used, but the web site 
+does not yet have a good process for routinely supporting two video file 
+formats.
+
+-- 
+Stephen
+
+From james.knott at rogers.com  Fri Apr 24 16:13:53 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 12:13:53 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A674F.3050101@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAGxYWpZTWVhjFB30ieupRw=w80Z=5bUh7_yw=n8tn8sU4X9RWA@mail.gmail.com>
+ <553A5F1F.4000802@rogers.com> <553A674F.3050101@rogers.com>
+Message-ID: <553A6BC1.40305@rogers.com>
+
+On 04/24/2015 11:54 AM, Stephen wrote:
+> That explains why sites with a huge number of video files are slow to
+> move, because the space requirements double, and perhaps millions of
+> lines of HTML code have to be updated.
+>
+> I can imagine the new HTML5 tags are now being used, but the web site
+> does not yet have a good process for routinely supporting two video
+> file formats.
+
+Older videos on that site still work.  It's only recent ones that fail. 
+Perhaps they should be going to HTML5 with the new stuff and leave the
+older as is for now.
+
+Also, Youtube is changing to HTML5 and provides a means to make it
+default for browsers that don't already favour it.  IIRC, they have more
+than a few videos.  ;-)
+
+
+From mlxxxp at gmail.com  Fri Apr 24 16:40:18 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Fri, 24 Apr 2015 12:40:18 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A5A7E.1060507@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+Message-ID: <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+
+On 24 April 2015 at 11:00, James Knott <james.knott at rogers.com> wrote:
+> Here is a link to one video that fails:
+> http://www.thestar.com/news/canada/2015/04/23/killer-sent-photos-of-dead-woman-3-children-to-biological-father-relative-says.html
+
+Worked for me. Ubuntu 14.04, Firefox 37.0.1, Shockwave Flash
+11.2.202.457 plugin.
+
+-- 
+Scott
+
+From james.knott at rogers.com  Fri Apr 24 16:55:46 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 12:55:46 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+Message-ID: <553A7592.6090104@rogers.com>
+
+On 04/24/2015 12:40 PM, Scott Allen wrote:
+> Shockwave Flash 
+> 11.2.202.457 plugin.
+
+How'd you get that?  I thought it was no longer available for Linux.
+
+
+From james.knott at rogers.com  Fri Apr 24 16:57:41 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 12:57:41 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A7592.6090104@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com>
+Message-ID: <553A7605.2040007@rogers.com>
+
+On 04/24/2015 12:55 PM, James Knott wrote:
+> On 04/24/2015 12:40 PM, Scott Allen wrote:
+>> Shockwave Flash 
+>> 11.2.202.457 plugin.
+> How'd you get that?  I thought it was no longer available for Linux.
+>
+>
+I do have flash player 11.2.202.457 installed in my system, but not as a
+plugin.
+
+From james.knott at rogers.com  Fri Apr 24 17:05:20 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 13:05:20 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A7605.2040007@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+Message-ID: <553A77D0.2040609@rogers.com>
+
+On 04/24/2015 12:57 PM, James Knott wrote:
+> On 04/24/2015 12:55 PM, James Knott wrote:
+>> On 04/24/2015 12:40 PM, Scott Allen wrote:
+>>> Shockwave Flash 
+>>> 11.2.202.457 plugin.
+>> How'd you get that?  I thought it was no longer available for Linux.
+>>
+>>
+> I do have flash player 11.2.202.457 installed in my system, but not as a
+> plugin.
+>
+
+Correction, I do have the plugin. 
+
+So, what else might I be missing?
+
+
+From mlxxxp at gmail.com  Fri Apr 24 17:28:20 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Fri, 24 Apr 2015 13:28:20 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A77D0.2040609@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+Message-ID: <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+
+On 24 April 2015 at 13:05, James Knott <james.knott at rogers.com> wrote:
+> So, what else might I be missing?
+
+Just speculating... maybe it has something to do with the particular
+video card/chip and/or driver?
+
+-- 
+Scott
+
+From james.knott at rogers.com  Fri Apr 24 17:36:24 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 13:36:24 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+Message-ID: <553A7F18.40904@rogers.com>
+
+On 04/24/2015 01:28 PM, Scott Allen wrote:
+> On 24 April 2015 at 13:05, James Knott <james.knott at rogers.com> wrote:
+>> So, what else might I be missing?
+> Just speculating... maybe it has something to do with the particular
+> video card/chip and/or driver?
+>
+
+Well, it works in a Windows virtual machine on the same computer.
+
+From mlxxxp at gmail.com  Fri Apr 24 18:20:18 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Fri, 24 Apr 2015 14:20:18 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A7F18.40904@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A7F18.40904@rogers.com>
+Message-ID: <CAArSzsVbgvVfjiYPbD8gpiBxBRd_rQSaP8gRN8217oKvmS5MNw@mail.gmail.com>
+
+On 24 April 2015 at 13:36, James Knott <james.knott at rogers.com> wrote:
+> Well, it works in a Windows virtual machine on the same computer.
+
+Does it work in an openSUSE 13.1 virtual machine on the same computer?
+
+-- 
+Scott
+
+From james.knott at rogers.com  Fri Apr 24 18:21:56 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 14:21:56 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+Message-ID: <553A89C4.3020007@rogers.com>
+
+On 04/24/2015 01:28 PM, Scott Allen wrote:
+> On 24 April 2015 at 13:05, James Knott <james.knott at rogers.com> wrote:
+>> So, what else might I be missing?
+> Just speculating... maybe it has something to do with the particular
+> video card/chip and/or driver?
+>
+
+It's HTTPS Everywhere again.
+
+From james.knott at rogers.com  Fri Apr 24 18:22:29 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 14:22:29 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <CAArSzsVbgvVfjiYPbD8gpiBxBRd_rQSaP8gRN8217oKvmS5MNw@mail.gmail.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A7F18.40904@rogers.com>
+ <CAArSzsVbgvVfjiYPbD8gpiBxBRd_rQSaP8gRN8217oKvmS5MNw@mail.gmail.com>
+Message-ID: <553A89E5.7020800@rogers.com>
+
+On 04/24/2015 02:20 PM, Scott Allen wrote:
+> Does it work in an openSUSE 13.1 virtual machine on the same computer?
+>
+
+I don't have one of those handy.  However, it turned out to be HTTPS
+Everywhere again.
+
+
+From stephen-d at rogers.com  Fri Apr 24 18:33:30 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Fri, 24 Apr 2015 14:33:30 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A89C4.3020007@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A89C4.3020007@rogers.com>
+Message-ID: <553A8C7A.6080202@rogers.com>
+
+On 15-04-24 02:21 PM, James Knott wrote:
+> On 04/24/2015 01:28 PM, Scott Allen wrote:
+>> On 24 April 2015 at 13:05, James Knott <james.knott at rogers.com> wrote:
+>>> So, what else might I be missing?
+>> Just speculating... maybe it has something to do with the particular
+>> video card/chip and/or driver?
+>>
+>
+> It's HTTPS Everywhere again.
+
+Why would HTTPS be a problem for you, but not for others?
+
+
+-- 
+Stephen
+
+From stephen-d at rogers.com  Fri Apr 24 18:37:15 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Fri, 24 Apr 2015 14:37:15 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A8C7A.6080202@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A89C4.3020007@rogers.com> <553A8C7A.6080202@rogers.com>
+Message-ID: <553A8D5B.3040603@rogers.com>
+
+On 15-04-24 02:33 PM, Stephen wrote:
+> On 15-04-24 02:21 PM, James Knott wrote:
+>> On 04/24/2015 01:28 PM, Scott Allen wrote:
+>>> On 24 April 2015 at 13:05, James Knott <james.knott at rogers.com> wrote:
+>>>> So, what else might I be missing?
+>>> Just speculating... maybe it has something to do with the particular
+>>> video card/chip and/or driver?
+>>>
+>>
+>> It's HTTPS Everywhere again.
+>
+> Why would HTTPS be a problem for you, but not for others?
+>
+>
+Check that.  I went back to you link, and it no longer works for me.
+
+-- 
+Stephen
+
+From lsorense at csclub.uwaterloo.ca  Fri Apr 24 18:39:59 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 24 Apr 2015 14:39:59 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A8C7A.6080202@rogers.com>
+References: <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A89C4.3020007@rogers.com> <553A8C7A.6080202@rogers.com>
+Message-ID: <20150424183959.GT29559@csclub.uwaterloo.ca>
+
+On Fri, Apr 24, 2015 at 02:33:30PM -0400, Stephen wrote:
+> Why would HTTPS be a problem for you, but not for others?
+
+Most of us don't try to turn every http url into an https url and many
+websites do NOT offer the same content on http and https and hence if
+you try you get an error rather than the content you wanted.
+
+If you use something like https everywhere incorrectly by trying to make
+it do https for everything, then things don't work.
+
+-- 
+Len Sorensen
+
+From stephen-d at rogers.com  Fri Apr 24 18:42:53 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Fri, 24 Apr 2015 14:42:53 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <20150424183959.GT29559@csclub.uwaterloo.ca>
+References: <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A89C4.3020007@rogers.com> <553A8C7A.6080202@rogers.com>
+ <20150424183959.GT29559@csclub.uwaterloo.ca>
+Message-ID: <553A8EAD.1030307@rogers.com>
+
+On 15-04-24 02:39 PM, Lennart Sorensen wrote:
+> On Fri, Apr 24, 2015 at 02:33:30PM -0400, Stephen wrote:
+>> Why would HTTPS be a problem for you, but not for others?
+>
+> Most of us don't try to turn every http url into an https url and many
+> websites do NOT offer the same content on http and https and hence if
+> you try you get an error rather than the content you wanted.
+>
+> If you use something like https everywhere incorrectly by trying to make
+> it do https for everything, then things don't work.
+>
+I can understand a move to https to make it more difficult for spy agencies.
+
+-- 
+Stephen
+
+From james.knott at rogers.com  Fri Apr 24 18:54:33 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 14:54:33 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <20150424183959.GT29559@csclub.uwaterloo.ca>
+References: <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A89C4.3020007@rogers.com> <553A8C7A.6080202@rogers.com>
+ <20150424183959.GT29559@csclub.uwaterloo.ca>
+Message-ID: <553A9169.4060001@rogers.com>
+
+On 04/24/2015 02:39 PM, Lennart Sorensen wrote:
+> On Fri, Apr 24, 2015 at 02:33:30PM -0400, Stephen wrote:
+>> Why would HTTPS be a problem for you, but not for others?
+> Most of us don't try to turn every http url into an https url and many
+> websites do NOT offer the same content on http and https and hence if
+> you try you get an error rather than the content you wanted.
+>
+> If you use something like https everywhere incorrectly by trying to make
+> it do https for everything, then things don't work.
+>
+
+I've found I can get the videos by disabling it for thestar.com and also
+Newslook.
+
+The idea behind HTTPS Everywhere is to use HTTPS whenever possible. 
+However, some sites, such as thestar.com can cause problems.  So, when
+you identify those sites, you can configure HTTPS Everywhere to not try
+to use HTTPS on them.
+
+
+From james.knott at rogers.com  Fri Apr 24 18:58:23 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 24 Apr 2015 14:58:23 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A8EAD.1030307@rogers.com>
+References: <CACa31mCM_O7nUvg2N===LrURxE3jG+4H9jHMCO+pAOpwiRr4kA@mail.gmail.com>
+ <55368173.3040204@rogers.com> <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A89C4.3020007@rogers.com> <553A8C7A.6080202@rogers.com>
+ <20150424183959.GT29559@csclub.uwaterloo.ca> <553A8EAD.1030307@rogers.com>
+Message-ID: <553A924F.1000600@rogers.com>
+
+On 04/24/2015 02:42 PM, Stephen wrote:
+> I can understand a move to https to make it more difficult for spy
+> agencies.
+>
+
+In fact, Google will be ranking searches according to whether the site
+supports HTTPS.
+
+From lsorense at csclub.uwaterloo.ca  Fri Apr 24 18:59:25 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 24 Apr 2015 14:59:25 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553A9169.4060001@rogers.com>
+References: <553A5A7E.1060507@rogers.com>
+ <CAArSzsVFPwG9KiyTjjiVbuMgYbk6=7WVYjCLWQxQwE8ugMP_QQ@mail.gmail.com>
+ <553A7592.6090104@rogers.com> <553A7605.2040007@rogers.com>
+ <553A77D0.2040609@rogers.com>
+ <CAArSzsUJrtXqH0NYZxBwk-rqN32rbjg8wDEmcnz7X-EuTTaFpw@mail.gmail.com>
+ <553A89C4.3020007@rogers.com> <553A8C7A.6080202@rogers.com>
+ <20150424183959.GT29559@csclub.uwaterloo.ca>
+ <553A9169.4060001@rogers.com>
+Message-ID: <20150424185925.GU29559@csclub.uwaterloo.ca>
+
+On Fri, Apr 24, 2015 at 02:54:33PM -0400, James Knott wrote:
+> I've found I can get the videos by disabling it for thestar.com and also
+> Newslook.
+> 
+> The idea behind HTTPS Everywhere is to use HTTPS whenever possible. 
+> However, some sites, such as thestar.com can cause problems.  So, when
+> you identify those sites, you can configure HTTPS Everywhere to not try
+> to use HTTPS on them.
+
+Which would then be using it correctly.  Best would be to have a proper
+rule added for the site that knows which parts can't be moved to https
+and allow the rest to move rather than just disabling it for the site
+entirely.  At least that seems to be what the documentation says.
+
+-- 
+Len Sorensen
+
+From rreiter91 at gmail.com  Fri Apr 24 19:36:07 2015
+From: rreiter91 at gmail.com (R. Russell Reiter)
+Date: Fri, 24 Apr 2015 15:36:07 -0400
+Subject: [GTALUG] Linux Australia Hacked
+Message-ID: <6C0527AD-EC76-459E-8D47-5BF5ADB882BB@gmail.com>
+
+There's a nice little presentation illustrating the effect of pushing a JMP instruction across bufferspace on hacked.com.
+
+https://hacked.com/linux-australia-hacked/
+-- 
+Sent via K-9 Mail. 
+
+From hgibson at eol.ca  Fri Apr 24 23:48:46 2015
+From: hgibson at eol.ca (Howard Gibson)
+Date: Fri, 24 Apr 2015 19:48:46 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <55363D6F.5050801@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+Message-ID: <20150424194846.ecc817b60ac6d09d4c248ef2@eol.ca>
+
+On Tue, 21 Apr 2015 08:07:11 -0400
+James Knott <james.knott at rogers.com> wrote:
+
+> Has anyone else noticed that the videos on the Toronto Star site no
+> longer work with Linux?  I've tried Firefox, Seamonkey and Chromium
+> browsers.  The videos do work in Windows.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+> 
+
+James,
+
+   I am watching a video on the Toronto Star site right now using Google Chrome on Fedora_20.
+
+   Netflix works on Google Chrome.  
+
+-- 
+Howard Gibson 
+hgibson at eol.ca
+howard.gibson at optech.com 
+jhowardgibson at gmail.com
+http://home.eol.ca/~hgibson
+
+From hugh at mimosa.com  Sat Apr 25 18:54:47 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 25 Apr 2015 14:54:47 -0400 (EDT)
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <20150424194846.ecc817b60ac6d09d4c248ef2@eol.ca>
+References: <55363D6F.5050801@rogers.com>
+ <20150424194846.ecc817b60ac6d09d4c248ef2@eol.ca>
+Message-ID: <alpine.LRH.2.02.1504251447230.27690@redclaw.mimosa.com>
+
+| From: Howard Gibson <hgibson at eol.ca>
+
+|    I am watching a video on the Toronto Star site right now using Google Chrome on Fedora_20.
+| 
+|    Netflix works on Google Chrome.  
+
+[I'm no expert: I don't like Flash so I don't have it on my Linux
+machines (although some in my family do install Flash).  In fact,
+HTML5 is annoying because finally I'm seeing ad videos in my browser.]
+
+I was under the impression that Adobe no longer supports Flash on
+Linux.  But that Chrome (not Chromium, I assume) on Linux does have
+newer Flash:
+<http://www.pcworld.com/article/250455/for_flash_on_linux_chrome_will_be_users_only_choice.html>
+Maybe that policy is no longer operative.
+
+From james.knott at rogers.com  Sat Apr 25 21:24:11 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sat, 25 Apr 2015 17:24:11 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <alpine.LRH.2.02.1504251447230.27690@redclaw.mimosa.com>
+References: <55363D6F.5050801@rogers.com>
+ <20150424194846.ecc817b60ac6d09d4c248ef2@eol.ca>
+ <alpine.LRH.2.02.1504251447230.27690@redclaw.mimosa.com>
+Message-ID: <553C05FB.1070800@rogers.com>
+
+On 04/25/2015 02:54 PM, D. Hugh Redelmeier wrote:
+> I was under the impression that Adobe no longer supports Flash on
+> Linux.  But that Chrome (not Chromium, I assume) on Linux does have
+> newer Flash:
+
+Adobe is still providing security updates, but that's all.  Chromium is
+just an openSUSE packaged version of Chrome, IIRC, and has that "Pepper"
+available too.
+
+From hugh at mimosa.com  Sun Apr 26 04:09:32 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 26 Apr 2015 00:09:32 -0400 (EDT)
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <553C05FB.1070800@rogers.com>
+References: <55363D6F.5050801@rogers.com>
+ <20150424194846.ecc817b60ac6d09d4c248ef2@eol.ca>
+ <alpine.LRH.2.02.1504251447230.27690@redclaw.mimosa.com>
+ <553C05FB.1070800@rogers.com>
+Message-ID: <alpine.LRH.2.02.1504260005100.27690@redclaw.mimosa.com>
+
+| From: James Knott <james.knott at rogers.com>
+
+|  Chromium is
+| just an openSUSE packaged version of Chrome, IIRC, and has that "Pepper"
+| available too.
+
+My understanding was that Chrome was the binary built by Google and
+Chromium was the open-source part of it that anyone could build.
+
+This says that Chromium lacks Chrome's built in flash player:
+<https://en.wikipedia.org/wiki/Google_Chrome#Chromium>
+
+[I don't use Chrome or Chromium under Linux so I'm not an expert.]
+
+From rreiter91 at gmail.com  Sun Apr 26 11:35:54 2015
+From: rreiter91 at gmail.com (R. Russell Reiter)
+Date: Sun, 26 Apr 2015 07:35:54 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <alpine.LRH.2.02.1504260005100.27690@redclaw.mimosa.com>
+References: <55363D6F.5050801@rogers.com>
+ <20150424194846.ecc817b60ac6d09d4c248ef2@eol.ca>
+ <alpine.LRH.2.02.1504251447230.27690@redclaw.mimosa.com>
+ <553C05FB.1070800@rogers.com>
+ <alpine.LRH.2.02.1504260005100.27690@redclaw.mimosa.com>
+Message-ID: <9071F492-8F47-4805-BF1C-E756DCFC3BFA@gmail.com>
+
+On April 26, 2015 12:09:32 AM EDT, "D. Hugh Redelmeier" <hugh at mimosa.com> wrote:
+>| From: James Knott <james.knott at rogers.com>
+>
+>|  Chromium is
+>| just an openSUSE packaged version of Chrome, IIRC, and has that
+>"Pepper"
+>| available too.
+>
+>My understanding was that Chrome was the binary built by Google and
+>Chromium was the open-source part of it that anyone could build.
+>
+>This says that Chromium lacks Chrome's built in flash player:
+><https://en.wikipedia.org/wiki/Google_Chrome#Chromium>
+>
+>[I don't use Chrome or Chromium under Linux so I'm not an expert.]
+>---
+>Talk Mailing List
+>talk at gtalug.org
+>http://gtalug.org/mailman/listinfo/talk
+
+It seems everyone is ditching flash.
+
+https://hacked.com/youtube-finally-ditches-flash-html5/
+
+https://hacked.com/russian-hackers-used-flash-vulnerability-foreign-governments/
+
+https://helpx.adobe.com/security/products/flash-player/apsb15-06.html
+
+-- 
+Sent via K-9 Mail. 
+
+From james.knott at rogers.com  Sun Apr 26 11:45:37 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 26 Apr 2015 07:45:37 -0400
+Subject: [GTALUG] Toronto Star videos no longer work
+In-Reply-To: <alpine.LRH.2.02.1504260005100.27690@redclaw.mimosa.com>
+References: <55363D6F.5050801@rogers.com>
+ <20150424194846.ecc817b60ac6d09d4c248ef2@eol.ca>
+ <alpine.LRH.2.02.1504251447230.27690@redclaw.mimosa.com>
+ <553C05FB.1070800@rogers.com>
+ <alpine.LRH.2.02.1504260005100.27690@redclaw.mimosa.com>
+Message-ID: <553CCFE1.5010105@rogers.com>
+
+On 04/26/2015 12:09 AM, D. Hugh Redelmeier wrote:
+> This says that Chromium lacks Chrome's built in flash player:
+> <https://en.wikipedia.org/wiki/Google_Chrome#Chromium>
+>
+
+Well, if you read it on the Internet, it must be true.  ;-)
+
+Here's what's on my openSUSE 13.1 system:
+
+"chromium-pepper-flash - Chromium Flash player plugin
+
+Pepper API based Adobe Flash plugin for Google's Open Source browser
+Chromium."
+
+From cdasilva at iprimus.ca  Sun Apr 26 14:25:48 2015
+From: cdasilva at iprimus.ca (Clive DaSilva)
+Date: Sun, 26 Apr 2015 10:25:48 -0400
+Subject: [GTALUG] Is anyone seeing my messages ?
+Message-ID: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+
+Hello
+
+ 
+
+I quite often post comments/responses to this board but I never see them on
+the list of posted items. 
+
+Is anyone seeing my postings because I am not?
+
+ 
+
+---------
+
+Clive DaSilva - cdasilva at iprimus.ca 
+
+Mailing List -  <mailto:talk at gtalug.org> talk at gtalug.org 
+
+                           <http://gtalug.org/mailman/listinfo/talk>
+http://gtalug.org/mailman/listinfo/talk
+
+ 
+
+ 
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150426/7abf8fde/attachment.html>
+
+From james.knott at rogers.com  Sun Apr 26 14:30:27 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 26 Apr 2015 10:30:27 -0400
+Subject: [GTALUG] Is anyone seeing my messages ?
+In-Reply-To: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+References: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+Message-ID: <553CF683.6050004@rogers.com>
+
+On 04/26/2015 10:25 AM, Clive DaSilva wrote:
+>
+> I quite often post comments/responses to this board but I never see
+> them on the list of posted items.
+>
+> Is anyone seeing my postings because I am not?
+>
+
+Well, I don't know about the others, but I didn't see this one.  ;-)
+
+
+From kalibslack at gmail.com  Sun Apr 26 14:45:19 2015
+From: kalibslack at gmail.com (Marcelo Kalib)
+Date: Sun, 26 Apr 2015 11:45:19 -0300
+Subject: [GTALUG] Is anyone seeing my messages ?
+In-Reply-To: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+References: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+Message-ID: <1430059521262-6bfa45ed-76ddb62f-a41890b9@gmail.com>
+
+Saw your message. Just fine.
+
+Sent using CloudMagic [https://cloudmagic.com/k/d/mailapp?ct=pi&cv=6.0.64&pv=8.2]
+On dom, abr 26, 2015 at 11:25, GTALUG Talk <talk at gtalug.org> wrote:
+Hello
+
+
+
+I quite often post comments/responses to this board but I never see them on the
+list of posted items.
+
+Is anyone seeing my postings because I am not?
+
+
+
+---------
+
+Clive DaSilva ? cdasilva at iprimus.ca
+
+Mailing List - talk at gtalug.org [talk at gtalug.org]
+
+http://gtalug.org/mailman/listinfo/talk
+[http://gtalug.org/mailman/listinfo/talk]
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150426/3baedd9d/attachment.html>
+
+From wwitteman at gmail.com  Sun Apr 26 14:56:19 2015
+From: wwitteman at gmail.com (William Witteman)
+Date: Sun, 26 Apr 2015 10:56:19 -0400
+Subject: [GTALUG] Is anyone seeing my messages ?
+In-Reply-To: <CAGMvh24uM2XHHM=E3FM+zYYrfhVUkN6Tp76=-E_Rf2m6kbvu8Q@mail.gmail.com>
+References: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+ <CAGMvh24uM2XHHM=E3FM+zYYrfhVUkN6Tp76=-E_Rf2m6kbvu8Q@mail.gmail.com>
+Message-ID: <CAGMvh26UWy3sQSpNRhFpM6USYgYEtXkL=Q5Hw45fD-qNvJAxzQ@mail.gmail.com>
+
+I see something from you on the 21 of April, and before that on the 16 of
+January.  So, maybe?
+
+William
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150426/b665e104/attachment.html>
+
+From john.moniz at sympatico.ca  Sun Apr 26 17:04:58 2015
+From: john.moniz at sympatico.ca (John Moniz)
+Date: Sun, 26 Apr 2015 13:04:58 -0400
+Subject: [GTALUG] Is anyone seeing my messages ?
+In-Reply-To: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+Message-ID: <BLU436-SMTP61C445AF93A034205E515CE3EA0@phx.gbl>
+
+I saw one a few days ago, not much more.
+
+On Apr 26, 2015 10:25 AM, Clive DaSilva <cdasilva at iprimus.ca> wrote:
+>
+> Hello
+>
+> ?
+>
+> I quite often post comments/responses to this board but I never see them on the list of posted items.
+>
+> Is anyone seeing my postings because I am not?
+>
+> ?
+>
+> ---------
+>
+> Clive DaSilva ? cdasilva at iprimus.ca
+>
+> Mailing List - talk at gtalug.org
+>
+> ??????????????????????????http://gtalug.org/mailman/listinfo/talk
+>
+> ?
+>
+> ?
+
+From cdasilva at iprimus.ca  Sun Apr 26 17:24:12 2015
+From: cdasilva at iprimus.ca (Clive DaSilva)
+Date: Sun, 26 Apr 2015 13:24:12 -0400
+Subject: [GTALUG] Is anyone seeing my messages ?
+In-Reply-To: <BLU436-SMTP61C445AF93A034205E515CE3EA0@phx.gbl>
+References: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+ <BLU436-SMTP61C445AF93A034205E515CE3EA0@phx.gbl>
+Message-ID: <001b01d08045$d0006550$70012ff0$@iprimus.ca>
+
+Thanks guys.
+
+I guess I don't see my own messages
+
+
+---------
+Clive DaSilva ? cdasilva at iprimus.ca 
+Mailing List - talk at gtalug.org 
+                          http://gtalug.org/mailman/listinfo/talk
+
+
+
+-----Original Message-----
+From: talk [mailto:talk-bounces at gtalug.org] On Behalf Of John Moniz
+Sent: April-26-15 1:05 PM
+To: GTALUG Talk
+Subject: Re: [GTALUG] Is anyone seeing my messages ?
+
+I saw one a few days ago, not much more.
+
+On Apr 26, 2015 10:25 AM, Clive DaSilva <cdasilva at iprimus.ca> wrote:
+>
+> Hello
+>
+>  
+>
+> I quite often post comments/responses to this board but I never see them on the list of posted items.
+>
+> Is anyone seeing my postings because I am not?
+>
+>  
+>
+> ---------
+>
+> Clive DaSilva ? cdasilva at iprimus.ca
+>
+> Mailing List - talk at gtalug.org
+>
+>                           http://gtalug.org/mailman/listinfo/talk
+>
+>  
+>
+>  
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+
+From lsorense at csclub.uwaterloo.ca  Sun Apr 26 17:40:01 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sun, 26 Apr 2015 13:40:01 -0400
+Subject: [GTALUG] Is anyone seeing my messages ?
+In-Reply-To: <001b01d08045$d0006550$70012ff0$@iprimus.ca>
+References: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+ <BLU436-SMTP61C445AF93A034205E515CE3EA0@phx.gbl>
+ <001b01d08045$d0006550$70012ff0$@iprimus.ca>
+Message-ID: <20150426174001.GV29559@csclub.uwaterloo.ca>
+
+On Sun, Apr 26, 2015 at 01:24:12PM -0400, Clive DaSilva wrote:
+> Thanks guys.
+> 
+> I guess I don't see my own messages
+
+That is a config option in the mailing list.  Go change it if you want
+to receive them.
+
+Just go to the subscribe page and put your email in the unsubscribe/edit
+settings box, then enter your password, and it will have a lot of options
+you can set.
+
+-- 
+Len Sorensen
+
+From davec-b at rogers.com  Sun Apr 26 22:17:05 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Sun, 26 Apr 2015 18:17:05 -0400
+Subject: [GTALUG] Is anyone seeing my messages ?
+In-Reply-To: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+References: <006a01d0802c$e4193d00$ac4bb700$@iprimus.ca>
+Message-ID: <553D63E1.8010902@rogers.com>
+
+On 04/26/2015 10:25 AM, Clive DaSilva wrote:
+>
+> Hello
+>
+> I quite often post comments/responses to this board but I never see 
+> them on the list of posted items.
+>
+> Is anyone seeing my postings because I am not?
+>
+> ---------
+>
+> Clive DaSilva ? cdasilva at iprimus.ca
+>
+> Mailing List - talk at gtalug.org <mailto:talk at gtalug.org>
+>
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+I saw that one.
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150426/ab01eb61/attachment.html>
+
+From me at mylesbraithwaite.com  Sun Apr 26 23:15:11 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Sun, 26 Apr 2015 19:15:11 -0400
+Subject: [GTALUG] Dinner before May 2015 GTALUG meeting (was Meeting 11th
+	May, 2015 at 7:30pm)
+Message-ID: <CA+hskZMdiyuH9qEgXCyjZKMs+v09Ep+1TriqVyxqL-A53TVdTQ@mail.gmail.com>
+
+Voting open for dinner options before next month's GTALUG meeting:
+<http://strawpoll.me/4216617>.
+
+On Sun, Apr 26, 2015 at 7:13 PM, Myles Braithwaite
+<me at mylesbraithwaite.com> wrote:
+> * 6:00 pm - Before each meeting a group of GTALUGers dine at to be
+> determined restaurant. Vote here: <http://strawpoll.me/4216617>.
+
+From me at mylesbraithwaite.com  Sun Apr 26 23:13:29 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Sun, 26 Apr 2015 19:13:29 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting 11th May, 2015 at 7:30pm
+Message-ID: <CA+hskZMrsU4TfrugQ4s8i9jSfd4tAtqMSyrZr8Cdj2RQ8U3W_Q@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-05/>
+
+# OpenStreetMap with Stewart Russell
+
+OpenStreetMap is built by a community of mappers that contribute and
+maintain an open data set of roads, trails, cafes. buildings, railway
+stations, and much more.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before each meeting a group of GTALUGers dine at to be
+determined restaurant. Vote here: <http://strawpoll.me/4216617>.
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From hugh at mimosa.com  Mon Apr 27 05:56:04 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 27 Apr 2015 01:56:04 -0400 (EDT)
+Subject: [GTALUG] Virtualized OSes
+In-Reply-To: <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+References: <CAEnxSC7TUbEW3gyEYQcC8pCK+Mc=QC1Uh5dY_KMPuuYPwxQOYQ@mail.gmail.com>
+ <alpine.LRH.2.02.1504221644040.3961@redclaw.mimosa.com>
+Message-ID: <alpine.LRH.2.02.1504270153360.1043@redclaw.mimosa.com>
+
+| From: D. Hugh Redelmeier <hugh at mimosa.com>
+
+| So much of the noise this day is about things like Docker and CoreOS.
+| A lot feels like branding exercises rather than technology.  I find it
+| too hard to figure out what they actually are.
+
+I guess that Ubuntu Snappy is something like this.  I gave up figuring
+out what it is after a couple of minutes of reading marketing.
+
+<http://www.phoronix.com/scan.php?page=news_item&px=Ubuntu-15.10-DEB-To-Snap>
+
+From hugh at mimosa.com  Mon Apr 27 21:35:10 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 27 Apr 2015 17:35:10 -0400 (EDT)
+Subject: [GTALUG] Libre Graphics
+Message-ID: <alpine.LRH.2.02.1504271732190.1043@redclaw.mimosa.com>
+
+<http://libregraphicsmeeting.org/2015/>
+
+Meeting in Toronto this week.  Pre-meeting workshops started today.
+

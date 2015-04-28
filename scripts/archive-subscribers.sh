@@ -8,8 +8,13 @@ git pull origin master
 
 # Set up password for Mailman
 MAILMANPASSDIR=${MAILMANPASSFILE:-${HOME}/GitConfig/InitFiles/GTALUG/}
+  # The passwords for mailing lists needs to be placed in
+  # $MAILMANPASSDIR/announce, $MAILMANPASSDIR/operations, $MAILMANPASSDIR/talk
+  # That obviously shouldn't be published in the git repo publicly, here.
+  # See Mailman/mpass to find GPG'ed copy of passwords
+###  Python tool: https://github.com/larsks/mailman-subscribers/blob/master/mailman-subscribers.py
 
-GPGKEYS=${GPGKEYS:-"6AA6A713 5A2FE7BF"}
+GPGKEYS=${GPGKEYS:-"6AA6A713 5A2FE7BF D598FD34"}
 
 for list in announce operations talk; do
     listname=${list}
