@@ -14,12 +14,12 @@ Create a directory called `GTALUG` in home and then clone backups subfolder.
 
 # Restoring backups
 
-Restore gtalug.org and run it in developer mode
+Currently the script only restores gtalug.org site in developer mode
 
     $ cd scripts/restore
     $ ./restore_everything.sh
 
-# Creating Backups
+# Running Backups
 
 You need access to gtalug server and write access to gtalug/backups repository.
 
@@ -49,20 +49,25 @@ The result should display the owner of each key.
     gpg --keyserver pgp.mit.edu --recv-keys 0x5A2FE7BF
     gpg --keyserver pgp.mit.edu --recv-keys 0xD598FD34
 
-# Extract mailman passwords and setup $MAILMANPASSFILE env variable and run archive-subscribers.sh
+# Extract mailman passwords
+ and run archive-subscribers.sh
 
 Go to   `backups/Mailman/mmpass/` and extract encrypted data from `mailman-passwords.tar.bz2.asc`, you either need to be the owner of one of the keys mentioned in **Receive the appropriate keys** section, these are the keys used in encrypting `mailman-passwords.tar.bz2.asc`.
 
 If you want your key added to the list, please email `operations@gtalug.org`
 
 Use the following command to extract the keys:
+
     $ cd Mailman/mmpass
     $ gpg --output mailman-passwords.tar.bz2 --decrypt mailman-passwords.tar.bz2.asc
-    $tar xjf mailman-passwords.tar.bz2
+    $ tar xjf mailman-passwords.tar.bz2
 
-Export $MAILMANPASSFILE environmental variable
+# Export $MAILMANPASSFILE environmental variable
 
     $ export MAILMANPASSFILE=${PWD}
-    $ cd ../../scripts
 
+# Run the backups
+
+    $ cd ../../scripts
+    $ for k in *.sh; do ./${k}; done
 
