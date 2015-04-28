@@ -16,6 +16,13 @@ MAILMANPASSDIR=${MAILMANPASSFILE:-${HOME}/GitConfig/InitFiles/GTALUG/}
 
 GPGKEYS=${GPGKEYS:-"6AA6A713 5A2FE7BF D598FD34"}
 
+GPG_RECIPIENTS=""
+
+for gpgkey in GPGKEYS
+do
+    GPG_RECIPIENTS="${GPG_RECIPIENT} --recipient ${gpgkey}"
+done
+
 for list in announce operations talk; do
     listname=${list}
     listfile=${ARCHIVEHOME}/${listname}/subscribers.asc
@@ -23,7 +30,8 @@ for list in announce operations talk; do
     echo "Grabbing subscribers of GTALUG list ${listname} into data file: [${templocation}]"
     python ${MAILMANSUBTOOL} -o ${templocation} --password-file=${MAILMANPASSDIR}/${list} gtalug.org ${listname}
     echo "Encrypt [${templocation}] into [${listfile}] for GPG user list ${GPGKEYS}"
-    gpg --encrypt --armor -r "${GPGKEYS}" --batch --yes --trust-model always -o ${listfile} ${templocation}
+
+    gpg --encrypt --armor ${GPG_RECIPIENTS} --batch --yes --trust-model always -o ${listfile} ${templocation}
     rm -f ${templocation}
     git add ${listfile}
 done
