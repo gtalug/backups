@@ -64,7 +64,13 @@ Use the following command to extract the keys:
 
 # Export $MAILMANPASSFILE environmental variable
 
+While you still in Mailman/mmpass directory, run the following command
+
     $ export MAILMANPASSFILE=${PWD}
+
+Alternatively you can use full path to the repository
+
+    $ export MAILMANPASSFILE=${HOME}/GTALUG/backups/Mailman/mmpass/
 
 # Run the backups
 
