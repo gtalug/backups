@@ -3,6 +3,10 @@ backups
 
 This repo pulls backups of various sorts of GTALUG infrastructure.
 
+# Prerequisites
+
+You need git, gpg, ssh in order to run the scripts.
+
 # Setup
 
 Create a directory called `GTALUG` in home and then clone backups subfolder.
