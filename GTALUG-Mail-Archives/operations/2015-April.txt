@@ -787,3 +787,108 @@ Message-ID: <553EDDA5.4000301@mylesbraithwaite.com>
 
 <https://trello.com/b/JNHsDwys/linux-in-the-park-2015>
 
+From cbbrowne at gmail.com  Tue Apr 28 17:07:59 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 28 Apr 2015 13:07:59 -0400
+Subject: [GTALUG-Ops] My gpg key
+In-Reply-To: <553ED865.1050501@gmail.com>
+References: <553ED865.1050501@gmail.com>
+Message-ID: <CAFNqd5XM5hZJOjGc+K7PkwMKqSv0TidwVkZJFntCPb5ZDsX3Jg@mail.gmail.com>
+
+On 27 April 2015 at 20:46, Alex Volkov <avolkov at gmail.com> wrote:
+>
+> -----BEGIN PGP SIGNED MESSAGE-----
+> Hash: SHA256
+>
+> Hi Chris,
+>
+> Here's my gpg key.
+>
+> Alex.
+> -----BEGIN PGP SIGNATURE-----
+> Version: GnuPG v2
+>
+> iQIcBAEBCAAGBQJVPthaAAoJEPNlH7nVmP00ZHcP+gN6W4iyUCiHh8UOe4/Xbl4w
+> /FMMCL0/AXckMKXCEOuE2scIqHUBOOIakuElVDrmyTf5DCz9/jIdRP29nAw3xYCl
+> kEdxd6wNTO253xJf8+Oz1/4w2cwWYd1nvOegLw+onuEWYomGET5vLjoPwVa686dx
+> STqB+nbh4FY2xQZL9liEExjaQz9QfeDYgugPEW6ycu9gNQ+htOBPrUoH3fFth69+
+> 6mzZo7XxNBjtscKAPIWiZFitsk9V6LKnHo2LfYo6mk0vzaAeHmy0i+Yah0R8l7Jj
+> cL/i1OsMMv8PV6kOwO+0bHIZCLGqIxGDN62bTrE5IwOyaUgIGTZXpu78LFIXMyCY
+> 00D1ML+Xh7GF0/4a9Ye9FB0LjlNtKDLI+3rniEsKo4aTs9FunAbXxLdOxuDUKrDd
+> XvNzhZhmT/WDosWQPqqO/y2k8IXT8/4E8qy46hpWcND8c1W2y+Qia3ymC54fOZ/X
+> uAVV2lXtyzVTP/XYWVHeOLTQJkeqk9j5gYZ5x8fNvrraxdYcKWqPIry4QVzdThQC
+> YOitgFCKWG56k3y8cjDN4gY07iTOKTdOAsweb3hoojT4ZpVpCPJbyqmDH+UAHk5Z
+> C18RwB1mp62Ib0KHDFZLpZa021Ral+o/k/s1UQXjPNE7tU6YuMJmda3+C/jO+Ryx
+> P8m6eGFDtSAqjpUJVJOZ
+> =JHJ/
+> -----END PGP SIGNATURE-----
+>
+
+Thanks, I have put a tarball in the following commit that contains the
+passwords,
+encrypted for you, I, and Myles to be able to access.
+
+https://github.com/gtalug/backups/commit/89faef9a2223fde1cf215ffe91a268bd58c9f503
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From qwerty172 at gmail.com  Tue Apr 28 18:55:55 2015
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Tue, 28 Apr 2015 14:55:55 -0400
+Subject: [GTALUG-Ops] CAG Meeting
+Message-ID: <CAA3RLT5m+h7di+NDi1QufxYWm1dfQp4-Z8DJqPfTz2HXkxcgPQ@mail.gmail.com>
+
+Now that Mike will be abandoning us for a couple of months, I would like to
+propose that CAG get together and figure out direction.
+
+I am proposing the first Tuesday of the month which would be next week.
+
+Is anyone interested?
+
+Bill
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150428/e5111564/attachment.html>
+
+From gordontc at look.ca  Tue Apr 28 20:03:43 2015
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Tue, 28 Apr 2015 16:03:43 -0400
+Subject: [GTALUG-Ops] CAG Meeting
+In-Reply-To: <CAA3RLT5m+h7di+NDi1QufxYWm1dfQp4-Z8DJqPfTz2HXkxcgPQ@mail.gmail.com>
+References: <CAA3RLT5m+h7di+NDi1QufxYWm1dfQp4-Z8DJqPfTz2HXkxcgPQ@mail.gmail.com>
+Message-ID: <1430251423.9275.1.camel@larva.gordhome.local>
+
+Yeh.
+
+
+Time?
+
+Gordon
+
+
+On Tue, 2015-04-28 at 14:55 -0400, Bill Thanis wrote:
+> 
+> 
+> Now that Mike will be abandoning us for a couple of months, I would
+> like to propose that CAG get together and figure out direction.
+> 
+> 
+> I am proposing the first Tuesday of the month which would be next
+> week.
+> 
+> 
+> Is anyone interested?
+> 
+> 
+> Bill
+> 
+> 
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+
+
