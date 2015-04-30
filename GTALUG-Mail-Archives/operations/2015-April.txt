@@ -892,3 +892,141 @@ On Tue, 2015-04-28 at 14:55 -0400, Bill Thanis wrote:
 
 
 
+From ivan.avery.frey at gmail.com  Wed Apr 29 15:31:16 2015
+From: ivan.avery.frey at gmail.com (Ivan Avery Frey)
+Date: Wed, 29 Apr 2015 15:31:16 +0000
+Subject: [GTALUG-Ops] CAG Meeting
+In-Reply-To: <CAA3RLT5m+h7di+NDi1QufxYWm1dfQp4-Z8DJqPfTz2HXkxcgPQ@mail.gmail.com>
+References: <CAA3RLT5m+h7di+NDi1QufxYWm1dfQp4-Z8DJqPfTz2HXkxcgPQ@mail.gmail.com>
+Message-ID: <CAB9QdHO3EQtP1jJBc7YrCLQGGdgGAAs8VPqG2MzvG0Uy1A7SHQ@mail.gmail.com>
+
+On Tue, Apr 28, 2015, 14:55 Bill Thanis <qwerty172 at gmail.com> wrote:
+
+
+Now that Mike will be abandoning us for a couple of months, I would like to
+propose that CAG get together and figure out direction.
+
+I am proposing the first Tuesday of the month which would be next week.
+
+Is anyone interested?
+
+Bill
+
+
+I'm interested. Sorry about the quoting. I can't seem to turn it off in
+Google's Inbox App.
+
+Ivan.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150429/fd96b519/attachment.html>
+
+From davec-b at rogers.com  Wed Apr 29 15:50:31 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Wed, 29 Apr 2015 11:50:31 -0400
+Subject: [GTALUG-Ops] CAG Meeting
+In-Reply-To: <CAA3RLT5m+h7di+NDi1QufxYWm1dfQp4-Z8DJqPfTz2HXkxcgPQ@mail.gmail.com>
+References: <CAA3RLT5m+h7di+NDi1QufxYWm1dfQp4-Z8DJqPfTz2HXkxcgPQ@mail.gmail.com>
+Message-ID: <5540FDC7.90705@rogers.com>
+
+Sure: where and when, and can we suck in the original requester (Drew)?
+
+--dave
+
+
+On 04/28/2015 02:55 PM, Bill Thanis wrote:
+>
+> Now that Mike will be abandoning us for a couple of months, I would 
+> like to propose that CAG get together and figure out direction.
+>
+> I am proposing the first Tuesday of the month which would be next week.
+>
+> Is anyone interested?
+>
+> Bill
+>
+>
+>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150429/fdc9345b/attachment.html>
+
+From davec-b at rogers.com  Wed Apr 29 15:57:05 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Wed, 29 Apr 2015 11:57:05 -0400
+Subject: [GTALUG-Ops] Fwd: Re:  CAG Meeting
+In-Reply-To: <5540FDC7.90705@rogers.com>
+References: <5540FDC7.90705@rogers.com>
+Message-ID: <5540FF51.7030207@rogers.com>
+
+Drew, could I suck you into this discussion re a CAG reboot?
+I'm interested in
+
+* are we doing what we though we were?
+* what's happened since then?
+* what opportunities are there?
+
+--dave
+
+
+-------- Forwarded Message --------
+Subject: 	Re: [GTALUG-Ops] CAG Meeting
+Date: 	Wed, 29 Apr 2015 11:50:31 -0400
+From: 	David Collier-Brown <davec-b at rogers.com>
+Reply-To: 	davecb at spamcop.net, GTALUG Operations <operations at gtalug.org>
+To: 	operations at gtalug.org
+
+
+
+Sure: where and when, and can we suck in the original requester (Drew)?
+
+--dave
+
+
+On 04/28/2015 02:55 PM, Bill Thanis wrote:
+>
+> Now that Mike will be abandoning us for a couple of months, I would 
+> like to propose that CAG get together and figure out direction.
+>
+> I am proposing the first Tuesday of the month which would be next week.
+>
+> Is anyone interested?
+>
+> Bill
+>
+>
+>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net            |                      -- Mark Twain
+
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150429/76747aa8/attachment.html>
+-------------- next part --------------
+---
+GTALUG Operations Mailing List
+operations at gtalug.org
+http://gtalug.org/mailman/listinfo/operations
+
+
