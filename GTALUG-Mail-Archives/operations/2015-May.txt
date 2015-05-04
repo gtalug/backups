@@ -1,8 +1,0 @@
-From me at mylesbraithwaite.com  Sat May  2 20:05:11 2015
-From: me at mylesbraithwaite.com (Myles Braithwaite)
-Date: Sat, 02 May 2015 16:05:11 -0400
-Subject: [GTALUG-Ops] Hello, World!
-Message-ID: <55452DF7.4060608@mylesbraithwaite.com>
-
-Just testing the mailing lists after the upgrade.
-
