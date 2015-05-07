@@ -233,3 +233,179 @@ On 15-05-04 07:32 AM, James Knott wrote:
 -- 
 Stephen
 
+From gordontc at look.ca  Wed May  6 16:42:21 2015
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Wed, 06 May 2015 12:42:21 -0400
+Subject: [GTALUG] ICANN's Proposal to Move IANA
+Message-ID: <1430930541.24607.2.camel@larva.gordhome.local>
+
+Hi, all:
+
+You probably know that in March 2014, the U.S. Department of Commerce's
+National Telecommunications and Information Administration (NTIA)
+announced its intent to “transition its stewardship role of the IANA
+Functions and related management”.   This meant that NTIA will no longer
+oversee a contract with ICANN to manage IANA.   ICANN will have to do it
+itself.
+
+To get this started, NTIA called on ICANN to “coordinate” the drafting
+of a proposal to transition this stewardship role to the broader global
+multi-stakeholder community.    This meant drafting of a proposal of its
+own and inviting other proposals from IETF and the various numbers
+registries (ARIN, RIPE and the others) and then coordinating them all
+into one proposal to present to NTIA.
+
+ICANN now has a (second) draft of its proposal “ready for comment” (this
+request for public comment is fairly standard for ICANN policy
+documents).
+
+This one is important enough that we're asking you to look it over and
+accept ICANN's invitation to comment.   Comments are going to be
+accepted until May 20 – that's short, I know, but there it is.
+
+Now, this is a pretty complex document – it's a kind of complex matter,
+involving contract law (in California, where ICANN is registered), the
+concerns of a lot of stakeholders outside the US, and the need for ICANN
+to be seen to be accountable.
+
+So, here it is.   Send your comments to me at gordon at look.ca and I'll
+compile them into a group comment for ICANN.
+
+https://www.icann.org/en/system/files/files/cwg-stewardship-draft-proposal-without-annexes-22apr15-en.pdf
+
+I'm not sure you want to tackle the proposal with annexes.   It's
+painful.
+
+Enjoy
+
+Gordon 
+
+Community Affairs Group
+GTALUG
+
+
+
+
+
+From gordontc at look.ca  Wed May  6 20:08:24 2015
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Wed, 06 May 2015 16:08:24 -0400
+Subject: [GTALUG] ICANN's Proposal to Move IANA
+In-Reply-To: <1430930541.24607.2.camel@larva.gordhome.local>
+References: <1430930541.24607.2.camel@larva.gordhome.local>
+Message-ID: <1430942904.26733.1.camel@larva.gordhome.local>
+
+Hi, again:
+
+Comes of doing things when you're not awake yet.
+
+I misspelled my own e-mail address.   It should be gordontc at look.ca
+
+Sorry about that . . . 
+
+Gordon
+
+
+On Wed, 2015-05-06 at 12:42 -0400, Gordon Chillcott wrote:
+> Hi, all:
+> 
+> You probably know that in March 2014, the U.S. Department of Commerce's
+> National Telecommunications and Information Administration (NTIA)
+> announced its intent to “transition its stewardship role of the IANA
+> Functions and related management”.   This meant that NTIA will no longer
+> oversee a contract with ICANN to manage IANA.   ICANN will have to do it
+> itself.
+> 
+> To get this started, NTIA called on ICANN to “coordinate” the drafting
+> of a proposal to transition this stewardship role to the broader global
+> multi-stakeholder community.    This meant drafting of a proposal of its
+> own and inviting other proposals from IETF and the various numbers
+> registries (ARIN, RIPE and the others) and then coordinating them all
+> into one proposal to present to NTIA.
+> 
+> ICANN now has a (second) draft of its proposal “ready for comment” (this
+> request for public comment is fairly standard for ICANN policy
+> documents).
+> 
+> This one is important enough that we're asking you to look it over and
+> accept ICANN's invitation to comment.   Comments are going to be
+> accepted until May 20 – that's short, I know, but there it is.
+> 
+> Now, this is a pretty complex document – it's a kind of complex matter,
+> involving contract law (in California, where ICANN is registered), the
+> concerns of a lot of stakeholders outside the US, and the need for ICANN
+> to be seen to be accountable.
+> 
+> So, here it is.   Send your comments to me at gordon at look.ca and I'll
+> compile them into a group comment for ICANN.
+> 
+> https://www.icann.org/en/system/files/files/cwg-stewardship-draft-proposal-without-annexes-22apr15-en.pdf
+> 
+> I'm not sure you want to tackle the proposal with annexes.   It's
+> painful.
+> 
+> Enjoy
+> 
+> Gordon 
+> 
+> Community Affairs Group
+> GTALUG
+> 
+> 
+> 
+> 
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+
+From james.knott at rogers.com  Wed May  6 20:16:11 2015
+From: james.knott at rogers.com (James Knott)
+Date: Wed, 06 May 2015 16:16:11 -0400
+Subject: [GTALUG] ICANN's Proposal to Move IANA
+In-Reply-To: <1430942904.26733.1.camel@larva.gordhome.local>
+References: <1430930541.24607.2.camel@larva.gordhome.local>
+ <1430942904.26733.1.camel@larva.gordhome.local>
+Message-ID: <554A768B.8000800@rogers.com>
+
+On 05/06/2015 04:08 PM, Gordon Chillcott wrote:
+> I misspelled my own e-mail address.   It should be gordontc at look.ca
+>
+> Sorry about that . . . 
+
+You should have had your morning beer first.  ;-)
+
+From phiscock at ee.ryerson.ca  Wed May  6 20:52:03 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Wed, 6 May 2015 16:52:03 -0400
+Subject: [GTALUG] ICANN's Proposal to Move IANA
+In-Reply-To: <554A768B.8000800@rogers.com>
+References: <1430930541.24607.2.camel@larva.gordhome.local>
+ <1430942904.26733.1.camel@larva.gordhome.local>
+ <554A768B.8000800@rogers.com>
+Message-ID: <b03d2070655e07bd633b1449e43ae7be.squirrel@webmail.ee.ryerson.ca>
+
+
+> On 05/06/2015 04:08 PM, Gordon Chillcott wrote:
+>> I misspelled my own e-mail address.   It should be gordontc at look.ca
+>>
+>> Sorry about that . . .
+>
+> You should have had your morning beer first.  ;-)
+> ---
+
+Sign outside pub on the Danforth:
+
+Beer, not just for breakfast.
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
