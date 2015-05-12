@@ -590,3 +590,239 @@ VAX 11/780 systems.  That was the old 10base5 network with vampire taps.
 
 
 
+From me at mylesbraithwaite.com  Mon May 11 14:04:05 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 11 May 2015 10:04:05 -0400
+Subject: [GTALUG] [GTALUG-Announce] GTALUG Meeting Tomorrow at 7:30pm
+Message-ID: <CA+hskZMY7ksR_LC56Ag8AcT1vqEgT=wzY-AUKm0x4+WL2RX9GQ@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-05/>
+
+# OpenStreetMap with Stewart Russell
+
+OpenStreetMap is more than just a web mapping platform. It's a
+comprehensive, community-maintained map/geodatabase of the world that
+you can hack on. Since the last GTALUG talk on OSM over five years
+ago, it's grown a lot, and developed a huge community of mappers,
+developers and data users. In this talk, we'll discuss the basics of
+using OSM, how it survived a major licence change with only a little
+drama, and how it succeeds as a community.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before the meeting a group of GTALUGers will be dining at
+It's All Grk (101 Dundas St East).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East).
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members @
+<board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From lsorense at csclub.uwaterloo.ca  Mon May 11 16:12:33 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 11 May 2015 12:12:33 -0400
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+In-Reply-To: <554F5A3B.7070002@rogers.com>
+References: <554EBB29.6020604@rogers.com> <554EC5A7.3000706@gmail.com>
+ <554F5A3B.7070002@rogers.com>
+Message-ID: <20150511161233.GA24390@csclub.uwaterloo.ca>
+
+On Sun, May 10, 2015 at 09:16:43AM -0400, Stephen wrote:
+> On 15-05-09 10:42 PM, Stewart C. Russell wrote:
+> >Hi Stephen:
+> >>I am running Ubuntu 14.04
+> >>
+> >>I downloaded the *.deb file from the Epson web site:
+> >>
+> >>epson-inkjet-printer-escpr_1.4.5-1lsb3.2_i386.deb
+> >
+> >Getting the right LSB package installed can be a pain. If you're not
+> >using paper larger than Letter, the standard CUPS ESC/P-R driver
+> >/should/ drive this printer fairly well.
+> >
+> >I've had the larger (size of a small tank, to be honest) WF-7520 for
+> >years, and it's been great. Duplex ADF scanning, SANE support over the
+> >network, scan to SD card (which appears as a samba share on the network)
+> >... it just works.
+> 
+> I have confirmed that I have LSB 4.1 installed using the Ubuntu
+> Software Centre.
+> 
+> But the install of the Epson driver still asserts a dependency error
+> needed >=3.2
+> 
+> I have run apt-get update and apt-get upgrade.
+
+Could you try:
+
+dpkg -l|grep lsb
+
+and post the output.
+
+And are you running 32 or 64bit system?  After all the driver package
+you are trying to isntall is 32bit and you might be running a 64bit
+system and hence be missing dependancies for that driver.
+
+The main lsb package (not lsb-printing) which seems to be what it depends
+depends on lsb-printing, lsb-graphics, lsb-core, and a number of other
+packages.
+
+Perhaps just doing 'apt-get install lsb' would solve the problem.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Mon May 11 16:15:34 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 11 May 2015 12:15:34 -0400
+Subject: [GTALUG] free: ethernet cards
+In-Reply-To: <alpine.LRH.2.02.1505101557430.3626@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1505101557430.3626@redclaw.mimosa.com>
+Message-ID: <20150511161534.GB24390@csclub.uwaterloo.ca>
+
+On Sun, May 10, 2015 at 04:01:22PM -0400, D. Hugh Redelmeier wrote:
+> I'm getting rid of around a dozen 10/100m PCI ethernet cards.  If anyone 
+> wants some or all, just send me email and I'll bring them to the meeting.
+> 
+> Also available: a few 10m ISA ethernet cards, most 10baseT and 10base2.
+
+My 486 already has 2 (nice 3com cards too), and Debian no longer supports
+486s. :)
+
+-- 
+Len Sorensen
+
+From stephen-d at rogers.com  Mon May 11 16:16:04 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Mon, 11 May 2015 12:16:04 -0400
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+In-Reply-To: <20150511161233.GA24390@csclub.uwaterloo.ca>
+References: <554EBB29.6020604@rogers.com> <554EC5A7.3000706@gmail.com>
+ <554F5A3B.7070002@rogers.com> <20150511161233.GA24390@csclub.uwaterloo.ca>
+Message-ID: <5550D5C4.3010600@rogers.com>
+
+On 15-05-11 12:12 PM, Lennart Sorensen wrote:
+
+> And are you running 32 or 64bit system?  After all the driver package
+> you are trying to isntall is 32bit and you might be running a 64bit
+> system and hence be missing dependancies for that driver.
+
+This was the problem. Silly.
+
+Using the 64bit driver fixed everything!
+
+Thanks
+
+-- 
+Stephen
+
+From lsorense at csclub.uwaterloo.ca  Mon May 11 17:29:28 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 11 May 2015 13:29:28 -0400
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+In-Reply-To: <5550D5C4.3010600@rogers.com>
+References: <554EBB29.6020604@rogers.com> <554EC5A7.3000706@gmail.com>
+ <554F5A3B.7070002@rogers.com>
+ <20150511161233.GA24390@csclub.uwaterloo.ca>
+ <5550D5C4.3010600@rogers.com>
+Message-ID: <20150511172928.GC24390@csclub.uwaterloo.ca>
+
+On Mon, May 11, 2015 at 12:16:04PM -0400, Stephen wrote:
+> On 15-05-11 12:12 PM, Lennart Sorensen wrote:
+> 
+> >And are you running 32 or 64bit system?  After all the driver package
+> >you are trying to isntall is 32bit and you might be running a 64bit
+> >system and hence be missing dependancies for that driver.
+> 
+> This was the problem. Silly.
+> 
+> Using the 64bit driver fixed everything!
+
+Oh so there was an amd64 package?
+
+-- 
+Len Sorensen
+
+From hugh at mimosa.com  Mon May 11 17:34:51 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 11 May 2015 13:34:51 -0400 (EDT)
+Subject: [GTALUG] Dinner before May 2015 GTALUG meeting (was Meeting
+ 11th May, 2015 at 7:30pm)
+In-Reply-To: <CA+hskZMdiyuH9qEgXCyjZKMs+v09Ep+1TriqVyxqL-A53TVdTQ@mail.gmail.com>
+References: <CA+hskZMdiyuH9qEgXCyjZKMs+v09Ep+1TriqVyxqL-A53TVdTQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1505111330350.5028@redclaw.mimosa.com>
+
+[Note: meeting is May 12]
+
+| From: Myles Braithwaite <me at mylesbraithwaite.com>
+| Date: Sun, 26 Apr 2015 19:15:11 -0400
+
+| Voting open for dinner options before next month's GTALUG meeting:
+| <http://strawpoll.me/4216617>.
+
+No winner has been declared by Myles, so I infer that there is still time 
+to cast your vote.
+
+Currently Love at First Bite and It's All Greek are tied for the lead
+at 4 votes apiece.
+
+From me at mylesbraithwaite.com  Mon May 11 17:37:16 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 11 May 2015 13:37:16 -0400
+Subject: [GTALUG] Dinner before May 2015 GTALUG meeting (was Meeting
+ 11th May, 2015 at 7:30pm)
+In-Reply-To: <alpine.LRH.2.02.1505111330350.5028@redclaw.mimosa.com>
+References: <CA+hskZMdiyuH9qEgXCyjZKMs+v09Ep+1TriqVyxqL-A53TVdTQ@mail.gmail.com>
+ <alpine.LRH.2.02.1505111330350.5028@redclaw.mimosa.com>
+Message-ID: <5550E8CC.8060501@mylesbraithwaite.com>
+
+D. Hugh Redelmeier wrote:
+> No winner has been declared by Myles, so I infer that there is still time
+> to cast your vote.
+
+A winner was declared in the announce message:
+
+ > * 6:00 pm - Before the meeting a group of GTALUGers will be dining at
+It's All Grk (101 Dundas St East).
+
+See: <http://gtalug.org/pipermail/announce/2015/000020.html>
+
