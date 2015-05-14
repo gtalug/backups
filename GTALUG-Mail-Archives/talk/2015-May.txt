@@ -1,0 +1,868 @@
+From me at mylesbraithwaite.com  Fri May  1 12:52:43 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 1 May 2015 08:52:43 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting 11th May, 2015 at 7:30pm
+Message-ID: <CA+hskZMZ5XDkujMtZOLETNLVvXmxVXVVZQQQN1nuRfzXdZt5eg@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-05/>
+
+# OpenStreetMap with Stewart Russell
+
+OpenStreetMap is more than just a web mapping platform. It's a
+comprehensive, community-maintained map/geodatabase of the world that
+you can hack on. Since the last GTALUG talk on OSM over five years
+ago, it's grown a lot, and developed a huge community of mappers,
+developers and data users. In this talk, we'll discuss the basics of
+using OSM, how it survived a major licence change with only a little
+drama, and how it succeeds as a community.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before the meeting a group of GTALUGers will be dining at
+It's All Grk (101 Dundas St East).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East).
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members @
+<board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From scruss at gmail.com  Fri May  1 13:33:03 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Fri, 01 May 2015 09:33:03 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting 11th May, 2015 at 7:30pm
+In-Reply-To: <CA+hskZMZ5XDkujMtZOLETNLVvXmxVXVVZQQQN1nuRfzXdZt5eg@mail.gmail.com>
+References: <CA+hskZMZ5XDkujMtZOLETNLVvXmxVXVVZQQQN1nuRfzXdZt5eg@mail.gmail.com>
+Message-ID: <5543808F.8020507@gmail.com>
+
+Hi Myles - is it the 11th or the 12th? Your subject says the 11th, the
+site says the 12th.
+
+cheers,
+ Stewart
+
+From me at mylesbraithwaite.com  Fri May  1 13:41:27 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 01 May 2015 09:41:27 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting 11th May, 2015 at 7:30pm
+In-Reply-To: <5543808F.8020507@gmail.com>
+References: <CA+hskZMZ5XDkujMtZOLETNLVvXmxVXVVZQQQN1nuRfzXdZt5eg@mail.gmail.com>
+ <5543808F.8020507@gmail.com>
+Message-ID: <55438287.4020703@mylesbraithwaite.com>
+
+It's the 12th.
+
+Stewart C. Russell wrote:
+> Hi Myles - is it the 11th or the 12th? Your subject says the 11th, the
+> site says the 12th.
+>
+> cheers,
+>   Stewart
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From hector at maplesky.ca  Fri May  1 13:41:36 2015
+From: hector at maplesky.ca (Hector)
+Date: Fri, 01 May 2015 09:41:36 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting 11th May, 2015 at 7:30pm
+In-Reply-To: <5543808F.8020507@gmail.com>
+References: <CA+hskZMZ5XDkujMtZOLETNLVvXmxVXVVZQQQN1nuRfzXdZt5eg@mail.gmail.com>
+ <5543808F.8020507@gmail.com>
+Message-ID: <518eb010bc26bf98d08549a0d04c575e@maplesky.ca>
+
+I am thinking it is the 2nd Tuesday of every month so my bet goes to the 
+12th :)
+
+Hector
+
+On 2015-05-01 09:33, Stewart C. Russell wrote:
+> Hi Myles - is it the 11th or the 12th? Your subject says the 11th, the
+> site says the 12th.
+> 
+> cheers,
+>  Stewart
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From me at mylesbraithwaite.com  Fri May  1 13:42:57 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 1 May 2015 09:42:57 -0400
+Subject: [GTALUG] [GTALUG-Announce] [CORRECTION] Meeting 12th May,
+	2015 at 7:30pm
+Message-ID: <CA+hskZN9Fp71AvbvaJPtyn8soiKuAD_do_JD8DfUDtp+_nPayg@mail.gmail.com>
+
+The meeting is on the 12th of May and not 11th of May.
+
+
+---------- Forwarded message ----------
+From: Myles Braithwaite <me at mylesbraithwaite.com>
+Date: Fri, May 1, 2015 at 8:52 AM
+Subject: Meeting 11th May, 2015 at 7:30pm
+To: announce at gtalug.org
+
+
+<http://gtalug.org/meeting/2015-05/>
+
+# OpenStreetMap with Stewart Russell
+
+OpenStreetMap is more than just a web mapping platform. It's a
+comprehensive, community-maintained map/geodatabase of the world that
+you can hack on. Since the last GTALUG talk on OSM over five years
+ago, it's grown a lot, and developed a huge community of mappers,
+developers and data users. In this talk, we'll discuss the basics of
+using OSM, how it survived a major licence change with only a little
+drama, and how it succeeds as a community.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before the meeting a group of GTALUGers will be dining at
+It's All Grk (101 Dundas St East).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East).
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members @
+<board at gtalug.org>.
+
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From james.knott at rogers.com  Mon May  4 11:32:18 2015
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 04 May 2015 07:32:18 -0400
+Subject: [GTALUG] Happy Star Wars Day
+Message-ID: <554758C2.3010707@rogers.com>
+
+May the fourth be with you.  ;-)
+
+From stephen-d at rogers.com  Mon May  4 11:37:09 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Mon, 04 May 2015 07:37:09 -0400
+Subject: [GTALUG] Happy Star Wars Day
+In-Reply-To: <554758C2.3010707@rogers.com>
+References: <554758C2.3010707@rogers.com>
+Message-ID: <554759E5.8060407@rogers.com>
+
+On 15-05-04 07:32 AM, James Knott wrote:
+> May the fourth be with you.  ;-)
+
+1979. Headline referencing Margaret Thatcher.
+
+
+-- 
+Stephen
+
+From gordontc at look.ca  Wed May  6 16:42:21 2015
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Wed, 06 May 2015 12:42:21 -0400
+Subject: [GTALUG] ICANN's Proposal to Move IANA
+Message-ID: <1430930541.24607.2.camel@larva.gordhome.local>
+
+Hi, all:
+
+You probably know that in March 2014, the U.S. Department of Commerce's
+National Telecommunications and Information Administration (NTIA)
+announced its intent to “transition its stewardship role of the IANA
+Functions and related management”.   This meant that NTIA will no longer
+oversee a contract with ICANN to manage IANA.   ICANN will have to do it
+itself.
+
+To get this started, NTIA called on ICANN to “coordinate” the drafting
+of a proposal to transition this stewardship role to the broader global
+multi-stakeholder community.    This meant drafting of a proposal of its
+own and inviting other proposals from IETF and the various numbers
+registries (ARIN, RIPE and the others) and then coordinating them all
+into one proposal to present to NTIA.
+
+ICANN now has a (second) draft of its proposal “ready for comment” (this
+request for public comment is fairly standard for ICANN policy
+documents).
+
+This one is important enough that we're asking you to look it over and
+accept ICANN's invitation to comment.   Comments are going to be
+accepted until May 20 – that's short, I know, but there it is.
+
+Now, this is a pretty complex document – it's a kind of complex matter,
+involving contract law (in California, where ICANN is registered), the
+concerns of a lot of stakeholders outside the US, and the need for ICANN
+to be seen to be accountable.
+
+So, here it is.   Send your comments to me at gordon at look.ca and I'll
+compile them into a group comment for ICANN.
+
+https://www.icann.org/en/system/files/files/cwg-stewardship-draft-proposal-without-annexes-22apr15-en.pdf
+
+I'm not sure you want to tackle the proposal with annexes.   It's
+painful.
+
+Enjoy
+
+Gordon 
+
+Community Affairs Group
+GTALUG
+
+
+
+
+
+From gordontc at look.ca  Wed May  6 20:08:24 2015
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Wed, 06 May 2015 16:08:24 -0400
+Subject: [GTALUG] ICANN's Proposal to Move IANA
+In-Reply-To: <1430930541.24607.2.camel@larva.gordhome.local>
+References: <1430930541.24607.2.camel@larva.gordhome.local>
+Message-ID: <1430942904.26733.1.camel@larva.gordhome.local>
+
+Hi, again:
+
+Comes of doing things when you're not awake yet.
+
+I misspelled my own e-mail address.   It should be gordontc at look.ca
+
+Sorry about that . . . 
+
+Gordon
+
+
+On Wed, 2015-05-06 at 12:42 -0400, Gordon Chillcott wrote:
+> Hi, all:
+> 
+> You probably know that in March 2014, the U.S. Department of Commerce's
+> National Telecommunications and Information Administration (NTIA)
+> announced its intent to “transition its stewardship role of the IANA
+> Functions and related management”.   This meant that NTIA will no longer
+> oversee a contract with ICANN to manage IANA.   ICANN will have to do it
+> itself.
+> 
+> To get this started, NTIA called on ICANN to “coordinate” the drafting
+> of a proposal to transition this stewardship role to the broader global
+> multi-stakeholder community.    This meant drafting of a proposal of its
+> own and inviting other proposals from IETF and the various numbers
+> registries (ARIN, RIPE and the others) and then coordinating them all
+> into one proposal to present to NTIA.
+> 
+> ICANN now has a (second) draft of its proposal “ready for comment” (this
+> request for public comment is fairly standard for ICANN policy
+> documents).
+> 
+> This one is important enough that we're asking you to look it over and
+> accept ICANN's invitation to comment.   Comments are going to be
+> accepted until May 20 – that's short, I know, but there it is.
+> 
+> Now, this is a pretty complex document – it's a kind of complex matter,
+> involving contract law (in California, where ICANN is registered), the
+> concerns of a lot of stakeholders outside the US, and the need for ICANN
+> to be seen to be accountable.
+> 
+> So, here it is.   Send your comments to me at gordon at look.ca and I'll
+> compile them into a group comment for ICANN.
+> 
+> https://www.icann.org/en/system/files/files/cwg-stewardship-draft-proposal-without-annexes-22apr15-en.pdf
+> 
+> I'm not sure you want to tackle the proposal with annexes.   It's
+> painful.
+> 
+> Enjoy
+> 
+> Gordon 
+> 
+> Community Affairs Group
+> GTALUG
+> 
+> 
+> 
+> 
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+
+From james.knott at rogers.com  Wed May  6 20:16:11 2015
+From: james.knott at rogers.com (James Knott)
+Date: Wed, 06 May 2015 16:16:11 -0400
+Subject: [GTALUG] ICANN's Proposal to Move IANA
+In-Reply-To: <1430942904.26733.1.camel@larva.gordhome.local>
+References: <1430930541.24607.2.camel@larva.gordhome.local>
+ <1430942904.26733.1.camel@larva.gordhome.local>
+Message-ID: <554A768B.8000800@rogers.com>
+
+On 05/06/2015 04:08 PM, Gordon Chillcott wrote:
+> I misspelled my own e-mail address.   It should be gordontc at look.ca
+>
+> Sorry about that . . . 
+
+You should have had your morning beer first.  ;-)
+
+From phiscock at ee.ryerson.ca  Wed May  6 20:52:03 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Wed, 6 May 2015 16:52:03 -0400
+Subject: [GTALUG] ICANN's Proposal to Move IANA
+In-Reply-To: <554A768B.8000800@rogers.com>
+References: <1430930541.24607.2.camel@larva.gordhome.local>
+ <1430942904.26733.1.camel@larva.gordhome.local>
+ <554A768B.8000800@rogers.com>
+Message-ID: <b03d2070655e07bd633b1449e43ae7be.squirrel@webmail.ee.ryerson.ca>
+
+
+> On 05/06/2015 04:08 PM, Gordon Chillcott wrote:
+>> I misspelled my own e-mail address.   It should be gordontc at look.ca
+>>
+>> Sorry about that . . .
+>
+> You should have had your morning beer first.  ;-)
+> ---
+
+Sign outside pub on the Danforth:
+
+Beer, not just for breakfast.
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From hector at maplesky.ca  Fri May  8 01:43:15 2015
+From: hector at maplesky.ca (Hector)
+Date: Thu, 07 May 2015 21:43:15 -0400
+Subject: [GTALUG] Perfect GPG key
+In-Reply-To: <CADK3HH+kA2he1iQpzDtww+pta__0-oGE8p6COrzSOKfzJa2dsA@mail.gmail.com>
+References: <CADK3HH+kA2he1iQpzDtww+pta__0-oGE8p6COrzSOKfzJa2dsA@mail.gmail.com>
+Message-ID: <26304e872a76d6a4cde4d4894d9df8e5@maplesky.ca>
+
+Hi all,
+
+I've been looking into creating a 'Perfect GPG' key, mainly following 
+the instructions here 
+https://alexcabal.com/creating-the-perfect-gpg-keypair/ and so far it 
+worked and I was happy with the results and understanding. I am just 
+looking into a more advanced opinion. Any help or direction will be 
+greatly appreciated.
+
+Thank you in advance,
+Hector
+
+
+From stephen-d at rogers.com  Sun May 10 01:58:01 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Sat, 09 May 2015 21:58:01 -0400
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+Message-ID: <554EBB29.6020604@rogers.com>
+
+I am running Ubuntu 14.04
+
+I downloaded the *.deb file from the Epson web site:
+
+epson-inkjet-printer-escpr_1.4.5-1lsb3.2_i386.deb
+
+It starts in the Ubuntu Software Centre, but I get an error message:
+
+"New software can't be installed, because there is a problem with the 
+software currently installed. Do you want to repair this problem now?"
+
+I click "Repair".
+
+I am prompted for my password. In a few seconds I return to the Ubuntu 
+Software Centre.
+
+I click "Install"
+
+Then a window pops up saying "Package operation failed"
+
+I check the details and I see:
+
+"dpkg: dependency problems prevent configuration of 
+epson-inkjet-printer-escpr:
+epson-inkjet-printer-escpr depends on lsb (>= 3.2)."
+
+So I download lsb-printing_4.0-0ubuntu8_i386.deb
+
+I try to install, but the Ubuntu Software Centre prompts me to Remove.
+
+So, at this point I am calling out for HELP!
+
+Thanks in advance
+-- 
+Stephen
+
+From scruss at gmail.com  Sun May 10 02:42:47 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sat, 09 May 2015 22:42:47 -0400
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+In-Reply-To: <554EBB29.6020604@rogers.com>
+References: <554EBB29.6020604@rogers.com>
+Message-ID: <554EC5A7.3000706@gmail.com>
+
+Hi Stephen:
+> I am running Ubuntu 14.04
+>
+> I downloaded the *.deb file from the Epson web site:
+>
+> epson-inkjet-printer-escpr_1.4.5-1lsb3.2_i386.deb
+
+Getting the right LSB package installed can be a pain. If you're not
+using paper larger than Letter, the standard CUPS ESC/P-R driver
+/should/ drive this printer fairly well.
+
+I've had the larger (size of a small tank, to be honest) WF-7520 for
+years, and it's been great. Duplex ADF scanning, SANE support over the
+network, scan to SD card (which appears as a samba share on the network)
+... it just works.
+
+cheers,
+ Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150509/bd8ff38d/attachment.html>
+
+From stephen-d at rogers.com  Sun May 10 13:16:43 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Sun, 10 May 2015 09:16:43 -0400
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+In-Reply-To: <554EC5A7.3000706@gmail.com>
+References: <554EBB29.6020604@rogers.com> <554EC5A7.3000706@gmail.com>
+Message-ID: <554F5A3B.7070002@rogers.com>
+
+On 15-05-09 10:42 PM, Stewart C. Russell wrote:
+> Hi Stephen:
+>> I am running Ubuntu 14.04
+>>
+>> I downloaded the *.deb file from the Epson web site:
+>>
+>> epson-inkjet-printer-escpr_1.4.5-1lsb3.2_i386.deb
+>
+> Getting the right LSB package installed can be a pain. If you're not
+> using paper larger than Letter, the standard CUPS ESC/P-R driver
+> /should/ drive this printer fairly well.
+>
+> I've had the larger (size of a small tank, to be honest) WF-7520 for
+> years, and it's been great. Duplex ADF scanning, SANE support over the
+> network, scan to SD card (which appears as a samba share on the network)
+> ... it just works.
+
+I have confirmed that I have LSB 4.1 installed using the Ubuntu Software 
+Centre.
+
+But the install of the Epson driver still asserts a dependency error 
+needed >=3.2
+
+I have run apt-get update and apt-get upgrade.
+
+
+-- 
+Stephen
+
+From maxcess at gmx.com  Sun May 10 13:45:42 2015
+From: maxcess at gmx.com (Abby Bassie-Cripps)
+Date: Sun, 10 May 2015 15:45:42 +0200
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+In-Reply-To: <554F5A3B.7070002@rogers.com>
+References: <554EBB29.6020604@rogers.com> <554EC5A7.3000706@gmail.com>,
+ <554F5A3B.7070002@rogers.com>
+Message-ID: <trinity-1cae12eb-bd8f-4b85-b5e1-500d41163ee3-1431265541650@3capp-mailcom-lxa01>
+
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150510/9e8cd243/attachment.html>
+
+From hugh at mimosa.com  Sun May 10 20:01:22 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 10 May 2015 16:01:22 -0400 (EDT)
+Subject: [GTALUG] free: ethernet cards
+Message-ID: <alpine.LRH.2.02.1505101557430.3626@redclaw.mimosa.com>
+
+I'm getting rid of around a dozen 10/100m PCI ethernet cards.  If anyone 
+wants some or all, just send me email and I'll bring them to the meeting.
+
+Also available: a few 10m ISA ethernet cards, most 10baseT and 10base2.
+
+From james.knott at rogers.com  Sun May 10 20:15:43 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 10 May 2015 16:15:43 -0400
+Subject: [GTALUG] free: ethernet cards
+In-Reply-To: <alpine.LRH.2.02.1505101557430.3626@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1505101557430.3626@redclaw.mimosa.com>
+Message-ID: <554FBC6F.2090207@rogers.com>
+
+On 05/10/2015 04:01 PM, D. Hugh Redelmeier wrote:
+> 10base2.
+>
+Those will really be handy.  ;-)
+
+I think I still have a 10baseT hub with a coax connector on it. 
+However, I haven't noticed any ISA bus computers here for quite a while.
+
+BTW, back in the mid '90s, I worked on a project to convert some
+provincial government offices around Queen's Park from 10base2 to
+10baseT.  In some cases, it was just a matter of changing the cables to
+get the NIC on 10baseT.  Others were a minor config change, but others
+had to be replaced.  There were also several HP printers that needed new
+NICs.
+
+My first experience with Ethernet was with a DECNET that connected some
+VAX 11/780 systems.  That was the old 10base5 network with vampire taps.
+
+
+
+From me at mylesbraithwaite.com  Mon May 11 14:04:05 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 11 May 2015 10:04:05 -0400
+Subject: [GTALUG] [GTALUG-Announce] GTALUG Meeting Tomorrow at 7:30pm
+Message-ID: <CA+hskZMY7ksR_LC56Ag8AcT1vqEgT=wzY-AUKm0x4+WL2RX9GQ@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-05/>
+
+# OpenStreetMap with Stewart Russell
+
+OpenStreetMap is more than just a web mapping platform. It's a
+comprehensive, community-maintained map/geodatabase of the world that
+you can hack on. Since the last GTALUG talk on OSM over five years
+ago, it's grown a lot, and developed a huge community of mappers,
+developers and data users. In this talk, we'll discuss the basics of
+using OSM, how it survived a major licence change with only a little
+drama, and how it succeeds as a community.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before the meeting a group of GTALUGers will be dining at
+It's All Grk (101 Dundas St East).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East).
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members @
+<board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From lsorense at csclub.uwaterloo.ca  Mon May 11 16:12:33 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 11 May 2015 12:12:33 -0400
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+In-Reply-To: <554F5A3B.7070002@rogers.com>
+References: <554EBB29.6020604@rogers.com> <554EC5A7.3000706@gmail.com>
+ <554F5A3B.7070002@rogers.com>
+Message-ID: <20150511161233.GA24390@csclub.uwaterloo.ca>
+
+On Sun, May 10, 2015 at 09:16:43AM -0400, Stephen wrote:
+> On 15-05-09 10:42 PM, Stewart C. Russell wrote:
+> >Hi Stephen:
+> >>I am running Ubuntu 14.04
+> >>
+> >>I downloaded the *.deb file from the Epson web site:
+> >>
+> >>epson-inkjet-printer-escpr_1.4.5-1lsb3.2_i386.deb
+> >
+> >Getting the right LSB package installed can be a pain. If you're not
+> >using paper larger than Letter, the standard CUPS ESC/P-R driver
+> >/should/ drive this printer fairly well.
+> >
+> >I've had the larger (size of a small tank, to be honest) WF-7520 for
+> >years, and it's been great. Duplex ADF scanning, SANE support over the
+> >network, scan to SD card (which appears as a samba share on the network)
+> >... it just works.
+> 
+> I have confirmed that I have LSB 4.1 installed using the Ubuntu
+> Software Centre.
+> 
+> But the install of the Epson driver still asserts a dependency error
+> needed >=3.2
+> 
+> I have run apt-get update and apt-get upgrade.
+
+Could you try:
+
+dpkg -l|grep lsb
+
+and post the output.
+
+And are you running 32 or 64bit system?  After all the driver package
+you are trying to isntall is 32bit and you might be running a 64bit
+system and hence be missing dependancies for that driver.
+
+The main lsb package (not lsb-printing) which seems to be what it depends
+depends on lsb-printing, lsb-graphics, lsb-core, and a number of other
+packages.
+
+Perhaps just doing 'apt-get install lsb' would solve the problem.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Mon May 11 16:15:34 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 11 May 2015 12:15:34 -0400
+Subject: [GTALUG] free: ethernet cards
+In-Reply-To: <alpine.LRH.2.02.1505101557430.3626@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1505101557430.3626@redclaw.mimosa.com>
+Message-ID: <20150511161534.GB24390@csclub.uwaterloo.ca>
+
+On Sun, May 10, 2015 at 04:01:22PM -0400, D. Hugh Redelmeier wrote:
+> I'm getting rid of around a dozen 10/100m PCI ethernet cards.  If anyone 
+> wants some or all, just send me email and I'll bring them to the meeting.
+> 
+> Also available: a few 10m ISA ethernet cards, most 10baseT and 10base2.
+
+My 486 already has 2 (nice 3com cards too), and Debian no longer supports
+486s. :)
+
+-- 
+Len Sorensen
+
+From stephen-d at rogers.com  Mon May 11 16:16:04 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Mon, 11 May 2015 12:16:04 -0400
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+In-Reply-To: <20150511161233.GA24390@csclub.uwaterloo.ca>
+References: <554EBB29.6020604@rogers.com> <554EC5A7.3000706@gmail.com>
+ <554F5A3B.7070002@rogers.com> <20150511161233.GA24390@csclub.uwaterloo.ca>
+Message-ID: <5550D5C4.3010600@rogers.com>
+
+On 15-05-11 12:12 PM, Lennart Sorensen wrote:
+
+> And are you running 32 or 64bit system?  After all the driver package
+> you are trying to isntall is 32bit and you might be running a 64bit
+> system and hence be missing dependancies for that driver.
+
+This was the problem. Silly.
+
+Using the 64bit driver fixed everything!
+
+Thanks
+
+-- 
+Stephen
+
+From lsorense at csclub.uwaterloo.ca  Mon May 11 17:29:28 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 11 May 2015 13:29:28 -0400
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+In-Reply-To: <5550D5C4.3010600@rogers.com>
+References: <554EBB29.6020604@rogers.com> <554EC5A7.3000706@gmail.com>
+ <554F5A3B.7070002@rogers.com>
+ <20150511161233.GA24390@csclub.uwaterloo.ca>
+ <5550D5C4.3010600@rogers.com>
+Message-ID: <20150511172928.GC24390@csclub.uwaterloo.ca>
+
+On Mon, May 11, 2015 at 12:16:04PM -0400, Stephen wrote:
+> On 15-05-11 12:12 PM, Lennart Sorensen wrote:
+> 
+> >And are you running 32 or 64bit system?  After all the driver package
+> >you are trying to isntall is 32bit and you might be running a 64bit
+> >system and hence be missing dependancies for that driver.
+> 
+> This was the problem. Silly.
+> 
+> Using the 64bit driver fixed everything!
+
+Oh so there was an amd64 package?
+
+-- 
+Len Sorensen
+
+From hugh at mimosa.com  Mon May 11 17:34:51 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 11 May 2015 13:34:51 -0400 (EDT)
+Subject: [GTALUG] Dinner before May 2015 GTALUG meeting (was Meeting
+ 11th May, 2015 at 7:30pm)
+In-Reply-To: <CA+hskZMdiyuH9qEgXCyjZKMs+v09Ep+1TriqVyxqL-A53TVdTQ@mail.gmail.com>
+References: <CA+hskZMdiyuH9qEgXCyjZKMs+v09Ep+1TriqVyxqL-A53TVdTQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1505111330350.5028@redclaw.mimosa.com>
+
+[Note: meeting is May 12]
+
+| From: Myles Braithwaite <me at mylesbraithwaite.com>
+| Date: Sun, 26 Apr 2015 19:15:11 -0400
+
+| Voting open for dinner options before next month's GTALUG meeting:
+| <http://strawpoll.me/4216617>.
+
+No winner has been declared by Myles, so I infer that there is still time 
+to cast your vote.
+
+Currently Love at First Bite and It's All Greek are tied for the lead
+at 4 votes apiece.
+
+From me at mylesbraithwaite.com  Mon May 11 17:37:16 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 11 May 2015 13:37:16 -0400
+Subject: [GTALUG] Dinner before May 2015 GTALUG meeting (was Meeting
+ 11th May, 2015 at 7:30pm)
+In-Reply-To: <alpine.LRH.2.02.1505111330350.5028@redclaw.mimosa.com>
+References: <CA+hskZMdiyuH9qEgXCyjZKMs+v09Ep+1TriqVyxqL-A53TVdTQ@mail.gmail.com>
+ <alpine.LRH.2.02.1505111330350.5028@redclaw.mimosa.com>
+Message-ID: <5550E8CC.8060501@mylesbraithwaite.com>
+
+D. Hugh Redelmeier wrote:
+> No winner has been declared by Myles, so I infer that there is still time
+> to cast your vote.
+
+A winner was declared in the announce message:
+
+ > * 6:00 pm - Before the meeting a group of GTALUGers will be dining at
+It's All Grk (101 Dundas St East).
+
+See: <http://gtalug.org/pipermail/announce/2015/000020.html>
+
+From hugh at mimosa.com  Tue May 12 20:25:10 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 12 May 2015 16:25:10 -0400 (EDT)
+Subject: [GTALUG] Dinner before May 2015 GTALUG meeting (was Meeting
+ 11th May, 2015 at 7:30pm)
+In-Reply-To: <5550E8CC.8060501@mylesbraithwaite.com>
+References: <CA+hskZMdiyuH9qEgXCyjZKMs+v09Ep+1TriqVyxqL-A53TVdTQ@mail.gmail.com>
+ <alpine.LRH.2.02.1505111330350.5028@redclaw.mimosa.com>
+ <5550E8CC.8060501@mylesbraithwaite.com>
+Message-ID: <alpine.LRH.2.02.1505121622290.5028@redclaw.mimosa.com>
+
+| From: Myles Braithwaite <me at mylesbraithwaite.com>
+
+| A winner was declared in the announce message:
+
+Sorry, I missed that.  Buried in the text.
+
+| > * 6:00 pm - Before the meeting a group of GTALUGers will be dining at
+| It's All Grk (101 Dundas St East).
+
+Yelp says "Yelpers report this location has closed.".  I tried phoning
+and nobody answered.
+
+I propose that we fall back to Love at First Bite.  Unless someone
+finds that it is open.
+
+From avolkov at gmail.com  Tue May 12 22:10:40 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Tue, 12 May 2015 22:10:40 +0000
+Subject: [GTALUG] Grk is closed -- dinner before the meeting
+Message-ID: <CAO1j=qdY+v+N0GaTW5R4eNtyeuUAPQVCShpbCW+gJMQay3kNTA@mail.gmail.com>
+
+Grk is closed a I and Bob Jonkman will be in curry kitchen 117 Dundas St E.
+Just two doors east of grk.
+
+Alex.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150512/25bfd6e0/attachment.html>
+
