@@ -866,3 +866,167 @@ Alex.
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150512/25bfd6e0/attachment.html>
 
+From davec-b at rogers.com  Thu May 14 12:32:39 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Thu, 14 May 2015 08:32:39 -0400
+Subject: [GTALUG] Postgres and ident used for authentication
+Message-ID: <555495E7.3070107@rogers.com>
+
+While it's been discussed elsewhere*, I just tripped over a decidedly 
+odd default in postgresql: it tries to use ident to verify that the role 
+I'm logging in to has the same name as my unix user account, simulating 
+the "peer" authentication available for unix domain sockets.
+
+I don't see any history for this, but It make me suspicious, just as it 
+would if I found someone was using rsh and a .rhosts file in a world 
+where we have ssh with keys.
+
+The common recommendation is to use "trust", which is even worse than 
+ident.  At least ident comes with a  conspicuous warning that "The 
+Identification Protocol is not intended as an authorization or access 
+control protocol."
+
+Anyone know the back story?  The FAQ is unhelpful, the bugs list seems 
+private, and Google finds lots of bad advice (;-))
+
+--dave
+[* 
+http://www.upfrontsystems.co.za/Members/izak/sysadman/postgresqls-confusing-authentication-configuration
+http://www.depesz.com/2007/08/18/securing-your-postgresql-database/ ]
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150514/83b1efb2/attachment.html>
+
+From me at mylesbraithwaite.com  Thu May 14 15:32:52 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 14 May 2015 11:32:52 -0400
+Subject: [GTALUG] [GTALUG-Announce] Linux in the Park 2015
+Message-ID: <CA+hskZNKzfWYNnZtehut9UuUb-yckqov8zvb3uxgkb0n67s6jw@mail.gmail.com>
+
+<http://gtalug.org/picnics/2015/>
+
+GTALUG is having the annual Linux in the Park Potluck this year at
+Dufferin Grove Park on 25th July at 2pm.
+
+Things we will provide: Plates, Cutlery, Serviettes, Cups, and Garbage bags.
+
+Things you might want to bring: chairs, tasty beverages (that are
+non-alcoholic, as the city prohibits alcoholic beverages in the park),
+food stuffs that you would like to share and enjoy, tarp/blanket,
+sunscreen, hats, things to help survive the warmth of the Canadian
+Wilderness.
+
+We will doing this in a pot-luck style. Thus, please bring enough food
+and drink for yourself and your guests, and try to bring enough to
+share with others in the group.
+
+We are using a Trello board to organize everything:
+<https://trello.com/b/JNHsDwys/linux-in-the-park-2015>.
+
+Note that if you forget anything you needed, Dufferin Mall is across
+the street, featuring a supermarket (No-Frills) department store
+(WalMart), as well as other specialty stores.
+
+## Location
+
+Dufferin Grove Park
+875 Dufferin Street
+Toronto, Ontario
+
+<https://goo.gl/maps/hnGg5>
+
+<http://osm.org/go/ZX6BHsVZx-?layers=N&way=15703371>
+
+## Social Media Links
+
+Facebook: <https://www.facebook.com/events/694777713981257/>
+
+Google+: <https://plus.google.com/events/ch21nnnjdcq6prpp575vc0no7cc>
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members @
+<board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From scruss at gmail.com  Fri May 15 02:24:34 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Thu, 14 May 2015 22:24:34 -0400
+Subject: [GTALUG] OpenStreetMap links from the other night
+Message-ID: <555558E2.4030408@gmail.com>
+
+Hi all — thanks so much for coming out the other night. Thanks to Scott,
+Myles and the cast of 1000_2 s who make GTALUG happen.
+
+Rather than post my presentation, which was kind of light on detail, I
+thought I'd post some of the most useful but harder-to-remember links I
+brought up:
+
+ 1. ‘The Map’ — http://www.openstreetmap.org  . It supports routing now,
+    too.
+ 2. QGIS, an open GIS manager. It's rather good — http://qgis.org/
+ 3. The OSM Wiki; ridiculously complete documentation:
+    https://wiki.openstreetmap.org/wiki/
+ 4. OSM Help Stack Exchange-style question/answer:
+    https://help.openstreetmap.org/
+ 5. All of the OSM stats! — https://wiki.openstreetmap.org/wiki/Stats
+ 6. Toronto map growth animation —
+    http://www.geofabrik.de/gallery/history/index.html#toronto
+ 7. Crowdsourced geocoding (+ lawsuit from Canada Post) —
+    http://geocoder.ca/
+ 8. Open Data Commons Open Database License (ODbL) —
+    http://opendatacommons.org/licenses/odbl/
+ 9. Canada’s new Open Government portal — http://open.canada.ca
+    related: Toronto Open Data — http://toronto.ca/open
+10. CIPPIC Open Licensing Project (CLIP) — http://clipol.org/
+11. Humanitarian OpenStreetMap Team [HOT] — http://hotosm.org/
+12. OpenCycleMap —
+    http://www.openstreetmap.org/#map=13/43.6666/-79.3785&layers=C
+13. *The rather wonderful /uMap/* — https://umap.openstreetmap.fr/en/
+
+uMap might be a decent way of mapping out some dinner choices pre GTALUG
+meetings.
+
+There's a monthly OSM Meetup, and also #maptime, the web mapping meetup.
+Both are linked here: http://www.meetup.com/OpenStreetMap-Toronto/
+
+Best Wishes, and it was great to meet you all again,
+ Stewart
+
+(who, not surprisingly, is on OpenStreetMap as scruss
+<http://www.openstreetmap.org/user/scruss>.)
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150514/da846763/attachment.html>
+
