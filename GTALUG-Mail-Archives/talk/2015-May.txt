@@ -1030,3 +1030,40 @@ Best Wishes, and it was great to meet you all again,
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150514/da846763/attachment.html>
 
+From waltdnes at waltdnes.org  Sat May 16 02:42:59 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Fri, 15 May 2015 22:42:59 -0400
+Subject: [GTALUG] "ondemand" CPU governor not recommended for newer Intel
+	machines
+Message-ID: <20150516024259.GA16909@waltdnes.org>
+
+  I've been putting together scripts that run under bash+ash to control
+CPU settings.  I was unhappy with current solutions.  They seemed to be
+either out-of-date, and no longer worked, or else pulled in egregiuous
+dependancies.  In the course of researching stuff for my scripts, I ran
+across a 2-year-old Phoronix article
+http://www.phoronix.com/scan.php?page=news_item&px=MTM3NDQ which
+referenced a Google+ conversation at
+https://plus.google.com/+TheodoreTso/posts/2vEekAsG2QT
+
+  Summary... "ondemand" worked great for notebook CPUs from 10 years ago,
+but...
+
+> with modern Intel processors, the ondemand CPU governor is actually
+> counterproductive because waking up to decide whether the CPU is idle
+> keeps it from entering the deepest sleep states, and so (somewhat
+> counterintuitively) the performance governor will actually result
+> in the best battery life.
+
+  I don't know if the above also applies to the "conservative" governor.
+I put together an interactive script and an automated script.  I was
+thinking along the following lines...
+* notebook runs at "powersave" by default
+* run a wrapper script
+* wrapper script kicks up to "performance" setting
+* launches the job you want done (kernel compile or whatever)
+* drops back down to "powersave" mode after the job is finished
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
