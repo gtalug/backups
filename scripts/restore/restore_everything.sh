@@ -36,7 +36,17 @@ restore_website(){
     done
 }
 
+restore_packages() {
+    for pkg in $(cut -f1 -d' ' ../../packages)
+    do
+        # because of penguin has old packages from wheezy
+        # installing individual packages is prefeered
+        # this is much slower but works
+        sudo apt-get -y install $pkg
+    done
+}
 
 ## Run all procedures
 
 restore_website
+restore_packages
