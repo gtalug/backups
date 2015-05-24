@@ -5,14 +5,17 @@
 ###
 
 restore_website(){
-
+    WEBSITES_HOME=${HOME}/WebSites/org_gtalug_www
+    RESTORE_DIR=${PWD}
     sudo apt-get install -y git
 
     git clone https://github.com/gtalug/website.git
 
-    sudo apt-get install -y -t wheezy-backports python-virtualenv node-less python-dev
+    sudo apt-get install -y python-virtualenv node-less python-dev
 
-    cd website
+    mkdir -p ${WEBSITES_HOME}
+
+    cd ${WEBSITES_HOME}
 
     virtualenv env
 
