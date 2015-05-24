@@ -1152,3 +1152,57 @@ Stewart
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150519/b3d01617/attachment.html>
 
+From scruss at gmail.com  Sun May 24 01:30:44 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sat, 23 May 2015 21:30:44 -0400
+Subject: [GTALUG] Niche Chrome/painless MIDI on Linux/synth nerdiness: 106.js
+Message-ID: <556129C4.6020001@gmail.com>
+
+Hi all — this might be of interest to a limited number on this list, but
+it really impressed me.
+
+You will need:
+
+  * USB MIDI hardware (though you can noodle on the keyboard much less
+    impressively)
+  * a recent Chrome build (/possibly/ Chromium too; if you can enable
+    Web MIDI under chrome://flags, it might work)
+
+Now go here:
+
+    http://resistorsings.com/106/
+
+If you've got your MIDI set up, you've got a decent-ish emulation of a
+Juno 106. In JavaScript. Talking to your MIDI hardware with minimal
+latency.
+
+I'm linking this here as my previous experience with MIDI on Linux was
+highly dispiriting. If I could even get it to work, there was usually a
+¼s or more delay between pressing a key and getting a note. This just
+works. I'm impressed.
+
+cheers,
+ Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150523/90ba7b02/attachment.html>
+
+From sciguy at vex.net  Sun May 24 03:01:00 2015
+From: sciguy at vex.net (Paul King)
+Date: Sat, 23 May 2015 23:01:00 -0400
+Subject: [GTALUG] (OFF-TOPIC) Looking for pictures of an XL-87
+Message-ID: <55613EEC.206.23CE6765@sciguy.vex.net>
+
+Hi folks:
+
+This is even difficult to Google. I had been looking for some pictures 
+(digital, natch) of a computer we referred to as an XL-87 back in university. 
+They were old units back then too. I believe they were manufactured by Cybernex 
+with the full name "Cybernex XL-87". My first exposure to an operating system 
+was through these terminals, with the OS being a variant of UNIX.
+
+But if anyone has photos of such a terminal, could you please email as an 
+attachment off-list?
+
+Paul King
+
