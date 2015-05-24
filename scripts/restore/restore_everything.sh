@@ -46,7 +46,16 @@ restore_packages() {
     done
 }
 
+sync_etc_configs() {
+    for confdir in apache2 fail2ban postfix
+    do
+        sudo rsync --archive ../../${confdir} /etc
+        sudo service $confdir restart
+    done
+}
+
 ## Run all procedures
 
 restore_website
 restore_packages
+sync_etc_configs
