@@ -1361,3 +1361,361 @@ GTALUG Announce mailing list
 announce at gtalug.org
 http://gtalug.org/mailman/listinfo/announce
 
+From o1bigtenor at gmail.com  Tue May 26 14:37:04 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Tue, 26 May 2015 09:37:04 -0500
+Subject: [GTALUG] Help to setup for scanning
+Message-ID: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+
+Greetings
+
+I'm hoping that someone out there has achieved success and can point me to
+some pointers!
+
+I bought a Brother MFC-J6510DW largely because it can scan 11 x 17 inch
+documents (I have too many like that that I would like to get into
+electronic format!!).
+
+I can see the machine as a printer but cannot get the machine to scan a
+page. I have installed XSane 1.0.24 backend and XSane1.0.14 frontend. Tried
+running the ethernet cable through the router (a la network usage) and
+can't get anything useful to occu. I have also tried running the ethernet
+cable directly into my main machine (Debian testing) with also no joy. Have
+also contacted Brother support and although their website and the stickers
+on the machine laud their online chat and telephone support for linux its
+email support (if they can be bothered! (they are taking a very long time
+to respond!!)).
+
+Any suggestions?
+
+TIA
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150526/55e040e0/attachment.html>
+
+From kevin at ve3syb.ca  Tue May 26 14:51:36 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Tue, 26 May 2015 10:51:36 -0400
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+Message-ID: <55648878.6010308@ve3syb.ca>
+
+On 15-05-26 10:37 AM, o1bigtenor wrote:
+> I bought a Brother MFC-J6510DW largely because it can scan 11 x 17 inch
+> documents (I have too many like that that I would like to get into
+> electronic format!!).
+
+A search turned up the following page which has some information that you 
+might find helpful:
+http://ubuntuforums.org/showthread.php?t=1842372
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From scruss at gmail.com  Tue May 26 15:04:38 2015
+From: scruss at gmail.com (Stewart Russell)
+Date: Tue, 26 May 2015 11:04:38 -0400
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+Message-ID: <CAAsTreC2o5BiUjnB_me1Br_jjwVKmxvQ1+h4EkrkvkygrY+W-Q@mail.gmail.com>
+
+Hi Dee
+>
+> I bought a Brother MFC-J6510DW ...
+
+Can this device scan to an SD card, and if so, does the printer export that
+card as a network share? That's the approach I have to take with my Epson.
+I pick the resulting PDFs apart into TIFF scans and add good-enough OCR
+with Tesseract.
+
+While I can get SANE to work for single page scans, it doesn't drive the
+ADF or duplexer properly.
+
+Cheers
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150526/9d82a20b/attachment.html>
+
+From tisdall at gmail.com  Tue May 26 15:20:41 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Tue, 26 May 2015 11:20:41 -0400
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+Message-ID: <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+
+I use a Brother printer at work, but it's been a long time since I set
+it up.  I do remember that there were separate drivers for printing
+and scanning.  I'm able to use "Simple Scan" in Ubuntu and it pulls
+the scan from the machine.  I don't think I was able to get it to scan
+from the printer and have it send to my machine.
+
+You may have already seen this, but here's where all the driver files
+are located:  http://support.brother.com/g/b/downloadlist.aspx?c=us&lang=en&prod=mfcj6510dw_all&os=128
+
+It seems that to get the scanning to work from the printer end I would
+have to also install the "scan key tool".  (not really a concern of
+mine, though)
+
+On Tue, May 26, 2015 at 10:37 AM, o1bigtenor <o1bigtenor at gmail.com> wrote:
+> Greetings
+>
+> I'm hoping that someone out there has achieved success and can point me to
+> some pointers!
+>
+> I bought a Brother MFC-J6510DW largely because it can scan 11 x 17 inch
+> documents (I have too many like that that I would like to get into
+> electronic format!!).
+>
+> I can see the machine as a printer but cannot get the machine to scan a
+> page. I have installed XSane 1.0.24 backend and XSane1.0.14 frontend. Tried
+> running the ethernet cable through the router (a la network usage) and can't
+> get anything useful to occu. I have also tried running the ethernet cable
+> directly into my main machine (Debian testing) with also no joy. Have also
+> contacted Brother support and although their website and the stickers on the
+> machine laud their online chat and telephone support for linux its email
+> support (if they can be bothered! (they are taking a very long time to
+> respond!!)).
+>
+> Any suggestions?
+>
+> TIA
+>
+> Dee
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+From hugh at mimosa.com  Tue May 26 23:57:11 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 26 May 2015 19:57:11 -0400 (EDT)
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+
+| From: Tim Tisdall <tisdall at gmail.com>
+
+| You may have already seen this, but here's where all the driver files
+| are located:  http://support.brother.com/g/b/downloadlist.aspx?c=us&lang=en&prod=mfcj6510dw_all&os=128
+| 
+| It seems that to get the scanning to work from the printer end I would
+| have to also install the "scan key tool".  (not really a concern of
+| mine, though)
+
+I have a Brother DCP-7065DN.  The situation is just as you describe.
+I have to install drivers for each function on each client machine.
+
+I would not have bought it if I had known that it required proprietary
+binary drivers.  But it does work, for printing and scanning.
+I haven't tried "scan key tool".
+
+=====
+
+I have found some problems with scanning or printing.  I think that they 
+are on the open-source side (thank goodness).  See, for example 
+<https://bugzilla.redhat.com/show_bug.cgi?id=1035090>
+
+- duplexing didn't always work as expected
+
+- landscape / portrait things don't always work
+
+- simplescan is great because it is simple but I have had some problems 
+  with it
+
+From hugh at mimosa.com  Wed May 27 00:02:58 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 26 May 2015 20:02:58 -0400 (EDT)
+Subject: [GTALUG] print serving / print clients
+Message-ID: <alpine.LRH.2.02.1505261957310.3915@redclaw.mimosa.com>
+
+I have a Linux machine with a non-networked Brother printer (HL-5150D).  I 
+want the Fedora 20 machine to be a print server for a Ubuntu 12.04 
+machine.  They are not co-operating for me.
+
+What protocol do you use or recommend?  IPP (my naive choice), JetPrint (I 
+think that's what the HP-invented protocol is called), LPR, or SMB, ...?
+
+Which are secure, easy, powerful?  What firewall hacking is needed?
+
+From davec-b at rogers.com  Wed May 27 00:26:36 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Tue, 26 May 2015 20:26:36 -0400
+Subject: [GTALUG] print serving / print clients
+In-Reply-To: <alpine.LRH.2.02.1505261957310.3915@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1505261957310.3915@redclaw.mimosa.com>
+Message-ID: <55650F3C.90608@rogers.com>
+
+My Ubuntu PVR, calvin, supports a printer which presents a CUPS 1.7.2 
+web admin on port 631 and the printer on 
+usb://EPSON/Stylus%20Photo%20700?serial=066030217dxsc3ei
+
+My local machine running CUPS 1.7.5 sees the remote machine/printer pair as
+"dnssd://EPSON%20Stylus%20Photo%20700%20%40%20pvr._ipp._tcp.local/cups"
+
+I think dnssd is DNS Service Discovery, a zeroconf thingie, but it could 
+be Dental Negative Storage System, Distributed for all I know (;-))
+
+--dave
+
+
+On 05/26/2015 08:02 PM, D. Hugh Redelmeier wrote:
+> I have a Linux machine with a non-networked Brother printer (HL-5150D).  I
+> want the Fedora 20 machine to be a print server for a Ubuntu 12.04
+> machine.  They are not co-operating for me.
+>
+> What protocol do you use or recommend?  IPP (my naive choice), JetPrint (I
+> think that's what the HP-invented protocol is called), LPR, or SMB, ...?
+>
+> Which are secure, easy, powerful?  What firewall hacking is needed?
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From o1bigtenor at gmail.com  Wed May 27 00:46:39 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Tue, 26 May 2015 19:46:39 -0500
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+ <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+Message-ID: <CAPpdf5-oqALaiTZ_b7aEfkDXT03_kKY+dyX2+rRC8TPGkdFOmg@mail.gmail.com>
+
+On Tue, May 26, 2015 at 6:57 PM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+> | From: Tim Tisdall <tisdall at gmail.com>
+>
+> | You may have already seen this, but here's where all the driver files
+> | are located:
+> http://support.brother.com/g/b/downloadlist.aspx?c=us&lang=en&prod=mfcj6510dw_all&os=128
+> |
+> | It seems that to get the scanning to work from the printer end I would
+> | have to also install the "scan key tool".  (not really a concern of
+> | mine, though)
+>
+> I have a Brother DCP-7065DN.  The situation is just as you describe.
+> I have to install drivers for each function on each client machine.
+>
+> I would not have bought it if I had known that it required proprietary
+> binary drivers.  But it does work, for printing and scanning.
+> I haven't tried "scan key tool".
+>
+>
+I have installed the proprietary drivers. Have installed XSane backend and
+frontend.
+Can't decipher how to setup their web based setup tool.
+
+Haven't tried printing (cause I don't want to) but I need the scanning.
+Brother tech support is somewhat like molasses going uphill in a liquid
+nitrogen tank.
+
+Haven't been able to find anything for info on the bscan4 because its newer
+but doesn't just work either.
+Trying to find ways to use XSane but can't find a reasonable description of
+that either!
+Makes me think that scanning is a seldom used activity!
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150526/4580f985/attachment.html>
+
+From adb at adb.ca  Wed May 27 01:19:19 2015
+From: adb at adb.ca (Anthony de Boer)
+Date: Tue, 26 May 2015 21:19:19 -0400
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+ <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+Message-ID: <20150527011919.GG16224@adb.ca>
+
+D. Hugh Redelmeier wrote:
+> I have a Brother DCP-7065DN.  The situation is just as you describe.
+> I have to install drivers for each function on each client machine.
+> 
+> I would not have bought it if I had known that it required proprietary
+> binary drivers.  But it does work, for printing and scanning.
+> I haven't tried "scan key tool".
+
+We have a Brother MFC-9120CN (networked colour laser/copier/scanner/fax)
+which isn't quite so bad.  There's a specific .ppd to feed CUPS for the
+printer side to be happy.  And scanning pushes a choice of .jpg or .pdf
+content to a Samba share.  I don't think we've ever actually tried to
+send or receive a fax, FWIW.
+
+Before that we had a Brother HL-2030 monochrome laser, which worked fine
+but the aforementioned unit was too useful and inexpensive to pass up.
+The older printer then got our firstborn through an Engineering degree
+and might be wanting a fresh drum soon.
+
+-- 
+Anthony de Boer
+
+From hugh at mimosa.com  Wed May 27 04:07:16 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 27 May 2015 00:07:16 -0400 (EDT)
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <CAPpdf5-oqALaiTZ_b7aEfkDXT03_kKY+dyX2+rRC8TPGkdFOmg@mail.gmail.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+ <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+ <CAPpdf5-oqALaiTZ_b7aEfkDXT03_kKY+dyX2+rRC8TPGkdFOmg@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1505262353260.12739@redclaw.mimosa.com>
+
+| From: o1bigtenor <o1bigtenor at gmail.com>
+
+| I have installed the proprietary drivers. Have installed XSane backend and
+| frontend.
+
+SANE is the collection of scanner drivers
+
+Xsane is a GUI program (crude but powerful) that is from the same
+project.  simplescan is a lot simpler.
+
+Any scanning software needs to find the scanner.  googling will show
+you the drill (which I don't remember).
+
+| Can't decipher how to setup their web based setup tool.
+
+I didn't use a GUI for setting up my Brother printer/scanner.  There
+was a gui involved in telling the scanning software where the driver
+is.
+
+What I think that I did:
+
+- installed brscan4 binary
+
+- brsaneconfig4 -a name=BrotherScanner model=DCP-7065dn ip=192.168.2.12
+  (a different IP)
+
+- brsaneconfig4 -q
+  First device is numbered 0.
+
+Remember to put a hole in your firewall. UDP 54925, I think.
+
