@@ -1719,3 +1719,301 @@ What I think that I did:
 
 Remember to put a hole in your firewall. UDP 54925, I think.
 
+From o1bigtenor at gmail.com  Wed May 27 12:04:59 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Wed, 27 May 2015 07:04:59 -0500
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <alpine.LRH.2.02.1505262353260.12739@redclaw.mimosa.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+ <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+ <CAPpdf5-oqALaiTZ_b7aEfkDXT03_kKY+dyX2+rRC8TPGkdFOmg@mail.gmail.com>
+ <alpine.LRH.2.02.1505262353260.12739@redclaw.mimosa.com>
+Message-ID: <CAPpdf5-hE5x4eDum46zzxMnzsuNVJL9U5xk3Vw4ur+d5kQHOXQ@mail.gmail.com>
+
+On Tue, May 26, 2015 at 11:07 PM, D. Hugh Redelmeier <hugh at mimosa.com>
+wrote:
+
+> | From: o1bigtenor <o1bigtenor at gmail.com>
+>
+> | I have installed the proprietary drivers. Have installed XSane backend
+> and
+> | frontend.
+>
+> SANE is the collection of scanner drivers
+>
+> Xsane is a GUI program (crude but powerful) that is from the same
+> project.  simplescan is a lot simpler.
+>
+> Any scanning software needs to find the scanner.  googling will show
+> you the drill (which I don't remember).
+>
+> | Can't decipher how to setup their web based setup tool.
+>
+> I didn't use a GUI for setting up my Brother printer/scanner.  There
+> was a gui involved in telling the scanning software where the driver
+> is.
+>
+> What I think that I did:
+>
+> - installed brscan4 binary
+>
+> - brsaneconfig4 -a name=BrotherScanner model=DCP-7065dn ip=192.168.2.12
+>   (a different IP)
+>
+> - brsaneconfig4 -q
+>   First device is numbered 0.
+>
+> Remember to put a hole in your firewall. UDP 54925, I think.
+>
+
+Got all the tasks but the last one. I thought that the firewall is on the
+outside of my network
+and my url (slightly different that the one listed) is on my network.
+
+Could this be the entire issue?
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150527/3da29242/attachment.html>
+
+From hugh at mimosa.com  Wed May 27 13:32:31 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 27 May 2015 09:32:31 -0400 (EDT)
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <CAPpdf5-hE5x4eDum46zzxMnzsuNVJL9U5xk3Vw4ur+d5kQHOXQ@mail.gmail.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+ <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+ <CAPpdf5-oqALaiTZ_b7aEfkDXT03_kKY+dyX2+rRC8TPGkdFOmg@mail.gmail.com>
+ <alpine.LRH.2.02.1505262353260.12739@redclaw.mimosa.com>
+ <CAPpdf5-hE5x4eDum46zzxMnzsuNVJL9U5xk3Vw4ur+d5kQHOXQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1505270917470.12739@redclaw.mimosa.com>
+
+| From: o1bigtenor <o1bigtenor at gmail.com>
+
+| On Tue, May 26, 2015 at 11:07 PM, D. Hugh Redelmeier <hugh at mimosa.com>
+| wrote:
+
+| > Remember to put a hole in your firewall. UDP 54925, I think.
+
+| Got all the tasks but the last one. I thought that the firewall is on the
+| outside of my network
+| and my url (slightly different that the one listed) is on my network.
+
+Not a URL, an IP address.  On my network, all things have static IP
+addresses.  So I forgot to mention that issue.  I don't remember how
+brscan4 discovers IP addresses.  It might be easiest if you give your
+printer a static address (configuring your DHCP server (probably in
+your router) to do so).  Then you can tell brscan4 the IP address as I
+did.
+
+| Could this be the entire issue?
+
+When you install Linux you are likely to get a simply configured
+firewall.  And it is likely to block UDP 54925.  But it depends on
+your distro.  I don't know about Debian Testing -- someone else surely 
+does.  Maybe useful (first google hit):
+	<https://wiki.debian.org/DebianFirewall>
+
+To see the firewall rules in gory raw detail:
+	sudo iptables -L -v
+
+From lsorense at csclub.uwaterloo.ca  Wed May 27 14:16:25 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 27 May 2015 10:16:25 -0400
+Subject: [GTALUG] print serving / print clients
+In-Reply-To: <alpine.LRH.2.02.1505261957310.3915@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1505261957310.3915@redclaw.mimosa.com>
+Message-ID: <20150527141625.GA6170@csclub.uwaterloo.ca>
+
+On Tue, May 26, 2015 at 08:02:58PM -0400, D. Hugh Redelmeier wrote:
+> I have a Linux machine with a non-networked Brother printer (HL-5150D).  I 
+> want the Fedora 20 machine to be a print server for a Ubuntu 12.04 
+> machine.  They are not co-operating for me.
+> 
+> What protocol do you use or recommend?  IPP (my naive choice), JetPrint (I 
+> think that's what the HP-invented protocol is called), LPR, or SMB, ...?
+> 
+> Which are secure, easy, powerful?  What firewall hacking is needed?
+
+Cups for IPP.  That way only the print server needs a working driver,
+everyone else just uses postscript to the print server.
+
+-- 
+Len Sorensn
+
+From o1bigtenor at gmail.com  Wed May 27 15:37:34 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Wed, 27 May 2015 10:37:34 -0500
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <alpine.LRH.2.02.1505270917470.12739@redclaw.mimosa.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+ <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+ <CAPpdf5-oqALaiTZ_b7aEfkDXT03_kKY+dyX2+rRC8TPGkdFOmg@mail.gmail.com>
+ <alpine.LRH.2.02.1505262353260.12739@redclaw.mimosa.com>
+ <CAPpdf5-hE5x4eDum46zzxMnzsuNVJL9U5xk3Vw4ur+d5kQHOXQ@mail.gmail.com>
+ <alpine.LRH.2.02.1505270917470.12739@redclaw.mimosa.com>
+Message-ID: <CAPpdf5-H83Cq69Xx8uXUDmVVnixqfO1BZsK+gmX7J40RQ6WbTQ@mail.gmail.com>
+
+On Wed, May 27, 2015 at 8:32 AM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+> | From: o1bigtenor <o1bigtenor at gmail.com>
+>
+> | On Tue, May 26, 2015 at 11:07 PM, D. Hugh Redelmeier <hugh at mimosa.com>
+> | wrote:
+>
+> | > Remember to put a hole in your firewall. UDP 54925, I think.
+>
+> | Got all the tasks but the last one. I thought that the firewall is on the
+> | outside of my network
+> | and my url (slightly different that the one listed) is on my network.
+>
+> Not a URL, an IP address.  On my network, all things have static IP
+> addresses.  So I forgot to mention that issue.  I don't remember how
+> brscan4 discovers IP addresses.  It might be easiest if you give your
+> printer a static address (configuring your DHCP server (probably in
+> your router) to do so).  Then you can tell brscan4 the IP address as I
+> did.
+>
+
+Sorry - - -  still learning the exact terms and where they fit! Should have
+just
+said quad and I would have been closer!
+
+>
+> | Could this be the entire issue?
+>
+> When you install Linux you are likely to get a simply configured
+> firewall.  And it is likely to block UDP 54925.  But it depends on
+> your distro.  I don't know about Debian Testing -- someone else surely
+> does.  Maybe useful (first google hit):
+>         <https://wiki.debian.org/DebianFirewall>
+>
+> To see the firewall rules in gory raw detail:
+>         sudo iptables -L -v
+>
+
+My firewall is on the router (running DD-WRT) so I was thinking that my
+network
+should be behind the wall. Not sure how to do any of that and I'm running
+out of time
+to get the needed work done!
+
+Thank you so much for your advice!
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150527/25f14bee/attachment.html>
+
+From tisdall at gmail.com  Wed May 27 17:15:37 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Wed, 27 May 2015 13:15:37 -0400
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <CAPpdf5-H83Cq69Xx8uXUDmVVnixqfO1BZsK+gmX7J40RQ6WbTQ@mail.gmail.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+ <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+ <CAPpdf5-oqALaiTZ_b7aEfkDXT03_kKY+dyX2+rRC8TPGkdFOmg@mail.gmail.com>
+ <alpine.LRH.2.02.1505262353260.12739@redclaw.mimosa.com>
+ <CAPpdf5-hE5x4eDum46zzxMnzsuNVJL9U5xk3Vw4ur+d5kQHOXQ@mail.gmail.com>
+ <alpine.LRH.2.02.1505270917470.12739@redclaw.mimosa.com>
+ <CAPpdf5-H83Cq69Xx8uXUDmVVnixqfO1BZsK+gmX7J40RQ6WbTQ@mail.gmail.com>
+Message-ID: <CAGxYWpZ2129wUpcBc5ckgkQxyNykBLOugbrAc2+_=h8UFOF3Ww@mail.gmail.com>
+
+On Wed, May 27, 2015 at 11:37 AM, o1bigtenor <o1bigtenor at gmail.com> wrote:
+>> When you install Linux you are likely to get a simply configured
+>> firewall.  And it is likely to block UDP 54925.  But it depends on
+>> your distro.  I don't know about Debian Testing -- someone else surely
+>> does.  Maybe useful (first google hit):
+>>         <https://wiki.debian.org/DebianFirewall>
+>>
+>> To see the firewall rules in gory raw detail:
+>>         sudo iptables -L -v
+>
+>
+> My firewall is on the router (running DD-WRT) so I was thinking that my
+> network
+> should be behind the wall. Not sure how to do any of that and I'm running
+> out of time
+> to get the needed work done!
+
+Every machine on a network can have a firewall.  I think the default
+set up for Ubuntu/Debian is to have no firewall enabled (Ubuntu
+Desktop definitely has no firewall on by default).  So, it's possible
+if you have a firewall on your computer that that's why it's not
+working.  Try running the "sudo iptables -L -v" as recommended and
+confirm whether your system is blocking anything or not.  If that
+command doesn't list anything, then it's not a firewall issue.
+
+From me at mylesbraithwaite.com  Wed May 27 18:33:09 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Wed, 27 May 2015 14:33:09 -0400
+Subject: [GTALUG] Updated Code of Conduct
+Message-ID: <CA+hskZPUwnPjPq0bAVZ+6wrNqLSYHBr8eFNxmenHScmfdoTbpQ@mail.gmail.com>
+
+We have updated the Code of Conduct. You can view it here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you are interested in what's changed you can view the diff here:
+<https://github.com/gtalug/code-of-conduct/commit/5e00d6df1ea54855f0e512a01b383326d5c97f65>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board <board at gtalug.org>.
+
+From o1bigtenor at gmail.com  Wed May 27 20:10:02 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Wed, 27 May 2015 15:10:02 -0500
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <CAGxYWpZ2129wUpcBc5ckgkQxyNykBLOugbrAc2+_=h8UFOF3Ww@mail.gmail.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+ <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+ <CAPpdf5-oqALaiTZ_b7aEfkDXT03_kKY+dyX2+rRC8TPGkdFOmg@mail.gmail.com>
+ <alpine.LRH.2.02.1505262353260.12739@redclaw.mimosa.com>
+ <CAPpdf5-hE5x4eDum46zzxMnzsuNVJL9U5xk3Vw4ur+d5kQHOXQ@mail.gmail.com>
+ <alpine.LRH.2.02.1505270917470.12739@redclaw.mimosa.com>
+ <CAPpdf5-H83Cq69Xx8uXUDmVVnixqfO1BZsK+gmX7J40RQ6WbTQ@mail.gmail.com>
+ <CAGxYWpZ2129wUpcBc5ckgkQxyNykBLOugbrAc2+_=h8UFOF3Ww@mail.gmail.com>
+Message-ID: <CAPpdf5-J4zD8CRaV70dh-LAeG+-0=NhLy-Af0OYwkW2yRedDbg@mail.gmail.com>
+
+Nothing listed.
+
+On Wed, May 27, 2015 at 12:15 PM, Tim Tisdall <tisdall at gmail.com> wrote:
+
+> On Wed, May 27, 2015 at 11:37 AM, o1bigtenor <o1bigtenor at gmail.com> wrote:
+> >> When you install Linux you are likely to get a simply configured
+> >> firewall.  And it is likely to block UDP 54925.  But it depends on
+> >> your distro.  I don't know about Debian Testing -- someone else surely
+> >> does.  Maybe useful (first google hit):
+> >>         <https://wiki.debian.org/DebianFirewall>
+> >>
+> >> To see the firewall rules in gory raw detail:
+> >>         sudo iptables -L -v
+> >
+> >
+> > My firewall is on the router (running DD-WRT) so I was thinking that my
+> > network
+> > should be behind the wall. Not sure how to do any of that and I'm running
+> > out of time
+> > to get the needed work done!
+>
+> Every machine on a network can have a firewall.  I think the default
+> set up for Ubuntu/Debian is to have no firewall enabled (Ubuntu
+> Desktop definitely has no firewall on by default).  So, it's possible
+> if you have a firewall on your computer that that's why it's not
+> working.  Try running the "sudo iptables -L -v" as recommended and
+> confirm whether your system is blocking anything or not.  If that
+> command doesn't list anything, then it's not a firewall issue.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150527/ee569c1a/attachment.html>
+
