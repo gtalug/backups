@@ -2017,3 +2017,446 @@ On Wed, May 27, 2015 at 12:15 PM, Tim Tisdall <tisdall at gmail.com> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150527/ee569c1a/attachment.html>
 
+From jab at mbcs.ca  Thu May 28 19:10:53 2015
+From: jab at mbcs.ca (Jeremy Baker)
+Date: Thu, 28 May 2015 15:10:53 -0400
+Subject: [GTALUG] registrar for .ca
+Message-ID: <5567683D.6040109@mbcs.ca>
+
+Looking for some advise about a good registrar for .ca and .com  I've
+been using registeryour.ca, but have found them lacking in customer
+support and features (dnssec).  I would like to move to someone that is
+more responsive and has support for the following
+
+dnssec
+ipv6
+
+I was just looking at namespro.ca, and their prices are cheaper for .ca
+and .com.  Any experience with them?
+-- 
+Jeremy Baker <jab at mbcs.ca>
+GnuPGP fingerprint =
+EE66 AC49 E008 E09A 7A2A  0195 50EF 580B EDBB 95B6
+
+
+From email+libre at blaise.ca  Thu May 28 19:20:17 2015
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Thu, 28 May 2015 15:20:17 -0400
+Subject: [GTALUG] registrar for .ca
+In-Reply-To: <5567683D.6040109@mbcs.ca>
+References: <5567683D.6040109@mbcs.ca>
+Message-ID: <55676A71.6020707@blaise.ca>
+
+On 28/05/15 03:10 PM, Jeremy Baker wrote:
+> Looking for some advise about a good registrar for .ca and .com  I've
+> been using registeryour.ca, but have found them lacking in customer
+> support and features (dnssec).  I would like to move to someone that is
+> more responsive and has support for the following
+> 
+> dnssec
+> ipv6
+> 
+> I was just looking at namespro.ca, and their prices are cheaper for .ca
+> and .com.  Any experience with them?
+> 
+
+As far as customer support goes, I've been quite happy with Hover.com.
+
+Not sure about dnssec or ipv6, though it looks like they just rolled out
+dnssec... today??
+https://help.hover.com/entries/20786303-DNSSEC-for-signed-top-level-domains-
+
+
+From wwitteman at gmail.com  Thu May 28 19:20:37 2015
+From: wwitteman at gmail.com (William Witteman)
+Date: Thu, 28 May 2015 15:20:37 -0400
+Subject: [GTALUG] registrar for .ca
+In-Reply-To: <5567683D.6040109@mbcs.ca>
+References: <5567683D.6040109@mbcs.ca>
+Message-ID: <CAGMvh24N0i_+983A6u=3W1sftvpTmn0ELsnP3fd4K==s_G2gYQ@mail.gmail.com>
+
+I don't have any recent experience with anyone but easydns.ca for a
+long time; I've been with them since 2003.
+
+I have found their customer service to be outstanding, and they are a
+class act.  A quick sample of why I am a happy customer can be found
+right here: http://blog.easydns.org/
+
+They definitely do DNSSEC, I haven't really looked into ipv6.
+
+That said, I am a big fan of de-coupling my registrar from my DNS
+provider, as having the two separate means that you are better
+insulated from fraudulent behaviour, rent-seeking and corporate
+failure.
+
+Good luck!
+
+From darryl at moores.ca  Thu May 28 19:23:06 2015
+From: darryl at moores.ca (Darryl Moore)
+Date: Thu, 28 May 2015 15:23:06 -0400
+Subject: [GTALUG] registrar for .ca
+In-Reply-To: <5567683D.6040109@mbcs.ca>
+References: <5567683D.6040109@mbcs.ca>
+Message-ID: <55676B1A.3040201@moores.ca>
+
+I use registeryour.ca too. Amy quite happy with them as a registrar. I 
+don't use any of their other services. I use Hurricane Electric for all 
+my DNS services. http://dns.he.net.
+
+On 15-05-28 03:10 PM, Jeremy Baker wrote:
+> Looking for some advise about a good registrar for .ca and .com  I've
+> been using registeryour.ca, but have found them lacking in customer
+> support and features (dnssec).  I would like to move to someone that is
+> more responsive and has support for the following
+>
+> dnssec
+> ipv6
+>
+> I was just looking at namespro.ca, and their prices are cheaper for .ca
+> and .com.  Any experience with them?
+
+
+From darryl at moores.ca  Thu May 28 19:41:45 2015
+From: darryl at moores.ca (Darryl Moore)
+Date: Thu, 28 May 2015 15:41:45 -0400
+Subject: [GTALUG] writing to group
+Message-ID: <55676F79.8010905@moores.ca>
+
+Hello moderators. I lerk in the GTALUG newsgroup often but don't often 
+respond. I did response to the last thread for the first time in a 
+while, but got a message back saying my message was awaiting moderation. 
+I'm expecting this one to as well, and you can choose whether to respond 
+directly or to post in the newsgroup and respond there.
+
+Does this group seriously moderate each and every message that passes 
+through? Or do you have membership levels with some people requiring 
+moderation and others not? Just curious, as if my messages are likely to 
+get significantly delayed, then that would certainly have an effect on 
+whether I try to post much more in the future.
+
+Kind Regards,
+Darryl Moore
+
+From avolkov at gmail.com  Thu May 28 19:45:36 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Thu, 28 May 2015 15:45:36 -0400
+Subject: [GTALUG] Remote GUI access to a Linux box from Windows
+Message-ID: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+
+Hello everyone,
+
+I need to organize a remote gui access from several windows machine to a
+linux box, running Fedora 22 with GNOME.
+
+The major requirements are -- it's gonna work on a LAN, needs to be
+responsive, and the should exist a decent windows client.
+
+I think VNC is a bit too cumbersome, although there might be a better
+client out there.
+
+Has anyone used anything more recent? So far I'm most inclined on using
+X2Go -- http://wiki.x2go.org/doku.php, has anyone had any experience with
+it?
+
+Thanks,
+
+Alex.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150528/e638f759/attachment.html>
+
+From me at mylesbraithwaite.com  Thu May 28 19:49:02 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 28 May 2015 15:49:02 -0400
+Subject: [GTALUG] writing to group
+In-Reply-To: <55676F79.8010905@moores.ca>
+References: <55676F79.8010905@moores.ca>
+Message-ID: <5567712E.3020905@mylesbraithwaite.com>
+
+Darryl Moore wrote:
+> Hello moderators. I lerk in the GTALUG newsgroup often but don't often
+> respond. I did response to the last thread for the first time in a
+> while, but got a message back saying my message was awaiting moderation.
+> I'm expecting this one to as well, and you can choose whether to respond
+> directly or to post in the newsgroup and respond there.
+> 
+> Does this group seriously moderate each and every message that passes
+> through? Or do you have membership levels with some people requiring
+> moderation and others not? Just curious, as if my messages are likely to
+> get significantly delayed, then that would certainly have an effect on
+> whether I try to post much more in the future.
+
+Speaking as the guy who approved your post.
+
+We don't moderator each individual post just the first post of a new
+user (as a precautions against spammers).
+
+From me at mylesbraithwaite.com  Thu May 28 19:57:55 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 28 May 2015 15:57:55 -0400
+Subject: [GTALUG] Remote GUI access to a Linux box from Windows
+In-Reply-To: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+References: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+Message-ID: <55677343.5090008@mylesbraithwaite.com>
+
+Alex Volkov wrote:
+> Hello everyone,
+> 
+> I need to organize a remote gui access from several windows machine to a
+> linux box, running Fedora 22 with GNOME.
+> 
+> The major requirements are -- it's gonna work on a LAN, needs to be
+> responsive, and the should exist a decent windows client.
+> 
+> I think VNC is a bit too cumbersome, although there might be a better
+> client out there.
+> 
+> Has anyone used anything more recent? So far I'm most inclined on using
+> X2Go -- http://wiki.x2go.org/doku.php, has anyone had any experience
+> with it?
+
+I am using xrdp[1] right now for this and it's great because it just
+works. It's works while for most basic office-like tasks (i.e. running
+LibreOffice, Wireshark, and Thunderbird). I wouldn't suggest it for
+running video though. You can use the Microsoft's Remote Desktop Connect
+as the client.
+
+[1]: <http://www.xrdp.org/>
+
+From louipc.ist at gmail.com  Thu May 28 20:00:06 2015
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Thu, 28 May 2015 16:00:06 -0400
+Subject: [GTALUG] Remote GUI access to a Linux box from Windows
+In-Reply-To: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+References: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+Message-ID: <20150528200005.GA25573@gmail.com>
+
+On Thu 28 May 2015 15:45 -0400, Alex Volkov wrote:
+> The major requirements are -- it's gonna work on a LAN, needs to be
+> responsive, and the should exist a decent windows client.
+> 
+> I think VNC is a bit too cumbersome, although there might be a better
+> client out there.
+
+What is cumbersome?
+
+I've found VNC to be pretty trivial to walk non technical users through, even
+children. If you control the network around the Linux machine you can open
+a path to it and even point a domain to it. So no messing around with IP
+addresses or firewalls on their side.
+
+
+From darryl at moores.ca  Thu May 28 20:03:37 2015
+From: darryl at moores.ca (Darryl Moore)
+Date: Thu, 28 May 2015 16:03:37 -0400
+Subject: [GTALUG] writing to group
+In-Reply-To: <5567712E.3020905@mylesbraithwaite.com>
+References: <55676F79.8010905@moores.ca>
+ <5567712E.3020905@mylesbraithwaite.com>
+Message-ID: <55677499.50706@moores.ca>
+
+Thanks Myles. So a tiered membership then. Guarding against spammers is 
+eminently sensible. Now, not to start a flame war, (I haven't actually 
+paid close enough attention) but does this group have a preference WRT 
+top or bottom posting?
+
+Regards,
+Darryl
+
+On 15-05-28 03:49 PM, Myles Braithwaite wrote:
+> Darryl Moore wrote:
+>> Hello moderators. I lerk in the GTALUG newsgroup often but don't often
+>> respond. I did response to the last thread for the first time in a
+>> while, but got a message back saying my message was awaiting moderation.
+>> I'm expecting this one to as well, and you can choose whether to respond
+>> directly or to post in the newsgroup and respond there.
+>>
+>> Does this group seriously moderate each and every message that passes
+>> through? Or do you have membership levels with some people requiring
+>> moderation and others not? Just curious, as if my messages are likely to
+>> get significantly delayed, then that would certainly have an effect on
+>> whether I try to post much more in the future.
+> Speaking as the guy who approved your post.
+>
+> We don't moderator each individual post just the first post of a new
+> user (as a precautions against spammers).
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+From me at mylesbraithwaite.com  Thu May 28 20:06:24 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 28 May 2015 16:06:24 -0400
+Subject: [GTALUG] writing to group
+In-Reply-To: <55677499.50706@moores.ca>
+References: <55676F79.8010905@moores.ca>
+ <5567712E.3020905@mylesbraithwaite.com> <55677499.50706@moores.ca>
+Message-ID: <55677540.5020201@mylesbraithwaite.com>
+
+Darryl Moore wrote:
+> Thanks Myles. So a tiered membership then. Guarding against spammers is
+> eminently sensible. Now, not to start a flame war, (I haven't actually
+> paid close enough attention) but does this group have a preference WRT
+> top or bottom posting?
+
+Bottom.
+
+From opengeometry at yahoo.ca  Thu May 28 20:50:12 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Thu, 28 May 2015 16:50:12 -0400
+Subject: [GTALUG] writing to group
+In-Reply-To: <55677540.5020201@mylesbraithwaite.com>
+References: <55676F79.8010905@moores.ca>
+ <5567712E.3020905@mylesbraithwaite.com> <55677499.50706@moores.ca>
+ <55677540.5020201@mylesbraithwaite.com>
+Message-ID: <20150528205012.GA18712@node1.localdomain>
+
+Or, top, if you're responding to entire post.
+-- 
+William
+
+On Thu, May 28, 2015 at 04:06:24PM -0400, Myles Braithwaite wrote:
+> Darryl Moore wrote:
+> > Thanks Myles. So a tiered membership then. Guarding against spammers is
+> > eminently sensible. Now, not to start a flame war, (I haven't actually
+> > paid close enough attention) but does this group have a preference WRT
+> > top or bottom posting?
+> 
+> Bottom.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From chris at cfajohnson.com  Thu May 28 21:09:14 2015
+From: chris at cfajohnson.com (Chris F.A. Johnson)
+Date: Thu, 28 May 2015 17:09:14 -0400 (EDT)
+Subject: [GTALUG] writing to group
+In-Reply-To: <55677499.50706@moores.ca>
+References: <55676F79.8010905@moores.ca>
+ <5567712E.3020905@mylesbraithwaite.com> <55677499.50706@moores.ca>
+Message-ID: <alpine.DEB.2.10.1505281708030.3510@chris.tor>
+
+On Thu, 28 May 2015, Darryl Moore wrote:
+
+> Thanks Myles. So a tiered membership then. Guarding against spammers is 
+> eminently sensible. Now, not to start a flame war, (I haven't actually paid 
+> close enough attention) but does this group have a preference WRT top or 
+> bottom posting?
+
+   Interleaved, with your reply following the paragraph or sentence you
+   are commenting on.
+
+-- 
+Chris F.A. Johnson, <http://cfajohnson.com>
+
+From louipc.ist at gmail.com  Thu May 28 21:16:43 2015
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Thu, 28 May 2015 17:16:43 -0400
+Subject: [GTALUG] writing to group
+In-Reply-To: <20150528205012.GA18712@node1.localdomain>
+References: <55676F79.8010905@moores.ca>
+ <5567712E.3020905@mylesbraithwaite.com> <55677499.50706@moores.ca>
+ <55677540.5020201@mylesbraithwaite.com>
+ <20150528205012.GA18712@node1.localdomain>
+Message-ID: <20150528211643.GB25573@gmail.com>
+
+On Thu 28 May 2015 16:50 -0400, William Park wrote:
+> Or, top, if you're responding to entire post.
+> 
+> On Thu, May 28, 2015 at 04:06:24PM -0400, Myles Braithwaite wrote:
+> > Darryl Moore wrote:
+> > > does this group have a preference WRT top or bottom posting?
+> > 
+> > Bottom.
+
+Bottom. Trim quoted text.
+
+From hugh at mimosa.com  Thu May 28 22:51:56 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 28 May 2015 18:51:56 -0400 (EDT)
+Subject: [GTALUG] writing to group
+In-Reply-To: <alpine.DEB.2.10.1505281708030.3510@chris.tor>
+References: <55676F79.8010905@moores.ca>
+ <5567712E.3020905@mylesbraithwaite.com> <55677499.50706@moores.ca>
+ <alpine.DEB.2.10.1505281708030.3510@chris.tor>
+Message-ID: <alpine.LRH.2.02.1505281850220.12739@redclaw.mimosa.com>
+
+| From: Chris F.A. Johnson <chris at cfajohnson.com>
+
+|   Interleaved, with your reply following the paragraph or sentence you
+|   are commenting on.
+
+As usual, Chris is precise and accurate.  And educational.
+
+From lists at sadiqs.com  Fri May 29 00:42:09 2015
+From: lists at sadiqs.com (Sadiq Saif)
+Date: Thu, 28 May 2015 20:42:09 -0400
+Subject: [GTALUG] registrar for .ca
+In-Reply-To: <5567683D.6040109@mbcs.ca>
+References: <5567683D.6040109@mbcs.ca>
+Message-ID: <5567B5E1.903@sadiqs.com>
+
+On 5/28/2015 15:10, Jeremy Baker wrote:
+> Looking for some advise about a good registrar for .ca and .com  I've
+> been using registeryour.ca, but have found them lacking in customer
+> support and features (dnssec).  I would like to move to someone that is
+> more responsive and has support for the following
+> 
+> dnssec
+> ipv6
+> 
+> I was just looking at namespro.ca, and their prices are cheaper for .ca
+> and .com.  Any experience with them?
+> 
+
+I am happy with Gandi - https://www.gandi.net/.
+
+They provide both of the features you are looking for.
+(Assuming by IPv6 you mean the ability to add v6 glue records)
+
+-- 
+Sadiq Saif (AS393949)
+https://staticsafe.ca
+
+From bjonkman at sobac.com  Fri May 29 05:13:49 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Fri, 29 May 2015 01:13:49 -0400
+Subject: [GTALUG] Updated Code of Conduct
+In-Reply-To: <CA+hskZPUwnPjPq0bAVZ+6wrNqLSYHBr8eFNxmenHScmfdoTbpQ@mail.gmail.com>
+References: <CA+hskZPUwnPjPq0bAVZ+6wrNqLSYHBr8eFNxmenHScmfdoTbpQ@mail.gmail.com>
+Message-ID: <5567F58D.8020308@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Good job. That's a good Code of Conduct.
+
+- --Bob.
+
+On 27/05/15 02:33 PM, Myles Braithwaite wrote:
+> We have updated the Code of Conduct. You can view it here: 
+> <http://gtalug.org/about/code-of-conduct/>.
+> 
+> If you are interested in what's changed you can view the diff here:
+>  
+> <https://github.com/gtalug/code-of-conduct/commit/5e00d6df1ea54855f0e512a01b383326d5c97f65>.
+>
+>
+> 
+If you have any questions, comments, or concerns about the GTALUG
+> Code of Conduct please contact one of the GTALUG Board 
+> <board at gtalug.org>. --- Talk Mailing List talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlVn9YsACgkQuRKJsNLM5epYXACcDbbwzWmnSJz2sYwNKzQlIDxE
+BFkAnRLmkMtIo0MtWgTIFH6hyPBNQnj6
+=c9r9
+-----END PGP SIGNATURE-----
+
