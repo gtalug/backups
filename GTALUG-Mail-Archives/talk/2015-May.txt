@@ -2460,3 +2460,165 @@ BFkAnRLmkMtIo0MtWgTIFH6hyPBNQnj6
 =c9r9
 -----END PGP SIGNATURE-----
 
+From jab at mbcs.ca  Fri May 29 12:56:21 2015
+From: jab at mbcs.ca (Jeremy Baker)
+Date: Fri, 29 May 2015 08:56:21 -0400
+Subject: [GTALUG] registrar for .ca
+In-Reply-To: <55676B1A.3040201@moores.ca>
+References: <5567683D.6040109@mbcs.ca> <55676B1A.3040201@moores.ca>
+Message-ID: <556861F5.5000501@mbcs.ca>
+
+I run my own dns, my registrar just has to get my ns records up to the
+parent domain.  Unfortunately, while registeryour.ca allows you to enter
+both ipv4 and ipv6 addresses of your dns servers, they are failing to
+have AAAA records placed in the .ca servers.  This is holding up my
+Hurricane Electric certification, which I need to complete before they
+will unblock port 25.
+
+On 05/28/2015 03:23 PM, Darryl Moore wrote:
+> I use registeryour.ca too. Amy quite happy with them as a registrar. I
+> don't use any of their other services. I use Hurricane Electric for all
+> my DNS services. http://dns.he.net.
+> 
+> On 15-05-28 03:10 PM, Jeremy Baker wrote:
+>> Looking for some advise about a good registrar for .ca and .com  I've
+>> been using registeryour.ca, but have found them lacking in customer
+>> support and features (dnssec).  I would like to move to someone that is
+>> more responsive and has support for the following
+>>
+>> dnssec
+>> ipv6
+>>
+>> I was just looking at namespro.ca, and their prices are cheaper for .ca
+>> and .com.  Any experience with them?
+> 
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+-- 
+Jeremy Baker <jab at mbcs.ca>
+GnuPGP fingerprint =
+EE66 AC49 E008 E09A 7A2A  0195 50EF 580B EDBB 95B6
+
+
+From lsorense at csclub.uwaterloo.ca  Fri May 29 14:26:22 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 29 May 2015 10:26:22 -0400
+Subject: [GTALUG] Remote GUI access to a Linux box from Windows
+In-Reply-To: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+References: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+Message-ID: <20150529142622.GB6170@csclub.uwaterloo.ca>
+
+On Thu, May 28, 2015 at 03:45:36PM -0400, Alex Volkov wrote:
+> Hello everyone,
+> 
+> I need to organize a remote gui access from several windows machine to a
+> linux box, running Fedora 22 with GNOME.
+> 
+> The major requirements are -- it's gonna work on a LAN, needs to be
+> responsive, and the should exist a decent windows client.
+> 
+> I think VNC is a bit too cumbersome, although there might be a better
+> client out there.
+
+How about rdp which seems to be what windows likes to use.
+
+> Has anyone used anything more recent? So far I'm most inclined on using
+> X2Go -- http://wiki.x2go.org/doku.php, has anyone had any experience with
+> it?
+
+Package: xrdp
+Version: 0.6.1-2
+Installed-Size: 1593
+Maintainer: Vincent Bernat <bernat at debian.org>
+Architecture: amd64
+Depends: libc6 (>= 2.15), libpam0g (>= 0.99.7.1), libssl1.0.0 (>= 1.0.0), libx11-6, libxfixes3, adduser
+Recommends: vnc4server | tightvncserver | vnc-server
+Description-en: Remote Desktop Protocol (RDP) server
+ Based on research work by the rdesktop project, xrdp uses the Remote
+ Desktop Protocol to present a graphical login to a remote client.
+ xrdp can connect to a VNC server or another RDP server.
+ .
+ Microsoft Windows users can connect to a system running xrdp without
+ installing additional software.
+Description-md5: b98c1889e17be6136503794b3491891b
+Homepage: http://xrdp.sourceforge.net
+Tag: implemented-in::c, interface::daemon, network::server, role::program,
+ use::login, use::viewing, x11::application
+Section: net
+Priority: optional
+Filename: pool/main/x/xrdp/xrdp_0.6.1-2_amd64.deb
+Size: 217932
+MD5sum: 96ce09e7c1ae53a6a6a588cc7cf9f52b
+SHA1: 509cdc203e606921a4f092d9a5788e2d90440403
+SHA256: ad7aa1c3844c0b77c0931907f7939e7d5d72b552e6cfe28330d4ff56f21e1895
+
+
+
+The 'does not need additional software installed on windows' seems like
+a nice feature.
+
+-- 
+Len Sorensen
+
+From gilesorr at gmail.com  Fri May 29 14:28:07 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Fri, 29 May 2015 10:28:07 -0400
+Subject: [GTALUG] Remote GUI access to a Linux box from Windows
+In-Reply-To: <20150528200005.GA25573@gmail.com>
+References: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+ <20150528200005.GA25573@gmail.com>
+Message-ID: <CAEnxSC4d_0sYUF1bYQq4J3c01PD0Ug==RW7dazq8MQ-u4pqWyg@mail.gmail.com>
+
+On 28 May 2015 at 16:00, Loui Chang <louipc.ist at gmail.com> wrote:
+> On Thu 28 May 2015 15:45 -0400, Alex Volkov wrote:
+>> The major requirements are -- it's gonna work on a LAN, needs to be
+>> responsive, and the should exist a decent windows client.
+>>
+>> I think VNC is a bit too cumbersome, although there might be a better
+>> client out there.
+>
+> What is cumbersome?
+>
+> I've found VNC to be pretty trivial to walk non technical users through, even
+> children. If you control the network around the Linux machine you can open
+> a path to it and even point a domain to it. So no messing around with IP
+> addresses or firewalls on their side.
+
+He says "even children," as if they're tough to teach.  Now if you'd
+said "even grandparents," that would be a selling point.
+
+I've always used VNC, and have no big issues with it ... but I'm
+willing to admit that "cumbersome" is a reasonably accurate
+description.  The next time I need such a thing, I'll take Myles'
+suggestion and look at xrdp.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From louipc.ist at gmail.com  Fri May 29 17:30:46 2015
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Fri, 29 May 2015 13:30:46 -0400
+Subject: [GTALUG] Remote GUI access to a Linux box from Windows
+In-Reply-To: <CAEnxSC4d_0sYUF1bYQq4J3c01PD0Ug==RW7dazq8MQ-u4pqWyg@mail.gmail.com>
+References: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+ <20150528200005.GA25573@gmail.com>
+ <CAEnxSC4d_0sYUF1bYQq4J3c01PD0Ug==RW7dazq8MQ-u4pqWyg@mail.gmail.com>
+Message-ID: <20150529173046.GC25573@gmail.com>
+
+On Fri 29 May 2015 10:28 -0400, Giles Orr wrote:
+> I've always used VNC, and have no big issues with it ... but I'm
+> willing to admit that "cumbersome" is a reasonably accurate
+> description.  The next time I need such a thing, I'll take Myles'
+> suggestion and look at xrdp.
+
+True.
+Not sure I would consider it cumbersome, but seems these days the
+download/install of a desktop program falls into that category.
+Better be installed already or make it a mobile/web app.
+
+
