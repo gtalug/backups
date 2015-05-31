@@ -1,0 +1,2674 @@
+From me at mylesbraithwaite.com  Fri May  1 12:52:43 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 1 May 2015 08:52:43 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting 11th May, 2015 at 7:30pm
+Message-ID: <CA+hskZMZ5XDkujMtZOLETNLVvXmxVXVVZQQQN1nuRfzXdZt5eg@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-05/>
+
+# OpenStreetMap with Stewart Russell
+
+OpenStreetMap is more than just a web mapping platform. It's a
+comprehensive, community-maintained map/geodatabase of the world that
+you can hack on. Since the last GTALUG talk on OSM over five years
+ago, it's grown a lot, and developed a huge community of mappers,
+developers and data users. In this talk, we'll discuss the basics of
+using OSM, how it survived a major licence change with only a little
+drama, and how it succeeds as a community.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before the meeting a group of GTALUGers will be dining at
+It's All Grk (101 Dundas St East).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East).
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members @
+<board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From scruss at gmail.com  Fri May  1 13:33:03 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Fri, 01 May 2015 09:33:03 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting 11th May, 2015 at 7:30pm
+In-Reply-To: <CA+hskZMZ5XDkujMtZOLETNLVvXmxVXVVZQQQN1nuRfzXdZt5eg@mail.gmail.com>
+References: <CA+hskZMZ5XDkujMtZOLETNLVvXmxVXVVZQQQN1nuRfzXdZt5eg@mail.gmail.com>
+Message-ID: <5543808F.8020507@gmail.com>
+
+Hi Myles - is it the 11th or the 12th? Your subject says the 11th, the
+site says the 12th.
+
+cheers,
+ Stewart
+
+From me at mylesbraithwaite.com  Fri May  1 13:41:27 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 01 May 2015 09:41:27 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting 11th May, 2015 at 7:30pm
+In-Reply-To: <5543808F.8020507@gmail.com>
+References: <CA+hskZMZ5XDkujMtZOLETNLVvXmxVXVVZQQQN1nuRfzXdZt5eg@mail.gmail.com>
+ <5543808F.8020507@gmail.com>
+Message-ID: <55438287.4020703@mylesbraithwaite.com>
+
+It's the 12th.
+
+Stewart C. Russell wrote:
+> Hi Myles - is it the 11th or the 12th? Your subject says the 11th, the
+> site says the 12th.
+>
+> cheers,
+>   Stewart
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From hector at maplesky.ca  Fri May  1 13:41:36 2015
+From: hector at maplesky.ca (Hector)
+Date: Fri, 01 May 2015 09:41:36 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting 11th May, 2015 at 7:30pm
+In-Reply-To: <5543808F.8020507@gmail.com>
+References: <CA+hskZMZ5XDkujMtZOLETNLVvXmxVXVVZQQQN1nuRfzXdZt5eg@mail.gmail.com>
+ <5543808F.8020507@gmail.com>
+Message-ID: <518eb010bc26bf98d08549a0d04c575e@maplesky.ca>
+
+I am thinking it is the 2nd Tuesday of every month so my bet goes to the 
+12th :)
+
+Hector
+
+On 2015-05-01 09:33, Stewart C. Russell wrote:
+> Hi Myles - is it the 11th or the 12th? Your subject says the 11th, the
+> site says the 12th.
+> 
+> cheers,
+>  Stewart
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From me at mylesbraithwaite.com  Fri May  1 13:42:57 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 1 May 2015 09:42:57 -0400
+Subject: [GTALUG] [GTALUG-Announce] [CORRECTION] Meeting 12th May,
+	2015 at 7:30pm
+Message-ID: <CA+hskZN9Fp71AvbvaJPtyn8soiKuAD_do_JD8DfUDtp+_nPayg@mail.gmail.com>
+
+The meeting is on the 12th of May and not 11th of May.
+
+
+---------- Forwarded message ----------
+From: Myles Braithwaite <me at mylesbraithwaite.com>
+Date: Fri, May 1, 2015 at 8:52 AM
+Subject: Meeting 11th May, 2015 at 7:30pm
+To: announce at gtalug.org
+
+
+<http://gtalug.org/meeting/2015-05/>
+
+# OpenStreetMap with Stewart Russell
+
+OpenStreetMap is more than just a web mapping platform. It's a
+comprehensive, community-maintained map/geodatabase of the world that
+you can hack on. Since the last GTALUG talk on OSM over five years
+ago, it's grown a lot, and developed a huge community of mappers,
+developers and data users. In this talk, we'll discuss the basics of
+using OSM, how it survived a major licence change with only a little
+drama, and how it succeeds as a community.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before the meeting a group of GTALUGers will be dining at
+It's All Grk (101 Dundas St East).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East).
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members @
+<board at gtalug.org>.
+
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From james.knott at rogers.com  Mon May  4 11:32:18 2015
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 04 May 2015 07:32:18 -0400
+Subject: [GTALUG] Happy Star Wars Day
+Message-ID: <554758C2.3010707@rogers.com>
+
+May the fourth be with you.  ;-)
+
+From stephen-d at rogers.com  Mon May  4 11:37:09 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Mon, 04 May 2015 07:37:09 -0400
+Subject: [GTALUG] Happy Star Wars Day
+In-Reply-To: <554758C2.3010707@rogers.com>
+References: <554758C2.3010707@rogers.com>
+Message-ID: <554759E5.8060407@rogers.com>
+
+On 15-05-04 07:32 AM, James Knott wrote:
+> May the fourth be with you.  ;-)
+
+1979. Headline referencing Margaret Thatcher.
+
+
+-- 
+Stephen
+
+From gordontc at look.ca  Wed May  6 16:42:21 2015
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Wed, 06 May 2015 12:42:21 -0400
+Subject: [GTALUG] ICANN's Proposal to Move IANA
+Message-ID: <1430930541.24607.2.camel@larva.gordhome.local>
+
+Hi, all:
+
+You probably know that in March 2014, the U.S. Department of Commerce's
+National Telecommunications and Information Administration (NTIA)
+announced its intent to “transition its stewardship role of the IANA
+Functions and related management”.   This meant that NTIA will no longer
+oversee a contract with ICANN to manage IANA.   ICANN will have to do it
+itself.
+
+To get this started, NTIA called on ICANN to “coordinate” the drafting
+of a proposal to transition this stewardship role to the broader global
+multi-stakeholder community.    This meant drafting of a proposal of its
+own and inviting other proposals from IETF and the various numbers
+registries (ARIN, RIPE and the others) and then coordinating them all
+into one proposal to present to NTIA.
+
+ICANN now has a (second) draft of its proposal “ready for comment” (this
+request for public comment is fairly standard for ICANN policy
+documents).
+
+This one is important enough that we're asking you to look it over and
+accept ICANN's invitation to comment.   Comments are going to be
+accepted until May 20 – that's short, I know, but there it is.
+
+Now, this is a pretty complex document – it's a kind of complex matter,
+involving contract law (in California, where ICANN is registered), the
+concerns of a lot of stakeholders outside the US, and the need for ICANN
+to be seen to be accountable.
+
+So, here it is.   Send your comments to me at gordon at look.ca and I'll
+compile them into a group comment for ICANN.
+
+https://www.icann.org/en/system/files/files/cwg-stewardship-draft-proposal-without-annexes-22apr15-en.pdf
+
+I'm not sure you want to tackle the proposal with annexes.   It's
+painful.
+
+Enjoy
+
+Gordon 
+
+Community Affairs Group
+GTALUG
+
+
+
+
+
+From gordontc at look.ca  Wed May  6 20:08:24 2015
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Wed, 06 May 2015 16:08:24 -0400
+Subject: [GTALUG] ICANN's Proposal to Move IANA
+In-Reply-To: <1430930541.24607.2.camel@larva.gordhome.local>
+References: <1430930541.24607.2.camel@larva.gordhome.local>
+Message-ID: <1430942904.26733.1.camel@larva.gordhome.local>
+
+Hi, again:
+
+Comes of doing things when you're not awake yet.
+
+I misspelled my own e-mail address.   It should be gordontc at look.ca
+
+Sorry about that . . . 
+
+Gordon
+
+
+On Wed, 2015-05-06 at 12:42 -0400, Gordon Chillcott wrote:
+> Hi, all:
+> 
+> You probably know that in March 2014, the U.S. Department of Commerce's
+> National Telecommunications and Information Administration (NTIA)
+> announced its intent to “transition its stewardship role of the IANA
+> Functions and related management”.   This meant that NTIA will no longer
+> oversee a contract with ICANN to manage IANA.   ICANN will have to do it
+> itself.
+> 
+> To get this started, NTIA called on ICANN to “coordinate” the drafting
+> of a proposal to transition this stewardship role to the broader global
+> multi-stakeholder community.    This meant drafting of a proposal of its
+> own and inviting other proposals from IETF and the various numbers
+> registries (ARIN, RIPE and the others) and then coordinating them all
+> into one proposal to present to NTIA.
+> 
+> ICANN now has a (second) draft of its proposal “ready for comment” (this
+> request for public comment is fairly standard for ICANN policy
+> documents).
+> 
+> This one is important enough that we're asking you to look it over and
+> accept ICANN's invitation to comment.   Comments are going to be
+> accepted until May 20 – that's short, I know, but there it is.
+> 
+> Now, this is a pretty complex document – it's a kind of complex matter,
+> involving contract law (in California, where ICANN is registered), the
+> concerns of a lot of stakeholders outside the US, and the need for ICANN
+> to be seen to be accountable.
+> 
+> So, here it is.   Send your comments to me at gordon at look.ca and I'll
+> compile them into a group comment for ICANN.
+> 
+> https://www.icann.org/en/system/files/files/cwg-stewardship-draft-proposal-without-annexes-22apr15-en.pdf
+> 
+> I'm not sure you want to tackle the proposal with annexes.   It's
+> painful.
+> 
+> Enjoy
+> 
+> Gordon 
+> 
+> Community Affairs Group
+> GTALUG
+> 
+> 
+> 
+> 
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+
+From james.knott at rogers.com  Wed May  6 20:16:11 2015
+From: james.knott at rogers.com (James Knott)
+Date: Wed, 06 May 2015 16:16:11 -0400
+Subject: [GTALUG] ICANN's Proposal to Move IANA
+In-Reply-To: <1430942904.26733.1.camel@larva.gordhome.local>
+References: <1430930541.24607.2.camel@larva.gordhome.local>
+ <1430942904.26733.1.camel@larva.gordhome.local>
+Message-ID: <554A768B.8000800@rogers.com>
+
+On 05/06/2015 04:08 PM, Gordon Chillcott wrote:
+> I misspelled my own e-mail address.   It should be gordontc at look.ca
+>
+> Sorry about that . . . 
+
+You should have had your morning beer first.  ;-)
+
+From phiscock at ee.ryerson.ca  Wed May  6 20:52:03 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Wed, 6 May 2015 16:52:03 -0400
+Subject: [GTALUG] ICANN's Proposal to Move IANA
+In-Reply-To: <554A768B.8000800@rogers.com>
+References: <1430930541.24607.2.camel@larva.gordhome.local>
+ <1430942904.26733.1.camel@larva.gordhome.local>
+ <554A768B.8000800@rogers.com>
+Message-ID: <b03d2070655e07bd633b1449e43ae7be.squirrel@webmail.ee.ryerson.ca>
+
+
+> On 05/06/2015 04:08 PM, Gordon Chillcott wrote:
+>> I misspelled my own e-mail address.   It should be gordontc at look.ca
+>>
+>> Sorry about that . . .
+>
+> You should have had your morning beer first.  ;-)
+> ---
+
+Sign outside pub on the Danforth:
+
+Beer, not just for breakfast.
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From hector at maplesky.ca  Fri May  8 01:43:15 2015
+From: hector at maplesky.ca (Hector)
+Date: Thu, 07 May 2015 21:43:15 -0400
+Subject: [GTALUG] Perfect GPG key
+In-Reply-To: <CADK3HH+kA2he1iQpzDtww+pta__0-oGE8p6COrzSOKfzJa2dsA@mail.gmail.com>
+References: <CADK3HH+kA2he1iQpzDtww+pta__0-oGE8p6COrzSOKfzJa2dsA@mail.gmail.com>
+Message-ID: <26304e872a76d6a4cde4d4894d9df8e5@maplesky.ca>
+
+Hi all,
+
+I've been looking into creating a 'Perfect GPG' key, mainly following 
+the instructions here 
+https://alexcabal.com/creating-the-perfect-gpg-keypair/ and so far it 
+worked and I was happy with the results and understanding. I am just 
+looking into a more advanced opinion. Any help or direction will be 
+greatly appreciated.
+
+Thank you in advance,
+Hector
+
+
+From stephen-d at rogers.com  Sun May 10 01:58:01 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Sat, 09 May 2015 21:58:01 -0400
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+Message-ID: <554EBB29.6020604@rogers.com>
+
+I am running Ubuntu 14.04
+
+I downloaded the *.deb file from the Epson web site:
+
+epson-inkjet-printer-escpr_1.4.5-1lsb3.2_i386.deb
+
+It starts in the Ubuntu Software Centre, but I get an error message:
+
+"New software can't be installed, because there is a problem with the 
+software currently installed. Do you want to repair this problem now?"
+
+I click "Repair".
+
+I am prompted for my password. In a few seconds I return to the Ubuntu 
+Software Centre.
+
+I click "Install"
+
+Then a window pops up saying "Package operation failed"
+
+I check the details and I see:
+
+"dpkg: dependency problems prevent configuration of 
+epson-inkjet-printer-escpr:
+epson-inkjet-printer-escpr depends on lsb (>= 3.2)."
+
+So I download lsb-printing_4.0-0ubuntu8_i386.deb
+
+I try to install, but the Ubuntu Software Centre prompts me to Remove.
+
+So, at this point I am calling out for HELP!
+
+Thanks in advance
+-- 
+Stephen
+
+From scruss at gmail.com  Sun May 10 02:42:47 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sat, 09 May 2015 22:42:47 -0400
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+In-Reply-To: <554EBB29.6020604@rogers.com>
+References: <554EBB29.6020604@rogers.com>
+Message-ID: <554EC5A7.3000706@gmail.com>
+
+Hi Stephen:
+> I am running Ubuntu 14.04
+>
+> I downloaded the *.deb file from the Epson web site:
+>
+> epson-inkjet-printer-escpr_1.4.5-1lsb3.2_i386.deb
+
+Getting the right LSB package installed can be a pain. If you're not
+using paper larger than Letter, the standard CUPS ESC/P-R driver
+/should/ drive this printer fairly well.
+
+I've had the larger (size of a small tank, to be honest) WF-7520 for
+years, and it's been great. Duplex ADF scanning, SANE support over the
+network, scan to SD card (which appears as a samba share on the network)
+... it just works.
+
+cheers,
+ Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150509/bd8ff38d/attachment.html>
+
+From stephen-d at rogers.com  Sun May 10 13:16:43 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Sun, 10 May 2015 09:16:43 -0400
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+In-Reply-To: <554EC5A7.3000706@gmail.com>
+References: <554EBB29.6020604@rogers.com> <554EC5A7.3000706@gmail.com>
+Message-ID: <554F5A3B.7070002@rogers.com>
+
+On 15-05-09 10:42 PM, Stewart C. Russell wrote:
+> Hi Stephen:
+>> I am running Ubuntu 14.04
+>>
+>> I downloaded the *.deb file from the Epson web site:
+>>
+>> epson-inkjet-printer-escpr_1.4.5-1lsb3.2_i386.deb
+>
+> Getting the right LSB package installed can be a pain. If you're not
+> using paper larger than Letter, the standard CUPS ESC/P-R driver
+> /should/ drive this printer fairly well.
+>
+> I've had the larger (size of a small tank, to be honest) WF-7520 for
+> years, and it's been great. Duplex ADF scanning, SANE support over the
+> network, scan to SD card (which appears as a samba share on the network)
+> ... it just works.
+
+I have confirmed that I have LSB 4.1 installed using the Ubuntu Software 
+Centre.
+
+But the install of the Epson driver still asserts a dependency error 
+needed >=3.2
+
+I have run apt-get update and apt-get upgrade.
+
+
+-- 
+Stephen
+
+From maxcess at gmx.com  Sun May 10 13:45:42 2015
+From: maxcess at gmx.com (Abby Bassie-Cripps)
+Date: Sun, 10 May 2015 15:45:42 +0200
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+In-Reply-To: <554F5A3B.7070002@rogers.com>
+References: <554EBB29.6020604@rogers.com> <554EC5A7.3000706@gmail.com>,
+ <554F5A3B.7070002@rogers.com>
+Message-ID: <trinity-1cae12eb-bd8f-4b85-b5e1-500d41163ee3-1431265541650@3capp-mailcom-lxa01>
+
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150510/9e8cd243/attachment.html>
+
+From hugh at mimosa.com  Sun May 10 20:01:22 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 10 May 2015 16:01:22 -0400 (EDT)
+Subject: [GTALUG] free: ethernet cards
+Message-ID: <alpine.LRH.2.02.1505101557430.3626@redclaw.mimosa.com>
+
+I'm getting rid of around a dozen 10/100m PCI ethernet cards.  If anyone 
+wants some or all, just send me email and I'll bring them to the meeting.
+
+Also available: a few 10m ISA ethernet cards, most 10baseT and 10base2.
+
+From james.knott at rogers.com  Sun May 10 20:15:43 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 10 May 2015 16:15:43 -0400
+Subject: [GTALUG] free: ethernet cards
+In-Reply-To: <alpine.LRH.2.02.1505101557430.3626@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1505101557430.3626@redclaw.mimosa.com>
+Message-ID: <554FBC6F.2090207@rogers.com>
+
+On 05/10/2015 04:01 PM, D. Hugh Redelmeier wrote:
+> 10base2.
+>
+Those will really be handy.  ;-)
+
+I think I still have a 10baseT hub with a coax connector on it. 
+However, I haven't noticed any ISA bus computers here for quite a while.
+
+BTW, back in the mid '90s, I worked on a project to convert some
+provincial government offices around Queen's Park from 10base2 to
+10baseT.  In some cases, it was just a matter of changing the cables to
+get the NIC on 10baseT.  Others were a minor config change, but others
+had to be replaced.  There were also several HP printers that needed new
+NICs.
+
+My first experience with Ethernet was with a DECNET that connected some
+VAX 11/780 systems.  That was the old 10base5 network with vampire taps.
+
+
+
+From me at mylesbraithwaite.com  Mon May 11 14:04:05 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 11 May 2015 10:04:05 -0400
+Subject: [GTALUG] [GTALUG-Announce] GTALUG Meeting Tomorrow at 7:30pm
+Message-ID: <CA+hskZMY7ksR_LC56Ag8AcT1vqEgT=wzY-AUKm0x4+WL2RX9GQ@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-05/>
+
+# OpenStreetMap with Stewart Russell
+
+OpenStreetMap is more than just a web mapping platform. It's a
+comprehensive, community-maintained map/geodatabase of the world that
+you can hack on. Since the last GTALUG talk on OSM over five years
+ago, it's grown a lot, and developed a huge community of mappers,
+developers and data users. In this talk, we'll discuss the basics of
+using OSM, how it survived a major licence change with only a little
+drama, and how it succeeds as a community.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before the meeting a group of GTALUGers will be dining at
+It's All Grk (101 Dundas St East).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East).
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members @
+<board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From lsorense at csclub.uwaterloo.ca  Mon May 11 16:12:33 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 11 May 2015 12:12:33 -0400
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+In-Reply-To: <554F5A3B.7070002@rogers.com>
+References: <554EBB29.6020604@rogers.com> <554EC5A7.3000706@gmail.com>
+ <554F5A3B.7070002@rogers.com>
+Message-ID: <20150511161233.GA24390@csclub.uwaterloo.ca>
+
+On Sun, May 10, 2015 at 09:16:43AM -0400, Stephen wrote:
+> On 15-05-09 10:42 PM, Stewart C. Russell wrote:
+> >Hi Stephen:
+> >>I am running Ubuntu 14.04
+> >>
+> >>I downloaded the *.deb file from the Epson web site:
+> >>
+> >>epson-inkjet-printer-escpr_1.4.5-1lsb3.2_i386.deb
+> >
+> >Getting the right LSB package installed can be a pain. If you're not
+> >using paper larger than Letter, the standard CUPS ESC/P-R driver
+> >/should/ drive this printer fairly well.
+> >
+> >I've had the larger (size of a small tank, to be honest) WF-7520 for
+> >years, and it's been great. Duplex ADF scanning, SANE support over the
+> >network, scan to SD card (which appears as a samba share on the network)
+> >... it just works.
+> 
+> I have confirmed that I have LSB 4.1 installed using the Ubuntu
+> Software Centre.
+> 
+> But the install of the Epson driver still asserts a dependency error
+> needed >=3.2
+> 
+> I have run apt-get update and apt-get upgrade.
+
+Could you try:
+
+dpkg -l|grep lsb
+
+and post the output.
+
+And are you running 32 or 64bit system?  After all the driver package
+you are trying to isntall is 32bit and you might be running a 64bit
+system and hence be missing dependancies for that driver.
+
+The main lsb package (not lsb-printing) which seems to be what it depends
+depends on lsb-printing, lsb-graphics, lsb-core, and a number of other
+packages.
+
+Perhaps just doing 'apt-get install lsb' would solve the problem.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Mon May 11 16:15:34 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 11 May 2015 12:15:34 -0400
+Subject: [GTALUG] free: ethernet cards
+In-Reply-To: <alpine.LRH.2.02.1505101557430.3626@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1505101557430.3626@redclaw.mimosa.com>
+Message-ID: <20150511161534.GB24390@csclub.uwaterloo.ca>
+
+On Sun, May 10, 2015 at 04:01:22PM -0400, D. Hugh Redelmeier wrote:
+> I'm getting rid of around a dozen 10/100m PCI ethernet cards.  If anyone 
+> wants some or all, just send me email and I'll bring them to the meeting.
+> 
+> Also available: a few 10m ISA ethernet cards, most 10baseT and 10base2.
+
+My 486 already has 2 (nice 3com cards too), and Debian no longer supports
+486s. :)
+
+-- 
+Len Sorensen
+
+From stephen-d at rogers.com  Mon May 11 16:16:04 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Mon, 11 May 2015 12:16:04 -0400
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+In-Reply-To: <20150511161233.GA24390@csclub.uwaterloo.ca>
+References: <554EBB29.6020604@rogers.com> <554EC5A7.3000706@gmail.com>
+ <554F5A3B.7070002@rogers.com> <20150511161233.GA24390@csclub.uwaterloo.ca>
+Message-ID: <5550D5C4.3010600@rogers.com>
+
+On 15-05-11 12:12 PM, Lennart Sorensen wrote:
+
+> And are you running 32 or 64bit system?  After all the driver package
+> you are trying to isntall is 32bit and you might be running a 64bit
+> system and hence be missing dependancies for that driver.
+
+This was the problem. Silly.
+
+Using the 64bit driver fixed everything!
+
+Thanks
+
+-- 
+Stephen
+
+From lsorense at csclub.uwaterloo.ca  Mon May 11 17:29:28 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 11 May 2015 13:29:28 -0400
+Subject: [GTALUG] Problem Installing Driver for Epson WF-2630
+In-Reply-To: <5550D5C4.3010600@rogers.com>
+References: <554EBB29.6020604@rogers.com> <554EC5A7.3000706@gmail.com>
+ <554F5A3B.7070002@rogers.com>
+ <20150511161233.GA24390@csclub.uwaterloo.ca>
+ <5550D5C4.3010600@rogers.com>
+Message-ID: <20150511172928.GC24390@csclub.uwaterloo.ca>
+
+On Mon, May 11, 2015 at 12:16:04PM -0400, Stephen wrote:
+> On 15-05-11 12:12 PM, Lennart Sorensen wrote:
+> 
+> >And are you running 32 or 64bit system?  After all the driver package
+> >you are trying to isntall is 32bit and you might be running a 64bit
+> >system and hence be missing dependancies for that driver.
+> 
+> This was the problem. Silly.
+> 
+> Using the 64bit driver fixed everything!
+
+Oh so there was an amd64 package?
+
+-- 
+Len Sorensen
+
+From hugh at mimosa.com  Mon May 11 17:34:51 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 11 May 2015 13:34:51 -0400 (EDT)
+Subject: [GTALUG] Dinner before May 2015 GTALUG meeting (was Meeting
+ 11th May, 2015 at 7:30pm)
+In-Reply-To: <CA+hskZMdiyuH9qEgXCyjZKMs+v09Ep+1TriqVyxqL-A53TVdTQ@mail.gmail.com>
+References: <CA+hskZMdiyuH9qEgXCyjZKMs+v09Ep+1TriqVyxqL-A53TVdTQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1505111330350.5028@redclaw.mimosa.com>
+
+[Note: meeting is May 12]
+
+| From: Myles Braithwaite <me at mylesbraithwaite.com>
+| Date: Sun, 26 Apr 2015 19:15:11 -0400
+
+| Voting open for dinner options before next month's GTALUG meeting:
+| <http://strawpoll.me/4216617>.
+
+No winner has been declared by Myles, so I infer that there is still time 
+to cast your vote.
+
+Currently Love at First Bite and It's All Greek are tied for the lead
+at 4 votes apiece.
+
+From me at mylesbraithwaite.com  Mon May 11 17:37:16 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 11 May 2015 13:37:16 -0400
+Subject: [GTALUG] Dinner before May 2015 GTALUG meeting (was Meeting
+ 11th May, 2015 at 7:30pm)
+In-Reply-To: <alpine.LRH.2.02.1505111330350.5028@redclaw.mimosa.com>
+References: <CA+hskZMdiyuH9qEgXCyjZKMs+v09Ep+1TriqVyxqL-A53TVdTQ@mail.gmail.com>
+ <alpine.LRH.2.02.1505111330350.5028@redclaw.mimosa.com>
+Message-ID: <5550E8CC.8060501@mylesbraithwaite.com>
+
+D. Hugh Redelmeier wrote:
+> No winner has been declared by Myles, so I infer that there is still time
+> to cast your vote.
+
+A winner was declared in the announce message:
+
+ > * 6:00 pm - Before the meeting a group of GTALUGers will be dining at
+It's All Grk (101 Dundas St East).
+
+See: <http://gtalug.org/pipermail/announce/2015/000020.html>
+
+From hugh at mimosa.com  Tue May 12 20:25:10 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 12 May 2015 16:25:10 -0400 (EDT)
+Subject: [GTALUG] Dinner before May 2015 GTALUG meeting (was Meeting
+ 11th May, 2015 at 7:30pm)
+In-Reply-To: <5550E8CC.8060501@mylesbraithwaite.com>
+References: <CA+hskZMdiyuH9qEgXCyjZKMs+v09Ep+1TriqVyxqL-A53TVdTQ@mail.gmail.com>
+ <alpine.LRH.2.02.1505111330350.5028@redclaw.mimosa.com>
+ <5550E8CC.8060501@mylesbraithwaite.com>
+Message-ID: <alpine.LRH.2.02.1505121622290.5028@redclaw.mimosa.com>
+
+| From: Myles Braithwaite <me at mylesbraithwaite.com>
+
+| A winner was declared in the announce message:
+
+Sorry, I missed that.  Buried in the text.
+
+| > * 6:00 pm - Before the meeting a group of GTALUGers will be dining at
+| It's All Grk (101 Dundas St East).
+
+Yelp says "Yelpers report this location has closed.".  I tried phoning
+and nobody answered.
+
+I propose that we fall back to Love at First Bite.  Unless someone
+finds that it is open.
+
+From avolkov at gmail.com  Tue May 12 22:10:40 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Tue, 12 May 2015 22:10:40 +0000
+Subject: [GTALUG] Grk is closed -- dinner before the meeting
+Message-ID: <CAO1j=qdY+v+N0GaTW5R4eNtyeuUAPQVCShpbCW+gJMQay3kNTA@mail.gmail.com>
+
+Grk is closed a I and Bob Jonkman will be in curry kitchen 117 Dundas St E.
+Just two doors east of grk.
+
+Alex.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150512/25bfd6e0/attachment.html>
+
+From davec-b at rogers.com  Thu May 14 12:32:39 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Thu, 14 May 2015 08:32:39 -0400
+Subject: [GTALUG] Postgres and ident used for authentication
+Message-ID: <555495E7.3070107@rogers.com>
+
+While it's been discussed elsewhere*, I just tripped over a decidedly 
+odd default in postgresql: it tries to use ident to verify that the role 
+I'm logging in to has the same name as my unix user account, simulating 
+the "peer" authentication available for unix domain sockets.
+
+I don't see any history for this, but It make me suspicious, just as it 
+would if I found someone was using rsh and a .rhosts file in a world 
+where we have ssh with keys.
+
+The common recommendation is to use "trust", which is even worse than 
+ident.  At least ident comes with a  conspicuous warning that "The 
+Identification Protocol is not intended as an authorization or access 
+control protocol."
+
+Anyone know the back story?  The FAQ is unhelpful, the bugs list seems 
+private, and Google finds lots of bad advice (;-))
+
+--dave
+[* 
+http://www.upfrontsystems.co.za/Members/izak/sysadman/postgresqls-confusing-authentication-configuration
+http://www.depesz.com/2007/08/18/securing-your-postgresql-database/ ]
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150514/83b1efb2/attachment.html>
+
+From me at mylesbraithwaite.com  Thu May 14 15:32:52 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 14 May 2015 11:32:52 -0400
+Subject: [GTALUG] [GTALUG-Announce] Linux in the Park 2015
+Message-ID: <CA+hskZNKzfWYNnZtehut9UuUb-yckqov8zvb3uxgkb0n67s6jw@mail.gmail.com>
+
+<http://gtalug.org/picnics/2015/>
+
+GTALUG is having the annual Linux in the Park Potluck this year at
+Dufferin Grove Park on 25th July at 2pm.
+
+Things we will provide: Plates, Cutlery, Serviettes, Cups, and Garbage bags.
+
+Things you might want to bring: chairs, tasty beverages (that are
+non-alcoholic, as the city prohibits alcoholic beverages in the park),
+food stuffs that you would like to share and enjoy, tarp/blanket,
+sunscreen, hats, things to help survive the warmth of the Canadian
+Wilderness.
+
+We will doing this in a pot-luck style. Thus, please bring enough food
+and drink for yourself and your guests, and try to bring enough to
+share with others in the group.
+
+We are using a Trello board to organize everything:
+<https://trello.com/b/JNHsDwys/linux-in-the-park-2015>.
+
+Note that if you forget anything you needed, Dufferin Mall is across
+the street, featuring a supermarket (No-Frills) department store
+(WalMart), as well as other specialty stores.
+
+## Location
+
+Dufferin Grove Park
+875 Dufferin Street
+Toronto, Ontario
+
+<https://goo.gl/maps/hnGg5>
+
+<http://osm.org/go/ZX6BHsVZx-?layers=N&way=15703371>
+
+## Social Media Links
+
+Facebook: <https://www.facebook.com/events/694777713981257/>
+
+Google+: <https://plus.google.com/events/ch21nnnjdcq6prpp575vc0no7cc>
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members @
+<board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From scruss at gmail.com  Fri May 15 02:24:34 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Thu, 14 May 2015 22:24:34 -0400
+Subject: [GTALUG] OpenStreetMap links from the other night
+Message-ID: <555558E2.4030408@gmail.com>
+
+Hi all — thanks so much for coming out the other night. Thanks to Scott,
+Myles and the cast of 1000_2 s who make GTALUG happen.
+
+Rather than post my presentation, which was kind of light on detail, I
+thought I'd post some of the most useful but harder-to-remember links I
+brought up:
+
+ 1. ‘The Map’ — http://www.openstreetmap.org  . It supports routing now,
+    too.
+ 2. QGIS, an open GIS manager. It's rather good — http://qgis.org/
+ 3. The OSM Wiki; ridiculously complete documentation:
+    https://wiki.openstreetmap.org/wiki/
+ 4. OSM Help Stack Exchange-style question/answer:
+    https://help.openstreetmap.org/
+ 5. All of the OSM stats! — https://wiki.openstreetmap.org/wiki/Stats
+ 6. Toronto map growth animation —
+    http://www.geofabrik.de/gallery/history/index.html#toronto
+ 7. Crowdsourced geocoding (+ lawsuit from Canada Post) —
+    http://geocoder.ca/
+ 8. Open Data Commons Open Database License (ODbL) —
+    http://opendatacommons.org/licenses/odbl/
+ 9. Canada’s new Open Government portal — http://open.canada.ca
+    related: Toronto Open Data — http://toronto.ca/open
+10. CIPPIC Open Licensing Project (CLIP) — http://clipol.org/
+11. Humanitarian OpenStreetMap Team [HOT] — http://hotosm.org/
+12. OpenCycleMap —
+    http://www.openstreetmap.org/#map=13/43.6666/-79.3785&layers=C
+13. *The rather wonderful /uMap/* — https://umap.openstreetmap.fr/en/
+
+uMap might be a decent way of mapping out some dinner choices pre GTALUG
+meetings.
+
+There's a monthly OSM Meetup, and also #maptime, the web mapping meetup.
+Both are linked here: http://www.meetup.com/OpenStreetMap-Toronto/
+
+Best Wishes, and it was great to meet you all again,
+ Stewart
+
+(who, not surprisingly, is on OpenStreetMap as scruss
+<http://www.openstreetmap.org/user/scruss>.)
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150514/da846763/attachment.html>
+
+From waltdnes at waltdnes.org  Sat May 16 02:42:59 2015
+From: waltdnes at waltdnes.org (Walter Dnes)
+Date: Fri, 15 May 2015 22:42:59 -0400
+Subject: [GTALUG] "ondemand" CPU governor not recommended for newer Intel
+	machines
+Message-ID: <20150516024259.GA16909@waltdnes.org>
+
+  I've been putting together scripts that run under bash+ash to control
+CPU settings.  I was unhappy with current solutions.  They seemed to be
+either out-of-date, and no longer worked, or else pulled in egregiuous
+dependancies.  In the course of researching stuff for my scripts, I ran
+across a 2-year-old Phoronix article
+http://www.phoronix.com/scan.php?page=news_item&px=MTM3NDQ which
+referenced a Google+ conversation at
+https://plus.google.com/+TheodoreTso/posts/2vEekAsG2QT
+
+  Summary... "ondemand" worked great for notebook CPUs from 10 years ago,
+but...
+
+> with modern Intel processors, the ondemand CPU governor is actually
+> counterproductive because waking up to decide whether the CPU is idle
+> keeps it from entering the deepest sleep states, and so (somewhat
+> counterintuitively) the performance governor will actually result
+> in the best battery life.
+
+  I don't know if the above also applies to the "conservative" governor.
+I put together an interactive script and an automated script.  I was
+thinking along the following lines...
+* notebook runs at "powersave" by default
+* run a wrapper script
+* wrapper script kicks up to "performance" setting
+* launches the job you want done (kernel compile or whatever)
+* drops back down to "powersave" mode after the job is finished
+
+-- 
+Walter Dnes <waltdnes at waltdnes.org>
+
+From me at mylesbraithwaite.com  Tue May 19 13:21:39 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 19 May 2015 09:21:39 -0400
+Subject: [GTALUG] Dinner Suggestions for June's GTALUG Meeting
+Message-ID: <CA+hskZPZwCPik0iKR7CsFbXmDU++zANjQUBSrrLkQvPhWavHNA@mail.gmail.com>
+
+Anyone have any restaurant suggestions for the dinner before June's
+GTALUG meeting?
+
+We currently have:
+
+Love at First Bite (Pizza)
+
+Kaiju (Curry)
+
+Hookaido Ramen Santouka
+
+Lou Dawg's (BBQ)
+
+I would also like to suggest that we make Love at First Bite our
+fallback in case anything goes wrong.
+
+From davec-b at rogers.com  Tue May 19 22:36:43 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Tue, 19 May 2015 18:36:43 -0400
+Subject: [GTALUG] Dinner Suggestions for June's GTALUG Meeting
+In-Reply-To: <CA+hskZPZwCPik0iKR7CsFbXmDU++zANjQUBSrrLkQvPhWavHNA@mail.gmail.com>
+References: <CA+hskZPZwCPik0iKR7CsFbXmDU++zANjQUBSrrLkQvPhWavHNA@mail.gmail.com>
+Message-ID: <555BBAFB.80201@rogers.com>
+
+On 05/19/2015 09:21 AM, Myles Braithwaite wrote:
+> Anyone have any restaurant suggestions for the dinner before June's
+> GTALUG meeting?
+>
+> We currently have:
+>
+> Love at First Bite (Pizza)
+>
+> Kaiju (Curry)
+>
+> Hookaido Ramen Santouka
+>
+> Lou Dawg's (BBQ)
+>
+> I would also like to suggest that we make Love at First Bite our
+> fallback in case anything goes wrong.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+I mildly recommend against Lou Dawg's, as it very loud.
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150519/03d146e4/attachment.html>
+
+From scruss at gmail.com  Tue May 19 23:09:08 2015
+From: scruss at gmail.com (Stewart Russell)
+Date: Tue, 19 May 2015 19:09:08 -0400
+Subject: [GTALUG] Dinner Suggestions for June's GTALUG Meeting
+In-Reply-To: <555BBAFB.80201@rogers.com>
+References: <CA+hskZPZwCPik0iKR7CsFbXmDU++zANjQUBSrrLkQvPhWavHNA@mail.gmail.com>
+ <555BBAFB.80201@rogers.com>
+Message-ID: <CAAsTreBNNrr=RMxZkb3vcNK-TdJ7GkZks9D9p4XNxeub9Khrkw@mail.gmail.com>
+
+On May 19, 2015 6:36 PM, "David Collier-Brown" <davec-b at rogers.com> wrote:
+>
+> I mildly recommend against Lou Dawg's, as it very loud.
+
+It's also not very good bbq, though I'm spoiled by having in-laws in Kansas
+City ...
+
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150519/b3d01617/attachment.html>
+
+From scruss at gmail.com  Sun May 24 01:30:44 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sat, 23 May 2015 21:30:44 -0400
+Subject: [GTALUG] Niche Chrome/painless MIDI on Linux/synth nerdiness: 106.js
+Message-ID: <556129C4.6020001@gmail.com>
+
+Hi all — this might be of interest to a limited number on this list, but
+it really impressed me.
+
+You will need:
+
+  * USB MIDI hardware (though you can noodle on the keyboard much less
+    impressively)
+  * a recent Chrome build (/possibly/ Chromium too; if you can enable
+    Web MIDI under chrome://flags, it might work)
+
+Now go here:
+
+    http://resistorsings.com/106/
+
+If you've got your MIDI set up, you've got a decent-ish emulation of a
+Juno 106. In JavaScript. Talking to your MIDI hardware with minimal
+latency.
+
+I'm linking this here as my previous experience with MIDI on Linux was
+highly dispiriting. If I could even get it to work, there was usually a
+¼s or more delay between pressing a key and getting a note. This just
+works. I'm impressed.
+
+cheers,
+ Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150523/90ba7b02/attachment.html>
+
+From sciguy at vex.net  Sun May 24 03:01:00 2015
+From: sciguy at vex.net (Paul King)
+Date: Sat, 23 May 2015 23:01:00 -0400
+Subject: [GTALUG] (OFF-TOPIC) Looking for pictures of an XL-87
+Message-ID: <55613EEC.206.23CE6765@sciguy.vex.net>
+
+Hi folks:
+
+This is even difficult to Google. I had been looking for some pictures 
+(digital, natch) of a computer we referred to as an XL-87 back in university. 
+They were old units back then too. I believe they were manufactured by Cybernex 
+with the full name "Cybernex XL-87". My first exposure to an operating system 
+was through these terminals, with the OS being a variant of UNIX.
+
+But if anyone has photos of such a terminal, could you please email as an 
+attachment off-list?
+
+Paul King
+
+From davecramer at gmail.com  Mon May 25 17:48:08 2015
+From: davecramer at gmail.com (Dave Cramer)
+Date: Mon, 25 May 2015 13:48:08 -0400
+Subject: [GTALUG] Looking for a postgresql dba, junior is fine
+In-Reply-To: <CADK3HH+kA2he1iQpzDtww+pta__0-oGE8p6COrzSOKfzJa2dsA@mail.gmail.com>
+References: <CADK3HH+kA2he1iQpzDtww+pta__0-oGE8p6COrzSOKfzJa2dsA@mail.gmail.com>
+Message-ID: <CADK3HHLc5703wi6mG0bCx0WaQgg8-jeok0k1yrv11_YJfKjyog@mail.gmail.com>
+
+Any python people looking for a contract. Not sure how big it is yet.
+
+Dave Cramer
+
+On 30 April 2015 at 12:59, Dave Cramer <davecramer at gmail.com> wrote:
+
+> I have a client who is in need of someone with postgresql experience.
+>
+> If you know how to use psql, and linux cmd line I'm interested.
+>
+> Dave Cramer
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150525/a721acfc/attachment.html>
+
+From me at mylesbraithwaite.com  Tue May 26 00:42:45 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 25 May 2015 20:42:45 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting on 9th June at 7:30pm - GPG
+ Key-Signing Party and Round Table Q&A Session
+Message-ID: <CA+hskZOU73FR3WFgDOeOiFpG3XYgG-k96qFKi0GA3guO+BDJtw@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-06/>
+
+# GPG Key-Signing Party and Round Table Q&A Session
+
+See the bottom of this email for instructions on the GPG Key-Signing Party.
+
+A Round Table Q&A Session is where we take questions from the
+audience, and the audience discusses and attempts to answer those
+questions from their own knowledge. It's a great way to meet fellow
+members of our community and discover the skill sets we each bring to
+the table.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before each meeting a group of GTALUGers dine at Love At
+First Bite (96 Gerrard Street E).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+# Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members.
+
+# GPG Key-Signing Party
+
+1. Create an OpenPGP keypair for yourself (if you haven't) already.
+
+2. Print or write down your key fingerprint and bring it with you.
+You'll have to confirm at the signing that the list is correct for
+your key.
+
+3. Send your public key before the event to the `pgp.mit.edu` keyserver.
+
+4. Bring a goverment-issued picture ID of yourself.
+
+### At the Key Signing Party
+
+1. Each participant should meet up face to face with every other
+participant to receive their key fingerprint and examine their ID, and
+to give them your key fingerprint and have them examine your ID.
+
+2. Each participant should meet up face to face with every other
+participant to receive their key fingerprint and examine their ID, and
+to give them your key fingerprint and have them examine your ID.
+
+### After the Key Signing Party
+
+1. Find the key ID on the fingerprint. The fingerprint will have an
+8-character ID listed after the key size. Typically it looks like
+this: '1024D/64011A8B'. The actual ID portion is the '64011A8B'.
+You'll notice this is also the last 8 characters of the fingerprint
+itself.
+
+2. Fetch the public key using the key ID. If you're running GnuPG on
+the command line, you can do this by typing: `gpg --keyserver
+pgp.mit.edu --recv-keys <KeyID>` (where KeyID is obviously the ID of
+the key you want).
+
+3. Check that the fingerprint of the key you've just fetched matches
+the fingerprint on the slip of paper: `gpg --fingerprint <KeyID>` and
+compare it with the hard copy in front of you.
+
+4. If (and only if) you are happy that the fingerprints match and the
+person showed you sufficient ID, you can do the actual 'signing' part
+of the process: `gpg --sign-key <KeyID>` and answer the questions it
+asks.
+
+5. Next you need to send the signed copy of their key back to them.
+Now upload the signed key back to the server `gpg --keyserver
+pgp.mit.edu --send-key <Key_ID>`. You should get back something like
+'gpg: sending key <Key_ID> to hkp server pgp.mit.edu'.
+
+### Help
+
+Get your KEYID from your keyring as the part following the 1024D/ as follows:
+
+    gpg --list-secret-keys | grep sec
+
+Here is how to send your key to the keyserver:
+
+    gpg --keyserver gpg.mit.edu --send-keys <KEYID>
+
+Get your fingerprint information:
+
+    gpg --fingerprint KEYID
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From o1bigtenor at gmail.com  Tue May 26 14:37:04 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Tue, 26 May 2015 09:37:04 -0500
+Subject: [GTALUG] Help to setup for scanning
+Message-ID: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+
+Greetings
+
+I'm hoping that someone out there has achieved success and can point me to
+some pointers!
+
+I bought a Brother MFC-J6510DW largely because it can scan 11 x 17 inch
+documents (I have too many like that that I would like to get into
+electronic format!!).
+
+I can see the machine as a printer but cannot get the machine to scan a
+page. I have installed XSane 1.0.24 backend and XSane1.0.14 frontend. Tried
+running the ethernet cable through the router (a la network usage) and
+can't get anything useful to occu. I have also tried running the ethernet
+cable directly into my main machine (Debian testing) with also no joy. Have
+also contacted Brother support and although their website and the stickers
+on the machine laud their online chat and telephone support for linux its
+email support (if they can be bothered! (they are taking a very long time
+to respond!!)).
+
+Any suggestions?
+
+TIA
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150526/55e040e0/attachment.html>
+
+From kevin at ve3syb.ca  Tue May 26 14:51:36 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Tue, 26 May 2015 10:51:36 -0400
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+Message-ID: <55648878.6010308@ve3syb.ca>
+
+On 15-05-26 10:37 AM, o1bigtenor wrote:
+> I bought a Brother MFC-J6510DW largely because it can scan 11 x 17 inch
+> documents (I have too many like that that I would like to get into
+> electronic format!!).
+
+A search turned up the following page which has some information that you 
+might find helpful:
+http://ubuntuforums.org/showthread.php?t=1842372
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From scruss at gmail.com  Tue May 26 15:04:38 2015
+From: scruss at gmail.com (Stewart Russell)
+Date: Tue, 26 May 2015 11:04:38 -0400
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+Message-ID: <CAAsTreC2o5BiUjnB_me1Br_jjwVKmxvQ1+h4EkrkvkygrY+W-Q@mail.gmail.com>
+
+Hi Dee
+>
+> I bought a Brother MFC-J6510DW ...
+
+Can this device scan to an SD card, and if so, does the printer export that
+card as a network share? That's the approach I have to take with my Epson.
+I pick the resulting PDFs apart into TIFF scans and add good-enough OCR
+with Tesseract.
+
+While I can get SANE to work for single page scans, it doesn't drive the
+ADF or duplexer properly.
+
+Cheers
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150526/9d82a20b/attachment.html>
+
+From tisdall at gmail.com  Tue May 26 15:20:41 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Tue, 26 May 2015 11:20:41 -0400
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+Message-ID: <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+
+I use a Brother printer at work, but it's been a long time since I set
+it up.  I do remember that there were separate drivers for printing
+and scanning.  I'm able to use "Simple Scan" in Ubuntu and it pulls
+the scan from the machine.  I don't think I was able to get it to scan
+from the printer and have it send to my machine.
+
+You may have already seen this, but here's where all the driver files
+are located:  http://support.brother.com/g/b/downloadlist.aspx?c=us&lang=en&prod=mfcj6510dw_all&os=128
+
+It seems that to get the scanning to work from the printer end I would
+have to also install the "scan key tool".  (not really a concern of
+mine, though)
+
+On Tue, May 26, 2015 at 10:37 AM, o1bigtenor <o1bigtenor at gmail.com> wrote:
+> Greetings
+>
+> I'm hoping that someone out there has achieved success and can point me to
+> some pointers!
+>
+> I bought a Brother MFC-J6510DW largely because it can scan 11 x 17 inch
+> documents (I have too many like that that I would like to get into
+> electronic format!!).
+>
+> I can see the machine as a printer but cannot get the machine to scan a
+> page. I have installed XSane 1.0.24 backend and XSane1.0.14 frontend. Tried
+> running the ethernet cable through the router (a la network usage) and can't
+> get anything useful to occu. I have also tried running the ethernet cable
+> directly into my main machine (Debian testing) with also no joy. Have also
+> contacted Brother support and although their website and the stickers on the
+> machine laud their online chat and telephone support for linux its email
+> support (if they can be bothered! (they are taking a very long time to
+> respond!!)).
+>
+> Any suggestions?
+>
+> TIA
+>
+> Dee
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+From hugh at mimosa.com  Tue May 26 23:57:11 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 26 May 2015 19:57:11 -0400 (EDT)
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+
+| From: Tim Tisdall <tisdall at gmail.com>
+
+| You may have already seen this, but here's where all the driver files
+| are located:  http://support.brother.com/g/b/downloadlist.aspx?c=us&lang=en&prod=mfcj6510dw_all&os=128
+| 
+| It seems that to get the scanning to work from the printer end I would
+| have to also install the "scan key tool".  (not really a concern of
+| mine, though)
+
+I have a Brother DCP-7065DN.  The situation is just as you describe.
+I have to install drivers for each function on each client machine.
+
+I would not have bought it if I had known that it required proprietary
+binary drivers.  But it does work, for printing and scanning.
+I haven't tried "scan key tool".
+
+=====
+
+I have found some problems with scanning or printing.  I think that they 
+are on the open-source side (thank goodness).  See, for example 
+<https://bugzilla.redhat.com/show_bug.cgi?id=1035090>
+
+- duplexing didn't always work as expected
+
+- landscape / portrait things don't always work
+
+- simplescan is great because it is simple but I have had some problems 
+  with it
+
+From hugh at mimosa.com  Wed May 27 00:02:58 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 26 May 2015 20:02:58 -0400 (EDT)
+Subject: [GTALUG] print serving / print clients
+Message-ID: <alpine.LRH.2.02.1505261957310.3915@redclaw.mimosa.com>
+
+I have a Linux machine with a non-networked Brother printer (HL-5150D).  I 
+want the Fedora 20 machine to be a print server for a Ubuntu 12.04 
+machine.  They are not co-operating for me.
+
+What protocol do you use or recommend?  IPP (my naive choice), JetPrint (I 
+think that's what the HP-invented protocol is called), LPR, or SMB, ...?
+
+Which are secure, easy, powerful?  What firewall hacking is needed?
+
+From davec-b at rogers.com  Wed May 27 00:26:36 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Tue, 26 May 2015 20:26:36 -0400
+Subject: [GTALUG] print serving / print clients
+In-Reply-To: <alpine.LRH.2.02.1505261957310.3915@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1505261957310.3915@redclaw.mimosa.com>
+Message-ID: <55650F3C.90608@rogers.com>
+
+My Ubuntu PVR, calvin, supports a printer which presents a CUPS 1.7.2 
+web admin on port 631 and the printer on 
+usb://EPSON/Stylus%20Photo%20700?serial=066030217dxsc3ei
+
+My local machine running CUPS 1.7.5 sees the remote machine/printer pair as
+"dnssd://EPSON%20Stylus%20Photo%20700%20%40%20pvr._ipp._tcp.local/cups"
+
+I think dnssd is DNS Service Discovery, a zeroconf thingie, but it could 
+be Dental Negative Storage System, Distributed for all I know (;-))
+
+--dave
+
+
+On 05/26/2015 08:02 PM, D. Hugh Redelmeier wrote:
+> I have a Linux machine with a non-networked Brother printer (HL-5150D).  I
+> want the Fedora 20 machine to be a print server for a Ubuntu 12.04
+> machine.  They are not co-operating for me.
+>
+> What protocol do you use or recommend?  IPP (my naive choice), JetPrint (I
+> think that's what the HP-invented protocol is called), LPR, or SMB, ...?
+>
+> Which are secure, easy, powerful?  What firewall hacking is needed?
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From o1bigtenor at gmail.com  Wed May 27 00:46:39 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Tue, 26 May 2015 19:46:39 -0500
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+ <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+Message-ID: <CAPpdf5-oqALaiTZ_b7aEfkDXT03_kKY+dyX2+rRC8TPGkdFOmg@mail.gmail.com>
+
+On Tue, May 26, 2015 at 6:57 PM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+> | From: Tim Tisdall <tisdall at gmail.com>
+>
+> | You may have already seen this, but here's where all the driver files
+> | are located:
+> http://support.brother.com/g/b/downloadlist.aspx?c=us&lang=en&prod=mfcj6510dw_all&os=128
+> |
+> | It seems that to get the scanning to work from the printer end I would
+> | have to also install the "scan key tool".  (not really a concern of
+> | mine, though)
+>
+> I have a Brother DCP-7065DN.  The situation is just as you describe.
+> I have to install drivers for each function on each client machine.
+>
+> I would not have bought it if I had known that it required proprietary
+> binary drivers.  But it does work, for printing and scanning.
+> I haven't tried "scan key tool".
+>
+>
+I have installed the proprietary drivers. Have installed XSane backend and
+frontend.
+Can't decipher how to setup their web based setup tool.
+
+Haven't tried printing (cause I don't want to) but I need the scanning.
+Brother tech support is somewhat like molasses going uphill in a liquid
+nitrogen tank.
+
+Haven't been able to find anything for info on the bscan4 because its newer
+but doesn't just work either.
+Trying to find ways to use XSane but can't find a reasonable description of
+that either!
+Makes me think that scanning is a seldom used activity!
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150526/4580f985/attachment.html>
+
+From adb at adb.ca  Wed May 27 01:19:19 2015
+From: adb at adb.ca (Anthony de Boer)
+Date: Tue, 26 May 2015 21:19:19 -0400
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+ <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+Message-ID: <20150527011919.GG16224@adb.ca>
+
+D. Hugh Redelmeier wrote:
+> I have a Brother DCP-7065DN.  The situation is just as you describe.
+> I have to install drivers for each function on each client machine.
+> 
+> I would not have bought it if I had known that it required proprietary
+> binary drivers.  But it does work, for printing and scanning.
+> I haven't tried "scan key tool".
+
+We have a Brother MFC-9120CN (networked colour laser/copier/scanner/fax)
+which isn't quite so bad.  There's a specific .ppd to feed CUPS for the
+printer side to be happy.  And scanning pushes a choice of .jpg or .pdf
+content to a Samba share.  I don't think we've ever actually tried to
+send or receive a fax, FWIW.
+
+Before that we had a Brother HL-2030 monochrome laser, which worked fine
+but the aforementioned unit was too useful and inexpensive to pass up.
+The older printer then got our firstborn through an Engineering degree
+and might be wanting a fresh drum soon.
+
+-- 
+Anthony de Boer
+
+From hugh at mimosa.com  Wed May 27 04:07:16 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 27 May 2015 00:07:16 -0400 (EDT)
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <CAPpdf5-oqALaiTZ_b7aEfkDXT03_kKY+dyX2+rRC8TPGkdFOmg@mail.gmail.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+ <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+ <CAPpdf5-oqALaiTZ_b7aEfkDXT03_kKY+dyX2+rRC8TPGkdFOmg@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1505262353260.12739@redclaw.mimosa.com>
+
+| From: o1bigtenor <o1bigtenor at gmail.com>
+
+| I have installed the proprietary drivers. Have installed XSane backend and
+| frontend.
+
+SANE is the collection of scanner drivers
+
+Xsane is a GUI program (crude but powerful) that is from the same
+project.  simplescan is a lot simpler.
+
+Any scanning software needs to find the scanner.  googling will show
+you the drill (which I don't remember).
+
+| Can't decipher how to setup their web based setup tool.
+
+I didn't use a GUI for setting up my Brother printer/scanner.  There
+was a gui involved in telling the scanning software where the driver
+is.
+
+What I think that I did:
+
+- installed brscan4 binary
+
+- brsaneconfig4 -a name=BrotherScanner model=DCP-7065dn ip=192.168.2.12
+  (a different IP)
+
+- brsaneconfig4 -q
+  First device is numbered 0.
+
+Remember to put a hole in your firewall. UDP 54925, I think.
+
+From o1bigtenor at gmail.com  Wed May 27 12:04:59 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Wed, 27 May 2015 07:04:59 -0500
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <alpine.LRH.2.02.1505262353260.12739@redclaw.mimosa.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+ <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+ <CAPpdf5-oqALaiTZ_b7aEfkDXT03_kKY+dyX2+rRC8TPGkdFOmg@mail.gmail.com>
+ <alpine.LRH.2.02.1505262353260.12739@redclaw.mimosa.com>
+Message-ID: <CAPpdf5-hE5x4eDum46zzxMnzsuNVJL9U5xk3Vw4ur+d5kQHOXQ@mail.gmail.com>
+
+On Tue, May 26, 2015 at 11:07 PM, D. Hugh Redelmeier <hugh at mimosa.com>
+wrote:
+
+> | From: o1bigtenor <o1bigtenor at gmail.com>
+>
+> | I have installed the proprietary drivers. Have installed XSane backend
+> and
+> | frontend.
+>
+> SANE is the collection of scanner drivers
+>
+> Xsane is a GUI program (crude but powerful) that is from the same
+> project.  simplescan is a lot simpler.
+>
+> Any scanning software needs to find the scanner.  googling will show
+> you the drill (which I don't remember).
+>
+> | Can't decipher how to setup their web based setup tool.
+>
+> I didn't use a GUI for setting up my Brother printer/scanner.  There
+> was a gui involved in telling the scanning software where the driver
+> is.
+>
+> What I think that I did:
+>
+> - installed brscan4 binary
+>
+> - brsaneconfig4 -a name=BrotherScanner model=DCP-7065dn ip=192.168.2.12
+>   (a different IP)
+>
+> - brsaneconfig4 -q
+>   First device is numbered 0.
+>
+> Remember to put a hole in your firewall. UDP 54925, I think.
+>
+
+Got all the tasks but the last one. I thought that the firewall is on the
+outside of my network
+and my url (slightly different that the one listed) is on my network.
+
+Could this be the entire issue?
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150527/3da29242/attachment.html>
+
+From hugh at mimosa.com  Wed May 27 13:32:31 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 27 May 2015 09:32:31 -0400 (EDT)
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <CAPpdf5-hE5x4eDum46zzxMnzsuNVJL9U5xk3Vw4ur+d5kQHOXQ@mail.gmail.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+ <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+ <CAPpdf5-oqALaiTZ_b7aEfkDXT03_kKY+dyX2+rRC8TPGkdFOmg@mail.gmail.com>
+ <alpine.LRH.2.02.1505262353260.12739@redclaw.mimosa.com>
+ <CAPpdf5-hE5x4eDum46zzxMnzsuNVJL9U5xk3Vw4ur+d5kQHOXQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1505270917470.12739@redclaw.mimosa.com>
+
+| From: o1bigtenor <o1bigtenor at gmail.com>
+
+| On Tue, May 26, 2015 at 11:07 PM, D. Hugh Redelmeier <hugh at mimosa.com>
+| wrote:
+
+| > Remember to put a hole in your firewall. UDP 54925, I think.
+
+| Got all the tasks but the last one. I thought that the firewall is on the
+| outside of my network
+| and my url (slightly different that the one listed) is on my network.
+
+Not a URL, an IP address.  On my network, all things have static IP
+addresses.  So I forgot to mention that issue.  I don't remember how
+brscan4 discovers IP addresses.  It might be easiest if you give your
+printer a static address (configuring your DHCP server (probably in
+your router) to do so).  Then you can tell brscan4 the IP address as I
+did.
+
+| Could this be the entire issue?
+
+When you install Linux you are likely to get a simply configured
+firewall.  And it is likely to block UDP 54925.  But it depends on
+your distro.  I don't know about Debian Testing -- someone else surely 
+does.  Maybe useful (first google hit):
+	<https://wiki.debian.org/DebianFirewall>
+
+To see the firewall rules in gory raw detail:
+	sudo iptables -L -v
+
+From lsorense at csclub.uwaterloo.ca  Wed May 27 14:16:25 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 27 May 2015 10:16:25 -0400
+Subject: [GTALUG] print serving / print clients
+In-Reply-To: <alpine.LRH.2.02.1505261957310.3915@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1505261957310.3915@redclaw.mimosa.com>
+Message-ID: <20150527141625.GA6170@csclub.uwaterloo.ca>
+
+On Tue, May 26, 2015 at 08:02:58PM -0400, D. Hugh Redelmeier wrote:
+> I have a Linux machine with a non-networked Brother printer (HL-5150D).  I 
+> want the Fedora 20 machine to be a print server for a Ubuntu 12.04 
+> machine.  They are not co-operating for me.
+> 
+> What protocol do you use or recommend?  IPP (my naive choice), JetPrint (I 
+> think that's what the HP-invented protocol is called), LPR, or SMB, ...?
+> 
+> Which are secure, easy, powerful?  What firewall hacking is needed?
+
+Cups for IPP.  That way only the print server needs a working driver,
+everyone else just uses postscript to the print server.
+
+-- 
+Len Sorensn
+
+From o1bigtenor at gmail.com  Wed May 27 15:37:34 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Wed, 27 May 2015 10:37:34 -0500
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <alpine.LRH.2.02.1505270917470.12739@redclaw.mimosa.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+ <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+ <CAPpdf5-oqALaiTZ_b7aEfkDXT03_kKY+dyX2+rRC8TPGkdFOmg@mail.gmail.com>
+ <alpine.LRH.2.02.1505262353260.12739@redclaw.mimosa.com>
+ <CAPpdf5-hE5x4eDum46zzxMnzsuNVJL9U5xk3Vw4ur+d5kQHOXQ@mail.gmail.com>
+ <alpine.LRH.2.02.1505270917470.12739@redclaw.mimosa.com>
+Message-ID: <CAPpdf5-H83Cq69Xx8uXUDmVVnixqfO1BZsK+gmX7J40RQ6WbTQ@mail.gmail.com>
+
+On Wed, May 27, 2015 at 8:32 AM, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+> | From: o1bigtenor <o1bigtenor at gmail.com>
+>
+> | On Tue, May 26, 2015 at 11:07 PM, D. Hugh Redelmeier <hugh at mimosa.com>
+> | wrote:
+>
+> | > Remember to put a hole in your firewall. UDP 54925, I think.
+>
+> | Got all the tasks but the last one. I thought that the firewall is on the
+> | outside of my network
+> | and my url (slightly different that the one listed) is on my network.
+>
+> Not a URL, an IP address.  On my network, all things have static IP
+> addresses.  So I forgot to mention that issue.  I don't remember how
+> brscan4 discovers IP addresses.  It might be easiest if you give your
+> printer a static address (configuring your DHCP server (probably in
+> your router) to do so).  Then you can tell brscan4 the IP address as I
+> did.
+>
+
+Sorry - - -  still learning the exact terms and where they fit! Should have
+just
+said quad and I would have been closer!
+
+>
+> | Could this be the entire issue?
+>
+> When you install Linux you are likely to get a simply configured
+> firewall.  And it is likely to block UDP 54925.  But it depends on
+> your distro.  I don't know about Debian Testing -- someone else surely
+> does.  Maybe useful (first google hit):
+>         <https://wiki.debian.org/DebianFirewall>
+>
+> To see the firewall rules in gory raw detail:
+>         sudo iptables -L -v
+>
+
+My firewall is on the router (running DD-WRT) so I was thinking that my
+network
+should be behind the wall. Not sure how to do any of that and I'm running
+out of time
+to get the needed work done!
+
+Thank you so much for your advice!
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150527/25f14bee/attachment.html>
+
+From tisdall at gmail.com  Wed May 27 17:15:37 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Wed, 27 May 2015 13:15:37 -0400
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <CAPpdf5-H83Cq69Xx8uXUDmVVnixqfO1BZsK+gmX7J40RQ6WbTQ@mail.gmail.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+ <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+ <CAPpdf5-oqALaiTZ_b7aEfkDXT03_kKY+dyX2+rRC8TPGkdFOmg@mail.gmail.com>
+ <alpine.LRH.2.02.1505262353260.12739@redclaw.mimosa.com>
+ <CAPpdf5-hE5x4eDum46zzxMnzsuNVJL9U5xk3Vw4ur+d5kQHOXQ@mail.gmail.com>
+ <alpine.LRH.2.02.1505270917470.12739@redclaw.mimosa.com>
+ <CAPpdf5-H83Cq69Xx8uXUDmVVnixqfO1BZsK+gmX7J40RQ6WbTQ@mail.gmail.com>
+Message-ID: <CAGxYWpZ2129wUpcBc5ckgkQxyNykBLOugbrAc2+_=h8UFOF3Ww@mail.gmail.com>
+
+On Wed, May 27, 2015 at 11:37 AM, o1bigtenor <o1bigtenor at gmail.com> wrote:
+>> When you install Linux you are likely to get a simply configured
+>> firewall.  And it is likely to block UDP 54925.  But it depends on
+>> your distro.  I don't know about Debian Testing -- someone else surely
+>> does.  Maybe useful (first google hit):
+>>         <https://wiki.debian.org/DebianFirewall>
+>>
+>> To see the firewall rules in gory raw detail:
+>>         sudo iptables -L -v
+>
+>
+> My firewall is on the router (running DD-WRT) so I was thinking that my
+> network
+> should be behind the wall. Not sure how to do any of that and I'm running
+> out of time
+> to get the needed work done!
+
+Every machine on a network can have a firewall.  I think the default
+set up for Ubuntu/Debian is to have no firewall enabled (Ubuntu
+Desktop definitely has no firewall on by default).  So, it's possible
+if you have a firewall on your computer that that's why it's not
+working.  Try running the "sudo iptables -L -v" as recommended and
+confirm whether your system is blocking anything or not.  If that
+command doesn't list anything, then it's not a firewall issue.
+
+From me at mylesbraithwaite.com  Wed May 27 18:33:09 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Wed, 27 May 2015 14:33:09 -0400
+Subject: [GTALUG] Updated Code of Conduct
+Message-ID: <CA+hskZPUwnPjPq0bAVZ+6wrNqLSYHBr8eFNxmenHScmfdoTbpQ@mail.gmail.com>
+
+We have updated the Code of Conduct. You can view it here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you are interested in what's changed you can view the diff here:
+<https://github.com/gtalug/code-of-conduct/commit/5e00d6df1ea54855f0e512a01b383326d5c97f65>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board <board at gtalug.org>.
+
+From o1bigtenor at gmail.com  Wed May 27 20:10:02 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Wed, 27 May 2015 15:10:02 -0500
+Subject: [GTALUG] Help to setup for scanning
+In-Reply-To: <CAGxYWpZ2129wUpcBc5ckgkQxyNykBLOugbrAc2+_=h8UFOF3Ww@mail.gmail.com>
+References: <CAPpdf59pTJy2s3n85H=0VsKve-HM9tCopxEpXbqy9nbqpJw1mQ@mail.gmail.com>
+ <CAGxYWpZvJwQvh+AK75XAhCdeMtZ9itVeWAY4xN-+zY0DURB+Mg@mail.gmail.com>
+ <alpine.LRH.2.02.1505261929130.3915@redclaw.mimosa.com>
+ <CAPpdf5-oqALaiTZ_b7aEfkDXT03_kKY+dyX2+rRC8TPGkdFOmg@mail.gmail.com>
+ <alpine.LRH.2.02.1505262353260.12739@redclaw.mimosa.com>
+ <CAPpdf5-hE5x4eDum46zzxMnzsuNVJL9U5xk3Vw4ur+d5kQHOXQ@mail.gmail.com>
+ <alpine.LRH.2.02.1505270917470.12739@redclaw.mimosa.com>
+ <CAPpdf5-H83Cq69Xx8uXUDmVVnixqfO1BZsK+gmX7J40RQ6WbTQ@mail.gmail.com>
+ <CAGxYWpZ2129wUpcBc5ckgkQxyNykBLOugbrAc2+_=h8UFOF3Ww@mail.gmail.com>
+Message-ID: <CAPpdf5-J4zD8CRaV70dh-LAeG+-0=NhLy-Af0OYwkW2yRedDbg@mail.gmail.com>
+
+Nothing listed.
+
+On Wed, May 27, 2015 at 12:15 PM, Tim Tisdall <tisdall at gmail.com> wrote:
+
+> On Wed, May 27, 2015 at 11:37 AM, o1bigtenor <o1bigtenor at gmail.com> wrote:
+> >> When you install Linux you are likely to get a simply configured
+> >> firewall.  And it is likely to block UDP 54925.  But it depends on
+> >> your distro.  I don't know about Debian Testing -- someone else surely
+> >> does.  Maybe useful (first google hit):
+> >>         <https://wiki.debian.org/DebianFirewall>
+> >>
+> >> To see the firewall rules in gory raw detail:
+> >>         sudo iptables -L -v
+> >
+> >
+> > My firewall is on the router (running DD-WRT) so I was thinking that my
+> > network
+> > should be behind the wall. Not sure how to do any of that and I'm running
+> > out of time
+> > to get the needed work done!
+>
+> Every machine on a network can have a firewall.  I think the default
+> set up for Ubuntu/Debian is to have no firewall enabled (Ubuntu
+> Desktop definitely has no firewall on by default).  So, it's possible
+> if you have a firewall on your computer that that's why it's not
+> working.  Try running the "sudo iptables -L -v" as recommended and
+> confirm whether your system is blocking anything or not.  If that
+> command doesn't list anything, then it's not a firewall issue.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150527/ee569c1a/attachment.html>
+
+From jab at mbcs.ca  Thu May 28 19:10:53 2015
+From: jab at mbcs.ca (Jeremy Baker)
+Date: Thu, 28 May 2015 15:10:53 -0400
+Subject: [GTALUG] registrar for .ca
+Message-ID: <5567683D.6040109@mbcs.ca>
+
+Looking for some advise about a good registrar for .ca and .com  I've
+been using registeryour.ca, but have found them lacking in customer
+support and features (dnssec).  I would like to move to someone that is
+more responsive and has support for the following
+
+dnssec
+ipv6
+
+I was just looking at namespro.ca, and their prices are cheaper for .ca
+and .com.  Any experience with them?
+-- 
+Jeremy Baker <jab at mbcs.ca>
+GnuPGP fingerprint =
+EE66 AC49 E008 E09A 7A2A  0195 50EF 580B EDBB 95B6
+
+
+From email+libre at blaise.ca  Thu May 28 19:20:17 2015
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Thu, 28 May 2015 15:20:17 -0400
+Subject: [GTALUG] registrar for .ca
+In-Reply-To: <5567683D.6040109@mbcs.ca>
+References: <5567683D.6040109@mbcs.ca>
+Message-ID: <55676A71.6020707@blaise.ca>
+
+On 28/05/15 03:10 PM, Jeremy Baker wrote:
+> Looking for some advise about a good registrar for .ca and .com  I've
+> been using registeryour.ca, but have found them lacking in customer
+> support and features (dnssec).  I would like to move to someone that is
+> more responsive and has support for the following
+> 
+> dnssec
+> ipv6
+> 
+> I was just looking at namespro.ca, and their prices are cheaper for .ca
+> and .com.  Any experience with them?
+> 
+
+As far as customer support goes, I've been quite happy with Hover.com.
+
+Not sure about dnssec or ipv6, though it looks like they just rolled out
+dnssec... today??
+https://help.hover.com/entries/20786303-DNSSEC-for-signed-top-level-domains-
+
+
+From wwitteman at gmail.com  Thu May 28 19:20:37 2015
+From: wwitteman at gmail.com (William Witteman)
+Date: Thu, 28 May 2015 15:20:37 -0400
+Subject: [GTALUG] registrar for .ca
+In-Reply-To: <5567683D.6040109@mbcs.ca>
+References: <5567683D.6040109@mbcs.ca>
+Message-ID: <CAGMvh24N0i_+983A6u=3W1sftvpTmn0ELsnP3fd4K==s_G2gYQ@mail.gmail.com>
+
+I don't have any recent experience with anyone but easydns.ca for a
+long time; I've been with them since 2003.
+
+I have found their customer service to be outstanding, and they are a
+class act.  A quick sample of why I am a happy customer can be found
+right here: http://blog.easydns.org/
+
+They definitely do DNSSEC, I haven't really looked into ipv6.
+
+That said, I am a big fan of de-coupling my registrar from my DNS
+provider, as having the two separate means that you are better
+insulated from fraudulent behaviour, rent-seeking and corporate
+failure.
+
+Good luck!
+
+From darryl at moores.ca  Thu May 28 19:23:06 2015
+From: darryl at moores.ca (Darryl Moore)
+Date: Thu, 28 May 2015 15:23:06 -0400
+Subject: [GTALUG] registrar for .ca
+In-Reply-To: <5567683D.6040109@mbcs.ca>
+References: <5567683D.6040109@mbcs.ca>
+Message-ID: <55676B1A.3040201@moores.ca>
+
+I use registeryour.ca too. Amy quite happy with them as a registrar. I 
+don't use any of their other services. I use Hurricane Electric for all 
+my DNS services. http://dns.he.net.
+
+On 15-05-28 03:10 PM, Jeremy Baker wrote:
+> Looking for some advise about a good registrar for .ca and .com  I've
+> been using registeryour.ca, but have found them lacking in customer
+> support and features (dnssec).  I would like to move to someone that is
+> more responsive and has support for the following
+>
+> dnssec
+> ipv6
+>
+> I was just looking at namespro.ca, and their prices are cheaper for .ca
+> and .com.  Any experience with them?
+
+
+From darryl at moores.ca  Thu May 28 19:41:45 2015
+From: darryl at moores.ca (Darryl Moore)
+Date: Thu, 28 May 2015 15:41:45 -0400
+Subject: [GTALUG] writing to group
+Message-ID: <55676F79.8010905@moores.ca>
+
+Hello moderators. I lerk in the GTALUG newsgroup often but don't often 
+respond. I did response to the last thread for the first time in a 
+while, but got a message back saying my message was awaiting moderation. 
+I'm expecting this one to as well, and you can choose whether to respond 
+directly or to post in the newsgroup and respond there.
+
+Does this group seriously moderate each and every message that passes 
+through? Or do you have membership levels with some people requiring 
+moderation and others not? Just curious, as if my messages are likely to 
+get significantly delayed, then that would certainly have an effect on 
+whether I try to post much more in the future.
+
+Kind Regards,
+Darryl Moore
+
+From avolkov at gmail.com  Thu May 28 19:45:36 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Thu, 28 May 2015 15:45:36 -0400
+Subject: [GTALUG] Remote GUI access to a Linux box from Windows
+Message-ID: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+
+Hello everyone,
+
+I need to organize a remote gui access from several windows machine to a
+linux box, running Fedora 22 with GNOME.
+
+The major requirements are -- it's gonna work on a LAN, needs to be
+responsive, and the should exist a decent windows client.
+
+I think VNC is a bit too cumbersome, although there might be a better
+client out there.
+
+Has anyone used anything more recent? So far I'm most inclined on using
+X2Go -- http://wiki.x2go.org/doku.php, has anyone had any experience with
+it?
+
+Thanks,
+
+Alex.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150528/e638f759/attachment.html>
+
+From me at mylesbraithwaite.com  Thu May 28 19:49:02 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 28 May 2015 15:49:02 -0400
+Subject: [GTALUG] writing to group
+In-Reply-To: <55676F79.8010905@moores.ca>
+References: <55676F79.8010905@moores.ca>
+Message-ID: <5567712E.3020905@mylesbraithwaite.com>
+
+Darryl Moore wrote:
+> Hello moderators. I lerk in the GTALUG newsgroup often but don't often
+> respond. I did response to the last thread for the first time in a
+> while, but got a message back saying my message was awaiting moderation.
+> I'm expecting this one to as well, and you can choose whether to respond
+> directly or to post in the newsgroup and respond there.
+> 
+> Does this group seriously moderate each and every message that passes
+> through? Or do you have membership levels with some people requiring
+> moderation and others not? Just curious, as if my messages are likely to
+> get significantly delayed, then that would certainly have an effect on
+> whether I try to post much more in the future.
+
+Speaking as the guy who approved your post.
+
+We don't moderator each individual post just the first post of a new
+user (as a precautions against spammers).
+
+From me at mylesbraithwaite.com  Thu May 28 19:57:55 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 28 May 2015 15:57:55 -0400
+Subject: [GTALUG] Remote GUI access to a Linux box from Windows
+In-Reply-To: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+References: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+Message-ID: <55677343.5090008@mylesbraithwaite.com>
+
+Alex Volkov wrote:
+> Hello everyone,
+> 
+> I need to organize a remote gui access from several windows machine to a
+> linux box, running Fedora 22 with GNOME.
+> 
+> The major requirements are -- it's gonna work on a LAN, needs to be
+> responsive, and the should exist a decent windows client.
+> 
+> I think VNC is a bit too cumbersome, although there might be a better
+> client out there.
+> 
+> Has anyone used anything more recent? So far I'm most inclined on using
+> X2Go -- http://wiki.x2go.org/doku.php, has anyone had any experience
+> with it?
+
+I am using xrdp[1] right now for this and it's great because it just
+works. It's works while for most basic office-like tasks (i.e. running
+LibreOffice, Wireshark, and Thunderbird). I wouldn't suggest it for
+running video though. You can use the Microsoft's Remote Desktop Connect
+as the client.
+
+[1]: <http://www.xrdp.org/>
+
+From louipc.ist at gmail.com  Thu May 28 20:00:06 2015
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Thu, 28 May 2015 16:00:06 -0400
+Subject: [GTALUG] Remote GUI access to a Linux box from Windows
+In-Reply-To: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+References: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+Message-ID: <20150528200005.GA25573@gmail.com>
+
+On Thu 28 May 2015 15:45 -0400, Alex Volkov wrote:
+> The major requirements are -- it's gonna work on a LAN, needs to be
+> responsive, and the should exist a decent windows client.
+> 
+> I think VNC is a bit too cumbersome, although there might be a better
+> client out there.
+
+What is cumbersome?
+
+I've found VNC to be pretty trivial to walk non technical users through, even
+children. If you control the network around the Linux machine you can open
+a path to it and even point a domain to it. So no messing around with IP
+addresses or firewalls on their side.
+
+
+From darryl at moores.ca  Thu May 28 20:03:37 2015
+From: darryl at moores.ca (Darryl Moore)
+Date: Thu, 28 May 2015 16:03:37 -0400
+Subject: [GTALUG] writing to group
+In-Reply-To: <5567712E.3020905@mylesbraithwaite.com>
+References: <55676F79.8010905@moores.ca>
+ <5567712E.3020905@mylesbraithwaite.com>
+Message-ID: <55677499.50706@moores.ca>
+
+Thanks Myles. So a tiered membership then. Guarding against spammers is 
+eminently sensible. Now, not to start a flame war, (I haven't actually 
+paid close enough attention) but does this group have a preference WRT 
+top or bottom posting?
+
+Regards,
+Darryl
+
+On 15-05-28 03:49 PM, Myles Braithwaite wrote:
+> Darryl Moore wrote:
+>> Hello moderators. I lerk in the GTALUG newsgroup often but don't often
+>> respond. I did response to the last thread for the first time in a
+>> while, but got a message back saying my message was awaiting moderation.
+>> I'm expecting this one to as well, and you can choose whether to respond
+>> directly or to post in the newsgroup and respond there.
+>>
+>> Does this group seriously moderate each and every message that passes
+>> through? Or do you have membership levels with some people requiring
+>> moderation and others not? Just curious, as if my messages are likely to
+>> get significantly delayed, then that would certainly have an effect on
+>> whether I try to post much more in the future.
+> Speaking as the guy who approved your post.
+>
+> We don't moderator each individual post just the first post of a new
+> user (as a precautions against spammers).
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+From me at mylesbraithwaite.com  Thu May 28 20:06:24 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 28 May 2015 16:06:24 -0400
+Subject: [GTALUG] writing to group
+In-Reply-To: <55677499.50706@moores.ca>
+References: <55676F79.8010905@moores.ca>
+ <5567712E.3020905@mylesbraithwaite.com> <55677499.50706@moores.ca>
+Message-ID: <55677540.5020201@mylesbraithwaite.com>
+
+Darryl Moore wrote:
+> Thanks Myles. So a tiered membership then. Guarding against spammers is
+> eminently sensible. Now, not to start a flame war, (I haven't actually
+> paid close enough attention) but does this group have a preference WRT
+> top or bottom posting?
+
+Bottom.
+
+From opengeometry at yahoo.ca  Thu May 28 20:50:12 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Thu, 28 May 2015 16:50:12 -0400
+Subject: [GTALUG] writing to group
+In-Reply-To: <55677540.5020201@mylesbraithwaite.com>
+References: <55676F79.8010905@moores.ca>
+ <5567712E.3020905@mylesbraithwaite.com> <55677499.50706@moores.ca>
+ <55677540.5020201@mylesbraithwaite.com>
+Message-ID: <20150528205012.GA18712@node1.localdomain>
+
+Or, top, if you're responding to entire post.
+-- 
+William
+
+On Thu, May 28, 2015 at 04:06:24PM -0400, Myles Braithwaite wrote:
+> Darryl Moore wrote:
+> > Thanks Myles. So a tiered membership then. Guarding against spammers is
+> > eminently sensible. Now, not to start a flame war, (I haven't actually
+> > paid close enough attention) but does this group have a preference WRT
+> > top or bottom posting?
+> 
+> Bottom.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From chris at cfajohnson.com  Thu May 28 21:09:14 2015
+From: chris at cfajohnson.com (Chris F.A. Johnson)
+Date: Thu, 28 May 2015 17:09:14 -0400 (EDT)
+Subject: [GTALUG] writing to group
+In-Reply-To: <55677499.50706@moores.ca>
+References: <55676F79.8010905@moores.ca>
+ <5567712E.3020905@mylesbraithwaite.com> <55677499.50706@moores.ca>
+Message-ID: <alpine.DEB.2.10.1505281708030.3510@chris.tor>
+
+On Thu, 28 May 2015, Darryl Moore wrote:
+
+> Thanks Myles. So a tiered membership then. Guarding against spammers is 
+> eminently sensible. Now, not to start a flame war, (I haven't actually paid 
+> close enough attention) but does this group have a preference WRT top or 
+> bottom posting?
+
+   Interleaved, with your reply following the paragraph or sentence you
+   are commenting on.
+
+-- 
+Chris F.A. Johnson, <http://cfajohnson.com>
+
+From louipc.ist at gmail.com  Thu May 28 21:16:43 2015
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Thu, 28 May 2015 17:16:43 -0400
+Subject: [GTALUG] writing to group
+In-Reply-To: <20150528205012.GA18712@node1.localdomain>
+References: <55676F79.8010905@moores.ca>
+ <5567712E.3020905@mylesbraithwaite.com> <55677499.50706@moores.ca>
+ <55677540.5020201@mylesbraithwaite.com>
+ <20150528205012.GA18712@node1.localdomain>
+Message-ID: <20150528211643.GB25573@gmail.com>
+
+On Thu 28 May 2015 16:50 -0400, William Park wrote:
+> Or, top, if you're responding to entire post.
+> 
+> On Thu, May 28, 2015 at 04:06:24PM -0400, Myles Braithwaite wrote:
+> > Darryl Moore wrote:
+> > > does this group have a preference WRT top or bottom posting?
+> > 
+> > Bottom.
+
+Bottom. Trim quoted text.
+
+From hugh at mimosa.com  Thu May 28 22:51:56 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 28 May 2015 18:51:56 -0400 (EDT)
+Subject: [GTALUG] writing to group
+In-Reply-To: <alpine.DEB.2.10.1505281708030.3510@chris.tor>
+References: <55676F79.8010905@moores.ca>
+ <5567712E.3020905@mylesbraithwaite.com> <55677499.50706@moores.ca>
+ <alpine.DEB.2.10.1505281708030.3510@chris.tor>
+Message-ID: <alpine.LRH.2.02.1505281850220.12739@redclaw.mimosa.com>
+
+| From: Chris F.A. Johnson <chris at cfajohnson.com>
+
+|   Interleaved, with your reply following the paragraph or sentence you
+|   are commenting on.
+
+As usual, Chris is precise and accurate.  And educational.
+
+From lists at sadiqs.com  Fri May 29 00:42:09 2015
+From: lists at sadiqs.com (Sadiq Saif)
+Date: Thu, 28 May 2015 20:42:09 -0400
+Subject: [GTALUG] registrar for .ca
+In-Reply-To: <5567683D.6040109@mbcs.ca>
+References: <5567683D.6040109@mbcs.ca>
+Message-ID: <5567B5E1.903@sadiqs.com>
+
+On 5/28/2015 15:10, Jeremy Baker wrote:
+> Looking for some advise about a good registrar for .ca and .com  I've
+> been using registeryour.ca, but have found them lacking in customer
+> support and features (dnssec).  I would like to move to someone that is
+> more responsive and has support for the following
+> 
+> dnssec
+> ipv6
+> 
+> I was just looking at namespro.ca, and their prices are cheaper for .ca
+> and .com.  Any experience with them?
+> 
+
+I am happy with Gandi - https://www.gandi.net/.
+
+They provide both of the features you are looking for.
+(Assuming by IPv6 you mean the ability to add v6 glue records)
+
+-- 
+Sadiq Saif (AS393949)
+https://staticsafe.ca
+
+From bjonkman at sobac.com  Fri May 29 05:13:49 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Fri, 29 May 2015 01:13:49 -0400
+Subject: [GTALUG] Updated Code of Conduct
+In-Reply-To: <CA+hskZPUwnPjPq0bAVZ+6wrNqLSYHBr8eFNxmenHScmfdoTbpQ@mail.gmail.com>
+References: <CA+hskZPUwnPjPq0bAVZ+6wrNqLSYHBr8eFNxmenHScmfdoTbpQ@mail.gmail.com>
+Message-ID: <5567F58D.8020308@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Good job. That's a good Code of Conduct.
+
+- --Bob.
+
+On 27/05/15 02:33 PM, Myles Braithwaite wrote:
+> We have updated the Code of Conduct. You can view it here: 
+> <http://gtalug.org/about/code-of-conduct/>.
+> 
+> If you are interested in what's changed you can view the diff here:
+>  
+> <https://github.com/gtalug/code-of-conduct/commit/5e00d6df1ea54855f0e512a01b383326d5c97f65>.
+>
+>
+> 
+If you have any questions, comments, or concerns about the GTALUG
+> Code of Conduct please contact one of the GTALUG Board 
+> <board at gtalug.org>. --- Talk Mailing List talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlVn9YsACgkQuRKJsNLM5epYXACcDbbwzWmnSJz2sYwNKzQlIDxE
+BFkAnRLmkMtIo0MtWgTIFH6hyPBNQnj6
+=c9r9
+-----END PGP SIGNATURE-----
+
+From jab at mbcs.ca  Fri May 29 12:56:21 2015
+From: jab at mbcs.ca (Jeremy Baker)
+Date: Fri, 29 May 2015 08:56:21 -0400
+Subject: [GTALUG] registrar for .ca
+In-Reply-To: <55676B1A.3040201@moores.ca>
+References: <5567683D.6040109@mbcs.ca> <55676B1A.3040201@moores.ca>
+Message-ID: <556861F5.5000501@mbcs.ca>
+
+I run my own dns, my registrar just has to get my ns records up to the
+parent domain.  Unfortunately, while registeryour.ca allows you to enter
+both ipv4 and ipv6 addresses of your dns servers, they are failing to
+have AAAA records placed in the .ca servers.  This is holding up my
+Hurricane Electric certification, which I need to complete before they
+will unblock port 25.
+
+On 05/28/2015 03:23 PM, Darryl Moore wrote:
+> I use registeryour.ca too. Amy quite happy with them as a registrar. I
+> don't use any of their other services. I use Hurricane Electric for all
+> my DNS services. http://dns.he.net.
+> 
+> On 15-05-28 03:10 PM, Jeremy Baker wrote:
+>> Looking for some advise about a good registrar for .ca and .com  I've
+>> been using registeryour.ca, but have found them lacking in customer
+>> support and features (dnssec).  I would like to move to someone that is
+>> more responsive and has support for the following
+>>
+>> dnssec
+>> ipv6
+>>
+>> I was just looking at namespro.ca, and their prices are cheaper for .ca
+>> and .com.  Any experience with them?
+> 
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+-- 
+Jeremy Baker <jab at mbcs.ca>
+GnuPGP fingerprint =
+EE66 AC49 E008 E09A 7A2A  0195 50EF 580B EDBB 95B6
+
+
+From lsorense at csclub.uwaterloo.ca  Fri May 29 14:26:22 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 29 May 2015 10:26:22 -0400
+Subject: [GTALUG] Remote GUI access to a Linux box from Windows
+In-Reply-To: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+References: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+Message-ID: <20150529142622.GB6170@csclub.uwaterloo.ca>
+
+On Thu, May 28, 2015 at 03:45:36PM -0400, Alex Volkov wrote:
+> Hello everyone,
+> 
+> I need to organize a remote gui access from several windows machine to a
+> linux box, running Fedora 22 with GNOME.
+> 
+> The major requirements are -- it's gonna work on a LAN, needs to be
+> responsive, and the should exist a decent windows client.
+> 
+> I think VNC is a bit too cumbersome, although there might be a better
+> client out there.
+
+How about rdp which seems to be what windows likes to use.
+
+> Has anyone used anything more recent? So far I'm most inclined on using
+> X2Go -- http://wiki.x2go.org/doku.php, has anyone had any experience with
+> it?
+
+Package: xrdp
+Version: 0.6.1-2
+Installed-Size: 1593
+Maintainer: Vincent Bernat <bernat at debian.org>
+Architecture: amd64
+Depends: libc6 (>= 2.15), libpam0g (>= 0.99.7.1), libssl1.0.0 (>= 1.0.0), libx11-6, libxfixes3, adduser
+Recommends: vnc4server | tightvncserver | vnc-server
+Description-en: Remote Desktop Protocol (RDP) server
+ Based on research work by the rdesktop project, xrdp uses the Remote
+ Desktop Protocol to present a graphical login to a remote client.
+ xrdp can connect to a VNC server or another RDP server.
+ .
+ Microsoft Windows users can connect to a system running xrdp without
+ installing additional software.
+Description-md5: b98c1889e17be6136503794b3491891b
+Homepage: http://xrdp.sourceforge.net
+Tag: implemented-in::c, interface::daemon, network::server, role::program,
+ use::login, use::viewing, x11::application
+Section: net
+Priority: optional
+Filename: pool/main/x/xrdp/xrdp_0.6.1-2_amd64.deb
+Size: 217932
+MD5sum: 96ce09e7c1ae53a6a6a588cc7cf9f52b
+SHA1: 509cdc203e606921a4f092d9a5788e2d90440403
+SHA256: ad7aa1c3844c0b77c0931907f7939e7d5d72b552e6cfe28330d4ff56f21e1895
+
+
+
+The 'does not need additional software installed on windows' seems like
+a nice feature.
+
+-- 
+Len Sorensen
+
+From gilesorr at gmail.com  Fri May 29 14:28:07 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Fri, 29 May 2015 10:28:07 -0400
+Subject: [GTALUG] Remote GUI access to a Linux box from Windows
+In-Reply-To: <20150528200005.GA25573@gmail.com>
+References: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+ <20150528200005.GA25573@gmail.com>
+Message-ID: <CAEnxSC4d_0sYUF1bYQq4J3c01PD0Ug==RW7dazq8MQ-u4pqWyg@mail.gmail.com>
+
+On 28 May 2015 at 16:00, Loui Chang <louipc.ist at gmail.com> wrote:
+> On Thu 28 May 2015 15:45 -0400, Alex Volkov wrote:
+>> The major requirements are -- it's gonna work on a LAN, needs to be
+>> responsive, and the should exist a decent windows client.
+>>
+>> I think VNC is a bit too cumbersome, although there might be a better
+>> client out there.
+>
+> What is cumbersome?
+>
+> I've found VNC to be pretty trivial to walk non technical users through, even
+> children. If you control the network around the Linux machine you can open
+> a path to it and even point a domain to it. So no messing around with IP
+> addresses or firewalls on their side.
+
+He says "even children," as if they're tough to teach.  Now if you'd
+said "even grandparents," that would be a selling point.
+
+I've always used VNC, and have no big issues with it ... but I'm
+willing to admit that "cumbersome" is a reasonably accurate
+description.  The next time I need such a thing, I'll take Myles'
+suggestion and look at xrdp.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From louipc.ist at gmail.com  Fri May 29 17:30:46 2015
+From: louipc.ist at gmail.com (Loui Chang)
+Date: Fri, 29 May 2015 13:30:46 -0400
+Subject: [GTALUG] Remote GUI access to a Linux box from Windows
+In-Reply-To: <CAEnxSC4d_0sYUF1bYQq4J3c01PD0Ug==RW7dazq8MQ-u4pqWyg@mail.gmail.com>
+References: <CAO1j=qf9+GjNFHwNL1nhmt1dAu2jMdmb+x7Mwp=KCspYoXZMQA@mail.gmail.com>
+ <20150528200005.GA25573@gmail.com>
+ <CAEnxSC4d_0sYUF1bYQq4J3c01PD0Ug==RW7dazq8MQ-u4pqWyg@mail.gmail.com>
+Message-ID: <20150529173046.GC25573@gmail.com>
+
+On Fri 29 May 2015 10:28 -0400, Giles Orr wrote:
+> I've always used VNC, and have no big issues with it ... but I'm
+> willing to admit that "cumbersome" is a reasonably accurate
+> description.  The next time I need such a thing, I'll take Myles'
+> suggestion and look at xrdp.
+
+True.
+Not sure I would consider it cumbersome, but seems these days the
+download/install of a desktop program falls into that category.
+Better be installed already or make it a mobile/web app.
+
+
+From hugh at mimosa.com  Sat May 30 20:08:43 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 30 May 2015 16:08:43 -0400 (EDT)
+Subject: [GTALUG] free scanner
+Message-ID: <alpine.LRH.2.02.1505301423480.3877@redclaw.mimosa.com>
+
+I went to my local "Environment Day".  Among other things, folks can turn 
+in "e-waste", electronic things that they no longer want.  They just get 
+destroyed and, with luck, some fractional part gets recycled.
+
+I hate seeing good things go to waste.  So I intercepted a scanner and now 
+have it.  An HP Scanjet 6300C.  It was large, so I thought that it would 
+handle legal-sized paper.  No luck, it is large but only handles A4 length 
+and Letter width (and smaller).
+
+It is old and slow but does work with Linux (USB; I haven't tried its SCSI 
+prot).  Is anyone interested in having it?  I could likely bring it to the 
+next meeting.  If not, I'm going to throw it back.
+
+
+From kevin at ve3syb.ca  Sun May 31 00:31:34 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Sat, 30 May 2015 20:31:34 -0400
+Subject: [GTALUG] free scanner
+In-Reply-To: <alpine.LRH.2.02.1505301423480.3877@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1505301423480.3877@redclaw.mimosa.com>
+Message-ID: <556A5666.6020108@ve3syb.ca>
+
+On 15-05-30 04:08 PM, D. Hugh Redelmeier wrote:
+> I hate seeing good things go to waste.  So I intercepted a scanner and now
+> have it.  An HP Scanjet 6300C.  It was large, so I thought that it would
+> handle legal-sized paper.  No luck, it is large but only handles A4 length
+> and Letter width (and smaller).
+>
+> It is old and slow but does work with Linux (USB; I haven't tried its SCSI
+> prot).  Is anyone interested in having it?
+
+If someone is into building CNC machines they could always take it apart and 
+get some parts out of it.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
