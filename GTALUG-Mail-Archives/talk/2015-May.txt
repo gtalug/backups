@@ -2622,3 +2622,53 @@ download/install of a desktop program falls into that category.
 Better be installed already or make it a mobile/web app.
 
 
+From hugh at mimosa.com  Sat May 30 20:08:43 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 30 May 2015 16:08:43 -0400 (EDT)
+Subject: [GTALUG] free scanner
+Message-ID: <alpine.LRH.2.02.1505301423480.3877@redclaw.mimosa.com>
+
+I went to my local "Environment Day".  Among other things, folks can turn 
+in "e-waste", electronic things that they no longer want.  They just get 
+destroyed and, with luck, some fractional part gets recycled.
+
+I hate seeing good things go to waste.  So I intercepted a scanner and now 
+have it.  An HP Scanjet 6300C.  It was large, so I thought that it would 
+handle legal-sized paper.  No luck, it is large but only handles A4 length 
+and Letter width (and smaller).
+
+It is old and slow but does work with Linux (USB; I haven't tried its SCSI 
+prot).  Is anyone interested in having it?  I could likely bring it to the 
+next meeting.  If not, I'm going to throw it back.
+
+
+From kevin at ve3syb.ca  Sun May 31 00:31:34 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Sat, 30 May 2015 20:31:34 -0400
+Subject: [GTALUG] free scanner
+In-Reply-To: <alpine.LRH.2.02.1505301423480.3877@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1505301423480.3877@redclaw.mimosa.com>
+Message-ID: <556A5666.6020108@ve3syb.ca>
+
+On 15-05-30 04:08 PM, D. Hugh Redelmeier wrote:
+> I hate seeing good things go to waste.  So I intercepted a scanner and now
+> have it.  An HP Scanjet 6300C.  It was large, so I thought that it would
+> handle legal-sized paper.  No luck, it is large but only handles A4 length
+> and Letter width (and smaller).
+>
+> It is old and slow but does work with Linux (USB; I haven't tried its SCSI
+> prot).  Is anyone interested in having it?
+
+If someone is into building CNC machines they could always take it apart and 
+get some parts out of it.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
