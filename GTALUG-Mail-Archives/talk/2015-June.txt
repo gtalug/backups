@@ -1,0 +1,45 @@
+From bjonkman at sobac.com  Mon Jun  1 01:26:47 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Sun, 31 May 2015 21:26:47 -0400
+Subject: [GTALUG] free scanner
+In-Reply-To: <alpine.LRH.2.02.1505301423480.3877@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1505301423480.3877@redclaw.mimosa.com>
+Message-ID: <556BB4D7.9080800@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+If you can, deliver it to FreeGeek. They'll re-use or refurbish it,
+and if it's completely unusable they'll take it apart and get a few
+semoleans from their upstream recycler.
+
+http://freegeektoronto.org/donate/
+
+Better them than a for-profit recycler.
+
+- --Bob.
+
+
+On 30/05/15 04:08 PM, D. Hugh Redelmeier wrote:
+> I went to my local "Environment Day".  Among other things, folks
+> can turn in "e-waste", electronic things that they no longer want.
+> They just get destroyed and, with luck, some fractional part gets
+> recycled.
+> 
+> I hate seeing good things go to waste.  So I intercepted a scanner
+> and now have it.  An HP Scanjet 6300C.  It was large, so I thought
+> that it would handle legal-sized paper.  No luck, it is large but
+> only handles A4 length and Letter width (and smaller).
+> 
+> It is old and slow but does work with Linux (USB; I haven't tried
+> its SCSI prot).  Is anyone interested in having it?  I could likely
+> bring it to the next meeting.  If not, I'm going to throw it back.
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlVrtNYACgkQuRKJsNLM5eoHUgCggrNjmKdhtaRtOb0bppQ3slUS
+SVIAoPub+LzwKbQsevfpVD/Vq4gQkkVL
+=0N4P
+-----END PGP SIGNATURE-----
+
