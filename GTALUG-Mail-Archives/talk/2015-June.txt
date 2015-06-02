@@ -43,3 +43,24 @@ SVIAoPub+LzwKbQsevfpVD/Vq4gQkkVL
 =0N4P
 -----END PGP SIGNATURE-----
 
+From lsorense at csclub.uwaterloo.ca  Mon Jun  1 17:13:46 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 1 Jun 2015 13:13:46 -0400
+Subject: [GTALUG] writing to group
+In-Reply-To: <alpine.DEB.2.10.1505281708030.3510@chris.tor>
+References: <55676F79.8010905@moores.ca>
+ <5567712E.3020905@mylesbraithwaite.com> <55677499.50706@moores.ca>
+ <alpine.DEB.2.10.1505281708030.3510@chris.tor>
+Message-ID: <20150601171346.GC6170@csclub.uwaterloo.ca>
+
+On Thu, May 28, 2015 at 05:09:14PM -0400, Chris F.A. Johnson wrote:
+>   Interleaved, with your reply following the paragraph or sentence you
+>   are commenting on.
+
+Yes, that is the best answer.
+
+And not in HTML of course. :)
+
+-- 
+Len Sorensen
+
