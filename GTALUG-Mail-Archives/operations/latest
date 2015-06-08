@@ -184,3 +184,21 @@ http://bob.jonkman.ca/blogs/bobjonkman
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/operations/attachments/20150602/a7a0724c/attachment.html>
 
+From avolkov at gmail.com  Sun Jun  7 14:59:06 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Sun, 07 Jun 2015 10:59:06 -0400
+Subject: [GTALUG-Ops] added an etckeeper remote
+Message-ID: <55745C3A.7020500@gmail.com>
+
+Hey guys,
+
+I added and configured remote to etckeeper using /root/.ssh/etckeeper-id_rsa
+
+The remote url is -- gitolite at flamy.ca:gtalug_etckeeper
+
+Please forward me your public ssh keys so I can give you access to it.
+
+Alex.
+
+
+
