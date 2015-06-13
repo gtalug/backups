@@ -1278,3 +1278,66 @@ Hope it helps. Thanks - Aruna
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150612/d04269d2/attachment.html>
 
+From me at mylesbraithwaite.com  Fri Jun 12 17:06:28 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 12 Jun 2015 13:06:28 -0400
+Subject: [GTALUG] Swift vs Go vs Python vs Ruby
+Message-ID: <557B1194.1070709@mylesbraithwaite.com>
+
+At this week's GTALUG meeting a couple of people asked what Swift looked
+like compared to other languages here is an example of a nursery rhyme:
+
+Swift:
+<https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.swift>
+
+Go:
+<https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.go>
+
+Python:
+<https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.py>
+
+Ruby:
+<https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.rb>
+
+I also mistakenly said that Go and Swift look like Python but Go and
+Swift look nothing a like. After some more research I should have said
+Go and Swift look the same but take a lot of influence from Python and C.
+
+From kalibslack at gmail.com  Fri Jun 12 21:31:14 2015
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Fri, 12 Jun 2015 18:31:14 -0300
+Subject: [GTALUG] Swift vs Go vs Python vs Ruby
+In-Reply-To: <557B1194.1070709@mylesbraithwaite.com>
+References: <557B1194.1070709@mylesbraithwaite.com>
+Message-ID: <CAH5qdeyPyH_238Focm4QCnTm03BZaOtkBoxH31S1wH=p=bX==g@mail.gmail.com>
+
+2015-06-12 14:06 GMT-03:00 Myles Braithwaite <me at mylesbraithwaite.com>:
+> At this week's GTALUG meeting a couple of people asked what Swift looked
+> like compared to other languages here is an example of a nursery rhyme:
+>
+> Swift:
+> <https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.swift>
+>
+> Go:
+> <https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.go>
+>
+> Python:
+> <https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.py>
+>
+> Ruby:
+> <https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.rb>
+>
+> I also mistakenly said that Go and Swift look like Python but Go and
+> Swift look nothing a like. After some more research I should have said
+> Go and Swift look the same but take a lot of influence from Python and C.
+> ---
+
+Cool.
+
+A few weeks ago I was reading about it. Well, not about all the 4, but
+about a few differences between Go and Swift, and I found an
+interesting article about it. If anyone is interested, there´s a good
+reading:
+
+http://blog.translusion.com/posts/a_comparison_of_go_and_swift/
+
