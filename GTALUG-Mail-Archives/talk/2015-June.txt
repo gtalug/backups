@@ -1341,3 +1341,24 @@ reading:
 
 http://blog.translusion.com/posts/a_comparison_of_go_and_swift/
 
+From gilesorr at gmail.com  Sun Jun 14 01:03:53 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Sat, 13 Jun 2015 21:03:53 -0400
+Subject: [GTALUG] "VA LiNUX Systems" Stock Prospectus
+Message-ID: <CAEnxSC7-T_V9EaWPzJTzV-Mp_tc76KpJusti-WeDeDGSz7Gfjw@mail.gmail.com>
+
+I have a rather weird bit of Linux history, a 90 page VA Linux Systems
+Stock Prospectus (November 17, 1999): I actually bought into their
+initial public offering - I was living in the U.S. at the time.  It's
+all risk assessment and financials.  I'm about to chuck it into the
+recycling, but it occurred to me that someone might be interested.  Or
+perhaps that's a stretch ... but I'll hold onto it for a few days.
+Let me know if you want it.
+
+https://en.wikipedia.org/wiki/Va_linux#Initial_public_offering
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
