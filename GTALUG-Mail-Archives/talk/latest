@@ -1278,3 +1278,1213 @@ Hope it helps. Thanks - Aruna
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150612/d04269d2/attachment.html>
 
+From me at mylesbraithwaite.com  Fri Jun 12 17:06:28 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 12 Jun 2015 13:06:28 -0400
+Subject: [GTALUG] Swift vs Go vs Python vs Ruby
+Message-ID: <557B1194.1070709@mylesbraithwaite.com>
+
+At this week's GTALUG meeting a couple of people asked what Swift looked
+like compared to other languages here is an example of a nursery rhyme:
+
+Swift:
+<https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.swift>
+
+Go:
+<https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.go>
+
+Python:
+<https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.py>
+
+Ruby:
+<https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.rb>
+
+I also mistakenly said that Go and Swift look like Python but Go and
+Swift look nothing a like. After some more research I should have said
+Go and Swift look the same but take a lot of influence from Python and C.
+
+From kalibslack at gmail.com  Fri Jun 12 21:31:14 2015
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Fri, 12 Jun 2015 18:31:14 -0300
+Subject: [GTALUG] Swift vs Go vs Python vs Ruby
+In-Reply-To: <557B1194.1070709@mylesbraithwaite.com>
+References: <557B1194.1070709@mylesbraithwaite.com>
+Message-ID: <CAH5qdeyPyH_238Focm4QCnTm03BZaOtkBoxH31S1wH=p=bX==g@mail.gmail.com>
+
+2015-06-12 14:06 GMT-03:00 Myles Braithwaite <me at mylesbraithwaite.com>:
+> At this week's GTALUG meeting a couple of people asked what Swift looked
+> like compared to other languages here is an example of a nursery rhyme:
+>
+> Swift:
+> <https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.swift>
+>
+> Go:
+> <https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.go>
+>
+> Python:
+> <https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.py>
+>
+> Ruby:
+> <https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.rb>
+>
+> I also mistakenly said that Go and Swift look like Python but Go and
+> Swift look nothing a like. After some more research I should have said
+> Go and Swift look the same but take a lot of influence from Python and C.
+> ---
+
+Cool.
+
+A few weeks ago I was reading about it. Well, not about all the 4, but
+about a few differences between Go and Swift, and I found an
+interesting article about it. If anyone is interested, there´s a good
+reading:
+
+http://blog.translusion.com/posts/a_comparison_of_go_and_swift/
+
+From gilesorr at gmail.com  Sun Jun 14 01:03:53 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Sat, 13 Jun 2015 21:03:53 -0400
+Subject: [GTALUG] "VA LiNUX Systems" Stock Prospectus
+Message-ID: <CAEnxSC7-T_V9EaWPzJTzV-Mp_tc76KpJusti-WeDeDGSz7Gfjw@mail.gmail.com>
+
+I have a rather weird bit of Linux history, a 90 page VA Linux Systems
+Stock Prospectus (November 17, 1999): I actually bought into their
+initial public offering - I was living in the U.S. at the time.  It's
+all risk assessment and financials.  I'm about to chuck it into the
+recycling, but it occurred to me that someone might be interested.  Or
+perhaps that's a stretch ... but I'll hold onto it for a few days.
+Let me know if you want it.
+
+https://en.wikipedia.org/wiki/Va_linux#Initial_public_offering
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From scruss at gmail.com  Tue Jun 16 00:34:41 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Mon, 15 Jun 2015 20:34:41 -0400
+Subject: [GTALUG] Swift vs Go vs Python vs Ruby
+In-Reply-To: <557B1194.1070709@mylesbraithwaite.com>
+References: <557B1194.1070709@mylesbraithwaite.com>
+Message-ID: <557F6F21.3000206@gmail.com>
+
+Stacks and RPN are still the best thing ever*:
+
+%!
+% monkeys.ps
+% best run with
+%  gs -q -dNODISPLAY monkeys.ps
+% if at all ...
+
+/verse {
+    dup print
+    ( little monkey) print
+    dup (One) ne {
+	(s) print
+    } if
+    ( jumping on the bed\n) print
+    dup (One) ne {
+	(One fell off and bumped his head\n)
+    } {
+	(They fell off and bumped their head\n)
+    } ifelse print
+    (Mama called the doctor,\nAnd the doctor said\n) print
+    (One) ne {
+	(No more monkeys jumping on the bed\n)
+    } {
+	(Put those monkeys right to bed\n)
+    } ifelse print
+    (\n) print
+} def
+
+[ (Five) (Four) (Three) (Two) (One) ] { verse } forall
+quit
+
+
+cheers,
+ Stewart
+
+*: for job security, that is.
+
+From stephen-d at rogers.com  Tue Jun 16 00:49:34 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Mon, 15 Jun 2015 20:49:34 -0400
+Subject: [GTALUG] [OT] Unlocking Phone Samsung Galaxy S3
+Message-ID: <557F729E.7090802@rogers.com>
+
+Well Android is kinda Linux based ....
+
+Now that I can walk from my Bell Mobility contract I am looking to 
+unlock my phone.
+
+Free tutorials do not work on my current Android OS version. 4.4.2
+
+I see a number of web sites offering unlocking that cost about $50. That 
+is what Bell charges.
+
+I went to a computer outlet store and they quoted $35. Not sure if I get 
+a guarantee, so Bell at $50 is still a consideration.
+
+Any and all comments and suggestion most welcome!
+
+-- 
+Stephen
+
+From Amos.Weatherill at zoho.com  Tue Jun 16 00:58:12 2015
+From: Amos.Weatherill at zoho.com (Amos H. Weatherill)
+Date: Mon, 15 Jun 2015 20:58:12 -0400
+Subject: [GTALUG] [OT] Unlocking Phone Samsung Galaxy S3
+In-Reply-To: <557F729E.7090802@rogers.com>
+References: <557F729E.7090802@rogers.com>
+Message-ID: <e5dba60b-bb5c-4a4d-84f0-5f02583938f1.maildroid@localhost>
+
+Hello Stephen,
+
+I would pay Bell the $50 because if they brick it, there is a chance that they will replace the phone.
+
+Read the Terms and Conditions associated with the unlocking and ask them questions first, however.
+
+Cheers,
+Amos
+
+Sent from my android device.
+
+-----Original Message-----
+From: Stephen <stephen-d at rogers.com>
+To: GTALUG Talk <talk at gtalug.org>
+Sent: Mon, 15 Jun 2015 20:49
+Subject: [GTALUG] [OT] Unlocking Phone Samsung Galaxy S3
+
+Well Android is kinda Linux based ....
+
+Now that I can walk from my Bell Mobility contract I am looking to 
+unlock my phone.
+
+Free tutorials do not work on my current Android OS version. 4.4.2
+
+I see a number of web sites offering unlocking that cost about $50. That 
+is what Bell charges.
+
+I went to a computer outlet store and they quoted $35. Not sure if I get 
+a guarantee, so Bell at $50 is still a consideration.
+
+Any and all comments and suggestion most welcome!
+
+-- 
+Stephen
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150615/cdb5e83b/attachment.html>
+
+From bjonkman at sobac.com  Tue Jun 16 01:47:09 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Mon, 15 Jun 2015 21:47:09 -0400
+Subject: [GTALUG] [OT] Unlocking Phone Samsung Galaxy S3
+In-Reply-To: <e5dba60b-bb5c-4a4d-84f0-5f02583938f1.maildroid@localhost>
+References: <557F729E.7090802@rogers.com>
+ <e5dba60b-bb5c-4a4d-84f0-5f02583938f1.maildroid@localhost>
+Message-ID: <557F801D.9060805@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+On the KWLUG mailing list we just had this discussion.
+
+Khalid Baheyeldin wrote:
+
+> If you own the phone (e.g. you bought it outright, or got it used
+> from Kijiji), you can unlock it for anywhere between $10 to $30
+> depending on the model and carrier it is locked to.
+> 
+> I have had good service from http://www.cellunlocker.net/ You can
+> get a quote from them by entering your phone info (including
+> IMEI).
+
+http://kwlug.org/pipermail/kwlug-disc_kwlug.org/2015-June/028135.html
+
+- --Bob.
+
+
+On 15/06/15 08:58 PM, Amos H. Weatherill wrote:
+> Hello Stephen,
+> 
+> I would pay Bell the $50 because if they brick it, there is a
+> chance that they will replace the phone.
+> 
+> Read the Terms and Conditions associated with the unlocking and ask
+> them questions first, however.
+> 
+> Cheers, Amos
+> 
+> Sent from my android device.
+> 
+> -----Original Message----- From: Stephen <stephen-d at rogers.com> To:
+> GTALUG Talk <talk at gtalug.org> Sent: Mon, 15 Jun 2015 20:49 Subject:
+> [GTALUG] [OT] Unlocking Phone Samsung Galaxy S3
+> 
+> Well Android is kinda Linux based ....
+> 
+> Now that I can walk from my Bell Mobility contract I am looking to
+>  unlock my phone.
+> 
+> Free tutorials do not work on my current Android OS version. 4.4.2
+> 
+> I see a number of web sites offering unlocking that cost about $50.
+> That is what Bell charges.
+> 
+> I went to a computer outlet store and they quoted $35. Not sure if
+> I get a guarantee, so Bell at $50 is still a consideration.
+> 
+> Any and all comments and suggestion most welcome!
+> 
+> 
+> 
+> --- Talk Mailing List talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlV/gBsACgkQuRKJsNLM5epbuQCdHcjm5EKCSxYWrmSxGToh3pWL
+qSQAnAvFOriKjuzYk1iwurf1R/7yl/MM
+=CHo/
+-----END PGP SIGNATURE-----
+
+From bjonkman at sobac.com  Tue Jun 16 01:52:26 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Mon, 15 Jun 2015 21:52:26 -0400
+Subject: [GTALUG] Swift vs Go vs Python vs Ruby
+In-Reply-To: <557B1194.1070709@mylesbraithwaite.com>
+References: <557B1194.1070709@mylesbraithwaite.com>
+Message-ID: <557F815A.6050504@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Thanx Myles! (since it was me who asked for a comparison)
+
+- --Bob, who's thinking of submitting a pull request to fix those monekys.
+
+
+On 12/06/15 01:06 PM, Myles Braithwaite wrote:
+> At this week's GTALUG meeting a couple of people asked what Swift
+> looked like compared to other languages here is an example of a
+> nursery rhyme:
+> 
+> Swift: 
+> <https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.swift>
+>
+>  Go: 
+> <https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.go>
+>
+>  Python: 
+> <https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.py>
+>
+>  Ruby: 
+> <https://github.com/myles/five-little-monkeys/blob/master/five-little-monkeys.rb>
+>
+>  I also mistakenly said that Go and Swift look like Python but Go
+> and Swift look nothing a like. After some more research I should
+> have said Go and Swift look the same but take a lot of influence
+> from Python and C. --- Talk Mailing List talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlV/gVgACgkQuRKJsNLM5epZjgCg3wnPiLXPY1Pgc1aB2C4Hza+O
+WywAnRtlQJPlpkI9QZmF9ROvuYnjehWq
+=RQ1L
+-----END PGP SIGNATURE-----
+
+From bjonkman at sobac.com  Tue Jun 16 03:06:20 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Mon, 15 Jun 2015 23:06:20 -0400
+Subject: [GTALUG] Linux in the Park 2015 - 25th July at 2pm in	Dufferin
+ Grove Park
+In-Reply-To: <CA+hskZON1vVg6+C8wiDrWHFQ31PJAMLp_VgA=ZdcjmMmES1_sw@mail.gmail.com>
+References: <CA+hskZON1vVg6+C8wiDrWHFQ31PJAMLp_VgA=ZdcjmMmES1_sw@mail.gmail.com>
+Message-ID: <557F92AC.3010808@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+The picnic doesn't appear on either GTALUG's own calendar[1] or the
+Google calendar[2].  Can someone add it?
+
+Thanx,
+- --Bob.
+
+[1]http://gtalug.org/gtalug.ics
+
+[2]
+http://www.google.com/calendar/ical/1e7buohjlj4e6hfpa4ragrqo6k at group.calendar.google.com/private-aa6d691c8fc68037e726a07cc4460df2/basic
+
+
+On 10/06/15 10:40 AM, Myles Braithwaite wrote:
+> <http://gtalug.org/picnics/2015/>
+> 
+> GTALUG is having the annual Linux in the Park Potluck this year at 
+> Dufferin Grove Park on 25th July at 2pm.
+> 
+> Things we will provide: Plates, Cutlery, Serviettes, Cups, and
+> Garbage bags.
+> 
+> Things you might want to bring: chairs, tasty beverages (that are 
+> non-alcoholic, as the city prohibits alcoholic beverages in the
+> park), food stuffs that you would like to share and enjoy,
+> tarp/blanket, sunscreen, hats, things to help survive the warmth of
+> the Canadian Wilderness.
+> 
+> We will doing this in a pot-luck style. Thus, please bring enough
+> food and drink for yourself and your guests, and try to bring
+> enough to share with others in the group.
+> 
+> We are using a Trello board to organize everything: 
+> <https://trello.com/b/JNHsDwys/linux-in-the-park-2015>.
+> 
+> Note that if you forget anything you needed, Dufferin Mall is
+> across the street, featuring a supermarket (No-Frills) department
+> store (WalMart), as well as other specialty stores.
+> 
+> ## Location
+> 
+> Dufferin Grove Park 875 Dufferin Street Toronto, Ontario
+> 
+> <https://goo.gl/maps/hnGg5>
+> 
+> <http://osm.org/go/ZX6BHsVZx-?layers=N&way=15703371>
+> 
+> ## Social Media Links
+> 
+> Facebook: <https://www.facebook.com/events/694777713981257/>
+> 
+> Google+:
+> <https://plus.google.com/events/ch21nnnjdcq6prpp575vc0no7cc>
+> 
+> ## Code of Conduct
+> 
+> We want a productive happy community that can welcome new ideas, 
+> improve every process every year, and foster collaboration between 
+> individuals with differing needs, interests and skills.
+> 
+> We gain strength from diversity, and actively seek participation
+> from those who enhance it. This code of conduct exists to ensure
+> that diverse groups collaborate to mutual advantage and enjoyment.
+> We will challenge prejudice that could jeopardize the participation
+> of any person in the community.
+> 
+> The Code of Conduct governs how we behave in public or in private 
+> whenever the Linux community will be judged by our actions. We
+> expect it to be honored by everyone who represents the community
+> officially or informally, claims affiliation, or participates
+> directly. It applies to activities online or offline.
+> 
+> We invite anybody to participate. Our community is open.
+> 
+> Please read more about the GTALUG Code of Conduct here: 
+> <http://gtalug.org/about/code-of-conduct/>.
+> 
+> If you have any questions, comments, or concerns about the GTALUG
+> Code of Conduct please contact one of the GTALUG Board Members @ 
+> <board at gtalug.org>. --- GTALUG Announce mailing list 
+> announce at gtalug.org http://gtalug.org/mailman/listinfo/announce 
+> --- Talk Mailing List talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlV/kqoACgkQuRKJsNLM5epUmQCffWyODyKacfjlObjuGF6hCK4v
+WccAoM+mYglPsS3A4v2hju8vTTaOkE5i
+=bIJ2
+-----END PGP SIGNATURE-----
+
+From bjonkman at sobac.com  Wed Jun 17 04:03:04 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Wed, 17 Jun 2015 00:03:04 -0400
+Subject: [GTALUG] [OT] Unlocking Phone Samsung Galaxy S3
+In-Reply-To: <557F801D.9060805@sobac.com>
+References: <557F729E.7090802@rogers.com>
+ <e5dba60b-bb5c-4a4d-84f0-5f02583938f1.maildroid@localhost>
+ <557F801D.9060805@sobac.com>
+Message-ID: <5580F178.8090301@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+- -------- Forwarded Message --------
+Date: Mon, 15 Jun 2015 21:55:39 -0400
+Subject: Re: [GTALUG] [OT] Unlocking Phone Samsung Galaxy S3
+From: Khalid Baheyeldin <kb at 2bits.com>
+To: Bob Jonkman <bjonkman at sobac.com>
+
+(Not sure my reply will make it to the GTA list, so feel free to forward
+it).
+
+I never had a phone brick when unlocking it, though I did this 5 or 6
+times in recent years.
+
+The way it works is that the unlock company gets your IMEI, and they
+send you an unlock code. When you insert your SIM and power on the
+phone, it asks for an unlock code, and you just enter it, and that is it.
+
+Sony phones (the brand I use most) costs $29.99 US, and they are among
+the most costly to unlock. Other phones cost less.
+
+On Cell Unlocker's web site, you can enter the make/model/carrier and
+IMEI and they give you a quote, so you know ahead of time how much it
+costs.
+
+On Mon, Jun 15, 2015 at 9:47 PM, Bob Jonkman <bjonkman at sobac.com> wrote:
+
+> On the KWLUG mailing list we just had this discussion.
+> 
+> Khalid Baheyeldin wrote:
+> 
+>> If you own the phone (e.g. you bought it outright, or got it
+>> used from Kijiji), you can unlock it for anywhere between $10 to
+>> $30 depending on the model and carrier it is locked to.
+> 
+>> I have had good service from http://www.cellunlocker.net/ You
+>> can get a quote from them by entering your phone info (including 
+>> IMEI).
+> 
+> http://kwlug.org/pipermail/kwlug-disc_kwlug.org/2015-June/028135.html
+>
+>
+> 
+- --Bob.
+> 
+> 
+> On 15/06/15 08:58 PM, Amos H. Weatherill wrote:
+>> Hello Stephen,
+> 
+>> I would pay Bell the $50 because if they brick it, there is a 
+>> chance that they will replace the phone.
+> 
+>> Read the Terms and Conditions associated with the unlocking and 
+>> ask them questions first, however.
+> 
+>> Cheers, Amos
+> 
+>> Sent from my android device.
+> 
+>> -----Original Message----- From: Stephen <stephen-d at rogers.com> 
+>> To: GTALUG Talk <talk at gtalug.org> Sent: Mon, 15 Jun 2015 20:49 
+>> Subject: [GTALUG] [OT] Unlocking Phone Samsung Galaxy S3
+> 
+>> Well Android is kinda Linux based ....
+> 
+>> Now that I can walk from my Bell Mobility contract I am looking
+>> to unlock my phone.
+> 
+>> Free tutorials do not work on my current Android OS version.
+>> 4.4.2
+> 
+>> I see a number of web sites offering unlocking that cost about 
+>> $50. That is what Bell charges.
+> 
+>> I went to a computer outlet store and they quoted $35. Not sure
+>> if I get a guarantee, so Bell at $50 is still a consideration.
+> 
+>> Any and all comments and suggestion most welcome!
+> 
+> 
+> 
+>> --- Talk Mailing List talk at gtalug.org 
+>> http://gtalug.org/mailman/listinfo/talk
+> 
+> 
+
+- -- 
+Khalid M. Baheyeldin
+2bits.com, Inc.
+Fast Reliable Drupal
+Drupal optimization, development, customization and consulting.
+Simplicity is prerequisite for reliability. --  Edsger W.Dijkstra
+Simplicity is the ultimate sophistication. --   Leonardo da Vinci
+For every complex problem, there is an answer that is clear, simple, and
+wrong." -- H.L. Mencken
+
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlWA8XYACgkQuRKJsNLM5eq2QwCfWkwayd6mZh7JuMlCLaK+R12k
+wDQAoJF+BwFRmTOzDbpD6oe/totkqjeB
+=Eq2f
+-----END PGP SIGNATURE-----
+
+From opengeometry at yahoo.ca  Wed Jun 17 04:09:46 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Wed, 17 Jun 2015 00:09:46 -0400
+Subject: [GTALUG] Looking for cell phone... which brand?
+Message-ID: <20150617040945.GA30695@node1.localdomain>
+
+Hi all,
+
+My BlackBerry is dying.  So, I'm looking to buy a cheap cell phone out
+right for Rogers network.  I don't care about locked, unlocked, Android,
+Windows, etc, because my usage is 95% text and 5% voice.
+
+Which brand do you recommend?  CanadaComputers has BLU phones (Android).
+Microsoft Stores has them too.  Any feedback on these BLU phones?
+-- 
+William
+
+From aruna.hewapathirane at gmail.com  Wed Jun 17 04:16:37 2015
+From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
+Date: Wed, 17 Jun 2015 00:16:37 -0400
+Subject: [GTALUG] [OT] Unlocking Phone Samsung Galaxy S3
+In-Reply-To: <5580F178.8090301@sobac.com>
+References: <557F729E.7090802@rogers.com>
+ <e5dba60b-bb5c-4a4d-84f0-5f02583938f1.maildroid@localhost>
+ <557F801D.9060805@sobac.com> <5580F178.8090301@sobac.com>
+Message-ID: <CAFSeFg9dqJv10j93JUWDBbmyghCpy=ZTQbeQXix7t+mBdaXgSg@mail.gmail.com>
+
+Any phone unlocked for $9.99 ( can highly recommend they unlocked a
+Blackberry and a Samsung for me took less than 10 mins )
+
+Noori Extension
+385 Yonge St
+Toronto, ON M5B 1S1
+385 Yonge StToronto, ON M5B 1S1
+
+(647) 748-4545
+
+https://www.google.ca/maps/place/Canadian+Outlet%28Noori+Extension%29/@43.658936,-79.381668,15z/data=!4m2!3m1!1s0x0:0xcbea3c7901f888a9
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150617/bc0ef883/attachment.html>
+
+From aruna.hewapathirane at gmail.com  Wed Jun 17 04:25:49 2015
+From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
+Date: Wed, 17 Jun 2015 00:25:49 -0400
+Subject: [GTALUG] Looking for cell phone... which brand?
+In-Reply-To: <20150617040945.GA30695@node1.localdomain>
+References: <20150617040945.GA30695@node1.localdomain>
+Message-ID: <CAFSeFg83K8HuYSDKJsa7WvkiB_Q8FG4EzwqLD5sSoTDBu8Ytuw@mail.gmail.com>
+
+HI William,
+
+There are Blu and Que phones.
+
+QUE: http://queproducts.com/
+BLU: http://www.bluproducts.com/index.php/android-phones
+
+Both have Dual SIM, both very decent devices. Price is very affordable.
+
+Flip side is you may not ( or you may ) receive the clarity say of a
+Samsung or LG and if shit happens I have no idea what their replacement
+policy is or warranties are.
+
+My 2cents both are very solid devices for the price.
+
+Thanks - Aruna
+
+
+On Wed, Jun 17, 2015 at 12:09 AM, William Park <opengeometry at yahoo.ca>
+wrote:
+
+> Hi all,
+>
+> My BlackBerry is dying.  So, I'm looking to buy a cheap cell phone out
+> right for Rogers network.  I don't care about locked, unlocked, Android,
+> Windows, etc, because my usage is 95% text and 5% voice.
+>
+> Which brand do you recommend?  CanadaComputers has BLU phones (Android).
+> Microsoft Stores has them too.  Any feedback on these BLU phones?
+> --
+> William
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150617/5d429826/attachment.html>
+
+From evan at telly.org  Wed Jun 17 08:07:52 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Wed, 17 Jun 2015 10:07:52 +0200
+Subject: [GTALUG] Looking for cell phone... which brand?
+In-Reply-To: <CAFSeFg83K8HuYSDKJsa7WvkiB_Q8FG4EzwqLD5sSoTDBu8Ytuw@mail.gmail.com>
+References: <20150617040945.GA30695@node1.localdomain>
+ <CAFSeFg83K8HuYSDKJsa7WvkiB_Q8FG4EzwqLD5sSoTDBu8Ytuw@mail.gmail.com>
+Message-ID: <CAMguqh3r0359DdYOBMSL=W6v7vrLan9_yzDTJgr8HZpmbdTj3g@mail.gmail.com>
+
+Greetings from the GTALUG branch office in Geneva.
+
+I just bought an LG G4 and am EXTREMELY happy with it. Best phone I've ever
+owned. But probably beyond your price expectations.
+
+For what you want I would highly suggest looking at the Moto E, which is
+normally $180 from Telus, Koodo, and staples. Canada Computers currently
+has it on special for $150
+<http://www.canadacomputers.com/product_info.php?cPath=30_415&item_id=082273>.
+Many reviews call it one of the best smartphones at the low end.
+
+
+On 17 June 2015 at 06:25, Aruna Hewapathirane <aruna.hewapathirane at gmail.com
+> wrote:
+
+> HI William,
+>
+> There are Blu and Que phones.
+>
+> QUE: http://queproducts.com/
+> BLU: http://www.bluproducts.com/index.php/android-phones
+>
+> Both have Dual SIM, both very decent devices. Price is very affordable.
+>
+> Flip side is you may not ( or you may ) receive the clarity say of a
+> Samsung or LG and if shit happens I have no idea what their replacement
+> policy is or warranties are.
+>
+> My 2cents both are very solid devices for the price.
+>
+> Thanks - Aruna
+>
+>
+> On Wed, Jun 17, 2015 at 12:09 AM, William Park <opengeometry at yahoo.ca>
+> wrote:
+>
+>> Hi all,
+>>
+>> My BlackBerry is dying.  So, I'm looking to buy a cheap cell phone out
+>> right for Rogers network.  I don't care about locked, unlocked, Android,
+>> Windows, etc, because my usage is 95% text and 5% voice.
+>>
+>> Which brand do you recommend?  CanadaComputers has BLU phones (Android).
+>> Microsoft Stores has them too.  Any feedback on these BLU phones?
+>> --
+>> William
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+
+
+-- 
+Evan Leibovitch
+Geneva, CH
+
+Em: evan at telly dot org
+Sk: evanleibovitch
+Tw: el56
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150617/1b0c56d2/attachment.html>
+
+From james.knott at rogers.com  Wed Jun 17 12:01:18 2015
+From: james.knott at rogers.com (James Knott)
+Date: Wed, 17 Jun 2015 08:01:18 -0400
+Subject: [GTALUG] Looking for cell phone... which brand?
+In-Reply-To: <20150617040945.GA30695@node1.localdomain>
+References: <20150617040945.GA30695@node1.localdomain>
+Message-ID: <5581618E.5020909@rogers.com>
+
+On 06/17/2015 12:09 AM, William Park wrote:
+> Hi all,
+>
+> My BlackBerry is dying.  So, I'm looking to buy a cheap cell phone out
+> right for Rogers network.  I don't care about locked, unlocked, Android,
+> Windows, etc, because my usage is 95% text and 5% voice.
+>
+> Which brand do you recommend?  CanadaComputers has BLU phones (Android).
+> Microsoft Stores has them too.  Any feedback on these BLU phones?
+
+You might consider the Nexus 5.  If you've been with Rogers for a while,
+you may be able to get one for free.  Back in late 2013, just after the
+N5 was released, I was able to get one for $100.  At the moment, they're
+"free" with some plans.  So, give Rogers a call and tell them you've
+been with them for however long you've been with them and tell them you
+want to upgrade.  You may wind up with a free phone, without having to
+take out a new plan.  However, it would also be a good time to compare
+your current plan with whatever they're offering.  They might be able to
+offer a cheaper one etc.
+
+I could have got another phone for free, but I wanted the N5 and am
+quite happy with it.
+
+http://www.rogers.com/web/link/wirelessBuyFlow?forwardTo=PhoneThenPlan&productType=normal&productId_Detailed=NEXUS5BLK
+
+From james.knott at rogers.com  Wed Jun 17 12:04:35 2015
+From: james.knott at rogers.com (James Knott)
+Date: Wed, 17 Jun 2015 08:04:35 -0400
+Subject: [GTALUG] Looking for cell phone... which brand?
+In-Reply-To: <5581618E.5020909@rogers.com>
+References: <20150617040945.GA30695@node1.localdomain>
+ <5581618E.5020909@rogers.com>
+Message-ID: <55816253.4060500@rogers.com>
+
+On 06/17/2015 08:01 AM, James Knott wrote:
+> I could have got another phone for free, but I wanted the N5 and am
+> quite happy with it.
+>
+> http://www.rogers.com/web/link/wirelessBuyFlow?forwardTo=PhoneThenPlan&productType=normal&productId_Detailed=NEXUS5BLK
+
+Hmm...  That link timed out.  You'll have to go to the Rogers site and
+search on Nexus 5.
+
+
+From tisdall at gmail.com  Wed Jun 17 13:12:04 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Wed, 17 Jun 2015 09:12:04 -0400
+Subject: [GTALUG] Looking for cell phone... which brand?
+In-Reply-To: <20150617040945.GA30695@node1.localdomain>
+References: <20150617040945.GA30695@node1.localdomain>
+Message-ID: <CAGxYWpYQuoh8G2-VWrZh1QGPZQ7i1ZeuRm+rDf1RCRqAr4DE9g@mail.gmail.com>
+
+Has anyone tried the new Asus Zenphone 2?
+http://www.canadacomputers.com/asus/zenfone2.php  (also available at other
+stores)  It comes unlocked and I think it works with Wind Mobile.  It's
+$250.
+
+The Nexus 4 and 5 are also both very good phones (constant OS updates!).
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150617/48e83996/attachment.html>
+
+From tisdall at gmail.com  Wed Jun 17 13:22:09 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Wed, 17 Jun 2015 09:22:09 -0400
+Subject: [GTALUG] Looking for cell phone... which brand?
+In-Reply-To: <CAFSeFg83K8HuYSDKJsa7WvkiB_Q8FG4EzwqLD5sSoTDBu8Ytuw@mail.gmail.com>
+References: <20150617040945.GA30695@node1.localdomain>
+ <CAFSeFg83K8HuYSDKJsa7WvkiB_Q8FG4EzwqLD5sSoTDBu8Ytuw@mail.gmail.com>
+Message-ID: <CAGxYWpbJTiLMUFQz6SbN5kFXMKoV-usDGyYiduKC5eL7v65xdw@mail.gmail.com>
+
+On 17 June 2015 at 00:25, Aruna Hewapathirane <aruna.hewapathirane at gmail.com
+> wrote:
+
+> There are Blu and Que phones.
+>
+> QUE: http://queproducts.com/
+> BLU: http://www.bluproducts.com/index.php/android-phones
+>
+> Both have Dual SIM, both very decent devices. Price is very affordable.
+>
+
+I'm curious what these phones are like...  "Dual SIM" tells me these are
+rebranded Chinese phones, though.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150617/ec009765/attachment.html>
+
+From hugh at mimosa.com  Wed Jun 17 13:28:07 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 17 Jun 2015 09:28:07 -0400 (EDT)
+Subject: [GTALUG] Looking for cell phone... which brand?
+In-Reply-To: <20150617040945.GA30695@node1.localdomain>
+References: <20150617040945.GA30695@node1.localdomain>
+Message-ID: <alpine.LRH.2.02.1506170900110.3828@redclaw.mimosa.com>
+
+| From: William Park <opengeometry at yahoo.ca>
+
+| My BlackBerry is dying.  So, I'm looking to buy a cheap cell phone out
+| right for Rogers network.  I don't care about locked, unlocked, Android,
+| Windows, etc, because my usage is 95% text and 5% voice.
+| 
+| Which brand do you recommend?  CanadaComputers has BLU phones (Android).
+| Microsoft Stores has them too.  Any feedback on these BLU phones?
+
+You are a quirky case.  Not meant as an insult -- I'm a quirky case
+too.  That probably means you should pay attention to why folks are
+making recommendations and not what the actual phone model they
+recommend.
+
+As I understand it (and I've not been shopping), all phones sold
+through Microsoft Stores are running Windows Phone OS.  Including BLU
+models.  If you truly don't care about the OS (and things that go with
+it), the Microsoft Store often has very good prices.  And they are
+always unlocked (a bonus even if you don't care now).  I care about
+the OS and Windows Phone would not be my first choice.
+
+Do you care about a physical keyboard?  BB would seem to be the only game 
+in town (probably not strictly true).  And with BB's challenged business, 
+my impression is that you can find them at a fairly good price.  You 
+probably want to try a keyboard before you buy a phone.
+
+I like the idea of a Nexus 5 but it isn't clear that its strengths
+match your desires.  I've been happy with my Nexus 4.
+
+I hate the idea of being tied to a contract in return for a cheap handset 
+up front.  So much so that I'm probably blind to the rare cases where it 
+is a win.
+
+Random relevant things that I noticed.  I have not looked into them:
+<http://forums.redflagdeals.com/lava-hot-bbz30-199-tx-bbq5-99-tax-free-ship-bb-employee-pricing-rfd-family-1720391/>
+<http://forums.redflagdeals.com/blackberry-better-physical-buttons-touchscreen-1749141/>
+<http://forums.redflagdeals.com/store-shopblackberry-com-bb-classic-326-leap-254-a-1753571/>
+<http://www.microsoftstore.com/store/msca/en_CA/pdp/Microsoft-Lumia-640XL/productID.318146100>
+<http://www.microsoftstore.com/store/msca/en_CA/pdp/Yezz-Billy-4.7--Unlocked/productID.308157600>
+
+From sciguy at vex.net  Wed Jun 17 14:03:53 2015
+From: sciguy at vex.net (Paul King)
+Date: Wed, 17 Jun 2015 10:03:53 -0400
+Subject: [GTALUG] Looking for cell phone... which brand?
+In-Reply-To: <20150617040945.GA30695@node1.localdomain>
+References: <20150617040945.GA30695@node1.localdomain>
+Message-ID: <55817E49.25830.274F1AA@sciguy.vex.net>
+
+I am quite happy with my Motorola Moto-G (unlocked), which runs Android. Got it 
+for around $280 pre-tax at Canada Computers in Mississauga.
+
+Paul King
+
+On 17 Jun 2015 at 0:09, William Park wrote:
+
+> Hi all,
+> 
+> My BlackBerry is dying.  So, I'm looking to buy a cheap cell phone out
+> right for Rogers network.  I don't care about locked, unlocked, Android,
+> Windows, etc, because my usage is 95% text and 5% voice.
+> 
+> Which brand do you recommend?  CanadaComputers has BLU phones (Android).
+> Microsoft Stores has them too.  Any feedback on these BLU phones?
+> -- 
+> William
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+
+From james.knott at rogers.com  Wed Jun 17 14:10:37 2015
+From: james.knott at rogers.com (James Knott)
+Date: Wed, 17 Jun 2015 10:10:37 -0400
+Subject: [GTALUG] Looking for cell phone... which brand?
+In-Reply-To: <alpine.LRH.2.02.1506170900110.3828@redclaw.mimosa.com>
+References: <20150617040945.GA30695@node1.localdomain>
+ <alpine.LRH.2.02.1506170900110.3828@redclaw.mimosa.com>
+Message-ID: <55817FDD.3080403@rogers.com>
+
+On 06/17/2015 09:28 AM, D. Hugh Redelmeier wrote:
+
+> As I understand it (and I've not been shopping), all phones sold
+> through Microsoft Stores are running Windows Phone OS.  Including BLU
+> models.  If you truly don't care about the OS (and things that go with
+> it), the Microsoft Store often has very good prices.  And they are
+> always unlocked (a bonus even if you don't care now).  I care about
+> the OS and Windows Phone would not be my first choice.
+
+I also prefer avoiding the Evil Empire.  ;-)
+
+> I like the idea of a Nexus 5 but it isn't clear that its strengths
+> match your desires.  I've been happy with my Nexus 4.
+
+If he's been with Rogers for a few years and hasn't got a phone from
+them recently, the Nexus 5 might be available for free.
+>
+> I hate the idea of being tied to a contract in return for a cheap handset 
+> up front.  So much so that I'm probably blind to the rare cases where it 
+> is a win.
+
+If he's been with Rogers long enough, he might not have to take out a
+contract.  When I got my Nexus 5, I continued on with my existing plan. 
+The only restriction was I couldn't get another phone for 3 years.
+
+Again, William should be calling Rogers first, to see what's available,
+with both phone and plans, before looking elsewhere.  He might be able
+to save money, while getting a phone at no charge.
+
+BTW, my Nexus 5, like all Google Nexus phones, is unlocked.
+
+From mike.kallies at gmail.com  Wed Jun 17 14:23:56 2015
+From: mike.kallies at gmail.com (Mike)
+Date: Wed, 17 Jun 2015 10:23:56 -0400
+Subject: [GTALUG] Looking for cell phone... which brand?
+In-Reply-To: <20150617040945.GA30695@node1.localdomain>
+References: <20150617040945.GA30695@node1.localdomain>
+Message-ID: <558182FC.5070702@gmail.com>
+
+On 17/06/2015 12:09 AM, William Park wrote:
+> Hi all,
+>
+> My BlackBerry is dying.  So, I'm looking to buy a cheap cell phone out
+...
+
+I have an unlocked Bold 9700 doing nothing which I can give you for 
+free.  If you're in a hurry and have a similar phone, you might be able 
+to backup your phone and restore it onto the 9700, saving you lots of 
+hassle.  No warranty or support, I'll just wipe it and make sure it's 
+not password protected.
+
+IMHO, you're much better off going to a Nexus something, or even to a 
+modern BB10 or iPhone.  This is only worth it if you're short on time 
+and don't want to deal with switching over right now.
+
+
+Mike
+
+From lsorense at csclub.uwaterloo.ca  Wed Jun 17 15:25:30 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 17 Jun 2015 11:25:30 -0400
+Subject: [GTALUG] Looking for cell phone... which brand?
+In-Reply-To: <20150617040945.GA30695@node1.localdomain>
+References: <20150617040945.GA30695@node1.localdomain>
+Message-ID: <20150617152530.GA17437@csclub.uwaterloo.ca>
+
+On Wed, Jun 17, 2015 at 12:09:46AM -0400, William Park wrote:
+> Hi all,
+> 
+> My BlackBerry is dying.  So, I'm looking to buy a cheap cell phone out
+> right for Rogers network.  I don't care about locked, unlocked, Android,
+> Windows, etc, because my usage is 95% text and 5% voice.
+> 
+> Which brand do you recommend?  CanadaComputers has BLU phones (Android).
+> Microsoft Stores has them too.  Any feedback on these BLU phones?
+
+I recently got a Blackberry Classic.  I think it is great.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Wed Jun 17 15:28:47 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 17 Jun 2015 11:28:47 -0400
+Subject: [GTALUG] Looking for cell phone... which brand?
+In-Reply-To: <alpine.LRH.2.02.1506170900110.3828@redclaw.mimosa.com>
+References: <20150617040945.GA30695@node1.localdomain>
+ <alpine.LRH.2.02.1506170900110.3828@redclaw.mimosa.com>
+Message-ID: <20150617152847.GB17437@csclub.uwaterloo.ca>
+
+On Wed, Jun 17, 2015 at 09:28:07AM -0400, D. Hugh Redelmeier wrote:
+> You are a quirky case.  Not meant as an insult -- I'm a quirky case
+> too.  That probably means you should pay attention to why folks are
+> making recommendations and not what the actual phone model they
+> recommend.
+> 
+> As I understand it (and I've not been shopping), all phones sold
+> through Microsoft Stores are running Windows Phone OS.  Including BLU
+> models.  If you truly don't care about the OS (and things that go with
+> it), the Microsoft Store often has very good prices.  And they are
+> always unlocked (a bonus even if you don't care now).  I care about
+> the OS and Windows Phone would not be my first choice.
+> 
+> Do you care about a physical keyboard?  BB would seem to be the only game 
+> in town (probably not strictly true).  And with BB's challenged business, 
+> my impression is that you can find them at a fairly good price.  You 
+> probably want to try a keyboard before you buy a phone.
+> 
+> I like the idea of a Nexus 5 but it isn't clear that its strengths
+> match your desires.  I've been happy with my Nexus 4.
+> 
+> I hate the idea of being tied to a contract in return for a cheap handset 
+> up front.  So much so that I'm probably blind to the rare cases where it 
+> is a win.
+
+Well on the rogers plan I am on, the plan is $20/month cheaper per line
+if you bring your own phone, which makes buying an unlocked phone cheaper
+than getting it from rogers in my case.  Only some of their plans have
+that option, others you are always paying the surcharge of getting
+subsidised phones and in the end you are always overpaying for it.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Wed Jun 17 15:34:36 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 17 Jun 2015 11:34:36 -0400
+Subject: [GTALUG] Looking for cell phone... which brand?
+In-Reply-To: <558182FC.5070702@gmail.com>
+References: <20150617040945.GA30695@node1.localdomain>
+ <558182FC.5070702@gmail.com>
+Message-ID: <20150617153436.GC17437@csclub.uwaterloo.ca>
+
+On Wed, Jun 17, 2015 at 10:23:56AM -0400, Mike wrote:
+> I have an unlocked Bold 9700 doing nothing which I can give you for
+> free.  If you're in a hurry and have a similar phone, you might be
+> able to backup your phone and restore it onto the 9700, saving you
+> lots of hassle.  No warranty or support, I'll just wipe it and make
+> sure it's not password protected.
+> 
+> IMHO, you're much better off going to a Nexus something, or even to
+> a modern BB10 or iPhone.  This is only worth it if you're short on
+> time and don't want to deal with switching over right now.
+
+My wife has a nxeus 5.  I have tried using it a few times, and honestly
+I hate touch screen keyboards, I have how android tries to be helpful
+when you don't want it to, and I hate how inconsistent it is in where
+you have to go to do things.  I also hate how slow it is to respond to
+the 'click' to take pictures with the camera, once you even find how to
+get to the stupid camara app.  This is a large part of why I do NOT have
+an android phone myself.
+
+I tried out a few of the blackberrys at a rogers store to see what
+tehy were like to work with, and was instantly a lot more impressed
+than any android device I have ever dealt with.  It is just so much
+more consistent.  And it doesn't try to second guess what you want to do.
+
+I do not appreciate being redirected to the gmail app if I start a
+browser and go to gmail.com.  I especially don't appreciate having to
+add my account to do a quick email check on an android device, and then
+having to figure out that to remove the account again you have to go to
+account management, not to where you added the account in the first place.
+@#$@#$ morons designed this thing.
+
+-- 
+Len Sorensen
+
+From carolyfisher at gmail.com  Wed Jun 17 18:57:32 2015
+From: carolyfisher at gmail.com (Caroly Fisher)
+Date: Wed, 17 Jun 2015 14:57:32 -0400
+Subject: [GTALUG] Looking for cell phone... which brand?
+In-Reply-To: <20150617040945.GA30695@node1.localdomain>
+References: <20150617040945.GA30695@node1.localdomain>
+Message-ID: <CAACvtMNAtZZHRQOyQvW8dvRa=2Y5HBksFFUduvSAd8DMPanf6w@mail.gmail.com>
+
+Note that I've been stuck with second hand phones since forever, and I
+don't really have experience with any of the suggested models.
+
+The Nokia Lumia is well sized, and of reasonable speed and thickness. It
+runs Windows~  Also, pretty colours. Why not?
+
+One plus. Android, and generally awesome. You can only obtain it on
+Tuesdays I believe. Under three hundred and it's gorgeous as hell.
+
+Of course there are the mainstream ones like the galaxies and notes, and
+the Apple. They don't really fit the 'cheap price' part, but I would never
+really advise against them.
+
+
+
+On Wednesday, June 17, 2015, William Park <opengeometry at yahoo.ca> wrote:
+
+> Hi all,
+>
+> My BlackBerry is dying.  So, I'm looking to buy a cheap cell phone out
+> right for Rogers network.  I don't care about locked, unlocked, Android,
+> Windows, etc, because my usage is 95% text and 5% voice.
+>
+> Which brand do you recommend?  CanadaComputers has BLU phones (Android).
+> Microsoft Stores has them too.  Any feedback on these BLU phones?
+> --
+> William
+> ---
+> Talk Mailing List
+> talk at gtalug.org <javascript:;>
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150617/85a90699/attachment.html>
+
+From opengeometry at yahoo.ca  Thu Jun 18 05:20:26 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Thu, 18 Jun 2015 01:20:26 -0400
+Subject: [GTALUG] Looking for cell phone... which brand?
+In-Reply-To: <alpine.LRH.2.02.1506170900110.3828@redclaw.mimosa.com>
+References: <20150617040945.GA30695@node1.localdomain>
+ <alpine.LRH.2.02.1506170900110.3828@redclaw.mimosa.com>
+Message-ID: <20150618052025.GA27431@node1.localdomain>
+
+On Wed, Jun 17, 2015 at 09:28:07AM -0400, D. Hugh Redelmeier wrote:
+> | From: William Park <opengeometry at yahoo.ca>
+> 
+> | My BlackBerry is dying.  So, I'm looking to buy a cheap cell phone out
+> | right for Rogers network.  I don't care about locked, unlocked, Android,
+> | Windows, etc, because my usage is 95% text and 5% voice.
+> | 
+> | Which brand do you recommend?  CanadaComputers has BLU phones (Android).
+> | Microsoft Stores has them too.  Any feedback on these BLU phones?
+> 
+> You are a quirky case.  Not meant as an insult -- I'm a quirky case
+> too.  That probably means you should pay attention to why folks are
+> making recommendations and not what the actual phone model they
+> recommend.
+
+This is my 3rd BlackBerry.  First was flip phone Pearl, and the hinge
+came loose.  Second was Bold 9700, and two of its keys came off.  Third
+is Bold 9780, and screen is showing problems and reboot is required
+sometimes.  I'll look for some other brand, this time.
+-- 
+William
+
+From me at mylesbraithwaite.com  Mon Jun 22 14:12:57 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 22 Jun 2015 10:12:57 -0400
+Subject: [GTALUG] [GTALUG-Announce] GTALUG Meeting on 14th July at 7:30pm
+Message-ID: <CA+hskZNYk67ma2CDrmRCDBMLUwT=KE5UCgCU-tsu1Pqmf0L0Zg@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-07/>
+
+# 14th July, 2015 at 7:30pm
+
+GTALUG is currently looking for speakers for our July 2015 meeting. If
+you are interested in speaking please contact our
+<speaker-coordinator at gtalug.org>.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before each meeting a group of GTALUGers dine at Love At
+First Bite (96 Gerrard Street E).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+# Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact the GTALUG Board @ <board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
