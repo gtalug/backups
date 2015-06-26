@@ -3068,3 +3068,627 @@ Evan
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150624/7f618465/attachment.html>
 
+From northdot9 at gmail.com  Thu Jun 25 15:53:04 2015
+From: northdot9 at gmail.com (David Thornton)
+Date: Thu, 25 Jun 2015 11:53:04 -0400
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+Message-ID: <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+
+${topic:mediawiki}++
+
+David
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150625/d28c9b24/attachment.html>
+
+From northdot9 at gmail.com  Thu Jun 25 15:54:20 2015
+From: northdot9 at gmail.com (David Thornton)
+Date: Thu, 25 Jun 2015 11:54:20 -0400
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+Message-ID: <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+
+did we do the mediawiki talk already?
+
+( sorry for zombie thread )
+
+david
+
+On Thu, Jun 25, 2015 at 11:53 AM, David Thornton <northdot9 at gmail.com>
+wrote:
+
+> ${topic:mediawiki}++
+>
+> David
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150625/002e2792/attachment.html>
+
+From cbbrowne at gmail.com  Thu Jun 25 16:43:07 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Thu, 25 Jun 2015 12:43:07 -0400
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+Message-ID: <CAFNqd5XFgv_tkhhouUMOavd9Eup85CYEEEYqzgMB65+1OabRWg@mail.gmail.com>
+
+On 25 June 2015 at 11:54, David Thornton <northdot9 at gmail.com> wrote:
+
+> did we do the mediawiki talk already?
+>
+> ( sorry for zombie thread )
+>
+
+I don't recall a talk on MediaWiki any time vaguely recently; that's an in
+principle
+interesting thing.  I've used it over the years, have seen some interesting
+patterns.
+Haven't used it much lately (aside from access of ubiquitous Wikipedia!),
+if there's
+interesting new stuff, that's neat.
+
+I'd anticipate a challenge in talking of MediaWiki being that it's so open
+to
+varying use cases that there'll be a few too many strong opinions on how it
+ought
+to be used.  Holding tenaciously to a specified agenda will be important!
+;-)
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150625/a9aa1b63/attachment.html>
+
+From me at mylesbraithwaite.com  Thu Jun 25 17:21:30 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 25 Jun 2015 13:21:30 -0400
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+Message-ID: <558C389A.8080302@mylesbraithwaite.com>
+
+David Thornton wrote:
+> did we do the mediawiki talk already?
+
+I don't think we have had a talk about MediaWiki yet.
+
+I will ask around and see if I can find a speaker.
+
+From maskanas at pair.com  Thu Jun 25 17:58:10 2015
+From: maskanas at pair.com (Malgosia Askanas)
+Date: Thu, 25 Jun 2015 13:58:10 -0400
+Subject: [GTALUG] Request for printer recommendations
+In-Reply-To: <558C389A.8080302@mylesbraithwaite.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com>
+Message-ID: <558C4132.7020908@pair.com>
+
+Dear List,
+
+I am a new and green Ubuntu laptop owner in the GTA, and am wondering if 
+you could recommend a b/w laser printer (preferably USB-wired) that 
+would work smoothly with Ubuntu.  As I discovered, my Lexmark E232 (that 
+works beautifully with my Macs) is not (at all) Ubuntu-liked...
+
+With many thanks in advance,
+Malgosia Askanas
+
+
+From email+libre at blaise.ca  Thu Jun 25 18:05:57 2015
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Thu, 25 Jun 2015 14:05:57 -0400
+Subject: [GTALUG] Request for printer recommendations
+In-Reply-To: <558C4132.7020908@pair.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+Message-ID: <558C4305.6060302@blaise.ca>
+
+On 25/06/15 01:58 PM, Malgosia Askanas wrote:
+> I am a new and green Ubuntu laptop owner in the GTA, and am wondering if you
+> could recommend a b/w laser printer (preferably USB-wired) that would work
+> smoothly with Ubuntu.  As I discovered, my Lexmark E232 (that works beautifully
+> with my Macs) is not (at all) Ubuntu-liked...
+> 
+
+
+The Free Software Foundation's H-Node has a database of compatible hardware (not
+sure how up-to-date it is with current models):
+https://h-node.org/printers/catalogue/en
+
+The Linux Foundation has a printer listing database too:
+https://www.openprinting.org/printers/
+
+ThinkPenguin sells a few as well (though they only ship to the US):
+https://www.thinkpenguin.com/catalog/printer-all-one-gnulinux
+
+
+I usually see what's available in store, and then cross-reference with those
+databases. Though after some frustration with my last purchase (HP LaserJet
+P1005), I might go in the reverse direction next time and pick a fully
+compatible (and non-tracking) printer from h-node and then see if I can buy it
+online...
+
+HTH
+
+
+From phiscock at ee.ryerson.ca  Thu Jun 25 18:23:23 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Thu, 25 Jun 2015 14:23:23 -0400
+Subject: [GTALUG] Request for printer recommendations
+In-Reply-To: <558C4305.6060302@blaise.ca>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <558C4305.6060302@blaise.ca>
+Message-ID: <7c98e2335dd3dc0ac8734b425d0c1fc7.squirrel@webmail.ee.ryerson.ca>
+
+I'm using Linux Mint with a Brother HL-2170 monochrome printer and a
+Brother MFC-9125CN on a home network. The 9125 scanner works from
+SimpleScan.
+
+One advantage of Brother printers is that replacement toner is available
+from (relatively) low-cost suppliers through Canada Computers.
+
+I haven't done an exhaustive test of the functions but the basics of
+printing seem to work correctly.
+
+I had endless problems until I realized that the router was periodically
+re-assigning the IP addresses of the printers. Once I fixed that they've
+been working properly.
+
+Peter
+
+> On 25/06/15 01:58 PM, Malgosia Askanas wrote:
+>> I am a new and green Ubuntu laptop owner in the GTA, and am wondering if
+>> you
+>> could recommend a b/w laser printer (preferably USB-wired) that would
+>> work
+>> smoothly with Ubuntu.  As I discovered, my Lexmark E232 (that works
+>> beautifully
+>> with my Macs) is not (at all) Ubuntu-liked...
+>>
+>
+>
+> The Free Software Foundation's H-Node has a database of compatible
+> hardware (not
+> sure how up-to-date it is with current models):
+> https://h-node.org/printers/catalogue/en
+>
+> The Linux Foundation has a printer listing database too:
+> https://www.openprinting.org/printers/
+>
+> ThinkPenguin sells a few as well (though they only ship to the US):
+> https://www.thinkpenguin.com/catalog/printer-all-one-gnulinux
+>
+>
+> I usually see what's available in store, and then cross-reference with
+> those
+> databases. Though after some frustration with my last purchase (HP
+> LaserJet
+> P1005), I might go in the reverse direction next time and pick a fully
+> compatible (and non-tracking) printer from h-node and then see if I can
+> buy it
+> online...
+>
+> HTH
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From northdot9 at gmail.com  Thu Jun 25 18:39:01 2015
+From: northdot9 at gmail.com (David Thornton)
+Date: Thu, 25 Jun 2015 14:39:01 -0400
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <558C389A.8080302@mylesbraithwaite.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com>
+Message-ID: <CAHcykVr=o+L-LsSMi9iL7++5Vtq0rOPezHcoWR9XWRAPb6NPHg@mail.gmail.com>
+
+I run media wiki at home and at work.
+
+I'm a big fan of media wiki.
+
+I _might_ be able to do one , but not till September.
+
+David
+
+On Thu, Jun 25, 2015 at 1:21 PM, Myles Braithwaite <me at mylesbraithwaite.com>
+wrote:
+
+> David Thornton wrote:
+> > did we do the mediawiki talk already?
+>
+> I don't think we have had a talk about MediaWiki yet.
+>
+> I will ask around and see if I can find a speaker.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150625/5eb455dc/attachment.html>
+
+From opengeometry at yahoo.ca  Thu Jun 25 18:52:12 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Thu, 25 Jun 2015 14:52:12 -0400
+Subject: [GTALUG] Request for printer recommendations
+In-Reply-To: <7c98e2335dd3dc0ac8734b425d0c1fc7.squirrel@webmail.ee.ryerson.ca>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <558C4305.6060302@blaise.ca>
+ <7c98e2335dd3dc0ac8734b425d0c1fc7.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <20150625185212.GA4286@node1.localdomain>
+
+On Thu, Jun 25, 2015 at 02:23:23PM -0400, phiscock at ee.ryerson.ca wrote:
+> I'm using Linux Mint with a Brother HL-2170 monochrome printer and a
+> Brother MFC-9125CN on a home network. The 9125 scanner works from
+> SimpleScan.
+
+I have Brother HL-2170W (wireless), with "HP LaserJet Series PCL 6 CUPS"
+driver.  I think OP's problem is more of "driver" issue, because it
+works with Slackware and CUPS.
+-- 
+William
+
+From opengeometry at yahoo.ca  Thu Jun 25 23:36:31 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Thu, 25 Jun 2015 19:36:31 -0400
+Subject: [GTALUG] Daily max parking at Ryerson?
+Message-ID: <20150625233631.GA6090@node1.localdomain>
+
+Anyone know the daily max for parking at Ryerson?  I usually park 
+at the multi-story garage on Victoria St, but can't remember their daily
+rate.  Yes, I called Ryerson Parking, and all I get is afterhour voice
+mail.
+-- 
+William
+
+From opengeometry at yahoo.ca  Fri Jun 26 00:12:34 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Thu, 25 Jun 2015 20:12:34 -0400
+Subject: [GTALUG] Daily max parking at Ryerson?
+In-Reply-To: <20150625233631.GA6090@node1.localdomain>
+References: <20150625233631.GA6090@node1.localdomain>
+Message-ID: <20150626001234.GA6292@node1.localdomain>
+
+Oh, never mind...  found it on Google.
+-- 
+William
+
+On Thu, Jun 25, 2015 at 07:36:31PM -0400, William Park wrote:
+> Anyone know the daily max for parking at Ryerson?  I usually park 
+> at the multi-story garage on Victoria St, but can't remember their daily
+> rate.  Yes, I called Ryerson Parking, and all I get is afterhour voice
+> mail.
+> -- 
+> William
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From bjonkman at sobac.com  Fri Jun 26 02:06:10 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Thu, 25 Jun 2015 22:06:10 -0400
+Subject: [GTALUG] Request for printer recommendations
+In-Reply-To: <558C4132.7020908@pair.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+Message-ID: <558CB392.5010406@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Lexmark printers are known to be bricks with Linux, and I have a
+Lexmark brick myself.
+
+I've had good luck with Samsung laser printers, both colour and B&W.
+You need to install a (non-free(dom)) driver, and ensure the parallel
+port daemon is removed (CPU hog), but otherwise Samsung printers work
+fine.
+
+I've had success with Brother laser printers (B&W multifunction units)
+too.
+
+- --Bob.
+
+
+On 25/06/15 01:58 PM, Malgosia Askanas wrote:
+> Dear List,
+> 
+> I am a new and green Ubuntu laptop owner in the GTA, and am
+> wondering if you could recommend a b/w laser printer (preferably
+> USB-wired) that would work smoothly with Ubuntu.  As I discovered,
+> my Lexmark E232 (that works beautifully with my Macs) is not (at
+> all) Ubuntu-liked...
+> 
+> With many thanks in advance, Malgosia Askanas
+
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-669-0388
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+http://bob.jonkman.ca/blogs/    http://sn.jonkman.ca/bobjonkman/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlWMs5EACgkQuRKJsNLM5eqnzgCgnWcOdfXbViClrNmRn0f0sB2g
+GEoAoO4DjoU7UGe7bAIEvVbOKBiktHrf
+=HIJv
+-----END PGP SIGNATURE-----
+
+From bjonkman at sobac.com  Fri Jun 26 02:10:58 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Thu, 25 Jun 2015 22:10:58 -0400
+Subject: [GTALUG] meeting tomorrow: topic?
+In-Reply-To: <CAHcykVr=o+L-LsSMi9iL7++5Vtq0rOPezHcoWR9XWRAPb6NPHg@mail.gmail.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com>
+ <CAHcykVr=o+L-LsSMi9iL7++5Vtq0rOPezHcoWR9XWRAPb6NPHg@mail.gmail.com>
+Message-ID: <558CB4B2.6020005@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+I run one at http://sobac.com/wiki but I'm no Mediawiki expert. I
+followed the recipe in the docs, and once it was working I left it
+alone. I've made a few small tweaks in the config.php file, and every
+time I upgrade I need to adjust the paths to executables, plugins, &c.
+(because the standalone installation file/folder layout differs from
+the repository layout).
+
+I'll offer my two cents at a presentation, but I'm not sufficiently
+skilled to make a presentation.
+
+- --Bob.
+
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-669-0388
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+http://bob.jonkman.ca/blogs/    http://sn.jonkman.ca/bobjonkman/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+
+
+On 25/06/15 02:39 PM, David Thornton wrote:
+> I run media wiki at home and at work.
+> 
+> I'm a big fan of media wiki.
+> 
+> I _might_ be able to do one , but not till September.
+> 
+> David
+> 
+> On Thu, Jun 25, 2015 at 1:21 PM, Myles Braithwaite
+> <me at mylesbraithwaite.com> wrote:
+> 
+>> David Thornton wrote:
+>>> did we do the mediawiki talk already?
+>> 
+>> I don't think we have had a talk about MediaWiki yet.
+>> 
+>> I will ask around and see if I can find a speaker. --- Talk
+>> Mailing List talk at gtalug.org 
+>> http://gtalug.org/mailman/listinfo/talk
+>> 
+> 
+> 
+> 
+> --- Talk Mailing List talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlWMtK4ACgkQuRKJsNLM5ep+XACgupGhidO45z3AOJ8X7jtnyPRb
+HhMAoK8b4wyj617J96NAftS/0lHUP4UO
+=KEdj
+-----END PGP SIGNATURE-----
+
+From phiscock at ee.ryerson.ca  Fri Jun 26 02:11:52 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Thu, 25 Jun 2015 22:11:52 -0400
+Subject: [GTALUG] Request for printer recommendations
+In-Reply-To: <558CB392.5010406@sobac.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <558CB392.5010406@sobac.com>
+Message-ID: <c586d5af0d529fd62592b108fbdf3553.squirrel@webmail.ee.ryerson.ca>
+
+Once upon a time I had a lexmark colour laser printer that worked OK with
+Linux, but the cartridges cost a Vast Fortune and you had to buy them from
+Lexmark.
+
+I gave it away and bought the Brother printers I'm using now. They seem to
+work fine.
+
+P.
+
+> -----BEGIN PGP SIGNED MESSAGE-----
+> Hash: SHA1
+>
+> Lexmark printers are known to be bricks with Linux, and I have a
+> Lexmark brick myself.
+>
+> I've had good luck with Samsung laser printers, both colour and B&W.
+> You need to install a (non-free(dom)) driver, and ensure the parallel
+> port daemon is removed (CPU hog), but otherwise Samsung printers work
+> fine.
+>
+> I've had success with Brother laser printers (B&W multifunction units)
+> too.
+>
+> - --Bob.
+>
+>
+> On 25/06/15 01:58 PM, Malgosia Askanas wrote:
+>> Dear List,
+>>
+>> I am a new and green Ubuntu laptop owner in the GTA, and am
+>> wondering if you could recommend a b/w laser printer (preferably
+>> USB-wired) that would work smoothly with Ubuntu.  As I discovered,
+>> my Lexmark E232 (that works beautifully with my Macs) is not (at
+>> all) Ubuntu-liked...
+>>
+>> With many thanks in advance, Malgosia Askanas
+>
+>
+> Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-669-0388
+> SOBAC Microcomputer Services             http://sobac.com/sobac/
+> http://bob.jonkman.ca/blogs/    http://sn.jonkman.ca/bobjonkman/
+> Software   ---   Office & Business Automation   ---   Consulting
+> GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+>
+> -----BEGIN PGP SIGNATURE-----
+> Version: GnuPG v2.0.20 (GNU/Linux)
+> Comment: Ensure confidentiality, authenticity, non-repudiability
+>
+> iEYEARECAAYFAlWMs5EACgkQuRKJsNLM5eqnzgCgnWcOdfXbViClrNmRn0f0sB2g
+> GEoAoO4DjoU7UGe7bAIEvVbOKBiktHrf
+> =HIJv
+> -----END PGP SIGNATURE-----
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From scruss at gmail.com  Fri Jun 26 02:43:48 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Thu, 25 Jun 2015 22:43:48 -0400
+Subject: [GTALUG] Request for printer recommendations
+In-Reply-To: <c586d5af0d529fd62592b108fbdf3553.squirrel@webmail.ee.ryerson.ca>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <558CB392.5010406@sobac.com>
+ <c586d5af0d529fd62592b108fbdf3553.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <558CBC64.7030506@gmail.com>
+
+On 2015-06-25 10:11 PM, phiscock at ee.ryerson.ca wrote:
+> 
+> I gave it away and bought the Brother printers I'm using now. They seem to
+> work fine.
+
+Another plus for the Brother laser printers is that *most* of them have
+a reliable duplex unit, so you can print double sided without grief.
+
+cheers,
+ Stewart
+
+From evan at telly.org  Fri Jun 26 07:18:39 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Fri, 26 Jun 2015 09:18:39 +0200
+Subject: [GTALUG] Request for printer recommendations
+In-Reply-To: <558CBC64.7030506@gmail.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <558CB392.5010406@sobac.com>
+ <c586d5af0d529fd62592b108fbdf3553.squirrel@webmail.ee.ryerson.ca>
+ <558CBC64.7030506@gmail.com>
+Message-ID: <CAMguqh3SRhRd6XF_wvYo_w-bm-N6aOPGn9Z+kun0rNjcRAqb-g@mail.gmail.com>
+
+Generally, I buy by brand since the model numbers change so much. Within
+brands, I try to find sources (such as Consumer Reports) that measure
+objective criteria such as cost-per-page and sharpness.
+
+I have never gone wrong with Brother or HP. HP support for Linux is more
+full-featured <http://hplipopensource.com/hplip-web/index.html>, especially
+if you can use an Internet connection rather than USB, but it occasionally
+contains closed-source bits for some cheaper models. Brother support is
+more vanilla but pretty solid.
+
+I have heard from associates having success with Samsung printers under
+Linux but have no first hand experience.
+
+On the other side are brands to avoid, that are indifferent at best to
+Linux and hostile at worst. These are Canon and Lexmark.
+
+On 26 June 2015 at 04:43, Stewart C. Russell <scruss at gmail.com> wrote:
+
+> On 2015-06-25 10:11 PM, phiscock at ee.ryerson.ca wrote:
+> >
+> > I gave it away and bought the Brother printers I'm using now. They seem
+> to
+> > work fine.
+>
+> Another plus for the Brother laser printers is that *most* of them have
+> a reliable duplex unit, so you can print double sided without grief.
+>
+> cheers,
+>  Stewart
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+
+-- 
+Evan Leibovitch
+Geneva, CH
+
+Em: evan at telly dot org
+Sk: evanleibovitch
+Tw: el56
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150626/f8419d20/attachment.html>
+

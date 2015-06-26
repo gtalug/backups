@@ -584,3 +584,84 @@ On Mon, Jun 22, 2015 at 6:30 AM, Mr. Meeseeks <hi at gtalug.org> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/operations/attachments/20150622/e596165e/attachment.html>
 
+From me at mylesbraithwaite.com  Thu Jun 25 16:00:03 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 25 Jun 2015 12:00:03 -0400
+Subject: [GTALUG-Ops] I'd like to volunteer to give a talk: puppet
+In-Reply-To: <CAHcykVojeDbaDDwvEYF6XeqxEv5kCrm6eQcLLq140wY=kif=jQ@mail.gmail.com>
+References: <CAHcykVojeDbaDDwvEYF6XeqxEv5kCrm6eQcLLq140wY=kif=jQ@mail.gmail.com>
+Message-ID: <558C2583.50608@mylesbraithwaite.com>
+
+14th July would be great if that's good with you?
+
+David Thornton wrote:
+> Heya,
+> 
+> I'd like to give a talk on puppet.
+> 
+> Many on the internet at large have published presentation already, so I
+> intend to just use this one:
+> 
+> http://www.example42.com/tutorials/PuppetTutorial/
+> 
+> I have actually hands on experience ( we are busy deploying and using it
+> at my work place ), so I intend to embellish appropriately.
+> 
+> In fact puppet is relatively new for us, but we have been using ansible
+> for more than a year now, so I hope to get some "compare and contrast"
+> topics covered.
+> 
+> I intend to "practice" this presentation to get a feel for how long it
+> will be. I'll get back to you on that.
+> 
+> And I'm keen to do a more free form bit after any "formal" talk I give.
+> Config management is a great topic.
+> 
+> I understand that the upcoming talk dates are:
+> 
+> july 14th ( I'm available )
+> august 4th (I'm not available )
+> september 8th ( I'm available )
+> 
+> What do you think?
+> 
+> Thanks,
+> David
+> 
+> P.S. I could follow up with ansible as well, or even a more general
+> configuration management talk.
+> 
+
+From cbbrowne at gmail.com  Thu Jun 25 16:39:10 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Thu, 25 Jun 2015 12:39:10 -0400
+Subject: [GTALUG-Ops] I'd like to volunteer to give a talk: puppet
+In-Reply-To: <558C2583.50608@mylesbraithwaite.com>
+References: <CAHcykVojeDbaDDwvEYF6XeqxEv5kCrm6eQcLLq140wY=kif=jQ@mail.gmail.com>
+ <558C2583.50608@mylesbraithwaite.com>
+Message-ID: <CAFNqd5Wi+w7imzMXLc5Z69ZRmJX6Ao9VGReS5b9-NNLWi9SmyQ@mail.gmail.com>
+
+On 25 June 2015 at 12:00, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+
+> 14th July would be great if that's good with you?
+>
+
+Sounds good to me!  Hoping that works!
+
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150625/251cb8f9/attachment.html>
+
+From me at mylesbraithwaite.com  Thu Jun 25 21:32:29 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 25 Jun 2015 17:32:29 -0400
+Subject: [GTALUG-Ops] Puppet with David Thornton
+Message-ID: <558C736D.60105@mylesbraithwaite.com>
+
+We have July's meeting done: <http://gtalug.org/meeting/2015-07/> (will
+get description on Monday).
+
