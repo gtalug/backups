@@ -4548,3 +4548,107 @@ Uncalled for recommendations:
   + downside: MFC toner cartridges seem to be smaller and thus more
     expensive per page than cartridges for some printers.
 
+From kevin at ve3syb.ca  Sun Jun 28 14:55:56 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Sun, 28 Jun 2015 10:55:56 -0400
+Subject: [GTALUG] Request for printer recommendations
+In-Reply-To: <alpine.LRH.2.02.1506272221150.4344@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <alpine.LRH.2.02.1506272221150.4344@redclaw.mimosa.com>
+Message-ID: <55900AFC.20501@ve3syb.ca>
+
+On 15-06-27 11:07 PM, D. Hugh Redelmeier wrote:
+> | From: Malgosia Askanas <maskanas at pair.com>
+>
+> | I am a new and green Ubuntu laptop owner in the GTA, and am wondering if you
+> | could recommend a b/w laser printer (preferably USB-wired) that would work
+> | smoothly with Ubuntu.  As I discovered, my Lexmark E232 (that works
+> | beautifully with my Macs) is not (at all) Ubuntu-liked...
+>
+> The devil is in the details.
+>
+
+Some companies are good at providing drivers for their devices for Windows, 
+Mac, and sometimes x86 based Linux. However, if you are doing something with 
+embedded systems that have a different processor (ie. an ARM based one), 
+closed source drivers mean you are out of luck as far as using the device.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From scruss at gmail.com  Sun Jun 28 15:15:03 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sun, 28 Jun 2015 11:15:03 -0400
+Subject: [GTALUG] random wifi disconnects
+Message-ID: <55900F77.4090509@gmail.com>
+
+Hi,
+
+Every few days I've started to get my notebook's network connection
+giving out. This is what the log tells me:
+
+ [Sat Jun 27 17:14:38 2015] wlan0: deauthenticated from
+00:xx:xx:xx:xx:xx (Reason: 7=CLASS3_FRAME_FROM_NONASSOC_STA)
+ [Sat Jun 27 17:14:38 2015] cfg80211: Calling CRDA to update world
+regulatory domain
+ [Sat Jun 27 17:14:38 2015] wlan0: authenticate with 00:xx:xx:xx:xx:xx
+ [Sat Jun 27 17:14:38 2015] wlan0: send auth to 00:xx:xx:xx:xx:xx
+ [Sat Jun 27 17:14:38 2015] cfg80211: World regulatory domain updated:
+ [Sat Jun 27 17:14:38 2015] cfg80211:  DFS Master region: unset
+ [Sat Jun 27 17:14:38 2015] cfg80211:   (start_freq - end_freq @
+bandwidth), (max_antenna_gain, max_eirp), (dfs_cac_time)
+ [Sat Jun 27 17:14:38 2015] cfg80211:   (2402000 KHz - 2472000 KHz @
+40000 KHz), (300 mBi, 2000 mBm), (N/A)
+ [Sat Jun 27 17:14:38 2015] cfg80211:   (2457000 KHz - … etc.
+
+Restarting network-manager often fixes it, but not always.
+
+This is on Ubuntu 15.04, x86_64. Network card is Intel Centrino
+Advanced-N 6235, which may well be part of the problem.
+
+I realize that there's more info I should add, but short of dumping all
+of /etc on you, I don't know what else would be useful.
+
+cheers,
+ Stewart
+
+
+From maskanas at pair.com  Sun Jun 28 15:41:35 2015
+From: maskanas at pair.com (Malgosia Askanas)
+Date: Sun, 28 Jun 2015 11:41:35 -0400
+Subject: [GTALUG] HP printers [Request for printer recommendations]
+In-Reply-To: <000601d0b0fd$8079ba20$816d2e60$@iprimus.ca>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <558C4305.6060302@blaise.ca>
+ <7c98e2335dd3dc0ac8734b425d0c1fc7.squirrel@webmail.ee.ryerson.ca>
+ <20150625185212.GA4286@node1.localdomain> <558DA35D.1070700@moores.ca>
+ <558EBF03.4080806@gmail.com> <000601d0b0fd$8079ba20$816d2e60$@iprimus.ca>
+Message-ID: <559015AF.1060402@pair.com>
+
+My past experience with HP printers has been that they print beautifully 
+but the mechanicals crap out after a very short time, after which one 
+has to feed/unfeed the paper by hand.  I've spent untold hours feeding 
+my HP printers, and am uneager to repeat the experience.  But perhaps 
+they have become better in recent years?
+
+Malgosia
+
+On 2015-06-27 01:20 PM, Clive DaSilva wrote:
+> We use HP printers at our place ( Deskjet 3050a J11 series, HP Photosmart c 4700 series , HP Deskjet 5700) and they co-operate well on  our network of three Linux boxes (2 Fedora 21 and one Linuxmint17) ant three Windows 7 computers. HP does a great job on Linux support.
+>
+> ---------
+> Clive DaSilva – cdasilva at iprimus.ca
+
