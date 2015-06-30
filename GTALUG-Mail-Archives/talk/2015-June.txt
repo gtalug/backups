@@ -4652,3 +4652,167 @@ On 2015-06-27 01:20 PM, Clive DaSilva wrote:
 > ---------
 > Clive DaSilva – cdasilva at iprimus.ca
 
+From tisdall at gmail.com  Mon Jun 29 13:29:31 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Mon, 29 Jun 2015 09:29:31 -0400
+Subject: [GTALUG] random wifi disconnects
+In-Reply-To: <55900F77.4090509@gmail.com>
+References: <55900F77.4090509@gmail.com>
+Message-ID: <CAGxYWpbWWEM=oGV_iRtNwU+1tyZX9fhLYHuFSob7s7p8aCREEA@mail.gmail.com>
+
+Wifi issues are a mysterious thing...  I usually find I twiddle with things
+until I find that it's better.  Fortunately in Ubuntu it's rare that I've
+had to do that.
+
+One thing you could try, though it may do nothing, is set the CRDA to CA:
+
+iw reg set CA
+
+I'm not sure what CRDA does if it doesn't have a country to work with...  I
+think it may use the most restrictive settings.
+
+
+On 28 June 2015 at 11:15, Stewart C. Russell <scruss at gmail.com> wrote:
+
+> Hi,
+>
+> Every few days I've started to get my notebook's network connection
+> giving out. This is what the log tells me:
+>
+>  [Sat Jun 27 17:14:38 2015] wlan0: deauthenticated from
+> 00:xx:xx:xx:xx:xx (Reason: 7=CLASS3_FRAME_FROM_NONASSOC_STA)
+>  [Sat Jun 27 17:14:38 2015] cfg80211: Calling CRDA to update world
+> regulatory domain
+>  [Sat Jun 27 17:14:38 2015] wlan0: authenticate with 00:xx:xx:xx:xx:xx
+>  [Sat Jun 27 17:14:38 2015] wlan0: send auth to 00:xx:xx:xx:xx:xx
+>  [Sat Jun 27 17:14:38 2015] cfg80211: World regulatory domain updated:
+>  [Sat Jun 27 17:14:38 2015] cfg80211:  DFS Master region: unset
+>  [Sat Jun 27 17:14:38 2015] cfg80211:   (start_freq - end_freq @
+> bandwidth), (max_antenna_gain, max_eirp), (dfs_cac_time)
+>  [Sat Jun 27 17:14:38 2015] cfg80211:   (2402000 KHz - 2472000 KHz @
+> 40000 KHz), (300 mBi, 2000 mBm), (N/A)
+>  [Sat Jun 27 17:14:38 2015] cfg80211:   (2457000 KHz - … etc.
+>
+> Restarting network-manager often fixes it, but not always.
+>
+> This is on Ubuntu 15.04, x86_64. Network card is Intel Centrino
+> Advanced-N 6235, which may well be part of the problem.
+>
+> I realize that there's more info I should add, but short of dumping all
+> of /etc on you, I don't know what else would be useful.
+>
+> cheers,
+>  Stewart
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150629/d38a2c96/attachment.html>
+
+From Brent.Kimberley at Durham.ca  Mon Jun 29 14:04:47 2015
+From: Brent.Kimberley at Durham.ca (Brent Kimberley)
+Date: Mon, 29 Jun 2015 14:04:47 +0000
+Subject: [GTALUG] random wifi disconnects
+In-Reply-To: <CAGxYWpbWWEM=oGV_iRtNwU+1tyZX9fhLYHuFSob7s7p8aCREEA@mail.gmail.com>
+References: <55900F77.4090509@gmail.com>
+ <CAGxYWpbWWEM=oGV_iRtNwU+1tyZX9fhLYHuFSob7s7p8aCREEA@mail.gmail.com>
+Message-ID: <7DB89AC54DA85B40923B4374126FF07C07725709@exmb01.region.durham.local>
+
+2.4Ghz Wifi and Bluetooth appear to share common spectrum.
+
+Try:
+
+1)      Allowing Wifi to trample on Bluetooth.; or,
+https://bbs.archlinux.org/viewtopic.php?id=134920
+
+
+2)      Running an RF survey.
+http://www.kismetwireless.net/
+https://www.defcon.org/images/defcon-16/dc16-presentations/defcon-16-ahmad.pdf (i.e. Stimulus 1 & 2)
+http://ubertooth.sourceforge.net/usage/start/
+
+From: talk [mailto:talk-bounces at gtalug.org] On Behalf Of Tim Tisdall
+Sent: June-29-15 9:30 AM
+To: GTALUG Talk
+Subject: Re: [GTALUG] random wifi disconnects
+
+Wifi issues are a mysterious thing...  I usually find I twiddle with things until I find that it's better.  Fortunately in Ubuntu it's rare that I've had to do that.
+
+One thing you could try, though it may do nothing, is set the CRDA to CA:
+
+iw reg set CA
+
+I'm not sure what CRDA does if it doesn't have a country to work with...  I think it may use the most restrictive settings.
+
+
+On 28 June 2015 at 11:15, Stewart C. Russell <scruss at gmail.com<mailto:scruss at gmail.com>> wrote:
+Hi,
+
+Every few days I've started to get my notebook's network connection
+giving out. This is what the log tells me:
+
+ [Sat Jun 27 17:14:38 2015] wlan0: deauthenticated from
+00:xx:xx:xx:xx:xx (Reason: 7=CLASS3_FRAME_FROM_NONASSOC_STA)
+ [Sat Jun 27 17:14:38 2015] cfg80211: Calling CRDA to update world
+regulatory domain
+ [Sat Jun 27 17:14:38 2015] wlan0: authenticate with 00:xx:xx:xx:xx:xx
+ [Sat Jun 27 17:14:38 2015] wlan0: send auth to 00:xx:xx:xx:xx:xx
+ [Sat Jun 27 17:14:38 2015] cfg80211: World regulatory domain updated:
+ [Sat Jun 27 17:14:38 2015] cfg80211:  DFS Master region: unset
+ [Sat Jun 27 17:14:38 2015] cfg80211:   (start_freq - end_freq @
+bandwidth), (max_antenna_gain, max_eirp), (dfs_cac_time)
+ [Sat Jun 27 17:14:38 2015] cfg80211:   (2402000 KHz - 2472000 KHz @
+40000 KHz), (300 mBi, 2000 mBm), (N/A)
+ [Sat Jun 27 17:14:38 2015] cfg80211:   (2457000 KHz - … etc.
+
+Restarting network-manager often fixes it, but not always.
+
+This is on Ubuntu 15.04, x86_64. Network card is Intel Centrino
+Advanced-N 6235, which may well be part of the problem.
+
+I realize that there's more info I should add, but short of dumping all
+of /etc on you, I don't know what else would be useful.
+
+cheers,
+ Stewart
+
+---
+Talk Mailing List
+talk at gtalug.org<mailto:talk at gtalug.org>
+http://gtalug.org/mailman/listinfo/talk
+
+THIS MESSAGE IS FOR THE USE OF THE INTENDED RECIPIENT(S) ONLY AND MAY CONTAIN INFORMATION THAT IS PRIVILEGED, PROPRIETARY, CONFIDENTIAL, AND/OR EXEMPT FROM DISCLOSURE UNDER ANY RELEVANT PRIVACY LEGISLATION. No rights to any privilege have been waived. If you are not the intended recipient, you are hereby notified that any review, retransmission, dissemination, distribution, copying, conversion to hard copy, taking of action in reliance on or other use of this communication is strictly prohibited. If you are not the intended recipient and have received this message in error, please notify me by return e-mail and delete or destroy all copies of this message.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150629/131838a0/attachment.html>
+
+From hugh at mimosa.com  Tue Jun 30 04:13:20 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 30 Jun 2015 00:13:20 -0400 (EDT)
+Subject: [GTALUG] war story: irq 19: nobody cared (try booting with the
+ "irqpoll" option)
+Message-ID: <alpine.LRH.2.02.1506300001590.29284@redclaw.mimosa.com>
+
+I moved my CentOS 6.6 system to new hardware (just moved the disk and 
+booted).  Things mostly worked but I'd get told of a kernel oops at 
+roughly each boot.
+
+Reason:
+irq 19: nobody cared (try booting with the "irqpoll" option)
+
+There was not enough diagnostic informtion to report a bug using ABRT (so 
+it told me).
+
+>From googling, I picked up a suggestion to tell the BIOS to set the SATA 
+controller to AHCI mode rather than IDE.  My BIOS only gave me a choice of 
+IDE or RAID.  With trepidation, I set it to RAID and all has been well.  
+Even with only one disk.
+
+<http://forums.fedoraforum.org/showpost.php?p=1103298>
+
+The hardware is an old Dell Inspiron 530s desktop.
+
