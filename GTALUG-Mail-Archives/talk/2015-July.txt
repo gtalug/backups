@@ -204,3 +204,424 @@ used CDF SMTP... I just had my CDF account forward mail to my UTORmail account..
 I guess it would help to know what system (or SMTP server) in particular you're
 using?
 
+From gilesorr at gmail.com  Thu Jul  2 16:09:01 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Thu, 2 Jul 2015 12:09:01 -0400
+Subject: [GTALUG] Living in Virtual Machines
+Message-ID: <CAEnxSC4QruLrZe+20vxsmMrSLdfFi8vTi7Yb3664yzeRC-DOfA@mail.gmail.com>
+
+I have this idea that's been slowly forming in my head.  I wanted to
+run it by TLUG for opinions to find out if I'm totally crazy or if it
+might work.
+
+I hope to set up my desktop (and probably my laptop as well) to have a
+Debian stable base OS - about as stripped as I can manage, just X with
+a lightweight window manager (probably OpenBox).  On top of that would
+be VirtualBox, the idea being to run all my applications from virtual
+machines.
+
+Since I'd have multiple machines accessing the same /home/, I'd want
+NFS.  That could be run by the host OS, but I was thinking about using
+OpenWRT as the NFS server.  But that immediately runs into a
+difficulty: it appears that getting the VirtualBox Guest Additions
+running in OpenWRT is (very?) difficult, so I'd probably have to use
+raw partition access.  The problem with that is that if the partition
+is accessed simultaneously by any application on the host OS, you can
+munge the partition.
+
+I'm also planning on running another OpenWRT instance: this would be
+used for routing, with all the other virtual machines going through it
+to access the outside world.  Among other things, that would mean I
+only have to administer a firewall in one place.  One idea I'm still
+considering is giving full control of the network card to the OpenWRT
+instance and making the host OS go through OpenWRT to get to the
+outside world ...
+
+This could all probably be done with KVM rather than VirtualBox, but I
+prefer VB not only because I'm more familiar with it, but also because
+.VDI disc images can vary in size (Qemu's .qcow2 image format are
+fixed size) and because VirtualBox handles full screen display of OSes
+better (at least once Guest Additions is installed).  I'm happy to
+listen to reasons in favour of KVM.
+
+Other virtual machines would include TinyCore, SliTaz, and Debian
+Stretch.  The latter would probably be my primary OS.  The thought was
+to ssh from the host OS to the guest with X forwarding, and then run a
+launcher from the guest on the host so any applications run from the
+launcher were from the guest.
+
+Advantages:
+- I get to tinker with multiple OSes (something I enjoy)
+- if I'm about to go to a dubious website, I can clone a virtual
+machine, use it for the dubious visit, then destroy it
+
+Disadvantages that I've thought of so far:
+- memory usage
+- speed reduction
+- hard drive usage for disk images
+- complexity
+- mounting USB sticks on guests is extremely problematic
+- playing sound/video from guests through the host is imperfect
+- hard to determine where an application is running from
+
+I'm sure there are many, many other problems with this idea.  Go to
+town, that's why I'm here.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From opengeometry at yahoo.ca  Thu Jul  2 18:31:55 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Thu, 2 Jul 2015 14:31:55 -0400
+Subject: [GTALUG] Living in Virtual Machines
+In-Reply-To: <CAEnxSC4QruLrZe+20vxsmMrSLdfFi8vTi7Yb3664yzeRC-DOfA@mail.gmail.com>
+References: <CAEnxSC4QruLrZe+20vxsmMrSLdfFi8vTi7Yb3664yzeRC-DOfA@mail.gmail.com>
+Message-ID: <20150702183154.GA12814@node1.localdomain>
+
+On Thu, Jul 02, 2015 at 12:09:01PM -0400, Giles Orr wrote:
+> I have this idea that's been slowly forming in my head.  I wanted to
+> run it by TLUG for opinions to find out if I'm totally crazy or if it
+> might work.
+> 
+> I hope to set up my desktop (and probably my laptop as well) to have a
+> Debian stable base OS - about as stripped as I can manage, just X with
+> a lightweight window manager (probably OpenBox).  On top of that would
+> be VirtualBox, the idea being to run all my applications from virtual
+> machines.
+> 
+> Since I'd have multiple machines accessing the same /home/, I'd want
+> NFS.  That could be run by the host OS, but I was thinking about using
+> OpenWRT as the NFS server.  But that immediately runs into a
+
+So, /home is in VM as well?  I didn't know VirtualBox can boot
+OpenWRT... if it can boot Linux ISO, then I guess it should also boot
+OpenWRT ISO file.
+
+> difficulty: it appears that getting the VirtualBox Guest Additions
+> running in OpenWRT is (very?) difficult, so I'd probably have to use
+> raw partition access.  The problem with that is that if the partition
+> is accessed simultaneously by any application on the host OS, you can
+> munge the partition.
+> 
+> I'm also planning on running another OpenWRT instance: this would be
+> used for routing, with all the other virtual machines going through it
+> to access the outside world.  Among other things, that would mean I
+> only have to administer a firewall in one place.  One idea I'm still
+> considering is giving full control of the network card to the OpenWRT
+> instance and making the host OS go through OpenWRT to get to the
+> outside world ...
+
+You can run VirtualBox VM in "Bridged Adapter" network mode.  That will
+expose the VMs to the outside.  This means, the VMs will get separate
+IPs from external router/modem, just like your host.  VirtualBox has few
+other network modes, ie. NAT Network, Internal Network, Host-only
+Adapter.
+
+> 
+> This could all probably be done with KVM rather than VirtualBox, but I
+> prefer VB not only because I'm more familiar with it, but also because
+> .VDI disc images can vary in size (Qemu's .qcow2 image format are
+> fixed size) and because VirtualBox handles full screen display of OSes
+> better (at least once Guest Additions is installed).  I'm happy to
+> listen to reasons in favour of KVM.
+
+For "bridge" mode, VirtualBox is much easier.  It's one mouse click.
+With QEMU, you have to create bridge, attach interface to it, and run VM
+with "helper" to attach its network card to it.  It's about 5 extra
+command lines.
+
+If you know those command lines, then it's one script.  So, it's even, I
+guess.  :-)
+
+> 
+> Other virtual machines would include TinyCore, SliTaz, and Debian
+> Stretch.  The latter would probably be my primary OS.  The thought was
+> to ssh from the host OS to the guest with X forwarding, and then run a
+> launcher from the guest on the host so any applications run from the
+> launcher were from the guest.
+> 
+> Advantages:
+> - I get to tinker with multiple OSes (something I enjoy)
+> - if I'm about to go to a dubious website, I can clone a virtual
+> machine, use it for the dubious visit, then destroy it
+> 
+> Disadvantages that I've thought of so far:
+> - memory usage
+
+Main disadvantage.  2GB for each VMs and host, plus head room.
+
+> - speed reduction
+
+Yes.  Even with 8-core AMD, it just chokes.  Maybe Intel i7 is better.
+
+> - hard drive usage for disk images
+> - complexity
+> - mounting USB sticks on guests is extremely problematic
+
+I found VirtualBox handles USB much better than QEMU.  But, still, both
+are flaky and hangs frequently.
+
+> - playing sound/video from guests through the host is imperfect
+> - hard to determine where an application is running from
+> 
+> I'm sure there are many, many other problems with this idea.  Go to
+> town, that's why I'm here.
+> 
+> -- 
+> Giles
+> http://www.gilesorr.com/
+> gilesorr at gmail.com
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From daniel at circuidipity.com  Thu Jul  2 19:28:10 2015
+From: daniel at circuidipity.com (Daniel Wayne Armstrong)
+Date: Thu, 2 Jul 2015 15:28:10 -0400
+Subject: [GTALUG] Living in Virtual Machines
+In-Reply-To: <CAEnxSC4QruLrZe+20vxsmMrSLdfFi8vTi7Yb3664yzeRC-DOfA@mail.gmail.com>
+References: <CAEnxSC4QruLrZe+20vxsmMrSLdfFi8vTi7Yb3664yzeRC-DOfA@mail.gmail.com>
+Message-ID: <CACa31mCt6J9+NQELwX5zZuJFCA5f_nzfEawHLvdD3DoU3DPU1A@mail.gmail.com>
+
+On Thu, Jul 2, 2015 at 12:09 PM, Giles Orr <gilesorr at gmail.com> wrote:
+
+> Advantages:
+> - I get to tinker with multiple OSes (something I enjoy)
+> - if I'm about to go to a dubious website, I can clone a virtual
+> machine, use it for the dubious visit, then destroy it
+>
+> Disadvantages that I've thought of so far:
+> - memory usage
+> - speed reduction
+> - hard drive usage for disk images
+> - complexity
+> - mounting USB sticks on guests is extremely problematic
+> - playing sound/video from guests through the host is imperfect
+> - hard to determine where an application is running from
+>
+
+It doesn't address all your proposed scenarios but you might want to check
+out LXC containers for generating lightweight virtual machines... I have
+just started messing around with it and found these links to be interesting:
+
+* https://wiki.debian.org/LXC
+
+* https://linuxcontainers.org/lxc/getting-started/
+
+* https://www.stgraber.org/2013/12/20/lxc-1-0-blog-post-series/
+
+* https://help.ubuntu.com/lts/serverguide/lxc.html
+
+* https://linuxcontainers.org/lxc/manpages/index.html
+
+
+-- 
+(o<  .: Per curiositas ad astra .: http://www.circuidipity.com
+(/)_
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150702/357b281b/attachment.html>
+
+From gilesorr at gmail.com  Thu Jul  2 19:38:29 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Thu, 2 Jul 2015 15:38:29 -0400
+Subject: [GTALUG] Fwd:  Living in Virtual Machines
+In-Reply-To: <55958D79.8050307@jamon.ca>
+References: <CAEnxSC4QruLrZe+20vxsmMrSLdfFi8vTi7Yb3664yzeRC-DOfA@mail.gmail.com>
+ <55958D79.8050307@jamon.ca>
+Message-ID: <CAEnxSC4S+6RZ-n4hEpzkCmgZuZMrZ2Xzc6VWSGcWzKBnpfS9sA@mail.gmail.com>
+
+Forwarded from Jamon, with a similar idea to Daniel's.  I looked at
+containers and haven't totally ruled it out, but I think I prefer full
+OS installs.  Obviously containers would use a lot less hard drive
+space, but full virtualization offers more isolation.
+
+---------- Forwarded message ----------
+From: Jamon Camisso
+Date: 2 July 2015 at 15:14
+Subject: Re: [GTALUG] Living in Virtual Machines
+
+Hey top posting from an email that isn't able to post to tlug ... feel
+free to forward this link to the list if you like:
+
+https://blog.jessfraz.com/post/docker-containers-on-the-desktop/
+
+Using docker's volumes feature to bind mount directories and files into
+a container allows things like running Xorg, with persistent writes to
+shared files. No NFS needed even.
+
+Jamon
+
+On 07/02/2015 12:09 PM, Giles Orr wrote:
+> I have this idea that's been slowly forming in my head.  I wanted to
+> run it by TLUG for opinions to find out if I'm totally crazy or if it
+> might work.
+>
+> I hope to set up my desktop (and probably my laptop as well) to have a
+> Debian stable base OS - about as stripped as I can manage, just X with
+> a lightweight window manager (probably OpenBox).  On top of that would
+> be VirtualBox, the idea being to run all my applications from virtual
+> machines.
+>
+> Since I'd have multiple machines accessing the same /home/, I'd want
+> NFS.  That could be run by the host OS, but I was thinking about using
+> OpenWRT as the NFS server.  But that immediately runs into a
+> difficulty: it appears that getting the VirtualBox Guest Additions
+> running in OpenWRT is (very?) difficult, so I'd probably have to use
+> raw partition access.  The problem with that is that if the partition
+> is accessed simultaneously by any application on the host OS, you can
+> munge the partition.
+>
+> I'm also planning on running another OpenWRT instance: this would be
+> used for routing, with all the other virtual machines going through it
+> to access the outside world.  Among other things, that would mean I
+> only have to administer a firewall in one place.  One idea I'm still
+> considering is giving full control of the network card to the OpenWRT
+> instance and making the host OS go through OpenWRT to get to the
+> outside world ...
+>
+> This could all probably be done with KVM rather than VirtualBox, but I
+> prefer VB not only because I'm more familiar with it, but also because
+> .VDI disc images can vary in size (Qemu's .qcow2 image format are
+> fixed size) and because VirtualBox handles full screen display of OSes
+> better (at least once Guest Additions is installed).  I'm happy to
+> listen to reasons in favour of KVM.
+>
+> Other virtual machines would include TinyCore, SliTaz, and Debian
+> Stretch.  The latter would probably be my primary OS.  The thought was
+> to ssh from the host OS to the guest with X forwarding, and then run a
+> launcher from the guest on the host so any applications run from the
+> launcher were from the guest.
+>
+> Advantages:
+> - I get to tinker with multiple OSes (something I enjoy)
+> - if I'm about to go to a dubious website, I can clone a virtual
+> machine, use it for the dubious visit, then destroy it
+>
+> Disadvantages that I've thought of so far:
+> - memory usage
+> - speed reduction
+> - hard drive usage for disk images
+> - complexity
+> - mounting USB sticks on guests is extremely problematic
+> - playing sound/video from guests through the host is imperfect
+> - hard to determine where an application is running from
+>
+> I'm sure there are many, many other problems with this idea.  Go to
+> town, that's why I'm here.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From thoriumbr at gmail.com  Thu Jul  2 19:41:20 2015
+From: thoriumbr at gmail.com (Mauro Souza)
+Date: Thu, 2 Jul 2015 16:41:20 -0300
+Subject: [GTALUG] Fwd: Living in Virtual Machines
+In-Reply-To: <CAEnxSC4S+6RZ-n4hEpzkCmgZuZMrZ2Xzc6VWSGcWzKBnpfS9sA@mail.gmail.com>
+References: <CAEnxSC4QruLrZe+20vxsmMrSLdfFi8vTi7Yb3664yzeRC-DOfA@mail.gmail.com>
+ <55958D79.8050307@jamon.ca>
+ <CAEnxSC4S+6RZ-n4hEpzkCmgZuZMrZ2Xzc6VWSGcWzKBnpfS9sA@mail.gmail.com>
+Message-ID: <CAEZ_B6Oyt6yKZjEk908pvWz2tVcRT-cXQy8FmoOE8THNXuGC+A@mail.gmail.com>
+
+I have heard of Qubes OS a long time ago, and wanted to give it a shot. But
+never did.
+I don't know if it will work for what you want, but you could take a look.
+On Jul 2, 2015 16:38, "Giles Orr" <gilesorr at gmail.com> wrote:
+
+> Forwarded from Jamon, with a similar idea to Daniel's.  I looked at
+> containers and haven't totally ruled it out, but I think I prefer full
+> OS installs.  Obviously containers would use a lot less hard drive
+> space, but full virtualization offers more isolation.
+>
+> ---------- Forwarded message ----------
+> From: Jamon Camisso
+> Date: 2 July 2015 at 15:14
+> Subject: Re: [GTALUG] Living in Virtual Machines
+>
+> Hey top posting from an email that isn't able to post to tlug ... feel
+> free to forward this link to the list if you like:
+>
+> https://blog.jessfraz.com/post/docker-containers-on-the-desktop/
+>
+> Using docker's volumes feature to bind mount directories and files into
+> a container allows things like running Xorg, with persistent writes to
+> shared files. No NFS needed even.
+>
+> Jamon
+>
+> On 07/02/2015 12:09 PM, Giles Orr wrote:
+> > I have this idea that's been slowly forming in my head.  I wanted to
+> > run it by TLUG for opinions to find out if I'm totally crazy or if it
+> > might work.
+> >
+> > I hope to set up my desktop (and probably my laptop as well) to have a
+> > Debian stable base OS - about as stripped as I can manage, just X with
+> > a lightweight window manager (probably OpenBox).  On top of that would
+> > be VirtualBox, the idea being to run all my applications from virtual
+> > machines.
+> >
+> > Since I'd have multiple machines accessing the same /home/, I'd want
+> > NFS.  That could be run by the host OS, but I was thinking about using
+> > OpenWRT as the NFS server.  But that immediately runs into a
+> > difficulty: it appears that getting the VirtualBox Guest Additions
+> > running in OpenWRT is (very?) difficult, so I'd probably have to use
+> > raw partition access.  The problem with that is that if the partition
+> > is accessed simultaneously by any application on the host OS, you can
+> > munge the partition.
+> >
+> > I'm also planning on running another OpenWRT instance: this would be
+> > used for routing, with all the other virtual machines going through it
+> > to access the outside world.  Among other things, that would mean I
+> > only have to administer a firewall in one place.  One idea I'm still
+> > considering is giving full control of the network card to the OpenWRT
+> > instance and making the host OS go through OpenWRT to get to the
+> > outside world ...
+> >
+> > This could all probably be done with KVM rather than VirtualBox, but I
+> > prefer VB not only because I'm more familiar with it, but also because
+> > .VDI disc images can vary in size (Qemu's .qcow2 image format are
+> > fixed size) and because VirtualBox handles full screen display of OSes
+> > better (at least once Guest Additions is installed).  I'm happy to
+> > listen to reasons in favour of KVM.
+> >
+> > Other virtual machines would include TinyCore, SliTaz, and Debian
+> > Stretch.  The latter would probably be my primary OS.  The thought was
+> > to ssh from the host OS to the guest with X forwarding, and then run a
+> > launcher from the guest on the host so any applications run from the
+> > launcher were from the guest.
+> >
+> > Advantages:
+> > - I get to tinker with multiple OSes (something I enjoy)
+> > - if I'm about to go to a dubious website, I can clone a virtual
+> > machine, use it for the dubious visit, then destroy it
+> >
+> > Disadvantages that I've thought of so far:
+> > - memory usage
+> > - speed reduction
+> > - hard drive usage for disk images
+> > - complexity
+> > - mounting USB sticks on guests is extremely problematic
+> > - playing sound/video from guests through the host is imperfect
+> > - hard to determine where an application is running from
+> >
+> > I'm sure there are many, many other problems with this idea.  Go to
+> > town, that's why I'm here.
+>
+> --
+> Giles
+> http://www.gilesorr.com/
+> gilesorr at gmail.com
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150702/67e3bf8b/attachment.html>
+
