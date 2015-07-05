@@ -625,3 +625,21 @@ On Jul 2, 2015 16:38, "Giles Orr" <gilesorr at gmail.com> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150702/67e3bf8b/attachment.html>
 
+From scruss at gmail.com  Sat Jul  4 23:30:11 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sat, 04 Jul 2015 19:30:11 -0400
+Subject: [GTALUG] random wifi disconnects
+In-Reply-To: <18681F79-CCD6-4360-AA02-3501E3DEA46A@gmail.com>
+References: <55900F77.4090509@gmail.com>
+ <18681F79-CCD6-4360-AA02-3501E3DEA46A@gmail.com>
+Message-ID: <55986C83.3030806@gmail.com>
+
+I don't have a permanent fix yet, but the brute-force method of issuing
+
+	sudo /etc/init.d/network-manager restart
+
+makes the network come back. For a while, at least.
+
+cheers,
+ Stewart
+
