@@ -643,3 +643,43 @@ makes the network come back. For a while, at least.
 cheers,
  Stewart
 
+From hugh at mimosa.com  Mon Jul  6 02:59:56 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 5 Jul 2015 22:59:56 -0400 (EDT)
+Subject: [GTALUG] war story: keyboard failure leads to sustained mayhem
+Message-ID: <alpine.LRH.2.02.1507052243240.2272@redclaw.mimosa.com>
+
+This story could be told in order of discovery.  That would be more fun.  
+But I'm going to explain it as plainly as possible to make it more useful.
+
+I have a KVM switch (Keyboard Video Mouse) that lets four computers share 
+one keyboard, display, and mouse.
+
+Unbeknownst to me, the keyboard started generating a rapid stream of ESC [ 
+D (back arrow) sequences.  I'm not sure whether it is all the time or just 
+some of the time.
+
+The next time I booted one of the computers, it seemed to fail to find its 
+hard drives.  It was more than a decade old, so rather than fixing it, I 
+replaced it.  I now think that a continuous stream of backarrow keys 
+confused the BIOS (or the RAID card BIOS) when the machine was booting.  
+But at that time, it seemed to be a simple case of old hardware wearing 
+out.
+
+Another computer had different symptoms, but again showed disk problems.  
+When I did disk diagnostics, I was puzzled by the results: no problem.
+
+Eventually, I found the keyboard problem and have thrown the keyboard 
+away.  I have no idea how long it had been misbehaving.
+
+Lessons re-learned: 
+
+- symptoms don't always point clearly to the disease.
+
+- conclusions should remain provisional
+
+- it's amazing how long you can overlook a stuck keyboard key
+
+- apparently I really only use the KVM for booting; it would be
+  nice if PCs had been designed to be happy headless
+
