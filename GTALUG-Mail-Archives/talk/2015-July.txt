@@ -683,3 +683,586 @@ Lessons re-learned:
 - apparently I really only use the KVM for booting; it would be
   nice if PCs had been designed to be happy headless
 
+From james.knott at rogers.com  Mon Jul  6 10:55:23 2015
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 06 Jul 2015 06:55:23 -0400
+Subject: [GTALUG] war story: keyboard failure leads to sustained mayhem
+In-Reply-To: <alpine.LRH.2.02.1507052243240.2272@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1507052243240.2272@redclaw.mimosa.com>
+Message-ID: <559A5E9B.1070802@rogers.com>
+
+On 07/05/2015 10:59 PM, D. Hugh Redelmeier wrote:
+> - apparently I really only use the KVM for booting; it would be
+>   nice if PCs had been designed to be happy headless
+
+Many are.  Check the BIOS (or whatever it's called these days) settings.
+
+From kevin at ve3syb.ca  Mon Jul  6 13:10:05 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Mon, 06 Jul 2015 09:10:05 -0400
+Subject: [GTALUG] war story: keyboard failure leads to sustained mayhem
+In-Reply-To: <alpine.LRH.2.02.1507052243240.2272@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1507052243240.2272@redclaw.mimosa.com>
+Message-ID: <559A7E2D.90107@ve3syb.ca>
+
+On 15-07-05 10:59 PM, D. Hugh Redelmeier wrote:
+> - apparently I really only use the KVM for booting; it would be
+>    nice if PCs had been designed to be happy headless
+
+In older days (a few generations of PC ago) there used to be a BIOS setting 
+where you could tell it to ignore keyboard errors. You would enable that 
+feature if you wanted to run the computer without a keyboard. I haven't 
+looked to see if such a feature still exists in modern day BIOS but I don't 
+see why they would have removed the option unless it will ignore keyboard 
+errors automatically.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From james.knott at rogers.com  Mon Jul  6 13:52:22 2015
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 06 Jul 2015 09:52:22 -0400
+Subject: [GTALUG] war story: keyboard failure leads to sustained mayhem
+In-Reply-To: <559A7E2D.90107@ve3syb.ca>
+References: <alpine.LRH.2.02.1507052243240.2272@redclaw.mimosa.com>
+ <559A7E2D.90107@ve3syb.ca>
+Message-ID: <559A8816.4010409@rogers.com>
+
+On 07/06/2015 09:10 AM, Kevin Cozens wrote:
+> On 15-07-05 10:59 PM, D. Hugh Redelmeier wrote:
+>> - apparently I really only use the KVM for booting; it would be
+>>    nice if PCs had been designed to be happy headless
+>
+> In older days (a few generations of PC ago) there used to be a BIOS
+> setting where you could tell it to ignore keyboard errors. You would
+> enable that feature if you wanted to run the computer without a
+> keyboard. I haven't looked to see if such a feature still exists in
+> modern day BIOS but I don't see why they would have removed the option
+> unless it will ignore keyboard errors automatically.
+>
+
+I have 4 computers here, one with a year old motherboard.  3 of them can
+run headless and the other, an old Compaq, I just leave an old keyboard
+plugged in, but still access it via KVM.
+
+
+Like I said, check the settings.
+
+
+From hugh at mimosa.com  Mon Jul  6 14:37:40 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 6 Jul 2015 10:37:40 -0400 (EDT)
+Subject: [GTALUG] war story: keyboard failure leads to sustained mayhem
+In-Reply-To: <559A8816.4010409@rogers.com>
+References: <alpine.LRH.2.02.1507052243240.2272@redclaw.mimosa.com>
+ <559A7E2D.90107@ve3syb.ca> <559A8816.4010409@rogers.com>
+Message-ID: <alpine.LRH.2.02.1507061010330.2272@redclaw.mimosa.com>
+
+| From: James Knott <james.knott at rogers.com>
+
+| On 07/06/2015 09:10 AM, Kevin Cozens wrote:
+| > On 15-07-05 10:59 PM, D. Hugh Redelmeier wrote:
+| >> - apparently I really only use the KVM for booting; it would be
+| >>    nice if PCs had been designed to be happy headless
+| >
+| > In older days (a few generations of PC ago) there used to be a BIOS
+| > setting where you could tell it to ignore keyboard errors.
+
+| I have 4 computers here, one with a year old motherboard.  3 of them can
+| run headless and the other, an old Compaq, I just leave an old keyboard
+| plugged in, but still access it via KVM.
+
+Before I got a PC, I had Sun workstations.  They were willing to talk
+via a serial port to a "console" (they could use a display and
+keyboard too).  This let you do things like reboot when hung, watch
+all the exciting messages during booting, configure the machine, run
+hardware diagnostics, etc.
+
+I don't really want to lose those functions.  On PCs, they seem to
+require a console (or some quite expensive "management" features).
+That's why I use a KVM (and grumble).
+
+I think that the expensive management functions use ethernet
+transport.  For security, it ought to be separate from other networks.
+I have no experience with them.  Unfortuately, I think that the
+protocols are proprietary and different for each brand of computer.
+
+KVMs are either expensive or deficient.  Or both.
+
+- cheap ones only support VGA, a very obsolete standard
+
+- some cheap KVMs don't pass DDC info so the OS cannot determine
+  characteristics of the monitor.  This causes a variety of problems
+  (some modern Linux distros won't work out of the box with this).
+
+- some better cheap KVMs pass DDC information, but only to the
+  computer currently selected.  This works badly after a power failure
+  when each computer is rebooting at the same time.
+
+- there are issues (that I don't understand) about keyboard and mouse
+  states carrying over on switching.
+
+- I have another KVM that is normally sold for ~$500 that does a lot
+  right: support dual-link DVI, does pass DDC to all computers.  I
+  paid $100, so that was a great choice.  Even so, it gets a bit
+  confused by some mice.
+
+HDMI switches are quite cheap these days.  That would handle the V
+part of KVM.  Maybe the clutter of multiple keyboards and mice would
+be OK.  HDMI includes an ethernet signal now.  Someone should build a
+pair of dongles to ship K and M stuff over that channel.  USB over
+ethernet is probably already a thing.
+
+From james.knott at rogers.com  Mon Jul  6 15:01:45 2015
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 06 Jul 2015 11:01:45 -0400
+Subject: [GTALUG] war story: keyboard failure leads to sustained mayhem
+In-Reply-To: <alpine.LRH.2.02.1507061010330.2272@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1507052243240.2272@redclaw.mimosa.com>
+ <559A7E2D.90107@ve3syb.ca> <559A8816.4010409@rogers.com>
+ <alpine.LRH.2.02.1507061010330.2272@redclaw.mimosa.com>
+Message-ID: <559A9859.4080608@rogers.com>
+
+On 07/06/2015 10:37 AM, D. Hugh Redelmeier wrote:
+> HDMI switches are quite cheap these days.  That would handle the V
+> part of KVM.  Maybe the clutter of multiple keyboards and mice would
+> be OK.  HDMI includes an ethernet signal now.  Someone should build a
+> pair of dongles to ship K and M stuff over that channel.  USB over
+> ethernet is probably already a thing.
+
+I have a KVM that does HDMI and USB, so video, keyboard, mouse and even
+audio are switched.  As I said, the one computer requires a keyboard
+plugged in, but all work through the KVM.
+
+From hugh at mimosa.com  Mon Jul  6 15:36:37 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 6 Jul 2015 11:36:37 -0400 (EDT)
+Subject: [GTALUG] war story: keyboard failure leads to sustained mayhem
+In-Reply-To: <559A9859.4080608@rogers.com>
+References: <alpine.LRH.2.02.1507052243240.2272@redclaw.mimosa.com>
+ <559A7E2D.90107@ve3syb.ca> <559A8816.4010409@rogers.com>
+ <alpine.LRH.2.02.1507061010330.2272@redclaw.mimosa.com>
+ <559A9859.4080608@rogers.com>
+Message-ID: <alpine.LRH.2.02.1507061132380.2272@redclaw.mimosa.com>
+
+| From: James Knott <james.knott at rogers.com>
+
+| I have a KVM that does HDMI and USB, so video, keyboard, mouse and even
+| audio are switched.
+
+Nice!  What is the brand and model of the KVM?
+
+|  As I said, the one computer requires a keyboard
+| plugged in, but all work through the KVM.
+
+USB doesn't count as a keyboard?  Or is it that the switch doesn't
+"fake" the keyboard and mouse for the unselected computers?  In that
+case, it would look to the computer as if the mouse and keyboard were
+plugged in each time the computer were selected and unplugged each
+time it is deselected.
+
+I have a USB KVM switch that switches auxiliary USB but for USB
+keyboard and mouse sockets fakes them for the unselected computers.
+
+From james.knott at rogers.com  Mon Jul  6 15:41:05 2015
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 06 Jul 2015 11:41:05 -0400
+Subject: [GTALUG] war story: keyboard failure leads to sustained mayhem
+In-Reply-To: <alpine.LRH.2.02.1507061132380.2272@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1507052243240.2272@redclaw.mimosa.com>
+ <559A7E2D.90107@ve3syb.ca> <559A8816.4010409@rogers.com>
+ <alpine.LRH.2.02.1507061010330.2272@redclaw.mimosa.com>
+ <559A9859.4080608@rogers.com>
+ <alpine.LRH.2.02.1507061132380.2272@redclaw.mimosa.com>
+Message-ID: <559AA191.8060904@rogers.com>
+
+On 07/06/2015 11:36 AM, D. Hugh Redelmeier wrote:
+> USB doesn't count as a keyboard?  Or is it that the switch doesn't
+> "fake" the keyboard and mouse for the unselected computers?  In that
+> case, it would look to the computer as if the mouse and keyboard were
+> plugged in each time the computer were selected and unplugged each
+> time it is deselected.
+
+It appears the KVM doesn't "fake" a keyboard, so I have to plug a real
+keyboard into that one computer.  All the rest work fine as is, after
+configuring the CMOS so that the computer will boot without a keyboard. 
+I haven't noticed any issues with not having a mouse plugged in, but
+then a mouse isn't usually critical for using a computer.  Back in the
+days before GUIs, we usually didn't even own a mouse.
+
+
+
+From lsorense at csclub.uwaterloo.ca  Mon Jul  6 15:44:28 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 6 Jul 2015 11:44:28 -0400
+Subject: [GTALUG] HP printers [Request for printer recommendations]
+In-Reply-To: <559015AF.1060402@pair.com>
+References: <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <558C4305.6060302@blaise.ca>
+ <7c98e2335dd3dc0ac8734b425d0c1fc7.squirrel@webmail.ee.ryerson.ca>
+ <20150625185212.GA4286@node1.localdomain>
+ <558DA35D.1070700@moores.ca> <558EBF03.4080806@gmail.com>
+ <000601d0b0fd$8079ba20$816d2e60$@iprimus.ca>
+ <559015AF.1060402@pair.com>
+Message-ID: <20150706154427.GD17437@csclub.uwaterloo.ca>
+
+On Sun, Jun 28, 2015 at 11:41:35AM -0400, Malgosia Askanas wrote:
+> My past experience with HP printers has been that they print
+> beautifully but the mechanicals crap out after a very short time,
+> after which one has to feed/unfeed the paper by hand.  I've spent
+> untold hours feeding my HP printers, and am uneager to repeat the
+> experience.  But perhaps they have become better in recent years?
+
+The massive HP printer/scanner/copier we had in the office a few years
+ago was a disaster.  The thing it did best was paper jams.  Dozens of
+paper jams every day.
+
+The canon that replaced it has almost never had a paper jam.
+
+Of course those are not models you would use at home, but given they
+do postscript and IPP network printing, they work great with linux
+(for printing, scanning is a different story).
+
+-- 
+Len Sorensen
+
+From o1bigtenor at gmail.com  Mon Jul  6 16:09:51 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Mon, 6 Jul 2015 11:09:51 -0500
+Subject: [GTALUG] HP printers [Request for printer recommendations]
+In-Reply-To: <20150706154427.GD17437@csclub.uwaterloo.ca>
+References: <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <558C4305.6060302@blaise.ca>
+ <7c98e2335dd3dc0ac8734b425d0c1fc7.squirrel@webmail.ee.ryerson.ca>
+ <20150625185212.GA4286@node1.localdomain>
+ <558DA35D.1070700@moores.ca> <558EBF03.4080806@gmail.com>
+ <000601d0b0fd$8079ba20$816d2e60$@iprimus.ca>
+ <559015AF.1060402@pair.com>
+ <20150706154427.GD17437@csclub.uwaterloo.ca>
+Message-ID: <CAPpdf59E2zTUSAONMRbpVc8riJ_KpQ1U8Xh3FtZso8VKuiV7Aw@mail.gmail.com>
+
+On Mon, Jul 6, 2015 at 10:44 AM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Sun, Jun 28, 2015 at 11:41:35AM -0400, Malgosia Askanas wrote:
+> > My past experience with HP printers has been that they print
+> > beautifully but the mechanicals crap out after a very short time,
+> > after which one has to feed/unfeed the paper by hand.  I've spent
+> > untold hours feeding my HP printers, and am uneager to repeat the
+> > experience.  But perhaps they have become better in recent years?
+>
+> The massive HP printer/scanner/copier we had in the office a few years
+> ago was a disaster.  The thing it did best was paper jams.  Dozens of
+> paper jams every day.
+>
+> The canon that replaced it has almost never had a paper jam.
+>
+> Of course those are not models you would use at home, but given they
+> do postscript and IPP network printing, they work great with linux
+> (for printing, scanning is a different story).
+>
+> So, I'll bite, what do you use for scanning?
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150706/a07169db/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Mon Jul  6 16:36:21 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 6 Jul 2015 12:36:21 -0400
+Subject: [GTALUG] HP printers [Request for printer recommendations]
+In-Reply-To: <CAPpdf59E2zTUSAONMRbpVc8riJ_KpQ1U8Xh3FtZso8VKuiV7Aw@mail.gmail.com>
+References: <558C4132.7020908@pair.com> <558C4305.6060302@blaise.ca>
+ <7c98e2335dd3dc0ac8734b425d0c1fc7.squirrel@webmail.ee.ryerson.ca>
+ <20150625185212.GA4286@node1.localdomain>
+ <558DA35D.1070700@moores.ca> <558EBF03.4080806@gmail.com>
+ <000601d0b0fd$8079ba20$816d2e60$@iprimus.ca>
+ <559015AF.1060402@pair.com>
+ <20150706154427.GD17437@csclub.uwaterloo.ca>
+ <CAPpdf59E2zTUSAONMRbpVc8riJ_KpQ1U8Xh3FtZso8VKuiV7Aw@mail.gmail.com>
+Message-ID: <20150706163621.GE17437@csclub.uwaterloo.ca>
+
+On Mon, Jul 06, 2015 at 11:09:51AM -0500, o1bigtenor wrote:
+> So, I'll bite, what do you use for scanning?
+
+Well I pretty much never have any reason to scan anything, and they are
+setup to send scans to your email account on an exchange server.
+
+-- 
+Len Sorensen
+
+From me at mylesbraithwaite.com  Mon Jul  6 17:24:33 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 6 Jul 2015 13:24:33 -0400
+Subject: [GTALUG] [GTALUG-Announce] GTALUG Meeting on 14th July at 7:30pm
+Message-ID: <CA+hskZMfiSj3+5WH+64SiWV_FTYAMuhQgRkuxq+4tWaxiWAJqA@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-07/>
+
+# Puppet with David Thornton
+
+Puppet is an open-source configuration management utility.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before each meeting a group of GTALUGers dine at Love At
+First Bite (96 Gerrard Street E).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+# Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact the GTALUG Board @ <board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From me at mylesbraithwaite.com  Mon Jul  6 17:40:14 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 6 Jul 2015 13:40:14 -0400
+Subject: [GTALUG] [UPDATE] GTALUG Meeting on 14th July at 7:30pm
+Message-ID: <CA+hskZP1yE+FHR_7iyFqpyXXWnzDpPJy7d3i+vH00Qm43b-z+g@mail.gmail.com>
+
+Here is David's talk description:
+
+> Puppet is a tool for doing configuration management. This talk will go over
+> what puppet is, what it can do, and how to do it. There is more than one way
+> to do it, some lessons have been learned in the field and from the community.
+
+> The talk will be based on [Alessandro Franceschi's fine  Puppet
+> Tutorial](http://www.example42.com/tutorials/PuppetTutorial/). Not all slides
+> will be discussed (developer oriented slides will be skipped), and some
+> topics not mentioned in the URL will be added (work flow topics). I intend
+> for this talk to be a dialog and support "engaged" learning, feel free to
+> interrupt.
+
+From phiscock at ee.ryerson.ca  Tue Jul  7 01:50:34 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Mon, 6 Jul 2015 21:50:34 -0400
+Subject: [GTALUG] Uh-oh. Command not found
+Message-ID: <fac489a03ea20258a4a80fcdb15331b1.squirrel@webmail.ee.ryerson.ca>
+
+Because Firefox kept locking up and various other things were out of date,
+I decided to upgrade to the latest version of Linux Mint. The upgrade
+seemed to work but resulted in a blank desktop, so I decided a complete
+re-install was required.
+
+So I backed up the /home directory to an external USB hard drive,
+programmed a USB key with a Mint .iso and booted up into the latest Mint.
+
+That went fine. Then I tried to restore the backup of the home directory,
+the computer announced that it couldn't read the file, something about
+'bad superblock', which is enough to bring one's heart to a complete and
+utter stop. *Fortunately*, bumping against the USB cable got it working,
+and I think the problem was a bad connector.
+
+OK, piece of cake from here on, right? Then in the process of moving files
+from the backup to my home directory, I forgot that I was in superuser
+mode and ~ was shorthand for /root. That made a mess, and in the process
+of sorting out that, I moved the /bin directory. So of course, no commands
+worked at all. (This reminds me of the scenario where someone executes rm
+-rf * in superuser mode and only discovers the mistake when the computer
+announces: rm command not found. I know someone who actually did that.
+(Not me ;) ). Arrrgh.
+
+So I decided that the simplest route was to re-install.
+
+Then, for some reason, the USB key wouldn't boot. Fortunately, an old
+Knoppix CD did boot, establishing that boot from CD was still working. So
+I prevailed on my friend Gabriel to burn me an .iso on DVD, and that
+worked.
+
+So, to my colleagues in TLUG, I ask: How would you deal with the
+re-location of /bin, assuming you didn't want to re-install?
+
+Peter
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From chris at cfajohnson.com  Tue Jul  7 02:19:10 2015
+From: chris at cfajohnson.com (Chris F.A. Johnson)
+Date: Mon, 6 Jul 2015 22:19:10 -0400 (EDT)
+Subject: [GTALUG] Uh-oh. Command not found
+In-Reply-To: <fac489a03ea20258a4a80fcdb15331b1.squirrel@webmail.ee.ryerson.ca>
+References: <fac489a03ea20258a4a80fcdb15331b1.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <alpine.DEB.2.10.1507062216170.20371@chris.tor>
+
+On Mon, 6 Jul 2015, phiscock at ee.ryerson.ca wrote:
+
+> Because Firefox kept locking up and various other things were out of date,
+> I decided to upgrade to the latest version of Linux Mint. The upgrade
+> seemed to work but resulted in a blank desktop, so I decided a complete
+> re-install was required.
+>
+> So I backed up the /home directory to an external USB hard drive,
+> programmed a USB key with a Mint .iso and booted up into the latest Mint.
+
+    If you keep /home on a separate partition, you wouldn't have this problem.
+
+...
+> So I decided that the simplest route was to re-install.
+>
+> Then, for some reason, the USB key wouldn't boot. Fortunately, an old
+> Knoppix CD did boot, establishing that boot from CD was still working. So
+> I prevailed on my friend Gabriel to burn me an .iso on DVD, and that
+> worked.
+>
+> So, to my colleagues in TLUG, I ask: How would you deal with the
+> re-location of /bin, assuming you didn't want to re-install?
+
+PATH=$PATH:/path/to/bin
+
+    Or:
+
+mv /path/to/bin /
+
+-- 
+Chris F.A. Johnson, <http://cfajohnson.com>
+
+From o1bigtenor at gmail.com  Tue Jul  7 03:08:37 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Mon, 6 Jul 2015 22:08:37 -0500
+Subject: [GTALUG] HP printers [Request for printer recommendations]
+In-Reply-To: <20150706163621.GE17437@csclub.uwaterloo.ca>
+References: <558C4132.7020908@pair.com> <558C4305.6060302@blaise.ca>
+ <7c98e2335dd3dc0ac8734b425d0c1fc7.squirrel@webmail.ee.ryerson.ca>
+ <20150625185212.GA4286@node1.localdomain>
+ <558DA35D.1070700@moores.ca> <558EBF03.4080806@gmail.com>
+ <000601d0b0fd$8079ba20$816d2e60$@iprimus.ca>
+ <559015AF.1060402@pair.com>
+ <20150706154427.GD17437@csclub.uwaterloo.ca>
+ <CAPpdf59E2zTUSAONMRbpVc8riJ_KpQ1U8Xh3FtZso8VKuiV7Aw@mail.gmail.com>
+ <20150706163621.GE17437@csclub.uwaterloo.ca>
+Message-ID: <CAPpdf5_SVZJJCH2pdrns60YiFGmtqgN6uRNvkN77cgPvod=vpA@mail.gmail.com>
+
+Sorry - - - scanning is quite useful for me and I sure would like a
+way to make it work connected to my Linux box!
+
+Haven't had much luck so far.
+
+Dee
+
+On 7/6/15, Lennart Sorensen <lsorense at csclub.uwaterloo.ca> wrote:
+> On Mon, Jul 06, 2015 at 11:09:51AM -0500, o1bigtenor wrote:
+>> So, I'll bite, what do you use for scanning?
+>
+> Well I pretty much never have any reason to scan anything, and they are
+> setup to send scans to your email account on an exchange server.
+>
+> --
+> Len Sorensen
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+From hugh at mimosa.com  Tue Jul  7 05:03:40 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 7 Jul 2015 01:03:40 -0400 (EDT)
+Subject: [GTALUG] war story: keyboard failure leads to sustained mayhem
+In-Reply-To: <559AA191.8060904@rogers.com>
+References: <alpine.LRH.2.02.1507052243240.2272@redclaw.mimosa.com>
+ <559A7E2D.90107@ve3syb.ca> <559A8816.4010409@rogers.com>
+ <alpine.LRH.2.02.1507061010330.2272@redclaw.mimosa.com>
+ <559A9859.4080608@rogers.com>
+ <alpine.LRH.2.02.1507061132380.2272@redclaw.mimosa.com>
+ <559AA191.8060904@rogers.com>
+Message-ID: <alpine.LRH.2.02.1507070017020.2272@redclaw.mimosa.com>
+
+| From: James Knott <james.knott at rogers.com>
+
+James says that his KVM is
+<http://www.newegg.ca/Product/Product.aspx?Item=N82E16817145111&cm_re=kvm-4uhm-_-17-145-111-_-Product>
+(not currently in stock)
+
+| It appears the KVM doesn't "fake" a keyboard, so I have to plug a real
+| keyboard into that one computer.  All the rest work fine as is, after
+| configuring the CMOS so that the computer will boot without a keyboard. 
+
+That makes sense
+
+| I haven't noticed any issues with not having a mouse plugged in, but
+| then a mouse isn't usually critical for using a computer.  Back in the
+| days before GUIs, we usually didn't even own a mouse.
+
+That too makes sense.
+
+If you read the critical reviews on newegg, it looks as if the monitor
+doesn't make EDID information about the monitor work for unselected
+computers.  This can cause problems.  Perhaps not for old fashioned
+text consoles (like BIOS setup screens).
+
+=============
+
+I went googling for interesting KVMs and came up with this:
+<http://www.amazon.com/Displayport-Switch-Control-Desktop-Product/dp/B00V5I0QLE>
+
+Amazon describes it as a 12-port DisplayPort KVM!
+
+Unfortunately, the manufacturer says you can connect two PC to it, no
+more.
+
+I got tired of hunting for unicorns.  Not only are KVMs that match my
+requirements rare and expensive, it is hard to identify them amongst
+the descriptions of inferior products.
+
+Here's a useful document from Microsoft:
+<http://download.microsoft.com/download/7/E/7/7E7662CF-CBEA-470B-A97E-CE7CE0D98DC2/KVM-Win7.docx>
+It deals only with video issues.  Apparently there is/was a "Windows
+Logo Program" for KVM switches.  I don't remember ever seeing a
+Windows logo on a KVM, but I would take it as a Good Thing.
+Oh, it seems that the logo program was retired "with the release of
+the Windows Logo Kit (WLK) for Windows Server 2008 RTM."  Darn.
+
