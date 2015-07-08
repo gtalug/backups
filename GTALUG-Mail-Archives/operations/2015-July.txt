@@ -97,3 +97,70 @@ Last Thursday of the month. Social
 I'm hoping to automate this some time this year in here:
 <https://github.com/gtalug/announce-messages>.
 
+From hi at gtalug.org  Tue Jul  7 09:30:01 2015
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Tue,  7 Jul 2015 09:30:01 +0000 (UTC)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20150707093001.411D2E36A@penguin.gtalug.org>
+
+I'm Mr. Meeseeks! Look at me!
+
+There is a GTALUG meeting coming up on 14 July, 2015, is the GTALUG Board/Executive prepared?
+
+- [ ] Contact the speaker.
+- [ ] Does the speaker need anything else besides a projector (i.e. graphic dongles).
+- [ ] Send out an announcement for the meeting.
+
+Look at me! I'm Mr. Meeseeks! (poof)
+
+From me at mylesbraithwaite.com  Tue Jul  7 13:43:56 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 7 Jul 2015 09:43:56 -0400
+Subject: [GTALUG-Ops] Fwd: [kwlug-disc] Linux Conference Update
+References: <CACzt8WTwR5HEsE6uF-qZM+AvCdQKjdXH+9SJF-Z5ekRPzyAZPQ@mail.gmail.com>
+Message-ID: <75D2D4E5-410A-4924-9950-26A14D2EB7AC@mylesbraithwaite.com>
+
+Should GTALUG get involved?
+
+
+
+Begin forwarded message:
+
+> From: Colin Mills <colin.j.mills96 at gmail.com>
+> Date: July 7, 2015 at 8:13:50 AM EDT
+> To: KWLUG discussion <kwlug-disc at kwlug.org>
+> Subject: [kwlug-disc] Linux Conference Update
+> Reply-To: KWLUG discussion <kwlug-disc at kwlug.org>
+> 
+> Hi Everybody,
+> 
+> I apologize I couldn't make it last night I had prior commitments that came up. If you remember I briefly had started talking about having a Linux Conference located in and 
+> around the Kitchener area. As such I have taken it upon myself to organize an event that would be in late September at Conestoga College, the potential date we are looking at is September 19th. I have backing and some willing sponsors to talk. It would be a full day event from 9->5. There will be lunch and coffee provided.  I have three spots available after lunch to be able to give full hour length talks. We need people to fill those spots, so if anyone is interested in giving a talk on UNIXness let me know. There will also be  a chance for lightening talks during lunch. Attached I have a schedule that shows the basic layout of the day! 
+> 
+> 
+> Thanks for your time. 
+> -------------------------------------------------------------------------------
+> Colin J. Mills (cjm)
+> FOSS Advocate
+> 
+> Software Engineering Technology
+> Second Year 
+> Conestoga College
+> Canada
+> 
+> "makepkg, not war" 
+> -------------------------------------------------------------------------------
+> _______________________________________________
+> kwlug-disc mailing list
+> kwlug-disc at kwlug.org
+> http://kwlug.org/mailman/listinfo/kwlug-disc_kwlug.org
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150707/ddee15f8/attachment.html>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150707/ddee15f8/attachment.htm>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150707/ddee15f8/attachment-0001.html>
+
