@@ -1832,3 +1832,44 @@ with suggestions.
 I would expect that you have a LAN and have other computer(s) still
 functioning.  Perhaps not in Linux.
 
+From hugh at mimosa.com  Fri Jul 10 19:51:45 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Fri, 10 Jul 2015 15:51:45 -0400 (EDT)
+Subject: [GTALUG] war story: KVM [was keyboard failure leads to
+ sustained mayhem]
+In-Reply-To: <alpine.LRH.2.02.1507061010330.2272@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1507052243240.2272@redclaw.mimosa.com>
+ <559A7E2D.90107@ve3syb.ca> <559A8816.4010409@rogers.com>
+ <alpine.LRH.2.02.1507061010330.2272@redclaw.mimosa.com>
+Message-ID: <alpine.LRH.2.02.1507101533210.10599@redclaw.mimosa.com>
+
+| From: D. Hugh Redelmeier <hugh at mimosa.com>
+
+| - I have another KVM that is normally sold for ~$500 that does a lot
+|   right: support dual-link DVI, does pass DDC to all computers.  I
+|   paid $100, so that was a great choice.  Even so, it gets a bit
+|   confused by some mice.
+
+This KVM is an IOGEAR GCS1784.
+
+<http://www.newegg.ca/Product/Product.aspx?Item=N82E16817399043CVF>
+
+Some of the reviewers on the newegg site mention keyboard and mouse
+problems.  The KVM emulates the keyboard and mouse for each of the
+computers so switching will be seamless.  This means that the real
+mouse and keyboard have to be pretty generic or bad things happen.
+
+I could not get any of my wireless-keyboard-and-mouse sets to work.
+In each case, the mouse could not move down but only up.  Sometimes at
+a disproportionate rate.  I could not get a wired keyboard and
+wireless mouse to work.  So now I have a wired keyboard and mouse.
+
+Apparently I could have gotten them to work (without the benefit of
+emulation) by plugging them into the auxiliary USB connector of the
+KVM.  It is switched, but each computer sees the device as being
+plugged and unplugged whenever the switch switches away or towards the
+computer.
+
+Here are the weasel words that IOGEAR uses to explain this problem:
+<http://iogear.custhelp.com/app/answers/detail/a_id/1071/related/1>
+
