@@ -1873,3 +1873,306 @@ computer.
 Here are the weasel words that IOGEAR uses to explain this problem:
 <http://iogear.custhelp.com/app/answers/detail/a_id/1071/related/1>
 
+From davec-b at rogers.com  Tue Jul 14 19:57:34 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Tue, 14 Jul 2015 15:57:34 -0400
+Subject: [GTALUG] Tlug Soup?
+Message-ID: <55A569AE.7040806@rogers.com>
+
+Where are we eating this month?
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From james.knott at rogers.com  Tue Jul 14 20:12:03 2015
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 14 Jul 2015 16:12:03 -0400
+Subject: [GTALUG] Tlug Soup?
+In-Reply-To: <55A569AE.7040806@rogers.com>
+References: <55A569AE.7040806@rogers.com>
+Message-ID: <55A56D13.1060304@rogers.com>
+
+On 07/14/2015 03:57 PM, David Collier-Brown wrote:
+> Where are we eating this month?
+>
+
+Don't forget a Geek salad.  ;-)
+
+
+From gordontc at look.ca  Tue Jul 14 20:37:28 2015
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Tue, 14 Jul 2015 16:37:28 -0400
+Subject: [GTALUG] Tlug Soup?
+In-Reply-To: <55A569AE.7040806@rogers.com>
+References: <55A569AE.7040806@rogers.com>
+Message-ID: <1436906248.23440.0.camel@larva.gordhome.local>
+
+Unless otherwise advised, I'm off to LAFB
+
+Gordon
+
+
+On Tue, 2015-07-14 at 15:57 -0400, David Collier-Brown wrote:
+> Where are we eating this month?
+> 
+> --dave
+> 
+
+
+
+From northdot9 at gmail.com  Tue Jul 14 21:47:55 2015
+From: northdot9 at gmail.com (David Thornton)
+Date: Tue, 14 Jul 2015 17:47:55 -0400
+Subject: [GTALUG] Tlug Soup?
+In-Reply-To: <1436906248.23440.0.camel@larva.gordhome.local>
+References: <55A569AE.7040806@rogers.com>
+ <1436906248.23440.0.camel@larva.gordhome.local>
+Message-ID: <CAHcykVpDTcftF0sL7g1FAsBFZ9eUSYOkoyrydM1TJMy0ubg4dw@mail.gmail.com>
+
+Wut is lafb?
+On Jul 14, 2015 4:37 PM, "Gordon Chillcott" <gordontc at look.ca> wrote:
+
+> Unless otherwise advised, I'm off to LAFB
+>
+> Gordon
+>
+>
+> On Tue, 2015-07-14 at 15:57 -0400, David Collier-Brown wrote:
+> > Where are we eating this month?
+> >
+> > --dave
+> >
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150714/2bc075a6/attachment.html>
+
+From scott at ss.org  Tue Jul 14 22:06:53 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Tue, 14 Jul 2015 18:06:53 -0400
+Subject: [GTALUG] Tlug Soup?
+In-Reply-To: <CAHcykVpDTcftF0sL7g1FAsBFZ9eUSYOkoyrydM1TJMy0ubg4dw@mail.gmail.com>
+References: <55A569AE.7040806@rogers.com>
+ <1436906248.23440.0.camel@larva.gordhome.local>
+ <CAHcykVpDTcftF0sL7g1FAsBFZ9eUSYOkoyrydM1TJMy0ubg4dw@mail.gmail.com>
+Message-ID: <F111A68C-0DD3-44EE-84E7-488151F63EAA@ss.org>
+
+On July 14, 2015 5:47:55 PM EDT, David Thornton <northdot9 at gmail.com> wrote:
+>Wut is lafb?
+
+The resturant formerly know as Love at First Bite. Near Gerrard and Church.
+
+-- 
+Scott Sullivan
+
+From phiscock at ee.ryerson.ca  Tue Jul 14 22:09:23 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Tue, 14 Jul 2015 18:09:23 -0400
+Subject: [GTALUG] Tlug Soup?
+In-Reply-To: <F111A68C-0DD3-44EE-84E7-488151F63EAA@ss.org>
+References: <55A569AE.7040806@rogers.com>
+ <1436906248.23440.0.camel@larva.gordhome.local>
+ <CAHcykVpDTcftF0sL7g1FAsBFZ9eUSYOkoyrydM1TJMy0ubg4dw@mail.gmail.com>
+ <F111A68C-0DD3-44EE-84E7-488151F63EAA@ss.org>
+Message-ID: <d417e3e106ef2be57b6b30ec3e6dc579.squirrel@webmail.ee.ryerson.ca>
+
+North side of Gerrard, directly across from 87 Gerrard East, the former
+Electrical Engineering building.
+
+> On July 14, 2015 5:47:55 PM EDT, David Thornton <northdot9 at gmail.com>
+> wrote:
+>>Wut is lafb?
+>
+> The resturant formerly know as Love at First Bite. Near Gerrard and
+> Church.
+>
+> --
+> Scott Sullivan
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From northdot9 at gmail.com  Tue Jul 14 22:12:13 2015
+From: northdot9 at gmail.com (David Thornton)
+Date: Tue, 14 Jul 2015 18:12:13 -0400
+Subject: [GTALUG] Tlug Soup?
+In-Reply-To: <d417e3e106ef2be57b6b30ec3e6dc579.squirrel@webmail.ee.ryerson.ca>
+References: <55A569AE.7040806@rogers.com>
+ <1436906248.23440.0.camel@larva.gordhome.local>
+ <CAHcykVpDTcftF0sL7g1FAsBFZ9eUSYOkoyrydM1TJMy0ubg4dw@mail.gmail.com>
+ <F111A68C-0DD3-44EE-84E7-488151F63EAA@ss.org>
+ <d417e3e106ef2be57b6b30ec3e6dc579.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <CAHcykVrcqi4OSoXNKA4dFRaTWesVZyrPhqfQxyxYqy9EirF6fA@mail.gmail.com>
+
+Thanks guys,
+
+I'm hitting Ramen raijin at Gerrard and young south east side.
+
+David
+On Jul 14, 2015 6:09 PM, <phiscock at ee.ryerson.ca> wrote:
+
+> North side of Gerrard, directly across from 87 Gerrard East, the former
+> Electrical Engineering building.
+>
+> > On July 14, 2015 5:47:55 PM EDT, David Thornton <northdot9 at gmail.com>
+> > wrote:
+> >>Wut is lafb?
+> >
+> > The resturant formerly know as Love at First Bite. Near Gerrard and
+> > Church.
+> >
+> > --
+> > Scott Sullivan
+> > ---
+> > Talk Mailing List
+> > talk at gtalug.org
+> > http://gtalug.org/mailman/listinfo/talk
+> >
+>
+>
+> --
+> Peter Hiscocks
+> Syscomp Electronic Design Limited, Toronto
+> http://www.syscompdesign.com
+> USB Oscilloscope and Waveform Generator
+> 647-839-0325
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150714/b178c6ec/attachment.html>
+
+From maskanas at pair.com  Tue Jul 14 23:04:32 2015
+From: maskanas at pair.com (Malgosia Askanas)
+Date: Tue, 14 Jul 2015 19:04:32 -0400
+Subject: [GTALUG] Europass docs and LibreOffice
+In-Reply-To: <559412BD.3080205@pair.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <559412BD.3080205@pair.com>
+Message-ID: <55A59580.6040803@pair.com>
+
+Dear All,
+
+I just had occasion to open in Libre Office under Ubuntu 15.04 some 
+(externally created) Europass CVs (with extension .doc), and LibreOffice 
+made a real mess of them, overlaying lines over one another, etc.  Can 
+anybody suggest a remedy?  The obsolete Word on my MacOS 10.4 system 
+reads them perfectly...
+
+With many thanks in advance,
+Malgosia Askanas
+
+From davec-b at rogers.com  Wed Jul 15 02:28:56 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Tue, 14 Jul 2015 22:28:56 -0400
+Subject: [GTALUG] Europass docs and LibreOffice
+In-Reply-To: <55A59580.6040803@pair.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <559412BD.3080205@pair.com> <55A59580.6040803@pair.com>
+Message-ID: <55A5C568.8080509@rogers.com>
+
+On the mac, write them out as .rtf files.  That's Microsoft's 
+version-independant-mostly format for copying between different 
+versions. Those should be openable on a newer Libre Office.
+
+--dave
+
+On 07/14/2015 07:04 PM, Malgosia Askanas wrote:
+> Dear All,
+>
+> I just had occasion to open in Libre Office under Ubuntu 15.04 some 
+> (externally created) Europass CVs (with extension .doc), and 
+> LibreOffice made a real mess of them, overlaying lines over one 
+> another, etc.  Can anybody suggest a remedy?  The obsolete Word on my 
+> MacOS 10.4 system reads them perfectly...
+>
+> With many thanks in advance,
+> Malgosia Askanas
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From maskanas at pair.com  Wed Jul 15 02:56:35 2015
+From: maskanas at pair.com (Malgosia Askanas)
+Date: Tue, 14 Jul 2015 22:56:35 -0400
+Subject: [GTALUG] Europass docs and LibreOffice
+In-Reply-To: <55A5C568.8080509@rogers.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <559412BD.3080205@pair.com> <55A59580.6040803@pair.com>
+ <55A5C568.8080509@rogers.com>
+Message-ID: <55A5CBE3.9020308@pair.com>
+
+Well, yes - on the Mac I can write an RTF or a  PDF.  I can also send 
+the file to Zamzar for conversion.  But what I am (perhaps foolishly) 
+dreaming of is some kind of Linux self-sufficiency.  I bought this 
+machine in the hope of freeing myself from Apple and its likes...
+
+
+On 2015-07-14 10:28 PM, David Collier-Brown wrote:
+> On the mac, write them out as .rtf files.  That's Microsoft's
+> version-independant-mostly format for copying between different
+> versions. Those should be openable on a newer Libre Office.
+>
+> --dave
+>
+> On 07/14/2015 07:04 PM, Malgosia Askanas wrote:
+>> Dear All,
+>>
+>> I just had occasion to open in Libre Office under Ubuntu 15.04 some
+>> (externally created) Europass CVs (with extension .doc), and
+>> LibreOffice made a real mess of them, overlaying lines over one
+>> another, etc.  Can anybody suggest a remedy?  The obsolete Word on my
+>> MacOS 10.4 system reads them perfectly...
+>>
+>> With many thanks in advance,
+>> Malgosia Askanas
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>
+>
+
