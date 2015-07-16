@@ -2176,3 +2176,193 @@ On 2015-07-14 10:28 PM, David Collier-Brown wrote:
 >
 >
 
+From scruss at gmail.com  Wed Jul 15 12:00:20 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Wed, 15 Jul 2015 08:00:20 -0400
+Subject: [GTALUG] Europass docs and LibreOffice
+In-Reply-To: <55A59580.6040803@pair.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <559412BD.3080205@pair.com> <55A59580.6040803@pair.com>
+Message-ID: <55A64B54.5010902@gmail.com>
+
+Hi Malgosia,
+> 
+> I just had occasion to open in Libre Office under Ubuntu 15.04 some
+> (externally created) Europass CVs (with extension .doc), and LibreOffice
+> made a real mess of them
+
+This is strange, as Europass document templates are created and
+distributed as native ODF:
+https://europass.cedefop.europa.eu/en/documents/curriculum-vitae/templates-instructions
+
+The ODT and Word .doc templates look clean to me on LibreOffice, so I
+wonder if the sender of your documents fiddled with the contents a bit.
+MS Word can do that.
+
+Europass is supposed to embed standard field definitions that map
+directly to a standard XML schema. It's possible that this could be
+recovered from your Word docs and the results reformatted. It's also
+just as likely that the creator of these documents broke them irreparably.
+
+cheers,
+ Stewart
+
+From davec-b at rogers.com  Wed Jul 15 12:07:20 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Wed, 15 Jul 2015 08:07:20 -0400
+Subject: [GTALUG] Europass docs and LibreOffice
+In-Reply-To: <55A64B54.5010902@gmail.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <559412BD.3080205@pair.com> <55A59580.6040803@pair.com>
+ <55A64B54.5010902@gmail.com>
+Message-ID: <55A64CF8.4050303@rogers.com>
+
+Editing odt in MS Word is a Known Bad Thing (;-))
+It's obviously to Microsoft's advantage to cause competitors pain, and 
+histoiricaly they've considered screwing up customers as a perfectly 
+fine way to do that.
+
+--dave
+
+On 07/15/2015 08:00 AM, Stewart C. Russell wrote:
+> Hi Malgosia,
+>> I just had occasion to open in Libre Office under Ubuntu 15.04 some
+>> (externally created) Europass CVs (with extension .doc), and LibreOffice
+>> made a real mess of them
+> This is strange, as Europass document templates are created and
+> distributed as native ODF:
+> https://europass.cedefop.europa.eu/en/documents/curriculum-vitae/templates-instructions
+>
+> The ODT and Word .doc templates look clean to me on LibreOffice, so I
+> wonder if the sender of your documents fiddled with the contents a bit.
+> MS Word can do that.
+>
+> Europass is supposed to embed standard field definitions that map
+> directly to a standard XML schema. It's possible that this could be
+> recovered from your Word docs and the results reformatted. It's also
+> just as likely that the creator of these documents broke them irreparably.
+>
+> cheers,
+>   Stewart
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From scruss at gmail.com  Wed Jul 15 12:30:43 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Wed, 15 Jul 2015 08:30:43 -0400
+Subject: [GTALUG] Europass docs and LibreOffice
+In-Reply-To: <55A64CF8.4050303@rogers.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <559412BD.3080205@pair.com> <55A59580.6040803@pair.com>
+ <55A64B54.5010902@gmail.com> <55A64CF8.4050303@rogers.com>
+Message-ID: <55A65273.5010906@gmail.com>
+
+On 2015-07-15 08:07 AM, David Collier-Brown wrote:
+> Editing odt in MS Word is a Known Bad Thing (;-))
+
+Though it did produce this spluttering piece of hilarity from an MS
+booster:
+https://answers.microsoft.com/en-us/mac/forum/macoffice2008-macword/can-word-open-a-odt-file/0b76ee36-a236-4a45-ace4-b145a5b2026f?auth=1
+
+Yes, OOXML is an ISO standard, but ODF is too, and earlier, and doesn't
+have weird "even we don't know what this does" settings.
+
+For this reason, I keep a Win8.1 VM around (cheapo but legit licences
+can be had) and a $100 annual subscription to Office. Yeah, it's an MS
+tax, but if I need to read Track Changes documents exactly as they're
+supposed to be, it's worth it. Once a document has touched Word, I
+consider it irrevocably 'down converted', to use an old SGML term.
+
+cheers,
+ Stewart
+
+
+From james.knott at rogers.com  Wed Jul 15 14:33:24 2015
+From: james.knott at rogers.com (James Knott)
+Date: Wed, 15 Jul 2015 10:33:24 -0400
+Subject: [GTALUG] Europass docs and LibreOffice
+In-Reply-To: <55A65273.5010906@gmail.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <559412BD.3080205@pair.com> <55A59580.6040803@pair.com>
+ <55A64B54.5010902@gmail.com> <55A64CF8.4050303@rogers.com>
+ <55A65273.5010906@gmail.com>
+Message-ID: <55A66F34.2030308@rogers.com>
+
+On 07/15/2015 08:30 AM, Stewart C. Russell wrote:
+> Yes, OOXML is an ISO standard, but ODF is too, and earlier, and doesn't
+> have weird "even we don't know what this does" settings.
+
+There's a lot on Groklaw about how MS rammed OOXML through ISO and
+pretty much crippled the committee in the process.
+> For this reason, I keep a Win8.1 VM around (cheapo but legit licences
+> can be had) and a $100 annual subscription to Office.
+
+I can get Office 365 for free through work, but haven't bothered.  They
+don't seem to have a Linux version available, so I'd have to run it in a
+VM or only on my notebook, when booted into Windows.
+
+
+
+From lsorense at csclub.uwaterloo.ca  Wed Jul 15 21:11:23 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 15 Jul 2015 17:11:23 -0400
+Subject: [GTALUG] Europass docs and LibreOffice
+In-Reply-To: <55A65273.5010906@gmail.com>
+References: <alpine.LRH.2.02.1412081216400.4080@redclaw.mimosa.com>
+ <CAHcykVq7_g3u8R__1yYnk=SgVhnzbMLnXyfU6L7Xs3N9ms4SEQ@mail.gmail.com>
+ <CAHcykVpmba3xcKY2wCYkEAXsiYrDtQ9i_Lr2ZQ7RADsG+d1nZw@mail.gmail.com>
+ <558C389A.8080302@mylesbraithwaite.com> <558C4132.7020908@pair.com>
+ <559412BD.3080205@pair.com> <55A59580.6040803@pair.com>
+ <55A64B54.5010902@gmail.com> <55A64CF8.4050303@rogers.com>
+ <55A65273.5010906@gmail.com>
+Message-ID: <20150715211123.GF17437@csclub.uwaterloo.ca>
+
+On Wed, Jul 15, 2015 at 08:30:43AM -0400, Stewart C. Russell wrote:
+> On 2015-07-15 08:07 AM, David Collier-Brown wrote:
+> > Editing odt in MS Word is a Known Bad Thing (;-))
+> 
+> Though it did produce this spluttering piece of hilarity from an MS
+> booster:
+> https://answers.microsoft.com/en-us/mac/forum/macoffice2008-macword/can-word-open-a-odt-file/0b76ee36-a236-4a45-ace4-b145a5b2026f?auth=1
+> 
+> Yes, OOXML is an ISO standard, but ODF is too, and earlier, and doesn't
+> have weird "even we don't know what this does" settings.
+> 
+> For this reason, I keep a Win8.1 VM around (cheapo but legit licences
+> can be had) and a $100 annual subscription to Office. Yeah, it's an MS
+> tax, but if I need to read Track Changes documents exactly as they're
+> supposed to be, it's worth it. Once a document has touched Word, I
+> consider it irrevocably 'down converted', to use an old SGML term.
+
+The nutcase in that link seems to be under the mistaken impression that
+OOXML replaced ODT as a standard.  This is of course not at all how
+standards work.  All it did was add another standard to pick from.
+
+All making OOXML an ISO standard actually did was make the ISO standard
+process no longer have any respect what so ever given clearly the process
+is now a joke that cab be bought.
+
+-- 
+Len Sorensen
+
