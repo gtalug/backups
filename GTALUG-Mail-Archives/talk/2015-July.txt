@@ -2366,3 +2366,293 @@ is now a joke that cab be bought.
 -- 
 Len Sorensen
 
+From stephen-d at rogers.com  Thu Jul 16 12:56:28 2015
+From: stephen-d at rogers.com (Stephen)
+Date: Thu, 16 Jul 2015 08:56:28 -0400
+Subject: [GTALUG] Problems with Samba After Upgrade to 14.04
+Message-ID: <55A7A9FC.70104@rogers.com>
+
+Background
+
+I was using 12.04 for a long time and never experienced these problems.
+
+I have a separate partition on which I back up my photography files from 
+my Windows machine. I have ownership of the partition and Others have 
+Create and Delete access.
+
+On the partition I have a folder "photography". Using a right click in 
+Nautilus I shared the folder, allowed others to create and delete files, 
+and allowed guests access. When I created the share I told Nautilus to 
+apply these settings to files in the folder.
+
+Problem 1) I can access the shared photography directory and copy files 
+to it. I cannot navigate to a nested folder. I get access denied. This 
+is new with 14.04. How can I share the entire tree?
+
+Problem 2) When I copy files from Windows to Ubuntu, they are created 
+with an owner of "Nobody". WTF??? Worse, when I delete, as root, the 
+files are no longer visible, but they still take up space!
+
+/var/lib/samba/usershares/photography has:
+
+#VERSION 2
+path=/big0/photography
+comment=
+usershare_acl=S-1-1-0:F
+guest_ok=y
+sharename=photography
+
+Any and all help appreciated!
+
+-- 
+Stephen
+
+From o1bigtenor at gmail.com  Thu Jul 16 16:57:49 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Thu, 16 Jul 2015 11:57:49 -0500
+Subject: [GTALUG] Advice request
+Message-ID: <CAPpdf59Tcc4E4Hiig-1LKfbgNdTp7yey8zFEe0AMwDQfLkvXgw@mail.gmail.com>
+
+Greetings
+
+I have a large system with a fair number of resources which has just come
+home from the hospital (computer) when I had a disk drive fail abruptly.
+
+1.The tech tells me that the hard drive can be accessed. How do I do a low
+level transfer to another hard drive?
+(This would mean that I would have empty sectors but there is some
+information that I would like to get.)
+
+2. The drive was my 'operating system' drive. That meant that here is where
+I kept my 14 VirtualBox machines. (One was my business record keeping
+(accounting) and that is the one that I want real bad but its only 16
+months of data so it can be redone but its painful!)
+
+How do I set up the hard drive so that files can be moved to my RAID array
+(which should be just fine) - - - or should I?
+Should I be setting up this drive as it was before but just looking for a
+way to do backups?
+As I understand it operating systems on RAID isn't nice - - - or is it?
+
+I am looking for something that doesn't crap out so completely. I
+understand I should have had backups but I wasn't able to get the shared
+folder stuff working so that I could seamlessly transfer stuff to my main
+array. That would also be a viable option if someone can tell me how to
+cudgel VirtualBox into submission.
+
+Questions welcomed.
+
+TIA
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150716/7ffc80b4/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Thu Jul 16 17:06:20 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 16 Jul 2015 13:06:20 -0400
+Subject: [GTALUG] Advice request
+In-Reply-To: <CAPpdf59Tcc4E4Hiig-1LKfbgNdTp7yey8zFEe0AMwDQfLkvXgw@mail.gmail.com>
+References: <CAPpdf59Tcc4E4Hiig-1LKfbgNdTp7yey8zFEe0AMwDQfLkvXgw@mail.gmail.com>
+Message-ID: <20150716170620.GG17437@csclub.uwaterloo.ca>
+
+On Thu, Jul 16, 2015 at 11:57:49AM -0500, o1bigtenor wrote:
+> Greetings
+> 
+> I have a large system with a fair number of resources which has just come
+> home from the hospital (computer) when I had a disk drive fail abruptly.
+> 
+> 1.The tech tells me that the hard drive can be accessed. How do I do a low
+> level transfer to another hard drive?
+> (This would mean that I would have empty sectors but there is some
+> information that I would like to get.)
+
+ddrescue can be handy for taking an image of a slightly defective
+disk to somewhere else, so that you can then experiment on the copy to
+recover things.
+
+> 2. The drive was my 'operating system' drive. That meant that here is where
+> I kept my 14 VirtualBox machines. (One was my business record keeping
+> (accounting) and that is the one that I want real bad but its only 16
+> months of data so it can be redone but its painful!)
+> 
+> How do I set up the hard drive so that files can be moved to my RAID array
+> (which should be just fine) - - - or should I?
+> Should I be setting up this drive as it was before but just looking for a
+> way to do backups?
+> As I understand it operating systems on RAID isn't nice - - - or is it?
+
+I think everything should be on RAID (and RAID0 doesn't count of course).
+OS, swap, data, everything.  Disk failures happen, and they are a waste
+of time to have to deal with.  RAID is of course NOT backup and not a
+sustitute (since RAID does nothing to protect against data corruption
+and user errors).
+
+> I am looking for something that doesn't crap out so completely. I
+> understand I should have had backups but I wasn't able to get the shared
+> folder stuff working so that I could seamlessly transfer stuff to my main
+> array. That would also be a viable option if someone can tell me how to
+> cudgel VirtualBox into submission.
+> 
+> Questions welcomed.
+
+-- 
+Len Sorensen
+
+From opengeometry at yahoo.ca  Thu Jul 16 17:52:08 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Thu, 16 Jul 2015 13:52:08 -0400
+Subject: [GTALUG] Advice request
+In-Reply-To: <CAPpdf59Tcc4E4Hiig-1LKfbgNdTp7yey8zFEe0AMwDQfLkvXgw@mail.gmail.com>
+References: <CAPpdf59Tcc4E4Hiig-1LKfbgNdTp7yey8zFEe0AMwDQfLkvXgw@mail.gmail.com>
+Message-ID: <20150716175208.GA5972@node1.localdomain>
+
+On Thu, Jul 16, 2015 at 11:57:49AM -0500, o1bigtenor wrote:
+> Greetings
+> 
+> I have a large system with a fair number of resources which has just come
+> home from the hospital (computer) when I had a disk drive fail abruptly.
+> 
+> 1.The tech tells me that the hard drive can be accessed. How do I do a low
+> level transfer to another hard drive?
+> (This would mean that I would have empty sectors but there is some
+> information that I would like to get.)
+
+'dd' is the usual answer.  But, on a failing disk, it may really kill
+it.  I've been told that freezing your disk helps with recovery.
+
+> 
+> 2. The drive was my 'operating system' drive. That meant that here is where
+> I kept my 14 VirtualBox machines. (One was my business record keeping
+> (accounting) and that is the one that I want real bad but its only 16
+> months of data so it can be redone but its painful!)
+> 
+> How do I set up the hard drive so that files can be moved to my RAID array
+> (which should be just fine) - - - or should I?
+> Should I be setting up this drive as it was before but just looking for a
+> way to do backups?
+> As I understand it operating systems on RAID isn't nice - - - or is it?
+
+Well, I don't recommend changing your setup, when you're doing recovery.
+Do the recovery first.
+
+Afterwards, you can use RAID for OS.  I think, most distro still ask for
+separate boot partition, eg. /boot as ext4 for MBR setup, and of course
+/boot/efi as fat32 for UEFI setup.  And, do backup.
+
+> 
+> I am looking for something that doesn't crap out so completely. I
+> understand I should have had backups but I wasn't able to get the shared
+> folder stuff working so that I could seamlessly transfer stuff to my main
+> array. That would also be a viable option if someone can tell me how to
+> cudgel VirtualBox into submission.
+> 
+> Questions welcomed.
+> 
+> TIA
+> 
+> Dee
+
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+From hugh at mimosa.com  Thu Jul 16 18:47:35 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 16 Jul 2015 14:47:35 -0400 (EDT)
+Subject: [GTALUG] Advice request
+In-Reply-To: <20150716170620.GG17437@csclub.uwaterloo.ca>
+References: <CAPpdf59Tcc4E4Hiig-1LKfbgNdTp7yey8zFEe0AMwDQfLkvXgw@mail.gmail.com>
+ <20150716170620.GG17437@csclub.uwaterloo.ca>
+Message-ID: <alpine.LRH.2.02.1507161432170.10599@redclaw.mimosa.com>
+
+| From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+
+| On Thu, Jul 16, 2015 at 11:57:49AM -0500, o1bigtenor wrote:
+| > 
+| > I have a large system with a fair number of resources which has just come
+| > home from the hospital (computer) when I had a disk drive fail abruptly.
+| > 
+| > 1.The tech tells me that the hard drive can be accessed. How do I do a low
+| > level transfer to another hard drive?
+| > (This would mean that I would have empty sectors but there is some
+| > information that I would like to get.)
+
+DON'T make any sudden moves.  They are likely to be wrong since you
+are upset and you are doing something new.
+ 
+| ddrescue can be handy for taking an image of a slightly defective
+| disk to somewhere else, so that you can then experiment on the copy to
+| recover things.
+
+Yes, I do this:
+
+1) raw ddrescue from the whole failing disk to a whole new disk.  (Make
+sure that the new disk is at least as large as the old one!)  By
+copying the whole disk, you get the partition table and boot blocks.
+But you also get the same UUIDs so it is best to not have the two
+disks on the same machine after the copy is done (mount etc. will be
+confused).
+
+2) Then put the failing disk on a shelf
+
+3) Then play with the new disk.
+
+I find it best to do this from a live USB stick or CD so I'm not
+acutally booting off the bad hard drive, the new hard drive, or even
+just the same controller.
+
+Make sure that the live system does not use the sick disk's swap
+partition.
+
+Note: ddrescue is a bit tricky, but it is brilliant.  Read the manual
+twice before using it.  Google for examples of usage.  I've posted to
+this list messages about how to use it.  You DO want to let it use a
+logfile!
+
+Somewhere in there I do a
+	smartctl -x /dev/sda
+and capture the output somewhere on another machine.  I want to ask
+the drive what it thinks is going on.
+
+BTW, keep in mind that the identification of the problem is
+provisional.  Subsequent observations may point the finger elsewhere.
+Eg. power supply, disk controller, RAM, sunspots.
+
+From gilesorr at gmail.com  Thu Jul 16 20:49:40 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Thu, 16 Jul 2015 16:49:40 -0400
+Subject: [GTALUG] Advice request
+In-Reply-To: <20150716175208.GA5972@node1.localdomain>
+References: <CAPpdf59Tcc4E4Hiig-1LKfbgNdTp7yey8zFEe0AMwDQfLkvXgw@mail.gmail.com>
+ <20150716175208.GA5972@node1.localdomain>
+Message-ID: <CAEnxSC7V6cA8Gd=qkX4O00d1Uu0n-WJfPy6sPSUoDu7Tsqk2NA@mail.gmail.com>
+
+On 16 July 2015 at 13:52, William Park <opengeometry at yahoo.ca> wrote:
+> On Thu, Jul 16, 2015 at 11:57:49AM -0500, o1bigtenor wrote:
+>> Greetings
+>>
+>> I have a large system with a fair number of resources which has just come
+>> home from the hospital (computer) when I had a disk drive fail abruptly.
+>>
+>> 1.The tech tells me that the hard drive can be accessed. How do I do a low
+>> level transfer to another hard drive?
+>> (This would mean that I would have empty sectors but there is some
+>> information that I would like to get.)
+>
+> 'dd' is the usual answer.  But, on a failing disk, it may really kill
+> it.  I've been told that freezing your disk helps with recovery.
+
+I've actually done that: ran the power into the freezer and the data
+cable out and got the data I needed: the drive had been pretty much
+deceased before it went in there.  It was surprisingly effective.  I
+suppose it depends on the malady: I'd say it's worth a try.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
