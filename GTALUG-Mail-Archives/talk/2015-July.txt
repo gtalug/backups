@@ -2656,3 +2656,113 @@ Giles
 http://www.gilesorr.com/
 gilesorr at gmail.com
 
+From slackrat at free.fr  Sat Jul 18 10:05:39 2015
+From: slackrat at free.fr (Slack Rat)
+Date: Sat, 18 Jul 2015 11:05:39 +0100
+Subject: [GTALUG] [OT] How does Google amass this information?
+Message-ID: <87a8ut93ws.fsf@darkstar-0.algarveservers.com>
+
+I recently set up a new domain, AlgarveServers.com - after using
+AzurServers.com for three years after moving from France to
+Portugal, I thought it was about time although I still maintain my
+dial-up account with Free.fr, but dropped my ADSL account.
+
+And at that time (2-3 months ago) I switched my http  server from
+Xitami to nginx  (Apologies to, but not trolling the Apache crowd.)
+
+I don't use a firewall since I was advised on irc that, being on a
+LAN behind a router, a firewall was superfluous. ("The CIA and
+Hackers simply love Firewalls" is the gist of what I was told)
+
+I do run several websites but the traffic is not overly heavy
+being bicycle racing oriented in the main. eg:
+<http://www.algarveservers.com/sportsite>
+However, the Sortsite is also available on two other servers so
+traffic is presumably shared amongst the three.
+
+And for outbound email I use "sendgrid.net" which is in reality
+designed to send gargantuan quantities of emails from any address
+to any address. It is in effect a spam-site although you don't
+necessarily have to send spam and sendgrid net pledges never to
+reveal your real address..
+
+i don't send any spam and my free account is limited to 4800
+emails per month.
+
+I use a Slackware or Tails operating system. Mostly Slackware; Tor
+mostly for a browser and Emacs/GNUS for a mailer some local stuff,
+mainly cronjob output, uses "mail/nail/mailx"
+
+So how can Google develop so much information as is revealed by
+typing "AlgarveServers.com" into the TOR search field? EG: the
+following information. or is this a Dumsky question?
+
+According to my thinking, http://zc280035100/algarveservers.com
+should get "Not Found", but no, there's some more details there.
+
+[QUOTE]
+Safe Browsing
+Diagnostic page for zc280035100/algarveservers.com
+
+What is the current listing status for zc280035100/algarveservers.com?
+
+    This site is not currently listed as suspicious.
+
+What happened when Google visited this site?
+
+    Google has not visited this site within the past 90 days.
+
+Has this site acted as an intermediary resulting in further
+distribution of malware?
+
+    Over the past 90 days, zc280035100/algarveservers.com did not
+    appear to function as an intermediary for the infection of any
+    sites.
+    
+Has this site hosted malware?
+
+    No, this site has not hosted malicious software over the past 90 days.
+
+Next steps:
+
+    Return to the previous page.
+    If you are the owner of this web site, you can request a
+    review of your site using Google Webmaster Tools. More
+    information about the review process is available in Google's
+    Webmaster Help Center.
+    
+[/QUOTE]
+
+-- 
+Slackrat
+Fly your Flag
+http://algarveservers.com/images/ptflag.png
+http://algarveservers.com/images/whitedragon.jpg
+<http://algarveservers.com/images/gnu.jpg>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150718/6c42e0f9/attachment.html>
+
+From kenslists at teksavvy.com  Sun Jul 19 00:43:48 2015
+From: kenslists at teksavvy.com (Ken Heard)
+Date: Sat, 18 Jul 2015 20:43:48 -0400
+Subject: [GTALUG] PanAm games online steaming -how?
+Message-ID: <55AAF2C4.5020002@teksavvy.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Can anyone tell me how to watch real time streaming of the PanAm games
+from cbc.ca/panam?    When I click on a streaming link on that page
+all I get is a black rectangle.  I must be missing something.  I have
+Debian Jessie and Iceweasel.
+
+Regards, Ken Heard
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iEYEARECAAYFAlWq8sQACgkQlNlJzOkJmTfodwCfTcKy3Aum90jeteXhbRpBsM6J
+6SkAn3pl6MDgDaogWlBIdCef3e3uXcoQ
+=JqPW
+-----END PGP SIGNATURE-----
+
