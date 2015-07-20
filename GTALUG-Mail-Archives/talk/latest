@@ -2766,3 +2766,482 @@ iEYEARECAAYFAlWq8sQACgkQlNlJzOkJmTfodwCfTcKy3Aum90jeteXhbRpBsM6J
 =JqPW
 -----END PGP SIGNATURE-----
 
+From kenslists at teksavvy.com  Sun Jul 19 15:23:26 2015
+From: kenslists at teksavvy.com (Ken Heard)
+Date: Sun, 19 Jul 2015 11:23:26 -0400
+Subject: [GTALUG] PanAm games online steaming -how?
+In-Reply-To: <55AAF2C4.5020002@teksavvy.com>
+References: <55AAF2C4.5020002@teksavvy.com>
+Message-ID: <55ABC0EE.8040900@teksavvy.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+On 2015-07-18 20:43, Ken Heard wrote:
+
+> Can anyone tell me how to watch real time streaming of the PanAm
+> games from cbc.ca/panam?    When I click on a streaming link on
+> that page all I get is a black rectangle.  I must be missing
+> something.  I have Debian Jessie and Iceweasel.
+
+After receiving a tip off list I installed Google Chrome and so was
+able to see and hear the clips on cbc.ca/panam.  The question of why I
+could not use Iceweasel for that purpose however remains.
+
+Regards, Ken
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iEYEARECAAYFAlWrwO4ACgkQlNlJzOkJmTe3xQCeJ25KIYmYF9cJPvxDVYneulSd
+e24AmwQgU6Uq7XmnyicsN3ICP/WWx8Na
+=hqcK
+-----END PGP SIGNATURE-----
+
+From aruna.hewapathirane at gmail.com  Sun Jul 19 15:46:51 2015
+From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
+Date: Sun, 19 Jul 2015 11:46:51 -0400
+Subject: [GTALUG] PanAm games online steaming -how?
+In-Reply-To: <55ABC0EE.8040900@teksavvy.com>
+References: <55AAF2C4.5020002@teksavvy.com>
+	<55ABC0EE.8040900@teksavvy.com>
+Message-ID: <CAFSeFg8J04E0-A7ud85tqVN7whA2DXFFrcJ0kdV+u5hWO3H02A@mail.gmail.com>
+
+<snip>
+
+>  The question of why I could not use Ice-weasel for that purpose however
+> remains.
+>
+<snip>
+
+Hi Ken,
+
+In the address bar (also location bar or URL bar) when I type:
+*about:addons *or *about:plugins*
+
+I can see the version of flash being used by Iceweasel and in my case it
+is: *Shockwave Flash 11.2 r202. *
+
+And in Chrome when I type:
+*chrome://plugins/*
+
+it shows me Adobe Flash Player* - Version: 16.0.0.305*
+* Shockwave Flash 16.0 r0*
+
+So am guessing Ice-weasel is unable to play the stream due to the flash
+version not being the very latest as in chrome.
+
+Thank's - Aruna
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150719/96d807ab/attachment.html>
+
+From kevin at ve3syb.ca  Sun Jul 19 16:36:42 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Sun, 19 Jul 2015 12:36:42 -0400
+Subject: [GTALUG] PanAm games online steaming -how?
+In-Reply-To: <CAFSeFg8J04E0-A7ud85tqVN7whA2DXFFrcJ0kdV+u5hWO3H02A@mail.gmail.com>
+References: <55AAF2C4.5020002@teksavvy.com>	<55ABC0EE.8040900@teksavvy.com>
+ <CAFSeFg8J04E0-A7ud85tqVN7whA2DXFFrcJ0kdV+u5hWO3H02A@mail.gmail.com>
+Message-ID: <55ABD21A.8070106@ve3syb.ca>
+
+On 15-07-19 11:46 AM, Aruna Hewapathirane wrote:>> <snip>
+ >> Ken wrote:
+ >>
+ >>     Â The question of why I could not use Ice-weasel for that purpose
+ >>     however remains.
+ >>
+ > it shows me Adobe Flash Player*Â -Â Version:Â 16.0.0.305**
+ > Shockwave Flash 16.0 r0*
+ >
+ > So am guessing Ice-weasel is unable to play the stream due to the flash
+ > version not being the very latest as in chrome.
+
+That is one of the problems one runs in to with watching live video off of 
+websites run by TV networks. Their sites are set up to be used by Windows 
+users, almost as if everyone uses Windows (or has access to a machine that 
+runs Windows). They often use, or require the latest version of some Windows 
+created player software. The Linux versions often lag behind and you find 
+you can't see their video.
+
+I had that happen on a site showing Olympics coverage where I needed to use 
+Moonlight(?) which was the Linux equivalent of the Windows specific plug-in 
+needed to play the website video. The latest version of Moonlight wasn't 
+able to play the video as you required the almost very latest version of 
+Silverlight (IIRC).
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From kenslists at teksavvy.com  Sun Jul 19 19:38:01 2015
+From: kenslists at teksavvy.com (Ken Heard)
+Date: Sun, 19 Jul 2015 15:38:01 -0400
+Subject: [GTALUG] PanAm games online steaming -how?
+In-Reply-To: <55ABD21A.8070106@ve3syb.ca>
+References: <55AAF2C4.5020002@teksavvy.com>	<55ABC0EE.8040900@teksavvy.com>
+ <CAFSeFg8J04E0-A7ud85tqVN7whA2DXFFrcJ0kdV+u5hWO3H02A@mail.gmail.com>
+ <55ABD21A.8070106@ve3syb.ca>
+Message-ID: <55ABFC99.1000706@teksavvy.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+On 2015-07-19 12:36, Kevin Cozens wrote:
+
+> On 15-07-19 11:46 AM, Aruna Hewapathirane wrote:>> <snip>
+
+>>> Ken wrote:
+>>> 
+>>> Â The question of why I could not use Ice-weasel for that
+>>> purpose however remains.
+>>> 
+>> it shows me Adobe Flash Player*Â -Â Version:Â 16.0.0.305** 
+>> Shockwave Flash 16.0 r0*
+>> 
+>> So am guessing Ice-weasel is unable to play the stream due to the
+>> flash version not being the very latest as in chrome.
+> 
+> That is one of the problems one runs in to with watching live video
+> off of websites run by TV networks. Their sites are set up to be
+> used by Windows users, almost as if everyone uses Windows (or has
+> access to a machine that runs Windows). They often use, or require
+> the latest version of some Windows created player software. The
+> Linux versions often lag behind and you find you can't see their
+> video.
+
+The same thought also occurred to me.  My Iceweasel has flashplayer
+11.2.202.401; whereas the chrome version I downloaded has 18.0.0.209.
+ Adobe is no longer providing upgrades to flashplayer for linux --
+only security fixes to version 11.2.202.
+
+What we need now is an open source equivalent of the latest
+flashplayer along with something like the default user agent, which
+fools websites into believing the user has MSIE, to fool sites into
+believing that the user has the latest version of Adobe flashplayer.
+In the absence of an open source equivalent to flashplayer the
+usefulness of Iceweasel, and probably Firefox as well, is compromised.
+
+> I had that happen on a site showing Olympics coverage where I
+> needed to use Moonlight(?) which was the Linux equivalent of the
+> Windows specific plug-in needed to play the website video. The
+> latest version of Moonlight wasn't able to play the video as you
+> required the almost very latest version of Silverlight (IIRC).
+
+I had the same problem during the Winter Olympics in Vancouver and
+Whistler.  I never did get Silverlight to work effectively, as much I
+think caused by a slow internet connection as anything else.  At the
+time I was in Thailand.
+
+Regards, Ken
+
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iEYEARECAAYFAlWr/JkACgkQlNlJzOkJmTfMQwCfUYTGE8SBaWD4iUKd3eO00wtD
+CsIAni6B6rsUJgHr4jhV/1VZN4nPbIr8
+=4luh
+-----END PGP SIGNATURE-----
+
+From bjonkman at sobac.com  Sun Jul 19 19:50:46 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Sun, 19 Jul 2015 15:50:46 -0400
+Subject: [GTALUG] PanAm games online steaming -how?
+In-Reply-To: <55ABFC99.1000706@teksavvy.com>
+References: <55AAF2C4.5020002@teksavvy.com>	<55ABC0EE.8040900@teksavvy.com>
+ <CAFSeFg8J04E0-A7ud85tqVN7whA2DXFFrcJ0kdV+u5hWO3H02A@mail.gmail.com>
+ <55ABD21A.8070106@ve3syb.ca> <55ABFC99.1000706@teksavvy.com>
+Message-ID: <55ABFF96.4060705@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Ken Heard wrote:
+> What we need now is an open source equivalent of the latest 
+> flashplayer
+
+No, what we need is to educate the mass media outlets et. al. that
+free software exists that does not require them to spend $$$ on
+licenses for proprietary software that has been limiting their
+advertising reach to yet more eyeballs.
+
+- --Bob, who remains ever optimistic and naive.
+
+
+
+On 19/07/15 03:38 PM, Ken Heard wrote:
+> On 2015-07-19 12:36, Kevin Cozens wrote:
+> 
+>> On 15-07-19 11:46 AM, Aruna Hewapathirane wrote:>> <snip>
+> 
+>>>> Ken wrote:
+>>>> 
+>>>> Â The question of why I could not use Ice-weasel for that 
+>>>> purpose however remains.
+>>>> 
+>>> it shows me Adobe Flash Player*Â -Â Version:Â 16.0.0.305** 
+>>> Shockwave Flash 16.0 r0*
+>>> 
+>>> So am guessing Ice-weasel is unable to play the stream due to 
+>>> the flash version not being the very latest as in chrome.
+> 
+>> That is one of the problems one runs in to with watching live 
+>> video off of websites run by TV networks. Their sites are set up 
+>> to be used by Windows users, almost as if everyone uses Windows 
+>> (or has access to a machine that runs Windows). They often use, 
+>> or require the latest version of some Windows created player 
+>> software. The Linux versions often lag behind and you find you 
+>> can't see their video.
+> 
+> The same thought also occurred to me.  My Iceweasel has flashplayer
+> 11.2.202.401; whereas the chrome version I downloaded has
+> 18.0.0.209. Adobe is no longer providing upgrades to flashplayer
+> for linux -- only security fixes to version 11.2.202.
+> 
+> What we need now is an open source equivalent of the latest 
+> flashplayer along with something like the default user agent, which
+> fools websites into believing the user has MSIE, to fool sites into
+> believing that the user has the latest version of Adobe 
+> flashplayer. In the absence of an open source equivalent to 
+> flashplayer the usefulness of Iceweasel, and probably Firefox as 
+> well, is compromised.
+> 
+>> I had that happen on a site showing Olympics coverage where I 
+>> needed to use Moonlight(?) which was the Linux equivalent of the
+>>  Windows specific plug-in needed to play the website video. The 
+>> latest version of Moonlight wasn't able to play the video as you
+>>  required the almost very latest version of Silverlight (IIRC).
+> 
+> I had the same problem during the Winter Olympics in Vancouver and
+>  Whistler.  I never did get Silverlight to work effectively, as
+> much I think caused by a slow internet connection as anything else.
+> At the time I was in Thailand.
+> 
+> Regards, Ken
+> 
+> 
+> 
+> --- Talk Mailing List talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlWr/5QACgkQuRKJsNLM5ephewCgmeh3gaICmSIwYQaFZPUWGinI
+A68AoJp8S1Jcp2bdbEuDyDmLWKvN5H9F
+=NskE
+-----END PGP SIGNATURE-----
+
+From kenslists at teksavvy.com  Sun Jul 19 21:11:37 2015
+From: kenslists at teksavvy.com (Ken Heard)
+Date: Sun, 19 Jul 2015 17:11:37 -0400
+Subject: [GTALUG] PanAm games online steaming -how?
+In-Reply-To: <55ABFF96.4060705@sobac.com>
+References: <55AAF2C4.5020002@teksavvy.com>	<55ABC0EE.8040900@teksavvy.com>
+ <CAFSeFg8J04E0-A7ud85tqVN7whA2DXFFrcJ0kdV+u5hWO3H02A@mail.gmail.com>
+ <55ABD21A.8070106@ve3syb.ca> <55ABFC99.1000706@teksavvy.com>
+ <55ABFF96.4060705@sobac.com>
+Message-ID: <55AC1289.1080908@teksavvy.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+On 2015-07-19 15:50, Bob Jonkman wrote:
+> Ken Heard wrote:
+>> What we need now is an open source equivalent of the latest 
+>> flashplayer
+> 
+> No, what we need is to educate the mass media outlets et. al. that 
+> free software exists that does not require them to spend $$$ on 
+> licenses for proprietary software that has been limiting their 
+> advertising reach to yet more eyeballs.
+> 
+> --Bob, who remains ever optimistic and naive.
+
+Do you mean that there is an open source equivalent to flashplayer
+which the CBC could have used?
+
+Ken
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iEYEARECAAYFAlWsEokACgkQlNlJzOkJmTdqWgCfevh+2m5IFggKfc6kQsQhWoaO
+chsAn0EuGNheXdKLhJA5lY1YjHDBH1uJ
+=7Cz3
+-----END PGP SIGNATURE-----
+
+From avolkov at gmail.com  Sun Jul 19 22:01:46 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Sun, 19 Jul 2015 18:01:46 -0400
+Subject: [GTALUG] Thinkpad T420 as a VM host
+Message-ID: <55AC1E4A.3050508@gmail.com>
+
+So I replaced a 4GB memory stick in my Thinkpad  T420 with an 8GB one
+bringing the total amount of available ram to 12GB with maximum of
+16GB.Even though Lenovo say that the laptop supports only 8 GB of ram total.
+
+As it stands now this 4 year old machine becomes a pretty cost-effective
+platform for virtualization:
+
+* Intel Core i5-2410M
+* 16GB max memory (~$65 per 8GB stick).
+* 2 SATA ports (built-in and ultrabay)
+* 2 mSata ports (one could be used for solid state storage)
+* 1 eSata port.
+* 1 Gigabit ethernet
+* 1 SD card
+
+Canada computers sells refurbished ones for about $300 and I think there
+are some available in Brampton. Also I saw a few similar refurbished
+machines on Amazon.
+
+Alex.
+
+
+
+From opengeometry at yahoo.ca  Sun Jul 19 22:05:46 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Sun, 19 Jul 2015 18:05:46 -0400
+Subject: [GTALUG] Thinkpad T420 as a VM host
+In-Reply-To: <55AC1E4A.3050508@gmail.com>
+References: <55AC1E4A.3050508@gmail.com>
+Message-ID: <20150719220546.GA28858@node1.localdomain>
+
+So, are you going to post your experience of VMs on it?
+Or, are you selling it? ;-)
+-- 
+WilliM
+
+On Sun, Jul 19, 2015 at 06:01:46PM -0400, Alex Volkov wrote:
+> So I replaced a 4GB memory stick in my Thinkpad  T420 with an 8GB one
+> bringing the total amount of available ram to 12GB with maximum of
+> 16GB.Even though Lenovo say that the laptop supports only 8 GB of ram total.
+> 
+> As it stands now this 4 year old machine becomes a pretty cost-effective
+> platform for virtualization:
+> 
+> * Intel Core i5-2410M
+> * 16GB max memory (~$65 per 8GB stick).
+> * 2 SATA ports (built-in and ultrabay)
+> * 2 mSata ports (one could be used for solid state storage)
+> * 1 eSata port.
+> * 1 Gigabit ethernet
+> * 1 SD card
+> 
+> Canada computers sells refurbished ones for about $300 and I think there
+> are some available in Brampton. Also I saw a few similar refurbished
+> machines on Amazon.
+> 
+> Alex.
+> 
+> 
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From avolkov at gmail.com  Sun Jul 19 22:10:24 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Sun, 19 Jul 2015 18:10:24 -0400
+Subject: [GTALUG] Thinkpad T420 as a VM host
+In-Reply-To: <20150719220546.GA28858@node1.localdomain>
+References: <55AC1E4A.3050508@gmail.com>
+ <20150719220546.GA28858@node1.localdomain>
+Message-ID: <55AC2050.2020300@gmail.com>
+
+I just added some RAM for relatively cheap and it got me thinking that
+this little laptop satisfies pretty much all the requirements for a VM
+machine even though it's a laptop and is old.
+
+On 19/07/15 06:05 PM, William Park wrote:
+> So, are you going to post your experience of VMs on it?
+> Or, are you selling it? ;-)
+
+
+From clifford_ilkay at dinamis.com  Sun Jul 19 22:30:10 2015
+From: clifford_ilkay at dinamis.com (Clifford Ilkay)
+Date: Sun, 19 Jul 2015 18:30:10 -0400
+Subject: [GTALUG] PanAm games online steaming -how?
+In-Reply-To: <55AC1289.1080908@teksavvy.com>
+References: <55AAF2C4.5020002@teksavvy.com>	<55ABC0EE.8040900@teksavvy.com>
+ <CAFSeFg8J04E0-A7ud85tqVN7whA2DXFFrcJ0kdV+u5hWO3H02A@mail.gmail.com>
+ <55ABD21A.8070106@ve3syb.ca> <55ABFC99.1000706@teksavvy.com>
+ <55ABFF96.4060705@sobac.com> <55AC1289.1080908@teksavvy.com>
+Message-ID: <55AC24F2.6030109@dinamis.com>
+
+On 19/07/15 05:11 PM, Ken Heard wrote:
+> -----BEGIN PGP SIGNED MESSAGE-----
+> Hash: SHA1
+>
+> On 2015-07-19 15:50, Bob Jonkman wrote:
+>> Ken Heard wrote:
+>>> What we need now is an open source equivalent of the latest
+>>> flashplayer
+>> No, what we need is to educate the mass media outlets et. al. that
+>> free software exists that does not require them to spend $$$ on
+>> licenses for proprietary software that has been limiting their
+>> advertising reach to yet more eyeballs.
+>>
+>> --Bob, who remains ever optimistic and naive.
+> Do you mean that there is an open source equivalent to flashplayer
+> which the CBC could have used?
+
+They could use HTML5 video <https://en.wikipedia.org/wiki/HTML5_video>. 
+I did a fresh install of Fedora 21 recently and didn't bother to install 
+the Flash player so I have no Flash support in Firefox. I can watch 
+YouTube videos perfectly well. Vimeo is also fine. Facebook video isn't 
+and many web sites still cling to Flash. For those, the embedded Flash 
+player in Chrome works fine.
+
+-- 
+Regards,
+
+Clifford Ilkay
+
++1 647-778-8696
+
+
+From email+libre at blaise.ca  Mon Jul 20 02:58:44 2015
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Sun, 19 Jul 2015 22:58:44 -0400
+Subject: [GTALUG] PanAm games online steaming -how?
+In-Reply-To: <55AC1289.1080908@teksavvy.com>
+References: <55AAF2C4.5020002@teksavvy.com>	<55ABC0EE.8040900@teksavvy.com>
+ <CAFSeFg8J04E0-A7ud85tqVN7whA2DXFFrcJ0kdV+u5hWO3H02A@mail.gmail.com>
+ <55ABD21A.8070106@ve3syb.ca> <55ABFC99.1000706@teksavvy.com>
+ <55ABFF96.4060705@sobac.com> <55AC1289.1080908@teksavvy.com>
+Message-ID: <55AC63E4.1090303@blaise.ca>
+
+On 19/07/15 05:11 PM, Ken Heard wrote:
+> On 2015-07-19 15:50, Bob Jonkman wrote:
+>> Ken Heard wrote:
+>>> What we need now is an open source equivalent of the latest 
+>>> flashplayer
+> 
+>> No, what we need is to educate the mass media outlets et. al. that 
+>> free software exists that does not require them to spend $$$ on 
+>> licenses for proprietary software that has been limiting their 
+>> advertising reach to yet more eyeballs.
+> 
+>> --Bob, who remains ever optimistic and naive.
+> 
+> Do you mean that there is an open source equivalent to flashplayer
+> which the CBC could have used?
+> 
+
+1) HTML5 video
+
+2) The streams don't work with Gnash either (a free software Flash player/plugin)
+
+=\
+
