@@ -3245,3 +3245,476 @@ On 19/07/15 05:11 PM, Ken Heard wrote:
 
 =\
 
+From mike.kallies at gmail.com  Mon Jul 20 12:43:42 2015
+From: mike.kallies at gmail.com (Mike Kallies)
+Date: Mon, 20 Jul 2015 08:43:42 -0400
+Subject: [GTALUG] block count exceeds size of device
+Message-ID: <55ACECFE.3030308@gmail.com>
+
+Hey Everyone,
+
+This might be worth a good laugh.
+
+tl;dr version: filesystem is about 100 blocks too big for the device,
+not sure why.
+
+  - mount says fs is too big for device
+  - fsck says fs is too big for device
+  - resize2fs says to fsck
+  - fsck says it's ok
+  - resize2fs says to fsck
+
+I can see the contents under testdisk.  It's nothing which isn't backed
+up elsewhere.
+
+It's a 1.5TB filesystem, so it can be slow to work with.  The plan was
+to check what I put on it and repurpose the disk.  At this point I'm
+thinking I'll use testdisk to poke around then repartition and reformat.
+
+Any thoughts about this?
+
+Mike
+
+==
+
+
+[4312277.804064] EXT4-fs (sdd3): mounting ext3 file system using the
+ext4 subsystem
+[4312277.804263] EXT4-fs (sdd3): bad geometry: block count 375655936
+exceeds size of device (375655832 blocks)
+[root at local ~]# resize2fs /dev/sdd3
+resize2fs 1.42.9 (28-Dec-2013)
+Please run 'e2fsck -f /dev/sdd3' first.
+
+[root at local ~]# e2fsck -f /dev/sdd3
+e2fsck 1.42.9 (28-Dec-2013)
+The filesystem size (according to the superblock) is 375655936 blocks
+The physical size of the device is 375655832 blocks
+Either the superblock or the partition table is likely to be corrupt!
+Abort<y>? no
+Pass 1: Checking inodes, blocks, and sizes
+Pass 2: Checking directory structure
+Pass 3: Checking directory connectivity
+Pass 4: Checking reference counts
+Pass 5: Checking group summary information
+/dev/sdd3: 99751/93921280 files (3.9% non-contiguous),
+348286205/375655936 blocks
+[root at local ~]# resize2fs /dev/sdd3
+resize2fs 1.42.9 (28-Dec-2013)
+Resizing the filesystem on /dev/sdd3 to 375655832 (4k) blocks.
+resize2fs: Attempt to read block from filesystem resulted in short read
+while trying to resize /dev/sdd3
+Please run 'e2fsck -fy /dev/sdd3' to fix the filesystem
+after the aborted resize operation.
+[root at local ~]#
+
+From opengeometry at yahoo.ca  Mon Jul 20 13:11:00 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Mon, 20 Jul 2015 09:11:00 -0400
+Subject: [GTALUG] block count exceeds size of device
+In-Reply-To: <55ACECFE.3030308@gmail.com>
+References: <55ACECFE.3030308@gmail.com>
+Message-ID: <20150720131100.GA4053@node1.localdomain>
+
+I would "dd" to a file and use loopback to see what's on it.
+-- 
+William
+
+On Mon, Jul 20, 2015 at 08:43:42AM -0400, Mike Kallies wrote:
+> Hey Everyone,
+> 
+> This might be worth a good laugh.
+> 
+> tl;dr version: filesystem is about 100 blocks too big for the device,
+> not sure why.
+> 
+>   - mount says fs is too big for device
+>   - fsck says fs is too big for device
+>   - resize2fs says to fsck
+>   - fsck says it's ok
+>   - resize2fs says to fsck
+> 
+> I can see the contents under testdisk.  It's nothing which isn't backed
+> up elsewhere.
+> 
+> It's a 1.5TB filesystem, so it can be slow to work with.  The plan was
+> to check what I put on it and repurpose the disk.  At this point I'm
+> thinking I'll use testdisk to poke around then repartition and reformat.
+> 
+> Any thoughts about this?
+> 
+> Mike
+> 
+> ==
+> 
+> 
+> [4312277.804064] EXT4-fs (sdd3): mounting ext3 file system using the
+> ext4 subsystem
+> [4312277.804263] EXT4-fs (sdd3): bad geometry: block count 375655936
+> exceeds size of device (375655832 blocks)
+> [root at local ~]# resize2fs /dev/sdd3
+> resize2fs 1.42.9 (28-Dec-2013)
+> Please run 'e2fsck -f /dev/sdd3' first.
+> 
+> [root at local ~]# e2fsck -f /dev/sdd3
+> e2fsck 1.42.9 (28-Dec-2013)
+> The filesystem size (according to the superblock) is 375655936 blocks
+> The physical size of the device is 375655832 blocks
+> Either the superblock or the partition table is likely to be corrupt!
+> Abort<y>? no
+> Pass 1: Checking inodes, blocks, and sizes
+> Pass 2: Checking directory structure
+> Pass 3: Checking directory connectivity
+> Pass 4: Checking reference counts
+> Pass 5: Checking group summary information
+> /dev/sdd3: 99751/93921280 files (3.9% non-contiguous),
+> 348286205/375655936 blocks
+> [root at local ~]# resize2fs /dev/sdd3
+> resize2fs 1.42.9 (28-Dec-2013)
+> Resizing the filesystem on /dev/sdd3 to 375655832 (4k) blocks.
+> resize2fs: Attempt to read block from filesystem resulted in short read
+> while trying to resize /dev/sdd3
+> Please run 'e2fsck -fy /dev/sdd3' to fix the filesystem
+> after the aborted resize operation.
+> [root at local ~]#
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From me at mylesbraithwaite.com  Mon Jul 20 14:28:21 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 20 Jul 2015 10:28:21 -0400
+Subject: [GTALUG] [GTALUG-Announce] GTALUG Meeting on 11th August,
+	2015 at 7:30pm
+Message-ID: <CA+hskZPa1WB2mEVzQn3Mam00S2CLZ2kFDc7uMNZUjKS=ZOatPg@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-08/>
+
+# Samba Progress Over the Last 5 Six Years with William Murrithy
+
+The talk is a continuation of William's previous talk on Samba in
+2009. It looks at how close samba has closed the gap between AD and
+samba with samba 4, what's still left, packaging/deployment
+improvements and a demo of the samba deployment and and management.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before each meeting a group of GTALUGers dine at Love At
+First Bite (96 Gerrard Street E).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+# Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact the GTALUG Board @ <board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From lsorense at csclub.uwaterloo.ca  Mon Jul 20 16:05:24 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 20 Jul 2015 12:05:24 -0400
+Subject: [GTALUG] Thinkpad T420 as a VM host
+In-Reply-To: <55AC1E4A.3050508@gmail.com>
+References: <55AC1E4A.3050508@gmail.com>
+Message-ID: <20150720160524.GH17437@csclub.uwaterloo.ca>
+
+On Sun, Jul 19, 2015 at 06:01:46PM -0400, Alex Volkov wrote:
+> So I replaced a 4GB memory stick in my Thinkpad  T420 with an 8GB one
+> bringing the total amount of available ram to 12GB with maximum of
+> 16GB.Even though Lenovo say that the laptop supports only 8 GB of ram total.
+
+You might have just made your machine slower by doing that.  Maybe.
+Most modern CPUs are at least dual channel memory controller based,
+but can only use the dual channel mode to interleave accesses if the
+memory matches in size.  So 2x4GB is fast, and 2x8GB is fast, but 4+8GB
+would be slow.  Maybe that is not the case on this machine, and it might
+even be smart enough to decide to run in inteleaved mode for the first
+4GB on each stick and then get slow for the last 4GB on the 8GB stick,
+but I have no idea if it is that smart or not.
+
+And yes it is not unusual for a machine to support more memory than
+documented simply because it was never tested to see if it would work,
+and hence the documentation simply says it doesn't.
+
+> As it stands now this 4 year old machine becomes a pretty cost-effective
+> platform for virtualization:
+> 
+> * Intel Core i5-2410M
+> * 16GB max memory (~$65 per 8GB stick).
+> * 2 SATA ports (built-in and ultrabay)
+> * 2 mSata ports (one could be used for solid state storage)
+> * 1 eSata port.
+> * 1 Gigabit ethernet
+> * 1 SD card
+
+I suspect it has at least an expresscard slot too somewhere.  Probably a
+34mm (You rarely see the wider 54mm ones anymore).
+
+> Canada computers sells refurbished ones for about $300 and I think there
+> are some available in Brampton. Also I saw a few similar refurbished
+> machines on Amazon.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Mon Jul 20 16:11:29 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 20 Jul 2015 12:11:29 -0400
+Subject: [GTALUG] Thinkpad T420 as a VM host
+In-Reply-To: <55AC1E4A.3050508@gmail.com>
+References: <55AC1E4A.3050508@gmail.com>
+Message-ID: <20150720161129.GI17437@csclub.uwaterloo.ca>
+
+On Sun, Jul 19, 2015 at 06:01:46PM -0400, Alex Volkov wrote:
+> So I replaced a 4GB memory stick in my Thinkpad  T420 with an 8GB one
+> bringing the total amount of available ram to 12GB with maximum of
+> 16GB.Even though Lenovo say that the laptop supports only 8 GB of ram total.
+> 
+> As it stands now this 4 year old machine becomes a pretty cost-effective
+> platform for virtualization:
+> 
+> * Intel Core i5-2410M
+
+I just checked, and apparently that model does to all the vt-x stuff,
+so yes good for VM handling, and even better, apparently with a bios
+update it can do aes-ni which can be very handy too.  Linux microcode
+handling might also handle the job if no bios upgrade exists.
+
+-- 
+Len Sorensen
+
+From andrej at marjan.ca  Mon Jul 20 17:14:02 2015
+From: andrej at marjan.ca (Andrej Marjan)
+Date: Mon, 20 Jul 2015 13:14:02 -0400
+Subject: [GTALUG] PanAm games online steaming -how?
+In-Reply-To: <55ABD21A.8070106@ve3syb.ca>
+References: <55AAF2C4.5020002@teksavvy.com> <55ABC0EE.8040900@teksavvy.com>
+ <CAFSeFg8J04E0-A7ud85tqVN7whA2DXFFrcJ0kdV+u5hWO3H02A@mail.gmail.com>
+ <55ABD21A.8070106@ve3syb.ca>
+Message-ID: <CAAE8m0Gsr_=d-NxJ2=kwPrRNu=yU_0DxAr=KeTjdCFTkq47+yA@mail.gmail.com>
+
+On Sun, Jul 19, 2015 at 12:36 PM, Kevin Cozens <kevin at ve3syb.ca> wrote:
+
+> On 15-07-19 11:46 AM, Aruna Hewapathirane wrote:>> <snip>
+> >> Ken wrote:
+> >>
+> >>     Â The question of why I could not use Ice-weasel for that purpose
+> >>     however remains.
+> >>
+> > it shows me Adobe Flash Player*Â -Â Version:Â 16.0.0.305**
+> > Shockwave Flash 16.0 r0*
+> >
+> > So am guessing Ice-weasel is unable to play the stream due to the flash
+> > version not being the very latest as in chrome.
+>
+> That is one of the problems one runs in to with watching live video off of
+> websites run by TV networks. Their sites are set up to be used by Windows
+> users, almost as if everyone uses Windows (or has access to a machine that
+> runs Windows). They often use, or require the latest version of some
+> Windows created player software. The Linux versions often lag behind and
+> you find you can't see their video.
+>
+
+It's about two bits of functionality that are available in anything
+approaching current versions of Flash, that aren't available in the
+ancient, orphaned version for Linux.
+
+1. DRM - right-click on a player showing a stream from one of these major
+sporting events (panam, olympics) and you'll see that the Flash player has
+loaded a plethora of DRM plugins.
+
+2. Adaptive streaming - it'll automatically pick the highest quality stream
+your connection supports and automatically renegotiate with the server (no
+manual choosing of image quality like on Youtube). I wouldn't be surprised
+if support for newer and more efficient codecs were also available, but
+I've never bothered checking.
+
+Adobe abandoned Linux as a platform many years ago. Google still ports
+current versions of Flash to Linux, with all the bells and whistles, but
+that requires the use of the proprietary Google Chrome browser.
+
+
+> I had that happen on a site showing Olympics coverage where I needed to
+> use Moonlight(?) which was the Linux equivalent of the Windows specific
+> plug-in needed to play the website video. The latest version of Moonlight
+> wasn't able to play the video as you required the almost very latest
+> version of Silverlight (IIRC).
+>
+
+Yes that was lousy - I think that was Vancouver. The last Olympics used
+Flash, which worked just fine on Linux thanks to Google but still required
+proprietary software.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150720/6372122e/attachment.html>
+
+From opengeometry at yahoo.ca  Mon Jul 20 17:30:12 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Mon, 20 Jul 2015 13:30:12 -0400
+Subject: [GTALUG] Thinkpad T420 as a VM host
+In-Reply-To: <20150720161129.GI17437@csclub.uwaterloo.ca>
+References: <55AC1E4A.3050508@gmail.com>
+ <20150720161129.GI17437@csclub.uwaterloo.ca>
+Message-ID: <20150720173012.GA8453@node1.localdomain>
+
+On Mon, Jul 20, 2015 at 12:11:29PM -0400, Lennart Sorensen wrote:
+> On Sun, Jul 19, 2015 at 06:01:46PM -0400, Alex Volkov wrote:
+> > So I replaced a 4GB memory stick in my Thinkpad  T420 with an 8GB one
+> > bringing the total amount of available ram to 12GB with maximum of
+> > 16GB.Even though Lenovo say that the laptop supports only 8 GB of ram total.
+> > 
+> > As it stands now this 4 year old machine becomes a pretty cost-effective
+> > platform for virtualization:
+> > 
+> > * Intel Core i5-2410M
+> 
+> I just checked, and apparently that model does to all the vt-x stuff,
+> so yes good for VM handling, and even better, apparently with a bios
+> update it can do aes-ni which can be very handy too.  Linux microcode
+> handling might also handle the job if no bios upgrade exists.
+
+It's difficult to judge by specs or benchmarks alone.  I have 8-core
+(AMD FX-8320) and 16GB (DDR3-1333), and it's fast when doing nothing,
+but it just chokes on load.  Curiously, there is no lag with mouse under
+any condition.  And, parallel kernel compile (make -j8) is in the
+ballpark.  So, I don't know what's going on.  All I can say is, I'm
+going with Intel on next machine.
+-- 
+William
+
+From mlxxxp at gmail.com  Mon Jul 20 17:48:45 2015
+From: mlxxxp at gmail.com (Scott Allen)
+Date: Mon, 20 Jul 2015 13:48:45 -0400
+Subject: [GTALUG] Thinkpad T420 as a VM host
+In-Reply-To: <20150720160524.GH17437@csclub.uwaterloo.ca>
+References: <55AC1E4A.3050508@gmail.com>
+ <20150720160524.GH17437@csclub.uwaterloo.ca>
+Message-ID: <CAArSzsWc=HswarCCQ49hQ0W2fy4P3XM9JGLYrifc3jbDL9QEzw@mail.gmail.com>
+
+On 20 July 2015 at 12:05, Lennart Sorensen <lsorense at csclub.uwaterloo.ca> wrote:
+> You might have just made your machine slower by doing that.  Maybe.
+> Most modern CPUs are at least dual channel memory controller based,
+> but can only use the dual channel mode to interleave accesses if the
+> memory matches in size.  So 2x4GB is fast, and 2x8GB is fast, but 4+8GB
+> would be slow.
+
+Probably not much slower, though. Perhaps just a few percent. This
+test is rather old but the situation is somewhat similar:
+<http://www.tomshardware.com/reviews/Intel-Core-i7-Nehalem,2057-13.html>
+
+-- 
+Scott
+
+From knewitb4 at yahoo.com  Mon Jul 20 19:39:05 2015
+From: knewitb4 at yahoo.com (knewitb4)
+Date: Mon, 20 Jul 2015 15:39:05 -0400
+Subject: [GTALUG] PanAm games online steaming -how?
+Message-ID: <bcv492jms0bl9e4xae8kj89q.1437421145910@email.android.com>
+
+I'm wondering that most html5 capable browsers can play video directly now. But flash is for backward compatibility? 
+
+
+Sent from my Samsung Galaxy smartphone.
+
+
+-------- Original message --------
+From: Ken Heard <kenslists at teksavvy.com> 
+Date:19-07-2015  17:11  (GMT-05:00) 
+To: GTALUG Talk <talk at gtalug.org> 
+Cc:  
+Subject: Re: [GTALUG] PanAm games online steaming -how? 
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+On 2015-07-19 15:50, Bob Jonkman wrote:
+> Ken Heard wrote:
+>> What we need now is an open source equivalent of the latest 
+>> flashplayer
+> 
+> No, what we need is to educate the mass media outlets et. al. that 
+> free software exists that does not require them to spend $$$ on 
+> licenses for proprietary software that has been limiting their 
+> advertising reach to yet more eyeballs.
+> 
+> --Bob, who remains ever optimistic and naive.
+
+Do you mean that there is an open source equivalent to flashplayer
+which the CBC could have used?
+
+Ken
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iEYEARECAAYFAlWsEokACgkQlNlJzOkJmTdqWgCfevh+2m5IFggKfc6kQsQhWoaO
+chsAn0EuGNheXdKLhJA5lY1YjHDBH1uJ
+=7Cz3
+-----END PGP SIGNATURE-----
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150720/c43db656/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Mon Jul 20 21:45:33 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 20 Jul 2015 17:45:33 -0400
+Subject: [GTALUG] Thinkpad T420 as a VM host
+In-Reply-To: <CAArSzsWc=HswarCCQ49hQ0W2fy4P3XM9JGLYrifc3jbDL9QEzw@mail.gmail.com>
+References: <55AC1E4A.3050508@gmail.com>
+ <20150720160524.GH17437@csclub.uwaterloo.ca>
+ <CAArSzsWc=HswarCCQ49hQ0W2fy4P3XM9JGLYrifc3jbDL9QEzw@mail.gmail.com>
+Message-ID: <20150720214533.GJ17437@csclub.uwaterloo.ca>
+
+On Mon, Jul 20, 2015 at 01:48:45PM -0400, Scott Allen wrote:
+> Probably not much slower, though. Perhaps just a few percent. This
+> test is rather old but the situation is somewhat similar:
+> <http://www.tomshardware.com/reviews/Intel-Core-i7-Nehalem,2057-13.html>
+
+I remember going from 1 to 2 sticks of ram on a Core 2 Duo machine in
+the past made the intel graphics (using shared ram) a lot faster.
+So at least on some CPUs it has made a big difference.
+
+-- 
+Len Sorensen
+
