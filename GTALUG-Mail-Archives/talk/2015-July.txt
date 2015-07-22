@@ -3718,3 +3718,423 @@ So at least on some CPUs it has made a big difference.
 -- 
 Len Sorensen
 
+From hugh at mimosa.com  Tue Jul 21 13:54:51 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 21 Jul 2015 09:54:51 -0400 (EDT)
+Subject: [GTALUG] Thinkpad T420 as a VM host
+In-Reply-To: <20150720214533.GJ17437@csclub.uwaterloo.ca>
+References: <55AC1E4A.3050508@gmail.com>
+ <20150720160524.GH17437@csclub.uwaterloo.ca>
+ <CAArSzsWc=HswarCCQ49hQ0W2fy4P3XM9JGLYrifc3jbDL9QEzw@mail.gmail.com>
+ <20150720214533.GJ17437@csclub.uwaterloo.ca>
+Message-ID: <alpine.LRH.2.02.1507210936101.10599@redclaw.mimosa.com>
+
+| From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+
+| On Mon, Jul 20, 2015 at 01:48:45PM -0400, Scott Allen wrote:
+| > Probably not much slower, though. Perhaps just a few percent. This
+| > test is rather old but the situation is somewhat similar:
+| > <http://www.tomshardware.com/reviews/Intel-Core-i7-Nehalem,2057-13.html>
+
+It's an interesting test.  But a bit superficial.
+
+DDR memory modules are 64-bits wide (if I remember correctly).
+
+So typically, the bottom 3 bits of an address select which byte in a
+module is being used (this need not be the case).
+
+The easy way to interleave memory access between a-power-of-two
+channels is to use the next low-order address bits as module select.
+That spreads the load between modules and exploits their parallel
+operation quite well (because nearby references are common).
+
+When you have three channels (as in the baseline for this test), I
+don't know where you put the third channel in the address space.
+That's me being lazy: it is surely written up somewhere.  But I'd
+guess that it isn't as useful as the power-of-two case, and the
+figures seem to support that.
+
+It would have been nice to see some synthetic benchmarks in that test.
+
+| I remember going from 1 to 2 sticks of ram on a Core 2 Duo machine in
+| the past made the intel graphics (using shared ram) a lot faster.
+| So at least on some CPUs it has made a big difference.
+
+Perhaps the much-improved memory system of the i series makes a
+difference?  See section 5 of that article.
+
+Maybe caches are so big that real memory access is infrequent for many
+programs.
+
+Perhaps page-mode access to RAM captures a lot of the possible
+advantage of interleaving?
+
+In any case, my intuition would have predicted a bigger difference.
+
+As always, careful, informed, exploratory measurement trumps
+intuition when it comes to performance.
+
+From me at mylesbraithwaite.com  Tue Jul 21 13:55:32 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 21 Jul 2015 09:55:32 -0400
+Subject: [GTALUG] [GTALUG-Announce] Linux in the Park this Saturday at 2pm
+Message-ID: <CA+hskZNqRoOAqCf1Ajd=0AntjUV+nwrOckG7JkB=xPNLvS-cPQ@mail.gmail.com>
+
+<http://gtalug.org/picnics/2015/>
+
+GTALUG is having the annual Linux in the Park Potluck this year at
+Dufferin Grove Park on 25th July at 2pm.
+
+Things we will provide: Plates, Cutlery, Serviettes, Cups, and Garbage bags.
+
+Things you might want to bring: chairs, tasty beverages (that are
+non-alcoholic, as the city prohibits alcoholic beverages in the park),
+food stuffs that you would like to share and enjoy, tarp/blanket,
+sunscreen, hats, things to help survive the warmth of the Canadian
+Wilderness.
+
+We will doing this in a pot-luck style. Thus, please bring enough food
+and drink for yourself and your guests, and try to bring enough to
+share with others in the group.
+
+Note that if you forget anything you needed, Dufferin Mall is across
+the street, featuring a supermarket (No-Frills) department store
+(WalMart), as well as other specialty stores.
+
+## Location
+
+Dufferin Grove Park
+875 Dufferin Street
+Toronto, Ontario
+
+<https://goo.gl/maps/hnGg5>
+
+<http://osm.org/go/ZX6BHsVZx-?layers=N&way=15703371>
+
+## Social Media Links
+
+Facebook: <https://www.facebook.com/events/694777713981257/>
+
+Google+: <https://plus.google.com/events/ch21nnnjdcq6prpp575vc0no7cc>
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members @
+<board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From knewitb4 at yahoo.com  Tue Jul 21 14:06:48 2015
+From: knewitb4 at yahoo.com (knewitb4)
+Date: Tue, 21 Jul 2015 10:06:48 -0400
+Subject: [GTALUG] [GTALUG-Announce] Linux in the Park this Saturday at
+ 2pm
+Message-ID: <orj9fxflebr7gncwhq998o7k.1437487608831@email.android.com>
+
+I'm down for Linux anytime! :-)
+
+
+Sent from my Samsung Galaxy smartphone.
+
+
+-------- Original message --------
+From: Myles Braithwaite <me at mylesbraithwaite.com> 
+Date:21-07-2015  09:55  (GMT-05:00) 
+To: announce at gtalug.org 
+Cc:  
+Subject: [GTALUG] [GTALUG-Announce] Linux in the Park this Saturday at 2pm 
+
+<http://gtalug.org/picnics/2015/>
+
+GTALUG is having the annual Linux in the Park Potluck this year at
+Dufferin Grove Park on 25th July at 2pm.
+
+Things we will provide: Plates, Cutlery, Serviettes, Cups, and Garbage bags.
+
+Things you might want to bring: chairs, tasty beverages (that are
+non-alcoholic, as the city prohibits alcoholic beverages in the park),
+food stuffs that you would like to share and enjoy, tarp/blanket,
+sunscreen, hats, things to help survive the warmth of the Canadian
+Wilderness.
+
+We will doing this in a pot-luck style. Thus, please bring enough food
+and drink for yourself and your guests, and try to bring enough to
+share with others in the group.
+
+Note that if you forget anything you needed, Dufferin Mall is across
+the street, featuring a supermarket (No-Frills) department store
+(WalMart), as well as other specialty stores.
+
+## Location
+
+Dufferin Grove Park
+875 Dufferin Street
+Toronto, Ontario
+
+<https://goo.gl/maps/hnGg5>
+
+<http://osm.org/go/ZX6BHsVZx-?layers=N&way=15703371>
+
+## Social Media Links
+
+Facebook: <https://www.facebook.com/events/694777713981257/>
+
+Google+: <https://plus.google.com/events/ch21nnnjdcq6prpp575vc0no7cc>
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members @
+<board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150721/3a0b661f/attachment.html>
+
+From knewitb4 at yahoo.com  Tue Jul 21 14:08:57 2015
+From: knewitb4 at yahoo.com (knewitb4)
+Date: Tue, 21 Jul 2015 10:08:57 -0400
+Subject: [GTALUG] [GTALUG-Announce] Linux in the Park this Saturday at
+ 2pm
+Message-ID: <uff93eismjbvqsttgxusdlog.1437487737117@email.android.com>
+
+By the way the Facebook and Google plus links at the bottom ain't working. You gotta remove the trailing /> on both.
+
+
+Sent from my Samsung Galaxy smartphone.
+
+
+-------- Original message --------
+From: Myles Braithwaite <me at mylesbraithwaite.com> 
+Date:21-07-2015  09:55  (GMT-05:00) 
+To: announce at gtalug.org 
+Cc:  
+Subject: [GTALUG] [GTALUG-Announce] Linux in the Park this Saturday at 2pm 
+
+<http://gtalug.org/picnics/2015/>
+
+GTALUG is having the annual Linux in the Park Potluck this year at
+Dufferin Grove Park on 25th July at 2pm.
+
+Things we will provide: Plates, Cutlery, Serviettes, Cups, and Garbage bags.
+
+Things you might want to bring: chairs, tasty beverages (that are
+non-alcoholic, as the city prohibits alcoholic beverages in the park),
+food stuffs that you would like to share and enjoy, tarp/blanket,
+sunscreen, hats, things to help survive the warmth of the Canadian
+Wilderness.
+
+We will doing this in a pot-luck style. Thus, please bring enough food
+and drink for yourself and your guests, and try to bring enough to
+share with others in the group.
+
+Note that if you forget anything you needed, Dufferin Mall is across
+the street, featuring a supermarket (No-Frills) department store
+(WalMart), as well as other specialty stores.
+
+## Location
+
+Dufferin Grove Park
+875 Dufferin Street
+Toronto, Ontario
+
+<https://goo.gl/maps/hnGg5>
+
+<http://osm.org/go/ZX6BHsVZx-?layers=N&way=15703371>
+
+## Social Media Links
+
+Facebook: <https://www.facebook.com/events/694777713981257/>
+
+Google+: <https://plus.google.com/events/ch21nnnjdcq6prpp575vc0no7cc>
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members @
+<board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150721/a255d1a0/attachment.html>
+
+From slackrat at free.fr  Tue Jul 21 16:41:30 2015
+From: slackrat at free.fr (Slack Rat)
+Date: Tue, 21 Jul 2015 17:41:30 +0100
+Subject: [GTALUG] PanAm games online steaming -how?
+In-Reply-To: <CAAE8m0Gsr_=d-NxJ2=kwPrRNu=yU_0DxAr=KeTjdCFTkq47+yA@mail.gmail.com>
+ (Andrej Marjan's message of "Mon, 20 Jul 2015 13:14:02 -0400")
+References: <55AAF2C4.5020002@teksavvy.com> <55ABC0EE.8040900@teksavvy.com>
+ <CAFSeFg8J04E0-A7ud85tqVN7whA2DXFFrcJ0kdV+u5hWO3H02A@mail.gmail.com>
+ <55ABD21A.8070106@ve3syb.ca>
+ <CAAE8m0Gsr_=d-NxJ2=kwPrRNu=yU_0DxAr=KeTjdCFTkq47+yA@mail.gmail.com>
+Message-ID: <87twsxcvk5.fsf@darkstar-0.algarveservers.com>
+
+Andrej Marjan a écrit profondement:
+
+| On Sun, Jul 19, 2015 at 12:36 PM, Kevin Cozens <kevin at ve3syb.ca> wrote:
+>
+| > On 15-07-19 11:46 AM, Aruna Hewapathirane wrote:>> <snip>
+| > >> Ken wrote:
+| > >>
+| > >>     Â The question of why I could not use Ice-weasel for that purpose
+| > >>     however remains.
+| > >>
+
+I don't know about Ice Weasel, but, and I always said this was a
+last ditch resort, you might try Algarveservers site.
+
+Allsports-->Other is probably your best bet.
+
+There are a lot of popups to navigate, none of them  mine, but with
+some experimentation, the game, race, whatever can be watched
+even if not in the language of your choice
+
+There's 4 hours of Pan-Am starting 20:00hrs Lisbon/London/Dublin time
+tonight if you want to test.
+
+The site is heavily slanted to Bicycle racing, but everything else
+is available too via one or more of the urls listed below.
+
+Make sure you have the latest flash, although many sites are not
+using it.
+
+-- 
+Slackrat
+<http://algarveservers.com/sportsite/>
+<http://inconnu.freeshell.org/sportsite>
+<http://bellacanela.com>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150721/4ea9406b/attachment.html>
+
+From slackrat at free.fr  Tue Jul 21 16:41:30 2015
+From: slackrat at free.fr (Slack Rat)
+Date: Tue, 21 Jul 2015 17:41:30 +0100
+Subject: [GTALUG] PanAm games online steaming -how?
+In-Reply-To: <CAAE8m0Gsr_=d-NxJ2=kwPrRNu=yU_0DxAr=KeTjdCFTkq47+yA@mail.gmail.com>
+ (Andrej Marjan's message of "Mon, 20 Jul 2015 13:14:02 -0400")
+References: <55AAF2C4.5020002@teksavvy.com> <55ABC0EE.8040900@teksavvy.com>
+ <CAFSeFg8J04E0-A7ud85tqVN7whA2DXFFrcJ0kdV+u5hWO3H02A@mail.gmail.com>
+ <55ABD21A.8070106@ve3syb.ca>
+ <CAAE8m0Gsr_=d-NxJ2=kwPrRNu=yU_0DxAr=KeTjdCFTkq47+yA@mail.gmail.com>
+Message-ID: <87twsxcvk5.fsf@darkstar-0.algarveservers.com>
+
+Andrej Marjan a écrit profondement:
+
+| On Sun, Jul 19, 2015 at 12:36 PM, Kevin Cozens <kevin at ve3syb.ca> wrote:
+>
+| > On 15-07-19 11:46 AM, Aruna Hewapathirane wrote:>> <snip>
+| > >> Ken wrote:
+| > >>
+| > >>     Â The question of why I could not use Ice-weasel for that purpose
+| > >>     however remains.
+| > >>
+
+I don't know about Ice Weasel, but, and I always said this was a
+last ditch resort, you might try Algarveservers site.
+
+Allsports-->Other is probably your best bet.
+
+There are a lot of popups to navigate, none of them  mine, but with
+some experimentation, the game, race, whatever can be watched
+even if not in the language of your choice
+
+There's 4 hours of Pan-Am starting 20:00hrs Lisbon/London/Dublin time
+tonight if you want to test.
+
+The site is heavily slanted to Bicycle racing, but everything else
+is available too via one or more of the urls listed below.
+
+Make sure you have the latest flash, although many sites are not
+using it.
+
+-- 
+Slackrat
+<http://algarveservers.com/sportsite/>
+<http://inconnu.freeshell.org/sportsite>
+<http://bellacanela.com>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150721/4ea9406b/attachment-0001.html>
+
