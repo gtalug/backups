@@ -4138,3 +4138,62 @@ Slackrat
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150721/4ea9406b/attachment-0001.html>
 
+From william.muriithi at gmail.com  Wed Jul 22 20:27:16 2015
+From: william.muriithi at gmail.com (William Muriithi)
+Date: Wed, 22 Jul 2015 16:27:16 -0400
+Subject: [GTALUG] Git question
+Message-ID: <20150722202716.5394515.93910.28373@gmail.com>
+
+Afternoon 
+
+I have a git repo called configurations. I want to add the directory /etc/ansible to the repo.
+
+Problem is when I clone the repo, I am not able to commit the ansible directory as the ansible root directory is outside the repo?
+
+Is there a way of getting the ansible directory into git without using a symlink? 
+
+Regards,
+
+William‎
+
+From me at mylesbraithwaite.com  Wed Jul 22 20:56:32 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Wed, 22 Jul 2015 16:56:32 -0400
+Subject: [GTALUG] Git question
+In-Reply-To: <20150722202716.5394515.93910.28373@gmail.com>
+References: <20150722202716.5394515.93910.28373@gmail.com>
+Message-ID: <55B00380.7030504@mylesbraithwaite.com>
+
+William Muriithi wrote:
+> Afternoon 
+> 
+> I have a git repo called configurations. I want to add the directory /etc/ansible to the repo.
+> 
+> Problem is when I clone the repo, I am not able to commit the ansible directory as the ansible root directory is outside the repo?
+> 
+> Is there a way of getting the ansible directory into git without using a symlink? 
+
+No. The work tree has to existing in the same root directory and cannot
+be outside the repository.
+
+The only two way you could do it is with a symlink or making
+/etc/ansible a git repo. etckeeper[1] might be checking out as while.
+
+[1]: <https://joeyh.name/code/etckeeper/>
+
+From carolyfisher at gmail.com  Wed Jul 22 23:55:54 2015
+From: carolyfisher at gmail.com (Caroly Fisher)
+Date: Thu, 23 Jul 2015 07:55:54 +0800
+Subject: [GTALUG] IDE and tips for working with JavaScript?
+Message-ID: <411EA85C-174F-4228-9B13-C0771F22DE52@gmail.com>
+
+First off, I know not Linux related things go to off topic. I'm not sure if the sender is supposed to direct the topic or not. Sorry if I should be~ 
+
+I was looking at working on my code again, and decided to try tapping into JavaScript. I'll need a simple IDE (that will of course run on Linux, but most of them do so meh). I've minimal experience with JavaScript, and coding as a whole. My currently favored IDE is Brackets. It's been great so far, and works with JavaScript. Of course, not being familiar with JS, I'm not sure how well it works with JavaScript. 
+
+Any tips on a similar IDE that may be more compatible with JavaScript and just tips in general about starting with JS would be of great help. I apologize if the question is too vague. 
+
+Thanks! 
+
+Sent from my iPhone
+
