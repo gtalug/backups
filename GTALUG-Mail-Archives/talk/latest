@@ -4197,3 +4197,284 @@ Thanks!
 
 Sent from my iPhone
 
+From me at mylesbraithwaite.com  Thu Jul 23 12:50:03 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 23 Jul 2015 08:50:03 -0400
+Subject: [GTALUG] IDE and tips for working with JavaScript?
+In-Reply-To: <411EA85C-174F-4228-9B13-C0771F22DE52@gmail.com>
+References: <411EA85C-174F-4228-9B13-C0771F22DE52@gmail.com>
+Message-ID: <55B0E2FB.9070300@mylesbraithwaite.com>
+
+Caroly Fisher wrote:
+> First off, I know not Linux related things go to off topic. I'm not sure if the sender is supposed to direct the topic or not. Sorry if I should be~ 
+> 
+> I was looking at working on my code again, and decided to try tapping into JavaScript. I'll need a simple IDE (that will of course run on Linux, but most of them do so meh). I've minimal experience with JavaScript, and coding as a whole. My currently favored IDE is Brackets. It's been great so far, and works with JavaScript. Of course, not being familiar with JS, I'm not sure how well it works with JavaScript. 
+> 
+> Any tips on a similar IDE that may be more compatible with JavaScript and just tips in general about starting with JS would be of great help. I apologize if the question is too vague. 
+
+Bracket's is more of a text editor than an IDE. If you are looking for a
+more traditional IDE (ala Eclipse, Visual Basics, etc.) take a look
+WebStorm[1] (a proprietary IDE) or Eclipse's WebTools[2] (huge Java
+application).
+
+If you are doing web based stuff you should checkout Codepen[3] or
+Scratchpad[4] in Firefox Developer[5]. They are really great for trying
+out ideas and playing around.
+
+[1]: <https://www.jetbrains.com/webstorm/>
+[2]: <http://www.eclipse.org/webtools/>
+[3]: <http://codepen.io/>
+[4]: <https://developer.mozilla.org/en-US/docs/Tools/Scratchpad>
+[5]: <https://www.mozilla.org/en-US/firefox/developer/>
+
+From northdot9 at gmail.com  Thu Jul 23 16:26:40 2015
+From: northdot9 at gmail.com (David Thornton)
+Date: Thu, 23 Jul 2015 12:26:40 -0400
+Subject: [GTALUG] Git question
+In-Reply-To: <55B00380.7030504@mylesbraithwaite.com>
+References: <20150722202716.5394515.93910.28373@gmail.com>
+ <55B00380.7030504@mylesbraithwaite.com>
+Message-ID: <CAHcykVqTaWWR4zFfZu=VDvzkQ+TWP_q6GB_df0bXzNApeQGPug@mail.gmail.com>
+
+Why didn't i see the original post? Was it sent to GTALUG?
+
+The way I would do what you want to do is, that I would copy the current
+/etc/ansible to the repo's root and then symlink back.
+
+Alternatively I would make a new repo in /etc/ansible.
+
+Finally, the most hacky way (read: prone to unexpected consequences ): do a
+commit hook that copies / merges the /etc/ansible to <reporoot>/etc/ansible/
+
+David
+
+
+
+On Wed, Jul 22, 2015 at 4:56 PM, Myles Braithwaite <me at mylesbraithwaite.com>
+wrote:
+
+> William Muriithi wrote:
+> > Afternoon
+> >
+> > I have a git repo called configurations. I want to add the directory
+> /etc/ansible to the repo.
+> >
+> > Problem is when I clone the repo, I am not able to commit the ansible
+> directory as the ansible root directory is outside the repo?
+> >
+> > Is there a way of getting the ansible directory into git without using a
+> symlink?
+>
+> No. The work tree has to existing in the same root directory and cannot
+> be outside the repository.
+>
+> The only two way you could do it is with a symlink or making
+> /etc/ansible a git repo. etckeeper[1] might be checking out as while.
+>
+> [1]: <https://joeyh.name/code/etckeeper/>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150723/2492e957/attachment.html>
+
+From avolkov at gmail.com  Thu Jul 23 17:10:03 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Thu, 23 Jul 2015 13:10:03 -0400
+Subject: [GTALUG] Git question
+In-Reply-To: <CAHcykVqTaWWR4zFfZu=VDvzkQ+TWP_q6GB_df0bXzNApeQGPug@mail.gmail.com>
+References: <20150722202716.5394515.93910.28373@gmail.com>
+ <55B00380.7030504@mylesbraithwaite.com>
+ <CAHcykVqTaWWR4zFfZu=VDvzkQ+TWP_q6GB_df0bXzNApeQGPug@mail.gmail.com>
+Message-ID: <CAO1j=qf2XQWRXz0uxpJ64HAWkUGcubE8xqk9fO1KsfAqRt5h0w@mail.gmail.com>
+
+Hey David,
+
+Check your gmail spam folder.
+
+I thought only I had problems receiving some messages. It looks like
+recently (about two or three days ago) gmail started marking them as
+'Spam', I got replies from Myles but not the original messages.
+
+I discover this by having another account subscribed to GTALUG that
+isn't on google and and it got all the messages, therefore the problem
+is with gmail spam detection.
+
+Also there is gtalug email archive where you can get the complete
+message history -- http://gtalug.org/pipermail/talk/
+
+Alex.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: not available
+Type: application/pgp-encrypted
+Size: 12 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/talk/attachments/20150723/04ddb91f/attachment.pgp>
+
+From me at mylesbraithwaite.com  Thu Jul 23 17:13:36 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 23 Jul 2015 13:13:36 -0400
+Subject: [GTALUG] Git question
+In-Reply-To: <CAO1j=qf2XQWRXz0uxpJ64HAWkUGcubE8xqk9fO1KsfAqRt5h0w@mail.gmail.com>
+References: <20150722202716.5394515.93910.28373@gmail.com>
+ <55B00380.7030504@mylesbraithwaite.com>
+ <CAHcykVqTaWWR4zFfZu=VDvzkQ+TWP_q6GB_df0bXzNApeQGPug@mail.gmail.com>
+ <CAO1j=qf2XQWRXz0uxpJ64HAWkUGcubE8xqk9fO1KsfAqRt5h0w@mail.gmail.com>
+Message-ID: <55B120C0.1080205@mylesbraithwaite.com>
+
+Alex Volkov wrote:
+> Check your gmail spam folder.
+
+I think there is an issue with Gmail's spam filter, Torvalds has been
+complaining about issues with Gmail sending emails from mailing lists to
+spam: <https://plus.google.com/+LinusTorvalds/posts/DiG9qANf5PA>.
+
+From kalibslack at gmail.com  Thu Jul 23 17:17:31 2015
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Thu, 23 Jul 2015 14:17:31 -0300
+Subject: [GTALUG] Git question
+In-Reply-To: <55B120C0.1080205@mylesbraithwaite.com>
+References: <20150722202716.5394515.93910.28373@gmail.com>
+ <55B00380.7030504@mylesbraithwaite.com>
+ <CAHcykVqTaWWR4zFfZu=VDvzkQ+TWP_q6GB_df0bXzNApeQGPug@mail.gmail.com>
+ <CAO1j=qf2XQWRXz0uxpJ64HAWkUGcubE8xqk9fO1KsfAqRt5h0w@mail.gmail.com>
+ <55B120C0.1080205@mylesbraithwaite.com>
+Message-ID: <CAH5qdezyPvnUb5oKw9+9MDL2zr5okg8Uuiw-TyUfj0tODacoMg@mail.gmail.com>
+
+2015-07-23 14:13 GMT-03:00 Myles Braithwaite <me at mylesbraithwaite.com>:
+> Alex Volkov wrote:
+>> Check your gmail spam folder.
+>
+> I think there is an issue with Gmail's spam filter, Torvalds has been
+> complaining about issues with Gmail sending emails from mailing lists to
+> spam: <https://plus.google.com/+LinusTorvalds/posts/DiG9qANf5PA>.
+> ---
+
+We all got the same problem. Already updated my filters so every
+message "to: talk at gtalug.org" will not go to SPAM box.
+
+Solved for me.. but gmail still needs to check this issue.
+
+From talexb at gmail.com  Thu Jul 23 17:17:56 2015
+From: talexb at gmail.com (Alex Beamish)
+Date: Thu, 23 Jul 2015 13:17:56 -0400
+Subject: [GTALUG] Git question
+In-Reply-To: <CAHcykVqTaWWR4zFfZu=VDvzkQ+TWP_q6GB_df0bXzNApeQGPug@mail.gmail.com>
+References: <20150722202716.5394515.93910.28373@gmail.com>
+ <55B00380.7030504@mylesbraithwaite.com>
+ <CAHcykVqTaWWR4zFfZu=VDvzkQ+TWP_q6GB_df0bXzNApeQGPug@mail.gmail.com>
+Message-ID: <CANgc-ay-=asL8e8+=aGssv7GGoJY59g+AQTiwNXDDhW2k_scgQ@mail.gmail.com>
+
+Same thing here -- I assumed it was just me. I just looked in my Spam
+folder, and the last two posts that I missed were there.
+
+Seems odd -- my filter had marked them as TLUG messages.
+
+Alex
+
+
+On Thu, Jul 23, 2015 at 12:26 PM, David Thornton <northdot9 at gmail.com>
+wrote:
+
+> Why didn't i see the original post? Was it sent to GTALUG?
+>
+> The way I would do what you want to do is, that I would copy the current
+> /etc/ansible to the repo's root and then symlink back.
+>
+> Alternatively I would make a new repo in /etc/ansible.
+>
+> Finally, the most hacky way (read: prone to unexpected consequences ): do
+> a commit hook that copies / merges the /etc/ansible to
+> <reporoot>/etc/ansible/
+>
+> David
+>
+>
+>
+> On Wed, Jul 22, 2015 at 4:56 PM, Myles Braithwaite <
+> me at mylesbraithwaite.com> wrote:
+>
+>> William Muriithi wrote:
+>> > Afternoon
+>> >
+>> > I have a git repo called configurations. I want to add the directory
+>> /etc/ansible to the repo.
+>> >
+>> > Problem is when I clone the repo, I am not able to commit the ansible
+>> directory as the ansible root directory is outside the repo?
+>> >
+>> > Is there a way of getting the ansible directory into git without using
+>> a symlink?
+>>
+>> No. The work tree has to existing in the same root directory and cannot
+>> be outside the repository.
+>>
+>> The only two way you could do it is with a symlink or making
+>> /etc/ansible a git repo. etckeeper[1] might be checking out as while.
+>>
+>> [1]: <https://joeyh.name/code/etckeeper/>
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+
+
+-- 
+Alex Beamish
+Toronto, Ontario
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150723/06aba3ff/attachment.html>
+
+From psema4 at gmail.com  Fri Jul 24 01:08:07 2015
+From: psema4 at gmail.com (Scott Elcomb)
+Date: Thu, 23 Jul 2015 21:08:07 -0400
+Subject: [GTALUG] Git question
+In-Reply-To: <20150722202716.5394515.93910.28373@gmail.com>
+References: <20150722202716.5394515.93910.28373@gmail.com>
+Message-ID: <CAEx-jsPN8hN7Bzq2OyKdzRd+BsDwfbRXQqQDxdNLO40NfgYdRw@mail.gmail.com>
+
+On Wed, Jul 22, 2015 at 4:27 PM, William Muriithi
+<william.muriithi at gmail.com> wrote:
+> Afternoon
+>
+> I have a git repo called configurations. I want to add the directory /etc/ansible to the repo.
+>
+> Problem is when I clone the repo, I am not able to commit the ansible directory as the ansible root directory is outside the repo?
+>
+> Is there a way of getting the ansible directory into git without using a symlink?
+
+Would a pre-commit hook to copy the config files into your repo
+(before committing) do what you need?
+
+[- snippet starts -]
+# create or append /path/to/repo/.git/hooks/pre-commit
+
+cp -r /etc/ansible ./etc/ansible
+git add ./etc/ansible
+
+[- snippet ends -]
+
+If this strategy works for you, you might want to keep a copy of the
+pre-commit file in your repo and just symlink to it from .git/hooks -
+just be sure to note the pre-commit symlink in your README for other
+any other (or future) developers.
+
+-- 
+  Scott Elcomb         @psema4
+  http://psema4.com/pubkey.txt
+     http://www.pirateparty.ca/
+
