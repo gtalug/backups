@@ -4478,3 +4478,564 @@ any other (or future) developers.
   http://psema4.com/pubkey.txt
      http://www.pirateparty.ca/
 
+From william.muriithi at gmail.com  Fri Jul 24 11:58:26 2015
+From: william.muriithi at gmail.com (William Muriithi)
+Date: Fri, 24 Jul 2015 07:58:26 -0400
+Subject: [GTALUG] Git question
+In-Reply-To: <CAEx-jsPN8hN7Bzq2OyKdzRd+BsDwfbRXQqQDxdNLO40NfgYdRw@mail.gmail.com>
+References: <20150722202716.5394515.93910.28373@gmail.com>
+ <CAEx-jsPN8hN7Bzq2OyKdzRd+BsDwfbRXQqQDxdNLO40NfgYdRw@mail.gmail.com>
+Message-ID: <CAE9rU+5XvN5-wgOP+ga1S8y0YnQ0T_wmsHyGz+XHYO=SF_hszw@mail.gmail.com>
+
+Morning
+
+> > I have a git repo called configurations. I want to add the directory /etc/ansible to the repo.
+> >
+> > Problem is when I clone the repo, I am not able to commit the ansible directory as the ansible root directory is outside the repo?
+> >
+> > Is there a way of getting the ansible directory into git without using a symlink?
+>
+> Would a pre-commit hook to copy the config files into your repo
+> (before committing) do what you need?
+>
+> [- snippet starts -]
+> # create or append /path/to/repo/.git/hooks/pre-commit
+>
+> cp -r /etc/ansible ./etc/ansible
+> git add ./etc/ansible
+>
+> [- snippet ends -]
+>
+> If this strategy works for you, you might want to keep a copy of the
+> pre-commit file in your repo and just symlink to it from .git/hooks -
+> just be sure to note the pre-commit symlink in your README for other
+> any other (or future) developers.
+This will work for me.  Tried it yesterday and its working fine.
+Thanks a lot guys for the various idea
+
+Regards,
+
+William
+
+From scruss at gmail.com  Fri Jul 24 12:47:26 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Fri, 24 Jul 2015 08:47:26 -0400
+Subject: [GTALUG] Git question / gmail
+In-Reply-To: <CAH5qdezyPvnUb5oKw9+9MDL2zr5okg8Uuiw-TyUfj0tODacoMg@mail.gmail.com>
+References: <20150722202716.5394515.93910.28373@gmail.com>
+ <55B00380.7030504@mylesbraithwaite.com>
+ <CAHcykVqTaWWR4zFfZu=VDvzkQ+TWP_q6GB_df0bXzNApeQGPug@mail.gmail.com>
+ <CAO1j=qf2XQWRXz0uxpJ64HAWkUGcubE8xqk9fO1KsfAqRt5h0w@mail.gmail.com>
+ <55B120C0.1080205@mylesbraithwaite.com>
+ <CAH5qdezyPvnUb5oKw9+9MDL2zr5okg8Uuiw-TyUfj0tODacoMg@mail.gmail.com>
+Message-ID: <55B233DE.9020806@gmail.com>
+
+On 2015-07-23 01:17 PM, Marcelo Cavalcante wrote:
+> 
+> Solved for me.. but gmail still needs to check this issue.
+
+Nah, it's a feature to try to force us all to use Google+ …
+
+ Stewart
+
+From tisdall at gmail.com  Fri Jul 24 13:44:44 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Fri, 24 Jul 2015 09:44:44 -0400
+Subject: [GTALUG] Git question
+In-Reply-To: <CAH5qdezyPvnUb5oKw9+9MDL2zr5okg8Uuiw-TyUfj0tODacoMg@mail.gmail.com>
+References: <20150722202716.5394515.93910.28373@gmail.com>
+ <55B00380.7030504@mylesbraithwaite.com>
+ <CAHcykVqTaWWR4zFfZu=VDvzkQ+TWP_q6GB_df0bXzNApeQGPug@mail.gmail.com>
+ <CAO1j=qf2XQWRXz0uxpJ64HAWkUGcubE8xqk9fO1KsfAqRt5h0w@mail.gmail.com>
+ <55B120C0.1080205@mylesbraithwaite.com>
+ <CAH5qdezyPvnUb5oKw9+9MDL2zr5okg8Uuiw-TyUfj0tODacoMg@mail.gmail.com>
+Message-ID: <CAGxYWpZCeQtkcdx7haua9zB1xszqwKTwKnEYZG3XxyHLiOanDQ@mail.gmail.com>
+
+This is one of the shortfalls with DMARC and mailing lists.  The only way
+to fix it on our end is to stop using the author's email address in the
+"From:" field.  I don't know if there's any sort of alternative to tag
+emails so we actually know who they're from other than the "From:" header.
+
+You can see the issue in the headers here:
+
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of talk-bounces at gtalug.org
+designates 2600:3c03::f03c:91ff:fe50:ea0a as permitted sender)
+smtp.mail=talk-bounces at gtalug.org;
+       dkim=neutral (body hash did not verify) header.i=@gmail.com;
+       dmarc=fail (p=NONE dis=NONE) header.from=gmail.com
+
+I think it's worse with Yahoo email as they have the DMARC policy set to
+reject emails that don't pass instead of a soft fail (which means it can
+tag it as failed but let it through any way).
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150724/72b7c0fd/attachment.html>
+
+From tisdall at gmail.com  Fri Jul 24 13:50:43 2015
+From: tisdall at gmail.com (Tim Tisdall)
+Date: Fri, 24 Jul 2015 09:50:43 -0400
+Subject: [GTALUG] IDE and tips for working with JavaScript?
+In-Reply-To: <411EA85C-174F-4228-9B13-C0771F22DE52@gmail.com>
+References: <411EA85C-174F-4228-9B13-C0771F22DE52@gmail.com>
+Message-ID: <CAGxYWpbCuYGQZjxwLUrBNbTzqMw6MtmHUkEkxSw=KzYekUKx+w@mail.gmail.com>
+
+On 22 July 2015 at 19:55, Caroly Fisher <carolyfisher at gmail.com> wrote:
+
+> Any tips on a similar IDE that may be more compatible with JavaScript and
+> just tips in general about starting with JS would be of great help. I
+> apologize if the question is too vague.
+>
+
+I'm not sure how it compares with other IDE's, but I use Geany when editing
+my JS files.  It's open source and free:
+http://plugins.geany.org/downloads.html  I also use it with my python
+editing.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150724/c4e8bd60/attachment.html>
+
+From me at mylesbraithwaite.com  Fri Jul 24 18:05:50 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 24 Jul 2015 14:05:50 -0400
+Subject: [GTALUG] [GTALUG-Announce] Linux in the Park 2015 is this Saturday
+	at 2pm
+Message-ID: <CA+hskZOO2tjSqHfZhMTyxSMkedXdzz1KVriBM+FR8yMHiyWxkA@mail.gmail.com>
+
+<http://gtalug.org/picnics/2015/>
+
+GTALUG is having the annual Linux in the Park Potluck this year at
+Dufferin Grove Park on 25th July at 2pm.
+
+Things we will provide: Plates, Cutlery, Serviettes, Cups, and Garbage bags.
+
+Things you might want to bring: chairs, tasty beverages (that are
+non-alcoholic, as the city prohibits alcoholic beverages in the park),
+food stuffs that you would like to share and enjoy, tarp/blanket,
+sunscreen, hats, things to help survive the warmth of the Canadian
+Wilderness.
+
+We will doing this in a pot-luck style. Thus, please bring enough food
+and drink for yourself and your guests, and try to bring enough to
+share with others in the group.
+
+We are using a Trello board to organize everything:
+<https://trello.com/b/JNHsDwys/linux-in-the-park-2015>.
+
+Note that if you forget anything you needed, Dufferin Mall is across
+the street, featuring a supermarket (No-Frills) department store
+(WalMart), as well as other specialty stores.
+
+## Location
+
+Dufferin Grove Park
+875 Dufferin Street
+Toronto, Ontario
+
+<https://goo.gl/maps/hnGg5>
+
+<http://osm.org/go/ZX6BHsVZx-?layers=N&way=15703371>
+
+## Social Media Links
+
+Facebook: <https://www.facebook.com/events/694777713981257/>
+
+Google+: <https://plus.google.com/events/ch21nnnjdcq6prpp575vc0no7cc>
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact one of the GTALUG Board Members @
+<board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From davec-b at rogers.com  Fri Jul 24 22:41:13 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Fri, 24 Jul 2015 18:41:13 -0400
+Subject: [GTALUG] XFCE on regular Red Hat
+Message-ID: <55B2BF09.4010509@rogers.com>
+
+For a long time, I've been using the Fedora XFCE spin, but wanted to 
+build a new for-work dev machine and got RHEL 7.2, so I would have a 
+supported version to host recent tools on.
+
+Fedora is fun, but tends to lag in app versions while being at the 
+bleeding edge in kernel versions, which is fine for a toy machine, but 
+the inverse of what I want for a machine to make money with..
+86_64 GNU/Linux
+
+Alas, RHEL 7.2  seems to be much *more* broken than Fedora fc 21
+Yum can't even do a groupinstall, and half the required packages for 
+xfce are in neither the Red Hat nor the EPEL repositories.
+Building XFCE from scratch exposes even more missing dependencies
+
+This seems odd, as many people with slightly earlier 7.X releases did
+$ sudo yum install epel-release
+$ sudo yum groupinstall "X Window system"
+$ sudo yum groupinstall xfce
+and were done.
+
+Is this just a bad release, or has RH been degrading while I was using 
+something else?
+Should I downgrade to 6? Use KDE? Switch to a different distro?
+
+What are you folks using for prod?
+
+--dave
+$uname -a
+Linux miles 3.10.0-229.7.2.el7.x86_64 #1 SMP Fri May 15 21:38:46 EDT 
+2015 x86_64 x86_64 x
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From rjonasz at rjonasz.org  Fri Jul 24 23:17:04 2015
+From: rjonasz at rjonasz.org (Randy Jonasz)
+Date: Fri, 24 Jul 2015 19:17:04 -0400
+Subject: [GTALUG] Luks on Ubuntu 14.04
+Message-ID: <55B2C770.9070104@rjonasz.org>
+
+Hey everyone,
+
+I've been trying to resolve an issue unlocking a luks encrypted 
+partition on boot using Ubuntu 14.04.  I've set it up to automatically 
+unlock after the root partition's password has been entered by adding 
+the target entry into /etc/initramfs-tools/conf.d/cryptroot.  I have 6 
+drives in this machine and 5 unlock fine.  The 6th errors out with 
+unkonwn fs or bad options or password.  I can unlock the partition after 
+boot using the derived key from cryptroot.  I've tried to zero out the 
+drive and start over but the problem persists.  Can anyone give me any 
+pointers on how to solve this?  The drive is used as a cache drive for 
+the zfs file system.
+
+Thanks!
+
+Randy
+
+From hgibson at eol.ca  Sat Jul 25 01:33:27 2015
+From: hgibson at eol.ca (Howard Gibson)
+Date: Fri, 24 Jul 2015 21:33:27 -0400
+Subject: [GTALUG] XFCE on regular Red Hat
+In-Reply-To: <55B2BF09.4010509@rogers.com>
+References: <55B2BF09.4010509@rogers.com>
+Message-ID: <20150724213327.b47dee86949b582034e82e54@eol.ca>
+
+David,
+
+   On my last Fedora install, I went...
+
+   # yum install @xfce
+
+   As far as I can tell, I got everything.  Generally, I use FVWM2 as my window manager, but XFCE seems to work.  My install notes are online at...
+
+   http://home.eol.ca/~hgibson/Linux.html
+   
+
+On Fri, 24 Jul 2015 18:41:13 -0400
+David Collier-Brown <davec-b at rogers.com> wrote:
+
+> For a long time, I've been using the Fedora XFCE spin, but wanted to 
+> build a new for-work dev machine and got RHEL 7.2, so I would have a 
+> supported version to host recent tools on.
+> 
+> Fedora is fun, but tends to lag in app versions while being at the 
+> bleeding edge in kernel versions, which is fine for a toy machine, but 
+> the inverse of what I want for a machine to make money with..
+> 86_64 GNU/Linux
+> 
+> Alas, RHEL 7.2  seems to be much *more* broken than Fedora fc 21
+> Yum can't even do a groupinstall, and half the required packages for 
+> xfce are in neither the Red Hat nor the EPEL repositories.
+> Building XFCE from scratch exposes even more missing dependencies
+> 
+> This seems odd, as many people with slightly earlier 7.X releases did
+> $ sudo yum install epel-release
+> $ sudo yum groupinstall "X Window system"
+> $ sudo yum groupinstall xfce
+> and were done.
+> 
+> Is this just a bad release, or has RH been degrading while I was using 
+> something else?
+> Should I downgrade to 6? Use KDE? Switch to a different distro?
+> 
+> What are you folks using for prod?
+> 
+> --dave
+> $uname -a
+> Linux miles 3.10.0-229.7.2.el7.x86_64 #1 SMP Fri May 15 21:38:46 EDT 
+> 2015 x86_64 x86_64 x
+> 
+> -- 
+> David Collier-Brown,         | Always do right. This will gratify
+> System Programmer and Author | some people and astonish the rest
+> davecb at spamcop.net           |                      -- Mark Twain
+> 
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+Howard Gibson 
+hgibson at eol.ca
+howard.gibson at teledyneoptech.com 
+jhowardgibson at gmail.com
+http://home.eol.ca/~hgibson
+
+From kalibslack at gmail.com  Sat Jul 25 01:43:49 2015
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Fri, 24 Jul 2015 22:43:49 -0300
+Subject: [GTALUG] XFCE on regular Red Hat
+In-Reply-To: <20150724213327.b47dee86949b582034e82e54@eol.ca>
+References: <55B2BF09.4010509@rogers.com>
+ <20150724213327.b47dee86949b582034e82e54@eol.ca>
+Message-ID: <CAH5qdeyT-SYyvGqPOMWsYH+5g5HkF8jYR2K5LL5DoO6xTyWnDw@mail.gmail.com>
+
+> On Fri, 24 Jul 2015 18:41:13 -0400
+> David Collier-Brown <davec-b at rogers.com> wrote:
+>
+>> For a long time, I've been using the Fedora XFCE spin, but wanted to
+>> build a new for-work dev machine and got RHEL 7.2, so I would have a
+>> supported version to host recent tools on.
+>>
+>> Fedora is fun, but tends to lag in app versions while being at the
+>> bleeding edge in kernel versions, which is fine for a toy machine, but
+>> the inverse of what I want for a machine to make money with..
+>> 86_64 GNU/Linux
+>>
+>> Alas, RHEL 7.2  seems to be much *more* broken than Fedora fc 21
+>> Yum can't even do a groupinstall, and half the required packages for
+>> xfce are in neither the Red Hat nor the EPEL repositories.
+>> Building XFCE from scratch exposes even more missing dependencies
+>>
+>> This seems odd, as many people with slightly earlier 7.X releases did
+>> $ sudo yum install epel-release
+>> $ sudo yum groupinstall "X Window system"
+>> $ sudo yum groupinstall xfce
+>> and were done.
+>>
+>> Is this just a bad release, or has RH been degrading while I was using
+>> something else?
+>> Should I downgrade to 6? Use KDE? Switch to a different distro?
+>>
+>> What are you folks using for prod?
+>>
+>> --dave
+>> $uname -a
+>> Linux miles 3.10.0-229.7.2.el7.x86_64 #1 SMP Fri May 15 21:38:46 EDT
+>> 2015 x86_64 x86_64 x
+>>
+
+What I would do on Red Hat 6.5 (never tried on Red Hat 7.x):
+
+# wget http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+
+# rpm -ivh epel-release-6-8.noarch.rpm
+
+# yum -y groupinstall Xfce
+
+# yum -y install xorg-x11-fonts-Type1 xorg-x11-fonts-misc
+
+
+Also, tried in a Centos 7 (perhaps would work on Red Hat 7.x
+
+# wget http://archive.linux.duke.edu/pub/epel//7/x86_64/e/epel-release-7-2.noarch.rpm
+
+# rpm -ivh epel-release-7.2.noarch.rpm
+
+# yum -y groupinstall Xfce
+
+# yum -y install xorg-x11-fonts-Type1 xorg-x11-fonts-mis
+
+Best,
+
+From bjonkman at sobac.com  Sat Jul 25 05:44:52 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Sat, 25 Jul 2015 01:44:52 -0400
+Subject: [GTALUG] Linux in the Park 2015 is this Saturday at 2pm
+In-Reply-To: <CA+hskZOO2tjSqHfZhMTyxSMkedXdzz1KVriBM+FR8yMHiyWxkA@mail.gmail.com>
+References: <CA+hskZOO2tjSqHfZhMTyxSMkedXdzz1KVriBM+FR8yMHiyWxkA@mail.gmail.com>
+Message-ID: <55B32254.1080607@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+> We are using a Trello board to organize everything: 
+> <https://trello.com/b/JNHsDwys/linux-in-the-park-2015>.
+
+Doesn't work without requiring yet more of my digital DNA, and I'm
+running short on both that and patience.
+
+I'm bringing people and meatballs, and the people are bringing deviled
+eggs and watermelon.  Hadn't thought about beverages, but there will
+probably be a few bottles of Dr. Pepper.
+
+See you all tomorrow!
+
+- --Bob, who disagrees with the spell checker that there is only one L
+in devilled eggs.
+
+
+
+On 24/07/15 02:05 PM, Myles Braithwaite wrote:
+> <http://gtalug.org/picnics/2015/>
+> 
+> GTALUG is having the annual Linux in the Park Potluck this year at 
+> Dufferin Grove Park on 25th July at 2pm.
+> 
+> Things we will provide: Plates, Cutlery, Serviettes, Cups, and
+> Garbage bags.
+> 
+> Things you might want to bring: chairs, tasty beverages (that are 
+> non-alcoholic, as the city prohibits alcoholic beverages in the
+> park), food stuffs that you would like to share and enjoy,
+> tarp/blanket, sunscreen, hats, things to help survive the warmth of
+> the Canadian Wilderness.
+> 
+> We will doing this in a pot-luck style. Thus, please bring enough
+> food and drink for yourself and your guests, and try to bring
+> enough to share with others in the group.
+> 
+> We are using a Trello board to organize everything: 
+> <https://trello.com/b/JNHsDwys/linux-in-the-park-2015>.
+> 
+> Note that if you forget anything you needed, Dufferin Mall is
+> across the street, featuring a supermarket (No-Frills) department
+> store (WalMart), as well as other specialty stores.
+> 
+> ## Location
+> 
+> Dufferin Grove Park 875 Dufferin Street Toronto, Ontario
+> 
+> <https://goo.gl/maps/hnGg5>
+> 
+> <http://osm.org/go/ZX6BHsVZx-?layers=N&way=15703371>
+> 
+> ## Social Media Links
+> 
+> Facebook: <https://www.facebook.com/events/694777713981257/>
+> 
+> Google+:
+> <https://plus.google.com/events/ch21nnnjdcq6prpp575vc0no7cc>
+> 
+> ## Code of Conduct
+> 
+> We want a productive happy community that can welcome new ideas, 
+> improve every process every year, and foster collaboration between 
+> individuals with differing needs, interests and skills.
+> 
+> We gain strength from diversity, and actively seek participation
+> from those who enhance it. This code of conduct exists to ensure
+> that diverse groups collaborate to mutual advantage and enjoyment.
+> We will challenge prejudice that could jeopardize the participation
+> of any person in the community.
+> 
+> The Code of Conduct governs how we behave in public or in private 
+> whenever the Linux community will be judged by our actions. We
+> expect it to be honored by everyone who represents the community
+> officially or informally, claims affiliation, or participates
+> directly. It applies to activities online or offline.
+> 
+> We invite anybody to participate. Our community is open.
+> 
+> Please read more about the GTALUG Code of Conduct here: 
+> <http://gtalug.org/about/code-of-conduct/>.
+> 
+> If you have any questions, comments, or concerns about the GTALUG
+> Code of Conduct please contact one of the GTALUG Board Members @ 
+> <board at gtalug.org>. --- GTALUG Announce mailing list 
+> announce at gtalug.org http://gtalug.org/mailman/listinfo/announce 
+> --- Talk Mailing List talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlWzIk0ACgkQuRKJsNLM5ep0OQCgmXH9pbBqv14Bnhi6syLsCuQT
+pYIAn22jrPI9kVcQRCO5MQgq5QDNTvy5
+=MGCs
+-----END PGP SIGNATURE-----
+
+From opengeometry at yahoo.ca  Sat Jul 25 06:02:04 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Sat, 25 Jul 2015 02:02:04 -0400
+Subject: [GTALUG] XFCE on regular Red Hat
+In-Reply-To: <55B2BF09.4010509@rogers.com>
+References: <55B2BF09.4010509@rogers.com>
+Message-ID: <20150725060204.GA3293@node1.localdomain>
+
+Have you looked into Xubuntu (14.04.2)?  It is "long term support".
+-- 
+William
+
+On Fri, Jul 24, 2015 at 06:41:13PM -0400, David Collier-Brown wrote:
+> For a long time, I've been using the Fedora XFCE spin, but wanted to build a
+> new for-work dev machine and got RHEL 7.2, so I would have a supported
+> version to host recent tools on.
+> 
+> Fedora is fun, but tends to lag in app versions while being at the bleeding
+> edge in kernel versions, which is fine for a toy machine, but the inverse of
+> what I want for a machine to make money with..
+> 86_64 GNU/Linux
+> 
+> Alas, RHEL 7.2  seems to be much *more* broken than Fedora fc 21
+> Yum can't even do a groupinstall, and half the required packages for xfce
+> are in neither the Red Hat nor the EPEL repositories.
+> Building XFCE from scratch exposes even more missing dependencies
+> 
+> This seems odd, as many people with slightly earlier 7.X releases did
+> $ sudo yum install epel-release
+> $ sudo yum groupinstall "X Window system"
+> $ sudo yum groupinstall xfce
+> and were done.
+> 
+> Is this just a bad release, or has RH been degrading while I was using
+> something else?
+> Should I downgrade to 6? Use KDE? Switch to a different distro?
+> 
+> What are you folks using for prod?
+> 
+> --dave
+> $uname -a
+> Linux miles 3.10.0-229.7.2.el7.x86_64 #1 SMP Fri May 15 21:38:46 EDT 2015
+> x86_64 x86_64 x
+> 
+> -- 
+> David Collier-Brown,         | Always do right. This will gratify
+> System Programmer and Author | some people and astonish the rest
+> davecb at spamcop.net           |                      -- Mark Twain
+> 
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
