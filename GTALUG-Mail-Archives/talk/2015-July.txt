@@ -5039,3 +5039,129 @@ On Fri, Jul 24, 2015 at 06:41:13PM -0400, David Collier-Brown wrote:
 > talk at gtalug.org
 > http://gtalug.org/mailman/listinfo/talk
 
+From hugh at mimosa.com  Sat Jul 25 16:59:17 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 25 Jul 2015 12:59:17 -0400 (EDT)
+Subject: [GTALUG] XFCE on regular Red Hat
+In-Reply-To: <55B2BF09.4010509@rogers.com>
+References: <55B2BF09.4010509@rogers.com>
+Message-ID: <alpine.LRH.2.02.1507251228360.21238@redclaw.mimosa.com>
+
+| From: David Collier-Brown <davec-b at rogers.com>
+
+| For a long time, I've been using the Fedora XFCE spin, but wanted to build a
+| new for-work dev machine and got RHEL 7.2, so I would have a supported version
+| to host recent tools on.
+| 
+| Fedora is fun, but tends to lag in app versions while being at the bleeding
+| edge in kernel versions,
+
+I hadn't noticed that.  Can you give an example of a package that
+mattered to you?
+
+I was under the (untested) impression that Fedora updates applications
+more frequently than Ubuntu.  But maybe that's because, where I use
+Ubuntu, I usually use LTS.
+
+RHEL really does keep applications stable to a fault.  That's what
+their mandate is.  They've recently softened this with a new scheme
+that lets you choose to bolt on blessed updated subsystems ("software
+collections").  These are not replacements but additions.
+
+Keeping packages current, if it is done right, is a lot of labour.
+Doing it wrong causes grief for the user.  I imagine only the
+well-resourced distros can do it themselves for a broad range of
+packages.  Debian does it for many downstream distros.
+
+Stability vs quick adoption of change is a tradeoff.  In my (limited)
+world, I put these as useful points on a spectrum:
+
+RHEL 6, RHEL 7, Ubuntu LTS 12.04, Ubuntu LTS 14.04, Ubuntu, Fedora
+
+I don't really have a feel for where to place the various Debian
+streams.
+
+I never end up using XFCE so I cannot address that.
+
+From sergiodj at sergiodj.net  Sun Jul 26 05:54:35 2015
+From: sergiodj at sergiodj.net (Sergio Durigan Junior)
+Date: Sun, 26 Jul 2015 01:54:35 -0400
+Subject: [GTALUG] XFCE on regular Red Hat
+In-Reply-To: <55B2BF09.4010509@rogers.com> (David Collier-Brown's message of
+ "Fri, 24 Jul 2015 18:41:13 -0400")
+References: <55B2BF09.4010509@rogers.com>
+Message-ID: <87h9ortqec.fsf@sergiodj.net>
+
+On Friday, July 24 2015, David Collier-Brown wrote:
+
+> For a long time, I've been using the Fedora XFCE spin, but wanted to
+> build a new for-work dev machine and got RHEL 7.2, so I would have a
+> supported version to host recent tools on.
+
+I think you meant RHEL-7.1, right?  RHEL-7.2 has not been released yet.
+
+> Fedora is fun, but tends to lag in app versions while being at the
+> bleeding edge in kernel versions, which is fine for a toy machine, but
+> the inverse of what I want for a machine to make money with..
+> 86_64 GNU/Linux
+
+Out of curiosity, why do you say that Fedora "tends to lag in app
+version"?  The Linux kernel and the GNU toolchain are well maintained
+and up-to-date; popular desktop programs as well, at least in my
+experience.
+
+> Alas, RHEL 7.2  seems to be much *more* broken than Fedora fc 21
+> Yum can't even do a groupinstall,
+
+Do you mean yum does not recognize the "groupinstall" command at all?
+As you have mentioned below, yum actually *can* do a groupinstall
+without problems.
+
+> and half the required packages for
+> xfce are in neither the Red Hat nor the EPEL repositories.
+
+You have to enable the 'optional' and 'extras' repositories on RHEL-7 in
+order to get the necessary dependencies for EPEL packages.  Take a look
+at:
+
+  <https://fedoraproject.org/wiki/EPEL>
+
+> Building XFCE from scratch exposes even more missing dependencies
+
+Building from scratch may depend on other packages indeed, depending on
+the features you enable while configuring.
+
+> This seems odd, as many people with slightly earlier 7.X releases did
+> $ sudo yum install epel-release
+> $ sudo yum groupinstall "X Window system"
+> $ sudo yum groupinstall xfce
+> and were done.
+
+I tested it here on a pristine RHEL-7.1, and all I needed to do was
+installing the EPEL repository and 'yum groupinstall Xfce' worked fine.
+
+> Is this just a bad release, or has RH been degrading while I was using
+> something else?
+
+No, Red Hat has not been degrading anything.  However, you might take
+into consideration that RHEL is an Enterprise GNU/Linux edition, and as
+such its goal is to be as stable as possible while still offering
+important upstream features to the customers.
+
+Red Hat does not package XFCE for any version of RHEL; such packages
+have always been considered "third-party" and provided by EPEL (at least
+some of them).
+
+> Should I downgrade to 6? Use KDE? Switch to a different distro?
+
+You do not need to downgrade to RHEL-6 to get XFCE working.  Using EPEL
+is more than enough for this.
+
+Cheers,
+
+-- 
+Sergio
+GPG key ID: 237A 54B1 0287 28BF 00EF  31F4 D0EB 7628 65FC 5E36
+Please send encrypted e-mail if possible
+http://sergiodj.net/
+
