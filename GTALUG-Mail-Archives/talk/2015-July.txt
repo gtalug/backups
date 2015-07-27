@@ -5165,3 +5165,548 @@ GPG key ID: 237A 54B1 0287 28BF 00EF  31F4 D0EB 7628 65FC 5E36
 Please send encrypted e-mail if possible
 http://sergiodj.net/
 
+From rreiter91 at gmail.com  Sun Jul 26 11:59:23 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Sun, 26 Jul 2015 07:59:23 -0400
+Subject: [GTALUG] Fedora 22 Live Workstation Install - no fglrx - no pdftk
+Message-ID: <CAPik5Myg2M3J885hV4hH3DUNHwMNVBke2X2OQWKLcA2K2H8Vtw@mail.gmail.com>
+
+I recently acquired another older MB, ASUStek M3A78-EM, Athlon 64 X2
+Dual-Core, 4Gb ram & onboard Radeon and I thought I'd give the latest
+Fedora Live a try. It installed well enough and Gnome pretty much
+worked except for the lack of fglrx in the open source drivers. In
+fact KDE Plasma doesn't work at all.
+
+In the Gnome desktop however, any intensive video apps such as VLC etc
+overheat the CPU and crash the unit. It looks like I'd have to
+backport X in order to install the proprietary Catalyst drivers for
+this particular GPU. HTML 5 videos on the net do work, but eventually
+the unit overheats and dies. I switched to lightDM and that's a little
+better but still not up to speed.
+
+It seems that yum has been dandified for this release but when I tried
+the new dnf update it failed to connect to the repositories. However,
+yum-deprecated did update the kernel and after that update dnf was
+able to function as intended.
+
+As I am always a sink or swim kind of guy and because a few of the
+individuals I support have switched to Fedora, even though I usually
+install Debian, I decided to try this as my workhorse for a while. I
+am looking around for a more recent PCIe video card in my price range,
+which usually hovers around free or the price of a hamburger, but
+failing that I'm pleased overall with the performance of the business
+end of things.
+
+Well there is one exception, no more pdftk support. (Licensing issues
+with iText5+)
+
+My problem.
+I often have to combine several complete and already numbered pdf
+documents into one consecutively numbered tabbed document. I use a
+shell script like this one below to number the combined documents.
+
+I include this in case others on the list might find it handy. I
+didn't author it, I found it on the net somewhere and would credit the
+original author, if I could find my notes this morning.
+
+enscript -L1 -F --header-font=Times-Roman10 -b '||$%' -o- < <(for i in
+$(seq "$(pdftk "$1" dump_data | grep "Num" | cut -d":" -f2)"); do
+echo; done) | ps2pdf - | pdftk "$1" multistamp - output
+"${1%.pdf}-header.pdf"
+
+This adds a header with the page number in 10pt text to the upper
+right corner of each page. Then I use pdftk to burst the document
+again and then blend in the tabs like this
+
+pdftk TabA.pdf file1.pdf file2.pdf TabB.pdf file3.pdf file4.pdf cat
+output newfile.pdf
+
+after each page is separated and numbered. It's a bit kludgey on
+larger docs but for small quick work it's ok. I was hoping to automate
+it more eventually.
+
+So if anyone has a recommendation on a more linux friendly video card
+of somewhat older vintage, or a command line tool to replace pdftk I'd
+appreciate it.
+
+I note that there are several GUI tools now available to assist with
+sorting pdf pages but I was really hoping to find something in the
+command line arena which I could then poke into this script.
+
+Thanks
+Russell
+
+From scruss at gmail.com  Sun Jul 26 13:43:03 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sun, 26 Jul 2015 09:43:03 -0400
+Subject: [GTALUG] Fedora 22 Live Workstation Install - no fglrx - no
+	pdftk
+In-Reply-To: <CAPik5Myg2M3J885hV4hH3DUNHwMNVBke2X2OQWKLcA2K2H8Vtw@mail.gmail.com>
+References: <CAPik5Myg2M3J885hV4hH3DUNHwMNVBke2X2OQWKLcA2K2H8Vtw@mail.gmail.com>
+Message-ID: <55B4E3E7.20503@gmail.com>
+
+Hi Russell:
+> 
+> Well there is one exception, no more pdftk support. (Licensing issues
+> with iText5+)
+
+Hmm, that's odd. The iText AGPL change was some time ago, and pdftk
+Server (as Sid now calls it) is distributed as source. It's not too
+difficult a build, but is somewhat slow and memory intensive, as it does
+everything with gcj.
+
+> I note that there are several GUI tools now available to assist with
+> sorting pdf pages but I was really hoping to find something in the
+> command line arena which I could then poke into this script.
+
+You might not be able to replace it all, but here are some options:
+
+* pdfinfo (from poppler or xpdf; the former is a fork of the latter)
+will give you the number of pages.
+
+* qpdf will extract and combine pages. It also has some neat tricks for
+cleaning up the detritus that Adobe's two lines of entirely incompatible
+PDF generation tools (Acrobat and DeathSpiral, um sorry, LiveCycle)
+leave behind.
+
+* For the pagination watermark, that's one thing that iText does well.
+To avoid it, you could either:
+
+ 1) convert to PostScript and wedge a line of code in on every page
+preamble with the page number. If you're relying on previously-existing
+bookmarks in the PDF, this will likely break them. (Then again, you're
+printing the file, so you're probably not worried about this.)
+
+ 2) qpdf has a text output mode, QDF, that is /sorta/ editable. It looks
+possible that you could add a text object at the top of the page, then
+reassemble to PDF. Haven't tried it, though.
+
+The difficulty with hand editing PDF is that everything is an object,
+with a hard-coded reference number and (seemingly) fixed byte offset in
+the stream. You change anything without fixing those references, it breaks.
+
+cheers,
+ Stewart
+
+From hugh at mimosa.com  Sun Jul 26 14:28:29 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 26 Jul 2015 10:28:29 -0400 (EDT)
+Subject: [GTALUG] Fedora 22 Live Workstation Install - no fglrx - no
+ pdftk
+In-Reply-To: <CAPik5Myg2M3J885hV4hH3DUNHwMNVBke2X2OQWKLcA2K2H8Vtw@mail.gmail.com>
+References: <CAPik5Myg2M3J885hV4hH3DUNHwMNVBke2X2OQWKLcA2K2H8Vtw@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1507260948010.21238@redclaw.mimosa.com>
+
+| From: Russell Reiter <rreiter91 at gmail.com>
+
+| I recently acquired another older MB, ASUStek M3A78-EM, Athlon 64 X2
+| Dual-Core, 4Gb ram & onboard Radeon
+
+Coincidentally, my mail lives on a machine with that motherboard.  I'm
+ssh'ed into it to read and write mail.  It's running CentOS 6.  I
+don't do anything much involving its X server (it appears to work).
+
+| and I thought I'd give the latest
+| Fedora Live a try. It installed well enough and Gnome pretty much
+| worked except for the lack of fglrx in the open source drivers.
+
+Just to be clear, fglrx isn't open source.  So it cannot be in Fedora.
+
+The normal way to add AMD Catalyst proprietary drivers is to through
+the <http://rpmfusion.org/> repos.  There are many guides to this on
+the web.  I never do this because the open source drivers for AMD are
+good enough for things I do.
+
+| In
+| fact KDE Plasma doesn't work at all.
+
+I'm surprised.  That ought to be fixable.  Perhaps it requires
+experts.
+
+| In the Gnome desktop however, any intensive video apps such as VLC etc
+| overheat the CPU and crash the unit.
+
+That's a hardware problem.  No software you run on a PC should be able
+to "overheat the CPU and crash the unit".
+
+That hardware problem is likely to afflict you with a bunch of
+different workloads.
+
+| It looks like I'd have to
+| backport X in order to install the proprietary Catalyst drivers for
+| this particular GPU.
+
+What do you mean by "backport X"?  What X is newer than Fedora's?  Why
+do you think that it would solve your problems?
+
+| HTML 5 videos on the net do work, but eventually
+| the unit overheats and dies. I switched to lightDM and that's a little
+| better but still not up to speed.
+
+Overheating ought to be fixed.  In hardware.
+
+Consider cleaning out dust as a first step.  Among other things, look
+at heat sinks and fans.
+
+Consider updating firmware (in case thermal throttling has changed).
+I don't actually know if this is meaningful, but dmidecode on my
+machine reports
+	BIOS Revision: 8.14
+The Asus site has M3A78-EM BIOS 2701 released 2010/11/12.
+I'm pretty sure that that is what I'm running.
+
+If brave, see if one of the heat sinks no longer connects properly.
+Finding out can be destructive, so I don't recommend this unless you
+are daring and experienced.  And have thermal paste to replace the
+existing solution.  (AMD CPUs came with a disk of stuff instead of
+paste and it is supposed to be single-use: detaching and re-attaching
+a heat sink is not intended to work.)
+
+| It seems that yum has been dandified for this release
+
+"Dandified"???  "Gone" is the more accurate word.  Or is this word
+play: DaNdiFied?
+
+| but when I tried
+| the new dnf update it failed to connect to the repositories. However,
+| yum-deprecated did update the kernel and after that update dnf was
+| able to function as intended.
+
+That's odd.  And interesting.  Hard to say what actually was going on
+now that the phenomenon is gone.  It's good that the problem is
+eliminated.
+
+Good luck.
+
+From rreiter91 at gmail.com  Sun Jul 26 15:37:25 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Sun, 26 Jul 2015 11:37:25 -0400
+Subject: [GTALUG] Fedora 22 Live Workstation Install - no fglrx - no
+	pdftk
+In-Reply-To: <alpine.LRH.2.02.1507260948010.21238@redclaw.mimosa.com>
+References: <CAPik5Myg2M3J885hV4hH3DUNHwMNVBke2X2OQWKLcA2K2H8Vtw@mail.gmail.com>
+ <alpine.LRH.2.02.1507260948010.21238@redclaw.mimosa.com>
+Message-ID: <CAPik5MxWDFUAhaZxMuc6yc9YcP8z7c26uPUVKY9JxSSFZuviWQ@mail.gmail.com>
+
+Thanks Stewart and Hugh. I'll have a look at Stewart's recommendations
+for pdf manipulation. Interestingly I forgot I had previously used
+ImageMagic's "convert" to combine pages, perhaps I can also use it to
+apply the page numbers as watermarks. I think I gave up on that the
+last time, which was a couple of years ago, because I found pdftk
+worked for this.
+
+On 7/26/15, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+> | From: Russell Reiter <rreiter91 at gmail.com>
+>
+<snip previous>
+> Just to be clear, fglrx isn't open source.  So it cannot be in Fedora.
+
+Sorry I should have said fglrx _as_ open source.
+
+>
+> The normal way to add AMD Catalyst proprietary drivers is to through
+> the <http://rpmfusion.org/> repos.  There are many guides to this on
+> the web.  I never do this because the open source drivers for AMD are
+> good enough for things I do.
+
+I try to convince the people I assist that repository based systems
+are the way to go. For this effort I had added rpmfusion and used the
+recommended ATI install script but alas no joy.
+
+>
+> | In
+> | fact KDE Plasma doesn't work at all.
+>
+> I'm surprised.  That ought to be fixable.  Perhaps it requires
+> experts.
+
+This might also be due to the fact that I switched to lightDM in an
+effort, rightly or wrongly, to control the heating issue. I'll switch
+back and give it a go after I improve the cooling.
+
+>
+> | In the Gnome desktop however, any intensive video apps such as VLC etc
+> | overheat the CPU and crash the unit.
+>
+> That's a hardware problem.  No software you run on a PC should be able
+> to "overheat the CPU and crash the unit".
+>
+> That hardware problem is likely to afflict you with a bunch of
+> different workloads.
+>
+> | It looks like I'd have to
+> | backport X in order to install the proprietary Catalyst drivers for
+> | this particular GPU.
+>
+> What do you mean by "backport X"?  What X is newer than Fedora's?  Why
+> do you think that it would solve your problems?
+
+Sorry - my poor semantics. I meant downgrade, apparently while there
+is supposed support for these older GPU's in X 1.17 stepping down to
+1.16 has apparently worked for some people as noted here.
+https://bluehatrecord.wordpress.com/2015/06/05/installing-the-proprietary-amd-catalyst-15-5-fglrx-15-101-driver-on-fedora-22-with-linux-kernel-4-04/
+
+>
+> | HTML 5 videos on the net do work, but eventually
+> | the unit overheats and dies. I switched to lightDM and that's a little
+> | better but still not up to speed.
+>
+> Overheating ought to be fixed.  In hardware.
+>
+> Consider cleaning out dust as a first step.  Among other things, look
+> at heat sinks and fans.
+
+Clean as a whistle, from a dust perspective. I have added one case
+cooling fan to the back of the unit and I'll add another to the front
+to increase throughput. :-)
+Right now I'm directing the output of my Air Conditioner to the rear
+of the unit. I get almost an hour of VLC video before the crash this
+time.
+
+>
+> Consider updating firmware (in case thermal throttling has changed).
+> I don't actually know if this is meaningful, but dmidecode on my
+> machine reports
+> 	BIOS Revision: 8.14
+> The Asus site has M3A78-EM BIOS 2701 released 2010/11/12.
+> I'm pretty sure that that is what I'm running.
+
+Thanks dmidecode shows this BIOS info for me.
+
+	Vendor: American Megatrends Inc.
+	Version: 0508
+	Release Date: 08/14/2008
+
+It looks like a bios upgrade is added to the TODO's
+
+>
+> If brave, see if one of the heat sinks no longer connects properly.
+
+This was my "hail mary" option.
+
+> Finding out can be destructive, so I don't recommend this unless you
+> are daring and experienced.  And have thermal paste to replace the
+> existing solution.  (AMD CPUs came with a disk of stuff instead of
+> paste and it is supposed to be single-use: detaching and re-attaching
+> a heat sink is not intended to work.)
+
+Thermal grease is on the list. God I hate that stuff, just a dab too
+much and you defeat your whole purpose.
+
+>
+> | It seems that yum has been dandified for this release
+>
+> "Dandified"???  "Gone" is the more accurate word.  Or is this word
+> play: DaNdiFied?
+
+Yup, dnf = dandified yum.
+
+>
+> | but when I tried
+> | the new dnf update it failed to connect to the repositories. However,
+> | yum-deprecated did update the kernel and after that update dnf was
+> | able to function as intended.
+>
+> That's odd.  And interesting.  Hard to say what actually was going on
+> now that the phenomenon is gone.  It's good that the problem is
+> eliminated.
+>
+> Good luck.
+
+Thanks I note that system rescue cd www.sysresccd.org/Download
+gives me finer grained control over the display manager when running
+off the cd, ie. more display resolution options and screen rotation.
+
+There is an option for a disk install of system rescue cd as kind of a
+kludge, or perhaps I'll try out Gentoo proper itself. I just used
+system rescue's tool kit to shrink the partition in preparation for a
+backup os.
+
+First a bios upgrade tho.
+
+Cheers
+Russell
+
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+From davec-b at rogers.com  Sun Jul 26 21:46:08 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Sun, 26 Jul 2015 17:46:08 -0400
+Subject: [GTALUG] XFCE on regular Red Hat
+In-Reply-To: <87h9ortqec.fsf@sergiodj.net>
+References: <55B2BF09.4010509@rogers.com> <87h9ortqec.fsf@sergiodj.net>
+Message-ID: <55B55520.9050208@rogers.com>
+
+On 07/26/2015 01:54 AM, Sergio Durigan Junior wrote:
+> On Friday, July 24 2015, David Collier-Brown wrote:
+>
+>> For a long time, I've been using the Fedora XFCE spin, but wanted to
+>> build a new for-work dev machine and got RHEL 7.2, so I would have a
+>> supported version to host recent tools on.
+> I think you meant RHEL-7.1, right?  RHEL-7.2 has not been released yet.
+The download page said 7.1, but I included uname -a in the message, as 
+it had said something else...
+$ uname -a
+Linux miles 3.10.0-229.7.2.el7.x86_64 #1 SMP Fri May 15 21:38:46 EDT 
+2015 x86_64 x86_64 x
+
+
+>
+>> Fedora is fun, but tends to lag in app versions while being at the
+>> bleeding edge in kernel versions, which is fine for a toy machine, but
+>> the inverse of what I want for a machine to make money with..
+>> 86_64 GNU/Linux
+> Out of curiosity, why do you say that Fedora "tends to lag in app
+> version"?  The Linux kernel and the GNU toolchain are well maintained
+> and up-to-date; popular desktop programs as well, at least in my
+> experience.
+
+At the time it's cut Fedora is up to date, but their stated policy is to 
+not spend much time updating until the next release is cut. I'm 
+constrained to use specific recent versions of Eclipse, Java and Scala 
+for work, and I couldn't even get the previous (Luna) version of Eclipse 
+until a kind chap created a custom repo of it for Fedora.  Current 
+release is Eclipse Mars, which installs without any pain on RHEL 
+workstation. As you would expect.
+
+
+>
+>> Alas, RHEL 7.2  seems to be much *more* broken than Fedora fc 21
+>> Yum can't even do a groupinstall,
+> Do you mean yum does not recognize the "groupinstall" command at all?
+> As you have mentioned below, yum actually *can* do a groupinstall
+> without problems.
+
+No, I said *other folks* with earlier RHEL 7s could do a groupinstall: I get
+$ sudo yum groupinstall Xfce
+[sudo] password for davecb:
+Loaded plugins: langpacks, product-id, subscription-manager
+Warning: group Xfce does not exist.
+No packages in any requested group available to install or update
+
+Various other people reported this as well, and have suggested workarounds.
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From scruss at gmail.com  Sun Jul 26 22:35:17 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sun, 26 Jul 2015 18:35:17 -0400
+Subject: [GTALUG] Fedora 22 Live Workstation Install - no fglrx - no
+	pdftk
+In-Reply-To: <CAPik5MxWDFUAhaZxMuc6yc9YcP8z7c26uPUVKY9JxSSFZuviWQ@mail.gmail.com>
+References: <CAPik5Myg2M3J885hV4hH3DUNHwMNVBke2X2OQWKLcA2K2H8Vtw@mail.gmail.com>
+ <alpine.LRH.2.02.1507260948010.21238@redclaw.mimosa.com>
+ <CAPik5MxWDFUAhaZxMuc6yc9YcP8z7c26uPUVKY9JxSSFZuviWQ@mail.gmail.com>
+Message-ID: <55B560A5.2080400@gmail.com>
+
+On 2015-07-26 11:37 AM, Russell Reiter wrote:
+> 
+> … I forgot I had previously used
+> ImageMagic's "convert" to combine pages, perhaps I can also use it to
+> apply the page numbers as watermarks.
+
+It *may* convert the pages to bitmaps, which is likely not what you
+want. But I could be wrong: when Chris at Seneca mentioned using Pango
+Markup Language
+<http://www.pygtk.org/pygtk2reference/pango-markup-language.html> in
+ImageMagick at a recent talk, I was pleasantly surprised that it made
+decent all-vector PDFs via IM.
+
+Another option for overlaying watermarks is Apache PDFBox. It works from
+the command line, but you are invoking Java:
+
+https://pdfbox.apache.org/1.8/commandline.html#overlayPDF
+
+Usage looks fiddly, but PDFBox is pretty mature.
+
+cheers,
+ Stewart
+
+From sergiodj at sergiodj.net  Mon Jul 27 00:16:48 2015
+From: sergiodj at sergiodj.net (Sergio Durigan Junior)
+Date: Sun, 26 Jul 2015 20:16:48 -0400
+Subject: [GTALUG] XFCE on regular Red Hat
+In-Reply-To: <55B55520.9050208@rogers.com> (David Collier-Brown's message of
+ "Sun, 26 Jul 2015 17:46:08 -0400")
+References: <55B2BF09.4010509@rogers.com> <87h9ortqec.fsf@sergiodj.net>
+ <55B55520.9050208@rogers.com>
+Message-ID: <87bneyzc7j.fsf@sergiodj.net>
+
+On Sunday, July 26 2015, David Collier-Brown wrote:
+
+> On 07/26/2015 01:54 AM, Sergio Durigan Junior wrote:
+>> On Friday, July 24 2015, David Collier-Brown wrote:
+>>
+>>> For a long time, I've been using the Fedora XFCE spin, but wanted to
+>>> build a new for-work dev machine and got RHEL 7.2, so I would have a
+>>> supported version to host recent tools on.
+>> I think you meant RHEL-7.1, right?  RHEL-7.2 has not been released yet.
+> The download page said 7.1, but I included uname -a in the message, as
+> it had said something else...
+> $ uname -a
+> Linux miles 3.10.0-229.7.2.el7.x86_64 #1 SMP Fri May 15 21:38:46 EDT
+> 2015 x86_64 x86_64 x
+
+I see.  The "7.2" you see there is an internal version number; this
+specific Linux kernel has been released for RHEL-7.1.
+
+>>> Fedora is fun, but tends to lag in app versions while being at the
+>>> bleeding edge in kernel versions, which is fine for a toy machine, but
+>>> the inverse of what I want for a machine to make money with..
+>>> 86_64 GNU/Linux
+>> Out of curiosity, why do you say that Fedora "tends to lag in app
+>> version"?  The Linux kernel and the GNU toolchain are well maintained
+>> and up-to-date; popular desktop programs as well, at least in my
+>> experience.
+>
+> At the time it's cut Fedora is up to date, but their stated policy is
+> to not spend much time updating until the next release is cut. I'm
+> constrained to use specific recent versions of Eclipse, Java and Scala
+> for work, and I couldn't even get the previous (Luna) version of
+> Eclipse until a kind chap created a custom repo of it for Fedora.
+> Current release is Eclipse Mars, which installs without any pain on
+> RHEL workstation. As you would expect.
+
+Hm, I don't know about this policy (I am a heavy Fedora user and I
+maintain a few packages in the distro).  The current release always gets
+tons of updates for the vast majority of the packages, and even the
+"older" releases also get a decent number of updates as well (assuming
+they have not been EOL'ed).
+
+>>> Alas, RHEL 7.2  seems to be much *more* broken than Fedora fc 21
+>>> Yum can't even do a groupinstall,
+>> Do you mean yum does not recognize the "groupinstall" command at all?
+>> As you have mentioned below, yum actually *can* do a groupinstall
+>> without problems.
+>
+> No, I said *other folks* with earlier RHEL 7s could do a groupinstall:
+
+Sorry, I was confused with your original sentence, and I thought you
+were not able to do a 'yum groupinstall' of any package.
+
+> I get
+> $ sudo yum groupinstall Xfce
+> [sudo] password for davecb:
+> Loaded plugins: langpacks, product-id, subscription-manager
+> Warning: group Xfce does not exist.
+> No packages in any requested group available to install or update
+
+Do you have EPEL enabled in your system?  I could not reproduce this
+problem, but I am interested in helping you fix it.
+
+-- 
+Sergio
+GPG key ID: 237A 54B1 0287 28BF 00EF  31F4 D0EB 7628 65FC 5E36
+Please send encrypted e-mail if possible
+http://sergiodj.net/
+
