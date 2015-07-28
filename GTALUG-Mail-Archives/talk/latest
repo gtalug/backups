@@ -5710,3 +5710,611 @@ GPG key ID: 237A 54B1 0287 28BF 00EF  31F4 D0EB 7628 65FC 5E36
 Please send encrypted e-mail if possible
 http://sergiodj.net/
 
+From me at mylesbraithwaite.com  Mon Jul 27 12:50:04 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 27 Jul 2015 08:50:04 -0400
+Subject: [GTALUG] [GTALUG-Announce] GTALUG Meeting on 11th August,
+	2015 at 7:30pm
+Message-ID: <CA+hskZOs78ji=p=d6Q_ohWnoh8QhNfeimqArVKJ3VfwVX2kCEQ@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-08/>
+
+# Samba Progress Over the Last Six Years with William Murrithy
+
+The talk is a continuation of William's previous talk on Samba in
+2009. It looks at how close samba has closed the gap between AD and
+samba with samba 4, what's still left, packaging/deployment
+improvements and a demo of the samba deployment and and management.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before each meeting a group of GTALUGers dine at Love At
+First Bite (96 Gerrard Street E).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+# Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact the GTALUG Board @ <board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From me at mylesbraithwaite.com  Mon Jul 27 16:27:49 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 27 Jul 2015 12:27:49 -0400
+Subject: [GTALUG] Fwd: Linux Distros available in Toronto
+In-Reply-To: <CADt6Y0-Y3Vu_9gtFJ7c0tqOpOeUg4d_g8F_Njcd7J4pJ0Pj46Q@mail.gmail.com>
+References: <CADt6Y0-Y3Vu_9gtFJ7c0tqOpOeUg4d_g8F_Njcd7J4pJ0Pj46Q@mail.gmail.com>
+Message-ID: <55B65C05.50405@mylesbraithwaite.com>
+
+We got this email on our general mailing list. Does anyone know where
+you can purchase Linux DVDs in Toronto.
+
+-------- Original Message --------
+Subject: Linux Distros available in Toronto
+Date: Mon, 27 Jul 2015 12:20:28 -0400
+From: [reacted]
+To: hi at gtalug.org
+
+
+
+Hello.
+
+I am newly interested in Linux and it's variations, and am looking to
+purchase a distro on DVD.....trouble is, it seems that I cannot find any
+vendors locally, in Toronto that has them available...and my "google-fu"
+is usually pretty good...it was while searching that I found your User
+Group.
+
+I can find sellers in the US, but would prefer to do this local...and
+"The Linux Store" seems to be off line...Linux Cafe is no more.
+
+Could you point me in the right direction as to where I could get hold
+of linxu distros in Toronto on CD/DVD at reasonable cost?
+
+In particular, I am looking to get hold of Knoppix Live DVD v7.4.2, as
+that seems most suitable for me based on my reading.
+
+Your assistance would be greatly appreciated...hope I am not imposing on
+you by this request.
+
+Thank you.
+
+From opengeometry at yahoo.ca  Mon Jul 27 16:46:48 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Mon, 27 Jul 2015 12:46:48 -0400
+Subject: [GTALUG] Fwd: Linux Distros available in Toronto
+In-Reply-To: <55B65C05.50405@mylesbraithwaite.com>
+References: <CADt6Y0-Y3Vu_9gtFJ7c0tqOpOeUg4d_g8F_Njcd7J4pJ0Pj46Q@mail.gmail.com>
+ <55B65C05.50405@mylesbraithwaite.com>
+Message-ID: <20150727164648.GA10865@node1.localdomain>
+
+There must be reason for the question.  But, it's cheaper and faster to
+just burn it yourself.  I doubt there is any local place, because it's
+obsolete by the time you stock it.
+
+Official Ubuntu DVDs are another matter. :-)
+-- 
+William
+
+On Mon, Jul 27, 2015 at 12:27:49PM -0400, Myles Braithwaite wrote:
+> We got this email on our general mailing list. Does anyone know where
+> you can purchase Linux DVDs in Toronto.
+> 
+> -------- Original Message --------
+> Subject: Linux Distros available in Toronto
+> Date: Mon, 27 Jul 2015 12:20:28 -0400
+> From: [reacted]
+> To: hi at gtalug.org
+> 
+> 
+> 
+> Hello.
+> 
+> I am newly interested in Linux and it's variations, and am looking to
+> purchase a distro on DVD.....trouble is, it seems that I cannot find any
+> vendors locally, in Toronto that has them available...and my "google-fu"
+> is usually pretty good...it was while searching that I found your User
+> Group.
+> 
+> I can find sellers in the US, but would prefer to do this local...and
+> "The Linux Store" seems to be off line...Linux Cafe is no more.
+> 
+> Could you point me in the right direction as to where I could get hold
+> of linxu distros in Toronto on CD/DVD at reasonable cost?
+> 
+> In particular, I am looking to get hold of Knoppix Live DVD v7.4.2, as
+> that seems most suitable for me based on my reading.
+> 
+> Your assistance would be greatly appreciated...hope I am not imposing on
+> you by this request.
+> 
+> Thank you.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From phiscock at ee.ryerson.ca  Mon Jul 27 16:48:59 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Mon, 27 Jul 2015 12:48:59 -0400
+Subject: [GTALUG] Fwd: Linux Distros available in Toronto
+In-Reply-To: <20150727164648.GA10865@node1.localdomain>
+References: <CADt6Y0-Y3Vu_9gtFJ7c0tqOpOeUg4d_g8F_Njcd7J4pJ0Pj46Q@mail.gmail.com>
+ <55B65C05.50405@mylesbraithwaite.com>
+ <20150727164648.GA10865@node1.localdomain>
+Message-ID: <94c2490247ab53e7724dd333624eb7d6.squirrel@webmail.ee.ryerson.ca>
+
+Maybe someone could burn it for this person and hand it to them at the
+next meeting?
+
+> There must be reason for the question.  But, it's cheaper and faster to
+> just burn it yourself.  I doubt there is any local place, because it's
+> obsolete by the time you stock it.
+>
+> Official Ubuntu DVDs are another matter. :-)
+> --
+> William
+>
+> On Mon, Jul 27, 2015 at 12:27:49PM -0400, Myles Braithwaite wrote:
+>> We got this email on our general mailing list. Does anyone know where
+>> you can purchase Linux DVDs in Toronto.
+>>
+>> -------- Original Message --------
+>> Subject: Linux Distros available in Toronto
+>> Date: Mon, 27 Jul 2015 12:20:28 -0400
+>> From: [reacted]
+>> To: hi at gtalug.org
+>>
+>>
+>>
+>> Hello.
+>>
+>> I am newly interested in Linux and it's variations, and am looking to
+>> purchase a distro on DVD.....trouble is, it seems that I cannot find any
+>> vendors locally, in Toronto that has them available...and my "google-fu"
+>> is usually pretty good...it was while searching that I found your User
+>> Group.
+>>
+>> I can find sellers in the US, but would prefer to do this local...and
+>> "The Linux Store" seems to be off line...Linux Cafe is no more.
+>>
+>> Could you point me in the right direction as to where I could get hold
+>> of linxu distros in Toronto on CD/DVD at reasonable cost?
+>>
+>> In particular, I am looking to get hold of Knoppix Live DVD v7.4.2, as
+>> that seems most suitable for me based on my reading.
+>>
+>> Your assistance would be greatly appreciated...hope I am not imposing on
+>> you by this request.
+>>
+>> Thank you.
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From cbbrowne at gmail.com  Mon Jul 27 17:58:04 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Mon, 27 Jul 2015 13:58:04 -0400
+Subject: [GTALUG] Fwd: Linux Distros available in Toronto
+In-Reply-To: <55B65C05.50405@mylesbraithwaite.com>
+References: <CADt6Y0-Y3Vu_9gtFJ7c0tqOpOeUg4d_g8F_Njcd7J4pJ0Pj46Q@mail.gmail.com>
+ <55B65C05.50405@mylesbraithwaite.com>
+Message-ID: <CAFNqd5WBBhKUSypML4puActetdutN2f-YbvZ3rPrxOkgqEJFFA@mail.gmail.com>
+
+This is a business area that has died, for fairly good reason.
+
+At one time, Internet bandwidth was rather more precious, as you were most
+likely accessing it via using a modem and your telephone land line.  (Some
+of our younger members may not remember back that far!!)
+
+And so it made sense that businesses could make a viable business out of
+mastering CDs for Linux distributions and selling thousands of copies that
+would be salable for a year or two, saving usage of expensive/scarce
+Internet connections.  I recall InfoMagic with their 10 CD set (with
+several distributions), LinuxMall, and there being various others, that
+came about in the mid-1990s, selling all manner of Linux distribution CDs.
+They started disappearing in about 2001-2002.
+
+Internet connectivity has gotten so vastly much cheaper and more available
+that this business model became uneconomic.
+
+I suggest asking what distribution the original poster is interested in,
+and seeing if someone can burn a DVD and bring it to the next meeting?
+That would be what *would* work, today.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150727/8ad86f6c/attachment.html>
+
+From email+libre at blaise.ca  Mon Jul 27 18:29:59 2015
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Mon, 27 Jul 2015 14:29:59 -0400
+Subject: [GTALUG] Fwd: Linux Distros available in Toronto
+In-Reply-To: <55B65C05.50405@mylesbraithwaite.com>
+References: <CADt6Y0-Y3Vu_9gtFJ7c0tqOpOeUg4d_g8F_Njcd7J4pJ0Pj46Q@mail.gmail.com>
+ <55B65C05.50405@mylesbraithwaite.com>
+Message-ID: <55B678A7.8090701@blaise.ca>
+
+On 27/07/15 12:27 PM, Myles Braithwaite wrote:
+> We got this email on our general mailing list. Does anyone know where
+> you can purchase Linux DVDs in Toronto.
+> 
+
+Despite the question being obsolete... What about a book store?
+
+(I guess the answer is almost obsolete too...)
+
+
+In Jan/Feb 2007 when Microsoft put ads all over St. George Station for Vista's
+"The Wow is Now" campaign, this dissatisfied Windows user got so annoyed that I
+went off impulsively searching for a way to try out this mythical "linux" one
+evening.
+
+Sure, I probably should have gone online instead... but truth is I just took the
+subway a couple extra stops to Yorkdale, went to Indigo, looked in the magazine
+and computer books section. There are a couple magazines with discs, but I
+settled on some comprehensive guide to Ubuntu that came with the most recent LTS
+on DVD.
+
+I'm not sure that you could find somewhere in Toronto that sells DVDs with
+GNU/Linux on them, but I bet a store with a wide enough selection of computer
+books and magazines will sell one that comes with a DVD.
+
+
+But yeah, +1 to just burning the ISO, or better yet, using a USB flash drive...
+
+
+From bjonkman at sobac.com  Mon Jul 27 18:52:09 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Mon, 27 Jul 2015 14:52:09 -0400
+Subject: [GTALUG] Fwd: Linux Distros available in Toronto
+In-Reply-To: <55B65C05.50405@mylesbraithwaite.com>
+References: <CADt6Y0-Y3Vu_9gtFJ7c0tqOpOeUg4d_g8F_Njcd7J4pJ0Pj46Q@mail.gmail.com>
+ <55B65C05.50405@mylesbraithwaite.com>
+Message-ID: <55B67DD9.4040303@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Aruna Hewapathirane and Michael Kaulbach should still have some
+official  DVDs of Ubuntu 14.04 LTS "Trusty Tahr".  They're free, just
+need to arrange a transfer of goods.
+
+The Ubuntu DVDs are Live DVDs, so they'll run Linux to try it out or
+to rescue a system just like a Knoppix release (but Knoppix isn't
+encumbered with the Unity desktop, so there's that).
+
+I have a few DVDs remaining too, but wasn't planning on being in
+Toronto for a while...
+
+- --Bob.
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-635-9413
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+
+
+On 27/07/15 12:27 PM, Myles Braithwaite wrote:
+> We got this email on our general mailing list. Does anyone know
+> where you can purchase Linux DVDs in Toronto.
+> 
+> -------- Original Message -------- Subject: Linux Distros available
+> in Toronto Date: Mon, 27 Jul 2015 12:20:28 -0400 From: [reacted] 
+> To: hi at gtalug.org
+> 
+> 
+> 
+> Hello.
+> 
+> I am newly interested in Linux and it's variations, and am looking
+> to purchase a distro on DVD.....trouble is, it seems that I cannot
+> find any vendors locally, in Toronto that has them available...and
+> my "google-fu" is usually pretty good...it was while searching that
+> I found your User Group.
+> 
+> I can find sellers in the US, but would prefer to do this
+> local...and "The Linux Store" seems to be off line...Linux Cafe is
+> no more.
+> 
+> Could you point me in the right direction as to where I could get
+> hold of linxu distros in Toronto on CD/DVD at reasonable cost?
+> 
+> In particular, I am looking to get hold of Knoppix Live DVD v7.4.2,
+> as that seems most suitable for me based on my reading.
+> 
+> Your assistance would be greatly appreciated...hope I am not
+> imposing on you by this request.
+> 
+> Thank you. --- Talk Mailing List talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlW2fdgACgkQuRKJsNLM5erDeACgrz56UZCG2DAYhDmYNrJZwpLl
+6+cAoMJEeBpJv5QsdbqZYYHhAH/Hi5dk
+=uVgx
+-----END PGP SIGNATURE-----
+
+From aruna.hewapathirane at gmail.com  Mon Jul 27 19:07:13 2015
+From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
+Date: Mon, 27 Jul 2015 15:07:13 -0400
+Subject: [GTALUG] Fwd: Linux Distros available in Toronto
+In-Reply-To: <55B67DD9.4040303@sobac.com>
+References: <CADt6Y0-Y3Vu_9gtFJ7c0tqOpOeUg4d_g8F_Njcd7J4pJ0Pj46Q@mail.gmail.com>
+ <55B65C05.50405@mylesbraithwaite.com> <55B67DD9.4040303@sobac.com>
+Message-ID: <CAFSeFg9NP+B2ciUwC0unhN-sMjoOpMwKQPR2Jo4-7o9i4KtA6A@mail.gmail.com>
+
+> Aruna Hewapathirane and Michael Kaulbach should still have some
+> official  DVDs of Ubuntu 14.04 LTS "Trusty Tahr".  They're free, just
+> need to arrange a transfer of goods.
+
+You can download Knoppix here:
+ftp://ftp.knoppix.nl/pub/os/Linux/distr/knoppix-dvd/KNOPPIX_V7.4.1DVD-2014-09-15-EN.iso
+and burn it yourself.
+
+I have official Ubuntu 14.04 LTS Server Edition and 14.04 LTS Desktop
+Edition which you are welcome to pick up and like Bob said it's FREE! YOu
+can reach me on 647-709-9269.
+
+Thanks - Aruna ( Who after many distros swears Debian is rock-solid, stable
+and instead of going bald due to pulling out my hair I have actually
+started to grow new hair :)
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150727/b39eb35b/attachment.html>
+
+From evan at telly.org  Mon Jul 27 19:20:08 2015
+From: evan at telly.org (Evan Leibovitch)
+Date: Mon, 27 Jul 2015 20:20:08 +0100
+Subject: [GTALUG] Fwd: Linux Distros available in Toronto
+In-Reply-To: <CAFSeFg9NP+B2ciUwC0unhN-sMjoOpMwKQPR2Jo4-7o9i4KtA6A@mail.gmail.com>
+References: <CADt6Y0-Y3Vu_9gtFJ7c0tqOpOeUg4d_g8F_Njcd7J4pJ0Pj46Q@mail.gmail.com>
+ <55B65C05.50405@mylesbraithwaite.com> <55B67DD9.4040303@sobac.com>
+ <CAFSeFg9NP+B2ciUwC0unhN-sMjoOpMwKQPR2Jo4-7o9i4KtA6A@mail.gmail.com>
+Message-ID: <CAMguqh2Ee1Q8aFipYZnUXtc6Z+7rVWAUeWX1sYhmUti8-hPGmQ@mail.gmail.com>
+
+​There are few circumstances ​these days in which a commercial vendor would
+find mass distribution of Linux DVDs to be commercially viable. The
+business model has gone the way of Blockbuster.
+
+Consider that a growing number of laptops and even desktops don't even have
+DVD drives built in, and encourage the use of USB sticks that are reusable;
+I have a specific stick that always has the most current version of Mint.
+not every system has a drive anymore, but most of them can boot off a USB
+stick.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150727/62f2d16f/attachment.html>
+
+From davecramer at gmail.com  Mon Jul 27 21:38:39 2015
+From: davecramer at gmail.com (Dave Cramer)
+Date: Mon, 27 Jul 2015 17:38:39 -0400
+Subject: [GTALUG] dedicated servers in Canada
+Message-ID: <CADK3HHLn-A4-0xpvCoA+Av5uW-gE0QZmkjwbY02vzLgbET55wg@mail.gmail.com>
+
+This
+https://www.ovh.com/ca/en/dedicated-servers/enterprise/2014-SP-128.xml#options
+
+Doesn't look like a bad deal, does anyone have any recommendations for
+hosting in Canada.
+
+One thing is their RAID 10 option is very expensive
+
+Dave Cramer
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150727/b50df115/attachment.html>
+
+From me at mylesbraithwaite.com  Tue Jul 28 00:13:50 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 27 Jul 2015 20:13:50 -0400
+Subject: [GTALUG] Looking for Speakers for Upcoming GTALUG Meetings
+Message-ID: <CA+hskZOtRDWWFn06ucHxESuGJjXXa4ZU8PWbf=0h7pPFgpFWbQ@mail.gmail.com>
+
+We are activly looking for speakers for upcoming GTALUG. If you are
+interested in speaking please contact:
+<speaker-coordinator at gtalug.org>.
+
+From ted.leslie at gmail.com  Tue Jul 28 03:10:52 2015
+From: ted.leslie at gmail.com (ted leslie)
+Date: Mon, 27 Jul 2015 23:10:52 -0400
+Subject: [GTALUG] dedicated servers in Canada
+In-Reply-To: <CADK3HHLn-A4-0xpvCoA+Av5uW-gE0QZmkjwbY02vzLgbET55wg@mail.gmail.com>
+References: <CADK3HHLn-A4-0xpvCoA+Av5uW-gE0QZmkjwbY02vzLgbET55wg@mail.gmail.com>
+Message-ID: <CAMua2SGR_Vs-Eu7xq3m0RzBbUaCn=hrAuvFP20-ompJ5buY+KQ@mail.gmail.com>
+
+I have a http://www.kimsufi.com/ca/en/index.xml  ks-4
+kimisufi is discount (almost no support) feeder to ovh (i think),
+I didn't need it for production, so I can risk it, but I am pretty happy,
+you can't beat that price, i have proxmox on it, can have umpteen full VM's
+on it ....
+I am thinking of getting a storage account on OVH to backup too, but I
+don't know yet if inter DC transfer is free.
+OVH is supposed to have one of the best quality BW's. Also they are
+economical, I hear, because of the QC
+hydro rate deal.
+
+-tl
+
+
+On Mon, Jul 27, 2015 at 5:38 PM, Dave Cramer <davecramer at gmail.com> wrote:
+
+> This
+> https://www.ovh.com/ca/en/dedicated-servers/enterprise/2014-SP-128.xml#options
+>
+> Doesn't look like a bad deal, does anyone have any recommendations for
+> hosting in Canada.
+>
+> One thing is their RAID 10 option is very expensive
+>
+> Dave Cramer
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150727/2f8f1845/attachment.html>
+
+From hgibson at eol.ca  Tue Jul 28 03:46:25 2015
+From: hgibson at eol.ca (Howard Gibson)
+Date: Mon, 27 Jul 2015 23:46:25 -0400
+Subject: [GTALUG] Fwd: Linux Distros available in Toronto
+In-Reply-To: <55B65C05.50405@mylesbraithwaite.com>
+References: <CADt6Y0-Y3Vu_9gtFJ7c0tqOpOeUg4d_g8F_Njcd7J4pJ0Pj46Q@mail.gmail.com>
+ <55B65C05.50405@mylesbraithwaite.com>
+Message-ID: <20150727234625.f8855e578e2afc19c867c831@eol.ca>
+
+On Mon, 27 Jul 2015 12:27:49 -0400
+Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+
+> We got this email on our general mailing list. Does anyone know where
+> you can purchase Linux DVDs in Toronto.
+
+   Check the internet to see which distributions are up to date. Visit Chapters, and check the computer section for Linux Bibles.  These, often, are quite up to date.  If they are not up to date, this person can download the latest distribution, and they still have a useful book.
+
+-- 
+Howard Gibson 
+hgibson at eol.ca
+howard.gibson at teledyneoptech.com 
+jhowardgibson at gmail.com
+http://home.eol.ca/~hgibson
+
+From rick.j.79 at gmail.com  Tue Jul 28 03:53:18 2015
+From: rick.j.79 at gmail.com (Rick Johnson)
+Date: Mon, 27 Jul 2015 23:53:18 -0400
+Subject: [GTALUG] LInux+
+Message-ID: <CAOJ6EZwWx=Zy6f-iP3ZXtjsRnRaLsVLP_aRCev7p45gci+R8xg@mail.gmail.com>
+
+Hey folks.
+
+I've been studying for Linux+ lately. I have the Sybex book which covers
+lx0-101 and lx0-102  but I just discovered that these exams will be
+discontinued at the end of August and replace with lx0-103 and lx0-104. Has
+anyone taken these yet? I'm wondering what I'm in for. What is covered in
+these exams that isn't in the older versions? I can imagine that I'll have
+to dig into Systemd thoroughly but I'm wondering if I'll be able to just
+top up my knowledge from the 'net or is this a matter of starting all over?
+
+Thanks in advance
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150727/2c5afaa9/attachment.html>
+
+From email+libre at blaise.ca  Tue Jul 28 05:29:44 2015
+From: email+libre at blaise.ca (Blaise Alleyne)
+Date: Tue, 28 Jul 2015 01:29:44 -0400
+Subject: [GTALUG] dedicated servers in Canada
+In-Reply-To: <CADK3HHLn-A4-0xpvCoA+Av5uW-gE0QZmkjwbY02vzLgbET55wg@mail.gmail.com>
+References: <CADK3HHLn-A4-0xpvCoA+Av5uW-gE0QZmkjwbY02vzLgbET55wg@mail.gmail.com>
+Message-ID: <55B71348.4070703@blaise.ca>
+
+On 27/07/15 05:38 PM, Dave Cramer wrote:
+> This https://www.ovh.com/ca/en/dedicated-servers/enterprise/2014-SP-128.xml#options
+> 
+> Doesn't look like a bad deal, does anyone have any recommendations for hosting
+> in Canada.
+> 
+
+I use and recommend iWeb (Montreal):
+https://iweb.com/
+
+They have decent dedicated and OpenStack cloud servers. I manage a run "Smart
+Servers", which are essentially dedicated servers but with a virtualized layer
+that allows you to swap hardware pretty quickly. I haven't tried their OpenStack
+cloud.
+
+
+Though over the past year or so I've been switching services away from iWeb to
+VPS solutions... mostly outside Canada, with Linode, Digital Ocean, etc.
+
+But for dedicated servers, iWeb is top pick for me -- Canada or otherwise. They
+aren't perfect -- I've had a couple bad tech support experiences -- but they're
+pretty solid and I'm pretty happy with the Smart Server option as far as
+dedicated servers go.
+
+
+I do run a Cartika VPS:
+https://www.cartika.com/
+
+Can't say I'm super happy with it... if I had to stay in Canada, I might stick
+with them, but VPS performance feels slow, VPS upgrade pricing sucks, and the
+web admin VPS interface experience was pretty limited and lousy (especially
+after I experienced Linode / Digital Ocean)... that said, it's been a few years
+since I've looked at that, and they seem to have done a big makeover in the last
+year or two, so maybe worth another look.
+
+And some of those criticisms don't really apply to dedicated servers... They
+have a Toronto data centre and offer dedicated servers. If I had to leave iWeb
+and go dedicated elsehwere in Canada, I'd take a look at their dedicated offerings:
+https://www.cartika.com/services/dedicated-servers/
+
+
+
+One other company that I flagged for further review was Cirrus:
+http://www.cirrushosting.com/dedicatedservers/dedicated-server-canada.html
+
+I have no experience with this company though.
+
+
+HTH
+
+Blaise
+
