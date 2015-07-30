@@ -7106,3 +7106,447 @@ Oh?  Like what?
 -- 
 William
 
+From rreiter91 at gmail.com  Wed Jul 29 11:11:05 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Wed, 29 Jul 2015 07:11:05 -0400
+Subject: [GTALUG] Fedora 22 Live Workstation Install - no fglrx - no
+	pdftk
+Message-ID: <CAPik5MxdMtBULoeTxcP9jbm3iRjo_hKGBxw8QK4xr4qZ6A-6Rw@mail.gmail.com>
+
+On 7/28/15, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+> | From: Russell Reiter <rreiter91 at gmail.com>
+>
+> Be sure of your diagnosis before applying drastic remedies.  You claim
+> overheating, and I previously responded on the assumption that this
+> was a correct deduction.  Now I'll question it: what observation
+> convince you that overheating is a problem?
+
+There were hard crashes with no hanging and no warning, just the power
+turned off in order to save the cpu. These crashes were mitigated by
+directing cold air from my AC directly into the unit till I did the
+bios update.
+
+>
+> Also: I think that overclocking is really just a game.  If it isn't
+> fun, don't do it.  The cost (in uncertainty etc.) is usually more than
+> the benefit (subjectively unobservable speed-up).  Don't do it and
+> then complain about things going wrong!  If I don't think it's worth
+> your time to do overclocking, I'm sure it's not worth my time to help
+> you do it.
+
+The board default is to set overclocking as auto. I didn't choose it.
+I haven't found a table of recommended settings like I once got with
+service manuals when I bought a board. Now all I can find is quick
+start or user manuals.
+
+>
+> I think that generally a computer needs to be close to twice as fast
+> to feel significantly faster.  Of course there are cases where
+> crossing a threshold matters (eg. playing videos).
+
+Well the combination of being able to choose a lower display
+resolution and whatever was changed after the bios update did show
+about a 10-15% reduction in CPU access when playing DVD's according to
+Plasma's graphical system monitor. I've bumped the resolution back up
+to 1024X768 for the time being. I'd don't watch a lot of DVD's, but I
+do use video to aid me in ad-hoc tweaking. I do note that desktop
+sprite animations are slower.
+
+>
+> | <snip previous>
+> | > existing solution.  (AMD CPUs came with a disk of stuff instead of
+> | > paste and it is supposed to be single-use: detaching and re-attaching
+> | > a heat sink is not intended to work.)
+> |
+> | Could you describe this disk stuff in a little more detail? did you
+> | get the package locally?
+>
+> The disk came on the bundled heat-sink supplied by AMD.  It was
+> perhaps an inch in diameter and a little thicker than a sheet of
+> paper.  The idea is that it melts and spreads when it is sandwiched
+> between the HS and the CPU (clamped) and the CPU heats up.  So it
+> spreads and becomes very thing.  But it isn't supposed to do that
+> twice.
+>
+> It's not something that you'd buy by itself.  It may or may not come
+> with a Heat-Sink / Fan unit (HSF).
+>
+> I haven't assembled a system in years.  Enough decent off-the-shelf
+> systems come along.  So the AMD HSF units may come with different
+> arrangements now.  Here's a random thread about an AMD thermal pad:
+> <http://hardforum.com/showthread.php?t=863613>
+>
+> | I think I am going to change the heat sinc on this unit. The one that
+> | came with it has this copper pipe threaded through it, Makes it look
+> | sort of like the headers on the 67 Mustang I once owned. UNlike those
+> | headers these ones look like all show and no go.
+>
+> If it once was good enough, why would it not be now?  Dust,
+> deteriorated contact with CPU, ...?
+
+I think perhaps I got it because it wasn't good enough, or not set up
+well enough or maybe both. I've seen a couple of threads about this
+board where significant overheating was an issue for some MS users.
+This machine formally had windows on it and a video card which had
+been removed.
+
+I remember having quite a time getting linux on to one particular
+laptop. It would overheat right off. I was able to finally install
+Debian after booting from a dos disk, formatting a fat partition and
+then installing the MS DOS power management utilities for the OS that
+was originally bundled with the unit.
+
+That's the one I had to sit on a bag of frozen peas for the unit to
+stay cool long enough to get anywhere. Now I have a couple of those
+reusable freezer blocks for the picnic cooler in case I have to do
+that again. Sorry can't help myself ...Gotta give peas a chance.
+
+>
+> Does it feel hot when you think that the CPU is overheating?  If not,
+> there is a problem, I would think.  After all, it is supposed to be
+> carrying the heat to the air.
+
+It seemed to be a little too hot around the base of the heat-sinc,
+while the fins of it were quite cool on the top and sides, which made
+me think perhaps there was too much thermal paste or perhaps none at
+all, or even poorly mated surfaces from the beginning.
+
+>
+> | Things got better after I flashed the bios.
+>
+> My guess is that the BIOS update would not change thermal management,
+> but we will never know.  (I rarely read much into the manufacturer's
+> notes about BIOS updates because they disclose little and hide lots.)
+>
+> | After I switched back to
+> | GDM Plasma did stop hanging and I got to see that desktop for the
+> | first time on this unit.
+>
+> That's good.
+>
+> | I did read that north bridge switching is not enabled in later
+> | releases of this boards bios and I have since found there is an older
+> | bios with this FSB feature available. Although I usually hesitate to
+> | trim the north bridge clock. If you've got to trim a clock, trim the
+> | big clock first and see what acts up first.
+>
+> Don't pick at it!  Use the BIOS defaults or conservative defaults (my
+> machine doesn't crash so I rarely see the BIOS screen).
+
+The defaults are overclocking enabled. I wish I could find a table of
+optimal settings from the manufacturer. My first conservative guess
+got me the BSOD.
+
+>
+> | I wish I was better at math :-)
+>
+> Me too.  But I think you mean arithmetic.  For which I use a
+> calculator.
+>
+> | And not so lazy. I reset the cmos without jumpering it off. When I
+> | reset it I could set the date but not the time.
+>
+> How can you be prevented from setting the time?  Isn't date and time
+> one setting?
+
+It's the oddest thing. In the menu screen there is one line to set the
+date in the usual way. You know tab to the next setting and use the
+plus and minus keys to go up or down. However when you move to the
+next line to set hours, minutes and seconds, you can change them but
+enter won't commit them. F10 will write changes to the cmos but on
+restart the default time is always 00:00:00.
+
+>
+> | My working theory is that the ready state of the cross fire video bus
+> | consumes too many cycles. This board can drive four monitors. Since
+> | it's only driving one monitor, my first thought on stabilising was to
+> | knock the north bridge back a notch.
+>
+> You need to apply Occum's Razor.  Your explanation is way to unlikely
+> and complicated for an early theory.
+>
+> You don't actually have a video card, right?  You are just using the
+> on-motherboard video, right?  That should not be stressful.
+
+Right now I"m using the onboard card. I did try with a PCIeX card I
+picked up. It's a slightly newer vintage Radeon but that made no
+difference to the VGA output so I went back to the onboard card.
+
+>
+> | There are Linux utilities from 2008 on the site; audio drivers and
+> | stuff and there is a check script:
+>
+> The fact that it talks about XFree86 means that it is way out of date.
+> Everyone uses Xorg's X.
+>
+> | The question for me right now is, can I just add XFree86 libs to get
+> | quick time?
+>
+> Don't do that!  Or, if you do, stop asking for help.  You are way off
+> book.
+>
+> | Oh yea and whether or not it's worth it to modify the CPU
+> | heat-sinc.
+>
+> First guess: not yet.
+
+After the bios update there doesn't seem to be as much heat coming off
+it, but I can't tell for sure. The heat-sinc always feels cool to the
+touch on the top and sides but around the base is another matter.
+
+>
+> | I know I haven't unseated it yet. That does't mean it hasn't been
+> | removed and reseated before this.
+>
+> True enough.
+>
+> | I remember I use to be able to find
+> | little tubes of acetone to clean parts. I guess a trip to Active
+> | Surplus might find something similar, but I sure don't want to store
+> | even a litre of acetone at my place, just to use a couple of
+> | tablespoons of it now.
+>
+> Acetone used to be available as nail-polish remover.  Small amounts.
+> In drug stores.
+
+Thanks didn't think of that.
+
+>
+> My very few run-ins with cleaning gunk off CPUs and heat sinks
+> involved paper towels, finger nails, and elbow grease.
+
+Apparently their are kits available with both solvent and thermal
+grease at various price points. I just recall Acetone, being so
+volatile,  leaves the least amount of residue.
+
+On the link you posted on thermal pads these guy's were talking about
+lapping matching surfaces on ground glass, that's how I removed bits
+of rust from the bottom of a jack plane, although I did that on the
+ripping bed of a bandsaw instead of a glass plate. They also did not
+have too much nice to say about thermal pads, just to use razor thin
+applications of thermal grease.
+
+Thanks
+Russell
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+From rreiter91 at gmail.com  Wed Jul 29 11:13:05 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Wed, 29 Jul 2015 07:13:05 -0400
+Subject: [GTALUG] Fedora 22 Live Workstation Install - no fglrx - no
+	pdftk
+In-Reply-To: <20150729020533.GC29199@csclub.uwaterloo.ca>
+References: <CAPik5MxzwqtUScbpOByDbKe=_RaoH-ft+xQ4i4KmmfuhihZbvg@mail.gmail.com>
+ <alpine.LRH.2.02.1507281550280.21238@redclaw.mimosa.com>
+ <20150728224041.GA5682@node1.localdomain>
+ <20150729020533.GC29199@csclub.uwaterloo.ca>
+Message-ID: <CAPik5MwLPKtKO6BkJzJUL--14JWVOAoaBpQYq34yS6mh=q-WKg@mail.gmail.com>
+
+On 7/28/15, Lennart Sorensen <lsorense at csclub.uwaterloo.ca> wrote:
+> On Tue, Jul 28, 2015 at 06:40:41PM -0400, William Park wrote:
+>> WD40 works also.  Accidental discovery, while working on a laptop fan.
+>
+> So there is actually something WD40 is useful for?  It certainly sucks
+> at what they claim it is for, compared to many much better products you
+> can buy (but which are not nearly as hyped by marketing).
+
+Apparently in Asia it displaces Pythons as well as water.
+
+http://wd40.com/cool-stuff/myths-legends-fun-facts
+
+>
+> --
+> Len Sorensen
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+From kevin at ve3syb.ca  Wed Jul 29 19:09:44 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Wed, 29 Jul 2015 15:09:44 -0400
+Subject: [GTALUG] Fwd: Linux Distros available in Toronto
+In-Reply-To: <55B678A7.8090701@blaise.ca>
+References: <CADt6Y0-Y3Vu_9gtFJ7c0tqOpOeUg4d_g8F_Njcd7J4pJ0Pj46Q@mail.gmail.com>
+ <55B65C05.50405@mylesbraithwaite.com> <55B678A7.8090701@blaise.ca>
+Message-ID: <55B924F8.8070408@ve3syb.ca>
+
+On 15-07-27 02:29 PM, Blaise Alleyne wrote:
+> On 27/07/15 12:27 PM, Myles Braithwaite wrote:
+>> We got this email on our general mailing list. Does anyone know where
+>> you can purchase Linux DVDs in Toronto.
+>>
+>
+> Despite the question being obsolete... What about a book store?
+
+The first version of Linux I ever got my hands on was Yggdrasil Linux. I 
+bought it at the UofT bookstore in the fall of 1994. It was the first and 
+last time I have been to that bookstore. I'm not avoiding the place. I just 
+haven't found myself in the area again.
+
+With so many distros available for download on line I wouldn't expect (m)any 
+stores to carry Linux CDs/DVDs for sale. Most are out-of-date in six months 
+time when the next release is made available.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From el.fontanero at gmail.com  Wed Jul 29 19:21:55 2015
+From: el.fontanero at gmail.com (Mike)
+Date: Wed, 29 Jul 2015 15:21:55 -0400
+Subject: [GTALUG] Fwd: Linux Distros available in Toronto
+In-Reply-To: <55B924F8.8070408@ve3syb.ca>
+References: <CADt6Y0-Y3Vu_9gtFJ7c0tqOpOeUg4d_g8F_Njcd7J4pJ0Pj46Q@mail.gmail.com>
+ <55B65C05.50405@mylesbraithwaite.com> <55B678A7.8090701@blaise.ca>
+ <55B924F8.8070408@ve3syb.ca>
+Message-ID: <CAOW5bynXLbfVC7-gtbcG5a1Y9F9uUd8feD4YnJ0ubSZgBvNZLg@mail.gmail.com>
+
+On Wed, Jul 29, 2015 at 3:09 PM, Kevin Cozens <kevin at ve3syb.ca> wrote:
+
+> On 15-07-27 02:29 PM, Blaise Alleyne wrote:
+>
+>> On 27/07/15 12:27 PM, Myles Braithwaite wrote:
+>>
+>>> We got this email on our general mailing list. Does anyone know where
+>>> you can purchase Linux DVDs in Toronto.
+>>>
+>>>
+>> Despite the question being obsolete... What about a book store?
+>>
+>
+> The first version of Linux I ever got my hands on was Yggdrasil Linux. I
+> bought it at the UofT bookstore in the fall of 1994. It was the first and
+> last time I have been to that bookstore. I'm not avoiding the place. I just
+> haven't found myself in the area again.
+>
+> With so many distros available for download on line I wouldn't expect
+> (m)any stores to carry Linux CDs/DVDs for sale. Most are out-of-date in six
+> months time when the next release is made available.
+>
+>
+Well, if this is going to be *that* kind of party...  +1!
+I selected that same Yggdrasil distro at the same time. I recall doing an
+eenie meenie miney moe between that and that BSD package right next to it
+:-) I recall being impressed at there being almost 1.3G of software on a
+<700M CD-ROM.
+
+I've recently been trying to boot Yggdrasil under KVM-qemu - yes, for
+nostalgic purposes. Not trivial - the lack of an ISA bus is my first
+problem. EISA even...
+
+Cheers,
+Mike
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150729/3ba25b42/attachment.html>
+
+From mwilson at vex.net  Wed Jul 29 20:34:49 2015
+From: mwilson at vex.net (Mel Wilson)
+Date: Wed, 29 Jul 2015 16:34:49 -0400
+Subject: [GTALUG] Fwd: Linux Distros available in Toronto
+In-Reply-To: <55B924F8.8070408@ve3syb.ca>
+References: <CADt6Y0-Y3Vu_9gtFJ7c0tqOpOeUg4d_g8F_Njcd7J4pJ0Pj46Q@mail.gmail.com>
+ <55B65C05.50405@mylesbraithwaite.com> <55B678A7.8090701@blaise.ca>
+ <55B924F8.8070408@ve3syb.ca>
+Message-ID: <1438202089.3546.5.camel@tecumseth5.mounteagle.lan>
+
+On Wed, 2015-07-29 at 15:09 -0400, Kevin Cozens wrote:
+
+> The first version of Linux I ever got my hands on was Yggdrasil Linux. I 
+> bought it at the UofT bookstore in the fall of 1994. It was the first and 
+> last time I have been to that bookstore. I'm not avoiding the place. I just 
+> haven't found myself in the area again.
+
+Ditto.  Looking at my back-issues, I was at the UofT bookstore in 1995
+buying 4-distro releases from InfoMagic -- installing Slackware from
+them because of Bob Dobbs.  The store had piles of recent issues of
+Linux Journal for sale as well.  I was buying official Slackware
+releases there up to 2005 after which the well ran dry.  Probably
+because of distribution over the net.
+
+	Mel.
+
+
+
+From lsorense at csclub.uwaterloo.ca  Thu Jul 30 02:50:34 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 29 Jul 2015 22:50:34 -0400
+Subject: [GTALUG] Fedora 22 Live Workstation Install - no fglrx - no
+	pdftk
+In-Reply-To: <20150729032310.GA7325@node1.localdomain>
+References: <CAPik5MxzwqtUScbpOByDbKe=_RaoH-ft+xQ4i4KmmfuhihZbvg@mail.gmail.com>
+ <alpine.LRH.2.02.1507281550280.21238@redclaw.mimosa.com>
+ <20150728224041.GA5682@node1.localdomain>
+ <20150729020533.GC29199@csclub.uwaterloo.ca>
+ <20150729032310.GA7325@node1.localdomain>
+Message-ID: <20150730025034.GD29199@csclub.uwaterloo.ca>
+
+On Tue, Jul 28, 2015 at 11:23:10PM -0400, William Park wrote:
+> On Tue, Jul 28, 2015 at 10:05:33PM -0400, Lennart Sorensen wrote:
+> > On Tue, Jul 28, 2015 at 06:40:41PM -0400, William Park wrote:
+> > > WD40 works also.  Accidental discovery, while working on a laptop fan.
+> > 
+> > So there is actually something WD40 is useful for?  It certainly sucks
+> > at what they claim it is for, compared to many much better products you
+> > can buy (but which are not nearly as hyped by marketing).
+> 
+> Oh?  Like what?
+
+Apparently just about anything: http://www.popularmechanics.com/cars/how-to/a6064/wd-40-vs-the-world-of-lubricants/
+
+Certainly for stuck things, Releaseall works a lot better.
+
+-- 
+Len Sorensen
+
+From rick.j.79 at gmail.com  Thu Jul 30 05:20:43 2015
+From: rick.j.79 at gmail.com (Rick Johnson)
+Date: Thu, 30 Jul 2015 01:20:43 -0400
+Subject: [GTALUG] LInux+
+In-Reply-To: <20150728225458.GE16751@gmail.com>
+References: <CAOJ6EZwWx=Zy6f-iP3ZXtjsRnRaLsVLP_aRCev7p45gci+R8xg@mail.gmail.com>
+ <20150728225458.GE16751@gmail.com>
+Message-ID: <CAOJ6EZyU8CMKF6AOckxyTdTnDDEfA18bh_i+gB7B0YuvgxTc_A@mail.gmail.com>
+
+>From what I can tell, I just need to top up a few other things beyond whats
+in the Sybex book. Namely systemd, LVM and maybe a couple of smaller
+issues. I don't expect to have much trouble with it...
+
+On Tue, Jul 28, 2015 at 6:54 PM, Loui Chang <louipc.ist at gmail.com> wrote:
+
+> On Mon 27 Jul 2015 23:53 -0400, Rick Johnson wrote:
+> > Hey folks.
+> >
+> > I've been studying for Linux+ lately. I have the Sybex book which covers
+> > lx0-101 and lx0-102  but I just discovered that these exams will be
+> > discontinued at the end of August and replace with lx0-103 and lx0-104.
+> Has
+> > anyone taken these yet? I'm wondering what I'm in for. What is covered in
+> > these exams that isn't in the older versions? I can imagine that I'll
+> have
+> > to dig into Systemd thoroughly but I'm wondering if I'll be able to just
+> > top up my knowledge from the 'net or is this a matter of starting all
+> over?
+>
+> I have no idea but would be interested to know if you find out.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150730/01368100/attachment.html>
+
