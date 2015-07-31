@@ -7550,3 +7550,466 @@ On Tue, Jul 28, 2015 at 6:54 PM, Loui Chang <louipc.ist at gmail.com> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150730/01368100/attachment.html>
 
+From hugh at mimosa.com  Thu Jul 30 19:39:09 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Thu, 30 Jul 2015 15:39:09 -0400 (EDT)
+Subject: [GTALUG] Fedora 22 Live Workstation Install - no fglrx - no
+ pdftk
+In-Reply-To: <CAPik5MxdMtBULoeTxcP9jbm3iRjo_hKGBxw8QK4xr4qZ6A-6Rw@mail.gmail.com>
+References: <CAPik5MxdMtBULoeTxcP9jbm3iRjo_hKGBxw8QK4xr4qZ6A-6Rw@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1507291118500.21238@redclaw.mimosa.com>
+
+| From: Russell Reiter <rreiter91 at gmail.com>
+
+| On 7/28/15, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+| > | From: Russell Reiter <rreiter91 at gmail.com>
+| >
+| > Be sure of your diagnosis before applying drastic remedies.  You claim
+| > overheating, and I previously responded on the assumption that this
+| > was a correct deduction.  Now I'll question it: what observation
+| > convince you that overheating is a problem?
+| 
+| There were hard crashes with no hanging and no warning, just the power
+| turned off in order to save the cpu. These crashes were mitigated by
+| directing cold air from my AC directly into the unit till I did the
+| bios update.
+
+What you've stated doesn't convince me.
+
+Can you duplicate the problem, all the while keeping a log of the
+various temperatures that are available to you?  The CPU can monitor a
+few of the system temperatures, but I don't remember how (google
+surely does).
+
+Can you affect uptimes by running CPU-bashing programs?
+
+Are crashes at predictable uptimes when you are running identical
+workloads?  Are these times affected by your ad hoc cooling boosters?
+
+| The board default is to set overclocking as auto. I didn't choose it.
+| I haven't found a table of recommended settings like I once got with
+| service manuals when I bought a board. Now all I can find is quick
+| start or user manuals.
+
+There is a (probably obsolete) manual that talks about the BIOS setup
+screen.  (I'd look at this on my board but I don't wish to reboot.)
+
+"auto" is not described but it should meen "no overclocking".
+Especially if all the related settings are "auto" too.
+
+When you flash new firmware, you are supposed to select "load setup
+defaults" in the CMOS setup "exit" tab.  I always do.  It only matters
+sometimes.  Then you have to go reset all the little things you had
+changed.
+
+| Well the combination of being able to choose a lower display
+| resolution and whatever was changed after the bios update did show
+| about a 10-15% reduction in CPU access when playing DVD's according to
+| Plasma's graphical system monitor.
+
+What is "CPU access"?
+
+| I do note that desktop
+| sprite animations are slower.
+
+What are "desktop sprite animations"?  The mouse pointer?
+
+| > | I think I am going to change the heat sinc on this unit. The one that
+| > | came with it has this copper pipe threaded through it, Makes it look
+| > | sort of like the headers on the 67 Mustang I once owned. UNlike those
+| > | headers these ones look like all show and no go.
+| >
+| > If it once was good enough, why would it not be now?  Dust,
+| > deteriorated contact with CPU, ...?
+| 
+| I think perhaps I got it because it wasn't good enough, or not set up
+| well enough or maybe both.
+
+Ahh, that might make sense.
+
+I've not noticed a problem with mine.  Not a proof of anything.
+
+| > Does it feel hot when you think that the CPU is overheating?  If not,
+| > there is a problem, I would think.  After all, it is supposed to be
+| > carrying the heat to the air.
+| 
+| It seemed to be a little too hot around the base of the heat-sinc,
+| while the fins of it were quite cool on the top and sides, which made
+| me think perhaps there was too much thermal paste or perhaps none at
+| all, or even poorly mated surfaces from the beginning.
+
+Remember, I'm no expert.  But if any part of a heatsink itself is hot,
+the whole thing should be as well.
+
+| > | I did read that north bridge switching is not enabled in later
+| > | releases of this boards bios and I have since found there is an older
+| > | bios with this FSB feature available. Although I usually hesitate to
+| > | trim the north bridge clock. If you've got to trim a clock, trim the
+| > | big clock first and see what acts up first.
+| >
+| > Don't pick at it!  Use the BIOS defaults or conservative defaults (my
+| > machine doesn't crash so I rarely see the BIOS screen).
+| 
+| The defaults are overclocking enabled. I wish I could find a table of
+| optimal settings from the manufacturer. My first conservative guess
+| got me the BSOD.
+
+I don't think so.  Just choose auto everything.  I certainly don't
+know how other choices interact.
+
+| It's the oddest thing. In the menu screen there is one line to set the
+| date in the usual way. You know tab to the next setting and use the
+| plus and minus keys to go up or down. However when you move to the
+| next line to set hours, minutes and seconds, you can change them but
+| enter won't commit them. F10 will write changes to the cmos but on
+| restart the default time is always 00:00:00.
+
+Odd.  Yeah, Odd.
+
+| > | Oh yea and whether or not it's worth it to modify the CPU
+| > | heat-sinc.
+| >
+| > First guess: not yet.
+| 
+| After the bios update there doesn't seem to be as much heat coming off
+| it, but I can't tell for sure. The heat-sinc always feels cool to the
+| touch on the top and sides but around the base is another matter.
+
+See above.
+
+| On the link you posted on thermal pads these guy's were talking about
+| lapping matching surfaces on ground glass
+
+Don't take my posting a link as support for what it says!
+
+Lapping seems like a goofy amount of investment in old hardware.  I
+imagine people do that for the sense of control in a world where Intel
+and AMD make all the decisions.  Kind of like those of us who put
+Linux on Windows boxes.
+
+From rreiter91 at gmail.com  Thu Jul 30 22:01:40 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Thu, 30 Jul 2015 18:01:40 -0400
+Subject: [GTALUG] Fedora 22 Live Workstation Install - no fglrx - no
+	pdftk
+Message-ID: <CAPik5MyNb8HPR1bdgbACzhWhjD3OjXkRBDXBJQ0DHA5QTwwpbQ@mail.gmail.com>
+
+<snip the problem description>
+>
+> Can you duplicate the problem, all the while keeping a log of the
+> various temperatures that are available to you?  The CPU can monitor a
+> few of the system temperatures, but I don't remember how (google
+> surely does).
+
+I was thinking of picking up one of those lazer doohickey's the health
+department uses to measure the temperature of steam table contents. I
+can't see if I was touching the cpu die or the bottom of the
+heat-sinc. For now I'v installed lm-sensor which shows:
+
+[root at solon ~] # sensors
+atk0110-acpi-0
+Adapter: ACPI interface
+Vcore Voltage:      +1.12 V  (min =  +0.85 V, max =  +1.60 V)
++3.3 Voltage:        +3.26 V  (min =  +2.97 V, max =  +3.63 V)
++5 Voltage:           +5.12 V  (min =  +4.50 V, max =  +5.50 V)
++12 Voltage:         +11.98 V  (min = +10.20 V, max = +13.80 V)
+CPU FAN Speed:            2755 RPM  (min =  600 RPM, max = 7200 RPM)
+CHASSIS FAN Speed:    0 RPM  (min =  600 RPM, max = 7200 RPM)
+POWER FAN Speed:      2428 RPM  (min =  600 RPM, max = 7200 RPM)
+CPU Temperature:        +43.0°C  (high = +60.0°C, crit = +95.0°C)
+MB Temperature:          +40.0°C  (high = +45.0°C, crit = +95.0°C)
+
+k8temp-pci-00c3
+Adapter: PCI adapter
+Core0 Temp:   +36.0°C
+Core0 Temp:   +43.0°C
+Core1 Temp:   +40.0°C
+Core1 Temp:   +38.0°C
+
+So far It looks like I don't have the chassis fan plugged into the
+right slot. But at least the unit works without blocking output of the
+air conditioner any more.
+
+>
+> Can you affect uptimes by running CPU-bashing programs?
+>
+> Are crashes at predictable uptimes when you are running identical
+> workloads?  Are these times affected by your ad hoc cooling boosters?
+
+As you can see from lm-sensor, after the firmware update, I'm within
+operating parameters now. One feature of this motherboard is the
+ability to recover from different bios's. I'm curious beyond making it
+stable now, I may regress the bios and log what was happening at the
+time.
+
+>
+> | The board default is to set overclocking as auto. I didn't choose it.
+> | I haven't found a table of recommended settings like I once got with
+> | service manuals when I bought a board. Now all I can find is quick
+> | start or user manuals.
+>
+> There is a (probably obsolete) manual that talks about the BIOS setup
+> screen.  (I'd look at this on my board but I don't wish to reboot.)
+
+Apparently ASUS has a MS utility they ship with the board. Ai gear 2,
+which allows overclocking the MB from userspace. The condition seems
+similar to the laptop I experienced where the MS OS had hooks into
+controlling the power management.
+
+>
+> "auto" is not described but it should meen "no overclocking".
+> Especially if all the related settings are "auto" too.
+>
+> When you flash new firmware, you are supposed to select "load setup
+> defaults" in the CMOS setup "exit" tab.  I always do.  It only matters
+> sometimes.  Then you have to go reset all the little things you had
+> changed.
+
+That's what I chose, I had assumed conservative settings but perhaps
+that ASUS overclocking utility only works under one condition, auto.
+I'll never know, I don't use Windows. I did read that it killed audio
+on one board and that it was problematic for others.
+
+>
+> | Well the combination of being able to choose a lower display
+> | resolution and whatever was changed after the bios update did show
+> | about a 10-15% reduction in CPU access when playing DVD's according to
+> | Plasma's graphical system monitor.
+>
+> What is "CPU access"?
+
+The little graphic thingy in System Monitor which gives a visual
+output of load as a line graph for each CPU die, as well as for
+Memory/Swap and Network. At this time and at increased resolution the
+load line hovers around 60% as opposed to the old firmware at 800X600
+which showed 85-100% load with video on VLC.
+
+>
+> | I do note that desktop
+> | sprite animations are slower.
+>
+> What are "desktop sprite animations"?  The mouse pointer?
+
+Sprites are a term for layers used in animations. So in the case of
+the mouse pointer, it exists on a sprite layer. Any windows animations
+like dragging the widget around aren't dragging a box per-se, they are
+moving the indicator (0,0) to the point where the new sprite is
+created, leaving the old one to be destroyed on the screen redraw.
+
+In this case in Plasma, when you access the menu it pops up very
+slooooooowly and disappears in the same fashion. I'ts kind of cute.
+
+<snip the middle>
+> | It's the oddest thing. In the menu screen there is one line to set the
+> | date in the usual way. You know tab to the next setting and use the
+> | plus and minus keys to go up or down. However when you move to the
+> | next line to set hours, minutes and seconds, you can change them but
+> | enter won't commit them. F10 will write changes to the cmos but on
+> | restart the default time is always 00:00:00.
+>
+> Odd.  Yeah, Odd.
+
+My error. I used + & - to set the date but tried to type in the time.
+It let me enter the numbers and in fact did display them in the right
+place but didn't commit them.
+
+I cleared the RTC using the jumper this time and figured out my error
+when I re-read the posts. Sometimes just to be able to read the
+question again in the light of others scrutiny provides an answer.
+It's part of why I use the list and why I'm grateful for it
+
+>
+> | > | Oh yea and whether or not it's worth it to modify the CPU
+> | > | heat-sinc.
+> | >
+> | > First guess: not yet.
+> |
+> | After the bios update there doesn't seem to be as much heat coming off
+> | it, but I can't tell for sure. The heat-sinc always feels cool to the
+> | touch on the top and sides but around the base is another matter.
+>
+> See above.
+>
+> | On the link you posted on thermal pads these guy's were talking about
+> | lapping matching surfaces on ground glass
+>
+> Don't take my posting a link as support for what it says!
+
+I understand that. I thought lapping the die was kind of goofy too.
+It's just that it reminded me of one of my old shop jobs.
+
+>
+> Lapping seems like a goofy amount of investment in old hardware.  I
+> imagine people do that for the sense of control in a world where Intel
+> and AMD make all the decisions.  Kind of like those of us who put
+> Linux on Windows boxes.
+
+I'm with you on that one. I like using Linux because I always feel
+I've learned something. Not how to do some thing.
+
+At this point I'm still a little at odds with what to do about QT, but
+I can live with this state of things.
+
+It looks to me like this bios is heavily vested in Windows gamer land
+with the bios optimized to accept hooks from the ASUS GUI overclocking
+utility.
+
+This board looks like it has good audio support so it would be nice to
+have an all in one home theatre with surround sound as my workspace,
+but it's not really a necessity. Anything else I do to this unit is
+more out of curiosity than needs.
+
+Thanks for the pointers. Now my SO won't have to wonder where all her
+nail polish remover went.
+
+Russell
+
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+From hugh at mimosa.com  Fri Jul 31 06:12:24 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Fri, 31 Jul 2015 02:12:24 -0400 (EDT)
+Subject: [GTALUG] Fedora 22 Live Workstation Install - no fglrx - no
+ pdftk
+In-Reply-To: <CAPik5MyNb8HPR1bdgbACzhWhjD3OjXkRBDXBJQ0DHA5QTwwpbQ@mail.gmail.com>
+References: <CAPik5MyNb8HPR1bdgbACzhWhjD3OjXkRBDXBJQ0DHA5QTwwpbQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1507310118590.16717@redclaw.mimosa.com>
+
+| From: Russell Reiter <rreiter91 at gmail.com>
+
+| For now I'v installed lm-sensor which shows:
+
+Those temperatures sure look fine.  I don't know how accurate they
+are.  But it's what you've got.
+
+My recollection is that lm-sensors has a large database of motherboards, 
+and the plumbing of the sensors for each motherboard. The problem is that 
+it is like wikipedia: it may be inaccurate or incomplete.  Even the 
+mapping from raw sensor reading to degrees is part of that.
+
+| So far It looks like I don't have the chassis fan plugged into the
+| right slot.
+
+The table entry might be wrong.  Look at the board's manual or the
+silk screening.
+
+| As you can see from lm-sensor, after the firmware update, I'm within
+| operating parameters now. One feature of this motherboard is the
+| ability to recover from different bios's. I'm curious beyond making it
+| stable now, I may regress the bios and log what was happening at the
+| time.
+
+Take your winnings and go!  Unless you have a lot of spare time.
+
+| Apparently ASUS has a MS utility they ship with the board. Ai gear 2,
+| which allows overclocking the MB from userspace. The condition seems
+| similar to the laptop I experienced where the MS OS had hooks into
+| controlling the power management.
+
+Calling it "a MS utility" suggests that Microsoft provided it.  I'm
+sure MS had nothing to do with it.  It is true that it will only run
+under some MS Windows, but that isn't the same thing.
+
+The "MS OS .. hooks" terminology carries implications that I doubt.
+The main way of affecting hardware is through ACPI, which both Linux
+and Windows use.  It is true that some ACPI implementations (inside
+the firmware) try to detect which OS is being used, but Linux calls
+itself Windows, if I remember correctly.  Vendors like ASUS can also
+write drivers for Windows that do odd things with the hardware.  But
+none of this is by Microsoft as far as I know.
+
+| > What is "CPU access"?
+| 
+| The little graphic thingy in System Monitor which gives a visual
+| output of load as a line graph for each CPU die, as well as for
+| Memory/Swap and Network. At this time and at increased resolution the
+| load line hovers around 60% as opposed to the old firmware at 800X600
+| which showed 85-100% load with video on VLC.
+
+Normally, I'd call this "CPU utilization".  I don't remember how well
+it reflects cycles used by the kernel (and there are several ways in
+which the kernel uses cycles).
+
+Your computer has one processor chip, a die, but two cores (I'd call them 
+two processors, but I'm old fashioned).  The "die" is one of the pieces 
+after the silicon wafer is "diced" (cut into bits).  The plural of "die" 
+is "dice" but most hardware folks seem to use "dies".
+
+Firmware is mostly cut out of the loop once the system is
+bootstrapped.  The major exception is ACPI and perhaps SMM.  Minor
+firmware updates should not really change CPU load.  It could affect
+thermal throttling (slowing down the CPU to cut down heat generation).
+But then cooling should result in *higher* CPU utilization since the
+slowed machine has fewer cycles available.
+
+| >
+| > | I do note that desktop
+| > | sprite animations are slower.
+| >
+| > What are "desktop sprite animations"?  The mouse pointer?
+| 
+| Sprites are a term for layers used in animations. So in the case of
+| the mouse pointer, it exists on a sprite layer. Any windows animations
+| like dragging the widget around aren't dragging a box per-se, they are
+| moving the indicator (0,0) to the point where the new sprite is
+| created, leaving the old one to be destroyed on the screen redraw.
+| 
+| In this case in Plasma, when you access the menu it pops up very
+| slooooooowly and disappears in the same fashion. I'ts kind of cute.
+
+Sprites historically have been very small patches of pixels and there
+usually have been bounds on the numbers of them.  They were from the
+era of small and constrained frame buffers.  Think old video consoles.
+
+I have no idea if they remain in current hardware or in current software
+abstractions (two different issues).  But I don't expect them to have
+much application in non-game situations.  The mouse cursor is it.
+
+When I drag a window, the whole thing moves.  It certainly isn't a
+sprite: way too big.
+
+Yeah, there is animation in some desktops.  That's surely not done with 
+conventional sprites.  Of course somebody might recycle the term to mean 
+something different.
+
+| My error. I used + & - to set the date but tried to type in the time.
+| It let me enter the numbers and in fact did display them in the right
+| place but didn't commit them.
+
+Odd.  But differently odd.
+
+| At this point I'm still a little at odds with what to do about QT, but
+| I can live with this state of things.
+
+After thrashing about a while, leaving unknown randomness in ones
+system, sometimes it makes sense to install the system afresh and
+apply the distro updates.  The less fiddling one has to do to make it
+work, the less fiddling one will have to do in the future.
+
+[Excuse me for the quaint use of "one".  I'd normally use "you" but
+that sounds like a command or an accusation.  "One" captures more
+accurately what I intend.  Too bad it is vanishing from our
+vocabulary.]
+
+I find that it pays to keep a lab book.  I don't always write down
+what turns out to be important :-(
+
+Some fiddling is forced upon one.  My ideal behaviour is to document these 
+things in bug reports.  Perhaps they get fixed, but at least they are 
+documented.  Embarassing fact: I sometimes rediscover my own solutions via 
+google.
+
+You might have noticed some of my "war story" postings.
+
+| It looks to me like this bios is heavily vested in Windows gamer land
+| with the bios optimized to accept hooks from the ASUS GUI overclocking
+| utility.
+
+Usually this can be ignored.  An overclocker-oriented board might have
+better margins making it more stable for those who don't use the
+capability.
+
