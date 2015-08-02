@@ -9,7 +9,7 @@ git pull origin master
 
 for file in "${CONF_FILES[@]}"
 do
-  scp ${USER}@penguin.gtalug.org:${DOKUWIKI_HOME}/$file ${ARCHIVEHOME}
+  scp ${USER}@penguin.gtalug.org:${DOKUWIKI_HOME}/conf/$file ${ARCHIVEHOME}
   git add $file
 done
 
@@ -24,8 +24,8 @@ do
     GPG_RECIPIENTS="${GPG_RECIPIENT} --recipient ${gpgkey}"
 done
 
-scp ${USER}@penguin.gtalug.org:${DOKUWIKI_HOME}/users.auth.php ${TEMP_FILE}
-gpg --encrypt --armor ${GPG_RECIPIENTS} --batch --yes --trust-model always -o ${DOKUWIKI_HOME}/users.auth.php.asc ${TEMP_FILE}
+scp ${USER}@penguin.gtalug.org:${DOKUWIKI_HOME}/conf/users.auth.php ${TEMP_FILE}
+gpg --encrypt --armor ${GPG_RECIPIENTS} --batch --yes --trust-model always -o ${DOKUWIKI_HOME}/conf/users.auth.php.asc ${TEMP_FILE}
 rm -f ${TEMP_FILE}
 git add users.auth.php.asc
 
