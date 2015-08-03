@@ -1,0 +1,24 @@
+From me at mylesbraithwaite.com  Sun Aug  2 15:24:48 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Sun, 02 Aug 2015 11:24:48 -0400
+Subject: [GTALUG-Ops] DokuWiki Installed on Penguin
+Message-ID: <55BE3640.3080601@mylesbraithwaite.com>
+
+I installed DokuWiki on Penguin @ <http://wiki.gtalug.org/> (wait of DNS
+to propagate) and setup the backup.
+
+Can someone review the backup scrips to make sure everything will be
+working okay:
+<https://github.com/gtalug/backups/blob/master/scripts/backup-dokuwiki-conf.sh>
+and
+<https://github.com/gtalug/backups/blob/master/scripts/backup-dokuwiki-data.sh>.
+
+From me at mylesbraithwaite.com  Sun Aug  2 16:26:19 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Sun, 02 Aug 2015 12:26:19 -0400
+Subject: [GTALUG-Ops] Piwik Installed on Penguin
+Message-ID: <55BE44AB.1070401@mylesbraithwaite.com>
+
+I installed Piwik (a web page tracker) on Pengin here:
+<http://piwik.gtalug.org/>. If you want a login just shoot me an email.
+
