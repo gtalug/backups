@@ -68,3 +68,19 @@ Date: Fri, 31 Jul 2015 20:51:04 +0200
 Size: 14456
 URL: <http://gtalug.org/pipermail/operations/attachments/20150803/5dfe310a/attachment.mht>
 
+From hi at gtalug.org  Tue Aug  4 09:30:01 2015
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Tue,  4 Aug 2015 09:30:01 +0000 (UTC)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20150804093001.68859E697@penguin.gtalug.org>
+
+I'm Mr. Meeseeks! Look at me!
+
+There is a GTALUG meeting coming up on 11 August, 2015, is the GTALUG Board/Executive prepared?
+
+- [ ] Contact the speaker.
+- [ ] Does the speaker need anything else besides a projector (i.e. graphic dongles).
+- [ ] Send out an announcement for the meeting.
+
+Look at me! I'm Mr. Meeseeks! (poof)
+
