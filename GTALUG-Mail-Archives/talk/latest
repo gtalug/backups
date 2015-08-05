@@ -1,0 +1,146 @@
+From me at mylesbraithwaite.com  Tue Aug  4 13:20:55 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 4 Aug 2015 09:20:55 -0400
+Subject: [GTALUG] Where Should We Dine Before the August 2015 GTALUG
+ Meeting? (was GTALUG Meeting on 11th August, 2015 at 7:30pm)
+Message-ID: <CA+hskZMV=mab5B9bbf287DKWYstacYSFTumSe1TZ_9hGVtWv=A@mail.gmail.com>
+
+On Mon, Jul 27, 2015 at 8:50 AM, Myles Braithwaite
+<me at mylesbraithwaite.com> wrote:
+> * 6:00 pm - Before each meeting a group of GTALUGers dine at Love At
+> First Bite (96 Gerrard Street E).
+
+Let's try doing this again, vote for where you want to go for dinner
+before the August GTALUG meeting
+<http://survey.gtalug.org/index.php/642325>.
+
+From hugh at mimosa.com  Tue Aug  4 20:43:32 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 4 Aug 2015 16:43:32 -0400 (EDT)
+Subject: [GTALUG] Where Should We Dine Before the August 2015 GTALUG
+ Meeting? (was GTALUG Meeting on 11th August, 2015 at 7:30pm)
+In-Reply-To: <CA+hskZMV=mab5B9bbf287DKWYstacYSFTumSe1TZ_9hGVtWv=A@mail.gmail.com>
+References: <CA+hskZMV=mab5B9bbf287DKWYstacYSFTumSe1TZ_9hGVtWv=A@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1508041617190.27361@redclaw.mimosa.com>
+
+| From: Myles Braithwaite <me at mylesbraithwaite.com>
+
+| Let's try doing this again, vote for where you want to go for dinner
+| before the August GTALUG meeting
+| <http://survey.gtalug.org/index.php/642325>.
+
+Thanks!  You present several good choices.
+
+I see that this time we are only allowed to vote for one.
+Last time we were allowed to tick more than one.
+
+I'd prefer to see a way of providing more information.  I'm not sure
+what it would look like.  Ranking?  Fractional votes?
+
+
+More details of the choices:
+
+Restaurant Formerly Known As Love at First Bite (Pizza)
+	We know this one.  Not bad at all.
+
+Kaiju (Japanese Curry)
+	- we went there once before.  Service a bit overwhelmed
+	  but very polite and accomodating.
+
+	- one of several restaurants in the food court.
+	  + allows alternate choices while eating together
+	  + but most are closed at our time
+
+Hokkaido Ramen Santouka
+	Japanese noodle soup chain.
+	<http://www.santouka.co.jp/en/menu/index.html>	
+	<http://www.yelp.ca/biz/hokkaido-ramen-santouka-toronto-2>
+
+Lou Dawg's (BBQ)
+	We've been there once (some of us more, I think).
+	<http://loudawgs.com/home.html>
+
+The Senator (Diner)
+	<http://thesenator.com/>
+	Apparently the New York Times reviewed it!
+	By the prices, I'd call this a faux diner.
+	The cheapest entree (today?) is
+	"8 oz Cumbrae’s Naturally Raised Beef Burger - $16"
+	(Cumbrae is a very well thought of local butcher)
+
+OPA! of Greece Dundas Street (Greek)
+	<http://www.opasouvlaki.ca/home>
+	A national chain / franchise.  May well be good.
+
+Banh Mi Boys (Vietnamese)
+	<http://www.banhmiboys.com/menu.htm>
+
+	I remember discovering Banh Mi on Spadina, near Dundas.
+	Amazing sandwiches for $1 or $1.25.  Well they've gone up
+	there to perhaps $2 (I haven't looked since TLUG and Hacklab
+	deserted the area.
+
+	These guys do an upmarket version.  Surely worth the money.
+	But it makes me wistful for the good old days ("more
+	authentic").
+
+Roti Roll Caribbean Cuisine
+	<http://www.rotiroll.com/caribbeanFood.php#abouttemp-box>
+
+Each of these is probably yelped if you wish to read comments.
+
+From opengeometry at yahoo.ca  Wed Aug  5 02:29:53 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Tue, 4 Aug 2015 22:29:53 -0400
+Subject: [GTALUG] Thinkpad T420 as a VM host
+In-Reply-To: <55AC2050.2020300@gmail.com>
+References: <55AC1E4A.3050508@gmail.com>
+ <20150719220546.GA28858@node1.localdomain>
+ <55AC2050.2020300@gmail.com>
+Message-ID: <20150805022953.GA4907@node1.localdomain>
+
+(I meant to reply to both the author and the list.  So, ignore any
+duplicate.)
+
+Hi Alex,
+
+If T420 can do 16GB, then I can replace my desktop with it, which has
+16GB (DDR3-1333) right now.  But, I have question about T420 keyboard.
+
+I currently have T43, and its keyboard is difficult to type on, at least
+for me.
+    - it's stiff, so you need to "push" rather than "tap", 
+    - it doesn't spring back, fast enough or "crispy" enough, so you
+      actually notice and become aware of the keypresses.  And, that
+      interferes with my typing.
+
+Are you able to type fast and comfortably on your T420?
+-- 
+William
+
+On Sun, Jul 19, 2015 at 06:10:24PM -0400, Alex Volkov wrote:
+> I just added some RAM for relatively cheap and it got me thinking that
+> this little laptop satisfies pretty much all the requirements for a VM
+> machine even though it's a laptop and is old.
+> 
+> On 19/07/15 06:05 PM, William Park wrote:
+> > So, are you going to post your experience of VMs on it?
+> > Or, are you selling it? ;-)
+> 
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From opengeometry at yahoo.ca  Wed Aug  5 05:52:01 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Wed, 5 Aug 2015 01:52:01 -0400
+Subject: [GTALUG] Emacs as X Windows Manager?
+Message-ID: <20150805055200.GA7483@node1.localdomain>
+
+http://www.phoronix.com/scan.php?page=news_item&px=EXWM-Window-Manager
+
+Now, all it needs is an editor...
+-- 
+William
+
