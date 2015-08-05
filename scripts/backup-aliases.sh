@@ -5,7 +5,7 @@ cd ${ARCHIVEHOME}
 git fetch origin
 git pull origin master
 
-scp -r chris@penguin.gtalug.org:/etc/aliases ${ARCHIVEHOME}
+scp -r ${USER}@penguin.gtalug.org:/etc/aliases ${ARCHIVEHOME}
 git add ${ARCHIVEHOME}
 git commit -m "scripts/backup-aliases-config.sh automated checkin"
 git push origin master
