@@ -1258,3 +1258,425 @@ On 04/08/15 10:29 PM, William Park wrote:
 
 
 
+From davec-b at rogers.com  Fri Aug  7 15:51:05 2015
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Fri, 7 Aug 2015 11:51:05 -0400
+Subject: [GTALUG] Thinkpad T420 as a VM host
+In-Reply-To: <20150806160047.6361174.40328.14666@Durham.ca>
+References: <20150806114325.6361174.55622.14631@Durham.ca>
+ <20150806160047.6361174.40328.14666@Durham.ca>
+Message-ID: <55C4D3E9.3050207@rogers.com>
+
+On 06/08/15 12:00 PM, Brent Kimberley wrote:
+> ‎Here is the obligatory <X> over LAN\WAN howto:
+>
+> http://linux.die.net/man/7/amt-howto
+>    Original Message
+> From: Brent Kimberley
+> Sent: Thursday, August 6, 2015 07:43
+> To: D. Hugh Redelmeier; GTALUG Talk
+> Subject: Re: [GTALUG] Thinkpad T420 as a VM host
+>
+>
+> How is the state of the kvm over lan, Serial over Lan, and drive over lan implementation on the T420 wrt Linux?
+>
+> Can the keyboard, drive, etc be securely accessed from behind a firewall? ‎
+> ‎
+>
+I just bought a T440p as a dev machine, and am running vagrant -> 
+VirtualBox -> CentOS 6 to run in turn a full stack of PostgerSQL,  Java 
+on Tomcat, Java and Scala on Play! and angular on the browser.
+
+I barely notice it, and probably will have a couple of inactive VMs set 
+up, so I can switch back and forth between unrelated tasks. Build 
+performance is good, in part because I'm rarely compiling linking and 
+provisioning more than one thing at any given moment! 
+Eclipse/Maven/java/Scala are memory hogs, though, so I bought 16 GB of ram.
+
+A much smaller netbook gave good build performance, but was constrained 
+to 4 GB, and I needed at least 8 and perhaps 12, so bought a machine 
+with slots (;-))
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From abidar.maxcess at gmail.com  Fri Aug  7 18:28:06 2015
+From: abidar.maxcess at gmail.com (maxcess)
+Date: Fri, 7 Aug 2015 14:28:06 -0400
+Subject: [GTALUG] UEFI bios/firmware
+In-Reply-To: <CAHY6rksjoHqPD+CVCuCJrYWefJ9B_ze-4Hatv6jJ3n1JRc9eLQ@mail.gmail.com>
+References: <CAHY6rkvunayH=w1UaDnyjNrYcnN=0jcJcM9EM3FMbfHN_vy3xw@mail.gmail.com>
+ <CAHY6rksjoHqPD+CVCuCJrYWefJ9B_ze-4Hatv6jJ3n1JRc9eLQ@mail.gmail.com>
+Message-ID: <CAHY6rksTOWFNoiZE1kAdsTUKav3CL=ttx5NKnOvFSU4KqANVeg@mail.gmail.com>
+
+Hi gang.
+Can anyone send me links or info. On how to disable high security UEFI in
+windows 8 & 8.1 computers.
+Cheers Abby
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150807/78c37e30/attachment.html>
+
+From sgh at vex.net  Fri Aug  7 19:41:48 2015
+From: sgh at vex.net (Steve Harvey)
+Date: Fri, 7 Aug 2015 15:41:48 -0400
+Subject: [GTALUG] UEFI bios/firmware
+In-Reply-To: <CAHY6rksTOWFNoiZE1kAdsTUKav3CL=ttx5NKnOvFSU4KqANVeg@mail.gmail.com>
+References: <CAHY6rkvunayH=w1UaDnyjNrYcnN=0jcJcM9EM3FMbfHN_vy3xw@mail.gmail.com>
+ <CAHY6rksjoHqPD+CVCuCJrYWefJ9B_ze-4Hatv6jJ3n1JRc9eLQ@mail.gmail.com>
+ <CAHY6rksTOWFNoiZE1kAdsTUKav3CL=ttx5NKnOvFSU4KqANVeg@mail.gmail.com>
+Message-ID: <20150807194147.GM26395@vex.net>
+
+On Fri, Aug 07, 2015 at 02:28:06PM -0400, maxcess wrote:
+> Hi gang.
+> Can anyone send me links or info. On how to disable high security UEFI in
+> windows 8 & 8.1 computers.
+> Cheers Abby
+
+  Hi Abby,
+
+  Googling  UEFI BIOS disable  should bring up quite a few links.  
+Unfortunately, there is no standardized way of disabling the UEFI and
+switching back to using BIOS.  In general, there are basically two challenges:
+
+  1) getting the attention of the firmware that runs on initial startup
+before the operating system (Windows or Linux) gets to start,  and
+
+  2) navigating the setup menus to disable the UEFI.
+
+
+  Doing the first usually requires you to press or hold down a particular
+key at a particular time, which one and when depends upon the manufacturer.
+Depending upon a number of factors, you may or may not see a splash screen 
+providing a hint while booting.  Knowing the make and model of your computer
+can also help to determine this.  Most computer manufacturers should
+have user documentation in PDF format that you can download from their
+web site.
+
+  I hope that this helps.  
+
+From kalibslack at gmail.com  Fri Aug  7 19:53:34 2015
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Fri, 7 Aug 2015 16:53:34 -0300
+Subject: [GTALUG] UEFI bios/firmware
+In-Reply-To: <CAHY6rksTOWFNoiZE1kAdsTUKav3CL=ttx5NKnOvFSU4KqANVeg@mail.gmail.com>
+References: <CAHY6rkvunayH=w1UaDnyjNrYcnN=0jcJcM9EM3FMbfHN_vy3xw@mail.gmail.com>
+ <CAHY6rksjoHqPD+CVCuCJrYWefJ9B_ze-4Hatv6jJ3n1JRc9eLQ@mail.gmail.com>
+ <CAHY6rksTOWFNoiZE1kAdsTUKav3CL=ttx5NKnOvFSU4KqANVeg@mail.gmail.com>
+Message-ID: <CAH5qdeyf-uo1x6Q+hvb1=iat3JWpuSDirV+YVf0jp1vYi2KAZw@mail.gmail.com>
+
+2015-08-07 15:28 GMT-03:00 maxcess <abidar.maxcess at gmail.com>:
+> Hi gang.
+> Can anyone send me links or info. On how to disable high security UEFI in
+> windows 8 & 8.1 computers.
+> Cheers Abby
+>
+
+You could also check technet:
+https://technet.microsoft.com/en-us/library/dn481258.aspx
+
+;]
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+From maxcess at gmx.com  Fri Aug  7 20:07:48 2015
+From: maxcess at gmx.com (Abby)
+Date: Fri, 07 Aug 2015 16:07:48 -0400
+Subject: [GTALUG] UEFI bios/firmware
+Message-ID: <kf630j20svxeig82ewh9jxx8.1438978068597@email.android.com>
+
+
+    
+Hi SteveThank you for your efforts.That is what I have done, but most of the computers have been very difficult or impossible for me to deactivate.Abby
+
+Sent from my Samsung device
+
+-------- Original message --------
+From: Steve Harvey <sgh at vex.net> 
+Date: 08-07-2015  15:41  (GMT-05:00) 
+To: GTALUG Talk <talk at gtalug.org> 
+Subject: Re: [GTALUG] UEFI bios/firmware 
+
+On Fri, Aug 07, 2015 at 02:28:06PM -0400, maxcess wrote:
+> Hi gang.
+> Can anyone send me links or info. On how to disable high security UEFI in
+> windows 8 & 8.1 computers.
+> Cheers Abby
+
+  Hi Abby,
+
+  Googling  UEFI BIOS disable  should bring up quite a few links.  
+Unfortunately, there is no standardized way of disabling the UEFI and
+switching back to using BIOS.  In general, there are basically two challenges:
+
+  1) getting the attention of the firmware that runs on initial startup
+before the operating system (Windows or Linux) gets to start,  and
+
+  2) navigating the setup menus to disable the UEFI.
+
+
+  Doing the first usually requires you to press or hold down a particular
+key at a particular time, which one and when depends upon the manufacturer.
+Depending upon a number of factors, you may or may not see a splash screen 
+providing a hint while booting.  Knowing the make and model of your computer
+can also help to determine this.  Most computer manufacturers should
+have user documentation in PDF format that you can download from their
+web site.
+
+  I hope that this helps.  
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150807/ab3bd207/attachment.html>
+
+From maxcess at gmx.com  Fri Aug  7 20:12:15 2015
+From: maxcess at gmx.com (Abby)
+Date: Fri, 07 Aug 2015 16:12:15 -0400
+Subject: [GTALUG] UEFI bios/firmware
+Message-ID: <wu0oen5ed903o2pc8qek8a3c.1438978335172@email.android.com>
+
+
+    
+Thanks MarceloUnfortunately, that link is outdated info.
+FYI to everyone. People close to me have been have major issues with these computers. I can not boot from any other device. I can not ever give then a true format with Linux.
+Abby
+Sent from my Samsung device
+
+-------- Original message --------
+From: Marcelo Cavalcante <kalibslack at gmail.com> 
+Date: 08-07-2015  15:53  (GMT-05:00) 
+To: GTALUG Talk <talk at gtalug.org> 
+Subject: Re: [GTALUG] UEFI bios/firmware 
+
+2015-08-07 15:28 GMT-03:00 maxcess <abidar.maxcess at gmail.com>:
+> Hi gang.
+> Can anyone send me links or info. On how to disable high security UEFI in
+> windows 8 & 8.1 computers.
+> Cheers Abby
+>
+
+You could also check technet:
+https://technet.microsoft.com/en-us/library/dn481258.aspx
+
+;]
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150807/ad860853/attachment.html>
+
+From maxcess at gmx.com  Fri Aug  7 20:15:18 2015
+From: maxcess at gmx.com (Abby)
+Date: Fri, 07 Aug 2015 16:15:18 -0400
+Subject: [GTALUG] Fwd: Re:  UEFI bios/firmware
+Message-ID: <dq7vn1t37l3hbqqtnnve836p.1438978518183@email.android.com>
+
+
+    
+
+
+
+
+Sent from my Samsung device
+
+-------- Original message --------
+From: Abby <maxcess at gmx.com> 
+Date: 08-07-2015  16:07  (GMT-05:00) 
+To: GTALUG Talk <talk at gtalug.org> 
+Subject: Re: [GTALUG] UEFI bios/firmware 
+
+
+    
+Hi SteveThank you for your efforts.That is what I have done, but most of the computers have been very difficult or impossible for me to deactivate.Abby
+
+Sent from my Samsung device
+
+-------- Original message --------
+From: Steve Harvey <sgh at vex.net> 
+Date: 08-07-2015  15:41  (GMT-05:00) 
+To: GTALUG Talk <talk at gtalug.org> 
+Subject: Re: [GTALUG] UEFI bios/firmware 
+
+On Fri, Aug 07, 2015 at 02:28:06PM -0400, maxcess wrote:
+> Hi gang.
+> Can anyone send me links or info. On how to disable high security UEFI in
+> windows 8 & 8.1 computers.
+> Cheers Abby
+
+  Hi Abby,
+
+  Googling  UEFI BIOS disable  should bring up quite a few links.  
+Unfortunately, there is no standardized way of disabling the UEFI and
+switching back to using BIOS.  In general, there are basically two challenges:
+
+  1) getting the attention of the firmware that runs on initial startup
+before the operating system (Windows or Linux) gets to start,  and
+
+  2) navigating the setup menus to disable the UEFI.
+
+
+  Doing the first usually requires you to press or hold down a particular
+key at a particular time, which one and when depends upon the manufacturer.
+Depending upon a number of factors, you may or may not see a splash screen 
+providing a hint while booting.  Knowing the make and model of your computer
+can also help to determine this.  Most computer manufacturers should
+have user documentation in PDF format that you can download from their
+web site.
+
+  I hope that this helps.  
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150807/0a2d42ab/attachment.html>
+
+From james.knott at rogers.com  Fri Aug  7 20:36:18 2015
+From: james.knott at rogers.com (James Knott)
+Date: Fri, 07 Aug 2015 16:36:18 -0400
+Subject: [GTALUG] UEFI bios/firmware
+In-Reply-To: <kf630j20svxeig82ewh9jxx8.1438978068597@email.android.com>
+References: <kf630j20svxeig82ewh9jxx8.1438978068597@email.android.com>
+Message-ID: <55C516C2.6040901@rogers.com>
+
+On 08/07/2015 04:07 PM, Abby wrote:
+> That is what I have done, but most of the computers have been very
+> difficult or impossible for me to deactivate.
+
+You can thank Microsoft for that.
+
+
+From kevin at ve3syb.ca  Fri Aug  7 20:39:15 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Fri, 07 Aug 2015 16:39:15 -0400
+Subject: [GTALUG] UEFI bios/firmware
+In-Reply-To: <20150807194147.GM26395@vex.net>
+References: <CAHY6rkvunayH=w1UaDnyjNrYcnN=0jcJcM9EM3FMbfHN_vy3xw@mail.gmail.com>
+ <CAHY6rksjoHqPD+CVCuCJrYWefJ9B_ze-4Hatv6jJ3n1JRc9eLQ@mail.gmail.com>
+ <CAHY6rksTOWFNoiZE1kAdsTUKav3CL=ttx5NKnOvFSU4KqANVeg@mail.gmail.com>
+ <20150807194147.GM26395@vex.net>
+Message-ID: <55C51773.20503@ve3syb.ca>
+
+On 15-08-07 03:41 PM, Steve Harvey wrote:
+>    1) getting the attention of the firmware that runs on initial startup
+> before the operating system (Windows or Linux) gets to start,  and
+>
+>    2) navigating the setup menus to disable the UEFI.
+
+Once you find the UEFI settings in the BIOS you may find that access to it 
+is disabled. You will most likely need to set a supervisor password for the 
+BIOS before it will let you have access to the UEFI settings. Just remember 
+to remove the supervisor password when you are done (if you don't want/need it).
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From maxcess at gmx.com  Sat Aug  8 03:06:51 2015
+From: maxcess at gmx.com (Abby)
+Date: Fri, 07 Aug 2015 23:06:51 -0400
+Subject: [GTALUG] UEFI bios/firmware
+Message-ID: <5jj2606dr3whr9dh15euaech.1439003211743@email.android.com>
+
+
+    
+For sure! Dag Microsoft!
+
+
+Sent from my Samsung device
+
+-------- Original message --------
+From: James Knott <james.knott at rogers.com> 
+Date: 08-07-2015  16:36  (GMT-05:00) 
+To: GTALUG Talk <talk at gtalug.org> 
+Subject: Re: [GTALUG] UEFI bios/firmware 
+
+On 08/07/2015 04:07 PM, Abby wrote:
+> That is what I have done, but most of the computers have been very
+> difficult or impossible for me to deactivate.
+
+You can thank Microsoft for that.
+
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150807/4f47659b/attachment.html>
+
+From maxcess at gmx.com  Sat Aug  8 03:14:28 2015
+From: maxcess at gmx.com (Abby)
+Date: Fri, 07 Aug 2015 23:14:28 -0400
+Subject: [GTALUG] UEFI bios/firmware
+Message-ID: <6ghgy6eqx045voywy0ex0e54.1439003668467@email.android.com>
+
+
+    
+Thanks KevinI will give that a try.Abby
+
+
+Sent from my Samsung device
+
+-------- Original message --------
+From: Kevin Cozens <kevin at ve3syb.ca> 
+Date: 08-07-2015  16:39  (GMT-05:00) 
+To: talk at gtalug.org 
+Subject: Re: [GTALUG] UEFI bios/firmware 
+
+On 15-08-07 03:41 PM, Steve Harvey wrote:
+>    1) getting the attention of the firmware that runs on initial startup
+> before the operating system (Windows or Linux) gets to start,  and
+>
+>    2) navigating the setup menus to disable the UEFI.
+
+Once you find the UEFI settings in the BIOS you may find that access to it 
+is disabled. You will most likely need to set a supervisor password for the 
+BIOS before it will let you have access to the UEFI settings. Just remember 
+to remove the supervisor password when you are done (if you don't want/need it).
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+​​​​​​​​​
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150807/e71851b6/attachment.html>
+
