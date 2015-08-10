@@ -1719,3 +1719,252 @@ On Aug 5, 2015 8:31 AM, "Myles Braithwaite" <me at mylesbraithwaite.com> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150808/92e2c488/attachment.html>
 
+From hugh at mimosa.com  Sun Aug  9 15:11:39 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 9 Aug 2015 11:11:39 -0400 (EDT)
+Subject: [GTALUG] Ubuntu update gone bad
+Message-ID: <alpine.LRH.2.02.1508091030010.25880@redclaw.mimosa.com>
+
+I'm writing this at the point of annoyance.  Maybe I'll find a fix in a 
+minute or two.
+
+I took an Acer Revo out of service as an HTPC.  It was dual boot Win 7 and 
+Ubuntu 12.04 LTS.
+
+I applied all Win 7 updates.  Fine.  Stupid, but fine.
+
+I applied all Ubuntu 12.04 updates.  Fine.  Not even stupid.
+
+It offered me Ubuntu 14.04 LTS.  I said to go ahead.  I almost never do 
+version upgrades, out of fear, but I didn't have much to lose.  And 
+everyone always says Ubuntu version upgrades are smooth as silk.
+
+Negative observation one: version upgrades take more real time than 
+re-installations.  (But they should take less of my attention and care, a 
+win.)
+
+Negative observation two: I thought that the slow upgrade process could 
+happen while I was asleep.  Yes, but not in one night: there were three 
+steps in the middle that required me to answer a question.  It would have 
+been better if the questions had been moved to the beginning or the end.  
+Fedora does that.
+
+Negative observation three:  It all appeared to work.  The updater 
+disappeared from the screen (a little odd).  top(1) showed no remnant.  
+So I rebooted.  Now I have the prompt:
+	grub rescue>
+which means I have nothing, not even Win7.  I don't think that I can type 
+anything useful into that prompt.
+
+Obviously the third is the lulu.
+
+The fact that I am using LTS should indicate my risk aversion.
+
+I will fix this but I will remember.
+
+From scruss at gmail.com  Sun Aug  9 16:09:08 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sun, 09 Aug 2015 12:09:08 -0400
+Subject: [GTALUG] Ubuntu update gone bad
+In-Reply-To: <alpine.LRH.2.02.1508091030010.25880@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1508091030010.25880@redclaw.mimosa.com>
+Message-ID: <55C77B24.104@gmail.com>
+
+On 2015-08-09 11:11 AM, D. Hugh Redelmeier wrote:
+> 
+> So I rebooted.  Now I have the prompt:
+> 	grub rescue>
+> which means I have nothing, not even Win7.  I don't think that I can type 
+> anything useful into that prompt.
+
+Revos have an EFI bios, right? I used to get this all the time on my
+Samsung Chronos, until I blew away the dual-boot and put it back into
+legacy (aka "working") BIOS mode.
+
+Boot-Repair <https://help.ubuntu.com/community/Boot-Repair> on a
+bootable USB stick will likely fix it. Under certain circumstances,
+Windows updates will routinely destroy grub, so keep this stick handy.
+
+cheers,
+ Stewart
+
+From hgibson at eol.ca  Sun Aug  9 23:59:53 2015
+From: hgibson at eol.ca (Howard Gibson)
+Date: Sun, 9 Aug 2015 19:59:53 -0400
+Subject: [GTALUG] Fedora 22 Networking
+Message-ID: <20150809195953.7269fdc4ceced4fa6fe554fa@eol.ca>
+
+   I have just installed Fedora_22 on my Lenovo Thinkpad T400 laptop.
+I cannot get the networking to work, Ethernet or Wi-Fi.  
+
+   I can turn Wi-Fi on, and I can see the Wi-Fi servers.  When I
+connect to mine, it just sits there trying to connect until it times
+out.  I tried connecting with an invalid Wi-Fi password, and it
+prompted me for the correct one, so it is validating this, but not
+connecting.   
+
+   When I look at dmesg, I see a bunch of messages about authenticating
+and deauthinticating to a MAC address.  This MAC address matches the
+address of my router except for the last number, which is 87, and
+should be 86.  Fedora_22 no longer has /var/log/messages. 
+
+   I had some difficulties when I did the install from DVD.  A screen
+came up and said "Oh no!  Something has occurred and the system can't
+recover. All extensions have been disabled as a precaution."  I
+searched the web and I removed xorg-x11-drv-libinput.  This got the
+install working.  I removed it from the actual installed computer, as
+per the instructions on the website.  I was having network problems
+both before and after I did this. 
+
+   Has anybody seen anything like this?  Fedora_20 was a fairly easy
+install for ordinary mortals.  Fedora_22 seems to be a huge step
+backwards.
+
+   Thanks.
+
+-- 
+Howard Gibson 
+hgibson at eol.ca
+howard.gibson at teledyneoptech.com 
+jhowardgibson at gmail.com
+http://home.eol.ca/~hgibson
+
+From rjonasz at rjonasz.org  Mon Aug 10 01:08:29 2015
+From: rjonasz at rjonasz.org (Randy Jonasz)
+Date: Sun, 09 Aug 2015 21:08:29 -0400
+Subject: [GTALUG] Ubuntu update gone bad
+In-Reply-To: <55C77B24.104@gmail.com>
+References: <alpine.LRH.2.02.1508091030010.25880@redclaw.mimosa.com>
+ <55C77B24.104@gmail.com>
+Message-ID: <55C7F98D.1060605@rjonasz.org>
+
+
+
+On 08/09/2015 12:09 PM, Stewart C. Russell wrote:
+> On 2015-08-09 11:11 AM, D. Hugh Redelmeier wrote:
+>> So I rebooted.  Now I have the prompt:
+>> 	grub rescue>
+>> which means I have nothing, not even Win7.  I don't think that I can type
+>> anything useful into that prompt.
+> Revos have an EFI bios, right? I used to get this all the time on my
+> Samsung Chronos, until I blew away the dual-boot and put it back into
+> legacy (aka "working") BIOS mode.
+No need for this drastic action.  I've dual booted Ubuntu with Windows 
+using EFI without a problem.
+
+> Boot-Repair <https://help.ubuntu.com/community/Boot-Repair> on a
+> bootable USB stick will likely fix it. Under certain circumstances,
+> Windows updates will routinely destroy grub, so keep this stick handy.
+Yes, boot repair is an excellent tool.  The other route is to boot off 
+of a Ubuntu live cd, click on try Ubuntu and mount your drives to /mnt.  
+Chroot to /mnt and try to to reinstall grub.  Look for errors and 
+correct them.
+
+Cheers,
+
+Randy
+
+>
+> cheers,
+>   Stewart
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+-- 
+Even philosophers will praise war as ennobling mankind, forgetting
+the Greek who said: 'War is bad in that it begets more evil than
+it kills.'
+
+Immanuel Kant
+
+
+From bjonkman at sobac.com  Mon Aug 10 01:17:59 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Sun, 9 Aug 2015 21:17:59 -0400
+Subject: [GTALUG] Fedora 22 Networking
+In-Reply-To: <20150809195953.7269fdc4ceced4fa6fe554fa@eol.ca>
+References: <20150809195953.7269fdc4ceced4fa6fe554fa@eol.ca>
+Message-ID: <55C7FBC7.8060707@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+I've seen this with Linux Mint Debian Edition (the first release from
+March 2014); I bypassed the problem by assigning a static IP address
+to the laptop (Asus netbook) for that particular location.
+
+I believe the access point is at fault in my case, since the Asus
+netbook has no trouble connecting to APs at other locations.
+
+- --Bob.
+
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-635-9413
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+
+
+On 09/08/15 07:59 PM, Howard Gibson wrote:
+> I have just installed Fedora_22 on my Lenovo Thinkpad T400 laptop. 
+> I cannot get the networking to work, Ethernet or Wi-Fi.
+> 
+> I can turn Wi-Fi on, and I can see the Wi-Fi servers.  When I 
+> connect to mine, it just sits there trying to connect until it
+> times out.  I tried connecting with an invalid Wi-Fi password, and
+> it prompted me for the correct one, so it is validating this, but
+> not connecting.
+> 
+> When I look at dmesg, I see a bunch of messages about
+> authenticating and deauthinticating to a MAC address.  This MAC
+> address matches the address of my router except for the last
+> number, which is 87, and should be 86.  Fedora_22 no longer has
+> /var/log/messages.
+> 
+> I had some difficulties when I did the install from DVD.  A screen 
+> came up and said "Oh no!  Something has occurred and the system
+> can't recover. All extensions have been disabled as a precaution."
+> I searched the web and I removed xorg-x11-drv-libinput.  This got
+> the install working.  I removed it from the actual installed
+> computer, as per the instructions on the website.  I was having
+> network problems both before and after I did this.
+> 
+> Has anybody seen anything like this?  Fedora_20 was a fairly easy 
+> install for ordinary mortals.  Fedora_22 seems to be a huge step 
+> backwards.
+> 
+> Thanks.
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlXH+8UACgkQuRKJsNLM5er+UQCdH7q1rjB3yxiM0uKO2uGMgI0z
+olEAoILpnVm9rv4GnYg2wTT5ANIShrT0
+=jsaW
+-----END PGP SIGNATURE-----
+
+From ansarm at gmail.com  Mon Aug 10 08:12:57 2015
+From: ansarm at gmail.com (Ansar Mohammed)
+Date: Mon, 10 Aug 2015 04:12:57 -0400
+Subject: [GTALUG] Processing a binary file with a shell script
+Message-ID: <CAOO1MfutDkpa6RM2SuK97uUhbP93gyO5zMGXM-wjqct9eE0jGA@mail.gmail.com>
+
+Hello All,
+I am writing a bourne shell script, to read a binary file as input and take
+action depending on the contents of the file.
+
+The file is a mixture of ASCII and binary codes (such as ASCII filed
+lengths and flags).
+
+I have the processing already done in C. I would like to convert it to a
+bourne shell.
+
+Does anyone have any suggestions on what combination of tools I may be able
+to use?
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150810/683962a1/attachment.html>
+
