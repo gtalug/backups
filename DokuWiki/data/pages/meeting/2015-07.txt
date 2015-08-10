@@ -1,0 +1,7 @@
+====== 14th July, 2016 - Puppet with David Thornton ======
+
+  * [[http://gtalug.org/meeting/2015-07/|Meeting Link]]
+
+===== Links =====
+
+  * [[http://www.example42.com/tutorials/PuppetTutorial/|Puppet Tutorial]] by Alessandro Franceschi.
