@@ -1968,3 +1968,149 @@ to use?
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150810/683962a1/attachment.html>
 
+From opengeometry at yahoo.ca  Mon Aug 10 09:43:45 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Mon, 10 Aug 2015 05:43:45 -0400
+Subject: [GTALUG] Processing a binary file with a shell script
+In-Reply-To: <CAOO1MfutDkpa6RM2SuK97uUhbP93gyO5zMGXM-wjqct9eE0jGA@mail.gmail.com>
+References: <CAOO1MfutDkpa6RM2SuK97uUhbP93gyO5zMGXM-wjqct9eE0jGA@mail.gmail.com>
+Message-ID: <20150810094345.GA10427@node1.localdomain>
+
+You don't need "tools" to write Bourne shell script, because the script
+itself is text file.  If you're talking about shell wrapper, then
+    #! /bin/sh
+    your_c_program "$@"
+would call your C program with the same arguments.  You can use "exec"
+to replace the script, if you want PID to be the same, ie.
+    #! /bin/sh
+    exec your_c_program "$@"
+-- 
+William
+
+On Mon, Aug 10, 2015 at 04:12:57AM -0400, Ansar Mohammed wrote:
+> Hello All,
+> I am writing a bourne shell script, to read a binary file as input and take
+> action depending on the contents of the file.
+> 
+> The file is a mixture of ASCII and binary codes (such as ASCII filed
+> lengths and flags).
+> 
+> I have the processing already done in C. I would like to convert it to a
+> bourne shell.
+> 
+> Does anyone have any suggestions on what combination of tools I may be able
+> to use?
+
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+From me at mylesbraithwaite.com  Mon Aug 10 12:50:40 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 10 Aug 2015 08:50:40 -0400
+Subject: [GTALUG] Where Should We Dine Before the August 2015 GTALUG
+ Meeting? (was GTALUG Meeting on 11th August, 2015 at 7:30pm)
+In-Reply-To: <CAHcykVo6Sf_+zqaQZRjBq=R676Pr0+U=+kevbQ9EvqJgBDCUQA@mail.gmail.com>
+References: <CA+hskZMV=mab5B9bbf287DKWYstacYSFTumSe1TZ_9hGVtWv=A@mail.gmail.com>
+ <alpine.LRH.2.02.1508041617190.27361@redclaw.mimosa.com>
+ <55C2021B.2000905@mylesbraithwaite.com>
+ <CAHcykVo6Sf_+zqaQZRjBq=R676Pr0+U=+kevbQ9EvqJgBDCUQA@mail.gmail.com>
+Message-ID: <CA+hskZN=6Cp+KEKTC03gckdPes09R6z-OB7CazjfN4cSpjtZUQ@mail.gmail.com>
+
+On Sat, Aug 8, 2015 at 11:47 AM, David Thornton <northdot9 at gmail.com> wrote:
+> Also there is that fine Japanese noodle place at young and Gerrard. . And
+> they can handle our numbers for sure.
+
+Do you know the name?
+
+I want to add it to the list: <http://wiki.gtalug.org/pre-meeting_dinner>.
+
+From gilesorr at gmail.com  Mon Aug 10 14:31:38 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Mon, 10 Aug 2015 10:31:38 -0400
+Subject: [GTALUG] Processing a binary file with a shell script
+In-Reply-To: <CAOO1MfutDkpa6RM2SuK97uUhbP93gyO5zMGXM-wjqct9eE0jGA@mail.gmail.com>
+References: <CAOO1MfutDkpa6RM2SuK97uUhbP93gyO5zMGXM-wjqct9eE0jGA@mail.gmail.com>
+Message-ID: <CAEnxSC5DBC-8TGFcWcD6D0W-=C8xcWKi8iWs3KBLq5gdgDhYEw@mail.gmail.com>
+
+On 10 August 2015 at 04:12, Ansar Mohammed <ansarm at gmail.com> wrote:
+> Hello All,
+> I am writing a bourne shell script, to read a binary file as input and take
+> action depending on the contents of the file.
+>
+> The file is a mixture of ASCII and binary codes (such as ASCII filed lengths
+> and flags).
+>
+> I have the processing already done in C. I would like to convert it to a
+> bourne shell.
+>
+> Does anyone have any suggestions on what combination of tools I may be able
+> to use?
+
+If you're only trying to look at the ASCII data (and trying to process
+binary data in Bash seems like a poor idea), then you may want to look
+at the "strings" command:
+
+$ strings $(which ls)
+
+"strings" is part of the binutils package on Debian.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From Brent.Kimberley at Durham.ca  Mon Aug 10 14:42:59 2015
+From: Brent.Kimberley at Durham.ca (Brent Kimberley)
+Date: Mon, 10 Aug 2015 14:42:59 +0000
+Subject: [GTALUG] Processing a binary file with a shell script
+In-Reply-To: <CAEnxSC5DBC-8TGFcWcD6D0W-=C8xcWKi8iWs3KBLq5gdgDhYEw@mail.gmail.com>
+References: <CAOO1MfutDkpa6RM2SuK97uUhbP93gyO5zMGXM-wjqct9eE0jGA@mail.gmail.com>,
+ <CAEnxSC5DBC-8TGFcWcD6D0W-=C8xcWKi8iWs3KBLq5gdgDhYEw@mail.gmail.com>
+Message-ID: <20150810144259.6361176.19539.14865@Durham.ca>
+
+How about ihex or srec?
+
+
+  Original Message
+From: Giles Orr
+Sent: Monday, August 10, 2015 10:32
+To: GTALUG Talk
+Reply To: GTALUG Talk
+Subject: Re: [GTALUG] Processing a binary file with a shell script
+
+
+On 10 August 2015 at 04:12, Ansar Mohammed <ansarm at gmail.com> wrote:
+> Hello All,
+> I am writing a bourne shell script, to read a binary file as input and take
+> action depending on the contents of the file.
+>
+> The file is a mixture of ASCII and binary codes (such as ASCII filed lengths
+> and flags).
+>
+> I have the processing already done in C. I would like to convert it to a
+> bourne shell.
+>
+> Does anyone have any suggestions on what combination of tools I may be able
+> to use?
+
+If you're only trying to look at the ASCII data (and trying to process
+binary data in Bash seems like a poor idea), then you may want to look
+at the "strings" command:
+
+$ strings $(which ls)
+
+"strings" is part of the binutils package on Debian.
+
+--
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+THIS MESSAGE IS FOR THE USE OF THE INTENDED RECIPIENT(S) ONLY AND MAY CONTAIN INFORMATION THAT IS PRIVILEGED, PROPRIETARY, CONFIDENTIAL, AND/OR EXEMPT FROM DISCLOSURE UNDER ANY RELEVANT PRIVACY LEGISLATION. No rights to any privilege have been waived. If you are not the intended recipient, you are hereby notified that any review, retransmission, dissemination, distribution, copying, conversion to hard copy, taking of action in reliance on or other use of this communication is strictly prohibited. If you are not the intended recipient and have received this message in error, please notify me by return e-mail and delete or destroy all copies of this message.
+
