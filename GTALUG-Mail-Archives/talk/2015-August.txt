@@ -1968,3 +1968,842 @@ to use?
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150810/683962a1/attachment.html>
 
+From opengeometry at yahoo.ca  Mon Aug 10 09:43:45 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Mon, 10 Aug 2015 05:43:45 -0400
+Subject: [GTALUG] Processing a binary file with a shell script
+In-Reply-To: <CAOO1MfutDkpa6RM2SuK97uUhbP93gyO5zMGXM-wjqct9eE0jGA@mail.gmail.com>
+References: <CAOO1MfutDkpa6RM2SuK97uUhbP93gyO5zMGXM-wjqct9eE0jGA@mail.gmail.com>
+Message-ID: <20150810094345.GA10427@node1.localdomain>
+
+You don't need "tools" to write Bourne shell script, because the script
+itself is text file.  If you're talking about shell wrapper, then
+    #! /bin/sh
+    your_c_program "$@"
+would call your C program with the same arguments.  You can use "exec"
+to replace the script, if you want PID to be the same, ie.
+    #! /bin/sh
+    exec your_c_program "$@"
+-- 
+William
+
+On Mon, Aug 10, 2015 at 04:12:57AM -0400, Ansar Mohammed wrote:
+> Hello All,
+> I am writing a bourne shell script, to read a binary file as input and take
+> action depending on the contents of the file.
+> 
+> The file is a mixture of ASCII and binary codes (such as ASCII filed
+> lengths and flags).
+> 
+> I have the processing already done in C. I would like to convert it to a
+> bourne shell.
+> 
+> Does anyone have any suggestions on what combination of tools I may be able
+> to use?
+
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+From me at mylesbraithwaite.com  Mon Aug 10 12:50:40 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 10 Aug 2015 08:50:40 -0400
+Subject: [GTALUG] Where Should We Dine Before the August 2015 GTALUG
+ Meeting? (was GTALUG Meeting on 11th August, 2015 at 7:30pm)
+In-Reply-To: <CAHcykVo6Sf_+zqaQZRjBq=R676Pr0+U=+kevbQ9EvqJgBDCUQA@mail.gmail.com>
+References: <CA+hskZMV=mab5B9bbf287DKWYstacYSFTumSe1TZ_9hGVtWv=A@mail.gmail.com>
+ <alpine.LRH.2.02.1508041617190.27361@redclaw.mimosa.com>
+ <55C2021B.2000905@mylesbraithwaite.com>
+ <CAHcykVo6Sf_+zqaQZRjBq=R676Pr0+U=+kevbQ9EvqJgBDCUQA@mail.gmail.com>
+Message-ID: <CA+hskZN=6Cp+KEKTC03gckdPes09R6z-OB7CazjfN4cSpjtZUQ@mail.gmail.com>
+
+On Sat, Aug 8, 2015 at 11:47 AM, David Thornton <northdot9 at gmail.com> wrote:
+> Also there is that fine Japanese noodle place at young and Gerrard. . And
+> they can handle our numbers for sure.
+
+Do you know the name?
+
+I want to add it to the list: <http://wiki.gtalug.org/pre-meeting_dinner>.
+
+From gilesorr at gmail.com  Mon Aug 10 14:31:38 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Mon, 10 Aug 2015 10:31:38 -0400
+Subject: [GTALUG] Processing a binary file with a shell script
+In-Reply-To: <CAOO1MfutDkpa6RM2SuK97uUhbP93gyO5zMGXM-wjqct9eE0jGA@mail.gmail.com>
+References: <CAOO1MfutDkpa6RM2SuK97uUhbP93gyO5zMGXM-wjqct9eE0jGA@mail.gmail.com>
+Message-ID: <CAEnxSC5DBC-8TGFcWcD6D0W-=C8xcWKi8iWs3KBLq5gdgDhYEw@mail.gmail.com>
+
+On 10 August 2015 at 04:12, Ansar Mohammed <ansarm at gmail.com> wrote:
+> Hello All,
+> I am writing a bourne shell script, to read a binary file as input and take
+> action depending on the contents of the file.
+>
+> The file is a mixture of ASCII and binary codes (such as ASCII filed lengths
+> and flags).
+>
+> I have the processing already done in C. I would like to convert it to a
+> bourne shell.
+>
+> Does anyone have any suggestions on what combination of tools I may be able
+> to use?
+
+If you're only trying to look at the ASCII data (and trying to process
+binary data in Bash seems like a poor idea), then you may want to look
+at the "strings" command:
+
+$ strings $(which ls)
+
+"strings" is part of the binutils package on Debian.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From Brent.Kimberley at Durham.ca  Mon Aug 10 14:42:59 2015
+From: Brent.Kimberley at Durham.ca (Brent Kimberley)
+Date: Mon, 10 Aug 2015 14:42:59 +0000
+Subject: [GTALUG] Processing a binary file with a shell script
+In-Reply-To: <CAEnxSC5DBC-8TGFcWcD6D0W-=C8xcWKi8iWs3KBLq5gdgDhYEw@mail.gmail.com>
+References: <CAOO1MfutDkpa6RM2SuK97uUhbP93gyO5zMGXM-wjqct9eE0jGA@mail.gmail.com>,
+ <CAEnxSC5DBC-8TGFcWcD6D0W-=C8xcWKi8iWs3KBLq5gdgDhYEw@mail.gmail.com>
+Message-ID: <20150810144259.6361176.19539.14865@Durham.ca>
+
+How about ihex or srec?
+
+
+  Original Message
+From: Giles Orr
+Sent: Monday, August 10, 2015 10:32
+To: GTALUG Talk
+Reply To: GTALUG Talk
+Subject: Re: [GTALUG] Processing a binary file with a shell script
+
+
+On 10 August 2015 at 04:12, Ansar Mohammed <ansarm at gmail.com> wrote:
+> Hello All,
+> I am writing a bourne shell script, to read a binary file as input and take
+> action depending on the contents of the file.
+>
+> The file is a mixture of ASCII and binary codes (such as ASCII filed lengths
+> and flags).
+>
+> I have the processing already done in C. I would like to convert it to a
+> bourne shell.
+>
+> Does anyone have any suggestions on what combination of tools I may be able
+> to use?
+
+If you're only trying to look at the ASCII data (and trying to process
+binary data in Bash seems like a poor idea), then you may want to look
+at the "strings" command:
+
+$ strings $(which ls)
+
+"strings" is part of the binutils package on Debian.
+
+--
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+THIS MESSAGE IS FOR THE USE OF THE INTENDED RECIPIENT(S) ONLY AND MAY CONTAIN INFORMATION THAT IS PRIVILEGED, PROPRIETARY, CONFIDENTIAL, AND/OR EXEMPT FROM DISCLOSURE UNDER ANY RELEVANT PRIVACY LEGISLATION. No rights to any privilege have been waived. If you are not the intended recipient, you are hereby notified that any review, retransmission, dissemination, distribution, copying, conversion to hard copy, taking of action in reliance on or other use of this communication is strictly prohibited. If you are not the intended recipient and have received this message in error, please notify me by return e-mail and delete or destroy all copies of this message.
+
+From thoriumbr at gmail.com  Mon Aug 10 15:18:27 2015
+From: thoriumbr at gmail.com (Mauro Souza)
+Date: Mon, 10 Aug 2015 12:18:27 -0300
+Subject: [GTALUG] Processing a binary file with a shell script
+In-Reply-To: <20150810144259.6361176.19539.14865@Durham.ca>
+References: <CAOO1MfutDkpa6RM2SuK97uUhbP93gyO5zMGXM-wjqct9eE0jGA@mail.gmail.com>
+ <CAEnxSC5DBC-8TGFcWcD6D0W-=C8xcWKi8iWs3KBLq5gdgDhYEw@mail.gmail.com>
+ <20150810144259.6361176.19539.14865@Durham.ca>
+Message-ID: <CAEZ_B6OdsbZmqRZEGX+=2rL89yjezfdocWA6OH=w-mAXb3t=sQ@mail.gmail.com>
+
+If you have the program in C to process data, going to bash is like
+swapping a large truck for a turtle. Bash will be orders of magnitude
+slower, and you will have to take a lot of care to pipe data all over awk,
+sed, tr and the like.
+Bash is a terrible choice, python (or perl, or PHP) would be faster. Way
+faster.
+
+Mauro
+http://mauro.limeiratem.com - registered Linux User: 294521
+Scripture is both history, and a love letter from God.
+
+2015-08-10 11:42 GMT-03:00 Brent Kimberley <Brent.Kimberley at durham.ca>:
+
+> How about ihex or srec?
+>
+>
+>   Original Message
+> From: Giles Orr
+> Sent: Monday, August 10, 2015 10:32
+> To: GTALUG Talk
+> Reply To: GTALUG Talk
+> Subject: Re: [GTALUG] Processing a binary file with a shell script
+>
+>
+> On 10 August 2015 at 04:12, Ansar Mohammed <ansarm at gmail.com> wrote:
+> > Hello All,
+> > I am writing a bourne shell script, to read a binary file as input and
+> take
+> > action depending on the contents of the file.
+> >
+> > The file is a mixture of ASCII and binary codes (such as ASCII filed
+> lengths
+> > and flags).
+> >
+> > I have the processing already done in C. I would like to convert it to a
+> > bourne shell.
+> >
+> > Does anyone have any suggestions on what combination of tools I may be
+> able
+> > to use?
+>
+> If you're only trying to look at the ASCII data (and trying to process
+> binary data in Bash seems like a poor idea), then you may want to look
+> at the "strings" command:
+>
+> $ strings $(which ls)
+>
+> "strings" is part of the binutils package on Debian.
+>
+> --
+> Giles
+> http://www.gilesorr.com/
+> gilesorr at gmail.com
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+> THIS MESSAGE IS FOR THE USE OF THE INTENDED RECIPIENT(S) ONLY AND MAY
+> CONTAIN INFORMATION THAT IS PRIVILEGED, PROPRIETARY, CONFIDENTIAL, AND/OR
+> EXEMPT FROM DISCLOSURE UNDER ANY RELEVANT PRIVACY LEGISLATION. No rights to
+> any privilege have been waived. If you are not the intended recipient, you
+> are hereby notified that any review, retransmission, dissemination,
+> distribution, copying, conversion to hard copy, taking of action in
+> reliance on or other use of this communication is strictly prohibited. If
+> you are not the intended recipient and have received this message in error,
+> please notify me by return e-mail and delete or destroy all copies of this
+> message.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150810/bd805dfd/attachment.html>
+
+From northdot9 at gmail.com  Mon Aug 10 17:51:56 2015
+From: northdot9 at gmail.com (David Thornton)
+Date: Mon, 10 Aug 2015 17:51:56 +0000
+Subject: [GTALUG] Processing a binary file with a shell script
+In-Reply-To: <CAEZ_B6OdsbZmqRZEGX+=2rL89yjezfdocWA6OH=w-mAXb3t=sQ@mail.gmail.com>
+References: <CAOO1MfutDkpa6RM2SuK97uUhbP93gyO5zMGXM-wjqct9eE0jGA@mail.gmail.com>
+ <CAEnxSC5DBC-8TGFcWcD6D0W-=C8xcWKi8iWs3KBLq5gdgDhYEw@mail.gmail.com>
+ <20150810144259.6361176.19539.14865@Durham.ca>
+ <CAEZ_B6OdsbZmqRZEGX+=2rL89yjezfdocWA6OH=w-mAXb3t=sQ@mail.gmail.com>
+Message-ID: <CAHcykVrHFKH6hpFp4c3LQLjq8y=F-ojV+KGC=XjZ+ojKq2P4ow@mail.gmail.com>
+
+Can I ask why you want to use a borne script?
+
+David
+
+On Mon, Aug 10, 2015, 11:18 AM Mauro Souza <thoriumbr at gmail.com> wrote:
+
+> If you have the program in C to process data, going to bash is like
+> swapping a large truck for a turtle. Bash will be orders of magnitude
+> slower, and you will have to take a lot of care to pipe data all over awk,
+> sed, tr and the like.
+> Bash is a terrible choice, python (or perl, or PHP) would be faster. Way
+> faster.
+>
+> Mauro
+> http://mauro.limeiratem.com - registered Linux User: 294521
+> Scripture is both history, and a love letter from God.
+>
+> 2015-08-10 11:42 GMT-03:00 Brent Kimberley <Brent.Kimberley at durham.ca>:
+>
+>> How about ihex or srec?
+>>
+>>
+>>   Original Message
+>> From: Giles Orr
+>> Sent: Monday, August 10, 2015 10:32
+>> To: GTALUG Talk
+>> Reply To: GTALUG Talk
+>> Subject: Re: [GTALUG] Processing a binary file with a shell script
+>>
+>>
+>> On 10 August 2015 at 04:12, Ansar Mohammed <ansarm at gmail.com> wrote:
+>> > Hello All,
+>> > I am writing a bourne shell script, to read a binary file as input and
+>> take
+>> > action depending on the contents of the file.
+>> >
+>> > The file is a mixture of ASCII and binary codes (such as ASCII filed
+>> lengths
+>> > and flags).
+>> >
+>> > I have the processing already done in C. I would like to convert it to a
+>> > bourne shell.
+>> >
+>> > Does anyone have any suggestions on what combination of tools I may be
+>> able
+>> > to use?
+>>
+>> If you're only trying to look at the ASCII data (and trying to process
+>> binary data in Bash seems like a poor idea), then you may want to look
+>> at the "strings" command:
+>>
+>> $ strings $(which ls)
+>>
+>> "strings" is part of the binutils package on Debian.
+>>
+>> --
+>> Giles
+>> http://www.gilesorr.com/
+>> gilesorr at gmail.com
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>> THIS MESSAGE IS FOR THE USE OF THE INTENDED RECIPIENT(S) ONLY AND MAY
+>> CONTAIN INFORMATION THAT IS PRIVILEGED, PROPRIETARY, CONFIDENTIAL, AND/OR
+>> EXEMPT FROM DISCLOSURE UNDER ANY RELEVANT PRIVACY LEGISLATION. No rights to
+>> any privilege have been waived. If you are not the intended recipient, you
+>> are hereby notified that any review, retransmission, dissemination,
+>> distribution, copying, conversion to hard copy, taking of action in
+>> reliance on or other use of this communication is strictly prohibited. If
+>> you are not the intended recipient and have received this message in error,
+>> please notify me by return e-mail and delete or destroy all copies of this
+>> message.
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150810/2e34ab0a/attachment.html>
+
+From kevin at ve3syb.ca  Mon Aug 10 19:22:27 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Mon, 10 Aug 2015 15:22:27 -0400
+Subject: [GTALUG] Ubuntu update gone bad
+In-Reply-To: <alpine.LRH.2.02.1508091030010.25880@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1508091030010.25880@redclaw.mimosa.com>
+Message-ID: <55C8F9F3.6090603@ve3syb.ca>
+
+On 15-08-09 11:11 AM, D. Hugh Redelmeier wrote:
+> I took an Acer Revo out of service as an HTPC.  It was dual boot Win 7 and
+> Ubuntu 12.04 LTS.
+[snip]
+> I applied all Ubuntu 12.04 updates.  Fine.  Not even stupid.
+>
+> It offered me Ubuntu 14.04 LTS.  I said to go ahead.  I almost never do
+> version upgrades, out of fear, but I didn't have much to lose.  And
+> everyone always says Ubuntu version upgrades are smooth as silk.
+
+You jumped over 3 other releases in between. One of which would have been 
+another LTS release. I have done upgrades in Ubuntu when I used to run it 
+and I usually had no problem. In my case I would do a series of upgrades 
+when I only two or three releases behind the current one. If I am too far 
+behind then I would go the route of a fresh install.
+
+You are jumping up by four releases and you can find some programs were 
+replaced by other programs which can complicate the upgrade process in some 
+situations.
+
+> Negative observation one: version upgrades take more real time than
+> re-installations.
+
+Yes, they often can.
+
+> Negative observation two: I thought that the slow upgrade process could
+> happen while I was asleep.
+
+I prefer to do the updates during the day so I can keep an eye on it. There 
+are extra questions that can be asked of you during an install that would 
+bring the process to a halt until an answer is provided.
+
+> Negative observation three:  It all appeared to work.  The updater
+> disappeared from the screen (a little odd).  top(1) showed no remnant.
+> So I rebooted.  Now I have the prompt:
+> 	grub rescue>
+> which means I have nothing, not even Win7.  I don't think that I can type
+> anything useful into that prompt.
+
+This could be one of a few issues. It could be a failed update to the grub 
+bootloader, it could be the Windows update changed the boot partitions or 
+removed the grub bootloader, or possibly a UEFI related boot issue.
+
+If (or, rather when) Windows update messed with the bootloader it usually 
+makes it so the system boots straight to Windows. Seeing a grub prompt means 
+that is not the case here.
+
+You can go in to the BIOS of your computer and disabled UEFI boot. I ran in 
+to an issue with it on one of my systems. If that isn't the case you may be 
+able to issue some commands at the grub prompt to get the system to boot.
+
+I don't know if things are the same with grub 2 but in grub 1 you would use 
+four commands. "root", "linux", "initrd", and finally "boot" to get the 
+system up.
+
+For example:
+root (hd0,1)
+linux /boot/vmlinuz-<insert-kernel-version-here>
+initrd /boot/initrd.img-<insert-kernel-version-here>
+boot
+
+The root line would point to the drive and partition containing the linux 
+kernel and initrd files (what you know often know as /boot when the system 
+is running).
+
+The linux and initrd lines can take command line completion so you can hit 
+the tab key to see which kernel and/or initrd files are available. The last 
+word "boot" takes no arguments. It uses the information from the first three 
+commands and attempts to boot your system.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From opengeometry at yahoo.ca  Mon Aug 10 20:02:26 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Mon, 10 Aug 2015 16:02:26 -0400
+Subject: [GTALUG] Ubuntu with all-desktops-in-one ?
+Message-ID: <20150810200226.GA5950@node1.localdomain>
+
+Hi all,
+
+With Debian, you can install all desktops (kde, gnome, xfce, etc) from
+ISO at first, and then choose which the desktop when you log in via
+gdm/kdm.
+
+Is there a version for Ubuntu which allows you to do that?
+Right now, you have to choose/install different ISO for each desktop.
+
+Or, do I have to start with "minimal install", and then install all
+the desktops afterwards?  But, I don't know if gdm/kdm will pick up
+the desktops.
+-- 
+William
+
+From lsorense at csclub.uwaterloo.ca  Mon Aug 10 20:04:22 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 10 Aug 2015 16:04:22 -0400
+Subject: [GTALUG] Keyboards WAS Re: Thinkpad T420 as a VM host
+In-Reply-To: <CAEnxSC5C35hCrpqPYyXgWL8yn=4PgB5ei_yP4B-4QJsOxj3hCQ@mail.gmail.com>
+References: <CAEnxSC5C35hCrpqPYyXgWL8yn=4PgB5ei_yP4B-4QJsOxj3hCQ@mail.gmail.com>
+Message-ID: <20150810200422.GE29199@csclub.uwaterloo.ca>
+
+On Thu, Aug 06, 2015 at 10:05:04AM -0400, Giles Orr wrote:
+> I have a rather depressing variety of mechanical keyboards, including
+> a couple IBM Model Ms.  To clarify my biases, I LOVE the feel of the
+> IBM Model M keys.  My keyboard at work is a Kinesis Advantage with
+> their standard Cherry Brown switches.  I think the Advantage's
+> physical layout is about the best that's available in any keyboard
+> right now: vertical columns (rather than slanted columns we still
+> persist in copying from typewriters: not only is it no longer
+> necessary, it's actually ergonomically bad), dished hand areas to
+> match differences in finger length, and a split between the hands.
+> 
+> I have three Kinesis Advantages.  As mentioned, one has the original
+> Cherry Browns.  They're okay.  I have a second that I refitted with
+> Cherry Blues: that's the one I use at home.  That's my idea of a great
+> keyboard.  The Cherry Blues are about as close as you'll get to the
+> behaviour of the IBM Model M buckling spring keys (short of buying one
+> of the Unicomp keyboards that actually have buckling springs).  They
+> have a strong tactile click when the key activates.  It's also
+> audible: it's just as well I live alone, as the Blues are notoriously
+> loud and irritate the crap out of people nearby (just like the Model
+> M).  I refitted the third Kinesis Advantage with Cherry Clears.
+> Initially they feel quite similar to the Browns, but they're stiffer:
+> you don't notice it immediately, but after a couple hours of typing, I
+> found it genuinely tiring to use.  I don't use it much.
+> 
+> I highly recommend the Cherry Blues to non-gamers.  Just be prepared
+> for the noise.  The bigger Canada Computers stores usually have
+> several keyboards with different Cherry switches out for testing.
+> 
+> If anyone has questions about any of this, feel free to contact me
+> off-list: I've been a bit of a keyboard wonk for a couple decades.
+
+I will stick to my keytronic (currently an E03600U2).  I hate the noise
+of the old IBMs.  Fortunately the model M is durable enough to
+sufficiently punish anyone who tries to use one nearby that the keyboard
+won't suffer any damage and can still be used by someone else that
+politely does so when they are alone. :)
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Mon Aug 10 20:08:15 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 10 Aug 2015 16:08:15 -0400
+Subject: [GTALUG] UEFI bios/firmware
+In-Reply-To: <20150807194147.GM26395@vex.net>
+References: <CAHY6rkvunayH=w1UaDnyjNrYcnN=0jcJcM9EM3FMbfHN_vy3xw@mail.gmail.com>
+ <CAHY6rksjoHqPD+CVCuCJrYWefJ9B_ze-4Hatv6jJ3n1JRc9eLQ@mail.gmail.com>
+ <CAHY6rksTOWFNoiZE1kAdsTUKav3CL=ttx5NKnOvFSU4KqANVeg@mail.gmail.com>
+ <20150807194147.GM26395@vex.net>
+Message-ID: <20150810200815.GF29199@csclub.uwaterloo.ca>
+
+On Fri, Aug 07, 2015 at 03:41:48PM -0400, Steve Harvey wrote:
+>   Hi Abby,
+> 
+>   Googling  UEFI BIOS disable  should bring up quite a few links.  
+> Unfortunately, there is no standardized way of disabling the UEFI and
+> switching back to using BIOS.  In general, there are basically two challenges:
+
+That is NOT what you want to do.  You want to disable 'secureboot' not
+disable 'UEFI'.  Not the same thing.  Nothing wrong with UEFI at all,
+just secureboot.
+
+>   1) getting the attention of the firmware that runs on initial startup
+> before the operating system (Windows or Linux) gets to start,  and
+> 
+>   2) navigating the setup menus to disable the UEFI.
+> 
+>   Doing the first usually requires you to press or hold down a particular
+> key at a particular time, which one and when depends upon the manufacturer.
+> Depending upon a number of factors, you may or may not see a splash screen 
+> providing a hint while booting.  Knowing the make and model of your computer
+> can also help to determine this.  Most computer manufacturers should
+> have user documentation in PDF format that you can download from their
+> web site.
+
+What you want is to enter the setup and find the setting that turns off
+secureboot, and that is it.  Booting in UEFI mode is perfectly fine and
+most linux distributions have no issue with UEFI (and grub2 works fine
+with it too).  UEFI also means you get to use GPT for your partition
+setup, which is much nicer than the old primary/extended/logical partition
+crap we used to deal with.
+
+If you really want, you can look for CSM (Compatibility Support Module)
+boot mode and use that, which should boot with BIOS compatibility services
+allowing you to install older OSs that require a BIOS.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Mon Aug 10 20:11:10 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 10 Aug 2015 16:11:10 -0400
+Subject: [GTALUG] UEFI bios/firmware
+In-Reply-To: <55C516C2.6040901@rogers.com>
+References: <kf630j20svxeig82ewh9jxx8.1438978068597@email.android.com>
+ <55C516C2.6040901@rogers.com>
+Message-ID: <20150810201110.GG29199@csclub.uwaterloo.ca>
+
+On Fri, Aug 07, 2015 at 04:36:18PM -0400, James Knott wrote:
+> On 08/07/2015 04:07 PM, Abby wrote:
+> > That is what I have done, but most of the computers have been very
+> > difficult or impossible for me to deactivate.
+> 
+> You can thank Microsoft for that.
+
+Well for Windows 8 certification Microsoft required that there must be
+a user controllable setting to turn it off (although it must be on by
+default).  I am under the impression that Windows 10 certification no
+longer requires that such an option exist, so unfortunately some system
+makers might stupidly decide to not have such an option (of course no
+sane person should then buy from them, but many people won't know that).
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Mon Aug 10 20:11:33 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 10 Aug 2015 16:11:33 -0400
+Subject: [GTALUG] UEFI bios/firmware
+In-Reply-To: <CAHY6rksTOWFNoiZE1kAdsTUKav3CL=ttx5NKnOvFSU4KqANVeg@mail.gmail.com>
+References: <CAHY6rkvunayH=w1UaDnyjNrYcnN=0jcJcM9EM3FMbfHN_vy3xw@mail.gmail.com>
+ <CAHY6rksjoHqPD+CVCuCJrYWefJ9B_ze-4Hatv6jJ3n1JRc9eLQ@mail.gmail.com>
+ <CAHY6rksTOWFNoiZE1kAdsTUKav3CL=ttx5NKnOvFSU4KqANVeg@mail.gmail.com>
+Message-ID: <20150810201133.GH29199@csclub.uwaterloo.ca>
+
+On Fri, Aug 07, 2015 at 02:28:06PM -0400, maxcess wrote:
+> Hi gang.
+> Can anyone send me links or info. On how to disable high security UEFI in
+> windows 8 & 8.1 computers.
+
+You didn't say what make/model it is.
+
+-- 
+Len Sorensen
+
+From avolkov at gmail.com  Mon Aug 10 20:31:26 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Mon, 10 Aug 2015 16:31:26 -0400
+Subject: [GTALUG] Ubuntu with all-desktops-in-one ?
+In-Reply-To: <20150810200226.GA5950@node1.localdomain>
+References: <20150810200226.GA5950@node1.localdomain>
+Message-ID: <55C90A1E.5080108@gmail.com>
+
+Hi William,
+
+This doesn't answer your original question, but I'd install minimal
+system and then install all the desktop environments, because minimal
+system is a lot easier to troubleshoot than installer environment.
+
+You then can install all the desktop environments you want with tasksel
+tool -- https://help.ubuntu.com/community/Tasksel
+
+KDM/GDM are smart enough to detect all desktop environment, though you'd
+be better off installing only one of these.
+
+https://www.google.com/search?q=kdm+select+desktop+environment&source=lnms&tbm=isch&sa=X&ved=0CAgQ_AUoAmoVChMI76vC4ayfxwIVAxs-Ch05KQA1&biw=1600&bih=728
+
+In debian these days, you can install one of the desktops by just
+installing one of the task-desktop packages, I don't know if this method
+trickled down to ubuntu yet.
+
+https://packages.debian.org/jessie/task-desktop
+
+Alex.
+
+On 10/08/15 04:02 PM, William Park wrote:
+> Hi all,
+>
+> With Debian, you can install all desktops (kde, gnome, xfce, etc) from
+> ISO at first, and then choose which the desktop when you log in via
+> gdm/kdm.
+>
+> Is there a version for Ubuntu which allows you to do that?
+> Right now, you have to choose/install different ISO for each desktop.
+>
+> Or, do I have to start with "minimal install", and then install all
+> the desktops afterwards?  But, I don't know if gdm/kdm will pick up
+> the desktops.
+
+
+
+From chris at cfajohnson.com  Mon Aug 10 20:48:10 2015
+From: chris at cfajohnson.com (Chris F.A. Johnson)
+Date: Mon, 10 Aug 2015 16:48:10 -0400 (EDT)
+Subject: [GTALUG] Ubuntu with all-desktops-in-one ?
+In-Reply-To: <20150810200226.GA5950@node1.localdomain>
+References: <20150810200226.GA5950@node1.localdomain>
+Message-ID: <alpine.DEB.2.10.1508101647200.20371@chris.tor>
+
+On Mon, 10 Aug 2015, William Park wrote:
+
+> Hi all,
+>
+> With Debian, you can install all desktops (kde, gnome, xfce, etc) from
+> ISO at first, and then choose which the desktop when you log in via
+> gdm/kdm.
+>
+> Is there a version for Ubuntu which allows you to do that?
+> Right now, you have to choose/install different ISO for each desktop.
+>
+> Or, do I have to start with "minimal install", and then install all
+> the desktops afterwards?  But, I don't know if gdm/kdm will pick up
+> the desktops.
+
+   You can install anything and everything you want in any distro.
+
+-- 
+Chris F.A. Johnson, <http://cfajohnson.com>
+
+From maxcess at gmx.com  Mon Aug 10 22:39:02 2015
+From: maxcess at gmx.com (Abby Bassie-Cripps)
+Date: Tue, 11 Aug 2015 00:39:02 +0200
+Subject: [GTALUG] UEFI bios/firmware
+In-Reply-To: <20150810201133.GH29199@csclub.uwaterloo.ca>
+References: <CAHY6rkvunayH=w1UaDnyjNrYcnN=0jcJcM9EM3FMbfHN_vy3xw@mail.gmail.com>
+ <CAHY6rksjoHqPD+CVCuCJrYWefJ9B_ze-4Hatv6jJ3n1JRc9eLQ@mail.gmail.com>
+ <CAHY6rksTOWFNoiZE1kAdsTUKav3CL=ttx5NKnOvFSU4KqANVeg@mail.gmail.com>,
+ <20150810201133.GH29199@csclub.uwaterloo.ca>
+Message-ID: <trinity-658c9a6e-28c3-4180-bca2-679c95910ea8-1439246340803@3capp-mailcom-lxa02>
+
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150811/6a5940e7/attachment.html>
+
+From adb at adb.ca  Mon Aug 10 23:32:41 2015
+From: adb at adb.ca (Anthony de Boer)
+Date: Mon, 10 Aug 2015 19:32:41 -0400
+Subject: [GTALUG] Keyboards WAS Re: Thinkpad T420 as a VM host
+In-Reply-To: <20150810200422.GE29199@csclub.uwaterloo.ca>
+References: <CAEnxSC5C35hCrpqPYyXgWL8yn=4PgB5ei_yP4B-4QJsOxj3hCQ@mail.gmail.com>
+ <20150810200422.GE29199@csclub.uwaterloo.ca>
+Message-ID: <20150810233241.GP16224@adb.ca>
+
+Lennart Sorensen wrote:
+> I will stick to my keytronic (currently an E03600U2).  I hate the noise
+> of the old IBMs.  Fortunately the model M is durable enough to
+> sufficiently punish anyone who tries to use one nearby that the keyboard
+> won't suffer any damage and can still be used by someone else that
+> politely does so when they are alone. :)
+
+That's nothing compared to the dire and baroque things the coworker who
+used to sit across from me was going to do if anyone brought in a Model
+M.  Of course, you have to be faster than the proprietor of said keyboard
+if you want to do any of that.
+
+At least the Lenovo keyboards work uses consistently hit the minimum
+standard for a usable keyboard.  But it seems a shame not to be able to
+do my best coding there.  There's really nothing as nice to type on as
+a quarter-century-old Model M.
+
+And hey, if I wanted to make noise why bother with a Model M when I can
+fire up my chainsaw?  :-)
+
+-- 
+Anthony de Boer
+
+From james.knott at rogers.com  Tue Aug 11 01:06:02 2015
+From: james.knott at rogers.com (James Knott)
+Date: Mon, 10 Aug 2015 21:06:02 -0400
+Subject: [GTALUG] Keyboards WAS Re: Thinkpad T420 as a VM host
+In-Reply-To: <CAEnxSC5C35hCrpqPYyXgWL8yn=4PgB5ei_yP4B-4QJsOxj3hCQ@mail.gmail.com>
+References: <CAEnxSC5C35hCrpqPYyXgWL8yn=4PgB5ei_yP4B-4QJsOxj3hCQ@mail.gmail.com>
+Message-ID: <55C94A7A.3000801@rogers.com>
+
+On 08/06/2015 10:05 AM, Giles Orr wrote:
+> To clarify my biases, I LOVE the feel of the
+> IBM Model M keys.
+
+I also like the M keyboard.  I picked up a few several years ago.  The
+only issue was I had to get a PS/2 - USB adapter to use the keyboard
+with my KVM.
+
+From ansarm at gmail.com  Tue Aug 11 02:42:40 2015
+From: ansarm at gmail.com (Ansar Mohammed)
+Date: Mon, 10 Aug 2015 22:42:40 -0400
+Subject: [GTALUG] Processing a binary file with a shell script
+In-Reply-To: <CAEZ_B6OdsbZmqRZEGX+=2rL89yjezfdocWA6OH=w-mAXb3t=sQ@mail.gmail.com>
+References: <CAOO1MfutDkpa6RM2SuK97uUhbP93gyO5zMGXM-wjqct9eE0jGA@mail.gmail.com>
+ <CAEnxSC5DBC-8TGFcWcD6D0W-=C8xcWKi8iWs3KBLq5gdgDhYEw@mail.gmail.com>
+ <20150810144259.6361176.19539.14865@Durham.ca>
+ <CAEZ_B6OdsbZmqRZEGX+=2rL89yjezfdocWA6OH=w-mAXb3t=sQ@mail.gmail.com>
+Message-ID: <CAOO1MfuQyjfN7VTdkSFh=Ho9YjMitwk_9V9AtFJLbkcSiOYCCg@mail.gmail.com>
+
+Here is the complete background.
+
+I need to write a tool to run on Linux that will do an LDAP lookup on
+Active Directory for a specific 'hidden' attribute that tells the client
+which Active Directory site it belongs to. The tool is part of a larger
+suite (keytab creation, krb5.conf config etc) already written in Bourne.
+Unfortunately, the value that is returned from AD is a binary blob. So
+while I can call ldapsearch to retrieve the value, I still need something
+to process/decompress the attribute.
+
+The algorithm to decompress the blob is the same as is outlined in RFC
+1035. But Windows implementations of such are sparsely documented.
+
+I needed to ensure that I understood the decompression algorithm so I wrote
+some fairly portable code to do both the LDAP lookup and  perform the
+decompression of the binary blob.
+
+So while I can port the code from Windows to Linux fairly easily, I would
+like the tool to be converted to Bourne so that it can be a single script
+(rather than having to deploy a script and an executable).
+
+
+On Mon, Aug 10, 2015 at 11:18 AM, Mauro Souza <thoriumbr at gmail.com> wrote:
+
+> If you have the program in C to process data, going to bash is like
+> swapping a large truck for a turtle. Bash will be orders of magnitude
+> slower, and you will have to take a lot of care to pipe data all over awk,
+> sed, tr and the like.
+> Bash is a terrible choice, python (or perl, or PHP) would be faster. Way
+> faster.
+>
+> Mauro
+> http://mauro.limeiratem.com - registered Linux User: 294521
+> Scripture is both history, and a love letter from God.
+>
+> 2015-08-10 11:42 GMT-03:00 Brent Kimberley <Brent.Kimberley at durham.ca>:
+>
+>> How about ihex or srec?
+>>
+>>
+>>   Original Message
+>> From: Giles Orr
+>> Sent: Monday, August 10, 2015 10:32
+>> To: GTALUG Talk
+>> Reply To: GTALUG Talk
+>> Subject: Re: [GTALUG] Processing a binary file with a shell script
+>>
+>>
+>> On 10 August 2015 at 04:12, Ansar Mohammed <ansarm at gmail.com> wrote:
+>> > Hello All,
+>> > I am writing a bourne shell script, to read a binary file as input and
+>> take
+>> > action depending on the contents of the file.
+>> >
+>> > The file is a mixture of ASCII and binary codes (such as ASCII filed
+>> lengths
+>> > and flags).
+>> >
+>> > I have the processing already done in C. I would like to convert it to a
+>> > bourne shell.
+>> >
+>> > Does anyone have any suggestions on what combination of tools I may be
+>> able
+>> > to use?
+>>
+>> If you're only trying to look at the ASCII data (and trying to process
+>> binary data in Bash seems like a poor idea), then you may want to look
+>> at the "strings" command:
+>>
+>> $ strings $(which ls)
+>>
+>> "strings" is part of the binutils package on Debian.
+>>
+>> --
+>> Giles
+>> http://www.gilesorr.com/
+>> gilesorr at gmail.com
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>> THIS MESSAGE IS FOR THE USE OF THE INTENDED RECIPIENT(S) ONLY AND MAY
+>> CONTAIN INFORMATION THAT IS PRIVILEGED, PROPRIETARY, CONFIDENTIAL, AND/OR
+>> EXEMPT FROM DISCLOSURE UNDER ANY RELEVANT PRIVACY LEGISLATION. No rights to
+>> any privilege have been waived. If you are not the intended recipient, you
+>> are hereby notified that any review, retransmission, dissemination,
+>> distribution, copying, conversion to hard copy, taking of action in
+>> reliance on or other use of this communication is strictly prohibited. If
+>> you are not the intended recipient and have received this message in error,
+>> please notify me by return e-mail and delete or destroy all copies of this
+>> message.
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150810/adb6840f/attachment.html>
+
