@@ -2807,3 +2807,1221 @@ On Mon, Aug 10, 2015 at 11:18 AM, Mauro Souza <thoriumbr at gmail.com> wrote:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150810/adb6840f/attachment.html>
 
+From me at mylesbraithwaite.com  Tue Aug 11 13:10:35 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 11 Aug 2015 09:10:35 -0400
+Subject: [GTALUG] [GTALUG-Announce] GTALUG Meeting Tonight at 7:30pm
+Message-ID: <CA+hskZMkL6dzrtvb0pjKd3dOGMCVkUd0Om3ek6Rg_P7E9LJS3A@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-08/>
+
+# Samba Progress Over the Last Six Years with William Murrithy
+
+The talk is a continuation of William's previous talk on Samba in
+2009. It looks at how close samba has closed the gap between AD and
+samba with samba 4, what's still left, packaging/deployment
+improvements and a demo of the samba deployment and and management.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before each meeting a group of GTALUGers will be dining at
+The Restaurant Formerly Know As Love At First Bite (96 Gerrard Street
+E).
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+# Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact the GTALUG Board @ <board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From me at mylesbraithwaite.com  Tue Aug 11 13:15:19 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 11 Aug 2015 09:15:19 -0400
+Subject: [GTALUG] GTALUG Meeting Tonight at 7:30pm
+In-Reply-To: <CA+hskZMkL6dzrtvb0pjKd3dOGMCVkUd0Om3ek6Rg_P7E9LJS3A@mail.gmail.com>
+References: <CA+hskZMkL6dzrtvb0pjKd3dOGMCVkUd0Om3ek6Rg_P7E9LJS3A@mail.gmail.com>
+Message-ID: <CA+hskZPBqLYjGJ1X120n9cfMw5_HYd+VTcwU10LFZQk2R0zwrg@mail.gmail.com>
+
+On Tue, Aug 11, 2015 at 9:10 AM, Myles Braithwaite
+<me at mylesbraithwaite.com> wrote:
+> * 6:00 pm - Before each meeting a group of GTALUGers will be dining at
+> The Restaurant Formerly Know As Love At First Bite (96 Gerrard Street
+> E).
+
+
+The Restaurant Formerly Know As Love At First Bite won the vote with
+31.25% of the vote.
+
+The next vote will be done by ranking ballet instead of the one choice.
+
+I am going off this list <http://wiki.gtalug.org/pre-meeting_dinner>
+and you are welcome to add more restuarants.
+
+From lsorense at csclub.uwaterloo.ca  Tue Aug 11 13:57:18 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 11 Aug 2015 09:57:18 -0400
+Subject: [GTALUG] Thinkpad T420 as a VM host
+In-Reply-To: <55C2AC35.3070008@rogers.com>
+References: <55AC1E4A.3050508@gmail.com>
+ <20150719220546.GA28858@node1.localdomain>
+ <55AC2050.2020300@gmail.com>
+ <20150805022953.GA4907@node1.localdomain>
+ <55C2AC35.3070008@rogers.com>
+Message-ID: <20150811135718.GI29199@csclub.uwaterloo.ca>
+
+On Wed, Aug 05, 2015 at 08:37:09PM -0400, David Collier-Brown wrote:
+> I have a new  T440p with 16GB, running Fedora 22, thus far it's reasonable.
+> I'm a hunt-and-peck person, so the KB isn't a big consideration: it works,
+> I'm happy.
+
+Unfortunately each generation has different keyboards so they are
+not comparable.  The x30 models went to chicklet keyboards (which I so
+far am very happy with), but the x40 (no idea if the x40p is the same)
+has had a lot of complaints about keyboard latyout and most of all the
+changes to the trackpad and trackpoint buttons, although the some updates
+have fixed that again (like the W541).
+
+I think the x20 was the last with the classic thinkpad keyboard, but I
+am not entirely sure since I never used one myself.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Aug 11 14:08:18 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 11 Aug 2015 10:08:18 -0400
+Subject: [GTALUG] Thinkpad T420 as a VM host
+In-Reply-To: <alpine.LRH.2.02.1508051846260.4094@redclaw.mimosa.com>
+References: <55AC1E4A.3050508@gmail.com>
+ <20150719220546.GA28858@node1.localdomain>
+ <55AC2050.2020300@gmail.com>
+ <20150805022953.GA4907@node1.localdomain>
+ <alpine.LRH.2.02.1508051846260.4094@redclaw.mimosa.com>
+Message-ID: <20150811140818.GJ29199@csclub.uwaterloo.ca>
+
+On Wed, Aug 05, 2015 at 11:20:10PM -0400, D. Hugh Redelmeier wrote:
+> Most notebooks don't have the performance of desktops because the
+> tradeoffs are different.
+> 
+> - Most notebook CPUs are weaker than desktop CPUs.  Fewer cores and
+>   lower clock rates, for a start.  There are exceptions but they are
+>   outliers.
+> 
+> - Ditto for GPUs.  But GPUs may not matter much for what you hope to
+>   do.
+> 
+> - adding disks and RAM is more constrained.  May well be OK anyway
+> 
+> - desktop displays can and should be better than notebook displays
+>   (but I seem to care more than most folks)
+> 
+> - in a fixed installation, notebooks are a bit awkward (but you can
+>   fix that by using an external monitor, keyboard, and mouse).
+> 
+> Many new notebooks don't let you replace batteries, RAM, or disks.
+> Beware.  Of course this is not the case with ThinkPad T420 notebooks.
+> 
+> If you want portability, the T420 is too old: more modern Intel CPUs take 
+> a lot less power for the same performance and thus the battery lasts 
+> longer.
+> 
+> If you don't want portability, a W-series ThinkPad may be more powerful 
+> and expandable (may depend on the generation).  My son's W520 will accept 
+> up to 32G of RAM, I think.  Lennart has a similar one.  And it comes with 
+> a larger screen.
+
+The W530 is perfectly portable.  It closes and fits in a large bag and
+can be carried places. :)
+
+I would hate to do it on a regular basis though.
+
+It does support 32GB ram and in my case has a Core-i7 CPU, which means
+quad core + hyperthreading at about 3GHz.  The fact it has a 170W power
+supply probably tells something about the power consumption.
+
+> Here's an example of a very powerful non-portable notebook:
+> <http://www.nmicrovip.ca/rog-core-i7-4710hq-16gb-ram-1tb-hdd-17-3-gtx860m-2gb-1920x1080-dvdrw-windows-8-1-bilingual-kb-g751jm-sh71-cb-refurbished/>
+> - quad core i7-4710hq
+> - 1920x1080 17" IPS screen
+> - 16G of RAM (that may well be the limit)
+> - NVIDIA® GeForce® GTX860M Graphics with 2GB GDDR5 VRAM
+> Beware: bilingual keyboard
+
+Actually I suspect it is french canadian keyboard.  One of the worst
+keyboard layouts ever made.  Looking at some pictures, that is in fact
+the case.
+
+Of course things can be fixed:
+http://us.estore.asus.com/collections/replacement-keyboard/products/g751jm-1a-k-b_us_module-as-90nb06g1-r30300
+
+I did that with my wife's ideapad a few years ago (partially because
+the keyboard broke and it was easier to get a US replacement which was
+also desirable).
+
+> | I currently have T43, and its keyboard is difficult to type on, at least
+> | for me.
+> 
+> Many people love ThinkPad keyboards, especially the ones on older 
+> ThinkPads.  One of the main complaints about newer ThinkPad keyboards is 
+> "they aren't as good as the old ones".
+> 
+> How can this square with your observations?
+> 
+> - keyboards are at least partially a matter of personal taste
+> 
+> - your T43 might have a dud keyboard.
+> 
+> In any case, the only way you'll really know if you'll like a keyboard is 
+> to try it.
+> 
+> Me? Lots of keyboards seem bad, some seem elegant but not to my taste,
+> many seem fine / good enough.  None has captured me.
+> 
+> |     - it's stiff, so you need to "push" rather than "tap", 
+> |     - it doesn't spring back, fast enough or "crispy" enough, so you
+> |       actually notice and become aware of the keypresses.  And, that
+> |       interferes with my typing.
+
+I suspect the newer chicklet style thinkpad keyboard might actually be
+an improvement then.
+
+> Many typists like being sure when they press a key.
+> 
+> Significant key travel is considered desirable by many (but not all).  
+> And rare in modern notebooks because of the quest for thin.
+> 
+> A tactile signal of a keypress registering is considered a Good Thing
+> (except by many gamers).  Something sort of lost with most modern
+> key structures.
+> 
+> There has been a renaissance of mechanical keyboards.  They cost
+> several times as much as regular keyboards.  And a great deal has been
+> written about the characteristics of each.  I thought that I'd like
+> Cherry blue, brown, or clear keys.
+> <http://www.keyboardco.com/blog/index.php/2012/12/an-introduction-to-cherry-mx-mechanical-switches/>
+> 
+> I'm using a mechanical keyboard to type this (Rosewill RK-6000;
+> imitation Alps keys, somewhat like Cherry Blue).  It is fine, but not
+> a revelation.  I have the same reaction to my wife's keyboard with
+> Cherry brown switches.  I find it especially disappointing that a key
+> can register on my keyboard without a click and a click can happen
+> without a registration (these problems don't seem to happen with the
+> way I type).
+> 
+> In ThinkPads, I like my x61's keyboard better than my T530's.
+
+I suspect I would be the opposite.  I like the W530 keyboard (which is
+the same as the T530).
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Aug 11 14:15:50 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 11 Aug 2015 10:15:50 -0400
+Subject: [GTALUG] Keyboards WAS Re: Thinkpad T420 as a VM host
+In-Reply-To: <20150810233241.GP16224@adb.ca>
+References: <CAEnxSC5C35hCrpqPYyXgWL8yn=4PgB5ei_yP4B-4QJsOxj3hCQ@mail.gmail.com>
+ <20150810200422.GE29199@csclub.uwaterloo.ca>
+ <20150810233241.GP16224@adb.ca>
+Message-ID: <20150811141550.GK29199@csclub.uwaterloo.ca>
+
+On Mon, Aug 10, 2015 at 07:32:41PM -0400, Anthony de Boer wrote:
+> That's nothing compared to the dire and baroque things the coworker who
+> used to sit across from me was going to do if anyone brought in a Model
+> M.  Of course, you have to be faster than the proprietor of said keyboard
+> if you want to do any of that.
+
+They won't hear you coming for all the noise.
+
+> At least the Lenovo keyboards work uses consistently hit the minimum
+> standard for a usable keyboard.  But it seems a shame not to be able to
+> do my best coding there.  There's really nothing as nice to type on as
+> a quarter-century-old Model M.
+
+Too noisy and a bit too hard to press for my liking.  Old IBm keyboards
+never die, but I sure don't miss them.
+
+> And hey, if I wanted to make noise why bother with a Model M when I can
+> fire up my chainsaw?  :-)
+
+You might get noticed carrying one of those.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Aug 11 14:25:15 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 11 Aug 2015 10:25:15 -0400
+Subject: [GTALUG] UEFI bios/firmware
+In-Reply-To: <trinity-658c9a6e-28c3-4180-bca2-679c95910ea8-1439246340803@3capp-mailcom-lxa02>
+References: <CAHY6rkvunayH=w1UaDnyjNrYcnN=0jcJcM9EM3FMbfHN_vy3xw@mail.gmail.com>
+ <CAHY6rksjoHqPD+CVCuCJrYWefJ9B_ze-4Hatv6jJ3n1JRc9eLQ@mail.gmail.com>
+ <CAHY6rksTOWFNoiZE1kAdsTUKav3CL=ttx5NKnOvFSU4KqANVeg@mail.gmail.com>
+ <20150810201133.GH29199@csclub.uwaterloo.ca>
+ <trinity-658c9a6e-28c3-4180-bca2-679c95910ea8-1439246340803@3capp-mailcom-lxa02>
+Message-ID: <20150811142515.GL29199@csclub.uwaterloo.ca>
+
+On Tue, Aug 11, 2015 at 12:39:02AM +0200, Abby Bassie-Cripps wrote:
+> <html><head></head><body><div style="font-family: Verdana;font-size: 12.0px;"><div>
+> <div>Hello Len</div>
+> 
+> <div>&nbsp;</div>
+> 
+> <div>That was very informative, thank you.</div>
+> 
+> <div>&nbsp;</div>
+> 
+> <div>For an update, the main computer is question is a toshiba satellite with win 8.1. In this once case, I could not find any default to unlock the secure boot.</div>
+> 
+> <div>In addition, all of the computers that have come my way with UEFI, are windows 8 &amp; 8.1 and are all secure in some form or another. I know have three computers that where given to me because of the UEFI / secure boot issue. I have never come across a computer that used UEFI and was not secure booted. All other computers I have worked on, have been using bios.</div>
+> 
+> <div>Seperately, I have what was a &#36;1400 laptop that came with win. 7. It had UEFI, but was the only computer not using secure boot. I have since put 8.1 and now 10 on it and it works better than 7, using UEFI. Its secure boot was apart of the UEFI. Hense my mis-understanding.</div>
+> 
+> <div>
+> <div>For the group, I perfer Ubuntu and now my iMac with OS X 10.10.4. There is so little issues with both, compared to windows OS.</div>
+>
+> <div>&nbsp;</div>
+> 
+> <div>So Len, are you able to tell me what the steps should be to disable the secure boot in windows 8 &amp; 8.1? Other than the simple out dated method that we all know about?</div>
+
+Well from what I can find the process is:
+
+When you see Toshiba logo, hit F2, then you should be in the UEFI (BIOS)
+settings.
+
+Under security tab there should be an option for 'secure boot' which
+you want to set to disabled.  If you want to keep windows working,
+that should be all you change, and then you should be able to install
+linux as long as the distribution is new enough to support UEFI booting.
+If you don't want to keep windows and you want to use an older style
+distribution that does not do UEFI booting, then you have to also find
+the "CSM boot" setting (under advanced/system settings) and turn that on.
+That will break booting windows 8.1 on the machine though.  I would
+personally stick with UEFI booting these days.
+
+https://aps2.toshiba-tro.de/kb0/TSB2B03F30002R01.htm
+
+-- 
+Len Sorensen
+
+From maxcess at gmx.com  Tue Aug 11 14:47:12 2015
+From: maxcess at gmx.com (Abby)
+Date: Tue, 11 Aug 2015 10:47:12 -0400
+Subject: [GTALUG] UEFI bios/firmware
+Message-ID: <h65970agt9mlwoiqr8russjy.1439304432709@email.android.com>
+
+
+    
+Hello LenThank you for your help.In at least 3 computers I have come across, that has this option grayed out. As shown in pic1 of that link you supplied. So it is not accessible. Every link I came across, basicly had the same solution you described. There for those three computers can not have a true format done. All three have corrupted hinden partions. Putting a new hard drive will not help either. New mother boards would help.Cheers Abby
+
+
+Sent from my Samsung device
+
+-------- Original message --------
+From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca> 
+Date: 08-11-2015  10:25  (GMT-05:00) 
+To: GTALUG Talk <talk at gtalug.org> 
+Subject: Re: [GTALUG] UEFI bios/firmware 
+
+On Tue, Aug 11, 2015 at 12:39:02AM +0200, Abby Bassie-Cripps wrote:
+> <html><head></head><body><div style="font-family: Verdana;font-size: 12.0px;"><div>
+> <div>Hello Len</div>
+> 
+> <div>&nbsp;</div>
+> 
+> <div>That was very informative, thank you.</div>
+> 
+> <div>&nbsp;</div>
+> 
+> <div>For an update, the main computer is question is a toshiba satellite with win 8.1. In this once case, I could not find any default to unlock the secure boot.</div>
+> 
+> <div>In addition, all of the computers that have come my way with UEFI, are windows 8 &amp; 8.1 and are all secure in some form or another. I know have three computers that where given to me because of the UEFI / secure boot issue. I have never come across a computer that used UEFI and was not secure booted. All other computers I have worked on, have been using bios.</div>
+> 
+> <div>Seperately, I have what was a &#36;1400 laptop that came with win. 7. It had UEFI, but was the only computer not using secure boot. I have since put 8.1 and now 10 on it and it works better than 7, using UEFI. Its secure boot was apart of the UEFI. Hense my mis-understanding.</div>
+> 
+> <div>
+> <div>For the group, I perfer Ubuntu and now my iMac with OS X 10.10.4. There is so little issues with both, compared to windows OS.</div>
+>
+> <div>&nbsp;</div>
+> 
+> <div>So Len, are you able to tell me what the steps should be to disable the secure boot in windows 8 &amp; 8.1? Other than the simple out dated method that we all know about?</div>
+
+Well from what I can find the process is:
+
+When you see Toshiba logo, hit F2, then you should be in the UEFI (BIOS)
+settings.
+
+Under security tab there should be an option for 'secure boot' which
+you want to set to disabled.  If you want to keep windows working,
+that should be all you change, and then you should be able to install
+linux as long as the distribution is new enough to support UEFI booting.
+If you don't want to keep windows and you want to use an older style
+distribution that does not do UEFI booting, then you have to also find
+the "CSM boot" setting (under advanced/system settings) and turn that on.
+That will break booting windows 8.1 on the machine though.  I would
+personally stick with UEFI booting these days.
+
+https://aps2.toshiba-tro.de/kb0/TSB2B03F30002R01.htm
+
+-- 
+Len Sorensen
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150811/46f220c2/attachment.html>
+
+From phiscock at ee.ryerson.ca  Tue Aug 11 15:01:24 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Tue, 11 Aug 2015 11:01:24 -0400
+Subject: [GTALUG] UEFI bios/firmware
+In-Reply-To: <h65970agt9mlwoiqr8russjy.1439304432709@email.android.com>
+References: <h65970agt9mlwoiqr8russjy.1439304432709@email.android.com>
+Message-ID: <a4589d3a0ad937347ad1d5376a7ff845.squirrel@webmail.ee.ryerson.ca>
+
+I had this same problem on an Acer laptop until I discovered you need to
+enter a password and enable the password.
+
+When you are finished disabling things, you can then disable the password.
+
+Peter
+
+>
+>
+> Hello LenThank you for your help.In at least 3 computers I have come
+> across, that has this option grayed out. As shown in pic1 of that link you
+> supplied. So it is not accessible.Â Every link I came across, basicly had
+> the same solution you described.Â There for those three computers can not
+> have a true format done. All three have corrupted hinden partions. Putting
+> a new hard drive will not help either. New mother boards would
+> help.CheersÂ Abby
+>
+>
+> Sent from my Samsung device
+>
+> -------- Original message --------
+> From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+> Date: 08-11-2015  10:25  (GMT-05:00)
+> To: GTALUG Talk <talk at gtalug.org>
+> Subject: Re: [GTALUG] UEFI bios/firmware
+>
+> On Tue, Aug 11, 2015 at 12:39:02AM +0200, Abby Bassie-Cripps wrote:
+>> <html><head></head><body><div style="font-family: Verdana;font-size:
+>> 12.0px;"><div>
+>> <div>Hello Len</div>
+>>
+>> <div>&nbsp;</div>
+>>
+>> <div>That was very informative, thank you.</div>
+>>
+>> <div>&nbsp;</div>
+>>
+>> <div>For an update, the main computer is question is a toshiba satellite
+>> with win 8.1. In this once case, I could not find any default to unlock
+>> the secure boot.</div>
+>>
+>> <div>In addition, all of the computers that have come my way with UEFI,
+>> are windows 8 &amp; 8.1 and are all secure in some form or another. I
+>> know have three computers that where given to me because of the UEFI /
+>> secure boot issue. I have never come across a computer that used UEFI
+>> and was not secure booted. All other computers I have worked on, have
+>> been using bios.</div>
+>>
+>> <div>Seperately, I have what was a &#36;1400 laptop that came with win.
+>> 7. It had UEFI, but was the only computer not using secure boot. I have
+>> since put 8.1 and now 10 on it and it works better than 7, using UEFI.
+>> Its secure boot was apart of the UEFI. Hense my mis-understanding.</div>
+>>
+>> <div>
+>> <div>For the group, I perfer Ubuntu and now my iMac with OS X 10.10.4.
+>> There is so little issues with both, compared to windows OS.</div>
+>>
+>> <div>&nbsp;</div>
+>>
+>> <div>So Len, are you able to tell me what the steps should be to disable
+>> the secure boot in windows 8 &amp; 8.1? Other than the simple out dated
+>> method that we all know about?</div>
+>
+> Well from what I can find the process is:
+>
+> When you see Toshiba logo, hit F2, then you should be in the UEFI (BIOS)
+> settings.
+>
+> Under security tab there should be an option for 'secure boot' which
+> you want to set to disabled.Â  If you want to keep windows working,
+> that should be all you change, and then you should be able to install
+> linux as long as the distribution is new enough to support UEFI booting.
+> If you don't want to keep windows and you want to use an older style
+> distribution that does not do UEFI booting, then you have to also find
+> the "CSM boot" setting (under advanced/system settings) and turn that on.
+> That will break booting windows 8.1 on the machine though.Â  I would
+> personally stick with UEFI booting these days.
+>
+> https://aps2.toshiba-tro.de/kb0/TSB2B03F30002R01.htm
+>
+> --
+> Len Sorensen
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From hugh at mimosa.com  Tue Aug 11 15:18:19 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 11 Aug 2015 11:18:19 -0400 (EDT)
+Subject: [GTALUG] Thinkpad T420 as a VM host
+In-Reply-To: <20150811140818.GJ29199@csclub.uwaterloo.ca>
+References: <55AC1E4A.3050508@gmail.com>
+ <20150719220546.GA28858@node1.localdomain> <55AC2050.2020300@gmail.com>
+ <20150805022953.GA4907@node1.localdomain>
+ <alpine.LRH.2.02.1508051846260.4094@redclaw.mimosa.com>
+ <20150811140818.GJ29199@csclub.uwaterloo.ca>
+Message-ID: <alpine.LRH.2.02.1508111104440.25880@redclaw.mimosa.com>
+
+| From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+
+| On Wed, Aug 05, 2015 at 11:20:10PM -0400, D. Hugh Redelmeier wrote:
+
+| The W530 is perfectly portable.  It closes and fits in a large bag and
+| can be carried places. :)
+
+The second computer I owned was portable: a Kaypro II.
+<http://www.oldcomputers.net/kayproii.html>
+26 pounds.  It did have a handle.
+
+| I would hate to do it on a regular basis though.
+
+The Kaypro got heavier the farther you carried it.
+
+| It does support 32GB ram and in my case has a Core-i7 CPU, which means
+| quad core + hyperthreading at about 3GHz.  The fact it has a 170W power
+| supply probably tells something about the power consumption.
+
+The Kaypro had 64k of RAM and I overclocked the machine to 4MHz (I
+replaced the Z80 CPU with a Z80A).
+
+| > Beware: bilingual keyboard
+| 
+| Actually I suspect it is french canadian keyboard.
+
+No, it is a keyboard intended to support English and French
+(bilingual).
+
+|  One of the worst
+| keyboard layouts ever made.
+
+My fingers don't like it (yet?).  My head thinks it is Good Thing.  My
+fingers mostly win.
+
+My fingers don't like change.  I still only use left shift because on
+keypunch machines right shift meant something different.  I still am
+annoyed that I had to change habits when changing from Sun keyboards
+to PC keyboards.  And fn-vs-ctrl placement on ThinkPads vs other
+notebooks vs desktops.
+
+From kevin at ve3syb.ca  Tue Aug 11 15:27:53 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Tue, 11 Aug 2015 11:27:53 -0400
+Subject: [GTALUG] UEFI bios/firmware
+In-Reply-To: <h65970agt9mlwoiqr8russjy.1439304432709@email.android.com>
+References: <h65970agt9mlwoiqr8russjy.1439304432709@email.android.com>
+Message-ID: <55CA1479.40801@ve3syb.ca>
+
+On 15-08-11 10:47 AM, Abby wrote:
+> In at least 3 computers I have come across, that has this option grayed out.
+
+I mentioned the other day to someone on this list that you may have to set a 
+supervisor password in the BIOS before you can change the UEFI and/or 
+secureboot setting. Give that a try and see if it helps. Just remember to 
+removed the supervisor password if you don't really want it long term.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From me at mylesbraithwaite.com  Tue Aug 11 16:02:43 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 11 Aug 2015 12:02:43 -0400
+Subject: [GTALUG] [GTALUG-Announce] [UPDATE] Re: GTALUG Meeting Tonight at
+	7:30pm
+Message-ID: <CA+hskZOtK-JB_acRDt1wKTbRvPtX3j+sL+yXcjY3bJEq5awENQ@mail.gmail.com>
+
+On Tue, Aug 11, 2015 at 9:10 AM, Myles Braithwaite
+<me at mylesbraithwaite.com> wrote:
+> <http://gtalug.org/meeting/2015-08/>
+
+Something has come up and William will not be able to give his talk
+tonight on Samba. We will be rescheduling him for the September
+meeting.
+
+Tonight's meeting will be a Round Table Q&A Session where we will take
+questions from the audience, and the audience discusses and attempts
+to answer those questions from their own knowledge. It's a great way
+to meet fellow members of our community and discover the skill sets we
+each bring to the table.
+
+>
+> ## Location
+>
+> George Vari Engineering and Computing Centre
+> 245 Church Street, Room 203
+> Ryerson University
+>
+> <http://goo.gl/maps/16oJ2>
+>
+> <http://www.openstreetmap.org/way/23447525>
+>
+> ## Schedule
+>
+> * 6:00 pm - Before each meeting a group of GTALUGers will be dining at
+> The Restaurant Formerly Know As Love At First Bite (96 Gerrard Street
+> E).
+> * 7:30 pm - Meeting and presentation.
+> * 9:00 pm - After each meeting a group of GTALUGers move to the The
+> Imperial Pub (54 Dundas St East) for refreshments and more
+> socializing.
+>
+> # Code of Conduct
+>
+> We want a productive happy community that can welcome new ideas,
+> improve every process every year, and foster collaboration between
+> individuals with differing needs, interests and skills.
+>
+> We gain strength from diversity, and actively seek participation from
+> those who enhance it. This code of conduct exists to ensure that
+> diverse groups collaborate to mutual advantage and enjoyment. We will
+> challenge prejudice that could jeopardize the participation of any
+> person in the community.
+>
+> The Code of Conduct governs how we behave in public or in private
+> whenever the Linux community will be judged by our actions. We expect
+> it to be honored by everyone who represents the community officially
+> or informally, claims affiliation, or participates directly. It
+> applies to activities online or offline.
+>
+> We invite anybody to participate. Our community is open.
+>
+> Please read more about the GTALUG Code of Conduct here:
+> <http://gtalug.org/about/code-of-conduct/>.
+>
+> If you have any questions, comments, or concerns about the GTALUG Code
+> of Conduct please contact the GTALUG Board @ <board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From gilesorr at gmail.com  Tue Aug 11 16:23:21 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Tue, 11 Aug 2015 12:23:21 -0400
+Subject: [GTALUG] Slightly OT: git question
+Message-ID: <CAEnxSC6U1NhkEjVD8m3JL07vFOFqa=O7GmNNm0VKxEfrTPuLQw@mail.gmail.com>
+
+I'm writing a Python script that checks git repositories in the user's
+home folder (other folders is an option that should be added soon) and
+then tells you their status, both local and remote.  I want to release
+it publicly using github, but I'd like to maintain a private repo, and
+only push certain releases to github.  I admit this is mostly because
+I keep extensive notes in the source code and am perhaps a bit
+embarrassed what those notes say both about my memory and my limited
+coding skills.  I should probably just get over it - particularly
+since the code itself probably says more than the notes.  But - git is
+flexible enough that I imagine that this is an option: has anybody
+done this?
+
+As my knowledge of Python is somewhat rudimentary, so is my knowledge
+of git.  The only thing I'm fairly sure about is that rebasing will be
+involved.  If I wasn't concerned about pull requests (as novel as it
+seems now, I like to hope they'll happen) this could be done in any
+number of sloppy ways.  But it seems like I need either a branch or a
+separate repo (which, and why?) that includes only the github data,
+and I need my private repo to have the github one as a "tracked
+branch" or something like that that I can merge from.  Is this making
+sense, or am I thinking about it all wrong?
+
+I welcome all suggestions and thoughts, thanks.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From me at mylesbraithwaite.com  Tue Aug 11 16:36:30 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 11 Aug 2015 12:36:30 -0400
+Subject: [GTALUG] Slightly OT: git question
+In-Reply-To: <CAEnxSC6U1NhkEjVD8m3JL07vFOFqa=O7GmNNm0VKxEfrTPuLQw@mail.gmail.com>
+References: <CAEnxSC6U1NhkEjVD8m3JL07vFOFqa=O7GmNNm0VKxEfrTPuLQw@mail.gmail.com>
+Message-ID: <55CA248E.2020100@mylesbraithwaite.com>
+
+Giles Orr wrote:
+> I'm writing a Python script that checks git repositories in the user's
+> home folder (other folders is an option that should be added soon) and
+> then tells you their status, both local and remote.  I want to release
+> it publicly using github, but I'd like to maintain a private repo, and
+> only push certain releases to github.  I admit this is mostly because
+> I keep extensive notes in the source code and am perhaps a bit
+> embarrassed what those notes say both about my memory and my limited
+> coding skills.  I should probably just get over it - particularly
+> since the code itself probably says more than the notes.  But - git is
+> flexible enough that I imagine that this is an option: has anybody
+> done this?
+
+If you don't want to share the commit messages you can change the easily
+with `git commit --amend` (see this
+<https://help.github.com/articles/changing-a-commit-message/>).
+
+If you are afraid of things you have committed you can use `git rebase
+-i HEAD~10` which will allow you to squash the last 10 commits and allow
+you to rewrite the commit message.
+
+I would clone a new repo to test how it's going to work. You don't want
+an detached head :-).
+
+Have you seen this: <https://github.com/mixu/gr> it's basically what you
+are doing written in Node.js.
+
+From cbbrowne at gmail.com  Tue Aug 11 16:41:33 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 11 Aug 2015 12:41:33 -0400
+Subject: [GTALUG] Slightly OT: git question
+In-Reply-To: <CAEnxSC6U1NhkEjVD8m3JL07vFOFqa=O7GmNNm0VKxEfrTPuLQw@mail.gmail.com>
+References: <CAEnxSC6U1NhkEjVD8m3JL07vFOFqa=O7GmNNm0VKxEfrTPuLQw@mail.gmail.com>
+Message-ID: <CAFNqd5Xgjx60RS8aLt8sbcDxOum-edzGNNLdoH6Zsy+CxsuW4A@mail.gmail.com>
+
+On 11 August 2015 at 12:23, Giles Orr <gilesorr at gmail.com> wrote:
+>
+> I'm writing a Python script that checks git repositories in the user's
+> home folder (other folders is an option that should be added soon) and
+> then tells you their status, both local and remote.  I want to release
+> it publicly using github, but I'd like to maintain a private repo, and
+> only push certain releases to github.  I admit this is mostly because
+> I keep extensive notes in the source code and am perhaps a bit
+> embarrassed what those notes say both about my memory and my limited
+> coding skills.  I should probably just get over it - particularly
+> since the code itself probably says more than the notes.  But - git is
+> flexible enough that I imagine that this is an option: has anybody
+> done this?
+
+I don't think this is so much a Python matter as a question of how you deal
+with your work in your branches.  (And maybe I'm wrong, but I'll run
+through the "squash" answer quickly!)
+
+The thing that I'll often do that is like this is to open local branches to
+fix bugs, and then, when preparing for release, to merge the results into
+the branch I want to push publicly, using the --squash option to get rid of
+any cruddy little commits that might seem embarrassing.
+
+http://stackoverflow.com/questions/5308816/how-to-use-git-merge-squash
+
+The first example seems pretty good...
+
+Suppose I did my work (with a bunch of dumb little commits) on the "bugfix"
+branch, and I want to put it into the "master" branch, voila...
+
+git checkout master
+git merge --squash bugfix
+git commit
+git push some-public-remote master
+
+This addresses the problem of "cleaning up messy commits."
+
+If the problem is that you want some of your python sources to get
+released, and others not, then you'd presumably need to have some sort of
+tool that rewrites the Python to remove (most? all?) comments.  Writing a
+"let me bowlderize the python code" tool seems likely to get real messy...
+ --
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150811/f8252efb/attachment.html>
+
+From qwerty172 at gmail.com  Tue Aug 11 16:45:25 2015
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Tue, 11 Aug 2015 12:45:25 -0400
+Subject: [GTALUG] Where Should We Dine Before the August 2015 GTALUG
+ Meeting? (was GTALUG Meeting on 11th August, 2015 at 7:30pm)
+In-Reply-To: <CA+hskZN=6Cp+KEKTC03gckdPes09R6z-OB7CazjfN4cSpjtZUQ@mail.gmail.com>
+References: <CA+hskZMV=mab5B9bbf287DKWYstacYSFTumSe1TZ_9hGVtWv=A@mail.gmail.com>
+ <alpine.LRH.2.02.1508041617190.27361@redclaw.mimosa.com>
+ <55C2021B.2000905@mylesbraithwaite.com>
+ <CAHcykVo6Sf_+zqaQZRjBq=R676Pr0+U=+kevbQ9EvqJgBDCUQA@mail.gmail.com>
+ <CA+hskZN=6Cp+KEKTC03gckdPes09R6z-OB7CazjfN4cSpjtZUQ@mail.gmail.com>
+Message-ID: <CAA3RLT4c593sso0ffVXZznGgOJvDPzogE9sj-ba_b97aYf4PcQ@mail.gmail.com>
+
+Is there a conscences?
+
+Bill
+On Aug 10, 2015 8:50 AM, "Myles Braithwaite" <me at mylesbraithwaite.com>
+wrote:
+
+> On Sat, Aug 8, 2015 at 11:47 AM, David Thornton <northdot9 at gmail.com>
+> wrote:
+> > Also there is that fine Japanese noodle place at young and Gerrard. . And
+> > they can handle our numbers for sure.
+>
+> Do you know the name?
+>
+> I want to add it to the list: <http://wiki.gtalug.org/pre-meeting_dinner>.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150811/399d029f/attachment.html>
+
+From maxcess at gmx.com  Tue Aug 11 16:46:52 2015
+From: maxcess at gmx.com (Abby)
+Date: Tue, 11 Aug 2015 12:46:52 -0400
+Subject: [GTALUG] UEFI bios/firmware
+Message-ID: <1u7ba1x701f44wx2ywmo9bxs.1439311612904@email.android.com>
+
+
+    
+Hello KevinYes it was I that you informed.I will be getting to one of those computers give give some of the ideas a try.So, unless anyone has any additional thoughts that may help, it is up to me to check it out and get back to the group with the results.Thank you all for your help.Cheers Abby
+
+
+Sent from my Samsung device
+
+-------- Original message --------
+From: Kevin Cozens <kevin at ve3syb.ca> 
+Date: 08-11-2015  11:27  (GMT-05:00) 
+To: talk at gtalug.org 
+Subject: Re: [GTALUG] UEFI bios/firmware 
+
+On 15-08-11 10:47 AM, Abby wrote:
+> In at least 3 computers I have come across, that has this option grayed out.
+
+I mentioned the other day to someone on this list that you may have to set a 
+supervisor password in the BIOS before you can change the UEFI and/or 
+secureboot setting. Give that a try and see if it helps. Just remember to 
+removed the supervisor password if you don't really want it long term.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150811/92553b28/attachment.html>
+
+From me at mylesbraithwaite.com  Tue Aug 11 16:51:53 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 11 Aug 2015 12:51:53 -0400
+Subject: [GTALUG] Where Should We Dine Before the August 2015 GTALUG
+ Meeting? (was GTALUG Meeting on 11th August, 2015 at 7:30pm)
+In-Reply-To: <CAA3RLT4c593sso0ffVXZznGgOJvDPzogE9sj-ba_b97aYf4PcQ@mail.gmail.com>
+References: <CA+hskZMV=mab5B9bbf287DKWYstacYSFTumSe1TZ_9hGVtWv=A@mail.gmail.com>
+ <alpine.LRH.2.02.1508041617190.27361@redclaw.mimosa.com>
+ <55C2021B.2000905@mylesbraithwaite.com>
+ <CAHcykVo6Sf_+zqaQZRjBq=R676Pr0+U=+kevbQ9EvqJgBDCUQA@mail.gmail.com>
+ <CA+hskZN=6Cp+KEKTC03gckdPes09R6z-OB7CazjfN4cSpjtZUQ@mail.gmail.com>
+ <CAA3RLT4c593sso0ffVXZznGgOJvDPzogE9sj-ba_b97aYf4PcQ@mail.gmail.com>
+Message-ID: <55CA2829.6090804@mylesbraithwaite.com>
+
+Bill Thanis wrote:
+> Is there a conscences?
+
+Yep. The Restaurant Formally Known as Love at First Bite.
+
+From gilesorr at gmail.com  Tue Aug 11 17:00:50 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Tue, 11 Aug 2015 13:00:50 -0400
+Subject: [GTALUG] Slightly OT: git question
+In-Reply-To: <CAFNqd5Xgjx60RS8aLt8sbcDxOum-edzGNNLdoH6Zsy+CxsuW4A@mail.gmail.com>
+References: <CAEnxSC6U1NhkEjVD8m3JL07vFOFqa=O7GmNNm0VKxEfrTPuLQw@mail.gmail.com>
+ <CAFNqd5Xgjx60RS8aLt8sbcDxOum-edzGNNLdoH6Zsy+CxsuW4A@mail.gmail.com>
+Message-ID: <CAEnxSC7M5tTXbpnisYd5aEpr16rP4S140644MqMZpbxjbYaFcw@mail.gmail.com>
+
+On 11 August 2015 at 12:41, Christopher Browne <cbbrowne at gmail.com> wrote:
+> On 11 August 2015 at 12:23, Giles Orr <gilesorr at gmail.com> wrote:
+>>
+>> I'm writing a Python script that checks git repositories in the user's
+>> home folder (other folders is an option that should be added soon) and
+>> then tells you their status, both local and remote.  I want to release
+>> it publicly using github, but I'd like to maintain a private repo, and
+>> only push certain releases to github.  I admit this is mostly because
+>> I keep extensive notes in the source code and am perhaps a bit
+>> embarrassed what those notes say both about my memory and my limited
+>> coding skills.  I should probably just get over it - particularly
+>> since the code itself probably says more than the notes.  But - git is
+>> flexible enough that I imagine that this is an option: has anybody
+>> done this?
+>
+> I don't think this is so much a Python matter as a question of how you deal
+> with your work in your branches.  (And maybe I'm wrong, but I'll run through
+> the "squash" answer quickly!)
+>
+> The thing that I'll often do that is like this is to open local branches to
+> fix bugs, and then, when preparing for release, to merge the results into
+> the branch I want to push publicly, using the --squash option to get rid of
+> any cruddy little commits that might seem embarrassing.
+>
+> http://stackoverflow.com/questions/5308816/how-to-use-git-merge-squash
+>
+> The first example seems pretty good...
+>
+> Suppose I did my work (with a bunch of dumb little commits) on the "bugfix"
+> branch, and I want to put it into the "master" branch, voila...
+>
+> git checkout master
+> git merge --squash bugfix
+> git commit
+> git push some-public-remote master
+>
+> This addresses the problem of "cleaning up messy commits."
+>
+> If the problem is that you want some of your python sources to get released,
+> and others not, then you'd presumably need to have some sort of tool that
+> rewrites the Python to remove (most? all?) comments.  Writing a "let me
+> bowlderize the python code" tool seems likely to get real messy...
+
+A co-worker has suggested I create a new repo and simply copy the
+files I want to put on github into it.  Since there will only be three
+or four files, this seems reasonable.  Likewise, future commits could
+be copied over with less comments in the code and a public-friendly
+commit message.  And (possibly most important), the private repo could
+have a branch with the github repo (and its pull requests) as a
+remote.  This is so far seeming like the simplest solution.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From lsorense at csclub.uwaterloo.ca  Tue Aug 11 17:22:52 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 11 Aug 2015 13:22:52 -0400
+Subject: [GTALUG] UEFI bios/firmware
+In-Reply-To: <h65970agt9mlwoiqr8russjy.1439304432709@email.android.com>
+References: <h65970agt9mlwoiqr8russjy.1439304432709@email.android.com>
+Message-ID: <20150811172252.GM29199@csclub.uwaterloo.ca>
+
+On Tue, Aug 11, 2015 at 10:47:12AM -0400, Abby wrote:
+> Hello LenThank you for your help.In at least 3 computers I have come across, that has this option grayed out. As shown in pic1 of that link you supplied. So it is not accessible. Every link I came across, basicly had the same solution you described. There for those three computers can not have a true format done. All three have corrupted hinden partions. Putting a new hard drive will not help either. New mother boards would help.Cheers Abby
+
+Well you might have to type an admin password to unlock some settings.
+
+But windows 8 logo certification requires that the end user be able to
+change that setting, so there has to be a way.  Otherwise it would not
+be allowed to ship with a windows 8 logo sticker on it.
+
+Some places say that if a supervisor password is set it has to be cleared
+before you can change secure boot.
+
+And you have to be sure windows 8 is really shutdown before entering
+the bios, which supposedly you do by holding shift down when telling
+windows to shutdown/restart.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Aug 11 17:23:27 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 11 Aug 2015 13:23:27 -0400
+Subject: [GTALUG] UEFI bios/firmware
+In-Reply-To: <a4589d3a0ad937347ad1d5376a7ff845.squirrel@webmail.ee.ryerson.ca>
+References: <h65970agt9mlwoiqr8russjy.1439304432709@email.android.com>
+ <a4589d3a0ad937347ad1d5376a7ff845.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <20150811172327.GN29199@csclub.uwaterloo.ca>
+
+On Tue, Aug 11, 2015 at 11:01:24AM -0400, phiscock at ee.ryerson.ca wrote:
+> I had this same problem on an Acer laptop until I discovered you need to
+> enter a password and enable the password.
+> 
+> When you are finished disabling things, you can then disable the password.
+
+So you have to set a supervisor/admin password for the bios before you
+can change the secureboot setting?  Crazy. :)
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Aug 11 17:26:16 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 11 Aug 2015 13:26:16 -0400
+Subject: [GTALUG] Thinkpad T420 as a VM host
+In-Reply-To: <alpine.LRH.2.02.1508111104440.25880@redclaw.mimosa.com>
+References: <55AC1E4A.3050508@gmail.com>
+ <20150719220546.GA28858@node1.localdomain>
+ <55AC2050.2020300@gmail.com>
+ <20150805022953.GA4907@node1.localdomain>
+ <alpine.LRH.2.02.1508051846260.4094@redclaw.mimosa.com>
+ <20150811140818.GJ29199@csclub.uwaterloo.ca>
+ <alpine.LRH.2.02.1508111104440.25880@redclaw.mimosa.com>
+Message-ID: <20150811172616.GO29199@csclub.uwaterloo.ca>
+
+On Tue, Aug 11, 2015 at 11:18:19AM -0400, D. Hugh Redelmeier wrote:
+> | From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+> 
+> | On Wed, Aug 05, 2015 at 11:20:10PM -0400, D. Hugh Redelmeier wrote:
+> 
+> | The W530 is perfectly portable.  It closes and fits in a large bag and
+> | can be carried places. :)
+> 
+> The second computer I owned was portable: a Kaypro II.
+> <http://www.oldcomputers.net/kayproii.html>
+> 26 pounds.  It did have a handle.
+> 
+> | I would hate to do it on a regular basis though.
+> 
+> The Kaypro got heavier the farther you carried it.
+> 
+> | It does support 32GB ram and in my case has a Core-i7 CPU, which means
+> | quad core + hyperthreading at about 3GHz.  The fact it has a 170W power
+> | supply probably tells something about the power consumption.
+> 
+> The Kaypro had 64k of RAM and I overclocked the machine to 4MHz (I
+> replaced the Z80 CPU with a Z80A).
+> 
+> | > Beware: bilingual keyboard
+> | 
+> | Actually I suspect it is french canadian keyboard.
+> 
+> No, it is a keyboard intended to support English and French
+> (bilingual).
+> 
+> |  One of the worst
+> | keyboard layouts ever made.
+> 
+> My fingers don't like it (yet?).  My head thinks it is Good Thing.  My
+> fingers mostly win.
+> 
+> My fingers don't like change.  I still only use left shift because on
+> keypunch machines right shift meant something different.  I still am
+> annoyed that I had to change habits when changing from Sun keyboards
+> to PC keyboards.  And fn-vs-ctrl placement on ThinkPads vs other
+> notebooks vs desktops.
+
+Well thinkpads have a bios setting to swap fn and control for those
+that prefer it that way (and in the case of my wife's thinkpad when she
+broke the fn key, being able to swap it with control meant a key for
+controling the keyboard light and brightness existed again until we got
+a replacement keyboard).
+
+Dell has the keys wrong of course and no option to swap them.  Also their
+keyboard sucks and the touchpad and trackpoint are awful.  Dell sucks. :)
+
+-- 
+Len Sorensen
+
+From phiscock at ee.ryerson.ca  Tue Aug 11 17:34:08 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Tue, 11 Aug 2015 13:34:08 -0400
+Subject: [GTALUG] Slightly OT: git question
+In-Reply-To: <CAEnxSC6U1NhkEjVD8m3JL07vFOFqa=O7GmNNm0VKxEfrTPuLQw@mail.gmail.com>
+References: <CAEnxSC6U1NhkEjVD8m3JL07vFOFqa=O7GmNNm0VKxEfrTPuLQw@mail.gmail.com>
+Message-ID: <53b2a0146334780bded8c800a139d890.squirrel@webmail.ee.ryerson.ca>
+
+> I admit this is mostly because
+> I keep extensive notes in the source code and am perhaps a bit
+> embarrassed what those notes say both about my memory and my limited
+> coding skills.  I should probably just get over it - particularly
+> since the code itself probably says more than the notes.
+>
+My experience with open source is that it is undercommented, if indeed it
+has any comments at all. (Darktable, I'm looking at you.) It's enormously
+helpful to understand the writer's thinking process. People can skip over
+the comments or even do a selective erase if they don't like them.
+
+Then, if the reader understands your objective and finds your code clunky
+in achieving that objective, they can show their superior grasp by
+providing an alternative (often more concise and difficult to understand)
+solution.
+
+I'm reminded of stories of Gauss, the famous mathematician and scientist
+of whom it was said 'he removed all the scaffolding from his
+constructions, so it appeared he arrived at the result by magic'. There's
+too much of that kind of thinking in software.
+
+Peter
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From maxcess at gmx.com  Tue Aug 11 17:57:26 2015
+From: maxcess at gmx.com (Abby)
+Date: Tue, 11 Aug 2015 13:57:26 -0400
+Subject: [GTALUG] UEFI bios/firmware
+Message-ID: <br7p54epmjcyst9yadgol0hh.1439315846512@email.android.com>
+
+
+    
+Sure us crazy!
+
+
+Sent from my Samsung device
+
+-------- Original message --------
+From: Lennart Sorensen <lsorense at csclub.uwaterloo.ca> 
+Date: 08-11-2015  13:23  (GMT-05:00) 
+To: phiscock at ee.ryerson.ca, GTALUG Talk <talk at gtalug.org> 
+Subject: Re: [GTALUG] UEFI bios/firmware 
+
+On Tue, Aug 11, 2015 at 11:01:24AM -0400, phiscock at ee.ryerson.ca wrote:
+> I had this same problem on an Acer laptop until I discovered you need to
+> enter a password and enable the password.
+> 
+> When you are finished disabling things, you can then disable the password.
+
+So you have to set a supervisor/admin password for the bios before you
+can change the secureboot setting?  Crazy. :)
+
+-- 
+Len Sorensen
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150811/92681d71/attachment.html>
+
+From me at mylesbraithwaite.com  Tue Aug 11 21:54:30 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 11 Aug 2015 17:54:30 -0400
+Subject: [GTALUG] Love at First Bite Closed
+Message-ID: <40D507E0-E6E9-4870-B316-63295FBD0EC7@mylesbraithwaite.com>
+
+Bill, Ivan, and me are heading to Z-Teca at 66 Gerrard Street East.
+
+
+
+From rjonasz at rjonasz.org  Wed Aug 12 07:21:41 2015
+From: rjonasz at rjonasz.org (Randy Jonasz)
+Date: Wed, 12 Aug 2015 03:21:41 -0400
+Subject: [GTALUG] Locking KDE 5 screen from shell script
+Message-ID: <55CAF405.5050805@rjonasz.org>
+
+I recently installed kde5 on debian stretch.  I have a yubikey which I 
+use to log in with.  I'd like to lock the screen when I remove the 
+yubikey.  I have it working with cinnamon and lxde but I can't quite get 
+it with kde.  I can lock the screen if I run the shell script from a 
+terminal as root but when I remove the yubikey the shell script returns 
+error code 1.
+
+Here's my shell scripts:
+
+ykgone.sh
+
+Konsole output
+#! /bin/sh
+if [ -z "$(lsusb | grep Yubikey)" ] ; then
+        if [ ! -z "$(ps aux | grep cinnamon-session | grep -v grep)" ] ; 
+then
+                /bin/su rjonasz -c "DISPLAY=:0 
+cinnamon-screensaver-command -l"
+        elif [ ! -z "$(ps aux | grep startkde | grep -v grep)" ] ; then
+                /usr/bin/sudo -u rjonasz -H -i  /usr/local/bin/lockkde.sh
+        else
+                /bin/su rjonasz -c "DISPLAY=:0 xscreensaver-command --lock"
+        fi
+fi
+
+
+lockkde.sh
+
+Konsole output
+#! /bin/sh
+
+kde_pid=`pidof kdeinit5`
+export `cat /proc/$kde_pid/environ|grep -ao 
+'DBUS_SESSION_BUS_ADDRESS=[[:graph:]]*'`
+/usr/bin/qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock
+
+
+I can't seem to figure this one out.
+
+Thanks for any help!
+
+Randy
+
+-- 
+Even philosophers will praise war as ennobling mankind, forgetting
+the Greek who said: 'War is bad in that it begets more evil than
+it kills.'
+
+Immanuel Kant
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150812/c15d69f2/attachment.html>
+
