@@ -4025,3 +4025,431 @@ Immanuel Kant
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150812/c15d69f2/attachment.html>
 
+From thoriumbr at gmail.com  Wed Aug 12 11:35:13 2015
+From: thoriumbr at gmail.com (Mauro Souza)
+Date: Wed, 12 Aug 2015 11:35:13 +0000
+Subject: [GTALUG] Locking KDE 5 screen from shell script
+In-Reply-To: <55CAF405.5050805@rjonasz.org>
+References: <55CAF405.5050805@rjonasz.org>
+Message-ID: <CAEZ_B6PM9Q7WzxYY9i9H24Lwkmerx7nSrTq2wFByH80yy2Amgg@mail.gmail.com>
+
+You could change this line
+ps aux | grep cinnamon-session | grep -v grep
+
+to this
+pgrep cinnamon-session
+
+It's cleaner and works well.
+
+To answer the main question, try to install bashdb and run the script thru
+it. It's the bash debugger, it's far more powerful than bash -vx.
+On Aug 12, 2015 04:22, "Randy Jonasz" <rjonasz at rjonasz.org> wrote:
+
+> I recently installed kde5 on debian stretch.  I have a yubikey which I use
+> to log in with.  I'd like to lock the screen when I remove the yubikey.  I
+> have it working with cinnamon and lxde but I can't quite get it with kde.
+> I can lock the screen if I run the shell script from a terminal as root but
+> when I remove the yubikey the shell script returns error code 1.
+>
+> Here's my shell scripts:
+>
+> ykgone.sh
+>
+> #! /bin/sh
+> if [ -z "$(lsusb | grep Yubikey)" ] ; then
+>        if [ ! -z "$(ps aux | grep cinnamon-session | grep -v grep)" ] ;
+> then
+>                /bin/su rjonasz -c "DISPLAY=:0 cinnamon-screensaver-command
+> -l"
+>        elif [ ! -z "$(ps aux | grep startkde | grep -v grep)" ] ; then
+>                /usr/bin/sudo -u rjonasz -H -i  /usr/local/bin/lockkde.sh
+>        else
+>                /bin/su rjonasz -c "DISPLAY=:0 xscreensaver-command --lock"
+>        fi
+> fi
+>
+>
+> lockkde.sh
+>
+> #! /bin/sh
+>
+> kde_pid=`pidof kdeinit5`
+> export `cat /proc/$kde_pid/environ|grep -ao
+> 'DBUS_SESSION_BUS_ADDRESS=[[:graph:]]*'`
+> /usr/bin/qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock
+>
+>
+> I can't seem to figure this one out.
+>
+> Thanks for any help!
+>
+> Randy
+>
+> --
+> Even philosophers will praise war as ennobling mankind, forgetting
+> the Greek who said: 'War is bad in that it begets more evil than
+> it kills.'
+>
+> Immanuel Kant
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150812/af90a793/attachment.html>
+
+From gilesorr at gmail.com  Wed Aug 12 13:08:02 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Wed, 12 Aug 2015 09:08:02 -0400
+Subject: [GTALUG] Slightly OT: git question
+In-Reply-To: <53b2a0146334780bded8c800a139d890.squirrel@webmail.ee.ryerson.ca>
+References: <CAEnxSC6U1NhkEjVD8m3JL07vFOFqa=O7GmNNm0VKxEfrTPuLQw@mail.gmail.com>
+ <53b2a0146334780bded8c800a139d890.squirrel@webmail.ee.ryerson.ca>
+Message-ID: <CAEnxSC6oSkXUO8L1vpJB-nmFL3VH9oe1B2zZNH84wbWWKF+RdQ@mail.gmail.com>
+
+On 11 August 2015 at 13:34,  <phiscock at ee.ryerson.ca> wrote:
+>> I admit this is mostly because
+>> I keep extensive notes in the source code and am perhaps a bit
+>> embarrassed what those notes say both about my memory and my limited
+>> coding skills.  I should probably just get over it - particularly
+>> since the code itself probably says more than the notes.
+>>
+> My experience with open source is that it is undercommented, if indeed it
+> has any comments at all. (Darktable, I'm looking at you.) It's enormously
+> helpful to understand the writer's thinking process. People can skip over
+> the comments or even do a selective erase if they don't like them.
+>
+> Then, if the reader understands your objective and finds your code clunky
+> in achieving that objective, they can show their superior grasp by
+> providing an alternative (often more concise and difficult to understand)
+> solution.
+>
+> I'm reminded of stories of Gauss, the famous mathematician and scientist
+> of whom it was said 'he removed all the scaffolding from his
+> constructions, so it appeared he arrived at the result by magic'. There's
+> too much of that kind of thinking in software.
+
+Thanks to everyone for the thoughts, it was a help.  And here we have
+it for anyone who's interested:
+
+https://github.com/gilesorr/gitcheck
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From northdot9 at gmail.com  Wed Aug 12 15:23:40 2015
+From: northdot9 at gmail.com (David Thornton)
+Date: Wed, 12 Aug 2015 11:23:40 -0400
+Subject: [GTALUG] Where Should We Dine Before the August 2015 GTALUG
+ Meeting? (was GTALUG Meeting on 11th August, 2015 at 7:30pm)
+In-Reply-To: <CA+hskZN=6Cp+KEKTC03gckdPes09R6z-OB7CazjfN4cSpjtZUQ@mail.gmail.com>
+References: <CA+hskZMV=mab5B9bbf287DKWYstacYSFTumSe1TZ_9hGVtWv=A@mail.gmail.com>
+ <alpine.LRH.2.02.1508041617190.27361@redclaw.mimosa.com>
+ <55C2021B.2000905@mylesbraithwaite.com>
+ <CAHcykVo6Sf_+zqaQZRjBq=R676Pr0+U=+kevbQ9EvqJgBDCUQA@mail.gmail.com>
+ <CA+hskZN=6Cp+KEKTC03gckdPes09R6z-OB7CazjfN4cSpjtZUQ@mail.gmail.com>
+Message-ID: <CAHcykVoOfe1saAmxnEZ6+X60PCgNpOFpc9ncQrtLMXLKOv2GUw@mail.gmail.com>
+
+This is the place:
+
+http://zakkushi.com/raijin/
+
+David
+
+On Mon, Aug 10, 2015 at 8:50 AM, Myles Braithwaite <me at mylesbraithwaite.com>
+wrote:
+
+> On Sat, Aug 8, 2015 at 11:47 AM, David Thornton <northdot9 at gmail.com>
+> wrote:
+> > Also there is that fine Japanese noodle place at young and Gerrard. . And
+> > they can handle our numbers for sure.
+>
+> Do you know the name?
+>
+> I want to add it to the list: <http://wiki.gtalug.org/pre-meeting_dinner>.
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150812/19339a98/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Wed Aug 12 15:31:15 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 12 Aug 2015 11:31:15 -0400
+Subject: [GTALUG] Locking KDE 5 screen from shell script
+In-Reply-To: <55CAF405.5050805@rjonasz.org>
+References: <55CAF405.5050805@rjonasz.org>
+Message-ID: <20150812153115.GP29199@csclub.uwaterloo.ca>
+
+On Wed, Aug 12, 2015 at 03:21:41AM -0400, Randy Jonasz wrote:
+> I recently installed kde5 on debian stretch.  I have a yubikey which I use
+> to log in with.  I'd like to lock the screen when I remove the yubikey.  I
+> have it working with cinnamon and lxde but I can't quite get it with kde.  I
+> can lock the screen if I run the shell script from a terminal as root but
+> when I remove the yubikey the shell script returns error code 1.
+> 
+> Here's my shell scripts:
+> 
+> ykgone.sh
+> 
+> Konsole output
+> #! /bin/sh
+> if [ -z "$(lsusb | grep Yubikey)" ] ; then
+>        if [ ! -z "$(ps aux | grep cinnamon-session | grep -v grep)" ] ; then
+>                /bin/su rjonasz -c "DISPLAY=:0 cinnamon-screensaver-command
+> -l"
+>        elif [ ! -z "$(ps aux | grep startkde | grep -v grep)" ] ; then
+>                /usr/bin/sudo -u rjonasz -H -i  /usr/local/bin/lockkde.sh
+>        else
+>                /bin/su rjonasz -c "DISPLAY=:0 xscreensaver-command --lock"
+>        fi
+> fi
+> 
+> 
+> lockkde.sh
+> 
+> Konsole output
+> #! /bin/sh
+> 
+> kde_pid=`pidof kdeinit5`
+> export `cat /proc/$kde_pid/environ|grep -ao
+> 'DBUS_SESSION_BUS_ADDRESS=[[:graph:]]*'`
+> /usr/bin/qdbus org.freedesktop.ScreenSaver /ScreenSaver Lock
+> 
+> 
+> I can't seem to figure this one out.
+
+Are you sure the PATH is set the same when run from a terminal versus
+when run by your key being removed?
+
+Try for debugging to do at the start of the script:
+
+echo $PATH > /tmp/$$.path.env
+
+Then after running it both ways you should have a file for each PID that
+did it that you can compare.
+
+-- 
+Len Sorensen
+
+From opengeometry at yahoo.ca  Thu Aug 13 00:43:13 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Wed, 12 Aug 2015 20:43:13 -0400
+Subject: [GTALUG] Dell Latitude E6400 -- free
+Message-ID: <20150813004312.GA13336@node1.localdomain>
+
+I bought a $40 Dell Latitude E6400 without harddisk:
+    - Core 2 Duo P8400, 2GB DDR2-800, 1280x800 screen
+    - DVD-RW, battery, 130W power adapter
+    - SATA interface for disk
+    - keyboard is better than ThinkPad T43.  A little heavier going
+      down, but return is very crisp.  This was main reason for buying
+      it.
+I added SSD, and installed Windows-10 to see if all components are
+working.  And, they were.  Then, I decided to upgrade its old BIOS (from
+A14 to A34).  Windows gave me error, and told me to reboot.  Well, now,
+the laptop won't boot!
+
+So, it's free for anyone needing parts.  I can bring it to next TLUG
+meeting.
+-- 
+William
+
+From Amos.Weatherill at zoho.com  Thu Aug 13 00:45:23 2015
+From: Amos.Weatherill at zoho.com (Amos H. Weatherill)
+Date: Wed, 12 Aug 2015 20:45:23 -0400
+Subject: [GTALUG] Dell Latitude E6400 -- free
+In-Reply-To: <20150813004312.GA13336@node1.localdomain>
+References: <20150813004312.GA13336@node1.localdomain>
+Message-ID: <a29c33f9-737b-44e3-b4f8-f85ff6477e31.maildroid@localhost>
+
+Hello William,
+
+I'll take it, if no one else got there first.
+
+Thanks,
+Amos.
+
+Sent from my android device.
+
+-----Original Message-----
+From: William Park <opengeometry at yahoo.ca>
+To: talk at gtalug.org
+Sent: Wed, 12 Aug 2015 20:43
+Subject: [GTALUG] Dell Latitude E6400 -- free
+
+I bought a $40 Dell Latitude E6400 without harddisk:
+    - Core 2 Duo P8400, 2GB DDR2-800, 1280x800 screen
+    - DVD-RW, battery, 130W power adapter
+    - SATA interface for disk
+    - keyboard is better than ThinkPad T43.  A little heavier going
+      down, but return is very crisp.  This was main reason for buying
+      it.
+I added SSD, and installed Windows-10 to see if all components are
+working.  And, they were.  Then, I decided to upgrade its old BIOS (from
+A14 to A34).  Windows gave me error, and told me to reboot.  Well, now,
+the laptop won't boot!
+
+So, it's free for anyone needing parts.  I can bring it to next TLUG
+meeting.
+-- 
+William
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150812/0b6c1ad3/attachment.html>
+
+From Amos.Weatherill at zoho.com  Thu Aug 13 00:51:25 2015
+From: Amos.Weatherill at zoho.com (Amos H. Weatherill)
+Date: Wed, 12 Aug 2015 20:51:25 -0400
+Subject: [GTALUG] Dell Latitude E6400 -- free
+In-Reply-To: <20150813004312.GA13336@node1.localdomain>
+References: <20150813004312.GA13336@node1.localdomain>
+Message-ID: <092d8ab0-e9ad-4d4e-bd71-d1e457282bff.maildroid@localhost>
+
+Hello William,
+
+Please reply off list to confirm.
+
+Also, do you happen to know if it has a Serial Port.
+
+It's not a problem if it doesn't, however.
+
+Please ask if you need me to give you an E-Mail Address to contact me.
+
+Cheers,
+Amos
+
+Sent from my android device.
+
+-----Original Message-----
+From: William Park <opengeometry at yahoo.ca>
+To: talk at gtalug.org
+Sent: Wed, 12 Aug 2015 20:43
+Subject: [GTALUG] Dell Latitude E6400 -- free
+
+I bought a $40 Dell Latitude E6400 without harddisk:
+    - Core 2 Duo P8400, 2GB DDR2-800, 1280x800 screen
+    - DVD-RW, battery, 130W power adapter
+    - SATA interface for disk
+    - keyboard is better than ThinkPad T43.  A little heavier going
+      down, but return is very crisp.  This was main reason for buying
+      it.
+I added SSD, and installed Windows-10 to see if all components are
+working.  And, they were.  Then, I decided to upgrade its old BIOS (from
+A14 to A34).  Windows gave me error, and told me to reboot.  Well, now,
+the laptop won't boot!
+
+So, it's free for anyone needing parts.  I can bring it to next TLUG
+meeting.
+-- 
+William
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150812/cf4f2f7c/attachment.html>
+
+From kevin at ve3syb.ca  Thu Aug 13 02:34:09 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Wed, 12 Aug 2015 22:34:09 -0400
+Subject: [GTALUG] Dell Latitude E6400 -- free
+In-Reply-To: <20150813004312.GA13336@node1.localdomain>
+References: <20150813004312.GA13336@node1.localdomain>
+Message-ID: <55CC0221.6070306@ve3syb.ca>
+
+On 15-08-12 08:43 PM, William Park wrote:
+> I added SSD, and installed Windows-10 to see if all components are
+> working.  And, they were.  Then, I decided to upgrade its old BIOS (from
+> A14 to A34).  Windows gave me error, and told me to reboot.  Well, now,
+> the laptop won't boot!
+
+If you can still get in to BIOS, check the settings. Particularly the ones 
+involving UEFI and secureboot. Someone on this list could tell you how they 
+should be set to keep Windows happy.
+
+You could also try booting a live Linux CD or DVD to check the drives.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From opengeometry at yahoo.ca  Thu Aug 13 04:37:32 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Thu, 13 Aug 2015 00:37:32 -0400
+Subject: [GTALUG] Dell Latitude E6400 -- free
+In-Reply-To: <55CC0221.6070306@ve3syb.ca>
+References: <20150813004312.GA13336@node1.localdomain>
+ <55CC0221.6070306@ve3syb.ca>
+Message-ID: <20150813043732.GA17820@node1.localdomain>
+
+I can't even get to BIOS.  Power LED comes on and few other keyboard
+related LEDs.  Then, it turns off.
+-- 
+William
+
+On Wed, Aug 12, 2015 at 10:34:09PM -0400, Kevin Cozens wrote:
+> On 15-08-12 08:43 PM, William Park wrote:
+> >I added SSD, and installed Windows-10 to see if all components are
+> >working.  And, they were.  Then, I decided to upgrade its old BIOS (from
+> >A14 to A34).  Windows gave me error, and told me to reboot.  Well, now,
+> >the laptop won't boot!
+> 
+> If you can still get in to BIOS, check the settings. Particularly the ones
+> involving UEFI and secureboot. Someone on this list could tell you how they
+> should be set to keep Windows happy.
+> 
+> You could also try booting a live Linux CD or DVD to check the drives.
+> 
+> -- 
+> Cheers!
+> 
+> Kevin.
+> 
+> http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+> Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+>                                 | powerful!"
+> #include <disclaimer/favourite> |             --Chris Hardwick
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+From opengeometry at yahoo.ca  Thu Aug 13 06:00:13 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Thu, 13 Aug 2015 02:00:13 -0400
+Subject: [GTALUG] Alternative to KOrganizer (KDE) ?
+Message-ID: <20150813060013.GA18962@node1.localdomain>
+
+KOrganizer is a calendar program in KDE.  And, it's the only thing
+that's tying me to KDE desktop.  
+
+What calendar program do you guys use in other desktops?  I know of and
+test drove
+    - Evolution (GNOME)
+    - Orage (XFCE)
+But, they can't pull me off KDE, yet.
+-- 
+William
+
