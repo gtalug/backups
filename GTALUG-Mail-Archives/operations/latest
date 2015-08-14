@@ -1,0 +1,406 @@
+From me at mylesbraithwaite.com  Sun Aug  2 15:24:48 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Sun, 02 Aug 2015 11:24:48 -0400
+Subject: [GTALUG-Ops] DokuWiki Installed on Penguin
+Message-ID: <55BE3640.3080601@mylesbraithwaite.com>
+
+I installed DokuWiki on Penguin @ <http://wiki.gtalug.org/> (wait of DNS
+to propagate) and setup the backup.
+
+Can someone review the backup scrips to make sure everything will be
+working okay:
+<https://github.com/gtalug/backups/blob/master/scripts/backup-dokuwiki-conf.sh>
+and
+<https://github.com/gtalug/backups/blob/master/scripts/backup-dokuwiki-data.sh>.
+
+From me at mylesbraithwaite.com  Sun Aug  2 16:26:19 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Sun, 02 Aug 2015 12:26:19 -0400
+Subject: [GTALUG-Ops] Piwik Installed on Penguin
+Message-ID: <55BE44AB.1070401@mylesbraithwaite.com>
+
+I installed Piwik (a web page tracker) on Pengin here:
+<http://piwik.gtalug.org/>. If you want a login just shoot me an email.
+
+From gordontc at look.ca  Mon Aug  3 15:04:34 2015
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Mon, 03 Aug 2015 11:04:34 -0400
+Subject: [GTALUG-Ops] [Fwd: [IANA-issues] Fwd: [CWG-Stewardship] ICG &
+ CCWG-Accountability Webinars]
+Message-ID: <1438614274.25963.1.camel@larva.gordhome.local>
+
+The attached e-mail announces the publication of the proposals for the
+"IANA Stewardship Transition" that we've been working on for so long.
+
+A bit of explaining:
+
+The ICG proposal is a merge of the proposals from ICANN, IETF and the
+Number Registries (like ARIN).  The proposal describes what happens to
+ICANN (in particular) when NTIA disengages itself.
+
+The CCWG Accountability is an ICANN working group that was intended to
+deal with the fact that ICANN was accountable to NTIA for the way it
+runs IANA.   Now that backstop is not there, so now what?
+
+The Accountability proposal/report/document/whatever is intended to deal
+with that through a number of changes to the way ICANN organizes itself.
+A major concern here (as a preview) is what happens when the ICANN
+community and the ICANN Board fundamentally disagree.
+
+As part of all this, this particular document lays out the new bylaws
+that will be required.
+
+There are a couple of upcoming webinars that will attempt to explain
+these two documents - the schedules for those are in the attached
+e-mail.
+
+So here they are, duly submitted to my ALS.
+
+Gordon
+
+
+
+-------------- next part --------------
+An embedded message was scrubbed...
+From: Olivier MJ Crepin-Leblond <ocl at gih.com>
+Subject: [IANA-issues] Fwd: [CWG-Stewardship] ICG & CCWG-Accountability Webinars
+Date: Fri, 31 Jul 2015 20:51:04 +0200
+Size: 14456
+URL: <http://gtalug.org/pipermail/operations/attachments/20150803/5dfe310a/attachment.mht>
+
+From hi at gtalug.org  Tue Aug  4 09:30:01 2015
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Tue,  4 Aug 2015 09:30:01 +0000 (UTC)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20150804093001.68859E697@penguin.gtalug.org>
+
+I'm Mr. Meeseeks! Look at me!
+
+There is a GTALUG meeting coming up on 11 August, 2015, is the GTALUG Board/Executive prepared?
+
+- [ ] Contact the speaker.
+- [ ] Does the speaker need anything else besides a projector (i.e. graphic dongles).
+- [ ] Send out an announcement for the meeting.
+
+Look at me! I'm Mr. Meeseeks! (poof)
+
+From me at mylesbraithwaite.com  Tue Aug  4 19:08:05 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 04 Aug 2015 15:08:05 -0400
+Subject: [GTALUG-Ops] Fwd: Sponsorship of FSOSS 2015 at at Seneca@York,
+	October 2015
+In-Reply-To: <55C108D5.1010204@mozillacanada.org>
+References: <55C108D5.1010204@mozillacanada.org>
+Message-ID: <55C10D95.40300@mylesbraithwaite.com>
+
+
+
+-------- Original Message --------
+Subject: 	Sponsorship of FSOSS 2015 at at Seneca at York, October 2015
+Date: 	Tue, 4 Aug 2015 14:47:49 -0400
+From: 	Mekki MacAulay <mekki at mozillacanada.org>
+Reply-To: 	mekki at mozillacanada.org
+Organization: 	Mozilla Canada Volunteers
+To: 	talk-owner at gtalug.org
+
+
+
+Dear GTALUG:
+
+As a past sponsor of the Free Software and Open Source Symposium, we'd
+like to invite you to sponsor the 14th Annual FSOSS to be held at Seneca
+College, York University Campus in October 2015.  This year's conference
+celebrates 30 years of the free software movement.
+
+Sponsorship prospectus details are attached.
+
+Please don't hesitate to contact me for more details or information.
+
+Sincerely,
+
+Mekki
+
+--
+Mekki MacAulay
+B.Eng., B.A., M.A.Sc., P.Eng.
+Volunteer organizer for FSOSS 2015
+mekki at mozillacanada.org
+http://ca.linkedin.com/in/mekkim
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: FSOSS 2015 Sponsorship Prospectus.pdf
+Type: application/pdf
+Size: 357759 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20150804/89bea756/attachment.pdf>
+
+From cbbrowne at gmail.com  Tue Aug  4 22:14:12 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 4 Aug 2015 18:14:12 -0400
+Subject: [GTALUG-Ops] Fwd: Sponsorship of FSOSS 2015 at at Seneca@York,
+ October 2015
+In-Reply-To: <55C10D95.40300@mylesbraithwaite.com>
+References: <55C108D5.1010204@mozillacanada.org>
+ <55C10D95.40300@mylesbraithwaite.com>
+Message-ID: <CAFNqd5Xog_Jz6Pi9aSDHMpEGeesDcnQCgX0aHiXQD-gUoYJ7zQ@mail.gmail.com>
+
+The "base level" of sponsorship seems well outside what we'd be able to
+afford.  Having a table is priced at $1000, and invited seats at the dinner
+are @$250.
+
+I suggest we encourage people to consider attending, but I'd not recommend
+sponsorship being worth engaging...
+
+On 4 August 2015 at 15:08, Myles Braithwaite <me at mylesbraithwaite.com>
+wrote:
+
+>
+>
+> -------- Original Message --------
+> Subject:        Sponsorship of FSOSS 2015 at at Seneca at York, October 2015
+> Date:   Tue, 4 Aug 2015 14:47:49 -0400
+> From:   Mekki MacAulay <mekki at mozillacanada.org>
+> Reply-To:       mekki at mozillacanada.org
+> Organization:   Mozilla Canada Volunteers
+> To:     talk-owner at gtalug.org
+>
+>
+>
+> Dear GTALUG:
+>
+> As a past sponsor of the Free Software and Open Source Symposium, we'd
+> like to invite you to sponsor the 14th Annual FSOSS to be held at Seneca
+> College, York University Campus in October 2015.  This year's conference
+> celebrates 30 years of the free software movement.
+>
+> Sponsorship prospectus details are attached.
+>
+> Please don't hesitate to contact me for more details or information.
+>
+> Sincerely,
+>
+> Mekki
+>
+> --
+> Mekki MacAulay
+> B.Eng., B.A., M.A.Sc., P.Eng.
+> Volunteer organizer for FSOSS 2015
+> mekki at mozillacanada.org
+> http://ca.linkedin.com/in/mekkim
+>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+>
+>
+
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150804/d857dbd1/attachment.html>
+
+From hi at gtalug.org  Tue Aug 11 10:30:02 2015
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Tue, 11 Aug 2015 10:30:02 +0000 (UTC)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20150811103002.34765E33C@penguin.gtalug.org>
+
+I'm Mr. Meeseeks! Look at me!
+
+There is a GTALUG meeting tonight at 7:30pm, is the GTALUG Board/Executive prepared?
+
+<http://gtalug.org/meeting/2015-08/>
+
+Look at me! I'm Mr. Meeseeks! (poof)
+
+From scott at ss.org  Thu Aug 13 13:15:58 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Thu, 13 Aug 2015 09:15:58 -0400
+Subject: [GTALUG-Ops] Mon 24th Exec. Conflict for space.
+Message-ID: <B83C74E0-03E2-4318-A612-FEB5C7520099@ss.org>
+
+Seems we have conflict for the space, a volunteer appreciation party (likely Maker Festival, but no details in the booking).
+
+We could move the Exec to the 31st.
+-- 
+Scott Sullivan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150813/d4ec994e/attachment.html>
+
+From me at mylesbraithwaite.com  Thu Aug 13 14:17:42 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 13 Aug 2015 10:17:42 -0400
+Subject: [GTALUG-Ops] Anyone know Hany Fahim?
+Message-ID: <55CCA706.5090509@mylesbraithwaite.com>
+
+I would like him to give a talk at GTALUG on modern DevOps. He is the
+CEO of VMFarms and did a good talk at last night's Python Toronto on
+Leap Seconds (see slides here:
+<https://speakerdeck.com/vmfarms/tales-from-the-ops-side-earthquakes-and-the-moon>).
+
+From me at mylesbraithwaite.com  Thu Aug 13 14:43:03 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 13 Aug 2015 10:43:03 -0400
+Subject: [GTALUG-Ops] Mon 24th Exec. Conflict for space.
+In-Reply-To: <B83C74E0-03E2-4318-A612-FEB5C7520099@ss.org>
+References: <B83C74E0-03E2-4318-A612-FEB5C7520099@ss.org>
+Message-ID: <55CCACF7.8080907@mylesbraithwaite.com>
+
+Scott Sullivan wrote:
+> Seems we have conflict for the space, a volunteer appreciation party
+> (likely Maker Festival, but no details in the booking).
+> 
+> We could move the Exec to the 31st.
+
+I'm fine with this.
+
+From cbbrowne at gmail.com  Thu Aug 13 15:14:21 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Thu, 13 Aug 2015 11:14:21 -0400
+Subject: [GTALUG-Ops] Mon 24th Exec. Conflict for space.
+In-Reply-To: <55CCACF7.8080907@mylesbraithwaite.com>
+References: <B83C74E0-03E2-4318-A612-FEB5C7520099@ss.org>
+ <55CCACF7.8080907@mylesbraithwaite.com>
+Message-ID: <CAFNqd5V5zNBD_xKrE+6DQfPd-RqmMUUqfEt7x7ou366_XVkrEQ@mail.gmail.com>
+
+On 13 August 2015 at 10:43, Myles Braithwaite <me at mylesbraithwaite.com>
+wrote:
+
+> Scott Sullivan wrote:
+> > Seems we have conflict for the space, a volunteer appreciation party
+> > (likely Maker Festival, but no details in the booking).
+> >
+> > We could move the Exec to the 31st.
+>
+> I'm fine with this.
+>
+
++1 for me...
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150813/35d3022f/attachment.html>
+
+From alex at flamy.ca  Thu Aug 13 15:20:49 2015
+From: alex at flamy.ca (Alex Volkov)
+Date: Thu, 13 Aug 2015 11:20:49 -0400
+Subject: [GTALUG-Ops] Mon 24th Exec. Conflict for space.
+In-Reply-To: <B83C74E0-03E2-4318-A612-FEB5C7520099@ss.org>
+References: <B83C74E0-03E2-4318-A612-FEB5C7520099@ss.org>
+Message-ID: <55CCB5D1.8000407@flamy.ca>
+
+August 31st is going to be in the middle of labour day weekend. I'm not
+entirely sure if I can attend -- I might go camping.
+
+Alex.
+
+On 13/08/15 09:15 AM, Scott Sullivan wrote:
+> Seems we have conflict for the space, a volunteer appreciation party
+> (likely Maker Festival, but no details in the booking).
+>
+> We could move the Exec to the 31st.
+> -- 
+> Scott Sullivan
+>
+>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150813/50687371/attachment.html>
+
+From me at mylesbraithwaite.com  Thu Aug 13 15:22:18 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 13 Aug 2015 11:22:18 -0400
+Subject: [GTALUG-Ops] Mon 24th Exec. Conflict for space.
+In-Reply-To: <55CCB5D1.8000407@flamy.ca>
+References: <B83C74E0-03E2-4318-A612-FEB5C7520099@ss.org>
+ <55CCB5D1.8000407@flamy.ca>
+Message-ID: <CA+hskZPL_MX=vH1yH7De7oEZ4+ueyi-dyu_TJKSgQtzG9n1XJw@mail.gmail.com>
+
+On Thu, Aug 13, 2015 at 11:20 AM, Alex Volkov <alex at flamy.ca> wrote:
+> August 31st is going to be in the middle of labour day weekend. I'm not
+> entirely sure if I can attend -- I might go camping.
+
+Labour Day is the first monday of September which is the 7th.
+
+From alex at flamy.ca  Thu Aug 13 15:24:28 2015
+From: alex at flamy.ca (Alex Volkov)
+Date: Thu, 13 Aug 2015 11:24:28 -0400
+Subject: [GTALUG-Ops] Mon 24th Exec. Conflict for space.
+In-Reply-To: <CA+hskZPL_MX=vH1yH7De7oEZ4+ueyi-dyu_TJKSgQtzG9n1XJw@mail.gmail.com>
+References: <B83C74E0-03E2-4318-A612-FEB5C7520099@ss.org>
+ <55CCB5D1.8000407@flamy.ca>
+ <CA+hskZPL_MX=vH1yH7De7oEZ4+ueyi-dyu_TJKSgQtzG9n1XJw@mail.gmail.com>
+Message-ID: <55CCB6AC.1060300@flamy.ca>
+
+Ok, then I'm fine with 31st.
+
+On 13/08/15 11:22 AM, Myles Braithwaite wrote:
+> On Thu, Aug 13, 2015 at 11:20 AM, Alex Volkov <alex at flamy.ca> wrote:
+>> August 31st is going to be in the middle of labour day weekend. I'm not
+>> entirely sure if I can attend -- I might go camping.
+> Labour Day is the first monday of September which is the 7th.
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+
+From Amos.Weatherill at zoho.com  Thu Aug 13 15:26:00 2015
+From: Amos.Weatherill at zoho.com (Amos H. Weatherill)
+Date: Thu, 13 Aug 2015 11:26:00 -0400
+Subject: [GTALUG-Ops] Mon 24th Exec. Conflict for space.
+In-Reply-To: <55CCB6AC.1060300@flamy.ca>
+References: <B83C74E0-03E2-4318-A612-FEB5C7520099@ss.org>
+ <55CCB5D1.8000407@flamy.ca>
+ <CA+hskZPL_MX=vH1yH7De7oEZ4+ueyi-dyu_TJKSgQtzG9n1XJw@mail.gmail.com>
+ <55CCB6AC.1060300@flamy.ca>
+Message-ID: <6c192658-d524-4eb6-ae60-f5e7bb0735f3.maildroid@localhost>
+
+Hello All,
+
+This is also fine with me.
+
+Thanks,
+Amos
+
+Sent from my android device.
+
+-----Original Message-----
+From: Alex Volkov <alex at flamy.ca>
+To: GTALUG Operations <operations at gtalug.org>
+Sent: Thu, 13 Aug 2015 11:23
+Subject: Re: [GTALUG-Ops] Mon 24th Exec. Conflict for space.
+
+Ok, then I'm fine with 31st.
+
+On 13/08/15 11:22 AM, Myles Braithwaite wrote:
+> On Thu, Aug 13, 2015 at 11:20 AM, Alex Volkov <alex at flamy.ca> wrote:
+>> August 31st is going to be in the middle of labour day weekend. I'm not
+>> entirely sure if I can attend -- I might go camping.
+> Labour Day is the first monday of September which is the 7th.
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+---
+GTALUG Operations Mailing List
+operations at gtalug.org
+http://gtalug.org/mailman/listinfo/operations
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150813/9eb1831c/attachment.html>
+
