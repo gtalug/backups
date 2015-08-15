@@ -404,3 +404,195 @@ http://gtalug.org/mailman/listinfo/operations
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/operations/attachments/20150813/9eb1831c/attachment.html>
 
+From avolkov at gmail.com  Fri Aug 14 13:20:47 2015
+From: avolkov at gmail.com (Alex Volkov)
+Date: Fri, 14 Aug 2015 09:20:47 -0400
+Subject: [GTALUG-Ops] Fwd: Friday 50% OFF Blowout SALE!
+In-Reply-To: <ec7c11fd247db933ee13ebe2dc459a61@members.cloudatcost.com>
+References: <ec7c11fd247db933ee13ebe2dc459a61@members.cloudatcost.com>
+Message-ID: <55CDEB2F.7090402@gmail.com>
+
+Cloud at cost has 50% off sale today.
+
+I'm looking at equivalent of what we have on linode --
+
+*​Developer 2 Package*
+2 vCPU
+1GBECC RAM
+20GB SSD Storage
+100mbit Network
+1 Static IPv4
+Remote KVM/reboot
+Reverse DNS (Self Serve)
+Server Rebuilds (Self Serve)
+
+
+Their regular price (lifetime or until company goes out of business) is
+$70, today it's $35.
+
+
+I don't think the board made the decision, and I think Myles experiences
+some problems with it, but here it is.
+
+
+
+
+-------- Forwarded Message --------
+Subject: 	Friday 50% OFF Blowout SALE!
+Date: 	Fri, 14 Aug 2015 00:48:08 -0400
+From: 	Cloud At Cost <noreply at cloudatcost.com>
+Reply-To: 	noreply at cloudatcost.com
+To: 	avolkov at gmail.com
+
+
+
+Cloud At Cost System Message:
+
+08/14/2015 12:42 AM
+Friday 50% OFF Blowout SALE!
+CloudAtCost is pleased to announce additional server capacity has been
+added to our infrastructure. 
+
+We are giving all customers 50% OFF today Only.
+
+(Also note you can still migrate to CloudPRO for FREE)
+
+
+
+QTY is limited.
+
+Package: All Servers
+
+Discount: 50% OFF ONETIME
+
+Coupon: yXe4ENYPEt
+
+Order Here: http://www.cloudatcost.com
+
+
+
+Unsubscribe: Please change your email preferences here
+https://members.cloudatcost.com
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150814/0e0230c4/attachment.html>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: discount
+Type: image/png
+Size: 48193 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20150814/0e0230c4/attachment.png>
+
+From me at mylesbraithwaite.com  Fri Aug 14 13:40:44 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 14 Aug 2015 09:40:44 -0400
+Subject: [GTALUG-Ops] Fwd: Friday 50% OFF Blowout SALE!
+In-Reply-To: <55CDEB2F.7090402@gmail.com>
+References: <ec7c11fd247db933ee13ebe2dc459a61@members.cloudatcost.com>
+ <55CDEB2F.7090402@gmail.com>
+Message-ID: <55CDEFDC.4050602@mylesbraithwaite.com>
+
+Alex Volkov wrote:
+> I don't think the board made the decision, and I think Myles experiences
+> some problems with it, but here it is.
+
+I have two VPS currently running with them the Dev 1 and 2.
+
+After having a VPS up for three days the VPS had a corrupt hard drive.
+Apparently it was a bug in the *beta* version of Xen they were using
+(they were using a BETA VERSION OF XEN ON A PRODUCTION SYSTEM).
+
+They told me with one days notice that they will be moving all my VPS to
+new servers but wont be taking the images with them so I will have to
+set them all up again.
+
+They randomly shutdown servers without notice.
+
+Do a Google search and you will find basically everyone saying you get
+what you paid for.
+
+It's great if you need a backup MX or XMPP server and have it puppetised
+(which is all I am currently doing with it) but if you care about uptime
+on a production system it really a bad idea.
+
+If it's the board decision about moving to Cloud at Cost I will have to
+remove myself from doing any of the work on the infrastructure group as
+I don't have the time to manage a server that is constantly going down
+and has to be recreated all most every month.
+
+From alex at flamy.ca  Fri Aug 14 14:27:54 2015
+From: alex at flamy.ca (Alex Volkov)
+Date: Fri, 14 Aug 2015 10:27:54 -0400
+Subject: [GTALUG-Ops] Fwd: Friday 50% OFF Blowout SALE!
+In-Reply-To: <55CDEFDC.4050602@mylesbraithwaite.com>
+References: <ec7c11fd247db933ee13ebe2dc459a61@members.cloudatcost.com>
+ <55CDEB2F.7090402@gmail.com> <55CDEFDC.4050602@mylesbraithwaite.com>
+Message-ID: <55CDFAEA.4010103@flamy.ca>
+
+Hey Myles,
+
+Ok got it, it's not worth it.
+
+I thought they were running things on VmWare. Anyway it's a moot point.
+
+Alex.
+
+
+
+On 14/08/15 09:40 AM, Myles Braithwaite wrote:
+> Alex Volkov wrote:
+>> I don't think the board made the decision, and I think Myles experiences
+>> some problems with it, but here it is.
+> I have two VPS currently running with them the Dev 1 and 2.
+>
+> After having a VPS up for three days the VPS had a corrupt hard drive.
+> Apparently it was a bug in the *beta* version of Xen they were using
+> (they were using a BETA VERSION OF XEN ON A PRODUCTION SYSTEM).
+>
+> They told me with one days notice that they will be moving all my VPS to
+> new servers but wont be taking the images with them so I will have to
+> set them all up again.
+>
+> They randomly shutdown servers without notice.
+>
+> Do a Google search and you will find basically everyone saying you get
+> what you paid for.
+>
+> It's great if you need a backup MX or XMPP server and have it puppetised
+> (which is all I am currently doing with it) but if you care about uptime
+> on a production system it really a bad idea.
+>
+> If it's the board decision about moving to Cloud at Cost I will have to
+> remove myself from doing any of the work on the infrastructure group as
+> I don't have the time to manage a server that is constantly going down
+> and has to be recreated all most every month.
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> http://gtalug.org/mailman/listinfo/operations
+
+
+From cbbrowne at gmail.com  Fri Aug 14 14:40:33 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Fri, 14 Aug 2015 10:40:33 -0400
+Subject: [GTALUG-Ops] Fwd: Friday 50% OFF Blowout SALE!
+In-Reply-To: <55CDEFDC.4050602@mylesbraithwaite.com>
+References: <ec7c11fd247db933ee13ebe2dc459a61@members.cloudatcost.com>
+ <55CDEB2F.7090402@gmail.com>
+ <55CDEFDC.4050602@mylesbraithwaite.com>
+Message-ID: <CAFNqd5VW=mDNS1LgjHBsCKDZY5QQg+kF8KXSQM7YLwYabFTS9Q@mail.gmail.com>
+
+Cheap is always interesting, and if we had a configuration *so* automated
+that the server would automagically get restarted, that would be one
+thing.  (And I imagine a high level of "magic" in that!!!)
+
+But if reliability is dodgy, and Myles opposes it, and seeing as we just
+already paid (!) for another year of Linode, it all seems like a
+non-starter to do so.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150814/f5053d96/attachment.html>
+

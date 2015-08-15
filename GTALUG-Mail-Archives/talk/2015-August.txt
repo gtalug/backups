@@ -5847,3 +5847,146 @@ Immanuel Kant
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150813/16aa413b/attachment.html>
 
+From lsorense at csclub.uwaterloo.ca  Fri Aug 14 16:49:07 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 14 Aug 2015 12:49:07 -0400
+Subject: [GTALUG] Dell Latitude E6400 -- free
+In-Reply-To: <20150813224041.GA29329@node1.localdomain>
+References: <20150813004312.GA13336@node1.localdomain>
+ <55CC0221.6070306@ve3syb.ca>
+ <20150813043732.GA17820@node1.localdomain>
+ <20150813150249.GQ29199@csclub.uwaterloo.ca>
+ <20150813182025.GA9194@csclub.uwaterloo.ca>
+ <20150813224041.GA29329@node1.localdomain>
+Message-ID: <20150814164907.GV29199@csclub.uwaterloo.ca>
+
+On Thu, Aug 13, 2015 at 06:40:42PM -0400, William Park wrote:
+> I have ThinkPad T43 (Windows 10) fortunately.  I extracted HDR file,
+> copied to 256MB usb stick (FAT16), and booted per instruction.  The
+> battery LED flashes orange/blue (blue is default colour)... it's been
+> flashing for 2 hours. :-(
+> 
+> Keyboard LEDs are diagnostic LEDs during POST, and they say I may have
+> processor failure.  What a shame... its keyboard is the best laptop
+> keyboard I came across.
+
+So holding the END key while plugging in power does nothing?
+
+That's a shame.  It is suspicious that if failed at the same time you
+upgraded the BIOS.
+
+-- 
+Len Sorensen
+
+From cbbrowne at gmail.com  Fri Aug 14 19:37:03 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Fri, 14 Aug 2015 15:37:03 -0400
+Subject: [GTALUG] Mycroft an Open Source AI [was privacy [was
+ Alternative to KOrganizer (KDE) ?]]
+In-Reply-To: <55CC9195.2010606@mylesbraithwaite.com>
+References: <55CC9195.2010606@mylesbraithwaite.com>
+Message-ID: <CAFNqd5VYX6ECc+y2Jpa1ygvphDvRregPv6fVpEdcyt_fhcTHQQ@mail.gmail.com>
+
+On 13 August 2015 at 08:46, Myles Braithwaite <me at mylesbraithwaite.com>
+wrote:
+>
+> D. Hugh Redelmeier wrote:
+> > Many, but not all, of these leaks come with advantages to the user.
+> > For example, Cortana, Siri, and Google Now(?) may be fun but they are
+> > always listening to you and sending something home.  Google (and
+> > other) search have to send the queries upstream.
+>
+> Has anyone checked out/backed Mycroft on Kickstarter
+> <
+https://www.kickstarter.com/projects/aiforeveryone/mycroft-an-open-source-artificial-intelligence-for
+>
+> as an open replacement for speech driven AI (i.a. Siri, Cortana, Google
+> Now) that easily hackable?
+
+It's sorta cute, though I'd think it somewhat uninteresting as an
+"artificial
+intelligence," basically on the basis that I don't think voice recognition
+is a terribly wonderful direction to go.  Open-ended, but perhaps too
+much so to do things I'd *care* about.
+
+As near as I can tell, the voice recognition in these products has been
+pretty nearly useless.  There are cruel drive-by pranks to the effect of
+"Siri, find all the [offensive material on phone].  Forward as email to
+Mom."  I'd expect the process to fail because it failed to recognize
+one word.
+
+The awesome wee joke of yesteryear...
+
+Q:  How many Newtons does it take to change a lightbulb?
+A:  Foux! There to eat lemons, axe gravy soup.
+
+Voice recognition has improved, but it still tends to be laughably
+bad.
+
+The part of Google New that seems pretty useful is the aspect of it
+having a whole bunch of forms of "useful-things-to-do-with-patterns"
+recognition that point at various sorts of event streams to output
+"you might care about this soon".
+
+Thus...
+- Noticing that you stopped driving (due to change in velocity), and
+  noting that location as a probable recent parking spot.
+  Thank you for automatically remembering my parking spot.
+- Rummaging through mailbox and noticing emails containing
+  shipment identifiers, and pointing that out.
+  Thank you for tracking where my "goods to be delivered" are.
+- Rummaging through calendar and noting that they're coming
+  up.
+- Further to that, checking addresses against current
+  location, and warning when I need to leave to get there.
+- Further to that, checking for traffic difficulties and warning
+  of traffic jams, slowdowns, ad infinitum.
+- Rummaging through mailbox, noticing emails from
+  airlines about upcoming flights, and reporting about
+  FLIFO (flight info)
+- For sports fans, reporting results of recent games relating
+  to favorite teams.
+- Weather updates, including local warnings of major adverse
+  weather events (storms, tornados, and such)
+
+This notion of integrating together the "bread crumbs" of things
+that are worth being reminded about seems to me to be the
+Next Wave of useful Artificial Intelligence, and it's nothing
+to do with voice recognition.
+
+It's actually not forcibly about needing to share ALL your data
+with a Google or such; to have your own daemon reading through
+your email or calendar looking for things of interest is quite
+plausible.  Such processes are sufficiently messy that
+I can easily see central processors having some advantage
+as they can be pointed at enough messy data sources to
+get debugged more successfully than my half-baked wee
+script.  I'll bet there are some poor script writers at Google
+balking at new emails coming from airlines, but perhaps
+better that than me deciding to not bother.
+
+I'll toss out that a recent "rather creepy TMI thing" didn't have
+an Evil Central Authority as its cause...
+
+- My phone started warning me about an impending
+  flight from Philadelphia to Seattle
+- As this wasn't my plan, I started poking at why...
+- Apparently a "Christine Browne" accidentally put my
+  email address as her contact address for her frequent
+  flyer program.  (No relation; caused by typo...)
+- Fun ensues as I'm getting way Too Much Information
+  from her airline about her family's vacation plans.
+
+For further fun in the matter, I could have used the
+access that I was given to muss around with the
+whole family's seating on their flights.  And there
+seemed to be some baggage-related exploits.  Which
+is a security weakness on the part of the airline, but
+induced by incorrect authentication information.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150814/a3385deb/attachment.html>
+
