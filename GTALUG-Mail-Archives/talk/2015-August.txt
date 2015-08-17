@@ -5990,3 +5990,613 @@ question, "How would the Lone Ranger handle this?"
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150814/a3385deb/attachment.html>
 
+From kevin at ve3syb.ca  Sun Aug 16 15:54:38 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Sun, 16 Aug 2015 11:54:38 -0400
+Subject: [GTALUG] Ubuntu update gone bad
+In-Reply-To: <alpine.LRH.2.02.1508130833520.1557@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1508091030010.25880@redclaw.mimosa.com>
+ <55C8F9F3.6090603@ve3syb.ca>
+ <alpine.LRH.2.02.1508130833520.1557@redclaw.mimosa.com>
+Message-ID: <55D0B23E.50805@ve3syb.ca>
+
+On 15-08-13 08:53 AM, D. Hugh Redelmeier wrote:
+> Actually, the LTS update path is from 12.04 LTS to 14.04 LTS as one
+> step.  There was no LTS between these.  Perhaps less visible is that
+> the first time migration is suggested is when 14.04.1 LTS was
+> released, not 14.04.  So no, what I did was purely by the book.
+>
+> Ubuntu understands and promotes the LTS-only approach
+
+I just felt safer stepping through all the versions between where I was the 
+where I wanted to be. Mainly this was from when I had been on Fedora. Might 
+be easier if they properly support jumping from LTS to LTS.
+
+> It turns out that the "grub rescue>" prompt isn't totally useless.
+> Most of the Grub machinery isn't available, but there is enough that
+> one might be able to climb out of the hole.
+
+Under grub 1 some built in commands/features let you get grub to boot the 
+machine either after a kernel update or a typo slipped in to grubs boot 
+menu. I can't recall having ever used a grub prompt to get a machine to boot 
+since I was forced to start using grub 2.
+
+I may be partly lucky. It may be due to my trying to avoid touching the 
+grub.cfg file now that grub 2 made its boot configuration files so 
+complicated compared to the ones used with grub 1.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From hugh at mimosa.com  Sun Aug 16 20:20:03 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 16 Aug 2015 16:20:03 -0400 (EDT)
+Subject: [GTALUG] hardware inventory -- what's in my machine?
+Message-ID: <alpine.LRH.2.02.1508161539160.1557@redclaw.mimosa.com>
+
+Sometimes I don't remember what's in each of my machines.
+
+Here's what I use to figure this out:
+
+- taking the machine apart (often inconvenient)
+
+- dmesg(8) shows the kernel log.  If nothing has flooded the log it
+  will still have the messages from the booting.  You can see entries
+  from the kernel's discovery of most resources.  Downside: it is long
+  and arcane.  Upside: you might find some surprises (eg. warnings).
+
+- dmidecode(8) "DMI table decoder".  The output is a little arcane but 
+  useful.  The man page says that it can be unreliable.
+
+- (new to me) lshw(1) "list hardware".  The output seems easier to read 
+  that dmidecode's.  It uses a variety of sources.  It can output in a
+  bunch of formats (but I've ignored that).
+
+- /proc/cpuinfo will tell you about the CPU.  Apparently lscpu(1)
+  shows pretty much the same thing (I've never noticed it before).
+
+- /proc/meminfo will tell you how much RAM you have (MemTotal is
+  roughly the physical RAM, after some overhead has been removed).
+
+- /var/log/Xorg.0.log: shows what devices and capabilities X has
+  found.  Hard to read but sometimes it's what you need.
+
+- lsusb(8): list USB devices (including hubs).
+
+- lspci(8): list PCI devices and buses
+
+- sdparm(8)/hdparm(8): show (or set!) parameters of disk drive.
+  hdparm seems to be mostly obsolete.  This will tell you stuff:
+	sudo sdparm -i /dev/sda
+
+- smartctl(8) "SMART Monitoring Tools".  SMART == Self-Monitoring,
+  Analysis and Reporting Technology.  This is about disk drive issues.
+  This command will pour out a lot of information:
+	sudo smartctl -x /dev/sda
+
+From hgibson at eol.ca  Sun Aug 16 21:23:42 2015
+From: hgibson at eol.ca (Howard Gibson)
+Date: Sun, 16 Aug 2015 17:23:42 -0400
+Subject: [GTALUG] hardware inventory -- what's in my machine?
+In-Reply-To: <alpine.LRH.2.02.1508161539160.1557@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1508161539160.1557@redclaw.mimosa.com>
+Message-ID: <20150816172342.1efaff53ab03ebc3babb7cd3@eol.ca>
+
+On Sun, 16 Aug 2015 16:20:03 -0400 (EDT)
+"D. Hugh Redelmeier" <hugh at mimosa.com> wrote:
+
+> Sometimes I don't remember what's in each of my machines.
+> 
+> Here's what I use to figure this out:
+
+Hugh,
+
+   I have installation instructions written up for each of my machines, which I post on my website.  Among other things, I list the hardware contained in each machine.  
+
+-- 
+Howard Gibson 
+hgibson at eol.ca
+howard.gibson at teledyneoptech.com 
+jhowardgibson at gmail.com
+http://home.eol.ca/~hgibson
+
+From bjonkman at sobac.com  Sun Aug 16 23:28:01 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Sun, 16 Aug 2015 19:28:01 -0400
+Subject: [GTALUG] hardware inventory -- what's in my machine?
+In-Reply-To: <alpine.LRH.2.02.1508161539160.1557@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1508161539160.1557@redclaw.mimosa.com>
+Message-ID: <55D11C81.7020404@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+To which I would add
+
+lsblk - list the block devices, their sizes and mount points (not in
+all distros)
+
+blkid - list the UUIDs of the block devices
+
+- --Bob
+
+
+On 16/08/15 04:20 PM, D. Hugh Redelmeier wrote:
+> Sometimes I don't remember what's in each of my machines.
+> 
+> Here's what I use to figure this out:
+> 
+> - taking the machine apart (often inconvenient)
+> 
+> - dmesg(8) shows the kernel log.  If nothing has flooded the log
+> it will still have the messages from the booting.  You can see
+> entries from the kernel's discovery of most resources.  Downside:
+> it is long and arcane.  Upside: you might find some surprises (eg.
+> warnings).
+> 
+> - dmidecode(8) "DMI table decoder".  The output is a little arcane
+> but useful.  The man page says that it can be unreliable.
+> 
+> - (new to me) lshw(1) "list hardware".  The output seems easier to
+> read that dmidecode's.  It uses a variety of sources.  It can
+> output in a bunch of formats (but I've ignored that).
+> 
+> - /proc/cpuinfo will tell you about the CPU.  Apparently lscpu(1) 
+> shows pretty much the same thing (I've never noticed it before).
+> 
+> - /proc/meminfo will tell you how much RAM you have (MemTotal is 
+> roughly the physical RAM, after some overhead has been removed).
+> 
+> - /var/log/Xorg.0.log: shows what devices and capabilities X has 
+> found.  Hard to read but sometimes it's what you need.
+> 
+> - lsusb(8): list USB devices (including hubs).
+> 
+> - lspci(8): list PCI devices and buses
+> 
+> - sdparm(8)/hdparm(8): show (or set!) parameters of disk drive. 
+> hdparm seems to be mostly obsolete.  This will tell you stuff: sudo
+> sdparm -i /dev/sda
+> 
+> - smartctl(8) "SMART Monitoring Tools".  SMART == Self-Monitoring, 
+> Analysis and Reporting Technology.  This is about disk drive
+> issues. This command will pour out a lot of information: sudo
+> smartctl -x /dev/sda
+
+
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-635-9413
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlXRHH8ACgkQuRKJsNLM5eobQwCg/SzGx6TJ1X9NloP7Nt4euwZ9
+7MgAniEIL75qCrp9L9wIHeOVSo3ZAgYe
+=wepG
+-----END PGP SIGNATURE-----
+
+From bjonkman at sobac.com  Sun Aug 16 23:45:09 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Sun, 16 Aug 2015 19:45:09 -0400
+Subject: [GTALUG] Ubuntu (or debian): apt-get auto-remove?
+In-Reply-To: <alpine.LRH.2.02.1508131050470.1557@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1508131050470.1557@redclaw.mimosa.com>
+Message-ID: <55D12085.7010400@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+I've been using this script to update, dist-upgrade, autoremove, and
+autoclean all in one command.  Hasn't burned me yet, running it on
+Debian 8, LMDE, Ubuntu 12.04, Ubuntu 14.04, and Ubuntu 14.10.
+
+- --Bob, who one of these days needs to settle on a single distro
+
+===== update script =====
+#! /bin/bash
+
+# Program: update
+# Purpose: Perform 4-step apt-get update, dist-upgrade, autoremove and
+autoclean
+# Author: Bob Jonkman
+# Date: 22 March 2012
+
+echo "Update:"
+apt-get update
+if [ $? != 0 ] ; then
+ exit
+fi
+
+echo "Upgrade:"
+apt-get -y dist-upgrade
+if [ $? != 0 ] ; then
+ exit
+fi
+
+echo "Auto-remove:"
+apt-get -y autoremove
+if [ $? != 0 ] ; then
+ exit
+fi
+
+echo "Auto-clean:"
+apt-get autoclean
+if [ $? != 0 ] ; then
+ exit
+fi
+
+
+if [ -e "/var/run/reboot-required" ]
+then
+  echo
+  echo "Reboot required by "
+  cat /var/run/reboot-required.pkgs
+fi
+
+# EOF: update
+=====
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-635-9413
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+
+
+On 13/08/15 10:57 AM, D. Hugh Redelmeier wrote:
+> After my update from Ubuntu 12.04 to 14.04, apt-get tells me that
+> there are a lot of packages that apt-get auto-remove could remove.
+> 
+> Is that safe?  What is the underlying idea?
+> 
+> I think that it removes things that were added due to dependencies
+> where those dependencies no longer exist.  In the back of my mind,
+> I worry that sometimes dependencies might be things that I wanted
+> independently of why they were installed, but I'm not sure of
+> that.
+> 
+> Do people fine apt-get auto-remove works great or do you find that
+> it throws a few babies out with the bathwater? --- Talk Mailing
+> List talk at gtalug.org http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlXRIIQACgkQuRKJsNLM5eq04gCdEILdUAWtfLjJYF4ieiWb+svx
+jdQAnjxVm+u9uw/SQgMklE0wx1Y8feps
+=oXa2
+-----END PGP SIGNATURE-----
+
+From bjonkman at sobac.com  Mon Aug 17 00:35:18 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Sun, 16 Aug 2015 20:35:18 -0400
+Subject: [GTALUG] Fwd: PyCon Canada November 7-8
+In-Reply-To: <1522283589.1439651652177.JavaMail.nobody@james2.pvt.meetup.com>
+References: <1522283589.1439651652177.JavaMail.nobody@james2.pvt.meetup.com>
+Message-ID: <55D12C46.60803@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+For those of you who are interested in Python (the programming
+language).
+
+Albert O'Connor is the organizer of the Waterloo Region Python Users
+Group, previous PyCons, and the Government Open Data conferences.
+
+- --Bob.
+
+
+- -------- Forwarded Message --------
+From: 	Albert O'Connor <amjoconn at gmail.com>
+Sender: 	WatPyMeetup-announce at meetup.com
+Subject: 	[WatPyMeetup] PyCon Canada November 7-8
+Date: 	Sat, 15 Aug 2015 11:14:12 -0400
+
+PyCon Canada is coming back this year and will be held at the University
+of Toronto on November 7-8, 2015. The Call for Speakers is accepting
+submissions until yesterday*. We are accepting lightning talks
+(5-10min), regular talks (25-30) and tutorial sessions.
+
+* My bad for not posting this until today! If you have a submission
+ready to go I would try to send in this weekend, they might accept it
+depending on how many submissions they have had.
+
+They will be releasing more details as the date nears, so people can
+stay in touch via Twitter and Facebook (@pyconca
+<https://twitter.com/pyconca>ethttps://www.facebook.com/pyconca
+<https://www.facebook.com/pyconca>) , and sign up for their mailing list
+at https://2015.pycon.ca/.
+
+- - Albert on behalf of the PyCon Canada Organizers.
+
+
+
+
+
+- --
+This message was sent by Meetup on behalf of Albert O'Connor
+<http://www.meetup.com/WatPyMeetup/members/34695742/> from WatPy
+<http://www.meetup.com/WatPyMeetup/>.
+To report this message or block the sender, please click here
+<http://www.meetup.com/WatPyMeetup/abuse/34695742/?table_name=ml&table_id=77485440>
+To unsubscribe from special announcements from your Organizer(s), click
+here
+<http://www.meetup.com/WatPyMeetup/optout/?submit=true&_ms_unsub=true&email=orgBdcst>
+
+
+Meetup, POB 4668 #37895 NY NY USA 10163 <#> | support at meetup.com
+
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlXRLEUACgkQuRKJsNLM5epBxQCgulY2PSRk4ATxVEri87INv2WS
+NWYAnRz7lNRuZnfQVTjGl8Kxjw2+s5lr
+=NGfC
+-----END PGP SIGNATURE-----
+
+From hugh at mimosa.com  Mon Aug 17 01:28:21 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sun, 16 Aug 2015 21:28:21 -0400 (EDT)
+Subject: [GTALUG] Ubuntu (or debian): apt-get auto-remove?
+In-Reply-To: <55D12085.7010400@sobac.com>
+References: <alpine.LRH.2.02.1508131050470.1557@redclaw.mimosa.com>
+ <55D12085.7010400@sobac.com>
+Message-ID: <alpine.LRH.2.02.1508162111470.1557@redclaw.mimosa.com>
+
+| From: Bob Jonkman <bjonkman at sobac.com>
+
+Thanks.
+
+Here's a slightly shorter version.  Picky, picky, picky.  Looking gift 
+horse in the mouth.
+
+I try to start all my scripts with "set -eu" so that more bugs will be
+detected.
+
+"set -e" causes the shell to exit if a command unexpectedly fails.
+That is, a command returns non-zero and was invoked in a non-test
+context.  Just what you want.
+
+"set -u" tells the shell to treat a reference to an undefined
+parameter as an error.  It will make no difference in this script.
+Until the script evolves more complexity.
+
+| ===== update script =====
+| #! /bin/bash
+| 
+| # Program: update
+| # Purpose: Perform 4-step apt-get update, dist-upgrade, autoremove and autoclean
+| # Author: Bob Jonkman
+| # Date: 22 March 2012
+
+set -eu
+
+| echo "Update:"
+| apt-get update
+| 
+| echo "Upgrade:"
+| apt-get -y dist-upgrade
+| 
+| echo "Auto-remove:"
+| apt-get -y autoremove
+| 
+| echo "Auto-clean:"
+| apt-get autoclean
+| 
+| if [ -e "/var/run/reboot-required" ]
+| then
+|   echo
+|   echo "Reboot required by "
+
+I think that this should be
+    echo -n "Reboot required by "
+or
+    echo "Reboot required by"
+
+|   cat /var/run/reboot-required.pkgs
+| fi
+| 
+| # EOF: update
+
+From stimur at gmail.com  Mon Aug 17 02:46:06 2015
+From: stimur at gmail.com (Tim Sattarov)
+Date: Sun, 16 Aug 2015 22:46:06 -0400
+Subject: [GTALUG] hardware inventory -- what's in my machine?
+In-Reply-To: <alpine.LRH.2.02.1508161539160.1557@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1508161539160.1557@redclaw.mimosa.com>
+Message-ID: <55D14AEE.8080101@gmail.com>
+
+On 2015-08-16 16:20, D. Hugh Redelmeier wrote:
+> Sometimes I don't remember what's in each of my machines.
+>
+> Here's what I use to figure this out:
+>
+I use lshw, or its GUI twin lshw-gtk, very detailed information on
+components.
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: smime.p7s
+Type: application/pkcs7-signature
+Size: 3697 bytes
+Desc: S/MIME Cryptographic Signature
+URL: <http://gtalug.org/pipermail/talk/attachments/20150816/dd8b6b88/attachment.bin>
+
+From chris at cfajohnson.com  Mon Aug 17 03:06:13 2015
+From: chris at cfajohnson.com (Chris F.A. Johnson)
+Date: Sun, 16 Aug 2015 23:06:13 -0400 (EDT)
+Subject: [GTALUG] Ubuntu (or debian): apt-get auto-remove?
+In-Reply-To: <alpine.LRH.2.02.1508162111470.1557@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1508131050470.1557@redclaw.mimosa.com>
+ <55D12085.7010400@sobac.com>
+ <alpine.LRH.2.02.1508162111470.1557@redclaw.mimosa.com>
+Message-ID: <alpine.DEB.2.10.1508162304270.20371@chris.tor>
+
+On Sun, 16 Aug 2015, D. Hugh Redelmeier wrote:
+
+> | From: Bob Jonkman <bjonkman at sobac.com>
+>
+> Thanks.
+>
+> Here's a slightly shorter version.  Picky, picky, picky.  Looking gift
+> horse in the mouth.
+>
+> I try to start all my scripts with "set -eu" so that more bugs will be
+> detected.
+>
+> "set -e" causes the shell to exit if a command unexpectedly fails.
+> That is, a command returns non-zero and was invoked in a non-test
+> context.  Just what you want.
+
+     It only causes the shell to exit if a simple command fails.
+
+     Best practice is not to use it at all.
+
+    <http://mywiki.wooledge.org/BashFAQ/105>
+
+> "set -u" tells the shell to treat a reference to an undefined
+> parameter as an error.  It will make no difference in this script.
+> Until the script evolves more complexity.
+
+    There's no point to using set -u after a script has been debugged.
+
+-- 
+Chris F.A. Johnson, <http://cfajohnson.com>
+
+From o1bigtenor at gmail.com  Mon Aug 17 03:33:49 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Sun, 16 Aug 2015 22:33:49 -0500
+Subject: [GTALUG] Poweredger server question
+Message-ID: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+
+Greetings
+
+Managed to buy a Dell poweredge 2950II server.
+
+What an odyssey to set up the bios!!!
+
+I have 2 drives I got with the machine - - - they were part of a Raid 5
+array.
+Now there are only 2 drives (will never by a raid 5 array by definition)
+and I need some way of formatting them so that I can turn them into a Raid
+1 array. (Its all hardware raid on this box.)
+
+Anyone with any idea on how to do that to scsi drives when the controller
+won't let me change their settings and I have no other pox to put them in.
+(Connector is a wee bit different than for SATA!)
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150816/69011ba9/attachment.html>
+
+From hugh at mimosa.com  Mon Aug 17 05:42:34 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 17 Aug 2015 01:42:34 -0400 (EDT)
+Subject: [GTALUG] Ubuntu (or debian): apt-get auto-remove?
+In-Reply-To: <alpine.DEB.2.10.1508162304270.20371@chris.tor>
+References: <alpine.LRH.2.02.1508131050470.1557@redclaw.mimosa.com>
+ <55D12085.7010400@sobac.com>
+ <alpine.LRH.2.02.1508162111470.1557@redclaw.mimosa.com>
+ <alpine.DEB.2.10.1508162304270.20371@chris.tor>
+Message-ID: <alpine.LRH.2.02.1508170123020.1557@redclaw.mimosa.com>
+
+| From: Chris F.A. Johnson <chris at cfajohnson.com>
+
+|     It only causes the shell to exit if a simple command fails.
+
+Right.  That does create some surprises.  But these were all simple
+commands.  And most of my errors are in simple commands.
+
+|     Best practice is not to use it at all.
+| 
+|    <http://mywiki.wooledge.org/BashFAQ/105>
+
+Thanks.  Useful.  I respectfully disagree with the conclusion.
+
+| > "set -u" tells the shell to treat a reference to an undefined
+| > parameter as an error.  It will make no difference in this script.
+| > Until the script evolves more complexity.
+| 
+|    There's no point to using set -u after a script has been debugged.
+
+The sad fact is that I don't know when I've gotten rid of the last bug
+in a script.
+
+It's really handy to have this on: I then know that most typos in
+parameter names will be caught so when I have a bug, I don't have to
+check for that kind of error myself and can concentrate on looking for
+other pathologies.  Silently replacing a reference to a non-existent
+parameter with nothing is just dumb human engineering.
+
+I cannot find the Hoare quote that I'm looking for, but this seems to
+be a mangled version of it:
+
+	Once said that removing type checking from your running programs and
+	using them only for testing is like wearing a life jacket on your
+	practice emergency drills and taking them off as soon as your ship was
+	really sinking.
+
+<http://blog.mattcallanan.net/2010/09/tony-hoare-billion-dollar-mistake.html>
+
+Another relevant quote:
+
+	a programming language designer should be responsible for the
+	mistakes that are made by the programmers using the language
+
+(Hoare is a real great of our field.)
+
+From hugh at mimosa.com  Mon Aug 17 05:55:56 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 17 Aug 2015 01:55:56 -0400 (EDT)
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1508170143380.1557@redclaw.mimosa.com>
+
+| From: o1bigtenor <o1bigtenor at gmail.com>
+
+| I have 2 drives I got with the machine - - - they were part of a Raid 5
+| array.
+| Now there are only 2 drives (will never by a raid 5 array by definition)
+| and I need some way of formatting them so that I can turn them into a Raid
+| 1 array. (Its all hardware raid on this box.)
+| 
+| Anyone with any idea on how to do that to scsi drives when the controller
+| won't let me change their settings and I have no other pox to put them in.
+| (Connector is a wee bit different than for SATA!)
+
+So many warning signs.  But I'll ignore them.  
+
+1) why won't the controller let you change the settings?  That seems
+   wrong.  Maybe you are missing some admin software.
+
+2) Desperate attempt:
+   Can you boot from a live USB stick?  If so, can you "see through"
+   the RAID controller to the raw disks?  If so, perhaps you can
+   scribble a copy of /dev/zero over the raw disks.  The RAID config
+   information is somewhere on that raw disk and if you can obliterate
+   it, surely the controller will let you re-configurate.
+
+   If you cannot do it with the contoller you have, buy a SCSI
+   controller from the surplus/used source.  They ought to cost 
+   a small amount since everyone is ditching SCSI.
+
+   Overwriting a modern high-capacity disk can take perhaps half a
+   day.  But I suspect your disks are neither modern nor
+   high-capacity.
+
