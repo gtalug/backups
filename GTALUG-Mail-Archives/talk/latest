@@ -6600,3 +6600,292 @@ So many warning signs.  But I'll ignore them.
    day.  But I suspect your disks are neither modern nor
    high-capacity.
 
+From Brent.Kimberley at Durham.ca  Mon Aug 17 11:48:56 2015
+From: Brent.Kimberley at Durham.ca (Brent Kimberley)
+Date: Mon, 17 Aug 2015 11:48:56 +0000
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+Message-ID: <20150817114855.6361174.39769.15205@Durham.ca>
+
+‎Using the service tag, go to support.dell.com and read the manual(s), drivers, firmware etc. Press control C or R at boot up to access the raid config. Don't forget to check / upgrade the firmware.
+
+From: o1bigtenor
+Sent: Sunday, August 16, 2015 23:33
+To: GTALUG Talk
+Reply To: GTALUG Talk
+Subject: [GTALUG] Poweredger server question
+
+
+Greetings
+
+Managed to buy a Dell poweredge 2950II server.
+
+What an odyssey to set up the bios!!!
+
+I have 2 drives I got with the machine - - - they were part of a Raid 5 array.
+Now there are only 2 drives (will never by a raid 5 array by definition) and I need some way of formatting them so that I can turn them into a Raid 1 array. (Its all hardware raid on this box.)
+
+Anyone with any idea on how to do that to scsi drives when the controller won't let me change their settings and I have no other pox to put them in. (Connector is a wee bit different than for SATA!)
+
+Dee
+THIS MESSAGE IS FOR THE USE OF THE INTENDED RECIPIENT(S) ONLY AND MAY CONTAIN INFORMATION THAT IS PRIVILEGED, PROPRIETARY, CONFIDENTIAL, AND/OR EXEMPT FROM DISCLOSURE UNDER ANY RELEVANT PRIVACY LEGISLATION. No rights to any privilege have been waived. If you are not the intended recipient, you are hereby notified that any review, retransmission, dissemination, distribution, copying, conversion to hard copy, taking of action in reliance on or other use of this communication is strictly prohibited. If you are not the intended recipient and have received this message in error, please notify me by return e-mail and delete or destroy all copies of this message.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150817/917f0ee1/attachment.html>
+
+From dmason at ryerson.ca  Mon Aug 17 12:27:25 2015
+From: dmason at ryerson.ca (David Mason)
+Date: Mon, 17 Aug 2015 08:27:25 -0400
+Subject: [GTALUG] Ubuntu (or debian): apt-get auto-remove?
+In-Reply-To: <alpine.LRH.2.02.1508170123020.1557@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1508131050470.1557@redclaw.mimosa.com>
+ <55D12085.7010400@sobac.com>
+ <alpine.LRH.2.02.1508162111470.1557@redclaw.mimosa.com>
+ <alpine.DEB.2.10.1508162304270.20371@chris.tor>
+ <alpine.LRH.2.02.1508170123020.1557@redclaw.mimosa.com>
+Message-ID: <CALFgxqBaJr4TPh6CdkxEuji1-=iXBmcn4TQVKp6fNZ8Sy_nB+g@mail.gmail.com>
+
+On 17 August 2015 at 01:42, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+
+> | From: Chris F.A. Johnson <chris at cfajohnson.com>
+>
+> |     Best practice is not to use it at all.
+> |
+> |    <http://mywiki.wooledge.org/BashFAQ/105>
+>
+
+Sorry, late to this thread, but that page doesn't refer to -u
+
+
+> Thanks.  Useful.  I respectfully disagree with the conclusion.
+>
+> | > "set -u" tells the shell to treat a reference to an undefined
+> | > parameter as an error.  It will make no difference in this script.
+> | > Until the script evolves more complexity.
+> |
+> |    There's no point to using set -u after a script has been debugged.
+>
+> The sad fact is that I don't know when I've gotten rid of the last bug
+> in a script.
+>
+
+I don't know when I've gotten the last bug in *any* language (of course
+I've only been programming for 44 years, so maybe I'll get to that point
+sometime :-).
+
+The only reason I can even *imagine* turning it off after "debugging" would
+be a claim for "efficiency".  And to suggest that "the overhead of having
+the bash interpreter check this" is material is misguided (see Hugh's
+quotes from Tony Hoare).  There are *very*, *very* few programs that need
+that kind of micro-efficiency, which is why I virtually never program in C
+or C++ anymore -- safety is so much more important.
+
+../Dave
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150817/76eba4a0/attachment.html>
+
+From hugh at mimosa.com  Mon Aug 17 13:07:53 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 17 Aug 2015 09:07:53 -0400 (EDT)
+Subject: [GTALUG] Ubuntu (or debian): apt-get auto-remove?
+In-Reply-To: <CALFgxqBaJr4TPh6CdkxEuji1-=iXBmcn4TQVKp6fNZ8Sy_nB+g@mail.gmail.com>
+References: <alpine.LRH.2.02.1508131050470.1557@redclaw.mimosa.com>
+ <55D12085.7010400@sobac.com>
+ <alpine.LRH.2.02.1508162111470.1557@redclaw.mimosa.com>
+ <alpine.DEB.2.10.1508162304270.20371@chris.tor>
+ <alpine.LRH.2.02.1508170123020.1557@redclaw.mimosa.com>
+ <CALFgxqBaJr4TPh6CdkxEuji1-=iXBmcn4TQVKp6fNZ8Sy_nB+g@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1508170840400.1557@redclaw.mimosa.com>
+
+| From: David Mason <dmason at ryerson.ca>
+| 
+| On 17 August 2015 at 01:42, D. Hugh Redelmeier <hugh at mimosa.com> wrote:
+| 
+| > | From: Chris F.A. Johnson <chris at cfajohnson.com>
+| >
+| > |     Best practice is not to use it at all.
+| > |
+| > |    <http://mywiki.wooledge.org/BashFAQ/105>
+| >
+| 
+| Sorry, late to this thread, but that page doesn't refer to -u
+
+That's my fault for trimming too much.  Please look back to the
+previous message (I don't like endless non-targetted quoting).
+
+This part was about "set -e".
+
+Chris points out that the limitations of -e are not obvious and
+concludes that the feature is best avoided.  The main non-obvious
+limitation seems to be that failing subshells don't cause the script
+to stop.  Remember that pipelines include subshells.
+-------------- next part --------------
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+From hugh at mimosa.com  Mon Aug 17 15:48:07 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Mon, 17 Aug 2015 11:48:07 -0400 (EDT)
+Subject: [GTALUG] hardware inventory -- what's in my machine?
+In-Reply-To: <55D11C81.7020404@sobac.com>
+References: <alpine.LRH.2.02.1508161539160.1557@redclaw.mimosa.com>
+ <55D11C81.7020404@sobac.com>
+Message-ID: <alpine.LRH.2.02.1508171144300.1557@redclaw.mimosa.com>
+
+| From: Bob Jonkman <bjonkman at sobac.com>
+
+| lsblk - list the block devices, their sizes and mount points (not in
+| all distros)
+
+Good one.
+
+| blkid - list the UUIDs of the block devices
+
+Yeah.  Necessary, if confusing and messy.
+
+I have my own hack, a script that merges the output of fdisk, df, and
+e2label.  It isn't as useful now that GPT / GUID partitioning is
+taking over.
+
+From bjonkman at sobac.com  Mon Aug 17 15:54:57 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Mon, 17 Aug 2015 11:54:57 -0400
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <20150817114855.6361174.39769.15205@Durham.ca>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+ <20150817114855.6361174.39769.15205@Durham.ca>
+Message-ID: <55D203D1.4070601@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+If there's a hardware RAID controller it may need its battery changed
+(if it has one). Some RAID controllers keep the config in NVRAM, so
+/dev/zero may not help that much.  If the drives are recognized by
+the OS it may be better to use OS RAID, and eliminate the dependency on
+potentially flakey, unreplaceable hardware.
+
+- --Bob.
+
+
+On 17/08/15 07:48 AM, Brent Kimberley wrote:
+> ‎Using the service tag, go to support.dell.com and read the 
+> manual(s), drivers, firmware etc. Press control C or R at boot up
+> to access the raid config. Don't forget to check / upgrade the 
+> firmware.
+> 
+> From: o1bigtenor Sent: Sunday, August 16, 2015 23:33 To: GTALUG
+> Talk Reply To: GTALUG Talk Subject: [GTALUG] Poweredger server
+> question
+> 
+> 
+> Greetings
+> 
+> Managed to buy a Dell poweredge 2950II server.
+> 
+> What an odyssey to set up the bios!!!
+> 
+> I have 2 drives I got with the machine - - - they were part of a
+> Raid 5 array. Now there are only 2 drives (will never by a raid 5
+> array by definition) and I need some way of formatting them so that
+> I can turn them into a Raid 1 array. (Its all hardware raid on this
+> box.)
+> 
+> Anyone with any idea on how to do that to scsi drives when the 
+> controller won't let me change their settings and I have no other
+> pox to put them in. (Connector is a wee bit different than for
+> SATA!)
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlXSA88ACgkQuRKJsNLM5eoYwwCdGBi2BtPGs6hKsM9gAhAZ/fyi
+4cUAoP8n7E58vyhSNT+TThpiyjg1ymlG
+=eSBG
+-----END PGP SIGNATURE-----
+
+From lsorense at csclub.uwaterloo.ca  Mon Aug 17 21:38:12 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 17 Aug 2015 17:38:12 -0400
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+Message-ID: <20150817213812.GW29199@csclub.uwaterloo.ca>
+
+On Sun, Aug 16, 2015 at 10:33:49PM -0500, o1bigtenor wrote:
+> Greetings
+> 
+> Managed to buy a Dell poweredge 2950II server.
+> 
+> What an odyssey to set up the bios!!!
+> 
+> I have 2 drives I got with the machine - - - they were part of a Raid 5
+> array.
+> Now there are only 2 drives (will never by a raid 5 array by definition)
+> and I need some way of formatting them so that I can turn them into a Raid
+> 1 array. (Its all hardware raid on this box.)
+> 
+> Anyone with any idea on how to do that to scsi drives when the controller
+> won't let me change their settings and I have no other pox to put them in.
+> (Connector is a wee bit different than for SATA!)
+
+Certainly some raid controllers have an initialize option you can apply
+to disks to clean them so they can be reused in a new raid.
+
+No idea which raid controller model you are dealing with.
+
+-- 
+Len Sorensen
+
+From aruna.hewapathirane at gmail.com  Tue Aug 18 02:52:03 2015
+From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
+Date: Mon, 17 Aug 2015 22:52:03 -0400
+Subject: [GTALUG] hardware inventory -- what's in my machine?
+In-Reply-To: <alpine.LRH.2.02.1508161539160.1557@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1508161539160.1557@redclaw.mimosa.com>
+Message-ID: <CAFSeFg9TryYTMuQ-w1FcNzJuRPqLisYCYpP9QfzPrfxoc5mN3g@mail.gmail.com>
+
+> - dmidecode(8) "DMI table decoder".  The output is a little arcane but
+>   useful.  The man page says that it can be unreliable.
+
+http://www.thegeekstuff.com/2008/11/how-to-get-hardware-information-on-linux-using-dmidecode-command/
+
+> - (new to me) lshw(1) "list hardware".  The output seems easier to read
+>   that dmidecode's.  It uses a variety of sources.  It can output in a
+>   bunch of formats (but I've ignored that).
+
+lshw -html > hwinfo.html then double click the hwinfo.html file, you will
+be pleasantly surprised :)
+
+> - /proc/cpuinfo will tell you about the CPU.  Apparently lscpu(1)
+>   shows pretty much the same thing (I've never noticed it before).
+
+lscpu gathers CPU architecture information from sysfs and /proc/cpuinfo
+
+> - /var/log/Xorg.0.log: shows what devices and capabilities X has
+>   found.  Hard to read but sometimes it's what you need.
+
+xdpyinfo I found was easier on the eyes..
+
+> - lsusb(8): list USB devices (including hubs).
+
+lsusb -tv ( the flags enable a tree lsiting which can help )
+
+> - lspci(8): list PCI devices and buses
+
+lspci -tv ( again displays a tree which can be useful )
+
+and this am yet to use for any real work but is highly interesting:
+sudo  dd if=/dev/mem bs=1k skip=768 count=256 2>/dev/null | strings -n 8 #
+Read BIOS ( Seriously try it :)
+
+Aruna
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150817/4c836036/attachment.html>
+
