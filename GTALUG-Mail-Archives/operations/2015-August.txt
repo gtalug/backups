@@ -610,3 +610,51 @@ There is a regular GTALUG meeting coming up on 08 September, 2015; is the GTALUG
 
 I'm Mr. Meeseeks! Look at me! (poof)
 
+From me at mylesbraithwaite.com  Mon Aug 17 12:50:25 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 17 Aug 2015 08:50:25 -0400
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+In-Reply-To: <20150817093001.8D05CE33C@penguin.gtalug.org>
+References: <20150817093001.8D05CE33C@penguin.gtalug.org>
+Message-ID: <55D1D891.90106@mylesbraithwaite.com>
+
+Mr. Meeseeks wrote:
+> The GTALUG Operations meeting is on 24 August, 2015
+
+Mr. Meeseeks isn't to bright the meeting is on 31 August, 2015.
+
+From me at mylesbraithwaite.com  Mon Aug 17 22:42:15 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 17 Aug 2015 18:42:15 -0400
+Subject: [GTALUG-Ops] Fwd: Are you still interested in giving a talk on
+	Samba in September?
+References: <CAE9rU+44VxvTRWHMcNstQe3mnE0O=4VY9abwk7SZXAx=TK1Pqw@mail.gmail.com>
+Message-ID: <50C5A745-AFAC-47EB-8A8B-0249BC354E14@mylesbraithwaite.com>
+
+William still on for September.
+
+The VMFarms guy is on (and excited) for DevOps in 2015 in November.
+
+I would like to have a bunch of short talks for October if everyone is okay with that.
+
+http://mylesb.ca/
+
+Begin forwarded message:
+
+> From: William Muriithi <william.muriithi at gmail.com>
+> Date: August 17, 2015 at 4:49:13 PM EDT
+> To: Myles Braithwaite <me at mylesbraithwaite.com>
+> Subject: Re: Are you still interested in giving a talk on Samba in September?
+> 
+> Yes
+> 
+> Would be a pressure to present. Have already prepared the talk so I don't need to do much this month
+> 
+> William
+> 
+>> On Monday, 17 August 2015, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+>> The meeting date is the 8th September at 7:30pm.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20150817/c26eb6a5/attachment.html>
+
