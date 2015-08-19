@@ -6889,3 +6889,758 @@ Aruna
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150817/4c836036/attachment.html>
 
+From o1bigtenor at gmail.com  Tue Aug 18 11:45:10 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Tue, 18 Aug 2015 06:45:10 -0500
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <20150817114855.6361174.39769.15205@Durham.ca>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+ <20150817114855.6361174.39769.15205@Durham.ca>
+Message-ID: <CAPpdf59CpnvyOomHw2OMNbOqqMza6qRrW-TZaH9mMgsEzUn+Dw@mail.gmail.com>
+
+On Mon, Aug 17, 2015 at 6:48 AM, Brent Kimberley <Brent.Kimberley at durham.ca>
+wrote:
+
+> ‎Using the service tag, go to support.dell.com and read the manual(s),
+> drivers, firmware etc. Press control C or R at boot up to access the raid
+> config. Don't forget to check / upgrade the firmware.
+>
+
+Not a bad idea - - except Dell manuals are a joke.
+There is absolutely no information that I could find using both Duckduck
+and ms google on how to setup the BIOS (and its absolutely NOT intuitive!!).
+Don't you just love computers that require half a dozen training courses to
+use!
+
+Upgrading the firmware is also a very good idea but to do so I first have
+to install MS windows on the machine as the upgrade package is a .exe file.
+That's sort of interesting when they tell you about RHEL, SUSE and a third
+Linux operating system option for the server itself. So although I would
+love to upgrade the firmware I'm not sure how I can actually do it - - -
+that may be why it hadn't been upgraded previously!
+
+Thanks for the ideas!
+
+Dee
+
+>
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150818/10f05ed4/attachment.html>
+
+From o1bigtenor at gmail.com  Tue Aug 18 11:48:39 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Tue, 18 Aug 2015 06:48:39 -0500
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <55D203D1.4070601@sobac.com>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+ <20150817114855.6361174.39769.15205@Durham.ca>
+ <55D203D1.4070601@sobac.com>
+Message-ID: <CAPpdf586NhSiXwHb6XeahCjZ2+mrR7OyfVkjRNM8JSN5msYb5Q@mail.gmail.com>
+
+On Mon, Aug 17, 2015 at 10:54 AM, Bob Jonkman <bjonkman at sobac.com> wrote:
+
+> -----BEGIN PGP SIGNED MESSAGE-----
+> Hash: SHA1
+>
+> If there's a hardware RAID controller it may need its battery changed
+> (if it has one). Some RAID controllers keep the config in NVRAM, so
+> /dev/zero may not help that much.  If the drives are recognized by
+> the OS it may be better to use OS RAID, and eliminate the dependency on
+> potentially flakey, unreplaceable hardware.
+>
+
+You have found the problem - - - the OS does NOT recognize the drives at
+all.
+
+If I could have found the hard drives from the OS I would not have bothered
+using
+hardware RAID - - - prefer the software RAID myself and have been using it
+for
+a while so am somewhat comfortable with it.
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150818/2daf9f6d/attachment.html>
+
+From o1bigtenor at gmail.com  Tue Aug 18 11:50:00 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Tue, 18 Aug 2015 06:50:00 -0500
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <20150817213812.GW29199@csclub.uwaterloo.ca>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+ <20150817213812.GW29199@csclub.uwaterloo.ca>
+Message-ID: <CAPpdf58fFHUeptjkZe5HPD-6F0h2fC2WAmbYQAeL7YP5K4eXPw@mail.gmail.com>
+
+On Mon, Aug 17, 2015 at 4:38 PM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Sun, Aug 16, 2015 at 10:33:49PM -0500, o1bigtenor wrote:
+> > Greetings
+> >
+> > Managed to buy a Dell poweredge 2950II server.
+> >
+> > What an odyssey to set up the bios!!!
+> >
+> > I have 2 drives I got with the machine - - - they were part of a Raid 5
+> > array.
+> > Now there are only 2 drives (will never by a raid 5 array by definition)
+> > and I need some way of formatting them so that I can turn them into a
+> Raid
+> > 1 array. (Its all hardware raid on this box.)
+> >
+> > Anyone with any idea on how to do that to scsi drives when the controller
+> > won't let me change their settings and I have no other pox to put them
+> in.
+> > (Connector is a wee bit different than for SATA!)
+>
+> Certainly some raid controllers have an initialize option you can apply
+> to disks to clean them so they can be reused in a new raid.
+>
+> No idea which raid controller model you are dealing with.
+>
+
+Its a Perc 5/i if that helps.
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150818/17d63446/attachment.html>
+
+From adb at adb.ca  Tue Aug 18 12:00:26 2015
+From: adb at adb.ca (Anthony de Boer)
+Date: Tue, 18 Aug 2015 08:00:26 -0400
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <CAPpdf58fFHUeptjkZe5HPD-6F0h2fC2WAmbYQAeL7YP5K4eXPw@mail.gmail.com>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+ <20150817213812.GW29199@csclub.uwaterloo.ca>
+ <CAPpdf58fFHUeptjkZe5HPD-6F0h2fC2WAmbYQAeL7YP5K4eXPw@mail.gmail.com>
+Message-ID: <20150818120026.GW16224@adb.ca>
+
+o1bigtenor wrote:
+> On Mon, Aug 17, 2015 at 4:38 PM, Lennart Sorensen wrote:
+> > No idea which raid controller model you are dealing with.
+> 
+> Its a Perc 5/i if that helps.
+
+Ah yes.  Those.  It Might Be Dead.
+
+(A past gig had a lot of Dell servers, an annoying number of which were
+suffering from dead RAID controllers and/or remote consoles, while the
+IBM, HP, and Sun hardware generally just kept working.)
+
+However, the various hardware RAID controllers I've had to deal with
+always had a BIOS screen (usually a pause during boot telling you hit
+some key combo to enter RAID config) and you need to get into that to
+tell it to forget the old setup and usefully configure (mirror, stripe,
+or JBOD) the drives it has now.  This will also confirm it does actually
+see them.  After that's done, it should present its virtual drive(s) to
+the OS.  
+
+-- 
+Anthony de Boer
+
+From me at mylesbraithwaite.com  Tue Aug 18 12:38:29 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 18 Aug 2015 08:38:29 -0400
+Subject: [GTALUG] [GTALUG-Announce] GTALUG Meeting on 8th September,
+	2015 at 7:30pm
+Message-ID: <CA+hskZMssgObf2DWJEFdbGBZx=HoArQD_JpneMO-pKBGv6oTxw@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-09/>
+
+# Samba Progress Over the Last Six Years with William Murrithy
+
+The talk is a continuation of William's previous talk on Samba in
+2009. It looks at how close samba has closed the gap between AD and
+samba with samba 4, what's still left, packaging/deployment
+improvements and a demo of the samba deployment and and management.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Vote for where we should dine before the meeting here:
+<http://survey.gtalug.org/index.php/437662>.
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+# Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact the GTALUG Board @ <board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From me at mylesbraithwaite.com  Tue Aug 18 13:49:30 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 18 Aug 2015 09:49:30 -0400
+Subject: [GTALUG] Pre-Meeting September 2015 Dinner [was GTALUG Meeting on
+ 8th September, 2015 at 7:30pm]
+Message-ID: <CA+hskZO5oVjsz=0cca_x7UFUvEuE0bU4tMdD4UVH36o631FvBA@mail.gmail.com>
+
+Myles Braithwaite wrote:
+> * 6:00 pm - Vote for where we should dine before the meeting here:
+> <http://survey.gtalug.org/index.php/437662>.
+
+Vote here for where we should go for the pre-meeting dinner:
+<http://survey.gtalug.org/index.php/437662>.
+
+From lsorense at csclub.uwaterloo.ca  Tue Aug 18 14:00:16 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 18 Aug 2015 10:00:16 -0400
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <CAPpdf58fFHUeptjkZe5HPD-6F0h2fC2WAmbYQAeL7YP5K4eXPw@mail.gmail.com>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+ <20150817213812.GW29199@csclub.uwaterloo.ca>
+ <CAPpdf58fFHUeptjkZe5HPD-6F0h2fC2WAmbYQAeL7YP5K4eXPw@mail.gmail.com>
+Message-ID: <20150818140016.GX29199@csclub.uwaterloo.ca>
+
+On Tue, Aug 18, 2015 at 06:50:00AM -0500, o1bigtenor wrote:
+> On Mon, Aug 17, 2015 at 4:38 PM, Lennart Sorensen <
+> lsorense at csclub.uwaterloo.ca> wrote:
+> 
+> > On Sun, Aug 16, 2015 at 10:33:49PM -0500, o1bigtenor wrote:
+> > > Greetings
+> > >
+> > > Managed to buy a Dell poweredge 2950II server.
+> > >
+> > > What an odyssey to set up the bios!!!
+> > >
+> > > I have 2 drives I got with the machine - - - they were part of a Raid 5
+> > > array.
+> > > Now there are only 2 drives (will never by a raid 5 array by definition)
+> > > and I need some way of formatting them so that I can turn them into a
+> > Raid
+> > > 1 array. (Its all hardware raid on this box.)
+> > >
+> > > Anyone with any idea on how to do that to scsi drives when the controller
+> > > won't let me change their settings and I have no other pox to put them
+> > in.
+> > > (Connector is a wee bit different than for SATA!)
+
+That would be SAS.  SAS controllers can run SATA disks, but no the other
+way around.
+
+> > Certainly some raid controllers have an initialize option you can apply
+> > to disks to clean them so they can be reused in a new raid.
+> >
+> > No idea which raid controller model you are dealing with.
+> >
+> 
+> Its a Perc 5/i if that helps.
+
+Well here is a handy video:
+https://www.youtube.com/watch?v=D5lGWdvJyS4
+
+It seems you hit control-r to enter the raid setup when prompted, then
+in there there is a PD management tab (PD = physical disk I suspect)
+
+Looks like control-n is how to change tabs.
+
+I found a page that says if you see 'foreign' config present, then you
+can hit F2 on the controller on the VD management page and ask it to
+clear that.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Aug 18 14:01:08 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 18 Aug 2015 10:01:08 -0400
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <CAPpdf58fFHUeptjkZe5HPD-6F0h2fC2WAmbYQAeL7YP5K4eXPw@mail.gmail.com>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+ <20150817213812.GW29199@csclub.uwaterloo.ca>
+ <CAPpdf58fFHUeptjkZe5HPD-6F0h2fC2WAmbYQAeL7YP5K4eXPw@mail.gmail.com>
+Message-ID: <20150818140108.GY29199@csclub.uwaterloo.ca>
+
+On Tue, Aug 18, 2015 at 06:50:00AM -0500, o1bigtenor wrote:
+> On Mon, Aug 17, 2015 at 4:38 PM, Lennart Sorensen <
+> lsorense at csclub.uwaterloo.ca> wrote:
+> 
+> > On Sun, Aug 16, 2015 at 10:33:49PM -0500, o1bigtenor wrote:
+> > > Greetings
+> > >
+> > > Managed to buy a Dell poweredge 2950II server.
+> > >
+> > > What an odyssey to set up the bios!!!
+> > >
+> > > I have 2 drives I got with the machine - - - they were part of a Raid 5
+> > > array.
+> > > Now there are only 2 drives (will never by a raid 5 array by definition)
+> > > and I need some way of formatting them so that I can turn them into a
+> > Raid
+> > > 1 array. (Its all hardware raid on this box.)
+> > >
+> > > Anyone with any idea on how to do that to scsi drives when the controller
+> > > won't let me change their settings and I have no other pox to put them
+> > in.
+> > > (Connector is a wee bit different than for SATA!)
+> >
+> > Certainly some raid controllers have an initialize option you can apply
+> > to disks to clean them so they can be reused in a new raid.
+> >
+> > No idea which raid controller model you are dealing with.
+> >
+> 
+> Its a Perc 5/i if that helps.
+
+Certainly if you check in the control-r setup and don't see PD count
+of 2, then there is a problem with the controller detecting the disks.
+If it does show 2, then it should be fixable.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Aug 18 14:04:02 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 18 Aug 2015 10:04:02 -0400
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <20150818120026.GW16224@adb.ca>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+ <20150817213812.GW29199@csclub.uwaterloo.ca>
+ <CAPpdf58fFHUeptjkZe5HPD-6F0h2fC2WAmbYQAeL7YP5K4eXPw@mail.gmail.com>
+ <20150818120026.GW16224@adb.ca>
+Message-ID: <20150818140402.GZ29199@csclub.uwaterloo.ca>
+
+On Tue, Aug 18, 2015 at 08:00:26AM -0400, Anthony de Boer wrote:
+> o1bigtenor wrote:
+> > On Mon, Aug 17, 2015 at 4:38 PM, Lennart Sorensen wrote:
+> > > No idea which raid controller model you are dealing with.
+> > 
+> > Its a Perc 5/i if that helps.
+> 
+> Ah yes.  Those.  It Might Be Dead.
+> 
+> (A past gig had a lot of Dell servers, an annoying number of which were
+> suffering from dead RAID controllers and/or remote consoles, while the
+> IBM, HP, and Sun hardware generally just kept working.)
+> 
+> However, the various hardware RAID controllers I've had to deal with
+> always had a BIOS screen (usually a pause during boot telling you hit
+> some key combo to enter RAID config) and you need to get into that to
+> tell it to forget the old setup and usefully configure (mirror, stripe,
+> or JBOD) the drives it has now.  This will also confirm it does actually
+> see them.  After that's done, it should present its virtual drive(s) to
+> the OS.  
+
+Apparently the Perc 5/i can't do JBOD.  The standard work around appears
+to be to create a 1 disk RAID0 on each drive and use those as the disks.
+
+-- 
+Len Sorensen
+
+From o1bigtenor at gmail.com  Tue Aug 18 15:39:38 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Tue, 18 Aug 2015 10:39:38 -0500
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <20150818140402.GZ29199@csclub.uwaterloo.ca>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+ <20150817213812.GW29199@csclub.uwaterloo.ca>
+ <CAPpdf58fFHUeptjkZe5HPD-6F0h2fC2WAmbYQAeL7YP5K4eXPw@mail.gmail.com>
+ <20150818120026.GW16224@adb.ca>
+ <20150818140402.GZ29199@csclub.uwaterloo.ca>
+Message-ID: <CAPpdf5-9QdV+-byNO-Y0gLKEFz4y1wxdeaM8SuEqjgD68P867w@mail.gmail.com>
+
+On Tue, Aug 18, 2015 at 9:04 AM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Tue, Aug 18, 2015 at 08:00:26AM -0400, Anthony de Boer wrote:
+> > o1bigtenor wrote:
+> > > On Mon, Aug 17, 2015 at 4:38 PM, Lennart Sorensen wrote:
+> > > > No idea which raid controller model you are dealing with.
+> > >
+> > > Its a Perc 5/i if that helps.
+> >
+> > Ah yes.  Those.  It Might Be Dead.
+> >
+> > (A past gig had a lot of Dell servers, an annoying number of which were
+> > suffering from dead RAID controllers and/or remote consoles, while the
+> > IBM, HP, and Sun hardware generally just kept working.)
+> >
+> > However, the various hardware RAID controllers I've had to deal with
+> > always had a BIOS screen (usually a pause during boot telling you hit
+> > some key combo to enter RAID config) and you need to get into that to
+> > tell it to forget the old setup and usefully configure (mirror, stripe,
+> > or JBOD) the drives it has now.  This will also confirm it does actually
+> > see them.  After that's done, it should present its virtual drive(s) to
+> > the OS.
+>
+> Apparently the Perc 5/i can't do JBOD.  The standard work around appears
+> to be to create a 1 disk RAID0 on each drive and use those as the disks.
+>
+
+Well - - I would not have thought of that.
+
+As I wanted 4 discs on a Raid 10 and 2 on a Raid 1 I think I am happy with
+how
+things have worked out.
+
+Now if this system craters then I do know that the next purchase will be a
+little
+different. I like the processors in this box but the bios is a royal pita
+and some
+of the other decisions make by the system designers choices do leave
+something
+to be desired.
+
+Thanks for the help and information!
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150818/dc772fc8/attachment.html>
+
+From o1bigtenor at gmail.com  Tue Aug 18 15:39:54 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Tue, 18 Aug 2015 10:39:54 -0500
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <20150818140016.GX29199@csclub.uwaterloo.ca>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+ <20150817213812.GW29199@csclub.uwaterloo.ca>
+ <CAPpdf58fFHUeptjkZe5HPD-6F0h2fC2WAmbYQAeL7YP5K4eXPw@mail.gmail.com>
+ <20150818140016.GX29199@csclub.uwaterloo.ca>
+Message-ID: <CAPpdf5_kkO2DT1JSqES=3M1eyt_6bTmk1gq973p7WwnfPy3NOg@mail.gmail.com>
+
+On Tue, Aug 18, 2015 at 9:00 AM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Tue, Aug 18, 2015 at 06:50:00AM -0500, o1bigtenor wrote:
+> > On Mon, Aug 17, 2015 at 4:38 PM, Lennart Sorensen <
+> > lsorense at csclub.uwaterloo.ca> wrote:
+> >
+> > > On Sun, Aug 16, 2015 at 10:33:49PM -0500, o1bigtenor wrote:
+> > > > Greetings
+> > > >
+> > > > Managed to buy a Dell poweredge 2950II server.
+> > > >
+> > > > What an odyssey to set up the bios!!!
+> > > >
+> > > > I have 2 drives I got with the machine - - - they were part of a
+> Raid 5
+> > > > array.
+> > > > Now there are only 2 drives (will never by a raid 5 array by
+> definition)
+> > > > and I need some way of formatting them so that I can turn them into a
+> > > Raid
+> > > > 1 array. (Its all hardware raid on this box.)
+> > > >
+> > > > Anyone with any idea on how to do that to scsi drives when the
+> controller
+> > > > won't let me change their settings and I have no other pox to put
+> them
+> > > in.
+> > > > (Connector is a wee bit different than for SATA!)
+>
+> That would be SAS.  SAS controllers can run SATA disks, but no the other
+> way around.
+>
+> > > Certainly some raid controllers have an initialize option you can apply
+> > > to disks to clean them so they can be reused in a new raid.
+> > >
+> > > No idea which raid controller model you are dealing with.
+> > >
+> >
+> > Its a Perc 5/i if that helps.
+>
+> Well here is a handy video:
+> https://www.youtube.com/watch?v=D5lGWdvJyS4
+>
+> It seems you hit control-r to enter the raid setup when prompted, then
+> in there there is a PD management tab (PD = physical disk I suspect)
+>
+> Looks like control-n is how to change tabs.
+>
+> I found a page that says if you see 'foreign' config present, then you
+> can hit F2 on the controller on the VD management page and ask it to
+> clear that.
+>
+>
+Thank you very much!!
+
+This last bit of information was what enabled me to finish my system setup.
+
+So - - - procedure followed:
+
+1. Ctrl R to get into the RAID utility
+2. Use Ctrl-N to get to the Virtual Disk page
+3. Move cursor to the line (controller) that has the word 'foreign' in it.
+4. F2 will then take to where it asks if you want to initiailize and
+something else that I have now forgotten.
+
+With the initialization one can now set up a new array (in my case a RAID 1
+(for data security)).
+
+So thank you all for your various tips and assistance - - - I now have a
+server with 6 disks running OpenMediaVault.
+
+(Now if there just were someway to get this ancient BIOS to recognize discs
+of great than 2 TB in size and if there were a way to update the BIOS
+without needing to run MS windows things would be real real good!)
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150818/922db04e/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Tue Aug 18 16:03:06 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 18 Aug 2015 12:03:06 -0400
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <CAPpdf5-9QdV+-byNO-Y0gLKEFz4y1wxdeaM8SuEqjgD68P867w@mail.gmail.com>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+ <20150817213812.GW29199@csclub.uwaterloo.ca>
+ <CAPpdf58fFHUeptjkZe5HPD-6F0h2fC2WAmbYQAeL7YP5K4eXPw@mail.gmail.com>
+ <20150818120026.GW16224@adb.ca>
+ <20150818140402.GZ29199@csclub.uwaterloo.ca>
+ <CAPpdf5-9QdV+-byNO-Y0gLKEFz4y1wxdeaM8SuEqjgD68P867w@mail.gmail.com>
+Message-ID: <20150818160306.GA15617@csclub.uwaterloo.ca>
+
+On Tue, Aug 18, 2015 at 10:39:38AM -0500, o1bigtenor wrote:
+> Well - - I would not have thought of that.
+> 
+> As I wanted 4 discs on a Raid 10 and 2 on a Raid 1 I think I am happy with
+> how
+> things have worked out.
+> 
+> Now if this system craters then I do know that the next purchase will be a
+> little
+> different. I like the processors in this box but the bios is a royal pita
+> and some
+> of the other decisions make by the system designers choices do leave
+> something
+> to be desired.
+> 
+> Thanks for the help and information!
+
+So does that work?  You have disks now?
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Aug 18 16:08:30 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 18 Aug 2015 12:08:30 -0400
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <CAPpdf5_kkO2DT1JSqES=3M1eyt_6bTmk1gq973p7WwnfPy3NOg@mail.gmail.com>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+ <20150817213812.GW29199@csclub.uwaterloo.ca>
+ <CAPpdf58fFHUeptjkZe5HPD-6F0h2fC2WAmbYQAeL7YP5K4eXPw@mail.gmail.com>
+ <20150818140016.GX29199@csclub.uwaterloo.ca>
+ <CAPpdf5_kkO2DT1JSqES=3M1eyt_6bTmk1gq973p7WwnfPy3NOg@mail.gmail.com>
+Message-ID: <20150818160830.GB15617@csclub.uwaterloo.ca>
+
+On Tue, Aug 18, 2015 at 10:39:54AM -0500, o1bigtenor wrote:
+> This last bit of information was what enabled me to finish my system setup.
+> 
+> So - - - procedure followed:
+> 
+> 1. Ctrl R to get into the RAID utility
+> 2. Use Ctrl-N to get to the Virtual Disk page
+> 3. Move cursor to the line (controller) that has the word 'foreign' in it.
+> 4. F2 will then take to where it asks if you want to initiailize and
+> something else that I have now forgotten.
+> 
+> With the initialization one can now set up a new array (in my case a RAID 1
+> (for data security)).
+> 
+> So thank you all for your various tips and assistance - - - I now have a
+> server with 6 disks running OpenMediaVault.
+> 
+> (Now if there just were someway to get this ancient BIOS to recognize discs
+> of great than 2 TB in size and if there were a way to update the BIOS
+> without needing to run MS windows things would be real real good!)
+
+http://www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=16RCK
+says you can get the PE2950-020700CBIOS.exe file and put it on a USB
+bootable key with DOS (freedos should work) and use that to flash
+the BIOS.
+
+Pretty sure unetbootin can create such a thing for you.
+
+-- 
+Len Sorensen
+
+From hugh at mimosa.com  Tue Aug 18 21:45:33 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 18 Aug 2015 17:45:33 -0400 (EDT)
+Subject: [GTALUG] Pre-Meeting September 2015 Dinner [was GTALUG Meeting
+ on 8th September, 2015 at 7:30pm]
+In-Reply-To: <CA+hskZO5oVjsz=0cca_x7UFUvEuE0bU4tMdD4UVH36o631FvBA@mail.gmail.com>
+References: <CA+hskZO5oVjsz=0cca_x7UFUvEuE0bU4tMdD4UVH36o631FvBA@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1508181709480.1557@redclaw.mimosa.com>
+
+| From: Myles Braithwaite <me at mylesbraithwaite.com>
+
+| Vote here for where we should go for the pre-meeting dinner:
+| <http://survey.gtalug.org/index.php/437662>.
+
+Thanks for setting this up!
+
+Great feature: the yelp link in each entry.
+
+I think that Doner Kebab House is just a duplicate of Donair Kebab
+House.
+
+Kathy's Corner seems to mostly be rotisserie chicken (not sandwiches)
+judging by yelp.
+
+Beware: sessions time out.  I voted but the result was ignored.  I had
+the screen up for a few hours but I didn't know that this was a
+problem.
+
+The left column is called "Your choices" but it actually lists the
+restaurants you haven't chosen.
+
+Korean Grill House seems to be cooked by the customer, at the table.
+One choice is "all you can eat".  As much fun as that is, I'm not sure
+that's great for finishing on time or being awake in the meeting (I
+admit I'm not good at that).
+
+This is fun (I haven't finished).  I never realized that it was so
+hard to rank things versus just vote for one.  Algorithmically,
+selecting is O(n) but ranking is O(n log n).  But that assumes that
+comparing is O(1); it seems not to be a bit worse.
+
+From o1bigtenor at gmail.com  Wed Aug 19 03:22:05 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Tue, 18 Aug 2015 22:22:05 -0500
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <20150818160306.GA15617@csclub.uwaterloo.ca>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+ <20150817213812.GW29199@csclub.uwaterloo.ca>
+ <CAPpdf58fFHUeptjkZe5HPD-6F0h2fC2WAmbYQAeL7YP5K4eXPw@mail.gmail.com>
+ <20150818120026.GW16224@adb.ca>
+ <20150818140402.GZ29199@csclub.uwaterloo.ca>
+ <CAPpdf5-9QdV+-byNO-Y0gLKEFz4y1wxdeaM8SuEqjgD68P867w@mail.gmail.com>
+ <20150818160306.GA15617@csclub.uwaterloo.ca>
+Message-ID: <CAPpdf5-JjcQE2y7CuKEhHMfQOywD=MuknbUg-w52wzYK2wDiMQ@mail.gmail.com>
+
+On Tue, Aug 18, 2015 at 11:03 AM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Tue, Aug 18, 2015 at 10:39:38AM -0500, o1bigtenor wrote:
+> > Well - - I would not have thought of that.
+> >
+> > As I wanted 4 discs on a Raid 10 and 2 on a Raid 1 I think I am happy
+> with
+> > how
+> > things have worked out.
+> >
+> > Now if this system craters then I do know that the next purchase will be
+> a
+> > little
+> > different. I like the processors in this box but the bios is a royal pita
+> > and some
+> > of the other decisions make by the system designers choices do leave
+> > something
+> > to be desired.
+> >
+> > Thanks for the help and information!
+>
+> So does that work?  You have disks now?
+>
+
+Yes a working system (running OpenMediaVault).
+ Am now having a lot of fun trying to figure out how to actually use a NAS
+box!!!
+
+Thanks again!
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150818/c6d3277a/attachment.html>
+
+From o1bigtenor at gmail.com  Wed Aug 19 03:23:52 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Tue, 18 Aug 2015 22:23:52 -0500
+Subject: [GTALUG] Poweredger server question
+In-Reply-To: <20150818160830.GB15617@csclub.uwaterloo.ca>
+References: <CAPpdf5_Gihf9n5Twow=hiE2D5Xe228Ox_QB-WJCRY2n2x6whWw@mail.gmail.com>
+ <20150817213812.GW29199@csclub.uwaterloo.ca>
+ <CAPpdf58fFHUeptjkZe5HPD-6F0h2fC2WAmbYQAeL7YP5K4eXPw@mail.gmail.com>
+ <20150818140016.GX29199@csclub.uwaterloo.ca>
+ <CAPpdf5_kkO2DT1JSqES=3M1eyt_6bTmk1gq973p7WwnfPy3NOg@mail.gmail.com>
+ <20150818160830.GB15617@csclub.uwaterloo.ca>
+Message-ID: <CAPpdf5_yTqLZNiXT3G=Q3r+tDjch-tBqByGykcuqwvKZ4-guDQ@mail.gmail.com>
+
+On Tue, Aug 18, 2015 at 11:08 AM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Tue, Aug 18, 2015 at 10:39:54AM -0500, o1bigtenor wrote:
+> > This last bit of information was what enabled me to finish my system
+> setup.
+> >
+> > So - - - procedure followed:
+> >
+> > 1. Ctrl R to get into the RAID utility
+> > 2. Use Ctrl-N to get to the Virtual Disk page
+> > 3. Move cursor to the line (controller) that has the word 'foreign' in
+> it.
+> > 4. F2 will then take to where it asks if you want to initiailize and
+> > something else that I have now forgotten.
+> >
+> > With the initialization one can now set up a new array (in my case a
+> RAID 1
+> > (for data security)).
+> >
+> > So thank you all for your various tips and assistance - - - I now have a
+> > server with 6 disks running OpenMediaVault.
+> >
+> > (Now if there just were someway to get this ancient BIOS to recognize
+> discs
+> > of great than 2 TB in size and if there were a way to update the BIOS
+> > without needing to run MS windows things would be real real good!)
+>
+>
+> http://www.dell.com/support/home/us/en/04/Drivers/DriversDetails?driverId=16RCK
+> says you can get the PE2950-020700CBIOS.exe file and put it on a USB
+> bootable key with DOS (freedos should work) and use that to flash
+> the BIOS.
+>
+> Pretty sure unetbootin can create such a thing for you.
+>
+
+Oh goody - - - something else to figure out!
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150818/6187430d/attachment.html>
+

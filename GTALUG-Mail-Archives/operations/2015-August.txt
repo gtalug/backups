@@ -658,3 +658,31 @@ Begin forwarded message:
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/operations/attachments/20150817/c26eb6a5/attachment.html>
 
+From gordontc at look.ca  Tue Aug 18 13:27:15 2015
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Tue, 18 Aug 2015 09:27:15 -0400
+Subject: [GTALUG-Ops] [Fwd: [IANA-issues] Fwd: [CCWG-ACCT] WEBINAR: Briefing
+ on 2nd Draft CCWG-Accountability Proposal]
+Message-ID: <1439904435.25331.1.camel@larva.gordhome.local>
+
+Hi, all.
+
+The attachment is a  link to a webinar that seeks to explain what is
+going on.   It should be entertaining, at least, so if you have the
+chance, I'd suggest it.
+
+I should mention that NTIA has elected to extend the contract with ICANN
+for another year to give us time to get going on this transition.  
+
+Cheers,
+
+Gordon
+
+-------------- next part --------------
+An embedded message was scrubbed...
+From: Olivier MJ Crepin-Leblond <ocl at gih.com>
+Subject: [IANA-issues] Fwd: [CCWG-ACCT] WEBINAR: Briefing on 2nd Draft CCWG-Accountability Proposal
+Date: Tue, 18 Aug 2015 09:07:14 +0200
+Size: 28914
+URL: <http://gtalug.org/pipermail/operations/attachments/20150818/8e9ba69b/attachment.mht>
+
