@@ -7644,3 +7644,119 @@ Dee
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150818/6187430d/attachment.html>
 
+From lsorense at csclub.uwaterloo.ca  Wed Aug 19 14:27:54 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 19 Aug 2015 10:27:54 -0400
+Subject: [GTALUG] Pre-Meeting September 2015 Dinner [was GTALUG Meeting
+ on 8th September, 2015 at 7:30pm]
+In-Reply-To: <alpine.LRH.2.02.1508181709480.1557@redclaw.mimosa.com>
+References: <CA+hskZO5oVjsz=0cca_x7UFUvEuE0bU4tMdD4UVH36o631FvBA@mail.gmail.com>
+ <alpine.LRH.2.02.1508181709480.1557@redclaw.mimosa.com>
+Message-ID: <20150819142754.GC15617@csclub.uwaterloo.ca>
+
+On Tue, Aug 18, 2015 at 05:45:33PM -0400, D. Hugh Redelmeier wrote:
+> | From: Myles Braithwaite <me at mylesbraithwaite.com>
+> 
+> | Vote here for where we should go for the pre-meeting dinner:
+> | <http://survey.gtalug.org/index.php/437662>.
+> 
+> Thanks for setting this up!
+> 
+> Great feature: the yelp link in each entry.
+> 
+> I think that Doner Kebab House is just a duplicate of Donair Kebab
+> House.
+> 
+> Kathy's Corner seems to mostly be rotisserie chicken (not sandwiches)
+> judging by yelp.
+> 
+> Beware: sessions time out.  I voted but the result was ignored.  I had
+> the screen up for a few hours but I didn't know that this was a
+> problem.
+> 
+> The left column is called "Your choices" but it actually lists the
+> restaurants you haven't chosen.
+
+So emphasis on "choices" as in the choices you have to pick from, rather
+than emphasis on "your" as in the choices you have made.
+
+> Korean Grill House seems to be cooked by the customer, at the table.
+> One choice is "all you can eat".  As much fun as that is, I'm not sure
+> that's great for finishing on time or being awake in the meeting (I
+> admit I'm not good at that).
+> 
+> This is fun (I haven't finished).  I never realized that it was so
+> hard to rank things versus just vote for one.  Algorithmically,
+> selecting is O(n) but ranking is O(n log n).  But that assumes that
+> comparing is O(1); it seems not to be a bit worse.
+
+-- 
+Len Sorensen
+
+From opengeometry at yahoo.ca  Wed Aug 19 23:36:08 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Wed, 19 Aug 2015 19:36:08 -0400
+Subject: [GTALUG] NetworkManager scans wireless every 2min -- solution
+	(finally)
+Message-ID: <20150819233607.GA6283@node1.localdomain>
+
+My wireless connection crawls for 20sec every 2min.  NetworkManager was
+scanning my wireless network every 2min (iwevent says so).  The problem
+is that the scan lasts 20sec, and during that 20sec, I get the following
+dmesg messages:
+
+    ieee80211 phy0: rt2x00queue_flush_queue: Warning - Queue 2 failed to flush
+
+and my connection crawls.  The card is Linksys WMP600N (rt2800pci).
+
+I tried different kernels, different driver settings, different
+NetworkManager configurations, etc.  Since it's the only wireless card I
+have, I couldn't try different card and didn't feel like buying another.
+
+Finally, an accidental click led me to a solution:
+    To prevent NetworkManager from scanning, set BSSID to the MAC
+    address of access point.
+-- 
+William
+
+From robert at timetraveller.org  Thu Aug 20 02:06:13 2015
+From: robert at timetraveller.org (Robert Brockway)
+Date: Thu, 20 Aug 2015 12:06:13 +1000 (AEST)
+Subject: [GTALUG] NetworkManager scans wireless every 2min -- solution
+ (finally)
+In-Reply-To: <20150819233607.GA6283@node1.localdomain>
+References: <20150819233607.GA6283@node1.localdomain>
+Message-ID: <alpine.DEB.2.10.1508201204320.7989@sirius>
+
+I use wicd as an alternative to Network Manager.  This is only possible in 
+some distros unfortunately as Network Manager is so integrated in some 
+cases that it can't be removed without ripping out the entire desktop.
+
+Rob (happy Debian & wicd user)
+
+On Wed, 19 Aug 2015, William Park wrote:
+
+> My wireless connection crawls for 20sec every 2min.  NetworkManager was
+> scanning my wireless network every 2min (iwevent says so).  The problem
+> is that the scan lasts 20sec, and during that 20sec, I get the following
+> dmesg messages:
+>
+>    ieee80211 phy0: rt2x00queue_flush_queue: Warning - Queue 2 failed to flush
+>
+> and my connection crawls.  The card is Linksys WMP600N (rt2800pci).
+>
+> I tried different kernels, different driver settings, different
+> NetworkManager configurations, etc.  Since it's the only wireless card I
+> have, I couldn't try different card and didn't feel like buying another.
+>
+> Finally, an accidental click led me to a solution:
+>    To prevent NetworkManager from scanning, set BSSID to the MAC
+>    address of access point.
+>
+
+-- 
+Email: robert at timetraveller.org		Linux counter ID #16440
+IRC: Solver (OFTC, Freenode and Snoonet)
+Web: http://www.pracops.com
+I tried to change the world but they had a no-return policy
+
