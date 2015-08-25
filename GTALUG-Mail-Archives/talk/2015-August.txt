@@ -7790,3 +7790,97 @@ something that gives a detailed breakdown of the steps and process.
 
 Thank's - Aruna
 
+From o1bigtenor at gmail.com  Tue Aug 25 00:44:59 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Mon, 24 Aug 2015 19:44:59 -0500
+Subject: [GTALUG] On the information prowl
+Message-ID: <CAPpdf594XG3MLHsU0Om99-EuSp8pARP2Fk8JAomW7zWbRz1YUQ@mail.gmail.com>
+
+Greetings
+
+I am in need of learning how to setup Apache2, Postgresql, NFS at the same
+time as I am setting up my NAS box running OpenMediaVault.
+
+OMV looks very impressive but with these plugins (and on the sides) there
+is a tremendous amount that needs to be setup and if its not right - - -
+well let's just say things are interesting.
+
+I have found over the years that man pages and tech docs for Linux, GNU and
+the like are written for those that really do know what they are doing and
+merely need a reminder to remember how to EXACTLY write something or set
+that something up so that a desired result happens. Now to the rest of us
+who  use these tools and have not spent years memorizing C, C++, C#,
+Python, perl, sql are don't consider these our mother tongue the docs are
+most often less than useful and too many times less than comprehensible
+(one of the biggest lacks is examples of good and bad usage of commands). I
+have learnt my way around certain things and have almost gotten comfortable
+doing things 'under the hood' but being faced with all of the first
+paragraph (adding in remote server VirtualBox vms at the very least) is a
+wee bit daunting. Have found official docs but these assume a lot and as
+soon as there is something that doesn't work exactly as expected - - - well
+- - - I'm supposed to know how to modify things (by osmosis I think!).
+
+Does anyone out there have suggestion(s) on how to guides for setup,
+modification and learning at least the first 3 listed?
+
+I would be very grateful to find (have already spent many hours looking for
+how to do things using duckduck) some straightforward guides. When I try to
+look for something specific like Apache2.2 - - - well all too often its for
+2.0 or 2.4 or its 8 years old and nothing in Debian 8 is even similar
+(different file names for example).
+
+I have been trying to keep a log enumerating what I am doing so that
+hopefully my experiences will be useful for some for at least a short while.
+
+TIA
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150824/abb8ffef/attachment.html>
+
+From kalibslack at gmail.com  Tue Aug 25 01:12:35 2015
+From: kalibslack at gmail.com (Marcelo Cavalcante)
+Date: Mon, 24 Aug 2015 22:12:35 -0300
+Subject: [GTALUG] On the information prowl
+In-Reply-To: <CAPpdf594XG3MLHsU0Om99-EuSp8pARP2Fk8JAomW7zWbRz1YUQ@mail.gmail.com>
+References: <CAPpdf594XG3MLHsU0Om99-EuSp8pARP2Fk8JAomW7zWbRz1YUQ@mail.gmail.com>
+Message-ID: <CAH5qdew+-VxjJ=ERexviSqz4sc4Gw3ULUgtpFeSV3Z2TXHB29A@mail.gmail.com>
+
+2015-08-24 21:44 GMT-03:00 o1bigtenor <o1bigtenor at gmail.com>:
+> Greetings
+>
+> I am in need of learning how to setup Apache2, Postgresql, NFS at the same
+> time as I am setting up my NAS box running OpenMediaVault.
+>
+> OMV looks very impressive but with these plugins (and on the sides) there is
+> a tremendous amount that needs to be setup and if its not right - - - well
+> let's just say things are interesting.
+>
+> I have found over the years that man pages and tech docs for Linux, GNU and
+> the like are written for those that really do know what they are doing and
+> merely need a reminder to remember how to EXACTLY write something or set
+> that something up so that a desired result happens. Now to the rest of us
+> who  use these tools and have not spent years memorizing C, C++, C#, Python,
+> perl, sql are don't consider these our mother tongue the docs are most often
+> less than useful and too many times less than comprehensible (one of the
+> biggest lacks is examples of good and bad usage of commands). I have learnt
+> my way around certain things and have almost gotten comfortable doing things
+> 'under the hood' but being faced with all of the first paragraph (adding in
+> remote server VirtualBox vms at the very least) is a wee bit daunting. Have
+> found official docs but these assume a lot and as soon as there is something
+> that doesn't work exactly as expected - - - well - - - I'm supposed to know
+> how to modify things (by osmosis I think!).
+
+Well, I need to agree that in many cases.. that´s the case, but not always.
+
+There´s this[1] site where I can always find very good articles about
+how to do stuff like those you´re looking for:
+
+As you can see, their base is CentOS, but you´ll find a link with the
+label "Other OS", where you will be able to choose another distro.
+
+[1] - http://www.server-world.info/en/
+
+Best regards,
+
