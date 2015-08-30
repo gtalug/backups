@@ -8200,3 +8200,1132 @@ Dee
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150825/6e75dbe5/attachment.html>
 
+From o1bigtenor at gmail.com  Sat Aug 29 10:37:01 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Sat, 29 Aug 2015 05:37:01 -0500
+Subject: [GTALUG] Computer wierdness
+Message-ID: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+
+Greetings
+
+I don't know what's going on but this is weird!
+
+System has been running Debian 8 with things going good (raid mounts so so
+when saving a file after a reboot all I need to do is click on the listed
+array give the root password and bob's your uncle).
+
+(Its a uefi setup)
+Well this morning - - -
+fdisk -l shows the array
+its not mounted
+
+the command I used to use for mounting in Debian 7 no longer works
+
+so - - - - any suggestions?
+
+TIA
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150829/b0974cae/attachment.html>
+
+From hugh at mimosa.com  Sat Aug 29 15:06:40 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 29 Aug 2015 11:06:40 -0400 (EDT)
+Subject: [GTALUG] Computer wierdness
+In-Reply-To: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+References: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1508291059210.891@redclaw.mimosa.com>
+
+| From: o1bigtenor <o1bigtenor at gmail.com>
+
+| (Its a uefi setup)
+
+Is it a GPT setup?  UEFI may even require GPT.  They certainly seem to
+go together.
+
+| fdisk -l shows the array
+| its not mounted
+
+fdisk doesn't tell you about mounts.  But perhaps you don't mean
+"mounted".  Or perhaps I don't understand what you are saying.
+
+fdisk doesn't understand GPT disks.
+
+From o1bigtenor at gmail.com  Sat Aug 29 15:37:41 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Sat, 29 Aug 2015 10:37:41 -0500
+Subject: [GTALUG] Computer wierdness
+In-Reply-To: <alpine.LRH.2.02.1508291059210.891@redclaw.mimosa.com>
+References: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+ <alpine.LRH.2.02.1508291059210.891@redclaw.mimosa.com>
+Message-ID: <CAPpdf5-NbOQzZR-sPYSk3+ZD+q7q+FWafO9BUeBot7NMHc586A@mail.gmail.com>
+
+On Sat, Aug 29, 2015 at 10:06 AM, D. Hugh Redelmeier <hugh at mimosa.com>
+wrote:
+
+> | From: o1bigtenor <o1bigtenor at gmail.com>
+>
+> | (Its a uefi setup)
+>
+> Is it a GPT setup?  UEFI may even require GPT.  They certainly seem to
+> go together.
+>
+> | fdisk -l shows the array
+> | its not mounted
+>
+> fdisk doesn't tell you about mounts.  But perhaps you don't mean
+> "mounted".  Or perhaps I don't understand what you are saying.
+>
+> fdisk doesn't understand GPT disks.
+>
+>
+# cat /proc/mdstat
+Personalities : [raid10]
+md0 : active (auto-read-only) raid10 sde1[0] sdf1[1] sdc1[4] sdb1[3]
+      1953518592 blocks super 1.2 512K chunks 2 near-copies [4/4] [UUUU]
+
+# mdadm --examine --scan
+ARRAY /dev/md/0  metadata=1.2 UUID=79baaa2f:0aa2b9fa:18e2ea6b:6e2846b3
+name=debianbase:0
+
+from blkid
+
+/dev/md0: PTUUID="1eb47793-0cdf-4e16-ae84-33ec825ac448" PTTYPE="gpt"
+
+
+from fdisk -l
+
+Disk /dev/md0: 1.8 TiB, 2000403038208 bytes, 3907037184 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 524288 bytes / 1048576 bytes
+Disklabel type: gpt
+Disk identifier: 1EB47793-0CDF-4E16-AE84-33EC825AC448
+
+
+fdisk seems to understand disks a little bit.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150829/b59ccdae/attachment.html>
+
+From hugh at mimosa.com  Sat Aug 29 16:59:06 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 29 Aug 2015 12:59:06 -0400 (EDT)
+Subject: [GTALUG] Computer wierdness
+In-Reply-To: <CAPpdf5-NbOQzZR-sPYSk3+ZD+q7q+FWafO9BUeBot7NMHc586A@mail.gmail.com>
+References: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+ <alpine.LRH.2.02.1508291059210.891@redclaw.mimosa.com>
+ <CAPpdf5-NbOQzZR-sPYSk3+ZD+q7q+FWafO9BUeBot7NMHc586A@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1508291246160.891@redclaw.mimosa.com>
+
+| From: o1bigtenor <o1bigtenor at gmail.com>
+
+| fdisk seems to understand disks a little bit.
+
+Right you are.  Apparently it has been updated recently.  On CentOS
+(5, 6, and 7) for example, the man page says that it does not.  On
+Fedora 21, the man page says that it does.
+
+From o1bigtenor at gmail.com  Sat Aug 29 18:03:17 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Sat, 29 Aug 2015 13:03:17 -0500
+Subject: [GTALUG] Computer wierdness
+In-Reply-To: <alpine.LRH.2.02.1508291246160.891@redclaw.mimosa.com>
+References: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+ <alpine.LRH.2.02.1508291059210.891@redclaw.mimosa.com>
+ <CAPpdf5-NbOQzZR-sPYSk3+ZD+q7q+FWafO9BUeBot7NMHc586A@mail.gmail.com>
+ <alpine.LRH.2.02.1508291246160.891@redclaw.mimosa.com>
+Message-ID: <CAPpdf58WQjpb+_pBSngpK6tJpdC9G9bmQd29DM07MxWmtojvWw@mail.gmail.com>
+
+On Sat, Aug 29, 2015 at 11:59 AM, D. Hugh Redelmeier <hugh at mimosa.com>
+wrote:
+
+> | From: o1bigtenor <o1bigtenor at gmail.com>
+>
+> | fdisk seems to understand disks a little bit.
+>
+> Right you are.  Apparently it has been updated recently.  On CentOS
+> (5, 6, and 7) for example, the man page says that it does not.  On
+> Fedora 21, the man page says that it does.
+> ---
+>
+It works as a recognition tool but it was not the formatting nor
+partitioning tool (that was gparted or gdisk).
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150829/0938c304/attachment.html>
+
+From 3a9hif7y15 at cogeco.ca  Sat Aug 29 20:21:39 2015
+From: 3a9hif7y15 at cogeco.ca (pmb)
+Date: Sat, 29 Aug 2015 16:21:39 -0400
+Subject: [GTALUG] Please add to list
+Message-ID: <20150829162139.3c177c30@TheMacHine>
+
+Hello mailing list . . .
+
+This is my first post so be gentle.
+
+Most of the traffic here is way above my 'pay grade' so I just sit back
+and read. I have learned a lot, more than a forum. Thank You.
+
+The reason for my post is that I am moving soon and must downsize.
+
+I have a few things to give away to an educational or charitable
+organisation but anything other than a commercial operation in keeping
+with the 'free and open source philosophy' model.
+
+Over the past forty years or so I have accumulated an awful lot of
+electronics (now surplus!), approximately five large plastic containers
+full of stuff. It runs from cables (RCA, phono, USB, HDMI, SATA)
+(dozens), wall power supplies (110 volt USB and proprietory)
+(dozens), computer speakers, headphones, ear buds, USB hubs
+(powered and not) and even a seventies SCSI cable. I have also three
+LED monitors (working).
+
+In its new days there were many thousands of dollars worth of wire and
+plastic.  It would be a shame for it to go to the local electronics
+recycling centre on the 19th of September where it may end up.
+
+Any offers?
+
+I am located about an hour away from Toronto.
+Would request you come to me.
+I suggest an SUV or pickup truck.
+
+For free, for any audiophiles in the audience, I have two custom built
+(by me) 5/4 inch solid teak speaker enclosures with three English KEF
+speakers, a tuned port, and 150 watt three way crossovers minus the
+front grills. Better get them quickly my cat has found the baffle
+material and is slowly removing it through the tuned port! They weigh
+about 20 / 25 kilograms apiece.
+
+Any offers? I would like to see them go to a good home and not a
+transit point to another owner, i.e. re-gifting or selling. These are
+not for a hand held unit but a powerful audio amplifier or receiver. I
+probably could throw in a Sony 300 watt receiver. I will not need it
+after the speakers go.
+
+Let me know.
+
+Thanks.
+
+Paul
+
+From opengeometry at yahoo.ca  Sat Aug 29 21:40:44 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Sat, 29 Aug 2015 17:40:44 -0400
+Subject: [GTALUG] Computer wierdness
+In-Reply-To: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+References: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+Message-ID: <20150829214044.GA30001@node1.localdomain>
+
+On Sat, Aug 29, 2015 at 05:37:01AM -0500, o1bigtenor wrote:
+> Greetings
+> 
+> I don't know what's going on but this is weird!
+> 
+> System has been running Debian 8 with things going good (raid mounts so so
+> when saving a file after a reboot all I need to do is click on the listed
+> array give the root password and bob's your uncle).
+> 
+> (Its a uefi setup)
+> Well this morning - - -
+> fdisk -l shows the array
+> its not mounted
+
+fdisk doesn't know anything about what is mounted and where.  For
+mounted stuffs, try 
+    - df, mount, lsblk -f
+    - /proc/mounts, /etc/mtab
+
+> 
+> the command I used to use for mounting in Debian 7 no longer works
+> 
+> so - - - - any suggestions?
+
+Which command?
+
+> 
+> TIA
+> 
+> Dee
+
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+From o1bigtenor at gmail.com  Sat Aug 29 23:15:35 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Sat, 29 Aug 2015 18:15:35 -0500
+Subject: [GTALUG] Computer wierdness
+In-Reply-To: <20150829214044.GA30001@node1.localdomain>
+References: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+ <20150829214044.GA30001@node1.localdomain>
+Message-ID: <CAPpdf58G6o5ob94oK=7WEyaF3FC0aQ7qU2XgZSnku1tAfcoX3A@mail.gmail.com>
+
+On Sat, Aug 29, 2015 at 4:40 PM, William Park <opengeometry at yahoo.ca> wrote:
+
+> On Sat, Aug 29, 2015 at 05:37:01AM -0500, o1bigtenor wrote:
+> > Greetings
+> >
+> > I don't know what's going on but this is weird!
+> >
+> > System has been running Debian 8 with things going good (raid mounts so
+> so
+> > when saving a file after a reboot all I need to do is click on the listed
+> > array give the root password and bob's your uncle).
+> >
+> > (Its a uefi setup)
+> > Well this morning - - -
+> > fdisk -l shows the array
+> > its not mounted
+>
+> fdisk doesn't know anything about what is mounted and where.  For
+> mounted stuffs, try
+>     - df, mount, lsblk -f
+>     - /proc/mounts, /etc/mtab
+>
+
+df
+
+command not found
+
+mount
+
+# mount
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs
+(rw,relatime,size=10240k,nr_inodes=8242416,mode=755)
+devpts on /dev/pts type devpts
+(rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,relatime,size=13191704k,mode=755)
+/dev/sda3 on / type ext4 (rw,relatime,errors=remount-ro,data=ordered)
+securityfs on /sys/kernel/security type securityfs
+(rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+cgroup on /sys/fs/cgroup/systemd type cgroup
+(rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/lib/systemd/systemd-cgroups-agent,name=systemd)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+efivarfs on /sys/firmware/efi/efivars type efivarfs
+(rw,nosuid,nodev,noexec,relatime)
+cgroup on /sys/fs/cgroup/blkio type cgroup
+(rw,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/freezer type cgroup
+(rw,nosuid,nodev,noexec,relatime,freezer)
+cgroup on /sys/fs/cgroup/cpuset type cgroup
+(rw,nosuid,nodev,noexec,relatime,cpuset)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup
+(rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup
+(rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+cgroup on /sys/fs/cgroup/devices type cgroup
+(rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/perf_event type cgroup
+(rw,nosuid,nodev,noexec,relatime,perf_event)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs
+(rw,relatime,fd=22,pgrp=1,timeout=0,minproto=5,maxproto=5,direct)
+mqueue on /dev/mqueue type mqueue (rw,relatime)
+debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime)
+/dev/sda5 on /home type ext4 (rw,relatime,data=ordered)
+/dev/sda1 on /boot/efi type vfat
+(rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=utf8,shortname=mixed,errors=remount-ro)
+rpc_pipefs on /run/rpc_pipefs type rpc_pipefs (rw,relatime)
+tmpfs on /run/user/117 type tmpfs
+(rw,nosuid,nodev,relatime,size=6595852k,mode=700,uid=117,gid=124)
+tmpfs on /run/user/1000 type tmpfs
+(rw,nosuid,nodev,relatime,size=6595852k,mode=700,uid=1000,gid=1000)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,relatime)
+gvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse
+(rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+
+
+# lsblk -f
+NAME    FSTYPE            LABEL        UUID
+MOUNTPOINT
+sda
+├─sda1  vfat                           8642-E734
+/boot/efi
+├─sda2
+├─sda3  ext4                           a3fbea19-5b7d-47af-b06c-08c49171211b
+/
+├─sda4  swap                           354a6e33-5743-4c97-bfb9-fd6f9d4521e6
+[SWAP]
+└─sda5  ext4                           b36dbfc6-6897-4311-aa87-9a958ccad072
+/home
+sdb
+└─sdb1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+  └─md0
+sdc
+└─sdc1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+  └─md0
+sdd
+├─sdd1  ext2                           a0ce336b-35cd-4413-a1c7-e77a1a4e91a6
+├─sdd4
+├─sdd5  ext4                           bbe77e50-0eaa-4048-934e-9f1b72b157ff
+├─sdd6  ext4                           533f504b-30a6-4cf6-86e9-56772c87bae3
+├─sdd7  ext4                           ff6bcbe9-f25f-4738-ba6b-5ea3c2fe0b70
+├─sdd8  ext4                           2d0d1953-dae6-4e33-8d04-cc685e2e36fb
+├─sdd9  ext4                           df754d9a-3dcf-470f-8e26-d38ef6f82df0
+└─sdd10 swap                           04daef55-ff1b-4fe5-a897-ebe397a145b6
+[SWAP]
+sde
+└─sde1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+  └─md0
+sdf
+└─sdf1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+  └─md0
+sr0
+
+The last two return the same result as #mount.
+
+
+
+>
+> >
+> > the command I used to use for mounting in Debian 7 no longer works
+> >
+> > so - - - - any suggestions?
+>
+> Which command?
+>
+
+mount /dev/dm-0 /home/myhome/RAID
+
+I have been using the suspend command on my LXDE manager - - - wondering
+if that might have something to do with the problem.
+
+So the array (raid10) is there but it is not getting mounted. The mdadm man
+page isn't
+very useful for this issue being so terse to be almost useless. There is
+really only
+information for the establishment and repair but none for remount or any
+mounting
+issues!
+
+TIA
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150829/09b8b025/attachment.html>
+
+From opengeometry at yahoo.ca  Sat Aug 29 23:51:09 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Sat, 29 Aug 2015 19:51:09 -0400
+Subject: [GTALUG] Computer wierdness
+In-Reply-To: <CAPpdf58G6o5ob94oK=7WEyaF3FC0aQ7qU2XgZSnku1tAfcoX3A@mail.gmail.com>
+References: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+ <20150829214044.GA30001@node1.localdomain>
+ <CAPpdf58G6o5ob94oK=7WEyaF3FC0aQ7qU2XgZSnku1tAfcoX3A@mail.gmail.com>
+Message-ID: <20150829235109.GA31101@node1.localdomain>
+
+On Sat, Aug 29, 2015 at 06:15:35PM -0500, o1bigtenor wrote:
+> On Sat, Aug 29, 2015 at 4:40 PM, William Park <opengeometry at yahoo.ca> wrote:
+> 
+> > On Sat, Aug 29, 2015 at 05:37:01AM -0500, o1bigtenor wrote:
+> > > Greetings
+> > >
+> > > I don't know what's going on but this is weird!
+> > >
+> > > System has been running Debian 8 with things going good (raid mounts so
+> > so
+> > > when saving a file after a reboot all I need to do is click on the listed
+> > > array give the root password and bob's your uncle).
+> > >
+> > > (Its a uefi setup)
+> > > Well this morning - - -
+> > > fdisk -l shows the array
+> > > its not mounted
+> >
+> > fdisk doesn't know anything about what is mounted and where.  For
+> > mounted stuffs, try
+> >     - df, mount, lsblk -f
+> >     - /proc/mounts, /etc/mtab
+
+> # lsblk -f
+> NAME    FSTYPE            LABEL        UUID MOUNTPOINT
+
+Again, relevant lines are
+
+    > sda
+    > ??????sda1  vfat                           8642-E734 /boot/efi
+    > ??????sda2
+    > ??????sda3  ext4                           a3fbea19-5b7d-47af-b06c-08c49171211b /
+    > ??????sda4  swap                           354a6e33-5743-4c97-bfb9-fd6f9d4521e6 [SWAP]
+    > ??????sda5  ext4                           b36dbfc6-6897-4311-aa87-9a958ccad072 /home
+    > sdb
+    > ??????sdb1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+    >   ??????md0
+    > sdc
+    > ??????sdc1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+    >   ??????md0
+    > sde
+    > ??????sde1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+    >   ??????md0
+    > sdf
+    > ??????sdf1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+    >   ??????md0
+
+> > >
+> > > the command I used to use for mounting in Debian 7 no longer works
+> > >
+> > > so - - - - any suggestions?
+> >
+> > Which command?
+> >
+> 
+> mount /dev/dm-0 /home/myhome/RAID
+
+If you change /dev/dm-0 to /dev/md0, you might have better result.
+But, I seriously doubt that this was the command you used when it
+worked, because MD Raid go by /dev/md/X or /dev/mdX.
+
+> 
+> I have been using the suspend command on my LXDE manager - - -
+> wondering if that might have something to do with the problem.
+> 
+> So the array (raid10) is there but it is not getting mounted. The
+> mdadm man page isn't very useful for this issue being so terse to be
+> almost useless. There is really only information for the establishment
+> and repair but none for remount or any mounting issues!
+> 
+> TIA
+> 
+> Dee
+
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+From lsorense at csclub.uwaterloo.ca  Sun Aug 30 02:30:50 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sat, 29 Aug 2015 22:30:50 -0400
+Subject: [GTALUG] Computer wierdness
+In-Reply-To: <CAPpdf58G6o5ob94oK=7WEyaF3FC0aQ7qU2XgZSnku1tAfcoX3A@mail.gmail.com>
+References: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+ <20150829214044.GA30001@node1.localdomain>
+ <CAPpdf58G6o5ob94oK=7WEyaF3FC0aQ7qU2XgZSnku1tAfcoX3A@mail.gmail.com>
+Message-ID: <20150830023050.GD15617@csclub.uwaterloo.ca>
+
+On Sat, Aug 29, 2015 at 06:15:35PM -0500, o1bigtenor wrote:
+> On Sat, Aug 29, 2015 at 4:40 PM, William Park <opengeometry at yahoo.ca> wrote:
+> 
+> > On Sat, Aug 29, 2015 at 05:37:01AM -0500, o1bigtenor wrote:
+> > > Greetings
+> > >
+> > > I don't know what's going on but this is weird!
+> > >
+> > > System has been running Debian 8 with things going good (raid mounts so
+> > so
+> > > when saving a file after a reboot all I need to do is click on the listed
+> > > array give the root password and bob's your uncle).
+> > >
+> > > (Its a uefi setup)
+> > > Well this morning - - -
+> > > fdisk -l shows the array
+> > > its not mounted
+> >
+> > fdisk doesn't know anything about what is mounted and where.  For
+> > mounted stuffs, try
+> >     - df, mount, lsblk -f
+> >     - /proc/mounts, /etc/mtab
+> >
+> 
+> df
+> 
+> command not found
+
+Weird.
+
+> mount
+> 
+> # mount
+> sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+> proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+> udev on /dev type devtmpfs
+> (rw,relatime,size=10240k,nr_inodes=8242416,mode=755)
+> devpts on /dev/pts type devpts
+> (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+> tmpfs on /run type tmpfs (rw,nosuid,relatime,size=13191704k,mode=755)
+> /dev/sda3 on / type ext4 (rw,relatime,errors=remount-ro,data=ordered)
+> securityfs on /sys/kernel/security type securityfs
+> (rw,nosuid,nodev,noexec,relatime)
+> tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+> tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+> tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+> cgroup on /sys/fs/cgroup/systemd type cgroup
+> (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/lib/systemd/systemd-cgroups-agent,name=systemd)
+> pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+> efivarfs on /sys/firmware/efi/efivars type efivarfs
+> (rw,nosuid,nodev,noexec,relatime)
+> cgroup on /sys/fs/cgroup/blkio type cgroup
+> (rw,nosuid,nodev,noexec,relatime,blkio)
+> cgroup on /sys/fs/cgroup/freezer type cgroup
+> (rw,nosuid,nodev,noexec,relatime,freezer)
+> cgroup on /sys/fs/cgroup/cpuset type cgroup
+> (rw,nosuid,nodev,noexec,relatime,cpuset)
+> cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup
+> (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+> cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup
+> (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+> cgroup on /sys/fs/cgroup/devices type cgroup
+> (rw,nosuid,nodev,noexec,relatime,devices)
+> cgroup on /sys/fs/cgroup/perf_event type cgroup
+> (rw,nosuid,nodev,noexec,relatime,perf_event)
+> systemd-1 on /proc/sys/fs/binfmt_misc type autofs
+> (rw,relatime,fd=22,pgrp=1,timeout=0,minproto=5,maxproto=5,direct)
+> mqueue on /dev/mqueue type mqueue (rw,relatime)
+> debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+> hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime)
+> /dev/sda5 on /home type ext4 (rw,relatime,data=ordered)
+> /dev/sda1 on /boot/efi type vfat
+> (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=utf8,shortname=mixed,errors=remount-ro)
+> rpc_pipefs on /run/rpc_pipefs type rpc_pipefs (rw,relatime)
+> tmpfs on /run/user/117 type tmpfs
+> (rw,nosuid,nodev,relatime,size=6595852k,mode=700,uid=117,gid=124)
+> tmpfs on /run/user/1000 type tmpfs
+> (rw,nosuid,nodev,relatime,size=6595852k,mode=700,uid=1000,gid=1000)
+> fusectl on /sys/fs/fuse/connections type fusectl (rw,relatime)
+> gvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse
+> (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+> 
+> 
+> # lsblk -f
+> NAME    FSTYPE            LABEL        UUID
+> MOUNTPOINT
+> sda
+> ├─sda1  vfat                           8642-E734
+> /boot/efi
+> ├─sda2
+> ├─sda3  ext4                           a3fbea19-5b7d-47af-b06c-08c49171211b
+> /
+> ├─sda4  swap                           354a6e33-5743-4c97-bfb9-fd6f9d4521e6
+> [SWAP]
+> └─sda5  ext4                           b36dbfc6-6897-4311-aa87-9a958ccad072
+> /home
+> sdb
+> └─sdb1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+>   └─md0
+> sdc
+> └─sdc1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+>   └─md0
+> sdd
+> ├─sdd1  ext2                           a0ce336b-35cd-4413-a1c7-e77a1a4e91a6
+> ├─sdd4
+> ├─sdd5  ext4                           bbe77e50-0eaa-4048-934e-9f1b72b157ff
+> ├─sdd6  ext4                           533f504b-30a6-4cf6-86e9-56772c87bae3
+> ├─sdd7  ext4                           ff6bcbe9-f25f-4738-ba6b-5ea3c2fe0b70
+> ├─sdd8  ext4                           2d0d1953-dae6-4e33-8d04-cc685e2e36fb
+> ├─sdd9  ext4                           df754d9a-3dcf-470f-8e26-d38ef6f82df0
+> └─sdd10 swap                           04daef55-ff1b-4fe5-a897-ebe397a145b6
+> [SWAP]
+> sde
+> └─sde1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+>   └─md0
+> sdf
+> └─sdf1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+>   └─md0
+> sr0
+> 
+> The last two return the same result as #mount.
+> 
+> 
+> 
+> >
+> > >
+> > > the command I used to use for mounting in Debian 7 no longer works
+> > >
+> > > so - - - - any suggestions?
+> >
+> > Which command?
+> >
+> 
+> mount /dev/dm-0 /home/myhome/RAID
+> 
+> I have been using the suspend command on my LXDE manager - - - wondering
+> if that might have something to do with the problem.
+> 
+> So the array (raid10) is there but it is not getting mounted. The mdadm man
+> page isn't
+> very useful for this issue being so terse to be almost useless. There is
+> really only
+> information for the establishment and repair but none for remount or any
+> mounting
+> issues!
+
+What entry do you have for your raid stuff in /etc/fstab?
+
+And as already said, software raid does NOT use /dev/dm devices, it uses
+/dev/md devices.  dm is for device mapper, which you will see if you use
+dmraid (which I think most people have fortunately stopped doing), or lvm
+(which many people are using) or encrypted disks (which some people use).
+
+What does fdisk -l /dev/md0 show?  Did you partition the raid or is the
+filesystem on the full raid?
+
+-- 
+Len Sorensen
+
+From o1bigtenor at gmail.com  Sun Aug 30 03:34:24 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Sat, 29 Aug 2015 22:34:24 -0500
+Subject: [GTALUG] Computer wierdness
+In-Reply-To: <20150830023050.GD15617@csclub.uwaterloo.ca>
+References: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+ <20150829214044.GA30001@node1.localdomain>
+ <CAPpdf58G6o5ob94oK=7WEyaF3FC0aQ7qU2XgZSnku1tAfcoX3A@mail.gmail.com>
+ <20150830023050.GD15617@csclub.uwaterloo.ca>
+Message-ID: <CAPpdf59R2_4xiErGsZWYZEJTEdaNMqGTe-nyb5qQbZaH1PCizQ@mail.gmail.com>
+
+On Sat, Aug 29, 2015 at 9:30 PM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Sat, Aug 29, 2015 at 06:15:35PM -0500, o1bigtenor wrote:
+> > On Sat, Aug 29, 2015 at 4:40 PM, William Park <opengeometry at yahoo.ca>
+> wrote:
+> >
+> > > On Sat, Aug 29, 2015 at 05:37:01AM -0500, o1bigtenor wrote:
+> > > > Greetings
+> > > >
+> > > > I don't know what's going on but this is weird!
+> > > >
+> > > > System has been running Debian 8 with things going good (raid mounts
+> so
+> > > so
+> > > > when saving a file after a reboot all I need to do is click on the
+> listed
+> > > > array give the root password and bob's your uncle).
+> > > >
+> > > > (Its a uefi setup)
+> > > > Well this morning - - -
+> > > > fdisk -l shows the array
+> > > > its not mounted
+> > >
+> > > fdisk doesn't know anything about what is mounted and where.  For
+> > > mounted stuffs, try
+> > >     - df, mount, lsblk -f
+> > >     - /proc/mounts, /etc/mtab
+> > >
+> >
+> > df
+> >
+> > command not found
+>
+> Weird.
+>
+> > mount
+> >
+> > # mount
+> > sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+> > proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+> > udev on /dev type devtmpfs
+> > (rw,relatime,size=10240k,nr_inodes=8242416,mode=755)
+> > devpts on /dev/pts type devpts
+> > (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+> > tmpfs on /run type tmpfs (rw,nosuid,relatime,size=13191704k,mode=755)
+> > /dev/sda3 on / type ext4 (rw,relatime,errors=remount-ro,data=ordered)
+> > securityfs on /sys/kernel/security type securityfs
+> > (rw,nosuid,nodev,noexec,relatime)
+> > tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)
+> > tmpfs on /run/lock type tmpfs
+> (rw,nosuid,nodev,noexec,relatime,size=5120k)
+> > tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+> > cgroup on /sys/fs/cgroup/systemd type cgroup
+> >
+> (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/lib/systemd/systemd-cgroups-agent,name=systemd)
+> > pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+> > efivarfs on /sys/firmware/efi/efivars type efivarfs
+> > (rw,nosuid,nodev,noexec,relatime)
+> > cgroup on /sys/fs/cgroup/blkio type cgroup
+> > (rw,nosuid,nodev,noexec,relatime,blkio)
+> > cgroup on /sys/fs/cgroup/freezer type cgroup
+> > (rw,nosuid,nodev,noexec,relatime,freezer)
+> > cgroup on /sys/fs/cgroup/cpuset type cgroup
+> > (rw,nosuid,nodev,noexec,relatime,cpuset)
+> > cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup
+> > (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+> > cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup
+> > (rw,nosuid,nodev,noexec,relatime,net_cls,net_prio)
+> > cgroup on /sys/fs/cgroup/devices type cgroup
+> > (rw,nosuid,nodev,noexec,relatime,devices)
+> > cgroup on /sys/fs/cgroup/perf_event type cgroup
+> > (rw,nosuid,nodev,noexec,relatime,perf_event)
+> > systemd-1 on /proc/sys/fs/binfmt_misc type autofs
+> > (rw,relatime,fd=22,pgrp=1,timeout=0,minproto=5,maxproto=5,direct)
+> > mqueue on /dev/mqueue type mqueue (rw,relatime)
+> > debugfs on /sys/kernel/debug type debugfs (rw,relatime)
+> > hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime)
+> > /dev/sda5 on /home type ext4 (rw,relatime,data=ordered)
+> > /dev/sda1 on /boot/efi type vfat
+> >
+> (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=utf8,shortname=mixed,errors=remount-ro)
+> > rpc_pipefs on /run/rpc_pipefs type rpc_pipefs (rw,relatime)
+> > tmpfs on /run/user/117 type tmpfs
+> > (rw,nosuid,nodev,relatime,size=6595852k,mode=700,uid=117,gid=124)
+> > tmpfs on /run/user/1000 type tmpfs
+> > (rw,nosuid,nodev,relatime,size=6595852k,mode=700,uid=1000,gid=1000)
+> > fusectl on /sys/fs/fuse/connections type fusectl (rw,relatime)
+> > gvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse
+> > (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+> >
+> >
+> > # lsblk -f
+> > NAME    FSTYPE            LABEL        UUID
+> > MOUNTPOINT
+> > sda
+> > ├─sda1  vfat                           8642-E734
+> > /boot/efi
+> > ├─sda2
+> > ├─sda3  ext4
+>  a3fbea19-5b7d-47af-b06c-08c49171211b
+> > /
+> > ├─sda4  swap
+>  354a6e33-5743-4c97-bfb9-fd6f9d4521e6
+> > [SWAP]
+> > └─sda5  ext4
+>  b36dbfc6-6897-4311-aa87-9a958ccad072
+> > /home
+> > sdb
+> > └─sdb1  linux_raid_member debianbase:0
+> 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+> >   └─md0
+> > sdc
+> > └─sdc1  linux_raid_member debianbase:0
+> 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+> >   └─md0
+> > sdd
+> > ├─sdd1  ext2
+>  a0ce336b-35cd-4413-a1c7-e77a1a4e91a6
+> > ├─sdd4
+> > ├─sdd5  ext4
+>  bbe77e50-0eaa-4048-934e-9f1b72b157ff
+> > ├─sdd6  ext4
+>  533f504b-30a6-4cf6-86e9-56772c87bae3
+> > ├─sdd7  ext4
+>  ff6bcbe9-f25f-4738-ba6b-5ea3c2fe0b70
+> > ├─sdd8  ext4
+>  2d0d1953-dae6-4e33-8d04-cc685e2e36fb
+> > ├─sdd9  ext4
+>  df754d9a-3dcf-470f-8e26-d38ef6f82df0
+> > └─sdd10 swap
+>  04daef55-ff1b-4fe5-a897-ebe397a145b6
+> > [SWAP]
+> > sde
+> > └─sde1  linux_raid_member debianbase:0
+> 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+> >   └─md0
+> > sdf
+> > └─sdf1  linux_raid_member debianbase:0
+> 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+> >   └─md0
+> > sr0
+> >
+> > The last two return the same result as #mount.
+> >
+> >
+> >
+> > >
+> > > >
+> > > > the command I used to use for mounting in Debian 7 no longer works
+> > > >
+> > > > so - - - - any suggestions?
+> > >
+> > > Which command?
+> > >
+> >
+> > mount /dev/dm-0 /home/myhome/RAID
+> >
+> > I have been using the suspend command on my LXDE manager - - - wondering
+> > if that might have something to do with the problem.
+> >
+> > So the array (raid10) is there but it is not getting mounted. The mdadm
+> man
+> > page isn't
+> > very useful for this issue being so terse to be almost useless. There is
+> > really only
+> > information for the establishment and repair but none for remount or any
+> > mounting
+> > issues!
+>
+> What entry do you have for your raid stuff in /etc/fstab?
+>
+
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/sda3 during installation
+UUID=a3fbea19-5b7d-47af-b06c-08c49171211b /               ext4
+errors=remount-ro 0       1
+# /boot/efi was on /dev/sda1 during installation
+UUID=8642-E734  /boot/efi       vfat    umask=0077      0       1
+# /home was on /dev/sda5 during installation
+UUID=b36dbfc6-6897-4311-aa87-9a958ccad072 /home           ext4
+defaults        0       2
+# swap was on /dev/sda4 during installation
+UUID=354a6e33-5743-4c97-bfb9-fd6f9d4521e6 none            swap
+sw              0       0
+# swap was on /dev/sdd10 during installation
+UUID=04daef55-ff1b-4fe5-a897-ebe397a145b6 none            swap
+sw              0       0
+/dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     0       0
+
+
+nothing listed for md0 or md/0
+
+>
+> And as already said, software raid does NOT use /dev/dm devices, it uses
+> /dev/md devices.  dm is for device mapper, which you will see if you use
+> dmraid (which I think most people have fortunately stopped doing), or lvm
+> (which many people are using) or encrypted disks (which some people use).
+>
+> What does fdisk -l /dev/md0 show?  Did you partition the raid or is the
+> filesystem on the full raid?
+>
+
+
+# fdisk -l /dev/md0
+Disk /dev/md0: 1.8 TiB, 2000403038208 bytes, 3907037184 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 524288 bytes / 1048576 bytes
+Disklabel type: gpt
+Disk identifier: 1EB47793-0CDF-4E16-AE84-33EC825AC448
+
+
+the filesystem (if I understand you correctly, the operating system) is on
+its own hard drive
+
+what is interesting is that this
+
+# lsblk -f
+NAME    FSTYPE            LABEL        UUID
+MOUNTPOINT
+sda
+├─sda1  vfat                           8642-E734
+/boot/efi
+├─sda2
+├─sda3  ext4                           a3fbea19-5b7d-47af-b06c-08c49171211b
+/
+├─sda4  swap                           354a6e33-5743-4c97-bfb9-fd6f9d4521e6
+[SWAP]
+└─sda5  ext4                           b36dbfc6-6897-4311-aa87-9a958ccad072
+/home
+sdb
+└─sdb1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+  └─md0
+sdc
+└─sdc1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+  └─md0
+sdd
+├─sdd1  ext2                           a0ce336b-35cd-4413-a1c7-e77a1a4e91a6
+├─sdd4
+├─sdd5  ext4                           bbe77e50-0eaa-4048-934e-9f1b72b157ff
+├─sdd6  ext4                           533f504b-30a6-4cf6-86e9-56772c87bae3
+├─sdd7  ext4                           ff6bcbe9-f25f-4738-ba6b-5ea3c2fe0b70
+├─sdd8  ext4                           2d0d1953-dae6-4e33-8d04-cc685e2e36fb
+├─sdd9  ext4                           df754d9a-3dcf-470f-8e26-d38ef6f82df0
+└─sdd10 swap                           04daef55-ff1b-4fe5-a897-ebe397a145b6
+[SWAP]
+sde
+└─sde1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+  └─md0
+sdf
+└─sdf1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+  └─md0
+sr0
+
+
+gives a different disc label to md0
+
+
+# mdadm --examine --scan
+ARRAY /dev/md/0  metadata=1.2 UUID=79baaa2f:0aa2b9fa:18e2ea6b:6e2846b3
+name=debianbase:0
+
+
+gives the same as lsblk -f
+
+
+# blkid
+/dev/sda1: UUID="8642-E734" TYPE="vfat"
+PARTUUID="50750607-76d9-49ea-9319-25b4dc3325f2"
+/dev/sda2: PARTLABEL="/boot"
+PARTUUID="784e5c57-6df4-4942-9eef-99c2c707c6e2"
+
+/dev/sda3: UUID="a3fbea19-5b7d-47af-b06c-08c49171211b" TYPE="ext4"
+PARTLABEL="/"
+PARTUUID="0c2154c4-ccf8-44a8-a80a-8b27d9dd1da8"
+
+/dev/sda4: UUID="354a6e33-5743-4c97-bfb9-fd6f9d4521e6" TYPE="swap"
+PARTLABEL="swap"
+PARTUUID="58495d3d-e71a-4412-bc8d-99710c326e5c"
+
+/dev/sda5: UUID="b36dbfc6-6897-4311-aa87-9a958ccad072" TYPE="ext4"
+PARTUUID="b321042f-127c-4a29-b3a4-89ac3291093f"
+
+/dev/sdb1: UUID="79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3"
+UUID_SUB="a80c76db-eaea-61af-bcb9-cbbbac99e467" LABEL="debianbase:0"
+TYPE="linux_raid_member"
+PARTUUID="000e4ced-01"
+/dev/md0: PTUUID="1eb47793-0cdf-4e16-ae84-33ec825ac448"
+PTTYPE="gpt"
+
+/dev/sdc1: UUID="79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3"
+UUID_SUB="840fc99d-6f60-7ea8-9a4a-9b0aa965c85c" LABEL="debianbase:0"
+TYPE="linux_raid_member" PARTLABEL="Linux filesystem"
+PARTUUID="a79c809a-0333-41d7-918a-e340febddcf4"
+
+/dev/sdd1: UUID="a0ce336b-35cd-4413-a1c7-e77a1a4e91a6" TYPE="ext2"
+PARTUUID="000c9868-01"
+
+/dev/sdd5: UUID="bbe77e50-0eaa-4048-934e-9f1b72b157ff" TYPE="ext4"
+PARTUUID="000c9868-05"
+
+/dev/sdd6: UUID="533f504b-30a6-4cf6-86e9-56772c87bae3" TYPE="ext4"
+PARTUUID="000c9868-06"
+
+/dev/sdd7: UUID="ff6bcbe9-f25f-4738-ba6b-5ea3c2fe0b70" TYPE="ext4"
+PARTUUID="000c9868-07"
+
+/dev/sdd8: UUID="2d0d1953-dae6-4e33-8d04-cc685e2e36fb" TYPE="ext4"
+PARTUUID="000c9868-08"
+
+/dev/sdd9: UUID="df754d9a-3dcf-470f-8e26-d38ef6f82df0" TYPE="ext4"
+PARTUUID="000c9868-09"
+
+/dev/sdd10: UUID="04daef55-ff1b-4fe5-a897-ebe397a145b6" TYPE="swap"
+PARTUUID="000c9868-0a"
+/dev/sde1: UUID="79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3"
+UUID_SUB="cb37e722-d3a9-8f88-1343-9de2bdad9d2b" LABEL="debianbase:0"
+TYPE="linux_raid_member" PARTUUID="000dc7e1-01"
+/dev/sdf1: UUID="79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3"
+UUID_SUB="9e749fa9-a0ef-e791-ea09-d2e272b99f6c" LABEL="debianbase:0"
+TYPE="linux_raid_member" PARTUUID="0002d71f-01"
+
+
+yet this command not only gives a different logical name but also calls it
+PTUUID - - - not UUID
+
+
+With all of this I am quite confused and really not sure what to do to get
+my array back.
+I have not been able to find anything that remotely resembles this problem,
+nor have I
+found anything that seems like it might be a solution.
+
+
+There seems to be some hints that this might be a problem between mdadm and
+systemd and my file manager on LXDE (PCManFM).
+
+Thanking all for their hints and tips!!
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150829/766dcba7/attachment.html>
+
+From opengeometry at yahoo.ca  Sun Aug 30 05:52:52 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Sun, 30 Aug 2015 01:52:52 -0400
+Subject: [GTALUG] Computer wierdness
+In-Reply-To: <CAPpdf59R2_4xiErGsZWYZEJTEdaNMqGTe-nyb5qQbZaH1PCizQ@mail.gmail.com>
+References: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+ <20150829214044.GA30001@node1.localdomain>
+ <CAPpdf58G6o5ob94oK=7WEyaF3FC0aQ7qU2XgZSnku1tAfcoX3A@mail.gmail.com>
+ <20150830023050.GD15617@csclub.uwaterloo.ca>
+ <CAPpdf59R2_4xiErGsZWYZEJTEdaNMqGTe-nyb5qQbZaH1PCizQ@mail.gmail.com>
+Message-ID: <20150830055252.GA3501@node1.localdomain>
+
+On Sat, Aug 29, 2015 at 10:34:24PM -0500, o1bigtenor wrote:
+> On Sat, Aug 29, 2015 at 9:30 PM, Lennart Sorensen <
+> lsorense at csclub.uwaterloo.ca> wrote:
+> > What entry do you have for your raid stuff in /etc/fstab?
+...
+> nothing listed for md0 or md/0
+
+You can always add it.  But, if manual mounting doesn't work, then
+/etc/fstab won't work either.
+
+> > And as already said, software raid does NOT use /dev/dm devices, it uses
+> > /dev/md devices.  dm is for device mapper, which you will see if you use
+> > dmraid (which I think most people have fortunately stopped doing), or lvm
+> > (which many people are using) or encrypted disks (which some people use).
+> >
+> > What does fdisk -l /dev/md0 show?  Did you partition the raid or is the
+> > filesystem on the full raid?
+> >
+> 
+> 
+> # fdisk -l /dev/md0
+> Disk /dev/md0: 1.8 TiB, 2000403038208 bytes, 3907037184 sectors
+> Units: sectors of 1 * 512 = 512 bytes
+> Sector size (logical/physical): 512 bytes / 4096 bytes
+> I/O size (minimum/optimal): 524288 bytes / 1048576 bytes
+> Disklabel type: gpt
+> Disk identifier: 1EB47793-0CDF-4E16-AE84-33EC825AC448
+
+> sdb
+> ??????sdb1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+>   ??????md0
+> sdc
+> ??????sdc1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+>   ??????md0
+> sde
+> ??????sde1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+>   ??????md0
+> sdf
+> ??????sdf1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+>   ??????md0
+
+There is no filesystem on /dev/md0.  It seems that it has GPT table with
+no partitions.  If you do 
+    gdisk -l /dev/md0
+you'll probably get similar result as 'fdisk -l'.  
+
+In that case, you have to follow through and create partitions on
+/dev/md0.  This is similar to regular harddisk /dev/sda with empty MBR
+table, where you have to follow through and create partitions /dev/sda1,
+etc.
+
+If you intend to use the entire /dev/md0, then wipe off GPT markers
+using 'gdisk' ("expert" screen -> "zap" option)
+-- 
+William
+
+From opengeometry at yahoo.ca  Sun Aug 30 06:19:42 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Sun, 30 Aug 2015 02:19:42 -0400
+Subject: [GTALUG] How to install Intel HD Graphics driver?
+Message-ID: <20150830061942.GA3703@node1.localdomain>
+
+For NVidia cards, I just download/install
+    NVIDIA-Linux-x86_64-aaa.bb-no-compat32.run
+It's one file, and it's easy.  To run mplayer with VDPAU, I just set
+    vo=vdpau
+in the configuration file.
+
+I assume it's the same for AMD cards.  I don't have AMD cards, so don't
+know.
+
+For those with Intel HD Graphics, how do you download/install driver?
+I went to Intel site, and it's utterly confusing.  I just want Intel's
+driver, so I can try out VAAPI.
+-- 
+William
+
