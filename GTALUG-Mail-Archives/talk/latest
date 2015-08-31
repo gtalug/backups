@@ -9329,3 +9329,494 @@ driver, so I can try out VAAPI.
 -- 
 William
 
+From o1bigtenor at gmail.com  Sun Aug 30 11:38:15 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Sun, 30 Aug 2015 06:38:15 -0500
+Subject: [GTALUG] Computer wierdness
+In-Reply-To: <20150830055252.GA3501@node1.localdomain>
+References: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+ <20150829214044.GA30001@node1.localdomain>
+ <CAPpdf58G6o5ob94oK=7WEyaF3FC0aQ7qU2XgZSnku1tAfcoX3A@mail.gmail.com>
+ <20150830023050.GD15617@csclub.uwaterloo.ca>
+ <CAPpdf59R2_4xiErGsZWYZEJTEdaNMqGTe-nyb5qQbZaH1PCizQ@mail.gmail.com>
+ <20150830055252.GA3501@node1.localdomain>
+Message-ID: <CAPpdf58Bcuh_G0KHcK8FbOK6aoRAA+X3SzVcdPdP+j4mun06Hg@mail.gmail.com>
+
+On Sun, Aug 30, 2015 at 12:52 AM, William Park <opengeometry at yahoo.ca>
+wrote:
+
+> On Sat, Aug 29, 2015 at 10:34:24PM -0500, o1bigtenor wrote:
+> > On Sat, Aug 29, 2015 at 9:30 PM, Lennart Sorensen <
+> > lsorense at csclub.uwaterloo.ca> wrote:
+> > > What entry do you have for your raid stuff in /etc/fstab?
+> ...
+> > nothing listed for md0 or md/0
+>
+> You can always add it.  But, if manual mounting doesn't work, then
+> /etc/fstab won't work either.
+>
+> > > And as already said, software raid does NOT use /dev/dm devices, it
+> uses
+> > > /dev/md devices.  dm is for device mapper, which you will see if you
+> use
+> > > dmraid (which I think most people have fortunately stopped doing), or
+> lvm
+> > > (which many people are using) or encrypted disks (which some people
+> use).
+> > >
+> > > What does fdisk -l /dev/md0 show?  Did you partition the raid or is the
+> > > filesystem on the full raid?
+> > >
+> >
+> >
+> > # fdisk -l /dev/md0
+> > Disk /dev/md0: 1.8 TiB, 2000403038208 bytes, 3907037184 sectors
+> > Units: sectors of 1 * 512 = 512 bytes
+> > Sector size (logical/physical): 512 bytes / 4096 bytes
+> > I/O size (minimum/optimal): 524288 bytes / 1048576 bytes
+> > Disklabel type: gpt
+> > Disk identifier: 1EB47793-0CDF-4E16-AE84-33EC825AC448
+>
+> > sdb
+> > ??????sdb1  linux_raid_member debianbase:0
+> 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+> >   ??????md0
+> > sdc
+> > ??????sdc1  linux_raid_member debianbase:0
+> 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+> >   ??????md0
+> > sde
+> > ??????sde1  linux_raid_member debianbase:0
+> 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+> >   ??????md0
+> > sdf
+> > ??????sdf1  linux_raid_member debianbase:0
+> 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+> >   ??????md0
+>
+> There is no filesystem on /dev/md0.  It seems that it has GPT table with
+> no partitions.  If you do
+>     gdisk -l /dev/md0
+> you'll probably get similar result as 'fdisk -l'.
+>
+
+# gdisk -l /dev/md0
+GPT fdisk (gdisk) version 1.0.0
+
+Partition table scan:
+  MBR: protective
+  BSD: not present
+  APM: not present
+  GPT: present
+
+Found valid GPT with protective MBR; using GPT.
+Disk /dev/md0: 3907037184 sectors, 1.8 TiB
+Logical sector size: 512 bytes
+Disk identifier (GUID): 1EB47793-0CDF-4E16-AE84-33EC825AC448
+Partition table holds up to 128 entries
+First usable sector is 34, last usable sector is 3907037150
+Partitions will be aligned on 2048-sector boundaries
+Total free space is 3907037117 sectors (1.8 TiB)
+
+Number  Start (sector)    End (sector)  Size       Code  Name
+
+What is very interesting is that
+
+# lsblk -f
+NAME    FSTYPE            LABEL        UUID
+MOUNTPOINT
+sda
+├─sda1  vfat                           8642-E734
+/boot/efi
+├─sda2
+├─sda3  ext4                           a3fbea19-5b7d-47af-b06c-08c49171211b
+/
+├─sda4  swap                           354a6e33-5743-4c97-bfb9-fd6f9d4521e6
+[SWAP]
+└─sda5  ext4                           b36dbfc6-6897-4311-aa87-9a958ccad072
+/home
+sdb
+└─sdb1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+  └─md0
+sdc
+└─sdc1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+  └─md0
+sdd
+├─sdd1  ext2                           a0ce336b-35cd-4413-a1c7-e77a1a4e91a6
+├─sdd4
+├─sdd5  ext4                           bbe77e50-0eaa-4048-934e-9f1b72b157ff
+├─sdd6  ext4                           533f504b-30a6-4cf6-86e9-56772c87bae3
+├─sdd7  ext4                           ff6bcbe9-f25f-4738-ba6b-5ea3c2fe0b70
+├─sdd8  ext4                           2d0d1953-dae6-4e33-8d04-cc685e2e36fb
+├─sdd9  ext4                           df754d9a-3dcf-470f-8e26-d38ef6f82df0
+└─sdd10 swap                           04daef55-ff1b-4fe5-a897-ebe397a145b6
+[SWAP]
+sde
+└─sde1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+  └─md0
+sdf
+└─sdf1  linux_raid_member debianbase:0 79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3
+  └─md0
+sr0
+
+
+shows that I have two different identifiers for the array
+
+# blkid
+/dev/sda1: UUID="8642-E734" TYPE="vfat"
+PARTUUID="50750607-76d9-49ea-9319-25b4dc3325f2"
+/dev/sda2: PARTLABEL="/boot"
+PARTUUID="784e5c57-6df4-4942-9eef-99c2c707c6e2"
+
+/dev/sda3: UUID="a3fbea19-5b7d-47af-b06c-08c49171211b" TYPE="ext4"
+PARTLABEL="/"
+PARTUUID="0c2154c4-ccf8-44a8-a80a-8b27d9dd1da8"
+
+/dev/sda4: UUID="354a6e33-5743-4c97-bfb9-fd6f9d4521e6" TYPE="swap"
+PARTLABEL="swap"
+PARTUUID="58495d3d-e71a-4412-bc8d-99710c326e5c"
+
+/dev/sda5: UUID="b36dbfc6-6897-4311-aa87-9a958ccad072" TYPE="ext4"
+PARTUUID="b321042f-127c-4a29-b3a4-89ac3291093f"
+
+/dev/sdb1: UUID="79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3"
+UUID_SUB="a80c76db-eaea-61af-bcb9-cbbbac99e467" LABEL="debianbase:0"
+TYPE="linux_raid_member"
+PARTUUID="000e4ced-01"
+/dev/md0: PTUUID="1eb47793-0cdf-4e16-ae84-33ec825ac448"
+PTTYPE="gpt"
+
+/dev/sdc1: UUID="79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3"
+UUID_SUB="840fc99d-6f60-7ea8-9a4a-9b0aa965c85c" LABEL="debianbase:0"
+TYPE="linux_raid_member" PARTLABEL="Linux filesystem"
+PARTUUID="a79c809a-0333-41d7-918a-e340febddcf4"
+
+/dev/sdd1: UUID="a0ce336b-35cd-4413-a1c7-e77a1a4e91a6" TYPE="ext2"
+PARTUUID="000c9868-01"
+
+/dev/sdd5: UUID="bbe77e50-0eaa-4048-934e-9f1b72b157ff" TYPE="ext4"
+PARTUUID="000c9868-05"
+
+/dev/sdd6: UUID="533f504b-30a6-4cf6-86e9-56772c87bae3" TYPE="ext4"
+PARTUUID="000c9868-06"
+
+/dev/sdd7: UUID="ff6bcbe9-f25f-4738-ba6b-5ea3c2fe0b70" TYPE="ext4"
+PARTUUID="000c9868-07"
+
+/dev/sdd8: UUID="2d0d1953-dae6-4e33-8d04-cc685e2e36fb" TYPE="ext4"
+PARTUUID="000c9868-08"
+
+/dev/sdd9: UUID="df754d9a-3dcf-470f-8e26-d38ef6f82df0" TYPE="ext4"
+PARTUUID="000c9868-09"
+
+/dev/sdd10: UUID="04daef55-ff1b-4fe5-a897-ebe397a145b6" TYPE="swap"
+PARTUUID="000c9868-0a"
+/dev/sde1: UUID="79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3"
+UUID_SUB="cb37e722-d3a9-8f88-1343-9de2bdad9d2b" LABEL="debianbase:0"
+TYPE="linux_raid_member" PARTUUID="000dc7e1-01"
+/dev/sdf1: UUID="79baaa2f-0aa2-b9fa-18e2-ea6b6e2846b3"
+UUID_SUB="9e749fa9-a0ef-e791-ea09-d2e272b99f6c" LABEL="debianbase:0"
+TYPE="linux_raid_member" PARTUUID="0002d71f-01"
+
+
+here it is even not a UUID its a PTUUID
+
+Not sure what that means.
+
+>
+> In that case, you have to follow through and create partitions on
+> /dev/md0.  This is similar to regular harddisk /dev/sda with empty MBR
+> table, where you have to follow through and create partitions /dev/sda1,
+> etc.
+>
+> It already has partitions. (Been running the array long enough to have
+disc failure.)
+
+Talking you for your ideas and assistance.
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150830/31ee6cb7/attachment.html>
+
+From tom at lowshang.com  Sun Aug 30 23:38:16 2015
+From: tom at lowshang.com (Tom Low-Shang)
+Date: Sun, 30 Aug 2015 19:38:16 -0400
+Subject: [GTALUG] How to install Intel HD Graphics driver?
+In-Reply-To: <20150830061942.GA3703@node1.localdomain>
+References: <20150830061942.GA3703@node1.localdomain>
+Message-ID: <20150830233816.GA4823@capetown.lowshang.com>
+
+On Sun, Aug 30, 2015 at 02:19:42AM -0400, William Park wrote:
+> For those with Intel HD Graphics, how do you download/install driver?
+> I went to Intel site, and it's utterly confusing.  I just want Intel's
+> driver, so I can try out VAAPI.
+
+I don't use Intel graphics, but I'm fairly certain that you can use the 
+open source driver in Mesa for all Intel GPUs except the GMA 500.
+
+
+-- 
+Tom Low-Shang
+416 857 7013
+Jabber tomlowshang at gmail.com
+
+From bjonkman at sobac.com  Mon Aug 31 01:19:35 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Sun, 30 Aug 2015 21:19:35 -0400
+Subject: [GTALUG] Please add to list
+In-Reply-To: <20150829162139.3c177c30@TheMacHine>
+References: <20150829162139.3c177c30@TheMacHine>
+Message-ID: <55E3ABA7.9010705@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+> I am located about an hour away from Toronto.
+
+In which direction?
+
+If West, then Computer Recycling may be the place for you and your
+stuff (not to mention the local KWLUG group).
+
+- --Bob.
+
+http://www.theworkingcentre.org/computer-recycling/2318-computer-recycling
+
+http://kwlug.org - join the mailing list if you're in the
+Kitchener-Waterloo area!
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-635-9413
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+
+
+On 29/08/15 04:21 PM, pmb wrote:
+> Hello mailing list . . .
+> 
+> This is my first post so be gentle.
+> 
+> Most of the traffic here is way above my 'pay grade' so I just sit
+> back and read. I have learned a lot, more than a forum. Thank You.
+> 
+> The reason for my post is that I am moving soon and must downsize.
+> 
+> I have a few things to give away to an educational or charitable 
+> organisation but anything other than a commercial operation in
+> keeping with the 'free and open source philosophy' model.
+> 
+> Over the past forty years or so I have accumulated an awful lot of 
+> electronics (now surplus!), approximately five large plastic
+> containers full of stuff. It runs from cables (RCA, phono, USB,
+> HDMI, SATA) (dozens), wall power supplies (110 volt USB and
+> proprietory) (dozens), computer speakers, headphones, ear buds, USB
+> hubs (powered and not) and even a seventies SCSI cable. I have also
+> three LED monitors (working).
+> 
+> In its new days there were many thousands of dollars worth of wire
+> and plastic.  It would be a shame for it to go to the local
+> electronics recycling centre on the 19th of September where it may
+> end up.
+> 
+> Any offers?
+> 
+> I am located about an hour away from Toronto. Would request you
+> come to me. I suggest an SUV or pickup truck.
+> 
+> For free, for any audiophiles in the audience, I have two custom
+> built (by me) 5/4 inch solid teak speaker enclosures with three
+> English KEF speakers, a tuned port, and 150 watt three way
+> crossovers minus the front grills. Better get them quickly my cat
+> has found the baffle material and is slowly removing it through the
+> tuned port! They weigh about 20 / 25 kilograms apiece.
+> 
+> Any offers? I would like to see them go to a good home and not a 
+> transit point to another owner, i.e. re-gifting or selling. These
+> are not for a hand held unit but a powerful audio amplifier or
+> receiver. I probably could throw in a Sony 300 watt receiver. I
+> will not need it after the speakers go.
+> 
+> Let me know.
+> 
+> Thanks.
+> 
+> Paul --- Talk Mailing List talk at gtalug.org 
+> http://gtalug.org/mailman/listinfo/talk
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlXjq6UACgkQuRKJsNLM5epE8ACg601+tL9wrm9RlknrLmbsPNFY
+J4sAoND78bNoG5YMMduOynFoRBi8Xylg
+=25gA
+-----END PGP SIGNATURE-----
+
+From lsorense at csclub.uwaterloo.ca  Mon Aug 31 01:23:45 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sun, 30 Aug 2015 21:23:45 -0400
+Subject: [GTALUG] Computer wierdness
+In-Reply-To: <CAPpdf58Bcuh_G0KHcK8FbOK6aoRAA+X3SzVcdPdP+j4mun06Hg@mail.gmail.com>
+References: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+ <20150829214044.GA30001@node1.localdomain>
+ <CAPpdf58G6o5ob94oK=7WEyaF3FC0aQ7qU2XgZSnku1tAfcoX3A@mail.gmail.com>
+ <20150830023050.GD15617@csclub.uwaterloo.ca>
+ <CAPpdf59R2_4xiErGsZWYZEJTEdaNMqGTe-nyb5qQbZaH1PCizQ@mail.gmail.com>
+ <20150830055252.GA3501@node1.localdomain>
+ <CAPpdf58Bcuh_G0KHcK8FbOK6aoRAA+X3SzVcdPdP+j4mun06Hg@mail.gmail.com>
+Message-ID: <20150831012345.GE15617@csclub.uwaterloo.ca>
+
+On Sun, Aug 30, 2015 at 06:38:15AM -0500, o1bigtenor wrote:
+> # gdisk -l /dev/md0
+> GPT fdisk (gdisk) version 1.0.0
+> 
+> Partition table scan:
+>   MBR: protective
+>   BSD: not present
+>   APM: not present
+>   GPT: present
+> 
+> Found valid GPT with protective MBR; using GPT.
+> Disk /dev/md0: 3907037184 sectors, 1.8 TiB
+> Logical sector size: 512 bytes
+> Disk identifier (GUID): 1EB47793-0CDF-4E16-AE84-33EC825AC448
+> Partition table holds up to 128 entries
+> First usable sector is 34, last usable sector is 3907037150
+> Partitions will be aligned on 2048-sector boundaries
+> Total free space is 3907037117 sectors (1.8 TiB)
+> 
+> Number  Start (sector)    End (sector)  Size       Code  Name
+> 
+> What is very interesting is that
+
+Well what is REALLY weird is that it seems your raid has a GPT partition
+table on it, but no partitions.  Makes it almost seem like someone started
+to partition the raid and then didn't and did something else instead.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Mon Aug 31 01:29:24 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Sun, 30 Aug 2015 21:29:24 -0400
+Subject: [GTALUG] How to install Intel HD Graphics driver?
+In-Reply-To: <20150830061942.GA3703@node1.localdomain>
+References: <20150830061942.GA3703@node1.localdomain>
+Message-ID: <20150831012924.GF15617@csclub.uwaterloo.ca>
+
+On Sun, Aug 30, 2015 at 02:19:42AM -0400, William Park wrote:
+> For NVidia cards, I just download/install
+>     NVIDIA-Linux-x86_64-aaa.bb-no-compat32.run
+> It's one file, and it's easy.  To run mplayer with VDPAU, I just set
+>     vo=vdpau
+> in the configuration file.
+> 
+> I assume it's the same for AMD cards.  I don't have AMD cards, so don't
+> know.
+> 
+> For those with Intel HD Graphics, how do you download/install driver?
+> I went to Intel site, and it's utterly confusing.  I just want Intel's
+> driver, so I can try out VAAPI.
+
+I thought the intel chips (except the few older atoms with powervr
+graphics) had open source drivers.
+
+On debian this package appears relevant:
+
+https://packages.debian.org/jessie/i965-va-driver
+
+Some info on using such a driver in case it doesn't automatically work:
+
+http://ubuntuhandbook.org/index.php/2013/10/enable-hardware-acceleration-on-intel-graphics-cards-in-ubuntu/
+
+-- 
+Len Sorensen
+
+From o1bigtenor at gmail.com  Mon Aug 31 03:02:36 2015
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Sun, 30 Aug 2015 22:02:36 -0500
+Subject: [GTALUG] Computer wierdness
+In-Reply-To: <20150831012345.GE15617@csclub.uwaterloo.ca>
+References: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+ <20150829214044.GA30001@node1.localdomain>
+ <CAPpdf58G6o5ob94oK=7WEyaF3FC0aQ7qU2XgZSnku1tAfcoX3A@mail.gmail.com>
+ <20150830023050.GD15617@csclub.uwaterloo.ca>
+ <CAPpdf59R2_4xiErGsZWYZEJTEdaNMqGTe-nyb5qQbZaH1PCizQ@mail.gmail.com>
+ <20150830055252.GA3501@node1.localdomain>
+ <CAPpdf58Bcuh_G0KHcK8FbOK6aoRAA+X3SzVcdPdP+j4mun06Hg@mail.gmail.com>
+ <20150831012345.GE15617@csclub.uwaterloo.ca>
+Message-ID: <CAPpdf59X+T5+dPQ3rK99AX54sYSkyM2GPxUTN60G5tu9vrG_CQ@mail.gmail.com>
+
+On Sun, Aug 30, 2015 at 8:23 PM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Sun, Aug 30, 2015 at 06:38:15AM -0500, o1bigtenor wrote:
+> > # gdisk -l /dev/md0
+> > GPT fdisk (gdisk) version 1.0.0
+> >
+> > Partition table scan:
+> >   MBR: protective
+> >   BSD: not present
+> >   APM: not present
+> >   GPT: present
+> >
+> > Found valid GPT with protective MBR; using GPT.
+> > Disk /dev/md0: 3907037184 sectors, 1.8 TiB
+> > Logical sector size: 512 bytes
+> > Disk identifier (GUID): 1EB47793-0CDF-4E16-AE84-33EC825AC448
+> > Partition table holds up to 128 entries
+> > First usable sector is 34, last usable sector is 3907037150
+> > Partitions will be aligned on 2048-sector boundaries
+> > Total free space is 3907037117 sectors (1.8 TiB)
+> >
+> > Number  Start (sector)    End (sector)  Size       Code  Name
+> >
+> > What is very interesting is that
+>
+> Well what is REALLY weird is that it seems your raid has a GPT partition
+> table on it, but no partitions.  Makes it almost seem like someone started
+> to partition the raid and then didn't and did something else instead.
+>
+
+What makes it even wierder is that I have been using this array for about 3
+1/2 years
+now. Not sure what caused things to go bump in the night!
+
+Dee
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150830/5dcb0fa9/attachment.html>
+
+From opengeometry at yahoo.ca  Mon Aug 31 03:53:36 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Sun, 30 Aug 2015 23:53:36 -0400
+Subject: [GTALUG] Computer wierdness
+In-Reply-To: <CAPpdf59X+T5+dPQ3rK99AX54sYSkyM2GPxUTN60G5tu9vrG_CQ@mail.gmail.com>
+References: <CAPpdf58mDJjRiiUROYXARE_PZoTRdFD4Az52Y0b2OBhEk_4dAQ@mail.gmail.com>
+ <20150829214044.GA30001@node1.localdomain>
+ <CAPpdf58G6o5ob94oK=7WEyaF3FC0aQ7qU2XgZSnku1tAfcoX3A@mail.gmail.com>
+ <20150830023050.GD15617@csclub.uwaterloo.ca>
+ <CAPpdf59R2_4xiErGsZWYZEJTEdaNMqGTe-nyb5qQbZaH1PCizQ@mail.gmail.com>
+ <20150830055252.GA3501@node1.localdomain>
+ <CAPpdf58Bcuh_G0KHcK8FbOK6aoRAA+X3SzVcdPdP+j4mun06Hg@mail.gmail.com>
+ <20150831012345.GE15617@csclub.uwaterloo.ca>
+ <CAPpdf59X+T5+dPQ3rK99AX54sYSkyM2GPxUTN60G5tu9vrG_CQ@mail.gmail.com>
+Message-ID: <20150831035336.GA7226@node1.localdomain>
+
+On Sun, Aug 30, 2015 at 10:02:36PM -0500, o1bigtenor wrote:
+> On Sun, Aug 30, 2015 at 8:23 PM, Lennart Sorensen <
+> lsorense at csclub.uwaterloo.ca> wrote:
+> > Well what is REALLY weird is that it seems your raid has a GPT partition
+> > table on it, but no partitions.  Makes it almost seem like someone started
+> > to partition the raid and then didn't and did something else instead.
+> >
+> 
+> What makes it even wierder is that I have been using this array for
+> about 3 1/2 years now. Not sure what caused things to go bump in the
+> night!
+
+Did you use BIOS's raid feature, by any chance?
+-- 
+William
+
