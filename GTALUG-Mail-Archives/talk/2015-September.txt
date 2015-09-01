@@ -1,0 +1,64 @@
+From psema4 at gmail.com  Tue Sep  1 03:55:31 2015
+From: psema4 at gmail.com (Scott Elcomb)
+Date: Mon, 31 Aug 2015 23:55:31 -0400
+Subject: [GTALUG] T-shirt Ideas
+In-Reply-To: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org>
+References: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org>
+Message-ID: <CAEx-jsM_4Ms9ThY5+hotWUbpQYfLUmy1-QT-OyB-Di9VVYPk6g@mail.gmail.com>
+
+On Mon, Aug 31, 2015 at 2:41 PM, Scott Sullivan <scott at ss.org> wrote:
+<snip>
+> Anyone else got some good hardcore comp-sci hummor?
+
+NACK, NACK.
+
+Who's there?
+
+ATM.
+
+ATM who?
+
+NACK, NACK.
+
+
+"NACK" is a "negative acknowledgement", a very old communications
+protocol for "I don't understand". NACK usually forces a
+resynchronization or renegotiation between end points. ATM is
+"Asynchronous Transfer Mode"; a couple of decades ago it was a
+relatively high-speed packet technology that lost out to other
+technologies. - via <http://stackoverflow.com/a/1590009/773209>
+
+...
+
+The TCP joke is a personal favourite:
+
+
+"Hi, I'd like to hear a TCP joke."
+
+"Hello, would you like to hear a TCP joke?"
+
+"Yes, I'd like to hear a TCP joke."
+
+"OK, I'll tell you a TCP joke."
+
+"Ok, I will hear a TCP joke."
+
+"Are you ready to hear a TCP joke?"
+
+"Yes, I am ready to hear a TCP joke."
+
+"Ok, I am about to send the TCP joke. It will last 10 seconds, it has
+two characters, it does not have a setting, it ends with a punchline."
+
+"Ok, I am ready to get your TCP joke that will last 10 seconds, has
+two characters, does not have an explicit setting, and ends with a
+punchline."
+
+"I'm sorry, your connection has timed out. Hello, would you like to
+hear a TCP joke?"
+
+...
+
+There's a few good one-liners over at
+<http://attrition.org/misc/ee/protolol.txt>
+
