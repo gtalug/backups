@@ -62,3 +62,168 @@ hear a TCP joke?"
 There's a few good one-liners over at
 <http://attrition.org/misc/ee/protolol.txt>
 
+From gilesorr at gmail.com  Tue Sep  1 14:04:23 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Tue, 1 Sep 2015 10:04:23 -0400
+Subject: [GTALUG] T-shirt Ideas
+In-Reply-To: <CAEx-jsM_4Ms9ThY5+hotWUbpQYfLUmy1-QT-OyB-Di9VVYPk6g@mail.gmail.com>
+References: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org>
+ <CAEx-jsM_4Ms9ThY5+hotWUbpQYfLUmy1-QT-OyB-Di9VVYPk6g@mail.gmail.com>
+Message-ID: <CAEnxSC4ctwU0dE7QqZ_iAdsa8KtfyxWTj7nK5=vi4+yWuWRwaQ@mail.gmail.com>
+
+On 31 August 2015 at 23:55, Scott Elcomb <psema4 at gmail.com> wrote:
+> On Mon, Aug 31, 2015 at 2:41 PM, Scott Sullivan <scott at ss.org> wrote:
+> <snip>
+>> Anyone else got some good hardcore comp-sci hummor?
+>
+> NACK, NACK.
+>
+> Who's there?
+>
+> ATM.
+>
+> ATM who?
+>
+> NACK, NACK.
+>
+>
+> "NACK" is a "negative acknowledgement", a very old communications
+> protocol for "I don't understand". NACK usually forces a
+> resynchronization or renegotiation between end points. ATM is
+> "Asynchronous Transfer Mode"; a couple of decades ago it was a
+> relatively high-speed packet technology that lost out to other
+> technologies. - via <http://stackoverflow.com/a/1590009/773209>
+>
+> ...
+>
+> The TCP joke is a personal favourite:
+>
+>
+> "Hi, I'd like to hear a TCP joke."
+>
+> "Hello, would you like to hear a TCP joke?"
+>
+> "Yes, I'd like to hear a TCP joke."
+>
+> "OK, I'll tell you a TCP joke."
+>
+> "Ok, I will hear a TCP joke."
+>
+> "Are you ready to hear a TCP joke?"
+>
+> "Yes, I am ready to hear a TCP joke."
+>
+> "Ok, I am about to send the TCP joke. It will last 10 seconds, it has
+> two characters, it does not have a setting, it ends with a punchline."
+>
+> "Ok, I am ready to get your TCP joke that will last 10 seconds, has
+> two characters, does not have an explicit setting, and ends with a
+> punchline."
+>
+> "I'm sorry, your connection has timed out. Hello, would you like to
+> hear a TCP joke?"
+
+With thanks to Scott Sullivan who told me this one, I think it's a
+great follow-up to the TCP joke:
+
+"I'd tell you a UDP joke but you might not get it."
+
+Which also says a lot about the difference between the two protocols ...
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From hugh at mimosa.com  Tue Sep  1 19:55:52 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 1 Sep 2015 15:55:52 -0400 (EDT)
+Subject: [GTALUG] T-shirt Ideas
+In-Reply-To: <alpine.LRH.2.02.1508311725590.782@redclaw.mimosa.com>
+References: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org>
+ <alpine.LRH.2.02.1508311725590.782@redclaw.mimosa.com>
+Message-ID: <alpine.LRH.2.02.1509011550280.14630@redclaw.mimosa.com>
+
+| From: D. Hugh Redelmeier <hugh at mimosa.com>
+
+| Funny point: the abstract calls Cray "the ultimate "tall, thin
+| man"*." but the notes on slide three call him the penultimate one.  I
+| wonder who the ultimate one is if the notes are correct.
+
+I emailed Gordon Bell about this and he says that he was mistaken about
+the meaning of "penultimate" when he wrote that.
+
+I used "penultimate" in a draft of my masters thesis but my supervisor
+suggested replacing it with "second last" because it was more likely
+to be understood and in no way inferior.  He was right.
+
+From me at bobcopeland.com  Tue Sep  1 23:49:34 2015
+From: me at bobcopeland.com (Bob Copeland)
+Date: Tue, 1 Sep 2015 19:49:34 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+Message-ID: <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+
+On Fri, Aug 21, 2015 at 12:39 AM, Aruna Hewapathirane
+<aruna.hewapathirane at gmail.com> wrote:
+> Has anyone ever used qemu and gdb ? If so has anyone successfully
+> debugged a module ? I would be very thankful if someone can show me
+> the 'specific' steps to follow to get this going.
+
+I have done this once upon a time...  checking the scripts I used:
+
+Step 1: launch qemu with -gdb like so:
+
+qemu-system-x86_64 -nographic -kernel /path/to/kernel -gdb
+tcp:10.0.0.1:1234 [all the other options]
+
+(In my case 10.0.0.1 is bridged with the host.)
+
+Step 2: Make a gdbinit file that looks like:
+
+set architecture i386:x86-64:intel
+target remote localhost:1234
+file vmlinux
+# this part is deep magic - check /proc/modules for correct offsets
+add-symbol-file net/wireless/cfg80211.o 0xffffffffa00000000
+# and so-on for whatever modules you care about
+continue
+
+Step 3: Launch gdb on the host
+
+YMMV -- I rarely have used an actual debugger for my own kernel work.
+I do frequently use gdb to do the same thing as addr2line by running
+gdb on the .ko and then "l *addr+0x123" -- to resolve symbols from
+oops messages, but you don't need qemu or remote gdb for that.
+
+-- 
+Bob Copeland %% www.bobcopeland.com
+
+From kevin at ve3syb.ca  Wed Sep  2 01:43:06 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Tue, 1 Sep 2015 21:43:06 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+Message-ID: <55E6542A.2090707@ve3syb.ca>
+
+On Fri, Aug 21, 2015 at 12:39 AM, Aruna Hewapathirane wrote:
+> Has anyone ever used qemu and gdb ? If so has anyone successfully
+> debugged a module ?
+
+I haven't done that. I have seldom used gdb directly. If I'm doing debugging 
+I use gdb via ddd. The ddd program makes debugging a lot easier (for me) 
+than the command line based gdb.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
