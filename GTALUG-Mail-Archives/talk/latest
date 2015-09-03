@@ -227,3 +227,67 @@ Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
                                  | powerful!"
 #include <disclaimer/favourite> |             --Chris Hardwick
 
+From bob at akn.ca  Tue Sep  1 17:42:10 2015
+From: bob at akn.ca (Bob Bosiljevac)
+Date: Tue, 1 Sep 2015 13:42:10 -0400
+Subject: [GTALUG] T-shirt Ideas
+In-Reply-To: <CAEnxSC4ctwU0dE7QqZ_iAdsa8KtfyxWTj7nK5=vi4+yWuWRwaQ@mail.gmail.com>
+References: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org><CAEx-jsM_4Ms9ThY5+hotWUbpQYfLUmy1-QT-OyB-Di9VVYPk6g@mail.gmail.com>
+ <CAEnxSC4ctwU0dE7QqZ_iAdsa8KtfyxWTj7nK5=vi4+yWuWRwaQ@mail.gmail.com>
+Message-ID: <4AE19DFDECCEDE49B75B68583D9FCF2D320958875A@EX41.exchserver.com>
+
+> 
+> "I'd tell you a UDP joke but you might not get it."
+> 
+> Which also says a lot about the difference between the two protocols ...
+> 
+
+Wouldn't that be more like:
+
+"I'm telling you a UDP joke but you might not get it".
+
+BB
+
+
+From opengeometry at yahoo.ca  Wed Sep  2 16:37:16 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Wed, 2 Sep 2015 12:37:16 -0400
+Subject: [GTALUG] No sound from Intel HD Audio -- solved!
+Message-ID: <20150902163716.GA3920@node1.localdomain>
+
+Hi,
+
+Finally, I've got sound from Intel HD Audio, through default card=0 !
+
+I recently bought H97 motherboard and i3-4170, because I couldn't afford
+electricity for my 125W AMD 8-core and overheating motherboard.
+According to my calculation, i3 will pay for itself in a year.
+
+Everything was ok, except sound.  On this H97 board, the default card=0
+is HDMI, and audio ports are card=1.  
+    - I got KDE making notification sound by changing precedence order
+      in "phonon" setting.
+    - I managed to get 'mplayer' playing on card=1 by
+	    ao=alsa:device=hw=1.0
+      and 'aplay' playing on card=1 by
+	    -D default:PCH
+
+Still, YouTube or Flash played video, but no sound.  Installing discrete
+sound card would not help, because that would only become card=2.
+
+I was about to go back to the AMD block heater, when accidental click
+lead me to a solution.  Solution was ~/.asoundrc
+    pcm.!default {
+	type hw
+	card 1
+    }
+    ctl.!default {
+	type hw
+	card 1
+    } 
+
+Now, I've got sound from default card=1, without those funky
+configuration settings.
+-- 
+William
+
