@@ -291,3 +291,230 @@ configuration settings.
 -- 
 William
 
+From lsorense at csclub.uwaterloo.ca  Thu Sep  3 15:41:07 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 3 Sep 2015 11:41:07 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <55E6542A.2090707@ve3syb.ca>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+Message-ID: <20150903154107.GH15617@csclub.uwaterloo.ca>
+
+On Tue, Sep 01, 2015 at 09:43:06PM -0400, Kevin Cozens wrote:
+> I haven't done that. I have seldom used gdb directly. If I'm doing debugging
+> I use gdb via ddd. The ddd program makes debugging a lot easier (for me)
+> than the command line based gdb.
+
+Last I looked at it (a long time ago), ddd had to be one of the worst,
+most buggy, awful ui, pieces of crap I ever encountered.  Even makes
+eclipse seem like a good idea in comparison.  So bad I have never ever
+considered looking at it again.  I assumed it had to have died out from
+being so bad.
+
+-- 
+Len Sorensen
+
+From technologynut at rogers.com  Thu Sep  3 16:03:53 2015
+From: technologynut at rogers.com (Gary)
+Date: Thu, 03 Sep 2015 12:03:53 -0400
+Subject: [GTALUG] T-shirt Ideas
+In-Reply-To: <4AE19DFDECCEDE49B75B68583D9FCF2D320958875A@EX41.exchserver.com>
+References: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org><CAEx-jsM_4Ms9ThY5+hotWUbpQYfLUmy1-QT-OyB-Di9VVYPk6g@mail.gmail.com>
+ <CAEnxSC4ctwU0dE7QqZ_iAdsa8KtfyxWTj7nK5=vi4+yWuWRwaQ@mail.gmail.com>
+ <4AE19DFDECCEDE49B75B68583D9FCF2D320958875A@EX41.exchserver.com>
+Message-ID: <55E86F69.8020509@rogers.com>
+
+That's cute.
+
+/gary
+
+On 15-09-01 01:42 PM, Bob Bosiljevac wrote:
+>> "I'd tell you a UDP joke but you might not get it."
+>>
+>> Which also says a lot about the difference between the two protocols ...
+>>
+> Wouldn't that be more like:
+>
+> "I'm telling you a UDP joke but you might not get it".
+>
+> BB
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+From el.fontanero at gmail.com  Thu Sep  3 16:21:50 2015
+From: el.fontanero at gmail.com (Mike)
+Date: Thu, 3 Sep 2015 12:21:50 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <20150903154107.GH15617@csclub.uwaterloo.ca>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+ <20150903154107.GH15617@csclub.uwaterloo.ca>
+Message-ID: <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+
+On Thu, Sep 3, 2015 at 11:41 AM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Tue, Sep 01, 2015 at 09:43:06PM -0400, Kevin Cozens wrote:
+> > I haven't done that. I have seldom used gdb directly. If I'm doing
+> debugging
+> > I use gdb via ddd. The ddd program makes debugging a lot easier (for me)
+> > than the command line based gdb.
+>
+> Last I looked at it (a long time ago), ddd had to be one of the worst,
+> most buggy, awful ui, pieces of crap I ever encountered.  Even makes
+> eclipse seem like a good idea in comparison.  So bad I have never ever
+> considered looking at it again.  I assumed it had to have died out from
+> being so bad.
+>
+>
+Never had the pleasure.  But Kevin, don't fear the command line.  A
+well-designed graphical debugger is a good and useful tool, but when you
+absolutely need to get into the plumbing; memory setup, ICE hardware
+protocols, etc. (ad nauseam) you almost inevitably go sideways from where
+the GUI designers intended.  Kvm-qemu kernel debugging probably falls
+squarely in this category.  All roads lead to gdb, it sometimes seems...
+
+Mike
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150903/fdf5061d/attachment.html>
+
+From scott at ss.org  Thu Sep  3 18:08:26 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Thu, 03 Sep 2015 14:08:26 -0400
+Subject: [GTALUG] Active Surplus is Closing it's Queen Location
+Message-ID: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
+
+Details on their site. Steels location to stay open. Everything 50% off.
+
+http://www.activesurplus.com
+-- 
+Scott Sullivan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150903/0eaa3004/attachment.html>
+
+From phiscock at ee.ryerson.ca  Thu Sep  3 18:20:33 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Thu, 3 Sep 2015 14:20:33 -0400
+Subject: [GTALUG] Active Surplus is Closing it's Queen Location
+In-Reply-To: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
+References: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
+Message-ID: <84b58ce46349503f817e120156e25f74.squirrel@webmail.ee.ryerson.ca>
+
+Good to know, thanks.
+
+The Steeles location was pretty terrible when I visited it about a year
+ago: nothing much of interest and everything overpriced.
+
+P.
+
+> Details on their site. Steels location to stay open. Everything 50% off.
+>
+> http://www.activesurplus.com
+> --
+> Scott Sullivan---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From kevin at ve3syb.ca  Thu Sep  3 20:52:19 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Thu, 3 Sep 2015 16:52:19 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <20150903154107.GH15617@csclub.uwaterloo.ca>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca> <20150903154107.GH15617@csclub.uwaterloo.ca>
+Message-ID: <55E8B303.4080103@ve3syb.ca>
+
+On 15-09-03 11:41 AM, Lennart Sorensen wrote:
+> Last I looked at it (a long time ago), ddd had to be one of the worst,
+> most buggy, awful ui, pieces of crap I ever encountered.
+
+I know what you mean. When I first tried ddd it would often crash in the 
+middle of your debug session if you looked at it wrong, but it did recover.
+
+The UI hasn't changed a whole lot from the early days but it has gotten a 
+bit less prone to crash. It usually works for me so I haven't bothered to 
+look around and see if there is something better that can be used in place 
+of ddd.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From james.knott at rogers.com  Thu Sep  3 22:57:00 2015
+From: james.knott at rogers.com (James Knott)
+Date: Thu, 03 Sep 2015 18:57:00 -0400
+Subject: [GTALUG] Active Surplus is Closing it's Queen Location
+In-Reply-To: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
+References: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
+Message-ID: <55E8D03C.1040003@rogers.com>
+
+On 09/03/2015 02:08 PM, Scott Sullivan wrote:
+> Details on their site. Steels location to stay open. Everything 50% off.
+
+I didn't even know they had a Steeles location.  I used to frequent the
+Queen store years ago, when I worked downtown.  They had lots of stuff
+there, some of it even useful.  ;-)
+
+One item I bought there was an S-100 bus prototyping board, which I used
+to build an 8 port serial card for my IMSAI 8080.  I actually populated
+3 of the ports, but, with the 8250 UART, it was just as easy to design
+the board for 8 ports as 4.  In designing and building that board, I
+found a bug in the 8250 that Western Digital was unaware of.
+
+I was in the vicinity of the Queen store recently and saw it was now
+upstairs.  The last time I was in there, it was on the main floor and
+basement.
+
+
+From lsorense at csclub.uwaterloo.ca  Fri Sep  4 01:17:42 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 3 Sep 2015 21:17:42 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+ <20150903154107.GH15617@csclub.uwaterloo.ca>
+ <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+Message-ID: <20150904011742.GI15617@csclub.uwaterloo.ca>
+
+On Thu, Sep 03, 2015 at 12:21:50PM -0400, Mike wrote:
+> Never had the pleasure.  But Kevin, don't fear the command line.  A
+> well-designed graphical debugger is a good and useful tool, but when you
+> absolutely need to get into the plumbing; memory setup, ICE hardware
+> protocols, etc. (ad nauseam) you almost inevitably go sideways from where
+> the GUI designers intended.  Kvm-qemu kernel debugging probably falls
+> squarely in this category.  All roads lead to gdb, it sometimes seems...
+
+gdb's command line is certainly overwhelming to many, but if I was really
+desparate for an interface to gdb, I would use emacs, and I am a vim user.
+
+-- 
+Len Sorensen
+
