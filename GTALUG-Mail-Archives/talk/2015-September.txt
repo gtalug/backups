@@ -518,3 +518,348 @@ desparate for an interface to gdb, I would use emacs, and I am a vim user.
 -- 
 Len Sorensen
 
+From aruna.hewapathirane at gmail.com  Fri Sep  4 10:46:27 2015
+From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
+Date: Fri, 4 Sep 2015 06:46:27 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+Message-ID: <CAFSeFg-eggsREBuYdwF_uX3WUs8srBDt9_s7y4ogi43Q21s0Ug@mail.gmail.com>
+
+Hi Bob,
+
+Thank you for all the pointers. I may keep bothering you if I still have
+issues eh ?
+
+Something you said  " I have done this once upon a time..." made me type
+this:
+
+aruna at debian:~/linux-4.1.2$ find . -name "*.c" | xargs grep -i " bob
+copeland "
+
+and guess what find says:
+
+./block/partitions/karma.c: *  Copyright (C) 2006 Bob Copeland (
+me at bobcopeland.com)
+
+./fs/omfs/file.c: *                  Copyright (C) 2005 Bob Copeland <
+me at bobcopeland.com>
+./fs/omfs/dir.c: *                   Copyright (C) 2005 Bob Copeland <
+me at bobcopeland.com>
+./fs/omfs/inode.c: *              Copyright (C) 2006 Bob Copeland <
+me at bobcopeland.com>
+
+./drivers/net/wireless/ath/ath5k/led.c: * Copyright (c) 2009 Bob Copeland <
+me at bobcopeland.com>
+./drivers/net/wireless/ti/wl1251/sdio.c: * Copyright (C) 2009 Bob Copeland (
+me at bobcopeland.com)
+./drivers/usb/storage/karma.c: *            (c) 2006 Bob Copeland <
+me at bobcopeland.com>
+
+Holy Wow ! file system, wireless, usb ? holy wow again.. ( proceeds to fall
+off my chair ..)
+
+Yeah 2005 was a long time ago I was still using Windows 3.1 and had no idea
+what Linux was :)
+
+Privileged to meet you Mr.Copeland ( So what is it with folks who's names
+begin with Bob ? All the Bob's I know are possibly related to Einstein ?
+Including our own Mr.Jonkman )
+
+Seriously many thanks for taking the time to reply it IS much appreciated !
+
+Aruna
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150904/496b4a34/attachment.html>
+
+From aruna.hewapathirane at gmail.com  Fri Sep  4 10:56:31 2015
+From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
+Date: Fri, 4 Sep 2015 06:56:31 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <55E6542A.2090707@ve3syb.ca>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+Message-ID: <CAFSeFg-rcQ5bBgHzEeydTebpp2SgNUahT=AgcEAwC+-RzNJ=fQ@mail.gmail.com>
+
+>> On Tue, Sep 1, 2015 at 9:43 PM, Kevin Cozens <kevin at ve3syb.ca> wrote:
+>> On Fri, Aug 21, 2015 at 12:39 AM, Aruna Hewapathirane wrote:
+>> Has anyone ever used qemu and gdb ? If so has anyone successfully
+>> debugged a module ?
+
+>> I haven't done that. I have seldom used gdb directly. If I'm doing
+debugging I use gdb via ddd. The ddd program makes
+>> debugging a lot easier (for me) than the command line based gdb.
+
+Thanks Kevin I will take a look at ddd.
+
+Aruna
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150904/88b15909/attachment.html>
+
+From aruna.hewapathirane at gmail.com  Fri Sep  4 10:58:25 2015
+From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
+Date: Fri, 4 Sep 2015 06:58:25 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <20150904011742.GI15617@csclub.uwaterloo.ca>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+ <20150903154107.GH15617@csclub.uwaterloo.ca>
+ <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+ <20150904011742.GI15617@csclub.uwaterloo.ca>
+Message-ID: <CAFSeFg8dBJckgoyTY2B2=iT0dYUnL8=M_y8Z=NwPsf3U=Hpf9g@mail.gmail.com>
+
+<snip>
+>> gdb's command line is certainly overwhelming to many, but if I was really
+>> desparate for an interface to gdb, I would use emacs, and I am a vim
+user.
+>> Len Sorensen
+<snip>
+
+Len, try qemu it is a zillion times more overwhelming than gdb :)
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150904/9d6f888b/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Fri Sep  4 13:33:36 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 4 Sep 2015 09:33:36 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <CAFSeFg8dBJckgoyTY2B2=iT0dYUnL8=M_y8Z=NwPsf3U=Hpf9g@mail.gmail.com>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+ <20150903154107.GH15617@csclub.uwaterloo.ca>
+ <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+ <20150904011742.GI15617@csclub.uwaterloo.ca>
+ <CAFSeFg8dBJckgoyTY2B2=iT0dYUnL8=M_y8Z=NwPsf3U=Hpf9g@mail.gmail.com>
+Message-ID: <20150904133336.GJ15617@csclub.uwaterloo.ca>
+
+On Fri, Sep 04, 2015 at 06:58:25AM -0400, Aruna Hewapathirane wrote:
+> <snip>
+> >> gdb's command line is certainly overwhelming to many, but if I was really
+> >> desparate for an interface to gdb, I would use emacs, and I am a vim
+> user.
+> >> Len Sorensen
+> <snip>
+> 
+> Len, try qemu it is a zillion times more overwhelming than gdb :)
+
+Oh yes, the qemu command line is quite something.  I do find the syntax
+more understandable than gdb though.
+
+-- 
+Len Sorensen
+
+From aruna.hewapathirane at gmail.com  Fri Sep  4 14:06:46 2015
+From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
+Date: Fri, 04 Sep 2015 10:06:46 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <20150904133336.GJ15617@csclub.uwaterloo.ca>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca> <20150903154107.GH15617@csclub.uwaterloo.ca>
+ <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+ <20150904011742.GI15617@csclub.uwaterloo.ca>
+ <CAFSeFg8dBJckgoyTY2B2=iT0dYUnL8=M_y8Z=NwPsf3U=Hpf9g@mail.gmail.com>
+ <20150904133336.GJ15617@csclub.uwaterloo.ca>
+Message-ID: <55E9A576.2060501@gmail.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+
+On 04/09/15 09:33 AM, Lennart Sorensen wrote:
+> On Fri, Sep 04, 2015 at 06:58:25AM -0400, Aruna Hewapathirane
+> wrote:
+>> <snip>
+>>>> gdb's command line is certainly overwhelming to many, but if
+>>>> I was really desparate for an interface to gdb, I would use
+>>>> emacs, and I am a vim
+>> user.
+>>>> Len Sorensen
+>> <snip>
+>> 
+>> Len, try qemu it is a zillion times more overwhelming than gdb
+>> :)
+> 
+> Oh yes, the qemu command line is quite something.  I do find the
+> syntax more understandable than gdb though.
+> 
+
+That is probably because you have more gray matter ( gray matter in
+this case equates to long years of lived experience + testing +
+breaking things then wash+rinse+repeat till you finally fix things.. )
+
+I still *cringe* when I have to fire up qemu.. hopefully someday I
+will feel comfortable but right now every single time I do this I
+actually do PRAY ! ( Seriously I kneel then PRAY ! yes dat bad.. )
+
+Len, if I may please I am setting up a few servers for a good friend
+and they are running Zimbra Servers and Zimbra has it's own bundled
+Apache so I do not see the usual /var/www root and the log files are
+huge. Seriously huge. Any suggestions on how best to tweak for
+performance ?
+
+I also see free -m -l -t telling me it is hogging memory like
+anything. Is this a Zimbra issue or ? Once again how best to resolve ?
+
+The logs are purged daily so am guesing teh amount of transactions
+through Zimbra is causing the weight ?
+
+This is my first exposure to Zimbra and Servers actually so please
+have mercy and be gentle.
+
+Thanks - Aruna
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQIcBAEBAgAGBQJV6aV2AAoJEHIEJxfB21ta5f0P/0zc2Yu1qQXdgcxGaUWIGhi7
+rCBiWkwrhZU3W8TTD6HBzGL471eU90vqkkJSpwSy+Fb9KAs7wIZz8jaVURrL6rkP
+5X2lAIShk6kz58Xc1lmoI7cUN9urbqmV6TPdBxAhx/b/E9vzorzsIgVGMttuzvZz
+fuER+3Fm/Pmt3Kpeyx9JRpS6q8Dq6kQt5BJpY3bJTF05i5VERdH9CUFZS3PaTYv6
+9V4gXLiAafj8d2kQtEcPkLJVbN2/UN2s1tMku3fW/MyLQtCxH/evX5U5RRiex472
+xuNRzFvZ+yEfFwkSvV4gqxXjrt7AhBPaghKHiG0AIGVQDun5VJR9dd+DjB7MW9jJ
+yScU8N+m+0OEmlMhua8I9kRiW5GuapS8xTECp/bLeJw1//tGGsvPh4ZdwmKoq3HK
+0cg2uSfpYdjJy2oa+aDhbCBLmIkOPatInwVVf50yuu4dL1DK6p6nBn38+EuwbfBk
+JoPSGTihENSRZlZvGrVz1lzXikdUpIn1tn3J0srW9UYrKoruWFmGAzK6ZH6HvSVL
+Wm+Jl+bF570a3RBYVDtCRPMpXKUGd0blWxi9AXPVhqvpVVkzdT/1qMzvEJawX608
+Jo+Gg8igfThLaSz5TtBkiLwbyEI9aqGWXxe2lsdW5UM9HHvdBfOcRPPuuecdO1dc
+cbrc5Zj6tbmQSKK47BB6
+=0WjX
+-----END PGP SIGNATURE-----
+
+From me at bobcopeland.com  Fri Sep  4 14:19:01 2015
+From: me at bobcopeland.com (Bob Copeland)
+Date: Fri, 4 Sep 2015 10:19:01 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <CAFSeFg-eggsREBuYdwF_uX3WUs8srBDt9_s7y4ogi43Q21s0Ug@mail.gmail.com>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <CAFSeFg-eggsREBuYdwF_uX3WUs8srBDt9_s7y4ogi43Q21s0Ug@mail.gmail.com>
+Message-ID: <CAEKwDSAQxupd99pp1qBFefBUdXs3AD6EqXA5pOt3o4wn36CjdA@mail.gmail.com>
+
+On Fri, Sep 4, 2015 at 6:46 AM, Aruna Hewapathirane
+<aruna.hewapathirane at gmail.com> wrote:
+> Hi Bob,
+>
+> Thank you for all the pointers. I may keep bothering you if I still have
+> issues eh ?
+
+Sure, feel free to CC me as well in case I seem unresponsive,
+sometimes I don't read the TLUG list so closely.
+
+> Holy Wow ! file system, wireless, usb ? holy wow again.. ( proceeds to fall
+> off my chair ..)
+
+As I found then, a great way to learn about the kernel is to write a
+file system :)
+
+I now do a small amount of ongoing development in linux wireless for
+work, particularly in mesh.  It's good fun.
+
+-- 
+Bob Copeland %% www.bobcopeland.com
+
+From kevin at ve3syb.ca  Fri Sep  4 17:37:41 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Fri, 4 Sep 2015 13:37:41 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <CAFSeFg-rcQ5bBgHzEeydTebpp2SgNUahT=AgcEAwC+-RzNJ=fQ@mail.gmail.com>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+ <CAFSeFg-rcQ5bBgHzEeydTebpp2SgNUahT=AgcEAwC+-RzNJ=fQ@mail.gmail.com>
+Message-ID: <55E9D6E5.7050300@ve3syb.ca>
+
+On 15-09-04 06:56 AM, Aruna Hewapathirane wrote:
+> Thanks Kevin I will take a look at ddd.
+
+I did an internet search a day or two back. There are other alternatives to 
+ddd for gdb front-ends and found a list of them at
+     https://sourceware.org/gdb/wiki/GDB%20Front%20Ends
+
+One of them that looks interesting is Gede. It isn't available for the 
+distro I'm running (Linux Mint) so it would have to be built from the source 
+files.
+
+For now I'll stick with ddd. I'm used to it and I seldom need a source level 
+debugger so I'm not particularly motivated to search for something else to use.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From kevin at ve3syb.ca  Fri Sep  4 17:40:53 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Fri, 4 Sep 2015 13:40:53 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <20150904011742.GI15617@csclub.uwaterloo.ca>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca> <20150903154107.GH15617@csclub.uwaterloo.ca>
+ <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+ <20150904011742.GI15617@csclub.uwaterloo.ca>
+Message-ID: <55E9D7A5.2060705@ve3syb.ca>
+
+On 15-09-03 09:17 PM, Lennart Sorensen wrote:
+> gdb's command line is certainly overwhelming to many, but if I was really
+> desparate for an interface to gdb, I would use emacs, and I am a vim user.
+
+Another program that has an almost overwhelming command line is avrdude. 
+Fortunately I knew of avrdude-gui as a way to tame it. It was old but I 
+updated it for use with a current version of avrdude.
+
+One of these days I'll post the updated version of avrdude-gui to my website.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From moptop99 at gmail.com  Fri Sep  4 22:32:42 2015
+From: moptop99 at gmail.com (Matt Price)
+Date: Fri, 4 Sep 2015 18:32:42 -0400
+Subject: [GTALUG] OT: Inexpensive laptop for Minecraft?
+Message-ID: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
+
+Hello everyone! Thought I'd tap the collective brain. I'm looking for a
+relatively inexpensive laptop for my son, who mostly just plays minecraft
+(and occasionally needs the computer for school work, using google docs & a
+browser). Any suggestions of models, or places to buy? I'm looking for
+something pretty inexpensive, but with dedicated graphics that will allow
+him to play minecraft comfortably for the next year or  so at least.
+
+Thank you!
+
+m
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150904/d2292fb0/attachment.html>
+
+From opengeometry at yahoo.ca  Sat Sep  5 00:18:36 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Fri, 04 Sep 2015 20:18:36 -0400
+Subject: [GTALUG] OT: Inexpensive laptop for Minecraft?
+In-Reply-To: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
+References: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
+Message-ID: <20150905001836.5894230.90747.3460@yahoo.ca>
+
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150904/29e66e7e/attachment.html>
+
