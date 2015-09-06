@@ -863,3 +863,183 @@ Message-ID: <20150905001836.5894230.90747.3460@yahoo.ca>
 An HTML attachment was scrubbed...
 URL: <http://gtalug.org/pipermail/talk/attachments/20150904/29e66e7e/attachment.html>
 
+From hugh at mimosa.com  Sat Sep  5 15:13:58 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 5 Sep 2015 11:13:58 -0400 (EDT)
+Subject: [GTALUG] OT: Inexpensive laptop for Minecraft?
+In-Reply-To: <20150905001836.5894230.90747.3460@yahoo.ca>
+References: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
+ <20150905001836.5894230.90747.3460@yahoo.ca>
+Message-ID: <alpine.LRH.2.02.1509051008160.1292@redclaw.mimosa.com>
+
+| From: Matt Price
+
+| Hello everyone! Thought I'd tap the collective brain. I'm looking for a relatively inexpensive laptop for my son, who
+| mostly just plays minecraft (and occasionally needs the computer for school work, using google docs & a browser). Any
+| suggestions of models, or places to buy? I'm looking for something pretty inexpensive, but with dedicated graphics that
+| will allow him to play minecraft comfortably for the next year or  so at least. 
+
+
+| From: William Park <opengeometry at yahoo.ca>
+| 
+| ‎Not sure about dedicated graphics, but ThinkPad T420‎ (refurbished) is on sale at Canada Computers again. 
+| -- 
+
+Bestbuy has them too, with a dock.  Also refurb.io
+<http://forums.redflagdeals.com/refurb-io-labour-day-clearance-select-desktop-computers-laptops-1805521/>
+<http://forums.redflagdeals.com/ca-refurb-io-lenovo-thinkpad-t420-i5-2nd-gen-4gb-300gb-hd-win-7-pro-261-a-1805549/>
+Note: these different sources have units with different generations of
+Intel processors, and I seem to recollect that that matters for GPU
+power.
+
+But I don't really think that these are great for the price
+considering that they are used.  It depends on how much you value the
+ThinkPad attributes (good keyboard, repairable, very well-built,
+heavy).
+
+These use the CPU chip's built-in GPU.  Although Intel's GPU has been
+getting better, it was fairly poor for gaming in older generations.
+Someone who knows more about Minecraft performance would perhaps know
+if these GPUs are good enough.  Or use google
+<http://minecraft.gamepedia.com/Hardware_performance>
+
+I would *guess* that current Intel i-series processors would have a
+good enough GPU for Minecraft.  I would also guess that the GPU part
+of any recent AMD APU is good for Minecraft (APU is what AMD calls
+their CPU + GPU chips).  But beware: low-end AMD CPUs are very slow by
+today's standards (and they go by a lot of different names).  This is
+cheap but I think that it isn't quite good enough:
+<http://www.nmicrovip.ca/asus-amd-a4-5000-6gb-ram-750gb-hdd-15-6-1366x768-dvdrw-windows-8-bilingual-kb-x552ea-sh41-cb-refurbished/>
+A4 series are probably too weak.
+
+Shoppers Drug Mart has a bunch of cheap notebooks on sale this
+weekend.  I have no idea about their specs since SDM's ad doesn't give
+model numbers!  They have a points bonus today which actually
+makes a difference in the effective cost (if you are willing to bother
+with their points program).
+
+From hugh at mimosa.com  Sun Sep  6 01:29:50 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 5 Sep 2015 21:29:50 -0400 (EDT)
+Subject: [GTALUG] message from the past
+Message-ID: <alpine.LRH.2.02.1509052108210.9157@redclaw.mimosa.com>
+
+I'm typing this on my first notebook.  I bought it in 1999.  It is 
+woefully obsolete, but it really does work.
+
+- NEC Versa SX
+
+- Pentium II at 233MHz
+
+- 256M of RAM
+
+- 1024 x 768 screen (actually, I like the aspect ration)
+
+- 16 bits / pixel (oops) and a Trident video chip (support in X isn't 
+  100%)
+
+- Fedora Core 1
+
+- ethernet card plugs into a PCcard slot
+
+Via some simplified version of Moore's law, things ought to be better by 
+about a factor of 1000 (two to the power of (16 years / 18 months)).
+
+- Processor clock speed is faster by a little more than 10.  The work done 
+  per clock tick is perhaps 2 or 4 times greater.
+
+- The RAM is larger by a factor of 100 (the machine came with 64M).
+
+- disk space has gone up by perhaps 250.  It came with a 4GB drive and I 
+  upgraded it to 10GB
+
+- screen resolution has gone up perhaps a factor of 2 horizontally and 1.3 
+  vertically
+
+- keyboards don't seem better.  Trackpads do.
+
+- price has gone down a bit.
+
+
+From sergiodj at sergiodj.net  Sun Sep  6 03:04:11 2015
+From: sergiodj at sergiodj.net (Sergio Durigan Junior)
+Date: Sat, 05 Sep 2015 23:04:11 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <20150904011742.GI15617@csclub.uwaterloo.ca> (Lennart Sorensen's
+ message of "Thu, 3 Sep 2015 21:17:42 -0400")
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+ <20150903154107.GH15617@csclub.uwaterloo.ca>
+ <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+ <20150904011742.GI15617@csclub.uwaterloo.ca>
+Message-ID: <87d1xwjljo.fsf@sergiodj.net>
+
+On Thursday, September 03 2015, Lennart Sorensen wrote:
+
+> On Thu, Sep 03, 2015 at 12:21:50PM -0400, Mike wrote:
+>> Never had the pleasure.  But Kevin, don't fear the command line.  A
+>> well-designed graphical debugger is a good and useful tool, but when you
+>> absolutely need to get into the plumbing; memory setup, ICE hardware
+>> protocols, etc. (ad nauseam) you almost inevitably go sideways from where
+>> the GUI designers intended.  Kvm-qemu kernel debugging probably falls
+>> squarely in this category.  All roads lead to gdb, it sometimes seems...
+>
+> gdb's command line is certainly overwhelming to many, but if I was really
+> desparate for an interface to gdb, I would use emacs, and I am a vim user.
+
+Emacs has a good (or gud?) interface to GDB, but sometimes it lacks one
+feature or another.
+
+What I recommend to every GDB beginner (or even non-beginners, because
+they also don't know about this feature) is TUI, the Text User Interface
+inside GDB itself.  It is ncurses-based, and after a long period of
+being unmaintained (and buggy), it has been receiving some TLC again
+lately.
+
+To enter TUI, press C-x a.  To leave TUI, C-x a again.
+
+-- 
+Sergio
+GPG key ID: 237A 54B1 0287 28BF 00EF  31F4 D0EB 7628 65FC 5E36
+Please send encrypted e-mail if possible
+http://sergiodj.net/
+
+From sergiodj at sergiodj.net  Sun Sep  6 03:05:49 2015
+From: sergiodj at sergiodj.net (Sergio Durigan Junior)
+Date: Sat, 05 Sep 2015 23:05:49 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <55E8B303.4080103@ve3syb.ca> (Kevin Cozens's message of "Thu, 3
+ Sep 2015 16:52:19 -0400")
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+ <20150903154107.GH15617@csclub.uwaterloo.ca>
+ <55E8B303.4080103@ve3syb.ca>
+Message-ID: <878u8kjlgy.fsf@sergiodj.net>
+
+On Thursday, September 03 2015, Kevin Cozens wrote:
+
+> On 15-09-03 11:41 AM, Lennart Sorensen wrote:
+>> Last I looked at it (a long time ago), ddd had to be one of the worst,
+>> most buggy, awful ui, pieces of crap I ever encountered.
+>
+> I know what you mean. When I first tried ddd it would often crash in
+> the middle of your debug session if you looked at it wrong, but it did
+> recover.
+>
+> The UI hasn't changed a whole lot from the early days but it has
+> gotten a bit less prone to crash. It usually works for me so I haven't
+> bothered to look around and see if there is something better that can
+> be used in place of ddd.
+
+If you're a GNOME user you might give Nemiver a try, too.
+
+<https://wiki.gnome.org/Apps/Nemiver>
+
+-- 
+Sergio
+GPG key ID: 237A 54B1 0287 28BF 00EF  31F4 D0EB 7628 65FC 5E36
+Please send encrypted e-mail if possible
+http://sergiodj.net/
+
