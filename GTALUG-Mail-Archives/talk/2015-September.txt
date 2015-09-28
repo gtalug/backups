@@ -1,0 +1,2889 @@
+From psema4 at gmail.com  Tue Sep  1 03:55:31 2015
+From: psema4 at gmail.com (Scott Elcomb)
+Date: Mon, 31 Aug 2015 23:55:31 -0400
+Subject: [GTALUG] T-shirt Ideas
+In-Reply-To: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org>
+References: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org>
+Message-ID: <CAEx-jsM_4Ms9ThY5+hotWUbpQYfLUmy1-QT-OyB-Di9VVYPk6g@mail.gmail.com>
+
+On Mon, Aug 31, 2015 at 2:41 PM, Scott Sullivan <scott at ss.org> wrote:
+<snip>
+> Anyone else got some good hardcore comp-sci hummor?
+
+NACK, NACK.
+
+Who's there?
+
+ATM.
+
+ATM who?
+
+NACK, NACK.
+
+
+"NACK" is a "negative acknowledgement", a very old communications
+protocol for "I don't understand". NACK usually forces a
+resynchronization or renegotiation between end points. ATM is
+"Asynchronous Transfer Mode"; a couple of decades ago it was a
+relatively high-speed packet technology that lost out to other
+technologies. - via <http://stackoverflow.com/a/1590009/773209>
+
+...
+
+The TCP joke is a personal favourite:
+
+
+"Hi, I'd like to hear a TCP joke."
+
+"Hello, would you like to hear a TCP joke?"
+
+"Yes, I'd like to hear a TCP joke."
+
+"OK, I'll tell you a TCP joke."
+
+"Ok, I will hear a TCP joke."
+
+"Are you ready to hear a TCP joke?"
+
+"Yes, I am ready to hear a TCP joke."
+
+"Ok, I am about to send the TCP joke. It will last 10 seconds, it has
+two characters, it does not have a setting, it ends with a punchline."
+
+"Ok, I am ready to get your TCP joke that will last 10 seconds, has
+two characters, does not have an explicit setting, and ends with a
+punchline."
+
+"I'm sorry, your connection has timed out. Hello, would you like to
+hear a TCP joke?"
+
+...
+
+There's a few good one-liners over at
+<http://attrition.org/misc/ee/protolol.txt>
+
+From gilesorr at gmail.com  Tue Sep  1 14:04:23 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Tue, 1 Sep 2015 10:04:23 -0400
+Subject: [GTALUG] T-shirt Ideas
+In-Reply-To: <CAEx-jsM_4Ms9ThY5+hotWUbpQYfLUmy1-QT-OyB-Di9VVYPk6g@mail.gmail.com>
+References: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org>
+ <CAEx-jsM_4Ms9ThY5+hotWUbpQYfLUmy1-QT-OyB-Di9VVYPk6g@mail.gmail.com>
+Message-ID: <CAEnxSC4ctwU0dE7QqZ_iAdsa8KtfyxWTj7nK5=vi4+yWuWRwaQ@mail.gmail.com>
+
+On 31 August 2015 at 23:55, Scott Elcomb <psema4 at gmail.com> wrote:
+> On Mon, Aug 31, 2015 at 2:41 PM, Scott Sullivan <scott at ss.org> wrote:
+> <snip>
+>> Anyone else got some good hardcore comp-sci hummor?
+>
+> NACK, NACK.
+>
+> Who's there?
+>
+> ATM.
+>
+> ATM who?
+>
+> NACK, NACK.
+>
+>
+> "NACK" is a "negative acknowledgement", a very old communications
+> protocol for "I don't understand". NACK usually forces a
+> resynchronization or renegotiation between end points. ATM is
+> "Asynchronous Transfer Mode"; a couple of decades ago it was a
+> relatively high-speed packet technology that lost out to other
+> technologies. - via <http://stackoverflow.com/a/1590009/773209>
+>
+> ...
+>
+> The TCP joke is a personal favourite:
+>
+>
+> "Hi, I'd like to hear a TCP joke."
+>
+> "Hello, would you like to hear a TCP joke?"
+>
+> "Yes, I'd like to hear a TCP joke."
+>
+> "OK, I'll tell you a TCP joke."
+>
+> "Ok, I will hear a TCP joke."
+>
+> "Are you ready to hear a TCP joke?"
+>
+> "Yes, I am ready to hear a TCP joke."
+>
+> "Ok, I am about to send the TCP joke. It will last 10 seconds, it has
+> two characters, it does not have a setting, it ends with a punchline."
+>
+> "Ok, I am ready to get your TCP joke that will last 10 seconds, has
+> two characters, does not have an explicit setting, and ends with a
+> punchline."
+>
+> "I'm sorry, your connection has timed out. Hello, would you like to
+> hear a TCP joke?"
+
+With thanks to Scott Sullivan who told me this one, I think it's a
+great follow-up to the TCP joke:
+
+"I'd tell you a UDP joke but you might not get it."
+
+Which also says a lot about the difference between the two protocols ...
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From hugh at mimosa.com  Tue Sep  1 19:55:52 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 1 Sep 2015 15:55:52 -0400 (EDT)
+Subject: [GTALUG] T-shirt Ideas
+In-Reply-To: <alpine.LRH.2.02.1508311725590.782@redclaw.mimosa.com>
+References: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org>
+ <alpine.LRH.2.02.1508311725590.782@redclaw.mimosa.com>
+Message-ID: <alpine.LRH.2.02.1509011550280.14630@redclaw.mimosa.com>
+
+| From: D. Hugh Redelmeier <hugh at mimosa.com>
+
+| Funny point: the abstract calls Cray "the ultimate "tall, thin
+| man"*." but the notes on slide three call him the penultimate one.  I
+| wonder who the ultimate one is if the notes are correct.
+
+I emailed Gordon Bell about this and he says that he was mistaken about
+the meaning of "penultimate" when he wrote that.
+
+I used "penultimate" in a draft of my masters thesis but my supervisor
+suggested replacing it with "second last" because it was more likely
+to be understood and in no way inferior.  He was right.
+
+From me at bobcopeland.com  Tue Sep  1 23:49:34 2015
+From: me at bobcopeland.com (Bob Copeland)
+Date: Tue, 1 Sep 2015 19:49:34 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+Message-ID: <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+
+On Fri, Aug 21, 2015 at 12:39 AM, Aruna Hewapathirane
+<aruna.hewapathirane at gmail.com> wrote:
+> Has anyone ever used qemu and gdb ? If so has anyone successfully
+> debugged a module ? I would be very thankful if someone can show me
+> the 'specific' steps to follow to get this going.
+
+I have done this once upon a time...  checking the scripts I used:
+
+Step 1: launch qemu with -gdb like so:
+
+qemu-system-x86_64 -nographic -kernel /path/to/kernel -gdb
+tcp:10.0.0.1:1234 [all the other options]
+
+(In my case 10.0.0.1 is bridged with the host.)
+
+Step 2: Make a gdbinit file that looks like:
+
+set architecture i386:x86-64:intel
+target remote localhost:1234
+file vmlinux
+# this part is deep magic - check /proc/modules for correct offsets
+add-symbol-file net/wireless/cfg80211.o 0xffffffffa00000000
+# and so-on for whatever modules you care about
+continue
+
+Step 3: Launch gdb on the host
+
+YMMV -- I rarely have used an actual debugger for my own kernel work.
+I do frequently use gdb to do the same thing as addr2line by running
+gdb on the .ko and then "l *addr+0x123" -- to resolve symbols from
+oops messages, but you don't need qemu or remote gdb for that.
+
+-- 
+Bob Copeland %% www.bobcopeland.com
+
+From kevin at ve3syb.ca  Wed Sep  2 01:43:06 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Tue, 1 Sep 2015 21:43:06 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+Message-ID: <55E6542A.2090707@ve3syb.ca>
+
+On Fri, Aug 21, 2015 at 12:39 AM, Aruna Hewapathirane wrote:
+> Has anyone ever used qemu and gdb ? If so has anyone successfully
+> debugged a module ?
+
+I haven't done that. I have seldom used gdb directly. If I'm doing debugging 
+I use gdb via ddd. The ddd program makes debugging a lot easier (for me) 
+than the command line based gdb.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From bob at akn.ca  Tue Sep  1 17:42:10 2015
+From: bob at akn.ca (Bob Bosiljevac)
+Date: Tue, 1 Sep 2015 13:42:10 -0400
+Subject: [GTALUG] T-shirt Ideas
+In-Reply-To: <CAEnxSC4ctwU0dE7QqZ_iAdsa8KtfyxWTj7nK5=vi4+yWuWRwaQ@mail.gmail.com>
+References: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org><CAEx-jsM_4Ms9ThY5+hotWUbpQYfLUmy1-QT-OyB-Di9VVYPk6g@mail.gmail.com>
+ <CAEnxSC4ctwU0dE7QqZ_iAdsa8KtfyxWTj7nK5=vi4+yWuWRwaQ@mail.gmail.com>
+Message-ID: <4AE19DFDECCEDE49B75B68583D9FCF2D320958875A@EX41.exchserver.com>
+
+> 
+> "I'd tell you a UDP joke but you might not get it."
+> 
+> Which also says a lot about the difference between the two protocols ...
+> 
+
+Wouldn't that be more like:
+
+"I'm telling you a UDP joke but you might not get it".
+
+BB
+
+
+From opengeometry at yahoo.ca  Wed Sep  2 16:37:16 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Wed, 2 Sep 2015 12:37:16 -0400
+Subject: [GTALUG] No sound from Intel HD Audio -- solved!
+Message-ID: <20150902163716.GA3920@node1.localdomain>
+
+Hi,
+
+Finally, I've got sound from Intel HD Audio, through default card=0 !
+
+I recently bought H97 motherboard and i3-4170, because I couldn't afford
+electricity for my 125W AMD 8-core and overheating motherboard.
+According to my calculation, i3 will pay for itself in a year.
+
+Everything was ok, except sound.  On this H97 board, the default card=0
+is HDMI, and audio ports are card=1.  
+    - I got KDE making notification sound by changing precedence order
+      in "phonon" setting.
+    - I managed to get 'mplayer' playing on card=1 by
+	    ao=alsa:device=hw=1.0
+      and 'aplay' playing on card=1 by
+	    -D default:PCH
+
+Still, YouTube or Flash played video, but no sound.  Installing discrete
+sound card would not help, because that would only become card=2.
+
+I was about to go back to the AMD block heater, when accidental click
+lead me to a solution.  Solution was ~/.asoundrc
+    pcm.!default {
+	type hw
+	card 1
+    }
+    ctl.!default {
+	type hw
+	card 1
+    } 
+
+Now, I've got sound from default card=1, without those funky
+configuration settings.
+-- 
+William
+
+From lsorense at csclub.uwaterloo.ca  Thu Sep  3 15:41:07 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 3 Sep 2015 11:41:07 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <55E6542A.2090707@ve3syb.ca>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+Message-ID: <20150903154107.GH15617@csclub.uwaterloo.ca>
+
+On Tue, Sep 01, 2015 at 09:43:06PM -0400, Kevin Cozens wrote:
+> I haven't done that. I have seldom used gdb directly. If I'm doing debugging
+> I use gdb via ddd. The ddd program makes debugging a lot easier (for me)
+> than the command line based gdb.
+
+Last I looked at it (a long time ago), ddd had to be one of the worst,
+most buggy, awful ui, pieces of crap I ever encountered.  Even makes
+eclipse seem like a good idea in comparison.  So bad I have never ever
+considered looking at it again.  I assumed it had to have died out from
+being so bad.
+
+-- 
+Len Sorensen
+
+From technologynut at rogers.com  Thu Sep  3 16:03:53 2015
+From: technologynut at rogers.com (Gary)
+Date: Thu, 03 Sep 2015 12:03:53 -0400
+Subject: [GTALUG] T-shirt Ideas
+In-Reply-To: <4AE19DFDECCEDE49B75B68583D9FCF2D320958875A@EX41.exchserver.com>
+References: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org><CAEx-jsM_4Ms9ThY5+hotWUbpQYfLUmy1-QT-OyB-Di9VVYPk6g@mail.gmail.com>
+ <CAEnxSC4ctwU0dE7QqZ_iAdsa8KtfyxWTj7nK5=vi4+yWuWRwaQ@mail.gmail.com>
+ <4AE19DFDECCEDE49B75B68583D9FCF2D320958875A@EX41.exchserver.com>
+Message-ID: <55E86F69.8020509@rogers.com>
+
+That's cute.
+
+/gary
+
+On 15-09-01 01:42 PM, Bob Bosiljevac wrote:
+>> "I'd tell you a UDP joke but you might not get it."
+>>
+>> Which also says a lot about the difference between the two protocols ...
+>>
+> Wouldn't that be more like:
+>
+> "I'm telling you a UDP joke but you might not get it".
+>
+> BB
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+From el.fontanero at gmail.com  Thu Sep  3 16:21:50 2015
+From: el.fontanero at gmail.com (Mike)
+Date: Thu, 3 Sep 2015 12:21:50 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <20150903154107.GH15617@csclub.uwaterloo.ca>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+ <20150903154107.GH15617@csclub.uwaterloo.ca>
+Message-ID: <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+
+On Thu, Sep 3, 2015 at 11:41 AM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Tue, Sep 01, 2015 at 09:43:06PM -0400, Kevin Cozens wrote:
+> > I haven't done that. I have seldom used gdb directly. If I'm doing
+> debugging
+> > I use gdb via ddd. The ddd program makes debugging a lot easier (for me)
+> > than the command line based gdb.
+>
+> Last I looked at it (a long time ago), ddd had to be one of the worst,
+> most buggy, awful ui, pieces of crap I ever encountered.  Even makes
+> eclipse seem like a good idea in comparison.  So bad I have never ever
+> considered looking at it again.  I assumed it had to have died out from
+> being so bad.
+>
+>
+Never had the pleasure.  But Kevin, don't fear the command line.  A
+well-designed graphical debugger is a good and useful tool, but when you
+absolutely need to get into the plumbing; memory setup, ICE hardware
+protocols, etc. (ad nauseam) you almost inevitably go sideways from where
+the GUI designers intended.  Kvm-qemu kernel debugging probably falls
+squarely in this category.  All roads lead to gdb, it sometimes seems...
+
+Mike
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150903/fdf5061d/attachment.html>
+
+From scott at ss.org  Thu Sep  3 18:08:26 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Thu, 03 Sep 2015 14:08:26 -0400
+Subject: [GTALUG] Active Surplus is Closing it's Queen Location
+Message-ID: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
+
+Details on their site. Steels location to stay open. Everything 50% off.
+
+http://www.activesurplus.com
+-- 
+Scott Sullivan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150903/0eaa3004/attachment.html>
+
+From phiscock at ee.ryerson.ca  Thu Sep  3 18:20:33 2015
+From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
+Date: Thu, 3 Sep 2015 14:20:33 -0400
+Subject: [GTALUG] Active Surplus is Closing it's Queen Location
+In-Reply-To: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
+References: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
+Message-ID: <84b58ce46349503f817e120156e25f74.squirrel@webmail.ee.ryerson.ca>
+
+Good to know, thanks.
+
+The Steeles location was pretty terrible when I visited it about a year
+ago: nothing much of interest and everything overpriced.
+
+P.
+
+> Details on their site. Steels location to stay open. Everything 50% off.
+>
+> http://www.activesurplus.com
+> --
+> Scott Sullivan---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+
+
+-- 
+Peter Hiscocks
+Syscomp Electronic Design Limited, Toronto
+http://www.syscompdesign.com
+USB Oscilloscope and Waveform Generator
+647-839-0325
+
+
+From kevin at ve3syb.ca  Thu Sep  3 20:52:19 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Thu, 3 Sep 2015 16:52:19 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <20150903154107.GH15617@csclub.uwaterloo.ca>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca> <20150903154107.GH15617@csclub.uwaterloo.ca>
+Message-ID: <55E8B303.4080103@ve3syb.ca>
+
+On 15-09-03 11:41 AM, Lennart Sorensen wrote:
+> Last I looked at it (a long time ago), ddd had to be one of the worst,
+> most buggy, awful ui, pieces of crap I ever encountered.
+
+I know what you mean. When I first tried ddd it would often crash in the 
+middle of your debug session if you looked at it wrong, but it did recover.
+
+The UI hasn't changed a whole lot from the early days but it has gotten a 
+bit less prone to crash. It usually works for me so I haven't bothered to 
+look around and see if there is something better that can be used in place 
+of ddd.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From james.knott at rogers.com  Thu Sep  3 22:57:00 2015
+From: james.knott at rogers.com (James Knott)
+Date: Thu, 03 Sep 2015 18:57:00 -0400
+Subject: [GTALUG] Active Surplus is Closing it's Queen Location
+In-Reply-To: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
+References: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
+Message-ID: <55E8D03C.1040003@rogers.com>
+
+On 09/03/2015 02:08 PM, Scott Sullivan wrote:
+> Details on their site. Steels location to stay open. Everything 50% off.
+
+I didn't even know they had a Steeles location.  I used to frequent the
+Queen store years ago, when I worked downtown.  They had lots of stuff
+there, some of it even useful.  ;-)
+
+One item I bought there was an S-100 bus prototyping board, which I used
+to build an 8 port serial card for my IMSAI 8080.  I actually populated
+3 of the ports, but, with the 8250 UART, it was just as easy to design
+the board for 8 ports as 4.  In designing and building that board, I
+found a bug in the 8250 that Western Digital was unaware of.
+
+I was in the vicinity of the Queen store recently and saw it was now
+upstairs.  The last time I was in there, it was on the main floor and
+basement.
+
+
+From lsorense at csclub.uwaterloo.ca  Fri Sep  4 01:17:42 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Thu, 3 Sep 2015 21:17:42 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+ <20150903154107.GH15617@csclub.uwaterloo.ca>
+ <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+Message-ID: <20150904011742.GI15617@csclub.uwaterloo.ca>
+
+On Thu, Sep 03, 2015 at 12:21:50PM -0400, Mike wrote:
+> Never had the pleasure.  But Kevin, don't fear the command line.  A
+> well-designed graphical debugger is a good and useful tool, but when you
+> absolutely need to get into the plumbing; memory setup, ICE hardware
+> protocols, etc. (ad nauseam) you almost inevitably go sideways from where
+> the GUI designers intended.  Kvm-qemu kernel debugging probably falls
+> squarely in this category.  All roads lead to gdb, it sometimes seems...
+
+gdb's command line is certainly overwhelming to many, but if I was really
+desparate for an interface to gdb, I would use emacs, and I am a vim user.
+
+-- 
+Len Sorensen
+
+From aruna.hewapathirane at gmail.com  Fri Sep  4 10:46:27 2015
+From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
+Date: Fri, 4 Sep 2015 06:46:27 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+Message-ID: <CAFSeFg-eggsREBuYdwF_uX3WUs8srBDt9_s7y4ogi43Q21s0Ug@mail.gmail.com>
+
+Hi Bob,
+
+Thank you for all the pointers. I may keep bothering you if I still have
+issues eh ?
+
+Something you said  " I have done this once upon a time..." made me type
+this:
+
+aruna at debian:~/linux-4.1.2$ find . -name "*.c" | xargs grep -i " bob
+copeland "
+
+and guess what find says:
+
+./block/partitions/karma.c: *  Copyright (C) 2006 Bob Copeland (
+me at bobcopeland.com)
+
+./fs/omfs/file.c: *                  Copyright (C) 2005 Bob Copeland <
+me at bobcopeland.com>
+./fs/omfs/dir.c: *                   Copyright (C) 2005 Bob Copeland <
+me at bobcopeland.com>
+./fs/omfs/inode.c: *              Copyright (C) 2006 Bob Copeland <
+me at bobcopeland.com>
+
+./drivers/net/wireless/ath/ath5k/led.c: * Copyright (c) 2009 Bob Copeland <
+me at bobcopeland.com>
+./drivers/net/wireless/ti/wl1251/sdio.c: * Copyright (C) 2009 Bob Copeland (
+me at bobcopeland.com)
+./drivers/usb/storage/karma.c: *            (c) 2006 Bob Copeland <
+me at bobcopeland.com>
+
+Holy Wow ! file system, wireless, usb ? holy wow again.. ( proceeds to fall
+off my chair ..)
+
+Yeah 2005 was a long time ago I was still using Windows 3.1 and had no idea
+what Linux was :)
+
+Privileged to meet you Mr.Copeland ( So what is it with folks who's names
+begin with Bob ? All the Bob's I know are possibly related to Einstein ?
+Including our own Mr.Jonkman )
+
+Seriously many thanks for taking the time to reply it IS much appreciated !
+
+Aruna
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150904/496b4a34/attachment.html>
+
+From aruna.hewapathirane at gmail.com  Fri Sep  4 10:56:31 2015
+From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
+Date: Fri, 4 Sep 2015 06:56:31 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <55E6542A.2090707@ve3syb.ca>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+Message-ID: <CAFSeFg-rcQ5bBgHzEeydTebpp2SgNUahT=AgcEAwC+-RzNJ=fQ@mail.gmail.com>
+
+>> On Tue, Sep 1, 2015 at 9:43 PM, Kevin Cozens <kevin at ve3syb.ca> wrote:
+>> On Fri, Aug 21, 2015 at 12:39 AM, Aruna Hewapathirane wrote:
+>> Has anyone ever used qemu and gdb ? If so has anyone successfully
+>> debugged a module ?
+
+>> I haven't done that. I have seldom used gdb directly. If I'm doing
+debugging I use gdb via ddd. The ddd program makes
+>> debugging a lot easier (for me) than the command line based gdb.
+
+Thanks Kevin I will take a look at ddd.
+
+Aruna
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150904/88b15909/attachment.html>
+
+From aruna.hewapathirane at gmail.com  Fri Sep  4 10:58:25 2015
+From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
+Date: Fri, 4 Sep 2015 06:58:25 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <20150904011742.GI15617@csclub.uwaterloo.ca>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+ <20150903154107.GH15617@csclub.uwaterloo.ca>
+ <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+ <20150904011742.GI15617@csclub.uwaterloo.ca>
+Message-ID: <CAFSeFg8dBJckgoyTY2B2=iT0dYUnL8=M_y8Z=NwPsf3U=Hpf9g@mail.gmail.com>
+
+<snip>
+>> gdb's command line is certainly overwhelming to many, but if I was really
+>> desparate for an interface to gdb, I would use emacs, and I am a vim
+user.
+>> Len Sorensen
+<snip>
+
+Len, try qemu it is a zillion times more overwhelming than gdb :)
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150904/9d6f888b/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Fri Sep  4 13:33:36 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 4 Sep 2015 09:33:36 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <CAFSeFg8dBJckgoyTY2B2=iT0dYUnL8=M_y8Z=NwPsf3U=Hpf9g@mail.gmail.com>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+ <20150903154107.GH15617@csclub.uwaterloo.ca>
+ <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+ <20150904011742.GI15617@csclub.uwaterloo.ca>
+ <CAFSeFg8dBJckgoyTY2B2=iT0dYUnL8=M_y8Z=NwPsf3U=Hpf9g@mail.gmail.com>
+Message-ID: <20150904133336.GJ15617@csclub.uwaterloo.ca>
+
+On Fri, Sep 04, 2015 at 06:58:25AM -0400, Aruna Hewapathirane wrote:
+> <snip>
+> >> gdb's command line is certainly overwhelming to many, but if I was really
+> >> desparate for an interface to gdb, I would use emacs, and I am a vim
+> user.
+> >> Len Sorensen
+> <snip>
+> 
+> Len, try qemu it is a zillion times more overwhelming than gdb :)
+
+Oh yes, the qemu command line is quite something.  I do find the syntax
+more understandable than gdb though.
+
+-- 
+Len Sorensen
+
+From aruna.hewapathirane at gmail.com  Fri Sep  4 14:06:46 2015
+From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
+Date: Fri, 04 Sep 2015 10:06:46 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <20150904133336.GJ15617@csclub.uwaterloo.ca>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca> <20150903154107.GH15617@csclub.uwaterloo.ca>
+ <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+ <20150904011742.GI15617@csclub.uwaterloo.ca>
+ <CAFSeFg8dBJckgoyTY2B2=iT0dYUnL8=M_y8Z=NwPsf3U=Hpf9g@mail.gmail.com>
+ <20150904133336.GJ15617@csclub.uwaterloo.ca>
+Message-ID: <55E9A576.2060501@gmail.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+
+On 04/09/15 09:33 AM, Lennart Sorensen wrote:
+> On Fri, Sep 04, 2015 at 06:58:25AM -0400, Aruna Hewapathirane
+> wrote:
+>> <snip>
+>>>> gdb's command line is certainly overwhelming to many, but if
+>>>> I was really desparate for an interface to gdb, I would use
+>>>> emacs, and I am a vim
+>> user.
+>>>> Len Sorensen
+>> <snip>
+>> 
+>> Len, try qemu it is a zillion times more overwhelming than gdb
+>> :)
+> 
+> Oh yes, the qemu command line is quite something.  I do find the
+> syntax more understandable than gdb though.
+> 
+
+That is probably because you have more gray matter ( gray matter in
+this case equates to long years of lived experience + testing +
+breaking things then wash+rinse+repeat till you finally fix things.. )
+
+I still *cringe* when I have to fire up qemu.. hopefully someday I
+will feel comfortable but right now every single time I do this I
+actually do PRAY ! ( Seriously I kneel then PRAY ! yes dat bad.. )
+
+Len, if I may please I am setting up a few servers for a good friend
+and they are running Zimbra Servers and Zimbra has it's own bundled
+Apache so I do not see the usual /var/www root and the log files are
+huge. Seriously huge. Any suggestions on how best to tweak for
+performance ?
+
+I also see free -m -l -t telling me it is hogging memory like
+anything. Is this a Zimbra issue or ? Once again how best to resolve ?
+
+The logs are purged daily so am guesing teh amount of transactions
+through Zimbra is causing the weight ?
+
+This is my first exposure to Zimbra and Servers actually so please
+have mercy and be gentle.
+
+Thanks - Aruna
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQIcBAEBAgAGBQJV6aV2AAoJEHIEJxfB21ta5f0P/0zc2Yu1qQXdgcxGaUWIGhi7
+rCBiWkwrhZU3W8TTD6HBzGL471eU90vqkkJSpwSy+Fb9KAs7wIZz8jaVURrL6rkP
+5X2lAIShk6kz58Xc1lmoI7cUN9urbqmV6TPdBxAhx/b/E9vzorzsIgVGMttuzvZz
+fuER+3Fm/Pmt3Kpeyx9JRpS6q8Dq6kQt5BJpY3bJTF05i5VERdH9CUFZS3PaTYv6
+9V4gXLiAafj8d2kQtEcPkLJVbN2/UN2s1tMku3fW/MyLQtCxH/evX5U5RRiex472
+xuNRzFvZ+yEfFwkSvV4gqxXjrt7AhBPaghKHiG0AIGVQDun5VJR9dd+DjB7MW9jJ
+yScU8N+m+0OEmlMhua8I9kRiW5GuapS8xTECp/bLeJw1//tGGsvPh4ZdwmKoq3HK
+0cg2uSfpYdjJy2oa+aDhbCBLmIkOPatInwVVf50yuu4dL1DK6p6nBn38+EuwbfBk
+JoPSGTihENSRZlZvGrVz1lzXikdUpIn1tn3J0srW9UYrKoruWFmGAzK6ZH6HvSVL
+Wm+Jl+bF570a3RBYVDtCRPMpXKUGd0blWxi9AXPVhqvpVVkzdT/1qMzvEJawX608
+Jo+Gg8igfThLaSz5TtBkiLwbyEI9aqGWXxe2lsdW5UM9HHvdBfOcRPPuuecdO1dc
+cbrc5Zj6tbmQSKK47BB6
+=0WjX
+-----END PGP SIGNATURE-----
+
+From me at bobcopeland.com  Fri Sep  4 14:19:01 2015
+From: me at bobcopeland.com (Bob Copeland)
+Date: Fri, 4 Sep 2015 10:19:01 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <CAFSeFg-eggsREBuYdwF_uX3WUs8srBDt9_s7y4ogi43Q21s0Ug@mail.gmail.com>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <CAFSeFg-eggsREBuYdwF_uX3WUs8srBDt9_s7y4ogi43Q21s0Ug@mail.gmail.com>
+Message-ID: <CAEKwDSAQxupd99pp1qBFefBUdXs3AD6EqXA5pOt3o4wn36CjdA@mail.gmail.com>
+
+On Fri, Sep 4, 2015 at 6:46 AM, Aruna Hewapathirane
+<aruna.hewapathirane at gmail.com> wrote:
+> Hi Bob,
+>
+> Thank you for all the pointers. I may keep bothering you if I still have
+> issues eh ?
+
+Sure, feel free to CC me as well in case I seem unresponsive,
+sometimes I don't read the TLUG list so closely.
+
+> Holy Wow ! file system, wireless, usb ? holy wow again.. ( proceeds to fall
+> off my chair ..)
+
+As I found then, a great way to learn about the kernel is to write a
+file system :)
+
+I now do a small amount of ongoing development in linux wireless for
+work, particularly in mesh.  It's good fun.
+
+-- 
+Bob Copeland %% www.bobcopeland.com
+
+From kevin at ve3syb.ca  Fri Sep  4 17:37:41 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Fri, 4 Sep 2015 13:37:41 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <CAFSeFg-rcQ5bBgHzEeydTebpp2SgNUahT=AgcEAwC+-RzNJ=fQ@mail.gmail.com>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+ <CAFSeFg-rcQ5bBgHzEeydTebpp2SgNUahT=AgcEAwC+-RzNJ=fQ@mail.gmail.com>
+Message-ID: <55E9D6E5.7050300@ve3syb.ca>
+
+On 15-09-04 06:56 AM, Aruna Hewapathirane wrote:
+> Thanks Kevin I will take a look at ddd.
+
+I did an internet search a day or two back. There are other alternatives to 
+ddd for gdb front-ends and found a list of them at
+     https://sourceware.org/gdb/wiki/GDB%20Front%20Ends
+
+One of them that looks interesting is Gede. It isn't available for the 
+distro I'm running (Linux Mint) so it would have to be built from the source 
+files.
+
+For now I'll stick with ddd. I'm used to it and I seldom need a source level 
+debugger so I'm not particularly motivated to search for something else to use.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From kevin at ve3syb.ca  Fri Sep  4 17:40:53 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Fri, 4 Sep 2015 13:40:53 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <20150904011742.GI15617@csclub.uwaterloo.ca>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca> <20150903154107.GH15617@csclub.uwaterloo.ca>
+ <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+ <20150904011742.GI15617@csclub.uwaterloo.ca>
+Message-ID: <55E9D7A5.2060705@ve3syb.ca>
+
+On 15-09-03 09:17 PM, Lennart Sorensen wrote:
+> gdb's command line is certainly overwhelming to many, but if I was really
+> desparate for an interface to gdb, I would use emacs, and I am a vim user.
+
+Another program that has an almost overwhelming command line is avrdude. 
+Fortunately I knew of avrdude-gui as a way to tame it. It was old but I 
+updated it for use with a current version of avrdude.
+
+One of these days I'll post the updated version of avrdude-gui to my website.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From moptop99 at gmail.com  Fri Sep  4 22:32:42 2015
+From: moptop99 at gmail.com (Matt Price)
+Date: Fri, 4 Sep 2015 18:32:42 -0400
+Subject: [GTALUG] OT: Inexpensive laptop for Minecraft?
+Message-ID: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
+
+Hello everyone! Thought I'd tap the collective brain. I'm looking for a
+relatively inexpensive laptop for my son, who mostly just plays minecraft
+(and occasionally needs the computer for school work, using google docs & a
+browser). Any suggestions of models, or places to buy? I'm looking for
+something pretty inexpensive, but with dedicated graphics that will allow
+him to play minecraft comfortably for the next year or  so at least.
+
+Thank you!
+
+m
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150904/d2292fb0/attachment.html>
+
+From opengeometry at yahoo.ca  Sat Sep  5 00:18:36 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Fri, 04 Sep 2015 20:18:36 -0400
+Subject: [GTALUG] OT: Inexpensive laptop for Minecraft?
+In-Reply-To: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
+References: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
+Message-ID: <20150905001836.5894230.90747.3460@yahoo.ca>
+
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150904/29e66e7e/attachment.html>
+
+From hugh at mimosa.com  Sat Sep  5 15:13:58 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 5 Sep 2015 11:13:58 -0400 (EDT)
+Subject: [GTALUG] OT: Inexpensive laptop for Minecraft?
+In-Reply-To: <20150905001836.5894230.90747.3460@yahoo.ca>
+References: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
+ <20150905001836.5894230.90747.3460@yahoo.ca>
+Message-ID: <alpine.LRH.2.02.1509051008160.1292@redclaw.mimosa.com>
+
+| From: Matt Price
+
+| Hello everyone! Thought I'd tap the collective brain. I'm looking for a relatively inexpensive laptop for my son, who
+| mostly just plays minecraft (and occasionally needs the computer for school work, using google docs & a browser). Any
+| suggestions of models, or places to buy? I'm looking for something pretty inexpensive, but with dedicated graphics that
+| will allow him to play minecraft comfortably for the next year or  so at least. 
+
+
+| From: William Park <opengeometry at yahoo.ca>
+| 
+| ‎Not sure about dedicated graphics, but ThinkPad T420‎ (refurbished) is on sale at Canada Computers again. 
+| -- 
+
+Bestbuy has them too, with a dock.  Also refurb.io
+<http://forums.redflagdeals.com/refurb-io-labour-day-clearance-select-desktop-computers-laptops-1805521/>
+<http://forums.redflagdeals.com/ca-refurb-io-lenovo-thinkpad-t420-i5-2nd-gen-4gb-300gb-hd-win-7-pro-261-a-1805549/>
+Note: these different sources have units with different generations of
+Intel processors, and I seem to recollect that that matters for GPU
+power.
+
+But I don't really think that these are great for the price
+considering that they are used.  It depends on how much you value the
+ThinkPad attributes (good keyboard, repairable, very well-built,
+heavy).
+
+These use the CPU chip's built-in GPU.  Although Intel's GPU has been
+getting better, it was fairly poor for gaming in older generations.
+Someone who knows more about Minecraft performance would perhaps know
+if these GPUs are good enough.  Or use google
+<http://minecraft.gamepedia.com/Hardware_performance>
+
+I would *guess* that current Intel i-series processors would have a
+good enough GPU for Minecraft.  I would also guess that the GPU part
+of any recent AMD APU is good for Minecraft (APU is what AMD calls
+their CPU + GPU chips).  But beware: low-end AMD CPUs are very slow by
+today's standards (and they go by a lot of different names).  This is
+cheap but I think that it isn't quite good enough:
+<http://www.nmicrovip.ca/asus-amd-a4-5000-6gb-ram-750gb-hdd-15-6-1366x768-dvdrw-windows-8-bilingual-kb-x552ea-sh41-cb-refurbished/>
+A4 series are probably too weak.
+
+Shoppers Drug Mart has a bunch of cheap notebooks on sale this
+weekend.  I have no idea about their specs since SDM's ad doesn't give
+model numbers!  They have a points bonus today which actually
+makes a difference in the effective cost (if you are willing to bother
+with their points program).
+
+From hugh at mimosa.com  Sun Sep  6 01:29:50 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Sat, 5 Sep 2015 21:29:50 -0400 (EDT)
+Subject: [GTALUG] message from the past
+Message-ID: <alpine.LRH.2.02.1509052108210.9157@redclaw.mimosa.com>
+
+I'm typing this on my first notebook.  I bought it in 1999.  It is 
+woefully obsolete, but it really does work.
+
+- NEC Versa SX
+
+- Pentium II at 233MHz
+
+- 256M of RAM
+
+- 1024 x 768 screen (actually, I like the aspect ration)
+
+- 16 bits / pixel (oops) and a Trident video chip (support in X isn't 
+  100%)
+
+- Fedora Core 1
+
+- ethernet card plugs into a PCcard slot
+
+Via some simplified version of Moore's law, things ought to be better by 
+about a factor of 1000 (two to the power of (16 years / 18 months)).
+
+- Processor clock speed is faster by a little more than 10.  The work done 
+  per clock tick is perhaps 2 or 4 times greater.
+
+- The RAM is larger by a factor of 100 (the machine came with 64M).
+
+- disk space has gone up by perhaps 250.  It came with a 4GB drive and I 
+  upgraded it to 10GB
+
+- screen resolution has gone up perhaps a factor of 2 horizontally and 1.3 
+  vertically
+
+- keyboards don't seem better.  Trackpads do.
+
+- price has gone down a bit.
+
+
+From sergiodj at sergiodj.net  Sun Sep  6 03:04:11 2015
+From: sergiodj at sergiodj.net (Sergio Durigan Junior)
+Date: Sat, 05 Sep 2015 23:04:11 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <20150904011742.GI15617@csclub.uwaterloo.ca> (Lennart Sorensen's
+ message of "Thu, 3 Sep 2015 21:17:42 -0400")
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+ <20150903154107.GH15617@csclub.uwaterloo.ca>
+ <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+ <20150904011742.GI15617@csclub.uwaterloo.ca>
+Message-ID: <87d1xwjljo.fsf@sergiodj.net>
+
+On Thursday, September 03 2015, Lennart Sorensen wrote:
+
+> On Thu, Sep 03, 2015 at 12:21:50PM -0400, Mike wrote:
+>> Never had the pleasure.  But Kevin, don't fear the command line.  A
+>> well-designed graphical debugger is a good and useful tool, but when you
+>> absolutely need to get into the plumbing; memory setup, ICE hardware
+>> protocols, etc. (ad nauseam) you almost inevitably go sideways from where
+>> the GUI designers intended.  Kvm-qemu kernel debugging probably falls
+>> squarely in this category.  All roads lead to gdb, it sometimes seems...
+>
+> gdb's command line is certainly overwhelming to many, but if I was really
+> desparate for an interface to gdb, I would use emacs, and I am a vim user.
+
+Emacs has a good (or gud?) interface to GDB, but sometimes it lacks one
+feature or another.
+
+What I recommend to every GDB beginner (or even non-beginners, because
+they also don't know about this feature) is TUI, the Text User Interface
+inside GDB itself.  It is ncurses-based, and after a long period of
+being unmaintained (and buggy), it has been receiving some TLC again
+lately.
+
+To enter TUI, press C-x a.  To leave TUI, C-x a again.
+
+-- 
+Sergio
+GPG key ID: 237A 54B1 0287 28BF 00EF  31F4 D0EB 7628 65FC 5E36
+Please send encrypted e-mail if possible
+http://sergiodj.net/
+
+From sergiodj at sergiodj.net  Sun Sep  6 03:05:49 2015
+From: sergiodj at sergiodj.net (Sergio Durigan Junior)
+Date: Sat, 05 Sep 2015 23:05:49 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <55E8B303.4080103@ve3syb.ca> (Kevin Cozens's message of "Thu, 3
+ Sep 2015 16:52:19 -0400")
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+ <20150903154107.GH15617@csclub.uwaterloo.ca>
+ <55E8B303.4080103@ve3syb.ca>
+Message-ID: <878u8kjlgy.fsf@sergiodj.net>
+
+On Thursday, September 03 2015, Kevin Cozens wrote:
+
+> On 15-09-03 11:41 AM, Lennart Sorensen wrote:
+>> Last I looked at it (a long time ago), ddd had to be one of the worst,
+>> most buggy, awful ui, pieces of crap I ever encountered.
+>
+> I know what you mean. When I first tried ddd it would often crash in
+> the middle of your debug session if you looked at it wrong, but it did
+> recover.
+>
+> The UI hasn't changed a whole lot from the early days but it has
+> gotten a bit less prone to crash. It usually works for me so I haven't
+> bothered to look around and see if there is something better that can
+> be used in place of ddd.
+
+If you're a GNOME user you might give Nemiver a try, too.
+
+<https://wiki.gnome.org/Apps/Nemiver>
+
+-- 
+Sergio
+GPG key ID: 237A 54B1 0287 28BF 00EF  31F4 D0EB 7628 65FC 5E36
+Please send encrypted e-mail if possible
+http://sergiodj.net/
+
+From scruss at gmail.com  Sun Sep  6 14:07:47 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sun, 6 Sep 2015 10:07:47 -0400
+Subject: [GTALUG] Better font rendering for Linux: Infinality
+Message-ID: <55EC48B3.5000704@gmail.com>
+
+Just in case there's anyone out there still suffering from most distros'
+appalling font rendering, Infinality can make a huge difference. Some
+(slightly debian-specific) instructions on installing it:
+http://www.webupd8.org/2013/06/better-font-rendering-in-linux-with.html
+
+Ubuntu 15.04 was still defaulting to a horrible mix of bitmap and vector
+fonts for certain applications until I installed Infinality. Font
+rendering is fractionally slower, but at least it looks like it's on a
+computer display from this century.
+
+cheers,
+ Stewart
+
+
+From scruss at gmail.com  Sun Sep  6 14:27:18 2015
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Sun, 6 Sep 2015 10:27:18 -0400
+Subject: [GTALUG] message from the past
+In-Reply-To: <alpine.LRH.2.02.1509052108210.9157@redclaw.mimosa.com>
+References: <alpine.LRH.2.02.1509052108210.9157@redclaw.mimosa.com>
+Message-ID: <55EC4D46.6080305@gmail.com>
+
+On 2015-09-05 09:29 PM, D. Hugh Redelmeier wrote:
+>
+> I'm typing this on my first notebook.  I bought it in 1999. …
+
+Compare this with the hardware spec of the Amazon Dash button, a
+single-purpose device used for ordering things you're running low on
+from Amazon Prime:
+
+     * 120 MHz 32-bit micro-controller with 128 KB RAM and 1 MB
+       program data storage
+     * additional 16 MB of non-volatile storage
+     * 24-bit digital audio microphone/sampler with a flat response
+       from 60 Hz - 15 kHz
+     * 802.11n wifi module
+
+I think they're about $10 … that's a lot of processing power spent just
+on ordering one brand of laundry detergent.
+
+cheers,
+ Stewart
+
+From kevin at ve3syb.ca  Mon Sep  7 00:30:32 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Sun, 6 Sep 2015 20:30:32 -0400
+Subject: [GTALUG] Active Surplus is Closing it's Queen Location
+In-Reply-To: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
+References: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
+Message-ID: <55ECDAA8.6060305@ve3syb.ca>
+
+On 15-09-03 02:08 PM, Scott Sullivan wrote:
+> Details on their site. Steels location to stay open. Everything 50% off.
+
+Another (almost historic) landmark is about to be lost? It just won't be the 
+same to walk along Queen Street east of Spadina and not see the Gorilla 
+standing on the side walk.
+
+I remember noticing that Active was upstairs the last time I was in the 
+area. They used to be on the main floor and had a basement to visit. I 
+wouldn't be surprised if rents have gone up too much for them. That section 
+of Queen St. West has gotten really upscale since the days I used to work at 
+Arkon Electronics in the 80's.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From mwilson at vex.net  Mon Sep  7 00:57:08 2015
+From: mwilson at vex.net (Mel Wilson)
+Date: Sun, 06 Sep 2015 20:57:08 -0400
+Subject: [GTALUG] Active Surplus is Closing it's Queen Location
+In-Reply-To: <55ECDAA8.6060305@ve3syb.ca>
+References: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
+ <55ECDAA8.6060305@ve3syb.ca>
+Message-ID: <1441587428.3635.2.camel@tecumseth5.mounteagle.lan>
+
+On Sun, 2015-09-06 at 20:30 -0400, Kevin Cozens wrote:
+> On 15-09-03 02:08 PM, Scott Sullivan wrote:
+> > Details on their site. Steels location to stay open. Everything 50% off.
+> 
+> Another (almost historic) landmark is about to be lost? It just won't be the 
+> same to walk along Queen Street east of Spadina and not see the Gorilla 
+> standing on the side walk.
+> 
+> I remember noticing that Active was upstairs the last time I was in the 
+> area. They used to be on the main floor and had a basement to visit. I 
+> wouldn't be surprised if rents have gone up too much for them. That section 
+> of Queen St. West has gotten really upscale since the days I used to work at 
+> Arkon Electronics in the 80's.
+> 
+I suspect, too, that a lot of electronics industry has dried up around
+T.O. in the last 30 or so years, and so new surplus and leftovers aren't
+being created.
+
+	Mel.
+
+
+
+From james.knott at rogers.com  Mon Sep  7 01:13:49 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 06 Sep 2015 21:13:49 -0400
+Subject: [GTALUG] Active Surplus is Closing it's Queen Location
+In-Reply-To: <55ECDAA8.6060305@ve3syb.ca>
+References: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
+ <55ECDAA8.6060305@ve3syb.ca>
+Message-ID: <55ECE4CD.7010803@rogers.com>
+
+On 09/06/2015 08:30 PM, Kevin Cozens wrote:
+> On 15-09-03 02:08 PM, Scott Sullivan wrote:
+>> Details on their site. Steels location to stay open. Everything 50% off.
+>
+> Another (almost historic) landmark is about to be lost? It just won't
+> be the same to walk along Queen Street east of Spadina and not see the
+> Gorilla standing on the side walk.
+>
+> I remember noticing that Active was upstairs the last time I was in
+> the area. They used to be on the main floor and had a basement to
+> visit. I wouldn't be surprised if rents have gone up too much for
+> them. That section of Queen St. West has gotten really upscale since
+> the days I used to work at Arkon Electronics in the 80's.
+>
+
+There was a piece recently on the CBC News about them closing.
+
+From rreiter91 at gmail.com  Mon Sep  7 12:31:32 2015
+From: rreiter91 at gmail.com (Russell Reiter)
+Date: Mon, 7 Sep 2015 08:31:32 -0400
+Subject: [GTALUG] Digital (NH4) 2Cr2O7
+In-Reply-To: <CAPik5MypDnDKTsVHf7B44HY-wXaK4tXPGBGD1gkcJiXFpAUoAg@mail.gmail.com>
+References: <CAPik5MzrqSPsNPEZR=yA4tduXLtcZASpmSWFT0ZL+1CHaM4KXg@mail.gmail.com>
+ <CAPik5MwaL6oWi1HrjEvjQY+VssSMuMx6ci3KKvoJ=8=4X2XSXw@mail.gmail.com>
+ <CAPik5MwcbE-_aBy_NSM5qd_MeJP_BiqdcmPVHf-fZfhuhvTL+Q@mail.gmail.com>
+ <CAPik5MypDnDKTsVHf7B44HY-wXaK4tXPGBGD1gkcJiXFpAUoAg@mail.gmail.com>
+Message-ID: <CAPik5Mx=Rb-DEt5a1+2mV1cT1BRyk+Ggc31D3gGJwd2pbWNiqw@mail.gmail.com>
+
+This is an odd subject title I know but a rather interesting POS security
+issue. Everybody has a story. People involved in computer security and
+intelligence have war stories, I have a few builders stories. Here is one
+of them.
+>
+> (NH4) 2Cr2O7 is the chemical formula for ammonium dichromate. It's a
+chemical which was used in developing colour film, with a few other notable
+characteristics. One of those is that when it is burned the resulting ash
+is seven times the volume of the original orange/red  fine powder that it
+is, although that's not material to what I relate now.
+>
+> When I 'prenticed in the building craft I met a lot of property
+developers some of them had, well lets call them skills. These skills were
+a part of what you might call the long con. As opposed to the short con
+where you just take the money the mark has with them at the time.
+>
+> I had a meeting with a fellow at a patio bar downtown and after our talk
+we had a few beers and we were discussing the new banking technology which
+allowed you to take money out of the bank from a machine outside the bank
+at any time day or night.
+>
+> This is what he told me when I was expressing how easy this made it for
+me to do my banking. He said, what if you lose your card, I said it has a
+password. He said if I can get hold of your card even for a short time, I
+can get not only your password but your account number and address.
+>
+> I said yea right how are you going to do that. He said ammonium
+dichromate. I knew what that stuff was from witnessing the volcano
+chemistry demonstration relating to the volume of the ash.
+>
+> So he told me that he could sprinkle the powder on the magnetic stripe of
+my card. The powder would stick to the magnetized portion of the tape. This
+would reveal the bar code and he could then duplicate that code on to a
+piece of blank reel to reel audio tape, use a barcode reader to harvest the
+plain text and get my pin and my address and my money then, by pasting that
+tape onto a piece of stiff cardboard, off to the bank (machine). A library
+card was just about the right size.
+>
+> Here's the digitized version of that technique. It requires a specific
+cyanogen mod for the NFC.
+>
+> m.youtube.com/watch?v=x2rF3dD1Ns0
+>
+> Russell
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150907/a9eb5867/attachment.html>
+
+From me at mylesbraithwaite.com  Mon Sep  7 20:10:06 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 7 Sep 2015 16:10:06 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting Tomorrow at 7:30pm (Samba
+ Progress Over the Last Six Years with William Murrithy)
+Message-ID: <CA+hskZO3XEu7bJBpyYoGDdnttQWFS6jVB7vSZ2t5pRWrG4raNQ@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-09/>
+
+# Samba Progress Over the Last Six Years with William Murrithy
+
+The talk is a continuation of William's previous talk on Samba in
+2009. It looks at how close samba has closed the gap between AD and
+samba with samba 4, what's still left, packaging/deployment
+improvements and a demo of the samba deployment and and management.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Vote for where we should dine before the meeting here:
+<http://survey.gtalug.org/index.php/437662>.
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+# Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact the GTALUG Board @ <board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From chris at cfajohnson.com  Tue Sep  8 01:42:35 2015
+From: chris at cfajohnson.com (Chris F.A. Johnson)
+Date: Mon, 7 Sep 2015 21:42:35 -0400 (EDT)
+Subject: [GTALUG] [GTALUG-Announce] Meeting Tomorrow at 7:30pm (Samba
+ Progress Over the Last Six Years with William Murrithy)
+In-Reply-To: <CA+hskZO3XEu7bJBpyYoGDdnttQWFS6jVB7vSZ2t5pRWrG4raNQ@mail.gmail.com>
+References: <CA+hskZO3XEu7bJBpyYoGDdnttQWFS6jVB7vSZ2t5pRWrG4raNQ@mail.gmail.com>
+Message-ID: <alpine.DEB.2.10.1509072139270.4115@chris.tor>
+
+
+   I have several copies of the 2nd edition of my book, "Pro Bash
+   Programming", available at $15 each.
+
+   If anyone is interested, I could bring some to the meeting tomorrow.
+
+   Let me know.
+
+-- 
+Chris F.A. Johnson, <http://cfajohnson.com>
+
+From hugh at mimosa.com  Tue Sep  8 13:21:56 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 8 Sep 2015 09:21:56 -0400 (EDT)
+Subject: [GTALUG] [GTALUG-Announce] Meeting Tomorrow at 7:30pm (Samba
+ Progress Over the Last Six Years with William Murrithy)
+In-Reply-To: <CA+hskZO3XEu7bJBpyYoGDdnttQWFS6jVB7vSZ2t5pRWrG4raNQ@mail.gmail.com>
+References: <CA+hskZO3XEu7bJBpyYoGDdnttQWFS6jVB7vSZ2t5pRWrG4raNQ@mail.gmail.com>
+Message-ID: <alpine.LRH.2.02.1509080920240.4754@redclaw.mimosa.com>
+
+| From: Myles Braithwaite <me at mylesbraithwaite.com>
+| Date: Mon, 7 Sep 2015 16:10:06 -0400
+
+| * 6:00 pm - Vote for where we should dine before the meeting here:
+| <http://survey.gtalug.org/index.php/437662>.
+
+"This survey is no longer available"
+
+Results?
+
+Confession: I never got back to fill it in.
+
+From me at mylesbraithwaite.com  Tue Sep  8 13:35:24 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 08 Sep 2015 09:35:24 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting Tomorrow at 7:30pm (Samba
+ Progress Over the Last Six Years with William Murrithy)
+In-Reply-To: <alpine.LRH.2.02.1509080920240.4754@redclaw.mimosa.com>
+References: <CA+hskZO3XEu7bJBpyYoGDdnttQWFS6jVB7vSZ2t5pRWrG4raNQ@mail.gmail.com>
+ <alpine.LRH.2.02.1509080920240.4754@redclaw.mimosa.com>
+Message-ID: <55EEE41C.3030801@mylesbraithwaite.com>
+
+D. Hugh Redelmeier wrote:
+> | From: Myles Braithwaite <me at mylesbraithwaite.com>
+> | Date: Mon, 7 Sep 2015 16:10:06 -0400
+> 
+> | * 6:00 pm - Vote for where we should dine before the meeting here:
+> | <http://survey.gtalug.org/index.php/437662>.
+> 
+> "This survey is no longer available"
+> 
+> Results?
+
+You can view the results here:
+<http://survey.gtalug.org/index.php/statistics_user/action/surveyid/437662/language/en>.
+
+Only four people voted and the first ranking is Kaiju (Japanese Curry)
+<http://www.kaijutoronto.com/>. The second ranking is Raijin
+<http://zakkushi.com/raijin/>.
+
+Please note I'm not a 100% certain I am reading the results right.
+
+From hugh at mimosa.com  Tue Sep  8 13:52:58 2015
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Tue, 8 Sep 2015 09:52:58 -0400 (EDT)
+Subject: [GTALUG] dinner tonight: Kaiju (Japanese Curry)
+In-Reply-To: <55EEE41C.3030801@mylesbraithwaite.com>
+References: <CA+hskZO3XEu7bJBpyYoGDdnttQWFS6jVB7vSZ2t5pRWrG4raNQ@mail.gmail.com>
+ <alpine.LRH.2.02.1509080920240.4754@redclaw.mimosa.com>
+ <55EEE41C.3030801@mylesbraithwaite.com>
+Message-ID: <alpine.LRH.2.02.1509080948000.4754@redclaw.mimosa.com>
+
+Just to make this clear:
+
+| From: Myles Braithwaite <me at mylesbraithwaite.com>
+
+| You can view the results here:
+| <http://survey.gtalug.org/index.php/statistics_user/action/surveyid/437662/language/en>.
+| 
+| Only four people voted and the first ranking is Kaiju (Japanese Curry)
+| <http://www.kaijutoronto.com/>.
+
+384 YONGE STREET,
+(Unit) 51
+
+Note: this is a food court and you can join us but eat from a different
+restaurant.  I don't remember which ones are there and open.
+
+From qwerty172 at gmail.com  Tue Sep  8 13:54:14 2015
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Tue, 8 Sep 2015 09:54:14 -0400
+Subject: [GTALUG] October AGM and Elections.
+Message-ID: <CAA3RLT7HKeFYDa0XLH-Ua4YnSxZAS8uVLKLBhoG5iDQkLDHi6w@mail.gmail.com>
+
+Good afternoon ladies and gentleman,
+
+I have been appointed the election's returning officer, aka the guy who
+counts the votes.
+
+There are two openings for the board this year. We are looking for people
+to fill the vacancies. If you wish to run for the board please send me your
+name. Officially, I will need a member to second your nomination, but that
+can be done at the AGM in October.
+
+Although this is not a big commitment of time, please understand that it
+does involve a commitment. There is one monthly meeting of the executive
+which includes the board to discuss operational issues that you are
+expected to attend.
+
+Thanks,
+
+Bill
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150908/888d4c4e/attachment.html>
+
+From me at mylesbraithwaite.com  Tue Sep  8 14:05:59 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 8 Sep 2015 10:05:59 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting Tonight at 7:30pm - Samba
+ Progress Over the Last Six Years with William Murrithy
+Message-ID: <CA+hskZNUy9Y=vvpjY9nAaxOS3aXg_VDnBurV4EwAiO5p1q=DnA@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-09/>
+
+# Samba Progress Over the Last Six Years with William Murrithy
+
+The talk is a continuation of William's previous talk on Samba in
+2009. It looks at how close samba has closed the gap between AD and
+samba with samba 4, what's still left, packaging/deployment
+improvements and a demo of the samba deployment and and management.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Before each meeting a group of GTALUGers dine at a
+different restaurant every month, this month we are going to Kaiju
+(384 Yonge St, Unit 51 downstairs in the food court)
+<http://www.kaijutoronto.com/>.
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+# Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact the GTALUG Board @ <board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From lsorense at csclub.uwaterloo.ca  Tue Sep  8 16:00:43 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 8 Sep 2015 12:00:43 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <55E9A576.2060501@gmail.com>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca>
+ <20150903154107.GH15617@csclub.uwaterloo.ca>
+ <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+ <20150904011742.GI15617@csclub.uwaterloo.ca>
+ <CAFSeFg8dBJckgoyTY2B2=iT0dYUnL8=M_y8Z=NwPsf3U=Hpf9g@mail.gmail.com>
+ <20150904133336.GJ15617@csclub.uwaterloo.ca>
+ <55E9A576.2060501@gmail.com>
+Message-ID: <20150908160043.GK15617@csclub.uwaterloo.ca>
+
+On Fri, Sep 04, 2015 at 10:06:46AM -0400, Aruna Hewapathirane wrote:
+> That is probably because you have more gray matter ( gray matter in
+> this case equates to long years of lived experience + testing +
+> breaking things then wash+rinse+repeat till you finally fix things.. )
+> 
+> I still *cringe* when I have to fire up qemu.. hopefully someday I
+> will feel comfortable but right now every single time I do this I
+> actually do PRAY ! ( Seriously I kneel then PRAY ! yes dat bad.. )
+> 
+> Len, if I may please I am setting up a few servers for a good friend
+> and they are running Zimbra Servers and Zimbra has it's own bundled
+> Apache so I do not see the usual /var/www root and the log files are
+> huge. Seriously huge. Any suggestions on how best to tweak for
+> performance ?
+
+Never heard of Zimbra before, so no idea really.
+
+> I also see free -m -l -t telling me it is hogging memory like
+> anything. Is this a Zimbra issue or ? Once again how best to resolve ?
+> 
+> The logs are purged daily so am guesing teh amount of transactions
+> through Zimbra is causing the weight ?
+> 
+> This is my first exposure to Zimbra and Servers actually so please
+> have mercy and be gentle.
+
+Better to find someone that knows something about Zimbra.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Sep  8 16:04:57 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 8 Sep 2015 12:04:57 -0400
+Subject: [GTALUG] OT: Inexpensive laptop for Minecraft?
+In-Reply-To: <20150905001836.5894230.90747.3460@yahoo.ca>
+References: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
+ <20150905001836.5894230.90747.3460@yahoo.ca>
+Message-ID: <20150908160457.GL15617@csclub.uwaterloo.ca>
+
+On Fri, Sep 04, 2015 at 08:18:36PM -0400, William Park wrote:
+> <html><head></head><body lang="en-US" style="background-color: rgb(255, 255, 255); line-height: initial;">                                                                                      <div style="width: 100%; font-size: initial; font-family: Calibri, 'Slate Pro', sans-serif, sans-serif; color: rgb(31, 73, 125); text-align: initial; background-color: rgb(255, 255, 255);">‎Not sure about dedicated graphics, but ThinkPad T420<span style="font-family: Calibri, 'Slate Pro', sans-serif, sans-serif; font-size: initial; text-align: initial; line-height: initial;">‎ (refurbished) is on sale at Canada Computers again.&nbsp;</span></div><div style="width: 100%; font-size: initial; font-family: Calibri, 'Slate Pro', sans-serif, sans-serif; color: rgb(31, 73, 125); text-align: initial; background-color: rgb(255, 255, 255);"><span style="font-family: Calibri, 'Slate Pro', sans-serif, sans-serif; font-size: initial; text-align: initial; line-height: initial;">--&nbsp;</span></div><div style="width: 100%; font-size: initial; font-family: Calibri, 'Slate Pro', sans-serif, sans-serif; color: rgb(31, 73, 125); text-align: initial; background-color: rgb(255, 255, 255);"><span style="font-family: Calibri, 'Slate Pro', sans-serif, sans-serif; font-size: initial; text-align: initial; line-height: initial;">William </span></div>                                                                                                                                     <div style="width: 100%; font-size: initial; font-family: Calibri, 'Slate Pro', sans-serif, sans-serif; color: rgb(31, 73, 125); text-align: initial; background-color: rgb(255, 255, 255);"><br></div>                                                                                                                                                                                                   <div style="font-size: initial; font-family: Calibri, 'Slate Pro', sans-serif, sans-serif; color: rgb(31, 73, 125); text-align: initial; background-color: rgb(255, 255, 255);">Sent&nbsp;from&nbsp;my&nbsp;BlackBerry&nbsp;10&nbsp;smartphone&nbsp;on&nbsp;the&nbsp;Rogers&nbsp;network.</div>                                                                                                                                                                                  <table width="100%" style="background-color:white;border-spacing:0px;"> <tbody><tr><td colspan="2" style="font-size: initial; text-align: initial; background-color: rgb(255, 255, 255);">                           <div style="border-style: solid none none; border-top-color: rgb(181, 196, 223); border-top-width: 1pt; padding: 3pt 0in 0in; font-family: Tahoma, 'BB Alpha Sans', 'Slate Pro'; font-size: 10pt;">  <div><b>From: </b>Matt Price</div><div><b>Sent: </b>Friday, September 4, 2015 6:33 PM</div><div><b>To: </b>GTALUG Talk</div><div><b>Reply To: </b>GTALUG Talk</div><div><b>Subject: </b>[GTALUG] OT: Inexpensive laptop for Minecraft?</div></div></td></tr></tbody></table><div style="border-style: solid none none; border-top-color: rgb(186, 188, 209); border-top-width: 1pt; font-size: initial; text-align: initial; background-color: rgb(255, 255, 255);"></div><br><div id="_originalContent" style=""><div dir="ltr"><div><div>Hello everyone! Thought I'd tap the collective brain. I'm looking for a relatively inexpensive laptop for my son, who mostly just plays minecraft (and occasionally needs the computer for school work, using google docs &amp; a browser). Any suggestions of models, or places to buy? I'm looking for something pretty inexpensive, but with dedicated graphics that will allow him to play minecraft comfortably for the next year or&nbsp; so at least.&nbsp; <br><br></div>Thank you!<br><br></div>m<br></div>
+> <br><!--end of _originalContent --></div></body></html>
+
+That's a tad hard to read.
+
+-- 
+Len Sorensen
+
+From lsorense at csclub.uwaterloo.ca  Tue Sep  8 16:11:34 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 8 Sep 2015 12:11:34 -0400
+Subject: [GTALUG] OT: Inexpensive laptop for Minecraft?
+In-Reply-To: <alpine.LRH.2.02.1509051008160.1292@redclaw.mimosa.com>
+References: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
+ <20150905001836.5894230.90747.3460@yahoo.ca>
+ <alpine.LRH.2.02.1509051008160.1292@redclaw.mimosa.com>
+Message-ID: <20150908161134.GM15617@csclub.uwaterloo.ca>
+
+On Sat, Sep 05, 2015 at 11:13:58AM -0400, D. Hugh Redelmeier wrote:
+> Bestbuy has them too, with a dock.  Also refurb.io
+> <http://forums.redflagdeals.com/refurb-io-labour-day-clearance-select-desktop-computers-laptops-1805521/>
+> <http://forums.redflagdeals.com/ca-refurb-io-lenovo-thinkpad-t420-i5-2nd-gen-4gb-300gb-hd-win-7-pro-261-a-1805549/>
+> Note: these different sources have units with different generations of
+> Intel processors, and I seem to recollect that that matters for GPU
+> power.
+> 
+> But I don't really think that these are great for the price
+> considering that they are used.  It depends on how much you value the
+> ThinkPad attributes (good keyboard, repairable, very well-built,
+> heavy).
+> 
+> These use the CPU chip's built-in GPU.  Although Intel's GPU has been
+> getting better, it was fairly poor for gaming in older generations.
+> Someone who knows more about Minecraft performance would perhaps know
+> if these GPUs are good enough.  Or use google
+> <http://minecraft.gamepedia.com/Hardware_performance>
+> 
+> I would *guess* that current Intel i-series processors would have a
+> good enough GPU for Minecraft.  I would also guess that the GPU part
+> of any recent AMD APU is good for Minecraft (APU is what AMD calls
+> their CPU + GPU chips).  But beware: low-end AMD CPUs are very slow by
+> today's standards (and they go by a lot of different names).  This is
+> cheap but I think that it isn't quite good enough:
+> <http://www.nmicrovip.ca/asus-amd-a4-5000-6gb-ram-750gb-hdd-15-6-1366x768-dvdrw-windows-8-bilingual-kb-x552ea-sh41-cb-refurbished/>
+> A4 series are probably too weak.
+
+I would not think minecraft is heavy on the graphics either.
+
+-- 
+Len Sorensen
+
+From opengeometry at yahoo.ca  Tue Sep  8 16:14:31 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Tue, 08 Sep 2015 12:14:31 -0400
+Subject: [GTALUG] OT: Inexpensive laptop for Minecraft?
+In-Reply-To: <20150908160457.GL15617@csclub.uwaterloo.ca>
+References: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
+ <20150905001836.5894230.90747.3460@yahoo.ca>
+ <20150908160457.GL15617@csclub.uwaterloo.ca>
+Message-ID: <20150908161431.5894230.88216.3603@yahoo.ca>
+
+Sorry about that.  I'm still learning to use BlackBerry Q10.‎ Now I know why RIM went belly up. Whoever designed UI must have been on drug. 
+-- 
+William
+‎
+Sent from my BlackBerry 10 smartphone on the Rogers network.
+  Original Message  
+From: Lennart Sorensen
+Sent: Tuesday, September 8, 2015 12:05 PM
+To: GTALUG Talk
+Reply To: GTALUG Talk
+Subject: Re: [GTALUG] OT: Inexpensive laptop for Minecraft?
+
+On Fri, Sep 04, 2015 at 08:18:36PM -0400, William Park wrote:
+> <html><head></head><body lang="en-US" style="background-color: rgb(255, 255, 255); line-height: initial;"> <div style="width: 100%; font-size: initial; font-family: Calibri, 'Slate Pro', sans-serif, sans-serif; color: rgb(31, 73, 125); text-align: initial; background-color: rgb(255, 255, 255);">‎Not sure about dedicated graphics, but ThinkPad T420<span style="font-family: Calibri, 'Slate Pro', sans-serif, sans-serif; font-size: initial; text-align: initial; line-height: initial;">‎ (refurbished) is on sale at Canada Computers again.&nbsp;</span></div><div style="width: 100%; font-size: initial; font-family: Calibri, 'Slate Pro', sans-serif, sans-serif; color: rgb(31, 73, 125); text-align: initial; background-color: rgb(255, 255, 255);"><span style="font-family: Calibri, 'Slate Pro', sans-serif, sans-serif; font-size: initial; text-align: initial; line-height: initial;">--&nbsp;</span></div><div style="width: 100%; font-size: initial; font-family: Calibri, 'Slate Pro', sans-serif, sans-serif; color: rgb(31, 73, 125); text-align: initial; background-color: rgb(255, 255, 255);"><span style="font-family: Calibri, 'Slate Pro', sans-serif, sans-serif; font-size: initial; text-align: initial; line-height: initial;">William </span></div> <div style="width: 100%; font-size: initial; font-family: Calibri, 'Slate Pro', sans-serif, sans-serif; color: rgb(31, 73, 125); text-align: initial; background-color: rgb(255, 255, 255);"><br></div> <div style="font-size: initial; font-family: Calibri, 'Slate Pro', sans-serif, sans-serif; color: rgb(31, 73, 125); text-align: initial; background-color: rgb(255, 255, 255);">Sent&nbsp;from&nbsp;my&nbsp;BlackBerry&nbsp;10&nbsp;smartphone&nbsp;on&nbsp;the&nbsp;Rogers&nbsp;network.</div> <table width="100%" style="background-color:white;border-spacing:0px;"> <tbody><tr><td colspan="2" style="font-size: initial; text-align: initial; background-color: rgb(255, 255, 255);"> <div style="border-style: solid none none; border-top-color: rgb(181, 196, 223); border-top-width: 1pt; padding: 3pt 0in 0in; font-family: Tahoma, 'BB Alpha Sans', 'Slate Pro'; font-size: 10pt;"> <div><b>From: </b>Matt Price</div><div><b>Sent: </b>Friday, September 4, 2015 6:33 PM</div><div><b>To: </b>GTALUG Talk</div><div><b>Reply To: </b>GTALUG Talk</div><div><b>Subject: </b>[GTALUG] OT: Inexpensive laptop for Minecraft?</div></div></td></tr></tbody></table><div style="border-style: solid none none; border-top-color: rgb(186, 188, 209); border-top-width: 1pt; font-size: initial; text-align: initial; background-color: rgb(255, 255, 255);"></div><br><div id="_originalContent" style=""><div dir="ltr"><div><div>Hello everyone! Thought I'd tap the collective brain. I'm looking for a relatively inexpensive laptop for my son, who mostly just plays minecraft (and occasionally needs the computer for school work, using google docs &amp; a browser). Any suggestions of models, or places to buy? I'm looking for something pretty inexpensive, but with dedicated graphics that will allow him to play minecraft comfortably for the next year or&nbsp; so at least.&nbsp; <br><br></div>Thank you!<br><br></div>m<br></div>
+> <br><!--end of _originalContent --></div></body></html>
+
+That's a tad hard to read.
+
+-- 
+Len Sorensen
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+From lsorense at csclub.uwaterloo.ca  Tue Sep  8 18:36:48 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Tue, 8 Sep 2015 14:36:48 -0400
+Subject: [GTALUG] OT: Inexpensive laptop for Minecraft?
+In-Reply-To: <20150908161431.5894230.88216.3603@yahoo.ca>
+References: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
+ <20150905001836.5894230.90747.3460@yahoo.ca>
+ <20150908160457.GL15617@csclub.uwaterloo.ca>
+ <20150908161431.5894230.88216.3603@yahoo.ca>
+Message-ID: <20150908183648.GN15617@csclub.uwaterloo.ca>
+
+On Tue, Sep 08, 2015 at 12:14:31PM -0400, William Park wrote:
+> Sorry about that.  I'm still learning to use BlackBerry Q10.‎ Now I know why RIM went belly up. Whoever designed UI must have been on drug. 
+
+I rarely do email on my phone.  I just tried sending one to myself from
+gmail on my blackberry, and yes it is a horrible mess.
+
+Selecting 'plain text format' from the menu before sending does generate
+a perfectly nice message though.  I wonder why they don't do dual format
+like sane mail clients do.  Maybe I should do a feature request.
+Being able to set plain text as default would be a nice feature too.
+Being able to set it as a setting for each email address in the contacts
+would be ideal.
+
+-- 
+Len Sorensen
+
+From chris at cfajohnson.com  Tue Sep  8 20:24:32 2015
+From: chris at cfajohnson.com (Chris F.A. Johnson)
+Date: Tue, 8 Sep 2015 16:24:32 -0400 (EDT)
+Subject: [GTALUG] [GTALUG-Announce] Meeting Tomorrow at 7:30pm (Samba
+ Progress Over the Last Six Years with William Murrithy)
+In-Reply-To: <alpine.DEB.2.10.1509072139270.4115@chris.tor>
+References: <CA+hskZO3XEu7bJBpyYoGDdnttQWFS6jVB7vSZ2t5pRWrG4raNQ@mail.gmail.com>
+ <alpine.DEB.2.10.1509072139270.4115@chris.tor>
+Message-ID: <alpine.DEB.2.10.1509081623490.4115@chris.tor>
+
+On Mon, 7 Sep 2015, Chris F.A. Johnson wrote:
+
+>
+>  I have several copies of the 2nd edition of my book, "Pro Bash
+>  Programming", available at $15 each.
+>
+>  If anyone is interested, I could bring some to the meeting tomorrow.
+
+   No interest? Then I won't bother.
+
+-- 
+Chris F.A. Johnson, <http://cfajohnson.com>
+
+From bjonkman at sobac.com  Wed Sep  9 00:24:36 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Tue, 8 Sep 2015 20:24:36 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting Tomorrow at 7:30pm (Samba
+ Progress Over the Last Six Years with William Murrithy)
+In-Reply-To: <alpine.DEB.2.10.1509081623490.4115@chris.tor>
+References: <CA+hskZO3XEu7bJBpyYoGDdnttQWFS6jVB7vSZ2t5pRWrG4raNQ@mail.gmail.com>
+ <alpine.DEB.2.10.1509072139270.4115@chris.tor>
+ <alpine.DEB.2.10.1509081623490.4115@chris.tor>
+Message-ID: <55EF7C44.7060505@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Oh, there's interest, just inability to take advantage. I would have
+gladly acquired one of your books, but I'm not going to be there tonight.
+
+- --Bob.
+
+
+On 08/09/15 04:24 PM, Chris F.A. Johnson wrote:
+> On Mon, 7 Sep 2015, Chris F.A. Johnson wrote:
+> 
+>> 
+>> I have several copies of the 2nd edition of my book, "Pro Bash 
+>> Programming", available at $15 each.
+>> 
+>> If anyone is interested, I could bring some to the meeting
+>> tomorrow.
+> 
+> No interest? Then I won't bother.
+> 
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlXvfEEACgkQuRKJsNLM5ep/tACfabwWqqc8FSs3XWT40uf5gV6E
+HFQAn1D30T29Ir1r5qHcIZAN4sJqW9Lw
+=1FH+
+-----END PGP SIGNATURE-----
+
+From bjonkman at sobac.com  Wed Sep  9 01:03:00 2015
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Tue, 8 Sep 2015 21:03:00 -0400
+Subject: [GTALUG] Software Freedom Day Toronto, Saturday 19 September 2015
+Message-ID: <55EF8544.7000600@sobac.com>
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Hi Everybody! I'd like to announce that Software Freedom Day is taking
+place in Toronto on Saturday, 19 September 2015 from 10:00am to 4:00pm
+
+This is the first time that SFD will be celebrated in Toronto! We've
+got presentations, lightning talks, and some Free Culture films.
+Admission is Free (as in Gratis), but
+
+*What*: Software Freedom Day Toronto
+*When*: Saturday 19 September 2015 from 10:00am to 4:00pm
+*Where*: 120 Carlton Avenue, Toronto, Ontario
+*Map*: http://osm.org/go/ZX6B46sH?m=
+*Website*:
+http://wiki.softwarefreedomday.org/2015/Canada/Toronto/LibrePlanet
+
+Schedule
+========
+
+10:00am - What Is Software Freedom (Sergio Durigan)
+11:00am - Free Software in Musical Performance (Blaise Alleyne)
+12:00n  - Lighting Talks (Aruna Hewapathirane, Rudolf Olah)
+2:30pm  - Lunch and Free Culture Short Films
+2:00pm  - E-mail Privacy with Free Software (Bob Jonkman)
+3:00pm  - GnuPG/PGP Keysigning
+
+
+SFD presentations are free of charge. For lunch we're ordering out
+from Panago's Pizza -- $5.00 to get yours!
+
+
+SFDToronto is organized by members of LibrePlanet Ontario; the venue
+has been provided by our sponsor Alleyne, Inc.
+
+https://libreplanet.org/wiki/Group:LibrePlanet_Ontario
+
+http://alleyneinc.net/
+
+- -- 
+
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-635-9413
+Candidate  for the Green Party of Canada in  Kitchener-Conestoga
+https://bobjonkmangpc.ca/       mailto:bob.jonkman at greenparty.ca
+Vote for the person  who will best represent you in your riding!
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2.0.20 (GNU/Linux)
+Comment: Ensure confidentiality, authenticity, non-repudiability
+
+iEYEARECAAYFAlXvhUEACgkQuRKJsNLM5epC1QCglqza4SwwR8lQtVrLwKU8M8H1
+6RkAn1ExK63c+rAwb7G8IuKQUeK5IEjp
+=9Tyn
+-----END PGP SIGNATURE-----
+
+From moptop99 at gmail.com  Wed Sep  9 15:17:38 2015
+From: moptop99 at gmail.com (Matt Price)
+Date: Wed, 9 Sep 2015 11:17:38 -0400
+Subject: [GTALUG] OT: Inexpensive laptop for Minecraft?
+In-Reply-To: <20150908183648.GN15617@csclub.uwaterloo.ca>
+References: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
+ <20150905001836.5894230.90747.3460@yahoo.ca>
+ <20150908160457.GL15617@csclub.uwaterloo.ca>
+ <20150908161431.5894230.88216.3603@yahoo.ca>
+ <20150908183648.GN15617@csclub.uwaterloo.ca>
+Message-ID: <CAN_Dec8Y8t6bfLmrye_snmudm=KyEWQ0h8P8de31UHheAAq+8w@mail.gmail.com>
+
+Wanted to say a belated thank you to everyone.  I don't think a thinkpad is
+the right tool for htis particular job, though I've had only thinkpads
+myself for the last little while. our experience has been that even recent
+T-series laptops with pretty decent integrated intel graphics are just a
+little slow for adequate gameplay.  It looks like there are quite a few
+used gaming laptops hovering around the $500 mark on Craigslist:
+
+http://toronto.craigslist.ca/search/sya?query=gaming+laptop
+
+And that seems a pretty good option for now!
+
+m
+
+
+On Tue, Sep 8, 2015 at 2:36 PM, Lennart Sorensen <
+lsorense at csclub.uwaterloo.ca> wrote:
+
+> On Tue, Sep 08, 2015 at 12:14:31PM -0400, William Park wrote:
+> > Sorry about that.  I'm still learning to use BlackBerry Q10.‎ Now I know
+> why RIM went belly up. Whoever designed UI must have been on drug.
+>
+> I rarely do email on my phone.  I just tried sending one to myself from
+> gmail on my blackberry, and yes it is a horrible mess.
+>
+> Selecting 'plain text format' from the menu before sending does generate
+> a perfectly nice message though.  I wonder why they don't do dual format
+> like sane mail clients do.  Maybe I should do a feature request.
+> Being able to set plain text as default would be a nice feature too.
+> Being able to set it as a setting for each email address in the contacts
+> would be ideal.
+>
+> --
+> Len Sorensen
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150909/45e13b50/attachment.html>
+
+From me at mylesbraithwaite.com  Wed Sep  9 15:28:31 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Wed, 9 Sep 2015 11:28:31 -0400
+Subject: [GTALUG] Notes from last night's meeting
+Message-ID: <CA+hskZNZxcQeSENeLscAzqq-FO8F3G_3A0PFQ_P0K7Z_fS-XMw@mail.gmail.com>
+
+<http://wiki.gtalug.org/meeting:2015-09>
+
+====== 11 August, 2015 - Round Table Q&A Session ======
+
+  * [[http://gtalug.org/meeting/2015-09/|Meeting Link]]
+
+===== Announcements Before the Meeting =====
+
+  * AGM
+    * Two open board seats.
+    * Contact Bill Thanis @ <candidacy at gtalug.org> if you are
+interested in running for one.
+    * You will need to be seconded by another member.
+  * Upcoming GTA Events
+    * 19th September -
+[[http://wiki.softwarefreedomday.org/2015/Canada/Toronto/LibrePlanet|Toronto
+Software Freedom Day]]
+      * LibrePlanet Ontario is hosting.
+      * There will be talks about free software in music performance,
+e-mail privacy, lighting talks, a formal GnuPG/PGP Keysigning, and
+some Free Culture films.
+    * 29-30 October - [[http://fsoss.senecac.on.ca/2015/|FSOSS at Seneca]]
+    * 7-8 November - [[https://2015.pycon.ca/|PyCon Canada 2015]]
+
+===== Questions and Answers =====
+
+  * PHP Server Side Debuggers
+    * [[http://xdebug.org/|xdebug]]
+    * [[https://www.jetbrains.com/phpstorm/|PHPStorm]]
+  * MySQL Export to CSV
+    * Character sets, what are they good for?
+    * We're going in RAW!
+  * Windows Support
+    * It's Windows!!!
+  * Linux Motherboards
+    * Asus
+    * Intel
+
+From opengeometry at yahoo.ca  Wed Sep  9 16:15:53 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Wed, 9 Sep 2015 12:15:53 -0400
+Subject: [GTALUG] 5.25" -> 3.5" converter
+Message-ID: <20150909161553.GA2061@node1.localdomain>
+
+Following up on discussion over beer, yesterday...
+
+Here is 5.25" to 3.5" converter (3 bay -> 4 disks) at Canada Computers:
+    http://www.canadacomputers.com/product_info.php?cPath=6_108&item_id=021242
+Only thing is I can see where the fan is mounted.
+-- 
+William
+
+From scott at ss.org  Wed Sep  9 17:31:35 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Wed, 09 Sep 2015 13:31:35 -0400
+Subject: [GTALUG] 5.25" -> 3.5" converter
+In-Reply-To: <20150909161553.GA2061@node1.localdomain>
+References: <20150909161553.GA2061@node1.localdomain>
+Message-ID: <7D5D73D4-5F12-4BC8-A1FD-779817A05065@ss.org>
+
+On September 9, 2015 12:15:53 PM EDT, William Park <opengeometry at yahoo.ca> wrote:
+>Following up on discussion over beer, yesterday...
+>
+>Here is 5.25" to 3.5" converter (3 bay -> 4 disks) at Canada Computers:
+>http://www.canadacomputers.com/product_info.php?cPath=6_108&item_id=021242
+>Only thing is I can see where the fan is mounted.
+>-- 
+>William
+>---
+>Talk Mailing List
+>talk at gtalug.org
+>http://gtalug.org/mailman/listinfo/talk
+
+These are rather bad. No back plane, the front fan is friction held with power supplied over goofy spring contacts.
+
+These are ones I'm using.
+
+http://www.newegg.ca/Product/Product.aspx?Item=N82E16816215383
+
+Trayless, fans are not too loud and look great in my 20 year old tower case.
+
+http://revident.net/images/2015-08-27-woodlook-hdd-bays-in-beige-tower.jpg
+
+That machine is called Tachyon.
+
+
+
+4 in 3 version:
+http://www.newegg.ca/Product/Product.aspx?Item=N82E16816215384
+-- 
+Scott Sullivan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150909/a57f61a4/attachment.html>
+
+From opengeometry at yahoo.ca  Wed Sep  9 17:57:18 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Wed, 9 Sep 2015 13:57:18 -0400
+Subject: [GTALUG] 5.25" -> 3.5" converter
+In-Reply-To: <20150909161553.GA2061@node1.localdomain>
+References: <20150909161553.GA2061@node1.localdomain>
+Message-ID: <20150909175718.GA2571@node1.localdomain>
+
+On Wed, Sep 09, 2015 at 12:15:53PM -0400, William Park wrote:
+> Following up on discussion over beer, yesterday...
+> 
+> Here is 5.25" to 3.5" converter (3 bay -> 4 disks) at Canada Computers:
+>     http://www.canadacomputers.com/product_info.php?cPath=6_108&item_id=021242
+> Only thing is I can see where the fan is mounted.
+                     \___ can't
+-- 
+William
+
+From lsorense at csclub.uwaterloo.ca  Wed Sep  9 18:32:56 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 9 Sep 2015 14:32:56 -0400
+Subject: [GTALUG] OT: Inexpensive laptop for Minecraft?
+In-Reply-To: <CAN_Dec8Y8t6bfLmrye_snmudm=KyEWQ0h8P8de31UHheAAq+8w@mail.gmail.com>
+References: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
+ <20150905001836.5894230.90747.3460@yahoo.ca>
+ <20150908160457.GL15617@csclub.uwaterloo.ca>
+ <20150908161431.5894230.88216.3603@yahoo.ca>
+ <20150908183648.GN15617@csclub.uwaterloo.ca>
+ <CAN_Dec8Y8t6bfLmrye_snmudm=KyEWQ0h8P8de31UHheAAq+8w@mail.gmail.com>
+Message-ID: <20150909183256.GO15617@csclub.uwaterloo.ca>
+
+On Wed, Sep 09, 2015 at 11:17:38AM -0400, Matt Price wrote:
+> Wanted to say a belated thank you to everyone.  I don't think a thinkpad is
+> the right tool for htis particular job, though I've had only thinkpads
+> myself for the last little while. our experience has been that even recent
+> T-series laptops with pretty decent integrated intel graphics are just a
+> little slow for adequate gameplay.  It looks like there are quite a few
+> used gaming laptops hovering around the $500 mark on Craigslist:
+> 
+> http://toronto.craigslist.ca/search/sya?query=gaming+laptop
+> 
+> And that seems a pretty good option for now!
+
+My experience also says thinkpads can handle being brought places, while
+many gaming laptops break very easily due to cheap crappy screen hinges
+and such.  Very annoying.
+
+-- 
+Len Sorensen
+
+From me at mylesbraithwaite.com  Thu Sep 10 15:40:33 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 10 Sep 2015 11:40:33 -0400
+Subject: [GTALUG] Toronto Homebrew Hosting Club on 22 October at HackLab
+Message-ID: <55F1A471.8050607@mylesbraithwaite.com>
+
+<https://homebrewhosting.club/>
+
+Are you building your own website? Setup and running your own
+calendar/contacts server? Developing your own publishing web app?
+Hosting a Gnu-based-social-network? Running your own Wiki? Hosting your
+own email server? Did you buy a $35 VPS and looking to start hosting
+your own email server? Or some other digital magic-cloud service?
+
+If so, we are a meetup of people in the Greater Toronto Area passionate
+about self hosting, in the same structure as the [Homebrew Computer
+Club][1] meetings in Silicon Valley (and the [Homebrew Website
+Club][2]). It will be a gathering of like-minded people to swap ideas,
+talk shop, and general awesomeness about hosting your own infrastructure.
+
+Our first meetup will be on Thursday 22nd October, 2015 at 7:30pm at the
+Toronto [HackLab][3] (near the corner of [Queen Street West and Dufferin
+Street][4]).
+
+[1]: https://en.wikipedia.org/wiki/Homebrew_Computer_Club
+[2]: https://indiewebcamp.com/Homebrew_Website_Club
+[3]: https://hacklab.to/
+[4]: http://www.openstreetmap.org/node/3522641496
+
+From kevin at ve3syb.ca  Thu Sep 10 15:49:19 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Thu, 10 Sep 2015 11:49:19 -0400
+Subject: [GTALUG] QEMU and GDB debugging a kernel module
+In-Reply-To: <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
+ <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
+ <55E6542A.2090707@ve3syb.ca> <20150903154107.GH15617@csclub.uwaterloo.ca>
+ <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
+Message-ID: <55F1A67F.3040702@ve3syb.ca>
+
+On 15-09-03 12:21 PM, Mike wrote:
+> But Kevin, don't fear the command line.Â  A
+> well-designed graphical debugger is a good and useful tool, but when you
+> absolutely need to get into the plumbing; memory setup, ICE hardware
+> protocols, etc. (ad nauseam) you almost inevitably go sideways from where
+> the GUI designers intended.
+
+I don't fear the command line. I just don't use gdb enough to know all its 
+commands. I would need a cheat sheet in order to use it effectively from the 
+command line. The extent of my command line use of gdb is limited to loading 
+a core dump, loading the file with the symbol table and getting a backtrace.
+
+I find it convenient to be able to watch the contents of multiple variables 
+and easily dig through structures in GUI front-ends to gdb. I haven't gotten 
+in to some of the other types of programming/issues you mentioned so ddd has 
+been ok for me so far.
+
+I read about a way to set up ddd for debugging of AVR microcontrollers using 
+the AVR version of gdb but I haven't tried doing that yet. Using avr-gdb 
+could get me into using gdb from the command line if I find I really need to 
+use it.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From clifford_ilkay at dinamis.com  Mon Sep 14 22:05:52 2015
+From: clifford_ilkay at dinamis.com (Clifford Ilkay)
+Date: Mon, 14 Sep 2015 18:05:52 -0400
+Subject: [GTALUG] GTA Monitor Repairs
+Message-ID: <55F744C0.4020808@dinamis.com>
+
+Hello,
+
+I purchased a new 4k Wasabi Mango UHD420 monitor on eBay from Korea in 
+May and now it needs service. It's not feasible to ship this 42" monster 
+back to Korea for service. I have a SquareTrade warranty that will cover 
+local repairs. Does anyone know of any repair shops in the GTA or 
+someone who will come out to my place to fix this thing?
+
+If you're curious how this works with Linux, I had to upgrade my video 
+card to a GeForce 960. I bought an ASUS because that's the only 
+manufacturer that has local RMA, apparently. I had to install the binary 
+driver. It didn't work with Fedora 20. I didn't waste any time 
+troubleshooting it and just did a clean install of Fedora 21. I keep 
+/home on a separate partition so I was back in business in under 20 
+minutes. All I had to do to make the fonts look right in KDE was to 
+check "Force fonts DPI" and set it to 105 in System Settings>>Fonts.
+
+When this monitor works, it's beautiful. Unfortunately, it appears the 
+electronics in this thing are half-baked. Within a week, the screen 
+started losing sync on the right side and eventually died on the right 
+side. It's an interesting failure mode because this is one panel, not 
+two. I offered to replace the defective parts if the eBay vendor shipped 
+them to me. They were only too happy to do that because under the terms 
+of the sale, they would have had to pay shipping both ways, which I'm 
+guessing for something this size would easily be $200. They sent me a 
+new video board and I replaced it in about half an hour. From the time 
+the monitor failed to the time it was running again was just under two 
+weeks. The vendor seems to answer no more than one email every 24 to 48 
+hours.
+
+That board worked perfectly until July when I started seeing "tearing" 
+all over the screen as it momentarily lost sync. I reported this to the 
+vendor and they wanted a video of it happening to do anything about it. 
+It wasn't happening in a predictable or frequently enough that I 
+bothered. Last week, the "tearing" got worse and there was a new 
+symptom. The brightness would fluctuate on its own. (I had turned off 
+adaptive brightness because it didn't work well for me.) This progressed 
+to the screen going completely dark with a regular popping noise coming 
+from the internal speakers. If I turn off the monitor and let it cool 
+down, it will turn on again and the loss of sync and eventually going 
+black cycle will be repeated.
+
+-- 
+Regards,
+
+Clifford Ilkay
+
++1 647-778-8696
+
+
+From ansarm at gmail.com  Tue Sep 15 01:50:57 2015
+From: ansarm at gmail.com (Ansar Mohammed)
+Date: Mon, 14 Sep 2015 21:50:57 -0400
+Subject: [GTALUG] TeamViewer-like SSH access
+Message-ID: <CAOO1MfuNd5qYPhnXCEz5fSwUWh_NvF0veVu0-YfDiJrXG00puQ@mail.gmail.com>
+
+Hello All,
+is there a TeamViewer-like solution for ssh only devices?
+I have a few remote Linux/FreeBSD systems that I take care of, but I don't
+want to fire up VPNs or expose port 22 to the internet.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150914/3747444c/attachment.html>
+
+From ansarm at gmail.com  Tue Sep 15 01:53:33 2015
+From: ansarm at gmail.com (Ansar Mohammed)
+Date: Mon, 14 Sep 2015 21:53:33 -0400
+Subject: [GTALUG] ShellInABox
+Message-ID: <CAOO1MfvqrnBenYquwCFCMe6Mb1pjq0ctJK8nc4xv0P_6Z8N9bw@mail.gmail.com>
+
+I just had to share this.
+I am sure some of you would have seen this project already. I have been
+looking at something like this for some time now..
+
+essentially it allows SSH over HTTPS.
+
+
+https://code.google.com/p/shellinabox/
+
+
+
+>apt-get install shellinabox
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150914/195306a3/attachment.html>
+
+From kevin at ve3syb.ca  Tue Sep 15 02:11:09 2015
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Mon, 14 Sep 2015 22:11:09 -0400
+Subject: [GTALUG] ShellInABox
+In-Reply-To: <CAOO1MfvqrnBenYquwCFCMe6Mb1pjq0ctJK8nc4xv0P_6Z8N9bw@mail.gmail.com>
+References: <CAOO1MfvqrnBenYquwCFCMe6Mb1pjq0ctJK8nc4xv0P_6Z8N9bw@mail.gmail.com>
+Message-ID: <55F77E3D.60605@ve3syb.ca>
+
+On 15-09-14 09:53 PM, Ansar Mohammed wrote:
+> I am sure some of you would have seen this project already. I have been
+> looking at something like this for some time now..
+>
+> essentially it allows SSH over HTTPS.
+>
+> https://code.google.com/p/shellinabox/
+
+The description says:
+
+Shell In A Box implements a web server that can export arbitrary command 
+line tools to a web based terminal emulator.
+
+Sounds like something that needs to be used with extreme caution to avoid it 
+being a way to compromise a system.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
+Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
+                                 | powerful!"
+#include <disclaimer/favourite> |             --Chris Hardwick
+
+From mike.kallies at gmail.com  Tue Sep 15 02:17:36 2015
+From: mike.kallies at gmail.com (Mike Kallies)
+Date: Mon, 14 Sep 2015 22:17:36 -0400
+Subject: [GTALUG] ShellInABox
+In-Reply-To: <55F77E3D.60605@ve3syb.ca>
+References: <CAOO1MfvqrnBenYquwCFCMe6Mb1pjq0ctJK8nc4xv0P_6Z8N9bw@mail.gmail.com>
+ <55F77E3D.60605@ve3syb.ca>
+Message-ID: <55F77FC0.1030402@gmail.com>
+
+On 14/09/2015 10:11 PM, Kevin Cozens wrote:
+> On 15-09-14 09:53 PM, Ansar Mohammed wrote:
+...
+>> essentially it allows SSH over HTTPS.
+>>
+>> https://code.google.com/p/shellinabox/
+> 
+> The description says:
+> 
+> Shell In A Box implements a web server that can export arbitrary command
+> line tools to a web based terminal emulator.
+> 
+> Sounds like something that needs to be used with extreme caution to
+> avoid it being a way to compromise a system.
+
+It's fantastic if you're working on a contract where you're on a locked
+down Windows workstation, all ports are blocked, you can't install
+software and you need to go through a proxy.
+
+...provided you're not concerned about them asking for an explanation.
+
+
+Mike
+
+
+From ivan.avery.frey at gmail.com  Tue Sep 15 02:43:34 2015
+From: ivan.avery.frey at gmail.com (Ivan Avery Frey)
+Date: Tue, 15 Sep 2015 02:43:34 +0000
+Subject: [GTALUG] OT: Inexpensive laptop for Minecraft?
+In-Reply-To: <20150908183648.GN15617@csclub.uwaterloo.ca>
+References: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
+ <20150905001836.5894230.90747.3460@yahoo.ca>
+ <20150908160457.GL15617@csclub.uwaterloo.ca>
+ <20150908161431.5894230.88216.3603@yahoo.ca>
+ <20150908183648.GN15617@csclub.uwaterloo.ca>
+Message-ID: <CAB9QdHNjVdE45qrp-mFWLZ4MO_kEdqkEYu0uCLzgoRjXu9ozeQ@mail.gmail.com>
+
+On Tue, 8 Sep 2015 14:36 Lennart Sorensen <lsorense at csclub.uwaterloo.ca>
+wrote:
+
+On Tue, Sep 08, 2015 at 12:14:31PM -0400, William Park wrote:
+> Sorry about that.  I'm still learning to use BlackBerry Q10.‎ Now I know
+why RIM went belly up. Whoever designed UI must have been on drug.
+
+I rarely do email on my phone.  I just tried sending one to myself from
+gmail on my blackberry, and yes it is a horrible mess.
+
+Selecting 'plain text format' from the menu before sending does generate
+a perfectly nice message though.  I wonder why they don't do dual format
+like sane mail clients do.  Maybe I should do a feature request.
+Being able to set plain text as default would be a nice feature too.
+Being able to set it as a setting for each email address in the contacts
+would be
+
+ideal.
+
+
+
+There are some settings for gmail available on the desktop that one can't
+access in the mobile app. There is an option there about sending in plain
+text.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150915/ae8176ae/attachment.html>
+
+From james.knott at rogers.com  Tue Sep 15 11:04:32 2015
+From: james.knott at rogers.com (James Knott)
+Date: Tue, 15 Sep 2015 07:04:32 -0400
+Subject: [GTALUG] TeamViewer-like SSH access
+In-Reply-To: <CAOO1MfuNd5qYPhnXCEz5fSwUWh_NvF0veVu0-YfDiJrXG00puQ@mail.gmail.com>
+References: <CAOO1MfuNd5qYPhnXCEz5fSwUWh_NvF0veVu0-YfDiJrXG00puQ@mail.gmail.com>
+Message-ID: <55F7FB40.2040607@rogers.com>
+
+On 09/14/2015 09:50 PM, Ansar Mohammed wrote:
+> Hello All,
+> is there a TeamViewer-like solution for ssh only devices?
+> I have a few remote Linux/FreeBSD systems that I take care of, but I
+> don't want to fire up VPNs or expose port 22 to the internet.
+>
+>
+
+Ummm...  Port 22 is SSH.
+
+
+From darryl at moores.ca  Tue Sep 15 11:12:05 2015
+From: darryl at moores.ca (Darryl Moore)
+Date: Tue, 15 Sep 2015 07:12:05 -0400
+Subject: [GTALUG] TeamViewer-like SSH access
+In-Reply-To: <55F7FB40.2040607@rogers.com>
+References: <CAOO1MfuNd5qYPhnXCEz5fSwUWh_NvF0veVu0-YfDiJrXG00puQ@mail.gmail.com>
+ <55F7FB40.2040607@rogers.com>
+Message-ID: <55F7FD05.9000104@moores.ca>
+
+I hate TeamViewer. I do everything with SSH, unless I have to talk to a 
+windoze box.
+
+Moving sshd to a different port will remove 90% of hacking attempts. Use 
+strong passwords, or even better keys! I use iptables to only allow 
+access from a small set of machines over the internet. Also one of the 
+best programs I've found which turns ssh into a VPN (for all my purposes 
+anyway) is sshuttle.
+
+
+On 15-09-15 07:04 AM, James Knott wrote:
+> On 09/14/2015 09:50 PM, Ansar Mohammed wrote
+>> Hello All,
+>> is there a TeamViewer-like solution for ssh only devices?
+>> I have a few remote Linux/FreeBSD systems that I take care of, but I
+>> don't want to fire up VPNs or expose port 22 to the internet.
+>>
+>>
+> Ummm...  Port 22 is SSH.
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+
+
+From thoriumbr at gmail.com  Tue Sep 15 11:38:55 2015
+From: thoriumbr at gmail.com (Mauro Souza)
+Date: Tue, 15 Sep 2015 08:38:55 -0300
+Subject: [GTALUG] TeamViewer-like SSH access
+In-Reply-To: <55F7FD05.9000104@moores.ca>
+References: <CAOO1MfuNd5qYPhnXCEz5fSwUWh_NvF0veVu0-YfDiJrXG00puQ@mail.gmail.com>
+ <55F7FB40.2040607@rogers.com> <55F7FD05.9000104@moores.ca>
+Message-ID: <CAEZ_B6O_TeMH5dqZ0FuUZ1814whVUsgexM4cs=LcXwUL+C=Wmw@mail.gmail.com>
+
+sshuttle is very nice!
+
+I have a vps with ssh in a random port, and sshpot on 22. I put Google Auth
+PAM module on ssh, so if anyone logs from an ip not from my range, will
+have to supply the code too.
+On Sep 15, 2015 08:12, "Darryl Moore" <darryl at moores.ca> wrote:
+
+> I hate TeamViewer. I do everything with SSH, unless I have to talk to a
+> windoze box.
+>
+> Moving sshd to a different port will remove 90% of hacking attempts. Use
+> strong passwords, or even better keys! I use iptables to only allow access
+> from a small set of machines over the internet. Also one of the best
+> programs I've found which turns ssh into a VPN (for all my purposes anyway)
+> is sshuttle.
+>
+>
+> On 15-09-15 07:04 AM, James Knott wrote:
+>
+>> On 09/14/2015 09:50 PM, Ansar Mohammed wrote
+>>
+>>> Hello All,
+>>> is there a TeamViewer-like solution for ssh only devices?
+>>> I have a few remote Linux/FreeBSD systems that I take care of, but I
+>>> don't want to fire up VPNs or expose port 22 to the internet.
+>>>
+>>>
+>>> Ummm...  Port 22 is SSH.
+>>
+>> ---
+>> Talk Mailing List
+>> talk at gtalug.org
+>> http://gtalug.org/mailman/listinfo/talk
+>>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150915/c0128486/attachment.html>
+
+From renzland at gmail.com  Sun Sep 20 19:21:09 2015
+From: renzland at gmail.com (Peter Renzland)
+Date: Sun, 20 Sep 2015 15:21:09 -0400
+Subject: [GTALUG] Using (Tomato) Linux (Router) as Web Proxy Server.
+Message-ID: <086A4898-CC45-459C-BDFA-FB4CE74E69D6@gmail.com>
+
+Request for help:
+Using (Tomato) Linux (Router) as Web Proxy Server.
+
+I remotely manage several Tomato networks.
+
+I would like to connect to the ISP's Usage Data web page, from the remote network, to check the remote network's data usage.
+
+I'd also like to run the ISP-specific (web browser) speed test from the remote network, to check the remote network's data rates.
+
+These seem like very ordinary, simple things to want to do.
+I'd like to find someone who has actually done these things, and who can help me do them.
+(I have found dozens of "how-to" web pages that don't work for me. But I have not found anyone who has said
+
+"I do this all the time, and here is how I do it". Instead, I have found many people who have said "I have never done this, and I won't try to do it myself it, but you should try this ....")
+
+Being able to do a web search on "my IP" and get the remote (proxy) host's IP address is really all need.
+
+So, if there is someone who actually has done this, please help!
+Thank you very much.
+
+[Mac OS X, Google-Chrome, Tomato Shibby 131 AIO]
+
+-- Peter
+
+
+From gilesorr at gmail.com  Tue Sep 22 22:31:03 2015
+From: gilesorr at gmail.com (Giles Orr)
+Date: Tue, 22 Sep 2015 18:31:03 -0400
+Subject: [GTALUG] Using (Tomato) Linux (Router) as Web Proxy Server.
+In-Reply-To: <086A4898-CC45-459C-BDFA-FB4CE74E69D6@gmail.com>
+References: <086A4898-CC45-459C-BDFA-FB4CE74E69D6@gmail.com>
+Message-ID: <CAEnxSC5pbd-tP9R_P-NYcB-rCpdjvp7xbO_DThp4kbFSOB5j8Q@mail.gmail.com>
+
+On 20 September 2015 at 15:21, Peter Renzland <renzland at gmail.com> wrote:
+> Request for help:
+> Using (Tomato) Linux (Router) as Web Proxy Server.
+>
+> I remotely manage several Tomato networks.
+>
+> I would like to connect to the ISP's Usage Data web page, from the remote network, to check the remote network's data usage.
+>
+> I'd also like to run the ISP-specific (web browser) speed test from the remote network, to check the remote network's data rates.
+>
+> These seem like very ordinary, simple things to want to do.
+> I'd like to find someone who has actually done these things, and who can help me do them.
+> (I have found dozens of "how-to" web pages that don't work for me. But I have not found anyone who has said
+>
+> "I do this all the time, and here is how I do it". Instead, I have found many people who have said "I have never done this, and I won't try to do it myself it, but you should try this ....")
+>
+> Being able to do a web search on "my IP" and get the remote (proxy) host's IP address is really all need.
+>
+> So, if there is someone who actually has done this, please help!
+> Thank you very much.
+>
+> [Mac OS X, Google-Chrome, Tomato Shibby 131 AIO]
+
+Many years ago (so this almost falls into the category of "I haven't
+done this but you should try it" - sorry ... but it did work then) I
+had a pretty good system for finding my home IP.  I did it from the
+home computer, not the router: you should have router access, which
+should make it easier.  My home computer would check the IP address
+assigned to the router every five minutes on a cron job, and if it
+found the IP was different from last time, it would update the IP on a
+web page and post it to my public web server.  That section of the
+website was password-protected (although not encrypted, something I
+would definitely do now).
+
+I hope this is useful, sorry it's so vague.
+
+-- 
+Giles
+http://www.gilesorr.com/
+gilesorr at gmail.com
+
+From cbbrowne at gmail.com  Tue Sep 22 22:43:27 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 22 Sep 2015 18:43:27 -0400
+Subject: [GTALUG] Using (Tomato) Linux (Router) as Web Proxy Server.
+In-Reply-To: <CAEnxSC5pbd-tP9R_P-NYcB-rCpdjvp7xbO_DThp4kbFSOB5j8Q@mail.gmail.com>
+References: <086A4898-CC45-459C-BDFA-FB4CE74E69D6@gmail.com>
+ <CAEnxSC5pbd-tP9R_P-NYcB-rCpdjvp7xbO_DThp4kbFSOB5j8Q@mail.gmail.com>
+Message-ID: <CAFNqd5XyGOH=4yhMXgh8VetccUiUvfVNCtH8o8xJQUJ0QJqoJw@mail.gmail.com>
+
+On 22 September 2015 at 18:31, Giles Orr <gilesorr at gmail.com> wrote:
+>
+> On 20 September 2015 at 15:21, Peter Renzland <renzland at gmail.com> wrote:
+> > Request for help:
+> > Using (Tomato) Linux (Router) as Web Proxy Server.
+> >
+> > I remotely manage several Tomato networks.
+> >
+> > I would like to connect to the ISP's Usage Data web page, from the
+remote network, to check the remote network's data usage.
+> >
+> > I'd also like to run the ISP-specific (web browser) speed test from the
+remote network, to check the remote network's data rates.
+> >
+> > These seem like very ordinary, simple things to want to do.
+> > I'd like to find someone who has actually done these things, and who
+can help me do them.
+> > (I have found dozens of "how-to" web pages that don't work for me. But
+I have not found anyone who has said
+> >
+> > "I do this all the time, and here is how I do it". Instead, I have
+found many people who have said "I have never done this, and I won't try to
+do it myself it, but you should try this ....")
+> >
+> > Being able to do a web search on "my IP" and get the remote (proxy)
+host's IP address is really all need.
+> >
+> > So, if there is someone who actually has done this, please help!
+> > Thank you very much.
+> >
+> > [Mac OS X, Google-Chrome, Tomato Shibby 131 AIO]
+>
+> Many years ago (so this almost falls into the category of "I haven't
+> done this but you should try it" - sorry ... but it did work then) I
+> had a pretty good system for finding my home IP.  I did it from the
+> home computer, not the router: you should have router access, which
+> should make it easier.  My home computer would check the IP address
+> assigned to the router every five minutes on a cron job, and if it
+> found the IP was different from last time, it would update the IP on a
+> web page and post it to my public web server.  That section of the
+> website was password-protected (although not encrypted, something I
+> would definitely do now).
+>
+> I hope this is useful, sorry it's so vague.
+
+I use inadyn-mt <https://sourceforge.net/projects/inadyn-mt/> to push IP
+changes over to domains on afraid.org.
+
+Unfortunately, there have been issues with such packages making the
+processes pretty fragile.
+
+I used to use "plain inadyn"; had to jump to a fork that seemed better
+maintained.  (I'm not sure the difference continues to be true.)
+
+I believe that dd-wrt and open-wrt include inadyn deployments for updating
+"home IPs".
+--
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150922/686b8d0d/attachment.html>
+
+From adb at adb.ca  Wed Sep 23 03:18:17 2015
+From: adb at adb.ca (Anthony de Boer)
+Date: Tue, 22 Sep 2015 23:18:17 -0400
+Subject: [GTALUG] Using (Tomato) Linux (Router) as Web Proxy Server.
+In-Reply-To: <086A4898-CC45-459C-BDFA-FB4CE74E69D6@gmail.com>
+References: <086A4898-CC45-459C-BDFA-FB4CE74E69D6@gmail.com>
+Message-ID: <20150923031816.GJ16224@adb.ca>
+
+Peter Renzland wrote:
+> Request for help:
+> Using (Tomato) Linux (Router) as Web Proxy Server.
+> 
+> I remotely manage several Tomato networks.
+> 
+> I would like to connect to the ISP's Usage Data web page, from the remote network, to check the remote network's data usage.
+
+That much probably only requires a proxy at the remote site, presuming
+the ISP shows the graph corresponding to the customer IP that's asking.
+
+I've used a Squid instance on a remote host together with SSH
+port-forwarding my browser there, but that may be overkill.  ("Nothing
+succeeds like excess.")
+
+Using the SOCKS-protocol support in SSH and Firefox would probably
+suffice to get your traffic coming out at the other end of the connection.
+
+> I'd also like to run the ISP-specific (web browser) speed test from the remote network, to check the remote network's data rates.
+
+I'd strongly suspect that proxying your web connection back out over
+the same link will badly skew the test (especially with asymmetric
+data rates!).  Even running a browser remotely over VNC or the like
+will use a chunk of your bandwidth.
+
+Putting up MRTG and Smokeping instances tracking link utilization and
+health may do a better job than those web-animation doovers, along with
+letting you look at history when someone complains how bad it was an
+hour ago.
+
+MRTG monitors traffic levels, so requires SNMP access or other means of
+getting interface packet counters.  You'll be able to tell from the
+maximum inbound and outbound levels what speeds you're getting; the
+graphs will generally cap at the same level everytime someone downloads
+something big.  Typically you monitor your own router and get stats on
+that first hop to your ISP.
+
+Smokeping is a similar tool that shows latency and packet loss, so
+typically you want to have it ping the ISP router and more distant
+targets you have to reach (your webserver in colo, for example) to see
+how good or bad the experience is at the moment.  Compare to the MRTG
+picture to see if things get rough during big uploads and/or downloads.
+
+> These seem like very ordinary, simple things to want to do.
+> I'd like to find someone who has actually done these things, and who can help me do them.
+> (I have found dozens of "how-to" web pages that don't work for me. But I have not found anyone who has said
+> 
+> "I do this all the time, and here is how I do it". Instead, I have found many people who have said "I have never done this, and I won't try to do it myself it, but you should try this ....")
+
+I've done rather a lot of monitoring, and Icinga (Nagios), MRTG, and
+Smokeping are the sorts of thing I set up watching the links and hosts
+I care about.  Back in my ISP days we had a few locally-grown tools too.
+
+> Being able to do a web search on "my IP" and get the remote (proxy) host's IP address is really all need.
+
+If they're on dynamic addresses some form of dynamic DNS is probably a
+piece you'll need.
+
+-- 
+Anthony de Boer
+
+From me at mylesbraithwaite.com  Fri Sep 25 18:25:22 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Fri, 25 Sep 2015 14:25:22 -0400
+Subject: [GTALUG] [GTALUG-Announce] Meeting on 13th October, 2015 at 7:30pm
+Message-ID: <CA+hskZP+-a=3CuhSLqX4WpknG2GXG5Vxet59WS3Kys7b8in=7w@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-10/>
+
+# AGM and Linux on Enterprise 64-bit ARM Platforms
+
+### Annual General Meeting
+
+* **GTALUG Update** - 5 minutes
+* **Treasury Update** - 5 minutes
+* **Board Elections** - 20 minutes
+
+### Linux on Enterprise 64-bit ARM Platforms _with Chris Tyler_
+
+A new architecture has arrived! 64-bit ARM promises high-performance,
+low-energy, extremely dense server computing systems. This is the
+first time in the history of computing that a major architecture has
+launched with Linux as the premier operating system. This talk will
+discuss the hard challenges presented by the Aarch64 architecture and
+the opportunities it creates.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Please discuss on the general mailing list (i.e.
+<talk at gtalug.org>) where you want to go for dinner.
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+# Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact the GTALUG Board @ <board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From opengeometry at yahoo.ca  Sat Sep 26 14:53:43 2015
+From: opengeometry at yahoo.ca (William Park)
+Date: Sat, 26 Sep 2015 10:53:43 -0400
+Subject: [GTALUG] question -- how to boot from USB with multiple ISOs?
+Message-ID: <20150926145343.GA1785@node1.localdomain>
+
+Hi all,
+
+Right now, I'm carrying around 2 USB sticks,
+    - one 32GB -- it boots Linux and contains about 10 bootable ISOs.
+    - one 8GB -- to 'dd' the real ISO that I want to boot.
+
+It's 2-step process, and it's ok.  But, I would like to reduce it to
+1-step.
+
+How can I boot those multiple ISOs directly from one USB stick?
+
+Eg. if you want to boot Fedora/Ubuntu/Clonezilla, what do you do?  I
+guess you can carry around 3x8GB USB sticks,
+    http://www.canadacomputers.com/product_info.php?cPath=11_180_632&item_id=073667
+but 1x32GB USB stick,
+    http://www.canadacomputers.com/product_info.php?cPath=11_180_181&item_id=058767
+is better, I think.
+-- 
+William
+
+From lsorense at csclub.uwaterloo.ca  Mon Sep 28 18:04:25 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 28 Sep 2015 14:04:25 -0400
+Subject: [GTALUG] question -- how to boot from USB with multiple ISOs?
+In-Reply-To: <20150926145343.GA1785@node1.localdomain>
+References: <20150926145343.GA1785@node1.localdomain>
+Message-ID: <20150928180425.GP15617@csclub.uwaterloo.ca>
+
+On Sat, Sep 26, 2015 at 10:53:43AM -0400, William Park wrote:
+> Hi all,
+> 
+> Right now, I'm carrying around 2 USB sticks,
+>     - one 32GB -- it boots Linux and contains about 10 bootable ISOs.
+>     - one 8GB -- to 'dd' the real ISO that I want to boot.
+> 
+> It's 2-step process, and it's ok.  But, I would like to reduce it to
+> 1-step.
+> 
+> How can I boot those multiple ISOs directly from one USB stick?
+> 
+> Eg. if you want to boot Fedora/Ubuntu/Clonezilla, what do you do?  I
+> guess you can carry around 3x8GB USB sticks,
+>     http://www.canadacomputers.com/product_info.php?cPath=11_180_632&item_id=073667
+> but 1x32GB USB stick,
+>     http://www.canadacomputers.com/product_info.php?cPath=11_180_181&item_id=058767
+> is better, I think.
+
+As a generic option, the answer is that you can't do it.
+
+There are things like unetbootin which knows various installers and ISO
+images and knows what changes to make to the boot procedure for each
+one to fake it and let it work.  But it is not generic.
+
+And the dd of one ISO also only works in the case that it is actually
+and image capable of working from USB instead of a CD/DVD, which is
+certainly true for many these days but is also not generic.
+
+Something like this would be a generic solition:
+http://isostick.com/
+
+It actually DOES emulate a USB DVD drive with the iso image.
+
+-- 
+Len Sorensen
+
+From alan at heighway.ca  Mon Sep 28 18:24:44 2015
+From: alan at heighway.ca (Alan Heighway)
+Date: Mon, 28 Sep 2015 14:24:44 -0400
+Subject: [GTALUG] question -- how to boot from USB with multiple ISOs?
+In-Reply-To: <20150926145343.GA1785@node1.localdomain>
+References: <20150926145343.GA1785@node1.localdomain>
+Message-ID: <CAMqY+L0-Q=_qD+2n=he=VPQsta6+nUYMkA2KG9e2QkTGHgypAA@mail.gmail.com>
+
+I use Yumi myself, it works quite well and setup it quick (though you will
+need a Windows box to create the stick...
+
+http://www.pendrivelinux.com/yumi-multiboot-usb-creator/
+
+Alan.
+
+*A*lan *H*eighway <http://heighway.ca>
+    heighway.ca
+
+[image: Please consider the environment before printing]
+
+On Sat, Sep 26, 2015 at 10:53 AM, William Park <opengeometry at yahoo.ca>
+wrote:
+
+> Hi all,
+>
+> Right now, I'm carrying around 2 USB sticks,
+>     - one 32GB -- it boots Linux and contains about 10 bootable ISOs.
+>     - one 8GB -- to 'dd' the real ISO that I want to boot.
+>
+> It's 2-step process, and it's ok.  But, I would like to reduce it to
+> 1-step.
+>
+> How can I boot those multiple ISOs directly from one USB stick?
+>
+> Eg. if you want to boot Fedora/Ubuntu/Clonezilla, what do you do?  I
+> guess you can carry around 3x8GB USB sticks,
+>
+> http://www.canadacomputers.com/product_info.php?cPath=11_180_632&item_id=073667
+> but 1x32GB USB stick,
+>
+> http://www.canadacomputers.com/product_info.php?cPath=11_180_181&item_id=058767
+> is better, I think.
+> --
+> William
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150928/4c9561a5/attachment.html>
+
+From lsorense at csclub.uwaterloo.ca  Mon Sep 28 18:43:29 2015
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 28 Sep 2015 14:43:29 -0400
+Subject: [GTALUG] question -- how to boot from USB with multiple ISOs?
+In-Reply-To: <CAMqY+L0-Q=_qD+2n=he=VPQsta6+nUYMkA2KG9e2QkTGHgypAA@mail.gmail.com>
+References: <20150926145343.GA1785@node1.localdomain>
+ <CAMqY+L0-Q=_qD+2n=he=VPQsta6+nUYMkA2KG9e2QkTGHgypAA@mail.gmail.com>
+Message-ID: <20150928184329.GQ15617@csclub.uwaterloo.ca>
+
+On Mon, Sep 28, 2015 at 02:24:44PM -0400, Alan Heighway wrote:
+> I use Yumi myself, it works quite well and setup it quick (though you will
+> need a Windows box to create the stick...
+> 
+> http://www.pendrivelinux.com/yumi-multiboot-usb-creator/
+
+Just like unetbootin, it is far from generic.  It works for many things,
+but not everything.
+
+A pure software solution that is generic is not possible as far as I know.
+
+-- 
+Len Sorensen
+
+From cbbrowne at gmail.com  Mon Sep 28 21:49:38 2015
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Mon, 28 Sep 2015 17:49:38 -0400
+Subject: [GTALUG] question -- how to boot from USB with multiple ISOs?
+In-Reply-To: <20150926145343.GA1785@node1.localdomain>
+References: <20150926145343.GA1785@node1.localdomain>
+Message-ID: <CAFNqd5XLcXuVYv9B8kYrnd+DpsjTsAKcjX_QnFTFyFd1+fvZDA@mail.gmail.com>
+
+On 26 September 2015 at 10:53, William Park <opengeometry at yahoo.ca> wrote:
+>
+> Hi all,
+>
+> Right now, I'm carrying around 2 USB sticks,
+>     - one 32GB -- it boots Linux and contains about 10 bootable ISOs.
+>     - one 8GB -- to 'dd' the real ISO that I want to boot.
+>
+> It's 2-step process, and it's ok.  But, I would like to reduce it to
+> 1-step.
+>
+> How can I boot those multiple ISOs directly from one USB stick?
+>
+> Eg. if you want to boot Fedora/Ubuntu/Clonezilla, what do you do?  I
+> guess you can carry around 3x8GB USB sticks,
+>
+http://www.canadacomputers.com/product_info.php?cPath=11_180_632&item_id=073667
+> but 1x32GB USB stick,
+>
+http://www.canadacomputers.com/product_info.php?cPath=11_180_181&item_id=058767
+> is better, I think.
+
+
+It's an interesting idea, but I don't expect it's nearly possible.  And not
+because it is forcibly infeasible...
+
+The various Linux distribution projects need to define "boot disks" to
+enable installing Their Thing.  In practice, they often have multiple
+choices that they need to offer their users, hence you commonly have such
+options as...
+  - Install [Flavor of] Linux
+  - Run recovery disk to clean up [Flavor of] Linux
+  - Perhaps an "advanced" console
+
+They therefore define some sort of dispatcher for their respective set of
+choices.
+
+It would certainly be *plausible* to have that dispatcher take on a larger
+set of options, hence to pick those actions for a larger set of flavours of
+Linux.
+
+However, that would require cooperation between groups that are accustomed
+to not needing to have tight interactions.  (e.g. - gotta have Debian guys
+working with Fedora guys for a single 'logical disk' definition that would
+do all their respective things)
+
+Frankly, little USB sticks are sufficiently small and cheap that I'd be
+happy having a sheaf of them on a cord.
+
+Curiously, I have stopped doing this sort of thing lately; I find PXE
+booting easier to set up for the infrequent cases where I need to do so.
+When I built my last box <http://linuxfinances.info/info/steele.html> last
+year, I ran into problems trying to boot off a CD/DVD, and found PXE easy
+enough to configure that I'd be inclined to do that next time.  That
+doesn't require having a USB stick at all!  :-)
+--
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20150928/acf8140f/attachment.html>
+
