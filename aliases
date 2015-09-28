@@ -14,10 +14,13 @@ security: root
 root: myles, mike
 
 ## email forwards
-hi: me+gtalug@mylesbraithwaite.com
+hi: myles
 
-speakers: me+gtalug@mylesbraithwaite.com
-speaker-coordinator: me+gtalug@mylesbraithwaite.com
+candidacy: qwerty172@gmail.com
+speakers: myles
+speaker-coordinator: myles
+
+wiki-admin: myles
 
 ### commities
 outreach: info@outreach.gtalug.org
