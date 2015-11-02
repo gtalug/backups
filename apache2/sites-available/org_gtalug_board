@@ -8,8 +8,7 @@
 	<Directory /srv/www/org_gtalug_board/html/>
 		Options Indexes FollowSymLinks MultiViews
 		AllowOverride None
-		Order allow,deny
-		allow from all
+		Require all granted
 	</Directory>
 	
 	ErrorLog /srv/www/org_gtalug_board/logs/error.log

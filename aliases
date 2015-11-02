@@ -11,10 +11,24 @@ ftp: root
 abuse: root
 noc: root
 security: root
-root: myles
+root: myles, mike
 
 ## email forwards
-hi: me+gtalug@mylesbraithwaite.com
+hi: myles
+
+### position based emails
+speaker-coordinator: scott@ss.org
+speakers: speaker-coordinator
+
+pr: myles
+
+system-coordinator: myles, alex, chris
+
+wiki-admin: myles
+
+### commities
+outreach: info@outreach.gtalug.org
+community-affairs: info@outreach.gtalug.org
 
 ## mailman mailing list
 mailman:              "|/var/lib/mailman/mail/mailman post mailman"
@@ -64,6 +78,17 @@ operations-request:      "|/var/lib/mailman/mail/mailman request operations"
 operations-subscribe:    "|/var/lib/mailman/mail/mailman subscribe operations"
 operations-unsubscribe:  "|/var/lib/mailman/mail/mailman unsubscribe operations"
 
+ops:              "|/var/lib/mailman/mail/mailman post operations"
+ops-admin:        "|/var/lib/mailman/mail/mailman admin operations"
+ops-bounces:      "|/var/lib/mailman/mail/mailman bounces operations"
+ops-confirm:      "|/var/lib/mailman/mail/mailman confirm operations"
+ops-join:         "|/var/lib/mailman/mail/mailman join operations"
+ops-leave:        "|/var/lib/mailman/mail/mailman leave operations"
+ops-owner:        "|/var/lib/mailman/mail/mailman owner operations"                      
+ops-request:      "|/var/lib/mailman/mail/mailman request operations"                    
+ops-subscribe:    "|/var/lib/mailman/mail/mailman subscribe operations"                  
+ops-unsubscribe:  "|/var/lib/mailman/mail/mailman unsubscribe operations"
+
 ## board mailing list
 board:              "|/var/lib/mailman/mail/mailman post board"
 board-admin:        "|/var/lib/mailman/mail/mailman admin board"
@@ -76,3 +101,5 @@ board-request:      "|/var/lib/mailman/mail/mailman request board"
 board-subscribe:    "|/var/lib/mailman/mail/mailman subscribe board"
 board-unsubscribe:  "|/var/lib/mailman/mail/mailman unsubscribe board"
 
+## legacy -- the archive of tlug@ss.org
+## nothing here, no subscription service available for this list.

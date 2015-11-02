@@ -1,1045 +1,340 @@
-From psema4 at gmail.com  Tue Sep  1 03:55:31 2015
-From: psema4 at gmail.com (Scott Elcomb)
-Date: Mon, 31 Aug 2015 23:55:31 -0400
-Subject: [GTALUG] T-shirt Ideas
-In-Reply-To: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org>
-References: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org>
-Message-ID: <CAEx-jsM_4Ms9ThY5+hotWUbpQYfLUmy1-QT-OyB-Di9VVYPk6g@mail.gmail.com>
+From scott at ss.org  Sun Nov  1 10:07:03 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Sun, 1 Nov 2015 10:07:03 -0500
+Subject: [GTALUG] Surprise, IPv6!
+Message-ID: <56362A97.4040204@ss.org>
 
-On Mon, Aug 31, 2015 at 2:41 PM, Scott Sullivan <scott at ss.org> wrote:
-<snip>
-> Anyone else got some good hardcore comp-sci hummor?
+So just in a surprised moment of serendipity, my _non-IT_ boyfriend has 
+beaten me to IPv6 connectivity and he didn't even know it. I'm a little 
+jealous as this has been on my two do list for over half a year.
 
-NACK, NACK.
-
-Who's there?
-
-ATM.
-
-ATM who?
-
-NACK, NACK.
+Back-story, early in 2015 I upgraded his home from early linksys WRT54G 
+(linksys firmware), to a D-Link DIR-825 (rev. B1), with OpenWRT 14.07. 
+Roughly a month ago OpenWRT 15 was release, so I logged into gather info 
+for doing the firmware upgrade and see this.
 
 
-"NACK" is a "negative acknowledgement", a very old communications
-protocol for "I don't understand". NACK usually forces a
-resynchronization or renegotiation between end points. ATM is
-"Asynchronous Transfer Mode"; a couple of decades ago it was a
-relatively high-speed packet technology that lost out to other
-technologies. - via <http://stackoverflow.com/a/1590009/773209>
-
-...
-
-The TCP joke is a personal favourite:
+http://revident.net/images/OpenWRT-network-info-with-IPv6.png
 
 
-"Hi, I'd like to hear a TCP joke."
+I've known Teksavvy, his provider, has had a beta program for IPv6 for 
+DSL customers. I signed up, I have an allocation, but I've not used it yet.
 
-"Hello, would you like to hear a TCP joke?"
+At some point, Teksavvy turned it live, and the OpenWRT router I set-up 
+for my BF just picked it up and ran with it. It works!
 
-"Yes, I'd like to hear a TCP joke."
+His connection gets a full 20/20 score from http://ipv6-test.com/
 
-"OK, I'll tell you a TCP joke."
+Out of box, no intervention. My boyfriend, and the two other room-mates 
+have been using IPv6, for some unknown period (maybe months), with no 
+observable difference.
 
-"Ok, I will hear a TCP joke."
+Just Wow! Had to share.
 
-"Are you ready to hear a TCP joke?"
 
-"Yes, I am ready to hear a TCP joke."
 
-"Ok, I am about to send the TCP joke. It will last 10 seconds, it has
-two characters, it does not have a setting, it ends with a punchline."
+===== Just some info form my laptop. ========
 
-"Ok, I am ready to get your TCP joke that will last 10 seconds, has
-two characters, does not have an explicit setting, and ends with a
-punchline."
 
-"I'm sorry, your connection has timed out. Hello, would you like to
-hear a TCP joke?"
+[scott at arcticnoise fonts]$ ifconfig
+[...snip...]
+wlp1s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+         inet 192.168.4.230  netmask 255.255.255.0  broadcast 192.168.4.255
+         inet6 fd1c:3456:4edf::1ef  prefixlen 128  scopeid 0x0<global>
+         inet6 2607:f2c0:9281:1900::1ef  prefixlen 128  scopeid 0x0<global>
+         inet6 2607:f2c0:9281:1900:3210:b3ff:fe9b:457c  prefixlen 64 
+scopeid 0x0<global>
+         inet6 fd1c:3456:4edf:0:3210:b3ff:fe9b:457c  prefixlen 64 
+scopeid 0x0<global>
+         inet6 fe80::3210:b3ff:fe9b:457c  prefixlen 64  scopeid 0x20<link>
+         ether 30:10:b3:9b:45:7c  txqueuelen 1000  (Ethernet)
+         RX packets 1828026  bytes 2043219415 (1.9 GiB)
+         RX errors 0  dropped 0  overruns 0  frame 2457050
+         TX packets 1108781  bytes 250361333 (238.7 MiB)
+         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+         device interrupt 41
 
-...
-
-There's a few good one-liners over at
-<http://attrition.org/misc/ee/protolol.txt>
-
-From gilesorr at gmail.com  Tue Sep  1 14:04:23 2015
-From: gilesorr at gmail.com (Giles Orr)
-Date: Tue, 1 Sep 2015 10:04:23 -0400
-Subject: [GTALUG] T-shirt Ideas
-In-Reply-To: <CAEx-jsM_4Ms9ThY5+hotWUbpQYfLUmy1-QT-OyB-Di9VVYPk6g@mail.gmail.com>
-References: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org>
- <CAEx-jsM_4Ms9ThY5+hotWUbpQYfLUmy1-QT-OyB-Di9VVYPk6g@mail.gmail.com>
-Message-ID: <CAEnxSC4ctwU0dE7QqZ_iAdsa8KtfyxWTj7nK5=vi4+yWuWRwaQ@mail.gmail.com>
-
-On 31 August 2015 at 23:55, Scott Elcomb <psema4 at gmail.com> wrote:
-> On Mon, Aug 31, 2015 at 2:41 PM, Scott Sullivan <scott at ss.org> wrote:
-> <snip>
->> Anyone else got some good hardcore comp-sci hummor?
->
-> NACK, NACK.
->
-> Who's there?
->
-> ATM.
->
-> ATM who?
->
-> NACK, NACK.
->
->
-> "NACK" is a "negative acknowledgement", a very old communications
-> protocol for "I don't understand". NACK usually forces a
-> resynchronization or renegotiation between end points. ATM is
-> "Asynchronous Transfer Mode"; a couple of decades ago it was a
-> relatively high-speed packet technology that lost out to other
-> technologies. - via <http://stackoverflow.com/a/1590009/773209>
->
-> ...
->
-> The TCP joke is a personal favourite:
->
->
-> "Hi, I'd like to hear a TCP joke."
->
-> "Hello, would you like to hear a TCP joke?"
->
-> "Yes, I'd like to hear a TCP joke."
->
-> "OK, I'll tell you a TCP joke."
->
-> "Ok, I will hear a TCP joke."
->
-> "Are you ready to hear a TCP joke?"
->
-> "Yes, I am ready to hear a TCP joke."
->
-> "Ok, I am about to send the TCP joke. It will last 10 seconds, it has
-> two characters, it does not have a setting, it ends with a punchline."
->
-> "Ok, I am ready to get your TCP joke that will last 10 seconds, has
-> two characters, does not have an explicit setting, and ends with a
-> punchline."
->
-> "I'm sorry, your connection has timed out. Hello, would you like to
-> hear a TCP joke?"
-
-With thanks to Scott Sullivan who told me this one, I think it's a
-great follow-up to the TCP joke:
-
-"I'd tell you a UDP joke but you might not get it."
-
-Which also says a lot about the difference between the two protocols ...
+[scott at arcticnoise fonts]$ ping6 google.com
+PING google.com(yyz08s14-in-x05.1e100.net) 56 data bytes
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=1 ttl=58 time=143 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=2 ttl=58 time=156 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=3 ttl=58 time=158 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=4 ttl=58 time=190 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=5 ttl=58 time=288 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=6 ttl=58 time=403 ms
+^C
+--- google.com ping statistics ---
+6 packets transmitted, 6 received, 0% packet loss, time 5005ms
+rtt min/avg/max/mdev = 143.201/223.390/403.423/93.816 ms
+[scott at arcticnoise fonts]$ ping6 -n google.com
+PING google.com(2607:f8b0:400b:80b::1005) 56 data bytes
+64 bytes from 2607:f8b0:400b:80b::1005: icmp_seq=1 ttl=58 time=106 ms
+64 bytes from 2607:f8b0:400b:80b::1005: icmp_seq=2 ttl=58 time=133 ms
+64 bytes from 2607:f8b0:400b:80b::1005: icmp_seq=3 ttl=58 time=142 ms
+^C
+--- google.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2001ms
+rtt min/avg/max/mdev = 106.601/127.501/142.416/15.227 ms
 
 -- 
-Giles
-http://www.gilesorr.com/
-gilesorr at gmail.com
+Scott Sullivan
 
-From hugh at mimosa.com  Tue Sep  1 19:55:52 2015
-From: hugh at mimosa.com (D. Hugh Redelmeier)
-Date: Tue, 1 Sep 2015 15:55:52 -0400 (EDT)
-Subject: [GTALUG] T-shirt Ideas
-In-Reply-To: <alpine.LRH.2.02.1508311725590.782@redclaw.mimosa.com>
-References: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org>
- <alpine.LRH.2.02.1508311725590.782@redclaw.mimosa.com>
-Message-ID: <alpine.LRH.2.02.1509011550280.14630@redclaw.mimosa.com>
+From self_same_self at yahoo.com  Sun Nov  1 10:14:07 2015
+From: self_same_self at yahoo.com (Sammy Lao)
+Date: Sun, 1 Nov 2015 07:14:07 -0800
+Subject: [GTALUG] Surprise, IPv6!
+In-Reply-To: <56362A97.4040204@ss.org>
+Message-ID: <1446390847.3756.YahooMailAndroidMobile@web160901.mail.bf1.yahoo.com>
 
-| From: D. Hugh Redelmeier <hugh at mimosa.com>
+That's pure awesome!
 
-| Funny point: the abstract calls Cray "the ultimate "tall, thin
-| man"*." but the notes on slide three call him the penultimate one.  I
-| wonder who the ultimate one is if the notes are correct.
+From:"Scott Sullivan" <scott at ss.org>
+Date:Sun, Nov 1, 2015 at 10:07 AM
+Subject:[GTALUG] Surprise, IPv6!
 
-I emailed Gordon Bell about this and he says that he was mistaken about
-the meaning of "penultimate" when he wrote that.
+So just in a surprised moment of serendipity, my _non-IT_ boyfriend has 
+beaten me to IPv6 connectivity and he didn't even know it. I'm a little 
+jealous as this has been on my two do list for over half a year.
 
-I used "penultimate" in a draft of my masters thesis but my supervisor
-suggested replacing it with "second last" because it was more likely
-to be understood and in no way inferior.  He was right.
-
-From me at bobcopeland.com  Tue Sep  1 23:49:34 2015
-From: me at bobcopeland.com (Bob Copeland)
-Date: Tue, 1 Sep 2015 19:49:34 -0400
-Subject: [GTALUG] QEMU and GDB debugging a kernel module
-In-Reply-To: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
-References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
-Message-ID: <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
-
-On Fri, Aug 21, 2015 at 12:39 AM, Aruna Hewapathirane
-<aruna.hewapathirane at gmail.com> wrote:
-> Has anyone ever used qemu and gdb ? If so has anyone successfully
-> debugged a module ? I would be very thankful if someone can show me
-> the 'specific' steps to follow to get this going.
-
-I have done this once upon a time...  checking the scripts I used:
-
-Step 1: launch qemu with -gdb like so:
-
-qemu-system-x86_64 -nographic -kernel /path/to/kernel -gdb
-tcp:10.0.0.1:1234 [all the other options]
-
-(In my case 10.0.0.1 is bridged with the host.)
-
-Step 2: Make a gdbinit file that looks like:
-
-set architecture i386:x86-64:intel
-target remote localhost:1234
-file vmlinux
-# this part is deep magic - check /proc/modules for correct offsets
-add-symbol-file net/wireless/cfg80211.o 0xffffffffa00000000
-# and so-on for whatever modules you care about
-continue
-
-Step 3: Launch gdb on the host
-
-YMMV -- I rarely have used an actual debugger for my own kernel work.
-I do frequently use gdb to do the same thing as addr2line by running
-gdb on the .ko and then "l *addr+0x123" -- to resolve symbols from
-oops messages, but you don't need qemu or remote gdb for that.
-
--- 
-Bob Copeland %% www.bobcopeland.com
-
-From kevin at ve3syb.ca  Wed Sep  2 01:43:06 2015
-From: kevin at ve3syb.ca (Kevin Cozens)
-Date: Tue, 1 Sep 2015 21:43:06 -0400
-Subject: [GTALUG] QEMU and GDB debugging a kernel module
-In-Reply-To: <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
-References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
- <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
-Message-ID: <55E6542A.2090707@ve3syb.ca>
-
-On Fri, Aug 21, 2015 at 12:39 AM, Aruna Hewapathirane wrote:
-> Has anyone ever used qemu and gdb ? If so has anyone successfully
-> debugged a module ?
-
-I haven't done that. I have seldom used gdb directly. If I'm doing debugging 
-I use gdb via ddd. The ddd program makes debugging a lot easier (for me) 
-than the command line based gdb.
-
--- 
-Cheers!
-
-Kevin.
-
-http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
-Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
-                                 | powerful!"
-#include <disclaimer/favourite> |             --Chris Hardwick
-
-From bob at akn.ca  Tue Sep  1 17:42:10 2015
-From: bob at akn.ca (Bob Bosiljevac)
-Date: Tue, 1 Sep 2015 13:42:10 -0400
-Subject: [GTALUG] T-shirt Ideas
-In-Reply-To: <CAEnxSC4ctwU0dE7QqZ_iAdsa8KtfyxWTj7nK5=vi4+yWuWRwaQ@mail.gmail.com>
-References: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org><CAEx-jsM_4Ms9ThY5+hotWUbpQYfLUmy1-QT-OyB-Di9VVYPk6g@mail.gmail.com>
- <CAEnxSC4ctwU0dE7QqZ_iAdsa8KtfyxWTj7nK5=vi4+yWuWRwaQ@mail.gmail.com>
-Message-ID: <4AE19DFDECCEDE49B75B68583D9FCF2D320958875A@EX41.exchserver.com>
-
-> 
-> "I'd tell you a UDP joke but you might not get it."
-> 
-> Which also says a lot about the difference between the two protocols ...
-> 
-
-Wouldn't that be more like:
-
-"I'm telling you a UDP joke but you might not get it".
-
-BB
+Back-story, early in 2015 I upgraded his home from early linksys WRT54G 
+(linksys firmware), to a D-Link DIR-825 (rev. B1), with OpenWRT 14.07. 
+Roughly a month ago OpenWRT 15 was release, so I logged into gather info 
+for doing the firmware upgrade and see this.
 
 
-From opengeometry at yahoo.ca  Wed Sep  2 16:37:16 2015
-From: opengeometry at yahoo.ca (William Park)
-Date: Wed, 2 Sep 2015 12:37:16 -0400
-Subject: [GTALUG] No sound from Intel HD Audio -- solved!
-Message-ID: <20150902163716.GA3920@node1.localdomain>
+http://revident.net/images/OpenWRT-network-info-with-IPv6.png
 
-Hi,
 
-Finally, I've got sound from Intel HD Audio, through default card=0 !
+I've known Teksavvy, his provider, has had a beta program for IPv6 for 
+DSL customers. I signed up, I have an allocation, but I've not used it yet.
 
-I recently bought H97 motherboard and i3-4170, because I couldn't afford
-electricity for my 125W AMD 8-core and overheating motherboard.
-According to my calculation, i3 will pay for itself in a year.
+At some point, Teksavvy turned it live, and the OpenWRT router I set-up 
+for my BF just picked it up and ran with it. It works!
 
-Everything was ok, except sound.  On this H97 board, the default card=0
-is HDMI, and audio ports are card=1.  
-    - I got KDE making notification sound by changing precedence order
-      in "phonon" setting.
-    - I managed to get 'mplayer' playing on card=1 by
-	    ao=alsa:device=hw=1.0
-      and 'aplay' playing on card=1 by
-	    -D default:PCH
+His connection gets a full 20/20 score from http://ipv6-test.com/
 
-Still, YouTube or Flash played video, but no sound.  Installing discrete
-sound card would not help, because that would only become card=2.
+Out of box, no intervention. My boyfriend, and the two other room-mates 
+have been using IPv6, for some unknown period (maybe months), with no 
+observable difference.
 
-I was about to go back to the AMD block heater, when accidental click
-lead me to a solution.  Solution was ~/.asoundrc
-    pcm.!default {
-	type hw
-	card 1
-    }
-    ctl.!default {
-	type hw
-	card 1
-    } 
+Just Wow! Had to share.
 
-Now, I've got sound from default card=1, without those funky
-configuration settings.
--- 
-William
 
-From lsorense at csclub.uwaterloo.ca  Thu Sep  3 15:41:07 2015
-From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
-Date: Thu, 3 Sep 2015 11:41:07 -0400
-Subject: [GTALUG] QEMU and GDB debugging a kernel module
-In-Reply-To: <55E6542A.2090707@ve3syb.ca>
-References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
- <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
- <55E6542A.2090707@ve3syb.ca>
-Message-ID: <20150903154107.GH15617@csclub.uwaterloo.ca>
 
-On Tue, Sep 01, 2015 at 09:43:06PM -0400, Kevin Cozens wrote:
-> I haven't done that. I have seldom used gdb directly. If I'm doing debugging
-> I use gdb via ddd. The ddd program makes debugging a lot easier (for me)
-> than the command line based gdb.
+===== Just some info form my laptop. ========
 
-Last I looked at it (a long time ago), ddd had to be one of the worst,
-most buggy, awful ui, pieces of crap I ever encountered.  Even makes
-eclipse seem like a good idea in comparison.  So bad I have never ever
-considered looking at it again.  I assumed it had to have died out from
-being so bad.
+
+[scott at arcticnoise fonts]$ ifconfig
+[...snip...]
+wlp1s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.4.230  netmask 255.255.255.0  broadcast 192.168.4.255
+        inet6 fd1c:3456:4edf::1ef  prefixlen 128  scopeid 0x0<global>
+        inet6 2607:f2c0:9281:1900::1ef  prefixlen 128  scopeid 0x0<global>
+        inet6 2607:f2c0:9281:1900:3210:b3ff:fe9b:457c  prefixlen 64 
+scopeid 0x0<global>
+        inet6 fd1c:3456:4edf:0:3210:b3ff:fe9b:457c  prefixlen 64 
+scopeid 0x0<global>
+        inet6 fe80::3210:b3ff:fe9b:457c  prefixlen 64  scopeid 0x20<link>
+        ether 30:10:b3:9b:45:7c  txqueuelen 1000  (Ethernet)
+        RX packets 1828026  bytes 2043219415 (1.9 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 2457050
+        TX packets 1108781  bytes 250361333 (238.7 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 41
+
+[scott at arcticnoise fonts]$ ping6 google.com
+PING google.com(yyz08s14-in-x05.1e100.net) 56 data bytes
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=1 ttl=58 time=143 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=2 ttl=58 time=156 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=3 ttl=58 time=158 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=4 ttl=58 time=190 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=5 ttl=58 time=288 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=6 ttl=58 time=403 ms
+^C
+--- google.com ping statistics ---
+6 packets transmitted, 6 received, 0% packet loss, time 5005ms
+rtt min/avg/max/mdev = 143.201/223.390/403.423/93.816 ms
+[scott at arcticnoise fonts]$ ping6 -n google.com
+PING google.com(2607:f8b0:400b:80b::1005) 56 data bytes
+64 bytes from 2607:f8b0:400b:80b::1005: icmp_seq=1 ttl=58 time=106 ms
+64 bytes from 2607:f8b0:400b:80b::1005: icmp_seq=2 ttl=58 time=133 ms
+64 bytes from 2607:f8b0:400b:80b::1005: icmp_seq=3 ttl=58 time=142 ms
+^C
+--- google.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2001ms
+rtt min/avg/max/mdev = 106.601/127.501/142.416/15.227 ms
 
 -- 
-Len Sorensen
+Scott Sullivan
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
 
-From technologynut at rogers.com  Thu Sep  3 16:03:53 2015
-From: technologynut at rogers.com (Gary)
-Date: Thu, 03 Sep 2015 12:03:53 -0400
-Subject: [GTALUG] T-shirt Ideas
-In-Reply-To: <4AE19DFDECCEDE49B75B68583D9FCF2D320958875A@EX41.exchserver.com>
-References: <F54A1FB5-ED70-48E9-865B-D2740F9B2A6C@ss.org><CAEx-jsM_4Ms9ThY5+hotWUbpQYfLUmy1-QT-OyB-Di9VVYPk6g@mail.gmail.com>
- <CAEnxSC4ctwU0dE7QqZ_iAdsa8KtfyxWTj7nK5=vi4+yWuWRwaQ@mail.gmail.com>
- <4AE19DFDECCEDE49B75B68583D9FCF2D320958875A@EX41.exchserver.com>
-Message-ID: <55E86F69.8020509@rogers.com>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20151101/e28b8b62/attachment.html>
 
-That's cute.
+From scott at ss.org  Sun Nov  1 10:18:16 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Sun, 1 Nov 2015 10:18:16 -0500
+Subject: [GTALUG] Surprise, IPv6!
+In-Reply-To: <56362A97.4040204@ss.org>
+References: <56362A97.4040204@ss.org>
+Message-ID: <56362D38.8090304@ss.org>
 
-/gary
+On 01/11/15 10:07 AM, Scott Sullivan wrote:
+> Out of box, no intervention. My boyfriend, and the two other room-mates
+> have been using IPv6, for some unknown period (maybe months), with no
+> observable difference.
 
-On 15-09-01 01:42 PM, Bob Bosiljevac wrote:
->> "I'd tell you a UDP joke but you might not get it."
->>
->> Which also says a lot about the difference between the two protocols ...
->>
-> Wouldn't that be more like:
+Just a clarification on this. I did run some netstats during normal 
+web-browsing on his Linux HTPC. I do see websites being accessed and 
+served in IPv6.
+
+-- 
+Scott Sullivan
+
+From james.knott at rogers.com  Sun Nov  1 10:29:30 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 1 Nov 2015 10:29:30 -0500
+Subject: [GTALUG] Surprise, IPv6!
+In-Reply-To: <56362D38.8090304@ss.org>
+References: <56362A97.4040204@ss.org> <56362D38.8090304@ss.org>
+Message-ID: <56362FDA.6020001@rogers.com>
+
+On 11/01/2015 10:18 AM, Scott Sullivan wrote:
+> Just a clarification on this. I did run some netstats during normal
+> web-browsing on his Linux HTPC. I do see websites being accessed and
+> served in IPv6.
+
+There's an addon for Firefox, Seamonkey and Chrome browsers called
+"ShowIP".  It displays the IP address of the web site, so you can tell
+at a glance if you're connected via IPv6 or IPv4.
+
+BTW, I've been running IPv6 for over 5 years, but I get it via a 6in4
+tunnel rather than from Rogers.  Rogers does support IPv6 via 6to4 or
+6rd tunnel, but I haven't heard of them offering native IPv6 yet.  On
+the other hand, Telus is now moving to IPv6, so perhaps that will give
+Rogers, Bell etc. a nudge.
+
+
+From me at mylesbraithwaite.com  Sun Nov  1 14:07:20 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Sun, 1 Nov 2015 14:07:20 -0500
+Subject: [GTALUG] [GTALUG-Announce] Meeting on 10th November at 7:30pm
+Message-ID: <CA+hskZOv9FVkSF9GuOSJsASq39kJBeFVAC-8gyNVF=vVZbK+yQ@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-11/>
+
+# Lightening Talks
+
+November's GTALUG meeting will be a bunch of audience organised short
+talks. If you would like to give a talk, all you have to do is write
+your name on a post-it and stick it on the whiteboard in the front of
+the room. When your talk get's picked you will have 10 minutes of
+uninterrupted time for you to present, then 10 minutes of audience
+questions/concerns.
+
+Slides are not required, but if you need them please bring a PDF copy
+on a USB key or email them to <speaker-coordinator at gtalug.org>.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Please discuss on the general mailing list (i.e.
+<talk at gtalug.org>) where you want to go for dinner.
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+# Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact the GTALUG Board @ <board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From northdot9 at gmail.com  Mon Nov  2 10:39:12 2015
+From: northdot9 at gmail.com (David Thornton)
+Date: Mon, 2 Nov 2015 10:39:12 -0500
+Subject: [GTALUG] Surprise, IPv6!
+In-Reply-To: <56362FDA.6020001@rogers.com>
+References: <56362A97.4040204@ss.org> <56362D38.8090304@ss.org>
+ <56362FDA.6020001@rogers.com>
+Message-ID: <CAHcykVq6jGvzFPd_MU8-g1DFfg8rJBQTvgqQksX0uTB6Ojcf1g@mail.gmail.com>
+
+I had trouble getting my fortigate 60C do to both ip4 and ipv6 over pppoe.
+
+I just scored a fortigate 60D and amd trying to find the time/brain power
+to migrate my config to the new device and see if I get it up.
+
+...phrasing.
+
+Also note:
+
+* I'm a teksavvy client with ipv4 and ipv6 allocations.
+* the foritgate 60c does the Hurricane electric ipv6 tunnel fine ( HE had a
+drop down config for it ).
+
+
+
+On Sun, Nov 1, 2015 at 10:29 AM, James Knott <james.knott at rogers.com> wrote:
+
+> On 11/01/2015 10:18 AM, Scott Sullivan wrote:
+> > Just a clarification on this. I did run some netstats during normal
+> > web-browsing on his Linux HTPC. I do see websites being accessed and
+> > served in IPv6.
 >
-> "I'm telling you a UDP joke but you might not get it".
+> There's an addon for Firefox, Seamonkey and Chrome browsers called
+> "ShowIP".  It displays the IP address of the web site, so you can tell
+> at a glance if you're connected via IPv6 or IPv4.
 >
-> BB
+> BTW, I've been running IPv6 for over 5 years, but I get it via a 6in4
+> tunnel rather than from Rogers.  Rogers does support IPv6 via 6to4 or
+> 6rd tunnel, but I haven't heard of them offering native IPv6 yet.  On
+> the other hand, Telus is now moving to IPv6, so perhaps that will give
+> Rogers, Bell etc. a nudge.
 >
 > ---
 > Talk Mailing List
 > talk at gtalug.org
 > http://gtalug.org/mailman/listinfo/talk
-
-
-From el.fontanero at gmail.com  Thu Sep  3 16:21:50 2015
-From: el.fontanero at gmail.com (Mike)
-Date: Thu, 3 Sep 2015 12:21:50 -0400
-Subject: [GTALUG] QEMU and GDB debugging a kernel module
-In-Reply-To: <20150903154107.GH15617@csclub.uwaterloo.ca>
-References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
- <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
- <55E6542A.2090707@ve3syb.ca>
- <20150903154107.GH15617@csclub.uwaterloo.ca>
-Message-ID: <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
-
-On Thu, Sep 3, 2015 at 11:41 AM, Lennart Sorensen <
-lsorense at csclub.uwaterloo.ca> wrote:
-
-> On Tue, Sep 01, 2015 at 09:43:06PM -0400, Kevin Cozens wrote:
-> > I haven't done that. I have seldom used gdb directly. If I'm doing
-> debugging
-> > I use gdb via ddd. The ddd program makes debugging a lot easier (for me)
-> > than the command line based gdb.
 >
-> Last I looked at it (a long time ago), ddd had to be one of the worst,
-> most buggy, awful ui, pieces of crap I ever encountered.  Even makes
-> eclipse seem like a good idea in comparison.  So bad I have never ever
-> considered looking at it again.  I assumed it had to have died out from
-> being so bad.
->
->
-Never had the pleasure.  But Kevin, don't fear the command line.  A
-well-designed graphical debugger is a good and useful tool, but when you
-absolutely need to get into the plumbing; memory setup, ICE hardware
-protocols, etc. (ad nauseam) you almost inevitably go sideways from where
-the GUI designers intended.  Kvm-qemu kernel debugging probably falls
-squarely in this category.  All roads lead to gdb, it sometimes seems...
-
-Mike
 -------------- next part --------------
 An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20150903/fdf5061d/attachment.html>
-
-From scott at ss.org  Thu Sep  3 18:08:26 2015
-From: scott at ss.org (Scott Sullivan)
-Date: Thu, 03 Sep 2015 14:08:26 -0400
-Subject: [GTALUG] Active Surplus is Closing it's Queen Location
-Message-ID: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
-
-Details on their site. Steels location to stay open. Everything 50% off.
-
-http://www.activesurplus.com
--- 
-Scott Sullivan
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20150903/0eaa3004/attachment.html>
-
-From phiscock at ee.ryerson.ca  Thu Sep  3 18:20:33 2015
-From: phiscock at ee.ryerson.ca (phiscock at ee.ryerson.ca)
-Date: Thu, 3 Sep 2015 14:20:33 -0400
-Subject: [GTALUG] Active Surplus is Closing it's Queen Location
-In-Reply-To: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
-References: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
-Message-ID: <84b58ce46349503f817e120156e25f74.squirrel@webmail.ee.ryerson.ca>
-
-Good to know, thanks.
-
-The Steeles location was pretty terrible when I visited it about a year
-ago: nothing much of interest and everything overpriced.
-
-P.
-
-> Details on their site. Steels location to stay open. Everything 50% off.
->
-> http://www.activesurplus.com
-> --
-> Scott Sullivan---
-> Talk Mailing List
-> talk at gtalug.org
-> http://gtalug.org/mailman/listinfo/talk
->
-
-
--- 
-Peter Hiscocks
-Syscomp Electronic Design Limited, Toronto
-http://www.syscompdesign.com
-USB Oscilloscope and Waveform Generator
-647-839-0325
-
-
-From kevin at ve3syb.ca  Thu Sep  3 20:52:19 2015
-From: kevin at ve3syb.ca (Kevin Cozens)
-Date: Thu, 3 Sep 2015 16:52:19 -0400
-Subject: [GTALUG] QEMU and GDB debugging a kernel module
-In-Reply-To: <20150903154107.GH15617@csclub.uwaterloo.ca>
-References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
- <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
- <55E6542A.2090707@ve3syb.ca> <20150903154107.GH15617@csclub.uwaterloo.ca>
-Message-ID: <55E8B303.4080103@ve3syb.ca>
-
-On 15-09-03 11:41 AM, Lennart Sorensen wrote:
-> Last I looked at it (a long time ago), ddd had to be one of the worst,
-> most buggy, awful ui, pieces of crap I ever encountered.
-
-I know what you mean. When I first tried ddd it would often crash in the 
-middle of your debug session if you looked at it wrong, but it did recover.
-
-The UI hasn't changed a whole lot from the early days but it has gotten a 
-bit less prone to crash. It usually works for me so I haven't bothered to 
-look around and see if there is something better that can be used in place 
-of ddd.
-
--- 
-Cheers!
-
-Kevin.
-
-http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
-Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
-                                 | powerful!"
-#include <disclaimer/favourite> |             --Chris Hardwick
-
-From james.knott at rogers.com  Thu Sep  3 22:57:00 2015
-From: james.knott at rogers.com (James Knott)
-Date: Thu, 03 Sep 2015 18:57:00 -0400
-Subject: [GTALUG] Active Surplus is Closing it's Queen Location
-In-Reply-To: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
-References: <CD1A44F0-7C00-4844-A5A0-48D971591E16@ss.org>
-Message-ID: <55E8D03C.1040003@rogers.com>
-
-On 09/03/2015 02:08 PM, Scott Sullivan wrote:
-> Details on their site. Steels location to stay open. Everything 50% off.
-
-I didn't even know they had a Steeles location.  I used to frequent the
-Queen store years ago, when I worked downtown.  They had lots of stuff
-there, some of it even useful.  ;-)
-
-One item I bought there was an S-100 bus prototyping board, which I used
-to build an 8 port serial card for my IMSAI 8080.  I actually populated
-3 of the ports, but, with the 8250 UART, it was just as easy to design
-the board for 8 ports as 4.  In designing and building that board, I
-found a bug in the 8250 that Western Digital was unaware of.
-
-I was in the vicinity of the Queen store recently and saw it was now
-upstairs.  The last time I was in there, it was on the main floor and
-basement.
-
-
-From lsorense at csclub.uwaterloo.ca  Fri Sep  4 01:17:42 2015
-From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
-Date: Thu, 3 Sep 2015 21:17:42 -0400
-Subject: [GTALUG] QEMU and GDB debugging a kernel module
-In-Reply-To: <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
-References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
- <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
- <55E6542A.2090707@ve3syb.ca>
- <20150903154107.GH15617@csclub.uwaterloo.ca>
- <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
-Message-ID: <20150904011742.GI15617@csclub.uwaterloo.ca>
-
-On Thu, Sep 03, 2015 at 12:21:50PM -0400, Mike wrote:
-> Never had the pleasure.  But Kevin, don't fear the command line.  A
-> well-designed graphical debugger is a good and useful tool, but when you
-> absolutely need to get into the plumbing; memory setup, ICE hardware
-> protocols, etc. (ad nauseam) you almost inevitably go sideways from where
-> the GUI designers intended.  Kvm-qemu kernel debugging probably falls
-> squarely in this category.  All roads lead to gdb, it sometimes seems...
-
-gdb's command line is certainly overwhelming to many, but if I was really
-desparate for an interface to gdb, I would use emacs, and I am a vim user.
-
--- 
-Len Sorensen
-
-From aruna.hewapathirane at gmail.com  Fri Sep  4 10:46:27 2015
-From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
-Date: Fri, 4 Sep 2015 06:46:27 -0400
-Subject: [GTALUG] QEMU and GDB debugging a kernel module
-In-Reply-To: <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
-References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
- <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
-Message-ID: <CAFSeFg-eggsREBuYdwF_uX3WUs8srBDt9_s7y4ogi43Q21s0Ug@mail.gmail.com>
-
-Hi Bob,
-
-Thank you for all the pointers. I may keep bothering you if I still have
-issues eh ?
-
-Something you said  " I have done this once upon a time..." made me type
-this:
-
-aruna at debian:~/linux-4.1.2$ find . -name "*.c" | xargs grep -i " bob
-copeland "
-
-and guess what find says:
-
-./block/partitions/karma.c: *  Copyright (C) 2006 Bob Copeland (
-me at bobcopeland.com)
-
-./fs/omfs/file.c: *                  Copyright (C) 2005 Bob Copeland <
-me at bobcopeland.com>
-./fs/omfs/dir.c: *                   Copyright (C) 2005 Bob Copeland <
-me at bobcopeland.com>
-./fs/omfs/inode.c: *              Copyright (C) 2006 Bob Copeland <
-me at bobcopeland.com>
-
-./drivers/net/wireless/ath/ath5k/led.c: * Copyright (c) 2009 Bob Copeland <
-me at bobcopeland.com>
-./drivers/net/wireless/ti/wl1251/sdio.c: * Copyright (C) 2009 Bob Copeland (
-me at bobcopeland.com)
-./drivers/usb/storage/karma.c: *            (c) 2006 Bob Copeland <
-me at bobcopeland.com>
-
-Holy Wow ! file system, wireless, usb ? holy wow again.. ( proceeds to fall
-off my chair ..)
-
-Yeah 2005 was a long time ago I was still using Windows 3.1 and had no idea
-what Linux was :)
-
-Privileged to meet you Mr.Copeland ( So what is it with folks who's names
-begin with Bob ? All the Bob's I know are possibly related to Einstein ?
-Including our own Mr.Jonkman )
-
-Seriously many thanks for taking the time to reply it IS much appreciated !
-
-Aruna
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20150904/496b4a34/attachment.html>
-
-From aruna.hewapathirane at gmail.com  Fri Sep  4 10:56:31 2015
-From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
-Date: Fri, 4 Sep 2015 06:56:31 -0400
-Subject: [GTALUG] QEMU and GDB debugging a kernel module
-In-Reply-To: <55E6542A.2090707@ve3syb.ca>
-References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
- <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
- <55E6542A.2090707@ve3syb.ca>
-Message-ID: <CAFSeFg-rcQ5bBgHzEeydTebpp2SgNUahT=AgcEAwC+-RzNJ=fQ@mail.gmail.com>
-
->> On Tue, Sep 1, 2015 at 9:43 PM, Kevin Cozens <kevin at ve3syb.ca> wrote:
->> On Fri, Aug 21, 2015 at 12:39 AM, Aruna Hewapathirane wrote:
->> Has anyone ever used qemu and gdb ? If so has anyone successfully
->> debugged a module ?
-
->> I haven't done that. I have seldom used gdb directly. If I'm doing
-debugging I use gdb via ddd. The ddd program makes
->> debugging a lot easier (for me) than the command line based gdb.
-
-Thanks Kevin I will take a look at ddd.
-
-Aruna
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20150904/88b15909/attachment.html>
-
-From aruna.hewapathirane at gmail.com  Fri Sep  4 10:58:25 2015
-From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
-Date: Fri, 4 Sep 2015 06:58:25 -0400
-Subject: [GTALUG] QEMU and GDB debugging a kernel module
-In-Reply-To: <20150904011742.GI15617@csclub.uwaterloo.ca>
-References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
- <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
- <55E6542A.2090707@ve3syb.ca>
- <20150903154107.GH15617@csclub.uwaterloo.ca>
- <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
- <20150904011742.GI15617@csclub.uwaterloo.ca>
-Message-ID: <CAFSeFg8dBJckgoyTY2B2=iT0dYUnL8=M_y8Z=NwPsf3U=Hpf9g@mail.gmail.com>
-
-<snip>
->> gdb's command line is certainly overwhelming to many, but if I was really
->> desparate for an interface to gdb, I would use emacs, and I am a vim
-user.
->> Len Sorensen
-<snip>
-
-Len, try qemu it is a zillion times more overwhelming than gdb :)
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20150904/9d6f888b/attachment.html>
-
-From lsorense at csclub.uwaterloo.ca  Fri Sep  4 13:33:36 2015
-From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
-Date: Fri, 4 Sep 2015 09:33:36 -0400
-Subject: [GTALUG] QEMU and GDB debugging a kernel module
-In-Reply-To: <CAFSeFg8dBJckgoyTY2B2=iT0dYUnL8=M_y8Z=NwPsf3U=Hpf9g@mail.gmail.com>
-References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
- <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
- <55E6542A.2090707@ve3syb.ca>
- <20150903154107.GH15617@csclub.uwaterloo.ca>
- <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
- <20150904011742.GI15617@csclub.uwaterloo.ca>
- <CAFSeFg8dBJckgoyTY2B2=iT0dYUnL8=M_y8Z=NwPsf3U=Hpf9g@mail.gmail.com>
-Message-ID: <20150904133336.GJ15617@csclub.uwaterloo.ca>
-
-On Fri, Sep 04, 2015 at 06:58:25AM -0400, Aruna Hewapathirane wrote:
-> <snip>
-> >> gdb's command line is certainly overwhelming to many, but if I was really
-> >> desparate for an interface to gdb, I would use emacs, and I am a vim
-> user.
-> >> Len Sorensen
-> <snip>
-> 
-> Len, try qemu it is a zillion times more overwhelming than gdb :)
-
-Oh yes, the qemu command line is quite something.  I do find the syntax
-more understandable than gdb though.
-
--- 
-Len Sorensen
-
-From aruna.hewapathirane at gmail.com  Fri Sep  4 14:06:46 2015
-From: aruna.hewapathirane at gmail.com (Aruna Hewapathirane)
-Date: Fri, 04 Sep 2015 10:06:46 -0400
-Subject: [GTALUG] QEMU and GDB debugging a kernel module
-In-Reply-To: <20150904133336.GJ15617@csclub.uwaterloo.ca>
-References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
- <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
- <55E6542A.2090707@ve3syb.ca> <20150903154107.GH15617@csclub.uwaterloo.ca>
- <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
- <20150904011742.GI15617@csclub.uwaterloo.ca>
- <CAFSeFg8dBJckgoyTY2B2=iT0dYUnL8=M_y8Z=NwPsf3U=Hpf9g@mail.gmail.com>
- <20150904133336.GJ15617@csclub.uwaterloo.ca>
-Message-ID: <55E9A576.2060501@gmail.com>
-
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA1
-
-
-On 04/09/15 09:33 AM, Lennart Sorensen wrote:
-> On Fri, Sep 04, 2015 at 06:58:25AM -0400, Aruna Hewapathirane
-> wrote:
->> <snip>
->>>> gdb's command line is certainly overwhelming to many, but if
->>>> I was really desparate for an interface to gdb, I would use
->>>> emacs, and I am a vim
->> user.
->>>> Len Sorensen
->> <snip>
->> 
->> Len, try qemu it is a zillion times more overwhelming than gdb
->> :)
-> 
-> Oh yes, the qemu command line is quite something.  I do find the
-> syntax more understandable than gdb though.
-> 
-
-That is probably because you have more gray matter ( gray matter in
-this case equates to long years of lived experience + testing +
-breaking things then wash+rinse+repeat till you finally fix things.. )
-
-I still *cringe* when I have to fire up qemu.. hopefully someday I
-will feel comfortable but right now every single time I do this I
-actually do PRAY ! ( Seriously I kneel then PRAY ! yes dat bad.. )
-
-Len, if I may please I am setting up a few servers for a good friend
-and they are running Zimbra Servers and Zimbra has it's own bundled
-Apache so I do not see the usual /var/www root and the log files are
-huge. Seriously huge. Any suggestions on how best to tweak for
-performance ?
-
-I also see free -m -l -t telling me it is hogging memory like
-anything. Is this a Zimbra issue or ? Once again how best to resolve ?
-
-The logs are purged daily so am guesing teh amount of transactions
-through Zimbra is causing the weight ?
-
-This is my first exposure to Zimbra and Servers actually so please
-have mercy and be gentle.
-
-Thanks - Aruna
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.12 (GNU/Linux)
-
-iQIcBAEBAgAGBQJV6aV2AAoJEHIEJxfB21ta5f0P/0zc2Yu1qQXdgcxGaUWIGhi7
-rCBiWkwrhZU3W8TTD6HBzGL471eU90vqkkJSpwSy+Fb9KAs7wIZz8jaVURrL6rkP
-5X2lAIShk6kz58Xc1lmoI7cUN9urbqmV6TPdBxAhx/b/E9vzorzsIgVGMttuzvZz
-fuER+3Fm/Pmt3Kpeyx9JRpS6q8Dq6kQt5BJpY3bJTF05i5VERdH9CUFZS3PaTYv6
-9V4gXLiAafj8d2kQtEcPkLJVbN2/UN2s1tMku3fW/MyLQtCxH/evX5U5RRiex472
-xuNRzFvZ+yEfFwkSvV4gqxXjrt7AhBPaghKHiG0AIGVQDun5VJR9dd+DjB7MW9jJ
-yScU8N+m+0OEmlMhua8I9kRiW5GuapS8xTECp/bLeJw1//tGGsvPh4ZdwmKoq3HK
-0cg2uSfpYdjJy2oa+aDhbCBLmIkOPatInwVVf50yuu4dL1DK6p6nBn38+EuwbfBk
-JoPSGTihENSRZlZvGrVz1lzXikdUpIn1tn3J0srW9UYrKoruWFmGAzK6ZH6HvSVL
-Wm+Jl+bF570a3RBYVDtCRPMpXKUGd0blWxi9AXPVhqvpVVkzdT/1qMzvEJawX608
-Jo+Gg8igfThLaSz5TtBkiLwbyEI9aqGWXxe2lsdW5UM9HHvdBfOcRPPuuecdO1dc
-cbrc5Zj6tbmQSKK47BB6
-=0WjX
------END PGP SIGNATURE-----
-
-From me at bobcopeland.com  Fri Sep  4 14:19:01 2015
-From: me at bobcopeland.com (Bob Copeland)
-Date: Fri, 4 Sep 2015 10:19:01 -0400
-Subject: [GTALUG] QEMU and GDB debugging a kernel module
-In-Reply-To: <CAFSeFg-eggsREBuYdwF_uX3WUs8srBDt9_s7y4ogi43Q21s0Ug@mail.gmail.com>
-References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
- <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
- <CAFSeFg-eggsREBuYdwF_uX3WUs8srBDt9_s7y4ogi43Q21s0Ug@mail.gmail.com>
-Message-ID: <CAEKwDSAQxupd99pp1qBFefBUdXs3AD6EqXA5pOt3o4wn36CjdA@mail.gmail.com>
-
-On Fri, Sep 4, 2015 at 6:46 AM, Aruna Hewapathirane
-<aruna.hewapathirane at gmail.com> wrote:
-> Hi Bob,
->
-> Thank you for all the pointers. I may keep bothering you if I still have
-> issues eh ?
-
-Sure, feel free to CC me as well in case I seem unresponsive,
-sometimes I don't read the TLUG list so closely.
-
-> Holy Wow ! file system, wireless, usb ? holy wow again.. ( proceeds to fall
-> off my chair ..)
-
-As I found then, a great way to learn about the kernel is to write a
-file system :)
-
-I now do a small amount of ongoing development in linux wireless for
-work, particularly in mesh.  It's good fun.
-
--- 
-Bob Copeland %% www.bobcopeland.com
-
-From kevin at ve3syb.ca  Fri Sep  4 17:37:41 2015
-From: kevin at ve3syb.ca (Kevin Cozens)
-Date: Fri, 4 Sep 2015 13:37:41 -0400
-Subject: [GTALUG] QEMU and GDB debugging a kernel module
-In-Reply-To: <CAFSeFg-rcQ5bBgHzEeydTebpp2SgNUahT=AgcEAwC+-RzNJ=fQ@mail.gmail.com>
-References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
- <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
- <55E6542A.2090707@ve3syb.ca>
- <CAFSeFg-rcQ5bBgHzEeydTebpp2SgNUahT=AgcEAwC+-RzNJ=fQ@mail.gmail.com>
-Message-ID: <55E9D6E5.7050300@ve3syb.ca>
-
-On 15-09-04 06:56 AM, Aruna Hewapathirane wrote:
-> Thanks Kevin I will take a look at ddd.
-
-I did an internet search a day or two back. There are other alternatives to 
-ddd for gdb front-ends and found a list of them at
-     https://sourceware.org/gdb/wiki/GDB%20Front%20Ends
-
-One of them that looks interesting is Gede. It isn't available for the 
-distro I'm running (Linux Mint) so it would have to be built from the source 
-files.
-
-For now I'll stick with ddd. I'm used to it and I seldom need a source level 
-debugger so I'm not particularly motivated to search for something else to use.
-
--- 
-Cheers!
-
-Kevin.
-
-http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
-Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
-                                 | powerful!"
-#include <disclaimer/favourite> |             --Chris Hardwick
-
-From kevin at ve3syb.ca  Fri Sep  4 17:40:53 2015
-From: kevin at ve3syb.ca (Kevin Cozens)
-Date: Fri, 4 Sep 2015 13:40:53 -0400
-Subject: [GTALUG] QEMU and GDB debugging a kernel module
-In-Reply-To: <20150904011742.GI15617@csclub.uwaterloo.ca>
-References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
- <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
- <55E6542A.2090707@ve3syb.ca> <20150903154107.GH15617@csclub.uwaterloo.ca>
- <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
- <20150904011742.GI15617@csclub.uwaterloo.ca>
-Message-ID: <55E9D7A5.2060705@ve3syb.ca>
-
-On 15-09-03 09:17 PM, Lennart Sorensen wrote:
-> gdb's command line is certainly overwhelming to many, but if I was really
-> desparate for an interface to gdb, I would use emacs, and I am a vim user.
-
-Another program that has an almost overwhelming command line is avrdude. 
-Fortunately I knew of avrdude-gui as a way to tame it. It was old but I 
-updated it for use with a current version of avrdude.
-
-One of these days I'll post the updated version of avrdude-gui to my website.
-
--- 
-Cheers!
-
-Kevin.
-
-http://www.ve3syb.ca/           |"Nerds make the shiny things that distract
-Owner of Elecraft K2 #2172      | the mouth-breathers, and that's why we're
-                                 | powerful!"
-#include <disclaimer/favourite> |             --Chris Hardwick
-
-From moptop99 at gmail.com  Fri Sep  4 22:32:42 2015
-From: moptop99 at gmail.com (Matt Price)
-Date: Fri, 4 Sep 2015 18:32:42 -0400
-Subject: [GTALUG] OT: Inexpensive laptop for Minecraft?
-Message-ID: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
-
-Hello everyone! Thought I'd tap the collective brain. I'm looking for a
-relatively inexpensive laptop for my son, who mostly just plays minecraft
-(and occasionally needs the computer for school work, using google docs & a
-browser). Any suggestions of models, or places to buy? I'm looking for
-something pretty inexpensive, but with dedicated graphics that will allow
-him to play minecraft comfortably for the next year or  so at least.
-
-Thank you!
-
-m
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20150904/d2292fb0/attachment.html>
-
-From opengeometry at yahoo.ca  Sat Sep  5 00:18:36 2015
-From: opengeometry at yahoo.ca (William Park)
-Date: Fri, 04 Sep 2015 20:18:36 -0400
-Subject: [GTALUG] OT: Inexpensive laptop for Minecraft?
-In-Reply-To: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
-References: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
-Message-ID: <20150905001836.5894230.90747.3460@yahoo.ca>
-
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20150904/29e66e7e/attachment.html>
-
-From hugh at mimosa.com  Sat Sep  5 15:13:58 2015
-From: hugh at mimosa.com (D. Hugh Redelmeier)
-Date: Sat, 5 Sep 2015 11:13:58 -0400 (EDT)
-Subject: [GTALUG] OT: Inexpensive laptop for Minecraft?
-In-Reply-To: <20150905001836.5894230.90747.3460@yahoo.ca>
-References: <CAN_Dec-+xVt7Rfz2SP=T56JKqzbWeEck_=Bi1X8bWo+KOZOtxQ@mail.gmail.com>
- <20150905001836.5894230.90747.3460@yahoo.ca>
-Message-ID: <alpine.LRH.2.02.1509051008160.1292@redclaw.mimosa.com>
-
-| From: Matt Price
-
-| Hello everyone! Thought I'd tap the collective brain. I'm looking for a relatively inexpensive laptop for my son, who
-| mostly just plays minecraft (and occasionally needs the computer for school work, using google docs & a browser). Any
-| suggestions of models, or places to buy? I'm looking for something pretty inexpensive, but with dedicated graphics that
-| will allow him to play minecraft comfortably for the next year or  so at least. 
-
-
-| From: William Park <opengeometry at yahoo.ca>
-| 
-| ‎Not sure about dedicated graphics, but ThinkPad T420‎ (refurbished) is on sale at Canada Computers again. 
-| -- 
-
-Bestbuy has them too, with a dock.  Also refurb.io
-<http://forums.redflagdeals.com/refurb-io-labour-day-clearance-select-desktop-computers-laptops-1805521/>
-<http://forums.redflagdeals.com/ca-refurb-io-lenovo-thinkpad-t420-i5-2nd-gen-4gb-300gb-hd-win-7-pro-261-a-1805549/>
-Note: these different sources have units with different generations of
-Intel processors, and I seem to recollect that that matters for GPU
-power.
-
-But I don't really think that these are great for the price
-considering that they are used.  It depends on how much you value the
-ThinkPad attributes (good keyboard, repairable, very well-built,
-heavy).
-
-These use the CPU chip's built-in GPU.  Although Intel's GPU has been
-getting better, it was fairly poor for gaming in older generations.
-Someone who knows more about Minecraft performance would perhaps know
-if these GPUs are good enough.  Or use google
-<http://minecraft.gamepedia.com/Hardware_performance>
-
-I would *guess* that current Intel i-series processors would have a
-good enough GPU for Minecraft.  I would also guess that the GPU part
-of any recent AMD APU is good for Minecraft (APU is what AMD calls
-their CPU + GPU chips).  But beware: low-end AMD CPUs are very slow by
-today's standards (and they go by a lot of different names).  This is
-cheap but I think that it isn't quite good enough:
-<http://www.nmicrovip.ca/asus-amd-a4-5000-6gb-ram-750gb-hdd-15-6-1366x768-dvdrw-windows-8-bilingual-kb-x552ea-sh41-cb-refurbished/>
-A4 series are probably too weak.
-
-Shoppers Drug Mart has a bunch of cheap notebooks on sale this
-weekend.  I have no idea about their specs since SDM's ad doesn't give
-model numbers!  They have a points bonus today which actually
-makes a difference in the effective cost (if you are willing to bother
-with their points program).
-
-From hugh at mimosa.com  Sun Sep  6 01:29:50 2015
-From: hugh at mimosa.com (D. Hugh Redelmeier)
-Date: Sat, 5 Sep 2015 21:29:50 -0400 (EDT)
-Subject: [GTALUG] message from the past
-Message-ID: <alpine.LRH.2.02.1509052108210.9157@redclaw.mimosa.com>
-
-I'm typing this on my first notebook.  I bought it in 1999.  It is 
-woefully obsolete, but it really does work.
-
-- NEC Versa SX
-
-- Pentium II at 233MHz
-
-- 256M of RAM
-
-- 1024 x 768 screen (actually, I like the aspect ration)
-
-- 16 bits / pixel (oops) and a Trident video chip (support in X isn't 
-  100%)
-
-- Fedora Core 1
-
-- ethernet card plugs into a PCcard slot
-
-Via some simplified version of Moore's law, things ought to be better by 
-about a factor of 1000 (two to the power of (16 years / 18 months)).
-
-- Processor clock speed is faster by a little more than 10.  The work done 
-  per clock tick is perhaps 2 or 4 times greater.
-
-- The RAM is larger by a factor of 100 (the machine came with 64M).
-
-- disk space has gone up by perhaps 250.  It came with a 4GB drive and I 
-  upgraded it to 10GB
-
-- screen resolution has gone up perhaps a factor of 2 horizontally and 1.3 
-  vertically
-
-- keyboards don't seem better.  Trackpads do.
-
-- price has gone down a bit.
-
-
-From sergiodj at sergiodj.net  Sun Sep  6 03:04:11 2015
-From: sergiodj at sergiodj.net (Sergio Durigan Junior)
-Date: Sat, 05 Sep 2015 23:04:11 -0400
-Subject: [GTALUG] QEMU and GDB debugging a kernel module
-In-Reply-To: <20150904011742.GI15617@csclub.uwaterloo.ca> (Lennart Sorensen's
- message of "Thu, 3 Sep 2015 21:17:42 -0400")
-References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
- <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
- <55E6542A.2090707@ve3syb.ca>
- <20150903154107.GH15617@csclub.uwaterloo.ca>
- <CAOW5by=n=GkAgmUrBpHxN9-Nb6Junb74vUVdP9ab+giy_nNcEw@mail.gmail.com>
- <20150904011742.GI15617@csclub.uwaterloo.ca>
-Message-ID: <87d1xwjljo.fsf@sergiodj.net>
-
-On Thursday, September 03 2015, Lennart Sorensen wrote:
-
-> On Thu, Sep 03, 2015 at 12:21:50PM -0400, Mike wrote:
->> Never had the pleasure.  But Kevin, don't fear the command line.  A
->> well-designed graphical debugger is a good and useful tool, but when you
->> absolutely need to get into the plumbing; memory setup, ICE hardware
->> protocols, etc. (ad nauseam) you almost inevitably go sideways from where
->> the GUI designers intended.  Kvm-qemu kernel debugging probably falls
->> squarely in this category.  All roads lead to gdb, it sometimes seems...
->
-> gdb's command line is certainly overwhelming to many, but if I was really
-> desparate for an interface to gdb, I would use emacs, and I am a vim user.
-
-Emacs has a good (or gud?) interface to GDB, but sometimes it lacks one
-feature or another.
-
-What I recommend to every GDB beginner (or even non-beginners, because
-they also don't know about this feature) is TUI, the Text User Interface
-inside GDB itself.  It is ncurses-based, and after a long period of
-being unmaintained (and buggy), it has been receiving some TLC again
-lately.
-
-To enter TUI, press C-x a.  To leave TUI, C-x a again.
-
--- 
-Sergio
-GPG key ID: 237A 54B1 0287 28BF 00EF  31F4 D0EB 7628 65FC 5E36
-Please send encrypted e-mail if possible
-http://sergiodj.net/
-
-From sergiodj at sergiodj.net  Sun Sep  6 03:05:49 2015
-From: sergiodj at sergiodj.net (Sergio Durigan Junior)
-Date: Sat, 05 Sep 2015 23:05:49 -0400
-Subject: [GTALUG] QEMU and GDB debugging a kernel module
-In-Reply-To: <55E8B303.4080103@ve3syb.ca> (Kevin Cozens's message of "Thu, 3
- Sep 2015 16:52:19 -0400")
-References: <CAFSeFg-oOaXDqYQaP4vnM=8aH04L3hr-2=FA0C17ULxDCaCiEw@mail.gmail.com>
- <CAEKwDSA2V4_Wed16BrGVwg25+9eboxWfDj2_9OfG8_Wrrtz5Jg@mail.gmail.com>
- <55E6542A.2090707@ve3syb.ca>
- <20150903154107.GH15617@csclub.uwaterloo.ca>
- <55E8B303.4080103@ve3syb.ca>
-Message-ID: <878u8kjlgy.fsf@sergiodj.net>
-
-On Thursday, September 03 2015, Kevin Cozens wrote:
-
-> On 15-09-03 11:41 AM, Lennart Sorensen wrote:
->> Last I looked at it (a long time ago), ddd had to be one of the worst,
->> most buggy, awful ui, pieces of crap I ever encountered.
->
-> I know what you mean. When I first tried ddd it would often crash in
-> the middle of your debug session if you looked at it wrong, but it did
-> recover.
->
-> The UI hasn't changed a whole lot from the early days but it has
-> gotten a bit less prone to crash. It usually works for me so I haven't
-> bothered to look around and see if there is something better that can
-> be used in place of ddd.
-
-If you're a GNOME user you might give Nemiver a try, too.
-
-<https://wiki.gnome.org/Apps/Nemiver>
-
--- 
-Sergio
-GPG key ID: 237A 54B1 0287 28BF 00EF  31F4 D0EB 7628 65FC 5E36
-Please send encrypted e-mail if possible
-http://sergiodj.net/
+URL: <http://gtalug.org/pipermail/talk/attachments/20151102/a752a047/attachment.html>
 

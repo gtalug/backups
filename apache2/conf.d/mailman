@@ -2,6 +2,7 @@ ScriptAlias /mailman/ /usr/lib/cgi-bin/mailman/
 
 Alias /pipermail/ /var/lib/mailman/archives/public/
 
+Alias /images/mailman/debianpowered.png /usr/share/images/mailman/debianpowered.png
 Alias /mailman-images/ /usr/share/images/mailman/
 
 <Directory /usr/lib/cgi-bin/mailman/>
@@ -25,5 +26,67 @@ Alias /mailman-images/ /usr/share/images/mailman/
 	Allow from all
 </Directory>
 
+<Location /pipermail/operations/2015-February/000201.html>
+Order deny,allow
+Deny from all
+</Location>
 
+<Location /pipermail/operations/2015-February/000202.html>
+Order deny,allow
+Deny from all
+</Location>
 
+<Location /pipermail/operations/2015-February/000203.html>
+Order deny,allow
+Deny from all
+</Location>
+
+<Location /pipermail/operations/2015-February/000204.html>
+Order deny,allow
+Deny from all
+</Location>
+
+<Location /pipermail/operations/2015-February/000205.html>
+Order deny,allow
+Deny from all
+</Location>
+
+<Location /pipermail/operations/2015-February/000206.html>
+Order deny,allow
+Deny from all
+</Location>
+
+<Location /pipermail/operations/2015-February/000207.html>
+Order deny,allow
+Deny from all
+</Location>
+
+<Location /pipermail/operations/2015-February/000208.html>
+Order deny,allow
+Deny from all
+</Location>
+
+<Location /pipermail/operations/2015-February/000209.html>
+Order deny,allow
+Deny from all
+</Location>
+
+<Location /pipermail/operations/2015-February/000211.html>
+Order deny,allow
+Deny from all
+</Location>
+
+<Location /pipermail/operations/2015-February/000212.html>
+Order deny,allow
+Deny from all
+</Location>
+
+<Location /pipermail/operations/2015-February/000213.html>
+Order deny,allow
+Deny from all
+</Location>
+
+<Location /pipermail/operations/2015-February/000214.html>
+Order deny,allow
+Deny from all
+</Location>
