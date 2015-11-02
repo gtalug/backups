@@ -1,0 +1,70 @@
+[DEFAULT]
+
+action = %(action_mwl)s
+
+[postfix]
+enabled  = true
+port     = smtp,ssmtp
+filter   = postfix
+logpath  = /var/log/mail.log
+
+[apache]
+enabled  = true
+port     = http,https
+filter   = apache-auth
+logpath  = /var/log/apache*/*error.log
+maxretry = 6
+
+[apache-other]
+enabled  = true
+port     = http,https
+filter   = apache-auth
+logpath  = /srv/www/org_gtalug_*/logs/error.log
+maxretry = 6
+action   = iptables-allports
+
+[apache-noscript]
+enabled  = true
+port     = http,https
+filter   = apache-noscript
+logpath  = /var/log/apache*/*error.log
+maxretry = 6
+
+[apache-noscript-other]
+enabled  = true
+port     = http,https
+filter   = apache-noscript
+logpath  = /srv/www/org_gtalug_*/logs/error.log
+maxretry = 6
+action   = iptables-allports
+
+[apache-overflows]
+enabled  = true
+port     = http,https
+filter   = apache-overflows
+logpath  = /var/log/apache*/*error.log
+maxretry = 6
+
+[apache-overflows-other]
+enabled  = true
+port     = http,https
+filter   = apache-overflows
+logpath  = /srv/www/org_gtalug_*/logs/error.log
+maxretry = 6
+action   = iptables-allports
+
+[apache-phpmyadmin]
+enabled  = true
+port     = http,https
+filter   = apache-phpmyadmin
+logpath  = /var/log/apache*/*error.log
+maxretry = 3
+
+[apache-phpmyadmin-other]
+enabled  = true
+port     = http,https
+filter   = apache-phpmyadmin
+logpath  = /srv/www/org_gtalug_*/logs/error.log
+maxretry = 3
+action   = iptables-allports
+
