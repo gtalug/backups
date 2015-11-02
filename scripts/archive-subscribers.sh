@@ -18,10 +18,12 @@ GPGKEYS=${GPGKEYS:-"6AA6A713 5A2FE7BF D598FD34"}
 
 GPG_RECIPIENTS=""
 
-for gpgkey in GPGKEYS
+for gpgkey in `echo $GPGKEYS`
 do
-    GPG_RECIPIENTS="${GPG_RECIPIENT} --recipient ${gpgkey}"
+    GPG_RECIPIENTS="${GPG_RECIPIENTS} --recipient ${gpgkey}"
 done
+
+echo "GPG Keys: ${GPG_RECIPIENTS}"
 
 for list in announce operations talk; do
     listname=${list}
