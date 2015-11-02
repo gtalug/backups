@@ -16,9 +16,13 @@ root: myles, mike
 ## email forwards
 hi: myles
 
-candidacy: qwerty172@gmail.com
-speakers: myles
-speaker-coordinator: myles
+### position based emails
+speaker-coordinator: scott@ss.org
+speakers: speaker-coordinator
+
+pr: myles
+
+system-coordinator: myles, alex, chris
 
 wiki-admin: myles
 
