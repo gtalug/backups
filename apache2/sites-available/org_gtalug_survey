@@ -1,0 +1,16 @@
+<VirtualHost *:80>
+	ServerName survey.gtalug.org
+	
+	ServerAlias survey.gtalug.info
+	
+	DocumentRoot /srv/www/org_gtalug_survey/html
+	
+	<Directory /srv/www/org_gtalug_survey/html/>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride All
+		Require all granted
+	</Directory>
+	
+	ErrorLog /srv/www/org_gtalug_survey/logs/error.log
+	CustomLog /srv/www/org_gtalug_survey/logs/access.log combined
+</VirtualHost>

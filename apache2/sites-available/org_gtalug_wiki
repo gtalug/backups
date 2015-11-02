@@ -1,0 +1,16 @@
+<VirtualHost *:80>
+	ServerName wiki.gtalug.org
+	
+	ServerAlias wiki.gtalug.info
+	
+	DocumentRoot /srv/www/org_gtalug_wiki/html
+	
+	<Directory /srv/www/org_gtalug_wiki/html/>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride All
+		Require all granted
+	</Directory>
+	
+	ErrorLog /srv/www/org_gtalug_wiki/logs/error.log
+	CustomLog /srv/www/org_gtalug_wiki/logs/access.log combined
+</VirtualHost>
