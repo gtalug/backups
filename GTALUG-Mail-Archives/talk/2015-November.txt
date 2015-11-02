@@ -1,0 +1,340 @@
+From scott at ss.org  Sun Nov  1 10:07:03 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Sun, 1 Nov 2015 10:07:03 -0500
+Subject: [GTALUG] Surprise, IPv6!
+Message-ID: <56362A97.4040204@ss.org>
+
+So just in a surprised moment of serendipity, my _non-IT_ boyfriend has 
+beaten me to IPv6 connectivity and he didn't even know it. I'm a little 
+jealous as this has been on my two do list for over half a year.
+
+Back-story, early in 2015 I upgraded his home from early linksys WRT54G 
+(linksys firmware), to a D-Link DIR-825 (rev. B1), with OpenWRT 14.07. 
+Roughly a month ago OpenWRT 15 was release, so I logged into gather info 
+for doing the firmware upgrade and see this.
+
+
+http://revident.net/images/OpenWRT-network-info-with-IPv6.png
+
+
+I've known Teksavvy, his provider, has had a beta program for IPv6 for 
+DSL customers. I signed up, I have an allocation, but I've not used it yet.
+
+At some point, Teksavvy turned it live, and the OpenWRT router I set-up 
+for my BF just picked it up and ran with it. It works!
+
+His connection gets a full 20/20 score from http://ipv6-test.com/
+
+Out of box, no intervention. My boyfriend, and the two other room-mates 
+have been using IPv6, for some unknown period (maybe months), with no 
+observable difference.
+
+Just Wow! Had to share.
+
+
+
+===== Just some info form my laptop. ========
+
+
+[scott at arcticnoise fonts]$ ifconfig
+[...snip...]
+wlp1s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+         inet 192.168.4.230  netmask 255.255.255.0  broadcast 192.168.4.255
+         inet6 fd1c:3456:4edf::1ef  prefixlen 128  scopeid 0x0<global>
+         inet6 2607:f2c0:9281:1900::1ef  prefixlen 128  scopeid 0x0<global>
+         inet6 2607:f2c0:9281:1900:3210:b3ff:fe9b:457c  prefixlen 64 
+scopeid 0x0<global>
+         inet6 fd1c:3456:4edf:0:3210:b3ff:fe9b:457c  prefixlen 64 
+scopeid 0x0<global>
+         inet6 fe80::3210:b3ff:fe9b:457c  prefixlen 64  scopeid 0x20<link>
+         ether 30:10:b3:9b:45:7c  txqueuelen 1000  (Ethernet)
+         RX packets 1828026  bytes 2043219415 (1.9 GiB)
+         RX errors 0  dropped 0  overruns 0  frame 2457050
+         TX packets 1108781  bytes 250361333 (238.7 MiB)
+         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+         device interrupt 41
+
+[scott at arcticnoise fonts]$ ping6 google.com
+PING google.com(yyz08s14-in-x05.1e100.net) 56 data bytes
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=1 ttl=58 time=143 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=2 ttl=58 time=156 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=3 ttl=58 time=158 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=4 ttl=58 time=190 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=5 ttl=58 time=288 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=6 ttl=58 time=403 ms
+^C
+--- google.com ping statistics ---
+6 packets transmitted, 6 received, 0% packet loss, time 5005ms
+rtt min/avg/max/mdev = 143.201/223.390/403.423/93.816 ms
+[scott at arcticnoise fonts]$ ping6 -n google.com
+PING google.com(2607:f8b0:400b:80b::1005) 56 data bytes
+64 bytes from 2607:f8b0:400b:80b::1005: icmp_seq=1 ttl=58 time=106 ms
+64 bytes from 2607:f8b0:400b:80b::1005: icmp_seq=2 ttl=58 time=133 ms
+64 bytes from 2607:f8b0:400b:80b::1005: icmp_seq=3 ttl=58 time=142 ms
+^C
+--- google.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2001ms
+rtt min/avg/max/mdev = 106.601/127.501/142.416/15.227 ms
+
+-- 
+Scott Sullivan
+
+From self_same_self at yahoo.com  Sun Nov  1 10:14:07 2015
+From: self_same_self at yahoo.com (Sammy Lao)
+Date: Sun, 1 Nov 2015 07:14:07 -0800
+Subject: [GTALUG] Surprise, IPv6!
+In-Reply-To: <56362A97.4040204@ss.org>
+Message-ID: <1446390847.3756.YahooMailAndroidMobile@web160901.mail.bf1.yahoo.com>
+
+That's pure awesome!
+
+From:"Scott Sullivan" <scott at ss.org>
+Date:Sun, Nov 1, 2015 at 10:07 AM
+Subject:[GTALUG] Surprise, IPv6!
+
+So just in a surprised moment of serendipity, my _non-IT_ boyfriend has 
+beaten me to IPv6 connectivity and he didn't even know it. I'm a little 
+jealous as this has been on my two do list for over half a year.
+
+Back-story, early in 2015 I upgraded his home from early linksys WRT54G 
+(linksys firmware), to a D-Link DIR-825 (rev. B1), with OpenWRT 14.07. 
+Roughly a month ago OpenWRT 15 was release, so I logged into gather info 
+for doing the firmware upgrade and see this.
+
+
+http://revident.net/images/OpenWRT-network-info-with-IPv6.png
+
+
+I've known Teksavvy, his provider, has had a beta program for IPv6 for 
+DSL customers. I signed up, I have an allocation, but I've not used it yet.
+
+At some point, Teksavvy turned it live, and the OpenWRT router I set-up 
+for my BF just picked it up and ran with it. It works!
+
+His connection gets a full 20/20 score from http://ipv6-test.com/
+
+Out of box, no intervention. My boyfriend, and the two other room-mates 
+have been using IPv6, for some unknown period (maybe months), with no 
+observable difference.
+
+Just Wow! Had to share.
+
+
+
+===== Just some info form my laptop. ========
+
+
+[scott at arcticnoise fonts]$ ifconfig
+[...snip...]
+wlp1s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.4.230  netmask 255.255.255.0  broadcast 192.168.4.255
+        inet6 fd1c:3456:4edf::1ef  prefixlen 128  scopeid 0x0<global>
+        inet6 2607:f2c0:9281:1900::1ef  prefixlen 128  scopeid 0x0<global>
+        inet6 2607:f2c0:9281:1900:3210:b3ff:fe9b:457c  prefixlen 64 
+scopeid 0x0<global>
+        inet6 fd1c:3456:4edf:0:3210:b3ff:fe9b:457c  prefixlen 64 
+scopeid 0x0<global>
+        inet6 fe80::3210:b3ff:fe9b:457c  prefixlen 64  scopeid 0x20<link>
+        ether 30:10:b3:9b:45:7c  txqueuelen 1000  (Ethernet)
+        RX packets 1828026  bytes 2043219415 (1.9 GiB)
+        RX errors 0  dropped 0  overruns 0  frame 2457050
+        TX packets 1108781  bytes 250361333 (238.7 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 41
+
+[scott at arcticnoise fonts]$ ping6 google.com
+PING google.com(yyz08s14-in-x05.1e100.net) 56 data bytes
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=1 ttl=58 time=143 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=2 ttl=58 time=156 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=3 ttl=58 time=158 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=4 ttl=58 time=190 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=5 ttl=58 time=288 ms
+64 bytes from yyz08s14-in-x05.1e100.net: icmp_seq=6 ttl=58 time=403 ms
+^C
+--- google.com ping statistics ---
+6 packets transmitted, 6 received, 0% packet loss, time 5005ms
+rtt min/avg/max/mdev = 143.201/223.390/403.423/93.816 ms
+[scott at arcticnoise fonts]$ ping6 -n google.com
+PING google.com(2607:f8b0:400b:80b::1005) 56 data bytes
+64 bytes from 2607:f8b0:400b:80b::1005: icmp_seq=1 ttl=58 time=106 ms
+64 bytes from 2607:f8b0:400b:80b::1005: icmp_seq=2 ttl=58 time=133 ms
+64 bytes from 2607:f8b0:400b:80b::1005: icmp_seq=3 ttl=58 time=142 ms
+^C
+--- google.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2001ms
+rtt min/avg/max/mdev = 106.601/127.501/142.416/15.227 ms
+
+-- 
+Scott Sullivan
+---
+Talk Mailing List
+talk at gtalug.org
+http://gtalug.org/mailman/listinfo/talk
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20151101/e28b8b62/attachment.html>
+
+From scott at ss.org  Sun Nov  1 10:18:16 2015
+From: scott at ss.org (Scott Sullivan)
+Date: Sun, 1 Nov 2015 10:18:16 -0500
+Subject: [GTALUG] Surprise, IPv6!
+In-Reply-To: <56362A97.4040204@ss.org>
+References: <56362A97.4040204@ss.org>
+Message-ID: <56362D38.8090304@ss.org>
+
+On 01/11/15 10:07 AM, Scott Sullivan wrote:
+> Out of box, no intervention. My boyfriend, and the two other room-mates
+> have been using IPv6, for some unknown period (maybe months), with no
+> observable difference.
+
+Just a clarification on this. I did run some netstats during normal 
+web-browsing on his Linux HTPC. I do see websites being accessed and 
+served in IPv6.
+
+-- 
+Scott Sullivan
+
+From james.knott at rogers.com  Sun Nov  1 10:29:30 2015
+From: james.knott at rogers.com (James Knott)
+Date: Sun, 1 Nov 2015 10:29:30 -0500
+Subject: [GTALUG] Surprise, IPv6!
+In-Reply-To: <56362D38.8090304@ss.org>
+References: <56362A97.4040204@ss.org> <56362D38.8090304@ss.org>
+Message-ID: <56362FDA.6020001@rogers.com>
+
+On 11/01/2015 10:18 AM, Scott Sullivan wrote:
+> Just a clarification on this. I did run some netstats during normal
+> web-browsing on his Linux HTPC. I do see websites being accessed and
+> served in IPv6.
+
+There's an addon for Firefox, Seamonkey and Chrome browsers called
+"ShowIP".  It displays the IP address of the web site, so you can tell
+at a glance if you're connected via IPv6 or IPv4.
+
+BTW, I've been running IPv6 for over 5 years, but I get it via a 6in4
+tunnel rather than from Rogers.  Rogers does support IPv6 via 6to4 or
+6rd tunnel, but I haven't heard of them offering native IPv6 yet.  On
+the other hand, Telus is now moving to IPv6, so perhaps that will give
+Rogers, Bell etc. a nudge.
+
+
+From me at mylesbraithwaite.com  Sun Nov  1 14:07:20 2015
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Sun, 1 Nov 2015 14:07:20 -0500
+Subject: [GTALUG] [GTALUG-Announce] Meeting on 10th November at 7:30pm
+Message-ID: <CA+hskZOv9FVkSF9GuOSJsASq39kJBeFVAC-8gyNVF=vVZbK+yQ@mail.gmail.com>
+
+<http://gtalug.org/meeting/2015-11/>
+
+# Lightening Talks
+
+November's GTALUG meeting will be a bunch of audience organised short
+talks. If you would like to give a talk, all you have to do is write
+your name on a post-it and stick it on the whiteboard in the front of
+the room. When your talk get's picked you will have 10 minutes of
+uninterrupted time for you to present, then 10 minutes of audience
+questions/concerns.
+
+Slides are not required, but if you need them please bring a PDF copy
+on a USB key or email them to <speaker-coordinator at gtalug.org>.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Please discuss on the general mailing list (i.e.
+<talk at gtalug.org>) where you want to go for dinner.
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting a group of GTALUGers move to the The
+Imperial Pub (54 Dundas St East) for refreshments and more
+socializing.
+
+# Code of Conduct
+
+We want a productive happy community that can welcome new ideas,
+improve every process every year, and foster collaboration between
+individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from
+those who enhance it. This code of conduct exists to ensure that
+diverse groups collaborate to mutual advantage and enjoyment. We will
+challenge prejudice that could jeopardize the participation of any
+person in the community.
+
+The Code of Conduct governs how we behave in public or in private
+whenever the Linux community will be judged by our actions. We expect
+it to be honored by everyone who represents the community officially
+or informally, claims affiliation, or participates directly. It
+applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code
+of Conduct please contact the GTALUG Board @ <board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+http://gtalug.org/mailman/listinfo/announce
+
+From northdot9 at gmail.com  Mon Nov  2 10:39:12 2015
+From: northdot9 at gmail.com (David Thornton)
+Date: Mon, 2 Nov 2015 10:39:12 -0500
+Subject: [GTALUG] Surprise, IPv6!
+In-Reply-To: <56362FDA.6020001@rogers.com>
+References: <56362A97.4040204@ss.org> <56362D38.8090304@ss.org>
+ <56362FDA.6020001@rogers.com>
+Message-ID: <CAHcykVq6jGvzFPd_MU8-g1DFfg8rJBQTvgqQksX0uTB6Ojcf1g@mail.gmail.com>
+
+I had trouble getting my fortigate 60C do to both ip4 and ipv6 over pppoe.
+
+I just scored a fortigate 60D and amd trying to find the time/brain power
+to migrate my config to the new device and see if I get it up.
+
+...phrasing.
+
+Also note:
+
+* I'm a teksavvy client with ipv4 and ipv6 allocations.
+* the foritgate 60c does the Hurricane electric ipv6 tunnel fine ( HE had a
+drop down config for it ).
+
+
+
+On Sun, Nov 1, 2015 at 10:29 AM, James Knott <james.knott at rogers.com> wrote:
+
+> On 11/01/2015 10:18 AM, Scott Sullivan wrote:
+> > Just a clarification on this. I did run some netstats during normal
+> > web-browsing on his Linux HTPC. I do see websites being accessed and
+> > served in IPv6.
+>
+> There's an addon for Firefox, Seamonkey and Chrome browsers called
+> "ShowIP".  It displays the IP address of the web site, so you can tell
+> at a glance if you're connected via IPv6 or IPv4.
+>
+> BTW, I've been running IPv6 for over 5 years, but I get it via a 6in4
+> tunnel rather than from Rogers.  Rogers does support IPv6 via 6to4 or
+> 6rd tunnel, but I haven't heard of them offering native IPv6 yet.  On
+> the other hand, Telus is now moving to IPv6, so perhaps that will give
+> Rogers, Bell etc. a nudge.
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> http://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20151102/a752a047/attachment.html>
+
