@@ -1,45 +1,799 @@
-From me at mylesbraithwaite.com  Sun Nov  1 13:58:19 2015
+From hi at gtalug.org  Tue Jan  5 09:30:02 2016
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Tue,  5 Jan 2016 14:30:02 +0000 (UTC)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20160105143002.16CDAE74B@penguin.gtalug.org>
+
+I'm Mr. Meeseeks! Look at me!
+
+There is a GTALUG meeting coming up on 12 January, 2016, is the GTALUG Board/Executive prepared?
+
+<http://gtalug.org/meeting/2016-01/>
+
+Check the GitHub for meeting status: <http://git.io/vB40S>
+
+Look at me! I'm Mr. Meeseeks! (poof)
+
+From me at mylesbraithwaite.com  Thu Jan  7 10:48:06 2016
 From: me at mylesbraithwaite.com (Myles Braithwaite)
-Date: Sun, 01 Nov 2015 13:58:19 -0500
-Subject: [GTALUG-Ops] Things we need for November's Meeting
-Message-ID: <563660CB.1040609@mylesbraithwaite.com>
+Date: Thu, 7 Jan 2016 10:48:06 -0500
+Subject: [GTALUG-Ops] Advice -- Good Source In The GTA For Desktop PC
+	For Debian 8?
+In-Reply-To: <B45D7444C3C945CB8DFDD8B49A88DFA3@Dell>
+References: <B45D7444C3C945CB8DFDD8B49A88DFA3@Dell>
+Message-ID: <CA+hskZO67j5ZjJCLCLwBPENL=7pQW_WKhHaB3F6Hthgx+hboLw@mail.gmail.com>
 
-- [] Post-It Notes (yellow)
+Hi Steve,
 
-- [] Markers (black)
+The best place to look for Debian compatible hardware would be Debian
+wiki pages on it here: <https://wiki.debian.org/Hardware>.
 
-- [] Kitchen Timer (preferably that one that is in a shape of a tomato
-but I'm not picky).
+>From personal experience I would say most computers, older than one to
+two years, would be compatible with Debian and most Linux Distros.
+Linux drive support sometimes takes a about a year to get comparable
+with Windows.
 
-- [] A laptop with a PDF reader, a VGA output, and a USB port
+If you are looking to get a computer with Ubuntu (a Debian variant)
+System76 <https://system76.com/> and Dell's XPS 13 Developer Edition
+<http://www.dell.com/ca/business/p/xps-13-linux/pd> can be shipped to
+Canada.
 
-If you have any of these things please indicate by replying.
+If you are looking for advices for computers today that would support
+Linux (or generally Linux support queries) from our entire user group
+you can join our discussion mailing list:
+<http://gtalug.org/mailman/listinfo/talk>. There are a lot of new and
+experienced Linux users their that can answer your questions.
 
-From scott at ss.org  Sun Nov  1 15:42:14 2015
-From: scott at ss.org (Scott Sullivan)
-Date: Sun, 1 Nov 2015 15:42:14 -0500
-Subject: [GTALUG-Ops] Things we need for November's Meeting
-In-Reply-To: <563660CB.1040609@mylesbraithwaite.com>
-References: <563660CB.1040609@mylesbraithwaite.com>
-Message-ID: <56367926.1000606@ss.org>
+It would be really awesome if you could come out to a meeting some
+time. They happen on the second Tuesday of the month, January's
+meeting is on 12th at 7:30pm at Ryerson University and you can find
+more information here: <http://gtalug.org/meeting/2016-01/>.
 
-On 01/11/15 01:58 PM, Myles Braithwaite wrote:
-> - [] Post-It Notes (yellow)
+Have an awesome day, and happy open-sourcing :-).
+
+On Thu, Jan 7, 2016 at 2:49 AM, Steve wrote:
+> Greetings To GTALUG,
 >
-  - [X] Markers (black)
-
-I've just put two new black Sharpies in the GTALUG kit.
-
-> - [] Kitchen Timer (preferably that one that is in a shape of a tomato
-> but I'm not picky).
+> I'm working to replace an old Dell Windows XP SP3 desktop PC with a new
+> desktop PC running Debian Linux 8. I have almost no Linux / Unix experience
+> (some on IBM AIX / Korn shell) but a strong IT background. (I'm a "retired"
+> software engineer).
 >
-> - [] A laptop with a PDF reader, a VGA output, and a USB port
+> Been looking for a good Canadian source for suitable desktop PC hardware for
+> Debian 8. The major vendors (e.g. Dell, NCIX) don't seem to be interested in
+> supporting anything except MS Windows. I definitely am NOT going to use MS
+> Windows in my new desktop PC !!
 >
-> If you have any of these things please indicate by replying.
+> * * *
+> * * *
+>
+> So I'm emailing GTALUG to ask for advice regarding computer vendors in the
+> GTA that would be good sources for a Debian-compatible desktop PC.
+>
+> Or an online source. I am comfortable with assembling the PC from components
+> (power supply, case, motherboard, etc.) if this a good way to go. I just
+> want to be sure that the finished product is 100% Debian-compatible.
+>
+> I'm partricularly concerned to get a motherboard with good UEFI support. I
+> realize that UEFI support in Debian is not complete, but that's ok. Just so
+> long as the firmware on the motherboard I get isn't broken for a Debian
+> install (using a Debian standard ISO CD, not a Debian live CD, apparently
+> Debian live installs do not yet support UEFI).
+>
+> My Internet connection is via landline dial-up. I refuse to pay big bucks to
+> greedy telcos / cable cos / wireless carriers for higher speed. Presently
+> I'm downloading debian-8.2.0-amd64-netinst.iso a little at a time, using
+> FileZilla  3.8.0 (the last FileZilla version that runs on Win XP) that can
+> resume a download. I plan to burn a CD on my Win XP PC and use that CD to
+> get an initial Debian install working on the new PC.
+>
+> * * *
+> * * *
+>
+> Any advice would be gratefully received.
+>
+> I live in Oakville, Ontario but I would travel to Toronto to GTALUG meetings
+> if the group is an active one.
+>
+> I realize that I'm probably 3+X as old as the average age of a GTALUG
+> member, but I can work with the young if the young can work with me :)
+>
+> Thanks and Regards,
+>
+> Steve
+
+
+
+-- 
+Myles Braithwaite | http://mylesb.ca/e
+
+From me at mylesbraithwaite.com  Mon Jan 11 13:41:32 2016
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 11 Jan 2016 13:41:32 -0500
+Subject: [GTALUG-Ops] [Yea or Nae] Job Postings on the Discussion Mailing
+	List
+Message-ID: <5693F75C.5030900@mylesbraithwaite.com>
+
+If you noticed today I let though a recruiters email of a job posting in
+Markham to the GTALUG discussion list[1].
+
+I did this because it passed GTALUG's un-written procedure of what to do
+with job postings which are:
+
+1) The sender is subscribed to the mailing list prior to posting the
+message.
+2) The job they are posting must be located in the Greater Toronto Area.
+3) The skill set required must be related to Linux and/or Open Source.
+
+Are people happy with this procedure or would you prefer absolutely no
+job postings?
+
+[1]: <https://gtalug.org/pipermail/talk/2016-January/002601.html>
+
+From scruss at gmail.com  Mon Jan 11 15:57:49 2016
+From: scruss at gmail.com (Stewart Russell)
+Date: Mon, 11 Jan 2016 15:57:49 -0500
+Subject: [GTALUG-Ops] [Yea or Nae] Job Postings on the Discussion
+	Mailing List
+In-Reply-To: <5693F75C.5030900@mylesbraithwaite.com>
+References: <5693F75C.5030900@mylesbraithwaite.com>
+Message-ID: <CAAsTreCah8=nZ46PPAB21H7W5eY1A9R4XmskL2w-qcpyZLaRpw@mail.gmail.com>
+
+I'm okay with it.
+
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20160111/cbf98e48/attachment.html>
+
+From mike.kallies at gmail.com  Mon Jan 11 16:59:56 2016
+From: mike.kallies at gmail.com (Mike Gmail IMAP)
+Date: Mon, 11 Jan 2016 16:59:56 -0500
+Subject: [GTALUG-Ops] [Yea or Nae] Job Postings on the Discussion
+	Mailing List
+In-Reply-To: <5693F75C.5030900@mylesbraithwaite.com>
+References: <5693F75C.5030900@mylesbraithwaite.com>
+Message-ID: <7D0C2EDB-1383-4948-9905-AB152FCA88CF@gmail.com>
+
+yea, we can review if it somebody causes trouble.
+
+
+
+> On Jan 11, 2016, at 1:41 PM, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+> 
+> If you noticed today I let though a recruiters email of a job posting in
+> Markham to the GTALUG discussion list[1].
+> 
+> I did this because it passed GTALUG's un-written procedure of what to do
+> with job postings which are:
+> 
+> 1) The sender is subscribed to the mailing list prior to posting the
+> message.
+> 2) The job they are posting must be located in the Greater Toronto Area.
+> 3) The skill set required must be related to Linux and/or Open Source.
+> 
+> Are people happy with this procedure or would you prefer absolutely no
+> job postings?
+> 
+> [1]: <https://gtalug.org/pipermail/talk/2016-January/002601.html>
 > ---
 > GTALUG Operations Mailing List
 > operations at gtalug.org
-> http://gtalug.org/mailman/listinfo/operations
+> https://gtalug.org/mailman/listinfo/operations
+
+From cbbrowne at gmail.com  Mon Jan 11 17:17:33 2016
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Mon, 11 Jan 2016 17:17:33 -0500
+Subject: [GTALUG-Ops] [Yea or Nae] Job Postings on the Discussion
+	Mailing List
+In-Reply-To: <7D0C2EDB-1383-4948-9905-AB152FCA88CF@gmail.com>
+References: <5693F75C.5030900@mylesbraithwaite.com>
+ <7D0C2EDB-1383-4948-9905-AB152FCA88CF@gmail.com>
+Message-ID: <CAFNqd5Xs-iAEi6_swJG3iuag1+6BofWMS1pDLyokxtsy3egcFw@mail.gmail.com>
+
+On 11 January 2016 at 16:59, Mike Gmail IMAP <mike.kallies at gmail.com> wrote:
+
+> yea, we can review if it somebody causes trouble.
 >
 
+It seems fine to me, too.
+
+Is there somewhere that we should note down the policy?
+
+I do indeed like the policy declaration, of involving
+1.  Sender is relevant (subscriber),
+2.  Location is relevant,
+3.  Skills seem relvant.
+
+Nice combination of requirements.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20160111/e15cfd80/attachment.html>
+
+From davec-b at rogers.com  Mon Jan 11 20:14:07 2016
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Mon, 11 Jan 2016 20:14:07 -0500
+Subject: [GTALUG-Ops] [Yea or Nae] Job Postings on the Discussion
+ Mailing List
+In-Reply-To: <5693F75C.5030900@mylesbraithwaite.com>
+References: <5693F75C.5030900@mylesbraithwaite.com>
+Message-ID: <5694535F.7080701@rogers.com>
+
+If that was http://www.nightingalemd.com/index.php then the poster is a 
+former colleague
+
+On 11/01/16 01:41 PM, Myles Braithwaite wrote:
+> If you noticed today I let though a recruiters email of a job posting in
+> Markham to the GTALUG discussion list[1].
+>
+> I did this because it passed GTALUG's un-written procedure of what to do
+> with job postings which are:
+>
+> 1) The sender is subscribed to the mailing list prior to posting the
+> message.
+> 2) The job they are posting must be located in the Greater Toronto Area.
+> 3) The skill set required must be related to Linux and/or Open Source.
+>
+> Are people happy with this procedure or would you prefer absolutely no
+> job postings?
+>
+> [1]: <https://gtalug.org/pipermail/talk/2016-January/002601.html>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> https://gtalug.org/mailman/listinfo/operations
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From me at mylesbraithwaite.com  Tue Jan 12 09:29:32 2016
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 12 Jan 2016 09:29:32 -0500
+Subject: [GTALUG-Ops] Pre-Meeting Announcements for Tonight's Meeting
+Message-ID: <56950DCC.4090602@mylesbraithwaite.com>
+
+Added stuff: <https://pad.riseup.net/p/Nh5690cxuGJf>.
+
+From davec-b at rogers.com  Tue Jan 12 10:51:24 2016
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Tue, 12 Jan 2016 10:51:24 -0500
+Subject: [GTALUG-Ops] Pre-Meeting Announcements for Tonight's Meeting
+In-Reply-To: <56950DCC.4090602@mylesbraithwaite.com>
+References: <56950DCC.4090602@mylesbraithwaite.com>
+Message-ID: <569520FC.6070801@rogers.com>
+
+On 12/01/16 09:29 AM, Myles Braithwaite wrote:
+> Added stuff: <https://pad.riseup.net/p/Nh5690cxuGJf>.
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> https://gtalug.org/mailman/listinfo/operations
+Is there a link for the jetbrain 10-plus-10 thing? I bought the 
+for-money InetlliJ and rather like it
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20160112/956796c4/attachment.html>
+
+From me at mylesbraithwaite.com  Tue Jan 12 11:09:06 2016
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 12 Jan 2016 11:09:06 -0500
+Subject: [GTALUG-Ops] Pre-Meeting Announcements for Tonight's Meeting
+In-Reply-To: <569520FC.6070801@rogers.com>
+References: <56950DCC.4090602@mylesbraithwaite.com>
+ <569520FC.6070801@rogers.com>
+Message-ID: <56952522.4010506@mylesbraithwaite.com>
+
+David Collier-Brown wrote:
+> Is there a link for the jetbrain 10-plus-10 thing?  I bought the
+> for-money InetlliJ and rather like it
+
+No it's on a piece of paper. We only get 1 license a month and have to
+give it out as a prize at the meeting so you will have to be the first
+to answer the skill testing question at the meeting.
+
+From avolkov at gmail.com  Tue Jan 12 11:58:00 2016
+From: avolkov at gmail.com (Alex Volkov)
+Date: Tue, 12 Jan 2016 11:58:00 -0500
+Subject: [GTALUG-Ops] Pre-Meeting Announcements for Tonight's Meeting
+In-Reply-To: <56950DCC.4090602@mylesbraithwaite.com>
+References: <56950DCC.4090602@mylesbraithwaite.com>
+Message-ID: <56953098.6030706@gmail.com>
+
+That's really cool.
+
+I added Raspberry Pi demo day at the end of May.
+
+On 12/01/16 09:29 AM, Myles Braithwaite wrote:
+> Added stuff: <https://pad.riseup.net/p/Nh5690cxuGJf>.
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> https://gtalug.org/mailman/listinfo/operations
+
+
+From hi at gtalug.org  Mon Jan 18 09:30:02 2016
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Mon, 18 Jan 2016 14:30:02 +0000 (UTC)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20160118143002.1A81FE36D@penguin.gtalug.org>
+
+Look at me! I'm Mr. Meeseeks!
+
+The GTALUG Operations meeting is on 25 January, 2016
+
+You can see the agenda here: <http://board.gtalug.org/2016-01-25/agenda.html>.
+
+You can see open issues/todos here: <http://git.io/vB4EO>
+
+There is a regular GTALUG meeting coming up on 09 February, 2016; is the GTALUG Board/Executive prepared???
+
+I'm Mr. Meeseeks! Look at me! (poof)
+
+From me at mylesbraithwaite.com  Mon Jan 18 22:24:47 2016
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 18 Jan 2016 22:24:47 -0500
+Subject: [GTALUG-Ops] Next GTALUG Ops Location
+Message-ID: <01EE75CC-67A3-433E-A388-6215095A9243@mylesbraithwaite.com>
+
+Where are we having the next GTALUG Ops meeting? HackLab, Scott's place, or Starbucks?
+
+From gordontc at look.ca  Tue Jan 19 09:56:44 2016
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Tue, 19 Jan 2016 09:56:44 -0500
+Subject: [GTALUG-Ops] Next GTALUG Ops Location
+In-Reply-To: <01EE75CC-67A3-433E-A388-6215095A9243@mylesbraithwaite.com>
+References: <01EE75CC-67A3-433E-A388-6215095A9243@mylesbraithwaite.com>
+Message-ID: <1453215404.557.1.camel@larva.gordhome.local>
+
+I'm good with any of the choices.
+
+The only caution I can throw in here is that Starbucks can be a wee bit
+crowded - I don't know what it's  like now, though.
+
+
+Gordon
+
+
+On Mon, 2016-01-18 at 22:24 -0500, Myles Braithwaite wrote:
+> Where are we having the next GTALUG Ops meeting? HackLab, Scott's place, or Starbucks?
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> https://gtalug.org/mailman/listinfo/operations
+
+
+
+From qwerty172 at gmail.com  Tue Jan 19 10:42:21 2016
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Tue, 19 Jan 2016 10:42:21 -0500
+Subject: [GTALUG-Ops] Next GTALUG Ops Location
+In-Reply-To: <1453215404.557.1.camel@larva.gordhome.local>
+References: <01EE75CC-67A3-433E-A388-6215095A9243@mylesbraithwaite.com>
+ <1453215404.557.1.camel@larva.gordhome.local>
+Message-ID: <CAA3RLT5k_x-Hqcy2EpZqeuwmbEdoTZSiow_pL42oGv72rNJbMQ@mail.gmail.com>
+
+I'm good with any place as well.
+
+
+On Tue, Jan 19, 2016 at 9:56 AM, Gordon Chillcott <gordontc at look.ca> wrote:
+
+> I'm good with any of the choices.
+>
+> The only caution I can throw in here is that Starbucks can be a wee bit
+> crowded - I don't know what it's  like now, though.
+>
+>
+> Gordon
+>
+>
+> On Mon, 2016-01-18 at 22:24 -0500, Myles Braithwaite wrote:
+> > Where are we having the next GTALUG Ops meeting? HackLab, Scott's place,
+> or Starbucks?
+> > ---
+> > GTALUG Operations Mailing List
+> > operations at gtalug.org
+> > https://gtalug.org/mailman/listinfo/operations
+>
+>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> https://gtalug.org/mailman/listinfo/operations
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20160119/00d22184/attachment.html>
+
+From me at mylesbraithwaite.com  Sat Jan 23 15:00:22 2016
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Sat, 23 Jan 2016 15:00:22 -0500
+Subject: [GTALUG-Ops] I think your email is attached to your Jira instance
+Message-ID: <56A3DBD6.4050402@mylesbraithwaite.com>
+
+Hi, I'm one of the moderators for the GTALUG Talk Discussion list and it
+seems your email address <littlebear at xxw.ca> is being forwarded to your
+Jira support system. This is causing our members to be spammed with
+emails asking them to create an account on your system.
+
+For the time being I am disabling your email address from receiving
+email from the talks list. When you fix this problem you can email
+<talk-owner at gtalug.org> and someone will allow you to receive email again.
+
+Have an awesome day, and happy open-sourcing :-).
+
+From scott at ss.org  Sat Jan 23 17:36:28 2016
+From: scott at ss.org (Scott Sullivan)
+Date: Sat, 23 Jan 2016 17:36:28 -0500
+Subject: [GTALUG-Ops] Next GTALUG Ops Location
+In-Reply-To: <CAA3RLT5k_x-Hqcy2EpZqeuwmbEdoTZSiow_pL42oGv72rNJbMQ@mail.gmail.com>
+References: <01EE75CC-67A3-433E-A388-6215095A9243@mylesbraithwaite.com>
+ <1453215404.557.1.camel@larva.gordhome.local>
+ <CAA3RLT5k_x-Hqcy2EpZqeuwmbEdoTZSiow_pL42oGv72rNJbMQ@mail.gmail.com>
+Message-ID: <56A4006C.5060505@ss.org>
+
+I'm scheduled to work until 8:30 monday, a situation I wasn't able to 
+change.
+
+This rules out my place for this Month.
+
+If you don't mind sharing space with the stitching group. Hacklab is 
+still good. Otherwise the Starbucks.
+
+
++0 Starbucks, but I won't be able to make it.
++1 Hacklab, and I'll be really late (I also have a sewing project).
+
+
+On 01/19/2016 10:42 AM, Bill Thanis wrote:
+> I'm good with any place as well.
+>
+>
+> On Tue, Jan 19, 2016 at 9:56 AM, Gordon Chillcott <gordontc at look.ca
+> <mailto:gordontc at look.ca>> wrote:
+>
+>     I'm good with any of the choices.
+>
+>     The only caution I can throw in here is that Starbucks can be a wee bit
+>     crowded - I don't know what it's  like now, though.
+>
+>
+>     Gordon
+>
+>
+>     On Mon, 2016-01-18 at 22:24 -0500, Myles Braithwaite wrote:
+>      > Where are we having the next GTALUG Ops meeting? HackLab, Scott's
+>     place, or Starbucks?
+>      > ---
+>      > GTALUG Operations Mailing List
+>      > operations at gtalug.org <mailto:operations at gtalug.org>
+>      > https://gtalug.org/mailman/listinfo/operations
+>
+>
+>     ---
+>     GTALUG Operations Mailing List
+>     operations at gtalug.org <mailto:operations at gtalug.org>
+>     https://gtalug.org/mailman/listinfo/operations
+>
+>
+>
+>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> https://gtalug.org/mailman/listinfo/operations
+>
+
+
+From scott at ss.org  Sat Jan 23 17:39:14 2016
+From: scott at ss.org (Scott Sullivan)
+Date: Sat, 23 Jan 2016 17:39:14 -0500
+Subject: [GTALUG-Ops] [Yea or Nae] Job Postings on the Discussion
+ Mailing List
+In-Reply-To: <5693F75C.5030900@mylesbraithwaite.com>
+References: <5693F75C.5030900@mylesbraithwaite.com>
+Message-ID: <56A40112.60007@ss.org>
+
+On 01/11/2016 01:41 PM, Myles Braithwaite wrote:
+> If you noticed today I let though a recruiters email of a job posting in
+> Markham to the GTALUG discussion list[1].
+>
+> I did this because it passed GTALUG's un-written procedure of what to do
+> with job postings which are:
+>
+> 1) The sender is subscribed to the mailing list prior to posting the
+> message.
+> 2) The job they are posting must be located in the Greater Toronto Area.
+> 3) The skill set required must be related to Linux and/or Open Source.
+>
+> Are people happy with this procedure or would you prefer absolutely no
+> job postings?
+
+Job Posting bring added value to our members, so yes I'm for it. The 
+constraints above are very reasonable and necessary.
+
++1
+
+-- 
+Scott Sullivan
+GTALUG President
+
+From cbbrowne at gmail.com  Sat Jan 23 20:17:55 2016
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Sat, 23 Jan 2016 20:17:55 -0500
+Subject: [GTALUG-Ops] Next GTALUG Ops Location
+In-Reply-To: <56A4006C.5060505@ss.org>
+References: <01EE75CC-67A3-433E-A388-6215095A9243@mylesbraithwaite.com>
+ <1453215404.557.1.camel@larva.gordhome.local>
+ <CAA3RLT5k_x-Hqcy2EpZqeuwmbEdoTZSiow_pL42oGv72rNJbMQ@mail.gmail.com>
+ <56A4006C.5060505@ss.org>
+Message-ID: <CAFNqd5VbYzVoX9o5cRLhhcnbA5yQahcRdoeNbWe8rduvycYmpg@mail.gmail.com>
+
+I like Hacklab, personally, as the option, though I could certainly cope
+with *$.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20160123/d3fe9ea0/attachment.html>
+
+From gordontc at look.ca  Sun Jan 24 16:05:27 2016
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Sun, 24 Jan 2016 16:05:27 -0500
+Subject: [GTALUG-Ops] ICANN Report for January
+Message-ID: <1453669527.32210.1.camel@larva.gordhome.local>
+
+Apologies for its lack of coherence.
+
+It's been an incoherent month, so far.
+
+Gordon
+
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: 20160125.pdf
+Type: application/pdf
+Size: 23669 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20160124/d4367d65/attachment.pdf>
+
+From hi at gtalug.org  Sun Jan 24 17:00:02 2016
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Sun, 24 Jan 2016 22:00:02 +0000 (UTC)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20160124220002.3C982E36D@penguin.gtalug.org>
+
+Look at me! I'm Mr. Meeseeks!
+
+The GTALUG Operations meeting is tonight at 7:30pm.
+
+You can see the agenda here: <http://board.gtalug.org/2016-01-25/agenda.html>.
+
+You can see open issues/todos here: <http://git.io/vB4EO>
+
+There is a regular GTALUG meeting coming up on 09 February, 2016; is the GTALUG Board/Executive prepared???
+
+I'm Mr. Meeseeks! Look at me! (poof)
+
+From hi at gtalug.org  Mon Jan 25 10:00:01 2016
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Mon, 25 Jan 2016 15:00:01 +0000 (UTC)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20160125150001.A2696E370@penguin.gtalug.org>
+
+Look at me! I'm Mr. Meeseeks!
+
+The GTALUG Operations meeting is tonight at 7:30pm.
+
+You can see the agenda here: <http://board.gtalug.org/2016-01-25/agenda.html>.
+
+You can see open issues/todos here: <http://git.io/vB4EO>
+
+There is a regular GTALUG meeting coming up on 09 February, 2016; is the GTALUG Board/Executive prepared???
+
+I'm Mr. Meeseeks! Look at me! (poof)
+
+From gordontc at look.ca  Mon Jan 25 10:03:39 2016
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Mon, 25 Jan 2016 10:03:39 -0500
+Subject: [GTALUG-Ops] Where is the Operations Meeting?
+Message-ID: <1453734219.6457.1.camel@larva.gordhome.local>
+
+I have two notifications telling me it's at Hacklab, and another on my
+Gmail account telling me it's at Starbucks.
+
+Which one?  I'm good with either.
+
+Gordon
+
+
+
+From qwerty172 at gmail.com  Mon Jan 25 10:21:58 2016
+From: qwerty172 at gmail.com (Bill Thanis)
+Date: Mon, 25 Jan 2016 10:21:58 -0500
+Subject: [GTALUG-Ops] Where is the Operations Meeting?
+In-Reply-To: <1453734219.6457.1.camel@larva.gordhome.local>
+References: <1453734219.6457.1.camel@larva.gordhome.local>
+Message-ID: <CAA3RLT5dYR63B4pT__w1TK2+x7YbEba5FE9kejY2BC9j4rmr4Q@mail.gmail.com>
+
+I'm good with either, but vote for davisville starbucks.
+
+
+
+On Mon, Jan 25, 2016 at 10:03 AM, Gordon Chillcott <gordontc at look.ca> wrote:
+
+> I have two notifications telling me it's at Hacklab, and another on my
+> Gmail account telling me it's at Starbucks.
+>
+> Which one?  I'm good with either.
+>
+> Gordon
+>
+>
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> https://gtalug.org/mailman/listinfo/operations
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20160125/561949cb/attachment.html>
+
+From alex at flamy.ca  Mon Jan 25 10:28:28 2016
+From: alex at flamy.ca (Alex Volkov)
+Date: Mon, 25 Jan 2016 10:28:28 -0500
+Subject: [GTALUG-Ops] Next GTALUG Ops Location
+In-Reply-To: <01EE75CC-67A3-433E-A388-6215095A9243@mylesbraithwaite.com>
+References: <01EE75CC-67A3-433E-A388-6215095A9243@mylesbraithwaite.com>
+Message-ID: <17A2CD68-4E7C-4556-BEA3-6E0BC54014AB@flamy.ca>
+
+I prefer hacklab.
+
+On January 18, 2016 10:24:47 PM EST, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+>Where are we having the next GTALUG Ops meeting? HackLab, Scott's
+>place, or Starbucks?
+>---
+>GTALUG Operations Mailing List
+>operations at gtalug.org
+>https://gtalug.org/mailman/listinfo/operations
+
+-- 
+Sent from my Android device with K-9 Mail. Please excuse my brevity.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20160125/4cb0360f/attachment.html>
+
+From scott at ss.org  Mon Jan 25 10:31:14 2016
+From: scott at ss.org (Scott Sullivan)
+Date: Mon, 25 Jan 2016 10:31:14 -0500
+Subject: [GTALUG-Ops] Where is the Operations Meeting?
+In-Reply-To: <1453734219.6457.1.camel@larva.gordhome.local>
+References: <1453734219.6457.1.camel@larva.gordhome.local>
+Message-ID: <AB1C53C5-8C45-413E-9CAB-19FF80861C8A@ss.org>
+
+On January 25, 2016 10:03:39 AM EST, Gordon Chillcott <gordontc at look.ca> wrote:
+>I have two notifications telling me it's at Hacklab, and another on my
+>Gmail account telling me it's at Starbucks.
+>
+>Which one?  I'm good with either.
+>
+>Gordon
+>
+>
+>---
+>GTALUG Operations Mailing List
+>operations at gtalug.org
+>https://gtalug.org/mailman/listinfo/operations
+
+Hacklab.
+-- 
+Scott Sullivan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20160125/38bf9ad7/attachment.html>
+
+From mike at kallies.ca  Mon Jan 25 18:38:17 2016
+From: mike at kallies.ca (mike)
+Date: Mon, 25 Jan 2016 23:38:17 +0000
+Subject: [GTALUG-Ops] Running Late tonight
+Message-ID: <ABA426D0-4B40-41AC-BCC7-668FF9219344@kallies.ca>
+
+I'll be taking my car over, butI might be 7:30ish, busy with stuff beforehand
+
+Mike Kallies
+mike at kallies.ca<mailto:mike at kallies.ca>
+647-606-5442
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20160125/5dcaf286/attachment.html>
+
+From cbbrowne at gmail.com  Mon Jan 25 21:14:42 2016
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Mon, 25 Jan 2016 21:14:42 -0500
+Subject: [GTALUG-Ops] Kingston MobileLite
+Message-ID: <CAFNqd5VbPzQcwU1ZUuA8vUTgEsyTzo6wv4H0WVKvA=u1nWQQdQ@mail.gmail.com>
+
+Here's the OpenWRT page on the device I was showing off.  So apparently
+it'll run OpenWRT...
+
+https://wiki.openwrt.org/toh/kingston/mlwg2
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20160125/fa8539a0/attachment.html>
+
+From scruss at gmail.com  Tue Jan 26 06:14:25 2016
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Tue, 26 Jan 2016 06:14:25 -0500
+Subject: [GTALUG-Ops] Kingston MobileLite
+In-Reply-To: <CAFNqd5VbPzQcwU1ZUuA8vUTgEsyTzo6wv4H0WVKvA=u1nWQQdQ@mail.gmail.com>
+References: <CAFNqd5VbPzQcwU1ZUuA8vUTgEsyTzo6wv4H0WVKvA=u1nWQQdQ@mail.gmail.com>
+Message-ID: <56A75511.6010705@gmail.com>
+
+On 2016-01-25 09:14 PM, Christopher Browne wrote:
+> Here's the OpenWRT page on the device I was showing off.  So apparently
+> it'll run OpenWRT...
+> 
+> https://wiki.openwrt.org/toh/kingston/mlwg2
+
+Interesting … wonder if the battery backup has any kind of failover? If
+so, here's my Underpants Gnomes-style plan of action:
+
+0. Dig out one of the many Raspberry Pis littering the house
+1. Install OpenWRT on an MLWG2
+2. ?
+3. End up with a wifi-enabled, UPS-protected Raspberry Pi with its own
+   mini-NAS.
+
+cheers,
+ Stewart
+
+From hi at gtalug.org  Tue Jan 26 10:00:01 2016
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Tue, 26 Jan 2016 15:00:01 +0000 (UTC)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20160126150001.B0346E371@penguin.gtalug.org>
+
+I'm Mr. Meeseeks! Look at me!
+
+There is a GTALUG meeting tonight at 7:30pm, is the GTALUG Board/Executive prepared?
+
+<http://gtalug.org/meeting/2016-02/>
+
+Check the GitHub for meeting status: <http://git.io/vB40S>
+
+Look at me! I'm Mr. Meeseeks! (poof)
+
+From me at mylesbraithwaite.com  Tue Jan 26 10:01:22 2016
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 26 Jan 2016 10:01:22 -0500
+Subject: [GTALUG-Ops] Please Boost the Following Social Stuff
+Message-ID: <56A78A42.8030403@mylesbraithwaite.com>
+
+Please Retweet, Share, Recycle, other verbs these social network posts
+for GTALUG:
+
+Twitter: https://twitter.com/gtalug/status/691994333495558145
+
+Facebook: https://www.facebook.com/events/1014180748625548/
+
+Google+: https://plus.google.com/events/c50iig8r4n4ar3o37n2th2cf5sg
+
+Website: https://gtalug.org/meeting/2016-02/
+
+GnuSocial: https://social.gtalug.org/notice/1103
 
