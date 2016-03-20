@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ARCHIVEHOME=${HOME}/GTALUG/backups/DokuWiki/data
 DOKUWIKI_HOME=/srv/www/org_gtalug_wiki/html
 DATA_DIR=(pages meta media media_attic media_meta attic)

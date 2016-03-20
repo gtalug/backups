@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 ARCHIVEHOME=${HOME}/GTALUG/backups/DokuWiki/conf
 DOKUWIKI_HOME=/srv/www/org_gtalug_wiki/html
 CONF_FILES=(acl.auth.php acronyms.conf dokuwiki.php entities.conf interwiki.conf license.php local.php mediameta.php mime.conf plugins.local.php plugins.php plugins.required.php scheme.conf smileys.conf wordblock.conf)
