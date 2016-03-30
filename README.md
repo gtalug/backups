@@ -41,7 +41,7 @@ Searching for keys on keys.gnupg.net
 Enter the following in `Search for keys` field
 
     0x6AA6A713
-    0x5A2FE7BF
+    0x5B423590
     0xD598FD34
 
 
@@ -50,7 +50,7 @@ The result should display the owner of each key.
 ## Receive the appropriate keys
 
     gpg --keyserver pgp.mit.edu --recv-keys 0x6AA6A713
-    gpg --keyserver pgp.mit.edu --recv-keys 0x5A2FE7BF
+    gpg --keyserver pgp.mit.edu --recv-keys 0x5B423590
     gpg --keyserver pgp.mit.edu --recv-keys 0xD598FD34
 
 # Extract mailman passwords

@@ -310,7 +310,7 @@ Message-ID: <553544CE.4000403@gmail.com>
 I'm trying to get the keys with the following command --
 
 |gpg --keyserver pgp.mit.edu --recv-keys 0x6AA6A713
-gpg --keyserver pgp.mit.edu --recv-keys 0x5A2FE7BF
+gpg --keyserver pgp.mit.edu --recv-keys 0x5B423590
 
 But it fails with 
 |

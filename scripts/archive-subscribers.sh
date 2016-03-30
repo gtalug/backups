@@ -14,7 +14,7 @@ MAILMANPASSDIR=${MAILMANPASSFILE:-${HOME}/GitConfig/InitFiles/GTALUG/}
   # See Mailman/mpass to find GPG'ed copy of passwords
 ###  Python tool: https://github.com/larsks/mailman-subscribers/blob/master/mailman-subscribers.py
 
-GPGKEYS=${GPGKEYS:-"6AA6A713 5A2FE7BF D598FD34"}
+GPGKEYS=${GPGKEYS:-"6AA6A713 5B423590 D598FD34"}
 
 GPG_RECIPIENTS=""
 
