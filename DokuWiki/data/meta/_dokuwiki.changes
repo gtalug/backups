@@ -1,30 +1,48 @@
-1438529908	69.157.8.240	E	start	myles		
-1438529934	69.157.8.240	E	start	myles		
-1438530260	69.157.8.240	C	meeting:2015-07	myles	created	
-1438530274	69.157.8.240	E	meeting:2015-07	myles		
-1438530309	69.157.8.240	E	meeting:2015-07	myles		
-1438530367	69.157.8.240	C	meeting:start	myles	created	
-1438530432	69.157.8.240	E	meeting:start	myles		
-1438530506	69.157.8.240	E	meeting:start	myles		
-1438530516	69.157.8.240	E	meeting:start	myles		
-1438530522	69.157.8.240	E	meeting:start	myles		
-1438530594	69.157.8.240	E	meeting:start	myles		
-1438530603	69.157.8.240	E	meeting:start	myles		
-1438530663	69.157.8.240	E	meeting:start	myles		
-1438530670	69.157.8.240	E	meeting:start	myles		
-1438530735	69.157.8.240	E	start	myles		
-1438530764	69.157.8.240	E	start	myles		
-1438530819	69.157.8.240	E	meeting:2015-07	myles		
-1438530843	69.157.8.240	R	meeting:2015-07	myles	old revision restored (2015/08/02 15:45)	1438530309
-1438778697	66.225.147.105	C	meeting:2015-08	myles	created	
-1438778710	66.225.147.105	E	meeting:2015-08	myles		
-1439210479	38.104.192.90	E	start	myles		
-1439210579	66.225.147.105	C	pre-meeting_dinner	myles	created	
-1439210611	38.104.192.90	E	pre-meeting_dinner	myles	[Banh Mi Boys //Vietnamese and Asian Fusion//] 	
-1439210627	66.225.147.105	E	pre-meeting_dinner	myles	[Banh Mi Boys (Vietnamese and Asian Fusion)] 	
-1439210988	66.225.147.105	E	pre-meeting_dinner	myles		
-1439211146	38.104.192.90	E	start	myles	[Meetings] 	
-1439211159	66.225.147.105	E	start	myles	[Meetings] 	
-1439211202	66.225.147.105	E	start	myles	[Meetings] 	
-1439211234	66.225.147.105	E	start	myles	[Meetings] 	
-1439211239	66.225.147.105	E	start	myles	[Meetings] 	
+1457532978	38.104.192.90	E	meeting:2016-03	myles		
+1457533083	38.104.192.90	E	pre-meeting_dinner	myles		
+1457533359	38.104.192.90	E	pre-meeting_dinner	myles		
+1457729719	99.226.29.0	E	pre-meeting_dinner	hugh	[Hokkaido Ramen Santouka (Japanese)] 	
+1457729767	99.226.29.0	E	pre-meeting_dinner	hugh	[Hokkaido Ramen Santouka (Japanese)] 	
+1457729867	99.226.29.0	E	pre-meeting_dinner	hugh	[Raijin (Ramen)] 	
+1460421086	99.226.29.0	E	pre-meeting_dinner	hugh	[Gandhi Cuisine] 	
+1460421635	99.226.29.0	E	pre-meeting_dinner	hugh	[Kaiju (Japanese Curry)] 	
+1460423418	99.226.29.0	E	pre-meeting_dinner	hugh	[Sizzler Kabab] 	
+1460424338	99.226.29.0	E	pre-meeting_dinner	hugh	added Bocconcini	
+1460425497	99.226.29.0	E	pre-meeting_dinner	hugh	add z-teca	
+1460669495	162.213.105.43	E	pre-meeting_dinner	hugh	[Korean Grill House (Korean)] 	
+1460669566	162.213.105.43	E	pre-meeting_dinner	hugh	[Kaiju (Japanese Curry)] 	
+1460669848	162.213.105.43	E	pre-meeting_dinner	hugh	added Thai on Yonge	
+1460670781	162.213.105.43	E	pre-meeting_dinner	hugh	separate "too distant" restaurants	
+1460671543	162.213.105.43	E	pre-meeting_dinner	hugh		
+1461697118	38.104.192.90	E	pre-meeting_dinner			
+1462547290	162.213.105.43	E	pre-meeting_dinner	hugh	[Blaze Pizza] extracts from Chris' message to mailing list	
+1462547440	162.213.105.43	E	pre-meeting_dinner	hugh	[Tacos 101] Stewart Russell from mailing list	
+1462549126	162.213.105.43	E	pre-meeting_dinner	hugh	[The Restaurant Formerly Known As Love at First Bite] 	
+1464654867	174.116.184.22	C	event:linux_in_the_park_2016	myles	created	
+1464654959	174.116.184.22	E	event:linux_in_the_park_2016	myles		
+1464708867	38.104.192.90	E	start	myles		
+1464708878	38.104.192.90	E	start	myles		
+1464709182	38.104.192.90	C	guide_to_presenting	myles	created	
+1464709232	38.104.192.90	E	guide_to_presenting	myles		
+1464709278	38.104.192.90	E	guide_to_presenting	myles		
+1464709312	38.104.192.90	E	guide_to_presenting	myles		
+1464709345	38.104.192.90	E	guide_to_presenting	myles		
+1464709680	38.104.192.90	C	meeting:2016-06	myles	created	
+1464709920	38.104.192.90	E	meeting:2016-06	myles		
+1464709950	38.104.192.90	E	meeting:2016-06	myles	[Pre-Meeting Announcements] 	
+1464710438	38.104.192.90	E	event:linux_in_the_park_2016	myles		
+1464710460	38.104.192.90	E	event:linux_in_the_park_2016	myles	[RSVP] 	
+1464710553	38.104.192.90	D	meeting:2015-07	myles	removed	
+1464710574	38.104.192.90	C	meeting:2015-07	myles	created	
+1464710629	38.104.192.90	E	meeting:2015-09	myles		
+1464710709	38.104.192.90	E	event:linux_in_the_park_2016	myles		
+1464710741	38.104.192.90	E	start	myles		
+1464710774	38.104.192.90	E	meeting:2015-11	myles		
+1464710804	38.104.192.90	E	meeting:start	myles		
+1464710847	38.104.192.90	E	meeting:start	myles		
+1464710855	38.104.192.90	E	start	myles	[Meetings] 	
+1464711715	38.104.192.90	E	meeting:2016-06	myles	[Pre-Meeting Announcements] 	
+1464711873	38.104.192.90	E	meeting:2016-06	myles	[Pre-Meeting Announcements] 	
+1464711910	38.104.192.90	E	meeting:2016-06	myles	[Pre-Meeting Announcements] 	
+1464713563	38.104.192.90	C	event:start	myles	created	
+1464713642	38.104.192.90	E	guide_to_presenting	myles	[Tips and Tricks] 	

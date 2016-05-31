@@ -1,4 +1,4 @@
-====== 14th July, 2016 - Puppet with David Thornton ======
+====== 14th July, 2015 - Puppet with David Thornton ======
 
   * [[http://gtalug.org/meeting/2015-07/|Meeting Link]]
 

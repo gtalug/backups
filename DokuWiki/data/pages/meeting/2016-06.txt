@@ -1,0 +1,26 @@
+====== 14 June 2016 - Nerd Money with Warren McPherson ======
+
+  * [[https://gtalug.org/meeting/2016-06/|Meeting Link]]
+
+===== Pre-Meeting Announcements =====
+
+  * [[event:linux_in_the_park_2016|Linux in the Park 2016]]
+    * Possible Dates
+      * 16 July
+      * 23 July
+      * 13 August
+      * 20 August
+    * Planning Logistics
+      * All planning is being done in the wiki @ <http://bit.ly/litp-2016>
+      * What do people want?
+      * What do people plan to bring?
+  * Upcoming Events
+    * June
+      * 26 June 2016 at 2pm - [[https://www.eventbrite.ca/e/hacklab-junk-independence-day-tickets-25742333011?aff=es2|HackLab.TO Junk Independence Day]] - Bring your e-waste, root around in other people e-waste, and walk home with new treasure.
+      * 27 June 2016 at 7pm - [[http://www.meetup.com/Toronto-Perl-Mongers/events/231418224/|Damian Conway -- Perl 6: More Concurrency, Less Contusion]] - Even if you have no interest in Perl, Damian is always interesting.
+      * 28 June 2016 at 7pm - [[http://www.meetup.com/Toronto-Perl-Mongers/events/231418278/|Damian Conway -- On the Shoulders of Giants: 400 Years of Perl 6]]
+    * July
+      * 6 July 2016 at 7pm - [[https://www.eventbrite.ca/e/guerilla-gardening-seed-bombs-tickets-25675723781?aff=es2|Guerilla Gardening: Seed Bombs at HackLab.TO]]
+      * 27 July 2016 at 6pm - [[http://www.meetup.com/Toronto-Pivotal-User-Group/events/227459952/|BOSH 101 with David Ing]] - Our [[https://gtalug.org/meeting/2014-08/|August 2014]] meeting was on BOSH so if you are looking for a referesh you should definitly check this out.
+    * August
+      * 6 August 2016 at 6pm - [[http://www.meetup.com/PebbleTO/events/224057584/|Dan Harrison on his battles and winnings creating a SalesForce client for Pebble Watch]] - Pebble Toronto Developer Meetup

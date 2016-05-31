@@ -4,8 +4,13 @@
 
 Welcome it the GTALUG Wiki.
 
+  * **[[event:linux_in_the_park_2016|Linux in the Park 2016]]**
   * [[Pre-Meeting Dinner]]
+  * [[Guide to Presenting|Guide to Presenting at GTALUG]]
+  * [[operations:start|Operations]]
 
 ===== Meetings =====
 
 ~~DIR:meeting:?sort=page-d&list~~
+
+~~NOCACHE~~

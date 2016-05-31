@@ -1,0 +1,36 @@
+====== Guide to Presenting at GTALUG ======
+
+First please review our [[https://gtalug.org/about/code-of-conduct/|Code of Conduct]], we want a productive happy meetings that can welcome new ideas and foster collaboration between individuals with differing needs, interests, and skills.
+
+===== Audience =====
+
+==== Demographic ====
+
+  * Users, students, system admins and developers.
+  * High level of knowledge (or at least interested) in computing.
+  * Roughly half are in the technology industry, a quarter are studying technology in school, and the rest will be users.
+
+=== Participation ===
+
+  * Set the ground rules for asking questions before the meeting:
+    * Can people just ask questions whenever they want? //This will be the default for you talk//
+    * Do you want people to wait to ask questions until the end of your talk?
+
+===== Internet Access =====
+
+Don't count on having access to the Internet in the meeting space (even if you bring a mobile hotspot the reception in the room will be horrible). It's a good idea to have everything you need running on your local hard drive.
+
+==== Tips and Tricks =====
+
+  * If you have a Video on Youtube, Vimeo, etc. you'd like to reference, the [[http://youtube-dl.org/|youtube-dl]] or [[https://you-get.org/|you-get]] utility can be used to make a offline copy.
+
+=== Archiving a web page with wget ===
+
+<code>
+wget \
+   --no-clobber --page-requisites --html-extension \
+   --span-hosts --convert-links --restrict-file-names=windows \
+   --domains gtalug.org --no-parent https://wiki.gtalug.org/guide_to_presenting
+</code>
+
+You can added the <code>--recursive</code> argument to download the entire web site.

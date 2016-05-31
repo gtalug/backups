@@ -1,0 +1,9 @@
+====== 13 October, 2015 - AGM and Linux on Enterprise 64-bit ARM Platforms ======
+
+  * [[http://gtalug.org/meeting/2015-10/|Meeting Link]]
+
+===== Links =====
+
+  * [[https://wiki.leapproject.ca/index.php?title=Main_Page|LEAP Project]]
+  * [[http://pidora.ca/|Pidora project]]
+  * [[http://zenit.senecac.on.ca/wiki/index.php/Main_Page|The Seneca Centre for Development of Open Technology]]

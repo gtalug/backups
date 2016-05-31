@@ -1,0 +1,15 @@
+====== 8th March 2016 - systemd with Bill Thanis ======
+
+  * [[https://gtalug.org/meeting/2016-03/|Meeting Link]]
+  * {{:meeting:2016-03-systemd-slides.pdf|Slides}}
+
+===== Pre-Meeting Announcements =====
+
+  * Next GTALUG Meeting - Vector Graphics Panel - Tuesday 12 April 2016 at 7:30 p.m.
+  * [[http://homebrewhosting.club/|Homebrew Hosting Club]] - Thursday 21 April 2016 at 7 p.m. - HackLabTO
+  * [[http://www.meetup.com/Raspberry-Pi/events/227941477/|Raspberry Pi Demo Days]] - Saturday 28 May 2016 from 12 p.m. to 5 p.m. - Toronto Reference Library
+
+===== Meta =====
+
+  * The before dinner was a //Milo's Pita// which is in the 10 Dundas food court.
+  * The round table discussion was canceled as Bill's talk went to 9 p.m.
