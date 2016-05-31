@@ -57,7 +57,7 @@ MAILMAN_SITE_LIST = 'mailman'
 #-------------------------------------------------------------
 # If you change these, you have to configure your http server
 # accordingly (Alias and ScriptAlias directives in most httpds)
-DEFAULT_URL_PATTERN = 'http://%s/mailman/'
+DEFAULT_URL_PATTERN = 'https://%s/mailman/'
 IMAGE_LOGOS         = '/mailman-images/'
 
 #-------------------------------------------------------------
@@ -102,6 +102,8 @@ DEFAULT_SEND_REMINDERS = 0
 GLOBAL_PIPELINE.insert(1, 'SpamAssassin')
 
 SPAMASSASSIN_HOST = '127.0.0.1:783'
+
+ALLOW_FROM_IS_LIST = Yes
 
 # Note - if you're looking for something that is imported from mm_cfg, but you
 # didn't find it above, it's probably in /usr/lib/mailman/Mailman/Defaults.py.
