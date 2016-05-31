@@ -8,4 +8,6 @@
 # Date: Sun, 02 Aug 2015 15:01:19 +0000
 *	@ALL	2
 meeting:*	@user	8
+operations:*	@ALL	1
+operations:*	@operations	8
 start	@admin	2
