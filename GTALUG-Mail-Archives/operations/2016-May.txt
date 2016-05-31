@@ -1,0 +1,358 @@
+From gordontc at look.ca  Mon May  2 11:27:56 2016
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Mon, 02 May 2016 11:27:56 -0400
+Subject: [GTALUG-Ops] [Fwd: NARALO Newsletter - Issue No. 10]
+Message-ID: <1462202876.3799.0.camel@look.ca>
+
+
+-------------- next part --------------
+An embedded message was scrubbed...
+From: =?utf-8?Q?Eduardo_D=C3=ADaz?= <eduardodiazrivera at gmail.com>
+Subject: NARALO Newsletter - Issue No. 10
+Date: Sat, 30 Apr 2016 23:59:32 -0400 (EDT)
+Size: 93680
+URL: <http://gtalug.org/pipermail/operations/attachments/20160502/728fe7e2/attachment.mht>
+
+From hi at gtalug.org  Tue May  3 09:30:01 2016
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Tue,  3 May 2016 13:30:01 +0000 (UTC)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20160503133001.BA68EE387@penguin.gtalug.org>
+
+I'm Mr. Meeseeks! Look at me!
+
+There is a GTALUG meeting coming up on 10 May, 2016, is the GTALUG Board/Executive prepared?
+
+<http://gtalug.org/meeting/2016-05/>
+
+Check the GitHub for meeting status: <http://git.io/vB40S>
+
+Look at me! I'm Mr. Meeseeks! (poof)
+
+From hi at gtalug.org  Mon May 16 09:30:01 2016
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Mon, 16 May 2016 13:30:01 +0000 (UTC)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20160516133001.5F348E35E@penguin.gtalug.org>
+
+Look at me! I'm Mr. Meeseeks!
+
+The GTALUG Operations meeting is on 23 May, 2016
+
+You can see the agenda here: <http://board.gtalug.org/2016-05-23/agenda.html>.
+
+You can see open issues/todos here: <http://git.io/vB4EO>
+
+There is a regular GTALUG meeting coming up on 14 June, 2016; is the GTALUG Board/Executive prepared???
+
+I'm Mr. Meeseeks! Look at me! (poof)
+
+From me at mylesbraithwaite.com  Mon May 16 09:33:15 2016
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 16 May 2016 09:33:15 -0400
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+In-Reply-To: <20160516133001.5F348E35E@penguin.gtalug.org>
+References: <20160516133001.5F348E35E@penguin.gtalug.org>
+Message-ID: <5739CC1B.5010701@gtalug.org>
+
+This meeting is on the 30 May.
+
+From ivan.avery.frey at gmail.com  Tue May 17 09:27:54 2016
+From: ivan.avery.frey at gmail.com (Ivan Avery Frey)
+Date: Tue, 17 May 2016 13:27:54 +0000
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+In-Reply-To: <5739CC1B.5010701@gtalug.org>
+References: <20160516133001.5F348E35E@penguin.gtalug.org>
+ <5739CC1B.5010701@gtalug.org>
+Message-ID: <CAB9QdHPy72F++1O0DLQwogi5=Wjdbpy7JXTYu=tRE1F87fSh+w@mail.gmail.com>
+
+On Mon, May 16, 2016, 09:33 Myles Braithwaite <me at mylesbraithwaite.com>
+wrote:
+
+> This meeting is on the 30 May.
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> https://gtalug.org/mailman/listinfo/operations
+
+
+The link to the agenda is broken too.
+
+Ivan.
+
+>
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20160517/5b85fb99/attachment.html>
+
+From me at mylesbraithwaite.com  Thu May 19 09:58:29 2016
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Thu, 19 May 2016 09:58:29 -0400
+Subject: [GTALUG-Ops] Meeting topic proposal
+In-Reply-To: <2983.1463625010@arvotek.net>
+References: <2983.1463625010@arvotek.net>
+Message-ID: <573DC685.3010508@mylesbraithwaite.com>
+
+Sounds interesting. Do you mind if I book you for June?
+
+If that's okay I can send out the announce messages today.
+
+Warren McPherson wrote:
+> I was not sure about my availability the last time I wrote, but I am clear now, so June is fine July would work too.
+> Here is a preview for what I'm thinking about:
+> 
+> 
+> 
+> Nerd Money
+> The outrage, the greed, the cryptography, the possibilities!
+> 
+> *** Crypto Literacy - a quick kindergarten class of the foundational ideas that enable the current crop of "Applied Cryptography" applications.
+> *** Innovation of Bitcoin - After a hundred failed attempts to create digital money the innovations of Hashcash and Bitcoin Mining turn out to be 
+> the enablers for a new internet epoch.
+> *** Blockchains and Society - Polarizing emotional debates where people arguing contradictory positions all imagine themselves to be defending the 
+> little guy.
+> The dichotomy between open Bitcoin community and advocates of private, permissioned blockchains.
+> Significance of "Permission-less Innovation"
+> 
+> "Every informed person needs to know about Bitcoin because it might be one of the world’s most important developments." Leon Louw
+> "It's gold for nerds." Stephen Colbert
+> "I think it's rat poison." Charlie Munger
+> "You can't stop things like Bitcoin." John McAfee
+> "Bitcoin at its most fundamental level is a breakthrough in computer science - one that builds on 20 years of research into cryptographic 
+> currency, and 40 years of research in cryptography, by thousands of researchers around the world." Marc Andreessen
+> "Bitcoin is the beginning of something great: a currency without a government, something necessary and imperative." Nassim Taleb
+> 
+> 
+> 
+
+From hi at gtalug.org  Sun May 22 17:00:01 2016
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Sun, 22 May 2016 21:00:01 +0000 (UTC)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20160522210001.CEF3AE35E@penguin.gtalug.org>
+
+Look at me! I'm Mr. Meeseeks!
+
+The GTALUG Operations meeting is tonight at 7:30pm.
+
+You can see the agenda here: <http://board.gtalug.org/2016-05-23/agenda.html>.
+
+You can see open issues/todos here: <http://git.io/vB4EO>
+
+There is a regular GTALUG meeting coming up on 14 June, 2016; is the GTALUG Board/Executive prepared???
+
+I'm Mr. Meeseeks! Look at me! (poof)
+
+From hi at gtalug.org  Mon May 23 10:00:02 2016
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Mon, 23 May 2016 14:00:02 +0000 (UTC)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20160523140002.0CDA7E68A@penguin.gtalug.org>
+
+Look at me! I'm Mr. Meeseeks!
+
+The GTALUG Operations meeting is tonight at 7:30pm.
+
+You can see the agenda here: <http://board.gtalug.org/2016-05-23/agenda.html>.
+
+You can see open issues/todos here: <http://git.io/vB4EO>
+
+There is a regular GTALUG meeting coming up on 14 June, 2016; is the GTALUG Board/Executive prepared???
+
+I'm Mr. Meeseeks! Look at me! (poof)
+
+From me at mylesbraithwaite.com  Mon May 23 16:09:50 2016
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 23 May 2016 16:09:50 -0400
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+In-Reply-To: <20160523140002.0CDA7E68A@penguin.gtalug.org>
+References: <20160523140002.0CDA7E68A@penguin.gtalug.org>
+Message-ID: <5743638E.3060102@gtalug.org>
+
+There is no meeting tonight it's next Monday.
+
+Mr. Meeseeks wrote:
+> Look at me! I'm Mr. Meeseeks!
+> 
+> The GTALUG Operations meeting is tonight at 7:30pm.
+> 
+> You can see the agenda here: <http://board.gtalug.org/2016-05-23/agenda.html>.
+> 
+> You can see open issues/todos here: <http://git.io/vB4EO>
+> 
+> There is a regular GTALUG meeting coming up on 14 June, 2016; is the GTALUG Board/Executive prepared???
+> 
+> I'm Mr. Meeseeks! Look at me! (poof)
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> https://gtalug.org/mailman/listinfo/operations
+
+-- 
+Have an awesome day, and happy open-sourcing :-).
+
+From hi at gtalug.org  Tue May 24 10:00:01 2016
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Tue, 24 May 2016 14:00:01 +0000 (UTC)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20160524140001.52394E387@penguin.gtalug.org>
+
+I'm Mr. Meeseeks! Look at me!
+
+There is a GTALUG meeting tonight at 7:30pm, is the GTALUG Board/Executive prepared?
+
+<http://gtalug.org/meeting/2016-06/>
+
+Check the GitHub for meeting status: <http://git.io/vB40S>
+
+Look at me! I'm Mr. Meeseeks! (poof)
+
+From me at mylesbraithwaite.com  Mon May 30 09:51:43 2016
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 30 May 2016 09:51:43 -0400
+Subject: [GTALUG-Ops] Agenda for the Operations Meeting Tonight
+Message-ID: <CA+hskZPTSJeMWKOt59Knn7TepzemsDuS81B=9jiL8GypWyvFWg@mail.gmail.com>
+
+<https://board.gtalug.org/2016-05-30/agenda.html>
+
+* 30th May 2016 at 7:30pm
+
+** Location
+
+  - Hacklab
+    - 1266 Queen St W, Toronto, ON M6K 1L3
+    - <https://goo.gl/maps/OKcij>
+
+** Agenda
+
+- Where and when this meeting happens next
+- Upcoming Meetings
+- Infrastructure
+  - Hosting provider
+  - Mediawiki
+- Engagement with Ryerson
+- Report on FCC, request for direction
+  - Routers
+- Linux in the Park
+
+** Action Items from Last Month
+
+  - Myles TODO :: Get list of regional events for next board meeting,
+so we can present at April meeting
+  - Myles TODO :: Check with Bob Jonkman about GNU Status for June
+
+From scruss at gmail.com  Mon May 30 11:07:15 2016
+From: scruss at gmail.com (Stewart Russell)
+Date: Mon, 30 May 2016 11:07:15 -0400
+Subject: [GTALUG-Ops] Agenda for the Operations Meeting Tonight
+In-Reply-To: <CA+hskZPTSJeMWKOt59Knn7TepzemsDuS81B=9jiL8GypWyvFWg@mail.gmail.com>
+References: <CA+hskZPTSJeMWKOt59Knn7TepzemsDuS81B=9jiL8GypWyvFWg@mail.gmail.com>
+Message-ID: <CAAsTreDq0mMCQzn=7s=jmLz7mDj0jJ=bACNJ0CcHVjn0p1NV_g@mail.gmail.com>
+
+Again, my apologies for absence tonight. I'm in southern MO for Memorial
+Day.
+
+Stewart
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20160530/95146d4c/attachment.html>
+
+From gordontc at look.ca  Mon May 30 11:31:34 2016
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Mon, 30 May 2016 11:31:34 -0400
+Subject: [GTALUG-Ops] ICANN Report for May, 2016
+Message-ID: <1464622294.3483.1.camel@look.ca>
+
+With apologies for being late.
+
+
+Gordon
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: 20160530.pdf
+Type: application/pdf
+Size: 19886 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20160530/d114b2be/attachment.pdf>
+
+From me at mylesbraithwaite.com  Mon May 30 20:31:49 2016
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 30 May 2016 20:31:49 -0400
+Subject: [GTALUG-Ops] Announcements for June 2016 Meeting
+Message-ID: <CA+hskZN0f9MyY+Tx0WBSqE6k7+8HC6hG99GbuKUth3gpw-WE8Q@mail.gmail.com>
+
+Please add stuff <http://piratepad.nl/jTFmaLw5uX>.
+
+From me at mylesbraithwaite.com  Tue May 31 11:46:43 2016
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Tue, 31 May 2016 11:46:43 -0400
+Subject: [GTALUG-Ops] Old Executive Notes and Guide to Presenting
+Message-ID: <574DB1E3.2090902@mylesbraithwaite.com>
+
+Thanks to Scott we now have access to the old server.
+
+I did an archive of the old executive notes and added them to the GitHub
+repo:
+<https://github.com/gtalug/board-meetings/tree/master/_old_meeting_notes>.
+Hopefully I will get a huzza from Chris :-).
+
+Also I found our old Guide to Presenting at GTALUG page and put it up on
+the new wiki: <https://wiki.gtalug.org/guide_to_presenting>. Please
+review as I would like to send it to June's speaker.
+
+From cbbrowne at gmail.com  Tue May 31 12:27:19 2016
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 31 May 2016 12:27:19 -0400
+Subject: [GTALUG-Ops] GTALUG wiki material now up to date!!!
+Message-ID: <CAFNqd5XHQRyqwnxTVpJ0CRVruwYrPDNQqtBdoETWqB-=yLJh5A@mail.gmail.com>
+
+I just pulled the entirety of the old MediaWIki instance, as well as the
+material from the Executive wiki
+
+https://github.com/gtalug/legacy-wiki-extract/commits/master
+
+It's now all "fodder" to be rewritten as a static site.
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20160531/ffe63926/attachment.html>
+
+From cbbrowne at gmail.com  Tue May 31 12:28:59 2016
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 31 May 2016 12:28:59 -0400
+Subject: [GTALUG-Ops] Old Executive Notes and Guide to Presenting
+In-Reply-To: <574DB1E3.2090902@mylesbraithwaite.com>
+References: <574DB1E3.2090902@mylesbraithwaite.com>
+Message-ID: <CAFNqd5X+Wk+-uHndLVTrKYdxrS0nat82AR3DcDQ8NpRQDZW19g@mail.gmail.com>
+
+On 31 May 2016 at 11:46, Myles Braithwaite <me at mylesbraithwaite.com> wrote:
+
+> Thanks to Scott we now have access to the old server.
+>
+> I did an archive of the old executive notes and added them to the GitHub
+> repo:
+> <https://github.com/gtalug/board-meetings/tree/master/_old_meeting_notes>.
+> Hopefully I will get a huzza from Chris :-).
+>
+>
+Huzza indeed!!!
+
+I guess we've been working on some of this in parallel!  :-)
+
+
+> Also I found our old Guide to Presenting at GTALUG page and put it up on
+> the new wiki: <https://wiki.gtalug.org/guide_to_presenting>. Please
+> review as I would like to send it to June's speaker.
+>
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20160531/9e9a61bf/attachment.html>
+
