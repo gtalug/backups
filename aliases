@@ -15,6 +15,7 @@ root: myles, mike
 
 ## email forwards
 hi: myles
+gordon: gordontc@look.ca
 
 ### position based emails
 speaker-coordinator: scott@ss.org
@@ -100,6 +101,18 @@ board-owner:        "|/var/lib/mailman/mail/mailman owner board"
 board-request:      "|/var/lib/mailman/mail/mailman request board"
 board-subscribe:    "|/var/lib/mailman/mail/mailman subscribe board"
 board-unsubscribe:  "|/var/lib/mailman/mail/mailman unsubscribe board"
+
+## homebrew hosting club mailing list
+homebrewhostingclub:              "|/var/lib/mailman/mail/mailman post homebrewhostingclub"
+homebrewhostingclub-admin:        "|/var/lib/mailman/mail/mailman admin homebrewhostingclub"
+homebrewhostingclub-bounces:      "|/var/lib/mailman/mail/mailman bounces homebrewhostingclub"
+homebrewhostingclub-confirm:      "|/var/lib/mailman/mail/mailman confirm homebrewhostingclub"
+homebrewhostingclub-join:         "|/var/lib/mailman/mail/mailman join homebrewhostingclub"
+homebrewhostingclub-leave:        "|/var/lib/mailman/mail/mailman leave homebrewhostingclub"
+homebrewhostingclub-owner:        "|/var/lib/mailman/mail/mailman owner homebrewhostingclub"
+homebrewhostingclub-request:      "|/var/lib/mailman/mail/mailman request homebrewhostingclub"
+homebrewhostingclub-subscribe:    "|/var/lib/mailman/mail/mailman subscribe homebrewhostingclub"
+homebrewhostingclub-unsubscribe:  "|/var/lib/mailman/mail/mailman unsubscribe homebrewhostingclub"
 
 ## legacy -- the archive of tlug@ss.org
 ## nothing here, no subscription service available for this list.
