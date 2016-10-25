@@ -1,0 +1,589 @@
+From hi at gtalug.org  Tue Oct  4 09:30:02 2016
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Tue,  4 Oct 2016 09:30:02 -0400 (EDT)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20161004133002.2C206E74B@penguin.gtalug.org>
+
+I'm Mr. Meeseeks! Look at me!
+
+There is a GTALUG meeting coming up on 11 October, 2016, is the GTALUG Board/Executive prepared?
+
+<http://gtalug.org/meeting/2016-10/>
+
+Check the GitHub for meeting status: <http://git.io/vB40S>
+
+Look at me! I'm Mr. Meeseeks! (poof)
+
+From me at mylesbraithwaite.com  Thu Oct  6 09:31:10 2016
+From: me at mylesbraithwaite.com (=?UTF-8?B?TXlsZXMgQnJhaXRod2FpdGUg8J+Rvg==?=)
+Date: Thu, 06 Oct 2016 09:31:10 -0400
+Subject: [GTALUG-Ops] Fwd: Re: Election Officer
+In-Reply-To: <CAB9QdHP4seh2XHyXFfg4YgYh3Y58yyB_hx7jC9C-89uDjzJfcg@mail.gmail.com>
+References: <CAB9QdHM-h+_Y0j+qR1ttQKJ+iC0sCGqPo0ajO+4whD0hF=933w@mail.gmail.com>
+ <57F645C2.1030804@mylesbraithwaite.com>
+ <CAB9QdHP4seh2XHyXFfg4YgYh3Y58yyB_hx7jC9C-89uDjzJfcg@mail.gmail.com>
+Message-ID: <57F6521E.6040909@mylesbraithwaite.com>
+
+Ivan has agreed to be our Election Officer for Tuesday's meeting.
+
+@Bill can you walk Ivan though what he needs to do.
+
+-------- Original Message --------
+Subject: 	Re: Election Officer
+Date: 	Thu, 06 Oct 2016 13:28:03 +0000
+From: 	Ivan Avery Frey <ivan.avery.frey at gmail.com>
+To: 	Myles Braithwaite 👾 <me at mylesbraithwaite.com>
+
+
+
+ok, I'm available.
+
+On Thu, 6 Oct 2016 at 08:38 Myles Braithwaite 👾
+<me at mylesbraithwaite.com <mailto:me at mylesbraithwaite.com>> wrote:
+
+    Yes.
+
+
+From davec-b at rogers.com  Mon Oct 17 08:13:17 2016
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Mon, 17 Oct 2016 08:13:17 -0400
+Subject: [GTALUG-Ops] I have a new talk in development,
+	"Thirteen Hours of Go"
+Message-ID: <b631e1a1-0faf-dd58-bbc6-277b4aadaeb3@rogers.com>
+
+About 1/3 done, it's about learning a new language by using col stuff in 
+the process of rewriting a program I've done several times before. When 
+I have a complete draft I'll pass it on.
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From davec-b at rogers.com  Mon Oct 17 08:19:29 2016
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Mon, 17 Oct 2016 08:19:29 -0400
+Subject: [GTALUG-Ops] Fwd: Re: I'm getting old: Did I ever do the
+ "Google bigtables and politics" talk?
+In-Reply-To: <3467704c-9a65-9c8c-db40-5db09f3e230d@rogers.com>
+References: <9801131d-dfca-7861-5d20-6e7af5e19d21@revident.net>
+ <3467704c-9a65-9c8c-db40-5db09f3e230d@rogers.com>
+Message-ID: <9ae504f0-deb0-f702-94a1-e053ba930846@rogers.com>
+
+On 17/10/16 08:09 AM, David Collier-Brown wrote:
+>
+> Folks, I once wrote a talk about using google bigtables in 
+> Martha/Zaphod's political campaign, did I ever give it at GTALUG?  
+> Neither I nor Scott can remember.
+>
+> --dave
+>
+
+I tried attaching the talk, but it was too big (-))
+
+--dave
+
+>
+>
+> -------- Forwarded Message --------
+> Subject: 	Re: I'm getting old: Did I ever do the "Google bigtables and 
+> politics" talk?
+> Date: 	Sun, 16 Oct 2016 20:47:28 -0400
+> From: 	Scott Sullivan <scott at revident.net>
+> To: 	davecb at spamcop.net
+>
+>
+>
+> On 16/10/16 07:34 PM, David Collier-Brown wrote:
+> > I wrote it, but I forget, and Mr Google doesn't find it under
+> > site:gtalug.org Google bigtables and politics
+> >
+> >
+> > --dave
+> >
+> >
+>
+> For some reason I thought you had, this feels familiar. But I can't find
+> it on the schedule either. I'm wondering if we slotted you in place of a
+> canceled talk.
+>
+> Ask the Ops list.
+>
+> -- 
+> Scott Sullivan
+>
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20161017/7529337f/attachment.html>
+
+From hi at gtalug.org  Mon Oct 17 09:30:02 2016
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Mon, 17 Oct 2016 09:30:02 -0400 (EDT)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20161017133002.085A6E692@penguin.gtalug.org>
+
+Look at me! I'm Mr. Meeseeks!
+
+The GTALUG Operations meeting is on 24 October, 2016
+
+You can see the agenda here: <http://board.gtalug.org/2016-10-24/agenda.html>.
+
+You can see open issues/todos here: <http://git.io/vB4EO>
+
+There is a regular GTALUG meeting coming up on 08 November, 2016; is the GTALUG Board/Executive prepared???
+
+I'm Mr. Meeseeks! Look at me! (poof)
+
+From gordontc at look.ca  Sat Oct  1 12:41:39 2016
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Sat, 01 Oct 2016 16:41:39 -0000
+Subject: [GTALUG-Ops] [Fwd: NARALO Newsletter - Issue No. 15]
+Message-ID: <1475340094.24387.0.camel@look.ca>
+
+This month's newsletter - with some information about ICANN.
+
+Gordon
+
+-------------- next part --------------
+An embedded message was scrubbed...
+From: =?utf-8?Q?Eduardo_D=C3=ADaz?= <eduardodiazrivera at gmail.com>
+Subject: NARALO Newsletter - Issue No. 15
+Date: Fri, 30 Sep 2016 23:59:02 -0400 (EDT)
+Size: 138822
+URL: <http://gtalug.org/pipermail/operations/attachments/20161001/719a8de5/attachment.mht>
+
+From me at mylesbraithwaite.com  Mon Oct 17 10:25:11 2016
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 17 Oct 2016 10:25:11 -0400
+Subject: [GTALUG-Ops] Fwd: Re: I'm getting old: Did I ever do the
+ "Google bigtables and politics" talk?
+In-Reply-To: <9ae504f0-deb0-f702-94a1-e053ba930846@rogers.com>
+References: <9801131d-dfca-7861-5d20-6e7af5e19d21@revident.net>
+ <3467704c-9a65-9c8c-db40-5db09f3e230d@rogers.com>
+ <9ae504f0-deb0-f702-94a1-e053ba930846@rogers.com>
+Message-ID: <5804DF47.5000904@gtalug.org>
+
+I remember it, don't remember when but I remember you giving the talk at
+GTALUG.
+
+David Collier-Brown wrote:
+> On 17/10/16 08:09 AM, David Collier-Brown wrote:
+>>
+>> Folks, I once wrote a talk about using google bigtables in
+>> Martha/Zaphod's political campaign, did I ever give it at GTALUG? 
+>> Neither I nor Scott can remember.
+>>
+>> --dave
+>>
+> 
+> I tried attaching the talk, but it was too big (-))
+> 
+> --dave
+> 
+>>
+>>
+>> -------- Forwarded Message --------
+>> Subject: 	Re: I'm getting old: Did I ever do the "Google bigtables and
+>> politics" talk?
+>> Date: 	Sun, 16 Oct 2016 20:47:28 -0400
+>> From: 	Scott Sullivan <scott at revident.net>
+>> To: 	davecb at spamcop.net
+>>
+>>
+>>
+>> On 16/10/16 07:34 PM, David Collier-Brown wrote:
+>> > I wrote it, but I forget, and Mr Google doesn't find it under
+>> > site:gtalug.org Google bigtables and politics
+>> >
+>> >
+>> > --dave
+>> >
+>> >
+>>
+>> For some reason I thought you had, this feels familiar. But I can't find 
+>> it on the schedule either. I'm wondering if we slotted you in place of a 
+>> canceled talk.
+>>
+>> Ask the Ops list.
+>>
+>> -- 
+>> Scott Sullivan
+>>
+> 
+> 
+> -- 
+> David Collier-Brown,         | Always do right. This will gratify
+> System Programmer and Author | some people and astonish the rest
+> davecb at spamcop.net           |                      -- Mark Twain
+> 
+> ---
+> GTALUG Operations Mailing List
+> operations at gtalug.org
+> https://gtalug.org/mailman/listinfo/operations
+
+-- 
+Have an awesome day, and happy open-sourcing :-).
+
+From me at mylesbraithwaite.com  Mon Oct 17 10:38:48 2016
+From: me at mylesbraithwaite.com (Myles Braithwaite)
+Date: Mon, 17 Oct 2016 10:38:48 -0400
+Subject: [GTALUG-Ops] Fwd: Re: I'm getting old: Did I ever do the
+ "Google bigtables and politics" talk?
+In-Reply-To: <5804DF47.5000904@gtalug.org>
+References: <9801131d-dfca-7861-5d20-6e7af5e19d21@revident.net>
+ <3467704c-9a65-9c8c-db40-5db09f3e230d@rogers.com>
+ <9ae504f0-deb0-f702-94a1-e053ba930846@rogers.com>
+ <5804DF47.5000904@gtalug.org>
+Message-ID: <5804E278.2060708@gtalug.org>
+
+You gave it on 8th October 2013: <https://gtalug.org/meeting/2013-10/>.
+
+The talk title was "Big Data and Google Tables".
+
+Myles Braithwaite wrote:
+> I remember it, don't remember when but I remember you giving the talk at
+> GTALUG.
+> 
+> David Collier-Brown wrote:
+>> On 17/10/16 08:09 AM, David Collier-Brown wrote:
+>>> Folks, I once wrote a talk about using google bigtables in
+>>> Martha/Zaphod's political campaign, did I ever give it at GTALUG? 
+>>> Neither I nor Scott can remember.
+>>>
+>>> --dave
+>>>
+>> I tried attaching the talk, but it was too big (-))
+>>
+>> --dave
+>>
+>>>
+>>> -------- Forwarded Message --------
+>>> Subject: 	Re: I'm getting old: Did I ever do the "Google bigtables and
+>>> politics" talk?
+>>> Date: 	Sun, 16 Oct 2016 20:47:28 -0400
+>>> From: 	Scott Sullivan <scott at revident.net>
+>>> To: 	davecb at spamcop.net
+>>>
+>>>
+>>>
+>>> On 16/10/16 07:34 PM, David Collier-Brown wrote:
+>>>> I wrote it, but I forget, and Mr Google doesn't find it under
+>>>> site:gtalug.org Google bigtables and politics
+>>>>
+>>>>
+>>>> --dave
+>>>>
+>>>>
+>>> For some reason I thought you had, this feels familiar. But I can't find 
+>>> it on the schedule either. I'm wondering if we slotted you in place of a 
+>>> canceled talk.
+>>>
+>>> Ask the Ops list.
+>>>
+>>> -- 
+>>> Scott Sullivan
+>>>
+>>
+>> -- 
+>> David Collier-Brown,         | Always do right. This will gratify
+>> System Programmer and Author | some people and astonish the rest
+>> davecb at spamcop.net           |                      -- Mark Twain
+>>
+>> ---
+>> GTALUG Operations Mailing List
+>> operations at gtalug.org
+>> https://gtalug.org/mailman/listinfo/operations
+> 
+
+-- 
+Have an awesome day, and happy open-sourcing :-).
+
+From davec-b at rogers.com  Mon Oct 17 11:22:43 2016
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Mon, 17 Oct 2016 11:22:43 -0400
+Subject: [GTALUG-Ops] Fwd: Re: I'm getting old: Did I ever do the
+ "Google bigtables and politics" talk?
+In-Reply-To: <5804E278.2060708@gtalug.org>
+References: <9801131d-dfca-7861-5d20-6e7af5e19d21@revident.net>
+ <3467704c-9a65-9c8c-db40-5db09f3e230d@rogers.com>
+ <9ae504f0-deb0-f702-94a1-e053ba930846@rogers.com>
+ <5804DF47.5000904@gtalug.org> <5804E278.2060708@gtalug.org>
+Message-ID: <538e5f79-5c14-accb-761b-63bd6cdb3434@rogers.com>
+
+Good: for some reason  I couldn't google it the other day, probably bad 
+search expression
+-dave
+
+
+
+On 17/10/16 10:38 AM, Myles Braithwaite wrote:
+> You gave it on 8th October 2013: <https://gtalug.org/meeting/2013-10/>.
+>
+> The talk title was "Big Data and Google Tables".
+>
+> Myles Braithwaite wrote:
+>> I remember it, don't remember when but I remember you giving the talk at
+>> GTALUG.
+>>
+>> David Collier-Brown wrote:
+>>> On 17/10/16 08:09 AM, David Collier-Brown wrote:
+>>>> Folks, I once wrote a talk about using google bigtables in
+>>>> Martha/Zaphod's political campaign, did I ever give it at GTALUG?
+>>>> Neither I nor Scott can remember.
+>>>>
+>>>> --dave
+>>>>
+>>> I tried attaching the talk, but it was too big (-))
+>>>
+>>> --dave
+>>>
+>>>> -------- Forwarded Message --------
+>>>> Subject: 	Re: I'm getting old: Did I ever do the "Google bigtables and
+>>>> politics" talk?
+>>>> Date: 	Sun, 16 Oct 2016 20:47:28 -0400
+>>>> From: 	Scott Sullivan <scott at revident.net>
+>>>> To: 	davecb at spamcop.net
+>>>>
+>>>>
+>>>>
+>>>> On 16/10/16 07:34 PM, David Collier-Brown wrote:
+>>>>> I wrote it, but I forget, and Mr Google doesn't find it under
+>>>>> site:gtalug.org Google bigtables and politics
+>>>>>
+>>>>>
+>>>>> --dave
+>>>>>
+>>>>>
+>>>> For some reason I thought you had, this feels familiar. But I can't find
+>>>> it on the schedule either. I'm wondering if we slotted you in place of a
+>>>> canceled talk.
+>>>>
+>>>> Ask the Ops list.
+>>>>
+>>>> -- 
+>>>> Scott Sullivan
+>>>>
+>>> -- 
+>>> David Collier-Brown,         | Always do right. This will gratify
+>>> System Programmer and Author | some people and astonish the rest
+>>> davecb at spamcop.net           |                      -- Mark Twain
+>>>
+>>> ---
+>>> GTALUG Operations Mailing List
+>>> operations at gtalug.org
+>>> https://gtalug.org/mailman/listinfo/operations
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From hi at gtalug.org  Sun Oct 23 17:00:02 2016
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Sun, 23 Oct 2016 17:00:02 -0400 (EDT)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20161023210002.1217AE444@penguin.gtalug.org>
+
+Look at me! I'm Mr. Meeseeks!
+
+The GTALUG Operations meeting is tonight at 7:30pm.
+
+You can see the agenda here: <http://board.gtalug.org/2016-10-24/agenda.html>.
+
+You can see open issues/todos here: <http://git.io/vB4EO>
+
+There is a regular GTALUG meeting coming up on 08 November, 2016; is the GTALUG Board/Executive prepared???
+
+I'm Mr. Meeseeks! Look at me! (poof)
+
+From avolkov at gmail.com  Sun Oct 23 21:10:34 2016
+From: avolkov at gmail.com (Alex Volkov)
+Date: Sun, 23 Oct 2016 21:10:34 -0400
+Subject: [GTALUG-Ops] bounces from gtalug
+Message-ID: <580D5F8A.40606@gmail.com>
+
+Hey everyone,
+
+It looks like my server started bouncing gtalug emails based on one of
+the blocklists.
+
+My email server config uses a couple of blocklist to filter out spam and
+it looks like gtalug got reported to one of them.
+Also it's kind of weird that IPv6 address is mentioned but not IPv4,
+there might be an issue with IPv6 configuration for the server.
+
+I tried delisting address/host, on spamhaus address, but it wasn't found
+there. Have someone delisted the host already, or was this a transient
+issue?
+
+Alex.
+
+Here's the message I got.
+
+
+Subject:
+Undelivered Mail Returned to Sender
+From:
+MAILER-DAEMON at gtalug.org (Mail Delivery System)
+Date:
+21/10/16 08:43 PM
+
+To:
+talk-bounces at gtalug.org
+
+
+This is the mail system at host penguin.gtalug.org.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<subscriptions at flamy.ca>: host mail.flamy.ca[2600:3c03:e000:173::1] said: 554
+    5.7.1 Service unavailable; Client host [2600:3c03::f03c:91ff:fe50:ea0a]
+    blocked using sbl.spamhaus.org; https://www.spamhaus.org/sbl/query/SBLCSS
+    (in reply to RCPT TO command)
+
+<lsorense at csclub.uwaterloo.ca>: host
+    mail.csclub.uwaterloo.ca[2620:101:f000:4901:c5c::5e2d] said: 554 5.7.1
+    Service unavailable; Client host [2600:3c03::f03c:91ff:fe50:ea0a] blocked
+    using zen.spamhaus.org; https://www.spamhaus.org/sbl/query/SBLCSS (in reply
+    to RCPT TO command)
+
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20161023/91d689b6/attachment.html>
+
+From hi at gtalug.org  Mon Oct 24 10:00:01 2016
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Mon, 24 Oct 2016 10:00:01 -0400 (EDT)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20161024140001.A1D07E68D@penguin.gtalug.org>
+
+Look at me! I'm Mr. Meeseeks!
+
+The GTALUG Operations meeting is tonight at 7:30pm.
+
+You can see the agenda here: <http://board.gtalug.org/2016-10-24/agenda.html>.
+
+You can see open issues/todos here: <http://git.io/vB4EO>
+
+There is a regular GTALUG meeting coming up on 08 November, 2016; is the GTALUG Board/Executive prepared???
+
+I'm Mr. Meeseeks! Look at me! (poof)
+
+From gordontc at look.ca  Mon Oct 24 11:47:29 2016
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Mon, 24 Oct 2016 11:47:29 -0400
+Subject: [GTALUG-Ops] ICANN Report fo October 2016
+Message-ID: <1477324049.11957.1.camel@look.ca>
+
+Here it is.
+
+
+Gordon
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: 20161024.pdf
+Type: application/pdf
+Size: 18543 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20161024/2d924bec/attachment.pdf>
+
+From me at mylesbraithwaite.com  Mon Oct 24 13:09:01 2016
+From: me at mylesbraithwaite.com (=?UTF-8?B?TXlsZXMgQnJhaXRod2FpdGUg8J+Rvg==?=)
+Date: Mon, 24 Oct 2016 13:09:01 -0400
+Subject: [GTALUG-Ops] Chris Browne on the GTALUG Board
+Message-ID: <580E402D.2060609@mylesbraithwaite.com>
+
+Christopher Browne was elected to the GTALUG Board at the Annual General
+Meeting on 11 October 2016.
+
+Alex Volkov and Myles Braithwaite were re-elected for another term.
+
+Mike Kallies left the board.
+
+The GTALUG organization thanks Mike Kallies for this time, talent and
+expertise while being a member of the GTALUG board.
+
+From davec-b at rogers.com  Mon Oct 24 18:27:21 2016
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Mon, 24 Oct 2016 18:27:21 -0400
+Subject: [GTALUG-Ops] I have a new talk in development,
+	"Thirteen Hours of Go"
+In-Reply-To: <b631e1a1-0faf-dd58-bbc6-277b4aadaeb3@rogers.com>
+References: <b631e1a1-0faf-dd58-bbc6-277b4aadaeb3@rogers.com>
+Message-ID: <504455d6-bd0e-267f-d8a5-fc71ca6facd0@rogers.com>
+
+On 17/10/16 08:13 AM, David Collier-Brown wrote:
+> About 1/3 done, it's about learning a new language by using col stuff 
+> in the process of rewriting a program I've done several times before. 
+> When I have a complete draft I'll pass it on.
+>
+> --dave
+>
+I'm done, but the list doesn't like me sending odp files to it (;-))
+
+--dave
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From hi at gtalug.org  Tue Oct 25 10:00:01 2016
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Tue, 25 Oct 2016 10:00:01 -0400 (EDT)
+Subject: [GTALUG-Ops] I'm Mr. Meeseeks! Look at me!
+Message-ID: <20161025140001.C8631E469@penguin.gtalug.org>
+
+I'm Mr. Meeseeks! Look at me!
+
+There is a GTALUG meeting tonight at 7:30pm, is the GTALUG Board/Executive prepared?
+
+<http://gtalug.org/meeting/2016-11/>
+
+Check the GitHub for meeting status: <http://git.io/vB40S>
+
+Look at me! I'm Mr. Meeseeks! (poof)
+
+From gordontc at look.ca  Tue Oct 25 10:09:41 2016
+From: gordontc at look.ca (Gordon Chillcott)
+Date: Tue, 25 Oct 2016 10:09:41 -0400
+Subject: [GTALUG-Ops] Ryerson Student Body
+Message-ID: <1477404581.3289.1.camel@look.ca>
+
+Hi, all:
+
+As promised at last night's meeting, here is a link to the "executives"
+page.
+
+https://cscu.scs.ryerson.ca/executive-2016-2017/
+
+
+
+Gordon
+
+
+
