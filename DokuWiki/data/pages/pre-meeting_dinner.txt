@@ -9,12 +9,6 @@
   * [[http://www.yelp.ca/biz/banh-mi-boys-toronto-2|Yelp Review]]
   * visited 2015 December 8
 
-==== Donair Kebab House (Turkish) ====
-
-  * **Address**: 391 Yonge Street
-  * Stewart remembers: tasty shawarma, but limited seating and cash only
-  * [[http://www.yelp.ca/biz/donair-kebab-house-toronto|Yelp Review]]
-  * visited 2015 October 13
 
 ==== Ethiopiques (Ethiopian) ====
   * **Address**: 227 Church Street
@@ -73,7 +67,7 @@
 
   * **Address**: 361 Yonge St.  (A little hard to recognize from the street but it is there)
   * [[http://www.yelp.ca/biz/roti-roll-caribbean-cuisine-toronto|Yelp Review]]
-  * visited 2015 November 10
+  * visited 2015 November 10, 2016 July 12
 
 ==== North of Brooklyn ====
 
@@ -90,8 +84,9 @@
 ==== Bocconcini Pizza and Wings ====
   * **Address**: 96 Gerrard St. E
   * replacing Love at First Bite
-  * no reviews found https://www.zomato.com/toronto/bocconcini-pizza-and-wings-church-and-wellesley
-
+  * yelp  review https://www.yelp.com/biz/bocconcini-toronto-toronto
+  * https://www.zomato.com/toronto/bocconcini-pizza-and-wings-church-and-wellesley
+  * Most recently visited in August 2016; it was a bit further changed, but still carried pizza
 ==== z-teca Mexican ====
   * **Address**: 66 Gerrard St. E
   * Burritos etc.
@@ -101,10 +96,12 @@
 ==== Thai on Yonge ====
   * **Address**: second floor, 370 Yonge Street (South of Gerrard St.)
   * suggested by Bob Jonkman
+  * visted 2016 May 10
   * [[https://www.yelp.ca/biz/thai-on-yonge-toronto-3]]
 
 ==== Basil Box ====
   * **Address**: 351 Yonge St. (part of Ryerson SLC building)
+  * **Visited**: [[meeting:2016-06|14 June 2016]]
   * [[https://www.yelp.ca/biz/basil-box-toronto|Yelp Review]]
   * [[http://www.blogto.com/restaurants/basil-box-toronto|Blog.TO Review]]
 
@@ -162,6 +159,20 @@
   * **Address**: 10 Dundas Street E
   * [[https://www.yelp.ca/biz/curry-and-co-toronto|Yelp Review]]
 
+===== Too noisy? =====
+
+==== Salad King ====
+  * 340 Yonge Street, Second Floor
+  * Thai.  Cheap and cheerful.  Communal tables.
+  * http://saladking.com/
+
+==== Kinka Izakaya Original ====
+  * 398 Church St, north of Gerrard
+  * formerly Guu
+  * should be given another chance
+  * http://www.kinkaizakaya.com/
+  * https://www.yelp.com/biz/kinka-izakaya-original-toronto
+
 ===== Too Distant? =====
 
 ==== Gandhi Cuisine ====
@@ -176,6 +187,13 @@
 
 
 ===== Closed =====
+==== Donair Kebab House (Turkish) ====
+
+  * **Address**: 391 Yonge Street
+  * Stewart remembers: tasty shawarma, but limited seating and cash only
+  * [[http://www.yelp.ca/biz/donair-kebab-house-toronto|Yelp Review]]
+  * visited 2015 October 13
+  * to be replaced by condos
 
 ==== The Restaurant Formerly Known As Love at First Bite ====
   * our former regular venue

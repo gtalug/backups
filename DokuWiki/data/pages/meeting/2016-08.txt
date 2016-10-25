@@ -1,0 +1,22 @@
+====== 9 August 2016 - On Disruption & Killer Apps with Scott Elcomb ======
+
+  * [[https://gtalug.org/meeting/2016-08/|Meeting Link]]
+
+===== Pre-Meeting Announcements =====
+
+  * Upcoming Meetings
+    * 13th September:
+      * Chris Browne and Myles Braithwaite on **Postgres**
+    * 11th October:
+      * Alex Volkov and Myles Braithwaite on **Ansible**
+    * 8th November:
+      * Bill Thanis on **Ceph**
+  * Upcoming Events
+    * 
+
+===== Notes =====
+
+===== Meta =====
+
+  * **Dinner**: 
+  * **Attendance**: 

@@ -6,10 +6,10 @@
 
   * [[event:linux_in_the_park_2016|Linux in the Park 2016]]
     * Possible Dates
-      * 16 July
-      * 23 July
-      * 13 August
-      * 20 August
+      * <del>16 July</del>
+      * **23 July**
+      * <del>13 August</del>
+      * <del>20 August</del>
     * Planning Logistics
       * All planning is being done in the wiki @ <http://bit.ly/litp-2016>
       * What do people want?
@@ -21,6 +21,16 @@
       * 28 June 2016 at 7pm - [[http://www.meetup.com/Toronto-Perl-Mongers/events/231418278/|Damian Conway -- On the Shoulders of Giants: 400 Years of Perl 6]]
     * July
       * 6 July 2016 at 7pm - [[https://www.eventbrite.ca/e/guerilla-gardening-seed-bombs-tickets-25675723781?aff=es2|Guerilla Gardening: Seed Bombs at HackLab.TO]]
-      * 27 July 2016 at 6pm - [[http://www.meetup.com/Toronto-Pivotal-User-Group/events/227459952/|BOSH 101 with David Ing]] - Our [[https://gtalug.org/meeting/2014-08/|August 2014]] meeting was on BOSH so if you are looking for a referesh you should definitly check this out.
+      * 27 July 2016 at 6pm - [[http://www.meetup.com/Toronto-Pivotal-User-Group/events/227459952/|BOSH 101 with David Ing]] - Our [[https://gtalug.org/meeting/2014-08/|August 2014]] meeting was on BOSH so if you are looking for a refresh you should definitely check this out.
     * August
       * 6 August 2016 at 6pm - [[http://www.meetup.com/PebbleTO/events/224057584/|Dan Harrison on his battles and winnings creating a SalesForce client for Pebble Watch]] - Pebble Toronto Developer Meetup
+
+===== Notes =====
+
+===== Meta =====
+
+  * **Dinner**: [[:pre-meeting_dinner#basil_box|Basil Box]]
+  * **Attendance**: 28
+  * **End Time**: 9:02pm
+  * Meeting was formated as a 30 minute talk with the rest being an speaker lead discussion.
+  * You can reserve tables at the library.

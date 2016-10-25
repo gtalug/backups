@@ -1,0 +1,24 @@
+====== 12 July 2016 - The Document Foundation with Giovanni Caligaris ======
+
+  * [[https://gtalug.org/meeting/2016-07/|Meeting Link]]
+
+===== Pre-Meeting Announcements =====
+
+  * [[event:linux_in_the_park_2016|Linux in the Park 2016]] is on 23 July at 2pm at Dufferin Grove Park.
+    * Planning Logistics
+      * All planning is being done in the wiki @ <http://bit.ly/litp-2016>
+      * What do people want?
+      * What do people plan to bring?
+  * August 2016 Meeting with [[meeting:2016-08|Scott Elcomb On Disruption & Killer Apps]].
+  * Upcoming Events
+    * July
+      * 27 July 2016 at 6pm - [[http://www.meetup.com/Toronto-Pivotal-User-Group/events/227459952/|BOSH 101 with David Ing]] - Our [[https://gtalug.org/meeting/2014-08/|August 2014]] meeting was on BOSH so if you are looking for a refresh you should definitely check this out.
+    * August
+      * 6 August 2016 at 6pm - [[http://www.meetup.com/PebbleTO/events/224057584/|Dan Harrison on his battles and winnings creating a SalesForce client for Pebble Watch]] - Pebble Toronto Developer Meetup
+
+===== Notes =====
+
+===== Meta =====
+
+  * **Dinner**: 
+  * **Attendance**: 
