@@ -103,7 +103,9 @@ GLOBAL_PIPELINE.insert(1, 'SpamAssassin')
 
 SPAMASSASSIN_HOST = '127.0.0.1:783'
 
-ALLOW_FROM_IS_LIST = Yes
+DEFAULT_REPLY_GOES_TO_LIST = 1
+REMOVE_DKIM_HEADERS = Yes
+DEFAULT_FROM_IS_LIST = 1
 
 # Note - if you're looking for something that is imported from mm_cfg, but you
 # didn't find it above, it's probably in /usr/lib/mailman/Mailman/Defaults.py.
