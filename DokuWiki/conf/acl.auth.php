@@ -11,3 +11,4 @@ meeting:*	@user	8
 operations:*	@ALL	1
 operations:*	@operations	8
 start	@admin	2
+event:linux_in_the_park_2016	@ALL	1
