@@ -114,5 +114,17 @@ homebrewhostingclub-request:      "|/var/lib/mailman/mail/mailman request homebr
 homebrewhostingclub-subscribe:    "|/var/lib/mailman/mail/mailman subscribe homebrewhostingclub"
 homebrewhostingclub-unsubscribe:  "|/var/lib/mailman/mail/mailman unsubscribe homebrewhostingclub"
 
+## testing mailing list
+testing:              "|/var/lib/mailman/mail/mailman post testing"
+testing-admin:        "|/var/lib/mailman/mail/mailman admin testing"
+testing-bounces:      "|/var/lib/mailman/mail/mailman bounces testing"
+testing-confirm:      "|/var/lib/mailman/mail/mailman confirm testing"
+testing-join:         "|/var/lib/mailman/mail/mailman join testing"
+testing-leave:        "|/var/lib/mailman/mail/mailman leave testing"
+testing-owner:        "|/var/lib/mailman/mail/mailman owner testing"
+testing-request:      "|/var/lib/mailman/mail/mailman request testing"
+testing-subscribe:    "|/var/lib/mailman/mail/mailman subscribe testing"
+testing-unsubscribe:  "|/var/lib/mailman/mail/mailman unsubscribe testing"
+
 ## legacy -- the archive of tlug@ss.org
 ## nothing here, no subscription service available for this list.
