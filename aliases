@@ -14,11 +14,11 @@ security: root
 root: myles, mike
 
 ## email forwards
-hi: myles
+hi: myles, scott, alex
 gordon: gordontc@look.ca
 
 ### position based emails
-speaker-coordinator: scott@ss.org
+speaker-coordinator: scott, myles
 speakers: speaker-coordinator
 
 pr: myles
