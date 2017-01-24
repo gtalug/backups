@@ -1,12 +1,3 @@
-1468954059	38.104.192.90	E	event:linux_in_the_park_2016	myles	[Other Things I'm Bringing] 		-16
-1468954069	38.104.192.90	E	event:linux_in_the_park_2016	myles	[I'm Bringing to Share (Food)] 		17
-1469109712	206.248.137.140	E	event:linux_in_the_park_2016		[I'm Bringing to Share (Food)] 		31
-1469109904	206.248.137.140	E	event:linux_in_the_park_2016		[I'm Bringing to Share (Drinks)] 		64
-1469201365	199.15.87.4	E	event:linux_in_the_park_2016		[Other Things I'm Bringing] 		25
-1469201390	199.15.87.4	E	event:linux_in_the_park_2016		[I'm Bringing to Share (Drinks)] 		30
-1469201436	199.15.87.4	E	event:linux_in_the_park_2016		[I'm Bringing to Share (Food)] 		7
-1469456406	38.104.192.90	E	start	myles	[GTALUG Wiki] 		-60
-1469913782	69.159.48.215	E	meeting:2016-08	myles	[Pre-Meeting Announcements] 		160
 1469913841	69.159.48.215	E	meeting:2016-08	myles	[Pre-Meeting Announcements] 		52
 1470168513	38.104.192.90	E	meeting:2016-08	myles	[Pre-Meeting Announcements] 		27
 1470686256	162.213.105.43	E	pre-meeting_dinner	hugh	[Bocconcini Pizza and Wings] 		52
@@ -18,3 +9,12 @@
 1473787085	38.104.192.90	E	meeting:2016-09	myles	[Notes] 		-2
 1473787097	38.104.192.90	E	meeting:2016-09	myles	[Notes] 		-4
 1473789477	199.15.87.4	E	pre-meeting_dinner		[Bocconcini Pizza and Wings] 		95
+1481917309	2607:f2c0:94d2:ee00:3613:e8ff:fe26:8f9f	C	meeting:2016-12	revident	created		901
+1481917658	2607:f2c0:94d2:ee00:3613:e8ff:fe26:8f9f	E	meeting:2016-12	revident	[Notes] 		121
+1484062871	38.104.192.90	C	meeting:2017-01	myles	created		819
+1484062883	38.104.192.90	E	meeting:2017-01	myles			-208
+1484062905	38.104.192.90	E	meeting:2017-01	myles			0
+1484148184	206.248.137.140	e	meeting:2017-01	scruss	[Notes] added Christopher Browne's whiteboard notes		127
+1484149283	38.104.192.90	E	guide_to_presenting	myles			-1016
+1484149318	38.104.192.90	E	guide_to_presenting	myles			25
+1484150727	199.15.87.4	E	meeting:2017-01		[Meta] 		44

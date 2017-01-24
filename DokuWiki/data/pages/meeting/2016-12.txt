@@ -1,0 +1,29 @@
+====== 13 December 2016 - Exposing High Level InnoDB Mechanics via Tunable System Variables in MySQL with Peter Sylvester ======
+
+  * [[https://gtalug.org/meeting/2016-12/|Meeting Link]]
+
+===== Pre-Meeting Announcements =====
+
+We're looking for fresh volunteers and Ideas with these activities:
+  * Video Recording - contact Alex V.
+  * Logo Redesign - contact Stewart R.
+  * General system administration - contact Myles B.
+  * ICANN - contact Gord
+  * Website or Meeting Content - contact Scott S.
+  * Web site design refresh - contact Myles B.
+  * Mailman 3 deployment - contact Alex V.
+  * Are we the We we wanna be? - contact Stewart R.
+  * General PR - contact Myles B.
+  * Nearby user groups in Southern Ontario - hi@gtalug.org
+
+ 
+===== Notes =====
+
+  * Peter Sylvester's Slides
+    * {{ :meeting:2016-12-innodb-internals.pdf |PDF}}
+    * [[https://www.pythian.com/blog/exposing-innodb-internals-via-system-variables-part-1-memory/|Indepth Blog Series]]
+  
+===== Meta =====
+
+  * **Dinner**: 8
+  * **Attendance**: 15

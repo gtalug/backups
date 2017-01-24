@@ -1,0 +1,21 @@
+====== 10 January 2017 - Round Table Q&A ======
+
+  * [[https://gtalug.org/meeting/2017-01/|Meeting Link]]
+
+===== Pre-Meeting Announcements =====
+
+  * Call of Volunteers
+    * If you are interested in helping grow the GTALUG organisation, come out to our Operations meeting the forth Monday of the month (this month on the 23rd January) at HackLab.TO (corner of Dufferin and Queen).
+  * Upcoming Computing Events
+    * 14 January - Toronto Mesh [[https://tomesh.net/state-of-our-networks/|State of our Networks 2017 Mini-Conference]]
+ 
+===== Notes =====
+
+Whiteboard photos courtesy Christopher Browne:
+{{:meeting:gtalug20170110-000.jpg?200|}}
+{{:meeting:gtalug20170110-001.jpg?200|}}
+===== Meta =====
+
+  * **Dinner**: 
+  Kaiju, at Food Court of the Shops at Aura
+  * **Attendance**: 
