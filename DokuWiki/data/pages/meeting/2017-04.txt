@@ -1,0 +1,50 @@
+====== 11 April 2017 - A Bit More Than Mostly Searchable: Scanned Paper You Can Find with Stewart Russell ======
+
+  * [[https://gtalug.org/meeting/2017-04/|Meeting Link]]
+
+===== Pre-Meeting Announcements =====
+
+  * Upcoming Meetings:
+    * 9 May - //Lessons learnt as a maintainer// with Dhaval Giani
+    * 13 June - //Intelligent Availability; The evolution of High Availability// with Madison Kelly
+
+===== Notes =====
+
+  * Video! [[https://www.youtube.com/watch?v=EH_txB_hJWw|A Bit More Than Mostly Searchable: Scanned Paper You Can Find with Stewart Russell - YouTube]]
+  * Slide deck: [[https://scruss.com/talks/02017/gtalug201704-ABitMoreThanMostlySearchable.odp|ABitMoreThanMostlySearchable.odp]]
+
+  * Good-enough-for-me //scan → OCR → PDF// script: [[https://scruss.com/talks/02017/dwim-ocr.sh|dwim-ocr.sh]]. Uses ghostscript, tesseract, pdfbeads (Ruby) and (Gnu) parallel. The original idea came from an outline script on the [[https://forum.diybookscanner.org/index.php?sid=0be98f164e262176b6689f9892aa5a64|DIY Book Scanner]] forum circa 2010.
+  * sample multi-page duplex document: https://scruss.com/talks/02017/EPSON012.PDF
+
+==== Moar Notes ====
+
+  * [[http://gscan2pdf.sourceforge.net/|gscan2pdf]], if you like graphical things, //probably// does what you want …
+
+  * alternative to [[https://en.wikipedia.org/wiki/Comic_book_archive|cbz]] format that's readable as a PDF yet retains JPEG files intact: collate with [[https://gitlab.mister-muffin.de/josch/img2pdf|img2pdf]], burst apart with ''pdfimages -j …'' from [[https://poppler.freedesktop.org/|Poppler]].
+
+  * PDF specs and refs:
+    * [[https://www.adobe.com/content/dam/Adobe/en/devnet/acrobat/pdfs/PDF32000_2008.pdf|PDF 32000-1:2008]] standard and accompanying [[https://www.adobe.com/pdf/pdfs/ISO32000-1PublicPatentLicense.pdf|Public Patent License]].
+    * PDF/A archival format: [[https://ghostscript.com/doc/current/Ps2pdf.htm#PDFA|Creating a PDF/A document from PostScript in ghostscript]], [[https://stackoverflow.com/questions/1659147/how-to-use-ghostscript-to-convert-pdf-to-pdf-a-or-pdf-x/9343820#9343820|converting a PDF to PDF/A]]: ''gs -dPDFA -dBATCH -dNOPAUSE -dUseCIEColor -sProcessColorModel=DeviceCMYK -sDEVICE=pdfwrite -sPDFACompatibilityPolicy=1 -sOutputFile=output_filename.pdf input_filename.pdf''. If you need to work out if the document is colour or not, ghostscript's [[https://ghostscript.com/doc/current/Devices.htm|inkcov]] device can tell you if colour was used at all.
+    * Cryptographic signing: Rough process here, using an X.509 certificate issued by ARRL: [[http://scruss.com/blog/2011/10/09/creating-secure-digital-qsl-cards-with-your-lotw-certificate/|Creating secure digital QSL cards with your LoTW certificate]]. I wonder if you could use P12 certs issued by [[https://letsencrypt.org/|Let’s Encrypt]]?
+
+  * [[http://scantailor.org/|Scan Tailor]] does a decent job of slicing up books.
+
+  * other OCR software: [[https://launchpad.net/cuneiform-linux|Cuneiform]] used to be a contender and may still be useful. Not so sure about Gnu ocrad, gocr/jocr, … 
+
+  * tesseract:
+    * ''tesseract -psm 0 …'' will output orientation and language heuristics, useful if your scanner spits out duplex pages flipped. It's a bit slow, but faster than manually digging through a PDF object stream looking at the individual convolution matrices.
+    * training tesseract is definitely worth it if you have a limited domain, say line-printed numerals. (You might have less success with the completely illegible old German [[https://en.wikipedia.org/wiki/S%C3%BCtterlin|Sütterlin]] cursive, though.)
+
+  * JPEG 2000: The least painful way I found of making JPEG 2000 files from colour images was with ImageMagick/GraphicMagick's **convert** command: ''convert -define 'jp2:rate=0.008' in.png out.jp2''. More (possibly dated) ways of mucking about with JP2s are here: [[http://scruss.com/blog/2014/06/16/jpeg-2000-on-ubuntu-without-anyone-getting-stabbed/|JPEG 2000 on Ubuntu — without anyone getting stabbed]]
+
+==== Post meeting observations ====
+
+  * Chris B. suggested [[https://github.com/oniony/TMSU|oniony/TMSU: TMSU lets you tags your files and then access them through a nifty virtual filesystem from any other application.]]
+  * [[http://weasyprint.org/|WeasyPrint]] is the rather clever Python-based web→PDF printer application I mentioned
+  * If you're running a Gnome-based system and the [[https://wiki.gnome.org/Projects/Tracker/|Tracker]] desktop search engine is running amuck, it's probably getting stuck indexing a particular file. I posted a workaround here: [[https://askubuntu.com/questions/914581/no-progress-updates-from-gnome-tracker/914602#914602|no progress updates from gnome tracker - Ask Ubuntu]]
+
+===== Meta =====
+
+  * **Dinner**: Doner Kebab House, 391 Yonge Street
+  * **Attendance**: 15
+  * [[operations:meeting:2017-04|Ops Notes]]

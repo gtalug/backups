@@ -1,0 +1,23 @@
+====== Members of the Board ======
+
+People who are elected by the GTALUG Members to server on the GTALUG Board.
+
+  * **Myles Braithwaite**
+    * Elected: 2016-2018
+    * Email: me@mylesbraithwaite.com
+    * Homepage: https://mylesb.ca/
+    * Social: [[https://twitter.com/MylesB|Twitter]] [[https://github.com/myles|GitHub]]
+  * **Christopher Browne**
+    * Elected: 2016-2018
+    * Email: cbbrowne@acm.org
+    * Homepage: http://linuxdatabases.info/
+    * Social: [[https://www.twitter.com/cbbrowne|Twitter]] [[https://github.com/cbbrowne|GitHub]]
+  * **Stewart Russell**
+    * Elected: 2015-2017
+  * **Scott Sullivan**
+    * Elected: 2015-2017
+    * Email: scott@revident.net
+    * Homepage: http://revident.net/
+    * Social: [[https://github.com/revident|GitHub]]
+  * **Alex Volkov**
+    * Elected: 2016-2018

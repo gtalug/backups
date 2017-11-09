@@ -1,19 +1,9 @@
 ====== Operations ======
 
-===== Roles =====
-
-  * Speaker Coordinator - Scott Sullivan
-  * P.R. Coordinator - Myles Braithwaite
-  * Systems Coordinator
-    * Alex V.
-    * Chris Browne
-    * Myles Braithwaite
-  * Community Coordinator
-    * Mailing List Moderator
-      * Alex V., Bill Thanis, Myles Braithwaite
-    * Meeting Moderator
-      * Scott Sullivan (backup Myles Braithwaite)
-
+  * [[operations:board|GTALUG Board]]
+  * [[operations:roles:start|Roles]]
+  * [[operations:meeting:start|Upcoming Meetings]]
+  * [[operations:project:start|Projects]]
 ===== Committees =====
 
   * [[https://community.icann.org/pages/viewpage.action?pageId=11141800|NARALO ICANN]]

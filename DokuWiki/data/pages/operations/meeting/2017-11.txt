@@ -1,0 +1,5 @@
+====== 14 November 2017 ======
+
+  * Building a 3D Printer from Scratch - //Alex Volkov//
+  * Docker - //Greg Martyn//
+    * Since introducing his workplace to Docker in 2014, Greg Martyn has used it for local development and in production for dozens of websites. He'll walk us through the creation of a Dockerized website from start to finish.

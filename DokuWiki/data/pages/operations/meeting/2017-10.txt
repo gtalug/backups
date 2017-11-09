@@ -1,0 +1,5 @@
+====== 10 October 2017 ======
+
+Mike Hoye on The State of Mozilla
+
+In November, Mozilla will release Firefox 57, a major update to the browser with a lot of new technology and features under the hood. Mike Hoye will be joining us to talk where Firefox, Mozilla and the Web are today, and where they're going.

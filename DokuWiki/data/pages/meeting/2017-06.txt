@@ -1,0 +1,13 @@
+====== 13 June 2017 Intelligent Availability™; The Evolution of High Availability with Alex Bruneau ======
+
+  * [[https://gtalug.org/meeting/2017-06/|Meeting Link]]
+
+===== Notes =====
+
+
+
+===== Meta =====
+
+  * **Dinner**:
+  * **Attendance**: 
+  * [[operations:meeting:2017-06|Ops Notes]]

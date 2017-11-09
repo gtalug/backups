@@ -1,0 +1,8 @@
+====== 11 April 2017 ======
+
+  * Speaker: Stewart Russell
+  * Title: A Bit More Than Mostly Searchable: Scanned Paper You Can Find 
+
+Building on a GTALUG Lightning Talk from 2015, Stewart goes over what 
+you'll need to turn messy piles of paper into a (mostly) organized 
+archive of compact searchable electronic files. 

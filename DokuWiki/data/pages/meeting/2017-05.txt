@@ -1,0 +1,13 @@
+====== 9th May 2017 - Lessons learnt as a maintainer with Dhaval Giani ======
+
+  * [[https://gtalug.org/meeting/2017-05/|Meeting Link]]
+
+===== Notes =====
+
+  * {{ :meeting:2017-05-slides.pdf |Slides}}
+  * [[http://contributor-covenant.org/|Contributor Covenant]]
+===== Meta =====
+
+  * **Dinner**:
+  * **Attendance**: 
+  * [[operations:meeting:2017-05|Ops Notes]]

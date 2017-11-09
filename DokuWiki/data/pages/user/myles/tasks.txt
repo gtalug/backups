@@ -1,0 +1,29 @@
+====== Tasks ======
+
+This is a (living) list of my tasks at GTALUG:
+
+  * One-to-one communications
+    * Sending Announce Emails
+    * Social Networks ([[https://twitter.com/gtalug|Twitter]], [[https://www.facebook.com/gtalug|Facebook]], & [[https://mastodon.social/@gtalug|Mastodon]]).
+  * Managing the infrastructure
+    * Mailing lists
+      * Dealing with bad email providers
+    * Making sure ''gtalug.org'' isn't on any blacklists
+    * General server maintenance
+      * Upgrading the server
+      * Running ''sudo apt update && sudo apt upgrade'' ever couple of months
+      * Monitoring the ''root@gtalug.org'' email address
+  * Chair of the Board
+    * Make sure Chris has done the agenda before the Ops meeting
+    * Publish the meeting agenda and notes to ''board.gtalug.org''
+    * Attending board meetings.
+  * Mailing List Moderation
+    * Make sure people receive mailing list items properly
+    * Banning people when their email won't stop sending spam to the list
+    * Approving the first message people send to the list
+    * Being the point person for all issues related to the mailing list
+  * Speaker Coordinator
+    * email speaker before meeting
+    * see what requirements their talk needs 
+    * find speakers
+  * Updating the website

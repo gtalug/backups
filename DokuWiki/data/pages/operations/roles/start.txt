@@ -1,0 +1,13 @@
+====== Roles ======
+
+  * Speaker Coordinator - Scott Sullivan
+  * P.R. Coordinator - Myles Braithwaite
+  * Systems Coordinator
+    * Alex V.
+    * Chris Browne
+    * Myles Braithwaite
+  * Community Coordinator
+    * Mailing List Moderator
+      * Alex V., Bill Thanis, Myles Braithwaite
+    * Meeting Moderator
+      * Scott Sullivan (backup Myles Braithwaite)

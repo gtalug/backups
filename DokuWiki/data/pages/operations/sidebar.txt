@@ -1,0 +1,5 @@
+  * **[[operations:start]]**
+  * [[operations:meeting:start]]
+  * [[operations:project:start]]
+  * [[operations:roles:start]]
+  * [[operations:board]]

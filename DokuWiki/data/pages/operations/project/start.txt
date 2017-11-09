@@ -1,0 +1,30 @@
+====== Projects ======
+
+This is a list of projects GTALUG is going to, doing, and done.
+
+<columns 100% 33% - ->
+
+===== ToDo =====
+
+  * [[Mailman 3]]
+  * [[Website Refresh]]
+  * [[Branding Refresh]]
+  * [[Workshops]]
+
+<newcolumn>
+
+===== Doing =====
+
+  * [[Linode Migration]]
+
+<newcolumn>
+
+===== Ongoing =====
+
+  * [[Recording Meetings]]
+  * [[https://github.com/gtalug/mr-meeseeks|Mr. Meeseeks]] - GTALUG's tickler system.
+
+
+</columns>
+
+===== Done =====

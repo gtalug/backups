@@ -1,0 +1,6 @@
+====== 12 September 2017 ======
+
+  * CB Brown - xterm
+  * Greg M - Docker
+
+Myles to get talk description for Chris and Greg.

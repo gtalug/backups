@@ -1,0 +1,10 @@
+====== 9 May 2017 ======
+
+  * Speaker: Dhaval Giani
+  * Title: Lessons learnt as a maintainer
+  * Contact: [[user:myles|Myles]]
+
+I have been an upstream maintainer of libcgroup. As a maintainer, I 
+have had varied experiences which have taught me important lessons. 
+This talk goes over some anecdotes, and hopefully they provide some 
+humour and some lessons.

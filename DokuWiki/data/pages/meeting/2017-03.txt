@@ -1,0 +1,20 @@
+====== 14 March 2017 - Lightning Talks ======
+
+  * [[https://gtalug.org/meeting/2017-03/|Meeting Link]]
+
+===== Lightning Talks =====
+
+  * [[https://github.com/myles/2017-03-14-letsencrypt|Let's Encrypt All the Things]] - //[[user:myles|Myles Braithwaite]]//
+  * {{ :meeting:atmel-processor-presentation.pdf |Assembly Language Programming Atmel Microprocessors from a Linux platform}} ({{ :meeting:atmel-processor-paper.pdf |Paper}}) - //Peter Hiscocks//
+  * {{ :meeting:maas.odp |Metal-as-a-Service}}- //David Collier-Brown//
+  * How I Select Laptops (for Linux of Course!) - //D. Hugh Redelmeier//
+  * Raspberry Pi as a USB Network Gadget - //Stewart Russell//
+  * Lessons learned while maintaining libcgroup - //Dhaval Giani//
+  * [[https://www.slideshare.net/whiskeyjack/better-web-searching-with-duckduckgo|Better Web Searching with DuckDuckGo]] - //Dave Doyle//
+ 
+===== Notes =====
+
+===== Meta =====
+
+  * **Dinner**: 6 pm — [[https://www.openstreetmap.org/node/4734977180|Roti Roll Caribbean Cuisine]], 361 Yonge St - upstairs from //Buffet Palace//, and just north of //Wanda's Belgian Waffles//.
+  * **Attendance**: 

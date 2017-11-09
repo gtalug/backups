@@ -1,0 +1,28 @@
+====== 11 July 2017 - Lighting Talks ======
+
+  * [[https://gtalug.org/meeting/2017-07/|Meeting Link]]
+
+===== Pre-Meeting Announcements =====
+
+  * Upcoming Meetings:
+    * 11 July - //Tor Project// with Sukhbir Signh
+  * Linux in the Park
+    * 22 July at 2 pm
+    * HackLab.TO (corner of Queen West and Dufferin)
+
+===== Talks =====
+
+  * How does an enterprise distro kernel get made? with Dhaval Giani
+  * [[https://leaflessca.wordpress.com/2017/07/01/a-few-days-into-bdd/|Behaviour Directed Design]] with David Collier Brown
+  * Mastodon with Myles Braithwaite
+  * upspin with Mike
+  * Desktop Environments with David Ing
+  * Why Linux is like Pizza with Evan
+  * Yubikey with Giles Orr
+  * ?? with Stweart Russell
+  * ?? with ??
+===== Meta =====
+
+  * **Dinner**:
+  * **Attendance**: 
+  * [[operations:meeting:2017-07|Ops Notes]]
