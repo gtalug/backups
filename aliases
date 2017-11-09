@@ -11,21 +11,23 @@ ftp: root
 abuse: root
 noc: root
 security: root
-root: myles, mike
+root: mike, alex, scott
 
 ## email forwards
-hi: myles, scott, alex
+hi: scott, alex
 gordon: gordontc@look.ca
 
 ### position based emails
-speaker-coordinator: scott, myles
+speaker-coordinator: scott
 speakers: speaker-coordinator
 
-pr: myles
+pr: alex, scott
 
-system-coordinator: myles, alex, chris
+system-coordinator: alex, chris
 
-wiki-admin: myles
+wiki-admin: chris
+
+slack-matterbridge: myles
 
 ### commities
 outreach: info@outreach.gtalug.org
