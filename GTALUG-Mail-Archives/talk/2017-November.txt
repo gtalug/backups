@@ -1,0 +1,812 @@
+From james.knott at rogers.com  Wed Nov  1 08:54:08 2017
+From: james.knott at rogers.com (James Knott)
+Date: Wed, 1 Nov 2017 08:54:08 -0400
+Subject: [GTALUG] Appeals court keeps alive the never-ending Linux case,
+ SCO v. IBM | Ars Technica
+Message-ID: <e128861e-92bc-a0a1-209c-f7f53f4586b9@rogers.com>
+
+It's unbelievable that this is still going on.  I guess the zombies have
+to come out for Halloween.
+
+https://arstechnica.com/tech-policy/2017/10/appeals-court-keeps-alive-the-never-ending-linux-case-sco-v-ibm/
+
+
+From hgibson at eol.ca  Wed Nov  1 09:47:20 2017
+From: hgibson at eol.ca (Howard Gibson)
+Date: Wed, 1 Nov 2017 09:47:20 -0400
+Subject: [GTALUG] C64 Stuff
+Message-ID: <20171101094720.75310830eb19a4ad0b926983@eol.ca>
+
+   I am cleaning out my basement so that I can get a new furnace installed.  I have all sorts of books on Commodore_64s that I have no use for.  I have the C64, but I am keeping that.  
+
+   Does anybody out there have a use for old C64 books, or is this stuff landfill?
+
+-- 
+Howard Gibson 
+hgibson at eol.ca
+jhowardgibson at gmail.com
+http://home.eol.ca/~hgibson
+
+From scruss at gmail.com  Wed Nov  1 13:38:50 2017
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Wed, 1 Nov 2017 13:38:50 -0400
+Subject: [GTALUG] C64 Stuff
+In-Reply-To: <20171101094720.75310830eb19a4ad0b926983@eol.ca>
+References: <20171101094720.75310830eb19a4ad0b926983@eol.ca>
+Message-ID: <27492223-99ec-7c2c-8513-a5a483e21b95@gmail.com>
+
+Hi Howard>
+>    Does anybody out there have a use for old C64 books, or is this stuff landfill?
+
+Depends on the books. I know a bunch of folks from TPUG (the Toronto Pet
+Users Group, http://www.tpug.ca/) who would never let a C=-related title
+go by. But if you really need rid of them and are pretty sure that
+they're not super-special, you could recycle them without too many qualms.
+
+('Special' might include any Commodore tech bulletins, or of local
+interest would be anything to do with U. Waterloo's Commodore
+development work.)
+
+At last month's TPUG meeting, we had a demo of the Keyrah, a device that
+turns an old (preferably non-functional) 64 into a keyboard and case for
+a Raspberry Pi. If you like beige breadbins, spongy keyboards and no
+cursor keys, you'll love the Keyrah: http://wiki.icomp.de/wiki/Keyrah_V2
+
+cheers,
+ Stewart
+
+
+
+From alex at flamy.ca  Thu Nov  2 21:39:59 2017
+From: alex at flamy.ca (Alex Volkov)
+Date: Thu, 2 Nov 2017 21:39:59 -0400
+Subject: [GTALUG] July an October meeting videos are up
+Message-ID: <06bf54b9-bc4d-85c6-7dd4-975f8192564f@flamy.ca>
+
+Hello everyone,
+
+I edited an uploaded some of the meeting videos.
+
+State Of Mozilla with Mike Hoye -- 
+https://www.youtube.com/watch?v=2te7GbC_qGE
+
+July 2017 Lightning talks -- https://www.youtube.com/watch?v=syt2DkDRwYM
+
+Alex.
+
+From brad.fonseca at gmail.com  Fri Nov  3 08:46:57 2017
+From: brad.fonseca at gmail.com (Brad Fonseca)
+Date: Fri, 3 Nov 2017 08:46:57 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+Message-ID: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+
+Hello,
+
+I've seen this new technology (or not new...I'm not sure...it appears to
+be a new name for xdg-app) pop up on various forums. I had a look at
+their web site (http://flatpak.org/index.html#page-top) but haven't
+really investigated it with any rigour. It looks like it may have been
+developed by people associated with Fedora and may be a replacement for
+RPM, APT, and the like (https://en.wikipedia.org/wiki/Flatpak).
+
+In any case, has anyone on this list looked at this or used it? Is it
+any good? Is it a good replacement for RPM or APT? Am I off-track here
+asking that question?
+
+Thanks,
+
+Brad
+
+-- 
+Brad Fonseca
+Mobile: 416-876-2191
+XMPP: brad.fonseca at blah.im
+XMPP (alt): brad.fonseca at xmpp.dk
+
+From hugh at mimosa.com  Fri Nov  3 11:33:36 2017
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Fri, 3 Nov 2017 11:33:36 -0400 (EDT)
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+Message-ID: <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+
+| Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+
+|  It looks like it may have been
+| developed by people associated with Fedora and may be a replacement for
+| RPM, APT, and the like (https://en.wikipedia.org/wiki/Flatpak).
+| 
+| In any case, has anyone on this list looked at this or used it? Is it
+| any good? Is it a good replacement for RPM or APT? Am I off-track here
+| asking that question?
+
+I have not (knowingly) used this technology.  But Here's my take
+anyway (based on guess-work!):
+
+Packaging like dpkg and rpm is fine but the result is tied to a
+release of a distro.  The main reason is that the shared libraries are
+partially bound into the binary package.  But there are other subtle
+and annoying difference between distros that are visible to programs.
+
+Packaging little virtual machines is way more portable but somewhat
+expensive and awkward.  This is reasonable for a service but not most
+programs.
+
+Various folks have tried to find a middle ground.  The barriers are
+market buy-in, not technology.  There are two that I'm aware of:
+
+- Canonical's "snap"
+
+- "flatpak" sponsored by Red Hat
+
+As usual, Canonical appears to me to be more of a control freak than
+Red Hat.  Naturally, my preference is for the more open one, flatpak.
+
+But I'm not 100% on-board.  I like old-fashioned packages (mostly).
+
+The idea behind both, as I understand it, is to create a sandbox for
+each application.  I think that each application carries around its
+own libraries etc.  I hate the duplication implied.
+
+There is also a non-technical idea.  Since flatpaks are universal
+among Linux distros, the distro would no longer be in the business of
+distributing the package.  And no longer standing behind it for bug
+fixes and security vetting.
+
+Win: you no longer are tied to the (possibly old) version that your
+distro includes.  Example: python and perl projects seem to want to
+run repos for users that are orthogonal to distros, something this
+model would better support.
+
+Win: projects no longer have to package their stuff for the various
+distros.  They no longer have to match the downstream release cadence.
+
+Lose: you have to be a connoisseur of each project from which you take
+flatpaks.  Each one has a different development and QA process with
+possibly unknowable risks and rewards.
+
+Lose: when a bug is found and fixed in a shared library, each distro can
+fix it with one update.  But each flatpak and snap that uses that
+library needs to be re-issued and updated on each installation.
+
+Lose: I obsessively do updates.  On each of my Fedora systems, that
+amounts to "sudo dnf update".  On Windows, it is annoyingly more
+intricate:
+	check for updates
+		note: this must be repeated until no change happens
+	for x in firefox chrome Adobe Reader etc.
+		perform x's check-for-updates procedure
+	Microsoft Applications Store
+		check for downloads
+With flatpaks, Linux becomes more like Windows.
+
+Win or lose?  python 2 must die.  But with flatpaks or snaps, each
+program has its own universe so we don't need a flag day when everyone
+switches.  But everyone should switch.  Yesterday.
+
+Right now I'm fairly comfortable with Fedora and Red Hat's QA.  I
+don't really want to take that on myself.  Except for a few packages
+about which I have special knowledge or concerns.
+
+As an example of the role of distros, consider the Linux Kernel.  It
+used to be common for folks to take the Linus kernel and build it on
+their own machine and use it in place of their distro's kernel.  It
+wasn't too hard.  Linus went to some trouble to make sure a release
+was clean.  I infer that things have changed.  All distros take a raw
+release and fix it up before shipping it.  And you want those fixes.
+It's not impossible to build a Linus kernel and use it but it is
+probably not worthwhile.
+
+From dhaval.giani at gmail.com  Fri Nov  3 11:56:50 2017
+From: dhaval.giani at gmail.com (Dhaval Giani)
+Date: Fri, 3 Nov 2017 11:56:50 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+Message-ID: <CAPhKKr9iTUEnRVK3qzj+ekZ4KR-C5poM_g3W4FpszJgu175fvQ@mail.gmail.com>
+
+> As an example of the role of distros, consider the Linux Kernel.  It
+> used to be common for folks to take the Linus kernel and build it on
+> their own machine and use it in place of their distro's kernel.  It
+> wasn't too hard.  Linus went to some trouble to make sure a release
+> was clean.  I infer that things have changed.  All distros take a raw
+> release and fix it up before shipping it.  And you want those fixes.
+> It's not impossible to build a Linus kernel and use it but it is
+> probably not worthwhile.
+
+Define: all distros :-). Fedora keeps updating to the latest mainline
+(stable) and is quite aggressive in its upgrade schedule. RHEL, SLES
+(and other enterprise distros) not so much. RHEL and SLES have
+different stability models (which require them to backport a lot of
+patches). Canonical sticks to one release for its entire release life
+(which has them somewhere in between). The kernel is actually a really
+terrible example of flatpaks because it doesn't have dependencies like
+other packages.
+
+Dhaval
+
+From davecb.42 at gmail.com  Fri Nov  3 11:50:55 2017
+From: davecb.42 at gmail.com (David Collier-Brown)
+Date: Fri, 3 Nov 2017 11:50:55 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+Message-ID: <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+
+On 03/11/17 11:33 AM, D. Hugh Redelmeier via talk wrote:
+> | Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+>
+> |  It looks like it may have been
+> | developed by people associated with Fedora and may be a replacement for
+> | RPM, APT, and the like (https://en.wikipedia.org/wiki/Flatpak).
+> |
+> | In any case, has anyone on this list looked at this or used it? Is it
+> | any good? Is it a good replacement for RPM or APT? Am I off-track here
+> | asking that question?
+>
+> I have not (knowingly) used this technology.  But Here's my take
+> anyway (based on guess-work!):
+>
+> Packaging like dpkg and rpm is fine but the result is tied to a
+> release of a distro.  The main reason is that the shared libraries are
+> partially bound into the binary package.  But there are other subtle
+> and annoying difference between distros that are visible to programs.
+>
+> Packaging little virtual machines is way more portable but somewhat
+> expensive and awkward.  This is reasonable for a service but not most
+> programs.
+>
+> Various folks have tried to find a middle ground.  The barriers are
+> market buy-in, not technology.  There are two that I'm aware of:
+>
+> - Canonical's "snap"
+>
+> - "flatpak" sponsored by Red Hat
+>
+There's actually an NP_complete problem hiding in the process of 
+avoiding needing two different versions of a library, and numerous 
+people have tried to avoid it by
+
+- inventing an OS-level mechanism
+
+- moving individual instances of the problem into different virtual machines
+
+- restricting the danger area to only one language
+
+This has motivated part of the flatpack and related work: for more info 
+that you wanted, see also 
+https://leaflessca.wordpress.com/2017/02/12/dll-hell-and-avoiding-an-np-complete-problem/
+
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From jsellens at syonex.com  Fri Nov  3 13:04:09 2017
+From: jsellens at syonex.com (John Sellens)
+Date: Fri, 3 Nov 2017 13:04:09 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+Message-ID: <20171103170409.GA27942@syonex.com>
+
+I've long found it disappointing the way shared libraries are dealt with
+in linux and other OSs.
+
+To me, the obvious solutions is to install every library into a directory
+named for the version, or name the library itself with a version number.
+Then, if you wish, a default version can be chosen and linked/symlinked
+into the default directory.
+
+That way, a program that wants a particular version gives the
+compiler/linker the appropriate search path to find the preferred version.
+
+And of course, once you've built a working version, you can choose to
+static link it rather than use shared libraries.
+
+We solved this in the obvious way at UWaterloo in the late 1980's (as
+part of xhier).  I still shake my head that this kind of thing is still
+a problem.
+
+Cheers!
+
+John
+
+
+On Fri, 2017/11/03 11:50:55AM -0400, David Collier-Brown via talk <talk at gtalug.org> wrote:
+| This has motivated part of the flatpack and related work: for more info that
+| you wanted, see also https://leaflessca.wordpress.com/2017/02/12/dll-hell-and-avoiding-an-np-complete-problem/
+| 
+| 
+| --dave
+
+From dhaval.giani at gmail.com  Fri Nov  3 13:09:47 2017
+From: dhaval.giani at gmail.com (Dhaval Giani)
+Date: Fri, 3 Nov 2017 13:09:47 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <20171103170409.GA27942@syonex.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+ <20171103170409.GA27942@syonex.com>
+Message-ID: <CAPhKKr_=phN4rdxTtpwGTnrShT48-ZmRyyZ=xpeckQA+h1HYZw@mail.gmail.com>
+
+On Fri, Nov 3, 2017 at 1:04 PM, John Sellens via talk <talk at gtalug.org> wrote:
+> I've long found it disappointing the way shared libraries are dealt with
+> in linux and other OSs.
+>
+> To me, the obvious solutions is to install every library into a directory
+> named for the version, or name the library itself with a version number.
+> Then, if you wish, a default version can be chosen and linked/symlinked
+> into the default directory.
+>
+> That way, a program that wants a particular version gives the
+> compiler/linker the appropriate search path to find the preferred version.
+>
+
+How do you ensure security updates happen everywhere, or that you are
+not linking to an insecure version? What about old software which is
+no longer maintained? Also work is not duplicated?
+
+Dhaval
+
+From jsellens at syonex.com  Fri Nov  3 13:22:02 2017
+From: jsellens at syonex.com (John Sellens)
+Date: Fri, 3 Nov 2017 13:22:02 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <CAPhKKr_=phN4rdxTtpwGTnrShT48-ZmRyyZ=xpeckQA+h1HYZw@mail.gmail.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+ <20171103170409.GA27942@syonex.com>
+ <CAPhKKr_=phN4rdxTtpwGTnrShT48-ZmRyyZ=xpeckQA+h1HYZw@mail.gmail.com>
+Message-ID: <20171103172202.GC27942@syonex.com>
+
+Those are not problems which are specific to linking to/using particular
+versions of libraries.
+
+How do you ensure that security updates of commands and configuration
+files happen?  It's not a new or different problem.
+
+One can choose to use the default version, which by implication will
+be the latest and greatest version that is installed on the machine.
+And your program/package will get updates as they are installed.
+
+If you use a particular version of the library:
+- a local admin can choose to accept the risk
+- a package maintainer can label the package risky, and/or
+  delete/disable/deprecate the package
+- a program maintainer can update the code to use the new version
+
+One can't abdicate responsibilty for security by assuming that your
+binary will run with a secure version of a library.
+
+Cheers
+
+John
+
+
+
+On Fri, 2017/11/03 01:09:47PM -0400, Dhaval Giani <dhaval.giani at gmail.com> wrote:
+| How do you ensure security updates happen everywhere, or that you are
+| not linking to an insecure version? What about old software which is
+| no longer maintained? Also work is not duplicated?
+| 
+| Dhaval
+
+From hugh at mimosa.com  Fri Nov  3 13:29:09 2017
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Fri, 3 Nov 2017 13:29:09 -0400 (EDT)
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <CAPhKKr9iTUEnRVK3qzj+ekZ4KR-C5poM_g3W4FpszJgu175fvQ@mail.gmail.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <CAPhKKr9iTUEnRVK3qzj+ekZ4KR-C5poM_g3W4FpszJgu175fvQ@mail.gmail.com>
+Message-ID: <alpine.LFD.2.21.1711031311230.15980@redeye.mimosa.com>
+
+| From: Dhaval Giani via talk <talk at gtalug.org>
+
+| > As an example of the role of distros, consider the Linux Kernel.  It
+| > used to be common for folks to take the Linus kernel and build it on
+| > their own machine and use it in place of their distro's kernel.  It
+| > wasn't too hard.  Linus went to some trouble to make sure a release
+| > was clean.  I infer that things have changed.  All distros take a raw
+| > release and fix it up before shipping it.  And you want those fixes.
+| > It's not impossible to build a Linus kernel and use it but it is
+| > probably not worthwhile.
+| 
+| Define: all distros :-).
+
+I think that my description covers them all.  That does not in any way
+imply that all distros do identical things.
+
+| Fedora keeps updating to the latest mainline
+| (stable) and is quite aggressive in its upgrade schedule. RHEL, SLES
+| (and other enterprise distros) not so much. RHEL and SLES have
+| different stability models (which require them to backport a lot of
+| patches). Canonical sticks to one release for its entire release life
+| (which has them somewhere in between).
+
+Sure.
+
+I didn't know that about Ubuntu.
+
+RHEL seems too conservative for me.  The policy might be because some
+customers create kernel code that might break if an internal kernel
+API changes, and Linus reserves the right to change that.
+
+| The kernel is actually a really
+| terrible example of flatpaks because it doesn't have dependencies like
+| other packages.
+
+Perhaps.  But it is an example of the role of distros (all I claimed).
+As I said at the start, I don't have any experience with flatpaks or
+snaps (to my knowledge).
+
+From me at mylesb.ca  Fri Nov  3 13:36:39 2017
+From: me at mylesb.ca (=?UTF-8?B?TXlsZXMgQnJhaXRod2FpdGUg8J+Rvg==?=)
+Date: Fri, 03 Nov 2017 13:36:39 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <20171103170409.GA27942@syonex.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+ <20171103170409.GA27942@syonex.com>
+Message-ID: <59FCA927.90808@mylesb.ca>
+
+John Sellens via talk wrote:
+> I've long found it disappointing the way shared libraries are dealt with
+> in linux and other OSs.
+> 
+> To me, the obvious solutions is to install every library into a directory
+> named for the version, or name the library itself with a version number.
+> Then, if you wish, a default version can be chosen and linked/symlinked
+> into the default directory.
+> 
+> That way, a program that wants a particular version gives the
+> compiler/linker the appropriate search path to find the preferred version.
+> 
+> And of course, once you've built a working version, you can choose to
+> static link it rather than use shared libraries.
+> 
+> We solved this in the obvious way at UWaterloo in the late 1980's (as
+> part of xhier).  I still shake my head that this kind of thing is still
+> a problem.
+
+Speaking largely from my experience with Node.js this doesn't work so
+while in practice. It becomes a major headache for "pr developers"[0]
+and users.
+
+pr developers have to use libraries that they aren't 100% sure what the
+current feature set is and known bugs are. This creates a bunch of patch
+libraries, to back port existing features and bug fixes to the project
+and then you have dependencies hell.
+
+Users don't like it because it requires extra space to have multiple
+version of the same library. Especially when it comes to minor version
+releases. And it's getting quite common for people to run out of disk
+space again (the average laptop SSD is ~500GB and photos, videos, games,
+and even applications have gotten a lot large in the past five years).
+
+The only place this type of system works is in monolithic repos where
+the entire source is under one umbrella, ala Facebook and Google (and
+maybe Mozilla).[1][2][3]
+
+[0]: pr developers - people who aren't major contributors on a project
+but will submit a Pull Request.
+
+[1]:
+<https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext>
+
+[2]: <https://gregoryszorc.com/blog/2014/09/09/on-monolithic-repositories/>
+
+[3]:
+<https://code.facebook.com/posts/218678814984400/scaling-mercurial-at-facebook/>
+
+From lsorense at csclub.uwaterloo.ca  Fri Nov  3 14:17:53 2017
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 3 Nov 2017 14:17:53 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <CAPhKKr_=phN4rdxTtpwGTnrShT48-ZmRyyZ=xpeckQA+h1HYZw@mail.gmail.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+ <20171103170409.GA27942@syonex.com>
+ <CAPhKKr_=phN4rdxTtpwGTnrShT48-ZmRyyZ=xpeckQA+h1HYZw@mail.gmail.com>
+Message-ID: <20171103181753.yocjs7e4vucroxfx@csclub.uwaterloo.ca>
+
+On Fri, Nov 03, 2017 at 01:09:47PM -0400, Dhaval Giani via talk wrote:
+> How do you ensure security updates happen everywhere, or that you are
+> not linking to an insecure version? What about old software which is
+> no longer maintained? Also work is not duplicated?
+
+Exactly.  That is why we don't want multiple versions of the library
+around.  We want to get rid of the buggy version with a big security
+problem.  Containers and thigns like flatpak and snap just make this
+problem much worse.  They are essentially reinventing static linking,
+which is not a good place to go back to.
+
+-- 
+Len Sorensen
+
+From davecb.42 at gmail.com  Fri Nov  3 14:21:43 2017
+From: davecb.42 at gmail.com (David Collier-Brown)
+Date: Fri, 3 Nov 2017 14:21:43 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <CAPhKKr_=phN4rdxTtpwGTnrShT48-ZmRyyZ=xpeckQA+h1HYZw@mail.gmail.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+ <20171103170409.GA27942@syonex.com>
+ <CAPhKKr_=phN4rdxTtpwGTnrShT48-ZmRyyZ=xpeckQA+h1HYZw@mail.gmail.com>
+Message-ID: <9e6d3257-d5b0-93d3-0d99-ed94aa621edf@gmail.com>
+
+On 03/11/17 01:09 PM, Dhaval Giani wrote:
+> On Fri, Nov 3, 2017 at 1:04 PM, John Sellens via talk <talk at gtalug.org> wrote:
+>> I've long found it disappointing the way shared libraries are dealt with
+>> in linux and other OSs.
+>>
+>> To me, the obvious solutions is to install every library into a directory
+>> named for the version, or name the library itself with a version number.
+>> Then, if you wish, a default version can be chosen and linked/symlinked
+>> into the default directory.
+>>
+>> That way, a program that wants a particular version gives the
+>> compiler/linker the appropriate search path to find the preferred version.
+>>
+> How do you ensure security updates happen everywhere, or that you are
+> not linking to an insecure version? What about old software which is
+> no longer maintained? Also work is not duplicated?
+>
+> Dhaval
+>
+I very much like the library maintainers (meaning me!) adding a new 
+version to an interface whenever it has to change.  Then the caller by 
+default gets the current one, with the security bugs fixed, but can 
+specify an old one of they need a different semantics. (Or, horror of 
+horrors, if they currently depend on the bug)
+
+We did that a lot inside Sun, and the Linux glibc maintainers do too: it 
+made my work a _lot_ easier when stuff was changing quickly.
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20171103/9ba9e077/attachment.html>
+
+From hugh at mimosa.com  Fri Nov  3 15:01:04 2017
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Fri, 3 Nov 2017 15:01:04 -0400 (EDT)
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <59FCA927.90808@mylesb.ca>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+ <20171103170409.GA27942@syonex.com> <59FCA927.90808@mylesb.ca>
+Message-ID: <alpine.LFD.2.21.1711031434130.15980@redeye.mimosa.com>
+
+| From: Myles Braithwaite 👾 via talk <talk at gtalug.org>
+
+| John Sellens via talk wrote:
+
+| > To me, the obvious solutions is to install every library into a directory
+| > named for the version, or name the library itself with a version number.
+| > Then, if you wish, a default version can be chosen and linked/symlinked
+| > into the default directory.
+
+Sure.  But I'd rather correctness than stability.
+
+Library users should code to a contract (in Unix, the manpage).
+As time goes on, the contract gets stronger so old programs continue
+to work.
+
+If they don't work, that is a bug somewhere.  Fix it.  I know: easier
+said than done.  Much easier said than done.  But problems pushed to
+the future tend to snowball.
+
+The Python case does not fit this model.  Python 3's contract is not
+strictly stronger than Python 2's contract.  So code in Python 2 has
+to be ported to Python 3.  In this case, having both versions around
+is a good idea.  And they should not have an identical name.
+
+This is easier with older stable facilities.  Like C and its
+libraries.
+
+It is harder for things that don't separate the contract from the
+code.  Not a good model.
+
+| Speaking largely from my experience with Node.js this doesn't work so
+| while in practice. It becomes a major headache for "pr developers"[0]
+| and users.
+| 
+| pr developers have to use libraries that they aren't 100% sure what the
+| current feature set is and known bugs are. This creates a bunch of patch
+| libraries, to back port existing features and bug fixes to the project
+| and then you have dependencies hell.
+
+Wow.  How horrible.  How unprofessional.  Don't do that.
+
+| Users don't like it because it requires extra space to have multiple
+| version of the same library.
+
+A recipe for horrible security flaws.  Equifax breach?  Struts library
+that was out of date and bound into something or other.  Ditto for the
+CRA downtime in the run-up to tax deadlines this year.
+
+| Especially when it comes to minor version
+| releases. And it's getting quite common for people to run out of disk
+| space again (the average laptop SSD is ~500GB and photos, videos, games,
+| and even applications have gotten a lot large in the past five years).
+
+Does that average laptop contain Node.js?  n copies of Node.js?
+
+Boy required resources grow a lot.  For my Altair I wrote a monitor,
+including a text editor, assembler, debugger, eprom burner, and audio
+casette I/O package that fit in 7K.  Self-hosting: it could reassemble
+itself and burn new eproms with the result.
+
+My new Razer keyboard says it needs 200MB of space for MS Windows
+drivers (mostly to fash lights, I think).  It seems to work fine on
+Linux without a driver but I would like turn off the green lights on
+each key.
+
+| The only place this type of system works is in monolithic repos where
+| the entire source is under one umbrella, ala Facebook and Google (and
+| maybe Mozilla).[1][2][3]
+
+And, perhaps, a Linux distro.
+
+From alex at flamy.ca  Fri Nov  3 22:42:25 2017
+From: alex at flamy.ca (Alex Volkov)
+Date: Fri, 3 Nov 2017 22:42:25 -0400
+Subject: [GTALUG] September 2017 talks are up
+Message-ID: <c6172cba-1e8b-9158-d4ac-29d303f16863@flamy.ca>
+
+Hello everyone,
+
+I posted September presentation on youtube. Sorry for choppy audio quality.
+
+xterms: State of Art 2017 with Christopher Browne
+
+Web Scrapping with Myles Braithwaite
+
+https://www.youtube.com/playlist?list=PLUgE6dqIXiEtZzVJgG30DAgazAyv9wl9O
+
+
+Alex.
+
+
+From lsorense at csclub.uwaterloo.ca  Mon Nov  6 09:40:30 2017
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Mon, 6 Nov 2017 09:40:30 -0500
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <alpine.LFD.2.21.1711031434130.15980@redeye.mimosa.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+ <20171103170409.GA27942@syonex.com> <59FCA927.90808@mylesb.ca>
+ <alpine.LFD.2.21.1711031434130.15980@redeye.mimosa.com>
+Message-ID: <20171106144030.i3lop3rn6p6imqws@csclub.uwaterloo.ca>
+
+On Fri, Nov 03, 2017 at 03:01:04PM -0400, D. Hugh Redelmeier via talk wrote:
+> My new Razer keyboard says it needs 200MB of space for MS Windows
+> drivers (mostly to fash lights, I think).  It seems to work fine on
+> Linux without a driver but I would like turn off the green lights on
+> each key.
+
+15 years ago I encountered an HP all in one printer that insisted you
+had to install all 600MB of software on the CD to print.  You could
+uninstall most of it afterwards since it was useless scanning software,
+OCR crap, etc, but the installer insisted you had to have it all.
+
+-- 
+Len Sorensen
+
+From me at mylesb.ca  Tue Nov  7 10:20:57 2017
+From: me at mylesb.ca (=?UTF-8?B?TXlsZXMgQnJhaXRod2FpdGUg8J+Rvg==?=)
+Date: Tue, 07 Nov 2017 10:20:57 -0500
+Subject: [GTALUG] Migrating from MySQL to Postgres
+Message-ID: <5A01CF59.6020404@mylesb.ca>
+
+Anyone have some recent first hand experience migrating a MySQL database
+to Postgres and would like a coffee and cookies in exchange for your
+case study?
+
+I'm working on a project that we are trying to get up and running on
+Postgres (as we plan on hosting it on Heroku's awesome Postgres
+instances) and have found that the existing migrate utilities (mysqldump
+--compatible=postgresql[0], pgloader[1], random sed files, etc) haven't
+produced the desire results.
+
+[0]:
+<https://dev.mysql.com/doc/refman/5.7/en/mysqldump.html#option_mysqldump_compatible>
+[1]: <http://pgloader.io/>
+
+
+From hi at gtalug.org  Tue Nov  7 10:43:35 2017
+From: hi at gtalug.org (hi at gtalug.org)
+Date: Tue,  7 Nov 2017 10:43:35 -0500 (EST)
+Subject: [GTALUG] [GTALUG-Announce] Meeting on 14 November 2017 at 7:30pm -
+ Building a 3D printer from scratch with Alex Volkov
+Message-ID: <20171107154335.319E9E38B@penguin.gtalug.org>
+
+<http://gtalug.org/meeting/2017-11/>
+
+# Building a 3D printer from scratch with Alex Volkov
+
+Building a 3D printer from scratch may be easier than making an apple pie from scratch! In this talk Alex will talk about getting into 3D printing 'the hard way' by building a clone of Prusa i3 MK2 from scratch using bits of wood, some metric hardware, arduino, 3D-printer and 3D printed parts, then attempting to design and print.
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Please discuss on the general mailing list (i.e. <talk at gtalug.org>) where you want to go for dinner.
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting, a group of GTALUGers move to The Imperial Pub (54 Dundas St East) for refreshments and more socialising.
+
+# Code of Conduct
+
+We want a productive happy community that can welcome new ideas, improve every process every year, and foster collaboration between individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from those who enhance it. This code of conduct exists to ensure that diverse groups collaborate to mutual advantage and enjoyment. We will challenge prejudice that could jeopardise the participation of any person in the community.
+
+The Code of Conduct governs how we behave in public or in private whenever the Linux community will be judged by our actions. We expect it to be honoured by everyone who represents the community officially or informally, claims affiliation or participates directly. It applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here: <http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code of Conduct please contact the GTALUG Board @ <board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+https://gtalug.org/mailman/listinfo/announce
+
+From jamon.camisso at utoronto.ca  Tue Nov  7 11:33:34 2017
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Tue, 7 Nov 2017 11:33:34 -0500
+Subject: [GTALUG] Migrating from MySQL to Postgres
+In-Reply-To: <5A01CF59.6020404@mylesb.ca>
+References: <5A01CF59.6020404@mylesb.ca>
+Message-ID: <ce1031e4-f934-d66c-87f2-d8b32fb02e05@utoronto.ca>
+
+On 2017-11-07 10:20 AM, Myles Braithwaite 👾 via talk wrote:
+> Anyone have some recent first hand experience migrating a MySQL database
+> to Postgres and would like a coffee and cookies in exchange for your
+> case study?
+> 
+> I'm working on a project that we are trying to get up and running on
+> Postgres (as we plan on hosting it on Heroku's awesome Postgres
+> instances) and have found that the existing migrate utilities (mysqldump
+> --compatible=postgresql[0], pgloader[1], random sed files, etc) haven't
+> produced the desire results.
+
+I haven't done this recently (in the last 2 or so years, but...), any
+time I have needed to do a conversion in the past, mysql2postgres[1] has
+worked well.
+
+https://github.com/maxlapshin/mysql2postgres
+

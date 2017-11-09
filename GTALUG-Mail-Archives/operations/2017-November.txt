@@ -1,0 +1,20 @@
+From alex at flamy.ca  Sat Nov  4 16:14:23 2017
+From: alex at flamy.ca (Alex Volkov)
+Date: Sat, 4 Nov 2017 16:14:23 -0400
+Subject: [GTALUG-Ops] mail server
+Message-ID: <3d9130f6-bfe3-9e52-53d0-7e9b70cea364@flamy.ca>
+
+Hi everyone,
+
+
+I added qq.com as blacklisted domain, so we should stop receiving spam 
+from them, also I added zen.spamhaus.org as an rbl that checks incoming 
+mail.
+
+
+Let me know if this causes any issues.
+
+
+Alex.
+
+
