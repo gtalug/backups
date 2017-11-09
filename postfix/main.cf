@@ -47,3 +47,11 @@ smtpd_milters = inet:127.0.0.1:8891
 non_smtpd_milters = $smtpd_milters
 milter_default_action = accept
 
+
+#Postfix spam filtering
+# NEW CONFIG, this may cause problems.
+smtpd_sender_restrictions =
+	permit_sasl_authenticated,
+	check_sender_access hash:/etc/postfix/sender_access
+	reject_rbl_client zen.spamhaus.org
+
