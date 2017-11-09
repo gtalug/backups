@@ -1,42 +1,582 @@
-From lsorense at csclub.uwaterloo.ca  Tue Jan  3 11:25:14 2017
-From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
-Date: Tue, 3 Jan 2017 11:25:14 -0500
-Subject: [GTALUG] Bash on Ubuntu on Windows
-In-Reply-To: <20161224020054.GA13724@node1.localdomain>
-References: <20161224000534.GA12785@node1.localdomain>
- <eacff13e-b41d-e818-dd6e-b7199bb09ac7@ve3syb.ca>
- <20161224020054.GA13724@node1.localdomain>
-Message-ID: <20170103162514.GB17366@csclub.uwaterloo.ca>
+From james.knott at rogers.com  Wed Nov  1 08:54:08 2017
+From: james.knott at rogers.com (James Knott)
+Date: Wed, 1 Nov 2017 08:54:08 -0400
+Subject: [GTALUG] Appeals court keeps alive the never-ending Linux case,
+ SCO v. IBM | Ars Technica
+Message-ID: <e128861e-92bc-a0a1-209c-f7f53f4586b9@rogers.com>
 
-On Fri, Dec 23, 2016 at 09:00:54PM -0500, William Park via talk wrote:
-> On Fri, Dec 23, 2016 at 07:35:53PM -0500, Kevin Cozens via talk wrote:
-> > On 16-12-23 07:05 PM, William Park via talk wrote:
-> > > I just tried "Bash on Ubuntu on Windows" (yes, it's real title).  With
-> > > this, there are now 4 ways of running Unix tools on Windows.
-> > 
-> > 5 ways if you include MSYS.
+It's unbelievable that this is still going on.  I guess the zombies have
+to come out for Halloween.
+
+https://arstechnica.com/tech-policy/2017/10/appeals-court-keeps-alive-the-never-ending-linux-case-sco-v-ibm/
+
+
+From hgibson at eol.ca  Wed Nov  1 09:47:20 2017
+From: hgibson at eol.ca (Howard Gibson)
+Date: Wed, 1 Nov 2017 09:47:20 -0400
+Subject: [GTALUG] C64 Stuff
+Message-ID: <20171101094720.75310830eb19a4ad0b926983@eol.ca>
+
+   I am cleaning out my basement so that I can get a new furnace installed.  I have all sorts of books on Commodore_64s that I have no use for.  I have the C64, but I am keeping that.  
+
+   Does anybody out there have a use for old C64 books, or is this stuff landfill?
+
+-- 
+Howard Gibson 
+hgibson at eol.ca
+jhowardgibson at gmail.com
+http://home.eol.ca/~hgibson
+
+From scruss at gmail.com  Wed Nov  1 13:38:50 2017
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Wed, 1 Nov 2017 13:38:50 -0400
+Subject: [GTALUG] C64 Stuff
+In-Reply-To: <20171101094720.75310830eb19a4ad0b926983@eol.ca>
+References: <20171101094720.75310830eb19a4ad0b926983@eol.ca>
+Message-ID: <27492223-99ec-7c2c-8513-a5a483e21b95@gmail.com>
+
+Hi Howard>
+>    Does anybody out there have a use for old C64 books, or is this stuff landfill?
+
+Depends on the books. I know a bunch of folks from TPUG (the Toronto Pet
+Users Group, http://www.tpug.ca/) who would never let a C=-related title
+go by. But if you really need rid of them and are pretty sure that
+they're not super-special, you could recycle them without too many qualms.
+
+('Special' might include any Commodore tech bulletins, or of local
+interest would be anything to do with U. Waterloo's Commodore
+development work.)
+
+At last month's TPUG meeting, we had a demo of the Keyrah, a device that
+turns an old (preferably non-functional) 64 into a keyboard and case for
+a Raspberry Pi. If you like beige breadbins, spongy keyboards and no
+cursor keys, you'll love the Keyrah: http://wiki.icomp.de/wiki/Keyrah_V2
+
+cheers,
+ Stewart
+
+
+
+From alex at flamy.ca  Thu Nov  2 21:39:59 2017
+From: alex at flamy.ca (Alex Volkov)
+Date: Thu, 2 Nov 2017 21:39:59 -0400
+Subject: [GTALUG] July an October meeting videos are up
+Message-ID: <06bf54b9-bc4d-85c6-7dd4-975f8192564f@flamy.ca>
+
+Hello everyone,
+
+I edited an uploaded some of the meeting videos.
+
+State Of Mozilla with Mike Hoye -- 
+https://www.youtube.com/watch?v=2te7GbC_qGE
+
+July 2017 Lightning talks -- https://www.youtube.com/watch?v=syt2DkDRwYM
+
+Alex.
+
+From brad.fonseca at gmail.com  Fri Nov  3 08:46:57 2017
+From: brad.fonseca at gmail.com (Brad Fonseca)
+Date: Fri, 3 Nov 2017 08:46:57 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+Message-ID: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+
+Hello,
+
+I've seen this new technology (or not new...I'm not sure...it appears to
+be a new name for xdg-app) pop up on various forums. I had a look at
+their web site (http://flatpak.org/index.html#page-top) but haven't
+really investigated it with any rigour. It looks like it may have been
+developed by people associated with Fedora and may be a replacement for
+RPM, APT, and the like (https://en.wikipedia.org/wiki/Flatpak).
+
+In any case, has anyone on this list looked at this or used it? Is it
+any good? Is it a good replacement for RPM or APT? Am I off-track here
+asking that question?
+
+Thanks,
+
+Brad
+
+-- 
+Brad Fonseca
+Mobile: 416-876-2191
+XMPP: brad.fonseca at blah.im
+XMPP (alt): brad.fonseca at xmpp.dk
+
+From hugh at mimosa.com  Fri Nov  3 11:33:36 2017
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Fri, 3 Nov 2017 11:33:36 -0400 (EDT)
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+Message-ID: <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+
+| Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+
+|  It looks like it may have been
+| developed by people associated with Fedora and may be a replacement for
+| RPM, APT, and the like (https://en.wikipedia.org/wiki/Flatpak).
+| 
+| In any case, has anyone on this list looked at this or used it? Is it
+| any good? Is it a good replacement for RPM or APT? Am I off-track here
+| asking that question?
+
+I have not (knowingly) used this technology.  But Here's my take
+anyway (based on guess-work!):
+
+Packaging like dpkg and rpm is fine but the result is tied to a
+release of a distro.  The main reason is that the shared libraries are
+partially bound into the binary package.  But there are other subtle
+and annoying difference between distros that are visible to programs.
+
+Packaging little virtual machines is way more portable but somewhat
+expensive and awkward.  This is reasonable for a service but not most
+programs.
+
+Various folks have tried to find a middle ground.  The barriers are
+market buy-in, not technology.  There are two that I'm aware of:
+
+- Canonical's "snap"
+
+- "flatpak" sponsored by Red Hat
+
+As usual, Canonical appears to me to be more of a control freak than
+Red Hat.  Naturally, my preference is for the more open one, flatpak.
+
+But I'm not 100% on-board.  I like old-fashioned packages (mostly).
+
+The idea behind both, as I understand it, is to create a sandbox for
+each application.  I think that each application carries around its
+own libraries etc.  I hate the duplication implied.
+
+There is also a non-technical idea.  Since flatpaks are universal
+among Linux distros, the distro would no longer be in the business of
+distributing the package.  And no longer standing behind it for bug
+fixes and security vetting.
+
+Win: you no longer are tied to the (possibly old) version that your
+distro includes.  Example: python and perl projects seem to want to
+run repos for users that are orthogonal to distros, something this
+model would better support.
+
+Win: projects no longer have to package their stuff for the various
+distros.  They no longer have to match the downstream release cadence.
+
+Lose: you have to be a connoisseur of each project from which you take
+flatpaks.  Each one has a different development and QA process with
+possibly unknowable risks and rewards.
+
+Lose: when a bug is found and fixed in a shared library, each distro can
+fix it with one update.  But each flatpak and snap that uses that
+library needs to be re-issued and updated on each installation.
+
+Lose: I obsessively do updates.  On each of my Fedora systems, that
+amounts to "sudo dnf update".  On Windows, it is annoyingly more
+intricate:
+	check for updates
+		note: this must be repeated until no change happens
+	for x in firefox chrome Adobe Reader etc.
+		perform x's check-for-updates procedure
+	Microsoft Applications Store
+		check for downloads
+With flatpaks, Linux becomes more like Windows.
+
+Win or lose?  python 2 must die.  But with flatpaks or snaps, each
+program has its own universe so we don't need a flag day when everyone
+switches.  But everyone should switch.  Yesterday.
+
+Right now I'm fairly comfortable with Fedora and Red Hat's QA.  I
+don't really want to take that on myself.  Except for a few packages
+about which I have special knowledge or concerns.
+
+As an example of the role of distros, consider the Linux Kernel.  It
+used to be common for folks to take the Linus kernel and build it on
+their own machine and use it in place of their distro's kernel.  It
+wasn't too hard.  Linus went to some trouble to make sure a release
+was clean.  I infer that things have changed.  All distros take a raw
+release and fix it up before shipping it.  And you want those fixes.
+It's not impossible to build a Linus kernel and use it but it is
+probably not worthwhile.
+
+From dhaval.giani at gmail.com  Fri Nov  3 11:56:50 2017
+From: dhaval.giani at gmail.com (Dhaval Giani)
+Date: Fri, 3 Nov 2017 11:56:50 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+Message-ID: <CAPhKKr9iTUEnRVK3qzj+ekZ4KR-C5poM_g3W4FpszJgu175fvQ@mail.gmail.com>
+
+> As an example of the role of distros, consider the Linux Kernel.  It
+> used to be common for folks to take the Linus kernel and build it on
+> their own machine and use it in place of their distro's kernel.  It
+> wasn't too hard.  Linus went to some trouble to make sure a release
+> was clean.  I infer that things have changed.  All distros take a raw
+> release and fix it up before shipping it.  And you want those fixes.
+> It's not impossible to build a Linus kernel and use it but it is
+> probably not worthwhile.
+
+Define: all distros :-). Fedora keeps updating to the latest mainline
+(stable) and is quite aggressive in its upgrade schedule. RHEL, SLES
+(and other enterprise distros) not so much. RHEL and SLES have
+different stability models (which require them to backport a lot of
+patches). Canonical sticks to one release for its entire release life
+(which has them somewhere in between). The kernel is actually a really
+terrible example of flatpaks because it doesn't have dependencies like
+other packages.
+
+Dhaval
+
+From davecb.42 at gmail.com  Fri Nov  3 11:50:55 2017
+From: davecb.42 at gmail.com (David Collier-Brown)
+Date: Fri, 3 Nov 2017 11:50:55 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+Message-ID: <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+
+On 03/11/17 11:33 AM, D. Hugh Redelmeier via talk wrote:
+> | Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+>
+> |  It looks like it may have been
+> | developed by people associated with Fedora and may be a replacement for
+> | RPM, APT, and the like (https://en.wikipedia.org/wiki/Flatpak).
+> |
+> | In any case, has anyone on this list looked at this or used it? Is it
+> | any good? Is it a good replacement for RPM or APT? Am I off-track here
+> | asking that question?
+>
+> I have not (knowingly) used this technology.  But Here's my take
+> anyway (based on guess-work!):
+>
+> Packaging like dpkg and rpm is fine but the result is tied to a
+> release of a distro.  The main reason is that the shared libraries are
+> partially bound into the binary package.  But there are other subtle
+> and annoying difference between distros that are visible to programs.
+>
+> Packaging little virtual machines is way more portable but somewhat
+> expensive and awkward.  This is reasonable for a service but not most
+> programs.
+>
+> Various folks have tried to find a middle ground.  The barriers are
+> market buy-in, not technology.  There are two that I'm aware of:
+>
+> - Canonical's "snap"
+>
+> - "flatpak" sponsored by Red Hat
+>
+There's actually an NP_complete problem hiding in the process of 
+avoiding needing two different versions of a library, and numerous 
+people have tried to avoid it by
+
+- inventing an OS-level mechanism
+
+- moving individual instances of the problem into different virtual machines
+
+- restricting the danger area to only one language
+
+This has motivated part of the flatpack and related work: for more info 
+that you wanted, see also 
+https://leaflessca.wordpress.com/2017/02/12/dll-hell-and-avoiding-an-np-complete-problem/
+
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+
+From jsellens at syonex.com  Fri Nov  3 13:04:09 2017
+From: jsellens at syonex.com (John Sellens)
+Date: Fri, 3 Nov 2017 13:04:09 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+Message-ID: <20171103170409.GA27942@syonex.com>
+
+I've long found it disappointing the way shared libraries are dealt with
+in linux and other OSs.
+
+To me, the obvious solutions is to install every library into a directory
+named for the version, or name the library itself with a version number.
+Then, if you wish, a default version can be chosen and linked/symlinked
+into the default directory.
+
+That way, a program that wants a particular version gives the
+compiler/linker the appropriate search path to find the preferred version.
+
+And of course, once you've built a working version, you can choose to
+static link it rather than use shared libraries.
+
+We solved this in the obvious way at UWaterloo in the late 1980's (as
+part of xhier).  I still shake my head that this kind of thing is still
+a problem.
+
+Cheers!
+
+John
+
+
+On Fri, 2017/11/03 11:50:55AM -0400, David Collier-Brown via talk <talk at gtalug.org> wrote:
+| This has motivated part of the flatpack and related work: for more info that
+| you wanted, see also https://leaflessca.wordpress.com/2017/02/12/dll-hell-and-avoiding-an-np-complete-problem/
+| 
+| 
+| --dave
+
+From dhaval.giani at gmail.com  Fri Nov  3 13:09:47 2017
+From: dhaval.giani at gmail.com (Dhaval Giani)
+Date: Fri, 3 Nov 2017 13:09:47 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <20171103170409.GA27942@syonex.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+ <20171103170409.GA27942@syonex.com>
+Message-ID: <CAPhKKr_=phN4rdxTtpwGTnrShT48-ZmRyyZ=xpeckQA+h1HYZw@mail.gmail.com>
+
+On Fri, Nov 3, 2017 at 1:04 PM, John Sellens via talk <talk at gtalug.org> wrote:
+> I've long found it disappointing the way shared libraries are dealt with
+> in linux and other OSs.
+>
+> To me, the obvious solutions is to install every library into a directory
+> named for the version, or name the library itself with a version number.
+> Then, if you wish, a default version can be chosen and linked/symlinked
+> into the default directory.
+>
+> That way, a program that wants a particular version gives the
+> compiler/linker the appropriate search path to find the preferred version.
+>
+
+How do you ensure security updates happen everywhere, or that you are
+not linking to an insecure version? What about old software which is
+no longer maintained? Also work is not duplicated?
+
+Dhaval
+
+From jsellens at syonex.com  Fri Nov  3 13:22:02 2017
+From: jsellens at syonex.com (John Sellens)
+Date: Fri, 3 Nov 2017 13:22:02 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <CAPhKKr_=phN4rdxTtpwGTnrShT48-ZmRyyZ=xpeckQA+h1HYZw@mail.gmail.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+ <20171103170409.GA27942@syonex.com>
+ <CAPhKKr_=phN4rdxTtpwGTnrShT48-ZmRyyZ=xpeckQA+h1HYZw@mail.gmail.com>
+Message-ID: <20171103172202.GC27942@syonex.com>
+
+Those are not problems which are specific to linking to/using particular
+versions of libraries.
+
+How do you ensure that security updates of commands and configuration
+files happen?  It's not a new or different problem.
+
+One can choose to use the default version, which by implication will
+be the latest and greatest version that is installed on the machine.
+And your program/package will get updates as they are installed.
+
+If you use a particular version of the library:
+- a local admin can choose to accept the risk
+- a package maintainer can label the package risky, and/or
+  delete/disable/deprecate the package
+- a program maintainer can update the code to use the new version
+
+One can't abdicate responsibilty for security by assuming that your
+binary will run with a secure version of a library.
+
+Cheers
+
+John
+
+
+
+On Fri, 2017/11/03 01:09:47PM -0400, Dhaval Giani <dhaval.giani at gmail.com> wrote:
+| How do you ensure security updates happen everywhere, or that you are
+| not linking to an insecure version? What about old software which is
+| no longer maintained? Also work is not duplicated?
+| 
+| Dhaval
+
+From hugh at mimosa.com  Fri Nov  3 13:29:09 2017
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Fri, 3 Nov 2017 13:29:09 -0400 (EDT)
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <CAPhKKr9iTUEnRVK3qzj+ekZ4KR-C5poM_g3W4FpszJgu175fvQ@mail.gmail.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <CAPhKKr9iTUEnRVK3qzj+ekZ4KR-C5poM_g3W4FpszJgu175fvQ@mail.gmail.com>
+Message-ID: <alpine.LFD.2.21.1711031311230.15980@redeye.mimosa.com>
+
+| From: Dhaval Giani via talk <talk at gtalug.org>
+
+| > As an example of the role of distros, consider the Linux Kernel.  It
+| > used to be common for folks to take the Linus kernel and build it on
+| > their own machine and use it in place of their distro's kernel.  It
+| > wasn't too hard.  Linus went to some trouble to make sure a release
+| > was clean.  I infer that things have changed.  All distros take a raw
+| > release and fix it up before shipping it.  And you want those fixes.
+| > It's not impossible to build a Linus kernel and use it but it is
+| > probably not worthwhile.
+| 
+| Define: all distros :-).
+
+I think that my description covers them all.  That does not in any way
+imply that all distros do identical things.
+
+| Fedora keeps updating to the latest mainline
+| (stable) and is quite aggressive in its upgrade schedule. RHEL, SLES
+| (and other enterprise distros) not so much. RHEL and SLES have
+| different stability models (which require them to backport a lot of
+| patches). Canonical sticks to one release for its entire release life
+| (which has them somewhere in between).
+
+Sure.
+
+I didn't know that about Ubuntu.
+
+RHEL seems too conservative for me.  The policy might be because some
+customers create kernel code that might break if an internal kernel
+API changes, and Linus reserves the right to change that.
+
+| The kernel is actually a really
+| terrible example of flatpaks because it doesn't have dependencies like
+| other packages.
+
+Perhaps.  But it is an example of the role of distros (all I claimed).
+As I said at the start, I don't have any experience with flatpaks or
+snaps (to my knowledge).
+
+From me at mylesb.ca  Fri Nov  3 13:36:39 2017
+From: me at mylesb.ca (=?UTF-8?B?TXlsZXMgQnJhaXRod2FpdGUg8J+Rvg==?=)
+Date: Fri, 03 Nov 2017 13:36:39 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <20171103170409.GA27942@syonex.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+ <20171103170409.GA27942@syonex.com>
+Message-ID: <59FCA927.90808@mylesb.ca>
+
+John Sellens via talk wrote:
+> I've long found it disappointing the way shared libraries are dealt with
+> in linux and other OSs.
 > 
-> Is that the same family as Cygwin?
+> To me, the obvious solutions is to install every library into a directory
+> named for the version, or name the library itself with a version number.
+> Then, if you wish, a default version can be chosen and linked/symlinked
+> into the default directory.
+> 
+> That way, a program that wants a particular version gives the
+> compiler/linker the appropriate search path to find the preferred version.
+> 
+> And of course, once you've built a working version, you can choose to
+> static link it rather than use shared libraries.
+> 
+> We solved this in the obvious way at UWaterloo in the late 1980's (as
+> part of xhier).  I still shake my head that this kind of thing is still
+> a problem.
 
-I don't think so.
+Speaking largely from my experience with Node.js this doesn't work so
+while in practice. It becomes a major headache for "pr developers"[0]
+and users.
 
-The MSYS tools tend to behave much more like native windows tools than
-cygwin does.  Cygwin seems more like using the new ubuntu on windows
-stuff, except that one is actual linux binaries rather than recompiled
-for cygwin binaries.
+pr developers have to use libraries that they aren't 100% sure what the
+current feature set is and known bugs are. This creates a bunch of patch
+libraries, to back port existing features and bug fixes to the project
+and then you have dependencies hell.
+
+Users don't like it because it requires extra space to have multiple
+version of the same library. Especially when it comes to minor version
+releases. And it's getting quite common for people to run out of disk
+space again (the average laptop SSD is ~500GB and photos, videos, games,
+and even applications have gotten a lot large in the past five years).
+
+The only place this type of system works is in monolithic repos where
+the entire source is under one umbrella, ala Facebook and Google (and
+maybe Mozilla).[1][2][3]
+
+[0]: pr developers - people who aren't major contributors on a project
+but will submit a Pull Request.
+
+[1]:
+<https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext>
+
+[2]: <https://gregoryszorc.com/blog/2014/09/09/on-monolithic-repositories/>
+
+[3]:
+<https://code.facebook.com/posts/218678814984400/scaling-mercurial-at-facebook/>
+
+From lsorense at csclub.uwaterloo.ca  Fri Nov  3 14:17:53 2017
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Fri, 3 Nov 2017 14:17:53 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <CAPhKKr_=phN4rdxTtpwGTnrShT48-ZmRyyZ=xpeckQA+h1HYZw@mail.gmail.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+ <20171103170409.GA27942@syonex.com>
+ <CAPhKKr_=phN4rdxTtpwGTnrShT48-ZmRyyZ=xpeckQA+h1HYZw@mail.gmail.com>
+Message-ID: <20171103181753.yocjs7e4vucroxfx@csclub.uwaterloo.ca>
+
+On Fri, Nov 03, 2017 at 01:09:47PM -0400, Dhaval Giani via talk wrote:
+> How do you ensure security updates happen everywhere, or that you are
+> not linking to an insecure version? What about old software which is
+> no longer maintained? Also work is not duplicated?
+
+Exactly.  That is why we don't want multiple versions of the library
+around.  We want to get rid of the buggy version with a big security
+problem.  Containers and thigns like flatpak and snap just make this
+problem much worse.  They are essentially reinventing static linking,
+which is not a good place to go back to.
 
 -- 
 Len Sorensen
 
-From davec-b at rogers.com  Thu Jan  5 08:38:53 2017
-From: davec-b at rogers.com (David Collier-Brown)
-Date: Thu, 5 Jan 2017 08:38:53 -0500
-Subject: [GTALUG] A question about boot
-Message-ID: <23225a26-bd1c-8552-85b9-5ecda6bec0a7@rogers.com>
+From davecb.42 at gmail.com  Fri Nov  3 14:21:43 2017
+From: davecb.42 at gmail.com (David Collier-Brown)
+Date: Fri, 3 Nov 2017 14:21:43 -0400
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <CAPhKKr_=phN4rdxTtpwGTnrShT48-ZmRyyZ=xpeckQA+h1HYZw@mail.gmail.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+ <20171103170409.GA27942@syonex.com>
+ <CAPhKKr_=phN4rdxTtpwGTnrShT48-ZmRyyZ=xpeckQA+h1HYZw@mail.gmail.com>
+Message-ID: <9e6d3257-d5b0-93d3-0d99-ed94aa621edf@gmail.com>
 
-Who can talk about (intel or arm) boot? I'm looking at a problem that 
-can be solved by setting up a device at boot time and not letting the OS 
-have the privilege or perhaps the physical ability to change it...﻿
+On 03/11/17 01:09 PM, Dhaval Giani wrote:
+> On Fri, Nov 3, 2017 at 1:04 PM, John Sellens via talk <talk at gtalug.org> wrote:
+>> I've long found it disappointing the way shared libraries are dealt with
+>> in linux and other OSs.
+>>
+>> To me, the obvious solutions is to install every library into a directory
+>> named for the version, or name the library itself with a version number.
+>> Then, if you wish, a default version can be chosen and linked/symlinked
+>> into the default directory.
+>>
+>> That way, a program that wants a particular version gives the
+>> compiler/linker the appropriate search path to find the preferred version.
+>>
+> How do you ensure security updates happen everywhere, or that you are
+> not linking to an insecure version? What about old software which is
+> no longer maintained? Also work is not duplicated?
+>
+> Dhaval
+>
+I very much like the library maintainers (meaning me!) adding a new 
+version to an interface whenever it has to change.  Then the caller by 
+default gets the current one, with the security bugs fixed, but can 
+specify an old one of they need a different semantics. (Or, horror of 
+horrors, if they currently depend on the bug)
+
+We did that a lot inside Sun, and the Linux glibc maintainers do too: it 
+made my work a _lot_ easier when stuff was changing quickly.
 
 --dave
 
@@ -47,848 +587,169 @@ davecb at spamcop.net           |                      -- Mark Twain
 
 -------------- next part --------------
 An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170105/e0f47c33/attachment.html>
+URL: <http://gtalug.org/pipermail/talk/attachments/20171103/9ba9e077/attachment.html>
 
-From alvin at netvel.net  Thu Jan  5 08:47:28 2017
-From: alvin at netvel.net (Alvin Starr)
-Date: Thu, 5 Jan 2017 08:47:28 -0500
-Subject: [GTALUG] A question about boot
-In-Reply-To: <23225a26-bd1c-8552-85b9-5ecda6bec0a7@rogers.com>
-References: <23225a26-bd1c-8552-85b9-5ecda6bec0a7@rogers.com>
-Message-ID: <62dd60d0-05ef-e0e4-17a9-b165e8332dee@netvel.net>
-
-You need a write only device.
-
-You could boot from a CD/DVD which is write only.
-
-Or possibly an SD card that has the write-lock enabled.
-
-If the computer does not support an SD card you could use usb card 
-reader to boot from.
-
-Of course in the worst case situation someone smart enough could rewrite 
-the BIOS and get around any boot device.
-
-
-On 01/05/2017 08:38 AM, David Collier-Brown via talk wrote:
->
-> Who can talk about (intel or arm) boot? I'm looking at a problem that 
-> can be solved by setting up a device at boot time and not letting the 
-> OS have the privilege or perhaps the physical ability to change it...﻿
->
-> --dave
->
-> -- 
-> David Collier-Brown,         | Always do right. This will gratify
-> System Programmer and Author | some people and astonish the rest
-> davecb at spamcop.net            |                      -- Mark Twain
->
->
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
-
--- 
-Alvin Starr                   ||   voice: (905)513-7688
-Netvel Inc.                   ||   Cell:  (416)806-0133
-alvin at netvel.net              ||
-
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170105/28ea8687/attachment.html>
-
-From davec-b at rogers.com  Thu Jan  5 09:15:20 2017
-From: davec-b at rogers.com (David Collier-Brown)
-Date: Thu, 5 Jan 2017 09:15:20 -0500
-Subject: [GTALUG] A question about boot
-In-Reply-To: <62dd60d0-05ef-e0e4-17a9-b165e8332dee@netvel.net>
-References: <23225a26-bd1c-8552-85b9-5ecda6bec0a7@rogers.com>
- <62dd60d0-05ef-e0e4-17a9-b165e8332dee@netvel.net>
-Message-ID: <58a17db6-aace-ba5f-77bd-b9f9c1837607@rogers.com>
-
-The intention is to put the device setup into the boot ROM, so it can't 
-(easily) change, but the working assumption is that one can
-
-  * discard the privilege used to set up the device , or
-  * be physically unsettable after it is initialized
-
-I don't know the  privilege primitives  for intel/ARM, or if one needs a 
-latch somewhere to make the device write-once: I'd love to talk to 
-someone who does.
-
---dave
-
-
-
-On 05/01/17 08:47 AM, Alvin Starr via talk wrote:
->
-> You need a write only device.
->
-> You could boot from a CD/DVD which is write only.
->
-> Or possibly an SD card that has the write-lock enabled.
->
-> If the computer does not support an SD card you could use usb card 
-> reader to boot from.
->
-> Of course in the worst case situation someone smart enough could 
-> rewrite the BIOS and get around any boot device.
->
->
-> On 01/05/2017 08:38 AM, David Collier-Brown via talk wrote:
->>
->> Who can talk about (intel or arm) boot? I'm looking at a problem that 
->> can be solved by setting up a device at boot time and not letting the 
->> OS have the privilege or perhaps the physical ability to change it...﻿
->>
->> --dave
->>
->> -- 
->> David Collier-Brown,         | Always do right. This will gratify
->> System Programmer and Author | some people and astonish the rest
->> davecb at spamcop.net            |                      -- Mark Twain
->>
->>
->> ---
->> Talk Mailing List
->> talk at gtalug.org
->> https://gtalug.org/mailman/listinfo/talk
->
-> -- 
-> Alvin Starr                   ||   voice: (905)513-7688
-> Netvel Inc.                   ||   Cell:  (416)806-0133
-> alvin at netvel.net               ||
->
->
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
-
-
--- 
-David Collier-Brown,         | Always do right. This will gratify
-System Programmer and Author | some people and astonish the rest
-davecb at spamcop.net           |                      -- Mark Twain
-
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170105/e405661a/attachment.html>
-
-From alvin at netvel.net  Thu Jan  5 09:35:00 2017
-From: alvin at netvel.net (Alvin Starr)
-Date: Thu, 5 Jan 2017 09:35:00 -0500
-Subject: [GTALUG] A question about boot
-In-Reply-To: <58a17db6-aace-ba5f-77bd-b9f9c1837607@rogers.com>
-References: <23225a26-bd1c-8552-85b9-5ecda6bec0a7@rogers.com>
- <62dd60d0-05ef-e0e4-17a9-b165e8332dee@netvel.net>
- <58a17db6-aace-ba5f-77bd-b9f9c1837607@rogers.com>
-Message-ID: <009b0db6-cd04-2c0a-8c1a-6d74bbd7b0dd@netvel.net>
-
-I have not had much experience with ARM booting but with Intel devices a 
-normal linux kernel has the ability to write any and all devices.
-
-If you boot with something like Xen then you should be able to lock out 
-some devices because the Xen kernel is actually managing the system 
-security.
-
-There is a Xen kernel available for ARM but I have never worked with it.
-
-Likely the easiest would be to put the boot into a write protected USB 
-device.
-
-Take a look at 
-http://www.fencepost.net/2010/03/usb-flash-drives-with-hardware-write-protection/
-
-It appears that my suggestion of an SD card may have a bad one since 
-from the above article SD cards are using the switch only as a signal to 
-the OS of write-protectedness.
-
-
-
-On 01/05/2017 09:15 AM, David Collier-Brown via talk wrote:
-> The intention is to put the device setup into the boot ROM, so it 
-> can't (easily) change, but the working assumption is that one can
->
->   * discard the privilege used to set up the device , or
->   * be physically unsettable after it is initialized
->
-> I don't know the  privilege primitives  for intel/ARM, or if one needs 
-> a latch somewhere to make the device write-once: I'd love to talk to 
-> someone who does.
->
-> --dave
->
->
->
-> On 05/01/17 08:47 AM, Alvin Starr via talk wrote:
->>
->> You need a write only device.
->>
->> You could boot from a CD/DVD which is write only.
->>
->> Or possibly an SD card that has the write-lock enabled.
->>
->> If the computer does not support an SD card you could use usb card 
->> reader to boot from.
->>
->> Of course in the worst case situation someone smart enough could 
->> rewrite the BIOS and get around any boot device.
->>
->>
->> On 01/05/2017 08:38 AM, David Collier-Brown via talk wrote:
->>>
->>> Who can talk about (intel or arm) boot? I'm looking at a problem 
->>> that can be solved by setting up a device at boot time and not 
->>> letting the OS have the privilege or perhaps the physical ability to 
->>> change it...﻿
->>>
->>> --dave
->>>
->>> -- 
->>> David Collier-Brown,         | Always do right. This will gratify
->>> System Programmer and Author | some people and astonish the rest
->>> davecb at spamcop.net            |                      -- Mark Twain
->>>
->>>
->>> ---
->>> Talk Mailing List
->>> talk at gtalug.org
->>> https://gtalug.org/mailman/listinfo/talk
->>
->> -- 
->> Alvin Starr                   ||   voice: (905)513-7688
->> Netvel Inc.                   ||   Cell:  (416)806-0133
->> alvin at netvel.net               ||
->>
->>
->> ---
->> Talk Mailing List
->> talk at gtalug.org
->> https://gtalug.org/mailman/listinfo/talk
->
->
-> -- 
-> David Collier-Brown,         | Always do right. This will gratify
-> System Programmer and Author | some people and astonish the rest
-> davecb at spamcop.net            |                      -- Mark Twain
->
->
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
-
--- 
-Alvin Starr                   ||   voice: (905)513-7688
-Netvel Inc.                   ||   Cell:  (416)806-0133
-alvin at netvel.net              ||
-
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170105/494194c4/attachment.html>
-
-From hugh at mimosa.com  Thu Jan  5 09:36:02 2017
+From hugh at mimosa.com  Fri Nov  3 15:01:04 2017
 From: hugh at mimosa.com (D. Hugh Redelmeier)
-Date: Thu, 5 Jan 2017 09:36:02 -0500 (EST)
-Subject: [GTALUG] A question about boot
-Message-ID: <alpine.LFD.2.20.1701050935010.31913@redeye.mimosa.com>
+Date: Fri, 3 Nov 2017 15:01:04 -0400 (EDT)
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <59FCA927.90808@mylesb.ca>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+ <20171103170409.GA27942@syonex.com> <59FCA927.90808@mylesb.ca>
+Message-ID: <alpine.LFD.2.21.1711031434130.15980@redeye.mimosa.com>
 
-[This is a copy of a reply I sent to another list.]
+| From: Myles Braithwaite 👾 via talk <talk at gtalug.org>
 
-| From: David Collier-Brown <davec-b at rogers.com>
+| John Sellens via talk wrote:
 
-| Who can talk about (intel or arm) boot? I'm looking at a problem that can be
-| solved by setting up a device at boot time and not letting the OS have the
-| privilege or perhaps the physical ability to change it...﻿
+| > To me, the obvious solutions is to install every library into a directory
+| > named for the version, or name the library itself with a version number.
+| > Then, if you wish, a default version can be chosen and linked/symlinked
+| > into the default directory.
 
-Not enough information for me to understand the constraints.
+Sure.  But I'd rather correctness than stability.
 
-What's your threat model?  
+Library users should code to a contract (in Unix, the manpage).
+As time goes on, the contract gets stronger so old programs continue
+to work.
 
-- Are you scared of the OS, the user of the OS, or something else?
+If they don't work, that is a bug somewhere.  Fix it.  I know: easier
+said than done.  Much easier said than done.  But problems pushed to
+the future tend to snowball.
 
-- Are you scared of random misbehaviour or an intentional attack
+The Python case does not fit this model.  Python 3's contract is not
+strictly stronger than Python 2's contract.  So code in Python 2 has
+to be ported to Python 3.  In this case, having both versions around
+is a good idea.  And they should not have an identical name.
 
-- Can you control physical access to all or part of the system?
+This is easier with older stable facilities.  Like C and its
+libraries.
 
-What would enforce change prevention?  Some things come to mind:
+It is harder for things that don't separate the contract from the
+code.  Not a good model.
 
-- the device itself could be set in an unchangeable mode after setup
+| Speaking largely from my experience with Node.js this doesn't work so
+| while in practice. It becomes a major headache for "pr developers"[0]
+| and users.
+| 
+| pr developers have to use libraries that they aren't 100% sure what the
+| current feature set is and known bugs are. This creates a bunch of patch
+| libraries, to back port existing features and bug fixes to the project
+| and then you have dependencies hell.
 
-  + eg. a physical switch that latches until "reset" (but this becomes
-    a recursive problem:  how to prevent the OS from resetting the
-    device).
+Wow.  How horrible.  How unprofessional.  Don't do that.
 
-- security through obscurity: ability to change the device is hidden
-  behind a secret handshake only known to the initiates.  We generally
-  distrust this kind of approach.
+| Users don't like it because it requires extra space to have multiple
+| version of the same library.
 
-- security through a layer of indirection that implements the
-  protection policy that you require
+A recipe for horrible security flaws.  Equifax breach?  Struts library
+that was out of date and bound into something or other.  Ditto for the
+CRA downtime in the run-up to tax deadlines this year.
 
-  + put a little controller (Raspberry Pi?) between the device and the
-    computer.  You would probably need physical protection of the device
-    from the Bad Guys (an OS?  A bad operator?)
+| Especially when it comes to minor version
+| releases. And it's getting quite common for people to run out of disk
+| space again (the average laptop SSD is ~500GB and photos, videos, games,
+| and even applications have gotten a lot large in the past five years).
 
-  + run the OS under a VM system that implements the policy.
+Does that average laptop contain Node.js?  n copies of Node.js?
 
-  + Conventional PCs have a mysterious "SMM" that overrides anything
-    that the OS thinks it can do.  It is part of the firmware commonly
-    called the BIOS and isn't easily mucked with by mortals.  With a
-    high enough budget, SMM might be a useful vector.
+Boy required resources grow a lot.  For my Altair I wrote a monitor,
+including a text editor, assembler, debugger, eprom burner, and audio
+casette I/O package that fit in 7K.  Self-hosting: it could reassemble
+itself and burn new eproms with the result.
 
-But maybe you already have a solution in mind, with some blank bits,
-and haven't sketched this for us.
+My new Razer keyboard says it needs 200MB of space for MS Windows
+drivers (mostly to fash lights, I think).  It seems to work fine on
+Linux without a driver but I would like turn off the green lights on
+each key.
 
-From irwin at irwinb.com  Fri Jan  6 09:51:49 2017
-From: irwin at irwinb.com (Irwin Barrer)
-Date: Fri, 6 Jan 2017 09:51:49 -0500
-Subject: [GTALUG] Cyber Monday cheap netbook
-In-Reply-To: <alpine.LFD.2.20.1612090207190.17813@redeye.mimosa.com>
-References: <alpine.LFD.2.20.1611281809020.6148@redeye.mimosa.com>
- <alpine.LFD.2.20.1612090207190.17813@redeye.mimosa.com>
-Message-ID: <FEC9E0D9-BF08-4157-80EA-85EDA686BF89@irwinb.com>
+| The only place this type of system works is in monolithic repos where
+| the entire source is under one umbrella, ala Facebook and Google (and
+| maybe Mozilla).[1][2][3]
 
-Can you tell me more about this?:
+And, perhaps, a Linux distro.
 
-- I think that there is room to install a 3.5" drive in the computer.
- (The computer came with the required mounting screws).  This is a
- BIG bonus: it provides a bunch of interesting options.  So it would
- be reasonable to add an SSD or HDD.  This would provide sufficient
- space for leaving Win 10 and installing Linux on the added drive.
- This added load might shrink battery life.
-—
-I would like to have more storage space—the 32GB drive seems kind of small. Have you determined if this is possible? If yes, is SSD a better way to go? From everything I’ve read it would seem so, but you mention both, so I would like your opinion. Lastly, where can I go do get this done for me? I’ve never done any kind of work (upgrades, repairs) on a computer myself so I would like to leave this to an expert.
+From alex at flamy.ca  Fri Nov  3 22:42:25 2017
+From: alex at flamy.ca (Alex Volkov)
+Date: Fri, 3 Nov 2017 22:42:25 -0400
+Subject: [GTALUG] September 2017 talks are up
+Message-ID: <c6172cba-1e8b-9158-d4ac-29d303f16863@flamy.ca>
 
-Many thanks.
-IB
+Hello everyone,
 
-Irwin Barrer
-irwin at irwinb.com
+I posted September presentation on youtube. Sorry for choppy audio quality.
+
+xterms: State of Art 2017 with Christopher Browne
+
+Web Scrapping with Myles Braithwaite
+
+https://www.youtube.com/playlist?list=PLUgE6dqIXiEtZzVJgG30DAgazAyv9wl9O
 
 
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170106/317ec12e/attachment.html>
+Alex.
 
-From lsorense at csclub.uwaterloo.ca  Fri Jan  6 10:25:40 2017
+
+From lsorense at csclub.uwaterloo.ca  Mon Nov  6 09:40:30 2017
 From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
-Date: Fri, 6 Jan 2017 10:25:40 -0500
-Subject: [GTALUG] Cyber Monday cheap netbook
-In-Reply-To: <FEC9E0D9-BF08-4157-80EA-85EDA686BF89@irwinb.com>
-References: <alpine.LFD.2.20.1611281809020.6148@redeye.mimosa.com>
- <alpine.LFD.2.20.1612090207190.17813@redeye.mimosa.com>
- <FEC9E0D9-BF08-4157-80EA-85EDA686BF89@irwinb.com>
-Message-ID: <20170106152540.GC17366@csclub.uwaterloo.ca>
+Date: Mon, 6 Nov 2017 09:40:30 -0500
+Subject: [GTALUG] Flatpak: Anyone with Experience or Opinions on It?
+In-Reply-To: <alpine.LFD.2.21.1711031434130.15980@redeye.mimosa.com>
+References: <56483cb2-e132-5ee0-38e1-3956e704ddaf@gmail.com>
+ <alpine.LFD.2.21.1711031050590.15980@redeye.mimosa.com>
+ <9044f2d1-4cb6-f14c-11ea-113080e16991@gmail.com>
+ <20171103170409.GA27942@syonex.com> <59FCA927.90808@mylesb.ca>
+ <alpine.LFD.2.21.1711031434130.15980@redeye.mimosa.com>
+Message-ID: <20171106144030.i3lop3rn6p6imqws@csclub.uwaterloo.ca>
 
-On Fri, Jan 06, 2017 at 09:51:49AM -0500, Irwin Barrer via talk wrote:
-> Can you tell me more about this?:
-> 
-> - I think that there is room to install a 3.5" drive in the computer.
->  (The computer came with the required mounting screws).  This is a
->  BIG bonus: it provides a bunch of interesting options.  So it would
->  be reasonable to add an SSD or HDD.  This would provide sufficient
->  space for leaving Win 10 and installing Linux on the added drive.
->  This added load might shrink battery life.
+On Fri, Nov 03, 2017 at 03:01:04PM -0400, D. Hugh Redelmeier via talk wrote:
+> My new Razer keyboard says it needs 200MB of space for MS Windows
+> drivers (mostly to fash lights, I think).  It seems to work fine on
+> Linux without a driver but I would like turn off the green lights on
+> each key.
 
-Did you mean a 2.5" drive?  3.5" sounds unlikely.
-
-If this is the Asus E402SA, then according to
-http://www.crucial.com/usa/en/compatible-upgrade-for/ASUS/e402sa it is
-possible to install a 2.5" 9.5mm drive in it.  I highly doubt it could
-handle a 12.5mm.
-
-https://www.ipc-computer.eu/notebook-ersatzteile/asus/notebook-e-serie/e402sa-2a/festplatte-5
-also says a 9.5mm drive can go in it.
+15 years ago I encountered an HP all in one printer that insisted you
+had to install all 600MB of software on the CD to print.  You could
+uninstall most of it afterwards since it was useless scanning software,
+OCR crap, etc, but the installer insisted you had to have it all.
 
 -- 
 Len Sorensen
 
-From hugh at mimosa.com  Fri Jan  6 20:31:57 2017
-From: hugh at mimosa.com (D. Hugh Redelmeier)
-Date: Fri, 6 Jan 2017 20:31:57 -0500 (EST)
-Subject: [GTALUG] processor progress sure has slowed down
-Message-ID: <alpine.LFD.2.20.1701062013340.2893@redeye.mimosa.com>
+From me at mylesb.ca  Tue Nov  7 10:20:57 2017
+From: me at mylesb.ca (=?UTF-8?B?TXlsZXMgQnJhaXRod2FpdGUg8J+Rvg==?=)
+Date: Tue, 07 Nov 2017 10:20:57 -0500
+Subject: [GTALUG] Migrating from MySQL to Postgres
+Message-ID: <5A01CF59.6020404@mylesb.ca>
 
-I got an ad from NCIX for systems with Intel's new Kaby Lake processors.  
-Here's the headline:
+Anyone have some recent first hand experience migrating a MySQL database
+to Postgres and would like a coffee and cookies in exchange for your
+case study?
 
-	UP TO
-	[LARGER FONT] 28% BETTER PERFORMANCE* [/LARGER FONT]
-	versus a 3-year-old-desktop
+I'm working on a project that we are trying to get up and running on
+Postgres (as we plan on hosting it on Heroku's awesome Postgres
+instances) and have found that the existing migrate utilities (mysqldump
+--compatible=postgresql[0], pgloader[1], random sed files, etc) haven't
+produced the desire results.
 
-The footnote shows that a i7-7700K processor system was being compared 
-with a i7-4770K.  Some of the improvement would be in DDR4 vs DDR3 and so 
-on.  OS and video card were the same.  The power requirement of the CPU 
-went up slightly.
-
-You'd normally expect a 7xxx processor to be compared with a 6xxx 
-procecessor, but they've reached back an extra two generations to show 
-even a modest 28% improvement.
-
-There are useful features added to the processors since the Haswell 
-generation.  Like a working TSX-NI: Haswell had it, with bugs, so Intel 
-suppressed it with a microcode update.  Not completely fair since the K 
-models never had it.
-
-Intel has put a lot of extra transistors into on-chip video, something 
-useful at least sometimes.  Perhaps this shows where Intel feels it needs 
-to compete -- AMD has a better on-chip GPU but an uncompetitive CPU.  One 
-can only hope that AMD's Zen/Ryzen lives up to AMD's talk.
-
-From lists at alteeve.ca  Fri Jan  6 22:30:17 2017
-From: lists at alteeve.ca (Digimer)
-Date: Fri, 6 Jan 2017 22:30:17 -0500
-Subject: [GTALUG] processor progress sure has slowed down
-In-Reply-To: <alpine.LFD.2.20.1701062013340.2893@redeye.mimosa.com>
-References: <alpine.LFD.2.20.1701062013340.2893@redeye.mimosa.com>
-Message-ID: <fc669478-3e7d-9f45-3b37-a8eaba27dcda@alteeve.ca>
-
-On 06/01/17 08:31 PM, D. Hugh Redelmeier via talk wrote:
-> I got an ad from NCIX for systems with Intel's new Kaby Lake processors.  
-> Here's the headline:
-> 
-> 	UP TO
-> 	[LARGER FONT] 28% BETTER PERFORMANCE* [/LARGER FONT]
-> 	versus a 3-year-old-desktop
-> 
-> The footnote shows that a i7-7700K processor system was being compared 
-> with a i7-4770K.  Some of the improvement would be in DDR4 vs DDR3 and so 
-> on.  OS and video card were the same.  The power requirement of the CPU 
-> went up slightly.
-> 
-> You'd normally expect a 7xxx processor to be compared with a 6xxx 
-> procecessor, but they've reached back an extra two generations to show 
-> even a modest 28% improvement.
-> 
-> There are useful features added to the processors since the Haswell 
-> generation.  Like a working TSX-NI: Haswell had it, with bugs, so Intel 
-> suppressed it with a microcode update.  Not completely fair since the K 
-> models never had it.
-> 
-> Intel has put a lot of extra transistors into on-chip video, something 
-> useful at least sometimes.  Perhaps this shows where Intel feels it needs 
-> to compete -- AMD has a better on-chip GPU but an uncompetitive CPU.  One 
-> can only hope that AMD's Zen/Ryzen lives up to AMD's talk.
-
-Murphy's law hit the laws of physics...
-
--- 
-Digimer
-Papers and Projects: https://alteeve.com/w/
-"I am, somehow, less interested in the weight and convolutions of
-Einstein’s brain than in the near certainty that people of equal talent
-have lived and died in cotton fields and sweatshops." - Stephen Jay Gould
-
-From stephen-d at rogers.com  Sat Jan  7 19:25:33 2017
-From: stephen-d at rogers.com (Stephen)
-Date: Sat, 7 Jan 2017 19:25:33 -0500
-Subject: [GTALUG] Bash Problem
-Message-ID: <fe2f8fa8-de98-2c9d-4147-4cbc4b0cb1f6@rogers.com>
-
-I am new to Bash scripts.
-
-I am trying to create a script to use avconv to convert mkv files to mp4 
-file.
-
-Run one at a time the command runs fine.
-
-When I execute this script I get an error about an unknown parameter. I 
-am guessing that the expansion with the filename variables is failing.
-
-Can someone help me correct?
-
-Thank you!
-
-#!/bin/bash
-# Usage: convert file to mp4
-shopt -s nullglob
-ext='.mp4'
-for f in *.mkv
-do
-    base=$(basename $f .mkv)
-    nFname=$base".mp4"
-    echo $nFname
-    avconv "-i $f -c:v libx264 -c:a copy $nFname"
-done
+[0]:
+<https://dev.mysql.com/doc/refman/5.7/en/mysqldump.html#option_mysqldump_compatible>
+[1]: <http://pgloader.io/>
 
 
--- 
-Stephen
-
-From michael at galeahome.ca  Sat Jan  7 19:38:12 2017
-From: michael at galeahome.ca (Michael Galea)
-Date: Sat, 7 Jan 2017 19:38:12 -0500
-Subject: [GTALUG] Bash Problem
-In-Reply-To: <fe2f8fa8-de98-2c9d-4147-4cbc4b0cb1f6@rogers.com>
-References: <fe2f8fa8-de98-2c9d-4147-4cbc4b0cb1f6@rogers.com>
-Message-ID: <765396b8-1193-01b4-725d-fc6747de7d7a@galeahome.ca>
-
-On 01/07/17 19:25, Stephen via talk wrote:
-> I am new to Bash scripts.
->
-> I am trying to create a script to use avconv to convert mkv files to mp4
-> file.
->
-> Run one at a time the command runs fine.
->
-> When I execute this script I get an error about an unknown parameter. I
-> am guessing that the expansion with the filename variables is failing.
->
-> Can someone help me correct?
->
-> Thank you!
->
-> #!/bin/bash
-> # Usage: convert file to mp4
-> shopt -s nullglob
-> ext='.mp4'
-> for f in *.mkv
-> do
->    base=$(basename $f .mkv)
->    nFname=$base".mp4"
->    echo $nFname
->    avconv "-i $f -c:v libx264 -c:a copy $nFname"
-> done
->
->
-
-Shouldn't you be quoting $f and $nFname separately, e.g.
-  avconv -i "$f" -c:v libx264 -c:a copy "$nFname"
-otherwise filenames with spaces will see -i catch only part of the filename.
-
-Try adding echo in front of the avconv command and see what would be 
-executed from within the script.
-
--- 
-Michael Galea
-
-From thoriumbr at gmail.com  Sat Jan  7 19:43:05 2017
-From: thoriumbr at gmail.com (Mauro Souza)
-Date: Sat, 7 Jan 2017 22:43:05 -0200
-Subject: [GTALUG] Bash Problem
-In-Reply-To: <765396b8-1193-01b4-725d-fc6747de7d7a@galeahome.ca>
-References: <fe2f8fa8-de98-2c9d-4147-4cbc4b0cb1f6@rogers.com>
- <765396b8-1193-01b4-725d-fc6747de7d7a@galeahome.ca>
-Message-ID: <CAEZ_B6Mysr=zXS8wfE8BV9yZrGkzLN756U1EJd3Gsp4ib0TSUw@mail.gmail.com>
-
-Quotes. I second to that.
-
-To see how the script are interpreting things, run bash -vx script.sh.
-
-Or install and use bashdb (bash debugger). It's very, very useful.
-
-On Jan 7, 2017 22:38, "Michael Galea via talk" <talk at gtalug.org> wrote:
-
-> On 01/07/17 19:25, Stephen via talk wrote:
->
->> I am new to Bash scripts.
->>
->> I am trying to create a script to use avconv to convert mkv files to mp4
->> file.
->>
->> Run one at a time the command runs fine.
->>
->> When I execute this script I get an error about an unknown parameter. I
->> am guessing that the expansion with the filename variables is failing.
->>
->> Can someone help me correct?
->>
->> Thank you!
->>
->> #!/bin/bash
->> # Usage: convert file to mp4
->> shopt -s nullglob
->> ext='.mp4'
->> for f in *.mkv
->> do
->>    base=$(basename $f .mkv)
->>    nFname=$base".mp4"
->>    echo $nFname
->>    avconv "-i $f -c:v libx264 -c:a copy $nFname"
->> done
->>
->>
->>
-> Shouldn't you be quoting $f and $nFname separately, e.g.
->  avconv -i "$f" -c:v libx264 -c:a copy "$nFname"
-> otherwise filenames with spaces will see -i catch only part of the
-> filename.
->
-> Try adding echo in front of the avconv command and see what would be
-> executed from within the script.
->
-> --
-> Michael Galea
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
->
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170107/92c976f3/attachment.html>
-
-From stephen-d at rogers.com  Sun Jan  8 05:57:40 2017
-From: stephen-d at rogers.com (Stephen)
-Date: Sun, 8 Jan 2017 05:57:40 -0500
-Subject: [GTALUG] Bash Problem
-In-Reply-To: <fe2f8fa8-de98-2c9d-4147-4cbc4b0cb1f6@rogers.com>
-References: <fe2f8fa8-de98-2c9d-4147-4cbc4b0cb1f6@rogers.com>
-Message-ID: <0c817fc9-e7e6-9339-e984-a80b6ad462db@rogers.com>
-
-On 2017-01-07 07:25 PM, Stephen via talk wrote:
-> I am new to Bash scripts.
->
-> I am trying to create a script to use avconv to convert mkv files to mp4
-> file.
->
-> Run one at a time the command runs fine.
->
-> When I execute this script I get an error about an unknown parameter. I
-> am guessing that the expansion with the filename variables is failing.
->
-> Can someone help me correct?
->
-> Thank you!
->
-> #!/bin/bash
-> # Usage: convert file to mp4
-> shopt -s nullglob
-> ext='.mp4'
-> for f in *.mkv
-> do
->    base=$(basename $f .mkv)
->    nFname=$base".mp4"
->    echo $nFname
->    avconv "-i $f -c:v libx264 -c:a copy $nFname"
-> done
-
-
-Thank you for the replies. Simply removing the quotes did the trick! :)
-
--- 
-Stephen
-
-From opengeometry at yahoo.ca  Sun Jan  8 10:21:52 2017
-From: opengeometry at yahoo.ca (William Park)
-Date: Sun, 8 Jan 2017 10:21:52 -0500
-Subject: [GTALUG] Bash Problem
-In-Reply-To: <0c817fc9-e7e6-9339-e984-a80b6ad462db@rogers.com>
-References: <fe2f8fa8-de98-2c9d-4147-4cbc4b0cb1f6@rogers.com>
- <0c817fc9-e7e6-9339-e984-a80b6ad462db@rogers.com>
-Message-ID: <20170108152152.GA21165@node1.localdomain>
-
-On the topic of quotes, see my in-line comments...
-
-On Sun, Jan 08, 2017 at 05:57:40AM -0500, Stephen via talk wrote:
-> On 2017-01-07 07:25 PM, Stephen via talk wrote:
-> > #!/bin/bash
-> > # Usage: convert file to mp4
-> > shopt -s nullglob
-> > ext='.mp4'
-> > for f in *.mkv
-> > do
-> >    base=$(basename $f .mkv)
-
-Should be
-    base=$(basename "$f" .mkv)
-
-> >    nFname=$base".mp4"
-
-    nFname="$base".mp4
-
-> >    echo $nFname
-> >    avconv "-i $f -c:v libx264 -c:a copy $nFname"
-
-    avconv -i "$f" -c:v libx264 -c:a copy "$nFname"
-
-> > done
-> 
-> 
-> Thank you for the replies. Simply removing the quotes did the trick! :)
-
-From thoriumbr at gmail.com  Sun Jan  8 10:28:03 2017
-From: thoriumbr at gmail.com (Mauro Souza)
-Date: Sun, 8 Jan 2017 13:28:03 -0200
-Subject: [GTALUG] Bash Problem
-In-Reply-To: <20170108152152.GA21165@node1.localdomain>
-References: <fe2f8fa8-de98-2c9d-4147-4cbc4b0cb1f6@rogers.com>
- <0c817fc9-e7e6-9339-e984-a80b6ad462db@rogers.com>
- <20170108152152.GA21165@node1.localdomain>
-Message-ID: <CAEZ_B6OnetmDRp274wMk4tNGZgVpjZvF7uc+Qx+cM2UWY4C3og@mail.gmail.com>
-
-Or
-nFname="${base}.mp4"
-
-Using brackets you can mix variables and text and create something like
-this:
-newName="${oldname}-bkp-${filedate}.${extension}.old"
-
-Mauro
-http://mauro.limeiratem.com - registered Linux User: 294521
-Scripture is both history, and a love letter from God.
-
-2017-01-08 13:21 GMT-02:00 William Park via talk <talk at gtalug.org>:
-
-> On the topic of quotes, see my in-line comments...
->
-> On Sun, Jan 08, 2017 at 05:57:40AM -0500, Stephen via talk wrote:
-> > On 2017-01-07 07:25 PM, Stephen via talk wrote:
-> > > #!/bin/bash
-> > > # Usage: convert file to mp4
-> > > shopt -s nullglob
-> > > ext='.mp4'
-> > > for f in *.mkv
-> > > do
-> > >    base=$(basename $f .mkv)
->
-> Should be
->     base=$(basename "$f" .mkv)
->
-> > >    nFname=$base".mp4"
->
->     nFname="$base".mp4
->
-> > >    echo $nFname
-> > >    avconv "-i $f -c:v libx264 -c:a copy $nFname"
->
->     avconv -i "$f" -c:v libx264 -c:a copy "$nFname"
->
-> > > done
-> >
-> >
-> > Thank you for the replies. Simply removing the quotes did the trick! :)
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
->
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170108/f7715415/attachment.html>
-
-From opengeometry at yahoo.ca  Sun Jan  8 10:37:17 2017
-From: opengeometry at yahoo.ca (William Park)
-Date: Sun, 8 Jan 2017 10:37:17 -0500
-Subject: [GTALUG] Bash Problem
-In-Reply-To: <CAEZ_B6OnetmDRp274wMk4tNGZgVpjZvF7uc+Qx+cM2UWY4C3og@mail.gmail.com>
-References: <fe2f8fa8-de98-2c9d-4147-4cbc4b0cb1f6@rogers.com>
- <0c817fc9-e7e6-9339-e984-a80b6ad462db@rogers.com>
- <20170108152152.GA21165@node1.localdomain>
- <CAEZ_B6OnetmDRp274wMk4tNGZgVpjZvF7uc+Qx+cM2UWY4C3og@mail.gmail.com>
-Message-ID: <20170108153717.GA21247@node1.localdomain>
-
-Hmm... yes.  Now that you mention it, the quoting here is unnecessary,
-because it's variable assignment and further splitting is not done.
--- 
-William
-
-On Sun, Jan 08, 2017 at 01:28:03PM -0200, Mauro Souza wrote:
-> Or
-> nFname="${base}.mp4"
-> 
-> Using brackets you can mix variables and text and create something like
-> this:
-> newName="${oldname}-bkp-${filedate}.${extension}.old"
-> 
-> Mauro
-> http://mauro.limeiratem.com - registered Linux User: 294521
-> Scripture is both history, and a love letter from God.
-> 
-> 2017-01-08 13:21 GMT-02:00 William Park via talk <talk at gtalug.org>:
-> 
-> > On the topic of quotes, see my in-line comments...
-> >
-> > On Sun, Jan 08, 2017 at 05:57:40AM -0500, Stephen via talk wrote:
-> > > On 2017-01-07 07:25 PM, Stephen via talk wrote:
-> > > > #!/bin/bash
-> > > > # Usage: convert file to mp4
-> > > > shopt -s nullglob
-> > > > ext='.mp4'
-> > > > for f in *.mkv
-> > > > do
-> > > >    base=$(basename $f .mkv)
-> >
-> > Should be
-> >     base=$(basename "$f" .mkv)
-> >
-> > > >    nFname=$base".mp4"
-> >
-> >     nFname="$base".mp4
-> >
-> > > >    echo $nFname
-> > > >    avconv "-i $f -c:v libx264 -c:a copy $nFname"
-> >
-> >     avconv -i "$f" -c:v libx264 -c:a copy "$nFname"
-> >
-> > > > done
-> > >
-> > >
-> > > Thank you for the replies. Simply removing the quotes did the trick! :)
-> > ---
-> > Talk Mailing List
-> > talk at gtalug.org
-> > https://gtalug.org/mailman/listinfo/talk
-> >
-
-From davec-b at rogers.com  Mon Jan  9 07:36:47 2017
-From: davec-b at rogers.com (David Collier-Brown)
-Date: Mon, 9 Jan 2017 07:36:47 -0500
-Subject: [GTALUG] Anyone want an Apple TV?
-Message-ID: <2226859a-776e-52c2-e89a-df567bb73633@rogers.com>
-
-I have the second-last model, which I've tried and didn't like. I'll 
-bring it to the meetings if anyone wants it.
-
---dave
-
--- 
-David Collier-Brown,         | Always do right. This will gratify
-System Programmer and Author | some people and astonish the rest
-davecb at spamcop.net           |                      -- Mark Twain
-
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170109/698683f5/attachment.html>
-
-From gilesorr at gmail.com  Mon Jan  9 10:13:28 2017
-From: gilesorr at gmail.com (Giles Orr)
-Date: Mon, 9 Jan 2017 10:13:28 -0500
-Subject: [GTALUG] Fwd: AirDrop-alikes
-In-Reply-To: <CAEnxSC7oD1ELsR88vTRaW73wOz36F6XcmpzBBNUK27K4Cpw8Uw@mail.gmail.com>
-References: <CAEnxSC7oD1ELsR88vTRaW73wOz36F6XcmpzBBNUK27K4Cpw8Uw@mail.gmail.com>
-Message-ID: <CAEnxSC5Q-W6-4uPSbPv7sG5DOGQvpGr8qLdVyav-6b5_hGA+sg@mail.gmail.com>
-
-Mac's AirDrop ( https://en.wikipedia.org/wiki/AirDrop ) is wonderfully
-simple and quite fast - but only supported on Mac (that I'm aware of).
-Has anyone tried NitroShare (
-https://github.com/nitroshare/nitroshare-desktop ), Dukto (
-http://www.msec.it/blog/?page_id=11 ), or any other cross-platform
-alternatives?  Encryption is a requirement, which I think lets Dukto
-out.  I'd consider a Linux-only solution, but would prefer
-cross-platform.  I'm looking for local-only solutions, so "Dropbox" or
-anything else that reaches out to the Internet isn't a viable
-solution.
-
--- 
-Giles
-http://www.gilesorr.com/
-gilesorr at gmail.com
-
-From hi at gtalug.org  Mon Jan  9 10:45:33 2017
+From hi at gtalug.org  Tue Nov  7 10:43:35 2017
 From: hi at gtalug.org (hi at gtalug.org)
-Date: Mon,  9 Jan 2017 10:45:33 -0500 (EST)
-Subject: [GTALUG] [GTALUG-Announce] Meeting Tomorrow at 7:30pm
-Message-ID: <20170109154533.C41A1E68B@penguin.gtalug.org>
+Date: Tue,  7 Nov 2017 10:43:35 -0500 (EST)
+Subject: [GTALUG] [GTALUG-Announce] Meeting on 14 November 2017 at 7:30pm -
+ Building a 3D printer from scratch with Alex Volkov
+Message-ID: <20171107154335.319E9E38B@penguin.gtalug.org>
 
-<http://gtalug.org/meeting/2017-01/>
+<http://gtalug.org/meeting/2017-11/>
 
-# Round Table Q&A Session
+# Building a 3D printer from scratch with Alex Volkov
 
-A Round Table Q&A Session is where we take questions from the audience, and the audience discusses and attempts to answer those questions from their own knowledge. It's a great way to meet fellow members of our community and discover the skill sets we each bring to the table.
+Building a 3D printer from scratch may be easier than making an apple pie from scratch! In this talk Alex will talk about getting into 3D printing 'the hard way' by building a clone of Prusa i3 MK2 from scratch using bits of wood, some metric hardware, arduino, 3D-printer and 3D printed parts, then attempting to design and print.
 
 ## Location
 
@@ -904,13 +765,13 @@ Ryerson University
 
 * 6:00 pm - Please discuss on the general mailing list (i.e. <talk at gtalug.org>) where you want to go for dinner.
 * 7:30 pm - Meeting and presentation.
-* 9:00 pm - After each meeting, a group of GTALUGers move to The Imperial Pub (54 Dundas St East) for refreshments and more socializing.
+* 9:00 pm - After each meeting, a group of GTALUGers move to The Imperial Pub (54 Dundas St East) for refreshments and more socialising.
 
 # Code of Conduct
 
 We want a productive happy community that can welcome new ideas, improve every process every year, and foster collaboration between individuals with differing needs, interests and skills.
 
-We gain strength from diversity, and actively seek participation from those who enhance it. This code of conduct exists to ensure that diverse groups collaborate to mutual advantage and enjoyment. We will challenge prejudice that could jeopardize the participation of any person in the community.
+We gain strength from diversity, and actively seek participation from those who enhance it. This code of conduct exists to ensure that diverse groups collaborate to mutual advantage and enjoyment. We will challenge prejudice that could jeopardise the participation of any person in the community.
 
 The Code of Conduct governs how we behave in public or in private whenever the Linux community will be judged by our actions. We expect it to be honoured by everyone who represents the community officially or informally, claims affiliation or participates directly. It applies to activities online or offline.
 
@@ -924,3198 +785,28 @@ GTALUG Announce mailing list
 announce at gtalug.org
 https://gtalug.org/mailman/listinfo/announce
 
-From lsorense at csclub.uwaterloo.ca  Mon Jan  9 10:53:05 2017
-From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
-Date: Mon, 9 Jan 2017 10:53:05 -0500
-Subject: [GTALUG] processor progress sure has slowed down
-In-Reply-To: <alpine.LFD.2.20.1701062013340.2893@redeye.mimosa.com>
-References: <alpine.LFD.2.20.1701062013340.2893@redeye.mimosa.com>
-Message-ID: <20170109155305.GD17366@csclub.uwaterloo.ca>
+From jamon.camisso at utoronto.ca  Tue Nov  7 11:33:34 2017
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Tue, 7 Nov 2017 11:33:34 -0500
+Subject: [GTALUG] Migrating from MySQL to Postgres
+In-Reply-To: <5A01CF59.6020404@mylesb.ca>
+References: <5A01CF59.6020404@mylesb.ca>
+Message-ID: <ce1031e4-f934-d66c-87f2-d8b32fb02e05@utoronto.ca>
 
-On Fri, Jan 06, 2017 at 08:31:57PM -0500, D. Hugh Redelmeier via talk wrote:
-> I got an ad from NCIX for systems with Intel's new Kaby Lake processors.  
-> Here's the headline:
+On 2017-11-07 10:20 AM, Myles Braithwaite 👾 via talk wrote:
+> Anyone have some recent first hand experience migrating a MySQL database
+> to Postgres and would like a coffee and cookies in exchange for your
+> case study?
 > 
-> 	UP TO
-> 	[LARGER FONT] 28% BETTER PERFORMANCE* [/LARGER FONT]
-> 	versus a 3-year-old-desktop
-> 
-> The footnote shows that a i7-7700K processor system was being compared 
-> with a i7-4770K.  Some of the improvement would be in DDR4 vs DDR3 and so 
-> on.  OS and video card were the same.  The power requirement of the CPU 
-> went up slightly.
-> 
-> You'd normally expect a 7xxx processor to be compared with a 6xxx 
-> procecessor, but they've reached back an extra two generations to show 
-> even a modest 28% improvement.
-
-Well at the same clock the 7xxx and 6xxx are apparently the same speed
-in almost all cases.  7xxx is a bit more power efficient though, and
-can hence overclock a bit more.
-
-But yes, not a big leap this time at all.  There is a new chipset
-generation to go with it, although apparently some of the existing 100
-series boards can already support the new chip at least with a bios update.
-
-> There are useful features added to the processors since the Haswell 
-> generation.  Like a working TSX-NI: Haswell had it, with bugs, so Intel 
-> suppressed it with a microcode update.  Not completely fair since the K 
-> models never had it.
-> 
-> Intel has put a lot of extra transistors into on-chip video, something 
-> useful at least sometimes.  Perhaps this shows where Intel feels it needs 
-> to compete -- AMD has a better on-chip GPU but an uncompetitive CPU.  One 
-> can only hope that AMD's Zen/Ryzen lives up to AMD's talk.
-
-Well at least on some models they are improving graphics, but I am not
-sure that is the case on all models.
-
-I still have a happy Core2 Q6600 running, which was released 10 years
-ago, and I would not consider it a slow machine.  Sure it doesn't match
-my i7-3960X machine, but that would not be a fair comparison anyhow.
-
--- 
-Len Sorensen
-
-From stephen-d at rogers.com  Mon Jan  9 10:59:07 2017
-From: stephen-d at rogers.com (Stephen)
-Date: Mon, 9 Jan 2017 10:59:07 -0500
-Subject: [GTALUG] Samba Nobody (File ownership) problems returns
-Message-ID: <b1a58d55-0aba-7270-dab0-090ec2428989@rogers.com>
-
-Scenario
-
-Samba is installed and used on server running Ubuntu 16.10. In addition 
-to server software, normal desktop programs are installed. Certain 
-folders are shared. Guests may access and create files. Windows 
-computers copy files to the shared folders. These files have ownership 
-of nobody:nobody I have two Windows 10 computers. The problem happens 
-with both,
-
-Desired behaviour
-
-These files are given ownership of the owner of the directory.
-
-Method
-
-The samba.conf file has an entry for each shared folder, like this:
-
-[public]
-comment = Stephen Public
-path = /home/stephen/Public
-writeable = yes
-; browseable = yes
-guest ok = yes
-force user = stephen
-force group = stephen
-
-Situation
-
-This has been working as desired since I did a new install of 16.10. 
-Today I noticed the nobody ownership problem. I had it after the install 
-of 16.10 because I forgot to update samba.conf. Hence the return of the 
-problem.
-
-It has been a week since I did a file copy that worked as desired. I 
-copy files infrequently.
-
-It is worse. A sudo chown to change permissions to stephen:stephen 
-executed without error. But within nautilus the context menu on the 
-files had the commands to rename and delete greyed out. Even though the 
-permissions section of the properties did say the ownership was changed.
-
-I have not made any configuration changes. I have performed one, maybe 
-two, system updates. There has also been a Windows 10 update.
-
-
-Any and all help appreciated.
-
-
--- 
-Stephen
-
-From dmason at ryerson.ca  Mon Jan  9 17:42:03 2017
-From: dmason at ryerson.ca (David Mason)
-Date: Mon, 9 Jan 2017 17:42:03 -0500
-Subject: [GTALUG] Anyone want an Apple TV?
-In-Reply-To: <2226859a-776e-52c2-e89a-df567bb73633@rogers.com>
-References: <2226859a-776e-52c2-e89a-df567bb73633@rogers.com>
-Message-ID: <CALFgxqAKghdALo9sAvp_ZwyRZnqutLpeFXX+F9ZOKXFGo+8GMw@mail.gmail.com>
-
-Hi Dave,
-
-I love Apple TVs, and would gladly accept one (they are a bit hard to find).
-
-However I have a terrible cold and am racing to get ready for the semester
-that starts on Friday, so will not be able to get to the meeting tomorrow
-(I live seriously in the boonies!).
-
-If no-one takes you up on your offer, you could leave it in the tall metal
-cabinet at the back of the room (I just went and checked and it's
-unlocked), and I could pick it up on Wednesday morning.
-
-BTW, what didn't you like about it?
-
-Thanks  ../Dave
-
-On 9 January 2017 at 07:36, David Collier-Brown via talk <talk at gtalug.org>
-wrote:
-
-> I have the second-last model, which I've tried and didn't like. I'll bring
-> it to the meetings if anyone wants it.
->
-> --dave
->
-> --
-> David Collier-Brown,         | Always do right. This will gratify
-> System Programmer and Author | some people and astonish the restdavecb at spamcop.net           |                      -- Mark Twain
->
->
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
->
->
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170109/d4647023/attachment.html>
-
-From dmason at ryerson.ca  Mon Jan  9 17:47:53 2017
-From: dmason at ryerson.ca (David Mason)
-Date: Mon, 9 Jan 2017 17:47:53 -0500
-Subject: [GTALUG] Anyone want an Apple TV?
-In-Reply-To: <2226859a-776e-52c2-e89a-df567bb73633@rogers.com>
-References: <2226859a-776e-52c2-e89a-df567bb73633@rogers.com>
-Message-ID: <CALFgxqAR2REi7GpAkB9BBoZHU=3dkRu6DkSBYh=4hsgoSHPboA@mail.gmail.com>
-
-I hit reply.... not reply-all... and my email went to the world!!!  Is
-there a reason for this?
-
-I checked... if I do reply-all, it goes to the same 3 places, *plus* the UU
-list.
-
-*sigh*
-
-Ohh... maybe it's because I top-posted! :-) :-)
-
-../Dave
-
-On 9 January 2017 at 07:36, David Collier-Brown via talk <talk at gtalug.org>
-wrote:
-
-> I have the second-last model, which I've tried and didn't like. I'll bring
-> it to the meetings if anyone wants it.
->
-> --dave
->
-> --
-> David Collier-Brown,         | Always do right. This will gratify
-> System Programmer and Author | some people and astonish the restdavecb at spamcop.net           |                      -- Mark Twain
->
->
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
->
->
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170109/598b6db1/attachment.html>
-
-From chris at cfajohnson.com  Mon Jan  9 17:47:50 2017
-From: chris at cfajohnson.com (Chris F.A. Johnson)
-Date: Mon, 9 Jan 2017 17:47:50 -0500 (EST)
-Subject: [GTALUG] Bash Problem
-In-Reply-To: <CAEZ_B6OnetmDRp274wMk4tNGZgVpjZvF7uc+Qx+cM2UWY4C3og@mail.gmail.com>
-References: <fe2f8fa8-de98-2c9d-4147-4cbc4b0cb1f6@rogers.com>
- <0c817fc9-e7e6-9339-e984-a80b6ad462db@rogers.com>
- <20170108152152.GA21165@node1.localdomain>
- <CAEZ_B6OnetmDRp274wMk4tNGZgVpjZvF7uc+Qx+cM2UWY4C3og@mail.gmail.com>
-Message-ID: <alpine.DEB.2.10.1701091745100.11603@cfajohnson.ca>
-
-On Sun, 8 Jan 2017, Mauro Souza via talk wrote:
-
-> Or
-> nFname="${base}.mp4"
-> 
-> Using brackets you can mix variables and text and create something like this:
-> newName="${oldname}-bkp-${filedate}.${extension}.old"
-
-The braces are not necessary here. This will work fine:
-
-newName="$oldname-bkp-$filedate.$extension.old"
-
-Braces would be necessary if you were using underscores instead of
-hyphens because they can be part of a variable name:
-
-newName="${oldname}_bkp_$filedate.$extension.old"
-
--- 
-Chris F.A. Johnson, <http://cfajohnson.com>
-
-From bjonkman at sobac.com  Mon Jan  9 18:59:37 2017
-From: bjonkman at sobac.com (Bob Jonkman)
-Date: Mon, 9 Jan 2017 18:59:37 -0500
-Subject: [GTALUG] Bash Problem
-In-Reply-To: <alpine.DEB.2.10.1701091745100.11603@cfajohnson.ca>
-References: <fe2f8fa8-de98-2c9d-4147-4cbc4b0cb1f6@rogers.com>
- <0c817fc9-e7e6-9339-e984-a80b6ad462db@rogers.com>
- <20170108152152.GA21165@node1.localdomain>
- <CAEZ_B6OnetmDRp274wMk4tNGZgVpjZvF7uc+Qx+cM2UWY4C3og@mail.gmail.com>
- <alpine.DEB.2.10.1701091745100.11603@cfajohnson.ca>
-Message-ID: <a41ccd64-6bbe-15a6-7178-3d8632ad20e4@sobac.com>
-
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA1
-
-Chris F.A. Johnson wrote:
-> The braces are not necessary here.
-
-Are braced incorrect here? I've been putting braces around all
-variable names, so that there are fewer syntax exceptions for me to
-remember...
-
-- --Bob.
-
-
-On 2017-01-09 05:47 PM, Chris F.A. Johnson via talk wrote:
-> On Sun, 8 Jan 2017, Mauro Souza via talk wrote:
-> 
->> Or nFname="${base}.mp4"
->> 
->> Using brackets you can mix variables and text and create 
->> something like this: 
->> newName="${oldname}-bkp-${filedate}.${extension}.old"
-> 
-> The braces are not necessary here. This will work fine:
-> 
-> newName="$oldname-bkp-$filedate.$extension.old"
-> 
-> Braces would be necessary if you were using underscores instead of
->  hyphens because they can be part of a variable name:
-> 
-> newName="${oldname}_bkp_$filedate.$extension.old"
-> 
-
-- -- 
-
-
-- --
-Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-635-9413
-SOBAC Microcomputer Services             http://sobac.com/sobac/
-Software   ---   Office & Business Automation   ---   Consulting
-GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
-
-
-
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v2
-Comment: Ensure confidentiality, authenticity, non-repudiability
-
-iEYEARECAAYFAlh0I9wACgkQuRKJsNLM5erWdQCgohmGdSVT2s1DHEWs+3+I3BCn
-nR4AoM8TVyt53lC3KhHC6uecvy09Zq9z
-=Af5d
------END PGP SIGNATURE-----
-
-From thoriumbr at gmail.com  Mon Jan  9 19:01:36 2017
-From: thoriumbr at gmail.com (Mauro Souza)
-Date: Mon, 9 Jan 2017 22:01:36 -0200
-Subject: [GTALUG] Bash Problem
-In-Reply-To: <a41ccd64-6bbe-15a6-7178-3d8632ad20e4@sobac.com>
-References: <fe2f8fa8-de98-2c9d-4147-4cbc4b0cb1f6@rogers.com>
- <0c817fc9-e7e6-9339-e984-a80b6ad462db@rogers.com>
- <20170108152152.GA21165@node1.localdomain>
- <CAEZ_B6OnetmDRp274wMk4tNGZgVpjZvF7uc+Qx+cM2UWY4C3og@mail.gmail.com>
- <alpine.DEB.2.10.1701091745100.11603@cfajohnson.ca>
- <a41ccd64-6bbe-15a6-7178-3d8632ad20e4@sobac.com>
-Message-ID: <CAEZ_B6PoZdfJAyVWEMGsZvXUSEZ_8F39GWF1nJTUFey8sJrB_w@mail.gmail.com>
-
-I almost always use them. Only left them out for very simple scripts.
-
-It's not really necessary all the time, but better safe than sorry...
-
-On Jan 9, 2017 22:00, "Bob Jonkman via talk" <talk at gtalug.org> wrote:
-
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA1
-
-Chris F.A. Johnson wrote:
-> The braces are not necessary here.
-
-Are braced incorrect here? I've been putting braces around all
-variable names, so that there are fewer syntax exceptions for me to
-remember...
-
-- --Bob.
-
-
-On 2017-01-09 05:47 PM, Chris F.A. Johnson via talk wrote:
-> On Sun, 8 Jan 2017, Mauro Souza via talk wrote:
->
->> Or nFname="${base}.mp4"
->>
->> Using brackets you can mix variables and text and create
->> something like this:
->> newName="${oldname}-bkp-${filedate}.${extension}.old"
->
-> The braces are not necessary here. This will work fine:
->
-> newName="$oldname-bkp-$filedate.$extension.old"
->
-> Braces would be necessary if you were using underscores instead of
->  hyphens because they can be part of a variable name:
->
-> newName="${oldname}_bkp_$filedate.$extension.old"
->
-
-- --
-
-
-- --
-Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-635-9413
-SOBAC Microcomputer Services             http://sobac.com/sobac/
-Software   ---   Office & Business Automation   ---   Consulting
-GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
-
-
-
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v2
-Comment: Ensure confidentiality, authenticity, non-repudiability
-
-iEYEARECAAYFAlh0I9wACgkQuRKJsNLM5erWdQCgohmGdSVT2s1DHEWs+3+I3BCn
-nR4AoM8TVyt53lC3KhHC6uecvy09Zq9z
-=Af5d
------END PGP SIGNATURE-----
----
-Talk Mailing List
-talk at gtalug.org
-https://gtalug.org/mailman/listinfo/talk
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170109/253a3a69/attachment.html>
-
-From davec-b at rogers.com  Mon Jan  9 20:22:47 2017
-From: davec-b at rogers.com (David Collier-Brown)
-Date: Mon, 9 Jan 2017 20:22:47 -0500
-Subject: [GTALUG] Anyone want an Apple TV?
-In-Reply-To: <CALFgxqAKghdALo9sAvp_ZwyRZnqutLpeFXX+F9ZOKXFGo+8GMw@mail.gmail.com>
-References: <2226859a-776e-52c2-e89a-df567bb73633@rogers.com>
- <CALFgxqAKghdALo9sAvp_ZwyRZnqutLpeFXX+F9ZOKXFGo+8GMw@mail.gmail.com>
-Message-ID: <cf180938-e7cf-95c1-9a54-2ceb1970776c@rogers.com>
-
-A colleague got their request in earliest --dave
->
-> On 9 January 2017 at 07:36, David Collier-Brown via talk 
-> <talk at gtalug.org <mailto:talk at gtalug.org>> wrote:
->
->     I have the second-last model, which I've tried and didn't like.
->     I'll bring it to the meetings if anyone wants it.
->
->
-
-
--- 
-David Collier-Brown,         | Always do right. This will gratify
-System Programmer and Author | some people and astonish the rest
-davecb at spamcop.net           |                      -- Mark Twain
-
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170109/13ff573b/attachment.html>
-
-From chris at cfajohnson.com  Mon Jan  9 20:26:57 2017
-From: chris at cfajohnson.com (Chris F.A. Johnson)
-Date: Mon, 9 Jan 2017 20:26:57 -0500 (EST)
-Subject: [GTALUG] Bash Problem
-In-Reply-To: <a41ccd64-6bbe-15a6-7178-3d8632ad20e4@sobac.com>
-References: <fe2f8fa8-de98-2c9d-4147-4cbc4b0cb1f6@rogers.com>
- <0c817fc9-e7e6-9339-e984-a80b6ad462db@rogers.com>
- <20170108152152.GA21165@node1.localdomain>
- <CAEZ_B6OnetmDRp274wMk4tNGZgVpjZvF7uc+Qx+cM2UWY4C3og@mail.gmail.com>
- <alpine.DEB.2.10.1701091745100.11603@cfajohnson.ca>
- <a41ccd64-6bbe-15a6-7178-3d8632ad20e4@sobac.com>
-Message-ID: <alpine.DEB.2.10.1701092023140.11603@cfajohnson.ca>
-
-On Mon, 9 Jan 2017, Bob Jonkman via talk wrote:
-
-> Chris F.A. Johnson wrote:
-
->>> newName="${oldname}-bkp-${filedate}.${extension}.old"
->>
->> The braces are not necessary here.
->
-> Are braced incorrect here? I've been putting braces around all
-> variable names, so that there are fewer syntax exceptions for me to
-> remember...
-
-They are not incorrect, just unnecessary.
-
-The only time they are necessary is when the variable name is followed
-by a character that is legal in a variable name.
-
-Or when modifying the output of the variable expansion.
-
--- 
-Chris F.A. Johnson, <http://cfajohnson.com>
-
-From louipc.ist at gmail.com  Tue Jan 10 02:19:30 2017
-From: louipc.ist at gmail.com (Loui Chang)
-Date: Tue, 10 Jan 2017 02:19:30 -0500
-Subject: [GTALUG] Anyone want an Apple TV?
-In-Reply-To: <CALFgxqAR2REi7GpAkB9BBoZHU=3dkRu6DkSBYh=4hsgoSHPboA@mail.gmail.com>
-References: <2226859a-776e-52c2-e89a-df567bb73633@rogers.com>
- <CALFgxqAR2REi7GpAkB9BBoZHU=3dkRu6DkSBYh=4hsgoSHPboA@mail.gmail.com>
-Message-ID: <20170110071930.GB15628@gmail.com>
-
-On Mon 09 Jan 2017 17:47 -0500, David Mason via talk wrote:
-> I hit reply.... not reply-all... and my email went to the world!!!  Is
-> there a reason for this?
-
-It's just the way this mailing list is setup.
-It puts the list address in the reply-to header.
-So be alert!
-
-From gilesorr at gmail.com  Tue Jan 10 10:13:13 2017
-From: gilesorr at gmail.com (Giles Orr)
-Date: Tue, 10 Jan 2017 10:13:13 -0500
-Subject: [GTALUG] Toronto Mesh - "State of our Networks" mini-conference
-Message-ID: <CAEnxSC5kLxpZXfDs_KJUepr6VGhxTHMaChzYQPm9_UDBsyfhuQ@mail.gmail.com>
-
-https://tomesh.net/state-of-our-networks/
-
-I thought this might be of interest to some people on the list (this weekend):
-
-Brought to you by Toronto Mesh, ‘State of our Networks’ is a one-day,
-hands-on conference about the past, present, and future of building
-our own network infrastructures to communicate and access the internet
-in our city. Join us for:
-
-- hands-on workshops* to build mesh nodes and learn about low-power networks
-- talks about a history of Toronto’s internet
-- planning how to build resilient and accessible communications
-networks and connections to the internet
-
-
-
--- 
-Giles
-http://www.gilesorr.com/
-gilesorr at gmail.com
-
-From hugh at mimosa.com  Tue Jan 10 15:05:58 2017
-From: hugh at mimosa.com (D. Hugh Redelmeier)
-Date: Tue, 10 Jan 2017 15:05:58 -0500 (EST)
-Subject: [GTALUG] dinner suggestion
-Message-ID: <alpine.LFD.2.20.1701101501340.21923@redeye.mimosa.com>
-
-I'm interested in dinner.  I propose Kaiju, in the food court in the 
-basement of the Aura building, 384 Yonge St.
-
-We were last there in April.
-
-Each of us can choose which vendor in the food court to use.
-
-  <https://wiki.gtalug.org/pre-meeting_dinner#kaiju_japanese_curry>
-
-If another venue has already been selected, please announce that.
-
-From cbbrowne at gmail.com  Tue Jan 10 15:15:16 2017
-From: cbbrowne at gmail.com (Christopher Browne)
-Date: Tue, 10 Jan 2017 15:15:16 -0500
-Subject: [GTALUG] dinner suggestion
-In-Reply-To: <alpine.LFD.2.20.1701101501340.21923@redeye.mimosa.com>
-References: <alpine.LFD.2.20.1701101501340.21923@redeye.mimosa.com>
-Message-ID: <CAFNqd5XGaEsX1QD+X9QJDbnLmdWgf7cb-O+EDHmDNxnTW1CYOg@mail.gmail.com>
-
-+1 on that
-
-From me at mylesbraithwaite.com  Tue Jan 10 15:24:47 2017
-From: me at mylesbraithwaite.com (Myles Braithwaite)
-Date: Tue, 10 Jan 2017 15:24:47 -0500
-Subject: [GTALUG] dinner suggestion
-In-Reply-To: <alpine.LFD.2.20.1701101501340.21923@redeye.mimosa.com>
-References: <alpine.LFD.2.20.1701101501340.21923@redeye.mimosa.com>
-Message-ID: <5875430F.4000607@gtalug.org>
-
-D. Hugh Redelmeier via talk wrote:
-> I'm interested in dinner.  I propose Kaiju, in the food court in the 
-> basement of the Aura building, 384 Yonge St.
-
-+1
-
--- 
-Have an awesome day, and happy open-sourcing :-).
-
-From cbbrowne at gmail.com  Tue Jan 10 20:59:59 2017
-From: cbbrowne at gmail.com (Christopher Browne)
-Date: Wed, 11 Jan 2017 01:59:59 +0000
-Subject: [GTALUG] Notes from the whiteboard
-Message-ID: <CAFNqd5Uh-Erz+Hjen3A+vMr+nJra-r60T3i4kH8XQq65HAkj+Q@mail.gmail.com>
-
-Pics of whiteboards...
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170111/465a6404/attachment.html>
--------------- next part --------------
-A non-text attachment was scrubbed...
-Name: New Doc 1.pdf
-Type: application/octet-stream
-Size: 485482 bytes
-Desc: not available
-URL: <http://gtalug.org/pipermail/talk/attachments/20170111/465a6404/attachment.obj>
-
-From scruss at gmail.com  Wed Jan 11 10:28:23 2017
-From: scruss at gmail.com (Stewart C. Russell)
-Date: Wed, 11 Jan 2017 10:28:23 -0500
-Subject: [GTALUG] Notes from the whiteboard - Jan 2017 round table
-Message-ID: <29896973-f289-9667-485f-66c0d518559b@gmail.com>
-
-Christopher Browne sent through notes from the whiteboard from last
-night, but they got caught up in the list's attachment filter. I took
-the liberty of unpacking the images and putting them on the wiki:
-
-https://wiki.gtalug.org/meeting:2017-01
-
-Thanks to all who contributed!
-
-cheers,
-
- Stewart
-
-
-From me at mylesbraithwaite.com  Wed Jan 11 10:39:00 2017
-From: me at mylesbraithwaite.com (=?UTF-8?Q?Myles_Braithwaite_=F0=9F=91=BE?=)
-Date: Wed, 11 Jan 2017 07:39:00 -0800
-Subject: [GTALUG] Resources I Mentioned Last Night
-Message-ID: <CA+hskZNsvrWB97bzoW0HRmEDLnmPz3AkRGENSRhx-LehD8b6aA@mail.gmail.com>
-
-AdBlocker though DNS /cc @Hecktor
-
-* Good for blocking Ads though `/etc/hosts` file
-<http://someonewhocares.org/hosts/zero/hosts>
-* Better <https://github.com/StevenBlack/hosts/>
-
-Raspberry Pi VPN Gateway Provider /cc @Evan
-
-* VPN Provider: <https://www.privateinternetaccess.com/>
-* Tutorial for making a VPN Gateway:
-<https://gist.github.com/superjamie/ac55b6d2c080582a3e64>
-* Onion Pi: <https://learn.adafruit.com/onion-pi/overview>
-
-Jobs
-
-* Google Interview University:
-<https://github.com/jwasham/google-interview-university>
-
-From alextelipko at gmail.com  Wed Jan 11 10:56:58 2017
-From: alextelipko at gmail.com (Aliaksei Tsialipka)
-Date: Wed, 11 Jan 2017 09:56:58 -0600
-Subject: [GTALUG] Resources I Mentioned Last Night
-In-Reply-To: <CA+hskZNsvrWB97bzoW0HRmEDLnmPz3AkRGENSRhx-LehD8b6aA@mail.gmail.com>
-References: <CA+hskZNsvrWB97bzoW0HRmEDLnmPz3AkRGENSRhx-LehD8b6aA@mail.gmail.com>
-Message-ID: <091771e0-10c9-46b8-41e8-410fdd6ff399@gmail.com>
-
-When I read about things like that ( Google Interview University:)
-it reminds me about great city of Sparta: 
-https://en.wikipedia.org/wiki/Sparta#Birth_and_death
-
-PS: Since I am new here, this is my chance to say hello to everyone and 
-wish all of you a blessed 2017.
-
-/alex.
-On 2017-01-11 09:39 AM, Myles Braithwaite 👾 via talk wrote:
-> AdBlocker though DNS /cc @Hecktor
->
-> * Good for blocking Ads though `/etc/hosts` file
-> <http://someonewhocares.org/hosts/zero/hosts>
-> * Better <https://github.com/StevenBlack/hosts/>
->
-> Raspberry Pi VPN Gateway Provider /cc @Evan
->
-> * VPN Provider: <https://www.privateinternetaccess.com/>
-> * Tutorial for making a VPN Gateway:
-> <https://gist.github.com/superjamie/ac55b6d2c080582a3e64>
-> * Onion Pi: <https://learn.adafruit.com/onion-pi/overview>
->
-> Jobs
->
-> * Google Interview University:
-> <https://github.com/jwasham/google-interview-university>
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
-
--- 
-
-wishing you piece
------------------------------
-aliaksei tsialipka
-
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170111/4b034565/attachment.html>
-
-From o1bigtenor at gmail.com  Thu Jan 12 08:16:56 2017
-From: o1bigtenor at gmail.com (o1bigtenor)
-Date: Thu, 12 Jan 2017 07:16:56 -0600
-Subject: [GTALUG] Question
-Message-ID: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
-
-Greetings
-
-Am trying to find (for need in the not to distant future) some of what
-is normally called 'accounting' software (its really record keeping
-software but that's a different argument!).
-
-What are you using that is, or could be, multi-user and has room for
-some complexity?
-(I am presently using 10 digit account numbers to get the granularity I want.)
-
-TIA
-
-Dee
-
-From subscriptions at cprofitt.com  Thu Jan 12 09:17:44 2017
-From: subscriptions at cprofitt.com (Charles Profitt)
-Date: Thu, 12 Jan 2017 06:17:44 -0800
-Subject: [GTALUG] Flock bids are now open
-Message-ID: <159930aa318.11f735fcc1953.6155488405623956131@cprofitt.com>
-
-
-Hello GTALUG:
-
-A while back I sent an email to the list asking if anyone was potentially interested in having Flock in the Kitchener / Waterlook area.
-
-Today the Flock bid process officially opened.
-
-https://communityblog.fedoraproject.org/flock-2017-bids-due-28-feb-2017/
-
-Charles
-
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170112/c0dcaf16/attachment.html>
-
-From marc at lijour.net  Thu Jan 12 09:23:00 2017
-From: marc at lijour.net (Marc Lijour)
-Date: Thu, 12 Jan 2017 09:23:00 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
-Message-ID: <4ce7a1a5-c5db-35a9-c1af-e0eec5701135@lijour.net>
-
-For business uses, we use Odoo. It's open source and simple enough to 
-get started with a couple business functions like accounting. We 
-actually launched the Odoo Toronto meetup group with another Odoo 
-service provider (OERP). See https://www.meetup.com/Odoo-Toronto/ (slow 
-right now)
-
-For personal use, I found that Gnucash does the job.
-
-
-On 2017-01-12 08:16 AM, o1bigtenor via talk wrote:
-> Greetings
->
-> Am trying to find (for need in the not to distant future) some of what
-> is normally called 'accounting' software (its really record keeping
-> software but that's a different argument!).
->
-> What are you using that is, or could be, multi-user and has room for
-> some complexity?
-> (I am presently using 10 digit account numbers to get the granularity I want.)
->
-> TIA
->
-> Dee
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
-
--- 
-*Marc Lijour*
-Email:marc at lijour.net <mailto:marc at lijour.net>
-Ring:3e447c5477143b7c881c0730c152f8f0678501e5Join the Ring! 
-<http://ring.cx>
-Skype:marclijour
-Phone: *+1 647 384 7746 *
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170112/39ac5388/attachment.html>
-
-From digiital at gmail.com  Thu Jan 12 09:29:49 2017
-From: digiital at gmail.com (Digiital aka David)
-Date: Thu, 12 Jan 2017 09:29:49 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <4ce7a1a5-c5db-35a9-c1af-e0eec5701135@lijour.net>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <4ce7a1a5-c5db-35a9-c1af-e0eec5701135@lijour.net>
-Message-ID: <CAAMdRcE_c2r0_r2QZsJ-t3Z1_r7LtxfZH96KkggU=vNWA-iRSg@mail.gmail.com>
-
-Could have used that meetup a few yrs ago. I was working with a manufacture
-in Mississauga that wanted to replace the homebrew ERP system(access??
-Blaaaa) and I was in the stages of rebuilding it using OpenERP(Odoo) but
-they didn't like the flow because they had been doing the biz the same way
-for over 30 yrs and just not possible in Odoo so they scrapped the
-project/and me :)
-
-Now they realize that they have to make some change and decided to go with
-http://openpro.com/ which isn't open at all.
-
-
-
-
-
-On Thu, Jan 12, 2017 at 9:23 AM, Marc Lijour via talk <talk at gtalug.org>
-wrote:
-
-> For business uses, we use Odoo. It's open source and simple enough to get
-> started with a couple business functions like accounting. We actually
-> launched the Odoo Toronto meetup group with another Odoo service provider
-> (OERP). See https://www.meetup.com/Odoo-Toronto/ (slow right now)
->
-> For personal use, I found that Gnucash does the job.
->
-> On 2017-01-12 08:16 AM, o1bigtenor via talk wrote:
->
-> Greetings
->
-> Am trying to find (for need in the not to distant future) some of what
-> is normally called 'accounting' software (its really record keeping
-> software but that's a different argument!).
->
-> What are you using that is, or could be, multi-user and has room for
-> some complexity?
-> (I am presently using 10 digit account numbers to get the granularity I want.)
->
-> TIA
->
-> Dee
-> ---
-> Talk Mailing Listtalk at gtalug.orghttps://gtalug.org/mailman/listinfo/talk
->
->
-> --
-> *Marc Lijour*
-> Email:marc at lijour.net
-> Ring:3e447c5477143b7c881c0730c152f8f0678501e5 Join the Ring!
-> <http://ring.cx>
-> Skype:marclijour
-> Phone: *+1 647 384 7746 <(647)%20384-7746>  *
->
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
->
->
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170112/1d925a93/attachment.html>
-
-From marc at lijour.net  Thu Jan 12 09:32:14 2017
-From: marc at lijour.net (Marc Lijour)
-Date: Thu, 12 Jan 2017 09:32:14 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <CAAMdRcE_c2r0_r2QZsJ-t3Z1_r7LtxfZH96KkggU=vNWA-iRSg@mail.gmail.com>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <4ce7a1a5-c5db-35a9-c1af-e0eec5701135@lijour.net>
- <CAAMdRcE_c2r0_r2QZsJ-t3Z1_r7LtxfZH96KkggU=vNWA-iRSg@mail.gmail.com>
-Message-ID: <9648b10b-dc77-bddc-f0aa-a6adba7d572c@lijour.net>
-
-Odoo can be tailored, but at a cost (oftentimes underestimated by the 
-customer). However, it's the best solution for those who need a 
-custom-fit system -short of building one from scratch of course :-)
-
-
-On 2017-01-12 09:29 AM, Digiital aka David wrote:
-> Could have used that meetup a few yrs ago. I was working with a 
-> manufacture in Mississauga that wanted to replace the homebrew ERP 
-> system(access?? Blaaaa) and I was in the stages of rebuilding it using 
-> OpenERP(Odoo) but they didn't like the flow because they had been 
-> doing the biz the same way for over 30 yrs and just not possible in 
-> Odoo so they scrapped the project/and me :)
->
-> Now they realize that they have to make some change and decided to go 
-> with http://openpro.com/ which isn't open at all.
->
->
->
->
->
-> On Thu, Jan 12, 2017 at 9:23 AM, Marc Lijour via talk <talk at gtalug.org 
-> <mailto:talk at gtalug.org>> wrote:
->
->     For business uses, we use Odoo. It's open source and simple enough
->     to get started with a couple business functions like accounting.
->     We actually launched the Odoo Toronto meetup group with another
->     Odoo service provider (OERP). See
->     https://www.meetup.com/Odoo-Toronto/
->     <https://www.meetup.com/Odoo-Toronto/> (slow right now)
->
->     For personal use, I found that Gnucash does the job.
->
->
->     On 2017-01-12 08:16 AM, o1bigtenor via talk wrote:
->>     Greetings
->>
->>     Am trying to find (for need in the not to distant future) some of what
->>     is normally called 'accounting' software (its really record keeping
->>     software but that's a different argument!).
->>
->>     What are you using that is, or could be, multi-user and has room for
->>     some complexity?
->>     (I am presently using 10 digit account numbers to get the granularity I want.)
->>
->>     TIA
->>
->>     Dee
->>     ---
->>     Talk Mailing List
->>     talk at gtalug.org <mailto:talk at gtalug.org>
->>     https://gtalug.org/mailman/listinfo/talk
->>     <https://gtalug.org/mailman/listinfo/talk>
->     -- *Marc Lijour* Email:marc at lijour.net <mailto:marc at lijour.net>
->     Ring:3e447c5477143b7c881c0730c152f8f0678501e5Join the Ring!
->     <http://ring.cx> Skype:marclijour Phone: *+1 647 384 7746
->     <tel:%28647%29%20384-7746> *
->     --- Talk Mailing List talk at gtalug.org <mailto:talk at gtalug.org>
->     https://gtalug.org/mailman/listinfo/talk
->     <https://gtalug.org/mailman/listinfo/talk> 
->
--- *Marc Lijour* Email:marc at lijour.net <mailto:marc at lijour.net> 
-Ring:3e447c5477143b7c881c0730c152f8f0678501e5Join the Ring! 
-<http://ring.cx> Skype:marclijour Phone: *+1 647 384 7746 *
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170112/0b4b4654/attachment.html>
-
-From digiital at gmail.com  Thu Jan 12 09:39:13 2017
-From: digiital at gmail.com (Digiital aka David)
-Date: Thu, 12 Jan 2017 09:39:13 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <9648b10b-dc77-bddc-f0aa-a6adba7d572c@lijour.net>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <4ce7a1a5-c5db-35a9-c1af-e0eec5701135@lijour.net>
- <CAAMdRcE_c2r0_r2QZsJ-t3Z1_r7LtxfZH96KkggU=vNWA-iRSg@mail.gmail.com>
- <9648b10b-dc77-bddc-f0aa-a6adba7d572c@lijour.net>
-Message-ID: <CAAMdRcGryQXpPV7zs2ULB1Rk9E6CzG96G5tHZcmPFX999DxCiQ@mail.gmail.com>
-
-Oh I clearly knew that but the older people in the company were always
-pushing back. "Why do we need something new, we have this and it works"
-clearly it didn't work. it was amazing how it actually did work, the
-'access db' didn't use keys. The guy that dev'ed it linked tables with text
-and not a unique key.... example "Part123" and "part123" were the same part
-, but showed up as two different parts in the system. :) and depending who
-used the application, they would update the inventory one which ever part
-came up ... "part123 = 10 parts" and "Part123 = 14" over all 24 parts, but
-funny when "part123 = 0" was down to 0 they would order more but actually
-had 14 still in stock....
-
-It's a looong story... the owner was set in his ways.
-
-On Thu, Jan 12, 2017 at 9:32 AM, Marc Lijour <marc at lijour.net> wrote:
-
-> Odoo can be tailored, but at a cost (oftentimes underestimated by the
-> customer). However, it's the best solution for those who need a custom-fit
-> system -short of building one from scratch of course :-)
->
-> On 2017-01-12 09:29 AM, Digiital aka David wrote:
->
-> Could have used that meetup a few yrs ago. I was working with a
-> manufacture in Mississauga that wanted to replace the homebrew ERP
-> system(access?? Blaaaa) and I was in the stages of rebuilding it using
-> OpenERP(Odoo) but they didn't like the flow because they had been doing the
-> biz the same way for over 30 yrs and just not possible in Odoo so they
-> scrapped the project/and me :)
->
-> Now they realize that they have to make some change and decided to go with
-> http://openpro.com/ which isn't open at all.
->
->
->
->
->
-> On Thu, Jan 12, 2017 at 9:23 AM, Marc Lijour via talk <talk at gtalug.org>
-> wrote:
->
->> For business uses, we use Odoo. It's open source and simple enough to get
->> started with a couple business functions like accounting. We actually
->> launched the Odoo Toronto meetup group with another Odoo service provider
->> (OERP). See https://www.meetup.com/Odoo-Toronto/ (slow right now)
->>
->> For personal use, I found that Gnucash does the job.
->>
->> On 2017-01-12 08:16 AM, o1bigtenor via talk wrote:
->>
->> Greetings
->>
->> Am trying to find (for need in the not to distant future) some of what
->> is normally called 'accounting' software (its really record keeping
->> software but that's a different argument!).
->>
->> What are you using that is, or could be, multi-user and has room for
->> some complexity?
->> (I am presently using 10 digit account numbers to get the granularity I want.)
->>
->> TIA
->>
->> Dee
->> ---
->> Talk Mailing Listtalk at gtalug.orghttps://gtalug.org/mailman/listinfo/talk
->>
->> -- *Marc Lijour* Email:marc at lijour.net Ring:3e447c5477143b7c881c0730c
->> 152f8f0678501e5 Join the Ring! <http://ring.cx> Skype:marclijour Phone: *+1
->> 647 384 7746 <%28647%29%20384-7746>  *
->> --- Talk Mailing List talk at gtalug.org https://gtalug.org/mailman/lis
->> tinfo/talk
->
-> -- *Marc Lijour* Email:marc at lijour.net Ring:3e447c5477143b7c881c0730c
-> 152f8f0678501e5 Join the Ring! <http://ring.cx> Skype:marclijour Phone: *+1
-> 647 384 7746 <(647)%20384-7746>  *
->
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170112/41c09bdb/attachment.html>
-
-From opengeometry at yahoo.ca  Thu Jan 12 11:36:39 2017
-From: opengeometry at yahoo.ca (William Park)
-Date: Thu, 12 Jan 2017 11:36:39 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
-Message-ID: <20170112163639.GA5202@node1.localdomain>
-
-This topic is one thing that GTALUG should at least meet and talk about.
-It is recurring and prevalent needs in all business.  With enough beer,
-we'll think of something worth money.
--- 
-William
-
-On Thu, Jan 12, 2017 at 07:16:56AM -0600, o1bigtenor via talk wrote:
-> Greetings
-> 
-> Am trying to find (for need in the not to distant future) some of what
-> is normally called 'accounting' software (its really record keeping
-> software but that's a different argument!).
-> 
-> What are you using that is, or could be, multi-user and has room for
-> some complexity?
-> (I am presently using 10 digit account numbers to get the granularity I want.)
-> 
-> TIA
-> 
-> Dee
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
-
-From alvin at netvel.net  Thu Jan 12 13:13:22 2017
-From: alvin at netvel.net (Alvin Starr)
-Date: Thu, 12 Jan 2017 13:13:22 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
-Message-ID: <0de1f235-1dac-53b1-58a1-d72db9f39108@netvel.net>
-
-On 01/12/2017 08:16 AM, o1bigtenor via talk wrote:
-> Greetings
->
-> Am trying to find (for need in the not to distant future) some of what
-> is normally called 'accounting' software (its really record keeping
-> software but that's a different argument!).
->
-> What are you using that is, or could be, multi-user and has room for
-> some complexity?
-> (I am presently using 10 digit account numbers to get the granularity I want.)
->
->
-
-I had pretty good luck with LedgerSMB.
-It is a fork of SQL-ledger.
-Both have a reasonable amount of Canadian content so it supports our tax 
-structure.
-
-It's written in perl and is reasonably extensible.
-
--- 
-Alvin Starr                   ||   voice: (905)513-7688
-Netvel Inc.                   ||   Cell:  (416)806-0133
-alvin at netvel.net              ||
-
-
-From alvin at netvel.net  Thu Jan 12 13:26:36 2017
-From: alvin at netvel.net (Alvin Starr)
-Date: Thu, 12 Jan 2017 13:26:36 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <0de1f235-1dac-53b1-58a1-d72db9f39108@netvel.net>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <0de1f235-1dac-53b1-58a1-d72db9f39108@netvel.net>
-Message-ID: <20480921-bd61-2e1f-f2c3-bbd5eb7ab680@netvel.net>
-
-On 01/12/2017 01:13 PM, Alvin Starr via talk wrote:
-> On 01/12/2017 08:16 AM, o1bigtenor via talk wrote:
->> Greetings
->>
->> Am trying to find (for need in the not to distant future) some of what
->> is normally called 'accounting' software (its really record keeping
->> software but that's a different argument!).
->>
->> What are you using that is, or could be, multi-user and has room for
->> some complexity?
->> (I am presently using 10 digit account numbers to get the granularity 
->> I want.)
->>
->>
->
-> I had pretty good luck with LedgerSMB.
-> It is a fork of SQL-ledger.
-> Both have a reasonable amount of Canadian content so it supports our 
-> tax structure.
->
-> It's written in perl and is reasonably extensible.
->
-After reading some of the responses from others I would put out there 
-that its worth taking a look at LedgerSMB.
-It is Open and there is paid support and an Accounting as a service 
-based on it.
-
--- 
-Alvin Starr                   ||   voice: (905)513-7688
-Netvel Inc.                   ||   Cell:  (416)806-0133
-alvin at netvel.net              ||
-
-
-From grazer at gmail.com  Thu Jan 12 13:28:50 2017
-From: grazer at gmail.com (Jason Shaw)
-Date: Thu, 12 Jan 2017 13:28:50 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <20480921-bd61-2e1f-f2c3-bbd5eb7ab680@netvel.net>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <0de1f235-1dac-53b1-58a1-d72db9f39108@netvel.net>
- <20480921-bd61-2e1f-f2c3-bbd5eb7ab680@netvel.net>
-Message-ID: <CAC4o_JJU0Ky9f-LaFCnaR6Sw_dTq57OAgTj6Owe3oF0fzh7wuw@mail.gmail.com>
-
-I feel obligated to point out freshbooks.com as Accounting as a Service
-based here in Toronto.  I do work there, so I'm a touch biased, but it
-provides multiple users, mobile apps (android and iOS), as well as browser
-based ui.
-
--jason
-
-On Thu, Jan 12, 2017 at 1:26 PM, Alvin Starr via talk <talk at gtalug.org>
-wrote:
-
-> On 01/12/2017 01:13 PM, Alvin Starr via talk wrote:
->
->> On 01/12/2017 08:16 AM, o1bigtenor via talk wrote:
->>
->>> Greetings
->>>
->>> Am trying to find (for need in the not to distant future) some of what
->>> is normally called 'accounting' software (its really record keeping
->>> software but that's a different argument!).
->>>
->>> What are you using that is, or could be, multi-user and has room for
->>> some complexity?
->>> (I am presently using 10 digit account numbers to get the granularity I
->>> want.)
->>>
->>>
->>>
->> I had pretty good luck with LedgerSMB.
->> It is a fork of SQL-ledger.
->> Both have a reasonable amount of Canadian content so it supports our tax
->> structure.
->>
->> It's written in perl and is reasonably extensible.
->>
->> After reading some of the responses from others I would put out there
-> that its worth taking a look at LedgerSMB.
-> It is Open and there is paid support and an Accounting as a service based
-> on it.
->
->
-> --
-> Alvin Starr                   ||   voice: (905)513-7688
-> Netvel Inc.                   ||   Cell:  (416)806-0133
-> alvin at netvel.net              ||
->
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
->
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170112/f9fbf291/attachment.html>
-
-From o1bigtenor at gmail.com  Thu Jan 12 14:22:55 2017
-From: o1bigtenor at gmail.com (o1bigtenor)
-Date: Thu, 12 Jan 2017 13:22:55 -0600
-Subject: [GTALUG] Question
-In-Reply-To: <20170112163639.GA5202@node1.localdomain>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <20170112163639.GA5202@node1.localdomain>
-Message-ID: <CAPpdf5_iyTTgGFft+jh0KXYLjpqCquqzENzb+2hXEr53HjMKKA@mail.gmail.com>
-
-On Thu, Jan 12, 2017 at 10:36 AM, William Park via talk <talk at gtalug.org> wrote:
-> This topic is one thing that GTALUG should at least meet and talk about.
-> It is recurring and prevalent needs in all business.  With enough beer,
-> we'll think of something worth money.
-> --
-
-Based on what I'm finding it would a LOT of beer!
-
-Dee
-
-From o1bigtenor at gmail.com  Thu Jan 12 14:23:51 2017
-From: o1bigtenor at gmail.com (o1bigtenor)
-Date: Thu, 12 Jan 2017 13:23:51 -0600
-Subject: [GTALUG] Question
-In-Reply-To: <20480921-bd61-2e1f-f2c3-bbd5eb7ab680@netvel.net>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <0de1f235-1dac-53b1-58a1-d72db9f39108@netvel.net>
- <20480921-bd61-2e1f-f2c3-bbd5eb7ab680@netvel.net>
-Message-ID: <CAPpdf5-h3Vb2NTBFSX0TsBoSU6kz=CQYdAhgFK5w0ve2y1CutA@mail.gmail.com>
-
-On Thu, Jan 12, 2017 at 12:26 PM, Alvin Starr via talk <talk at gtalug.org> wrote:
-> On 01/12/2017 01:13 PM, Alvin Starr via talk wrote:
->>
->> On 01/12/2017 08:16 AM, o1bigtenor via talk wrote:
->>>
->>> Greetings
->>>
->>> Am trying to find (for need in the not to distant future) some of what
->>> is normally called 'accounting' software (its really record keeping
->>> software but that's a different argument!).
->>>
->>> What are you using that is, or could be, multi-user and has room for
->>> some complexity?
->>> (I am presently using 10 digit account numbers to get the granularity I
->>> want.)
->>>
->>>
->>
->> I had pretty good luck with LedgerSMB.
->> It is a fork of SQL-ledger.
->> Both have a reasonable amount of Canadian content so it supports our tax
->> structure.
->>
->> It's written in perl and is reasonably extensible.
->>
-> After reading some of the responses from others I would put out there that
-> its worth taking a look at LedgerSMB.
-> It is Open and there is paid support and an Accounting as a service based on
-> it.
-
-Will give it a look.
-
-Thanks
-
-Dee
-
-From o1bigtenor at gmail.com  Thu Jan 12 14:24:58 2017
-From: o1bigtenor at gmail.com (o1bigtenor)
-Date: Thu, 12 Jan 2017 13:24:58 -0600
-Subject: [GTALUG] Question
-In-Reply-To: <CAC4o_JJU0Ky9f-LaFCnaR6Sw_dTq57OAgTj6Owe3oF0fzh7wuw@mail.gmail.com>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <0de1f235-1dac-53b1-58a1-d72db9f39108@netvel.net>
- <20480921-bd61-2e1f-f2c3-bbd5eb7ab680@netvel.net>
- <CAC4o_JJU0Ky9f-LaFCnaR6Sw_dTq57OAgTj6Owe3oF0fzh7wuw@mail.gmail.com>
-Message-ID: <CAPpdf58=wizBzpnZNsChU8fpD7KB5ShynnsPqX8aSMVVua0_mg@mail.gmail.com>
-
-On Thu, Jan 12, 2017 at 12:28 PM, Jason Shaw via talk <talk at gtalug.org> wrote:
-> I feel obligated to point out freshbooks.com as Accounting as a Service
-> based here in Toronto.  I do work there, so I'm a touch biased, but it
-> provides multiple users, mobile apps (android and iOS), as well as browser
-> based ui.
->
-Sorry - - - lots of companies/people think the web is secure. I'm not one of
-them - - - - especially when it comes to financial data.
-
-Regards
-
-Dee
-
-From dhaval.giani at gmail.com  Thu Jan 12 14:30:06 2017
-From: dhaval.giani at gmail.com (Dhaval Giani)
-Date: Thu, 12 Jan 2017 14:30:06 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <CAPpdf58=wizBzpnZNsChU8fpD7KB5ShynnsPqX8aSMVVua0_mg@mail.gmail.com>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <0de1f235-1dac-53b1-58a1-d72db9f39108@netvel.net>
- <20480921-bd61-2e1f-f2c3-bbd5eb7ab680@netvel.net>
- <CAC4o_JJU0Ky9f-LaFCnaR6Sw_dTq57OAgTj6Owe3oF0fzh7wuw@mail.gmail.com>
- <CAPpdf58=wizBzpnZNsChU8fpD7KB5ShynnsPqX8aSMVVua0_mg@mail.gmail.com>
-Message-ID: <CAPhKKr-ViKhX-37hjJ5vQJbORfPfOQRV2Ox6iVt5EfoJtn=Nbg@mail.gmail.com>
-
-Hi,
-
-On Thu, Jan 12, 2017 at 2:24 PM, o1bigtenor via talk <talk at gtalug.org> wrote:
-> On Thu, Jan 12, 2017 at 12:28 PM, Jason Shaw via talk <talk at gtalug.org> wrote:
->> I feel obligated to point out freshbooks.com as Accounting as a Service
->> based here in Toronto.  I do work there, so I'm a touch biased, but it
->> provides multiple users, mobile apps (android and iOS), as well as browser
->> based ui.
->>
-> Sorry - - - lots of companies/people think the web is secure. I'm not one of
-> them - - - - especially when it comes to financial data.
->
-
-I feel obligated to point out here that it is more often the case that
-a cloud provider is more secure than a standalone solution. If only
-because they can afford to spend more on hiring people to work on
-security full time.
-
-Thanks!
-Dhaval
-
-From lsorense at csclub.uwaterloo.ca  Thu Jan 12 14:50:23 2017
-From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
-Date: Thu, 12 Jan 2017 14:50:23 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <CAPhKKr-ViKhX-37hjJ5vQJbORfPfOQRV2Ox6iVt5EfoJtn=Nbg@mail.gmail.com>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <0de1f235-1dac-53b1-58a1-d72db9f39108@netvel.net>
- <20480921-bd61-2e1f-f2c3-bbd5eb7ab680@netvel.net>
- <CAC4o_JJU0Ky9f-LaFCnaR6Sw_dTq57OAgTj6Owe3oF0fzh7wuw@mail.gmail.com>
- <CAPpdf58=wizBzpnZNsChU8fpD7KB5ShynnsPqX8aSMVVua0_mg@mail.gmail.com>
- <CAPhKKr-ViKhX-37hjJ5vQJbORfPfOQRV2Ox6iVt5EfoJtn=Nbg@mail.gmail.com>
-Message-ID: <20170112195023.GG17366@csclub.uwaterloo.ca>
-
-On Thu, Jan 12, 2017 at 02:30:06PM -0500, Dhaval Giani via talk wrote:
-> I feel obligated to point out here that it is more often the case that
-> a cloud provider is more secure than a standalone solution. If only
-> because they can afford to spend more on hiring people to work on
-> security full time.
-
-And you have to take their word for it that they did that.
-
-If they did not and loose it all, or decide to shut down the company
-suddenly, how do you get the accounting data that you are almost certainly
-legally required to keep for a number of years?
-
-So is the cloud service safer than what lots of companies do themselves?
-Sure.  Is it safer than doing it right?  Almost certainly not.
-
--- 
-Len Sorensen
-
-From rreiter91 at gmail.com  Thu Jan 12 15:11:20 2017
-From: rreiter91 at gmail.com (Russell Reiter)
-Date: Thu, 12 Jan 2017 15:11:20 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <CAPhKKr-ViKhX-37hjJ5vQJbORfPfOQRV2Ox6iVt5EfoJtn=Nbg@mail.gmail.com>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <0de1f235-1dac-53b1-58a1-d72db9f39108@netvel.net>
- <20480921-bd61-2e1f-f2c3-bbd5eb7ab680@netvel.net>
- <CAC4o_JJU0Ky9f-LaFCnaR6Sw_dTq57OAgTj6Owe3oF0fzh7wuw@mail.gmail.com>
- <CAPpdf58=wizBzpnZNsChU8fpD7KB5ShynnsPqX8aSMVVua0_mg@mail.gmail.com>
- <CAPhKKr-ViKhX-37hjJ5vQJbORfPfOQRV2Ox6iVt5EfoJtn=Nbg@mail.gmail.com>
-Message-ID: <CAPik5MztCUCVsy_9GprvcEWco7mnqcYw1uJGRamh2WXeAKeYPw@mail.gmail.com>
-
-On Jan 12, 2017 2:30 PM, "Dhaval Giani via talk" <talk at gtalug.org> wrote:
-
-Hi,
-
-On Thu, Jan 12, 2017 at 2:24 PM, o1bigtenor via talk <talk at gtalug.org>
-wrote:
-> On Thu, Jan 12, 2017 at 12:28 PM, Jason Shaw via talk <talk at gtalug.org>
-wrote:
->> I feel obligated to point out freshbooks.com as Accounting as a Service
->> based here in Toronto.  I do work there, so I'm a touch biased, but it
-
-
-<snip>
-
-
-> Sorry - - - lots of companies/people think the web is secure. I'm not one
-of
-> them - - - - especially when it comes to financial data.
->
-
-I feel obligated to point out here that it is more often the case that
-a cloud provider is more secure than a standalone solution. If only
-because they can afford to spend more on hiring people to work on
-security full time.
-
-
-I'd agree with this. Point to point, and end to end a larger network of
-trusted users tends to be more stable, from a security standpoint, than an
-ad hoc network.
-
-TOR endpoint monitoring is one kind of example of how security through
-obscurity was easily thwarted. However someone would still need the key, or
-an enormous amount of resources to decrypt any actual data.
-
-The web is only one class of internet layer transport. If your device is
-personally secured and your app encrypts for push/pull telemetry, data is
-generally safe enough when using the web as an entry point, operational
-errors notwithstanding.
-
-Russell
-Sent from mobile.
-
-
-Thanks!
-Dhaval
----
-Talk Mailing List
-talk at gtalug.org
-https://gtalug.org/mailman/listinfo/talk
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170112/58cd521f/attachment.html>
-
-From opengeometry at yahoo.ca  Thu Jan 12 15:27:07 2017
-From: opengeometry at yahoo.ca (William Park)
-Date: Thu, 12 Jan 2017 15:27:07 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <CAPpdf58=wizBzpnZNsChU8fpD7KB5ShynnsPqX8aSMVVua0_mg@mail.gmail.com>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <0de1f235-1dac-53b1-58a1-d72db9f39108@netvel.net>
- <20480921-bd61-2e1f-f2c3-bbd5eb7ab680@netvel.net>
- <CAC4o_JJU0Ky9f-LaFCnaR6Sw_dTq57OAgTj6Owe3oF0fzh7wuw@mail.gmail.com>
- <CAPpdf58=wizBzpnZNsChU8fpD7KB5ShynnsPqX8aSMVVua0_mg@mail.gmail.com>
-Message-ID: <20170112202707.GA5548@node1.localdomain>
-
-On Thu, Jan 12, 2017 at 01:24:58PM -0600, o1bigtenor via talk wrote:
-> On Thu, Jan 12, 2017 at 12:28 PM, Jason Shaw via talk <talk at gtalug.org> wrote:
-> > I feel obligated to point out freshbooks.com as Accounting as a Service
-> > based here in Toronto.  I do work there, so I'm a touch biased, but it
-> > provides multiple users, mobile apps (android and iOS), as well as browser
-> > based ui.
-> >
-> Sorry - - - lots of companies/people think the web is secure. I'm not one of
-> them - - - - especially when it comes to financial data.
-
-Similarly for me, but it's more of "privacy" factor for me.  However,
-web outsourcing companies like Freshbooks.com do have advantage in
-"invoicing".  They print and (e)mail invoices for you.
--- 
-William
-
-From evan at telly.org  Thu Jan 12 15:28:30 2017
-From: evan at telly.org (Evan Leibovitch)
-Date: Thu, 12 Jan 2017 15:28:30 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <20170112195023.GG17366@csclub.uwaterloo.ca>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <0de1f235-1dac-53b1-58a1-d72db9f39108@netvel.net>
- <20480921-bd61-2e1f-f2c3-bbd5eb7ab680@netvel.net>
- <CAC4o_JJU0Ky9f-LaFCnaR6Sw_dTq57OAgTj6Owe3oF0fzh7wuw@mail.gmail.com>
- <CAPpdf58=wizBzpnZNsChU8fpD7KB5ShynnsPqX8aSMVVua0_mg@mail.gmail.com>
- <CAPhKKr-ViKhX-37hjJ5vQJbORfPfOQRV2Ox6iVt5EfoJtn=Nbg@mail.gmail.com>
- <20170112195023.GG17366@csclub.uwaterloo.ca>
-Message-ID: <CAMguqh10RevUR2XetBneUrboffOH_1_VF9zWy3YNkVwjvJ1M8w@mail.gmail.com>
-
-On 12 January 2017 at 14:50, Lennart Sorensen via talk <talk at gtalug.org>
-wrote:
-
-> On Thu, Jan 12, 2017 at 02:30:06PM -0500, Dhaval Giani via talk wrote:
-> > I feel obligated to point out here that it is more often the case that
-> > a cloud provider is more secure than a standalone solution. If only
-> > because they can afford to spend more on hiring people to work on
-> > security full time.
->
-> And you have to take their word for it that they did that.
-
-
-
-​I think it's reasonable to ​suggest that not all cloud solutions are
-inherently less secure than all standalone systems.
-
-One size does not fit all. Knowing the whole landscape is better than not
-knowing it. All solutions will have strengths and weaknesses, the
-priorities those in need will differ, and we're not here to judge.
-
-One thing Freshbooks appears to do well is manage receivables, which is a
-sore point among consultants I know -- quick invoicing, followups, and
-facilitation of getting paid. This seems relevant to one of the points
-brought up by one person at Tuesday's meeting (ie, getting paid).
-
-- Evan
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170112/81c45c29/attachment.html>
-
-From evan at telly.org  Thu Jan 12 15:37:19 2017
-From: evan at telly.org (Evan Leibovitch)
-Date: Thu, 12 Jan 2017 15:37:19 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <20170112195023.GG17366@csclub.uwaterloo.ca>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <0de1f235-1dac-53b1-58a1-d72db9f39108@netvel.net>
- <20480921-bd61-2e1f-f2c3-bbd5eb7ab680@netvel.net>
- <CAC4o_JJU0Ky9f-LaFCnaR6Sw_dTq57OAgTj6Owe3oF0fzh7wuw@mail.gmail.com>
- <CAPpdf58=wizBzpnZNsChU8fpD7KB5ShynnsPqX8aSMVVua0_mg@mail.gmail.com>
- <CAPhKKr-ViKhX-37hjJ5vQJbORfPfOQRV2Ox6iVt5EfoJtn=Nbg@mail.gmail.com>
- <20170112195023.GG17366@csclub.uwaterloo.ca>
-Message-ID: <CAMguqh2AWJahz1xME=iCb0YbtcrdWnsJn89U49Mjbemoa4dGpw@mail.gmail.com>
-
-> So is the cloud service safer than what lots of companies do themselves?
-> Sure.  Is it safer than doing it right?  Almost certainly not.
->
-
-​In the real world​. "right" (and other options) are subject to
-cost-benefit analysis, with helpings of inertia and emotion tossed in for
-good measure.
-
-​- Evan​
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170112/43e66dd1/attachment.html>
-
-From alvin at netvel.net  Thu Jan 12 15:45:32 2017
-From: alvin at netvel.net (Alvin Starr)
-Date: Thu, 12 Jan 2017 15:45:32 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <CAMguqh10RevUR2XetBneUrboffOH_1_VF9zWy3YNkVwjvJ1M8w@mail.gmail.com>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <0de1f235-1dac-53b1-58a1-d72db9f39108@netvel.net>
- <20480921-bd61-2e1f-f2c3-bbd5eb7ab680@netvel.net>
- <CAC4o_JJU0Ky9f-LaFCnaR6Sw_dTq57OAgTj6Owe3oF0fzh7wuw@mail.gmail.com>
- <CAPpdf58=wizBzpnZNsChU8fpD7KB5ShynnsPqX8aSMVVua0_mg@mail.gmail.com>
- <CAPhKKr-ViKhX-37hjJ5vQJbORfPfOQRV2Ox6iVt5EfoJtn=Nbg@mail.gmail.com>
- <20170112195023.GG17366@csclub.uwaterloo.ca>
- <CAMguqh10RevUR2XetBneUrboffOH_1_VF9zWy3YNkVwjvJ1M8w@mail.gmail.com>
-Message-ID: <ceebcce4-dcd4-a0c0-5718-4e0ad4fd5e7d@netvel.net>
-
-On 01/12/2017 03:28 PM, Evan Leibovitch via talk wrote:
-> On 12 January 2017 at 14:50, Lennart Sorensen via talk 
-> <talk at gtalug.org <mailto:talk at gtalug.org>>wrote:
->
->     On Thu, Jan 12, 2017 at 02:30:06PM -0500, Dhaval Giani via talk wrote:
->     > I feel obligated to point out here that it is more often the
->     case that
->     > a cloud provider is more secure than a standalone solution. If only
->     > because they can afford to spend more on hiring people to work on
->     > security full time.
->
->     And you have to take their word for it that they did that.
->
->
->
-> ​I think it's reasonable to ​suggest that not all cloud solutions are 
-> inherently less secure than all standalone systems.
->
-> One size does not fit all. Knowing the whole landscape is better than 
-> not knowing it. All solutions will have strengths and weaknesses, the 
-> priorities those in need will differ, and we're not here to judge.
->
-> One thing Freshbooks appears to do well is manage receivables, which 
-> is a sore point among consultants I know -- quick invoicing, 
-> followups, and facilitation of getting paid. This seems relevant to 
-> one of the points brought up by one person at Tuesday's meeting (ie, 
-> getting paid).
->
-> - Evan
->
-
-The thing with most things like accounting packages is that the setup is 
-a lot of work and they often take some significant care and feeding as 
-time goes by.
-I spent  a LOT of time fixing the invoice generation code to get 
-something that I liked and felt looked professional and months importing 
-data from our previous system.
-And then I would spend hours a month tracking 
-overpayments/underpayments, deadbeat customers.....
-
-
-The thing to be said for "cloud" providers is that they often provide an 
-easy to use quick start service.
-For someone generating a few invoices a month and a small customer base 
-it can make a lot of sense over building a system capable of managing 
-thousands of customers and generating thousands of invoices monthly.
-
-The problem is finding the right scale for your enterprise.
-
-
--- 
-Alvin Starr                   ||   voice: (905)513-7688
-Netvel Inc.                   ||   Cell:  (416)806-0133
-alvin at netvel.net              ||
-
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170112/e9dcc9ab/attachment.html>
-
-From clifford_ilkay at dinamis.com  Thu Jan 12 16:00:50 2017
-From: clifford_ilkay at dinamis.com (CLIFFORD ILKAY)
-Date: Thu, 12 Jan 2017 16:00:50 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
-Message-ID: <787f8b3f-677b-fe1a-ce4e-c16dafae5a5e@dinamis.com>
-
-On 12/01/17 08:16 AM, o1bigtenor via talk wrote:
-> Greetings
->
-> Am trying to find (for need in the not to distant future) some of what
-> is normally called 'accounting' software (its really record keeping
-> software but that's a different argument!).
->
-> What are you using that is, or could be, multi-user and has room for
-> some complexity?
-> (I am presently using 10 digit account numbers to get the granularity I want.)
-
-Wave <https://www.waveapps.com/> is another Toronto-based web accounting 
-software provider. I know the people behind it and they know what 
-they're doing. I would trust their security more than the security on 
-the average small business network. As for the "What happens to my data 
-if they go out of business?" question, I'd check with the vendor to find 
-out how to export data and do it on a regular basis.
-
-One of the criterion to what you should be using is to find out if your 
-accountant is familiar with what you're using. If they are not, which is 
-more important to you, your accountant or the software you use?
-
--- 
-Regards,
-
-Clifford Ilkay
-
-+ 1 647-778-8696
-
-
-From opengeometry at yahoo.ca  Thu Jan 12 16:26:08 2017
-From: opengeometry at yahoo.ca (William Park)
-Date: Thu, 12 Jan 2017 16:26:08 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <787f8b3f-677b-fe1a-ce4e-c16dafae5a5e@dinamis.com>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <787f8b3f-677b-fe1a-ce4e-c16dafae5a5e@dinamis.com>
-Message-ID: <20170112212608.GA5773@node1.localdomain>
-
-On Thu, Jan 12, 2017 at 04:00:50PM -0500, CLIFFORD ILKAY via talk wrote:
-> On 12/01/17 08:16 AM, o1bigtenor via talk wrote:
-> > Greetings
-> > 
-> > Am trying to find (for need in the not to distant future) some of what
-> > is normally called 'accounting' software (its really record keeping
-> > software but that's a different argument!).
-> > 
-> > What are you using that is, or could be, multi-user and has room for
-> > some complexity?  (I am presently using 10 digit account numbers to
-> > get the granularity I want.)
-> 
-> Wave <https://www.waveapps.com/> is another Toronto-based web accounting
-> software provider. I know the people behind it and they know what they're
-> doing. I would trust their security more than the security on the average
-> small business network. As for the "What happens to my data if they go out
-> of business?" question, I'd check with the vendor to find out how to export
-> data and do it on a regular basis.
-
-2.9% fee!  That's $29 for every $1000.  This begs a question... are you
-using them?
-
-> 
-> One of the criterion to what you should be using is to find out if your
-> accountant is familiar with what you're using. If they are not, which is
-> more important to you, your accountant or the software you use?
-
-Yes, eventually, you'd need to "export" to his/her format.
--- 
-William
-
-From cbbrowne at gmail.com  Thu Jan 12 16:42:06 2017
-From: cbbrowne at gmail.com (Christopher Browne)
-Date: Thu, 12 Jan 2017 16:42:06 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <20170112212608.GA5773@node1.localdomain>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <787f8b3f-677b-fe1a-ce4e-c16dafae5a5e@dinamis.com>
- <20170112212608.GA5773@node1.localdomain>
-Message-ID: <CAFNqd5VxaQaqL-dkohPx42xd=-5h8ktEQra2yXQTjCcaU+S3CA@mail.gmail.com>
-
-On 12 January 2017 at 16:26, William Park via talk <talk at gtalug.org> wrote:
-> On Thu, Jan 12, 2017 at 04:00:50PM -0500, CLIFFORD ILKAY via talk wrote:
->> On 12/01/17 08:16 AM, o1bigtenor via talk wrote:
->> > Greetings
->> >
->> > Am trying to find (for need in the not to distant future) some of what
->> > is normally called 'accounting' software (its really record keeping
->> > software but that's a different argument!).
->> >
->> > What are you using that is, or could be, multi-user and has room for
->> > some complexity?  (I am presently using 10 digit account numbers to
->> > get the granularity I want.)
->>
->> Wave <https://www.waveapps.com/> is another Toronto-based web accounting
->> software provider. I know the people behind it and they know what they're
->> doing. I would trust their security more than the security on the average
->> small business network. As for the "What happens to my data if they go out
->> of business?" question, I'd check with the vendor to find out how to export
->> data and do it on a regular basis.
->
-> 2.9% fee!  That's $29 for every $1000.  This begs a question... are you
-> using them?
-
-Note that this represents a 2.9% charge _for credit card processing._
-Wave seem to be charging exactly the same rate as stripe.com, which is
-one of the widely used such vendors.
-
-That underlines that there's more to this than meets the eye.
-
-That 2.9% isn't a charge "for accounting", it's a charge for processing
-credit card purchases.
-
-Apparently Wave makes their money out of handling credit card
-processing, which is sorta interesting.
-
->> One of the criterion to what you should be using is to find out if your
->> accountant is familiar with what you're using. If they are not, which is
->> more important to you, your accountant or the software you use?
->
-> Yes, eventually, you'd need to "export" to his/her format.
-
-Hum?
-
-That's sensible if you handle accounting by paying a third party accountant to
-generate your accounting records.
-
-At one time, that used to be one of (AccPac, Bedford Accounting), back in the
-MS-DOS days.
-
-But if you're actually managing your own accounting records, the question
-will be, what will your accountant charge for *reviewing* your records, and
-how does that vary based on what flavour of accounting system you're using.
-
-Wave claims that they make it easy to share appropriate records with your
-accountant; I imagine that's true.  Whether or not that makes Wave a good
-choice is a separate question.
--- 
-When confronted by a difficult problem, solve it by reducing it to the
-question, "How would the Lone Ranger handle this?"
-
-From opengeometry at yahoo.ca  Thu Jan 12 18:15:26 2017
-From: opengeometry at yahoo.ca (William Park)
-Date: Thu, 12 Jan 2017 18:15:26 -0500
-Subject: [GTALUG] USB-C cable + LG Nexus 5X
-Message-ID: <20170112231526.GA5937@node1.localdomain>
-
-Some time ago, I complained about my useless LG Nexus 5X which only has
-USB-C port.  It became slightly more useful this week.  I bought
-    - USB-C to USB-A male (Perfekt)
-    - USB-C to USB-A female (Perfekt)
-cables from Newegg.ca on sale.  And, I can now use keyboard and mouse.
--- 
-William
-
-From rreiter91 at gmail.com  Thu Jan 12 18:15:47 2017
-From: rreiter91 at gmail.com (Russell Reiter)
-Date: Thu, 12 Jan 2017 18:15:47 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <CAFNqd5VxaQaqL-dkohPx42xd=-5h8ktEQra2yXQTjCcaU+S3CA@mail.gmail.com>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <787f8b3f-677b-fe1a-ce4e-c16dafae5a5e@dinamis.com>
- <20170112212608.GA5773@node1.localdomain>
- <CAFNqd5VxaQaqL-dkohPx42xd=-5h8ktEQra2yXQTjCcaU+S3CA@mail.gmail.com>
-Message-ID: <CAPik5Mxp6mOfMOZV0dG-u3=XCDLRaEfBbMv7NfyLzOMM5M+kmg@mail.gmail.com>
-
-On Jan 12, 2017 4:42 PM, "Christopher Browne via talk" <talk at gtalug.org>
-wrote:
-
-On 12 January 2017 at 16:26, William Park via talk <talk at gtalug.org> wrote:
-> On Thu, Jan 12, 2017 at 04:00:50PM -0500, CLIFFORD ILKAY via talk wrote:
->> On 12/01/17 08:16 AM, o1bigtenor via talk wrote:
->> > Greetings
->> >
->> > Am trying to find (for need in the not to distant future) some of what
-
-
-<snip>
-
->> One of the criterion to what you should be using is to find out if your
->> accountant is familiar with what you're using. If they are not, which is
->> more important to you, your accountant or the software you use?
->
-> Yes, eventually, you'd need to "export" to his/her format.
-
-Hum?
-
-That's sensible if you handle accounting by paying a third party accountant
-to
-generate your accounting records.
-
-At one time, that used to be one of (AccPac, Bedford Accounting), back in
-the
-MS-DOS days.
-
-
-Don't forget VisiCac. In fact wasn't one of Microsoft's first succesfull
-apps Excel for Mac, eventually replacing VisiCalc. Harvard Graphics and
-Crystal Reports were also later used for assembling printed reports. It was
-said that Excels engine could process up to 1,000,000 records using input
-and output forms before you had to upgrade to Access RDBMS.
-
-
-But if you're actually managing your own accounting records, the question
-will be, what will your accountant charge for *reviewing* your records, and
-how does that vary based on what flavour of accounting system you're using.
-
-Wave claims that they make it easy to share appropriate records with your
-accountant; I imagine that's true.  Whether or not that makes Wave a good
-choice is a separate question.
---
-When confronted by a difficult problem, solve it by reducing it to the
-question, "How would the Lone Ranger handle this?"
----
-Talk Mailing List
-talk at gtalug.org
-https://gtalug.org/mailman/listinfo/talk
-
-
-Russell
-Sent from mobile.
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170112/ff4f1f27/attachment.html>
-
-From o1bigtenor at gmail.com  Thu Jan 12 20:15:14 2017
-From: o1bigtenor at gmail.com (o1bigtenor)
-Date: Thu, 12 Jan 2017 19:15:14 -0600
-Subject: [GTALUG] Question
-In-Reply-To: <787f8b3f-677b-fe1a-ce4e-c16dafae5a5e@dinamis.com>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <787f8b3f-677b-fe1a-ce4e-c16dafae5a5e@dinamis.com>
-Message-ID: <CAPpdf5_5U5sn=7HffOmLBtCnTAKmP+3K75DDczBJnq7yXKJ_aQ@mail.gmail.com>
-
-On Thu, Jan 12, 2017 at 3:00 PM, CLIFFORD ILKAY via talk
-<talk at gtalug.org> wrote:
-> On 12/01/17 08:16 AM, o1bigtenor via talk wrote:
->>
->> Greetings
->>
->> Am trying to find (for need in the not to distant future) some of what
->> is normally called 'accounting' software (its really record keeping
->> software but that's a different argument!).
->>
->> What are you using that is, or could be, multi-user and has room for
->> some complexity?
->> (I am presently using 10 digit account numbers to get the granularity I
->> want.)
->
->
-> Wave <https://www.waveapps.com/> is another Toronto-based web accounting
-> software provider. I know the people behind it and they know what they're
-> doing. I would trust their security more than the security on the average
-> small business network. As for the "What happens to my data if they go out
-> of business?" question, I'd check with the vendor to find out how to export
-> data and do it on a regular basis.
->
-> One of the criterion to what you should be using is to find out if your
-> accountant is familiar with what you're using. If they are not, which is
-> more important to you, your accountant or the software you use?
-
-Ah yes - - - the 'wonderful' accountant.
-
-Well, I dropped using an accountant when I went to a major firm and gave
-them my docs (which were laid out by GIFI codes) so only needed transferring
-to whatever they were using and explained that I saw three scenarios. That was
-to a junior member. About 2 weeks later I arrived for my appointment and was
-now told that due to the complexity of my stuff (one business, farming and a
-personal return) a senior member of the firm was required. He told me
-that I had
-3 different scenarios to consider (my bill had also gone up by 250%). Told
-that (expletives deleted) that what he had told me was almost exactly what
-I had told the junior member I had started with. Told him as he didn't provide
-any value for fees that I thought that I didn't really need his services.
-Paid the useless sucker and left.
-
-Didn't use another until a bank forced me to use an accountancy firm (which
-made an error (you are responsible for any errors even if someone else makes
-them on your behalf you know)). So now I'm much more likely to ask them if they
-would prefer to deal with Enron or me (Enron was managed by accountants
-and lawyers!) and leave.
-Have found a few other things that I couldn't get advice on from them so now
-I have a few trusted advisors - - - - but NO accountant!
-
-Revenue Canada has reams of documents available. Often answer complex
-questions too. Got one senior advisor to change some stuff by using logic
-- - - that sort of surprised me. Hadn't run into too many thinking bureaucratic
-types before!
-
-YMMV
-
-Dee
-
-From alvin at netvel.net  Thu Jan 12 22:09:52 2017
-From: alvin at netvel.net (Alvin Starr)
-Date: Thu, 12 Jan 2017 22:09:52 -0500
-Subject: [GTALUG] Question
-In-Reply-To: <CAPpdf5_5U5sn=7HffOmLBtCnTAKmP+3K75DDczBJnq7yXKJ_aQ@mail.gmail.com>
-References: <CAPpdf5-QKNeWF2hbqXnsATgpqeB92qwFWjdbS6HmT12D0ZugcA@mail.gmail.com>
- <787f8b3f-677b-fe1a-ce4e-c16dafae5a5e@dinamis.com>
- <CAPpdf5_5U5sn=7HffOmLBtCnTAKmP+3K75DDczBJnq7yXKJ_aQ@mail.gmail.com>
-Message-ID: <68b5452e-43f9-f9d5-c682-4cd7efead5cf@netvel.net>
-
-
-
-On 01/12/2017 08:15 PM, o1bigtenor via talk wrote:
-> On Thu, Jan 12, 2017 at 3:00 PM, CLIFFORD ILKAY via talk
-> <talk at gtalug.org> wrote:
->> On 12/01/17 08:16 AM, o1bigtenor via talk wrote:
->>> Greetings
->>>
->>> Am trying to find (for need in the not to distant future) some of what
->>> is normally called 'accounting' software (its really record keeping
->>> software but that's a different argument!).
->>>
->>> What are you using that is, or could be, multi-user and has room for
->>> some complexity?
->>> (I am presently using 10 digit account numbers to get the granularity I
->>> want.)
->>
->> Wave <https://www.waveapps.com/> is another Toronto-based web accounting
->> software provider. I know the people behind it and they know what they're
->> doing. I would trust their security more than the security on the average
->> small business network. As for the "What happens to my data if they go out
->> of business?" question, I'd check with the vendor to find out how to export
->> data and do it on a regular basis.
->>
->> One of the criterion to what you should be using is to find out if your
->> accountant is familiar with what you're using. If they are not, which is
->> more important to you, your accountant or the software you use?
-> Ah yes - - - the 'wonderful' accountant.
->
-> Well, I dropped using an accountant when I went to a major firm and gave
-> them my docs (which were laid out by GIFI codes) so only needed transferring
-> to whatever they were using and explained that I saw three scenarios. That was
-> to a junior member. About 2 weeks later I arrived for my appointment and was
-> now told that due to the complexity of my stuff (one business, farming and a
-> personal return) a senior member of the firm was required. He told me
-> that I had
-> 3 different scenarios to consider (my bill had also gone up by 250%). Told
-> that (expletives deleted) that what he had told me was almost exactly what
-> I had told the junior member I had started with. Told him as he didn't provide
-> any value for fees that I thought that I didn't really need his services.
-> Paid the useless sucker and left.
->
-> Didn't use another until a bank forced me to use an accountancy firm (which
-> made an error (you are responsible for any errors even if someone else makes
-> them on your behalf you know)). So now I'm much more likely to ask them if they
-> would prefer to deal with Enron or me (Enron was managed by accountants
-> and lawyers!) and leave.
-> Have found a few other things that I couldn't get advice on from them so now
-> I have a few trusted advisors - - - - but NO accountant!
->
-> Revenue Canada has reams of documents available. Often answer complex
-> questions too. Got one senior advisor to change some stuff by using logic
-> - - - that sort of surprised me. Hadn't run into too many thinking bureaucratic
-> types before!
->
-> YMMV
->
-When we started our first company we used an accounting firm the first year.
-YEP. That was a waste of money.
-We now use an accountant who lives in Simcoe.
-He does our taxes and year end statements but the book-keeping is done 
-by us.
-He does a fine job and does not have the overhead of some guy on Bay St.
-He has provided lots of good advise on taxes and other issues but we are 
-both happy for him to keep away from the book-keeping parts.
-
-
--- 
-Alvin Starr                   ||   voice: (905)513-7688
-Netvel Inc.                   ||   Cell:  (416)806-0133
-alvin at netvel.net              ||
-
-
-From thoriumbr at gmail.com  Fri Jan 13 04:08:17 2017
-From: thoriumbr at gmail.com (Mauro Souza)
-Date: Fri, 13 Jan 2017 07:08:17 -0200
-Subject: [GTALUG] USB-C cable + LG Nexus 5X
-In-Reply-To: <20170112231526.GA5937@node1.localdomain>
-References: <20170112231526.GA5937@node1.localdomain>
-Message-ID: <CAEZ_B6O7AT5dHfb0G7DrMPs5k+NDYm+cYpZo3x3GLoR4_-r=zg@mail.gmail.com>
-
-I bought a couple very small mini USB to USB-C adapters at GearBest for
-close to nothing. I keep one of those on my car, home, workplace... They
-are so small you can keep one in the wallet.
-
-Haven't needed to use them yet...
-
-On Jan 12, 2017 21:15, "William Park via talk" <talk at gtalug.org> wrote:
-
-> Some time ago, I complained about my useless LG Nexus 5X which only has
-> USB-C port.  It became slightly more useful this week.  I bought
->     - USB-C to USB-A male (Perfekt)
->     - USB-C to USB-A female (Perfekt)
-> cables from Newegg.ca on sale.  And, I can now use keyboard and mouse.
-> --
-> William
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
->
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170113/217269a4/attachment.html>
-
-From opengeometry at yahoo.ca  Fri Jan 13 05:32:14 2017
-From: opengeometry at yahoo.ca (William Park)
-Date: Fri, 13 Jan 2017 05:32:14 -0500
-Subject: [GTALUG] USB-C cable + LG Nexus 5X
-In-Reply-To: <CAEZ_B6O7AT5dHfb0G7DrMPs5k+NDYm+cYpZo3x3GLoR4_-r=zg@mail.gmail.com>
-References: <20170112231526.GA5937@node1.localdomain>
- <CAEZ_B6O7AT5dHfb0G7DrMPs5k+NDYm+cYpZo3x3GLoR4_-r=zg@mail.gmail.com>
-Message-ID: <20170113103214.GA9290@node1.localdomain>
-
-I don't know if I mentioned before.  I had USB-C to micro-USB adapter,
-and it can charge but didn't work with keyboard/mouse.  This time, I got
-proper one-piece cable (no adapters in between).  
--- 
-William
-
-On Fri, Jan 13, 2017 at 07:08:17AM -0200, Mauro Souza wrote:
-> I bought a couple very small mini USB to USB-C adapters at GearBest for
-> close to nothing. I keep one of those on my car, home, workplace... They
-> are so small you can keep one in the wallet.
-> 
-> Haven't needed to use them yet...
-> 
-> On Jan 12, 2017 21:15, "William Park via talk" <talk at gtalug.org> wrote:
-> 
-> > Some time ago, I complained about my useless LG Nexus 5X which only has
-> > USB-C port.  It became slightly more useful this week.  I bought
-> >     - USB-C to USB-A male (Perfekt)
-> >     - USB-C to USB-A female (Perfekt)
-> > cables from Newegg.ca on sale.  And, I can now use keyboard and mouse.
-
-From richard at weait.com  Sat Jan 14 15:49:10 2017
-From: richard at weait.com (Richard Weait)
-Date: Sat, 14 Jan 2017 15:49:10 -0500
-Subject: [GTALUG] Flock bids are now open
-In-Reply-To: <159930aa318.11f735fcc1953.6155488405623956131@cprofitt.com>
-References: <159930aa318.11f735fcc1953.6155488405623956131@cprofitt.com>
-Message-ID: <CAGwUD5s0EF53iYZjzZff3tsn6r=Qs6O2PGVqxWwhpYZTKgST2Q@mail.gmail.com>
-
-On Thu, Jan 12, 2017 at 9:17 AM, Charles Profitt via talk
-<talk at gtalug.org> wrote:
->
-> Hello GTALUG:
->
-> A while back I sent an email to the list asking if anyone was potentially
-> interested in having Flock in the Kitchener / Waterlook area.
->
-> Today the Flock bid process officially opened.
->
-> https://communityblog.fedoraproject.org/flock-2017-bids-due-28-feb-2017/
-
-Hi Charles,
-
-You might also contact KWLUG, as they are in your geographical region
-of interest. Also, some members of KWLUG have experience organizing
-large F/LOSS conferences.
-
-http://kwlug.org/mailman/listinfo/kwlug-disc_kwlug.org
-http://kwlug.org
-
-
-
-
-
-
->
-> Charles
->
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
->
-
-From subscriptions at cprofitt.com  Sat Jan 14 21:02:14 2017
-From: subscriptions at cprofitt.com (Charles Profitt)
-Date: Sat, 14 Jan 2017 21:02:14 -0500
-Subject: [GTALUG] Flock bids are now open
-In-Reply-To: <159930aa318.11f735fcc1953.6155488405623956131@cprofitt.com>
-References: <159930aa318.11f735fcc1953.6155488405623956131@cprofitt.com>
-Message-ID: <1484445734.2230.5.camel@cprofitt.com>
-
-This was a bad job of cut-n-paste on my part. I meant to say Toronto
-area. I am interested in seeing Canada host Flock 2017 regardless of
-Kitchener / Waterloo or Toronto.
-
-So, if there is interest in Toronto it would be fantastic to see a bid
-from the Toronto area as well.
-
-My apologies for the bad cut-n-paste.
-
-Charles
-
-On Thu, 2017-01-12 at 06:17 -0800, Charles Profitt via talk wrote:
-> 
-> Hello GTALUG:
-> 
-> A while back I sent an email to the list asking if anyone was
-> potentially interested in having Flock in the Kitchener / Waterlook
-> area.
-> 
-> Today the Flock bid process officially opened.
-> 
-> https://communityblog.fedoraproject.org/flock-2017-bids-due-28-feb-20
-> 17/
-> 
-> Charles
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
-
-
-From hugh at mimosa.com  Sun Jan 15 16:01:57 2017
-From: hugh at mimosa.com (D. Hugh Redelmeier)
-Date: Sun, 15 Jan 2017 16:01:57 -0500 (EST)
-Subject: [GTALUG] Flock bids are now open
-In-Reply-To: <159930aa318.11f735fcc1953.6155488405623956131@cprofitt.com>
-References: <159930aa318.11f735fcc1953.6155488405623956131@cprofitt.com>
-Message-ID: <alpine.LFD.2.20.1701151552440.3882@redeye.mimosa.com>
-
-| From: Charles Profitt via talk <talk at gtalug.org>
-| 
-| A while back I sent an email to the list asking if anyone was 
-| potentially interested in having Flock in the Kitchener / Waterlook 
-| area.
-| 
-| Today the Flock bid process officially opened.
-| 
-| https://communityblog.fedoraproject.org/flock-2017-bids-due-28-feb-2017/
-
-Flock is a successor to FUDCon.  In 2009 FUDCon was hosted by CDOT of 
-Seneca at York.  I enjoyed it a lot.  Several TLUG folks attended but I 
-don't remember if any presented or organized.  The CDOT people did a great 
-job.
-
-CDOT seems to be good at this.  They do a great job with FSOSS each year.  
-I don't remember any other regular local Linux event.  I have no idea if 
-they are willing to or would be allowed to repeat.
-
-From scott at ss.org  Mon Jan 16 18:36:20 2017
-From: scott at ss.org (Scott Sullivan)
-Date: Mon, 16 Jan 2017 18:36:20 -0500
-Subject: [GTALUG] Flock bids are now open
-In-Reply-To: <alpine.LFD.2.20.1701151552440.3882@redeye.mimosa.com>
-References: <159930aa318.11f735fcc1953.6155488405623956131@cprofitt.com>
- <alpine.LFD.2.20.1701151552440.3882@redeye.mimosa.com>
-Message-ID: <5b587739-5896-2b7e-24d8-bcdda5c81c40@ss.org>
-
-I've reached out to Chris Tyler at Seneca/CDOT.
-
-He's joined the list and would be best able to explain what resources 
-are available along with some compelling reasons to delay our bid for 
-the 2019 flock.
-
-
-On 15/01/17 04:01 PM, D. Hugh Redelmeier via talk wrote:
-> | From: Charles Profitt via talk <talk at gtalug.org>
-> |
-> | A while back I sent an email to the list asking if anyone was
-> | potentially interested in having Flock in the Kitchener / Waterlook
-> | area.
-> |
-> | Today the Flock bid process officially opened.
-> |
-> | https://communityblog.fedoraproject.org/flock-2017-bids-due-28-feb-2017/
->
-> Flock is a successor to FUDCon.  In 2009 FUDCon was hosted by CDOT of
-> Seneca at York.  I enjoyed it a lot.  Several TLUG folks attended but I
-> don't remember if any presented or organized.  The CDOT people did a great
-> job.
->
-> CDOT seems to be good at this.  They do a great job with FSOSS each year.
-> I don't remember any other regular local Linux event.  I have no idea if
-> they are willing to or would be allowed to repeat.
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
->
-
-
-From chris at tylers.info  Wed Jan 18 15:08:31 2017
-From: chris at tylers.info (Chris Tyler)
-Date: Wed, 18 Jan 2017 15:08:31 -0500
-Subject: [GTALUG] Flock bids are now open
-In-Reply-To: <5b587739-5896-2b7e-24d8-bcdda5c81c40@ss.org>
-References: <159930aa318.11f735fcc1953.6155488405623956131@cprofitt.com>
- <alpine.LFD.2.20.1701151552440.3882@redeye.mimosa.com>
- <5b587739-5896-2b7e-24d8-bcdda5c81c40@ss.org>
-Message-ID: <CANvYDTKkGqTMSYi-ir8ba4rwjON12aZniSJDm620zsH_WUVChg@mail.gmail.com>
-
-Hi All,
-
-I'm personally very interested in bringing Flock to Toronto; I led the
-effort to bring FUDcon (the predecessor event) to Toronto in December 2009
-and the success of that event, the first community-hosted FUDcon, led to
-the FUDcon bid process that in turn evolved into the Flock process. I've
-been thinking about a follow-up event ever since.
-
-However, I don't think the time is quite right yet, especially if we want
-to do this with support from Seneca CDOT...
-
-- CDOT is a possible venue for a Toronto Flock, since we would have the
-space and resources (network, A/V, foodservice) available in the summer.
-However, the campus is still ripped up with construction, the subway
-extension is not yet open, and CDOT is undergoing some internal
-reorganization.
-- The last North American Flock was in this corner of the continent (just
-across the lake in Rochester, NY).
-- Tourism resources (hotel space, etc) may be impacted by the
-sesquicentennial this summer.
-- The bid time is short (~5 weeks).
-
-If we put together a coalition of interested parties (GTAlug, CDOT, other
-groups) and aim at the next North American Flock (2019), we should have
-plenty of time to put together a really solid bid, including a nice new
-subway between accommodation, presentation venues, and social activities.
-
-I'm very open to other perspectives and ideas on this, if there's a strong
-case for doing this in 2017 -- discussion welcome.
-
--Chris
-
-
-On Mon, Jan 16, 2017 at 6:36 PM, Scott Sullivan via talk <talk at gtalug.org>
-wrote:
-
-> I've reached out to Chris Tyler at Seneca/CDOT.
->
-> He's joined the list and would be best able to explain what resources are
-> available along with some compelling reasons to delay our bid for the 2019
-> flock.
->
->
->
-> On 15/01/17 04:01 PM, D. Hugh Redelmeier via talk wrote:
->
->> | From: Charles Profitt via talk <talk at gtalug.org>
->> |
->> | A while back I sent an email to the list asking if anyone was
->> | potentially interested in having Flock in the Kitchener / Waterlook
->> | area.
->> |
->> | Today the Flock bid process officially opened.
->> |
->> | https://communityblog.fedoraproject.org/flock-2017-bids-due-
->> 28-feb-2017/
->>
->> Flock is a successor to FUDCon.  In 2009 FUDCon was hosted by CDOT of
->> Seneca at York.  I enjoyed it a lot.  Several TLUG folks attended but I
->> don't remember if any presented or organized.  The CDOT people did a great
->> job.
->>
->> CDOT seems to be good at this.  They do a great job with FSOSS each year.
->> I don't remember any other regular local Linux event.  I have no idea if
->> they are willing to or would be allowed to repeat.
->> ---
->> Talk Mailing List
->> talk at gtalug.org
->> https://gtalug.org/mailman/listinfo/talk
->>
->>
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
->
--------------- next part --------------
-An HTML attachment was scrubbed...
-URL: <http://gtalug.org/pipermail/talk/attachments/20170118/855e4248/attachment.html>
-
-From subscriptions at cprofitt.com  Wed Jan 18 20:37:22 2017
-From: subscriptions at cprofitt.com (Charles Profitt)
-Date: Wed, 18 Jan 2017 20:37:22 -0500
-Subject: [GTALUG] Flock bids are now open
-In-Reply-To: <CANvYDTKkGqTMSYi-ir8ba4rwjON12aZniSJDm620zsH_WUVChg@mail.gmail.com>
-References: <159930aa318.11f735fcc1953.6155488405623956131@cprofitt.com>
- <alpine.LFD.2.20.1701151552440.3882@redeye.mimosa.com>
- <5b587739-5896-2b7e-24d8-bcdda5c81c40@ss.org>
- <CANvYDTKkGqTMSYi-ir8ba4rwjON12aZniSJDm620zsH_WUVChg@mail.gmail.com>
-Message-ID: <1484789842.2218.1.camel@cprofitt.com>
-
-Chris:
-
-See my thought in-line.
-
-On Wed, 2017-01-18 at 15:08 -0500, Chris Tyler via talk wrote:
-> Hi All,
-> 
-> I'm personally very interested in bringing Flock to Toronto; I led
-> the effort to bring FUDcon (the predecessor event) to Toronto in
-> December 2009 and the success of that event, the first community-
-> hosted FUDcon, led to the FUDcon bid process that in turn evolved
-> into the Flock process. I've been thinking about a follow-up event
-> ever since.
-
-
-> However, I don't think the time is quite right yet, especially if we
-> want to do this with support from Seneca CDOT...
-> 
-> - CDOT is a possible venue for a Toronto Flock, since we would have
-> the space and resources (network, A/V, foodservice) available in the
-> summer. However, the campus is still ripped up with construction, the
-> subway extension is not yet open, and CDOT is undergoing some
-> internal reorganization.
-> - The last North American Flock was in this corner of the continent
-> (just across the lake in Rochester, NY).
-> - Tourism resources (hotel space, etc) may be impacted by the
-> sesquicentennial this summer.
-> - The bid time is short (~5 weeks).
-
-I agree that the time may not be ideal given everything you laid out.
-
-> If we put together a coalition of interested parties (GTAlug, CDOT,
-> other groups) and aim at the next North American Flock (2019), we
-> should have plenty of time to put together a really solid bid,
-> including a nice new subway between accommodation, presentation
-> venues, and social activities.
-> 
-> I'm very open to other perspectives and ideas on this, if there's a
-> strong case for doing this in 2017 -- discussion welcome.
-
-There were not a large number of bids for last year and I wanted to see
-a solid slate of choices for Flock this year. I am from Rochester and
-did not think they would choose the same location again. This led me to
-think of both GTA and KWLUG as having the interest and strength to
-organize a bid.
-
-Charles
-
-
-
-
-
-From scott at ss.org  Wed Jan 18 23:57:14 2017
-From: scott at ss.org (Scott Sullivan)
-Date: Wed, 18 Jan 2017 23:57:14 -0500
-Subject: [GTALUG] War Story: UEFI Boot Failure and Fix
-Message-ID: <1bc996e2-f9cb-9f6f-cc3e-316caf2d16a1@ss.org>
-
-I was recently issue an new laptop from work. Of course, being in a 
-sysadmin position, and giving the latitude to use the tools I deem 
-necessary, I replaced the disk and installed Fedora 25.
-
-I felt it was also time to take the plunge with UEFI booting.
-
-The Problem
-===========
-
-After installation, the first boot was successful. After applying 
-updates, boot failed.
-
-This was repeatable after a second re-install, and following updates.
-
-Symptoms
-========
-
-System boots, and goes to a blue and white UI called 'MokManager.efi'.
-
-Research revealed this to be a UI for enrolling encryption keys for 
-secure boot.
-
-http://www.rodsbooks.com/efi-bootloaders/secureboot.html
-MOKs—A Machine Owner Key (MOK) is a type of key that a user generates 
-and uses to sign an EFI binary. The point of a MOK is to give users the 
-ability to run locally-compiled kernels, boot loaders not delivered by 
-the distribution maintainer, and so on.
-
-Trouble Shooting
-================
-
-Firstly, I confirmed that secure boot was disabled in the laptops firmware.
-
-Next, I booted a rescue image. Mounted the EFI partition and investigated.
-
-mkdir /mnt/boot
-mount /dev/sda2 /mnt/boot     # grub2 boot partition
-mount /dev/sda1 /mnt/boot/efi # EFI partition
-
-We then find the MokManager.efi under the following path in our rescue 
-environment.
-/mnt/boot/efi/EFI/fedora/MokManager.efi
-
-I removed this executable to see what I could discover from the boot 
-process.
-
-Upon reboot, I was greeted with message of grub2-x64.efi listed as being 
-corrupt, failing through to MokManager.efi that was now missing, and 
-another optional efi executable that was also missing.
-
-
-Repair
-======
-
-fsck.vfat /dev/sda1
-- preformed removal of dirtybit>
-- FATs didn't agreed, selected the first one at random. Going to restore 
-firmware anyways.
-
-mkdir /mnt/chroot
-mount /dev/sda3 /mnt/chroot          # root filesystem
-mount /dev/sda2 /mnt/chroot/boot     # grub2 boot partition
-mount /dev/sda1 /mnt/chroot/boot/efi # EFI partition
-
-# Make devices and process table avaliable
-for j in /dev /dev/pts /sys /proc; do mount -B $j /mnt/chroot$j; done
-
-# Make DNS avaliable inside the chroot
-cp /etc/resolve.conf /mnt/chroot/etc/resolve.conf
-
-chroot /mnt/chroot
-
-# re-install grub2 EFI executables
-yum reinstall grub2-efi shim
-
-# leave the chroot
-exit
-
-umount /mnt/chroot/boot/efi
-
-fsck.vfat /dev/sda1 # just to sanity check that it's still clean.
-
-reboot
-
-
-Success
-=======
-
-Machine booted normally with the latest kernel form updates.
-
-
-Notes
-=====
-
-1) I've simplified my device names for convince of conveying the process 
-followed. Adjust appropriately for your circumstances and disk layout.
-
-2) In Fedora 25 is a symylink, /etc/resolv.conf -> 
-/var/run/NetworkManager/resolv.conf, I had to copy this instead, your 
-distro may vary.
-
-3) There was no left over EFI partition from a previous system. This was 
-all done on a blank hard drive.
-
-4) Frankly, I found all of this far simpler to manage then a classical 
-MBR based boot loader. I was able to use standard tools to investigate 
-and repair the boot chain. No special gurb-install commands or dinking 
-with config files.
-
-5) None of this explains why a normal update left the boot partition in 
-a unclean state to being with. But if it happens again, it's an easy 
-enough repair, just a little time consuming.
-
--- 
-Scott Sullivan
-
-From o1bigtenor at gmail.com  Thu Jan 19 07:01:45 2017
-From: o1bigtenor at gmail.com (o1bigtenor)
-Date: Thu, 19 Jan 2017 06:01:45 -0600
-Subject: [GTALUG] War Story: UEFI Boot Failure and Fix
-In-Reply-To: <1bc996e2-f9cb-9f6f-cc3e-316caf2d16a1@ss.org>
-References: <1bc996e2-f9cb-9f6f-cc3e-316caf2d16a1@ss.org>
-Message-ID: <CAPpdf5_x=knT-qzKd-pg3aOhsCkCr3j4pFuQZqPjedOpmEoOcQ@mail.gmail.com>
-
-On Wed, Jan 18, 2017 at 10:57 PM, Scott Sullivan via talk
-<talk at gtalug.org> wrote:
-> I was recently issue an new laptop from work. Of course, being in a sysadmin
-> position, and giving the latitude to use the tools I deem necessary, I
-> replaced the disk and installed Fedora 25.
->
-> I felt it was also time to take the plunge with UEFI booting.
->
-> The Problem
-> ===========
->
-> After installation, the first boot was successful. After applying updates,
-> boot failed.
->
-> This was repeatable after a second re-install, and following updates.
->
-> Symptoms
-> ========
->
-> System boots, and goes to a blue and white UI called 'MokManager.efi'.
->
-> Research revealed this to be a UI for enrolling encryption keys for secure
-> boot.
->
-> http://www.rodsbooks.com/efi-bootloaders/secureboot.html
-> MOKs—A Machine Owner Key (MOK) is a type of key that a user generates and
-> uses to sign an EFI binary. The point of a MOK is to give users the ability
-> to run locally-compiled kernels, boot loaders not delivered by the
-> distribution maintainer, and so on.
->
-> Trouble Shooting
-> ================
->
-> Firstly, I confirmed that secure boot was disabled in the laptops firmware.
->
-> Next, I booted a rescue image. Mounted the EFI partition and investigated.
->
-> mkdir /mnt/boot
-> mount /dev/sda2 /mnt/boot     # grub2 boot partition
-> mount /dev/sda1 /mnt/boot/efi # EFI partition
->
-> We then find the MokManager.efi under the following path in our rescue
-> environment.
-> /mnt/boot/efi/EFI/fedora/MokManager.efi
->
-> I removed this executable to see what I could discover from the boot
-> process.
->
-> Upon reboot, I was greeted with message of grub2-x64.efi listed as being
-> corrupt, failing through to MokManager.efi that was now missing, and another
-> optional efi executable that was also missing.
->
->
-> Repair
-> ======
->
-> fsck.vfat /dev/sda1
-> - preformed removal of dirtybit>
-> - FATs didn't agreed, selected the first one at random. Going to restore
-> firmware anyways.
->
-> mkdir /mnt/chroot
-> mount /dev/sda3 /mnt/chroot          # root filesystem
-> mount /dev/sda2 /mnt/chroot/boot     # grub2 boot partition
-> mount /dev/sda1 /mnt/chroot/boot/efi # EFI partition
->
-> # Make devices and process table avaliable
-> for j in /dev /dev/pts /sys /proc; do mount -B $j /mnt/chroot$j; done
->
-> # Make DNS avaliable inside the chroot
-> cp /etc/resolve.conf /mnt/chroot/etc/resolve.conf
->
-> chroot /mnt/chroot
->
-> # re-install grub2 EFI executables
-> yum reinstall grub2-efi shim
->
-> # leave the chroot
-> exit
->
-> umount /mnt/chroot/boot/efi
->
-> fsck.vfat /dev/sda1 # just to sanity check that it's still clean.
->
-> reboot
->
->
-> Success
-> =======
->
-> Machine booted normally with the latest kernel form updates.
->
->
-> Notes
-> =====
->
-> 1) I've simplified my device names for convince of conveying the process
-> followed. Adjust appropriately for your circumstances and disk layout.
->
-> 2) In Fedora 25 is a symylink, /etc/resolv.conf ->
-> /var/run/NetworkManager/resolv.conf, I had to copy this instead, your distro
-> may vary.
->
-> 3) There was no left over EFI partition from a previous system. This was all
-> done on a blank hard drive.
->
-> 4) Frankly, I found all of this far simpler to manage then a classical MBR
-> based boot loader. I was able to use standard tools to investigate and
-> repair the boot chain. No special gurb-install commands or dinking with
-> config files.
->
-> 5) None of this explains why a normal update left the boot partition in a
-> unclean state to being with. But if it happens again, it's an easy enough
-> repair, just a little time consuming.
->
-> --
-> Scott Sullivan
-
-
-Thank you Mr Scott for your cogent and detailed description of both the
-problem and the solution you found. Wished I had had such to guide me
-when I set up my system on uefi 4 years ago.
-
-Thanks muchly!!
-
-Dee
-
-From michael at galeahome.ca  Fri Jan 20 16:26:31 2017
-From: michael at galeahome.ca (Michael Galea)
-Date: Fri, 20 Jan 2017 16:26:31 -0500
-Subject: [GTALUG] Boot problem
-Message-ID: <48d8256b-1275-1bc8-215d-739255b7afdd@galeahome.ca>
-
-I am seeing a problem at boot time that has appeared in kernels after 
-4.3.0-1-amd64.
-
-My system will boot, show the available debian kernels, select the 
-latest and then jump into initramrs.  It claims it can not mount dev and 
-other partitions and, indeed, an ls on the mounted /dev/sda1 shows that 
-my esata drive has been mounted as root!
-
-To boot properly I must power off the esata, boot and wait until the 
-boot is proceeding from the system disk, then power up the esata.
-
-The bios boot order is set to boot from the (correct) system disk.
-
-/etc/fstab is set to boot using UUIDs, and all UUIDs are correct.
-
-The esata drive is not bootable.
-
-Can anyone suggest something to look at or try? I would expect that if 
-grub was able to show me my images it would be able to load them, even 
-if the esata was available.
-
--- 
-Michael Galea
-
-From michael at galeahome.ca  Fri Jan 20 16:37:20 2017
-From: michael at galeahome.ca (Michael Galea)
-Date: Fri, 20 Jan 2017 16:37:20 -0500
-Subject: [GTALUG] NVIDIA SHIELD Tablet K1
-Message-ID: <d655a060-e37c-0cea-b274-f368128b303a@galeahome.ca>
-
-Does anyone own an NVIDIA SHIELD Tablet K1 and can they recommend it?  I 
-am looking for a recommendation of this tablet for the purpose of web 
-and email.
-
-I have heard that it being a gaming tablet with four cores at 2.2 Ghz, 
-it should be overkill for the intended use.  But that is just what I want.
-
-If anyone knows of a better android based tablet, please let me know.
-
--- 
-Michael Galea
-
-From adb at adb.ca  Sat Jan 21 12:58:50 2017
-From: adb at adb.ca (Anthony de Boer)
-Date: Sat, 21 Jan 2017 12:58:50 -0500
-Subject: [GTALUG] Boot problem
-In-Reply-To: <48d8256b-1275-1bc8-215d-739255b7afdd@galeahome.ca>
-References: <48d8256b-1275-1bc8-215d-739255b7afdd@galeahome.ca>
-Message-ID: <20170121175850.GE6015@adb.ca>
-
-Michael Galea via talk wrote:
-> I am seeing a problem at boot time that has appeared in kernels after 
-> 4.3.0-1-amd64.
-> 
-> My system will boot, show the available debian kernels, select the 
-> latest and then jump into initramrs.  It claims it can not mount dev and 
-> other partitions and, indeed, an ls on the mounted /dev/sda1 shows that 
-> my esata drive has been mounted as root!
-
-Debian generates an initramfs at kernel-install time; is it possible
-that the esata was mounted when you installed that kernel?  Maybe run
-update-initramfs again after booting without the esata connected.
-
-Linux can get its own weird ideas about enumeration order of disks,
-network cards, PCI slots, etc, and that's why we have UUIDs and I
-thought the Debian initramfs ought to remember the specific UUID of the
-root device it was generated to use.  However, I don't have any
-Debian-amd64 hardware to check at home here.
-
--- 
-Anthony de Boer
-
-From scott at ss.org  Sat Jan 21 14:04:57 2017
-From: scott at ss.org (Scott Sullivan)
-Date: Sat, 21 Jan 2017 14:04:57 -0500
-Subject: [GTALUG] Boot problem
-In-Reply-To: <20170121175850.GE6015@adb.ca>
-References: <48d8256b-1275-1bc8-215d-739255b7afdd@galeahome.ca>
- <20170121175850.GE6015@adb.ca>
-Message-ID: <ad499b4a-9b6f-a6b5-ecc3-baae930fe8cb@ss.org>
-
-On 21/01/17 12:58 PM, Anthony de Boer via talk wrote:
-> Michael Galea via talk wrote:
->> I am seeing a problem at boot time that has appeared in kernels after
->> 4.3.0-1-amd64.
->>
->> My system will boot, show the available debian kernels, select the
->> latest and then jump into initramrs.  It claims it can not mount dev and
->> other partitions and, indeed, an ls on the mounted /dev/sda1 shows that
->> my esata drive has been mounted as root!
->
-> Debian generates an initramfs at kernel-install time; is it possible
-> that the esata was mounted when you installed that kernel?  Maybe run
-> update-initramfs again after booting without the esata connected.
->
-> Linux can get its own weird ideas about enumeration order of disks,
-> network cards, PCI slots, etc, and that's why we have UUIDs and I
-> thought the Debian initramfs ought to remember the specific UUID of the
-> root device it was generated to use.  However, I don't have any
-> Debian-amd64 hardware to check at home here.
->
-
-Anthony's advise is good, as it's a path to resolving the problem.
-
-To but it does not include how to diagnose how the root device is 
-selected, or how to tell if it's been change successfully too what you 
-desire.
-
-For myself, I would look at the following places.
-
-1) at boot time, interrupting and appending or editing the boot entry.
-
-2) checking your boot loaders config, which is easy with grub, grub2 
-configs on the other hand are terrible opaque to read.
-
-3) At run time, by looking at the cmdline file under /proc which is the 
-kernel's command line after booting.
-
-Some samples form my machines:
-
-[scott at failfast ~]$ cat /proc/cmdline
-BOOT_IMAGE=/vmlinuz-4.8.16-300.fc25.x86_64 
-root=/dev/mapper/fedora_failfast-root ro rd.lvm.lv=fedora_failfast/root 
-rd.luks.uuid=luks-e37ae023-0aba-417d-82df-157338c8515d 
-rd.lvm.lv=fedora_failfast/swap rhgb quiet LANG=en_US.UTF-8
-
-[root at muse ~]# cat /proc/cmdline
-BOOT_IMAGE=/vmlinuz-3.10.0-514.2.2.el7.x86_64 
-root=UUID=4530cd0d-10ed-4fca-a056-534a38e1e717 ro crashkernel=auto 
-rd.md.uuid=1a674618:ee5747c9:08996bc7:5fff0b7d 
-rd.md.uuid=7b9c4991:59009b72:0980bbc3:1ccacf58 
-rd.md.uuid=18e8b34b:857cab8d:b85d6f0b:30f32d9d rhgb quiet LANG=en_CA.UTF-8
-
-
-In all cases your looking for the root= parameter.
-
-Further reading:
-https://wiki.archlinux.org/index.php/Kernel_parameters
-and the bootparam man page.
-
--- 
-Scott Sullivan
-
-From michael at galeahome.ca  Sat Jan 21 14:44:38 2017
-From: michael at galeahome.ca (Michael Galea)
-Date: Sat, 21 Jan 2017 14:44:38 -0500
-Subject: [GTALUG] Boot problem
-In-Reply-To: <20170121175850.GE6015@adb.ca>
-References: <48d8256b-1275-1bc8-215d-739255b7afdd@galeahome.ca>
- <20170121175850.GE6015@adb.ca>
-Message-ID: <a838467e-e4e6-c5bf-96b9-b1ae29aa6f5c@galeahome.ca>
-
-On 01/21/17 12:58, Anthony de Boer wrote:
-> Michael Galea via talk wrote:
->> I am seeing a problem at boot time that has appeared in kernels after
->> 4.3.0-1-amd64.
->>
->> My system will boot, show the available debian kernels, select the
->> latest and then jump into initramrs.  It claims it can not mount dev and
->> other partitions and, indeed, an ls on the mounted /dev/sda1 shows that
->> my esata drive has been mounted as root!
->
-> Debian generates an initramfs at kernel-install time; is it possible
-> that the esata was mounted when you installed that kernel?  Maybe run
-> update-initramfs again after booting without the esata connected.
->
-Sure, almost certainly..
-
-> Linux can get its own weird ideas about enumeration order of disks,
-> network cards, PCI slots, etc, and that's why we have UUIDs and I
-> thought the Debian initramfs ought to remember the specific UUID of the
-> root device it was generated to use.  However, I don't have any
-> Debian-amd64 hardware to check at home here.
->
-Thanks Anthony,
-I tried unmount+poweroff esata and "update-initramfs -u" and reboot but 
-no success.
-
-It still boots from the hard disk but attempts to mount the OS from 
-esata. The only difference is that the timing of when I have to switch 
-on the esata is now "very tight" at less than a few seconds after I get 
-the clean message from fsck, or boot fails (missing mount in fstab).
-
--- 
-Michael Galea
-
-From michael at galeahome.ca  Sun Jan 22 09:20:03 2017
-From: michael at galeahome.ca (Michael Galea)
-Date: Sun, 22 Jan 2017 09:20:03 -0500
-Subject: [GTALUG] Boot problem
-In-Reply-To: <ad499b4a-9b6f-a6b5-ecc3-baae930fe8cb@ss.org>
-References: <48d8256b-1275-1bc8-215d-739255b7afdd@galeahome.ca>
- <20170121175850.GE6015@adb.ca> <ad499b4a-9b6f-a6b5-ecc3-baae930fe8cb@ss.org>
-Message-ID: <d89a6410-e0f7-f366-7ea7-64c93430f442@galeahome.ca>
-
-On 01/21/17 14:04, Scott Sullivan via talk wrote:
-> On 21/01/17 12:58 PM, Anthony de Boer via talk wrote:
->> Michael Galea via talk wrote:
->>> I am seeing a problem at boot time that has appeared in kernels after
->>> 4.3.0-1-amd64.
->>>
->>> My system will boot, show the available debian kernels, select the
->>> latest and then jump into initramrs.  It claims it can not mount dev and
->>> other partitions and, indeed, an ls on the mounted /dev/sda1 shows that
->>> my esata drive has been mounted as root!
->>
->> Debian generates an initramfs at kernel-install time; is it possible
->> that the esata was mounted when you installed that kernel?  Maybe run
->> update-initramfs again after booting without the esata connected.
->>
->> Linux can get its own weird ideas about enumeration order of disks,
->> network cards, PCI slots, etc, and that's why we have UUIDs and I
->> thought the Debian initramfs ought to remember the specific UUID of the
->> root device it was generated to use.  However, I don't have any
->> Debian-amd64 hardware to check at home here.
->>
->
-> Anthony's advise is good, as it's a path to resolving the problem.
->
-> To but it does not include how to diagnose how the root device is
-> selected, or how to tell if it's been change successfully too what you
-> desire.
->
-> For myself, I would look at the following places.
->
-> 1) at boot time, interrupting and appending or editing the boot entry.
->
-> 2) checking your boot loaders config, which is easy with grub, grub2
-> configs on the other hand are terrible opaque to read.
->
-> 3) At run time, by looking at the cmdline file under /proc which is the
-> kernel's command line after booting.
->
-> Some samples form my machines:
->
-> [scott at failfast ~]$ cat /proc/cmdline
-> BOOT_IMAGE=/vmlinuz-4.8.16-300.fc25.x86_64
-> root=/dev/mapper/fedora_failfast-root ro rd.lvm.lv=fedora_failfast/root
-> rd.luks.uuid=luks-e37ae023-0aba-417d-82df-157338c8515d
-> rd.lvm.lv=fedora_failfast/swap rhgb quiet LANG=en_US.UTF-8
->
-> [root at muse ~]# cat /proc/cmdline
-> BOOT_IMAGE=/vmlinuz-3.10.0-514.2.2.el7.x86_64
-> root=UUID=4530cd0d-10ed-4fca-a056-534a38e1e717 ro crashkernel=auto
-> rd.md.uuid=1a674618:ee5747c9:08996bc7:5fff0b7d
-> rd.md.uuid=7b9c4991:59009b72:0980bbc3:1ccacf58
-> rd.md.uuid=18e8b34b:857cab8d:b85d6f0b:30f32d9d rhgb quiet LANG=en_CA.UTF-8
->
->
-> In all cases your looking for the root= parameter.
->
-> Further reading:
-> https://wiki.archlinux.org/index.php/Kernel_parameters
-> and the bootparam man page.
->
-Thanks Scott,
-
-cat /proc/cmdline indicated GRUB2 was trying to boot from /dev/sda1 
-despite the provisioning for UUIDs in /etc/fstab.
-
-In debian, the /etc/default/grub file has a line 
-"GRUB_DISABLE_LINUX_UUID=true".  Commenting that out, update-grub2 and 
-reboot and a now have a nice clean boot.
-
--- 
-Michael Galea
-
-From hugh at mimosa.com  Sun Jan 22 11:26:10 2017
-From: hugh at mimosa.com (D. Hugh Redelmeier)
-Date: Sun, 22 Jan 2017 11:26:10 -0500 (EST)
-Subject: [GTALUG] NVIDIA SHIELD Tablet K1
-In-Reply-To: <d655a060-e37c-0cea-b274-f368128b303a@galeahome.ca>
-References: <d655a060-e37c-0cea-b274-f368128b303a@galeahome.ca>
-Message-ID: <alpine.LFD.2.20.1701210949210.19285@redeye.mimosa.com>
-
-| From: Michael Galea via talk <talk at gtalug.org>
-
-| Does anyone own an NVIDIA SHIELD Tablet K1 and can they recommend it?  I am
-| looking for a recommendation of this tablet for the purpose of web and email.
-| I have heard that it being a gaming tablet with four cores at 2.2 Ghz, it
-| should be overkill for the intended use.  But that is just what I want.
-| If anyone knows of a better android based tablet, please let me know.
-
-There are Android tablets for all tastes and needs.  You have to
-figure out what matters to you.  That's not actually easy.  I found
-out by living with a few tablets for some time.
-
-The rest of this is about my impressions.  Others may feel differently.
-
-I imagine that I would find it intolerable to use a tablet without a
-keyboard for routine email.
-
-I do find tablet keyboards not very good:  if you want a keyboard on a
-portable device, it is hard to beat the clamshell laptop form-factor.
-Even tablets that imitate the clamshell get it wrong: either a fixed
-angle or too much of the weight behind the screen (balance problems).
-
-For web browsing, I find a tablet very nice.  I can lounge in a way
-that you cannot do with a clamshell.  For browsing, I love my Nexus 10
-(light, high-res screen, longish battery life, no fan noise).
-
-I have two convertible laptops that can fold up to be like a tablet.
-I never use that feature.  Why?
-
-- conventional Linux distros (I use Fedora) don't handle tablet
-  gestures usefully.
-
-- when folded up, these things still have fans
-
-- they still weigh the same, much more than a tablet
-
-- on one (Yoga 2 Pro), the keyboard remains exposed on the underside.
-  That just feels weird.  And Linux leaves it enabled (last I
-  checked).
-
-- battery life is much shorter than a tablet
-
-Large tablets are nice to use.  Small ones are nicer to carry.  I
-never take my 10" tablet out of the house.  My Android phone does most
-tabletty things when I'm out and about.  If I need somthing better, I
-take a notebook computer.  There doesn't seem to be a sufficient niche
-for something between the phone and a notebook when on the road.
-
-I have a few smaller tablets that I don't use.  Some run Windows.  I
-intended to put Linux on those but that's probably silly.
-
-Tablets have limited lifetimes.  The manufacturers soon get tired of
-releasing updated firmware.  You can decide how much that matters.  I
-have an original iPad and never turn it on because it has been
-unsupportd for so long.  The Nexus 10 has been unsupported for Andoid
-6, but it is still fine for now.  You can get a Kobo Arc 10HD tablet
-with great specs for about $100 but its firmware is uncomfortably old
-(there is a CyanogenMod for it but not well debugged).
-
-====
-
-Cheap Windows tablets often have resource limitations that are
-unreasonable.  1G of RAM is too little.  16G of eMMC is too little;
-even 32G is tight but anything more bumps the licensing cost a lot.
-1280x800 resolution is not great these days.  To top that off, Windows
-isn't that useful as a tablet OS (but it is better than a conventional
-Linux distro).
-
-(I have a tablet with 64-bit Windows.  It can run the
-Ubuntu-under-Windows thing that Microsoft has released.  32-bit
-Windows (used in many tablets even though the processors can run
-64-bit code) cannot do that.  But so far I hardly ever use that
-tablet.)
-
-Tablet screens are typically better than notebook screens until you
-pay a lot for the notebook.  I find this annoying and unreasonable.
-IPS is almost universal in tablets and rare in inexpensive notebooks.
-Way too many notebooks are only 1366x768.  The Nexus 10 and Kobo Arc
-10HD have 2560x1600 pixels -- roughly four times as many.  The Nexus 7
-and Kobo Arc 7HD have 1920x1200.
-
-I don't do gaming.  It seems that a lot of games are now targetted at
-phones and tablets.  The nVidia Shield is probably the best gaming
-tablet but I am not a good source for this.  nVidia has a Toronto
-office that was once Transgaming and it concentrates on porting games
-to the Shield.  (Transgaming started out porting games to Linux, then
-MacOS; no longer.)  But then perhaps I'm confusing the Shield tablet
-with the Shield Set Top Box.  I don't know the relationship and am not
-about to research it.
-  <https://en.wikipedia.org/wiki/SHIELD_Android_TV>
-  <https://en.wikipedia.org/wiki/Shield_Tablet>
-
-The Shield Tablet is perhaps reaching the end of life.
-  <https://en.wikipedia.org/wiki/Shield_Tablet>
-
-	In August 2016, Nvidia announced it had cancelled plans to release a
-	hardware upgrade to its Shield Tablet product line - a speculated
-	reason for the cancellation was product conflict with the Nintendo
-	Switch, which uses similar technology.[4]
-
-From lsorense at csclub.uwaterloo.ca  Mon Jan 23 09:55:59 2017
-From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
-Date: Mon, 23 Jan 2017 09:55:59 -0500
-Subject: [GTALUG] Boot problem
-In-Reply-To: <d89a6410-e0f7-f366-7ea7-64c93430f442@galeahome.ca>
-References: <48d8256b-1275-1bc8-215d-739255b7afdd@galeahome.ca>
- <20170121175850.GE6015@adb.ca>
- <ad499b4a-9b6f-a6b5-ecc3-baae930fe8cb@ss.org>
- <d89a6410-e0f7-f366-7ea7-64c93430f442@galeahome.ca>
-Message-ID: <20170123145559.GI17366@csclub.uwaterloo.ca>
-
-On Sun, Jan 22, 2017 at 09:20:03AM -0500, Michael Galea via talk wrote:
-> cat /proc/cmdline indicated GRUB2 was trying to boot from /dev/sda1 despite
-> the provisioning for UUIDs in /etc/fstab.
-> 
-> In debian, the /etc/default/grub file has a line
-> "GRUB_DISABLE_LINUX_UUID=true".  Commenting that out, update-grub2 and
-> reboot and a now have a nice clean boot.
-
-That would certainly explain it.
-
-I think some years ago there was a question during a package install
-about switching to UUIDs, and if you told it no at that time, it would
-have written that entry to the grub config.  That would be when Debian
-was transitioning to the UUID use for grub.
-
-I think the question isn't even asked anymore, but apparently that
-doesn't mean the value got removed from older systems when the question
-was removed.
-
-All I can find in the changelog is that a commented out line was added
-in 2008 that could be uncommented to disable the use of UUID in grub.
-
--- 
-Len Sorensen
-
-From lsorense at csclub.uwaterloo.ca  Mon Jan 23 10:06:59 2017
-From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
-Date: Mon, 23 Jan 2017 10:06:59 -0500
-Subject: [GTALUG] NVIDIA SHIELD Tablet K1
-In-Reply-To: <d655a060-e37c-0cea-b274-f368128b303a@galeahome.ca>
-References: <d655a060-e37c-0cea-b274-f368128b303a@galeahome.ca>
-Message-ID: <20170123150659.GJ17366@csclub.uwaterloo.ca>
-
-On Fri, Jan 20, 2017 at 04:37:20PM -0500, Michael Galea via talk wrote:
-> Does anyone own an NVIDIA SHIELD Tablet K1 and can they recommend it?  I am
-> looking for a recommendation of this tablet for the purpose of web and
-> email.
-> 
-> I have heard that it being a gaming tablet with four cores at 2.2 Ghz, it
-> should be overkill for the intended use.  But that is just what I want.
-> 
-> If anyone knows of a better android based tablet, please let me know.
-
-Well the specs are certainly pretty good.
-
-1920x1200 resolution on an 8" sounds rather nice.
-
-16GB flash is not bad, especially when it has a uSD slot for extra space.
-
-Quad Cortex-A15 at 2.2GHz is a fair bit of processing power, and 2GB
-ram and the nvidia GPU certainly means some things should go at a
-decent speed.  No idea what that means for battery life.  It appears to
-have a decent sized battery at least.
-
-Wifi/GPS/HDMI/etc all looks pretty good.
-
-No 802.11ac, but 802.11a/n isn't bad either.
-
-Camera isn't impressive, but who are these people taking pictures with
-a tablet anyhow?
-
-Android 6.0 available, so it isn't totally obsolete software wise.
-
-I do agree that email on a tablet with a touch screen keyboard sounds
-painful, but I guess if you are mainly reading it would be fine and some
-of the android keyboard apps are better than others too, if you can get
-used to their interesting writing methods.
-
--- 
-Len Sorensen
-
-From cpchan at bell.net  Mon Jan 23 11:02:52 2017
-From: cpchan at bell.net (Charles Philip Chan)
-Date: Mon, 23 Jan 2017 11:02:52 -0500
-Subject: [GTALUG] NVIDIA SHIELD Tablet K1
-In-Reply-To: <20170123150659.GJ17366@csclub.uwaterloo.ca> (Lennart Sorensen
- via talk's message of "Mon, 23 Jan 2017 10:06:59 -0500")
-References: <d655a060-e37c-0cea-b274-f368128b303a@galeahome.ca>
- <20170123150659.GJ17366@csclub.uwaterloo.ca>
-Message-ID: <878tq1das3.fsf@bell.net>
-
-Lennart Sorensen via talk <talk at gtalug.org> writes:
-
-> Android 6.0 available, so it isn't totally obsolete software wise.
-
-I was looking at the same tablet to replace my Nexus 7 2013. Apparently
-Nougat is now available as an update, so software wise it is not
-obsolete. Plus, I found out that it is a pretty pristine Android
-experience with very little bloatware. Great for the price with a decent
-tablet with a microSD slot.
-
-Charles
-
--- 
-"I once witnessed a long-winded, month-long flamewar over the use of
-mice vs. trackballs...It was very silly."
-(By Matt Welsh)
--------------- next part --------------
-A non-text attachment was scrubbed...
-Name: signature.asc
-Type: application/pgp-signature
-Size: 194 bytes
-Desc: not available
-URL: <http://gtalug.org/pipermail/talk/attachments/20170123/a2d2879b/attachment.sig>
-
-From lsorense at csclub.uwaterloo.ca  Mon Jan 23 11:21:16 2017
-From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
-Date: Mon, 23 Jan 2017 11:21:16 -0500
-Subject: [GTALUG] NVIDIA SHIELD Tablet K1
-In-Reply-To: <878tq1das3.fsf@bell.net>
-References: <d655a060-e37c-0cea-b274-f368128b303a@galeahome.ca>
- <20170123150659.GJ17366@csclub.uwaterloo.ca>
- <878tq1das3.fsf@bell.net>
-Message-ID: <20170123162116.GK17366@csclub.uwaterloo.ca>
-
-On Mon, Jan 23, 2017 at 11:02:52AM -0500, Charles Philip Chan via talk wrote:
-> Lennart Sorensen via talk <talk at gtalug.org> writes:
-> 
-> > Android 6.0 available, so it isn't totally obsolete software wise.
-> 
-> I was looking at the same tablet to replace my Nexus 7 2013. Apparently
-> Nougat is now available as an update, so software wise it is not
-> obsolete. Plus, I found out that it is a pretty pristine Android
-> experience with very little bloatware. Great for the price with a decent
-> tablet with a microSD slot.
-
-So looks limke 7.0 is in beta and should be released in a few weeks.
-Well certainly keeping the software up to date then.
-
-Much better than samsung tablets, that's for sure.
-
--- 
-Len Sorensen
-
-From michael at galeahome.ca  Mon Jan 23 13:09:45 2017
-From: michael at galeahome.ca (Michael Galea)
-Date: Mon, 23 Jan 2017 13:09:45 -0500
-Subject: [GTALUG] NVIDIA SHIELD Tablet K1
-In-Reply-To: <alpine.LFD.2.20.1701210949210.19285@redeye.mimosa.com>
-References: <d655a060-e37c-0cea-b274-f368128b303a@galeahome.ca>
- <alpine.LFD.2.20.1701210949210.19285@redeye.mimosa.com>
-Message-ID: <6f9cc326-9c53-e5aa-eb65-336828ca7867@galeahome.ca>
-
-On 01/22/17 11:26, D. Hugh Redelmeier via talk wrote:
-> | From: Michael Galea via talk <talk at gtalug.org>
->
-> | Does anyone own an NVIDIA SHIELD Tablet K1 and can they recommend it?  I am
-> | looking for a recommendation of this tablet for the purpose of web and email.
-> | I have heard that it being a gaming tablet with four cores at 2.2 Ghz, it
-> | should be overkill for the intended use.  But that is just what I want.
-> | If anyone knows of a better android based tablet, please let me know.
->
-> There are Android tablets for all tastes and needs.  You have to
-> figure out what matters to you.  That's not actually easy.  I found
-> out by living with a few tablets for some time.
->
-> The rest of this is about my impressions.  Others may feel differently.
->
-> I imagine that I would find it intolerable to use a tablet without a
-> keyboard for routine email.
->
-> I do find tablet keyboards not very good:  if you want a keyboard on a
-> portable device, it is hard to beat the clamshell laptop form-factor.
-> Even tablets that imitate the clamshell get it wrong: either a fixed
-> angle or too much of the weight behind the screen (balance problems).
->
-> For web browsing, I find a tablet very nice.  I can lounge in a way
-> that you cannot do with a clamshell.  For browsing, I love my Nexus 10
-> (light, high-res screen, longish battery life, no fan noise).
->
-> I have two convertible laptops that can fold up to be like a tablet.
-> I never use that feature.  Why?
->
-> - conventional Linux distros (I use Fedora) don't handle tablet
->   gestures usefully.
->
-> - when folded up, these things still have fans
->
-> - they still weigh the same, much more than a tablet
->
-> - on one (Yoga 2 Pro), the keyboard remains exposed on the underside.
->   That just feels weird.  And Linux leaves it enabled (last I
->   checked).
->
-> - battery life is much shorter than a tablet
->
-> Large tablets are nice to use.  Small ones are nicer to carry.  I
-> never take my 10" tablet out of the house.  My Android phone does most
-> tabletty things when I'm out and about.  If I need somthing better, I
-> take a notebook computer.  There doesn't seem to be a sufficient niche
-> for something between the phone and a notebook when on the road.
->
-> I have a few smaller tablets that I don't use.  Some run Windows.  I
-> intended to put Linux on those but that's probably silly.
->
-> Tablets have limited lifetimes.  The manufacturers soon get tired of
-> releasing updated firmware.  You can decide how much that matters.  I
-> have an original iPad and never turn it on because it has been
-> unsupportd for so long.  The Nexus 10 has been unsupported for Andoid
-> 6, but it is still fine for now.  You can get a Kobo Arc 10HD tablet
-> with great specs for about $100 but its firmware is uncomfortably old
-> (there is a CyanogenMod for it but not well debugged).
->
-> ====
->
-> Cheap Windows tablets often have resource limitations that are
-> unreasonable.  1G of RAM is too little.  16G of eMMC is too little;
-> even 32G is tight but anything more bumps the licensing cost a lot.
-> 1280x800 resolution is not great these days.  To top that off, Windows
-> isn't that useful as a tablet OS (but it is better than a conventional
-> Linux distro).
->
-> (I have a tablet with 64-bit Windows.  It can run the
-> Ubuntu-under-Windows thing that Microsoft has released.  32-bit
-> Windows (used in many tablets even though the processors can run
-> 64-bit code) cannot do that.  But so far I hardly ever use that
-> tablet.)
->
-> Tablet screens are typically better than notebook screens until you
-> pay a lot for the notebook.  I find this annoying and unreasonable.
-> IPS is almost universal in tablets and rare in inexpensive notebooks.
-> Way too many notebooks are only 1366x768.  The Nexus 10 and Kobo Arc
-> 10HD have 2560x1600 pixels -- roughly four times as many.  The Nexus 7
-> and Kobo Arc 7HD have 1920x1200.
->
-> I don't do gaming.  It seems that a lot of games are now targetted at
-> phones and tablets.  The nVidia Shield is probably the best gaming
-> tablet but I am not a good source for this.  nVidia has a Toronto
-> office that was once Transgaming and it concentrates on porting games
-> to the Shield.  (Transgaming started out porting games to Linux, then
-> MacOS; no longer.)  But then perhaps I'm confusing the Shield tablet
-> with the Shield Set Top Box.  I don't know the relationship and am not
-> about to research it.
->   <https://en.wikipedia.org/wiki/SHIELD_Android_TV>
->   <https://en.wikipedia.org/wiki/Shield_Tablet>
->
-> The Shield Tablet is perhaps reaching the end of life.
->   <https://en.wikipedia.org/wiki/Shield_Tablet>
->
-> 	In August 2016, Nvidia announced it had cancelled plans to release a
-> 	hardware upgrade to its Shield Tablet product line - a speculated
-> 	reason for the cancellation was product conflict with the Nintendo
-> 	Switch, which uses similar technology.[4]
-> ---
-> Talk Mailing List
-> talk at gtalug.org
-> https://gtalug.org/mailman/listinfo/talk
->
-I enjoy using our Kobo ARC even without a keyboard. My beefs are that I 
-want a bigger display and snappier web page rendering.  Also my wife and 
-I both use the beast, and account switching gets to be a pain.
-
-Our prime applications under Android are web browsing, email from our 
-domains imap and mpdroid (for running our pi-based mpd server that pumps 
-hdmi to the media center).
-
-email: My wife has much better ways to draft and view more complex 
-emails on a slow to boot computer, but she uses the Kobo to say yes to 
-acting gigs (as an extra). When a casting call goes out via email, the 
-first responders usually get the job.  So she likes the Kobo's sub-30 
-second trip into the mail app, where she can seize the prize.
-
-I real question is, will web pages render faster on a faster tablet?  If 
-most of the time to render a page is fetching the page and not tab 
-creation + rendering, then I would probably go for a bigger android tablet.
-
-PS: I wish Canada Computers would take one out of the box for me to try 
-but they don't display that unit, just stock it.
-
-
-
--- 
-Michael Galea
+> I'm working on a project that we are trying to get up and running on
+> Postgres (as we plan on hosting it on Heroku's awesome Postgres
+> instances) and have found that the existing migrate utilities (mysqldump
+> --compatible=postgresql[0], pgloader[1], random sed files, etc) haven't
+> produced the desire results.
+
+I haven't done this recently (in the last 2 or so years, but...), any
+time I have needed to do a conversion in the past, mysql2postgres[1] has
+worked well.
+
+https://github.com/maxlapshin/mysql2postgres
 
