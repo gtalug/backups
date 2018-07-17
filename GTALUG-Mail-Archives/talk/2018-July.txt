@@ -1,0 +1,2249 @@
+From peter.king at utoronto.ca  Wed Jul  4 14:53:03 2018
+From: peter.king at utoronto.ca (Peter King)
+Date: Wed, 4 Jul 2018 14:53:03 -0400
+Subject: [GTALUG] Fetchmail and Office365 and backslashes, oh my!
+Message-ID: <20180704185303.GA14046@amber.utoronto.ca>
+
+Recently we were forcibly "migrated" to Office365 for our email services,
+and with the change numerous things were broken.  One of the last things
+I cannot figure out how to solve is how to pass an alias email address to
+the MS server.  So in .fetchmailrc I have a line like this:
+
+user "prof.bozo at utoronto.ca\department.chair at utoronto.ca"  there with password "XYZZY" is bozo here
+
+But this fails, and in the fetchmail logfiles it represents the username as
+not having a backslash:
+
+Jul  4 14:35:14 fetchmail[13829]: IMAP> A0002 LOGIN "prof.bozo at utoronto.camedieval.philosophy@utoronto.ca" *
+Jul  4 14:35:14 fetchmail[13829]: IMAP< A0002 NO LOGIN failed.
+Jul  4 14:35:14 fetchmail[13829]: IMAP> A0003 LOGOUT
+
+If I double-backslash it, though, I get a double backslash in the username.
+Ditto for triple, quadruple, and quintuple backslashes.  Nor does it work
+if I single-quote the backslash. 
+
+According to the fetchmail manual, the backslash is used to communicate via
+ASCII sequences and codes with fetchmail, and it's pretty clear that this
+is part of the problem.
+
+Google turned up a few people with the same problem, but they seemed to
+have their problems (from 7+ years ago) fixed by multiple backslashes,
+which clearly aren't working for me.
+
+Any ideas?  Our local people maintaining the MS Office365 nonsense dont'
+support fetchmail and are not interested in helping ...
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		   (416)-978-3311 dept
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 195 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/talk/attachments/20180704/e14a5680/attachment.sig>
+
+From me at mylesb.ca  Wed Jul  4 15:08:03 2018
+From: me at mylesb.ca (=?UTF-8?Q?Myles_Braithwaite_=f0=9f=91=be?=)
+Date: Wed, 4 Jul 2018 15:08:03 -0400
+Subject: [GTALUG] Fetchmail and Office365 and backslashes, oh my!
+In-Reply-To: <20180704185303.GA14046@amber.utoronto.ca>
+References: <20180704185303.GA14046@amber.utoronto.ca>
+Message-ID: <80dea4e4-9f69-56cc-fcd6-a8cd7d38dce7@mylesb.ca>
+
+Peter King via talk wrote on 2018-07-04 2:53 PM:
+> Recently we were forcibly "migrated" to Office365 for our email services,
+> and with the change numerous things were broken.  One of the last things
+> I cannot figure out how to solve is how to pass an alias email address to
+> the MS server.  So in .fetchmailrc I have a line like this:
+> 
+> user "prof.bozo at utoronto.ca\department.chair at utoronto.ca"  there with password "XYZZY" is bozo here
+> 
+> But this fails, and in the fetchmail logfiles it represents the username as
+> not having a backslash:
+> 
+> Jul  4 14:35:14 fetchmail[13829]: IMAP> A0002 LOGIN "prof.bozo at utoronto.camedieval.philosophy@utoronto.ca" *
+> Jul  4 14:35:14 fetchmail[13829]: IMAP< A0002 NO LOGIN failed.
+> Jul  4 14:35:14 fetchmail[13829]: IMAP> A0003 LOGOUT
+> 
+> If I double-backslash it, though, I get a double backslash in the username.
+> Ditto for triple, quadruple, and quintuple backslashes.  Nor does it work
+> if I single-quote the backslash.
+> 
+> According to the fetchmail manual, the backslash is used to communicate via
+> ASCII sequences and codes with fetchmail, and it's pretty clear that this
+> is part of the problem.
+> 
+> Google turned up a few people with the same problem, but they seemed to
+> have their problems (from 7+ years ago) fixed by multiple backslashes,
+> which clearly aren't working for me.
+> 
+> Any ideas?  Our local people maintaining the MS Office365 nonsense dont'
+> support fetchmail and are not interested in helping ...
+
+I was having the same issues a year ago and basically gave up. I'm not 
+100% sure if this will work for you but it magically started working for me.
+
+I switched my O365 account two-factor auth (they use SMS to transmit the 
+code, Ew) and had to create a bunch of app passwords[0] to be able to 
+connect with my main email client. Randomly one day decided to see if 
+this would work with fetchmail and lo and behold it did.
+
+I don't know why it worked or if something was disabled in that year but 
+it works now.
+
+[0]: The location where you generate new passwords is here: 
+<https://account.activedirectory.windowsazure.com/AppPasswords.aspx>
+
+Off-Topic:
+
+One of the scary things about finding URLs to generate passwords on 
+Super User is the fact the `windowsazure.com` whois lookup responds with 
+MarkMonitor Inc., they help corporations protect their domain names. So 
+you have to check the SSL certificate first to see if it's a valid 
+domain. I had to use this command:
+
+echo | openssl s_client -showcerts -servername 
+account.activedirectory.windowsazure.com -connect 
+account.activedirectory.windowsazure.com:443 2>/dev/null | openssl x509 
+-inform pem -noout -text
+
+to review if it's valid.
+
+From peter.king at utoronto.ca  Wed Jul  4 18:20:19 2018
+From: peter.king at utoronto.ca (Peter King)
+Date: Wed, 4 Jul 2018 18:20:19 -0400
+Subject: [GTALUG] Fetchmail and Office365 and backslashes, oh my!
+In-Reply-To: <80dea4e4-9f69-56cc-fcd6-a8cd7d38dce7@mylesb.ca>
+References: <20180704185303.GA14046@amber.utoronto.ca>
+ <80dea4e4-9f69-56cc-fcd6-a8cd7d38dce7@mylesb.ca>
+Message-ID: <20180704222019.GA17685@amber.utoronto.ca>
+
+On Wed, Jul 04, 2018 at 03:08:03PM -0400, Myles Braithwaite 👾 via talk wrote:
+ 
+> I was having the same issues a year ago and basically gave up. I'm not 
+> 100% sure if this will work for you but it magically started working for me.
+> 
+> I switched my O365 account two-factor auth (they use SMS to transmit the 
+> code, Ew) and had to create a bunch of app passwords[0] to be able to 
+> connect with my main email client. Randomly one day decided to see if 
+> this would work with fetchmail and lo and behold it did.
+> 
+> I don't know why it worked or if something was disabled in that year but 
+> it works now.
+> 
+> [0]: The location where you generate new passwords is here: 
+> <https://account.activedirectory.windowsazure.com/AppPasswords.aspx>
+
+Thanks for the suggestion!  Unfortunately, it didn't work.
+
+I tried representing the backslash in .fetchmailrc as "\92" which is the 
+decimal escape ASCII code for the backslash.  It failed, but, oddly, the
+logfile has the MS Office365 server reading the username with a double
+backslash.  No idea why.  (The same results with octal and hex codes for
+the backslash.)
+
+If you put in a single backslash, it vanishes.
+
+A double backslash remains a double backslash.
+
+A triple backslash becomes a double backslash.
+
+Quadruple remains quadruple.  Quintuple becomes quadruple.  And so on.
+
+Either fetchmail or Office365 (or both together) are doing something to
+that backslash that seems to be causing the problem.  I can't figure out
+what, though.   Arrgghh.  I use Linux to avoid this sort of idiotic issue,
+not to have to batter through it.
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		   (416)-978-3311 dept
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 195 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/talk/attachments/20180704/b2a75f37/attachment.sig>
+
+From davec-b at rogers.com  Wed Jul  4 18:47:14 2018
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Wed, 4 Jul 2018 18:47:14 -0400
+Subject: [GTALUG] Fetchmail and Office365 and backslashes, oh my!
+In-Reply-To: <20180704222019.GA17685@amber.utoronto.ca>
+References: <20180704185303.GA14046@amber.utoronto.ca>
+ <80dea4e4-9f69-56cc-fcd6-a8cd7d38dce7@mylesb.ca>
+ <20180704222019.GA17685@amber.utoronto.ca>
+Message-ID: <5ea005d6-655b-10b0-d2d4-f743ec06d34b@rogers.com>
+
+In a previous life, I worked with one of the people MS hired to do the 
+ergonomics of Windows 95.
+
+Their task was to provide a lovely user interface that was *as different 
+as possible* from any of Xerox Star, Apple Mac or Unix X11, specifically 
+so that people would find them frustrating if they had ever used Windows.
+
+Regrettably, that meant that Windows was frustrating to anyone who had 
+ever used a computer.
+
+Net result: they had to compete on quality alone, and Mac won.
+
+It looks like history is now repeating itself. I rather hope with the 
+same results.
+
+--dave
+
+On 04/07/18 06:20 PM, Peter King via talk wrote:
+> On Wed, Jul 04, 2018 at 03:08:03PM -0400, Myles Braithwaite 👾 via talk wrote:
+>   
+>> I was having the same issues a year ago and basically gave up. I'm not
+>> 100% sure if this will work for you but it magically started working for me.
+>>
+>> I switched my O365 account two-factor auth (they use SMS to transmit the
+>> code, Ew) and had to create a bunch of app passwords[0] to be able to
+>> connect with my main email client. Randomly one day decided to see if
+>> this would work with fetchmail and lo and behold it did.
+>>
+>> I don't know why it worked or if something was disabled in that year but
+>> it works now.
+>>
+>> [0]: The location where you generate new passwords is here:
+>> <https://account.activedirectory.windowsazure.com/AppPasswords.aspx>
+> Thanks for the suggestion!  Unfortunately, it didn't work.
+>
+> I tried representing the backslash in .fetchmailrc as "\92" which is the
+> decimal escape ASCII code for the backslash.  It failed, but, oddly, the
+> logfile has the MS Office365 server reading the username with a double
+> backslash.  No idea why.  (The same results with octal and hex codes for
+> the backslash.)
+>
+> If you put in a single backslash, it vanishes.
+>
+> A double backslash remains a double backslash.
+>
+> A triple backslash becomes a double backslash.
+>
+> Quadruple remains quadruple.  Quintuple becomes quadruple.  And so on.
+>
+> Either fetchmail or Office365 (or both together) are doing something to
+> that backslash that seems to be causing the problem.  I can't figure out
+> what, though.   Arrgghh.  I use Linux to avoid this sort of idiotic issue,
+> not to have to batter through it.
+>
+>
+>
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> https://gtalug.org/mailman/listinfo/talk
+
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net           |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20180704/a6fb8cfc/attachment.html>
+
+From hugh at mimosa.com  Wed Jul  4 19:59:02 2018
+From: hugh at mimosa.com (D. Hugh Redelmeier)
+Date: Wed, 4 Jul 2018 19:59:02 -0400 (EDT)
+Subject: [GTALUG] Fetchmail and Office365 and backslashes, oh my!
+In-Reply-To: <20180704185303.GA14046@amber.utoronto.ca>
+References: <20180704185303.GA14046@amber.utoronto.ca>
+Message-ID: <alpine.LFD.2.21.1807041915160.26502@redeye.mimosa.com>
+
+| From: Peter King via talk <talk at gtalug.org>
+
+| Recently we were forcibly "migrated" to Office365 for our email services,
+
+Interesting.
+
+I take it that this is per department.  I just checked on email to my CS 
+email account and it is only touched by Postfix and EXIM servers.
+
+|   One of the last things
+| I cannot figure out how to solve is how to pass an alias email address to
+| the MS server.
+
+I'm not going to help you, I'm going try to learn from you.
+
+I don't understand fetchmail that well -- I set it up many many years
+ago and haven't looked at it since.
+
+What's an alias in this context?  Is it like what newaliases(1)
+maintains for PostFix or Sendmail?
+
+|  So in .fetchmailrc I have a line like this:
+| 
+| user "prof.bozo at utoronto.ca\department.chair at utoronto.ca"  there with password "XYZZY" is bozo here
+
+I don't see \ used in this way in the fetchmail manual.  I don't think
+it is what they call multidrop.  Is it part of the IMAP protocol?
+Where is it documented?
+
+How about two different user lines:
+
+    poll whatever.utoronto.ca
+	    user "prof.bozo at utoronto.ca"  there with password "XYZZY" is bozo here
+
+    poll whatever.utoronto.ca
+	    user "department.chair at utoronto.ca"  there with password "XYZZY" is bozo here
+
+or even:
+
+    poll whatever.utoronto.ca
+	    user "prof.bozo at utoronto.ca"  there with password "XYZZY" is bozo here
+	    user "department.chair at utoronto.ca"  there with password "XYZZY" is bozo here
+
+PS: I've heard recommentations for getmail over fetchmail.  I haven't
+needed to investigate.
+
+| But this fails, and in the fetchmail logfiles it represents the username as
+| not having a backslash:
+| 
+| Jul  4 14:35:14 fetchmail[13829]: IMAP> A0002 LOGIN "prof.bozo at utoronto.camedieval.philosophy@utoronto.ca" *
+| Jul  4 14:35:14 fetchmail[13829]: IMAP< A0002 NO LOGIN failed.
+| Jul  4 14:35:14 fetchmail[13829]: IMAP> A0003 LOGOUT
+| 
+| If I double-backslash it, though, I get a double backslash in the username.
+| Ditto for triple, quadruple, and quintuple backslashes.  Nor does it work
+| if I single-quote the backslash. 
+| 
+| According to the fetchmail manual, the backslash is used to communicate via
+| ASCII sequences and codes with fetchmail, and it's pretty clear that this
+| is part of the problem.
+
+What piece of the software is supposed to handle \ the way you expect?
+
+The sendmail manual seems to say that \ is just a way to denote tricky
+characters.  So I think you expect your meaning of \ to be handled by
+the IMAP server.  And that the old IMAP server did handle it.
+
+From scruss at gmail.com  Thu Jul  5 05:26:44 2018
+From: scruss at gmail.com (Stewart C. Russell)
+Date: Thu, 5 Jul 2018 05:26:44 -0400
+Subject: [GTALUG] Fetchmail and Office365 and backslashes, oh my!
+In-Reply-To: <20180704185303.GA14046@amber.utoronto.ca>
+References: <20180704185303.GA14046@amber.utoronto.ca>
+Message-ID: <e1e64056-f955-40e2-68cb-bd8f2b78a22c@gmail.com>
+
+On 2018-07-04 02:53 PM, Peter King via talk wrote:
+> Recently we were forcibly "migrated" to Office365 for our email services,
+> and with the change numerous things were broken.
+
+You might not be able to. I have a newish O365 account that staunchly
+refuses to use any protocol but MS Exchange. POP3 or IMAP at best
+timeout, but feed the same credentials into any exchange/outlook client
+and I'm in.
+
+I've also noticed in the main O365 account I pay for, plus a couple set
+up for me by past consultancies, was that my login ID was always an
+@office365.com, @live.ca (!) or some other MS-owned domain. I could
+merrily send and receive e-mail under the company domain, but the
+credentials were always at the same domain.
+
+Unpopular opinion: Outlook is the best e-mail client. In many technical
+and UX aspects it may be the worst, but it is how corporate e-mail is
+done, and that's that.
+
+ Stewart
+
+From peter.king at utoronto.ca  Thu Jul  5 08:28:11 2018
+From: peter.king at utoronto.ca (Peter King)
+Date: Thu, 5 Jul 2018 08:28:11 -0400
+Subject: [GTALUG] Fetchmail and Office365 and backslashes, oh my!
+In-Reply-To: <e1e64056-f955-40e2-68cb-bd8f2b78a22c@gmail.com>
+References: <20180704185303.GA14046@amber.utoronto.ca>
+ <e1e64056-f955-40e2-68cb-bd8f2b78a22c@gmail.com>
+Message-ID: <20180705122811.GA24147@amber.utoronto.ca>
+
+On Thu, Jul 05, 2018 at 05:26:44AM -0400, Stewart C. Russell via talk wrote:
+ 
+> You might not be able to. I have a newish O365 account that staunchly
+> refuses to use any protocol but MS Exchange. POP3 or IMAP at best
+> timeout, but feed the same credentials into any exchange/outlook client
+> and I'm in.
+
+Well, fetchmail can access O365 as an IMAP client and pick up my mail
+reliably (and msmtp deliver it reliably).  That took a bit of fussing
+but nothing special.  The problem is in accessing shared mailboxes,
+where O365 seems to want the username to be of the form:
+
+   personal.email.account at domainname\shared.email.account[@domainname]
+
+I don't know if the problem is in fetchmail or O365 yet.
+
+> I've also noticed in the main O365 account I pay for, plus a couple set
+> up for me by past consultancies, was that my login ID was always an
+> @office365.com, @live.ca (!) or some other MS-owned domain. I could
+> merrily send and receive e-mail under the company domain, but the
+> credentials were always at the same domain.
+
+My login ID is @utoronto.ca, though the server is outlook.office365.com.
+As far as I can tell by looking at the headers, that is the domain name;
+if I had to venture a guess, I'd say that the University of Toronto pays
+for running its own domain and having Microsoft manage the email.
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		   (416)-978-3311 dept
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 195 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/talk/attachments/20180705/aa6b5587/attachment.sig>
+
+From peter.king at utoronto.ca  Thu Jul  5 08:43:38 2018
+From: peter.king at utoronto.ca (Peter King)
+Date: Thu, 5 Jul 2018 08:43:38 -0400
+Subject: [GTALUG] Fetchmail and Office365 and backslashes, oh my!
+In-Reply-To: <alpine.LFD.2.21.1807041915160.26502@redeye.mimosa.com>
+References: <20180704185303.GA14046@amber.utoronto.ca>
+ <alpine.LFD.2.21.1807041915160.26502@redeye.mimosa.com>
+Message-ID: <20180705124338.GB24147@amber.utoronto.ca>
+
+On Wed, Jul 04, 2018 at 07:59:02PM -0400, D. Hugh Redelmeier via talk wrote:
+ 
+> | Recently we were forcibly "migrated" to Office365 for our email services,
+> 
+> Interesting.
+> 
+> I take it that this is per department.  I just checked on email to my CS 
+> email account and it is only touched by Postfix and EXIM servers.
+
+It might be by broader area -- Arts and Science, for instance.  It may get
+you yet.  The University has been filled with proud pronouncements about
+its email+ system (which is code for Office365).
+
+> What's an alias in this context?  Is it like what newaliases(1)
+> maintains for PostFix or Sendmail?
+
+Near as I can tell, it's what the MS techies call a "shared email account",
+that is, a non-personal email account that isn't tied to a single person.
+In my case it's an email account associated with a departmental role (such
+as chair or undergraduate advisor).
+
+> I don't see \ used in this way in the fetchmail manual.  I don't think
+> it is what they call multidrop.  Is it part of the IMAP protocol?
+> Where is it documented?
+
+It isn't, at least not in the man page.  In fact it's worse: fetchmail
+seems to reserve '\' as a special character, usually to introduce some
+ASCII code.  I've tried replacing the backslash with the ASCII code for
+the backslash following fetchmail's rules, but no go.
+
+> How about two different user lines:
+> 
+>     poll whatever.utoronto.ca
+> 	    user "prof.bozo at utoronto.ca"  there with password "XYZZY" is bozo here
+> 
+>     poll whatever.utoronto.ca
+> 	    user "department.chair at utoronto.ca"  there with password "XYZZY" is bozo here
+> 
+> or even:
+> 
+>     poll whatever.utoronto.ca
+> 	    user "prof.bozo at utoronto.ca"  there with password "XYZZY" is bozo here
+> 	    user "department.chair at utoronto.ca"  there with password "XYZZY" is bozo here
+
+Interesting!  I'll try it.
+
+> PS: I've heard recommentations for getmail over fetchmail.  I haven't
+> needed to investigate.
+
+I know nothing about getmail, but I'll look into it.  Fetchmail has served
+me faithfully and well for decades, and I'm used to it; if needed I'll move
+to something else -- but since it has worked so well for so long, and also
+continues to work well with all my other email accounts, I'm reluctant to
+change my habits to accommodate MS Office365.  I will if that's what it
+takes, though.
+
+> The sendmail manual seems to say that \ is just a way to denote tricky
+> characters.  So I think you expect your meaning of \ to be handled by
+> the IMAP server.  And that the old IMAP server did handle it.
+
+Yes to both.  It may well be that the problem is not in fetchmail at all
+but in how Office365 interprets the string.  I am told that people who
+use other clients (Thunderbird etc.) have no trouble with the backslash
+addressing, though, so it's still unclear where the problem lies.
+
+All this would be much easier if the IT staff were interested in helping.
+As it stands, they intone the mantra that if you use *NIX you're on your
+own, and clearly don't know or don't care about the technical details.
+Such is the penalty for not swimming with the rest of the fish.
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		   (416)-978-3311 dept
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 195 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/talk/attachments/20180705/0b621fc7/attachment.sig>
+
+From kevin at ve3syb.ca  Thu Jul  5 12:28:22 2018
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Thu, 5 Jul 2018 12:28:22 -0400
+Subject: [GTALUG] Fetchmail and Office365 and backslashes, oh my!
+In-Reply-To: <e1e64056-f955-40e2-68cb-bd8f2b78a22c@gmail.com>
+References: <20180704185303.GA14046@amber.utoronto.ca>
+ <e1e64056-f955-40e2-68cb-bd8f2b78a22c@gmail.com>
+Message-ID: <81cd1eb0-5f23-fe68-31e1-b71b353c6ef4@ve3syb.ca>
+
+On 2018-07-05 05:26 AM, Stewart C. Russell via talk wrote:
+> On 2018-07-04 02:53 PM, Peter King via talk wrote:
+>> Recently we were forcibly "migrated" to Office365 for our email services,
+>> and with the change numerous things were broken.
+
+I haven't thought about Outlook and Exchange for quite a while. I remember 
+some years ago when the topic came up for someone wanting a Linux compatible 
+solution. There was a program for Linux that was compatible with Exchange 
+and Outlook.
+
+It has been too many years since I last read about that topic. I don't 
+remember the name of the program. There may be more than one solution 
+available nowadays.
+
+Just mentioning it in case it offers a way to use some Office stuff while 
+staying Linux.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/               | "Nerds make the shiny things that
+https://www.patreon.com/KevinCozens | distract the mouth-breathers, and
+                                     | that's why we're powerful"
+Owner of Elecraft K2 #2172          |
+#include <disclaimer/favourite>     |             --Chris Hardwick
+
+From kenslists at teksavvy.com  Sat Jul  7 23:09:47 2018
+From: kenslists at teksavvy.com (Ken Heard)
+Date: Sat, 7 Jul 2018 23:09:47 -0400
+Subject: [GTALUG] Cannot open rescue disk
+Message-ID: <a6f6915c-2ed0-25dd-edcc-ace99e47db30@teksavvy.com>
+
+The computer has Debian Jessie installed in it.  One day recently after 
+starting it, the BIOS identified the hardware.  It went as far as to 
+display the line "Verifying DMI Pool Data ..................." and then 
+stopped. The rest of the monitor was filled up with series of 99s
+
+I then tried to use a the Rescue mode on a Stretch net install disk. 
+The opening menu of the disk appeared on the monitor, but it did not 
+respond to input from the keyboard.  I consequently could not select the 
+rescue option.
+
+I checked the keyboard on another computer where it worked.  Using the 
+keyboard from the other computer on the one not working also did not 
+work there.
+
+The net install disk can be opened on the other computer.  In fact I 
+used it there to install Stretch on it.
+
+I did a Google search, but all the references I found assumed ability to 
+open the computer from a rescue disk.
+
+Does anybody know why this problem would arise, and what to do about it 
+-- if anything -- by way of fixing it.
+
+Regards, Ken Heard
+
+
+From opengeometry at yahoo.ca  Sat Jul  7 23:34:40 2018
+From: opengeometry at yahoo.ca (William Park)
+Date: Sat, 7 Jul 2018 23:34:40 -0400
+Subject: [GTALUG] Cannot open rescue disk
+In-Reply-To: <a6f6915c-2ed0-25dd-edcc-ace99e47db30@teksavvy.com>
+References: <a6f6915c-2ed0-25dd-edcc-ace99e47db30@teksavvy.com>
+Message-ID: <20180708033440.GA10525@node1.localdomain>
+
+I assume you tried different usb port.  It could be USB ports on the
+motherboard are toast.
+-- 
+William Park <opengeometry at yahoo.ca>
+
+On Sat, Jul 07, 2018 at 11:09:47PM -0400, Ken Heard via talk wrote:
+> The computer has Debian Jessie installed in it.  One day recently after
+> starting it, the BIOS identified the hardware.  It went as far as to display
+> the line "Verifying DMI Pool Data ..................." and then stopped. The
+> rest of the monitor was filled up with series of 99s
+> 
+> I then tried to use a the Rescue mode on a Stretch net install disk. The
+> opening menu of the disk appeared on the monitor, but it did not respond to
+> input from the keyboard.  I consequently could not select the rescue option.
+> 
+> I checked the keyboard on another computer where it worked.  Using the
+> keyboard from the other computer on the one not working also did not work
+> there.
+> 
+> The net install disk can be opened on the other computer.  In fact I used it
+> there to install Stretch on it.
+> 
+> I did a Google search, but all the references I found assumed ability to
+> open the computer from a rescue disk.
+> 
+> Does anybody know why this problem would arise, and what to do about it --
+> if anything -- by way of fixing it.
+> 
+> Regards, Ken Heard
+> 
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> https://gtalug.org/mailman/listinfo/talk
+
+From opengeometry at yahoo.ca  Sun Jul  8 00:01:43 2018
+From: opengeometry at yahoo.ca (William Park)
+Date: Sun, 8 Jul 2018 00:01:43 -0400
+Subject: [GTALUG] (OT) admin fee on BMO RRSP?
+Message-ID: <20180708040143.GA11366@node1.localdomain>
+
+Another very off-topic post...
+
+Recently, I found out Bank of Montreal is charging me $10 + tax
+administration fee for RRSP account.  I can't believe it.  Maybe some
+option got turned on/off by mistake.  Anyone here with RRSP with BMO?
+Are you paying admin fee, also?
+-- 
+William Park <opengeometry at yahoo.ca>
+
+From kenslists at teksavvy.com  Sun Jul  8 00:06:31 2018
+From: kenslists at teksavvy.com (Ken Heard)
+Date: Sun, 8 Jul 2018 00:06:31 -0400
+Subject: [GTALUG] Cannot open rescue disk
+In-Reply-To: <20180708033440.GA10525@node1.localdomain>
+References: <a6f6915c-2ed0-25dd-edcc-ace99e47db30@teksavvy.com>
+ <20180708033440.GA10525@node1.localdomain>
+Message-ID: <ed0abf61-1473-20f3-5d1e-3ed6ae996112@teksavvy.com>
+
+On 2018-07-07 23:34, William Park via talk wrote:
+> I assume you tried different usb port.  It could be USB ports on the
+> motherboard are toast.
+
+I don't think that was the problem.  The keyboard was able to function 
+before from various USB posts.
+
+Ken
+
+
+
+From o1bigtenor at gmail.com  Sun Jul  8 07:50:39 2018
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Sun, 8 Jul 2018 06:50:39 -0500
+Subject: [GTALUG] (OT) admin fee on BMO RRSP?
+In-Reply-To: <20180708040143.GA11366@node1.localdomain>
+References: <20180708040143.GA11366@node1.localdomain>
+Message-ID: <CAPpdf5_sN8pScLNpU0YgUWNp4txkSenVN-z64GnFMk7So86CJA@mail.gmail.com>
+
+On Sat, Jul 7, 2018 at 11:01 PM, William Park via talk <talk at gtalug.org> wrote:
+> Another very off-topic post...
+>
+> Recently, I found out Bank of Montreal is charging me $10 + tax
+> administration fee for RRSP account.  I can't believe it.  Maybe some
+> option got turned on/off by mistake.  Anyone here with RRSP with BMO?
+> Are you paying admin fee, also?
+> --
+
+The wife has a RRSP portfolio with TD-Wealth (funny doesn't take much
+$ to get an
+account there - - grin) and the fees are quite a bit higher than that!!
+
+Dee
+
+From opengeometry at yahoo.ca  Sun Jul  8 09:37:42 2018
+From: opengeometry at yahoo.ca (William Park)
+Date: Sun, 8 Jul 2018 09:37:42 -0400
+Subject: [GTALUG] (OT) admin fee on BMO RRSP?
+In-Reply-To: <CAPpdf5_sN8pScLNpU0YgUWNp4txkSenVN-z64GnFMk7So86CJA@mail.gmail.com>
+References: <20180708040143.GA11366@node1.localdomain>
+ <CAPpdf5_sN8pScLNpU0YgUWNp4txkSenVN-z64GnFMk7So86CJA@mail.gmail.com>
+Message-ID: <20180708133742.GA26966@node1.localdomain>
+
+On Sun, Jul 08, 2018 at 06:50:39AM -0500, o1bigtenor wrote:
+> On Sat, Jul 7, 2018 at 11:01 PM, William Park via talk <talk at gtalug.org> wrote:
+> > Another very off-topic post...
+> >
+> > Recently, I found out Bank of Montreal is charging me $10 + tax
+> > administration fee for RRSP account.  I can't believe it.  Maybe some
+> > option got turned on/off by mistake.  Anyone here with RRSP with BMO?
+> > Are you paying admin fee, also?
+> > --
+> 
+> The wife has a RRSP portfolio with TD-Wealth (funny doesn't take much
+> $ to get an
+> account there - - grin) and the fees are quite a bit higher than that!!
+> 
+> Dee
+
+I'm not talking about Mutual Funds or ETF under RRSP.  Each of those
+funds have their own MER and short-term trading fees.  BMO said the
+admin fee is for "registered" account and for reporting to CRA.  I have
+RRSP with TD and RBC, but they don't charge any fees.
+-- 
+William Park <opengeometry at yahoo.ca>
+
+From ivan.avery.frey at gmail.com  Sun Jul  8 09:55:27 2018
+From: ivan.avery.frey at gmail.com (Ivan Avery Frey)
+Date: Sun, 8 Jul 2018 09:55:27 -0400
+Subject: [GTALUG] (OT) admin fee on BMO RRSP?
+In-Reply-To: <20180708133742.GA26966@node1.localdomain>
+References: <20180708040143.GA11366@node1.localdomain>
+ <CAPpdf5_sN8pScLNpU0YgUWNp4txkSenVN-z64GnFMk7So86CJA@mail.gmail.com>
+ <20180708133742.GA26966@node1.localdomain>
+Message-ID: <CAB9QdHODEEd8caRsH7oC8zMXG_sj5PkCYB358Kh_a0TWma_XBQ@mail.gmail.com>
+
+Hi William
+
+My father and my sister both pay an admin fee on their CIBC Wood Gundy
+registered accounts.
+
+I think it's at the discretion of the financial institution.
+
+Ivan.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20180708/353c8e17/attachment.html>
+
+From o1bigtenor at gmail.com  Sun Jul  8 10:30:27 2018
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Sun, 8 Jul 2018 09:30:27 -0500
+Subject: [GTALUG] (OT) admin fee on BMO RRSP?
+In-Reply-To: <CAB9QdHODEEd8caRsH7oC8zMXG_sj5PkCYB358Kh_a0TWma_XBQ@mail.gmail.com>
+References: <20180708040143.GA11366@node1.localdomain>
+ <CAPpdf5_sN8pScLNpU0YgUWNp4txkSenVN-z64GnFMk7So86CJA@mail.gmail.com>
+ <20180708133742.GA26966@node1.localdomain>
+ <CAB9QdHODEEd8caRsH7oC8zMXG_sj5PkCYB358Kh_a0TWma_XBQ@mail.gmail.com>
+Message-ID: <CAPpdf5-NxkKS+zXk1i50Ef9DKqV_R--=PZQMQwezhsKA3_J+Hw@mail.gmail.com>
+
+On Sun, Jul 8, 2018 at 8:55 AM, Ivan Avery Frey via talk
+<talk at gtalug.org> wrote:
+> Hi William
+>
+> My father and my sister both pay an admin fee on their CIBC Wood Gundy
+> registered accounts.
+>
+> I think it's at the discretion of the financial institution.
+>
+
+I think its to increase the profit of the financial institution full stop.
+
+Banks always were greedy sobs and they've gotten worse - -- imo anyway!
+
+Dee
+
+From james.knott at jknott.net  Sun Jul  8 10:40:51 2018
+From: james.knott at jknott.net (James Knott)
+Date: Sun, 8 Jul 2018 10:40:51 -0400
+Subject: [GTALUG] (OT) admin fee on BMO RRSP?
+In-Reply-To: <CAPpdf5-NxkKS+zXk1i50Ef9DKqV_R--=PZQMQwezhsKA3_J+Hw@mail.gmail.com>
+References: <20180708040143.GA11366@node1.localdomain>
+ <CAPpdf5_sN8pScLNpU0YgUWNp4txkSenVN-z64GnFMk7So86CJA@mail.gmail.com>
+ <20180708133742.GA26966@node1.localdomain>
+ <CAB9QdHODEEd8caRsH7oC8zMXG_sj5PkCYB358Kh_a0TWma_XBQ@mail.gmail.com>
+ <CAPpdf5-NxkKS+zXk1i50Ef9DKqV_R--=PZQMQwezhsKA3_J+Hw@mail.gmail.com>
+Message-ID: <45985c61-00ea-f40b-eb22-dd35d5310fa3@jknott.net>
+
+On 07/08/2018 10:30 AM, o1bigtenor via talk wrote:
+> On Sun, Jul 8, 2018 at 8:55 AM, Ivan Avery Frey via talk
+> <talk at gtalug.org> wrote:
+>> Hi William
+>>
+>> My father and my sister both pay an admin fee on their CIBC Wood Gundy
+>> registered accounts.
+>>
+>> I think it's at the discretion of the financial institution.
+>>
+> I think its to increase the profit of the financial institution full stop.
+>
+> Banks always were greedy sobs and they've gotten worse - -- imo anyway!
+>
+>
+
+Just be thankful they're not charging a fee for charging a fee.  ;-)
+
+
+From michael at galeahome.ca  Sun Jul  8 13:38:55 2018
+From: michael at galeahome.ca (Michael Galea)
+Date: Sun, 8 Jul 2018 13:38:55 -0400
+Subject: [GTALUG] (OT) admin fee on BMO RRSP?
+In-Reply-To: <20180708040143.GA11366@node1.localdomain>
+References: <20180708040143.GA11366@node1.localdomain>
+Message-ID: <d98f2cb1-bccc-1ba6-649c-6ffe69f46949@galeahome.ca>
+
+On 07/08/18 00:01, William Park via talk wrote:
+> Another very off-topic post...
+> 
+> Recently, I found out Bank of Montreal is charging me $10 + tax
+> administration fee for RRSP account.  I can't believe it.  Maybe some
+> option got turned on/off by mistake.  Anyone here with RRSP with BMO?
+> Are you paying admin fee, also?
+>
+I can't remember ever having paid admin fees.
+
+ From the BMO website 
+https://www.bmo.com/assets/pdfs/investorline/self-directed/commission-and-fee-schedule-2014-11-01-en.pdf
+
+"Fees for registered accounts
+For RRSP, LIRA, LRSP, RIF, LRIF, RLSP, LIF, RLIF and RESPs:
+No fee when your account value is greater than or equal to
+$25,000. An annual administration fee of $50 is charged for RESP
+accounts less than $25,000. For all other registered accounts, $100
+is charged for accounts less than $25,000".
+
+-- 
+Michael Galea
+
+From talexb at gmail.com  Sun Jul  8 15:03:34 2018
+From: talexb at gmail.com (Alex Beamish)
+Date: Sun, 8 Jul 2018 15:03:34 -0400
+Subject: [GTALUG] Thermal paste availability / Raising the dead
+Message-ID: <CANgc-awO_oVEnW9WgK4p65SUKxLGwE4SSoeFnoo6dSTE0F0bdA@mail.gmail.com>
+
+My main system stopped booting two weeks ago, so had to move back to my
+previous system. Fortunately, a lot of my stuff was in Dropbox, so after a
+decent interval, many of my files were available on the previous machine.
+Yay Dropbox.
+
+There are, however, still a few files on the dead system I'd like to get.
+Today I took that system apart, popped the fan off the CPU, and found dried
+thermal paste. Hmm.
+
+It's possible that the CPU might be cooked (I was away during the Final
+Crash), but on the off chance that it just over-heated and shut down (does
+that even happen?), I know I need to clean off the old thermal paste
+(Q-tips and rubbing alcohol) and apply new. Strap the fan back on, power up
+and see if it boots.
+
+Best Buy only ships this on-line, and Canada Computes doesn't seem to stock
+it. Can anyone comment on where they get thermal paste? I could wait for
+delivery, but it would be great just to get the stuff and move on.
+
+Thanks for your feedback!
+
+-- 
+Alex Beamish
+
+Software Developer / https://ca.linkedin.com/in/alex-beamish-5111ba3
+Speaker Wrangler, Toronto Perlmongers / http://to.pm.org/
+Baritone, Board Member, Toronto Northern Lights, 2013 Champions /
+www.northernlightschorus.com
+Certified Contest Administrator, Barbershop Harmony Society /
+www.barbershop.org
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20180708/e2525423/attachment.html>
+
+From jamon.camisso at utoronto.ca  Sun Jul  8 16:35:57 2018
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Sun, 8 Jul 2018 16:35:57 -0400
+Subject: [GTALUG] Thermal paste availability / Raising the dead
+In-Reply-To: <CANgc-awO_oVEnW9WgK4p65SUKxLGwE4SSoeFnoo6dSTE0F0bdA@mail.gmail.com>
+References: <CANgc-awO_oVEnW9WgK4p65SUKxLGwE4SSoeFnoo6dSTE0F0bdA@mail.gmail.com>
+Message-ID: <272dc99b-1b92-7379-bdea-910b7b4c8af0@utoronto.ca>
+
+On 08/07/18 15:03, Alex Beamish via talk wrote:
+> Best Buy only ships this on-line, and Canada Computes doesn't seem to
+> stock it. Can anyone comment on where they get thermal paste? I could
+> wait for delivery, but it would be great just to get the stuff and move on.
+
+http://www.canadacomputers.com/index.php?cPath=8_128 - lots of different
+thermal compounds to choose from.
+
+Cheers, Jamon
+
+From dontai.canada at gmail.com  Sun Jul  8 16:39:14 2018
+From: dontai.canada at gmail.com (Don Tai)
+Date: Sun, 8 Jul 2018 16:39:14 -0400
+Subject: [GTALUG] Thermal paste availability / Raising the dead
+In-Reply-To: <272dc99b-1b92-7379-bdea-910b7b4c8af0@utoronto.ca>
+References: <CANgc-awO_oVEnW9WgK4p65SUKxLGwE4SSoeFnoo6dSTE0F0bdA@mail.gmail.com>
+ <272dc99b-1b92-7379-bdea-910b7b4c8af0@utoronto.ca>
+Message-ID: <CAKF=Av2WnRExXP=LhQ9yg4_dLHjrJSqMhHPLmQbzztaRz-d1Wg@mail.gmail.com>
+
+I would try Sayal Electronics. There is one near Vic Park/Steeles but there
+are other locations. https://secure.sayal.com/zinc/index.asp
+
+On 8 July 2018 at 16:35, Jamon Camisso via talk <talk at gtalug.org> wrote:
+
+> On 08/07/18 15:03, Alex Beamish via talk wrote:
+> > Best Buy only ships this on-line, and Canada Computes doesn't seem to
+> > stock it. Can anyone comment on where they get thermal paste? I could
+> > wait for delivery, but it would be great just to get the stuff and move
+> on.
+>
+> http://www.canadacomputers.com/index.php?cPath=8_128 - lots of different
+> thermal compounds to choose from.
+>
+> Cheers, Jamon
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> https://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20180708/4a6f35b9/attachment.html>
+
+From hgibson at eol.ca  Sun Jul  8 16:40:06 2018
+From: hgibson at eol.ca (Howard Gibson)
+Date: Sun, 8 Jul 2018 16:40:06 -0400
+Subject: [GTALUG] Thermal paste availability / Raising the dead
+In-Reply-To: <CANgc-awO_oVEnW9WgK4p65SUKxLGwE4SSoeFnoo6dSTE0F0bdA@mail.gmail.com>
+References: <CANgc-awO_oVEnW9WgK4p65SUKxLGwE4SSoeFnoo6dSTE0F0bdA@mail.gmail.com>
+Message-ID: <20180708164006.0a01c762e1bc3c92e00ac092@eol.ca>
+
+On Sun, 8 Jul 2018 15:03:34 -0400
+Alex Beamish via talk <talk at gtalug.org> wrote:
+> 
+> It's possible that the CPU might be cooked (I was away during the Final
+> Crash), but on the off chance that it just over-heated and shut down (does
+> that even happen?), I know I need to clean off the old thermal paste
+> (Q-tips and rubbing alcohol) and apply new. Strap the fan back on, power up
+> and see if it boots.
+
+Alex,
+
+  Are you able get the heat sink off without removing the CPU?
+
+  Try taking the cover of the computer off and aiming a big ventillation fan at it.  
+
+-- 
+Howard Gibson 
+hgibson at eol.ca
+jhowardgibson at gmail.com
+http://home.eol.ca/~hgibson
+
+From o1bigtenor at gmail.com  Sun Jul  8 17:08:50 2018
+From: o1bigtenor at gmail.com (o1bigtenor)
+Date: Sun, 8 Jul 2018 16:08:50 -0500
+Subject: [GTALUG] (OT) admin fee on BMO RRSP?
+In-Reply-To: <45985c61-00ea-f40b-eb22-dd35d5310fa3@jknott.net>
+References: <20180708040143.GA11366@node1.localdomain>
+ <CAPpdf5_sN8pScLNpU0YgUWNp4txkSenVN-z64GnFMk7So86CJA@mail.gmail.com>
+ <20180708133742.GA26966@node1.localdomain>
+ <CAB9QdHODEEd8caRsH7oC8zMXG_sj5PkCYB358Kh_a0TWma_XBQ@mail.gmail.com>
+ <CAPpdf5-NxkKS+zXk1i50Ef9DKqV_R--=PZQMQwezhsKA3_J+Hw@mail.gmail.com>
+ <45985c61-00ea-f40b-eb22-dd35d5310fa3@jknott.net>
+Message-ID: <CAPpdf5_3ZbXb2LHWJmGkvKud7D5Ui3GhFUyCD9XvNpGHEnp1pw@mail.gmail.com>
+
+On Sun, Jul 8, 2018 at 9:40 AM, James Knott via talk <talk at gtalug.org> wrote:
+> On 07/08/2018 10:30 AM, o1bigtenor via talk wrote:
+>> On Sun, Jul 8, 2018 at 8:55 AM, Ivan Avery Frey via talk
+>> <talk at gtalug.org> wrote:
+>>> Hi William
+>>>
+>>> My father and my sister both pay an admin fee on their CIBC Wood Gundy
+>>> registered accounts.
+>>>
+>>> I think it's at the discretion of the financial institution.
+>>>
+>> I think its to increase the profit of the financial institution full stop.
+>>
+>> Banks always were greedy sobs and they've gotten worse - -- imo anyway!
+>>
+>>
+>
+> Just be thankful they're not charging a fee for charging a fee.  ;-)
+
+Are you sure that they are not yet doing it?
+Please don't pursue this any further - - - you will just be giving the
+sobs ideas for
+further hose jobs - - - - sorry meant to say fees.
+
+Dee
+
+From adb at adb.ca  Sun Jul  8 17:40:05 2018
+From: adb at adb.ca (Anthony de Boer)
+Date: Sun, 8 Jul 2018 17:40:05 -0400
+Subject: [GTALUG] Thermal paste availability / Raising the dead
+In-Reply-To: <CANgc-awO_oVEnW9WgK4p65SUKxLGwE4SSoeFnoo6dSTE0F0bdA@mail.gmail.com>
+References: <CANgc-awO_oVEnW9WgK4p65SUKxLGwE4SSoeFnoo6dSTE0F0bdA@mail.gmail.com>
+Message-ID: <20180708214005.GA9007@adb.ca>
+
+Alex Beamish via talk wrote:
+> There are, however, still a few files on the dead system I'd like to get.
+> Today I took that system apart, popped the fan off the CPU, and found dried
+> thermal paste. Hmm.
+
+A better bet if you're just trying to recover files is to get an
+appropriate USB external enclosure for the old system's storage device,
+put them together, and plug into your new system for review and copying.
+
+If the old system still has life in it, it should be attempting to boot
+from cold start and getting at least a bit of the way down the road
+before overheating and refusing to continue; in that case fresh thermal
+grease might work wonders.  Blow dust bunnies out of the CPU and PSU fans
+and watch that they both spin; replace if not.  But there's a good chance
+the old box is pining for the fjords.
+
+-- 
+Anthony de Boer
+
+From opengeometry at yahoo.ca  Sun Jul  8 18:59:37 2018
+From: opengeometry at yahoo.ca (William Park)
+Date: Sun, 8 Jul 2018 18:59:37 -0400
+Subject: [GTALUG] Thermal paste availability / Raising the dead
+In-Reply-To: <20180708214005.GA9007@adb.ca>
+References: <CANgc-awO_oVEnW9WgK4p65SUKxLGwE4SSoeFnoo6dSTE0F0bdA@mail.gmail.com>
+ <20180708214005.GA9007@adb.ca>
+Message-ID: <20180708225937.GA10809@node1.localdomain>
+
+On Sun, Jul 08, 2018 at 05:40:05PM -0400, Anthony de Boer via talk wrote:
+> Alex Beamish via talk wrote:
+> > There are, however, still a few files on the dead system I'd like to get.
+> > Today I took that system apart, popped the fan off the CPU, and found dried
+> > thermal paste. Hmm.
+> 
+> A better bet if you're just trying to recover files is to get an
+> appropriate USB external enclosure for the old system's storage device,
+> put them together, and plug into your new system for review and copying.
+
+Or, just move the harddisk to the current machine.
+-- 
+William Park <opengeometry at yahoo.ca>
+
+From talexb at gmail.com  Sun Jul  8 19:09:05 2018
+From: talexb at gmail.com (Alex Beamish)
+Date: Sun, 8 Jul 2018 19:09:05 -0400
+Subject: [GTALUG] Thermal paste availability / Raising the dead
+In-Reply-To: <20180708225937.GA10809@node1.localdomain>
+References: <CANgc-awO_oVEnW9WgK4p65SUKxLGwE4SSoeFnoo6dSTE0F0bdA@mail.gmail.com>
+ <20180708214005.GA9007@adb.ca> <20180708225937.GA10809@node1.localdomain>
+Message-ID: <CANgc-azef4PXuk08xpCKmurdLV8m8ga963cwLpKZKhyavLz2fQ@mail.gmail.com>
+
+On Sun, Jul 8, 2018 at 6:59 PM William Park via talk <talk at gtalug.org>
+wrote:
+
+> On Sun, Jul 08, 2018 at 05:40:05PM -0400, Anthony de Boer via talk wrote:
+> > Alex Beamish via talk wrote:
+> > > There are, however, still a few files on the dead system I'd like to
+> get.
+> > > Today I took that system apart, popped the fan off the CPU, and found
+> dried
+> > > thermal paste. Hmm.
+> >
+> > A better bet if you're just trying to recover files is to get an
+> > appropriate USB external enclosure for the old system's storage device,
+> > put them together, and plug into your new system for review and copying.
+>
+> Or, just move the harddisk to the current machine.
+>
+
+I would have done that already, but the system I'm using now has compact
+power plugs, and the previous has the old style four conductor power plugs
+-- otherwise, I wouldn't have bothered the list with this question.
+
+-- 
+Alex Beamish
+
+Software Developer / https://ca.linkedin.com/in/alex-beamish-5111ba3
+Speaker Wrangler, Toronto Perlmongers / http://to.pm.org/
+Baritone, Board Member, Toronto Northern Lights, 2013 Champions /
+www.northernlightschorus.com
+Certified Contest Administrator, Barbershop Harmony Society /
+www.barbershop.org
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20180708/cb2ab973/attachment.html>
+
+From james.knott at jknott.net  Sun Jul  8 20:46:46 2018
+From: james.knott at jknott.net (James Knott)
+Date: Sun, 8 Jul 2018 20:46:46 -0400
+Subject: [GTALUG] Thermal paste availability / Raising the dead
+In-Reply-To: <CANgc-azef4PXuk08xpCKmurdLV8m8ga963cwLpKZKhyavLz2fQ@mail.gmail.com>
+References: <CANgc-awO_oVEnW9WgK4p65SUKxLGwE4SSoeFnoo6dSTE0F0bdA@mail.gmail.com>
+ <20180708214005.GA9007@adb.ca> <20180708225937.GA10809@node1.localdomain>
+ <CANgc-azef4PXuk08xpCKmurdLV8m8ga963cwLpKZKhyavLz2fQ@mail.gmail.com>
+Message-ID: <93370cfa-8daa-eeb8-2c62-389aeec411a3@jknott.net>
+
+On 07/08/2018 07:09 PM, Alex Beamish via talk wrote:
+> I would have done that already, but the system I'm using now has
+> compact power plugs, and the previous has the old style four conductor
+> power plugs -- otherwise, I wouldn't have bothered the list with this
+> question.
+>
+
+Do you have any of the old external drive cases?  Adapter cables?
+
+From bjonkman at sobac.com  Mon Jul  9 00:26:35 2018
+From: bjonkman at sobac.com (Bob Jonkman)
+Date: Mon, 9 Jul 2018 00:26:35 -0400
+Subject: [GTALUG] Thermal paste availability / Raising the dead
+In-Reply-To: <CANgc-awO_oVEnW9WgK4p65SUKxLGwE4SSoeFnoo6dSTE0F0bdA@mail.gmail.com>
+References: <CANgc-awO_oVEnW9WgK4p65SUKxLGwE4SSoeFnoo6dSTE0F0bdA@mail.gmail.com>
+Message-ID: <a253a764-e825-96fc-6a2a-a0bce76fe9d5@sobac.com>
+
+I bought a big tube (actually a syringe, probably 20-30ml) of white
+thermal paste at Neutron Electronics in Guelph for about $10, years ago.
+For the amount of repair work I do, that's a lifetime supply.
+
+--Bob.
+
+
+
+On 2018-07-08 03:03 PM, Alex Beamish via talk wrote:
+> My main system stopped booting two weeks ago, so had to move back to my
+> previous system. Fortunately, a lot of my stuff was in Dropbox, so after a
+> decent interval, many of my files were available on the previous machine.
+> Yay Dropbox.
+> 
+> There are, however, still a few files on the dead system I'd like to get.
+> Today I took that system apart, popped the fan off the CPU, and found dried
+> thermal paste. Hmm.
+> 
+> It's possible that the CPU might be cooked (I was away during the Final
+> Crash), but on the off chance that it just over-heated and shut down (does
+> that even happen?), I know I need to clean off the old thermal paste
+> (Q-tips and rubbing alcohol) and apply new. Strap the fan back on, power up
+> and see if it boots.
+> 
+> Best Buy only ships this on-line, and Canada Computes doesn't seem to stock
+> it. Can anyone comment on where they get thermal paste? I could wait for
+> delivery, but it would be great just to get the stuff and move on.
+> 
+> Thanks for your feedback!
+> 
+> 
+> 
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> https://gtalug.org/mailman/listinfo/talk
+> 
+
+-- 
+Bob Jonkman <bjonkman at sobac.com>          Phone: +1-519-635-9413
+SOBAC Microcomputer Services             http://sobac.com/sobac/
+Software   ---   Office & Business Automation   ---   Consulting
+GnuPG Fngrprnt:04F7 742B 8F54 C40A E115 26C2 B912 89B0 D2CC E5EA
+
+
+
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 163 bytes
+Desc: OpenPGP digital signature
+URL: <http://gtalug.org/pipermail/talk/attachments/20180709/1514d176/attachment.sig>
+
+From gilesorr at gmail.com  Mon Jul  9 12:45:05 2018
+From: gilesorr at gmail.com (Giles Orr)
+Date: Mon, 9 Jul 2018 12:45:05 -0400
+Subject: [GTALUG] Cannot open rescue disk
+In-Reply-To: <a6f6915c-2ed0-25dd-edcc-ace99e47db30@teksavvy.com>
+References: <a6f6915c-2ed0-25dd-edcc-ace99e47db30@teksavvy.com>
+Message-ID: <CAEnxSC7Dca9Qxo4Xb8RSBsZku7yJ0UNUXB794sGMb2JXs3f7xw@mail.gmail.com>
+
+On 7 July 2018 at 23:09, Ken Heard via talk <talk at gtalug.org> wrote:
+
+> The computer has Debian Jessie installed in it.  One day recently after
+> starting it, the BIOS identified the hardware.  It went as far as to
+> display the line "Verifying DMI Pool Data ..................." and then
+> stopped. The rest of the monitor was filled up with series of 99s
+>
+> I then tried to use a the Rescue mode on a Stretch net install disk. The
+> opening menu of the disk appeared on the monitor, but it did not respond to
+> input from the keyboard.  I consequently could not select the rescue option.
+>
+> I checked the keyboard on another computer where it worked.  Using the
+> keyboard from the other computer on the one not working also did not work
+> there.
+>
+> The net install disk can be opened on the other computer.  In fact I used
+> it there to install Stretch on it.
+>
+> I did a Google search, but all the references I found assumed ability to
+> open the computer from a rescue disk.
+>
+> Does anybody know why this problem would arise, and what to do about it --
+> if anything -- by way of fixing it.
+>
+> Regards, Ken Heard
+>
+
+This link: https://www.computerhope.com/issues/ch000474.htm suggests the
+problem is lower level than I thought (BIOS rather than OS, which may
+negate what I've written below).  You could take a look and see if their
+suggestions help.  Doesn't look like a fun problem to tackle, sorry.  As
+they suggest, start reseating or better, disconnecting internal components
+one at a time in the hope the problem goes away on one of them.
+
+I use Knoppix ( http://www.knopper.net/knoppix-mirrors/index-en.html )
+almost exclusively for rescue - I would give it a try.  I'm inclined to
+suspect a hardware problem, and if you get the same error after burning
+Knoppix to a USB stick and booting, that would be ... well, a partial
+confirmation.  Only partial because Knoppix is still, at its core (I think
+...), Debian.
+
+If it does boot, you have a much friendlier and better equipped interface
+for system exploration and recovery than the pure Debian rescue package.
+
+-- 
+Giles
+https://www.gilesorr.com/
+gilesorr at gmail.com
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20180709/41141ba3/attachment.html>
+
+From cbbrowne at gmail.com  Mon Jul  9 18:52:29 2018
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Mon, 9 Jul 2018 18:52:29 -0400
+Subject: [GTALUG] Dinner options for July 10th
+Message-ID: <CAFNqd5WOTtqngJmfk10rYByootNk4nKjehwr2ZP28-WchGaieA@mail.gmail.com>
+
+There hasn't yet been any discussion...
+
+- Kabul Express is a pretty good "backstop" option if we don't arrive
+at anything else
+
+- Aura Foodcourt seems to be falling to near-nothing; perhaps closed already?
+
+- There was a rather spicy Pakistani place a bit further east on
+Dundas that we tried last year; it's a bit of a walk, but perhaps???
+
+- I'll note that several Ramen places have been mentioned; I like the
+idea, abstractly, but they tend to be way too noisy and crowded for
+our crowd.  Kinton, Guu, Hokkaido all come to mind :-(
+
+- We have done Blaze Pizza; it was a bit crowded for our crowd, but perhaps...
+
+I'm bringing this up so that we at least know we need to decide
+something; I'm avoiding having a decision so that perhaps ideas bubble
+in by tomorrow :-)
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
+
+From hi at gtalug.org  Tue Jul 10 07:46:39 2018
+From: hi at gtalug.org (hi at gtalug.org)
+Date: Tue, 10 Jul 2018 07:46:39 -0400 (EDT)
+Subject: [GTALUG] [GTALUG-Announce] GTALUG Meeting Today at 7:30pm
+Message-ID: <20180710114639.9A09DE59F@penguin.gtalug.org>
+
+<http://gtalug.org/meeting/2018-07/>
+
+# Internet Bots w/ Don Tai
+
+Don Tai shares their experience having explored the ever growing space of internet bots and web hacking tools.
+A discussion of the concepts and tools for:
+* Internet traffic: what is bots vs humans?
+* Bot traffic signatures: spam bots (feedback, referrer), scrapers, malicious bot examples
+* Observing Bots and Controlling Bots: raw access log, WHOIS, htaccess
+* Reconnaissance: NMap, Armitage, Metasploit
+* Working with Vulnerability databases
+
+## Location
+
+George Vari Engineering and Computing Centre
+245 Church Street, Room 203
+Ryerson University
+
+<http://goo.gl/maps/16oJ2>
+
+<http://www.openstreetmap.org/way/23447525>
+
+## Schedule
+
+* 6:00 pm - Please discuss on the general mailing list (i.e. <talk at gtalug.org>) where you want to go for dinner.
+* 7:30 pm - Meeting and presentation.
+* 9:00 pm - After each meeting, a group of GTALUGers move to The Imperial Pub (54 Dundas St East) for refreshments and more socialising.
+
+# Code of Conduct
+
+We want a productive happy community that can welcome new ideas, improve every process every year, and foster collaboration between individuals with differing needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from those who enhance it. This code of conduct exists to ensure that diverse groups collaborate to mutual advantage and enjoyment. We will challenge prejudice that could jeopardise the participation of any person in the community.
+
+The Code of Conduct governs how we behave in public or in private whenever the Linux community will be judged by our actions. We expect it to be honoured by everyone who represents the community officially or informally, claims affiliation or participates directly. It applies to activities online or offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here: <http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code of Conduct please contact the GTALUG Board @ <board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+https://gtalug.org/mailman/listinfo/announce
+
+From dontai.canada at gmail.com  Tue Jul 10 10:18:44 2018
+From: dontai.canada at gmail.com (Don Tai)
+Date: Tue, 10 Jul 2018 10:18:44 -0400
+Subject: [GTALUG] [GTALUG-Announce] GTALUG Meeting Today at 7:30pm
+In-Reply-To: <20180710114639.9A09DE59F@penguin.gtalug.org>
+References: <20180710114639.9A09DE59F@penguin.gtalug.org>
+Message-ID: <CAKF=Av2QmawU-aEYDSM1obUHCAvZLKgbEpKArahse2T4bZ8jCw@mail.gmail.com>
+
+Tonight's Outline:
+Internet ‘Bots: Friend, Foe or I Don’t Know
+Who is Visiting your Site, and Who are you Visiting?
+Defense:
+
+   - 2018 Internet Traffic: Human and Bot
+   - Why do Bots visit your site?
+   - Tools Used: Raw access log/Http Request Headers, Internet Research,
+   Whois.com: public IP information
+   - The Human Visitor
+   - Good Bots: Search Engines
+   - Bad Bots
+   - Spam: feedback, referrer
+   - Malicious Bots
+   - Anti-bot legislation: US, Canada, Australia, Uk
+
+Offense:
+
+   - Hacking Definition: Breaking into web sites/devices
+   - Hacking subculture
+   - Illegality: Local vs International
+   - the process: 1) reconnaisance, find a vulnerability, hack, 2) create,
+   send a root kit; phishing, deep phishing
+   - hacking tools: NMap, Armitage, Metasploit, all available from the Kali
+   distribution, Open Source
+   - site/server reconnaisance: NMap/Armitage
+   - Metasploit, Vulnerability database lookup
+   - Possible exploits
+
+I welcome all discussion.
+
+Don
+
+On 10 July 2018 at 07:46, hi--- via talk <talk at gtalug.org> wrote:
+
+> <http://gtalug.org/meeting/2018-07/>
+>
+> # Internet Bots w/ Don Tai
+>
+> Don Tai shares their experience having explored the ever growing space of
+> internet bots and web hacking tools.
+> A discussion of the concepts and tools for:
+> * Internet traffic: what is bots vs humans?
+> * Bot traffic signatures: spam bots (feedback, referrer), scrapers,
+> malicious bot examples
+> * Observing Bots and Controlling Bots: raw access log, WHOIS, htaccess
+> * Reconnaissance: NMap, Armitage, Metasploit
+> * Working with Vulnerability databases
+>
+> ## Location
+>
+> George Vari Engineering and Computing Centre
+> 245 Church Street, Room 203
+> Ryerson University
+>
+> <http://goo.gl/maps/16oJ2>
+>
+> <http://www.openstreetmap.org/way/23447525>
+>
+> ## Schedule
+>
+> * 6:00 pm - Please discuss on the general mailing list (i.e. <
+> talk at gtalug.org>) where you want to go for dinner.
+> * 7:30 pm - Meeting and presentation.
+> * 9:00 pm - After each meeting, a group of GTALUGers move to The Imperial
+> Pub (54 Dundas St East) for refreshments and more socialising.
+>
+> # Code of Conduct
+>
+> We want a productive happy community that can welcome new ideas, improve
+> every process every year, and foster collaboration between individuals with
+> differing needs, interests and skills.
+>
+> We gain strength from diversity, and actively seek participation from
+> those who enhance it. This code of conduct exists to ensure that diverse
+> groups collaborate to mutual advantage and enjoyment. We will challenge
+> prejudice that could jeopardise the participation of any person in the
+> community.
+>
+> The Code of Conduct governs how we behave in public or in private whenever
+> the Linux community will be judged by our actions. We expect it to be
+> honoured by everyone who represents the community officially or informally,
+> claims affiliation or participates directly. It applies to activities
+> online or offline.
+>
+> We invite anybody to participate. Our community is open.
+>
+> Please read more about the GTALUG Code of Conduct here: <
+> http://gtalug.org/about/code-of-conduct/>.
+>
+> If you have any questions, comments, or concerns about the GTALUG Code of
+> Conduct please contact the GTALUG Board @ <board at gtalug.org>.
+> ---
+> GTALUG Announce mailing list
+> announce at gtalug.org
+> https://gtalug.org/mailman/listinfo/announce
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> https://gtalug.org/mailman/listinfo/talk
+>
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20180710/203d9709/attachment.html>
+
+From alex at flamy.ca  Tue Jul 10 18:48:50 2018
+From: alex at flamy.ca (Alex Volkov)
+Date: Tue, 10 Jul 2018 18:48:50 -0400
+Subject: [GTALUG] Meeting location has changed
+Message-ID: <89247483-D207-4BB6-A3CE-5BE3AD4F0862@flamy.ca>
+
+The meeting has been moved to the lecture theatre. (The door on the right from room 203).
+-- 
+Sent from my Android device with K-9 Mail. Please excuse my brevity.
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20180710/da46bcef/attachment.html>
+
+From scott at revident.net  Tue Jul 10 20:10:14 2018
+From: scott at revident.net (Scott Sullivan)
+Date: Tue, 10 Jul 2018 20:10:14 -0400
+Subject: [GTALUG] Hacklab Junk Independence Day, Sunday July 22nd
+Message-ID: <f1d690543b445f61f65098eab77aaa88@revident.net>
+
+This is a popular event in our community, and it comes around one again.
+
+Hacklab Toronto's Junk Independence Day!
+
+July 22nd from 2pm-7pm.
+
+https://hacklab.to/archives/junk-independence-day-july-22nd/
+
+Bring your e-waste and dig through other people’s for treasures.
+Anything left at the end will be picked up on following Monday and 
+responsibly recycled.
+
+-- 
+Scott Sullivan
+
+From kenslists at teksavvy.com  Wed Jul 11 11:49:05 2018
+From: kenslists at teksavvy.com (Ken Heard)
+Date: Wed, 11 Jul 2018 11:49:05 -0400
+Subject: [GTALUG] Cannot open rescue disk
+In-Reply-To: <CAEnxSC7Dca9Qxo4Xb8RSBsZku7yJ0UNUXB794sGMb2JXs3f7xw@mail.gmail.com>
+References: <a6f6915c-2ed0-25dd-edcc-ace99e47db30@teksavvy.com>
+ <CAEnxSC7Dca9Qxo4Xb8RSBsZku7yJ0UNUXB794sGMb2JXs3f7xw@mail.gmail.com>
+Message-ID: <462d19bb-7020-e747-d1a1-9efd7bd2d473@teksavvy.com>
+
+On 2018-07-09 12:45, Giles Orr wrote:
+
+> This link: https://www.computerhope.com/issues/ch000474.htm suggests the
+> problem is lower level than I thought (BIOS rather than OS, which may
+> negate what I've written below).  You could take a look and see if their
+> suggestions help.  Doesn't look like a fun problem to tackle, sorry.  As
+> they suggest, start reseating or better, disconnecting internal components
+> one at a time in the hope the problem goes away on one of them.
+
+This link was useful to me because it explains the problem better than I 
+did in my original post.  In addition, I see why I could not find it 
+using a google search.  I searched using the same words as the title of 
+this thread plus 'linux'.  If I had used as my search text 'Verifying 
+DMI Pool Data ...' I would have found the link.  It shows that when 
+using search engines you have to choose the right search words -- often 
+difficult to do.
+
+> I use Knoppix ( http://www.knopper.net/knoppix-mirrors/index-en.html )
+> almost exclusively for rescue - I would give it a try.  I'm inclined to
+> suspect a hardware problem, and if you get the same error after burning
+> Knoppix to a USB stick and booting, that would be ... well, a partial
+> confirmation.  Only partial because Knoppix is still, at its core (I think
+> ...), Debian.
+
+So I downloaded Knoppix 8.2, burned it to a DVD.  It did indeed boot the 
+offending computer.  I was able to access my /home directory.
+
+I then tried again to boot the computer from the hard drives which have 
+Jessie installed.  (There are two hard drives which form a RAID1 
+device.) This time the boot completed, no more 99s!
+
+During subsequent bootings from these drives however, using both the 
+installed Jessie and the Knoppix, after the message 'Verifying DMI Pool 
+Data ...' was displayed it was a long time before they were detected. 
+So it is possible that those drives, or perhaps one of them, are close 
+to failing.  They have been in use since 2011.  Testing them is 
+consequently next on my troubleshooting my agenda.
+
+Thanks for the info.
+
+Regards,
+
+Ken
+
+From lsorense at csclub.uwaterloo.ca  Wed Jul 11 12:28:09 2018
+From: lsorense at csclub.uwaterloo.ca (Lennart Sorensen)
+Date: Wed, 11 Jul 2018 12:28:09 -0400
+Subject: [GTALUG] Cannot open rescue disk
+In-Reply-To: <462d19bb-7020-e747-d1a1-9efd7bd2d473@teksavvy.com>
+References: <a6f6915c-2ed0-25dd-edcc-ace99e47db30@teksavvy.com>
+ <CAEnxSC7Dca9Qxo4Xb8RSBsZku7yJ0UNUXB794sGMb2JXs3f7xw@mail.gmail.com>
+ <462d19bb-7020-e747-d1a1-9efd7bd2d473@teksavvy.com>
+Message-ID: <20180711162809.vjvzwin4gd4hytmv@csclub.uwaterloo.ca>
+
+On Wed, Jul 11, 2018 at 11:49:05AM -0400, Ken Heard via talk wrote:
+> So I downloaded Knoppix 8.2, burned it to a DVD.  It did indeed boot the
+> offending computer.  I was able to access my /home directory.
+> 
+> I then tried again to boot the computer from the hard drives which have
+> Jessie installed.  (There are two hard drives which form a RAID1 device.)
+> This time the boot completed, no more 99s!
+> 
+> During subsequent bootings from these drives however, using both the
+> installed Jessie and the Knoppix, after the message 'Verifying DMI Pool Data
+> ...' was displayed it was a long time before they were detected. So it is
+> possible that those drives, or perhaps one of them, are close to failing.
+> They have been in use since 2011.  Testing them is consequently next on my
+> troubleshooting my agenda.
+
+A delay after the DMI pool data message is usually a case of a dying
+disk or corrupt boot sector.
+
+-- 
+Len Sorensen
+
+From hi at gtalug.org  Wed Jul 11 22:24:31 2018
+From: hi at gtalug.org (hi at gtalug.org)
+Date: Wed, 11 Jul 2018 22:24:31 -0400 (EDT)
+Subject: [GTALUG] [GTALUG-Announce] Linux in the Park, Sat July 21st 2018
+Message-ID: <20180712022431.602C1E59F@penguin.gtalug.org>
+
+<http://gtalug.org/picnics/2018/>
+
+## Linux in the Park
+
+GTALUG's Annual Potluck BBQ.
+
+Hosted again this year in HackLab.TO's Backyard on 21 July at 2pm.
+
+Things we will provide: Bathroom, BBQ, Plates, Cutlery, Serviettes, Cups, and
+Garbage bags.
+
+Things you might want to bring: chairs, tasty beverages, food stuffs that you
+would like to share and enjoy, tarp/blanket, sunscreen, hats, things to help
+survive the warmth of the Canadian Wilderness.
+
+We will doing this in a pot-luck style. Thus, please bring enough food and drink
+for yourself and your guests, and try to bring enough to share with others in
+the group.
+
+We are using the GTALUG wiki to organize everything:
+<https://wiki.gtalug.org/event:linux_in_the_park_2018>.
+
+## Location
+
+HackLab.TO - Backyard 1266 Queen St. West, Suite #6, Toronto Toronto, Ontario
+
+<http://www.openstreetmap.org/node/3522641496>
+
+## Code of Conduct
+
+We want a productive happy community that can welcome new ideas, improve every
+process every year, and foster collaboration between individuals with differing
+needs, interests and skills.
+
+We gain strength from diversity, and actively seek participation from those who
+enhance it. This code of conduct exists to ensure that diverse groups
+collaborate to mutual advantage and enjoyment. We will challenge prejudice that
+could jeopardize the participation of any person in the community.
+
+The Code of Conduct governs how we behave in public or in private whenever the
+Linux community will be judged by our actions. We expect it to be honored by
+everyone who represents the community officially or informally, claims
+affiliation, or participates directly. It applies to activities online or
+offline.
+
+We invite anybody to participate. Our community is open.
+
+Please read more about the GTALUG Code of Conduct here:
+<http://gtalug.org/about/code-of-conduct/>.
+
+If you have any questions, comments, or concerns about the GTALUG Code of
+Conduct please contact one of the GTALUG Board Members @ <board at gtalug.org>.
+---
+GTALUG Announce mailing list
+announce at gtalug.org
+https://gtalug.org/mailman/listinfo/announce
+
+From peter.king at utoronto.ca  Sun Jul 15 17:01:39 2018
+From: peter.king at utoronto.ca (Peter King)
+Date: Sun, 15 Jul 2018 17:01:39 -0400
+Subject: [GTALUG] Fetchmail and Office365 and backslashes, oh my!
+In-Reply-To: <20180704185303.GA14046@amber.utoronto.ca>
+References: <20180704185303.GA14046@amber.utoronto.ca>
+Message-ID: <20180715210139.GA9237@amber.utoronto.ca>
+
+Thanks for all the suggestions and advice.  I installed getmail, and, with
+a very simple configuration -- the only kind I can write yet -- it fetches
+mail from O365 shared mailboxes just fine.  So I suppose I'll migrate to
+getmail from fetchmail, which seems to run more efficiently anyway.
+
+Thanks again!
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		   (416)-978-3311 dept
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 195 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/talk/attachments/20180715/32f33bec/attachment.sig>
+
+From peter.king at utoronto.ca  Sun Jul 15 23:42:12 2018
+From: peter.king at utoronto.ca (Peter King)
+Date: Sun, 15 Jul 2018 23:42:12 -0400
+Subject: [GTALUG] Fetchmail and Office365 and backslashes, oh my!
+In-Reply-To: <20180715210139.GA9237@amber.utoronto.ca>
+References: <20180704185303.GA14046@amber.utoronto.ca>
+ <20180715210139.GA9237@amber.utoronto.ca>
+Message-ID: <20180716034212.GA12210@amber.utoronto.ca>
+
+For those who might be interested, here's the working getmailrc
+configuration I'm using successfully with Office365 (suitably
+anonymized):
+
+.getmail/getmailrc:
+
+  [options]
+  delete = true
+  message_log = ~/.getmail/log
+  message_log_verbose = true
+
+  [retriever]
+  type = SimpleIMAPSSLRetriever
+  server = outlook.office365.com
+  username = PERSONAL_EMAIL at utoronto.ca\SHARED_MAILBOX at utoronto.ca
+  port = 993
+  password = PASSWORD
+
+  [destination]
+  type = MDA_external
+  path = /usr/bin/procmail
+  unixfrom = True
+
+
+That's the complete file.  Here's what seems to be going on.
+
+The first stanza, [options], gives global instructions to getmail.
+Here, the first, delete = true, just deletes the messages off the
+O365 server after it retrieves them.  The next two lines specify
+where getmail should write its log messagees, and that they should
+contain a certain amount of detail.
+
+The second stanza, [retriever], tells getmail which account to try
+to get the email from.  Note that there is only a single account
+listed.  That's a feature, not a bug, of getmail.  If you want to
+get email from several accounts, you need to use several distinct
+getmailrc configuration files (each uniquely titled), and then run
+through them all -- a simple shell script will do that.  Anyway,
+here the type variable says that I'm picking email up from an IMAP
+server using SSL; the server variable gives the address of the
+server.  The form of the username here, with the personal email
+address + backslash + address of the shared email account, is where
+getmail succeeds in the case fetchmail failed -- for whatever reason
+getmail passes that on to the O365 server in a way that it parses
+correctly.  (It seems that all "shared mailboxes" in O365 are in 
+fact something like aliased subirectories under a personal account
+for reasons I don't understand.)  The next two are obvious: the port
+gives the port, and fill in your password next.
+
+The last stanza, [destination], describes what getmail should do with
+the email.  Here I have it set to hand the email off to procmail for
+sorting: type = MDA_external tells getmail to hand over the email to
+a distinct mail delivery agent; the value of path tells getmail where
+to find the MDA.  The unixfrom = true tells getmail that it can expect
+the emails to begin in proper *NIX fashion with a From: line.
+
+In case anyone is interested, here's the relevant bit of procmail
+configuration, from .procmailrc:
+
+  # Define variables
+  MAILDIR=$HOME/Mail
+  DEFAULT=$MAILDIR/NEWMAIL
+  LOGFILE=$HOME/.procmaillog
+  #
+  :0:
+  * ^To.*SHARED_MAILBOX at utoronto.ca
+  $HOME/Mail/DESTINATION_MAILBOX
+
+The variables just configure my local setup; the line ":0:" is a magic
+incantation that tells procmail not to keep a copy once it carries out
+the instructions in the next two lines; the first looks for any email
+where the address (To:) header is the SHARED_MAILBOX, and the last line
+tells it to write that email into the mailbox DESTINATION_MAILBOX.
+
+On my first test pass, I had getmail deliver the mail directly to its
+destination, so the whole stanza looked like this:
+
+  [destination]
+  type = Mboxrd
+  path = ~/Mail/DESTINATION_MAILBOX
+
+Here the first line declares that the email is heading for a mailbox
+in mbox format, and the second line that the mailbox is as before the
+DESTINATION_MAILBOX found at ~/Mail/.
+
+So far, Things Just Work.  Since getmail gets the mail, I assume it
+passes the relevant SSL tests.  I'll have to learn some more to make
+sure it is using, or at least is able to use, fingerprint validation.
+Right now I'm testing and running getmail manually, but I expect to
+make it just an ordinary cron job once I learn enough to be confident
+that everything works properly.
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		   (416)-978-3311 dept
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 195 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/talk/attachments/20180715/84cea882/attachment.sig>
+
+From opengeometry at yahoo.ca  Mon Jul 16 00:25:10 2018
+From: opengeometry at yahoo.ca (William Park)
+Date: Mon, 16 Jul 2018 00:25:10 -0400
+Subject: [GTALUG] Fetchmail and Office365 and backslashes, oh my!
+In-Reply-To: <20180716034212.GA12210@amber.utoronto.ca>
+References: <20180704185303.GA14046@amber.utoronto.ca>
+ <20180715210139.GA9237@amber.utoronto.ca>
+ <20180716034212.GA12210@amber.utoronto.ca>
+Message-ID: <20180716042510.GA20512@node1.localdomain>
+
+On Sun, Jul 15, 2018 at 11:42:12PM -0400, Peter King via talk wrote:
+>   username = PERSONAL_EMAIL at utoronto.ca\SHARED_MAILBOX at utoronto.ca
+
+Just for curiosity, can you try
+    "PERSONAL_EMAIL at utoronto.ca"\x5c"SHARED_MAILBOX at utoronto.ca"
+in you .fetchmailrc ?  The manpage is not clear whether you can use \xhh
+in quoted string (though highly likely).
+-- 
+William Park <opengeometry at yahoo.ca>
+
+From davec-b at rogers.com  Mon Jul 16 08:53:50 2018
+From: davec-b at rogers.com (David Collier-Brown)
+Date: Mon, 16 Jul 2018 08:53:50 -0400
+Subject: [GTALUG] Hacklab trash freedom (;-))
+Message-ID: <f146ef8a-2468-a59c-0d92-6f7ab2caa5c9@rogers.com>
+
+I'm wondering about doing a local dead-technology day at Index 
+Exchange,  and delivering the interesting stuff to hacklab.
+
+Do satellite days sound logical? Relevant to GTALUG (ie, should we do a 
+satellite)?
+
+--dave
+
+-- 
+David Collier-Brown,         | Always do right. This will gratify
+System Programmer and Author | some people and astonish the rest
+davecb at spamcop.net            |                      -- Mark Twain
+
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/talk/attachments/20180716/876536cc/attachment.html>
+
+From peter.king at utoronto.ca  Mon Jul 16 11:23:41 2018
+From: peter.king at utoronto.ca (Peter King)
+Date: Mon, 16 Jul 2018 11:23:41 -0400
+Subject: [GTALUG] Fetchmail and Office365 and backslashes, oh my!
+In-Reply-To: <20180716042510.GA20512@node1.localdomain>
+References: <20180704185303.GA14046@amber.utoronto.ca>
+ <20180715210139.GA9237@amber.utoronto.ca>
+ <20180716034212.GA12210@amber.utoronto.ca>
+ <20180716042510.GA20512@node1.localdomain>
+Message-ID: <20180716152341.GB16861@amber.utoronto.ca>
+
+On Mon, Jul 16, 2018 at 12:25:10AM -0400, William Park via talk wrote:
+ 
+> Just for curiosity, can you try
+>     "PERSONAL_EMAIL at utoronto.ca"\x5c"SHARED_MAILBOX at utoronto.ca"
+> in you .fetchmailrc ?  The manpage is not clear whether you can use \xhh
+> in quoted string (though highly likely).
+
+Tried it, and in fetchmail it still passes the wrong number of backslashes.
+As far as I can tell, fetchmail and O365 only exchange an even number of
+backslashes: one gets you 0, two gets 2, three gets 2, four gets 4, and so
+on.  I have no idea why this should be so, apart from the Universal Law of
+Software Perversity.  Doesn't matter if I do straight characters, quoted or
+escaped characters, decimal, octal, hexadecimal ...
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		   (416)-978-3311 dept
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 195 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/talk/attachments/20180716/01365169/attachment.sig>
+
+From kevin at ve3syb.ca  Mon Jul 16 12:25:34 2018
+From: kevin at ve3syb.ca (Kevin Cozens)
+Date: Mon, 16 Jul 2018 12:25:34 -0400
+Subject: [GTALUG] Fetchmail and Office365 and backslashes, oh my!
+In-Reply-To: <20180716152341.GB16861@amber.utoronto.ca>
+References: <20180704185303.GA14046@amber.utoronto.ca>
+ <20180715210139.GA9237@amber.utoronto.ca>
+ <20180716034212.GA12210@amber.utoronto.ca>
+ <20180716042510.GA20512@node1.localdomain>
+ <20180716152341.GB16861@amber.utoronto.ca>
+Message-ID: <87f43920-fdb7-5400-71f2-44d0e982272d@ve3syb.ca>
+
+On 2018-07-16 11:23 AM, Peter King via talk wrote:
+> fetchmail it still passes the wrong number of backslashes. As far as I
+> can tell, fetchmail and O365 only exchange an even number of backslashes:
+> one gets you 0, two gets 2, three gets 2, four gets 4, and so on.
+
+This is starting to sound like a bug in fetchmail or it is some sort of 
+compatibility "feature" with Office365. If fetchmail isn't converting two 
+backslashes to one I would talk with the fetchmail people and/or file a bug 
+report.
+
+-- 
+Cheers!
+
+Kevin.
+
+http://www.ve3syb.ca/               | "Nerds make the shiny things that
+https://www.patreon.com/KevinCozens | distract the mouth-breathers, and
+                                     | that's why we're powerful"
+Owner of Elecraft K2 #2172          |
+#include <disclaimer/favourite>     |             --Chris Hardwick
+
+From peter.king at utoronto.ca  Mon Jul 16 21:04:03 2018
+From: peter.king at utoronto.ca (Peter King)
+Date: Mon, 16 Jul 2018 21:04:03 -0400
+Subject: [GTALUG] Fetchmail and Office365 and backslashes, oh my!
+In-Reply-To: <87f43920-fdb7-5400-71f2-44d0e982272d@ve3syb.ca>
+References: <20180704185303.GA14046@amber.utoronto.ca>
+ <20180715210139.GA9237@amber.utoronto.ca>
+ <20180716034212.GA12210@amber.utoronto.ca>
+ <20180716042510.GA20512@node1.localdomain>
+ <20180716152341.GB16861@amber.utoronto.ca>
+ <87f43920-fdb7-5400-71f2-44d0e982272d@ve3syb.ca>
+Message-ID: <20180717010403.GA29075@amber.utoronto.ca>
+
+On Mon, Jul 16, 2018 at 12:25:34PM -0400, Kevin Cozens via talk wrote:
+
+> On 2018-07-16 11:23 AM, Peter King via talk wrote:
+> > fetchmail it still passes the wrong number of backslashes. As far as I
+> > can tell, fetchmail and O365 only exchange an even number of backslashes:
+> > one gets you 0, two gets 2, three gets 2, four gets 4, and so on.
+> 
+> This is starting to sound like a bug in fetchmail or it is some sort of 
+> compatibility "feature" with Office365. If fetchmail isn't converting two 
+> backslashes to one I would talk with the fetchmail people and/or file a bug 
+> report.
+
+Given that getmail works seamlessly, I'm inclined to think it's a bug in
+fetchmail (or a bug in the way it interacts with Office365).  I'll send a
+note to ESR about it.
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		   (416)-978-3311 dept
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 195 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/talk/attachments/20180716/34e02b43/attachment.sig>
+
+From peter.king at utoronto.ca  Mon Jul 16 21:16:48 2018
+From: peter.king at utoronto.ca (Peter King)
+Date: Mon, 16 Jul 2018 21:16:48 -0400
+Subject: [GTALUG] SSL Server Certificate
+Message-ID: <20180717011648.GB29075@amber.utoronto.ca>
+
+I'm puzzled about how to set up server certificate validation in getting
+my email, which isn't surprising given that I understand next to nothing
+about the way certificates work.
+
+Here's the particular issue.  I want to check over ssl/tls to see that the
+server certificate is valid, and that it matches a fingerprint I have for
+it.  So, I know just enough to get the certificate from the server, in this
+case from Google:
+
+  $ openssl s_client -connect pop.gmail.com:995 -showcerts > ~/gmail.openssl.txt
+
+By inspection I can see that the certificate is provided by GlobalSign.  So
+I do a quick check:
+
+  $ ls -l /etc/ssl/certs/GlobalSign*
+
+Lo and behold, there is an obvious hit: GlobalSign_Root_CA.pem.  So I put
+that down as the certificate for the server.
+
+Then, I can get the fingerprint for it from the same file, like so:
+
+   $ openssl x509 -fingerprint -sha256 -noout -in ~/gmail.openssl.txt > gmail.fingerprint.txt
+
+(Getmail uses sha256 as its preferred algorithm.)  I take the fingerprint
+from the file and use that to certify the server.
+
+
+Thing is, the technique doesn't work.  First I get an unhelpful error
+message saying that the certificate, GlobalSign_Root_CA.pem, gives an
+authentication error.  Well, okay.  If I take that out of the equation
+I then get told that the fingerprint is wrong, but this time at least
+I'm told what the correct fingerprint is -- and if I put the correct one
+in all seems well.
+
+The example above is about gmail, but I have the same problem with rogers
+and other servers.  Oddly, the Office365 servers work exactly as they
+should.
+
+Two questions, which most of you undoubtedly know the answer to:
+
+[1] If the email gets fetched with the fingerprint, is there any need for
+    validating the server certificate?
+
+[2] How can I find out what the correct server certificate is?
+
+
+-- 
+Peter King			 	peter.king at utoronto.ca
+Department of Philosophy
+170 St. George Street #521
+The University of Toronto		   (416)-978-3311 dept
+Toronto, ON  M5R 2M8
+       CANADA
+
+http://individual.utoronto.ca/pking/
+
+=========================================================================
+GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 195 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/talk/attachments/20180716/d0d3c0d6/attachment.sig>
+
+From jamon.camisso at utoronto.ca  Mon Jul 16 23:35:34 2018
+From: jamon.camisso at utoronto.ca (Jamon Camisso)
+Date: Mon, 16 Jul 2018 23:35:34 -0400
+Subject: [GTALUG] SSL Server Certificate
+In-Reply-To: <20180717011648.GB29075@amber.utoronto.ca>
+References: <20180717011648.GB29075@amber.utoronto.ca>
+Message-ID: <a1f12b13-0757-7824-2ee7-c5fd4cfa23a9@utoronto.ca>
+
+On 16/07/18 21:16, Peter King via talk wrote:
+> I'm puzzled about how to set up server certificate validation in getting
+> my email, which isn't surprising given that I understand next to nothing
+> about the way certificates work.
+> 
+> Here's the particular issue.  I want to check over ssl/tls to see that the
+> server certificate is valid, and that it matches a fingerprint I have for
+> it.  So, I know just enough to get the certificate from the server, in this
+> case from Google:
+> 
+>   $ openssl s_client -connect pop.gmail.com:995 -showcerts > ~/gmail.openssl.txt
+> 
+> By inspection I can see that the certificate is provided by GlobalSign.  So
+> I do a quick check:
+> 
+>   $ ls -l /etc/ssl/certs/GlobalSign*
+
+s_client doesn't behave exactly as you expect. It needs explicit
+instructions to send a -servername when you use -connect. What you're
+actually getting if you look carefully is the imap.gmail.com certificate.
+
+Without servername:
+
+openssl s_client -connect pop.gmail.com:993 2>&1 |openssl x509 -noout
+-subject -fingerprint
+subject=C = US, ST = California, L = Mountain View, O = Google LLC, CN =
+imap.gmail.com
+SHA1 Fingerprint=BD:94:41:8C:64:D9:B1:43:49:3A:98:68:57:12:51:A3:3C:52:BF:86
+
+
+With -servername:
+openssl s_client -servername pop.gmail.com -connect pop.gmail.com:993
+2>&1 |openssl x509 -noout -subject -fingerprint
+subject=C = US, ST = California, L = Mountain View, O = Google LLC, CN =
+pop.gmail.com
+SHA1 Fingerprint=59:B1:5F:6A:BF:F2:28:D9:4A:FC:89:DB:75:FD:7D:65:EC:82:AD:E7
+
+
+> Lo and behold, there is an obvious hit: GlobalSign_Root_CA.pem.  So I put
+> that down as the certificate for the server.
+
+This ends up being the incorrect CA certificate. If you take a look at
+the full openssl s_client output, you'll see the chain listed right at
+the beginning, including the identity of the authority's certificate:
+
+openssl s_client -servername pop.gmail.com -connect pop.gmail.com:993
+.....
+Certificate chain
+ 0 s:/C=US/ST=California/L=Mountain View/O=Google LLC/CN=pop.gmail.com
+   i:/C=US/O=Google Trust Services/CN=Google Internet Authority G3
+ 1 s:/C=US/O=Google Trust Services/CN=Google Internet Authority G3
+   i:/OU=GlobalSign Root CA - R2/O=GlobalSign/CN=GlobalSign
+
+0 is the certificate from the server itself, with the subject and CN
+matching pop.gmail.com. The 's' field is the subject field of the
+certificate. The 'i' field is the issuer field.
+
+Likewise, 1 is the intermediate certificate that Google uses to sign
+their public-facing certificates, which itself is the public component
+of their private intermediate certificate.
+
+That intermediate of Google's is signed by GlobalSign using the latter's
+root R2 certificate. Their root R2 is self-signed, and there's the
+entire chain.
+
+So the root that you're looking for is described in that last field of
+the intermediate certificate 'OU=GlobalSign Root CA - R2'. Take a look
+in /etc/ssl/certs/ and you'll see a file: GlobalSign_Root_CA_-_R2.pem
+
+To see how the chain all lines up, look at how the issuer of one is the
+subject of the next.
+
+I've saved Google's pop & the intermediate to separate files to make it
+easier. Also note that openssl 'hash' operates on the subject, so it
+isn't anything special, it is just easier to eyeball when checking
+things as opposed to reading a subject and missing something like 'R2'
+for example ;)
+
+
+---- server certificate:
+openssl x509 -in pop.gmail.com.pem -noout -subject -issuer -issuer_hash
+
+
+subject=C = US, ST = California, L = Mountain View, O = Google LLC, CN =
+pop.gmail.com
+issuer=C = US, O = Google Trust Services, CN = Google Internet Authority G3
+6a909d98
+
+
+---- intermediate Google G3 certificate:
+openssl x509 -in globalsign-intermediate.pem -noout -subject -issuer
+-hash -issuer_hash
+
+subject=C = US, O = Google Trust Services, CN = Google Internet Authority G3
+issuer=OU = GlobalSign Root CA - R2, O = GlobalSign, CN = GlobalSign
+6a909d98
+4a6481c9
+
+
+---- globalsign root R2 certificate
+openssl x509 -in /etc/ssl/certs/GlobalSign_Root_CA_-_R2.pem -noout
+-subject -issuer -hash
+subject=OU = GlobalSign Root CA - R2, O = GlobalSign, CN = GlobalSign
+issuer=OU = GlobalSign Root CA - R2, O = GlobalSign, CN = GlobalSign
+4a6481c9
+
+
+See how subjects & hashes line up? Note the G3, R2 bits don't mean
+anything special in terms of protocols, they're just labels that Google
+& GlobalSign use internally to keep track of their different
+certificates. Every intermediate & root CA do these however they like -
+just look through /etc/ssl/certs and check subject names to see the variety.
+
+Hope this helps with troubleshooting.
+
+Cheers, Jamon
+
+From opengeometry at yahoo.ca  Mon Jul 16 23:38:38 2018
+From: opengeometry at yahoo.ca (William Park)
+Date: Mon, 16 Jul 2018 23:38:38 -0400
+Subject: [GTALUG] SSL Server Certificate
+In-Reply-To: <20180717011648.GB29075@amber.utoronto.ca>
+References: <20180717011648.GB29075@amber.utoronto.ca>
+Message-ID: <20180717033838.GC5255@node1.localdomain>
+
+Off-tangent... Can someone do a talk on "SSL/TLS Certificate" for users,
+sysadmin, and application programmers level?  Like,
+    - how to create certificate
+    - what fields to populate when create certificate.  It seems to
+      be sensitive to expiry date, certain fields, etc.
+    - how to install them, at server side and at client side.
+
+I understand SSH private/public keys.  But, for the life of me, I don't
+understand SSL/TLS or OpenSSL package.
+-- 
+William Park <opengeometry at yahoo.ca>
+
+On Mon, Jul 16, 2018 at 09:16:48PM -0400, Peter King via talk wrote:
+> I'm puzzled about how to set up server certificate validation in getting
+> my email, which isn't surprising given that I understand next to nothing
+> about the way certificates work.
+> 
+> Here's the particular issue.  I want to check over ssl/tls to see that the
+> server certificate is valid, and that it matches a fingerprint I have for
+> it.  So, I know just enough to get the certificate from the server, in this
+> case from Google:
+> 
+>   $ openssl s_client -connect pop.gmail.com:995 -showcerts > ~/gmail.openssl.txt
+> 
+> By inspection I can see that the certificate is provided by GlobalSign.  So
+> I do a quick check:
+> 
+>   $ ls -l /etc/ssl/certs/GlobalSign*
+> 
+> Lo and behold, there is an obvious hit: GlobalSign_Root_CA.pem.  So I put
+> that down as the certificate for the server.
+> 
+> Then, I can get the fingerprint for it from the same file, like so:
+> 
+>    $ openssl x509 -fingerprint -sha256 -noout -in ~/gmail.openssl.txt > gmail.fingerprint.txt
+> 
+> (Getmail uses sha256 as its preferred algorithm.)  I take the fingerprint
+> from the file and use that to certify the server.
+> 
+> 
+> Thing is, the technique doesn't work.  First I get an unhelpful error
+> message saying that the certificate, GlobalSign_Root_CA.pem, gives an
+> authentication error.  Well, okay.  If I take that out of the equation
+> I then get told that the fingerprint is wrong, but this time at least
+> I'm told what the correct fingerprint is -- and if I put the correct one
+> in all seems well.
+> 
+> The example above is about gmail, but I have the same problem with rogers
+> and other servers.  Oddly, the Office365 servers work exactly as they
+> should.
+> 
+> Two questions, which most of you undoubtedly know the answer to:
+> 
+> [1] If the email gets fetched with the fingerprint, is there any need for
+>     validating the server certificate?
+> 
+> [2] How can I find out what the correct server certificate is?
+> 
+> 
+> -- 
+> Peter King			 	peter.king at utoronto.ca
+> Department of Philosophy
+> 170 St. George Street #521
+> The University of Toronto		   (416)-978-3311 dept
+> Toronto, ON  M5R 2M8
+>        CANADA
+> 
+> http://individual.utoronto.ca/pking/
+> 
+> =========================================================================
+> GPG keyID 0x7587EC42 (2B14 A355 46BC 2A16 D0BC  36F5 1FE6 D32A 7587 EC42)
+> gpg --keyserver pgp.mit.edu --recv-keys 7587EC42
+
+
+
+> ---
+> Talk Mailing List
+> talk at gtalug.org
+> https://gtalug.org/mailman/listinfo/talk
+
+From alex at flamy.ca  Tue Jul 17 10:21:29 2018
+From: alex at flamy.ca (Alex Volkov)
+Date: Tue, 17 Jul 2018 10:21:29 -0400
+Subject: [GTALUG] Internet Bots with Don Tai talk is on youtube.
+Message-ID: <9cf91bce-2a44-afbb-50f0-a5d9edefb938@flamy.ca>
+
+Hello everyone,
+
+You can now watch our July 2018 meeting -- Internet Bots with Don Tai.
+
+https://youtu.be/lk5BpbGRyG8
+
+
+Alex.
+
+
+
