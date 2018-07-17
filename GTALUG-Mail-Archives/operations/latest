@@ -1,20 +1,87 @@
-From alex at flamy.ca  Sat Nov  4 16:14:23 2017
-From: alex at flamy.ca (Alex Volkov)
-Date: Sat, 4 Nov 2017 16:14:23 -0400
-Subject: [GTALUG-Ops] mail server
-Message-ID: <3d9130f6-bfe3-9e52-53d0-7e9b70cea364@flamy.ca>
+From scott at revident.net  Tue Jul 10 09:08:19 2018
+From: scott at revident.net (Scott Sullivan)
+Date: Tue, 10 Jul 2018 09:08:19 -0400
+Subject: [GTALUG-Ops] Linux In The Park 2018
+Message-ID: <C4D54940-6DC1-4561-80D4-56876A262863@revident.net>
 
-Hi everyone,
+https://wiki.gtalug.org/event:linux_in_the_park_2018
 
+Wiki page is up. I'd encourage ops folks to start filling it in today. I'd like a bit if meat on the bones before pushing it out to announce tonight or tomorrow.
+-- 
+Scott Sullivan
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: <http://gtalug.org/pipermail/operations/attachments/20180710/1a03380f/attachment.html>
 
-I added qq.com as blacklisted domain, so we should stop receiving spam 
-from them, also I added zen.spamhaus.org as an rbl that checks incoming 
-mail.
+From gordontc at gmail.com  Sat Jul 14 19:47:56 2018
+From: gordontc at gmail.com (Gordon Chillcott)
+Date: Sat, 14 Jul 2018 19:47:56 -0400
+Subject: [GTALUG-Ops] ICANN Report to July 16,2018
+Message-ID: <1531612076.20826.1.camel@gmail.com>
 
+Here it is.  A bit long, but a rather eventful ICANN meeting happened.
 
-Let me know if this causes any issues.
+Gordon
 
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: 20180716.pdf
+Type: application/pdf
+Size: 20352 bytes
+Desc: not available
+URL: <http://gtalug.org/pipermail/operations/attachments/20180714/a249f76e/attachment.pdf>
 
-Alex.
+From hi at gtalug.org  Sun Jul 15 18:15:03 2018
+From: hi at gtalug.org (Mr. Meeseeks)
+Date: Sun, 15 Jul 2018 18:15:03 -0400 (EDT)
+Subject: [GTALUG-Ops] GTALUG Operations Meeting on 16 July 2018 at 7:30PM
+Message-ID: <20180715221503.359DEE59F@penguin.gtalug.org>
 
+Look at me! I'm Mr. Meeseeks!
+
+Below is the agenda for the next GTALUG Operations meeting. If you would like to add a topic to the agenda, reply to this email.
+
+<https://board.gtalug.org/2018-07-16/agenda.html>
+
+* 16 July 2018 at 7:30pm
+
+** Location
+
+- Hacklab
+
+** Agenda Topics
+
+ - Timing/Location of next Ops meeting
+ - Upcoming Meetings
+ - ICANN material from Gord
+ - Active planning of Linux In The Park
+   - Check on Gas!
+ - Write next month's agenda.
+
+** TODO from last month
+ - Question at meeting :: Microsoft just bought GitHub; is this a discussion worth having in a meeting?
+   - If concerned, what are some alternatives?
+ - Chris TODO :: Switch the statistical summary to SQLite
+ - Myles TODO :: Talk with Eric about Maker Fair talk
+ - Myles TODO :: Ask around at PyGTA on possible speakers
+ - Scott Done :: Book Hacklab for July/August ops meeting
+ - Scott TODO :: Prepping new LITP wiki page (probably already done)
+ - Scott TODO :: Announce LITP for July 21st
+
+I'm Mr. Meeseeks! Look at me! (poof)
+
+From cbbrowne at gmail.com  Tue Jul 17 11:32:24 2018
+From: cbbrowne at gmail.com (Christopher Browne)
+Date: Tue, 17 Jul 2018 11:32:24 -0400
+Subject: [GTALUG-Ops] RSS Feed of our Linode account
+Message-ID: <CAFNqd5Umf4pHzbKT4SGyTyTTHmL+TqLQp22jtF7n-tV1yPz8Pw@mail.gmail.com>
+
+For those still using RSS, this lists recent/upcoming events relating
+to our server penguin on Linode.
+
+https://manager.linode.com/events/rss/lbiSrx48pnkpV3FkMRIthW15REyazQeggFAwBY8Q
+
+-- 
+When confronted by a difficult problem, solve it by reducing it to the
+question, "How would the Lone Ranger handle this?"
 
