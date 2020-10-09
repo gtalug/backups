@@ -5,27 +5,57 @@
 ###
 
 restore_website(){
+    WEBSITES_HOME=${HOME}/WebSites
+    RESTORE_DIR=${PWD}
+    declare -A websites
+    websites['org_gtalug_www']='https://github.com/gtalug/website.git'
+    websites['org_gtalug_board']='git@github.com:gtalug/board-meetings.git'
 
-    sudo apt-get install -y git
+    sudo apt-get install -y git python-virtualenv node-less python-dev \
+    libyaml-dev bundler jekyll
+    for key in ${!websites[@]}
+    do
+        mkdir -p ${WEBSITES_HOME}
+        git clone ${websites[${key}]}  ${WEBSITES_HOME}/${key}
+        cd ${WEBSITES_HOME}/${key}
+        virtualenv env
+        source env/bin/activate
+        pip install fabric
 
-    git clone https://github.com/gtalug/website.git
+        if [ -f requirements.txt ]
+        then
+            fab install
+            fab run &
+        else
+            pip install PyYAML
+            fab build
+            fab run &
+        fi
+        deactivate
 
-    sudo apt-get install -y -t wheezy-backports python-virtualenv node-less python-dev
-
-    cd website
-
-    virtualenv env
-
-    source env/bin/activate
-
-    pip install fabric
-
-    fab install
-
-    fab run
+    done
 }
 
+restore_packages() {
+    for pkg in $(cut -f1 -d' ' ../../packages)
+    do
+        # because of penguin has old packages from wheezy
+        # installing individual packages is prefeered
+        # this is much slower but works
+        sudo apt-get -y install $pkg
+    done
+}
+
+sync_etc_configs() {
+    for confdir in apache2 fail2ban postfix
+    do
+        sudo rsync --archive ../../${confdir} /etc
+        sudo service $confdir restart
+    done
+}
 
 ## Run all procedures
 
 restore_website
+restore_packages
+sync_etc_configs
